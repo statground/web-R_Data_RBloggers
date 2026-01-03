@@ -1,0 +1,120 @@
+{
+  "uuid": "1381e9db-d7b8-44df-9881-c1f6f9a55285",
+  "created_at": "2025-11-22 19:59:23",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/01/cpp11-pull-requests-to-improve-the-integration-of-r-and-c/",
+    "crawled_at": "2025-11-22T10:55:04.549298",
+    "external_links": [
+      {
+        "href": "https://pacha.dev/blog/2025/01/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/r-lib/cpp11/pull/426",
+        "text": "#426"
+      },
+      {
+        "href": "https://github.com/r-lib/cpp11/pull/430",
+        "text": "#430"
+      },
+      {
+        "href": "https://github.com/r-lib/cpp11/pull/437",
+        "text": "#437"
+      },
+      {
+        "href": "https://github.com/r-lib/cpp11/pull/428",
+        "text": "#428"
+      },
+      {
+        "href": "https://github.com/r-lib/cpp11/pull/427",
+        "text": "#427"
+      },
+      {
+        "href": "https://github.com/r-lib/cpp11/pull/440",
+        "text": "#440"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/01/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Cpp11 pull requests to improve the integration of R and C++ | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/pacha-dev-blog/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-390150 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Cpp11 pull requests to improve the integration of R and C++</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/pacha-dev-blog/\">pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/01/\"> pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level2\" id=\"about\">\n<h2 class=\"anchored\" data-anchor-id=\"about\">About</h2>\n<p>From cpp11 description: “Provides a header only, C++11 interface to R’s C interface. Compared to other approaches ‘cpp11’ strives to be safe against long jumps from the C API as well as C++ exceptions, conform to normal R function semantics and supports interaction with ‘ALTREP’ vectors.”</p>\n<p>I have used cpp11 for two years right after I started learning C++ with no previous C/C++ knowledge. Now I have suggested the following changes to the codebase to improve the user experience and reduce the number of lines of code needed to perform common tasks. I excluded describing PRs that only relate to technical aspects or tests.</p>\n</section>\n<section class=\"level2\" id=\"prs\">\n<h2 class=\"anchored\" data-anchor-id=\"prs\">PRs</h2>\n<section class=\"level3\" id=\"convert-logicals-to-integers-and-doubles\">\n<h3 class=\"anchored\" data-anchor-id=\"convert-logicals-to-integers-and-doubles\">Convert logicals to integers and doubles</h3>\n<p><code>as_integers()</code> and <code>as_doubles()</code> now understand logical inputs (<a href=\"https://github.com/r-lib/cpp11/pull/426\" rel=\"nofollow\" target=\"_blank\">#426</a>).</p>\n<p>Here is an example of something that returned an error before:</p>\n<pre>test_that(\"as_doubles(logicals)\") {\n  cpp11::writable::logicals y;\n\n  for (int i = 0; i &lt; 4; i++) {\n    y.push_back(i % 2 == 0);\n  }\n\n  cpp11::doubles i(cpp11::as_doubles(y));\n\n  expect_true(i[0] == 1.0);\n  expect_true(i[1] == 0.0);\n  expect_true(i[2] == 1.0);\n  expect_true(i[3] == 0.0);\n  expect_true(cpp11::detail::r_typeof(i) == REALSXP);\n}</pre>\n</section>\n<section class=\"level3\" id=\"improving-string-vector-performance-for-push_back-and-subscript-assignment\">\n<h3 class=\"anchored\" data-anchor-id=\"improving-string-vector-performance-for-push_back-and-subscript-assignment\">Improving string vector performance for push_back and subscript assignment</h3>\n<p>I added refactors and test that translate into a <code>push_back</code> that is closer to a 1:1 speed ratio than 1:4 compared to direct assignment (<a href=\"https://github.com/r-lib/cpp11/pull/430\" rel=\"nofollow\" target=\"_blank\">#430</a>).</p>\n<p>Previously, the <code>push_back</code> was 4 times slower than direct assignment because of protections applied in cases when there is immediate assignment with no translation.</p>\n<pre># A tibble: 14 × 6\n   expression                       len      min mem_alloc n_itr  n_gc\n   &lt;bch:expr&gt;                     &lt;int&gt; &lt;bch:tm&gt; &lt;bch:byt&gt; &lt;int&gt; &lt;dbl&gt;\n 1 assign_cpp11_(n = len, 123L) 1000000 590.79ms   21.63MB    12     8\n 2 assign_rcpp_(n = len, 123L)  1000000 441.09ms    7.63MB    15     5\n\n# A tibble: 3 × 6\n  expression                          len      min mem_alloc n_itr  n_gc\n  &lt;bch:expr&gt;                        &lt;int&gt; &lt;bch:tm&gt; &lt;bch:byt&gt; &lt;int&gt; &lt;dbl&gt;\n1 grow_strings_cpp11_(len, 123L)  1000000    462ms   23.63MB     7    13\n2 grow_strings_rcpp_(len, 123L)   1000000    453ms    7.63MB    16     4\n3 grow_strings_manual_(len, 123L) 1000000    438ms   23.63MB     8    12</pre>\n</section>\n<section class=\"level3\" id=\"convert-ordered-and-unordered-c-maps-to-r-lists\">\n<h3 class=\"anchored\" data-anchor-id=\"convert-ordered-and-unordered-c-maps-to-r-lists\">Convert ordered and unordered C++ maps to R lists</h3>\n<p>Ordered and unordered C++ maps are converted to R lists now (<a href=\"https://github.com/r-lib/cpp11/pull/437\" rel=\"nofollow\" target=\"_blank\">#437</a>).</p>\n<p>Here is an example of something that was not possible before:</p>\n<pre>[[cpp11::register]] SEXP ordered_map_to_list_(cpp11::doubles x) {\n  std::map&lt;double, int&gt; counts;\n  int n = x.size();\n  for (int i = 0; i &lt; n; i++) {\n    counts[x[i]]++;\n  }\n  return cpp11::as_sexp(counts);\n}</pre>\n</section>\n<section class=\"level3\" id=\"correctly-set-names-for-matrices\">\n<h3 class=\"anchored\" data-anchor-id=\"correctly-set-names-for-matrices\">Correctly set names for matrices</h3>\n<p>Previously, cpp11 ignored the column or row names nor allowed to define those from C++ side for a <code>doubles_matrix</code> or <code>integers_matrix</code>, except if it was converted to a <code>SEXP</code> (<a href=\"https://github.com/r-lib/cpp11/pull/428\" rel=\"nofollow\" target=\"_blank\">#428</a>).</p>\n<p>Here is an example of the correction:</p>\n<pre>[[cpp11::register]] cpp11::doubles_matrix&lt;&gt; mat_mat_create_dimnames() {\n  cpp11::writable::doubles_matrix&lt;&gt; out(2, 2);\n\n  out(0, 0) = 1;\n  out(0, 1) = 2;\n  out(1, 0) = 3;\n  out(1, 1) = 4;\n\n  cpp11::writable::list dimnames(2);\n  dimnames[0] = cpp11::strings({\"a\", \"b\"});\n  dimnames[1] = cpp11::strings({\"c\", \"d\"});\n\n  out.attr(\"dimnames\") = dimnames;\n\n  return out;\n}</pre>\n</section>\n<section class=\"level3\" id=\"copy-complex-numbers-vectors-or-matrices-from-r-to-c-and-viceversa\">\n<h3 class=\"anchored\" data-anchor-id=\"copy-complex-numbers-vectors-or-matrices-from-r-to-c-and-viceversa\">Copy complex numbers, vectors or matrices from R to C++ and viceversa</h3>\n<p>Previously, I was passing complex numbers from R to C++ and viceversa by converting them to a list with the real part and the imaginary part expressed as the first and second vectors of the list. Now it is possible to pass them directly (<a href=\"https://github.com/r-lib/cpp11/pull/427\" rel=\"nofollow\" target=\"_blank\">#427</a>).</p>\n<p>Here is an example of something that was not possible before:</p>\n<pre>test_that(\"vector objects can be created, filled, and copied\") {\n  cpp11::writable::complexes v(2);\n  v[0] = std::complex&lt;double&gt;(1, 2);\n  v[1] = std::complex&lt;double&gt;(3, 4);\n\n  cpp11::complexes vc = v;\n\n  expect_true(v.size() == vc.size());\n\n  for (int i = 0; i &lt; 2; ++i) {\n   expect_true(v[i] == vc[i]);\n  }\n}</pre>\n</section>\n<section class=\"level3\" id=\"document-functions-with-roxygen-directly-in-c-scripts\">\n<h3 class=\"anchored\" data-anchor-id=\"document-functions-with-roxygen-directly-in-c-scripts\">Document functions with Roxygen directly in C++ scripts</h3>\n<p>In order to reduce clutter in my workflow, I added some code to be able to roxygenise directly in the cpp files rather than document the functions by separate (<a href=\"https://github.com/r-lib/cpp11/pull/440\" rel=\"nofollow\" target=\"_blank\">#440</a>).</p>\n<p>Here is an example of something that was not possible before:</p>\n<pre>#include \"cpp11/doubles.hpp\"\nusing namespace cpp11;\n\n/* roxygen start\n@title Roxygenised x plus 1\n@param x numeric value\n@description Dummy function to test roxygen2. It adds 1.0 to a double.\n@export\n@examples roxcpp_(1.0)\nroxygen end */\n[[cpp11::register]] double roxcpp_(double x) {\n  double y = x + 1.0;\n  return y;\n}</pre>\n</section>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/01/\"> pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Cpp11 pull requests to improve the integration of R and C++\nPosted on\nJanuary 24, 2025\nby\npacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\npacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAbout\nFrom cpp11 description: “Provides a header only, C++11 interface to R’s C interface. Compared to other approaches ‘cpp11’ strives to be safe against long jumps from the C API as well as C++ exceptions, conform to normal R function semantics and supports interaction with ‘ALTREP’ vectors.”\nI have used cpp11 for two years right after I started learning C++ with no previous C/C++ knowledge. Now I have suggested the following changes to the codebase to improve the user experience and reduce the number of lines of code needed to perform common tasks. I excluded describing PRs that only relate to technical aspects or tests.\nPRs\nConvert logicals to integers and doubles\nas_integers()\nand\nas_doubles()\nnow understand logical inputs (\n#426\n).\nHere is an example of something that returned an error before:\ntest_that(\"as_doubles(logicals)\") {\n  cpp11::writable::logicals y;\n\n  for (int i = 0; i < 4; i++) {\n    y.push_back(i % 2 == 0);\n  }\n\n  cpp11::doubles i(cpp11::as_doubles(y));\n\n  expect_true(i[0] == 1.0);\n  expect_true(i[1] == 0.0);\n  expect_true(i[2] == 1.0);\n  expect_true(i[3] == 0.0);\n  expect_true(cpp11::detail::r_typeof(i) == REALSXP);\n}\nImproving string vector performance for push_back and subscript assignment\nI added refactors and test that translate into a\npush_back\nthat is closer to a 1:1 speed ratio than 1:4 compared to direct assignment (\n#430\n).\nPreviously, the\npush_back\nwas 4 times slower than direct assignment because of protections applied in cases when there is immediate assignment with no translation.\n# A tibble: 14 × 6\n   expression                       len      min mem_alloc n_itr  n_gc\n   <bch:expr>                     <int> <bch:tm> <bch:byt> <int> <dbl>\n 1 assign_cpp11_(n = len, 123L) 1000000 590.79ms   21.63MB    12     8\n 2 assign_rcpp_(n = len, 123L)  1000000 441.09ms    7.63MB    15     5\n\n# A tibble: 3 × 6\n  expression                          len      min mem_alloc n_itr  n_gc\n  <bch:expr>                        <int> <bch:tm> <bch:byt> <int> <dbl>\n1 grow_strings_cpp11_(len, 123L)  1000000    462ms   23.63MB     7    13\n2 grow_strings_rcpp_(len, 123L)   1000000    453ms    7.63MB    16     4\n3 grow_strings_manual_(len, 123L) 1000000    438ms   23.63MB     8    12\nConvert ordered and unordered C++ maps to R lists\nOrdered and unordered C++ maps are converted to R lists now (\n#437\n).\nHere is an example of something that was not possible before:\n[[cpp11::register]] SEXP ordered_map_to_list_(cpp11::doubles x) {\n  std::map<double, int> counts;\n  int n = x.size();\n  for (int i = 0; i < n; i++) {\n    counts[x[i]]++;\n  }\n  return cpp11::as_sexp(counts);\n}\nCorrectly set names for matrices\nPreviously, cpp11 ignored the column or row names nor allowed to define those from C++ side for a\ndoubles_matrix\nor\nintegers_matrix\n, except if it was converted to a\nSEXP\n(\n#428\n).\nHere is an example of the correction:\n[[cpp11::register]] cpp11::doubles_matrix<> mat_mat_create_dimnames() {\n  cpp11::writable::doubles_matrix<> out(2, 2);\n\n  out(0, 0) = 1;\n  out(0, 1) = 2;\n  out(1, 0) = 3;\n  out(1, 1) = 4;\n\n  cpp11::writable::list dimnames(2);\n  dimnames[0] = cpp11::strings({\"a\", \"b\"});\n  dimnames[1] = cpp11::strings({\"c\", \"d\"});\n\n  out.attr(\"dimnames\") = dimnames;\n\n  return out;\n}\nCopy complex numbers, vectors or matrices from R to C++ and viceversa\nPreviously, I was passing complex numbers from R to C++ and viceversa by converting them to a list with the real part and the imaginary part expressed as the first and second vectors of the list. Now it is possible to pass them directly (\n#427\n).\nHere is an example of something that was not possible before:\ntest_that(\"vector objects can be created, filled, and copied\") {\n  cpp11::writable::complexes v(2);\n  v[0] = std::complex<double>(1, 2);\n  v[1] = std::complex<double>(3, 4);\n\n  cpp11::complexes vc = v;\n\n  expect_true(v.size() == vc.size());\n\n  for (int i = 0; i < 2; ++i) {\n   expect_true(v[i] == vc[i]);\n  }\n}\nDocument functions with Roxygen directly in C++ scripts\nIn order to reduce clutter in my workflow, I added some code to be able to roxygenise directly in the cpp files rather than document the functions by separate (\n#440\n).\nHere is an example of something that was not possible before:\n#include \"cpp11/doubles.hpp\"\nusing namespace cpp11;\n\n/* roxygen start\n@title Roxygenised x plus 1\n@param x numeric value\n@description Dummy function to test roxygen2. It adds 1.0 to a double.\n@export\n@examples roxcpp_(1.0)\nroxygen end */\n[[cpp11::register]] double roxcpp_(double x) {\n  double y = x + 1.0;\n  return y;\n}\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\npacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "About From cpp11 description: “Provides a header only, C++11 interface to R’s C interface. Compared to other approaches ‘cpp11’ strives to be safe against long jumps from the C API as well as C++ exceptions, conform to normal R function semantic...",
+    "meta_keywords": null,
+    "og_description": "About From cpp11 description: “Provides a header only, C++11 interface to R’s C interface. Compared to other approaches ‘cpp11’ strives to be safe against long jumps from the C API as well as C++ exceptions, conform to normal R function semantic...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Cpp11 pull requests to improve the integration of R and C++ | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "About From cpp11 description: “Provides a header only, C++11 interface to R’s C interface. Compared to other approaches ‘cpp11’ strives to be safe against long jumps from the C API as well as C++ exceptions, conform to normal R function semantic...",
+    "twitter_title": "Cpp11 pull requests to improve the integration of R and C++ | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/01/cpp11-pull-requests-to-improve-the-integration-of-r-and-c/",
+    "word_count": 856
+  }
+}

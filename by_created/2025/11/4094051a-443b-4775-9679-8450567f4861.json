@@ -1,0 +1,139 @@
+{
+  "uuid": "4094051a-443b-4775-9679-8450567f4861",
+  "created_at": "2025-11-17 20:39:26",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/10/geocode-address-text-strings-using-tidygeocoder/",
+    "crawled_at": "2025-11-17T10:01:41.933327",
+    "external_links": [
+      {
+        "href": "https://ikashnitsky.github.io/2023/geocoding/index.html",
+        "text": "Ilya Kashnitsky"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v.3.0",
+        "text": "2022 BSSD dataviz course"
+      },
+      {
+        "href": "https://docs.google.com/spreadsheets/d/1YlfLQc_aOOiTqaSGu5TI70OQy1ewTa_Ti0qAEOEcy58",
+        "text": "here"
+      },
+      {
+        "href": "https://30daymapchallenge.com/",
+        "text": "#30DayMapChallenge"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/map-borders/",
+        "text": "separate post"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/map-borders/",
+        "text": "The easiest way to radically improve map aesthetics"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2020/background-data/",
+        "text": "Show all data in the background of your faceted ggplot"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2019/dotplot/",
+        "text": "Dotplot – the single most useful yet largely neglected dataviz type"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/shrink-space/",
+        "text": "Save space in faceted plots"
+      },
+      {
+        "href": "https://ikashnitsky.github.io/2023/geocoding/index.html",
+        "text": "Ilya Kashnitsky"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Geocode address text strings using tidygeocoder | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/ikashnitsky.github.io/2023/geocoding/index_files/figure-html/unnamed-chunk-6-1.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ilya-kashnitsky/",
+        "text": "Ilya Kashnitsky"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379572 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Geocode address text strings using tidygeocoder</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 31, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ilya-kashnitsky/\">Ilya Kashnitsky</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ikashnitsky.github.io/2023/geocoding/index.html\"> Ilya Kashnitsky</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--> <hr/>\n<p>Deriving coordinates from a string of text that represents a physical location on Earth is a common geo data processing task. A usual use case would be an address question in a survey. There is a way to automate queries to a special GIS service so that it takes a text string as an input and returns the geographic coordinates. This used to be quite a challenging task since it required obtaining an API access to the GIS service like Google Maps. Things changed radically with the appearance of <code>tidygeocoder</code> that queries the free Open Street Map.</p>\n<p>In this tiny example I’m using the birth places that students of my <a href=\"https://github.com/ikashnitsky/dataviz-bssd/releases/tag/v.3.0\" rel=\"nofollow\" target=\"_blank\">2022 BSSD dataviz course</a> kindly contributed. In the class I asked students to fill a Google Form consisting of just two fields – city and country of birth. The resulting small dataset is <a href=\"https://docs.google.com/spreadsheets/d/1YlfLQc_aOOiTqaSGu5TI70OQy1ewTa_Ti0qAEOEcy58\" rel=\"nofollow\" target=\"_blank\">here</a></p>\n<div class=\"cell\">\n<pre>library(tidyverse)\nlibrary(sf)\n\n# download the data\n# https://stackoverflow.com/a/28986107/4638884\nlibrary(gsheet)\n\nraw &lt;- gsheet2tbl(\"https://docs.google.com/spreadsheets/d/1YlfLQc_aOOiTqaSGu5TI70OQy1ewTa_Ti0qAEOEcy58\")\n\n# clean a bit and join both fields in one text string \ndf &lt;- raw %&gt;% \n    janitor::clean_names() %&gt;% \n    drop_na() %&gt;% \n    mutate(text_to_geocode = paste(city_settlement, country, sep = \", \"))</pre>\n</div>\n<p>Now we are ready to unleash the power of <code>tidygeocoder</code>. The way the main unction in the package works is very similar to <code>mutate</code> – you just specify which column of the dataset contains the text string to geocode, and it return the geographic coordinates.</p>\n<div class=\"cell\">\n<pre>library(tidygeocoder)\n\ndf_geocoded &lt;- df %&gt;% \n    geocode(text_to_geocode, method = \"osm\")</pre>\n</div>\n<p>The magic has already happened. The rest is just the routines to drop the points on the map. Yes, I am submitting this as my first 2023 entry to the <a href=\"https://30daymapchallenge.com/\" rel=\"nofollow\" target=\"_blank\"><code>#30DayMapChallenge</code></a> =)</p>\n<div class=\"cell\">\n<pre># convert coordinates to an sf object\ndf_plot &lt;- df_geocoded %&gt;% \n    drop_na() %&gt;% \n    st_as_sf(\n        coords = c(\"long\", \"lat\"),\n        crs = 4326\n    )</pre>\n</div>\n<p>Next are several steps to plot countries of the worlds as the background map layer. Note that I’m using the trick of producing a separate lines layer for the country borders, there is a <a href=\"https://ikashnitsky.phd/2023/map-borders/\" rel=\"nofollow\" target=\"_blank\">separate post</a> about this small dataviz trick.</p>\n<div class=\"cell\">\n<pre># get world map outline (you might need to install the package)\nworld_outline &lt;- spData::world %&gt;% \n    st_as_sf()\n\n# let's use a fancy projection\nworld_outline_robinson &lt;- world_outline %&gt;% \n    st_transform(crs = \"ESRI:54030\")\n\ncountry_borders &lt;- world_outline_robinson %&gt;% \n    rmapshaper::ms_innerlines()</pre>\n</div>\n<p>Now everything is ready to map!</p>\n<div class=\"cell\">\n<pre># map!\nworld_outline_robinson %&gt;% \n    filter(!iso_a2 == \"AQ\") %&gt;% # get rid of Antarctica\n    ggplot()+\n    geom_sf(fill = \"#269999\", color = NA)+\n    geom_sf(data = country_borders, size = .25, color = \"#269999\" %&gt;% prismatic::clr_lighten())+\n    geom_sf(\n        data = df_plot, fill = \"#dafa26\", \n        color = \"#dafa26\" %&gt;% prismatic::clr_darken(),\n        size = 1.5, shape = 21\n    )+\n    coord_sf(datum = NA)+\n    theme_minimal(base_family = \"Atkinson Hyperlegible\")+\n    labs(\n        title = \"Birth places of the participants\",\n        subtitle = \"Barcelona Summer School of Demography dataviz course at CED, July 2022\",\n        caption = \"@ikashnitsky.phd\"\n    )+\n    theme(\n        text = element_text(color = \"#ccffff\"),\n        plot.background = element_rect(fill = \"#042222\", color = NA),\n        axis.text = element_blank(),\n        plot.title = element_text(face = 2, size = 18, color = \"#ccffff\")\n    )</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/ikashnitsky.github.io/2023/geocoding/index_files/figure-html/unnamed-chunk-6-1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:100.0%\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/ikashnitsky.github.io/2023/geocoding/index_files/figure-html/unnamed-chunk-6-1.png?w=578&amp;ssl=1\" style=\"width:100.0%\"/></noscript></p>\n</div>\n</div>\n<p>That’s it. Going from text to point on the map has never been easier.</p>\n<hr/>\n<div class=\"callout-note callout callout-style-default callout-captioned\">\n<div class=\"callout-header d-flex align-content-center\">\n<div class=\"callout-icon-container\">\n<i class=\"callout-icon\"></i>\n</div>\n<div class=\"callout-caption-container flex-fill\">\nThis post is one in the <strong>dataviz course series</strong>. Other posts:\n</div>\n</div>\n<div class=\"callout-body-container callout-body\">\n<ul>\n<li><a href=\"https://ikashnitsky.phd/2023/map-borders/\" rel=\"nofollow\" target=\"_blank\">The easiest way to radically improve map aesthetics</a></li>\n<li><a href=\"https://ikashnitsky.phd/2020/background-data/\" rel=\"nofollow\" target=\"_blank\">Show all data in the background of your faceted ggplot</a></li>\n<li><a href=\"https://ikashnitsky.phd/2019/dotplot/\" rel=\"nofollow\" target=\"_blank\">Dotplot – the single most useful yet largely neglected dataviz type</a></li>\n<li><a href=\"https://ikashnitsky.phd/2023/shrink-space/\" rel=\"nofollow\" target=\"_blank\">Save space in faceted plots</a></li>\n</ul>\n</div>\n</div>\n<!-- -->\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ikashnitsky.github.io/2023/geocoding/index.html\"> Ilya Kashnitsky</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Geocode address text strings using tidygeocoder\nPosted on\nOctober 31, 2023\nby\nIlya Kashnitsky\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nIlya Kashnitsky\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDeriving coordinates from a string of text that represents a physical location on Earth is a common geo data processing task. A usual use case would be an address question in a survey. There is a way to automate queries to a special GIS service so that it takes a text string as an input and returns the geographic coordinates. This used to be quite a challenging task since it required obtaining an API access to the GIS service like Google Maps. Things changed radically with the appearance of\ntidygeocoder\nthat queries the free Open Street Map.\nIn this tiny example I’m using the birth places that students of my\n2022 BSSD dataviz course\nkindly contributed. In the class I asked students to fill a Google Form consisting of just two fields – city and country of birth. The resulting small dataset is\nhere\nlibrary(tidyverse)\nlibrary(sf)\n\n# download the data\n# https://stackoverflow.com/a/28986107/4638884\nlibrary(gsheet)\n\nraw <- gsheet2tbl(\"https://docs.google.com/spreadsheets/d/1YlfLQc_aOOiTqaSGu5TI70OQy1ewTa_Ti0qAEOEcy58\")\n\n# clean a bit and join both fields in one text string \ndf <- raw %>% \n    janitor::clean_names() %>% \n    drop_na() %>% \n    mutate(text_to_geocode = paste(city_settlement, country, sep = \", \"))\nNow we are ready to unleash the power of\ntidygeocoder\n. The way the main unction in the package works is very similar to\nmutate\n– you just specify which column of the dataset contains the text string to geocode, and it return the geographic coordinates.\nlibrary(tidygeocoder)\n\ndf_geocoded <- df %>% \n    geocode(text_to_geocode, method = \"osm\")\nThe magic has already happened. The rest is just the routines to drop the points on the map. Yes, I am submitting this as my first 2023 entry to the\n#30DayMapChallenge\n=)\n# convert coordinates to an sf object\ndf_plot <- df_geocoded %>% \n    drop_na() %>% \n    st_as_sf(\n        coords = c(\"long\", \"lat\"),\n        crs = 4326\n    )\nNext are several steps to plot countries of the worlds as the background map layer. Note that I’m using the trick of producing a separate lines layer for the country borders, there is a\nseparate post\nabout this small dataviz trick.\n# get world map outline (you might need to install the package)\nworld_outline <- spData::world %>% \n    st_as_sf()\n\n# let's use a fancy projection\nworld_outline_robinson <- world_outline %>% \n    st_transform(crs = \"ESRI:54030\")\n\ncountry_borders <- world_outline_robinson %>% \n    rmapshaper::ms_innerlines()\nNow everything is ready to map!\n# map!\nworld_outline_robinson %>% \n    filter(!iso_a2 == \"AQ\") %>% # get rid of Antarctica\n    ggplot()+\n    geom_sf(fill = \"#269999\", color = NA)+\n    geom_sf(data = country_borders, size = .25, color = \"#269999\" %>% prismatic::clr_lighten())+\n    geom_sf(\n        data = df_plot, fill = \"#dafa26\", \n        color = \"#dafa26\" %>% prismatic::clr_darken(),\n        size = 1.5, shape = 21\n    )+\n    coord_sf(datum = NA)+\n    theme_minimal(base_family = \"Atkinson Hyperlegible\")+\n    labs(\n        title = \"Birth places of the participants\",\n        subtitle = \"Barcelona Summer School of Demography dataviz course at CED, July 2022\",\n        caption = \"@ikashnitsky.phd\"\n    )+\n    theme(\n        text = element_text(color = \"#ccffff\"),\n        plot.background = element_rect(fill = \"#042222\", color = NA),\n        axis.text = element_blank(),\n        plot.title = element_text(face = 2, size = 18, color = \"#ccffff\")\n    )\nThat’s it. Going from text to point on the map has never been easier.\nThis post is one in the\ndataviz course series\n. Other posts:\nThe easiest way to radically improve map aesthetics\nShow all data in the background of your faceted ggplot\nDotplot – the single most useful yet largely neglected dataviz type\nSave space in faceted plots\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nIlya Kashnitsky\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Deriving coordinates from a string of text that represents a physical location on Earth is a common geo data processing task. A usual use case would be an address question in a survey. There is a way to automate queries to a special GIS service so th...",
+    "meta_keywords": null,
+    "og_description": "Deriving coordinates from a string of text that represents a physical location on Earth is a common geo data processing task. A usual use case would be an address question in a survey. There is a way to automate queries to a special GIS service so th...",
+    "og_image": "https://ikashnitsky.github.io/2023/geocoding/index_files/figure-html/unnamed-chunk-6-1.png",
+    "og_title": "Geocode address text strings using tidygeocoder | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.3,
+    "sitemap_lastmod": "2023-10-31T23:00:00+00:00",
+    "twitter_description": "Deriving coordinates from a string of text that represents a physical location on Earth is a common geo data processing task. A usual use case would be an address question in a survey. There is a way to automate queries to a special GIS service so th...",
+    "twitter_title": "Geocode address text strings using tidygeocoder | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/10/geocode-address-text-strings-using-tidygeocoder/",
+    "word_count": 658
+  }
+}

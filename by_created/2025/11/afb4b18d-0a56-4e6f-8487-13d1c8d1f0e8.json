@@ -1,0 +1,139 @@
+{
+  "uuid": "afb4b18d-0a56-4e6f-8487-13d1c8d1f0e8",
+  "created_at": "2025-11-22 19:59:13",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/02/why-we-forked-nixpkgs/",
+    "crawled_at": "2025-11-22T10:53:55.291985",
+    "external_links": [
+      {
+        "href": "https://b-rodrigues.github.io/posts/2025-02-17-rstats-on-nix.html",
+        "text": "Econometrics and Free Software"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/rstats-on-nix/nixpkgs/tree/2024-12-14",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/rstats-on-nix/daily_cran/blob/master/readme.md",
+        "text": "this repository"
+      },
+      {
+        "href": "https://www.cachix.org/",
+        "text": "Cachix"
+      },
+      {
+        "href": "https://www.cachix.org/about",
+        "text": "Domen Kožar"
+      },
+      {
+        "href": "https://github.com/rstats-on-nix/monitor_health/actions",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/mihem",
+        "text": "Michael Heming"
+      },
+      {
+        "href": "https://docs.ropensci.org/rix/articles/e-configuring-ide.html",
+        "text": "new vignette"
+      },
+      {
+        "href": "https://b-rodrigues.github.io/posts/2025-02-17-rstats-on-nix.html",
+        "text": "Econometrics and Free Software"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Why we forked nixpkgs | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://b-rodrigues.github.io/assets/img/fork.webp"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/econometrics-and-free-software/",
+        "text": "Econometrics and Free Software"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-390658 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Why we forked nixpkgs</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 16, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/econometrics-and-free-software/\">Econometrics and Free Software</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://b-rodrigues.github.io/posts/2025-02-17-rstats-on-nix.html\"> Econometrics and Free Software</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"text-align: center;\">\n<p>\n<a> <img data-lazy-src=\"https://b-rodrigues.github.io/assets/img/fork.webp\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 50%; height: auto;\"/><noscript><img src=\"https://b-rodrigues.github.io/assets/img/fork.webp\" style=\"width: 50%; height: auto;\"/></noscript> </a>\n</p>\n</div>\n<section class=\"level2\" id=\"heres-why\">\n<h2 class=\"anchored\" data-anchor-id=\"heres-why\">Here’s why</h2>\n<p><code>nixpkgs</code> is a GitHub repository that contains tens of thousands of Nix expressions used by the Nix package manager to install software. By default, the nix package manager will pull expressions from <code>NixOS/nixpkgs</code>, but when using <code>{rix}</code> our fork <code>rstats-on-nix/nixpkgs</code> is used instead.</p>\n<p>Because forks can sometimes be a bit controversial, we decided a blog post was in order.</p>\n<p>First of all, let’s make something clear: this doesn’t mean that we don’t contribute to upstream anymore, quite the contrary. But Nix is first and foremost the package manager of a Linux distribution, NixOS, and as such, the way it does certain things only make sense in that context. For our needs, having a fork gives us more flexibility. Let me explain.</p>\n<p>As you’ll know, if you’ve been using <code>{rix}</code> and thus Nix, it is possible to use a commit of the <code>nixpkgs</code> GitHub repository as the source for your packages. For example, the <code>6a9bda32519e710a0c0ab8ecfabe9307ab90ef0c</code> commit of <code>nixpkgs</code> will provide <code>{dplyr}</code> version 1.1.4 while this commit <code>407f8825b321617a38b86a4d9be11fd76d513da2</code> will provide version 1.0.7.</p>\n<p>While it is technically possible for Nix to provide many versions of the same package (for example, you can install the latest Emacs by installing the <code>emacs</code> package, or Emacs 28 by installing <code>emacs28</code>) this ultimately depends on whether the maintainer wishes to do so, or whether it is practical. As you can imagine, with more than 20’000 CRAN and Bioconductor packages, that is not possible for us (by “us”, I mean the maintainers of the R ecosystem for Nix). So for a given <code>nixpkgs</code> commit, you won’t be able to <em>easily</em> install a specific version of <code>{dplyr}</code> that is not included in that particular <code>nixpkgs</code> commit. Instead, you can install it from source, and this is possible with <code>{rix}</code> by writing something like:</p>\n<div class=\"cell\">\n<pre>rix(..., r_pkgs = \"<a class=\"__cf_email__\" data-cfemail=\"cfabbfa3b6bd8ffee1ffe1f8\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>\", ...)</pre>\n</div>\n<p>but because this attempts to install the package from source, it can fail if that package needs Nix-specific fixes to work.</p>\n<p>Also, it isn’t practical to update the whole of the R packages set on Nix every day: so while CRAN and Bioconductor get updates daily, the R packages set on Nix gets updated only around new releases of R. Again, this is a consequence of Nix being first and foremost the package manager of a Linux distribution with its own governance and way of doing things.</p>\n<p>This is where the <code>rstats-on-nix</code> fork of <code>nixpkgs</code> is interesting: because it is a fork, we can afford to do things in a way that could not be possible or practical for upstream.</p>\n<p>The first thing this fork allows us to do is offer a daily snapshot of CRAN. Every day, thanks to Github Actions, the R packages set gets updated, and the result commited to a dated branch. This has been going on since the 14th of December 2024 (see <a href=\"https://github.com/rstats-on-nix/nixpkgs/tree/2024-12-14\" rel=\"nofollow\" target=\"_blank\">here</a>). So when you set a date as in <code>rix(date = \"2024-12-14\", ...)</code> this the fork that is going to get used. But this doesn’t mean that we recommend you use any date from the <code>rstats-on-nix/nixpkgs</code> fork: instead, each Monday, another action uses this fork and tries to build a set of popular packages on Linux and macOS, and only if this succeeds is the date added through a PR to the list of available dates on <code>{rix}</code>!</p>\n<p>The reason this is done like this is to manage another <em>risk</em> of the upstream <code>nixpkgs</code>. As you know, <code>nixpkgs</code> is huge, and though the utmost care is taken by contributors and the PR review process is very strict, it can happen that updating packages breaks other packages. For example recently RStudio was in a broken state due to an issue in one its dependencies, <code>boost</code>. This is not the fault of anyone in particular: it’s just that packages get updated and packages that depend on them should get updated as well: but if that doesn’t happen quickly enough, the <code>nixpkgs</code> maintainer faces a conundrum. Either he or she doesn’t update the package because it breaks others, but not updating a package could be a security vulnerability, or he or she updates the package, but now others, perhaps less critical packages are broken and need to be fixed, either by their upstream developers, or by the <code>nixpkgs</code> maintainer of said packages. In the case of RStudio a fix was proposed and promptly merged, but if you wanted to install RStudio during the time it took to fix it, you would have faced an error message, which isn’t great if all you want is use Nix shells as development environments.</p>\n<p>So for us, having a fork allows us to backport these fixes and so if you try to install RStudio using the latest available date, which is <code>\"2025-02-10\"</code>, it’s going to work, whereas if you tried to build it on that date using upstream <code>nixpkgs</code> you’d be facing an error!</p>\n<p>We spent quite some time backporting fixes: we went back all the way to 2019. The way this works, is that we start by checking out a <code>nixpkgs</code> commit on selected dates, then we “update” the R packages set by using the Posit CRAN and Bioconductor daily snapshots. Then, we backport as many fixes as possible, and ensure that a selection of popular packages work on both x86-linux (which includes Windows, through WSL) and aarch64-darwin (the M-series of Macs). Then we commit everything to a dated branch of the <code>rstats-on-nix/nixpkgs</code> fork. You can check out all the available dates by running: <code>rix::available_dates()</code>. We’re pretty confindent that you should not face any issues when using Nix to build reproducible environments for R. However, should you face a problem, don’t hesitate to open an issue!</p>\n<p>We have now packages and R versions working on Linux and macOS from March 2019 to now. See <a href=\"https://github.com/rstats-on-nix/daily_cran/blob/master/readme.md\" rel=\"nofollow\" target=\"_blank\">this repository</a> that contains the scripts that allowed us to do it. Backporting fixes was especially important for Apple Silicon computers, as it took some time for this platform to work correctly on Nix. By backporting fixes, we can now provide olders versions of these packages for Apple Silicon as well!</p>\n<p>Using this approach, our fork now contains many more versions of working R packages than upstream. <code>{rix}</code> will thus likely keep pointing towards our fork in the future, and not upstream anymore. This should provide a much better user experience. An issue with our fork though, is that by backporting fixes, we essentially create new Nix packages that are not included in upstream, and thus, these are not built by Hydra, Nix’s CI platform which builds binary packages. In practice this means that anyone using our fork will have to compile many packages from source. Now this is pretty bad, as building packages from source takes quite some time. But fear not, because thanks to <a href=\"https://www.cachix.org/\" rel=\"nofollow\" target=\"_blank\">Cachix</a> we now also have a dedicated binary cache of packages that complements the default, public Nix cache! We provide instructions on how to use Cachix, it’s very easy, it’s just running 2 additional commands after installing Nix. Using Cachix speeds up the installation process of packages tremendously. I want to give my heartfelt thanks to <a href=\"https://www.cachix.org/about\" rel=\"nofollow\" target=\"_blank\">Domen Kožar</a> for sponsoring the cache!</p>\n<p>Another thing we do with our fork is run an action every day at midnight, that monitors the <em>health</em> of the R packages set. Of course, we don’t build every CRAN package, merely a handful, but these are among the most popular or the most <em>at-risk</em> of being in a broken state. See <a href=\"https://github.com/rstats-on-nix/monitor_health/actions\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n</section>\n<section class=\"level2\" id=\"also-theres-a-new-rix-release-on-cran\">\n<h2 class=\"anchored\" data-anchor-id=\"also-theres-a-new-rix-release-on-cran\">Also, there’s a new rix release on CRAN</h2>\n<p><code>{rix}</code> now handles remote packages that have remote dependencies (themselves with remote dependencies) much better thanks to code by <a href=\"https://github.com/mihem\" rel=\"nofollow\" target=\"_blank\">Michael Heming</a>.</p>\n<p>We also spent quite some time making <code>{rix}</code> work better with IDEs and have also documented that in a <a href=\"https://docs.ropensci.org/rix/articles/e-configuring-ide.html\" rel=\"nofollow\" target=\"_blank\">new vignette</a>. The difference with previous releases of <code>{rix}</code>, is that now when a user supplies an IDE name to the <code>ide</code> argument of the <code>rix()</code> function, that IDE will get installed by Nix, which was previously not the case. This only really affects VS Code, as before, setting <code>ide = \"code\"</code> would only add the <code>{languageserver}</code> server package to the list of R packages to install. That was confusing, because if <code>ide = \"rstudio\"</code>, then RStudio would be installed. So we decided that if <code>ide = \"some editor\"</code>, then that editor should be installed by Nix. The vignette linked above explains in great detail how you can configure your editor to work with Nix shells.</p>\n<p>If you decide to give <code>{rix}</code> a try, please let us know how it goes!</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://b-rodrigues.github.io/posts/2025-02-17-rstats-on-nix.html\"> Econometrics and Free Software</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Why we forked nixpkgs\nPosted on\nFebruary 16, 2025\nby\nEconometrics and Free Software\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nEconometrics and Free Software\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nHere’s why\nnixpkgs\nis a GitHub repository that contains tens of thousands of Nix expressions used by the Nix package manager to install software. By default, the nix package manager will pull expressions from\nNixOS/nixpkgs\n, but when using\n{rix}\nour fork\nrstats-on-nix/nixpkgs\nis used instead.\nBecause forks can sometimes be a bit controversial, we decided a blog post was in order.\nFirst of all, let’s make something clear: this doesn’t mean that we don’t contribute to upstream anymore, quite the contrary. But Nix is first and foremost the package manager of a Linux distribution, NixOS, and as such, the way it does certain things only make sense in that context. For our needs, having a fork gives us more flexibility. Let me explain.\nAs you’ll know, if you’ve been using\n{rix}\nand thus Nix, it is possible to use a commit of the\nnixpkgs\nGitHub repository as the source for your packages. For example, the\n6a9bda32519e710a0c0ab8ecfabe9307ab90ef0c\ncommit of\nnixpkgs\nwill provide\n{dplyr}\nversion 1.1.4 while this commit\n407f8825b321617a38b86a4d9be11fd76d513da2\nwill provide version 1.0.7.\nWhile it is technically possible for Nix to provide many versions of the same package (for example, you can install the latest Emacs by installing the\nemacs\npackage, or Emacs 28 by installing\nemacs28\n) this ultimately depends on whether the maintainer wishes to do so, or whether it is practical. As you can imagine, with more than 20’000 CRAN and Bioconductor packages, that is not possible for us (by “us”, I mean the maintainers of the R ecosystem for Nix). So for a given\nnixpkgs\ncommit, you won’t be able to\neasily\ninstall a specific version of\n{dplyr}\nthat is not included in that particular\nnixpkgs\ncommit. Instead, you can install it from source, and this is possible with\n{rix}\nby writing something like:\nrix(..., r_pkgs = \"\n[email protected]\n\", ...)\nbut because this attempts to install the package from source, it can fail if that package needs Nix-specific fixes to work.\nAlso, it isn’t practical to update the whole of the R packages set on Nix every day: so while CRAN and Bioconductor get updates daily, the R packages set on Nix gets updated only around new releases of R. Again, this is a consequence of Nix being first and foremost the package manager of a Linux distribution with its own governance and way of doing things.\nThis is where the\nrstats-on-nix\nfork of\nnixpkgs\nis interesting: because it is a fork, we can afford to do things in a way that could not be possible or practical for upstream.\nThe first thing this fork allows us to do is offer a daily snapshot of CRAN. Every day, thanks to Github Actions, the R packages set gets updated, and the result commited to a dated branch. This has been going on since the 14th of December 2024 (see\nhere\n). So when you set a date as in\nrix(date = \"2024-12-14\", ...)\nthis the fork that is going to get used. But this doesn’t mean that we recommend you use any date from the\nrstats-on-nix/nixpkgs\nfork: instead, each Monday, another action uses this fork and tries to build a set of popular packages on Linux and macOS, and only if this succeeds is the date added through a PR to the list of available dates on\n{rix}\n!\nThe reason this is done like this is to manage another\nrisk\nof the upstream\nnixpkgs\n. As you know,\nnixpkgs\nis huge, and though the utmost care is taken by contributors and the PR review process is very strict, it can happen that updating packages breaks other packages. For example recently RStudio was in a broken state due to an issue in one its dependencies,\nboost\n. This is not the fault of anyone in particular: it’s just that packages get updated and packages that depend on them should get updated as well: but if that doesn’t happen quickly enough, the\nnixpkgs\nmaintainer faces a conundrum. Either he or she doesn’t update the package because it breaks others, but not updating a package could be a security vulnerability, or he or she updates the package, but now others, perhaps less critical packages are broken and need to be fixed, either by their upstream developers, or by the\nnixpkgs\nmaintainer of said packages. In the case of RStudio a fix was proposed and promptly merged, but if you wanted to install RStudio during the time it took to fix it, you would have faced an error message, which isn’t great if all you want is use Nix shells as development environments.\nSo for us, having a fork allows us to backport these fixes and so if you try to install RStudio using the latest available date, which is\n\"2025-02-10\"\n, it’s going to work, whereas if you tried to build it on that date using upstream\nnixpkgs\nyou’d be facing an error!\nWe spent quite some time backporting fixes: we went back all the way to 2019. The way this works, is that we start by checking out a\nnixpkgs\ncommit on selected dates, then we “update” the R packages set by using the Posit CRAN and Bioconductor daily snapshots. Then, we backport as many fixes as possible, and ensure that a selection of popular packages work on both x86-linux (which includes Windows, through WSL) and aarch64-darwin (the M-series of Macs). Then we commit everything to a dated branch of the\nrstats-on-nix/nixpkgs\nfork. You can check out all the available dates by running:\nrix::available_dates()\n. We’re pretty confindent that you should not face any issues when using Nix to build reproducible environments for R. However, should you face a problem, don’t hesitate to open an issue!\nWe have now packages and R versions working on Linux and macOS from March 2019 to now. See\nthis repository\nthat contains the scripts that allowed us to do it. Backporting fixes was especially important for Apple Silicon computers, as it took some time for this platform to work correctly on Nix. By backporting fixes, we can now provide olders versions of these packages for Apple Silicon as well!\nUsing this approach, our fork now contains many more versions of working R packages than upstream.\n{rix}\nwill thus likely keep pointing towards our fork in the future, and not upstream anymore. This should provide a much better user experience. An issue with our fork though, is that by backporting fixes, we essentially create new Nix packages that are not included in upstream, and thus, these are not built by Hydra, Nix’s CI platform which builds binary packages. In practice this means that anyone using our fork will have to compile many packages from source. Now this is pretty bad, as building packages from source takes quite some time. But fear not, because thanks to\nCachix\nwe now also have a dedicated binary cache of packages that complements the default, public Nix cache! We provide instructions on how to use Cachix, it’s very easy, it’s just running 2 additional commands after installing Nix. Using Cachix speeds up the installation process of packages tremendously. I want to give my heartfelt thanks to\nDomen Kožar\nfor sponsoring the cache!\nAnother thing we do with our fork is run an action every day at midnight, that monitors the\nhealth\nof the R packages set. Of course, we don’t build every CRAN package, merely a handful, but these are among the most popular or the most\nat-risk\nof being in a broken state. See\nhere\n.\nAlso, there’s a new rix release on CRAN\n{rix}\nnow handles remote packages that have remote dependencies (themselves with remote dependencies) much better thanks to code by\nMichael Heming\n.\nWe also spent quite some time making\n{rix}\nwork better with IDEs and have also documented that in a\nnew vignette\n. The difference with previous releases of\n{rix}\n, is that now when a user supplies an IDE name to the\nide\nargument of the\nrix()\nfunction, that IDE will get installed by Nix, which was previously not the case. This only really affects VS Code, as before, setting\nide = \"code\"\nwould only add the\n{languageserver}\nserver package to the list of R packages to install. That was confusing, because if\nide = \"rstudio\"\n, then RStudio would be installed. So we decided that if\nide = \"some editor\"\n, then that editor should be installed by Nix. The vignette linked above explains in great detail how you can configure your editor to work with Nix shells.\nIf you decide to give\n{rix}\na try, please let us know how it goes!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nEconometrics and Free Software\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Here’s why nixpkgs is a GitHub repository that contains tens of thousands of Nix expressions used by the Nix package manager to install software. By default, the nix package manager will pull expressions from NixOS/nixpkgs, but when using...",
+    "meta_keywords": null,
+    "og_description": "Here’s why nixpkgs is a GitHub repository that contains tens of thousands of Nix expressions used by the Nix package manager to install software. By default, the nix package manager will pull expressions from NixOS/nixpkgs, but when using...",
+    "og_image": "https://b-rodrigues.github.io/assets/img/fork.webp",
+    "og_title": "Why we forked nixpkgs | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 8,
+    "sitemap_lastmod": null,
+    "twitter_description": "Here’s why nixpkgs is a GitHub repository that contains tens of thousands of Nix expressions used by the Nix package manager to install software. By default, the nix package manager will pull expressions from NixOS/nixpkgs, but when using...",
+    "twitter_title": "Why we forked nixpkgs | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/02/why-we-forked-nixpkgs/",
+    "word_count": 1606
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "uuid": "eb213252-ad9e-4f64-8b8e-df9fb79d8093",
+  "created_at": "2025-11-17 20:41:17",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/01/mcmcglmm-package-for-r/",
+    "crawled_at": "2025-11-17T10:45:22.664006",
+    "external_links": [
+      {
+        "href": "https://ggorjan.blogspot.com/2009/01/mcmcglmm-package-for-r.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://wildevolution.biology.ed.ac.uk/lkruuk/hadfield.html",
+        "text": "Jarrod Hadfield"
+      },
+      {
+        "href": "http://cran.r-project.org/package=MCMCglmm",
+        "text": "MCMCglmm package"
+      },
+      {
+        "href": "http://cran.r-project.org/web/packages/MCMCglmm/vignettes/Tutorial.pdf",
+        "text": "vignette"
+      },
+      {
+        "href": "http://cran.r-project.org/web/packages/MasterBayes/index.html",
+        "text": "MasterBayes"
+      },
+      {
+        "href": "https://ggorjan.blogspot.com/2009/01/mcmcglmm-package-for-r.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "MCMCglmm package for R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-3445670519587707904?l=ggorjan.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-3445670519587707904?l=ggorjan.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/genetics/",
+        "text": "genetics"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-321 post type-post status-publish format-standard hentry category-r-bloggers tag-genetics tag-r tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">MCMCglmm package for R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 29, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2009/01/mcmcglmm-package-for-r.html\"> Gregor Gorjanc</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\"><a href=\"http://wildevolution.biology.ed.ac.uk/lkruuk/hadfield.html\" rel=\"nofollow\" target=\"_blank\">Jarrod Hadfield</a> published <a href=\"http://cran.r-project.org/package=MCMCglmm\" rel=\"nofollow\" target=\"_blank\">MCMCglmm package</a> on CRAN. The package can fit generalised linear mixed models via MCMC methods. Bellow is the abstract from the <a href=\"http://cran.r-project.org/web/packages/MCMCglmm/vignettes/Tutorial.pdf\" rel=\"nofollow\" target=\"_blank\">vignette</a>. The list of supported models is quite impressive. Nice job Jarrod! This is not the first package by Jarrod – there is also interesting (at least to me) package <a href=\"http://cran.r-project.org/web/packages/MasterBayes/index.html\" rel=\"nofollow\" target=\"_blank\">MasterBayes</a>.</div><div style=\"text-align: justify;\"><blockquote>MCMCglmm is a package for fitting Generalised Linear Mixed Models using Markov chain Monte Carlo techniques. Most commonly used distributions like the normal and the Poisson are supported together with some useful but less popular ones like the zero-inflated Poisson and the multinomial. Missing values and left, right and interval censoring are accommodated for all traits. The package also supports multi-trait models where the multiple responses can follow different types of distribution. The package allows various residual and random effect variance structures to be specified including heterogeneous variances, unstructured covariance matrices and random regression (e.g. random slope models). Three special types of variance structure that can be specified are those associated with pedigrees (animal models), phylogenies (the comparative method) and measurement error (meta-analysis). The package makes heavy use of results in Sorensen and Gianola [2002] and Davis [2006] which taken together result in what is hopefully a fast and effcient routine. Most small to medium sized problems should take seconds to a few minutes, but large problems (&gt; 20,000 records) are possible. My interest is in evolutionary biology so there are also several functions for applying tensor analysis [Rice, 2004] to real data and functions for visualising and comparing matrices.</blockquote></div><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-3445670519587707904?l=ggorjan.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-3445670519587707904?l=ggorjan.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-3445670519587707904?l=ggorjan.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2009/01/mcmcglmm-package-for-r.html\"> Gregor Gorjanc</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/genetics/\" rel=\"tag\">genetics</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+    "main_text": "MCMCglmm package for R\nPosted on\nJanuary 29, 2009\nby\nGregor Gorjanc\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGregor Gorjanc\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nJarrod Hadfield\npublished\nMCMCglmm package\non CRAN. The package can fit generalised linear mixed models via MCMC methods. Bellow is the abstract from the\nvignette\n. The list of supported models is quite impressive. Nice job Jarrod! This is not the first package by Jarrod – there is also interesting (at least to me) package\nMasterBayes\n.\nMCMCglmm is a package for fitting Generalised Linear Mixed Models using Markov chain Monte Carlo techniques. Most commonly used distributions like the normal and the Poisson are supported together with some useful but less popular ones like the zero-inflated Poisson and the multinomial. Missing values and left, right and interval censoring are accommodated for all traits. The package also supports multi-trait models where the multiple responses can follow different types of distribution. The package allows various residual and random effect variance structures to be specified including heterogeneous variances, unstructured covariance matrices and random regression (e.g. random slope models). Three special types of variance structure that can be specified are those associated with pedigrees (animal models), phylogenies (the comparative method) and measurement error (meta-analysis). The package makes heavy use of results in Sorensen and Gianola [2002] and Davis [2006] which taken together result in what is hopefully a fast and effcient routine. Most small to medium sized problems should take seconds to a few minutes, but large problems (> 20,000 records) are possible. My interest is in evolutionary biology so there are also several functions for applying tensor analysis [Rice, 2004] to real data and functions for visualising and comparing matrices.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ngenetics\nR\nstatistics",
+    "meta_description": "Jarrod Hadfield published MCMCglmm package on CRAN. The package can fit generalised linear mixed models via MCMC methods. Bellow is the abstract from the vignette. The list of supported models is quite impressive. Nice job Jarrod! This is not the first...",
+    "meta_keywords": "genetics,r,statistics",
+    "og_description": "Jarrod Hadfield published MCMCglmm package on CRAN. The package can fit generalised linear mixed models via MCMC methods. Bellow is the abstract from the vignette. The list of supported models is quite impressive. Nice job Jarrod! This is not the first...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/6715598735361401237-3445670519587707904?l=ggorjan.blogspot.com",
+    "og_title": "MCMCglmm package for R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2,
+    "sitemap_lastmod": "2010-09-06T21:01:35+00:00",
+    "twitter_description": "Jarrod Hadfield published MCMCglmm package on CRAN. The package can fit generalised linear mixed models via MCMC methods. Bellow is the abstract from the vignette. The list of supported models is quite impressive. Nice job Jarrod! This is not the first...",
+    "twitter_title": "MCMCglmm package for R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/01/mcmcglmm-package-for-r/",
+    "word_count": 399
+  }
+}

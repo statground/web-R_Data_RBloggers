@@ -1,0 +1,103 @@
+{
+  "uuid": "3cc74004-49ac-4d59-a7fe-160bc9d192dc",
+  "created_at": "2025-11-17 20:40:39",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/07/two-sample-z-test/",
+    "crawled_at": "2025-11-17T10:31:29.580513",
+    "external_links": [
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-z-test.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-z-test.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Two sample Z-test | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-5911292142891504709?l=statistic-on-air.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-5911292142891504709?l=statistic-on-air.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/todos-logos/",
+        "text": "Todos Logos"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-508 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Two sample Z-test</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-z-test.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><span style=\"font-weight: bold;\">Comparison of the means of two independent groups of samples, taken from two populations with known variance.</span><br/><br/>Is asked to compare the average heights of two groups. The first group (A) consists of individuals of Italian nationality (the variance of the Italian population is 5); the second group is taken from individuals of German nationality (the variance of German population variance is 8.5). The data are given below:<br/><br/><div style=\"text-align: center;\">A: 175, 168, 168, 190, 156, 181, 182, 175, 174, 179<br/>B: 185, 169, 173, 173, 188, 186, 175, 174, 179, 180</div><br/><br/><span class=\"fullpost\">Since we have the variance of the population, we must proceed with a <b>two sample Z-test</b>. Even in this case is not avalilable in R a function to solve the problem, but we can easily create it ourselves.<br/><br/>$$Z=\\frac{(\\overline{x}_1-\\overline{x}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$$<br/><br/><pre>\nz.test2sam = function(a, b, var.a, var.b){\n   n.a = length(a)\n   n.b = length(b)\n   zeta = (mean(a) - mean(b)) / (sqrt(var.a/n.a + var.b/n.b))\n   return(zeta)\n}</pre><br/><br/>The function <code>z.test2sam</code> provides in output the value of zeta, after receiving in input two vectors (<code>a</code> and <code>b</code>), the variance of the first population (<code>var.a</code>) and the variance of the second population (<code>var.b</code>).<br/>Using this function we obtain: <br/><br/><pre>\na = c(175, 168, 168, 190, 156, 181, 182, 175, 174, 179)\nb = c(185, 169, 173, 173, 188, 186, 175, 174, 179, 180)\n\nz.test2sam(a, b, 5, 8.5)\n[1] -2.926254</pre><br/><br/>The value of zeta is greater than the value of the critical value zeta tabulated for alpha equal to 0.05 (<b>z-tabulated = 1.96</b> for a two-tailed test): then we reject the null hypothesis in favor of the alternative hypothesis. We conclude that the two means are significantly different.</span><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-5911292142891504709?l=statistic-on-air.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-5911292142891504709?l=statistic-on-air.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-5911292142891504709?l=statistic-on-air.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-z-test.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Two sample Z-test\nPosted on\nJuly 22, 2009\nby\nTodos Logos\nin Uncategorized | 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nComparison of the means of two independent groups of samples, taken from two populations with known variance.\nIs asked to compare the average heights of two groups. The first group (A) consists of individuals of Italian nationality (the variance of the Italian population is 5); the second group is taken from individuals of German nationality (the variance of German population variance is 8.5). The data are given below:\nA: 175, 168, 168, 190, 156, 181, 182, 175, 174, 179\nB: 185, 169, 173, 173, 188, 186, 175, 174, 179, 180\nSince we have the variance of the population, we must proceed with a\ntwo sample Z-test\n. Even in this case is not avalilable in R a function to solve the problem, but we can easily create it ourselves.\n$$Z=\\frac{(\\overline{x}_1-\\overline{x}_2)-(\\mu_1-\\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1}+\\frac{\\sigma_2^2}{n_2}}}$$\nz.test2sam = function(a, b, var.a, var.b){\n   n.a = length(a)\n   n.b = length(b)\n   zeta = (mean(a) - mean(b)) / (sqrt(var.a/n.a + var.b/n.b))\n   return(zeta)\n}\nThe function\nz.test2sam\nprovides in output the value of zeta, after receiving in input two vectors (\na\nand\nb\n), the variance of the first population (\nvar.a\n) and the variance of the second population (\nvar.b\n).\nUsing this function we obtain:\na = c(175, 168, 168, 190, 156, 181, 182, 175, 174, 179)\nb = c(185, 169, 173, 173, 188, 186, 175, 174, 179, 180)\n\nz.test2sam(a, b, 5, 8.5)\n[1] -2.926254\nThe value of zeta is greater than the value of the critical value zeta tabulated for alpha equal to 0.05 (\nz-tabulated = 1.96\nfor a two-tailed test): then we reject the null hypothesis in favor of the alternative hypothesis. We conclude that the two means are significantly different.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Comparison of the means of two independent groups of samples, taken from two populations with known variance.Is asked to compare the average heights of two groups. The first group (A) consists of individuals of Italian nationality (the variance of the ...",
+    "meta_keywords": null,
+    "og_description": "Comparison of the means of two independent groups of samples, taken from two populations with known variance.Is asked to compare the average heights of two groups. The first group (A) consists of individuals of Italian nationality (the variance of the ...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/4274823366855967619-5911292142891504709?l=statistic-on-air.blogspot.com",
+    "og_title": "Two sample Z-test | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.2,
+    "sitemap_lastmod": "2010-09-06T21:00:28+00:00",
+    "twitter_description": "Comparison of the means of two independent groups of samples, taken from two populations with known variance.Is asked to compare the average heights of two groups. The first group (A) consists of individuals of Italian nationality (the variance of the ...",
+    "twitter_title": "Two sample Z-test | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/07/two-sample-z-test/",
+    "word_count": 448
+  }
+}

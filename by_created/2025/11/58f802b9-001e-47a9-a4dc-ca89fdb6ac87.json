@@ -1,0 +1,127 @@
+{
+  "uuid": "58f802b9-001e-47a9-a4dc-ca89fdb6ac87",
+  "created_at": "2025-11-17 20:38:55",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/12/conquering-unequal-variance-with-weighted-least-squares-in-r-a-practical-guide/",
+    "crawled_at": "2025-11-17T09:37:26.482464",
+    "external_links": [
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-12-12/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-12-12/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Conquering Unequal Variance with Weighted Least Squares in R: A Practical Guide | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-2-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-5-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-6-1.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/",
+        "text": "Steven P. Sanderson II, MPH"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-380783 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Conquering Unequal Variance with Weighted Least Squares in R: A Practical Guide</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 11, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/\">Steven P. Sanderson II, MPH</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-12-12/index.html\"> Steve's Data Tips and Tricks</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<section class=\"level1\" id=\"introduction\">\n<h1>Introduction</h1>\n<p>Tired of your least-squares regression model giving wonky results because some data points shout louder than others? Meet Weighted Least Squares (WLS), the superhero of regression, ready to tackle unequal variance (heteroscedasticity) and give your model the justice it deserves! Today, we’ll dive into the world of WLS in R, using base functions for maximum transparency. Buckle up, data warriors!</p>\n</section>\n<section class=\"level1\" id=\"example\">\n<h1>Example</h1>\n<p><strong>The Scenario:</strong> Imagine studying the relationship between exam scores and study hours. But wait, some students took the test multiple times, inflating their data points! This unequal variance can skew your ordinary least squares (OLS) model, making it unreliable. WLS to the rescue!</p>\n<section class=\"level2\" id=\"steps\">\n<h2 class=\"anchored\" data-anchor-id=\"steps\">Steps</h2>\n<p><strong>Step 1: Gathering the Troops (Data):</strong></p>\n<p>Let’s create some simulated data:</p>\n<div class=\"cell\">\n<pre># Generate exam scores and study hours\nset.seed(123)\nscores &lt;- rnorm(100, mean = 70, sd = 10)\nhours &lt;- rnorm(100, mean = 20, sd = 5)\nhours &lt;- rnorm(100, mean = 0, sd = hours * 0.2) # Add heteroscedasticity\n\n# Create a data frame\ndata &lt;- data.frame(scores, hours)</pre>\n</div>\n<p><strong>Step 2: Visualizing the Battlefield:</strong></p>\n<p>A scatter plot is our trusty map:</p>\n<div class=\"cell\">\n<pre>plot(data$hours, data$scores)</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>Do you see those clusters of high-scoring students with more study hours? They’re the loud ones skewing the OLS line.</p>\n<p><strong>Step 3: Building the WLS Wall:</strong></p>\n<p>It’s time to define our weights. We want to give less weight to observations with high variance (those loud students) and more weight to those with low variance. Here’s a simple approach:</p>\n<div class=\"cell\">\n<pre># Calculate inverse of variance\nweights &lt;- 1 / (data$hours)^2\n\n# Fit WLS model\nwls_model &lt;- lm(scores ~ hours, weights = weights, data = data)</pre>\n</div>\n<p><strong>Step 4: Inspecting the Model’s Performance:</strong></p>\n<p>Let’s see if WLS silenced the loud ones:</p>\n<div class=\"cell\">\n<pre>summary(wls_model)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>\nCall:\nlm(formula = scores ~ hours, data = data, weights = weights)\n\nWeighted Residuals:\n    Min      1Q  Median      3Q     Max \n-75.854  -1.456   0.927   3.509  57.472 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   68.524      0.632 108.421   &lt;2e-16 ***\nhours         -1.085      1.480  -0.733    0.465    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 14.65 on 98 degrees of freedom\nMultiple R-squared:  0.00545,   Adjusted R-squared:  -0.004698 \nF-statistic: 0.537 on 1 and 98 DF,  p-value: 0.4654</pre>\n</div>\n</div>\n<p>Compare this summary to your OLS model’s. Do the coefficients and residuals look more sensible?</p>\n<p><strong>Step 5: Visualizing the Conquered Land:</strong></p>\n<p>Time to see if WLS straightened the line:</p>\n<div class=\"cell\">\n<pre>plot(data$hours, data$scores)\nlines(data$hours, wls_model$fitted, col = \"red\")</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-5-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-5-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>Notice how the red WLS line now passes closer to the majority of data points, unlike the blue OLS line that chased the loud ones.</p>\n<p><strong>Step 6: Residuals: The Echoes of Battle:</strong></p>\n<p>Let’s see if the residuals (errors) are under control:</p>\n<div class=\"cell\">\n<pre>plot(data$hours, wls_model$residuals)</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-6-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-6-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>A random scatterplot of residuals is a good sign! No more funky patterns indicating heteroscedasticity.</p>\n<p><strong>The Victory Lap:</strong></p>\n<p>WLS has restored justice to your regression model! Remember, this is just a basic example. You can customize your weights based on your specific data and needs.</p>\n<p><strong>Now it’s your turn!</strong> Try WLS on your own data and see the magic unfold. Remember, data analysis is an adventure, and WLS is your trusty steed. Ride on, data warrior!</p>\n<p><strong>Bonus Tip:</strong> Check out the <code>lmtest</code> and <code>sandwich</code> packages for even more advanced WLS analysis.</p>\n<p>Happy coding!</p>\n</section>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-12-12/index.html\"> Steve's Data Tips and Tricks</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Conquering Unequal Variance with Weighted Least Squares in R: A Practical Guide\nPosted on\nDecember 11, 2023\nby\nSteven P. Sanderson II, MPH\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSteve's Data Tips and Tricks\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nTired of your least-squares regression model giving wonky results because some data points shout louder than others? Meet Weighted Least Squares (WLS), the superhero of regression, ready to tackle unequal variance (heteroscedasticity) and give your model the justice it deserves! Today, we’ll dive into the world of WLS in R, using base functions for maximum transparency. Buckle up, data warriors!\nExample\nThe Scenario:\nImagine studying the relationship between exam scores and study hours. But wait, some students took the test multiple times, inflating their data points! This unequal variance can skew your ordinary least squares (OLS) model, making it unreliable. WLS to the rescue!\nSteps\nStep 1: Gathering the Troops (Data):\nLet’s create some simulated data:\n# Generate exam scores and study hours\nset.seed(123)\nscores <- rnorm(100, mean = 70, sd = 10)\nhours <- rnorm(100, mean = 20, sd = 5)\nhours <- rnorm(100, mean = 0, sd = hours * 0.2) # Add heteroscedasticity\n\n# Create a data frame\ndata <- data.frame(scores, hours)\nStep 2: Visualizing the Battlefield:\nA scatter plot is our trusty map:\nplot(data$hours, data$scores)\nDo you see those clusters of high-scoring students with more study hours? They’re the loud ones skewing the OLS line.\nStep 3: Building the WLS Wall:\nIt’s time to define our weights. We want to give less weight to observations with high variance (those loud students) and more weight to those with low variance. Here’s a simple approach:\n# Calculate inverse of variance\nweights <- 1 / (data$hours)^2\n\n# Fit WLS model\nwls_model <- lm(scores ~ hours, weights = weights, data = data)\nStep 4: Inspecting the Model’s Performance:\nLet’s see if WLS silenced the loud ones:\nsummary(wls_model)\nCall:\nlm(formula = scores ~ hours, data = data, weights = weights)\n\nWeighted Residuals:\n    Min      1Q  Median      3Q     Max \n-75.854  -1.456   0.927   3.509  57.472 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)   68.524      0.632 108.421   <2e-16 ***\nhours         -1.085      1.480  -0.733    0.465    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 14.65 on 98 degrees of freedom\nMultiple R-squared:  0.00545,   Adjusted R-squared:  -0.004698 \nF-statistic: 0.537 on 1 and 98 DF,  p-value: 0.4654\nCompare this summary to your OLS model’s. Do the coefficients and residuals look more sensible?\nStep 5: Visualizing the Conquered Land:\nTime to see if WLS straightened the line:\nplot(data$hours, data$scores)\nlines(data$hours, wls_model$fitted, col = \"red\")\nNotice how the red WLS line now passes closer to the majority of data points, unlike the blue OLS line that chased the loud ones.\nStep 6: Residuals: The Echoes of Battle:\nLet’s see if the residuals (errors) are under control:\nplot(data$hours, wls_model$residuals)\nA random scatterplot of residuals is a good sign! No more funky patterns indicating heteroscedasticity.\nThe Victory Lap:\nWLS has restored justice to your regression model! Remember, this is just a basic example. You can customize your weights based on your specific data and needs.\nNow it’s your turn!\nTry WLS on your own data and see the magic unfold. Remember, data analysis is an adventure, and WLS is your trusty steed. Ride on, data warrior!\nBonus Tip:\nCheck out the\nlmtest\nand\nsandwich\npackages for even more advanced WLS analysis.\nHappy coding!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSteve's Data Tips and Tricks\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction Tired of your least-squares regression model giving wonky results because some data points shout louder than others? Meet Weighted Least Squares (WLS), the superhero of regression, ready to tackle unequal variance (heteroscedasticit...",
+    "meta_keywords": null,
+    "og_description": "Introduction Tired of your least-squares regression model giving wonky results because some data points shout louder than others? Meet Weighted Least Squares (WLS), the superhero of regression, ready to tackle unequal variance (heteroscedasticit...",
+    "og_image": "https://www.spsanderson.com/steveondata/posts/2023-12-12/index_files/figure-html/unnamed-chunk-2-1.png",
+    "og_title": "Conquering Unequal Variance with Weighted Least Squares in R: A Practical Guide | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.6,
+    "sitemap_lastmod": "2023-12-12T05:00:00+00:00",
+    "twitter_description": "Introduction Tired of your least-squares regression model giving wonky results because some data points shout louder than others? Meet Weighted Least Squares (WLS), the superhero of regression, ready to tackle unequal variance (heteroscedasticit...",
+    "twitter_title": "Conquering Unequal Variance with Weighted Least Squares in R: A Practical Guide | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/12/conquering-unequal-variance-with-weighted-least-squares-in-r-a-practical-guide/",
+    "word_count": 717
+  }
+}

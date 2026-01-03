@@ -1,0 +1,257 @@
+{
+  "uuid": "e2121bd3-2041-472a-916b-8d51b8d460d7",
+  "created_at": "2025-11-17 20:39:29",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/10/how-to-load-sas-files-in-r-transitioning-from-sas-to-r-with-seamless-data-integration/",
+    "crawled_at": "2025-11-17T10:04:22.162572",
+    "external_links": [
+      {
+        "href": "https://appsilon.com/transitioning-from-sas-to-r/",
+        "text": "Tag: r - Appsilon | Enterprise R Shiny Dashboards"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://appsilon.com/sas-vs-r-programming/",
+        "text": "offers bespoke interactivity on top of R routines"
+      },
+      {
+        "href": "https://appsilon.com/transitioning-from-sas-to-r/#understanding",
+        "text": "Understanding Different SAS File Types"
+      },
+      {
+        "href": "https://appsilon.com/transitioning-from-sas-to-r/#writing",
+        "text": "How-To: Writing SAS data from R"
+      },
+      {
+        "href": "https://appsilon.com/transitioning-from-sas-to-r/#best-practices",
+        "text": "Best Practices"
+      },
+      {
+        "href": "https://appsilon.com/transitioning-from-sas-to-r/#conclusion",
+        "text": "Conclusion"
+      },
+      {
+        "href": "https://support.sas.com/resources/papers/proceedings/proceedings/sugi27/p069-27.pdf",
+        "text": "types of file objects"
+      },
+      {
+        "href": "https://haven.tidyverse.org/",
+        "text": "haven"
+      },
+      {
+        "href": "https://www.tidyverse.org/",
+        "text": "the tidyverse ecosystem"
+      },
+      {
+        "href": "https://haven.tidyverse.org/articles/semantics.html",
+        "text": "semantics from SAS"
+      },
+      {
+        "href": "https://appsilon.com/tag/quarto/",
+        "text": "Quarto"
+      },
+      {
+        "href": "https://nceas.github.io/sasap-training/materials/reproducible_research_in_r_fairbanks/",
+        "text": "aspect of reproducibility"
+      },
+      {
+        "href": "https://appsilon.com/r-targets-reproducible-data-science-pipeline/",
+        "text": "targets pipeline"
+      },
+      {
+        "href": "https://community.rstudio.com/",
+        "text": "R community"
+      },
+      {
+        "href": "https://communities.sas.com/",
+        "text": "SAS communities"
+      },
+      {
+        "href": "https://appsilon.com/#contact",
+        "text": "We’re here to help"
+      },
+      {
+        "href": "https://appsilon.com/transitioning-from-sas-to-r/",
+        "text": "Tag: r - Appsilon | Enterprise R Shiny Dashboards"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "How to Load SAS Files in R: Transitioning from SAS to R with Seamless Data Integration | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image-4.webp"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A code snippet displaying two labeled vectors in R. The first vector, x1, contains integers with labels",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-25-52.webp"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A code snippet displaying a tibble (a type of data frame in R) with three columns: x1, x2, and z. The x1 column contains integers with associated labels, such as",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-29-00.webp"
+      },
+      {
+        "alt": "A code snippet showcasing a tibble (a specialized data frame in R) with four columns: ID, Name, Value, and na_values. The tibble lists 5 rows of data, where each row corresponds to a unique individual with an associated name, a numerical value, and an NA value in the na_values column.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A code snippet showcasing a tibble (a specialized data frame in R) with four columns: ID, Name, Value, and na_values. The tibble lists 5 rows of data, where each row corresponds to a unique individual with an associated name, a numerical value, and an NA value in the na_values column.",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-47-21.webp"
+      },
+      {
+        "alt": "A split-screen interface from SAS Studio, displaying server files and folders on the left and an output data table on the right.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A split-screen interface from SAS Studio, displaying server files and folders on the left and an output data table on the right.",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-52-15.webp"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A close-up view of SAS Studio. The panel on the left shows a directory with the files",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-00-38.webp"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Statistical Results for the",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-05-44.webp"
+      },
+      {
+        "alt": "A split interface on SAS Studio displaying summaries of two data frames.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A split interface on SAS Studio displaying summaries of two data frames.",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-14-18.webp"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A dark-themed interface displaying the summarised data from the file",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-23-14.webp"
+      },
+      {
+        "alt": "SAS interface is displayed highlighting the process of uploading files.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "SAS interface is displayed highlighting the process of uploading files.",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/photo_2023-10-26_11-35-09-1.webp"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/eduardo-almeida/",
+        "text": "Eduardo Almeida"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379443 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">How to Load SAS Files in R: Transitioning from SAS to R with Seamless Data Integration</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 26, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/eduardo-almeida/\">Eduardo Almeida</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://appsilon.com/transitioning-from-sas-to-r/\"> Tag: r - Appsilon | Enterprise R Shiny Dashboards</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><div><img alt=\"\" class=\"attachment-medium size-medium wp-post-image\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image-4.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"margin-bottom: 15px;\" width=\"450\"/><noscript><img alt=\"\" class=\"attachment-medium size-medium wp-post-image\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image-4.webp\" style=\"margin-bottom: 15px;\" width=\"450\"/></noscript></div><p><span style=\"font-weight: 400;\">Using R as an alternative to SAS (Statistical Analysis System) </span><a href=\"https://appsilon.com/sas-vs-r-programming/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">offers bespoke interactivity on top of R routines</span></a><span style=\"font-weight: 400;\">. It enables </span><b>effective technical handling </b><span style=\"font-weight: 400;\">while </span><b>engaging non-technical users</b><span style=\"font-weight: 400;\"> through interactive data storytelling.</span></p>\n<p><span style=\"font-weight: 400;\">Transitioning from SAS to R can be a challenge for many data analysts and programmers. But the solution is within reach. It can be easy if part of your SAS pipeline produces data that you use to create reports from R. </span></p>\n<p><span style=\"font-weight: 400;\">In this article, we will explore </span><b>how to integrate SAS data into your R workflow</b><span style=\"font-weight: 400;\">, allowing you to harness the strengths of both tools. We will focus on reading and writing SAS data files in R and overcoming common challenges. By the end of this guide, you’ll be well-equipped to bridge the gap between SAS and R, making your data analysis journey smooth and efficient. </span></p>\n<h3><span style=\"font-weight: 400;\">TL;DR:</span></h3>\n<ul>\n<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Transitioning from SAS to R offers enhanced technical functionality, making data interaction more intuitive. </span></li>\n<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Explore how to </span><b>smoothly transition</b><span style=\"font-weight: 400;\"> and </span><b>integrate </b><span style=\"font-weight: 400;\">data from SAS and R.</span></li>\n<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Understand SAS File Types: </span>\n<ul>\n<li aria-level=\"2\" style=\"font-weight: 400;\"><b>Data Files (.sas7bdat) – </b><span style=\"font-weight: 400;\"> hold tabular data similar to R dataframes</span></li>\n<li aria-level=\"2\" style=\"font-weight: 400;\"><b>Catalog Files (.sas7bcat)</b><span style=\"font-weight: 400;\"> – contain dataset metadata</span></li>\n</ul>\n</li>\n<li aria-level=\"1\" style=\"font-weight: 400;\"><b>Read SAS Data in R</b><span style=\"font-weight: 400;\"> and</span><b> Write SAS Data from R</b><span style=\"font-weight: 400;\"> using the </span><b>haven </b><span style=\"font-weight: 400;\">package with practical examples.</span></li>\n<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Best Practices:</span>\n<ul>\n<li aria-level=\"2\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Prioritize reproducibility</span></li>\n<li aria-level=\"2\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Use targets pipeline for routine tasks</span></li>\n<li aria-level=\"2\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Seek guidance (from R/SAS communities and platforms like Stack Overflow)</span></li>\n</ul>\n</li>\n<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">The haven package simplifies SAS and R data interoperability.</span></li>\n</ul>\n<h3><span style=\"font-weight: 400;\">Table of Contents</span></h3>\n<ul>\n<li><a href=\"https://appsilon.com/transitioning-from-sas-to-r/#understanding\" rel=\"nofollow\" target=\"_blank\">Understanding Different SAS File Types</a></li>\n<li><a href=\"https://appsilon.com/transitioning-from-sas-to-r/#writing\" rel=\"nofollow\" target=\"_blank\">How-To: Writing SAS data from R</a></li>\n<li><a href=\"https://appsilon.com/transitioning-from-sas-to-r/#best-practices\" rel=\"nofollow\" target=\"_blank\">Best Practices</a></li>\n<li><a href=\"https://appsilon.com/transitioning-from-sas-to-r/#conclusion\" rel=\"nofollow\" target=\"_blank\">Conclusion</a></li>\n</ul>\n<h2 id=\"understanding\"><span style=\"font-weight: 400;\">Understanding Different SAS File Types</span></h2>\n<p><span style=\"font-weight: 400;\">SAS has many </span><a href=\"https://support.sas.com/resources/papers/proceedings/proceedings/sugi27/p069-27.pdf\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">types of file objects</span></a><span style=\"font-weight: 400;\">. We will explore how to use R to both read and write the following types of SAS objects:</span></p>\n<ol>\n<li style=\"list-style-type: none;\">\n<ol>\n<li><b>Data Files (.sas7bdat):</b><span style=\"font-weight: 400;\"> These files store tabular data, including numeric, character, and date variables. SAS data files are the most common type and similar to R data frames.</span></li>\n<li><b>Catalog Files (.sas7bcat):</b><span style=\"font-weight: 400;\"> Catalog files contain metadata about datasets, including variable formats, labels, and other attributes.</span></li>\n</ol>\n</li>\n</ol>\n<h2 id=\"reading\"><span style=\"font-weight: 400;\">How-To: Reading SAS data</span></h2>\n<p><span style=\"font-weight: 400;\">To read SAS files in R, we can use the {</span><a href=\"https://haven.tidyverse.org/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">haven</span></a><span style=\"font-weight: 400;\">} package, created and maintained by </span><a href=\"https://www.tidyverse.org/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">the tidyverse ecosystem</span></a><span style=\"font-weight: 400;\">. It provides functions to read SAS datasets. </span></p>\n<p><span style=\"font-weight: 400;\">Here’s a step-by-step guide to reading SAS files in R:</span></p>\n<pre>\r\n#install.packages(“haven”)\r\nlibrary(haven)\r\n\r\nsas_data &lt;- read_sas(\"file.sas7bdat\")\r\n</pre>\n<p><span style=\"font-weight: 400;\">You can use this approach both for .sas7bdat and .sas7bcat extension files. </span></p>\n<h3><span style=\"font-weight: 400;\">Encoding Issues</span></h3>\n<p><span style=\"font-weight: 400;\">SAS datasets might not use standard encodings. To handle these issues, specify the encoding when using <code>read_sas()</code>:</span></p>\n<p><code>read_sas(\"file.sas7bdat\", encoding = \"UTF-8\")</code></p>\n<h3><span style=\"font-weight: 400;\">Dealing with SAS Labels</span></h3>\n<p><span style=\"font-weight: 400;\">In R, we handle value labels by using factors. However, SAS does it in a different way (</span><a href=\"https://haven.tidyverse.org/articles/semantics.html\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">semantics from SAS</span></a><span style=\"font-weight: 400;\">). Haven provides the labeled S3 classes to allow importing labeled vectors into R.</span></p>\n<p><span style=\"font-weight: 400;\">From the documentation vignette, it showcases an example on how it can deal with labelled SAS object files.</span></p>\n<pre>\r\nx1 &lt;- labelled(\r\n  sample(1:5), \r\n  c(Good = 1, Bad = 5)\r\n)\r\n\r\nx2 &lt;- labelled(\r\n  c(\"M\", \"F\", \"F\", \"F\", \"M\"), \r\n  c(Male = \"M\", Female = \"F\")\r\n)\r\n\r\ntibble::data_frame(x1, x2, z = 1:5)</pre>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21446\" style=\"width: 286px\"><img aria-describedby=\"caption-attachment-21446\" class=\"size-full wp-image-21446\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-25-52.webp\" decoding=\"async\" height=\"241\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"276\"/><noscript><img \"bad\"=\"\" \"female\"=\"\" \"male\"=\"\" 1=\"\" 5.=\"\" alt=\"A code snippet displaying two labeled vectors in R. The first vector, x1, contains integers with labels \" and=\"\" aria-describedby=\"caption-attachment-21446\" characters=\"\" class=\"size-full wp-image-21446\" contains=\"\" decoding=\"async\" f.\"=\"\" for=\"\" good\"=\"\" height=\"241\" labels=\"\" loading=\"lazy\" m=\"\" second=\"\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-25-52.webp\" the=\"\" value=\"\" vector,=\"\" width=\"276\" with=\"\" x2,=\"\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21446\">Labeled Vectors in R Code Snippet</p></div>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21450\" style=\"width: 335px\"><img aria-describedby=\"caption-attachment-21450\" class=\"size-full wp-image-21450\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-29-00.webp\" decoding=\"async\" height=\"141\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"325\"/><noscript><img \"bad\"=\"\" \"female\".=\"\" \"male\"=\"\" 1=\"\" 5.=\"\" 5.\"=\"\" alt=\"A code snippet displaying a tibble (a type of data frame in R) with three columns: x1, x2, and z. The x1 column contains integers with associated labels, such as \" and=\"\" aria-describedby=\"caption-attachment-21450\" as=\"\" character=\"\" class=\"size-full wp-image-21450\" column=\"\" consecutive=\"\" contains=\"\" decoding=\"async\" for=\"\" from=\"\" good\"=\"\" height=\"141\" integers=\"\" labeled=\"\" loading=\"lazy\" or=\"\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-29-00.webp\" the=\"\" to=\"\" value=\"\" values=\"\" width=\"325\" x2=\"\" z=\"\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21450\">Tibble Data Frame in R</p></div>\n<h2 id=\"writing\"><span style=\"font-weight: 400;\">How-To: Writing SAS data from R</span></h2>\n<p><span style=\"font-weight: 400;\">To write SAS data from R, you can also use the haven package:</span></p>\n<pre>\r\nmy_data &lt;- data.frame(\r\n  ID = 1:5,\r\n  Name = c(\"Bob\", \"Ed\", \"Rod\", \"Dav\", \"Eva\"),\r\n  Value = c(90, 85, 78, 92, 88)\r\n)\r\n\r\n\r\nwrite_xpt(\r\n  my_data,\r\n  path = \"output_file.sas7bdat\"\r\n)\r\n</pre>\n<h3><span style=\"font-weight: 400;\">Missing values</span></h3>\n<p><span style=\"font-weight: 400;\">Newer version of haven already deals with missing values in the same format as “NA” from R.</span></p>\n<p><span style=\"font-weight: 400;\">You can also specify a missing value manually if required by using <code>tagged_na()</code></span>.</p>\n<pre>\r\nmy_data &lt;- data.frame(\r\n  ID = 1:5,\r\n  Name = c(\"Bob\", \"Ed\", \"Rod\", \"Dav\", \"Eva\"),\r\n  Value = c(90, 85, 78, 92, 88),\r\n  na_values = tagged_na(\"Not applicable\")\r\n)\r\n\r\nwrite_xpt(\r\n  my_data,\r\n  path = “output_file.sas7bdat\"\r\n)\r\n\r\n\r\nread_sas(\"output_file.sas7bdat”)\r\n</pre>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21452\" style=\"width: 302px\"><img alt=\"A code snippet showcasing a tibble (a specialized data frame in R) with four columns: ID, Name, Value, and na_values. The tibble lists 5 rows of data, where each row corresponds to a unique individual with an associated name, a numerical value, and an NA value in the na_values column.\" aria-describedby=\"caption-attachment-21452\" class=\"size-full wp-image-21452\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-47-21.webp\" decoding=\"async\" height=\"122\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"292\"/><noscript><img alt=\"A code snippet showcasing a tibble (a specialized data frame in R) with four columns: ID, Name, Value, and na_values. The tibble lists 5 rows of data, where each row corresponds to a unique individual with an associated name, a numerical value, and an NA value in the na_values column.\" aria-describedby=\"caption-attachment-21452\" class=\"size-full wp-image-21452\" decoding=\"async\" height=\"122\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-47-21.webp\" width=\"292\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21452\">Tibble Data Display with Individual Records in R</p></div>\n<h2><span style=\"font-weight: 400;\">Example</span></h2>\n<p><span style=\"font-weight: 400;\">Let’s dive in a simple example using SAS datasets. For this scenario, we’ll download the CARS dataset from SASHELP library.</span></p>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21454\" style=\"width: 985px\"><img alt=\"A split-screen interface from SAS Studio, displaying server files and folders on the left and an output data table on the right. \" aria-describedby=\"caption-attachment-21454\" class=\"size-full wp-image-21454\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-52-15.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"A split-screen interface from SAS Studio, displaying server files and folders on the left and an output data table on the right. \" aria-describedby=\"caption-attachment-21454\" class=\"size-full wp-image-21454\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_10-52-15.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21454\">SAS Studio</p></div>\n<h3><span style=\"font-weight: 400;\">Set library to sas data file</span></h3>\n<p><span style=\"font-weight: 400;\">Since SASHELP is a library dataset, it’s not in a SAS data file (sas7bdat). This means that we must save it to the proper format before downloading the data file. To do this, just run the SAS program:</span></p>\n<pre>\r\n%Let username = your_username;\r\nLibname out \"/home/&amp;username/sasuser.v94/\";\r\nData out.cars_data;\r\n\tset sashelp.cars;\r\nrun;\r\n</pre>\n<p>Remember to update your folder username variable without parentheses.</p>\n<p>Now you can download the data file and use it in R.</p>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21456\" style=\"width: 730px\"><img aria-describedby=\"caption-attachment-21456\" as=\"\" class=\"size-full wp-image-21456\" data=\"\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-00-38.webp\" decoding=\"async\" file=\"\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" to=\"\" width=\"450\"/><noscript><img \"download=\"\" \"new,\"=\"\" \"open,\"=\"\" \"save=\"\" \"view=\"\" a=\"\" alt=\"A close-up view of SAS Studio. The panel on the left shows a directory with the files \" and=\"\" aria-describedby=\"caption-attachment-21456\" as=\"\" cars_data.sas7bdat\"=\"\" class=\"size-full wp-image-21456\" context=\"\" data=\"\" decoding=\"async\" file=\"\" file\"=\"\" files.sas.\"=\"\" highlighted=\"\" loading=\"lazy\" menu=\"\" on=\"\" option.\"=\"\" options=\"\" right,=\"\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-00-38.webp\" such=\"\" text,\"=\"\" the=\"\" there's=\"\" to=\"\" width=\"450\" with=\"\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21456\">SAS Studio</p></div>\n<h3><span style=\"font-weight: 400;\">Playing with data – Summary statistics</span></h3>\n<p><span style=\"font-weight: 400;\">To illustrate the example in R, let’s calculate a summary statistic of all columns by the column Type. In SAS, this can be done with the utility helper “Summary statistics”.</span></p>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21458\" style=\"width: 985px\"><img aria-describedby=\"caption-attachment-21458\" class=\"size-full wp-image-21458\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-05-44.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img \"mean,\"=\"\" \"minimum,\"=\"\" \"quartile=\"\" \"std=\"\" a=\"\" alt=\"Statistical Results for the \" and=\"\" aria-describedby=\"caption-attachment-21458\" car=\"\" class=\"size-full wp-image-21458\" dataset:=\"\" decoding=\"async\" detailed=\"\" dev,\"=\"\" different=\"\" for=\"\" including=\"\" is=\"\" it=\"\" like=\"\" loading=\"lazy\" metrics=\"\" presenting=\"\" range.\"\"=\"\" results=\"\" sashelpcars\"=\"\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-05-44.webp\" statistical=\"\" table=\"\" types,=\"\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21458\">Statistical Results for the “SASHELPCARS” dataset</p></div>\n<p><span style=\"font-weight: 400;\">You can print the result as a pdf file</span></p>\n<p><span style=\"font-weight: 400;\">It also returns the code:</span></p>\n<pre>\r\nods noproctitle;\r\nods graphics / imagemap=on;\r\n\r\nproc means data=SASHELP.CARS chartype mean std min max median n nmiss vardef=df\r\n      \tqrange qmethod=os;\r\n    \tvar MSRP Invoice EngineSize Cylinders Horsepower MPG_City MPG_Highway Weight\r\n      \tWheelbase Length;\r\n    \tclass Type;\r\nrun;\r\n</pre>\n<p>In R, a similar approach that results in a pdf file can be done with the package summarytools.</p>\n<pre>\r\nlibrary(haven)\r\nlibrary(dplyr)\r\nlibrary(summarytools)\r\n\r\ndata &lt;- read_sas(\"cars_data.sas7bdat\")\r\ngrouped_data &lt;- data %&gt;%\r\n  group_by(Type)\r\n\r\nview(dfSummary(grouped_data))\r\n\r\n</pre>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21460\" style=\"width: 1120px\"><img alt=\"A split interface on SAS Studio displaying summaries of two data frames.\" aria-describedby=\"caption-attachment-21460\" class=\"size-full wp-image-21460\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-14-18.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"A split interface on SAS Studio displaying summaries of two data frames.\" aria-describedby=\"caption-attachment-21460\" class=\"size-full wp-image-21460\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-14-18.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21460\">Comparative summary of two datasets: ‘Hybrid’ cars on the left and ‘SUV’ cars on the right.</p></div>\n<p>If you desire to have the result in a dataframe, just update the code:</p>\n<pre>\r\nsummarised_data &lt;- data %&gt;% \r\n  group_by(Type) %&gt;% \r\n  summarise(\r\n    across(\r\n      where(is.numeric),\r\n      list(\r\n        mean = mean,\r\n        stdev = sd,\r\n        median = median,\r\n        min = min,\r\n        max = max,\r\n        iqr = ~IQR(..1, na.rm = TRUE)\r\n      )\r\n    )\r\n  )\r\n</pre>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21462\" style=\"width: 985px\"><img aria-describedby=\"caption-attachment-21462\" class=\"size-full wp-image-21462\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-23-14.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"A dark-themed interface displaying the summarised data from the file \" aria-describedby=\"caption-attachment-21462\" class=\"size-full wp-image-21462\" decoding=\"async\" loading=\"lazy\" read_write_sass.r\"\"=\"\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/image_2023-10-26_11-23-14.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21462\">Snapshot of the summarized data</p></div>\n<p>Now all we have to do is save the dataframe to SAS data files.</p>\n<pre>\r\nwrite_xpt(summarised_data, \"cars_summarised.sas7bdat\")\r\n</pre>\n<p><span style=\"font-weight: 400;\">You can upload the file back to SAS.</span></p>\n<div class=\"wp-caption aligncenter\" id=\"attachment_21466\" style=\"width: 949px\"><img alt=\"SAS interface is displayed highlighting the process of uploading files. \" aria-describedby=\"caption-attachment-21466\" class=\"size-full wp-image-21466\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/photo_2023-10-26_11-35-09-1.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"SAS interface is displayed highlighting the process of uploading files. \" aria-describedby=\"caption-attachment-21466\" class=\"size-full wp-image-21466\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/10/photo_2023-10-26_11-35-09-1.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21466\">Upload the file back to SAS</p></div>\n<h2 id=\"best-practices\"><span style=\"font-weight: 400;\">Best Practices</span></h2>\n<ol>\n<li><b>Reproducibility:</b><span style=\"font-weight: 400;\"> You can document the steps you take when reading and writing SAS data  with </span><span style=\"font-weight: 400;\">R Markdown or </span><a href=\"https://appsilon.com/tag/quarto/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">Quarto</span></a><span style=\"font-weight: 400;\">. This is an important </span><a href=\"https://nceas.github.io/sasap-training/materials/reproducible_research_in_r_fairbanks/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">aspect of reproducibility</span></a><span style=\"font-weight: 400;\">.</span></li>\n</ol>\n<p>If you desire to run the workflow on a routine, then you can consider using <a href=\"https://appsilon.com/r-targets-reproducible-data-science-pipeline/\" rel=\"nofollow\" target=\"_blank\">targets pipeline</a>.</p>\n<ol start=\"2\">\n<li><b>Seek Help:</b><span style=\"font-weight: 400;\"> If you require further guidance, don’t hesitate to seek help from the </span><a href=\"https://community.rstudio.com/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">R community</span></a><span style=\"font-weight: 400;\"> or </span><a href=\"https://communities.sas.com/\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight: 400;\">SAS communities</span></a><span style=\"font-weight: 400;\">. Collaboration can often lead to quicker solutions.</span></li>\n</ol>\n<p><span style=\"font-weight: 400;\">Also, Stack Overflow is a great resource, and it’s quite possible that someone has already faced and shared a solution similar to yours.</span></p>\n<h2 id=\"conclusion\"><span style=\"font-weight: 400;\">Conclusion</span></h2>\n<p><span style=\"font-weight: 400;\">Using the haven package to read and write SAS data has eased out much of the struggles in SAS and R interoperability. This guide showcases how to read SAS files and deal with common issues related to that process.</span></p>\n<p>Do you want to get more out of your data with custom analytics and solutions? <a href=\"https://appsilon.com/#contact\" rel=\"nofollow\" target=\"_blank\">We’re here to help</a>.</p>\n<p>The post appeared first on appsilon.com/blog/.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://appsilon.com/transitioning-from-sas-to-r/\"> Tag: r - Appsilon | Enterprise R Shiny Dashboards</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "How to Load SAS Files in R: Transitioning from SAS to R with Seamless Data Integration\nPosted on\nOctober 26, 2023\nby\nEduardo Almeida\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nTag: r - Appsilon | Enterprise R Shiny Dashboards\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nUsing R as an alternative to SAS (Statistical Analysis System)\noffers bespoke interactivity on top of R routines\n. It enables\neffective technical handling\nwhile\nengaging non-technical users\nthrough interactive data storytelling.\nTransitioning from SAS to R can be a challenge for many data analysts and programmers. But the solution is within reach. It can be easy if part of your SAS pipeline produces data that you use to create reports from R.\nIn this article, we will explore\nhow to integrate SAS data into your R workflow\n, allowing you to harness the strengths of both tools. We will focus on reading and writing SAS data files in R and overcoming common challenges. By the end of this guide, you’ll be well-equipped to bridge the gap between SAS and R, making your data analysis journey smooth and efficient.\nTL;DR:\nTransitioning from SAS to R offers enhanced technical functionality, making data interaction more intuitive.\nExplore how to\nsmoothly transition\nand\nintegrate\ndata from SAS and R.\nUnderstand SAS File Types:\nData Files (.sas7bdat) –\nhold tabular data similar to R dataframes\nCatalog Files (.sas7bcat)\n– contain dataset metadata\nRead SAS Data in R\nand\nWrite SAS Data from R\nusing the\nhaven\npackage with practical examples.\nBest Practices:\nPrioritize reproducibility\nUse targets pipeline for routine tasks\nSeek guidance (from R/SAS communities and platforms like Stack Overflow)\nThe haven package simplifies SAS and R data interoperability.\nTable of Contents\nUnderstanding Different SAS File Types\nHow-To: Writing SAS data from R\nBest Practices\nConclusion\nUnderstanding Different SAS File Types\nSAS has many\ntypes of file objects\n. We will explore how to use R to both read and write the following types of SAS objects:\nData Files (.sas7bdat):\nThese files store tabular data, including numeric, character, and date variables. SAS data files are the most common type and similar to R data frames.\nCatalog Files (.sas7bcat):\nCatalog files contain metadata about datasets, including variable formats, labels, and other attributes.\nHow-To: Reading SAS data\nTo read SAS files in R, we can use the {\nhaven\n} package, created and maintained by\nthe tidyverse ecosystem\n. It provides functions to read SAS datasets.\nHere’s a step-by-step guide to reading SAS files in R:\n#install.packages(“haven”)\nlibrary(haven)\n\nsas_data <- read_sas(\"file.sas7bdat\")\nYou can use this approach both for .sas7bdat and .sas7bcat extension files.\nEncoding Issues\nSAS datasets might not use standard encodings. To handle these issues, specify the encoding when using\nread_sas()\n:\nread_sas(\"file.sas7bdat\", encoding = \"UTF-8\")\nDealing with SAS Labels\nIn R, we handle value labels by using factors. However, SAS does it in a different way (\nsemantics from SAS\n). Haven provides the labeled S3 classes to allow importing labeled vectors into R.\nFrom the documentation vignette, it showcases an example on how it can deal with labelled SAS object files.\nx1 <- labelled(\n  sample(1:5), \n  c(Good = 1, Bad = 5)\n)\n\nx2 <- labelled(\n  c(\"M\", \"F\", \"F\", \"F\", \"M\"), \n  c(Male = \"M\", Female = \"F\")\n)\n\ntibble::data_frame(x1, x2, z = 1:5)\nLabeled Vectors in R Code Snippet\nTibble Data Frame in R\nHow-To: Writing SAS data from R\nTo write SAS data from R, you can also use the haven package:\nmy_data <- data.frame(\n  ID = 1:5,\n  Name = c(\"Bob\", \"Ed\", \"Rod\", \"Dav\", \"Eva\"),\n  Value = c(90, 85, 78, 92, 88)\n)\n\nwrite_xpt(\n  my_data,\n  path = \"output_file.sas7bdat\"\n)\nMissing values\nNewer version of haven already deals with missing values in the same format as “NA” from R.\nYou can also specify a missing value manually if required by using\ntagged_na()\n.\nmy_data <- data.frame(\n  ID = 1:5,\n  Name = c(\"Bob\", \"Ed\", \"Rod\", \"Dav\", \"Eva\"),\n  Value = c(90, 85, 78, 92, 88),\n  na_values = tagged_na(\"Not applicable\")\n)\n\nwrite_xpt(\n  my_data,\n  path = “output_file.sas7bdat\"\n)\n\nread_sas(\"output_file.sas7bdat”)\nTibble Data Display with Individual Records in R\nExample\nLet’s dive in a simple example using SAS datasets. For this scenario, we’ll download the CARS dataset from SASHELP library.\nSAS Studio\nSet library to sas data file\nSince SASHELP is a library dataset, it’s not in a SAS data file (sas7bdat). This means that we must save it to the proper format before downloading the data file. To do this, just run the SAS program:\n%Let username = your_username;\nLibname out \"/home/&username/sasuser.v94/\";\nData out.cars_data;\n\tset sashelp.cars;\nrun;\nRemember to update your folder username variable without parentheses.\nNow you can download the data file and use it in R.\nSAS Studio\nPlaying with data – Summary statistics\nTo illustrate the example in R, let’s calculate a summary statistic of all columns by the column Type. In SAS, this can be done with the utility helper “Summary statistics”.\nStatistical Results for the “SASHELPCARS” dataset\nYou can print the result as a pdf file\nIt also returns the code:\nods noproctitle;\nods graphics / imagemap=on;\n\nproc means data=SASHELP.CARS chartype mean std min max median n nmiss vardef=df\n      \tqrange qmethod=os;\n    \tvar MSRP Invoice EngineSize Cylinders Horsepower MPG_City MPG_Highway Weight\n      \tWheelbase Length;\n    \tclass Type;\nrun;\nIn R, a similar approach that results in a pdf file can be done with the package summarytools.\nlibrary(haven)\nlibrary(dplyr)\nlibrary(summarytools)\n\ndata <- read_sas(\"cars_data.sas7bdat\")\ngrouped_data <- data %>%\n  group_by(Type)\n\nview(dfSummary(grouped_data))\nComparative summary of two datasets: ‘Hybrid’ cars on the left and ‘SUV’ cars on the right.\nIf you desire to have the result in a dataframe, just update the code:\nsummarised_data <- data %>% \n  group_by(Type) %>% \n  summarise(\n    across(\n      where(is.numeric),\n      list(\n        mean = mean,\n        stdev = sd,\n        median = median,\n        min = min,\n        max = max,\n        iqr = ~IQR(..1, na.rm = TRUE)\n      )\n    )\n  )\nSnapshot of the summarized data\nNow all we have to do is save the dataframe to SAS data files.\nwrite_xpt(summarised_data, \"cars_summarised.sas7bdat\")\nYou can upload the file back to SAS.\nUpload the file back to SAS\nBest Practices\nReproducibility:\nYou can document the steps you take when reading and writing SAS data  with\nR Markdown or\nQuarto\n. This is an important\naspect of reproducibility\n.\nIf you desire to run the workflow on a routine, then you can consider using\ntargets pipeline\n.\nSeek Help:\nIf you require further guidance, don’t hesitate to seek help from the\nR community\nor\nSAS communities\n. Collaboration can often lead to quicker solutions.\nAlso, Stack Overflow is a great resource, and it’s quite possible that someone has already faced and shared a solution similar to yours.\nConclusion\nUsing the haven package to read and write SAS data has eased out much of the struggles in SAS and R interoperability. This guide showcases how to read SAS files and deal with common issues related to that process.\nDo you want to get more out of your data with custom analytics and solutions?\nWe’re here to help\n.\nThe post appeared first on appsilon.com/blog/.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nTag: r - Appsilon | Enterprise R Shiny Dashboards\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Using R as an alternative to SAS (Statistical Analysis System) offers bespoke interactivity on top of R routines. It enables effective technical handling while engaging non-technical users through interactive data storytelling. Transitioning from SAS to R can be a challenge for many data analysts and programmers. But the solution is within reach. It can be […] The post appeared first on appsilon.com/blog/.",
+    "meta_keywords": null,
+    "og_description": "Using R as an alternative to SAS (Statistical Analysis System) offers bespoke interactivity on top of R routines. It enables effective technical handling while engaging non-technical users through interactive data storytelling. Transitioning from SAS to R can be a challenge for many data analysts and programmers. But the solution is within reach. It can be […] The post appeared first on appsilon.com/blog/.",
+    "og_image": "https://wordpress.appsilon.com/wp-content/uploads/2023/10/image-4.webp",
+    "og_title": "How to Load SAS Files in R: Transitioning from SAS to R with Seamless Data Integration | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.4,
+    "sitemap_lastmod": "2023-10-26T14:01:52+00:00",
+    "twitter_description": "Using R as an alternative to SAS (Statistical Analysis System) offers bespoke interactivity on top of R routines. It enables effective technical handling while engaging non-technical users through interactive data storytelling. Transitioning from SAS to R can be a challenge for many data analysts and programmers. But the solution is within reach. It can be […] The post appeared first on appsilon.com/blog/.",
+    "twitter_title": "How to Load SAS Files in R: Transitioning from SAS to R with Seamless Data Integration | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/10/how-to-load-sas-files-in-r-transitioning-from-sas-to-r-with-seamless-data-integration/",
+    "word_count": 1286
+  }
+}

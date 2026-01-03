@@ -1,0 +1,104 @@
+{
+  "uuid": "95b45ab4-1597-44f4-92eb-ce596d6ba62f",
+  "created_at": "2025-11-17 20:39:18",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/permutation-shap-versus-kernel-shap/",
+    "crawled_at": "2025-11-17T09:57:36.467551",
+    "external_links": [
+      {
+        "href": "https://lorentzen.ch/index.php/2023/11/11/permutation-shap-versus-kernel-shap/",
+        "text": "R – Michael's and Christian's Blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://cran.r-project.org/web/packages/kernelshap/index.html",
+        "text": "0.4.0 CRAN release"
+      },
+      {
+        "href": "https://github.com/lorentzenchr/notebooks/blob/master/blogposts/2023-11-11%20Permutation-SHAP.R",
+        "text": "here"
+      },
+      {
+        "href": "https://lorentzen.ch/index.php/2023/11/11/permutation-shap-versus-kernel-shap/",
+        "text": "R – Michael's and Christian's Blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Permutation SHAP versus Kernel SHAP | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/michael-mayer/",
+        "text": "Michael Mayer"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379936 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Permutation SHAP versus Kernel SHAP</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 11, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/michael-mayer/\">Michael Mayer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://lorentzen.ch/index.php/2023/11/11/permutation-shap-versus-kernel-shap/\"> R – Michael's and Christian's Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>SHAP is the predominant way to interpret black-box ML models, especially for tree-based models with the blazingly fast TreeSHAP algorithm.</p>\n<p>For general models, two slower SHAP algorithms exist:</p>\n<ol>\n<li>Permutation SHAP (Štrumbelj and Kononenko, 2010)</li>\n<li>Kernel SHAP (Lundberg and Lee, 2017)</li>\n</ol>\n<p>Kernel SHAP was introduced as an approximation to permutation SHAP. </p>\n<p>The <a href=\"https://cran.r-project.org/web/packages/kernelshap/index.html\" rel=\"nofollow\" target=\"_blank\">0.4.0 CRAN release</a> of our {kernelshap} package now contains an exact permutation SHAP algorithm for up to 14 features, and thus it becomes easy to make experiments between the two approaches.</p>\n<h3 class=\"wp-block-heading\">Some initial statements about permutation SHAP and Kernel SHAP</h3>\n<ol>\n<li>Exact permutation SHAP and exact Kernel SHAP have the same computational complexity.</li>\n<li>Technically, exact Kernel SHAP is still an approximation of exact permutation SHAP, so you should prefer the latter.</li>\n<li>Kernel SHAP assumes feature independence. Since features are never independent in practice: does this mean we should never use Kernel SHAP?</li>\n<li>Kernel SHAP can be calculated almost exactly for any number of feature, while permutation SHAP approximations get more and more inprecise for many features.</li>\n</ol>\n<h3 class=\"wp-block-heading\">Simulation 1</h3>\n<p>We will work with the iris data because it has extremely strong correlations between features. Since Kernel SHAP assumes feature independence, it is expected to give differences between the two methods. To further see the impact of having models with and without interactions, we work with a random forest model of increasing tree depth. Depth 1 means no interactions, depth 2 means pairwise interactions etc.</p>\n<pre>library(kernelshap)\nlibrary(ranger)\n\ndifferences &lt;- numeric(4)\n\nfor (depth in 1:4) {\n  fit &lt;- ranger(\n    Sepal.Length ~ Petal.Width + Petal.Length + Species, \n    mtry = 3,\n    data = iris, \n    max.depth = depth,\n    seed = 1\n  )\n  ps &lt;- permshap(fit, iris[3:5], bg_X = iris)\n  ks &lt;- kernelshap(fit, iris[3:5], bg_X = iris)\n  differences[depth] &lt;- mean(abs(ks$S - ps$S))\n}\ndifferences\n# Essentially 0\n# 3.192200e-15 3.785476e-15 3.765154e-15 4.172719e-15\n\nps\n# SHAP values of first observation:\n#      Petal.Length Petal.Width     Species\n# [1,]    -0.818954 -0.08683982 0.003784976\nks\n# SHAP values of first observation:\n#      Petal.Length Petal.Width     Species\n# [1,]    -0.818954 -0.08683982 0.003784976</pre>\n<p><strong>The mean absolute difference between the two (150 x 3) SHAP matrices is essentially  0, even in models with high-order interactions and strong correlation between features</strong>. Oh wow, this is unexpected!</p>\n<h3 class=\"wp-block-heading\">Simulation 2</h3>\n<p>I am aware of one situation where exact Permutation SHAP and exact Kernel SHAP do not agree: When a correlated feature has no effect and there are interactions of order three or higher: We will mimic this behavior by evaluating the SHAP values also for a non-modeled feature (Sepal.Width). The rest of the simulation is identical:</p>\n<pre>differences &lt;- numeric(4)\n\nfor (depth in 1:4) {\n  fit &lt;- ranger(\n    Sepal.Length ~ Petal.Width + Petal.Length + Species, \n    mtry = 3,\n    data = iris, \n    max.depth = depth,\n    seed = 1\n  )\n  ps &lt;- permshap(fit, iris[2:5], bg_X = iris)\n  ks &lt;- kernelshap(fit, iris[2:5], bg_X = iris)\n  differences[depth] &lt;- mean(abs(ks$S - ps$S))\n}\ndifferences\n# There are small differences starting with interactions of order 3\n# 2.373287e-15 2.842817e-15 4.822595e-06 2.676598e-05\nps\n# SHAP values of first observation:\n#      Sepal.Width Petal.Length Petal.Width     Species\n# [1,]           0    -0.818954 -0.08683982 0.003784976\nks\n# SHAP values of first observations:\n#       Sepal.Width Petal.Length Petal.Width     Species\n# [1,] 4.073678e-05   -0.8189676  -0.0868534 0.003771397</pre>\n<p><strong>Now, by the regression trick behind Kernel SHAP, also the feature without effect “Sepal.Width” gets some effect from the correlated features.  But only in the models with interactions of order three or higher!</strong></p>\n<h2 class=\"wp-block-heading\">Wrap-Up</h2>\n<ol>\n<li>Use <code>kernelshap::permshap()</code> to crunch exact permutation SHAP values for models with not too many features.</li>\n<li>Exact Kernel SHAP almost always gives the same results as exact permutation SHAP.  The one situation I have identified are models with high-order interactions <strong>and</strong> features that have no effect but are strongly correlated with modeled features. This means that Kernel SHAP is much better than people think it is.</li>\n<li>Since Kernel SHAP can be calculated almost exactly also for many features, it remains an excellent way to crunch SHAP values for arbitrary models.</li>\n</ol>\n<p>The R code is <a href=\"https://github.com/lorentzenchr/notebooks/blob/master/blogposts/2023-11-11%20Permutation-SHAP.R\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://lorentzen.ch/index.php/2023/11/11/permutation-shap-versus-kernel-shap/\"> R – Michael's and Christian's Blog</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Permutation SHAP versus Kernel SHAP\nPosted on\nNovember 11, 2023\nby\nMichael Mayer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR – Michael's and Christian's Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSHAP is the predominant way to interpret black-box ML models, especially for tree-based models with the blazingly fast TreeSHAP algorithm.\nFor general models, two slower SHAP algorithms exist:\nPermutation SHAP (Štrumbelj and Kononenko, 2010)\nKernel SHAP (Lundberg and Lee, 2017)\nKernel SHAP was introduced as an approximation to permutation SHAP.\nThe\n0.4.0 CRAN release\nof our {kernelshap} package now contains an exact permutation SHAP algorithm for up to 14 features, and thus it becomes easy to make experiments between the two approaches.\nSome initial statements about permutation SHAP and Kernel SHAP\nExact permutation SHAP and exact Kernel SHAP have the same computational complexity.\nTechnically, exact Kernel SHAP is still an approximation of exact permutation SHAP, so you should prefer the latter.\nKernel SHAP assumes feature independence. Since features are never independent in practice: does this mean we should never use Kernel SHAP?\nKernel SHAP can be calculated almost exactly for any number of feature, while permutation SHAP approximations get more and more inprecise for many features.\nSimulation 1\nWe will work with the iris data because it has extremely strong correlations between features. Since Kernel SHAP assumes feature independence, it is expected to give differences between the two methods. To further see the impact of having models with and without interactions, we work with a random forest model of increasing tree depth. Depth 1 means no interactions, depth 2 means pairwise interactions etc.\nlibrary(kernelshap)\nlibrary(ranger)\n\ndifferences <- numeric(4)\n\nfor (depth in 1:4) {\n  fit <- ranger(\n    Sepal.Length ~ Petal.Width + Petal.Length + Species, \n    mtry = 3,\n    data = iris, \n    max.depth = depth,\n    seed = 1\n  )\n  ps <- permshap(fit, iris[3:5], bg_X = iris)\n  ks <- kernelshap(fit, iris[3:5], bg_X = iris)\n  differences[depth] <- mean(abs(ks$S - ps$S))\n}\ndifferences\n# Essentially 0\n# 3.192200e-15 3.785476e-15 3.765154e-15 4.172719e-15\n\nps\n# SHAP values of first observation:\n#      Petal.Length Petal.Width     Species\n# [1,]    -0.818954 -0.08683982 0.003784976\nks\n# SHAP values of first observation:\n#      Petal.Length Petal.Width     Species\n# [1,]    -0.818954 -0.08683982 0.003784976\nThe mean absolute difference between the two (150 x 3) SHAP matrices is essentially  0, even in models with high-order interactions and strong correlation between features\n. Oh wow, this is unexpected!\nSimulation 2\nI am aware of one situation where exact Permutation SHAP and exact Kernel SHAP do not agree: When a correlated feature has no effect and there are interactions of order three or higher: We will mimic this behavior by evaluating the SHAP values also for a non-modeled feature (Sepal.Width). The rest of the simulation is identical:\ndifferences <- numeric(4)\n\nfor (depth in 1:4) {\n  fit <- ranger(\n    Sepal.Length ~ Petal.Width + Petal.Length + Species, \n    mtry = 3,\n    data = iris, \n    max.depth = depth,\n    seed = 1\n  )\n  ps <- permshap(fit, iris[2:5], bg_X = iris)\n  ks <- kernelshap(fit, iris[2:5], bg_X = iris)\n  differences[depth] <- mean(abs(ks$S - ps$S))\n}\ndifferences\n# There are small differences starting with interactions of order 3\n# 2.373287e-15 2.842817e-15 4.822595e-06 2.676598e-05\nps\n# SHAP values of first observation:\n#      Sepal.Width Petal.Length Petal.Width     Species\n# [1,]           0    -0.818954 -0.08683982 0.003784976\nks\n# SHAP values of first observations:\n#       Sepal.Width Petal.Length Petal.Width     Species\n# [1,] 4.073678e-05   -0.8189676  -0.0868534 0.003771397\nNow, by the regression trick behind Kernel SHAP, also the feature without effect “Sepal.Width” gets some effect from the correlated features.  But only in the models with interactions of order three or higher!\nWrap-Up\nUse\nkernelshap::permshap()\nto crunch exact permutation SHAP values for models with not too many features.\nExact Kernel SHAP almost always gives the same results as exact permutation SHAP.  The one situation I have identified are models with high-order interactions\nand\nfeatures that have no effect but are strongly correlated with modeled features. This means that Kernel SHAP is much better than people think it is.\nSince Kernel SHAP can be calculated almost exactly also for many features, it remains an excellent way to crunch SHAP values for arbitrary models.\nThe R code is\nhere\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR – Michael's and Christian's Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "When do the two methods agree? When not?",
+    "meta_keywords": null,
+    "og_description": "When do the two methods agree? When not?",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Permutation SHAP versus Kernel SHAP | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.2,
+    "sitemap_lastmod": "2023-11-11T09:59:02+00:00",
+    "twitter_description": "When do the two methods agree? When not?",
+    "twitter_title": "Permutation SHAP versus Kernel SHAP | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/permutation-shap-versus-kernel-shap/",
+    "word_count": 832
+  }
+}

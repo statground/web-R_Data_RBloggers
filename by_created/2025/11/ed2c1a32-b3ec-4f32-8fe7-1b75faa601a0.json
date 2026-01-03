@@ -1,0 +1,132 @@
+{
+  "uuid": "ed2c1a32-b3ec-4f32-8fe7-1b75faa601a0",
+  "created_at": "2025-11-17 20:41:03",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/04/new-garmin-forerunner/",
+    "crawled_at": "2025-11-17T10:40:29.762439",
+    "external_links": [
+      {
+        "href": "http://dirk.eddelbuettel.com/blog/2009/04/10#new_garmin_405",
+        "text": "Thinking inside the box"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Garmin_Forerunner",
+        "text": "Garmin Forerunner"
+      },
+      {
+        "href": "http://www.perrier.eu.org/weblog/2009/04/04#forerunner",
+        "text": "Debian\nmarathoner Christian"
+      },
+      {
+        "href": "http://www.bostonmarathon.org/",
+        "text": "Boston\nMarathon) as an excuse for conspicuous comsumption.  After some price\ncomparison, I ordered a factory reconditioned Garmin Forerunner 405 fromthis web discounterat a nice rebate to\nthe regular price.  It arrived this afternoon, seemingly shining new and I\nhave been fiddling with it for the last little while.This device features wireless data transfer to a usbstick.  This meant\nbooting the laptop in windoze for the first time in years to load the ‘client\nsoftware’ after which data transfer proceeded.  TheGarmin Connectsite has very slick\npresentation and aggregation of the data.  The trouble is of course how to\nget the data there when running Linux… Christian had mentioned thegarmin-forerunner-toolspackage. Unfortunately, this seems to really be written for the Forerunner\n305 models as it doesn’t see the device at all.  Some more googling lead tothis\npageand thegant\ntarball.  All still fairly raw, but with some prodding in the settings of\nthe 405 (‘pairing’ set to ‘on’, ‘force send’ set to ‘yes’; which may have to be\nreset each time ?) I got my two xml files off the gps watch. Yay. We’ll see\nwhat mode I will settle one. With the 201 and its ancient serial port, I\nbasically just dropped the run and training histories which their fairly\nlimited data collections.Last but not least, fellow Oak Park runner Peter Sagal had ahumorous\nRunner’s World columnon the whole GPS geekyness. If he’d only known how\nto pair it with programming geekyness…RelatedToleave a commentfor the author, please follow the link and comment on their blog:Thinking inside the box.R-bloggers.comoffersdaily e-mail updatesaboutRnews and tutorials aboutlearning Rand many other topics.Click here if you're looking to post or find an R/data-science job.Want to share your content on R-bloggers?click hereif you have a blog, orhereif you don't."
+      },
+      {
+        "href": "http://www.megagps.com",
+        "text": "this web discounter"
+      },
+      {
+        "href": "http://connect.garmin.com/",
+        "text": "Garmin Connect"
+      },
+      {
+        "href": "http://packages.debian.org/sid/utils/garmin-forerunner-tools",
+        "text": "garmin-forerunner-tools"
+      },
+      {
+        "href": "http://www.thefloatingfrog.co.uk/2008/09/garmin-forerunner-305405-musings/comment-page-1",
+        "text": "this\npage"
+      },
+      {
+        "href": "http://www.sbrk.co.uk/ant0_t3.tar.gz",
+        "text": "gant\ntarball"
+      },
+      {
+        "href": "http://www.runnersworld.com/article/0,7120,s6-240-321--12980-0,00.html",
+        "text": "humorous\nRunner’s World column"
+      },
+      {
+        "href": "http://dirk.eddelbuettel.com/blog/2009/04/10#new_garmin_405",
+        "text": "Thinking inside the box"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "New Garmin Forerunner | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/thinking-inside-the-box/",
+        "text": "Thinking inside the box"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-181 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">New Garmin Forerunner</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 10, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thinking-inside-the-box/\">Thinking inside the box</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/04/10#new_garmin_405\"> Thinking inside the box   </a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nGoing for a run–or a race–almost always meant grabbing the GPS and \noften also meant setting a target pace and distance. For the last four and a\nhalf years, this was measured by a <a href=\"https://en.wikipedia.org/wiki/Garmin_Forerunner\" rel=\"nofollow\" target=\"_blank\">Garmin Forerunner</a>\n201. That’s the large rectangular model in the original “brick” form factor.\nI’ve come to love the device. Training is great because the distance log, as\nwell as the pacing, keeps you honest. Racing is probably better because it\nhelps a lot with the pacing (but then I also had PRs in race where I had\nforgotten the GPS at home). But there is a downside. This model sometimes\ntakes forever to find tracking, and has interference / weak signal problems\nwhen it is cloudy or moist. But worst of all, it just bonks out in the ‘urban\njungle’ downtown where it drops signals too easily.  And now after all these\nyears the display had some minor damage, the strap didn’t really hold\nanymore, and it was generally time for something new. On Tuesday it even lost\na quarter mile when we were going for a short but really fast three miler.\n<p>\n\nBut then a few days prior I had followed fellow <a href=\"http://www.perrier.eu.org/weblog/2009/04/04#forerunner\" rel=\"nofollow\" target=\"_blank\">Debian\nmarathoner Christian</a> and used my birthday at the end of this month (as\nwell as the upcoming <a href=\"http://www.bostonmarathon.org/\" rel=\"nofollow\" target=\"_blank\">Boston\nMarathon<a></a>) as an excuse for conspicuous comsumption.  After some price\ncomparison, I ordered a factory reconditioned Garmin Forerunner 405 from <a href=\"http://www.megagps.com\" rel=\"nofollow\" target=\"_blank\">this web discounter</a> at a nice rebate to\nthe regular price.  It arrived this afternoon, seemingly shining new and I\nhave been fiddling with it for the last little while.\n<p>\n\nThis device features wireless data transfer to a usbstick.  This meant\nbooting the laptop in windoze for the first time in years to load the ‘client\nsoftware’ after which data transfer proceeded.  The <a href=\"http://connect.garmin.com/\" rel=\"nofollow\" target=\"_blank\">Garmin Connect</a> site has very slick\npresentation and aggregation of the data.  The trouble is of course how to\nget the data there when running Linux… Christian had mentioned the <a href=\"http://packages.debian.org/sid/utils/garmin-forerunner-tools\" rel=\"nofollow\" target=\"_blank\">garmin-forerunner-tools</a>\npackage. Unfortunately, this seems to really be written for the Forerunner\n305 models as it doesn’t see the device at all.  Some more googling lead to\n<a href=\"http://www.thefloatingfrog.co.uk/2008/09/garmin-forerunner-305405-musings/comment-page-1\" rel=\"nofollow\" target=\"_blank\">this\npage</a> and the <a href=\"http://www.sbrk.co.uk/ant0_t3.tar.gz\" rel=\"nofollow\" target=\"_blank\">gant\ntarball</a>.  All still fairly raw, but with some prodding in the settings of\nthe 405 (‘pairing’ set to ‘on’, ‘force send’ set to ‘yes’; which may have to be\nreset each time ?) I got my two xml files off the gps watch. Yay. We’ll see\nwhat mode I will settle one. With the 201 and its ancient serial port, I\nbasically just dropped the run and training histories which their fairly\nlimited data collections.  <p>\n\nLast but not least, fellow Oak Park runner Peter Sagal had a <a href=\"http://www.runnersworld.com/article/0,7120,s6-240-321--12980-0,00.html\" rel=\"nofollow\" target=\"_blank\">humorous\nRunner’s World column</a> on the whole GPS geekyness. If he’d only known how\nto pair it with programming geekyness…\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/04/10#new_garmin_405\"> Thinking inside the box   </a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></a></p></div>\n</article>",
+    "main_text": "New Garmin Forerunner\nPosted on\nApril 10, 2009\nby\nThinking inside the box\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThinking inside the box\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nGoing for a run–or a race–almost always meant grabbing the GPS and \noften also meant setting a target pace and distance. For the last four and a\nhalf years, this was measured by a\nGarmin Forerunner\n201. That’s the large rectangular model in the original “brick” form factor.\nI’ve come to love the device. Training is great because the distance log, as\nwell as the pacing, keeps you honest. Racing is probably better because it\nhelps a lot with the pacing (but then I also had PRs in race where I had\nforgotten the GPS at home). But there is a downside. This model sometimes\ntakes forever to find tracking, and has interference / weak signal problems\nwhen it is cloudy or moist. But worst of all, it just bonks out in the ‘urban\njungle’ downtown where it drops signals too easily.  And now after all these\nyears the display had some minor damage, the strap didn’t really hold\nanymore, and it was generally time for something new. On Tuesday it even lost\na quarter mile when we were going for a short but really fast three miler.\nBut then a few days prior I had followed fellow\nDebian\nmarathoner Christian\nand used my birthday at the end of this month (as\nwell as the upcoming\nBoston\nMarathon\n) as an excuse for conspicuous comsumption.  After some price\ncomparison, I ordered a factory reconditioned Garmin Forerunner 405 from\nthis web discounter\nat a nice rebate to\nthe regular price.  It arrived this afternoon, seemingly shining new and I\nhave been fiddling with it for the last little while.\nThis device features wireless data transfer to a usbstick.  This meant\nbooting the laptop in windoze for the first time in years to load the ‘client\nsoftware’ after which data transfer proceeded.  The\nGarmin Connect\nsite has very slick\npresentation and aggregation of the data.  The trouble is of course how to\nget the data there when running Linux… Christian had mentioned the\ngarmin-forerunner-tools\npackage. Unfortunately, this seems to really be written for the Forerunner\n305 models as it doesn’t see the device at all.  Some more googling lead to\nthis\npage\nand the\ngant\ntarball\n.  All still fairly raw, but with some prodding in the settings of\nthe 405 (‘pairing’ set to ‘on’, ‘force send’ set to ‘yes’; which may have to be\nreset each time ?) I got my two xml files off the gps watch. Yay. We’ll see\nwhat mode I will settle one. With the 201 and its ancient serial port, I\nbasically just dropped the run and training histories which their fairly\nlimited data collections.\nLast but not least, fellow Oak Park runner Peter Sagal had a\nhumorous\nRunner’s World column\non the whole GPS geekyness. If he’d only known how\nto pair it with programming geekyness…\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThinking inside the box\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Going for a run--or a race--almost always meant grabbing the GPS and often also meant setting a target pace and distance. For the last four and a half years, this was measured by a Garmin Forerunner 201. That's the large rectangular model in the original \"brick\" form factor. I've come to love the device. Training is great because the distance log, as well as the pacing, keeps you honest. Racing is probably better because it helps a lot with the pacing (but then I also had PRs in race where I had forgotten the GPS at home). But there is a downside. This model sometimes takes forever to find tracking, and has interference / weak signal problems when it is cloudy or moist. But worst of all, it just bonks out in the 'urban jungle' downtown where it drops signals too easily. And now after all these years the display had some minor damage, the strap didn't really hold anymore, and it was generally time for something new. On Tuesday it even lost a quarter mile when we were going for a short but really fast three miler. But then a few days prior I had followed fellow Debian marathoner Christian and used my birthday at the end of this month (as well as the upcoming Boston Marathon) as an excuse for conspicuous comsumption. After some price comparison, I ordered a factory reconditioned Garmin Forerunner 405 from this web discounter at a nice rebate to the regular price. It arrived this afternoon, seemingly shining new and I have been fiddling with it for the last little while. This device features wireless data transfer to a usbstick. This meant booting the laptop in windoze for the first time in years to load the 'client software' after which data transfer proceeded. The Garmin Connect site has very slick presentation and aggregation of the data. The trouble is of course how to get the data there when running Linux... Christian had mentioned the garmin-forerunner-tools package. Unfortunately, this seems to really be written for the Forerunner 305 models as it doesn't see the device at all. Some more googling lead to this page and the gant tarball. All still fairly raw, but with some prodding in the settings of the 405 ('pairing' set to 'on', 'force send' set to 'yes'; which may have to be reset each time ?) I got my two xml files off the gps watch. Yay. We'll see what mode I will settle one. With the 201 and its ancient serial port, I basically just dropped the run and training histories which their fairly limited data collections. Last but not least, fellow Oak Park runner Peter Sagal had a humorous Runner's World column on the whole GPS geekyness. If he'd only known how to pair it with programming geekyness...",
+    "meta_keywords": null,
+    "og_description": "Going for a run--or a race--almost always meant grabbing the GPS and often also meant setting a target pace and distance. For the last four and a half years, this was measured by a Garmin Forerunner 201. That's the large rectangular model in the original \"brick\" form factor. I've come to love the device. Training is great because the distance log, as well as the pacing, keeps you honest. Racing is probably better because it helps a lot with the pacing (but then I also had PRs in race where I had forgotten the GPS at home). But there is a downside. This model sometimes takes forever to find tracking, and has interference / weak signal problems when it is cloudy or moist. But worst of all, it just bonks out in the 'urban jungle' downtown where it drops signals too easily. And now after all these years the display had some minor damage, the strap didn't really hold anymore, and it was generally time for something new. On Tuesday it even lost a quarter mile when we were going for a short but really fast three miler. But then a few days prior I had followed fellow Debian marathoner Christian and used my birthday at the end of this month (as well as the upcoming Boston Marathon) as an excuse for conspicuous comsumption. After some price comparison, I ordered a factory reconditioned Garmin Forerunner 405 from this web discounter at a nice rebate to the regular price. It arrived this afternoon, seemingly shining new and I have been fiddling with it for the last little while. This device features wireless data transfer to a usbstick. This meant booting the laptop in windoze for the first time in years to load the 'client software' after which data transfer proceeded. The Garmin Connect site has very slick presentation and aggregation of the data. The trouble is of course how to get the data there when running Linux... Christian had mentioned the garmin-forerunner-tools package. Unfortunately, this seems to really be written for the Forerunner 305 models as it doesn't see the device at all. Some more googling lead to this page and the gant tarball. All still fairly raw, but with some prodding in the settings of the 405 ('pairing' set to 'on', 'force send' set to 'yes'; which may have to be reset each time ?) I got my two xml files off the gps watch. Yay. We'll see what mode I will settle one. With the 201 and its ancient serial port, I basically just dropped the run and training histories which their fairly limited data collections. Last but not least, fellow Oak Park runner Peter Sagal had a humorous Runner's World column on the whole GPS geekyness. If he'd only known how to pair it with programming geekyness...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "New Garmin Forerunner | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.1,
+    "sitemap_lastmod": "2009-04-11T03:59:00+00:00",
+    "twitter_description": "Going for a run--or a race--almost always meant grabbing the GPS and often also meant setting a target pace and distance. For the last four and a half years, this was measured by a Garmin Forerunner 201. That's the large rectangular model in the original \"brick\" form factor. I've come to love the device. Training is great because the distance log, as well as the pacing, keeps you honest. Racing is probably better because it helps a lot with the pacing (but then I also had PRs in race where I had forgotten the GPS at home). But there is a downside. This model sometimes takes forever to find tracking, and has interference / weak signal problems when it is cloudy or moist. But worst of all, it just bonks out in the 'urban jungle' downtown where it drops signals too easily. And now after all these years the display had some minor damage, the strap didn't really hold anymore, and it was generally time for something new. On Tuesday it even lost a quarter mile when we were going for a short but really fast three miler. But then a few days prior I had followed fellow Debian marathoner Christian and used my birthday at the end of this month (as well as the upcoming Boston Marathon) as an excuse for conspicuous comsumption. After some price comparison, I ordered a factory reconditioned Garmin Forerunner 405 from this web discounter at a nice rebate to the regular price. It arrived this afternoon, seemingly shining new and I have been fiddling with it for the last little while. This device features wireless data transfer to a usbstick. This meant booting the laptop in windoze for the first time in years to load the 'client software' after which data transfer proceeded. The Garmin Connect site has very slick presentation and aggregation of the data. The trouble is of course how to get the data there when running Linux... Christian had mentioned the garmin-forerunner-tools package. Unfortunately, this seems to really be written for the Forerunner 305 models as it doesn't see the device at all. Some more googling lead to this page and the gant tarball. All still fairly raw, but with some prodding in the settings of the 405 ('pairing' set to 'on', 'force send' set to 'yes'; which may have to be reset each time ?) I got my two xml files off the gps watch. Yay. We'll see what mode I will settle one. With the 201 and its ancient serial port, I basically just dropped the run and training histories which their fairly limited data collections. Last but not least, fellow Oak Park runner Peter Sagal had a humorous Runner's World column on the whole GPS geekyness. If he'd only known how to pair it with programming geekyness...",
+    "twitter_title": "New Garmin Forerunner | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/04/new-garmin-forerunner/",
+    "word_count": 621
+  }
+}

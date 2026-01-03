@@ -1,0 +1,112 @@
+{
+  "uuid": "e42f6cc8-bd9b-4100-8181-1667086ab3ac",
+  "created_at": "2025-11-22 19:57:55",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/08/shinytesters-updating-inputs-in-testserver/",
+    "crawled_at": "2025-11-22T10:44:36.835962",
+    "external_links": [
+      {
+        "href": "https://ashbaldry.github.io/2025-08-10-shinytesters-0-1-0-release/",
+        "text": "Ashley's Blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://rstudio.github.io/shinytest2/",
+        "text": "shinytest2"
+      },
+      {
+        "href": "https://shiny.posit.co/r/reference/shiny/latest/testserver.html",
+        "text": "testServer"
+      },
+      {
+        "href": "https://ashbaldry.github.io/shinytesters",
+        "text": "shinytesters"
+      },
+      {
+        "href": "https://testthat.r-lib.org/reference/local_mocked_bindings.html",
+        "text": "local_mocked_bindings"
+      },
+      {
+        "href": "https://ashbaldry.github.io/2025-08-10-shinytesters-0-1-0-release/",
+        "text": "Ashley's Blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "{shinytesters}: Updating Inputs in testServer | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ashleys-blog/",
+        "text": "Ashley's Blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394664 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">{shinytesters}: Updating Inputs in testServer</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 9, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ashleys-blog/\">Ashley's Blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://ashbaldry.github.io/2025-08-10-shinytesters-0-1-0-release/\"> Ashley's Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>I have been working on a project where we have been unable to use {<a href=\"https://rstudio.github.io/shinytest2/\" rel=\"nofollow\" target=\"_blank\">shinytest2</a>}, \nand therefore have had a heavy reliance on the <a href=\"https://shiny.posit.co/r/reference/shiny/latest/testserver.html\" rel=\"nofollow\" target=\"_blank\"><code>testServer</code></a>\nfunction on testing the reactive functionality in each of the modules. Whilst it is great for checking the server-side\nlogic based on dummy inputs being clicked, or <code>reactiveValues</code> being updated, one point of friction was when an\nobserver would update an input, and that input would trigger another event. You can manually update the input in\nthe test after the observer, but it can cause some discrepancy between what the order of observers in a module and\nwhat is happening in the test.</p>\n<p>This is where {<a href=\"https://ashbaldry.github.io/shinytesters\" rel=\"nofollow\" target=\"_blank\">shinytesters</a>} comes in. This package aims to mock any\nupdate function in {shiny} or Shiny extension package, and update the input in <code>testServer</code> when called in an\nobserver. This will allow the running order of observers in tests to match what would happen in a live Shiny session,\nplus avoiding any need to manually update input values.</p>\n<p>The main function available in {shinytesters} is <code>use_shiny_testers</code>. This function utilises the \n<a href=\"https://testthat.r-lib.org/reference/local_mocked_bindings.html\" rel=\"nofollow\" target=\"_blank\"><code>local_mocked_bindings</code></a> function in the {testthat}\npackage. Mocking functions in tests is particularly useful for testing functions that call functions that connect\nto APIs, to avoid the reliance on an internet connection when running the tests. Here it is particularly\nuseful as we don’t have a UI for the messages sent from the update functions, and want to create a way to do\nthis to the mock shiny session.</p>\n<p>Each function in a package that contains the word “update” are found within the package and a mock function is\ncreated to extract the new input that was going to be sent to the UI. This has been facilitated by using the\n{rlang} package, being able to extract the function argument names, the call values, and any other information\naround the call with easy to use functionality. This function can be put in the start of a <code>test_that</code> expression \nto add a mocked version of all update functions within a given package.</p>\n<p>Below is an example of how it is implemented:</p>\n<pre>library(testthat)\nlibrary(shiny)\nlibrary(shinytesters)\n\ntest_that(\"Selected date updates when button is triggered\", {\n  use_shiny_testers()\n\n  example_server_fn &lt;- function(input, output, session) {\n    observeEvent(input$trigger, {\n      updateDateInput(\n        inputId = \"result\",\n        label = \"New Label\",\n        value = as.Date(\"2000-01-01\"),\n        min = as.Date(\"1999-12-31\")\n      )\n    })\n  }\n\n  shiny::testServer(\n    app = example_server_fn,\n    expr = {\n      session$setInputs(result = as.Date(\"2025-01-02\"))\n      session$setInputs(trigger = 1L)\n\n      expect_identical(input$result, as.Date(\"2000-01-01\"))\n      expect_identical(input$result.min, as.Date(\"1999-12-31\"))\n      expect_null(input$result.max)\n    }\n  )\n})\n</pre>\n<p>One thing to note is that not only can you see that the input has been updated, but other values are also available\nin the input. In a date input, you can select the minimum and maximum date a user a can choose, but there is no way\nto track it in <code>testServer</code>. Similar cases happen when changing the options in a select input or updating the\nlabel of any given input. These are also available in {shinytesters} by appending the argument to the end of the \ninput ID, separated by a period. So in the example above, the minimum date is now available under <code>result.min</code>.\nIn Shiny functions, when an argument is <code>NULL</code>, then it is not updated, this is also reflected in {shinytesters},\nso you are able to check when attributes of an input have updated without the actual input updating.</p>\n<p>When there are multiple Shiny extension packages are being used in a single module, then you will need to call\n<code>use_shiny_testers</code> multiple times, one for each package.</p>\n<pre>test_that(\"Testing complex shiny module\", {\n  use_shiny_testers() # By default it mocks the shiny package update function\n  use_shiny_testers(.package = \"shinyWidgets\")\n  ...\n})\n</pre>\n<p>There have been some assumptions made around the argument names that are used in the update functions, based off\nthe shiny package. This is not always the case with the extension packages, so the following can be updated\nso that they all work as expected:</p>\n<ul>\n<li><code>id_arg</code> to specify the ID argument e.g. “input_id” in the {shiny.semantic} package</li>\n<li><code>value_args</code> to specify the arguments that the input value can be assigned from. This is different even\nin the {shiny} package itself, where single values are “value”, whereas multiple options such as the\nselect input use “selected”</li>\n<li><code>range_value_args</code> to specify the arguments that a 2-length input value can be assigned from.\nAdditional logic is added here when these exist in the function call to make sure that the\nfirst and/or last value aren’t updated when they are assigned <code>NULL</code></li>\n</ul>\n<p>If the functions in a package don’t all contain the explicit word “update”, then there is also\n<code>create_test_update_fns</code>. With this function, any number of function names in a particular package\nwill be mocked to update the inputs when called in the test script.</p>\n<pre>test_that(\"Selected date updates when button is triggered\", {\n  local_mocked_bindings(!!!create_test_update_fns(c(\"updateDateInput\", \"updateSelectInput\")))\n  ...\n})\n</pre>\n<p>Note: This will require {rlang} or use <code>do.call</code> instead to assign the functions to the local mocked bindings.</p>\n<p>The {shinytesters} package will be on its way to CRAN soon, but in the meantime is available to install\nfrom GitHub using <code>remotes::install_github(\"ashbaldry/shinytesters\")</code>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ashbaldry.github.io/2025-08-10-shinytesters-0-1-0-release/\"> Ashley's Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "{shinytesters}: Updating Inputs in testServer\nPosted on\nAugust 9, 2025\nby\nAshley's Blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAshley's Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI have been working on a project where we have been unable to use {\nshinytest2\n}, \nand therefore have had a heavy reliance on the\ntestServer\nfunction on testing the reactive functionality in each of the modules. Whilst it is great for checking the server-side\nlogic based on dummy inputs being clicked, or\nreactiveValues\nbeing updated, one point of friction was when an\nobserver would update an input, and that input would trigger another event. You can manually update the input in\nthe test after the observer, but it can cause some discrepancy between what the order of observers in a module and\nwhat is happening in the test.\nThis is where {\nshinytesters\n} comes in. This package aims to mock any\nupdate function in {shiny} or Shiny extension package, and update the input in\ntestServer\nwhen called in an\nobserver. This will allow the running order of observers in tests to match what would happen in a live Shiny session,\nplus avoiding any need to manually update input values.\nThe main function available in {shinytesters} is\nuse_shiny_testers\n. This function utilises the\nlocal_mocked_bindings\nfunction in the {testthat}\npackage. Mocking functions in tests is particularly useful for testing functions that call functions that connect\nto APIs, to avoid the reliance on an internet connection when running the tests. Here it is particularly\nuseful as we don’t have a UI for the messages sent from the update functions, and want to create a way to do\nthis to the mock shiny session.\nEach function in a package that contains the word “update” are found within the package and a mock function is\ncreated to extract the new input that was going to be sent to the UI. This has been facilitated by using the\n{rlang} package, being able to extract the function argument names, the call values, and any other information\naround the call with easy to use functionality. This function can be put in the start of a\ntest_that\nexpression \nto add a mocked version of all update functions within a given package.\nBelow is an example of how it is implemented:\nlibrary(testthat)\nlibrary(shiny)\nlibrary(shinytesters)\n\ntest_that(\"Selected date updates when button is triggered\", {\n  use_shiny_testers()\n\n  example_server_fn <- function(input, output, session) {\n    observeEvent(input$trigger, {\n      updateDateInput(\n        inputId = \"result\",\n        label = \"New Label\",\n        value = as.Date(\"2000-01-01\"),\n        min = as.Date(\"1999-12-31\")\n      )\n    })\n  }\n\n  shiny::testServer(\n    app = example_server_fn,\n    expr = {\n      session$setInputs(result = as.Date(\"2025-01-02\"))\n      session$setInputs(trigger = 1L)\n\n      expect_identical(input$result, as.Date(\"2000-01-01\"))\n      expect_identical(input$result.min, as.Date(\"1999-12-31\"))\n      expect_null(input$result.max)\n    }\n  )\n})\nOne thing to note is that not only can you see that the input has been updated, but other values are also available\nin the input. In a date input, you can select the minimum and maximum date a user a can choose, but there is no way\nto track it in\ntestServer\n. Similar cases happen when changing the options in a select input or updating the\nlabel of any given input. These are also available in {shinytesters} by appending the argument to the end of the \ninput ID, separated by a period. So in the example above, the minimum date is now available under\nresult.min\n.\nIn Shiny functions, when an argument is\nNULL\n, then it is not updated, this is also reflected in {shinytesters},\nso you are able to check when attributes of an input have updated without the actual input updating.\nWhen there are multiple Shiny extension packages are being used in a single module, then you will need to call\nuse_shiny_testers\nmultiple times, one for each package.\ntest_that(\"Testing complex shiny module\", {\n  use_shiny_testers() # By default it mocks the shiny package update function\n  use_shiny_testers(.package = \"shinyWidgets\")\n  ...\n})\nThere have been some assumptions made around the argument names that are used in the update functions, based off\nthe shiny package. This is not always the case with the extension packages, so the following can be updated\nso that they all work as expected:\nid_arg\nto specify the ID argument e.g. “input_id” in the {shiny.semantic} package\nvalue_args\nto specify the arguments that the input value can be assigned from. This is different even\nin the {shiny} package itself, where single values are “value”, whereas multiple options such as the\nselect input use “selected”\nrange_value_args\nto specify the arguments that a 2-length input value can be assigned from.\nAdditional logic is added here when these exist in the function call to make sure that the\nfirst and/or last value aren’t updated when they are assigned\nNULL\nIf the functions in a package don’t all contain the explicit word “update”, then there is also\ncreate_test_update_fns\n. With this function, any number of function names in a particular package\nwill be mocked to update the inputs when called in the test script.\ntest_that(\"Selected date updates when button is triggered\", {\n  local_mocked_bindings(!!!create_test_update_fns(c(\"updateDateInput\", \"updateSelectInput\")))\n  ...\n})\nNote: This will require {rlang} or use\ndo.call\ninstead to assign the functions to the local mocked bindings.\nThe {shinytesters} package will be on its way to CRAN soon, but in the meantime is available to install\nfrom GitHub using\nremotes::install_github(\"ashbaldry/shinytesters\")\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAshley's Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I have been working on a project where we have been unable to use {shinytest2}, and therefore have had a heavy reliance on the testServer function on testing the reactive functionality in each of the modules. Whilst it is great f...",
+    "meta_keywords": null,
+    "og_description": "I have been working on a project where we have been unable to use {shinytest2}, and therefore have had a heavy reliance on the testServer function on testing the reactive functionality in each of the modules. Whilst it is great f...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "{shinytesters}: Updating Inputs in testServer | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5,
+    "sitemap_lastmod": null,
+    "twitter_description": "I have been working on a project where we have been unable to use {shinytest2}, and therefore have had a heavy reliance on the testServer function on testing the reactive functionality in each of the modules. Whilst it is great f...",
+    "twitter_title": "{shinytesters}: Updating Inputs in testServer | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/08/shinytesters-updating-inputs-in-testserver/",
+    "word_count": 1004
+  }
+}

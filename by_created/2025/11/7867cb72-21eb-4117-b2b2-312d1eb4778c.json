@@ -1,0 +1,191 @@
+{
+  "uuid": "7867cb72-21eb-4117-b2b2-312d1eb4778c",
+  "created_at": "2025-11-22 19:58:00",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/part-i-using-r-in-excel-descriptive-statistics/",
+    "crawled_at": "2025-11-22T10:45:07.111918",
+    "external_links": [
+      {
+        "href": "https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/",
+        "text": "Adam's Software Lab"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/Adam-Gladstone/Office365AddIns",
+        "text": "ExcelRAddIn"
+      },
+      {
+        "href": "https://github.com/Adam-Gladstone/Office365AddIns?tab=readme-ov-file#installation",
+        "text": "here"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/Part-I-R-in-Excel-Descriptive-Statistics.xlsx",
+        "text": "Part I – R in Excel – Descriptive Statistics.xlsx"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/GalapagosData.csv",
+        "text": "GalapagosData.csv"
+      },
+      {
+        "href": "https://www.rdocumentation.org/packages/pastecs/versions/1.4.2/topics/stat.desc",
+        "text": "pastecs"
+      },
+      {
+        "href": "https://www.rdocumentation.org/packages/sjmisc/versions/2.8.10/topics/descr",
+        "text": "summarytools"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/",
+        "text": "Adam's Software Lab"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Part I – Using R in Excel – Descriptive Statistics | R-bloggers",
+    "images": [
+      {
+        "alt": "ExcelRAddIn",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "ExcelRAddIn",
+        "base64": null,
+        "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/ExcelRAddIn.png?w=578&ssl=1"
+      },
+      {
+        "alt": "R Environment Settings",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "R Environment Settings",
+        "base64": null,
+        "src": "https://i2.wp.com/adam-gladstone.github.io/assets/images/R-EnvironmentSettings.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Create Data Frame",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Create Data Frame",
+        "base64": null,
+        "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/CreateDataFrame.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Basic Statistics",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Basic Statistics",
+        "base64": null,
+        "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/BasicStatistics.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Summary Function",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Summary Function",
+        "base64": null,
+        "src": "https://i2.wp.com/adam-gladstone.github.io/assets/images/SummaryFunction.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Custom Function",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Custom Function",
+        "base64": null,
+        "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/CustomFunction.png?w=578&ssl=1"
+      },
+      {
+        "alt": "stats.desc function from pastecs",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "stats.desc function from pastecs",
+        "base64": null,
+        "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/StatsDescFunction.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/adam-gladstone/",
+        "text": "Adam Gladstone"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394361 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Part I – Using R in Excel – Descriptive Statistics</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/adam-gladstone/\">Adam Gladstone</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/\"> Adam's Software Lab</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h3 id=\"introduction\">Introduction</h3>\n<p>The purpose of this series of posts is to demonstrate some use-cases for <strong>R in Excel</strong> using the <strong>ExcelRAddIn</strong> component (disclaimer: I am the developer of this add-in: <a href=\"https://github.com/Adam-Gladstone/Office365AddIns\" rel=\"nofollow\" target=\"_blank\">ExcelRAddIn</a>). The fundamental rationale for the add-in is that it allows access to the extensive R ecosystem within an Excel worksheet. Excel provides many excellent facilities for data wrangling and analysis. However, for certain types of statistical data analysis, the limitations of the built-in functions even alongside the  Analysis ToolPak is not sufficient, and R provides superior facilities (for example, for performing LDA, PCA, forecasting and time series analysis to mention a few).</p>\n<p>This series of posts demonstrates four main areas where R is useful in Excel: <em>descriptive statistics</em>, <em>linear regression</em>, <em>forecasting</em>, and <em>accessing Python</em>. Along the way, we will see that using R in Excel is no more difficult than writing a formula and calling the <strong>ExcelRAddIn</strong> to evaluate it. The ‘trick’, if there is one, is unpacking the results into a form that Excel understands and which can be used in a worksheet. We will see several examples of how to do this.</p>\n<p>Installing and setting up the <strong>ExcelRAddIn</strong> is described <a href=\"https://github.com/Adam-Gladstone/Office365AddIns?tab=readme-ov-file#installation\" rel=\"nofollow\" target=\"_blank\">here</a>. Each part of the series is accompanied by an Excel workbook with the R scripts. \nThe workbooks depend on the <code>ExcelRAddIn-AddIn64.dll</code>, so this should be loaded first, and the “R AddIn” menu should appear on the right-hand side of the menu bar.</p>\n<p><img alt=\"ExcelRAddIn\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/ExcelRAddIn.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"ExcelRAddIn\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/ExcelRAddIn.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The task pane is empty until the first script is evaluated. This will initialise R using the directories in the “Settings”. The default packages I use are tidyverse, dplyr, forecast, ggplot2, ggthemes, as shown below:</p>\n<p><img alt=\"R Environment Settings\" data-lazy-src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/R-EnvironmentSettings.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"R Environment Settings\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/R-EnvironmentSettings.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The workbook for this part of the series is: <a href=\"https://adam-gladstone.github.io/assets/images/Part-I-R-in-Excel-Descriptive-Statistics.xlsx\" rel=\"nofollow\" target=\"_blank\">Part I – R in Excel – Descriptive Statistics.xlsx</a>. The workbooks all have a similar structure just to keep things organised. The ‘References’ worksheet lists any links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. The ‘Datasets’ worksheet contains any data referenced in the worksheets.</p>\n<h3 id=\"descriptive-statistics\">Descriptive statistics</h3>\n<h4 id=\"loading-data\">Loading Data</h4>\n<p>The first step is to load some data. This dataset comes from <strong>“Linear Models with R”</strong> by Julian Faraway. In this example, I have loaded the data into Excel from a csv file (<a href=\"https://adam-gladstone.github.io/assets/images/GalapagosData.csv\" rel=\"nofollow\" target=\"_blank\">GalapagosData.csv</a>) using Power Query. The data has been tidied up and I have created a table (<code>tableGalapagos</code>) that can be referenced in the workbook.</p>\n<p>In the Descriptive Statistics worksheet, we first create a data frame using the <code>CreateDataFrame</code> function.</p>\n<p><code>=RScript.CreateDataFrame(\"galapagos\", tableGalapagosData, tableGalapagosData[#Headers])</code></p>\n<p>This function is part of the add-in and simplifies the creation of dataframes. There are also functions to create vectors and matrices. We pass in a name (which will appear in the R environment) and the data and headers. The final parameter (‘Type’ =&gt; character, complex, integer, logical, numeric) is optional; the RType is now determined from the data if possible. This makes it somewhat easier to create objects to pass to R from Excel.</p>\n<p><img alt=\"Create Data Frame\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/CreateDataFrame.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Create Data Frame\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/CreateDataFrame.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>This copies the data into the R environment. There are a number of alternatives to this approach. We could have loaded the csv file directly into R using:</p>\n<p><code>galapagos &lt;- read.csv(\"D:\\Development\\...\\GalapagosData.csv\")</code></p>\n<p>By loading the data into Excel and then copying it to R, we can leverage the Excel import using Power Query, so we automatically get grouping, filtering etc, and can immediately create PivotTables. The downside is that we need to make a copy into R, and this means ensuring the data types are ‘viable’. This is particularly important with dates.</p>\n<h4 id=\"obtaining-statistics\">Obtaining Statistics</h4>\n<p>Now that we have the data frame in R (and in Excel), we can obtain some descriptive statistics. If we were doing this exclusively in Excel, we might use individual formulas (<code>=COUNT()</code>, <code>=AVERAGE()</code>, <code>=STDEV.S()</code> and so on). Using R, we can accomplish the same thing.</p>\n<p><img alt=\"Basic Statistics\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/BasicStatistics.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Basic Statistics\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/BasicStatistics.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>As expected, this returns the mean and standard deviation.</p>\n<p>We can improve on this using some additional R functions: <code>sapply</code> together with <code>fivenum</code> (<strong>fivenum</strong> returns Tukey’s five number summary (minimum, lower-hinge, median, upper-hinge, maximum) for the input data).</p>\n<p><code>as.data.frame(sapply(galapagos[,2:8], fivenum))</code></p>\n<p>When evaluated, all this does is to apply the <code>fivenum</code> function to columns 2 to 8 (zero-based) of the galapagos dataset, and coerce the result into a dataframe. If we don’t do this we don’t get back the column headings (which is not tremendously useful). You may also have noticed that we have to determine the return values from the documentation. There doesn’t seem to be a way of retrieving this meta data from the function.</p>\n<p>An alternative to the five-number summary is to use the built-in <code>summary(...)</code> function. Unfortunately the output from this does not work well with Excel, so we need to massage the results in order to obtain a decent table showing the summary with labels.</p>\n<p><img alt=\"Summary Function\" data-lazy-src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/SummaryFunction.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Summary Function\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/SummaryFunction.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>Basically, we get the column labels from the galapagos dataset using: <code>names(galapagos)</code>, and we get the labels for the summary using: <code>names(summary(galapagos$Species))</code>. Then for each column of the data we are interested in, we request the summary. For example: <code>summary(galapagos$Elevation)</code>.</p>\n<p>Now that we are massaging the results, we might even consider using a custom function. We can, for example, define a function that returns a dataframe consisting of a label and the corresponding statistic:</p>\n<pre>custom_summary &lt;- function(data) {\n  label &lt;- c(\"count\", \"mean\", \"std.dev\")\n  value &lt;- c(length(data), mean(data), sd(data))\n  data.frame(label, value)\n}\n</pre>\n<p>Evaluating the function with the script:</p>\n<p><code>custom_summary(galapagos$Area)</code></p>\n<p>outputs a small table, as follows:</p>\n<p><img alt=\"Custom Function\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/CustomFunction.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Custom Function\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/CustomFunction.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>If all this seems quite a lot of hard work, or you are looking for a more sophisticated approach - perhaps a summary that tests the normality of the distribution of the data - then you might prefer to use a summary function from a different package. There are several to choose from. Here we use <code>pastecs</code> <a href=\"https://www.rdocumentation.org/packages/pastecs/versions/1.4.2/topics/stat.desc\" rel=\"nofollow\" target=\"_blank\">pastecs</a> and <code>summarytools</code> <a href=\"https://www.rdocumentation.org/packages/sjmisc/versions/2.8.10/topics/descr\" rel=\"nofollow\" target=\"_blank\">summarytools</a>. Both of these give good results with minimal effort:</p>\n<p><img alt=\"stats.desc function from pastecs\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/StatsDescFunction.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"stats.desc function from pastecs\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/StatsDescFunction.png?w=578&amp;ssl=1\"/></noscript></p>\n<h3 id=\"wrap-up\">Wrap up</h3>\n<p>In this post, we have seen various approaches to obtaining descriptive statistics using R in Excel via the <strong>ExcelRAddIn</strong>. We have introduced some basic approaches (similar to what Excel natively offers). But we have also seen some more advanced usage that demonstrates how useful it can be to have access to R functionality in Excel. The next post covers linear regression using R in Excel.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/\"> Adam's Software Lab</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Part I – Using R in Excel – Descriptive Statistics\nPosted on\nJuly 24, 2025\nby\nAdam Gladstone\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAdam's Software Lab\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nThe purpose of this series of posts is to demonstrate some use-cases for\nR in Excel\nusing the\nExcelRAddIn\ncomponent (disclaimer: I am the developer of this add-in:\nExcelRAddIn\n). The fundamental rationale for the add-in is that it allows access to the extensive R ecosystem within an Excel worksheet. Excel provides many excellent facilities for data wrangling and analysis. However, for certain types of statistical data analysis, the limitations of the built-in functions even alongside the  Analysis ToolPak is not sufficient, and R provides superior facilities (for example, for performing LDA, PCA, forecasting and time series analysis to mention a few).\nThis series of posts demonstrates four main areas where R is useful in Excel:\ndescriptive statistics\n,\nlinear regression\n,\nforecasting\n, and\naccessing Python\n. Along the way, we will see that using R in Excel is no more difficult than writing a formula and calling the\nExcelRAddIn\nto evaluate it. The ‘trick’, if there is one, is unpacking the results into a form that Excel understands and which can be used in a worksheet. We will see several examples of how to do this.\nInstalling and setting up the\nExcelRAddIn\nis described\nhere\n. Each part of the series is accompanied by an Excel workbook with the R scripts. \nThe workbooks depend on the\nExcelRAddIn-AddIn64.dll\n, so this should be loaded first, and the “R AddIn” menu should appear on the right-hand side of the menu bar.\nThe task pane is empty until the first script is evaluated. This will initialise R using the directories in the “Settings”. The default packages I use are tidyverse, dplyr, forecast, ggplot2, ggthemes, as shown below:\nThe workbook for this part of the series is:\nPart I – R in Excel – Descriptive Statistics.xlsx\n. The workbooks all have a similar structure just to keep things organised. The ‘References’ worksheet lists any links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. The ‘Datasets’ worksheet contains any data referenced in the worksheets.\nDescriptive statistics\nLoading Data\nThe first step is to load some data. This dataset comes from\n“Linear Models with R”\nby Julian Faraway. In this example, I have loaded the data into Excel from a csv file (\nGalapagosData.csv\n) using Power Query. The data has been tidied up and I have created a table (\ntableGalapagos\n) that can be referenced in the workbook.\nIn the Descriptive Statistics worksheet, we first create a data frame using the\nCreateDataFrame\nfunction.\n=RScript.CreateDataFrame(\"galapagos\", tableGalapagosData, tableGalapagosData[#Headers])\nThis function is part of the add-in and simplifies the creation of dataframes. There are also functions to create vectors and matrices. We pass in a name (which will appear in the R environment) and the data and headers. The final parameter (‘Type’ => character, complex, integer, logical, numeric) is optional; the RType is now determined from the data if possible. This makes it somewhat easier to create objects to pass to R from Excel.\nThis copies the data into the R environment. There are a number of alternatives to this approach. We could have loaded the csv file directly into R using:\ngalapagos <- read.csv(\"D:\\Development\\...\\GalapagosData.csv\")\nBy loading the data into Excel and then copying it to R, we can leverage the Excel import using Power Query, so we automatically get grouping, filtering etc, and can immediately create PivotTables. The downside is that we need to make a copy into R, and this means ensuring the data types are ‘viable’. This is particularly important with dates.\nObtaining Statistics\nNow that we have the data frame in R (and in Excel), we can obtain some descriptive statistics. If we were doing this exclusively in Excel, we might use individual formulas (\n=COUNT()\n,\n=AVERAGE()\n,\n=STDEV.S()\nand so on). Using R, we can accomplish the same thing.\nAs expected, this returns the mean and standard deviation.\nWe can improve on this using some additional R functions:\nsapply\ntogether with\nfivenum\n(\nfivenum\nreturns Tukey’s five number summary (minimum, lower-hinge, median, upper-hinge, maximum) for the input data).\nas.data.frame(sapply(galapagos[,2:8], fivenum))\nWhen evaluated, all this does is to apply the\nfivenum\nfunction to columns 2 to 8 (zero-based) of the galapagos dataset, and coerce the result into a dataframe. If we don’t do this we don’t get back the column headings (which is not tremendously useful). You may also have noticed that we have to determine the return values from the documentation. There doesn’t seem to be a way of retrieving this meta data from the function.\nAn alternative to the five-number summary is to use the built-in\nsummary(...)\nfunction. Unfortunately the output from this does not work well with Excel, so we need to massage the results in order to obtain a decent table showing the summary with labels.\nBasically, we get the column labels from the galapagos dataset using:\nnames(galapagos)\n, and we get the labels for the summary using:\nnames(summary(galapagos$Species))\n. Then for each column of the data we are interested in, we request the summary. For example:\nsummary(galapagos$Elevation)\n.\nNow that we are massaging the results, we might even consider using a custom function. We can, for example, define a function that returns a dataframe consisting of a label and the corresponding statistic:\ncustom_summary <- function(data) {\n  label <- c(\"count\", \"mean\", \"std.dev\")\n  value <- c(length(data), mean(data), sd(data))\n  data.frame(label, value)\n}\nEvaluating the function with the script:\ncustom_summary(galapagos$Area)\noutputs a small table, as follows:\nIf all this seems quite a lot of hard work, or you are looking for a more sophisticated approach - perhaps a summary that tests the normality of the distribution of the data - then you might prefer to use a summary function from a different package. There are several to choose from. Here we use\npastecs\npastecs\nand\nsummarytools\nsummarytools\n. Both of these give good results with minimal effort:\nWrap up\nIn this post, we have seen various approaches to obtaining descriptive statistics using R in Excel via the\nExcelRAddIn\n. We have introduced some basic approaches (similar to what Excel natively offers). But we have also seen some more advanced usage that demonstrates how useful it can be to have access to R functionality in Excel. The next post covers linear regression using R in Excel.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAdam's Software Lab\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction The purpose of this series of posts is to demonstrate some use-cases for R in Excel using the ExcelRAddIn component (disclaimer: I am the developer of this add-in: ExcelRAddIn). The fundamental rationale for the add-in is that it allows ac...",
+    "meta_keywords": null,
+    "og_description": "Introduction The purpose of this series of posts is to demonstrate some use-cases for R in Excel using the ExcelRAddIn component (disclaimer: I am the developer of this add-in: ExcelRAddIn). The fundamental rationale for the add-in is that it allows ac...",
+    "og_image": "https://adam-gladstone.github.io/assets/images/ExcelRAddIn.png",
+    "og_title": "Part I – Using R in Excel – Descriptive Statistics | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction The purpose of this series of posts is to demonstrate some use-cases for R in Excel using the ExcelRAddIn component (disclaimer: I am the developer of this add-in: ExcelRAddIn). The fundamental rationale for the add-in is that it allows ac...",
+    "twitter_title": "Part I – Using R in Excel – Descriptive Statistics | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/part-i-using-r-in-excel-descriptive-statistics/",
+    "word_count": 1205
+  }
+}

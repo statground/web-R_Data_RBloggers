@@ -1,0 +1,108 @@
+{
+  "uuid": "9a4ad943-2d58-4f65-86cd-35ca01bceee3",
+  "created_at": "2025-12-04 00:05:21",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/12/dplyr-and-oracle-database-with-databaseconnector-and-jdbc-on-windows/",
+    "crawled_at": "2025-12-03T15:04:44.686688",
+    "external_links": [
+      {
+        "href": "https://guillaumepressiat.github.io/blog/2025/12/oraclyr_bis",
+        "text": "Guillaume Pressiat"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://guillaumepressiat.github.io/blog/2019/11/oraclyr",
+        "text": "post"
+      },
+      {
+        "href": "https://ohdsi.github.io/DatabaseConnector/articles/Connecting.html",
+        "text": "DatabaseConnector"
+      },
+      {
+        "href": "https://github.com/OHDSI/DatabaseConnector/",
+        "text": "https://github.com/OHDSI/DatabaseConnector/"
+      },
+      {
+        "href": "https://guillaumepressiat.github.io/blog/2025/12/oraclyr_bis",
+        "text": "Guillaume Pressiat"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "dplyr and Oracle database with DatabaseConnector and JDBC on Windows | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/guillaume-pressiat/",
+        "text": "Guillaume Pressiat"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-397278 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">dplyr and Oracle database with DatabaseConnector and JDBC on Windows</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 2, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/guillaume-pressiat/\">Guillaume Pressiat</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://guillaumepressiat.github.io/blog/2025/12/oraclyr_bis\"> Guillaume Pressiat</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>In a rather old <a href=\"https://guillaumepressiat.github.io/blog/2019/11/oraclyr\" rel=\"nofollow\" target=\"_blank\">post</a> on this blog, I wrote about an Oracle database connection from R on Windows with ODBC when you have old Oracle clients (32 bit version) installed in an enterprise setup.</p>\n<p>It’s still working on R 32 bit. But now R new releases are only delivered in 64 bit version. Hard to stay with a R 4.1 (last 32bit) when we are now at R 4.5…</p>\n<p>In such a situation, are there any alternatives?</p>\n<span id=\"more-397278\"></span>\n<h2 id=\"an-alternative-with-jdbc\">An alternative with JDBC</h2>\n<p><strong>Java on the rescue?</strong></p>\n<p>With JDBC clients and jar files, DBeaver is able to connect to all types of databases, so R should also be able to do so, both in 32b or 64b and on the most recent versions only with JDBC drivers?</p>\n<p>Yes, it works too, see OHDSI’s <a href=\"https://ohdsi.github.io/DatabaseConnector/articles/Connecting.html\" rel=\"nofollow\" target=\"_blank\">DatabaseConnector</a> package.</p>\n<p>I am posting an example of use here.</p>\n<figure class=\"highlight\"><pre>Sys.setenv(\"DATABASECONNECTOR_JAR_FOLDER\" = \"~/drivers_dbeaver/oracle\")\n\nlibrary(DatabaseConnector)\nlibrary(dplyr)\nlibrary(dbplyr)\n\nconn &lt;- connect(\n  createConnectionDetails(\n    dbms=\"oracle\", \n    connectionString = \"jdbc:oracle:thin:@db-server.fr:1521/APPNAME\",\n    user = \"resu\",\n    password = \"drowssap\"\n  )\n)\n\n# SQL\nquerySql(conn,\"SELECT COUNT(*) FROM appname.table_a\")\n# dplyr / dbplyr\ntbl(conn, in_schema('APPNAME', 'TABLE_A')) %&gt;% count()\n\ndisconnect(conn)</pre></figure>\n<p>This package seems very interesting and is not limited to Windows and Oracle support, see here for more informations:\n<a href=\"https://github.com/OHDSI/DatabaseConnector/\" rel=\"nofollow\" target=\"_blank\">https://github.com/OHDSI/DatabaseConnector/</a></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://guillaumepressiat.github.io/blog/2025/12/oraclyr_bis\"> Guillaume Pressiat</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "dplyr and Oracle database with DatabaseConnector and JDBC on Windows\nPosted on\nDecember 2, 2025\nby\nGuillaume Pressiat\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGuillaume Pressiat\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn a rather old\npost\non this blog, I wrote about an Oracle database connection from R on Windows with ODBC when you have old Oracle clients (32 bit version) installed in an enterprise setup.\nIt’s still working on R 32 bit. But now R new releases are only delivered in 64 bit version. Hard to stay with a R 4.1 (last 32bit) when we are now at R 4.5…\nIn such a situation, are there any alternatives?\nAn alternative with JDBC\nJava on the rescue?\nWith JDBC clients and jar files, DBeaver is able to connect to all types of databases, so R should also be able to do so, both in 32b or 64b and on the most recent versions only with JDBC drivers?\nYes, it works too, see OHDSI’s\nDatabaseConnector\npackage.\nI am posting an example of use here.\nSys.setenv(\"DATABASECONNECTOR_JAR_FOLDER\" = \"~/drivers_dbeaver/oracle\")\n\nlibrary(DatabaseConnector)\nlibrary(dplyr)\nlibrary(dbplyr)\n\nconn <- connect(\n  createConnectionDetails(\n    dbms=\"oracle\", \n    connectionString = \"jdbc:oracle:thin:@db-server.fr:1521/APPNAME\",\n    user = \"resu\",\n    password = \"drowssap\"\n  )\n)\n\n# SQL\nquerySql(conn,\"SELECT COUNT(*) FROM appname.table_a\")\n# dplyr / dbplyr\ntbl(conn, in_schema('APPNAME', 'TABLE_A')) %>% count()\n\ndisconnect(conn)\nThis package seems very interesting and is not limited to Windows and Oracle support, see here for more informations:\nhttps://github.com/OHDSI/DatabaseConnector/\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGuillaume Pressiat\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "In a rather old post on this blog, I wrote about an Oracle database connection from R on Windows with ODBC when you have old Oracle clients (32 bit version) installed in an enterprise setup. It’s still working on R 32 bit. But now R new releases are o...",
+    "meta_keywords": null,
+    "og_description": "In a rather old post on this blog, I wrote about an Oracle database connection from R on Windows with ODBC when you have old Oracle clients (32 bit version) installed in an enterprise setup. It’s still working on R 32 bit. But now R new releases are o...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "dplyr and Oracle database with DatabaseConnector and JDBC on Windows | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.8,
+    "sitemap_lastmod": null,
+    "twitter_description": "In a rather old post on this blog, I wrote about an Oracle database connection from R on Windows with ODBC when you have old Oracle clients (32 bit version) installed in an enterprise setup. It’s still working on R 32 bit. But now R new releases are o...",
+    "twitter_title": "dplyr and Oracle database with DatabaseConnector and JDBC on Windows | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/12/dplyr-and-oracle-database-with-databaseconnector-and-jdbc-on-windows/",
+    "word_count": 361
+  }
+}

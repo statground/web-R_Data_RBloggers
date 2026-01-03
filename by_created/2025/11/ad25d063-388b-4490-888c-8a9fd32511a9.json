@@ -1,0 +1,159 @@
+{
+  "uuid": "ad25d063-388b-4490-888c-8a9fd32511a9",
+  "created_at": "2025-11-22 19:58:15",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/06/future-got-better-at-finding-global-variables/",
+    "crawled_at": "2025-11-22T10:46:45.623898",
+    "external_links": [
+      {
+        "href": "https://www.jottr.org/2025/06/23/future-got-better-at-finding-global-variables/",
+        "text": "JottR on R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.jottr.org/2025/06/19/futureverse-10-years/",
+        "text": null
+      },
+      {
+        "href": "https://www.jottr.org/2025/06/19/futureverse-10-years/",
+        "text": "celebrates ten years on CRAN"
+      },
+      {
+        "href": "https://www.futureverse.org/",
+        "text": "futureverse"
+      },
+      {
+        "href": "https://globals.futureverse.org/",
+        "text": "globals"
+      },
+      {
+        "href": "https://future.futureverse.org/",
+        "text": "future"
+      },
+      {
+        "href": "https://future.apply.futureverse.org/",
+        "text": "future.apply"
+      },
+      {
+        "href": "https://furrr.futureverse.org/",
+        "text": "furrr"
+      },
+      {
+        "href": "https://dofuture.futureverse.org/",
+        "text": "doFuture"
+      },
+      {
+        "href": "https://globals.futureverse.org/reference/globalsOf.html",
+        "text": "findGlobals()"
+      },
+      {
+        "href": "https://cran.r-project.org/package=codetools",
+        "text": "codetools"
+      },
+      {
+        "href": "https://r-universe.dev/search?q=needs%3Afuture",
+        "text": "1,300 packages that\n“need” it"
+      },
+      {
+        "href": "https://gitlab.com/luke-tierney/codetools/-/issues/16",
+        "text": "a\nbug"
+      },
+      {
+        "href": "https://gitlab.com/luke-tierney/codetools/-/blob/master/noweb/codetools.nw?ref_type=heads",
+        "text": "written using\nliterate\nprogramming"
+      },
+      {
+        "href": "https://www.jottr.org/2025/06/23/future-got-better-at-finding-global-variables/",
+        "text": "JottR on R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Future got better at finding global variables | R-bloggers",
+    "images": [
+      {
+        "alt": "The 'future' hexlogo balloon wall",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "The 'future' hexlogo balloon wall",
+        "base64": null,
+        "src": "https://i1.wp.com/www.jottr.org/post/future-logo-balloons.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jottr-on-r/",
+        "text": "JottR on R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393280 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Future got better at finding global variables</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 22, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jottr-on-r/\">JottR on R</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.jottr.org/2025/06/23/future-got-better-at-finding-global-variables/\"> JottR on R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p><a href=\"https://www.jottr.org/2025/06/19/futureverse-10-years/\" rel=\"nofollow\" target=\"_blank\"><img alt=\"The 'future' hexlogo balloon wall\" data-lazy-src=\"https://i1.wp.com/www.jottr.org/post/future-logo-balloons.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 20%; padding-left: 2ex; padding-bottom: 2ex; float: right;\"/><noscript><img alt=\"The 'future' hexlogo balloon wall\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.jottr.org/post/future-logo-balloons.png?w=578&amp;ssl=1\" style=\"width: 20%; padding-left: 2ex; padding-bottom: 2ex; float: right;\"/></noscript></a></p>\n<p>The <strong>future</strong> package <a href=\"https://www.jottr.org/2025/06/19/futureverse-10-years/\" rel=\"nofollow\" target=\"_blank\">celebrates ten years on CRAN</a> as of June 19,\n2025. This is the first of a series of blog posts highlighting recent\nimprovements to the <strong><a href=\"https://www.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">futureverse</a></strong> ecosystem.</p>\n<p>The <strong><a href=\"https://globals.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">globals</a></strong> package is part of the futureverse and has had two\nrecent releases on 2025-04-15 and 2025-05-08. These updates address a\nfew corner cases that would otherwise lead to unexpected errors. They\nalso resulted in several long, outstanding issues reported on the\n<strong><a href=\"https://future.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">future</a></strong>, <strong><a href=\"https://future.apply.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">future.apply</a></strong>, <strong><a href=\"https://furrr.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">furrr</a></strong>, and <strong><a href=\"https://dofuture.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">doFuture</a></strong>\npackage issue trackers, and elsewhere, could be closed.</p>\n<p>The significant update is that <a href=\"https://globals.futureverse.org/reference/globalsOf.html\" rel=\"nofollow\" target=\"_blank\"><code>findGlobals()</code></a> gained argument\n<code>method = \"dfs\"</code>, which finds globals in R expressions by walking its\nabstract syntax tree (AST) using a <em>depth-first-search</em>\nalgorithm. <strong>This new approach does a better job of emulating how the\nR engine identifies global variables, which results in an even\nsmoother ride for anyone using futureverse for parallel and\ndistributed processing.</strong> Previously, a tweaked search algorithm\nadopted from <code>codetools::findGlobals()</code> was used. The <strong><a href=\"https://cran.r-project.org/package=codetools\" rel=\"nofollow\" target=\"_blank\">codetools</a></strong>\nsearch algorithm is mainly designed for <code>R CMD check</code> to detect\nundefined variables being used in package code. To limit the number of\nfalse positives reported by <code>R CMD check</code>, such algorithms tend to be\n“conservative” by nature, so that we can trust what is reported. This\nstrategy is not always sufficient for automatically detecting globals\nneeded in parallel processing. As an example, in</p>\n<pre>fcn &lt;- function() { \n  a &lt;- b\n  b &lt;- 1 \n}\n</pre>\n<p>variable <code>b</code> is a global variable, but if we ask <strong>codetools</strong>, it\ndoes not pick up <code>b</code> as a global;</p>\n<pre>codetools::findGlobals(fun)\n#&gt; [1] \"{\"  \"&lt;-\"\n</pre>\n<p>This false negative is alright for <code>R CMD check</code>, but, in contrast,\nfor parallel processing, we need to use a “liberal” search\nalgorithm. In parallel processing it is okay to pick up and export too\nmany variables to the parallel worker. If a variable is not used,\nlittle harm is done, but if we fail to export a needed variable, we’ll\nend up with an object-not-found error. Futureverse has since the early\ndays (December 2015) used a modified version of the <strong>codetools</strong>\nalgorithm that is liberal, but not too liberal. It detects <code>b</code> as a\nglobal variable;</p>\n<pre>globals::findGlobals(fun)\n#&gt; [1] \"{\"  \"&lt;-\" \"b\"\n</pre>\n<p>This liberal search strategy turns out to work surprisingly well for\ndetecting globals needed in parallel processing, but there were corner\ncases where it failed. For example, <strong>futureverse</strong> struggled to\nidentify global variables in cases such as:</p>\n<pre>library(future)\nplan(multisession, workers = 2)\n\nx &lt;- 2\n\nf &lt;- future(local({\n  h &lt;- function(x) -x\n  h(x)\n}))\nvalue(f)\n</pre>\n<p>which resulted in</p>\n<pre>Error in eval(quote({ : object 'x' not found\n</pre>\n<p>This is because there are several different variables named <code>x</code>, and\nthe one in the calling environment is “masked” by argument <code>x</code>, which\nresults in <code>x</code> never be picked up and exported to the parallel worker.</p>\n<p>It might look as if this type of code was carefully curated to fail,\nbut would rarely, if at all, be spotted in real code. As a matter of\nfact, this is a distilled version of a large real-world scenario\nreported by at least one person. It’s thanks to such feedback that we\ntogether can make improvements to the <strong>futureverse</strong> ecosystem 🙏 I\ncannot know for sure, but I’d suspect this has impacted several R\ndevelopers already - the <strong>future</strong> package is after all among the\n0.6% most downloaded packages and there are <a href=\"https://r-universe.dev/search?q=needs%3Afuture\" rel=\"nofollow\" target=\"_blank\">1,300 packages that\n“need” it</a> as of\nMay 2025.  The above problem was fixed in <strong>globals</strong> 0.18.0\n(2025-05-08) and <strong>future</strong> 1.49.0 (2025-05-09), which now make use of\nthe new <code>findGlobals(..., method = \"dfs\")</code> search strategy\ninternally. After updating these packages, the above code snippet\ngives us</p>\n<pre>value(f)\n#&gt; [1] -2\n</pre>\n<p>as we’d expect.</p>\n<p>Another corner-case bug fix, is where</p>\n<pre>library(future)\nlibrary(magrittr)\nx &lt;- list()\nf &lt;- future ({ x %&gt;% `$&lt;-`(\"a\", 42) })\n</pre>\n<p>would result in the rather obscure error</p>\n<pre>Error in e[[4]] : subscript out of bounds\n</pre>\n<p>This is due to <a href=\"https://gitlab.com/luke-tierney/codetools/-/issues/16\" rel=\"nofollow\" target=\"_blank\">a\nbug</a> in the\n<strong>codetools</strong> package, which <strong>globals</strong> (&gt;= 0.17.0) [2025-04-15]\nworks around. After updating, things work as expected;</p>\n<pre>f &lt;- future ({ x %&gt;% `$&lt;-`(\"a\", 42) })\nvalue(f)\n#&gt; $a\n#&gt; [1] 42\n</pre>\n<p>Yet another fix in <strong>globals</strong> (&gt;= 0.17.0) is that previous versions\nwould throw an error if it ran into an S7 object. The S7 object class\nwas introduced in 2023.</p>\n<p><em>May the future be with you!</em></p>\n<p>Henrik</p>\n<p>PS. Did you know that the <strong>codetools</strong> package is <a href=\"https://gitlab.com/luke-tierney/codetools/-/blob/master/noweb/codetools.nw?ref_type=heads\" rel=\"nofollow\" target=\"_blank\">written using\nliterate\nprogramming</a>\nfollowing the vision of Donald Knuth? Neat, eh? And, it’s almost like\nit was vibe coded, but with the large-language model (LLM) part being\nreplaced by human knowledge and expertise 🤓</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.jottr.org/2025/06/23/future-got-better-at-finding-global-variables/\"> JottR on R</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Future got better at finding global variables\nPosted on\nJune 22, 2025\nby\nJottR on R\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJottR on R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe\nfuture\npackage\ncelebrates ten years on CRAN\nas of June 19,\n2025. This is the first of a series of blog posts highlighting recent\nimprovements to the\nfutureverse\necosystem.\nThe\nglobals\npackage is part of the futureverse and has had two\nrecent releases on 2025-04-15 and 2025-05-08. These updates address a\nfew corner cases that would otherwise lead to unexpected errors. They\nalso resulted in several long, outstanding issues reported on the\nfuture\n,\nfuture.apply\n,\nfurrr\n, and\ndoFuture\npackage issue trackers, and elsewhere, could be closed.\nThe significant update is that\nfindGlobals()\ngained argument\nmethod = \"dfs\"\n, which finds globals in R expressions by walking its\nabstract syntax tree (AST) using a\ndepth-first-search\nalgorithm.\nThis new approach does a better job of emulating how the\nR engine identifies global variables, which results in an even\nsmoother ride for anyone using futureverse for parallel and\ndistributed processing.\nPreviously, a tweaked search algorithm\nadopted from\ncodetools::findGlobals()\nwas used. The\ncodetools\nsearch algorithm is mainly designed for\nR CMD check\nto detect\nundefined variables being used in package code. To limit the number of\nfalse positives reported by\nR CMD check\n, such algorithms tend to be\n“conservative” by nature, so that we can trust what is reported. This\nstrategy is not always sufficient for automatically detecting globals\nneeded in parallel processing. As an example, in\nfcn <- function() { \n  a <- b\n  b <- 1 \n}\nvariable\nb\nis a global variable, but if we ask\ncodetools\n, it\ndoes not pick up\nb\nas a global;\ncodetools::findGlobals(fun)\n#> [1] \"{\"  \"<-\"\nThis false negative is alright for\nR CMD check\n, but, in contrast,\nfor parallel processing, we need to use a “liberal” search\nalgorithm. In parallel processing it is okay to pick up and export too\nmany variables to the parallel worker. If a variable is not used,\nlittle harm is done, but if we fail to export a needed variable, we’ll\nend up with an object-not-found error. Futureverse has since the early\ndays (December 2015) used a modified version of the\ncodetools\nalgorithm that is liberal, but not too liberal. It detects\nb\nas a\nglobal variable;\nglobals::findGlobals(fun)\n#> [1] \"{\"  \"<-\" \"b\"\nThis liberal search strategy turns out to work surprisingly well for\ndetecting globals needed in parallel processing, but there were corner\ncases where it failed. For example,\nfutureverse\nstruggled to\nidentify global variables in cases such as:\nlibrary(future)\nplan(multisession, workers = 2)\n\nx <- 2\n\nf <- future(local({\n  h <- function(x) -x\n  h(x)\n}))\nvalue(f)\nwhich resulted in\nError in eval(quote({ : object 'x' not found\nThis is because there are several different variables named\nx\n, and\nthe one in the calling environment is “masked” by argument\nx\n, which\nresults in\nx\nnever be picked up and exported to the parallel worker.\nIt might look as if this type of code was carefully curated to fail,\nbut would rarely, if at all, be spotted in real code. As a matter of\nfact, this is a distilled version of a large real-world scenario\nreported by at least one person. It’s thanks to such feedback that we\ntogether can make improvements to the\nfutureverse\necosystem 🙏 I\ncannot know for sure, but I’d suspect this has impacted several R\ndevelopers already - the\nfuture\npackage is after all among the\n0.6% most downloaded packages and there are\n1,300 packages that\n“need” it\nas of\nMay 2025.  The above problem was fixed in\nglobals\n0.18.0\n(2025-05-08) and\nfuture\n1.49.0 (2025-05-09), which now make use of\nthe new\nfindGlobals(..., method = \"dfs\")\nsearch strategy\ninternally. After updating these packages, the above code snippet\ngives us\nvalue(f)\n#> [1] -2\nas we’d expect.\nAnother corner-case bug fix, is where\nlibrary(future)\nlibrary(magrittr)\nx <- list()\nf <- future ({ x %>% `$<-`(\"a\", 42) })\nwould result in the rather obscure error\nError in e[[4]] : subscript out of bounds\nThis is due to\na\nbug\nin the\ncodetools\npackage, which\nglobals\n(>= 0.17.0) [2025-04-15]\nworks around. After updating, things work as expected;\nf <- future ({ x %>% `$<-`(\"a\", 42) })\nvalue(f)\n#> $a\n#> [1] 42\nYet another fix in\nglobals\n(>= 0.17.0) is that previous versions\nwould throw an error if it ran into an S7 object. The S7 object class\nwas introduced in 2023.\nMay the future be with you!\nHenrik\nPS. Did you know that the\ncodetools\npackage is\nwritten using\nliterate\nprogramming\nfollowing the vision of Donald Knuth? Neat, eh? And, it’s almost like\nit was vibe coded, but with the large-language model (LLM) part being\nreplaced by human knowledge and expertise 🤓\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJottR on R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "The future package celebrates ten years on CRAN as of June 19, 2025. This is the first of a series of blog posts highlighting recent improvements to the futureverse ecosystem. The globals package is part of the futureverse and has had two recent rel...",
+    "meta_keywords": null,
+    "og_description": "The future package celebrates ten years on CRAN as of June 19, 2025. This is the first of a series of blog posts highlighting recent improvements to the futureverse ecosystem. The globals package is part of the futureverse and has had two recent rel...",
+    "og_image": "https://www.jottr.org/post/future-logo-balloons.png",
+    "og_title": "Future got better at finding global variables | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.6,
+    "sitemap_lastmod": null,
+    "twitter_description": "The future package celebrates ten years on CRAN as of June 19, 2025. This is the first of a series of blog posts highlighting recent improvements to the futureverse ecosystem. The globals package is part of the futureverse and has had two recent rel...",
+    "twitter_title": "Future got better at finding global variables | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/06/future-got-better-at-finding-global-variables/",
+    "word_count": 920
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "uuid": "edd1f6fb-b631-4b43-bdfd-a71a47f3e00b",
+  "created_at": "2025-11-22 19:58:00",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/part-iv-using-r-in-excel-calling-python/",
+    "crawled_at": "2025-11-22T10:45:05.675207",
+    "external_links": [
+      {
+        "href": "https://adam-gladstone.github.io/r-project/Part-IV-Using-R-in-Excel-Calling-Python/",
+        "text": "Adam's Software Lab"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://cran.r-project.org/web/packages/reticulate/index.html",
+        "text": "Reticulate"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/Part-IV-R-in-Excel-Calling-Python.xlsx",
+        "text": "“Part IV – R in Excel – Calling Python.xlsx”"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/ticker_data.py",
+        "text": "ticker_data.py"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/r-project/Part-IV-Using-R-in-Excel-Calling-Python/",
+        "text": "Adam's Software Lab"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Part IV – Using R in Excel – Calling Python | R-bloggers",
+    "images": [
+      {
+        "alt": "Ticker Info",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Ticker Info",
+        "base64": null,
+        "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/TickerInfo.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Portfolio Weights",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Portfolio Weights",
+        "base64": null,
+        "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/PortfolioWeights.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/adam-gladstone/",
+        "text": "Adam Gladstone"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394372 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Part IV – Using R in Excel – Calling Python</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/adam-gladstone/\">Adam Gladstone</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-IV-Using-R-in-Excel-Calling-Python/\"> Adam's Software Lab</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h3 id=\"introduction\">Introduction</h3>\n<p>In the last post in this series I am going to look at calling Python from R. Even though Excel now provides a means of calling Python scripts directly, using the <code>=PY()</code> formula in a worksheet, there are still occasions when it is beneficial to call Python via R. For example, it turns out that importing <code>yfinance</code> produces a ‘module not found’ error using Excel’s function. According to the documentation, <code>yfinance</code> is not one of the open source libraries that the Excel Python secure distribution supports. To get around this issue, we can use the R package <a href=\"https://cran.r-project.org/web/packages/reticulate/index.html\" rel=\"nofollow\" target=\"_blank\"><strong>Reticulate</strong></a>. This lets us load and run Python scripts from R. As we have seen in the previous parts of this series, the <strong>ExcelRAddIn</strong> allows us to run R scripts from an Excel worksheet. And putting these two together is quite simple.</p>\n<p>The workbook for this part of the series is: <a href=\"https://adam-gladstone.github.io/assets/images/Part-IV-R-in-Excel-Calling-Python.xlsx\" rel=\"nofollow\" target=\"_blank\">“Part IV – R in Excel – Calling Python.xlsx”</a>. As before, the ‘References’ worksheet lists links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. In this demonstration, I use the <code>reticulate</code> package and this is loaded here. The ‘Datasets’ worksheet contains the data referenced in the worksheets. In addition there are two auxilliary workksheets: Session Info and Setup. The Session Info retrieves information about the R environment and R version. The Setup worksheet performs some initialisation required for the <code>reticulate</code> package. First we point to the Python executable that we want to use. Next, we confirm the Python version is actually the one requested. Finally we set up a section that we can return to if there are errors from Reticulate and Python itself. It is worth ensuring that these cells are evaluated correctly.</p>\n<h3 id=\"ticker-info\">Ticker Info</h3>\n<p>This worksheet requests some basic ticker info for a number of stocks. The first step is to load the script <a href=\"https://adam-gladstone.github.io/assets/images/ticker_data.py\" rel=\"nofollow\" target=\"_blank\">ticker_data.py</a> and ensure it compiles.</p>\n<h4 id=\"the-python-script\">The Python script</h4>\n<p>The script consists of two main functions: <code>get_ticker_data</code> and <code>get_ticker_weights</code>.</p>\n<pre>\"\"\"\nticker_data.py\n\nRetrieve ticker data from yfinance\n\n\"\"\"\n\nimport pandas as pd\nimport yfinance as yf\n\n\ndef get_value(info: dict, key: str):\n    \"\"\"\n    Retrieve a value from a ticker info dictionary\n    or None if the key doesn't exist\n    \"\"\"\n\n    if info is not None:\n        if key in info.keys():\n            return info[key]\n\n    return None\n\n\ndef get_items(symbol: str, fields: list) -&gt; list:\n    \"\"\"\n    Retrieve data from the corresponding fields for the specified ticker\n    \"\"\"\n\n    items: list = [symbol]\n\n    try:\n        tk: dict = yf.Ticker(symbol)\n        info: dict = tk.info\n\n        for field in fields:\n            items.append(get_value(info, field))\n    # pylint: disable=broad-exception-caught\n    except Exception:\n        # pylint: enable=broad-exception-caught\n        pass\n\n    return items\n\n\ndef get_ticker_data(symbols: list, fields: list) -&gt; pd.DataFrame:\n    \"\"\"\n    Retrieve the specified fields from the input tickers\n    \"\"\"\n\n    headers: list = [\"Ticker\"]\n    for field in fields:\n        headers.append(field)\n\n    rows: list = []\n\n    try:\n        for symbol in symbols:\n            rows.append(get_items(symbol, fields))\n\n    # pylint: disable=broad-exception-caught\n    except Exception:\n        # pylint: enable=broad-exception-caught\n        print(\"An error occured\")\n\n    df = pd.DataFrame(rows, columns=headers)\n\n    return df\n\n\ndef get_ticker_weights(ticker_values: dict) -&gt; pd.DataFrame:\n    \"\"\"\n    Returns:\n        ticker_weights\n    \"\"\"\n\n    # Set up the structure\n    rows: list = []\n    headers: list = [\"ticker\", \"weight\"]\n\n    # Calculate the portfolio value\n    total_portfolio_value = sum(ticker_values.values())\n\n    for ticker, value in ticker_values.items():\n        weight = value / total_portfolio_value\n        rows.append([ticker, weight])\n\n    df = pd.DataFrame(rows, columns=headers)\n\n    return df\n</pre>\n<p><code>get_ticker_data</code> takes a list of ticker symbols and a list of fields. The fields are the items we want to retrieve from yfinance’s ticker info function. It uses the utility function <code>get_value</code> to retrieve the requested value or 0 if the key is not available. No doubt the Python script could be simplified and made more pythonic.</p>\n<p>In the worksheet, we create a vector of tickers and a vector of fields, and then call the Python function.</p>\n<p><img alt=\"Ticker Info\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/TickerInfo.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Ticker Info\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/TickerInfo.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The result is a data frame with the values for the fields that we requested (if available).</p>\n<h4 id=\"portfolio-weights\">Portfolio Weights</h4>\n<p>The second function <code>get_ticker_weights</code>, simply computes the weights of a list of ticker symbols. The Python function requires that the input is a dictionary of symbols and their corresponding values. Therefore we create a <code>ticker_list</code> via R, since Reticulate converts R lists to Python dictionaries. The construction is somewhat mechanical and could certainly be improved just by changing the Python function inputs. With the <code>ticker_list</code> created we can call the Python function.</p>\n<p><img alt=\"Portfolio Weights\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/PortfolioWeights.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Portfolio Weights\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/PortfolioWeights.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>This returns the portfolio weights which we can use to display graphically. From here, we could extend the Python code to compute portfolio returns for the tickers over a specified period. We could then compare the returns with a benchmark, and compute Sharpe ratios for the components.</p>\n<h3 id=\"wrap-up\">Wrap up</h3>\n<p>In this post we have seen how to call Python scripts from R using the <code>reticulate</code> package. While the setup is not completely trivial, it is worth bearing in mind the advantages of this approach: from within Excel, we have access to both R and Python’s extensive ecosystems, which in turn gives us a good deal of flexibility in creating solutions. And that concludes this series of posts on using R in Excel. I hope this has been useful.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-IV-Using-R-in-Excel-Calling-Python/\"> Adam's Software Lab</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Part IV – Using R in Excel – Calling Python\nPosted on\nJuly 24, 2025\nby\nAdam Gladstone\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAdam's Software Lab\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nIn the last post in this series I am going to look at calling Python from R. Even though Excel now provides a means of calling Python scripts directly, using the\n=PY()\nformula in a worksheet, there are still occasions when it is beneficial to call Python via R. For example, it turns out that importing\nyfinance\nproduces a ‘module not found’ error using Excel’s function. According to the documentation,\nyfinance\nis not one of the open source libraries that the Excel Python secure distribution supports. To get around this issue, we can use the R package\nReticulate\n. This lets us load and run Python scripts from R. As we have seen in the previous parts of this series, the\nExcelRAddIn\nallows us to run R scripts from an Excel worksheet. And putting these two together is quite simple.\nThe workbook for this part of the series is:\n“Part IV – R in Excel – Calling Python.xlsx”\n. As before, the ‘References’ worksheet lists links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. In this demonstration, I use the\nreticulate\npackage and this is loaded here. The ‘Datasets’ worksheet contains the data referenced in the worksheets. In addition there are two auxilliary workksheets: Session Info and Setup. The Session Info retrieves information about the R environment and R version. The Setup worksheet performs some initialisation required for the\nreticulate\npackage. First we point to the Python executable that we want to use. Next, we confirm the Python version is actually the one requested. Finally we set up a section that we can return to if there are errors from Reticulate and Python itself. It is worth ensuring that these cells are evaluated correctly.\nTicker Info\nThis worksheet requests some basic ticker info for a number of stocks. The first step is to load the script\nticker_data.py\nand ensure it compiles.\nThe Python script\nThe script consists of two main functions:\nget_ticker_data\nand\nget_ticker_weights\n.\n\"\"\"\nticker_data.py\n\nRetrieve ticker data from yfinance\n\n\"\"\"\n\nimport pandas as pd\nimport yfinance as yf\n\ndef get_value(info: dict, key: str):\n    \"\"\"\n    Retrieve a value from a ticker info dictionary\n    or None if the key doesn't exist\n    \"\"\"\n\n    if info is not None:\n        if key in info.keys():\n            return info[key]\n\n    return None\n\ndef get_items(symbol: str, fields: list) -> list:\n    \"\"\"\n    Retrieve data from the corresponding fields for the specified ticker\n    \"\"\"\n\n    items: list = [symbol]\n\n    try:\n        tk: dict = yf.Ticker(symbol)\n        info: dict = tk.info\n\n        for field in fields:\n            items.append(get_value(info, field))\n    # pylint: disable=broad-exception-caught\n    except Exception:\n        # pylint: enable=broad-exception-caught\n        pass\n\n    return items\n\ndef get_ticker_data(symbols: list, fields: list) -> pd.DataFrame:\n    \"\"\"\n    Retrieve the specified fields from the input tickers\n    \"\"\"\n\n    headers: list = [\"Ticker\"]\n    for field in fields:\n        headers.append(field)\n\n    rows: list = []\n\n    try:\n        for symbol in symbols:\n            rows.append(get_items(symbol, fields))\n\n    # pylint: disable=broad-exception-caught\n    except Exception:\n        # pylint: enable=broad-exception-caught\n        print(\"An error occured\")\n\n    df = pd.DataFrame(rows, columns=headers)\n\n    return df\n\ndef get_ticker_weights(ticker_values: dict) -> pd.DataFrame:\n    \"\"\"\n    Returns:\n        ticker_weights\n    \"\"\"\n\n    # Set up the structure\n    rows: list = []\n    headers: list = [\"ticker\", \"weight\"]\n\n    # Calculate the portfolio value\n    total_portfolio_value = sum(ticker_values.values())\n\n    for ticker, value in ticker_values.items():\n        weight = value / total_portfolio_value\n        rows.append([ticker, weight])\n\n    df = pd.DataFrame(rows, columns=headers)\n\n    return df\nget_ticker_data\ntakes a list of ticker symbols and a list of fields. The fields are the items we want to retrieve from yfinance’s ticker info function. It uses the utility function\nget_value\nto retrieve the requested value or 0 if the key is not available. No doubt the Python script could be simplified and made more pythonic.\nIn the worksheet, we create a vector of tickers and a vector of fields, and then call the Python function.\nThe result is a data frame with the values for the fields that we requested (if available).\nPortfolio Weights\nThe second function\nget_ticker_weights\n, simply computes the weights of a list of ticker symbols. The Python function requires that the input is a dictionary of symbols and their corresponding values. Therefore we create a\nticker_list\nvia R, since Reticulate converts R lists to Python dictionaries. The construction is somewhat mechanical and could certainly be improved just by changing the Python function inputs. With the\nticker_list\ncreated we can call the Python function.\nThis returns the portfolio weights which we can use to display graphically. From here, we could extend the Python code to compute portfolio returns for the tickers over a specified period. We could then compare the returns with a benchmark, and compute Sharpe ratios for the components.\nWrap up\nIn this post we have seen how to call Python scripts from R using the\nreticulate\npackage. While the setup is not completely trivial, it is worth bearing in mind the advantages of this approach: from within Excel, we have access to both R and Python’s extensive ecosystems, which in turn gives us a good deal of flexibility in creating solutions. And that concludes this series of posts on using R in Excel. I hope this has been useful.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAdam's Software Lab\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction In the last post in this series I am going to look at calling Python from R. Even though Excel now provides a means of calling Python scripts directly, using the =PY() formula in a worksheet, there are still occasions when it is beneficial...",
+    "meta_keywords": null,
+    "og_description": "Introduction In the last post in this series I am going to look at calling Python from R. Even though Excel now provides a means of calling Python scripts directly, using the =PY() formula in a worksheet, there are still occasions when it is beneficial...",
+    "og_image": "https://adam-gladstone.github.io/assets/images/TickerInfo.png",
+    "og_title": "Part IV – Using R in Excel – Calling Python | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.9,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction In the last post in this series I am going to look at calling Python from R. Even though Excel now provides a means of calling Python scripts directly, using the =PY() formula in a worksheet, there are still occasions when it is beneficial...",
+    "twitter_title": "Part IV – Using R in Excel – Calling Python | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/part-iv-using-r-in-excel-calling-python/",
+    "word_count": 986
+  }
+}

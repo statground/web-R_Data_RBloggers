@@ -1,0 +1,104 @@
+{
+  "uuid": "53db7b0e-c87f-4fd2-8215-77bc7ae84766",
+  "created_at": "2025-11-17 20:41:17",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/01/data-analysis-and-graphics-using-r-maindonald-and-braun-2003/",
+    "crawled_at": "2025-11-17T10:45:35.192980",
+    "external_links": [
+      {
+        "href": "http://www.programmingr.com/content/data-analysis-and-graphics-using-r-maindonald-and-braun-2003",
+        "text": "Programming R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.programmingr.com/content/data-analysis-and-graphics-using-r-maindonald-and-braun-2003",
+        "text": "read more"
+      },
+      {
+        "href": "http://www.programmingr.com/content/data-analysis-and-graphics-using-r-maindonald-and-braun-2003",
+        "text": "Programming R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Data Analysis and Graphics Using R – Maindonald and Braun (2003) | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/bryan/",
+        "text": "bryan"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/book-reviews/",
+        "text": "Book reviews"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-4751 post type-post status-publish format-standard hentry category-r-bloggers tag-book-reviews\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Data Analysis and Graphics Using R – Maindonald and Braun (2003)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 23, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/bryan/\">bryan</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.programmingr.com/content/data-analysis-and-graphics-using-r-maindonald-and-braun-2003\"> Programming R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"float:right; background-color: lightblue; border: 1px solid darkblue; padding:5px; margin: 2px; width: 325px;\"><strong>Title:</strong> Data Analysis and Graphics Using R: An Example-Based Approach<br/><strong>Author(s):</strong> John Maindonald; John Braun<br/><strong>Publisher/Date:</strong> Cambridge University Press/2003<br/><strong>Statistics level:</strong> Intermediate to advanced<br/><strong>Programming level:</strong> Beginner to intermediate <br/><strong>Overall recommendation:</strong>  Highly recommended</div>\n<p> <em>Data Analysis and Graphics Using R</em> (DAAG) covers an exceptionally large range of topics.  Because of the book’s breadth, new and experienced R users alike will find the text helpful as a learning tool and resource, but it will be of most service to those who already have a basic understanding of statistics and the R system.</p>\n<p>Although the text includes both an Introduction to R section (chapter one) and a discussion of the basics of quantitative data analysis (chapters two through four), these chapters will be most useful as overviews (or reviews for more experienced readers), as they lack the detail required to take a reader from no knowledge of these subjects to a functional understanding.  For example, chapter one discusses importing data in .txt and .csv format, but the <em>foreign</em> package is not discussed until chapter fourteen – the final chapter of the book.  In practice, .txt data structures are not common enough to justify relegating a discussion of the <em>foreign</em> package to the supplemental materials and a researcher stuck with a .sav or .dbf file would not leave chapter one with enough knowledge to import their data into R.</p>\n<p><a href=\"http://www.programmingr.com/content/data-analysis-and-graphics-using-r-maindonald-and-braun-2003\" rel=\"nofollow\" target=\"_blank\">read more</a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.programmingr.com/content/data-analysis-and-graphics-using-r-maindonald-and-braun-2003\"> Programming R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/book-reviews/\" rel=\"tag\">Book reviews</a></li></ul></div></article>",
+    "main_text": "Data Analysis and Graphics Using R – Maindonald and Braun (2003)\nPosted on\nJanuary 23, 2009\nby\nbryan\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nProgramming R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nTitle:\nData Analysis and Graphics Using R: An Example-Based Approach\nAuthor(s):\nJohn Maindonald; John Braun\nPublisher/Date:\nCambridge University Press/2003\nStatistics level:\nIntermediate to advanced\nProgramming level:\nBeginner to intermediate\nOverall recommendation:\nHighly recommended\nData Analysis and Graphics Using R\n(DAAG) covers an exceptionally large range of topics.  Because of the book’s breadth, new and experienced R users alike will find the text helpful as a learning tool and resource, but it will be of most service to those who already have a basic understanding of statistics and the R system.\nAlthough the text includes both an Introduction to R section (chapter one) and a discussion of the basics of quantitative data analysis (chapters two through four), these chapters will be most useful as overviews (or reviews for more experienced readers), as they lack the detail required to take a reader from no knowledge of these subjects to a functional understanding.  For example, chapter one discusses importing data in .txt and .csv format, but the\nforeign\npackage is not discussed until chapter fourteen – the final chapter of the book.  In practice, .txt data structures are not common enough to justify relegating a discussion of the\nforeign\npackage to the supplemental materials and a researcher stuck with a .sav or .dbf file would not leave chapter one with enough knowledge to import their data into R.\nread more\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nProgramming R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBook reviews",
+    "meta_description": "Title: Data Analysis and Graphics Using R: An Example-Based ApproachAuthor(s): John Maindonald; John BraunPublisher/Date: Cambridge University Press/2003Statistics level: Intermediate to advancedProgramming level: Beginner to intermediate Overall recom...",
+    "meta_keywords": "book reviews",
+    "og_description": "Title: Data Analysis and Graphics Using R: An Example-Based ApproachAuthor(s): John Maindonald; John BraunPublisher/Date: Cambridge University Press/2003Statistics level: Intermediate to advancedProgramming level: Beginner to intermediate Overall recom...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Data Analysis and Graphics Using R – Maindonald and Braun (2003) | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.9,
+    "sitemap_lastmod": "2010-09-06T20:58:48+00:00",
+    "twitter_description": "Title: Data Analysis and Graphics Using R: An Example-Based ApproachAuthor(s): John Maindonald; John BraunPublisher/Date: Cambridge University Press/2003Statistics level: Intermediate to advancedProgramming level: Beginner to intermediate Overall recom...",
+    "twitter_title": "Data Analysis and Graphics Using R – Maindonald and Braun (2003) | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/01/data-analysis-and-graphics-using-r-maindonald-and-braun-2003/",
+    "word_count": 376
+  }
+}

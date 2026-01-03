@@ -1,0 +1,120 @@
+{
+  "uuid": "00709242-01f9-4d66-9469-0d2b9039a467",
+  "created_at": "2025-11-17 20:40:19",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-cut-2/",
+    "crawled_at": "2025-11-17T10:24:24.879167",
+    "external_links": [
+      {
+        "href": "http://www.sigmafield.org/2009/09/23/r-function-of-the-day-cut",
+        "text": "sigmafield - R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://finzi.psych.upenn.edu/R/library/base/html/cut.html",
+        "text": "cut"
+      },
+      {
+        "href": "http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/CatContinuous",
+        "text": "many"
+      },
+      {
+        "href": "http://www.stat.columbia.edu/~cook/movabletype/archives/2008/01/debate_over_cat.html",
+        "text": "reasons"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Interval_(mathematics)#Notations_for_intervals",
+        "text": "mathematical notation"
+      },
+      {
+        "href": "http://blogisticreflections.wordpress.com/2009/09/21/r-function-of-the-day-table/",
+        "text": "table"
+      },
+      {
+        "href": "http://www.sigmafield.org/tags/r",
+        "text": "R"
+      },
+      {
+        "href": "http://www.sigmafield.org/2009/09/23/r-function-of-the-day-cut",
+        "text": "sigmafield - R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R Function of the Day: cut | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/erik/",
+        "text": "erik"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-49379 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Function of the Day: cut</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 23, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/erik/\">erik</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.sigmafield.org/2009/09/23/r-function-of-the-day-cut\"> sigmafield - R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div class=\"field field-name-body field-type-text-with-summary field-label-hidden\">\n<div class=\"field-item even\" property=\"content:encoded\"><p>\n<i>This post originally appeared on my WordPress blog on September 23, 2009. I present it here in its original form.</i>\n</p><p>\nThe <b>R Function of the Day</b> series will focus on describing in <i>plain language</i> how certain <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> functions work, focusing on simple examples that you can apply to gain insight into your own data. \n</p>\n<p>\nToday, I will discuss the <a href=\"http://finzi.psych.upenn.edu/R/library/base/html/cut.html\" rel=\"nofollow\" target=\"_blank\"><b>cut</b></a> function. \n</p>\n<div class=\"outline-3\" id=\"outline-container-1.1\">\n<h3 id=\"sec-1.1\">What situation is cut useful in? </h3>\n<div id=\"text-1.1\">\n<p>\nIn many data analysis settings, it might be useful to break up a continuous variable such as age into a categorical variable.  Or, you might want to classify a categorical variable like year into a larger bin, such as 1990-2000.  There are <a href=\"http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/CatContinuous\" rel=\"nofollow\" target=\"_blank\">many</a> <a href=\"http://www.stat.columbia.edu/~cook/movabletype/archives/2008/01/debate_over_cat.html\" rel=\"nofollow\" target=\"_blank\">reasons</a> <i>not</i> to do this when performing regression analysis, but for simple displays of demographic data in tables, it could make sense.  The <b>cut</b> function in R makes this task simple! \n</p>\n</div>\n</div>\n<div class=\"outline-3\" id=\"outline-container-1.2\">\n<h3 id=\"sec-1.2\">How do I use cut? </h3>\n<div id=\"text-1.2\">\n<p>\nFirst, we will simulate some data from a hypothetical clinical trial that includes variables for patient ID, age, and year of enrollment. \n</p>\n<pre>\n\n&gt; ## generate data for clinical trial example\n&gt; clinical.trial &lt;-\n    data.frame(patient = 1:100,              \n               age = rnorm(100, mean = 60, sd = 8),\n               year.enroll = sample(paste(\"19\", 85:99, sep = \"\"),\n                 100, replace = TRUE))\n&gt; summary(clinical.trial)\n    patient            age         year.enroll\n Min.   :  1.00   Min.   :41.18   1991   :12  \n 1st Qu.: 25.75   1st Qu.:52.99   1988   :11  \n Median : 50.50   Median :60.08   1985   : 9  \n Mean   : 50.50   Mean   :59.67   1993   : 7  \n 3rd Qu.: 75.25   3rd Qu.:65.67   1995   : 7  \n Max.   :100.00   Max.   :76.40   1997   : 7  \n                                  (Other):47   \n\n</pre>\n<p>\nNow, we will use the <b>cut</b> function to make age a factor, which is what R calls a categorical variable. Our first example calls cut with the <b>breaks</b> argument set to a single number.  This method will cause <b>cut</b> to break up age into 4 intervals.  The default labels use standard <a href=\"https://en.wikipedia.org/wiki/Interval_(mathematics)#Notations_for_intervals\" rel=\"nofollow\" target=\"_blank\">mathematical notation</a> for open and closed intervals.\n</p>\n<pre>\n\n&gt; ## basic usage of cut with a numeric variable\n&gt; c1 &lt;- cut(clinical.trial$age, breaks = 4)\n&gt; table(c1)\nc1\n  (41.1,50]   (50,58.8] (58.8,67.6] (67.6,76.4] \n          9          34          41          16  \n&gt; ## year.enroll is a factor, so must convert to numeric first!\n&gt; c2 &lt;- cut(as.numeric(as.character(clinical.trial$year.enroll)),\n            breaks = 3)\n&gt; table(c2)\nc2\n(1985,1990] (1990,1994] (1994,1999] \n         36          34          30  \n\n</pre>\n<p>\nWell, the intervals that <b>cut</b> chose by default are not the nicest looking with the age example, although they are fine with the year example, since it was already discrete. Luckily, we can specify the exact intervals we want for age.  Our next example shows how. \n</p>\n<pre>\n\n&gt; ## specify break points explicitly using seq function\n&gt; \n&gt; ## look what seq does  \n&gt; seq(30, 80, by = 10)\n[1] 30 40 50 60 70 80 \n&gt; ## cut the age variable using the seq defined above\n&gt; c1 &lt;- cut(clinical.trial$age, breaks = seq(30, 80, by = 10))\n&gt; ## table of the resulting factor           \n&gt; table(c1)\nc1\n(30,40] (40,50] (50,60] (60,70] (70,80] \n      0       9      40      42       9  \n\n</pre>\n<p>\nThat looks pretty good.  There is no reason that the breaks argument has to be equally spaced as I have done above.  It could be any grouping that you want. \n</p>\n<p>\nFinally, I am going to show you an example of a custom R function to categorize ages.  It uses <b>cut</b> inside of it, but does some preprocessing and uses the <b>labels</b> argument to cut to make the output look nice.  \n</p>\n<pre>\nage.cat &lt;- function(x, lower = 0, upper, by = 10,\n                   sep = \"-\", above.char = \"+\") {\n\n labs &lt;- c(paste(seq(lower, upper - by, by = by),\n                 seq(lower + by - 1, upper - 1, by = by),\n                 sep = sep),\n           paste(upper, above.char, sep = \"\"))\n\n cut(floor(x), breaks = c(seq(lower, upper, by = by), Inf),\n     right = FALSE, labels = labs)\n}\n</pre>\n<p>\nThis function categorizes age in a fairly flexible way.  The first assignment to <b>labs</b> inside the function creates a vector of labels. Then, the <b>cut</b> function is called to do the work, with the custom labels as an argument.  Here are some examples using our simulated data from above. I am no longer going to save the results of the function calls to a variable and call <b>table</b> on them, but rather just nest the call to <b>age.cat</b> in a call to <b>table</b>. I previously did a post on the <a href=\"http://blogisticreflections.wordpress.com/2009/09/21/r-function-of-the-day-table/\" rel=\"nofollow\" target=\"_blank\">table</a> function. \n</p>\n<pre>\n\n&gt; ## only specifying an upper bound, uses 0 as lower bound, and\n&gt; ## breaks up categories by 10\n&gt; table(age.cat(clinical.trial$age, upper = 70))\n  0-9 10-19 20-29 30-39 40-49 50-59 60-69   70+ \n    0     0     0     0     9    40    42     9  \n&gt; ## now specifying a lower bound\n&gt; table(age.cat(clinical.trial$age, lower = 30, upper = 70))\n30-39 40-49 50-59 60-69   70+ \n    0     9    40    42     9  \n&gt; ## now specifying a lower bound AND the \"by\" argument \n&gt; table(age.cat(clinical.trial$age, lower = 30, upper = 70, by = 5))\n30-34 35-39 40-44 45-49 50-54 55-59 60-64 65-69   70+ \n    0     0     3     6    22    18    22    20     9  \n\n</pre>\n</div>\n</div>\n<div class=\"outline-3\" id=\"outline-container-1.3\">\n<h3 id=\"sec-1.3\">Summary of cut </h3>\n<div id=\"text-1.3\">\n<p>\nThe cut function is useful for turning continuous variables into factors.  You saw how to specify the number of cutpoints, specify the exact cutpoints, and saw a function built around <b>cut</b> that simplifies  categorizing an age variable and giving it appropriate labels. \n</p></div>\n</div>\n</div>\n</div>\n<section class=\"field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix\">\n<h2 class=\"field-label\">Tags: </h2>\n<ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"dc:subject\"><a href=\"http://www.sigmafield.org/tags/r\" property=\"rdfs:label skos:prefLabel\" rel=\"nofollow\" target=\"_blank\" typeof=\"skos:Concept\">R</a></li>\n</ul>\n</section>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.sigmafield.org/2009/09/23/r-function-of-the-day-cut\"> sigmafield - R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "R Function of the Day: cut\nPosted on\nSeptember 23, 2009\nby\nerik\nin Uncategorized | 0 Comments\n[This article was first published on\nsigmafield - R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis post originally appeared on my WordPress blog on September 23, 2009. I present it here in its original form.\nThe\nR Function of the Day\nseries will focus on describing in\nplain language\nhow certain\nR\nfunctions work, focusing on simple examples that you can apply to gain insight into your own data.\nToday, I will discuss the\ncut\nfunction.\nWhat situation is cut useful in?\nIn many data analysis settings, it might be useful to break up a continuous variable such as age into a categorical variable.  Or, you might want to classify a categorical variable like year into a larger bin, such as 1990-2000.  There are\nmany\nreasons\nnot\nto do this when performing regression analysis, but for simple displays of demographic data in tables, it could make sense.  The\ncut\nfunction in R makes this task simple!\nHow do I use cut?\nFirst, we will simulate some data from a hypothetical clinical trial that includes variables for patient ID, age, and year of enrollment.\n> ## generate data for clinical trial example\n> clinical.trial <-\n    data.frame(patient = 1:100,              \n               age = rnorm(100, mean = 60, sd = 8),\n               year.enroll = sample(paste(\"19\", 85:99, sep = \"\"),\n                 100, replace = TRUE))\n> summary(clinical.trial)\n    patient            age         year.enroll\n Min.   :  1.00   Min.   :41.18   1991   :12  \n 1st Qu.: 25.75   1st Qu.:52.99   1988   :11  \n Median : 50.50   Median :60.08   1985   : 9  \n Mean   : 50.50   Mean   :59.67   1993   : 7  \n 3rd Qu.: 75.25   3rd Qu.:65.67   1995   : 7  \n Max.   :100.00   Max.   :76.40   1997   : 7  \n                                  (Other):47\nNow, we will use the\ncut\nfunction to make age a factor, which is what R calls a categorical variable. Our first example calls cut with the\nbreaks\nargument set to a single number.  This method will cause\ncut\nto break up age into 4 intervals.  The default labels use standard\nmathematical notation\nfor open and closed intervals.\n> ## basic usage of cut with a numeric variable\n> c1 <- cut(clinical.trial$age, breaks = 4)\n> table(c1)\nc1\n  (41.1,50]   (50,58.8] (58.8,67.6] (67.6,76.4] \n          9          34          41          16  \n> ## year.enroll is a factor, so must convert to numeric first!\n> c2 <- cut(as.numeric(as.character(clinical.trial$year.enroll)),\n            breaks = 3)\n> table(c2)\nc2\n(1985,1990] (1990,1994] (1994,1999] \n         36          34          30\nWell, the intervals that\ncut\nchose by default are not the nicest looking with the age example, although they are fine with the year example, since it was already discrete. Luckily, we can specify the exact intervals we want for age.  Our next example shows how.\n> ## specify break points explicitly using seq function\n> \n> ## look what seq does  \n> seq(30, 80, by = 10)\n[1] 30 40 50 60 70 80 \n> ## cut the age variable using the seq defined above\n> c1 <- cut(clinical.trial$age, breaks = seq(30, 80, by = 10))\n> ## table of the resulting factor           \n> table(c1)\nc1\n(30,40] (40,50] (50,60] (60,70] (70,80] \n      0       9      40      42       9\nThat looks pretty good.  There is no reason that the breaks argument has to be equally spaced as I have done above.  It could be any grouping that you want.\nFinally, I am going to show you an example of a custom R function to categorize ages.  It uses\ncut\ninside of it, but does some preprocessing and uses the\nlabels\nargument to cut to make the output look nice.\nage.cat <- function(x, lower = 0, upper, by = 10,\n                   sep = \"-\", above.char = \"+\") {\n\n labs <- c(paste(seq(lower, upper - by, by = by),\n                 seq(lower + by - 1, upper - 1, by = by),\n                 sep = sep),\n           paste(upper, above.char, sep = \"\"))\n\n cut(floor(x), breaks = c(seq(lower, upper, by = by), Inf),\n     right = FALSE, labels = labs)\n}\nThis function categorizes age in a fairly flexible way.  The first assignment to\nlabs\ninside the function creates a vector of labels. Then, the\ncut\nfunction is called to do the work, with the custom labels as an argument.  Here are some examples using our simulated data from above. I am no longer going to save the results of the function calls to a variable and call\ntable\non them, but rather just nest the call to\nage.cat\nin a call to\ntable\n. I previously did a post on the\ntable\nfunction.\n> ## only specifying an upper bound, uses 0 as lower bound, and\n> ## breaks up categories by 10\n> table(age.cat(clinical.trial$age, upper = 70))\n  0-9 10-19 20-29 30-39 40-49 50-59 60-69   70+ \n    0     0     0     0     9    40    42     9  \n> ## now specifying a lower bound\n> table(age.cat(clinical.trial$age, lower = 30, upper = 70))\n30-39 40-49 50-59 60-69   70+ \n    0     9    40    42     9  \n> ## now specifying a lower bound AND the \"by\" argument \n> table(age.cat(clinical.trial$age, lower = 30, upper = 70, by = 5))\n30-34 35-39 40-44 45-49 50-54 55-59 60-64 65-69   70+ \n    0     0     3     6    22    18    22    20     9\nSummary of cut\nThe cut function is useful for turning continuous variables into factors.  You saw how to specify the number of cutpoints, specify the exact cutpoints, and saw a function built around\ncut\nthat simplifies  categorizing an age variable and giving it appropriate labels.\nTags:\nR\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nsigmafield - R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "This post originally appeared on my Wordpress blog on September 23, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on simple ex...",
+    "meta_keywords": null,
+    "og_description": "This post originally appeared on my Wordpress blog on September 23, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on simple ex...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "R Function of the Day: cut | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.1,
+    "sitemap_lastmod": "2009-09-24T04:00:36+00:00",
+    "twitter_description": "This post originally appeared on my Wordpress blog on September 23, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on simple ex...",
+    "twitter_title": "R Function of the Day: cut | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-cut-2/",
+    "word_count": 1024
+  }
+}

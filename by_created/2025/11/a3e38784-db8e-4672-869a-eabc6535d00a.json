@@ -1,0 +1,197 @@
+{
+  "uuid": "a3e38784-db8e-4672-869a-eabc6535d00a",
+  "created_at": "2025-11-17 20:39:42",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/image-compression-with-the-svd-in-r/",
+    "crawled_at": "2025-11-17T10:10:50.885667",
+    "external_links": [
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/12/17/image-compression-with-the-svd-in-r/",
+        "text": "John Myles White: Die Sudelbücher » Statistics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Singular_value_decomposition",
+        "text": "Wikipedia"
+      },
+      {
+        "href": "http://ocw.mit.edu/OcwWeb/Mathematics/18-06Spring-2005/VideoLectures/index.htm",
+        "text": "Gilbert Strang’s lectures"
+      },
+      {
+        "href": "https://quantitative-ecology.blogspot.com/2007/05/convert-image-to-matrix-in-r.html",
+        "text": "Quantitative Ecology blog"
+      },
+      {
+        "href": "http://www.johnmyleswhite.com/content/data_sets/image.ppm",
+        "text": "here"
+      },
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/12/17/image-compression-with-the-svd-in-r/",
+        "text": "John Myles White: Die Sudelbücher » Statistics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Image Compression with the SVD in R | R-bloggers",
+    "images": [
+      {
+        "alt": "Green Raw Image.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Raw-Image1.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Raw Image.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Raw-Image1.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 2.png",
+        "base64": null,
+        "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-21.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 2.png",
+        "base64": null,
+        "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-21.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 3.png",
+        "base64": null,
+        "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-31.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 3.png",
+        "base64": null,
+        "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-31.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 4.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-41.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 4.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-41.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 5.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-51.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 5.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-51.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 10.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-101.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 10.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-101.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 20.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-201.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 20.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-201.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 30.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-301.png?resize=240%2C240"
+      },
+      {
+        "alt": "Green Image SVD Compressed 30.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-301.png?resize=240%2C240"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-myles-white/",
+        "text": "John Myles White"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-437 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Image Compression with the SVD in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 17, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/17/image-compression-with-the-svd-in-r/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>Over the next few posts, I’m going to be reviewing the use of R to implement the most commonly used matrix techniques for image manipulation. The code will be surprisingly simple to understand, because the real magic behind these techniques lies in the mathematics that R provides an abstract interface to. To start, I’m going to review the singular value decomposition of a matrix, also known as the SVD.</p>\n<p>If you’d like to understand the magic behind the scenes here, you can read about the mathematical definition of the SVD on <a href=\"https://en.wikipedia.org/wiki/Singular_value_decomposition\" rel=\"nofollow\" target=\"_blank\">Wikipedia</a> or you can watch <a href=\"http://ocw.mit.edu/OcwWeb/Mathematics/18-06Spring-2005/VideoLectures/index.htm\" rel=\"nofollow\" target=\"_blank\">Gilbert Strang’s lectures</a>. If your command of linear algebra isn’t great, I suspect that the mathematical details of the SVD will be totally opaque to you.</p>\n<p>Fortunately, the details of the underlying mathematics aren’t at all necessary for appreciating the SVD’s usefulness for manipulating images: it is arguably the best way to compress matrices into smaller representations that contain the essential information from the original matrices. The easiest way to understand this is to see it in action, so I’m going to show how the SVD allows for any degree of compression of an image represented as a real-valued matrix.</p>\n<p>Obviously, the first thing we have to do is to represent our example image as a matrix with real-valued entries. To do this, we’ll need to use a simple technique for loading an image into R that I found on the <a href=\"https://quantitative-ecology.blogspot.com/2007/05/convert-image-to-matrix-in-r.html\" rel=\"nofollow\" target=\"_blank\">Quantitative Ecology blog</a>. The first thing to do is use ImageMagick to transform a TIFF file into a PPM file:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736141\"><td class=\"line_numbers\"><pre>1\n2\n3\n</pre></td><td class=\"code\" id=\"p3736code141\"><pre>#!/bin/bash\n \nconvert face.tiff image.ppm</pre></td></tr></table></div>\n<p>Then we can use the “pixmap” package from CRAN to read the PPM image into R as an image object containing three matrices: one for the red components, one for the green components, and one for the blue components. The exact code I used was this:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736142\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n</pre></td><td class=\"code\" id=\"p3736code142\"><pre>library('pixmap')\n \nimage &lt;- read.pnm('image.ppm')\n \nred.matrix &lt;- matrix(image@red, nrow = image@size[1], ncol = image@size[2])\ngreen.matrix &lt;- matrix(image@green, nrow = image@size[1], ncol = image@size[2])\nblue.matrix &lt;- matrix(image@blue, nrow = image@size[1], ncol = image@size[2])</pre></td></tr></table></div>\n<p>Before we go any further, we should look at the image we’ll be playing with. Rather than work with the composite of the three color matrices, I found it easier to work with only a single color. For this specific image, I found that the green matrix looked best, so I’ll use only that. At the risk of seeming self-indulgent, I’m using my own Gravatar icon as an example image because faces are particularly easy to recognize under the strange color scheme I’ll be using, which I chose because it really simplifies the visualization code.</p>\n<p>To visualize the matrix as an image, I discovered two very helpful graphical functions, <code>image</code> and <code>heat.colors</code>. <code>image</code> depicts the value of a matrix using a color scheme you specify; <code>heat.colors</code> produces a set of colors that could be used in a heat map with a granularity you specify as the first argument. Using these functions, we can see our raw input matrix:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736143\"><td class=\"line_numbers\"><pre>1\n</pre></td><td class=\"code\" id=\"p3736code143\"><pre>image(green.matrix, col = heat.colors(255))</pre></td></tr></table></div>\n<p>The images generated by <code>image</code> are at an unfortunate angle for viewing, so I edited them post hoc with a single 90º clockwise rotation in Preview to give this sort of image:</p>\n<div style=\"text-align:center;\"><img alt=\"Green Raw Image.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Raw-Image1.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Raw-Image1.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Raw Image.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Raw-Image1.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<p>If you want to play with the original PPM image file, you can get it <a href=\"http://www.johnmyleswhite.com/content/data_sets/image.ppm\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>Clearly, we’ve got a recognizable face here. Feeling good about that, we can start to play with the SVD of this matrix. The R function to generate the SVD of a matrix is simply <code>svd</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736144\"><td class=\"line_numbers\"><pre>1\n</pre></td><td class=\"code\" id=\"p3736code144\"><pre>green.matrix.svd &lt;- svd(green.matrix)</pre></td></tr></table></div>\n<p><code>svd</code> returns a list with three entries: <code>d</code>, <code>u</code> and <code>v</code>. <code>d</code> is a vector of the singular values ordered by decreasing size; <code>u</code> and <code>v</code> are matrices that are combined with a diagonal matrix form of <code>d</code> to give the original input matrix. To simplify things, I’ll set up variables to contain the value of these elements of the SVD output list:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736145\"><td class=\"line_numbers\"><pre>1\n2\n3\n</pre></td><td class=\"code\" id=\"p3736code145\"><pre>d &lt;- green.matrix.svd$d\nu &lt;- green.matrix.svd$u\nv &lt;- green.matrix.svd$v</pre></td></tr></table></div>\n<p>We can check that the SVD works by multiplying the relevant matrices:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736146\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n</pre></td><td class=\"code\" id=\"p3736code146\"><pre>green.matrix.reconstruction &lt;- u %*% diag(d) %*% t(v)\n \nmean(green.matrix - green.matrix.reconstruction)\n# [1] -5.184204e-16</pre></td></tr></table></div>\n<p>If this is the SVD by itself, it’s not clear that it’s useful computationally: we’ve just rewritten one matrix as the product of three matrices and accumulated a small bit of error along the way. The real utility of the SVD lies in the singular values: they represent, in decreasing order, the most important information about the original matrix.</p>\n<p>To see this, you can shrink the input matrices and produce a compressed form of the matrix. For instance, my original matrix is a 212 by 201 image. Using the SVD, we can represent it as the product of a 212 by 2 matrix, a 2 by 2 matrix, and a 2 by 201 matrix. This massively reduces the amount of information we’re storing, but you can already see the outline of our input image in the results:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736147\"><td class=\"line_numbers\"><pre>1\n2\n3\n</pre></td><td class=\"code\" id=\"p3736code147\"><pre>green.matrix.compressed &lt;- u[,1:i] %*% diag(d[1:i]) %*% t(v[,1:i])\n \nimage(green.matrix.compressed, col = heat.colors(255))</pre></td></tr></table></div>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 2.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-21.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-21.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 2.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-21.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<p>To get a feel for how this works, we can iterate over the number of singular values we include in our compressed form:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3736148\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n</pre></td><td class=\"code\" id=\"p3736code148\"><pre>for (i in c(3, 4, 5, 10, 20, 30))\n{\n\tgreen.matrix.compressed &lt;- u[,1:i] %*% diag(d[1:i]) %*% t(v[,1:i])\n\tpng(paste('images/Green Image SVD Compressed ', i, '.png', sep = ''))\n\timage(green.matrix.compressed, col = heat.colors(255))\n\tdev.off()\n}</pre></td></tr></table></div>\n<p>This produces the following images:</p>\n<h4>3 Singular Values</h4>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 3.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-31.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-31.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 3.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-31.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<h4>4 Singular Values</h4>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 4.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-41.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-41.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 4.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-41.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<h4>5 Singular Values</h4>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 5.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-51.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-51.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 5.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-51.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<h4>10 Singular Values</h4>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 10.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-101.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-101.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 10.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-101.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<h4>20 Singular Values</h4>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 20.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-201.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-201.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 20.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-201.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<h4>30 Singular Values</h4>\n<div style=\"text-align:center;\"><img alt=\"Green Image SVD Compressed 30.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-301.png?resize=240%2C240&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-301.png?resize=240%2C240\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"240\"/><noscript><img alt=\"Green Image SVD Compressed 30.png\" border=\"0\" data-recalc-dims=\"1\" height=\"240\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/Green-Image-SVD-Compressed-301.png?resize=240%2C240\" width=\"240\"/></noscript></div>\n<p>As you can see, the images get better quite quickly. Indeed, this last image looks great, despite the large reduction in the number of entries we’re keeping from the original matrix. I’d say that’s a pretty compelling case for the value of the SVD. It would be easy to combine the compressed matrices for red, green and blue to get a compressed version of our input image using its original color scheme. I’ll leave that as an exercise for anyone interested in playing with this technique on their own.</p>\n<p>Of course, the SVD has tons of other uses, but this simple hack for image compression struck me as pretty interesting, as well as being remarkably simple to implement in R.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/17/image-compression-with-the-svd-in-r/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+    "main_text": "Image Compression with the SVD in R\nPosted on\nDecember 17, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJohn Myles White: Die Sudelbücher » Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nOver the next few posts, I’m going to be reviewing the use of R to implement the most commonly used matrix techniques for image manipulation. The code will be surprisingly simple to understand, because the real magic behind these techniques lies in the mathematics that R provides an abstract interface to. To start, I’m going to review the singular value decomposition of a matrix, also known as the SVD.\nIf you’d like to understand the magic behind the scenes here, you can read about the mathematical definition of the SVD on\nWikipedia\nor you can watch\nGilbert Strang’s lectures\n. If your command of linear algebra isn’t great, I suspect that the mathematical details of the SVD will be totally opaque to you.\nFortunately, the details of the underlying mathematics aren’t at all necessary for appreciating the SVD’s usefulness for manipulating images: it is arguably the best way to compress matrices into smaller representations that contain the essential information from the original matrices. The easiest way to understand this is to see it in action, so I’m going to show how the SVD allows for any degree of compression of an image represented as a real-valued matrix.\nObviously, the first thing we have to do is to represent our example image as a matrix with real-valued entries. To do this, we’ll need to use a simple technique for loading an image into R that I found on the\nQuantitative Ecology blog\n. The first thing to do is use ImageMagick to transform a TIFF file into a PPM file:\n1\n2\n3\n#!/bin/bash\n \nconvert face.tiff image.ppm\nThen we can use the “pixmap” package from CRAN to read the PPM image into R as an image object containing three matrices: one for the red components, one for the green components, and one for the blue components. The exact code I used was this:\n1\n2\n3\n4\n5\n6\n7\nlibrary('pixmap')\n \nimage <- read.pnm('image.ppm')\n \nred.matrix <- matrix(image@red, nrow = image@size[1], ncol = image@size[2])\ngreen.matrix <- matrix(image@green, nrow = image@size[1], ncol = image@size[2])\nblue.matrix <- matrix(image@blue, nrow = image@size[1], ncol = image@size[2])\nBefore we go any further, we should look at the image we’ll be playing with. Rather than work with the composite of the three color matrices, I found it easier to work with only a single color. For this specific image, I found that the green matrix looked best, so I’ll use only that. At the risk of seeming self-indulgent, I’m using my own Gravatar icon as an example image because faces are particularly easy to recognize under the strange color scheme I’ll be using, which I chose because it really simplifies the visualization code.\nTo visualize the matrix as an image, I discovered two very helpful graphical functions,\nimage\nand\nheat.colors\n.\nimage\ndepicts the value of a matrix using a color scheme you specify;\nheat.colors\nproduces a set of colors that could be used in a heat map with a granularity you specify as the first argument. Using these functions, we can see our raw input matrix:\n1\nimage(green.matrix, col = heat.colors(255))\nThe images generated by\nimage\nare at an unfortunate angle for viewing, so I edited them post hoc with a single 90º clockwise rotation in Preview to give this sort of image:\nIf you want to play with the original PPM image file, you can get it\nhere\n.\nClearly, we’ve got a recognizable face here. Feeling good about that, we can start to play with the SVD of this matrix. The R function to generate the SVD of a matrix is simply\nsvd\n:\n1\ngreen.matrix.svd <- svd(green.matrix)\nsvd\nreturns a list with three entries:\nd\n,\nu\nand\nv\n.\nd\nis a vector of the singular values ordered by decreasing size;\nu\nand\nv\nare matrices that are combined with a diagonal matrix form of\nd\nto give the original input matrix. To simplify things, I’ll set up variables to contain the value of these elements of the SVD output list:\n1\n2\n3\nd <- green.matrix.svd$d\nu <- green.matrix.svd$u\nv <- green.matrix.svd$v\nWe can check that the SVD works by multiplying the relevant matrices:\n1\n2\n3\n4\ngreen.matrix.reconstruction <- u %*% diag(d) %*% t(v)\n \nmean(green.matrix - green.matrix.reconstruction)\n# [1] -5.184204e-16\nIf this is the SVD by itself, it’s not clear that it’s useful computationally: we’ve just rewritten one matrix as the product of three matrices and accumulated a small bit of error along the way. The real utility of the SVD lies in the singular values: they represent, in decreasing order, the most important information about the original matrix.\nTo see this, you can shrink the input matrices and produce a compressed form of the matrix. For instance, my original matrix is a 212 by 201 image. Using the SVD, we can represent it as the product of a 212 by 2 matrix, a 2 by 2 matrix, and a 2 by 201 matrix. This massively reduces the amount of information we’re storing, but you can already see the outline of our input image in the results:\n1\n2\n3\ngreen.matrix.compressed <- u[,1:i] %*% diag(d[1:i]) %*% t(v[,1:i])\n \nimage(green.matrix.compressed, col = heat.colors(255))\nTo get a feel for how this works, we can iterate over the number of singular values we include in our compressed form:\n1\n2\n3\n4\n5\n6\n7\nfor (i in c(3, 4, 5, 10, 20, 30))\n{\n\tgreen.matrix.compressed <- u[,1:i] %*% diag(d[1:i]) %*% t(v[,1:i])\n\tpng(paste('images/Green Image SVD Compressed ', i, '.png', sep = ''))\n\timage(green.matrix.compressed, col = heat.colors(255))\n\tdev.off()\n}\nThis produces the following images:\n3 Singular Values\n4 Singular Values\n5 Singular Values\n10 Singular Values\n20 Singular Values\n30 Singular Values\nAs you can see, the images get better quite quickly. Indeed, this last image looks great, despite the large reduction in the number of entries we’re keeping from the original matrix. I’d say that’s a pretty compelling case for the value of the SVD. It would be easy to combine the compressed matrices for red, green and blue to get a compressed version of our input image using its original color scheme. I’ll leave that as an exercise for anyone interested in playing with this technique on their own.\nOf course, the SVD has tons of other uses, but this simple hack for image compression struck me as pretty interesting, as well as being remarkably simple to implement in R.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJohn Myles White: Die Sudelbücher » Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+    "meta_description": "Over the next few posts, I’m going to be reviewing the use of R to implement the most commonly used matrix techniques for image manipulation. The code will be surprisingly simple to understand, because the real magic behind these techniques lies in the mathematics that R provides an abstract interface to. To start, I’m going [...]",
+    "meta_keywords": "statistics",
+    "og_description": "Over the next few posts, I’m going to be reviewing the use of R to implement the most commonly used matrix techniques for image manipulation. The code will be surprisingly simple to understand, because the real magic behind these techniques lies in the mathematics that R provides an abstract interface to. To start, I’m going [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/12/Green-Raw-Image1.png",
+    "og_title": "Image Compression with the SVD in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.5,
+    "sitemap_lastmod": "2011-05-11T21:28:27+00:00",
+    "twitter_description": "Over the next few posts, I’m going to be reviewing the use of R to implement the most commonly used matrix techniques for image manipulation. The code will be surprisingly simple to understand, because the real magic behind these techniques lies in the mathematics that R provides an abstract interface to. To start, I’m going [...]",
+    "twitter_title": "Image Compression with the SVD in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/image-compression-with-the-svd-in-r/",
+    "word_count": 1295
+  }
+}

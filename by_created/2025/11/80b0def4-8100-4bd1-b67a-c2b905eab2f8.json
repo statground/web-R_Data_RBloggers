@@ -1,0 +1,112 @@
+{
+  "uuid": "80b0def4-8100-4bd1-b67a-c2b905eab2f8",
+  "created_at": "2025-11-22 19:57:55",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/08/speed-meets-flexibility-using-displayrs-research-agent-with-ai-assisted-r-coding/",
+    "crawled_at": "2025-11-22T10:44:33.518525",
+    "external_links": [
+      {
+        "href": "https://www.displayr.com/research-agent-and-r-coding/",
+        "text": "R for Data Science - Displayr"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.displayr.com/research-agent/",
+        "text": "Research Agent"
+      },
+      {
+        "href": "https://help.displayr.com/hc/en-us/articles/360004367156-How-to-Use-R-in-Displayr",
+        "text": "Learn more about using R in Displayr here"
+      },
+      {
+        "href": "https://help.displayr.com/hc/en-us/articles/12030233751951-AI-R-Code-Writer",
+        "text": "AI R Code Writer"
+      },
+      {
+        "href": "https://www.displayr.com/ai-research-agent-walkthrough/",
+        "text": "Try Displayr’s research agent"
+      },
+      {
+        "href": "https://www.displayr.com/research-agent-and-r-coding/",
+        "text": "R for Data Science - Displayr"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Speed Meets Flexibility: Using Displayr’s Research Agent With AI-Assisted R Coding | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/edward-pollitt/",
+        "text": "Edward Pollitt"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394702 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Speed Meets Flexibility: Using Displayr’s Research Agent With AI-Assisted R Coding</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/edward-pollitt/\">Edward Pollitt</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.displayr.com/research-agent-and-r-coding/\"> R for Data Science - Displayr</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>In this ever-evolving AI landscape, researchers and data scientists are often forced to choose between rapid automation and full control over their analysis. Tools might promise speed, but they tend to limit customization and flexibility to get there. Displayr has always sought ways to limit this trade-off.</p>\n<div class=\"relative\">\n<div class=\"prose text-pretty dark:prose-invert inline leading-normal break-words min-w-0 [word-break:break-word] prose-strong:font-medium\">\n<p class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Well before generative AI became dominant, Displayr supported both pre-built automations and the ability to add and run custom R code. This meant users could analyze and report on survey data quickly, accurately, and in ways tailored to their specific needs.</p>\n<p class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">The new <a href=\"https://www.displayr.com/research-agent/\" rel=\"nofollow\" target=\"_blank\"><strong>Research Agent</strong></a> builds on this, leveraging large language models (LLMs) to automate tasks like crosstabulation, chart creation, dashboard building, and strategic commentary. Unlike other AI applications, the Research Agent keeps users in control: every output can be edited and refined, and users can still incorporate custom R code to extend the functionality.</p>\n<h2>Here’s How It Works</h2>\n</div>\n</div>\n<p>The research agent works much like a diligent junior analyst, only much faster. You give it a sample description, background, research questions, and the relevant dataset. From there, it:</p>\n<ol>\n<li>Generates an <strong>analysis plan</strong>—table by table, with statistical testing built in.</li>\n<li>Reads each table, detecting patterns and trends.</li>\n<li>Groups findings into <strong>themes</strong>.</li>\n<li>Evaluates research questions against those themes.</li>\n<li>Draws conclusions, and—if requested—provides recommendations.</li>\n<li>Produces a <strong>first-draft report</strong> with charts and tables, ready for refinement.</li>\n</ol>\n<p>The result? A coherent, data-driven report that appears in minutes rather than days.</p>\n<h2>AI + R = The Best of Both Worlds</h2>\n<p>The report produced by the Research Agent isn’t necessarily the end of the workflow. The entire document is editable, reviewable, checkable, and correctable – so you can easily modify the tables behind the visualizations by weighting the data, applying filters, etc.</p>\n<p>You can also use R in Displayr to create custom functions and tailor your analysis in the report. This is because Displayr has dedicated servers with R already installed, meaning you don’t have to download it to your desktop.</p>\n<p>This means you can use R within Displayr for:</p>\n<ul>\n<li>Simple tables</li>\n<li>R variables</li>\n<li>Custom R outputs</li>\n<li>Advanced tables</li>\n<li>Just about any form of data analysis</li>\n</ul>\n<p class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Combining the Research Agent with custom R code means:</p>\n<ul>\n<li class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Every automated output generated by the Research Agent can be inspected, edited, and extended with your own R code. You can always trace, understand, and fine-tune your analysis logic.</li>\n<li>Complex tasks—like splitting datasets for targeted reporting, or building non-standard summaries—are feasible thanks to full R integration.</li>\n</ul>\n<p><a href=\"https://help.displayr.com/hc/en-us/articles/360004367156-How-to-Use-R-in-Displayr\" rel=\"nofollow\" target=\"_blank\">Learn more about using R in Displayr here</a>.</p>\n<h2 class=\"mb-2 mt-4 text-base font-[500] first:mt-0 dark:font-[475]\">Supercharging AI + R with the AI R Code Writer</h2>\n<p class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">To make combining the Research Agent with custom R code even faster, Displayr now includes the <a href=\"https://help.displayr.com/hc/en-us/articles/12030233751951-AI-R-Code-Writer\" rel=\"nofollow\" target=\"_blank\"><strong>AI R Code Writer</strong></a>. Simply type a prompt starting with <code>#!</code> in the Code Editor, describe what you want, and the AI will generate ready‑to‑run, fully commented R code—complete with explanations.</p>\n<p class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Because it works directly with the items in your document, the AI R Code Writer produces context‑aware code for everything from advanced tables and custom charts to data wrangling and formatting. This means you can skip the tedious syntax writing and jump straight to refining your analysis.</p>\n<p class=\"my-2 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Paired with the Research Agent, it creates an incredibly efficient workflow: AI drafts your analysis, and AI‑assisted R scripting lets you extend, customise, and perfect it in record time.</p>\n<p>Ready to see how you can transform your data analysis workflow with Displayr?</p>\n<p><em><a href=\"https://www.displayr.com/ai-research-agent-walkthrough/\" rel=\"nofollow\" target=\"_blank\">Try Displayr’s research agent</a> today and see how quickly you can go from data to decisions.</em></p>\n<p> </p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.displayr.com/research-agent-and-r-coding/\"> R for Data Science - Displayr</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Speed Meets Flexibility: Using Displayr’s Research Agent With AI-Assisted R Coding\nPosted on\nAugust 11, 2025\nby\nEdward Pollitt\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR for Data Science - Displayr\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn this ever-evolving AI landscape, researchers and data scientists are often forced to choose between rapid automation and full control over their analysis. Tools might promise speed, but they tend to limit customization and flexibility to get there. Displayr has always sought ways to limit this trade-off.\nWell before generative AI became dominant, Displayr supported both pre-built automations and the ability to add and run custom R code. This meant users could analyze and report on survey data quickly, accurately, and in ways tailored to their specific needs.\nThe new\nResearch Agent\nbuilds on this, leveraging large language models (LLMs) to automate tasks like crosstabulation, chart creation, dashboard building, and strategic commentary. Unlike other AI applications, the Research Agent keeps users in control: every output can be edited and refined, and users can still incorporate custom R code to extend the functionality.\nHere’s How It Works\nThe research agent works much like a diligent junior analyst, only much faster. You give it a sample description, background, research questions, and the relevant dataset. From there, it:\nGenerates an\nanalysis plan\n—table by table, with statistical testing built in.\nReads each table, detecting patterns and trends.\nGroups findings into\nthemes\n.\nEvaluates research questions against those themes.\nDraws conclusions, and—if requested—provides recommendations.\nProduces a\nfirst-draft report\nwith charts and tables, ready for refinement.\nThe result? A coherent, data-driven report that appears in minutes rather than days.\nAI + R = The Best of Both Worlds\nThe report produced by the Research Agent isn’t necessarily the end of the workflow. The entire document is editable, reviewable, checkable, and correctable – so you can easily modify the tables behind the visualizations by weighting the data, applying filters, etc.\nYou can also use R in Displayr to create custom functions and tailor your analysis in the report. This is because Displayr has dedicated servers with R already installed, meaning you don’t have to download it to your desktop.\nThis means you can use R within Displayr for:\nSimple tables\nR variables\nCustom R outputs\nAdvanced tables\nJust about any form of data analysis\nCombining the Research Agent with custom R code means:\nEvery automated output generated by the Research Agent can be inspected, edited, and extended with your own R code. You can always trace, understand, and fine-tune your analysis logic.\nComplex tasks—like splitting datasets for targeted reporting, or building non-standard summaries—are feasible thanks to full R integration.\nLearn more about using R in Displayr here\n.\nSupercharging AI + R with the AI R Code Writer\nTo make combining the Research Agent with custom R code even faster, Displayr now includes the\nAI R Code Writer\n. Simply type a prompt starting with\n#!\nin the Code Editor, describe what you want, and the AI will generate ready‑to‑run, fully commented R code—complete with explanations.\nBecause it works directly with the items in your document, the AI R Code Writer produces context‑aware code for everything from advanced tables and custom charts to data wrangling and formatting. This means you can skip the tedious syntax writing and jump straight to refining your analysis.\nPaired with the Research Agent, it creates an incredibly efficient workflow: AI drafts your analysis, and AI‑assisted R scripting lets you extend, customise, and perfect it in record time.\nReady to see how you can transform your data analysis workflow with Displayr?\nTry Displayr’s research agent\ntoday and see how quickly you can go from data to decisions.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR for Data Science - Displayr\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "In this ever-evolving AI landscape, researchers and data scientists are often forced to choose between rapid automation and full control over their analysis. Tools might...",
+    "meta_keywords": null,
+    "og_description": "In this ever-evolving AI landscape, researchers and data scientists are often forced to choose between rapid automation and full control over their analysis. Tools might...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Speed Meets Flexibility: Using Displayr’s Research Agent With AI-Assisted R Coding | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.7,
+    "sitemap_lastmod": null,
+    "twitter_description": "In this ever-evolving AI landscape, researchers and data scientists are often forced to choose between rapid automation and full control over their analysis. Tools might...",
+    "twitter_title": "Speed Meets Flexibility: Using Displayr’s Research Agent With AI-Assisted R Coding | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/08/speed-meets-flexibility-using-displayrs-research-agent-with-ai-assisted-r-coding/",
+    "word_count": 740
+  }
+}

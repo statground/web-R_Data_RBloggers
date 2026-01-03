@@ -1,0 +1,116 @@
+{
+  "uuid": "7ad314ac-f32a-44fd-86f6-f3a9c28c084a",
+  "created_at": "2025-11-17 20:39:50",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/design-of-experiments-%e2%80%93-blocking-and-full-factorial-experimental-design-plans/",
+    "crawled_at": "2025-11-17T10:13:57.778289",
+    "external_links": [
+      {
+        "href": "http://www.wekaleamstudios.co.uk/?p=630",
+        "text": "Software for Exploratory Data Analysis and Statistical Modelling"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.wekaleamstudios.co.uk/?p=630",
+        "text": "Software for Exploratory Data Analysis and Statistical Modelling"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Design of Experiments – Blocking and Full Factorial Experimental Design Plans | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ralph/",
+        "text": "Ralph"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/blocking/",
+        "text": "Blocking"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/conf-design/",
+        "text": "conf.design"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/confounding/",
+        "text": "Confounding"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/design-of-experiments/",
+        "text": "Design of Experiments"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/interaction/",
+        "text": "interaction"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-428 post type-post status-publish format-standard hentry category-r-bloggers tag-blocking tag-conf-design tag-confounding tag-design-of-experiments tag-interaction\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Design of Experiments – Blocking and Full Factorial Experimental Design Plans</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 6, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ralph/\">Ralph</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.wekaleamstudios.co.uk/?p=630\"> Software for Exploratory Data Analysis and Statistical Modelling</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>When considering using a full factorial experimental design there may be constraints on the number of experiments that can be run during a particular session, or there may be other practical constraints that introduce systematic differences into an experiment that can be handled during the design and analysis of the data collected during the experiment.<span id=\"more-630\"></span></p>\n<p>Blocking is a technique used in design of experiments methodology to deal with the systematic differences to ensure that all the factors of interest and interactions between the factors can be assessed in the design. When blocking occurs one or more of the interactions is likely to be confounded with the block effects but a good choice of blocking should hopefully ensure that it is a higher order interaction that would be challenging to interpret or not be expected to be important that is confounded.</p>\n<p>The conf.design package in R is described by its author as <em>a small library contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs</em>. The function <strong>conf.design</strong> can be used to  <em>construct symmetric confounded factorial designs</em>.</p>\n<p>A very simple example would be a three factor experiment where each factor has low and high settings (levels). If we wanted to divide the experiment into two blocks of four experimental units then we could confounded the block effect with the three way interaction between the factors. The following code would create the required design plan:</p>\n<pre>conf.design(rbind(c(1,1,1)), p=2, treatment.names = c(\"F1\",\"F2\",\"F3\"))</pre>\n<p>The first argument is a matrix, with a single row in this case as there are only two blocks, which specifies the levels of the factors for the effect to be confounded with the blocks. The output from this function call is:</p>\n<pre>  Blocks F1 F2 F3\n1      0  0  0  0\n2      0  1  1  0\n3      0  1  0  1\n4      0  0  1  1\n5      1  1  0  0\n6      1  0  1  0\n7      1  0  0  1\n8      1  1  1  1</pre>\n<p>This shows two blocks, labelled 0 and 1, and the settings of the experiments to run in each block. In the first block the four factor combinations would be:</p>\n<ul>\n<li>F1 low, F2 low, and F3 low.</li>\n<li>F1 high, F2 high, and F3 low.</li>\n<li>F1 high, F2 low, and F3 high.</li>\n<li>F1 low, F2 high, and F3 high.</li>\n</ul>\n<p>The remaining four combinations are use in the second block of experiments.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.wekaleamstudios.co.uk/?p=630\"> Software for Exploratory Data Analysis and Statistical Modelling</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/blocking/\" rel=\"tag\">Blocking</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/conf-design/\" rel=\"tag\">conf.design</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/confounding/\" rel=\"tag\">Confounding</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/design-of-experiments/\" rel=\"tag\">Design of Experiments</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/interaction/\" rel=\"tag\">interaction</a></li></ul></div></article>",
+    "main_text": "Design of Experiments – Blocking and Full Factorial Experimental Design Plans\nPosted on\nDecember 6, 2009\nby\nRalph\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSoftware for Exploratory Data Analysis and Statistical Modelling\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhen considering using a full factorial experimental design there may be constraints on the number of experiments that can be run during a particular session, or there may be other practical constraints that introduce systematic differences into an experiment that can be handled during the design and analysis of the data collected during the experiment.\nBlocking is a technique used in design of experiments methodology to deal with the systematic differences to ensure that all the factors of interest and interactions between the factors can be assessed in the design. When blocking occurs one or more of the interactions is likely to be confounded with the block effects but a good choice of blocking should hopefully ensure that it is a higher order interaction that would be challenging to interpret or not be expected to be important that is confounded.\nThe conf.design package in R is described by its author as\na small library contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs\n. The function\nconf.design\ncan be used to\nconstruct symmetric confounded factorial designs\n.\nA very simple example would be a three factor experiment where each factor has low and high settings (levels). If we wanted to divide the experiment into two blocks of four experimental units then we could confounded the block effect with the three way interaction between the factors. The following code would create the required design plan:\nconf.design(rbind(c(1,1,1)), p=2, treatment.names = c(\"F1\",\"F2\",\"F3\"))\nThe first argument is a matrix, with a single row in this case as there are only two blocks, which specifies the levels of the factors for the effect to be confounded with the blocks. The output from this function call is:\nBlocks F1 F2 F3\n1      0  0  0  0\n2      0  1  1  0\n3      0  1  0  1\n4      0  0  1  1\n5      1  1  0  0\n6      1  0  1  0\n7      1  0  0  1\n8      1  1  1  1\nThis shows two blocks, labelled 0 and 1, and the settings of the experiments to run in each block. In the first block the four factor combinations would be:\nF1 low, F2 low, and F3 low.\nF1 high, F2 high, and F3 low.\nF1 high, F2 low, and F3 high.\nF1 low, F2 high, and F3 high.\nThe remaining four combinations are use in the second block of experiments.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSoftware for Exploratory Data Analysis and Statistical Modelling\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBlocking\nconf.design\nConfounding\nDesign of Experiments\ninteraction",
+    "meta_description": "When considering using a full factorial experimental design there may be constraints on the number of experiments that can be run during a particular session, or there may be other practical constraints that introduce systematic differences into an experiment that can be handled during the design and analysis of the data collected during the experiment. Blocking [...]",
+    "meta_keywords": "blocking,conf.design,confounding,design of experiments,interaction",
+    "og_description": "When considering using a full factorial experimental design there may be constraints on the number of experiments that can be run during a particular session, or there may be other practical constraints that introduce systematic differences into an experiment that can be handled during the design and analysis of the data collected during the experiment. Blocking [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Design of Experiments – Blocking and Full Factorial Experimental Design Plans | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.9,
+    "sitemap_lastmod": "2009-12-06T15:37:35+00:00",
+    "twitter_description": "When considering using a full factorial experimental design there may be constraints on the number of experiments that can be run during a particular session, or there may be other practical constraints that introduce systematic differences into an experiment that can be handled during the design and analysis of the data collected during the experiment. Blocking [...]",
+    "twitter_title": "Design of Experiments – Blocking and Full Factorial Experimental Design Plans | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/design-of-experiments-%E2%80%93-blocking-and-full-factorial-experimental-design-plans/",
+    "word_count": 573
+  }
+}

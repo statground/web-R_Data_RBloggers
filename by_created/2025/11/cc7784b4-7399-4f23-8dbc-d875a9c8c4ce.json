@@ -1,0 +1,104 @@
+{
+  "uuid": "cc7784b4-7399-4f23-8dbc-d875a9c8c4ce",
+  "created_at": "2025-11-22 19:58:59",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/03/collecting-stock-data-using-r-a-quick-guide/",
+    "crawled_at": "2025-11-22T10:51:50.424113",
+    "external_links": [
+      {
+        "href": "https://www.programmingr.com/content/collecting-stock-data-using-r-a-quick-guide/",
+        "text": "Articles – ProgrammingR"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.programmingr.com/content/collecting-stock-data-using-r-a-quick-guide/",
+        "text": "Collecting Stock Data Using R: A Quick Guide"
+      },
+      {
+        "href": "https://www.programmingr.com/",
+        "text": "ProgrammingR"
+      },
+      {
+        "href": "https://www.programmingr.com/content/collecting-stock-data-using-r-a-quick-guide/",
+        "text": "Articles – ProgrammingR"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Collecting Stock Data Using R: A Quick Guide | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john/",
+        "text": "John"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-391433 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Collecting Stock Data Using R: A Quick Guide</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john/\">John</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.programmingr.com/content/collecting-stock-data-using-r-a-quick-guide/\"> Articles – ProgrammingR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Collecting data can be a drudge for many tasks in economics or securities analysis. Fortunately, R has some good options available to streamline this task.</p>\n<h2><strong>Popular R Packages for Stock Data</strong></h2>\n<p><strong>quantmod:</strong><br/>The quantmod package is a favorite among financial analysts.<br/>It provides functions for quantitative financial modeling, including the retrieval of historical stock prices from sources such as Yahoo Finance.<br/>With quantmod, you can not only automate downloading the price history for a stock but also crank out a handful of charts in your favorite format.</p>\n<p> <strong>tidyquant:</strong><br/>Another useful package is tidyquant, which unlocks an entire set of useful libraries within the tidyverse, which plays well with financial data.<br/>These additional capabilities simplify manipulating data, running basic studies on price action and integrating other visualizations. </p>\n<h2><strong>Example: Retrieving Stock Data</strong></h2>\n<p>Here’s a quick example using both quantmod and tidyquant:</p>\n<p><strong>Using quantmod:</strong></p>\n<pre># Install and load quantmod if you haven't already\nif (!require(\"quantmod\")) install.packages(\"quantmod\")\nlibrary(quantmod)\n\n# Retrieve historical data for Microstrategy \ngetSymbols(\"MSTR\", src = \"yahoo\", from = \"2020-01-01\", to = \"2025-03-01\")\n\n# Visualize the stock data using a basic chart\nchartSeries(MSTR, theme = chartTheme(\"white\"))\n</pre>\n<p><strong>Using tidyquant:</strong></p>\n<pre># Install and load tidyquant if needed\nif (!require(\"tidyquant\")) install.packages(\"tidyquant\")\nlibrary(tidyquant)\n\n# Retrieve historical data for Microstrategy.\nmstr_data &lt;- tq_get(\"MSTR\", from = \"2020-01-01\", to = \"2025-03-01\")\n\n# Display the first few rows of the data\nhead(mstr_data)\n</pre>\n<p>These examples demonstrate the ease of accessing stock data.<br/></p>\n<p>In practice, which package you choose generally depends on who you work with. Quantmod is popular within the trading and financial analyst communities. Analysts with a more academic background or broader programming interests have likely been pitched on the tinyverse a few times along the way. Each works, however, and can dramatically simplify your workflow.</p>\n<h2><strong>Conclusion</strong></h2>\n<p>We’ve shown you two ways to get the job done. The choice is up to you!</p>\n<p>The post <a href=\"https://www.programmingr.com/content/collecting-stock-data-using-r-a-quick-guide/\" rel=\"nofollow\" target=\"_blank\">Collecting Stock Data Using R: A Quick Guide</a> appeared first on <a href=\"https://www.programmingr.com/\" rel=\"nofollow\" target=\"_blank\">ProgrammingR</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.programmingr.com/content/collecting-stock-data-using-r-a-quick-guide/\"> Articles – ProgrammingR</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Collecting Stock Data Using R: A Quick Guide\nPosted on\nMarch 24, 2025\nby\nJohn\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nArticles – ProgrammingR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nCollecting data can be a drudge for many tasks in economics or securities analysis. Fortunately, R has some good options available to streamline this task.\nPopular R Packages for Stock Data\nquantmod:\nThe quantmod package is a favorite among financial analysts.\nIt provides functions for quantitative financial modeling, including the retrieval of historical stock prices from sources such as Yahoo Finance.\nWith quantmod, you can not only automate downloading the price history for a stock but also crank out a handful of charts in your favorite format.\ntidyquant:\nAnother useful package is tidyquant, which unlocks an entire set of useful libraries within the tidyverse, which plays well with financial data.\nThese additional capabilities simplify manipulating data, running basic studies on price action and integrating other visualizations.\nExample: Retrieving Stock Data\nHere’s a quick example using both quantmod and tidyquant:\nUsing quantmod:\n# Install and load quantmod if you haven't already\nif (!require(\"quantmod\")) install.packages(\"quantmod\")\nlibrary(quantmod)\n\n# Retrieve historical data for Microstrategy \ngetSymbols(\"MSTR\", src = \"yahoo\", from = \"2020-01-01\", to = \"2025-03-01\")\n\n# Visualize the stock data using a basic chart\nchartSeries(MSTR, theme = chartTheme(\"white\"))\nUsing tidyquant:\n# Install and load tidyquant if needed\nif (!require(\"tidyquant\")) install.packages(\"tidyquant\")\nlibrary(tidyquant)\n\n# Retrieve historical data for Microstrategy.\nmstr_data <- tq_get(\"MSTR\", from = \"2020-01-01\", to = \"2025-03-01\")\n\n# Display the first few rows of the data\nhead(mstr_data)\nThese examples demonstrate the ease of accessing stock data.\nIn practice, which package you choose generally depends on who you work with. Quantmod is popular within the trading and financial analyst communities. Analysts with a more academic background or broader programming interests have likely been pitched on the tinyverse a few times along the way. Each works, however, and can dramatically simplify your workflow.\nConclusion\nWe’ve shown you two ways to get the job done. The choice is up to you!\nThe post\nCollecting Stock Data Using R: A Quick Guide\nappeared first on\nProgrammingR\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nArticles – ProgrammingR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Collecting data can be a drudge for many tasks in economics or securities analysis. Fortunately, R has some good options available to streamline this task. Popular R Packages for Stock Data quantmod:The quantmod package is a favorite among financial analysts.It provides functions for quantitative financial modeling, including the retrieval of historical stock prices from sources […] The post Collecting Stock Data Using R: A Quick Guide appeared first on ProgrammingR.",
+    "meta_keywords": null,
+    "og_description": "Collecting data can be a drudge for many tasks in economics or securities analysis. Fortunately, R has some good options available to streamline this task. Popular R Packages for Stock Data quantmod:The quantmod package is a favorite among financial analysts.It provides functions for quantitative financial modeling, including the retrieval of historical stock prices from sources […] The post Collecting Stock Data Using R: A Quick Guide appeared first on ProgrammingR.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Collecting Stock Data Using R: A Quick Guide | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "Collecting data can be a drudge for many tasks in economics or securities analysis. Fortunately, R has some good options available to streamline this task. Popular R Packages for Stock Data quantmod:The quantmod package is a favorite among financial analysts.It provides functions for quantitative financial modeling, including the retrieval of historical stock prices from sources […] The post Collecting Stock Data Using R: A Quick Guide appeared first on ProgrammingR.",
+    "twitter_title": "Collecting Stock Data Using R: A Quick Guide | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/03/collecting-stock-data-using-r-a-quick-guide/",
+    "word_count": 468
+  }
+}

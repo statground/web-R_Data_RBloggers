@@ -1,0 +1,152 @@
+{
+  "uuid": "4d43d4be-7092-4c2d-bc3a-2216efd5c821",
+  "created_at": "2025-11-17 20:39:20",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/the-current-introduction-to-my-package-development-workshops/",
+    "crawled_at": "2025-11-17T09:58:09.164881",
+    "external_links": [
+      {
+        "href": "https://masalmon.eu/2023/11/09/r-package-development-teaching-intro/",
+        "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/08/04/champions-program-training/#package-development-the-mechanicshttpsrpkgdev-mechanicsnetlifyapp",
+        "text": "workshop for rOpenSci champions"
+      },
+      {
+        "href": "https://joncalder.co.za/",
+        "text": "Jon Calder"
+      },
+      {
+        "href": "https://github.com/iandurbach/datasci-fi/tree/master/docs/packages/slides",
+        "text": "wording about this"
+      },
+      {
+        "href": "https://github.com/susjoh/fibonacci",
+        "text": "wise words"
+      },
+      {
+        "href": "https://github.com/susjoh",
+        "text": "Susan Johnston"
+      },
+      {
+        "href": "https://github.com/rladies-eastlansing/2021-rfunctions#writing-r-functions",
+        "text": "Materials from Stephanie Kirmer’s R-Ladies East Lansing tutorial"
+      },
+      {
+        "href": "https://stat545.com/functions-part1.html",
+        "text": "Write your own R functions"
+      },
+      {
+        "href": "https://r4ds.hadley.nz/functions",
+        "text": "Chapter about functions"
+      },
+      {
+        "href": "https://zealous-wiles-e22e83.netlify.app/talk/funwithfunctions/",
+        "text": "Fun with Functions talk"
+      },
+      {
+        "href": "https://thinkr.fr/transformer-plusieurs-scripts-eparpilles-en-beau-package-r",
+        "text": "Sébastien Rochette"
+      },
+      {
+        "href": "https://usethis.r-lib.org/",
+        "text": "usethis"
+      },
+      {
+        "href": "https://twitter.com/JennyBryan/status/935562495816753153",
+        "text": "quote"
+      },
+      {
+        "href": "https://github.com/jennybc",
+        "text": "Jenny Bryan"
+      },
+      {
+        "href": "https://rpkgdev-mechanics.netlify.app/resources/",
+        "text": "resources"
+      },
+      {
+        "href": "https://masalmon.eu/2023/11/09/r-package-development-teaching-intro/",
+        "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "The current introduction to my package development workshops | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/",
+        "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379820 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">The current introduction to my package development workshops</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 8, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/\">Maëlle's R blog on Maëlle Salmon's personal website</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://masalmon.eu/2023/11/09/r-package-development-teaching-intro/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>I somewhat regularly teach about package development. One recent example was a <a href=\"https://ropensci.org/blog/2023/08/04/champions-program-training/#package-development-the-mechanicshttpsrpkgdev-mechanicsnetlifyapp\" rel=\"nofollow\" target=\"_blank\">workshop for rOpenSci champions</a>. I am improving my teaching over time (thankfully 😅) but one thing I have down by now is the intro, which is mostly my throwing together my <strong>favorite quotes about R package development</strong>! Let me write it up.</p>\n<h2 id=\"where-i-explain-why-people-shouldnt-flee-the-workshop\">Where I explain why people shouldn’t flee the workshop</h2>\n<p>After boasting a bit (a.k.a. sharing my package development creds to introduce myself), I answer three retorical questions:</p>\n<h3 id=\"why-develop-an-r-package\">Why develop an R package?</h3>\n<p>Developing an R package is the easiest way to share code/data/R Markdown templates… with</p>\n<ul>\n<li>\n<p>(future) you: a package for organizing your utility functions in a smart way;</p>\n</li>\n<li>\n<p>the collaborators you know: a package for your team;</p>\n</li>\n<li>\n<p>and the collaborators you don’t: a package for the whole wide world. Without needing to be a generalist tool à la ggplot2, your package could help other R users!</p>\n</li>\n</ul>\n<h3 id=\"why-learn-about-package-development\">Why learn about package development?</h3>\n<p>This is a different question! I love <a href=\"https://joncalder.co.za/\" rel=\"nofollow\" target=\"_blank\">Jon Calder</a>’s <a href=\"https://github.com/iandurbach/datasci-fi/tree/master/docs/packages/slides\" rel=\"nofollow\" target=\"_blank\">wording about this</a>. You should learn about package development</p>\n<blockquote>\n<p>“- To share code (and data)”;</p>\n</blockquote>\n<p>Which is learning about package development to develop your packages.</p>\n<blockquote>\n<p>“- To leverage existing tooling”;</p>\n</blockquote>\n<p>Which could be learning about package development for using part of the infrastructure, like the one for testing, in your own projects.</p>\n<blockquote>\n<p>“- To contribute to other packages”.</p>\n</blockquote>\n<p>Which is learning about package development to improve packages owned by other people (in my words, being a package aunt/babysitter).</p>\n<p>So you don’t need to even have an idea or need for your own R package for that learning to be relevant.</p>\n<h3 id=\"who-can-learn-about-package-development\">Who can learn about package development?</h3>\n<p>To answer this question I use the <a href=\"https://github.com/susjoh/fibonacci\" rel=\"nofollow\" target=\"_blank\">wise words</a> of <a href=\"https://github.com/susjoh\" rel=\"nofollow\" target=\"_blank\">Susan Johnston</a>.</p>\n<blockquote>\n<p>“- Can you open R or RStudio?”</p>\n</blockquote>\n<blockquote>\n<p>“- Can you install a package?”</p>\n</blockquote>\n<blockquote>\n<p>“- Have you ever written a function in R?”</p>\n</blockquote>\n<blockquote>\n<p>“- Could you learn how to write a function in R?”</p>\n</blockquote>\n<blockquote>\n<p>“➡️ You can write a package in R!”</p>\n</blockquote>\n<h4 id=\"side-note-where-to-learn-about-functions\">Side-note: where to learn about functions</h4>\n<p>Knowing vaguely what a function is a pre-requisite when I teach package development (the example functions I use are nothing fancy) but I’ve collated links for those who want to learn:</p>\n<ul>\n<li><a href=\"https://github.com/rladies-eastlansing/2021-rfunctions#writing-r-functions\" rel=\"nofollow\" target=\"_blank\">Materials from Stephanie Kirmer’s R-Ladies East Lansing tutorial</a></li>\n<li><a href=\"https://stat545.com/functions-part1.html\" rel=\"nofollow\" target=\"_blank\">Write your own R functions</a>, stat 545 course by Jenny Bryan and The STAT 545 TAs;</li>\n<li><a href=\"https://r4ds.hadley.nz/functions\" rel=\"nofollow\" target=\"_blank\">Chapter about functions</a> in the book “R for Data Science” by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund;</li>\n<li><a href=\"https://zealous-wiles-e22e83.netlify.app/talk/funwithfunctions/\" rel=\"nofollow\" target=\"_blank\">Fun with Functions talk</a> by Kaylea Haynes, R-Ladies Manchester.</li>\n</ul>\n<h2 id=\"where-i-go-more-into-details-about-packages\">Where I go more into details about packages</h2>\n<h3 id=\"what-is-a-package\">What is a package?</h3>\n<p>The author of this excellent quote (first reproduced in French) is <a href=\"https://thinkr.fr/transformer-plusieurs-scripts-eparpilles-en-beau-package-r\" rel=\"nofollow\" target=\"_blank\">Sébastien Rochette</a>:</p>\n<blockquote>\n<p>“Pour réduire ses craintes, il faut se dire que ce n’est ni plus ni moins qu’un dossier organisé d’une manière contrainte.”</p>\n</blockquote>\n<blockquote>\n<p>“To be less afraid you have to tell yourself that it’s simply a folder organized in a constrained way.”</p>\n</blockquote>\n<p>At this point what could remain scary is, how do I remember about these constraints and rules? So here comes…</p>\n<h3 id=\"automation\">Automation!</h3>\n<p>At this point I introduce <a href=\"https://usethis.r-lib.org/\" rel=\"nofollow\" target=\"_blank\">usethis</a> as an “actually useful Clippy”.</p>\n<p>I don’t necessarily use, but think of, this great <a href=\"https://twitter.com/JennyBryan/status/935562495816753153\" rel=\"nofollow\" target=\"_blank\">quote</a> of <a href=\"https://github.com/jennybc\" rel=\"nofollow\" target=\"_blank\">Jenny Bryan</a>’s:</p>\n<blockquote>\n<p>“The usethis package implements this important principle: Automate that which can be automated. Your computer was literally born to implement rote-but-fussy stuff for you.”</p>\n</blockquote>\n<h3 id=\"why-automate\">Why automate?</h3>\n<p>Even in the intro I like to underline that automating package development tasks is useful not only for the regular work of package development, but also for teaching (😉) and for reproducing problems.</p>\n<h3 id=\"goals-of-a-beginner-workshop\">Goals of a beginner workshop</h3>\n<p>At least the latest one I taught had two goals:</p>\n<ul>\n<li>\n<p>For the learners to get to know the tools for package development that I use myself;</p>\n</li>\n<li>\n<p>For the learners to learn that there is no magic, only practice and ✨ tips ✨.</p>\n</li>\n</ul>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>In this post I wrote up the intro that I’ve now used a few times for my package development teaching. If you’re curious, to conclude such workshops I list what I think is actually difficult: writing good code, writing a good interface, writing good docs. But even that can be learnt (still learning myself 💪). In my teaching materials I share a list of <a href=\"https://rpkgdev-mechanics.netlify.app/resources/\" rel=\"nofollow\" target=\"_blank\">resources</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://masalmon.eu/2023/11/09/r-package-development-teaching-intro/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "The current introduction to my package development workshops\nPosted on\nNovember 8, 2023\nby\nMaëlle's R blog on Maëlle Salmon's personal website\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nMaëlle's R blog on Maëlle Salmon's personal website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI somewhat regularly teach about package development. One recent example was a\nworkshop for rOpenSci champions\n. I am improving my teaching over time (thankfully 😅) but one thing I have down by now is the intro, which is mostly my throwing together my\nfavorite quotes about R package development\n! Let me write it up.\nWhere I explain why people shouldn’t flee the workshop\nAfter boasting a bit (a.k.a. sharing my package development creds to introduce myself), I answer three retorical questions:\nWhy develop an R package?\nDeveloping an R package is the easiest way to share code/data/R Markdown templates… with\n(future) you: a package for organizing your utility functions in a smart way;\nthe collaborators you know: a package for your team;\nand the collaborators you don’t: a package for the whole wide world. Without needing to be a generalist tool à la ggplot2, your package could help other R users!\nWhy learn about package development?\nThis is a different question! I love\nJon Calder\n’s\nwording about this\n. You should learn about package development\n“- To share code (and data)”;\nWhich is learning about package development to develop your packages.\n“- To leverage existing tooling”;\nWhich could be learning about package development for using part of the infrastructure, like the one for testing, in your own projects.\n“- To contribute to other packages”.\nWhich is learning about package development to improve packages owned by other people (in my words, being a package aunt/babysitter).\nSo you don’t need to even have an idea or need for your own R package for that learning to be relevant.\nWho can learn about package development?\nTo answer this question I use the\nwise words\nof\nSusan Johnston\n.\n“- Can you open R or RStudio?”\n“- Can you install a package?”\n“- Have you ever written a function in R?”\n“- Could you learn how to write a function in R?”\n“➡️ You can write a package in R!”\nSide-note: where to learn about functions\nKnowing vaguely what a function is a pre-requisite when I teach package development (the example functions I use are nothing fancy) but I’ve collated links for those who want to learn:\nMaterials from Stephanie Kirmer’s R-Ladies East Lansing tutorial\nWrite your own R functions\n, stat 545 course by Jenny Bryan and The STAT 545 TAs;\nChapter about functions\nin the book “R for Data Science” by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund;\nFun with Functions talk\nby Kaylea Haynes, R-Ladies Manchester.\nWhere I go more into details about packages\nWhat is a package?\nThe author of this excellent quote (first reproduced in French) is\nSébastien Rochette\n:\n“Pour réduire ses craintes, il faut se dire que ce n’est ni plus ni moins qu’un dossier organisé d’une manière contrainte.”\n“To be less afraid you have to tell yourself that it’s simply a folder organized in a constrained way.”\nAt this point what could remain scary is, how do I remember about these constraints and rules? So here comes…\nAutomation!\nAt this point I introduce\nusethis\nas an “actually useful Clippy”.\nI don’t necessarily use, but think of, this great\nquote\nof\nJenny Bryan\n’s:\n“The usethis package implements this important principle: Automate that which can be automated. Your computer was literally born to implement rote-but-fussy stuff for you.”\nWhy automate?\nEven in the intro I like to underline that automating package development tasks is useful not only for the regular work of package development, but also for teaching (😉) and for reproducing problems.\nGoals of a beginner workshop\nAt least the latest one I taught had two goals:\nFor the learners to get to know the tools for package development that I use myself;\nFor the learners to learn that there is no magic, only practice and ✨ tips ✨.\nConclusion\nIn this post I wrote up the intro that I’ve now used a few times for my package development teaching. If you’re curious, to conclude such workshops I list what I think is actually difficult: writing good code, writing a good interface, writing good docs. But even that can be learnt (still learning myself 💪). In my teaching materials I share a list of\nresources\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMaëlle's R blog on Maëlle Salmon's personal website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I somewhat regularly teach about package development. One recent example was a workshop for rOpenSci champions. I am improving my teaching over time (thankfully 😅) but one thing I have down by now is the intro, which is mostly my throwing together my f...",
+    "meta_keywords": null,
+    "og_description": "I somewhat regularly teach about package development. One recent example was a workshop for rOpenSci champions. I am improving my teaching over time (thankfully 😅) but one thing I have down by now is the intro, which is mostly my throwing together my f...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "The current introduction to my package development workshops | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.4,
+    "sitemap_lastmod": "2023-11-09T00:00:00+00:00",
+    "twitter_description": "I somewhat regularly teach about package development. One recent example was a workshop for rOpenSci champions. I am improving my teaching over time (thankfully 😅) but one thing I have down by now is the intro, which is mostly my throwing together my f...",
+    "twitter_title": "The current introduction to my package development workshops | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/the-current-introduction-to-my-package-development-workshops/",
+    "word_count": 873
+  }
+}

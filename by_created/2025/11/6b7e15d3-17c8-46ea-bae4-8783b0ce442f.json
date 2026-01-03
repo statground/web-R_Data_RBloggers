@@ -1,0 +1,103 @@
+{
+  "uuid": "6b7e15d3-17c8-46ea-bae4-8783b0ce442f",
+  "created_at": "2025-11-17 20:41:15",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/02/analysis-of-variance-anova-using-r/",
+    "crawled_at": "2025-11-17T10:44:48.066389",
+    "external_links": [
+      {
+        "href": "http://blog.gribblelab.org/2009/02/05/analysis-of-variance-anova-using-r/",
+        "text": "Motor Control Lab Blog » r-project"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://blog.gribblelab.org/2009/02/05/analysis-of-variance-anova-using-r/",
+        "text": "Motor Control Lab Blog » r-project"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Analysis of Variance (ANOVA) using R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/stats.wordpress.com/b.gif?resize=1%2C1"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/stats.wordpress.com/b.gif?resize=1%2C1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/paul-gribble/",
+        "text": "Paul Gribble"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-12068 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Analysis of Variance (ANOVA) using R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 5, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/paul-gribble/\">Paul Gribble</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.gribblelab.org/2009/02/05/analysis-of-variance-anova-using-r/\"> Motor Control Lab Blog » r-project</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I found some useful websites showing examples of how to use R for various sorts of ANOVA (between, within, mixed designs, etc): Using R for Psychological Research Quick-R for SAS/SPSS/Stata users enjoy<img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/stats.wordpress.com/b.gif?resize=1%2C1&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/stats.wordpress.com/b.gif?resize=1%2C1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" height=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/stats.wordpress.com/b.gif?resize=1%2C1\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.gribblelab.org/2009/02/05/analysis-of-variance-anova-using-r/\"> Motor Control Lab Blog » r-project</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Analysis of Variance (ANOVA) using R\nPosted on\nFebruary 5, 2009\nby\nPaul Gribble\nin Uncategorized | 0 Comments\n[This article was first published on\nMotor Control Lab Blog » r-project\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI found some useful websites showing examples of how to use R for various sorts of ANOVA (between, within, mixed designs, etc): Using R for Psychological Research Quick-R for SAS/SPSS/Stata users enjoy\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMotor Control Lab Blog » r-project\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I found some useful websites showing examples of how to use R for various sorts of ANOVA (between, within, mixed designs, etc): Using R for Psychological Research Quick-R for SAS/SPSS/Stata users enjoy",
+    "meta_keywords": null,
+    "og_description": "I found some useful websites showing examples of how to use R for various sorts of ANOVA (between, within, mixed designs, etc): Using R for Psychological Research Quick-R for SAS/SPSS/Stata users enjoy",
+    "og_image": "https://stats.wordpress.com/b.gif?host=blog.gribblelab.org&blog=5090433&%23038;post=508&%23038;subd=gribblelab&%23038;ref=&%23038;feed=1",
+    "og_title": "Analysis of Variance (ANOVA) using R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 0.9,
+    "sitemap_lastmod": "2009-02-05T15:03:45+00:00",
+    "twitter_description": "I found some useful websites showing examples of how to use R for various sorts of ANOVA (between, within, mixed designs, etc): Using R for Psychological Research Quick-R for SAS/SPSS/Stata users enjoy",
+    "twitter_title": "Analysis of Variance (ANOVA) using R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/02/analysis-of-variance-anova-using-r/",
+    "word_count": 182
+  }
+}

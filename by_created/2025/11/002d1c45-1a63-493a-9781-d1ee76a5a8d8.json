@@ -1,0 +1,96 @@
+{
+  "uuid": "002d1c45-1a63-493a-9781-d1ee76a5a8d8",
+  "created_at": "2025-11-17 20:38:36",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2024/01/tidydensity-powers-up-with-data-table-speedier-distributions-for-your-data-exploration/",
+    "crawled_at": "2025-11-17T09:18:38.342283",
+    "external_links": [
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2024-01-12/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2024-01-12/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "TidyDensity Powers Up with Data.table: Speedier Distributions for Your Data Exploration | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/",
+        "text": "Steven P. Sanderson II, MPH"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-381468 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">TidyDensity Powers Up with Data.table: Speedier Distributions for Your Data Exploration</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 11, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/\">Steven P. Sanderson II, MPH</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2024-01-12/index.html\"> Steve's Data Tips and Tricks</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<section class=\"level1\" id=\"calling-all-r-enthusiasts-who-love-tidy-data-and-crave-efficiency\">\n<h1>Calling all R enthusiasts who love tidy data and crave efficiency!</h1>\n<p>I’m thrilled to announce a major upgrade to the TidyDensity package that’s sure to accelerate your data analysis workflows. We’ve integrated the lightning-fast <code>data.table</code> package for generating tidy distribution data, resulting in a <strong>jaw-dropping 30% speed boost</strong>.</p>\n<p>Here is one of the tests ran during development where v1 was the current and v2 was the version using <code>data.table</code>:</p>\n<pre>n &lt;- 10000\nbenchmark(\n \"tidy_bernoulli_v2\" = {\n   tidy_bernoulli_v2(n, .5, 1, FALSE)\n },\n \"tidy_bernoulli_v1\" = {\n   TidyDensity::tidy_bernoulli(n, .5, 1)\n },\n replications = 100,\n columns = c(\"test\",\"replications\",\"elapsed\",\"relative\",\"user.self\",\"sys.self\")\n) |&gt;\n arrange(relative)\n               test replications elapsed relative user.self sys.self\n1 tidy_bernoulli_v2          100    2.50    1.000      2.22     0.26\n2 tidy_bernoulli_v1          100    4.67    1.868      4.34     0.31</pre>\n</section>\n<section class=\"level1\" id=\"heres-what-this-means-for-you\">\n<h1>Here’s what this means for you</h1>\n<ul>\n<li><strong>Faster Generation of Distribution Data:</strong> Whether you’re working with normal, binomial, Poisson, or other distributions, TidyDensity now produces results more swiftly than ever. This means less waiting and more time for exploring insights.</li>\n<li><strong>Flexible Output Formats:</strong> Choose the format that best suits your needs:\n<ul>\n<li><strong>Tibbles for Seamless Integration with Tidyverse:</strong> Set <code>.return_tibble = TRUE</code> to receive the data as a tibble, ready for seamless interaction with your favorite tidyverse tools.</li>\n<li><strong>data.table for Enhanced Performance:</strong> Set <code>.return_tibble = FALSE</code> to harness the raw power of data.table objects for memory-efficient and lightning-fast operations.</li>\n</ul></li>\n<li><strong>Enjoy the Speed Boost, No Matter Your Choice:</strong> The speed enhancement shines through regardless of your preferred output format, as the data generation itself leverages <code>data.table</code> under the hood.</li>\n</ul>\n</section>\n<section class=\"level1\" id=\"how-to-experience-this-boost\">\n<h1>How to experience this boost</h1>\n<ol type=\"1\">\n<li><p><strong>Update TidyDensity:</strong> Ensure you have the latest version installed: <code>install.packages(\"TidyDensity\")</code></p></li>\n<li><p><strong>Choose Your Output Format:</strong> Indicate your preference with the <code>.return_tibble</code> parameter:</p>\n<pre># For a tibble:\ntidy_data &lt;- tidy_normal(.return_tibble = TRUE)\n\n# For a data.table:\ntidy_data &lt;- tidy_normal(.return_tibble = FALSE)</pre>\n<p>No matter which output you choose you will still enjoy the speedup because <code>data.table</code> is used to create the data and the conversion to a tibble is done afterwards if that is the output you want.</p></li>\n</ol>\n</section>\n<section class=\"level1\" id=\"lets-see-the-output\">\n<h1>Let’s see the output</h1>\n<div class=\"cell\">\n<pre>library(TidyDensity)\n\n# Generate data\nnormal_tibble &lt;- tidy_normal(.return_tibble = TRUE)\nhead(normal_tibble)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre># A tibble: 6 × 7\n  sim_number     x       y    dx       dy      p       q\n  &lt;fct&gt;      &lt;int&gt;   &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;\n1 1              1  1.05   -2.97 0.000398 0.854   1.05  \n2 1              2  0.0168 -2.84 0.00104  0.507   0.0168\n3 1              3  1.77   -2.72 0.00244  0.961   1.77  \n4 1              4 -1.81   -2.59 0.00518  0.0353 -1.81  \n5 1              5  0.447  -2.46 0.00997  0.673   0.447 \n6 1              6  1.05   -2.33 0.0174   0.854   1.05  </pre>\n</div>\n<pre>class(normal_tibble)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] \"tbl_df\"     \"tbl\"        \"data.frame\"</pre>\n</div>\n<pre>normal_dt &lt;- tidy_normal(.return_tibble = FALSE)\nhead(normal_dt)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>   sim_number x           y        dx           dy         p           q\n1:          1 1  2.24103518 -3.424949 0.0002787401 0.9874881  2.24103518\n2:          1 2 -0.12769603 -3.286892 0.0008586864 0.4491948 -0.12769603\n3:          1 3 -0.39666069 -3.148835 0.0022824304 0.3458088 -0.39666069\n4:          1 4  0.89626001 -3.010778 0.0052656793 0.8149430  0.89626001\n5:          1 5  0.04267757 -2.872721 0.0105661984 0.5170207  0.04267757\n6:          1 6  0.53424808 -2.734664 0.0185083421 0.7034150  0.53424808</pre>\n</div>\n<pre>class(normal_dt)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] \"data.table\" \"data.frame\"</pre>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"ready-to-unleash-the-power-of-tidydensity-and-data.table\">\n<h1>Ready to unleash the power of TidyDensity and data.table?</h1>\n<p>Dive into your next data exploration project and experience the efficiency firsthand! Share your discoveries and feedback with the community—we’re eager to hear how this upgrade empowers your analysis.</p>\n<p><strong>Happy tidy data exploration!</strong></p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2024-01-12/index.html\"> Steve's Data Tips and Tricks</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "TidyDensity Powers Up with Data.table: Speedier Distributions for Your Data Exploration\nPosted on\nJanuary 11, 2024\nby\nSteven P. Sanderson II, MPH\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSteve's Data Tips and Tricks\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nCalling all R enthusiasts who love tidy data and crave efficiency!\nI’m thrilled to announce a major upgrade to the TidyDensity package that’s sure to accelerate your data analysis workflows. We’ve integrated the lightning-fast\ndata.table\npackage for generating tidy distribution data, resulting in a\njaw-dropping 30% speed boost\n.\nHere is one of the tests ran during development where v1 was the current and v2 was the version using\ndata.table\n:\nn <- 10000\nbenchmark(\n \"tidy_bernoulli_v2\" = {\n   tidy_bernoulli_v2(n, .5, 1, FALSE)\n },\n \"tidy_bernoulli_v1\" = {\n   TidyDensity::tidy_bernoulli(n, .5, 1)\n },\n replications = 100,\n columns = c(\"test\",\"replications\",\"elapsed\",\"relative\",\"user.self\",\"sys.self\")\n) |>\n arrange(relative)\n               test replications elapsed relative user.self sys.self\n1 tidy_bernoulli_v2          100    2.50    1.000      2.22     0.26\n2 tidy_bernoulli_v1          100    4.67    1.868      4.34     0.31\nHere’s what this means for you\nFaster Generation of Distribution Data:\nWhether you’re working with normal, binomial, Poisson, or other distributions, TidyDensity now produces results more swiftly than ever. This means less waiting and more time for exploring insights.\nFlexible Output Formats:\nChoose the format that best suits your needs:\nTibbles for Seamless Integration with Tidyverse:\nSet\n.return_tibble = TRUE\nto receive the data as a tibble, ready for seamless interaction with your favorite tidyverse tools.\ndata.table for Enhanced Performance:\nSet\n.return_tibble = FALSE\nto harness the raw power of data.table objects for memory-efficient and lightning-fast operations.\nEnjoy the Speed Boost, No Matter Your Choice:\nThe speed enhancement shines through regardless of your preferred output format, as the data generation itself leverages\ndata.table\nunder the hood.\nHow to experience this boost\nUpdate TidyDensity:\nEnsure you have the latest version installed:\ninstall.packages(\"TidyDensity\")\nChoose Your Output Format:\nIndicate your preference with the\n.return_tibble\nparameter:\n# For a tibble:\ntidy_data <- tidy_normal(.return_tibble = TRUE)\n\n# For a data.table:\ntidy_data <- tidy_normal(.return_tibble = FALSE)\nNo matter which output you choose you will still enjoy the speedup because\ndata.table\nis used to create the data and the conversion to a tibble is done afterwards if that is the output you want.\nLet’s see the output\nlibrary(TidyDensity)\n\n# Generate data\nnormal_tibble <- tidy_normal(.return_tibble = TRUE)\nhead(normal_tibble)\n# A tibble: 6 × 7\n  sim_number     x       y    dx       dy      p       q\n  <fct>      <int>   <dbl> <dbl>    <dbl>  <dbl>   <dbl>\n1 1              1  1.05   -2.97 0.000398 0.854   1.05  \n2 1              2  0.0168 -2.84 0.00104  0.507   0.0168\n3 1              3  1.77   -2.72 0.00244  0.961   1.77  \n4 1              4 -1.81   -2.59 0.00518  0.0353 -1.81  \n5 1              5  0.447  -2.46 0.00997  0.673   0.447 \n6 1              6  1.05   -2.33 0.0174   0.854   1.05\nclass(normal_tibble)\n[1] \"tbl_df\"     \"tbl\"        \"data.frame\"\nnormal_dt <- tidy_normal(.return_tibble = FALSE)\nhead(normal_dt)\nsim_number x           y        dx           dy         p           q\n1:          1 1  2.24103518 -3.424949 0.0002787401 0.9874881  2.24103518\n2:          1 2 -0.12769603 -3.286892 0.0008586864 0.4491948 -0.12769603\n3:          1 3 -0.39666069 -3.148835 0.0022824304 0.3458088 -0.39666069\n4:          1 4  0.89626001 -3.010778 0.0052656793 0.8149430  0.89626001\n5:          1 5  0.04267757 -2.872721 0.0105661984 0.5170207  0.04267757\n6:          1 6  0.53424808 -2.734664 0.0185083421 0.7034150  0.53424808\nclass(normal_dt)\n[1] \"data.table\" \"data.frame\"\nReady to unleash the power of TidyDensity and data.table?\nDive into your next data exploration project and experience the efficiency firsthand! Share your discoveries and feedback with the community—we’re eager to hear how this upgrade empowers your analysis.\nHappy tidy data exploration!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSteve's Data Tips and Tricks\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Calling all R enthusiasts who love tidy data and crave efficiency! I’m thrilled to announce a major upgrade to the TidyDensity package that’s sure to accelerate your data analysis workflows. We’ve integrated the lightning-fast data.table package...",
+    "meta_keywords": null,
+    "og_description": "Calling all R enthusiasts who love tidy data and crave efficiency! I’m thrilled to announce a major upgrade to the TidyDensity package that’s sure to accelerate your data analysis workflows. We’ve integrated the lightning-fast data.table package...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "TidyDensity Powers Up with Data.table: Speedier Distributions for Your Data Exploration | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.8,
+    "sitemap_lastmod": "2024-01-12T05:00:00+00:00",
+    "twitter_description": "Calling all R enthusiasts who love tidy data and crave efficiency! I’m thrilled to announce a major upgrade to the TidyDensity package that’s sure to accelerate your data analysis workflows. We’ve integrated the lightning-fast data.table package...",
+    "twitter_title": "TidyDensity Powers Up with Data.table: Speedier Distributions for Your Data Exploration | R-bloggers",
+    "url": "https://www.r-bloggers.com/2024/01/tidydensity-powers-up-with-data-table-speedier-distributions-for-your-data-exploration/",
+    "word_count": 764
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "uuid": "73599fd6-19f2-4906-8a2c-a044e27f791c",
+  "created_at": "2025-11-17 20:40:38",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/07/two-sample-students-t-test-1/",
+    "crawled_at": "2025-11-17T10:31:23.102131",
+    "external_links": [
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-1.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-z-test.html",
+        "text": "previous post"
+      },
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-1.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Two sample Student’s t-test #1 | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-6747735063462448430?l=statistic-on-air.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-6747735063462448430?l=statistic-on-air.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/todos-logos/",
+        "text": "Todos Logos"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/f-test/",
+        "text": "F-test"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/fisher/",
+        "text": "Fisher"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/homoskedasticity-test/",
+        "text": "Homoskedasticity test"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/independent-data-set/",
+        "text": "Independent data-set"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/t-test/",
+        "text": "t-test"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/two-sample/",
+        "text": "Two sample"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-628 post type-post status-publish format-standard hentry category-r-bloggers tag-f-test tag-fisher tag-homoskedasticity-test tag-independent-data-set tag-t-test tag-two-sample\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Two sample Student’s t-test #1</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 24, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-1.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><span style=\"font-weight: bold;\">t-Test to compare the means of two groups under the assumption that both samples are random, independent, and come from normally distributed population with unknow but equal variances</span><br/><br/>Here I will use the same data just seen in a <a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-z-test.html\" rel=\"nofollow\" target=\"_blank\">previous post</a>. The data are given below:<br/><br/><div style=\"text-align: center;\">A: 175, 168, 168, 190, 156, 181, 182, 175, 174, 179<br/>B: 185, 169, 173, 173, 188, 186, 175, 174, 179, 180</div><br/><br/><span class=\"fullpost\">To solve this problem we must use to a Student’s t-test with two samples, assuming that the two samples are taken from populations that follow a Gaussian distribution (if we cannot assume that, we must solve this problem using the non-parametric test called <b>Wilcoxon-Mann-Whitney test</b>; we will see this test in a future post). Before proceeding with the <em>t-test</em>, it is necessary to evaluate the sample variances of the two groups, using a <b>Fisher’s F-test</b> to verify the <em>homoskedasticity</em> (<em>homogeneity of variances</em>). In R you can do this in this way:<br/><br/><pre>\na = c(175, 168, 168, 190, 156, 181, 182, 175, 174, 179)\nb = c(185, 169, 173, 173, 188, 186, 175, 174, 179, 180)\n\nvar.test(a,b)\n\n     F test to compare two variances\n\ndata: a and b\nF = 2.1028, num df = 9, denom df = 9, p-value = 0.2834\nalternative hypothesis: true ratio of variances is not equal to 1\n95 percent confidence interval:\n   0.5223017 8.4657950\nsample estimates:\n ratio of variances\n2.102784</pre><br/><br/>We obtained p-value greater than 0.05, then we can assume that the two variances are homogeneous. Indeed we can compare the value of F obtained with the tabulated value of F for alpha = 0.05, degrees of freedom of numerator = 9, and degrees of freedom of denominator = 9, using the function <code>qf(p, df.num, df.den)</code>:<br/><br/><pre>\nqf(0.95, 9, 9)\n[1] 3.178893</pre><br/><br/>Note that the value of F computed is less than the tabulated value of F, which leads us to accept the null hypothesis of homogeneity of variances.<br/><b>NOTE:</b> The F distribution has only one tail, so with a confidence level of 95%, <code>p = 0.95</code>. Conversely, the <em>t-distribution</em> has two tails, and in the R’s function <code>qt(p, df)</code> we insert a value <code>p = 0975</code> when you’re testing a two-tailed alternative hypothesis.<br/><br/>Then call the function t.test for homogeneous variances (<code>var.equal = TRUE</code>) and independent samples (<code>paired = FALSE</code>: you can omit this because the function works on independent samples by default) in this way:<br/><br/><pre>\nt.test(a,b, var.equal=TRUE, paired=FALSE)\n\nTwo Sample t-test\n\ndata: a and b\nt = -0.9474, df = 18, p-value = 0.356\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n  -10.93994 4.13994\nsample estimates:\nmean of x mean of y\n    174.8     178.2</pre><br/><br/>We obtained p-value greater than 0.05, then we can conclude that the averages of two groups are significantly similar. Indeed the value of t-computed is less than the tabulated t-value for 18 degrees of freedom, which in R we can calculate:<br/><br/><pre>\nqt(0.975, 18)\n[1] 2.100922</pre><br/><br/>This confirms that we can accept the null hypothesis H0 of equality of the means.</span><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-6747735063462448430?l=statistic-on-air.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-6747735063462448430?l=statistic-on-air.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-6747735063462448430?l=statistic-on-air.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-1.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/f-test/\" rel=\"tag\">F-test</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/fisher/\" rel=\"tag\">Fisher</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/homoskedasticity-test/\" rel=\"tag\">Homoskedasticity test</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/independent-data-set/\" rel=\"tag\">Independent data-set</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/t-test/\" rel=\"tag\">t-test</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/two-sample/\" rel=\"tag\">Two sample</a></li></ul></div></article>",
+    "main_text": "Two sample Student’s t-test #1\nPosted on\nJuly 24, 2009\nby\nTodos Logos\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nt-Test to compare the means of two groups under the assumption that both samples are random, independent, and come from normally distributed population with unknow but equal variances\nHere I will use the same data just seen in a\nprevious post\n. The data are given below:\nA: 175, 168, 168, 190, 156, 181, 182, 175, 174, 179\nB: 185, 169, 173, 173, 188, 186, 175, 174, 179, 180\nTo solve this problem we must use to a Student’s t-test with two samples, assuming that the two samples are taken from populations that follow a Gaussian distribution (if we cannot assume that, we must solve this problem using the non-parametric test called\nWilcoxon-Mann-Whitney test\n; we will see this test in a future post). Before proceeding with the\nt-test\n, it is necessary to evaluate the sample variances of the two groups, using a\nFisher’s F-test\nto verify the\nhomoskedasticity\n(\nhomogeneity of variances\n). In R you can do this in this way:\na = c(175, 168, 168, 190, 156, 181, 182, 175, 174, 179)\nb = c(185, 169, 173, 173, 188, 186, 175, 174, 179, 180)\n\nvar.test(a,b)\n\n     F test to compare two variances\n\ndata: a and b\nF = 2.1028, num df = 9, denom df = 9, p-value = 0.2834\nalternative hypothesis: true ratio of variances is not equal to 1\n95 percent confidence interval:\n   0.5223017 8.4657950\nsample estimates:\n ratio of variances\n2.102784\nWe obtained p-value greater than 0.05, then we can assume that the two variances are homogeneous. Indeed we can compare the value of F obtained with the tabulated value of F for alpha = 0.05, degrees of freedom of numerator = 9, and degrees of freedom of denominator = 9, using the function\nqf(p, df.num, df.den)\n:\nqf(0.95, 9, 9)\n[1] 3.178893\nNote that the value of F computed is less than the tabulated value of F, which leads us to accept the null hypothesis of homogeneity of variances.\nNOTE:\nThe F distribution has only one tail, so with a confidence level of 95%,\np = 0.95\n. Conversely, the\nt-distribution\nhas two tails, and in the R’s function\nqt(p, df)\nwe insert a value\np = 0975\nwhen you’re testing a two-tailed alternative hypothesis.\nThen call the function t.test for homogeneous variances (\nvar.equal = TRUE\n) and independent samples (\npaired = FALSE\n: you can omit this because the function works on independent samples by default) in this way:\nt.test(a,b, var.equal=TRUE, paired=FALSE)\n\nTwo Sample t-test\n\ndata: a and b\nt = -0.9474, df = 18, p-value = 0.356\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n  -10.93994 4.13994\nsample estimates:\nmean of x mean of y\n    174.8     178.2\nWe obtained p-value greater than 0.05, then we can conclude that the averages of two groups are significantly similar. Indeed the value of t-computed is less than the tabulated t-value for 18 degrees of freedom, which in R we can calculate:\nqt(0.975, 18)\n[1] 2.100922\nThis confirms that we can accept the null hypothesis H0 of equality of the means.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nF-test\nFisher\nHomoskedasticity test\nIndependent data-set\nt-test\nTwo sample",
+    "meta_description": "t-Test to compare the means of two groups under the assumption that both samples are random, independent, and come from normally distributed population with unknow but equal variancesHere I will use the same data just seen in a previous post. The data ...",
+    "meta_keywords": "f-test,fisher,homoskedasticity test,independent data-set,t-test,two sample",
+    "og_description": "t-Test to compare the means of two groups under the assumption that both samples are random, independent, and come from normally distributed population with unknow but equal variancesHere I will use the same data just seen in a previous post. The data ...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/4274823366855967619-6747735063462448430?l=statistic-on-air.blogspot.com",
+    "og_title": "Two sample Student’s t-test #1 | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.5,
+    "sitemap_lastmod": "2010-09-06T21:00:27+00:00",
+    "twitter_description": "t-Test to compare the means of two groups under the assumption that both samples are random, independent, and come from normally distributed population with unknow but equal variancesHere I will use the same data just seen in a previous post. The data ...",
+    "twitter_title": "Two sample Student’s t-test #1 | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/07/two-sample-students-t-test-1/",
+    "word_count": 700
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "uuid": "55197ff5-0594-4be1-ac0c-bb9139d0bc53",
+  "created_at": "2025-11-22 19:58:24",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/06/investigating-running-r-on-risc-v-thanks-to-r-base-on-ubuntu/",
+    "crawled_at": "2025-11-22T10:47:36.672706",
+    "external_links": [
+      {
+        "href": "https://remlapmot.github.io/post/2025/riscv-r/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ubuntu.com/blog/empowering-risc-v-with-open-source-through-ubuntu",
+        "text": "first class architecture for Ubuntu"
+      },
+      {
+        "href": "https://launchpad.net/ubuntu/+source/r-base",
+        "text": "here"
+      },
+      {
+        "href": "https://r4pi.org/",
+        "text": "the R4Pi"
+      },
+      {
+        "href": "https://youtu.be/imYEdQ81JPk?si=B97GQJl846WC6zr3",
+        "text": "great benefit because it opens R up to a whole new user base and whole new set of low power use cases"
+      },
+      {
+        "href": "https://mac.getutm.app/",
+        "text": "UTM"
+      },
+      {
+        "href": "https://www.qemu.org/",
+        "text": "QEMU"
+      },
+      {
+        "href": "https://www.reddit.com/r/RISCV/comments/t19dqz/comment/hyfm8s8/",
+        "text": "tip online"
+      },
+      {
+        "href": "https://canonical-ubuntu-boards.readthedocs-hosted.com/en/latest/how-to/qemu-riscv/",
+        "text": "this incredible guide by Canonical"
+      },
+      {
+        "href": "https://brew.sh/",
+        "text": "Homebrew"
+      },
+      {
+        "href": "https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html",
+        "text": "here"
+      },
+      {
+        "href": "https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html",
+        "text": "here"
+      },
+      {
+        "href": "https://www.reddit.com/r/RISCV/comments/t19dqz/comment/hyfaeh4/",
+        "text": "copy them from an Ubuntu installation"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/riscv-r/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Investigating running R on RISC-V thanks to r-base on Ubuntu | R-bloggers",
+    "images": [
+      {
+        "alt": "Screenshot of the architectures the r-base package is built for Ubuntu Questing Quokka.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of the architectures the r-base package is built for Ubuntu Questing Quokka.",
+        "base64": null,
+        "src": "https://i0.wp.com/remlapmot.github.io/post/2025/riscv-r/img/questing-r-base-builds.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Screenshot of the Ubuntu server startup message running on an emulated RISC-V virtual machine.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of the Ubuntu server startup message running on an emulated RISC-V virtual machine.",
+        "base64": null,
+        "src": "https://i2.wp.com/remlapmot.github.io/post/2025/riscv-r/img/ubuntu-launch-screen.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Screenshot of the R startup message running on an emulated RISC-V virtual machine.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of the R startup message running on an emulated RISC-V virtual machine.",
+        "base64": null,
+        "src": "https://i1.wp.com/remlapmot.github.io/post/2025/riscv-r/img/r-startup-message.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-dr-tom-palmer/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-392966 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Investigating running R on RISC-V thanks to r-base on Ubuntu</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 9, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-dr-tom-palmer/\">R | Dr Tom Palmer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://remlapmot.github.io/post/2025/riscv-r/\"> R | Dr Tom Palmer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h2 id=\"introduction\">Introduction</h2>\n<p>I was interested to see whether and how well R would run on the new RISC-V architecture.</p>\n<p>A while ago I read that RISC-V is now a \n<a href=\"https://ubuntu.com/blog/empowering-risc-v-with-open-source-through-ubuntu\" rel=\"nofollow\" target=\"_blank\">first class architecture for Ubuntu</a>.</p>\n<p>This got me thinking, instead of having to build R from source maybe the <code>r-base</code> package might be available for RISC-V. It turns out that this is indeed the case, the architecture we are interested in is <code>riscv64</code>. The launchpad page for <code>r-base</code> is \n<a href=\"https://launchpad.net/ubuntu/+source/r-base\" rel=\"nofollow\" target=\"_blank\">here</a>. Clicking through the subpages for each version of Ubuntu I can see that R is available for RISC-V from Ubuntu Focal Fossa onwards (for which the version of R is 3.6.3; and the latest version of Ubuntu has the current version of R of 4.5.0).</p>\n<img alt=\"Screenshot of the architectures the r-base package is built for Ubuntu Questing Quokka.\" data-lazy-src=\"https://i0.wp.com/remlapmot.github.io/post/2025/riscv-r/img/questing-r-base-builds.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of the architectures the r-base package is built for Ubuntu Questing Quokka.\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/remlapmot.github.io/post/2025/riscv-r/img/questing-r-base-builds.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<p>Why do this? I have no immediate need for this. However, there are now quite a few affordable RISC-V single board computers available, and so a similar argument holds to that made by \n<a href=\"https://r4pi.org/\" rel=\"nofollow\" target=\"_blank\">the R4Pi</a> (R for the Raspberry Pi project) that running R on such affordable machines is a \n<a href=\"https://youtu.be/imYEdQ81JPk?si=B97GQJl846WC6zr3\" rel=\"nofollow\" target=\"_blank\">great benefit because it opens R up to a whole new user base and whole new set of low power use cases</a>.</p>\n<h2 id=\"emulating-risc-v-on-an-apple-silicon-mac\">Emulating RISC-V on an Apple Silicon Mac</h2>\n<p>I don’t have a RISC-V computer, therefore, I needed to use emulation.</p>\n<p>My setup is that I’m on an Apple Silicon M4 MacBook Air. I thought this might be promising to use because this has an ARM processor which is a reduced instruction set architecture, as is RISC-V.</p>\n<p>I wondered whether to try \n<a href=\"https://mac.getutm.app/\" rel=\"nofollow\" target=\"_blank\">UTM</a> or \n<a href=\"https://www.qemu.org/\" rel=\"nofollow\" target=\"_blank\">QEMU</a>. I tried UTM first but I couldn’t make any progress. So I found a \n<a href=\"https://www.reddit.com/r/RISCV/comments/t19dqz/comment/hyfm8s8/\" rel=\"nofollow\" target=\"_blank\">tip online</a> saying that RISC-V Ubuntu could be launched under QEMU on Ubuntu Linux using the following command.</p>\n<pre>qemu-system-riscv64 \\\n  -machine virt \\\n  -nographic \\\n  -m 12288 -smp 4 \\\n  -bios /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf \\\n  -kernel /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf \\\n  -device virtio-net-pci,netdev=eth0 \\\n  -netdev user,id=eth0,hostfwd=tcp::2222-:22 \\\n  -drive file=ubuntu-24.10-preinstalled-server-riscv64.img,format=raw,if=virtio\n</pre>\n<p>Firstly one needs to obtain the Ubuntu img. Following \n<a href=\"https://canonical-ubuntu-boards.readthedocs-hosted.com/en/latest/how-to/qemu-riscv/\" rel=\"nofollow\" target=\"_blank\">this incredible guide by Canonical</a> we can choose one of the three versions of Ubuntu listed (Noble, Oracular, and Plucky).</p>\n<p>The image downloads as an <em>.img.xz</em> archive, which you can extract by installing <code>xz</code> (I use \n<a href=\"https://brew.sh/\" rel=\"nofollow\" target=\"_blank\">Homebrew</a> for system packages on macOS)</p>\n<pre>brew install xz\n</pre>\n<p>and decompressing with</p>\n<pre>xz --decompress ubuntu-24.10-preinstalled-server-riscv64.img.xz\n</pre>\n<p>The extracted file is about 4GB, but later on I realised I needed a slightly larger harddisk for the virtual machine, so I increased it to 8GB with the following command.</p>\n<pre>qemu-img resize ubuntu-24.10-preinstalled-server-riscv64.img 8G\n</pre>\n<p>I then realised that I needed QEMU on my Mac. Again Homebrew to the rescue with the following command.</p>\n<pre>brew install qemu u-boot-tools\n</pre>\n<p>(Admittedly I don’t think I ended up using the <em>u-boot-tools</em>.) Next I needed the two files; <em>fw_jump.elf</em> and <em>uboot.elf</em>. I had a look in <em>/opt/homebrew/Cellar/qemu/10.0.2/</em> but I couldn’t work out if they are in there or not (there are some zip archives in some subdirectories). There are some official documentation pages \n<a href=\"https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html\" rel=\"nofollow\" target=\"_blank\">here</a> and \n<a href=\"https://risc-v-getting-started-guide.readthedocs.io/en/latest/linux-qemu.html\" rel=\"nofollow\" target=\"_blank\">here</a> but I couldn’t follow them. I then found a comment that said you can \n<a href=\"https://www.reddit.com/r/RISCV/comments/t19dqz/comment/hyfaeh4/\" rel=\"nofollow\" target=\"_blank\">copy them from an Ubuntu installation</a>, which I implemented in Docker.</p>\n<pre>docker run -it --rm --platform linux/arm64 \\\n  -v $PWD:/home ubuntu:24.04 bash /home/copy-files.sh\n</pre>\n<p>where <em>copy-files.sh</em> contains</p>\n<pre>apt update\napt upgrade -y \napt install -y opensbi qemu-system-misc u-boot-qemu\ncp /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf /home/uboot.elf\ncp /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf /home/fw_jump.elf\n</pre>\n<p>This saves the two files to the current working directory, so I could modify my call to <code>qemu-system-riscv64</code> to be as follows.</p>\n<pre>qemu-system-riscv64 \\\n  -machine virt \\\n  -nographic \\\n  -m 12288 -smp 4 \\\n  -bios fw_jump.elf \\\n  -kernel uboot.elf \\\n  -device virtio-net-pci,netdev=eth0 \\\n  -netdev user,id=eth0,hostfwd=tcp::2222-:22 \\\n  -drive file=ubuntu-24.10-preinstalled-server-riscv64.img,format=raw,if=virtio\n</pre>\n<p>After a couple of seconds you obtain a GRUB screen in which you select the default of <em>Ubuntu</em>. Then after a further approx. 20 seconds of screen output, a little bit to my surprise this worked and I was presented with the login screen to Ubuntu server. The default username is <em>ubuntu</em> and the default password is <em>ubuntu</em>. On login you are immediately prompted to change the password but then you’re in.</p>\n<img alt=\"Screenshot of the Ubuntu server startup message running on an emulated RISC-V virtual machine.\" data-lazy-src=\"https://i2.wp.com/remlapmot.github.io/post/2025/riscv-r/img/ubuntu-launch-screen.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of the Ubuntu server startup message running on an emulated RISC-V virtual machine.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/remlapmot.github.io/post/2025/riscv-r/img/ubuntu-launch-screen.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<p>So next it’s essentially standard Ubuntu commands to update the system and install <code>r-base</code>. I also install <code>r-base-dev</code> to obtain the necessary compilers to build any source packages containing code which needs to be compiled.</p>\n<pre>sudo apt-get update\nsudo apt-get upgrade -y\nsudo apt-get install -y r-base r-base-dev\n</pre>\n<p>Then we launch R.</p>\n<img alt=\"Screenshot of the R startup message running on an emulated RISC-V virtual machine.\" data-lazy-src=\"https://i1.wp.com/remlapmot.github.io/post/2025/riscv-r/img/r-startup-message.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of the R startup message running on an emulated RISC-V virtual machine.\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/remlapmot.github.io/post/2025/riscv-r/img/r-startup-message.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<p>From this point on everything I tried simply worked. I installed <em>data.table</em> from source. Then slightly more obscurely, I tried out a trick from Jeroen Ooms who said that if an R package only contains R code then its binary version will install under any architecture. I have a few R packages in my r-universe that only contain R code, my example installed as expected (note this was built on x86_64 Ubuntu Linux but contains no source code which needs to be compiled).</p>\n<pre>install.packages('tmsens', repos =\n  'https://remlapmot.r-universe.dev/bin/linux/noble-x86_64/4.5/')\n#&gt; * installing *binary* package ‘tmsens’ ...\n#&gt; * DONE (tmsens)\n#&gt; \n#&gt; The downloaded source packages are in\n#&gt; \t‘/tmp/RtmpYqwF8W/downloaded_packages’\n#&gt; &gt; library(tmsens)\n#&gt; Warning message:\n#&gt; package ‘tmsens’ was built under R version 4.5.0\n#&gt; &gt; help(package = 'tmsens')\n#&gt; \n#&gt;                 Information on package ‘tmsens’\n</pre>\n<p>I admit I haven’t tried many features here but I am really impressed with Ubuntu packages being available for RISC-V.</p>\n<p>Once you are finished using R, exit R as usual and to shutdown the Ubuntu server issue the following.</p>\n<pre>sudo poweroff\n</pre>\n<h2 id=\"summary\">Summary</h2>\n<p>I have shown how to install and run R on Ubuntu Server for RISC-V under QEMU emulation. Thanks to Canonical’s support for RISC-V and the maintainers of the <code>r-base</code> and related packages the experience of running R on RISC-V is already excellent.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://remlapmot.github.io/post/2025/riscv-r/\"> R | Dr Tom Palmer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Investigating running R on RISC-V thanks to r-base on Ubuntu\nPosted on\nJune 9, 2025\nby\nR | Dr Tom Palmer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Dr Tom Palmer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nI was interested to see whether and how well R would run on the new RISC-V architecture.\nA while ago I read that RISC-V is now a\nfirst class architecture for Ubuntu\n.\nThis got me thinking, instead of having to build R from source maybe the\nr-base\npackage might be available for RISC-V. It turns out that this is indeed the case, the architecture we are interested in is\nriscv64\n. The launchpad page for\nr-base\nis\nhere\n. Clicking through the subpages for each version of Ubuntu I can see that R is available for RISC-V from Ubuntu Focal Fossa onwards (for which the version of R is 3.6.3; and the latest version of Ubuntu has the current version of R of 4.5.0).\nWhy do this? I have no immediate need for this. However, there are now quite a few affordable RISC-V single board computers available, and so a similar argument holds to that made by\nthe R4Pi\n(R for the Raspberry Pi project) that running R on such affordable machines is a\ngreat benefit because it opens R up to a whole new user base and whole new set of low power use cases\n.\nEmulating RISC-V on an Apple Silicon Mac\nI don’t have a RISC-V computer, therefore, I needed to use emulation.\nMy setup is that I’m on an Apple Silicon M4 MacBook Air. I thought this might be promising to use because this has an ARM processor which is a reduced instruction set architecture, as is RISC-V.\nI wondered whether to try\nUTM\nor\nQEMU\n. I tried UTM first but I couldn’t make any progress. So I found a\ntip online\nsaying that RISC-V Ubuntu could be launched under QEMU on Ubuntu Linux using the following command.\nqemu-system-riscv64 \\\n  -machine virt \\\n  -nographic \\\n  -m 12288 -smp 4 \\\n  -bios /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf \\\n  -kernel /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf \\\n  -device virtio-net-pci,netdev=eth0 \\\n  -netdev user,id=eth0,hostfwd=tcp::2222-:22 \\\n  -drive file=ubuntu-24.10-preinstalled-server-riscv64.img,format=raw,if=virtio\nFirstly one needs to obtain the Ubuntu img. Following\nthis incredible guide by Canonical\nwe can choose one of the three versions of Ubuntu listed (Noble, Oracular, and Plucky).\nThe image downloads as an\n.img.xz\narchive, which you can extract by installing\nxz\n(I use\nHomebrew\nfor system packages on macOS)\nbrew install xz\nand decompressing with\nxz --decompress ubuntu-24.10-preinstalled-server-riscv64.img.xz\nThe extracted file is about 4GB, but later on I realised I needed a slightly larger harddisk for the virtual machine, so I increased it to 8GB with the following command.\nqemu-img resize ubuntu-24.10-preinstalled-server-riscv64.img 8G\nI then realised that I needed QEMU on my Mac. Again Homebrew to the rescue with the following command.\nbrew install qemu u-boot-tools\n(Admittedly I don’t think I ended up using the\nu-boot-tools\n.) Next I needed the two files;\nfw_jump.elf\nand\nuboot.elf\n. I had a look in\n/opt/homebrew/Cellar/qemu/10.0.2/\nbut I couldn’t work out if they are in there or not (there are some zip archives in some subdirectories). There are some official documentation pages\nhere\nand\nhere\nbut I couldn’t follow them. I then found a comment that said you can\ncopy them from an Ubuntu installation\n, which I implemented in Docker.\ndocker run -it --rm --platform linux/arm64 \\\n  -v $PWD:/home ubuntu:24.04 bash /home/copy-files.sh\nwhere\ncopy-files.sh\ncontains\napt update\napt upgrade -y \napt install -y opensbi qemu-system-misc u-boot-qemu\ncp /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf /home/uboot.elf\ncp /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf /home/fw_jump.elf\nThis saves the two files to the current working directory, so I could modify my call to\nqemu-system-riscv64\nto be as follows.\nqemu-system-riscv64 \\\n  -machine virt \\\n  -nographic \\\n  -m 12288 -smp 4 \\\n  -bios fw_jump.elf \\\n  -kernel uboot.elf \\\n  -device virtio-net-pci,netdev=eth0 \\\n  -netdev user,id=eth0,hostfwd=tcp::2222-:22 \\\n  -drive file=ubuntu-24.10-preinstalled-server-riscv64.img,format=raw,if=virtio\nAfter a couple of seconds you obtain a GRUB screen in which you select the default of\nUbuntu\n. Then after a further approx. 20 seconds of screen output, a little bit to my surprise this worked and I was presented with the login screen to Ubuntu server. The default username is\nubuntu\nand the default password is\nubuntu\n. On login you are immediately prompted to change the password but then you’re in.\nSo next it’s essentially standard Ubuntu commands to update the system and install\nr-base\n. I also install\nr-base-dev\nto obtain the necessary compilers to build any source packages containing code which needs to be compiled.\nsudo apt-get update\nsudo apt-get upgrade -y\nsudo apt-get install -y r-base r-base-dev\nThen we launch R.\nFrom this point on everything I tried simply worked. I installed\ndata.table\nfrom source. Then slightly more obscurely, I tried out a trick from Jeroen Ooms who said that if an R package only contains R code then its binary version will install under any architecture. I have a few R packages in my r-universe that only contain R code, my example installed as expected (note this was built on x86_64 Ubuntu Linux but contains no source code which needs to be compiled).\ninstall.packages('tmsens', repos =\n  'https://remlapmot.r-universe.dev/bin/linux/noble-x86_64/4.5/')\n#> * installing *binary* package ‘tmsens’ ...\n#> * DONE (tmsens)\n#> \n#> The downloaded source packages are in\n#> \t‘/tmp/RtmpYqwF8W/downloaded_packages’\n#> > library(tmsens)\n#> Warning message:\n#> package ‘tmsens’ was built under R version 4.5.0\n#> > help(package = 'tmsens')\n#> \n#>                 Information on package ‘tmsens’\nI admit I haven’t tried many features here but I am really impressed with Ubuntu packages being available for RISC-V.\nOnce you are finished using R, exit R as usual and to shutdown the Ubuntu server issue the following.\nsudo poweroff\nSummary\nI have shown how to install and run R on Ubuntu Server for RISC-V under QEMU emulation. Thanks to Canonical’s support for RISC-V and the maintainers of the\nr-base\nand related packages the experience of running R on RISC-V is already excellent.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Dr Tom Palmer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction I was interested to see whether and how well R would run on the new RISC-V architecture. A while ago I read that RISC-V is now a first class architecture for Ubuntu. This got me thinking, instead of having to build R from source maybe the...",
+    "meta_keywords": null,
+    "og_description": "Introduction I was interested to see whether and how well R would run on the new RISC-V architecture. A while ago I read that RISC-V is now a first class architecture for Ubuntu. This got me thinking, instead of having to build R from source maybe the...",
+    "og_image": "https://remlapmot.github.io/post/2025/riscv-r/img/questing-r-base-builds.png",
+    "og_title": "Investigating running R on RISC-V thanks to r-base on Ubuntu | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.2,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction I was interested to see whether and how well R would run on the new RISC-V architecture. A while ago I read that RISC-V is now a first class architecture for Ubuntu. This got me thinking, instead of having to build R from source maybe the...",
+    "twitter_title": "Investigating running R on RISC-V thanks to r-base on Ubuntu | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/06/investigating-running-r-on-risc-v-thanks-to-r-base-on-ubuntu/",
+    "word_count": 1235
+  }
+}

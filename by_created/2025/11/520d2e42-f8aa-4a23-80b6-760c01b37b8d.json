@@ -1,0 +1,100 @@
+{
+  "uuid": "520d2e42-f8aa-4a23-80b6-760c01b37b8d",
+  "created_at": "2025-11-17 20:40:07",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/10/iso-week/",
+    "crawled_at": "2025-11-17T10:20:09.788190",
+    "external_links": [
+      {
+        "href": "https://quantitative-ecology.blogspot.com/2009/10/iso-week.html",
+        "text": "Quantitative Ecology"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/ISO_week_date",
+        "text": "ISO-8061 week number"
+      },
+      {
+        "href": "https://tinyurl.com/yj2l6rc",
+        "text": "this"
+      },
+      {
+        "href": "https://quantitative-ecology.blogspot.com/2009/10/iso-week.html",
+        "text": "Quantitative Ecology"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "ISO week | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/forester/",
+        "text": "Forester"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-5282 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">ISO week</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/forester/\">Forester</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://quantitative-ecology.blogspot.com/2009/10/iso-week.html\"> Quantitative Ecology</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I am working with a model that produces estimates of snow water equivalent through time. Because I deal with large spatial extents, I decided to have the model produce weekly averages. The problem with this is knowing which file to access for a given date. The snow files are saved using an <a href=\"https://en.wikipedia.org/wiki/ISO_week_date\" rel=\"nofollow\" target=\"_blank\">ISO-8061 week number</a> (I had no idea how many date “standards” there were, but this is a common one). I thought that getting the week number out of a date format in R would be easy, but I was wrong. It turns out to be platform specific and regardless, as far as I could tell, there is no built-in way to calculate the ISO week. Thus the following function.<br/><br/><div style=\"overflow: auto;\"><pre>ISOweek&lt;-function(date,format=\"%Y-%m-%d\",return.val=\"weekofyear\"){\n  ##converts dates into \"dayofyear\" or \"weekofyear\", the latter providing the ISO-8601 week\n  ##date should be a vector of class Date or a vector of formatted character strings\n  ##format refers to the date form used if a vector of\n  ##  character strings  is supplied\n  \n  ##convert date to POSIXt format \n  if(class(date)[1]%in%c(\"Date\",\"character\")){\n    date=as.POSIXlt(date,format=format)\n  }\n  if(class(date)[1]!=\"POSIXt\"){\n    print(\"Date is of wrong format.\")\n    break\n  }else if(class(date)[2]==\"POSIXct\"){\n  date=as.POSIXlt(date)\n}\n\n\n  if(return.val==\"dayofyear\"){\n    ##add 1 because POSIXt is base zero\n    return(date$yday+1)\n  }else if(return.val==\"weekofyear\"){\n    ##Based on the ISO8601 weekdate system,\n    ## Monday is the first day of the week\n    ## W01 is the week with 4 Jan in it.\n    year=1900+date$year\n    jan4=strptime(paste(year,1,4,sep=\"-\"),format=\"%Y-%m-%d\")\n    wday=jan4$wday\n    \n    wday[wday==0]=7  ##convert to base 1, where Monday == 1, Sunday==7\n    \n    ##calculate the date of the first week of the year\n    weekstart=jan4-(wday-1)*86400  \n    weeknum=ceiling(as.numeric((difftime(date,weekstart,units=\"days\")+0.1)/7))\n\n    #########################################################################\n    ##calculate week for days of the year occuring in the next year's week 1.\n    #########################################################################\n    mday=date$mday\n    wday=date$wday\n    wday[wday==0]=7\n    year=ifelse(weeknum==53 &amp; mday-wday&gt;=28,year+1,year)\n    weeknum=ifelse(weeknum==53 &amp; mday-wday&gt;=28,1,weeknum)\n  \n    ################################################################\n    ##calculate week for days of the year occuring prior to week 1.\n    ################################################################\n    \n    ##first calculate the numbe of weeks in the previous year\n    year.shift=year-1\n    jan4.shift=strptime(paste(year.shift,1,4,sep=\"-\"),format=\"%Y-%m-%d\")\n    wday=jan4.shift$wday\n    wday[wday==0]=7  ##convert to base 1, where Monday == 1, Sunday==7\n    weekstart=jan4.shift-(wday-1)*86400\n    weeknum.shift=ceiling(as.numeric((difftime(date,weekstart)+0.1)/7))\n\n    ##update year and week\n    year=ifelse(weeknum==0,year.shift,year)\n    weeknum=ifelse(weeknum==0,weeknum.shift,weeknum)\n    \n    return(list(\"year\"=year,\"weeknum\"=weeknum))\n  }else{\n    print(\"Unknown return.val\")\n    break\n  }\n}\n\n\n</pre><span style=\"font-size:85%;\"><span style=\"font-family:courier new;\"></span></span></div><br/><br/>Of course after I wrote this function, I found <a href=\"https://tinyurl.com/yj2l6rc\" rel=\"nofollow\" target=\"_blank\">this</a> thread in R-help. Gustaf Rydevik provided a function that is similar to mine (his function is also about twice as fast); however, on my computer it was giving incorrect years and week numbers for days in January that occur in the previous year’s final week (e.g., 1 January 2010 should be week 53 of 2009).  Reading through the rest of the thread indicates that the confusion involving week numbers is widespread. I guess the moral of the story is pick a standard and stick to it.<br/><br/>Please let me know in the comments if you encounter any problems running this function (or if you can suggest ways to make it more efficient).\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://quantitative-ecology.blogspot.com/2009/10/iso-week.html\"> Quantitative Ecology</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "ISO week\nPosted on\nOctober 22, 2009\nby\nForester\nin Uncategorized | 0 Comments\n[This article was first published on\nQuantitative Ecology\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI am working with a model that produces estimates of snow water equivalent through time. Because I deal with large spatial extents, I decided to have the model produce weekly averages. The problem with this is knowing which file to access for a given date. The snow files are saved using an\nISO-8061 week number\n(I had no idea how many date “standards” there were, but this is a common one). I thought that getting the week number out of a date format in R would be easy, but I was wrong. It turns out to be platform specific and regardless, as far as I could tell, there is no built-in way to calculate the ISO week. Thus the following function.\nISOweek<-function(date,format=\"%Y-%m-%d\",return.val=\"weekofyear\"){\n  ##converts dates into \"dayofyear\" or \"weekofyear\", the latter providing the ISO-8601 week\n  ##date should be a vector of class Date or a vector of formatted character strings\n  ##format refers to the date form used if a vector of\n  ##  character strings  is supplied\n  \n  ##convert date to POSIXt format \n  if(class(date)[1]%in%c(\"Date\",\"character\")){\n    date=as.POSIXlt(date,format=format)\n  }\n  if(class(date)[1]!=\"POSIXt\"){\n    print(\"Date is of wrong format.\")\n    break\n  }else if(class(date)[2]==\"POSIXct\"){\n  date=as.POSIXlt(date)\n}\n\n  if(return.val==\"dayofyear\"){\n    ##add 1 because POSIXt is base zero\n    return(date$yday+1)\n  }else if(return.val==\"weekofyear\"){\n    ##Based on the ISO8601 weekdate system,\n    ## Monday is the first day of the week\n    ## W01 is the week with 4 Jan in it.\n    year=1900+date$year\n    jan4=strptime(paste(year,1,4,sep=\"-\"),format=\"%Y-%m-%d\")\n    wday=jan4$wday\n    \n    wday[wday==0]=7  ##convert to base 1, where Monday == 1, Sunday==7\n    \n    ##calculate the date of the first week of the year\n    weekstart=jan4-(wday-1)*86400  \n    weeknum=ceiling(as.numeric((difftime(date,weekstart,units=\"days\")+0.1)/7))\n\n    #########################################################################\n    ##calculate week for days of the year occuring in the next year's week 1.\n    #########################################################################\n    mday=date$mday\n    wday=date$wday\n    wday[wday==0]=7\n    year=ifelse(weeknum==53 & mday-wday>=28,year+1,year)\n    weeknum=ifelse(weeknum==53 & mday-wday>=28,1,weeknum)\n  \n    ################################################################\n    ##calculate week for days of the year occuring prior to week 1.\n    ################################################################\n    \n    ##first calculate the numbe of weeks in the previous year\n    year.shift=year-1\n    jan4.shift=strptime(paste(year.shift,1,4,sep=\"-\"),format=\"%Y-%m-%d\")\n    wday=jan4.shift$wday\n    wday[wday==0]=7  ##convert to base 1, where Monday == 1, Sunday==7\n    weekstart=jan4.shift-(wday-1)*86400\n    weeknum.shift=ceiling(as.numeric((difftime(date,weekstart)+0.1)/7))\n\n    ##update year and week\n    year=ifelse(weeknum==0,year.shift,year)\n    weeknum=ifelse(weeknum==0,weeknum.shift,weeknum)\n    \n    return(list(\"year\"=year,\"weeknum\"=weeknum))\n  }else{\n    print(\"Unknown return.val\")\n    break\n  }\n}\nOf course after I wrote this function, I found\nthis\nthread in R-help. Gustaf Rydevik provided a function that is similar to mine (his function is also about twice as fast); however, on my computer it was giving incorrect years and week numbers for days in January that occur in the previous year’s final week (e.g., 1 January 2010 should be week 53 of 2009).  Reading through the rest of the thread indicates that the confusion involving week numbers is widespread. I guess the moral of the story is pick a standard and stick to it.\nPlease let me know in the comments if you encounter any problems running this function (or if you can suggest ways to make it more efficient).\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nQuantitative Ecology\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I am working with a model that produces estimates of snow water equivalent through time. Because I deal with large spatial extents, I decided to have the model produce weekly averages. The problem with this is knowing which file to access for a given d...",
+    "meta_keywords": null,
+    "og_description": "I am working with a model that produces estimates of snow water equivalent through time. Because I deal with large spatial extents, I decided to have the model produce weekly averages. The problem with this is knowing which file to access for a given d...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "ISO week | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.6,
+    "sitemap_lastmod": "2010-02-19T16:29:09+00:00",
+    "twitter_description": "I am working with a model that produces estimates of snow water equivalent through time. Because I deal with large spatial extents, I decided to have the model produce weekly averages. The problem with this is knowing which file to access for a given d...",
+    "twitter_title": "ISO week | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/10/iso-week/",
+    "word_count": 724
+  }
+}

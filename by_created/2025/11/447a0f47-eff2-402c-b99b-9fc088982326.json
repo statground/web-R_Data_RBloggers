@@ -1,0 +1,107 @@
+{
+  "uuid": "447a0f47-eff2-402c-b99b-9fc088982326",
+  "created_at": "2025-11-17 20:40:39",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/07/one-sample-students-t-test/",
+    "crawled_at": "2025-11-17T10:31:26.321216",
+    "external_links": [
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/one-sample-students-t-test.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/one-sample-z-test.html",
+        "text": "one sample Z-test"
+      },
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/one-sample-students-t-test.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "One sample Student’s t-test | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-8459704097425421932?l=statistic-on-air.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-8459704097425421932?l=statistic-on-air.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/todos-logos/",
+        "text": "Todos Logos"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-507 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">One sample Student’s t-test</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 23, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/one-sample-students-t-test.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><span style=\"font-weight: bold;\">Comparison of the sample mean with a known value, when the variance of the population is not known.</span><br/><br/>Consider the exercise we have just seen before.<br/>It was made an intelligence test in 10 subjects, and here are the results obtained. The average result of the population whici received the same test, is equal to 75. You want to check if the sample mean is significantly similar (when the significance level is 95%) to the average population, assuming that the variance of the population is not known.<br/><div style=\"text-align: center;\">65, 78, 88, 55, 48, 95, 66, 57, 79, 81</div><br/><br/>Contrary to the <a href=\"https://statistic-on-air.blogspot.com/2009/07/one-sample-z-test.html\" rel=\"nofollow\" target=\"_blank\">one sample Z-test</a>, the <b>Student’s t-test</b> for a <b>single sample</b> have a pre-set function in R we can apply immediately.<br/><span class=\"fullpost\">It is the <code>t.test (a, mu)</code>, we can see below applied.<br/><br/><pre>\na = c(65, 78, 88, 55, 48, 95, 66, 57, 79, 81)\n\nt.test (a, mu=75)\n\nOne Sample t-test\n\ndata: a\nt = -0.783, df = 9, p-value = 0.4537\nalternative hypothesis: true mean is not equal to 75\n95 percent confidence interval:\n  60.22187 82.17813\nsample estimates:\n mean of x\n71.2</pre><br/><br/>The function <code>t.test</code> on one sample provides in output the value of t calculated; also gives us degrees of freedom, the confidence interval and the average (mean of x).<br/>In order to take your statistic decision, you can proceed in two ways. We can compare the value of t with the value of the tabulated student t with 9 degrees of freedom. If we do not have tables, we can calculate the value t-tabulated in the following way:<br/><br/><pre>\nqt(0.975, 9)\n[1] 2.262157</pre><br/><br/> <br/>The function <code>qt (p, df)</code> returns the value of t computed considering the significance level (we chose a significance level equal to 95%, which means that each tail is the 2.5% which corresponds to the value of <em>p = 1 – 0.025</em>), and the degrees of freedom. By comparing the value of t-tabulated with t-computed, t-computed appears smaller, which means that we accept the null hypothesis of equality of the averages: our sample mean is significantly similar to the mean of the population.<br/><br/>Alternatively we could consider the p-value. With a significance level of 95%, remember this rule: If <b>p-value is greater than 0.05</b> then <b>we accept the null hypothesis H0</b>; if <b>p-value is less than 0.05</b> then <b>we reject the null hypothesis H0</b> in favor of the alternative hypothesis H1.</span><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-8459704097425421932?l=statistic-on-air.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-8459704097425421932?l=statistic-on-air.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-8459704097425421932?l=statistic-on-air.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/one-sample-students-t-test.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "One sample Student’s t-test\nPosted on\nJuly 23, 2009\nby\nTodos Logos\nin Uncategorized | 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nComparison of the sample mean with a known value, when the variance of the population is not known.\nConsider the exercise we have just seen before.\nIt was made an intelligence test in 10 subjects, and here are the results obtained. The average result of the population whici received the same test, is equal to 75. You want to check if the sample mean is significantly similar (when the significance level is 95%) to the average population, assuming that the variance of the population is not known.\n65, 78, 88, 55, 48, 95, 66, 57, 79, 81\nContrary to the\none sample Z-test\n, the\nStudent’s t-test\nfor a\nsingle sample\nhave a pre-set function in R we can apply immediately.\nIt is the\nt.test (a, mu)\n, we can see below applied.\na = c(65, 78, 88, 55, 48, 95, 66, 57, 79, 81)\n\nt.test (a, mu=75)\n\nOne Sample t-test\n\ndata: a\nt = -0.783, df = 9, p-value = 0.4537\nalternative hypothesis: true mean is not equal to 75\n95 percent confidence interval:\n  60.22187 82.17813\nsample estimates:\n mean of x\n71.2\nThe function\nt.test\non one sample provides in output the value of t calculated; also gives us degrees of freedom, the confidence interval and the average (mean of x).\nIn order to take your statistic decision, you can proceed in two ways. We can compare the value of t with the value of the tabulated student t with 9 degrees of freedom. If we do not have tables, we can calculate the value t-tabulated in the following way:\nqt(0.975, 9)\n[1] 2.262157\nThe function\nqt (p, df)\nreturns the value of t computed considering the significance level (we chose a significance level equal to 95%, which means that each tail is the 2.5% which corresponds to the value of\np = 1 – 0.025\n), and the degrees of freedom. By comparing the value of t-tabulated with t-computed, t-computed appears smaller, which means that we accept the null hypothesis of equality of the averages: our sample mean is significantly similar to the mean of the population.\nAlternatively we could consider the p-value. With a significance level of 95%, remember this rule: If\np-value is greater than 0.05\nthen\nwe accept the null hypothesis H0\n; if\np-value is less than 0.05\nthen\nwe reject the null hypothesis H0\nin favor of the alternative hypothesis H1.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Comparison of the sample mean with a known value, when the variance of the population is not known.Consider the exercise we have just seen before.It was made an intelligence test in 10 subjects, and here are the results obtained. The average result of ...",
+    "meta_keywords": null,
+    "og_description": "Comparison of the sample mean with a known value, when the variance of the population is not known.Consider the exercise we have just seen before.It was made an intelligence test in 10 subjects, and here are the results obtained. The average result of ...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/4274823366855967619-8459704097425421932?l=statistic-on-air.blogspot.com",
+    "og_title": "One sample Student’s t-test | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.8,
+    "sitemap_lastmod": "2010-09-06T21:00:27+00:00",
+    "twitter_description": "Comparison of the sample mean with a known value, when the variance of the population is not known.Consider the exercise we have just seen before.It was made an intelligence test in 10 subjects, and here are the results obtained. The average result of ...",
+    "twitter_title": "One sample Student’s t-test | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/07/one-sample-students-t-test/",
+    "word_count": 559
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "uuid": "7a82f659-b5d2-474e-b816-175cb02483e0",
+  "created_at": "2025-11-22 19:58:12",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/06/explore-neural-networks-interactively-with-quarto-live/",
+    "crawled_at": "2025-11-22T10:46:26.578523",
+    "external_links": [
+      {
+        "href": "https://rtichoke.netlify.app/posts/quarto_live.html",
+        "text": "R'tichoke"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://quarto.org/",
+        "text": "Quarto"
+      },
+      {
+        "href": "https://docs.r-wasm.org/webr/latest/",
+        "text": "WebR"
+      },
+      {
+        "href": "https://r-wasm.github.io/quarto-live",
+        "text": "Quarto Live Documentation"
+      },
+      {
+        "href": "https://docs.r-wasm.org/webr/latest/",
+        "text": "WebR Documentation"
+      },
+      {
+        "href": "https://quarto.org/",
+        "text": "Quarto Documentation"
+      },
+      {
+        "href": "https://rtichoke.netlify.app/posts/quarto_live.html",
+        "text": "R'tichoke"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Explore Neural Networks Interactively with Quarto Live! | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/rtichoke/",
+        "text": "R'tichoke"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393657 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Explore Neural Networks Interactively with Quarto Live!</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 30, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/rtichoke/\">R'tichoke</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rtichoke.netlify.app/posts/quarto_live.html\"> R'tichoke</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level2\" id=\"what-is-quarto-live\">\n<h2 class=\"anchored\" data-anchor-id=\"what-is-quarto-live\">What is Quarto Live?</h2>\n<p>Quarto Live combines <a href=\"https://quarto.org/\" rel=\"nofollow\" target=\"_blank\">Quarto</a> with <a href=\"https://docs.r-wasm.org/webr/latest/\" rel=\"nofollow\" target=\"_blank\">WebR</a> to enable interactive R code execution directly in the browser allowing for:</p>\n<ul>\n<li>Running R code directly in the web browser</li>\n<li>Instant feedback when modifying code examples</li>\n<li>No installation requirements</li>\n<li>Easy sharing of interactive documents</li>\n</ul>\n<p>The following code blocks are fully interactive. Feel free to modify parameters and execute the code!</p>\n</section>\n<section class=\"level2\" id=\"creating-a-simple-dataset\">\n<h2 class=\"anchored\" data-anchor-id=\"creating-a-simple-dataset\">Creating a Simple Dataset</h2>\n<p>The first step is to create a dataset for training the neural network:</p>\n<div class=\"cell\">\n<div>\n<div class=\"exercise-cell\" id=\"webr-1\">\n</div>\n\n</div>\n</div>\n<p><strong>Try this:</strong></p>\n<ol type=\"1\">\n<li>Modify the <code>set.seed()</code> value to generate different random data</li>\n<li>Change the sample size from 100 to a different value</li>\n<li>Add a third feature variable to the dataset</li>\n</ol>\n</section>\n<section class=\"level2\" id=\"understanding-neural-networks\">\n<h2 class=\"anchored\" data-anchor-id=\"understanding-neural-networks\">Understanding Neural Networks</h2>\n<p>Neural networks are computational models inspired by the human brain. A basic neural network consists of:</p>\n<ol type=\"1\">\n<li><strong>Input layer</strong>: The data features (x1 and x2 in this example)</li>\n<li><strong>Hidden layers</strong>: The intermediate processing layers where learning occurs</li>\n<li><strong>Output layer</strong>: The final prediction layer (the y value)</li>\n</ol>\n</section>\n<section class=\"level2\" id=\"building-a-basic-neural-network\">\n<h2 class=\"anchored\" data-anchor-id=\"building-a-basic-neural-network\">Building a Basic Neural Network</h2>\n<div class=\"cell\">\n<div>\n<div class=\"exercise-cell\" id=\"webr-2\">\n</div>\n\n</div>\n</div>\n<p><strong>Key components:</strong></p>\n<ol type=\"1\">\n<li>Input nodes (x1, x2) feed data into the network</li>\n<li>Three hidden neurons process the inputs</li>\n<li>An output neuron produces the prediction</li>\n<li>Black lines represent connections, with thickness indicating weight strength</li>\n<li>Numbers show the actual weight values assigned to each connection</li>\n</ol>\n</section>\n<section class=\"level2\" id=\"experimenting-with-different-architectures\">\n<h2 class=\"anchored\" data-anchor-id=\"experimenting-with-different-architectures\">Experimenting with Different Architectures</h2>\n<p>Try modifying the <code>hidden</code> parameter and re-running the code snippet!</p>\n<div class=\"cell\">\n<div>\n<div class=\"exercise-cell\" id=\"webr-3\">\n</div>\n\n</div>\n</div>\n<section class=\"level3\" id=\"adding-multiple-layers\">\n<h3 class=\"anchored\" data-anchor-id=\"adding-multiple-layers\">Adding Multiple Layers</h3>\n<p>Neural networks with multiple hidden layers can learn more complex patterns.</p>\n<div class=\"cell\">\n<div>\n<div class=\"exercise-cell\" id=\"webr-4\">\n</div>\n\n</div>\n</div>\n<p><strong>Feel free to test the following variations:</strong></p>\n<ol type=\"1\">\n<li><code>hidden = c(8)</code> for a wide, single-layer network</li>\n<li><code>hidden = c(3, 3)</code> for a balanced two-layer network</li>\n<li>Experiment with <code>hidden = c(2, 2, 2)</code> for a deep, narrow network</li>\n</ol>\n</section>\n<section class=\"level3\" id=\"visualizing-the-decision-boundary\">\n<h3 class=\"anchored\" data-anchor-id=\"visualizing-the-decision-boundary\">Visualizing the Decision Boundary</h3>\n<p>Since the sample problem is setup as a classification problem with only 2 input parameters, the decision boundary can be visualised:</p>\n<div class=\"cell\">\n<div>\n<div class=\"exercise-cell\" id=\"webr-5\">\n</div>\n\n</div>\n</div>\n</section>\n</section>\n<section class=\"level2\" id=\"evaluating-model-performance\">\n<h2 class=\"anchored\" data-anchor-id=\"evaluating-model-performance\">Evaluating Model Performance</h2>\n<p>This section evaluates the neural network’s performance on unseen test data:</p>\n<div class=\"cell\">\n<div>\n<div class=\"exercise-cell\" id=\"webr-6\">\n</div>\n\n</div>\n</div>\n</section>\n<section class=\"level2\" id=\"additional-resources\">\n<h2 class=\"anchored\" data-anchor-id=\"additional-resources\">Additional Resources</h2>\n<p>The following resources provide further information about Quarto Live and neural networks:</p>\n<ul>\n<li><a href=\"https://r-wasm.github.io/quarto-live\" rel=\"nofollow\" target=\"_blank\">Quarto Live Documentation</a> – Comprehensive guide to Quarto Live features</li>\n<li><a href=\"https://docs.r-wasm.org/webr/latest/\" rel=\"nofollow\" target=\"_blank\">WebR Documentation</a> – Technical details about the WebR project</li>\n<li><a href=\"https://quarto.org/\" rel=\"nofollow\" target=\"_blank\">Quarto Documentation</a> – Complete information about the Quarto publishing system</li>\n</ul>\n\n\n<div class=\"exercise-loading-indicator d-none d-flex align-items-center gap-2\" id=\"exercise-loading-indicator\">\n<div class=\"d-flex gap-2\" id=\"exercise-loading-status\">\n</div>\n<div class=\"spinner-grow spinner-grow-sm\">\n</div>\n</div>\n\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rtichoke.netlify.app/posts/quarto_live.html\"> R'tichoke</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Explore Neural Networks Interactively with Quarto Live!\nPosted on\nJune 30, 2025\nby\nR'tichoke\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR'tichoke\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhat is Quarto Live?\nQuarto Live combines\nQuarto\nwith\nWebR\nto enable interactive R code execution directly in the browser allowing for:\nRunning R code directly in the web browser\nInstant feedback when modifying code examples\nNo installation requirements\nEasy sharing of interactive documents\nThe following code blocks are fully interactive. Feel free to modify parameters and execute the code!\nCreating a Simple Dataset\nThe first step is to create a dataset for training the neural network:\nTry this:\nModify the\nset.seed()\nvalue to generate different random data\nChange the sample size from 100 to a different value\nAdd a third feature variable to the dataset\nUnderstanding Neural Networks\nNeural networks are computational models inspired by the human brain. A basic neural network consists of:\nInput layer\n: The data features (x1 and x2 in this example)\nHidden layers\n: The intermediate processing layers where learning occurs\nOutput layer\n: The final prediction layer (the y value)\nBuilding a Basic Neural Network\nKey components:\nInput nodes (x1, x2) feed data into the network\nThree hidden neurons process the inputs\nAn output neuron produces the prediction\nBlack lines represent connections, with thickness indicating weight strength\nNumbers show the actual weight values assigned to each connection\nExperimenting with Different Architectures\nTry modifying the\nhidden\nparameter and re-running the code snippet!\nAdding Multiple Layers\nNeural networks with multiple hidden layers can learn more complex patterns.\nFeel free to test the following variations:\nhidden = c(8)\nfor a wide, single-layer network\nhidden = c(3, 3)\nfor a balanced two-layer network\nExperiment with\nhidden = c(2, 2, 2)\nfor a deep, narrow network\nVisualizing the Decision Boundary\nSince the sample problem is setup as a classification problem with only 2 input parameters, the decision boundary can be visualised:\nEvaluating Model Performance\nThis section evaluates the neural network’s performance on unseen test data:\nAdditional Resources\nThe following resources provide further information about Quarto Live and neural networks:\nQuarto Live Documentation\n– Comprehensive guide to Quarto Live features\nWebR Documentation\n– Technical details about the WebR project\nQuarto Documentation\n– Complete information about the Quarto publishing system\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR'tichoke\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "What is Quarto Live? Quarto Live combines Quarto with WebR to enable interactive R code execution directly in the browser allowing for: Running R code directly in the web browser Instant feedback when modifying code examples No installation requirements Easy sharing of interactive documents The following code blocks are fully interactive. Feel free to modify parameters and execute the code! Creating a Simple Dataset The first step is to create a dataset for training the neural network: Try this: Modify the set.seed() value to generate different random data Change the sample size from 100 to a different value Add a third feature variable to the dataset Understanding Neural Networks Neural networks are computational models inspired by the human brain. A basic neural network consists of: Input layer: The data features (x1 and x2 in this example) Hidden layers: The intermediate processing layers where learning occurs Output layer: The final prediction layer (the y value) Building a Basic Neural Network Key components: Input nodes (x1, x2) feed data into the network Three hidden neurons process the inputs An output neuron produces the prediction Black lines represent connections, with thickness indicating weight strength Numbers show the actual weight values assigned to each connection Experimenting with Different Architectures Try modifying the hidden parameter and re-running the code snippet! Adding Multiple Layers Neural networks with multiple hidden layers can learn more complex patterns. Feel free to test the following variations: hidden = c(8) for a wide, single-layer network hidden = c(3, 3) for a balanced two-layer network Experiment with hidden = c(2, 2, 2) for a deep, narrow network Visualizing the Decision Boundary Since the sample problem is setup as a classification problem with only 2 input parameters, the decision boundary can be visualised: Evaluating Model Performance This section evaluates the neural network’s performance on unseen test data: Additional Resources The following resources provide further information about Quarto Live and neural networks: Quarto Live Documentation - Comprehensive guide to Quarto Live features WebR Documentation - Technical details about the WebR project Quarto Documentation - Complete information about the Quarto publishing system",
+    "meta_keywords": null,
+    "og_description": "What is Quarto Live? Quarto Live combines Quarto with WebR to enable interactive R code execution directly in the browser allowing for: Running R code directly in the web browser Instant feedback when modifying code examples No installation requirements Easy sharing of interactive documents The following code blocks are fully interactive. Feel free to modify parameters and execute the code! Creating a Simple Dataset The first step is to create a dataset for training the neural network: Try this: Modify the set.seed() value to generate different random data Change the sample size from 100 to a different value Add a third feature variable to the dataset Understanding Neural Networks Neural networks are computational models inspired by the human brain. A basic neural network consists of: Input layer: The data features (x1 and x2 in this example) Hidden layers: The intermediate processing layers where learning occurs Output layer: The final prediction layer (the y value) Building a Basic Neural Network Key components: Input nodes (x1, x2) feed data into the network Three hidden neurons process the inputs An output neuron produces the prediction Black lines represent connections, with thickness indicating weight strength Numbers show the actual weight values assigned to each connection Experimenting with Different Architectures Try modifying the hidden parameter and re-running the code snippet! Adding Multiple Layers Neural networks with multiple hidden layers can learn more complex patterns. Feel free to test the following variations: hidden = c(8) for a wide, single-layer network hidden = c(3, 3) for a balanced two-layer network Experiment with hidden = c(2, 2, 2) for a deep, narrow network Visualizing the Decision Boundary Since the sample problem is setup as a classification problem with only 2 input parameters, the decision boundary can be visualised: Evaluating Model Performance This section evaluates the neural network’s performance on unseen test data: Additional Resources The following resources provide further information about Quarto Live and neural networks: Quarto Live Documentation - Comprehensive guide to Quarto Live features WebR Documentation - Technical details about the WebR project Quarto Documentation - Complete information about the Quarto publishing system",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Explore Neural Networks Interactively with Quarto Live! | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.5,
+    "sitemap_lastmod": null,
+    "twitter_description": "What is Quarto Live? Quarto Live combines Quarto with WebR to enable interactive R code execution directly in the browser allowing for: Running R code directly in the web browser Instant feedback when modifying code examples No installation requirements Easy sharing of interactive documents The following code blocks are fully interactive. Feel free to modify parameters and execute the code! Creating a Simple Dataset The first step is to create a dataset for training the neural network: Try this: Modify the set.seed() value to generate different random data Change the sample size from 100 to a different value Add a third feature variable to the dataset Understanding Neural Networks Neural networks are computational models inspired by the human brain. A basic neural network consists of: Input layer: The data features (x1 and x2 in this example) Hidden layers: The intermediate processing layers where learning occurs Output layer: The final prediction layer (the y value) Building a Basic Neural Network Key components: Input nodes (x1, x2) feed data into the network Three hidden neurons process the inputs An output neuron produces the prediction Black lines represent connections, with thickness indicating weight strength Numbers show the actual weight values assigned to each connection Experimenting with Different Architectures Try modifying the hidden parameter and re-running the code snippet! Adding Multiple Layers Neural networks with multiple hidden layers can learn more complex patterns. Feel free to test the following variations: hidden = c(8) for a wide, single-layer network hidden = c(3, 3) for a balanced two-layer network Experiment with hidden = c(2, 2, 2) for a deep, narrow network Visualizing the Decision Boundary Since the sample problem is setup as a classification problem with only 2 input parameters, the decision boundary can be visualised: Evaluating Model Performance This section evaluates the neural network’s performance on unseen test data: Additional Resources The following resources provide further information about Quarto Live and neural networks: Quarto Live Documentation - Comprehensive guide to Quarto Live features WebR Documentation - Technical details about the WebR project Quarto Documentation - Complete information about the Quarto publishing system",
+    "twitter_title": "Explore Neural Networks Interactively with Quarto Live! | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/06/explore-neural-networks-interactively-with-quarto-live/",
+    "word_count": 490
+  }
+}

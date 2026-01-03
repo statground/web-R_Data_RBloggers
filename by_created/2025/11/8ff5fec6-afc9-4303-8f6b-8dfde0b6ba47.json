@@ -1,0 +1,127 @@
+{
+  "uuid": "8ff5fec6-afc9-4303-8f6b-8dfde0b6ba47",
+  "created_at": "2025-11-17 20:39:45",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/missing-data-imputation/",
+    "crawled_at": "2025-11-17T10:11:59.568970",
+    "external_links": [
+      {
+        "href": "http://www.mathfinance.cn/missing-data-imputation/",
+        "text": "Quantitative Finance Collector"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.mathfinance.cn/nearest-correlation-matrix/",
+        "text": "correlation matrix"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://gking.harvard.edu/amelia/",
+        "text": "http://gking.harvard.edu/amelia/"
+      },
+      {
+        "href": "http://www.mathfinance.cn/tags/data/",
+        "text": "data"
+      },
+      {
+        "href": "http://www.mathfinance.cn/tags/missing/",
+        "text": "missing"
+      },
+      {
+        "href": "http://www.mathfinance.cn/missing-data-imputation/",
+        "text": "Missing data imputation"
+      },
+      {
+        "href": "http://www.mathfinance.cn/missing-data-imputation/",
+        "text": "Quantitative Finance Collector"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Missing data imputation | R-bloggers",
+    "images": [
+      {
+        "alt": "missing data imputation",
+        "base64": null,
+        "src": "https://i0.wp.com/www.mathfinance.cn/attachment/1258663451_2335e137.jpg?w=500"
+      },
+      {
+        "alt": "missing data imputation",
+        "base64": null,
+        "src": "https://i0.wp.com/www.mathfinance.cn/attachment/1258663451_2335e137.jpg?w=500"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/quantitative-finance-collector/",
+        "text": "Quantitative Finance Collector"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-46460 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Missing data imputation</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 12, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/quantitative-finance-collector/\">Quantitative Finance Collector</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.mathfinance.cn/missing-data-imputation/\"> Quantitative Finance Collector</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nProbably all of us have met the issue of <strong>handling missing data</strong>, from the basic portfolio <a href=\"http://www.mathfinance.cn/nearest-correlation-matrix/\" rel=\"nofollow\" target=\"_blank\">correlation matrix</a> estimation, to advanced multiple factor analysis, how to <strong>impute missing data</strong> remains a hot topic. Missing data are unavoidable, and more encompassing than the ubiquitous association of the term, irgoring missing data will generally lead to biased estimates. The following ways are often applied to handle the problem:<br/><strong>1, simple deletion strategies</strong>: including pairwise deletion and listwise deletion, the former may lead to inconsistent results, for example, non positive definite correlation or covariance matrices, while the cumulation of deleted cases may be enormous except in the case of very few missing values for the latter method;<br/><strong>2, so called “Working around” strategies</strong>, for example, the Full Information Maximum Likelihood (FIML) integrates out the missing data when fitting the desired model;<br/><strong>3, imputation strategies</strong>, these are the most widely used methods both in academia and industry, replacing missing value with an estimate of the actual value of that case. For instance, ‘hot-deck’ imputation consists of replacing the missing value by the observed value from another, similar case from the same dataset for which that variable was not missing; mean imputation consists of replacing the missing value by the mean of the variable in question; expectation Maximization (EM) arrives at the best point estimates of the true values, given the model (which itself is estimated on the basis of the imputed missings); regression-mean imputation replaces the missing value by the conditional regression mean, and multiple imputation, rather than a single imputed value, multiple ones are derived from a prediction equation.<br/><br/>I came across an easy-to-use <strong>missing data imputation</strong> named Amelia II developed by professor Gary King from Harvard university, as its webpage introduces: Amelia II “multiply imputes” missing data in a single cross-section (such as a survey), from a time series (like variables collected for each year in a country), or from a time-series-cross-sectional data set (such as collected by years for each of several countries). Amelia II implements bootstrapping-based algorithm that gives essentially the same answers as the standard IP or EMis approaches, is usually considerably faster than existing approaches and can handle many more variables….Unlike…other statistically rigorous imputation software, it virtually never crashes.<br/><br/>Amelia II was developed based on R language, so users have to install <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> before running it, installation of Amelia is staightforward: download and run the exe file, that’s it. For me, the beauty of Amelia II is its friendly interface, I don’t even need to run R software myself. Double clicking Amelia II shows the following <br/><img alt=\"missing data imputation\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.mathfinance.cn/attachment/1258663451_2335e137.jpg?w=500&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.mathfinance.cn/attachment/1258663451_2335e137.jpg?w=500\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"missing data imputation\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.mathfinance.cn/attachment/1258663451_2335e137.jpg?w=500\"/></noscript><br/>as you can see from the input and output menus, it supports csv files, simply importing a csv file with missing data returns a csv with imputed data, amazing, isn’t it?<br/><br/>Downloading the software and help documents at <a href=\"http://gking.harvard.edu/amelia/\" rel=\"nofollow\" target=\"_blank\">http://gking.harvard.edu/amelia/</a>.<br/>Tags – <a href=\"http://www.mathfinance.cn/tags/data/\" rel=\"nofollow\" target=\"_blank\">data</a> , <a href=\"http://www.mathfinance.cn/tags/missing/\" rel=\"nofollow\" target=\"_blank\">missing</a><br/><strong>Read the full post at <a href=\"http://www.mathfinance.cn/missing-data-imputation/\" rel=\"nofollow\" target=\"_blank\">Missing data imputation</a></strong>.\n\n\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.mathfinance.cn/missing-data-imputation/\"> Quantitative Finance Collector</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Missing data imputation\nPosted on\nDecember 12, 2009\nby\nQuantitative Finance Collector\nin Uncategorized | 0 Comments\n[This article was first published on\nQuantitative Finance Collector\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nProbably all of us have met the issue of\nhandling missing data\n, from the basic portfolio\ncorrelation matrix\nestimation, to advanced multiple factor analysis, how to\nimpute missing data\nremains a hot topic. Missing data are unavoidable, and more encompassing than the ubiquitous association of the term, irgoring missing data will generally lead to biased estimates. The following ways are often applied to handle the problem:\n1, simple deletion strategies\n: including pairwise deletion and listwise deletion, the former may lead to inconsistent results, for example, non positive definite correlation or covariance matrices, while the cumulation of deleted cases may be enormous except in the case of very few missing values for the latter method;\n2, so called “Working around” strategies\n, for example, the Full Information Maximum Likelihood (FIML) integrates out the missing data when fitting the desired model;\n3, imputation strategies\n, these are the most widely used methods both in academia and industry, replacing missing value with an estimate of the actual value of that case. For instance, ‘hot-deck’ imputation consists of replacing the missing value by the observed value from another, similar case from the same dataset for which that variable was not missing; mean imputation consists of replacing the missing value by the mean of the variable in question; expectation Maximization (EM) arrives at the best point estimates of the true values, given the model (which itself is estimated on the basis of the imputed missings); regression-mean imputation replaces the missing value by the conditional regression mean, and multiple imputation, rather than a single imputed value, multiple ones are derived from a prediction equation.\nI came across an easy-to-use\nmissing data imputation\nnamed Amelia II developed by professor Gary King from Harvard university, as its webpage introduces: Amelia II “multiply imputes” missing data in a single cross-section (such as a survey), from a time series (like variables collected for each year in a country), or from a time-series-cross-sectional data set (such as collected by years for each of several countries). Amelia II implements bootstrapping-based algorithm that gives essentially the same answers as the standard IP or EMis approaches, is usually considerably faster than existing approaches and can handle many more variables….Unlike…other statistically rigorous imputation software, it virtually never crashes.\nAmelia II was developed based on R language, so users have to install\nR\nbefore running it, installation of Amelia is staightforward: download and run the exe file, that’s it. For me, the beauty of Amelia II is its friendly interface, I don’t even need to run R software myself. Double clicking Amelia II shows the following\nas you can see from the input and output menus, it supports csv files, simply importing a csv file with missing data returns a csv with imputed data, amazing, isn’t it?\nDownloading the software and help documents at\nhttp://gking.harvard.edu/amelia/\n.\nTags –\ndata\n,\nmissing\nRead the full post at\nMissing data imputation\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nQuantitative Finance Collector\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Probably all of us have met the issue of handling missing data, from the basic portfolio correlation matrix estimation, to advanced multiple factor analysis, how to impute missing data remains a hot topic. Missing data are unavoidable, and more encompassing than the ubiquitous association of the term, irgoring missing data will generally lead to biased estimates. The following ways are often applied to handle the problem:1, simple deletion strategies: including pairwise deletion and listwise deletion, the former may lead to inconsistent results, for example, non positive definite correlation or covariance matrices, while the cumulation of deleted cases may be enormous except in the case of very few missing values for the latter method;2, so called \"Working around\" strategies, for example, the Full Information Maximum Likelihood (FIML) integrates out the missing data when fitting the desired model;3, imputation strategies, these are the most widely used methods both in academia and industry, replacing missing value with an estimate of the actual value of that case. For instance, ‘hot-deck’ imputation consists of replacing the missing value by the observed value from another, similar case from the same dataset for which that variable was not missing; mean imputation consists of replacing the missing value by the mean of the variable in question; expectation Maximization (EM) arrives at the best point estimates of the true values, given the model (which itself is estimated on the basis of the imputed missings); regression-mean imputation replaces the missing value by the conditional regression mean, and multiple imputation, rather than a single imputed value, multiple ones are derived from a prediction equation.I came across an easy-to-use missing data imputation named Amelia II developed by professor Gary King from Harvard university, as its webpage introduces: Amelia II \"multiply imputes\" missing data in a single cross-section (such as a survey), from a time series (like variables collected for each year in a country), or from a time-series-cross-sectional data set (such as collected by years for each of several countries). Amelia II implements bootstrapping-based algorithm that gives essentially the same answers as the standard IP or EMis approaches, is usually considerably faster than existing approaches and can handle many more variables....Unlike...other statistically rigorous imputation software, it virtually never crashes.Amelia II was developed based on R language, so users have to install R before running it, installation of Amelia is staightforward: download and run the exe file, that's it. For me, the beauty of Amelia II is its friendly interface, I don't even need to run R software myself. Double clicking Amelia II shows the following as you can see from the input and output menus, it supports csv files, simply importing a csv file with missing data returns a csv with imputed data, amazing, isn't it?Downloading the software and help documents at http://gking.harvard.edu/amelia/.Tags - data , missingRead the full post at Missing data imputation.",
+    "meta_keywords": null,
+    "og_description": "Probably all of us have met the issue of handling missing data, from the basic portfolio correlation matrix estimation, to advanced multiple factor analysis, how to impute missing data remains a hot topic. Missing data are unavoidable, and more encompassing than the ubiquitous association of the term, irgoring missing data will generally lead to biased estimates. The following ways are often applied to handle the problem:1, simple deletion strategies: including pairwise deletion and listwise deletion, the former may lead to inconsistent results, for example, non positive definite correlation or covariance matrices, while the cumulation of deleted cases may be enormous except in the case of very few missing values for the latter method;2, so called \"Working around\" strategies, for example, the Full Information Maximum Likelihood (FIML) integrates out the missing data when fitting the desired model;3, imputation strategies, these are the most widely used methods both in academia and industry, replacing missing value with an estimate of the actual value of that case. For instance, ‘hot-deck’ imputation consists of replacing the missing value by the observed value from another, similar case from the same dataset for which that variable was not missing; mean imputation consists of replacing the missing value by the mean of the variable in question; expectation Maximization (EM) arrives at the best point estimates of the true values, given the model (which itself is estimated on the basis of the imputed missings); regression-mean imputation replaces the missing value by the conditional regression mean, and multiple imputation, rather than a single imputed value, multiple ones are derived from a prediction equation.I came across an easy-to-use missing data imputation named Amelia II developed by professor Gary King from Harvard university, as its webpage introduces: Amelia II \"multiply imputes\" missing data in a single cross-section (such as a survey), from a time series (like variables collected for each year in a country), or from a time-series-cross-sectional data set (such as collected by years for each of several countries). Amelia II implements bootstrapping-based algorithm that gives essentially the same answers as the standard IP or EMis approaches, is usually considerably faster than existing approaches and can handle many more variables....Unlike...other statistically rigorous imputation software, it virtually never crashes.Amelia II was developed based on R language, so users have to install R before running it, installation of Amelia is staightforward: download and run the exe file, that's it. For me, the beauty of Amelia II is its friendly interface, I don't even need to run R software myself. Double clicking Amelia II shows the following as you can see from the input and output menus, it supports csv files, simply importing a csv file with missing data returns a csv with imputed data, amazing, isn't it?Downloading the software and help documents at http://gking.harvard.edu/amelia/.Tags - data , missingRead the full post at Missing data imputation.",
+    "og_image": "https://www.mathfinance.cn/attachment/1258663451_2335e137.jpg",
+    "og_title": "Missing data imputation | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.2,
+    "sitemap_lastmod": "2009-12-12T20:53:28+00:00",
+    "twitter_description": "Probably all of us have met the issue of handling missing data, from the basic portfolio correlation matrix estimation, to advanced multiple factor analysis, how to impute missing data remains a hot topic. Missing data are unavoidable, and more encompassing than the ubiquitous association of the term, irgoring missing data will generally lead to biased estimates. The following ways are often applied to handle the problem:1, simple deletion strategies: including pairwise deletion and listwise deletion, the former may lead to inconsistent results, for example, non positive definite correlation or covariance matrices, while the cumulation of deleted cases may be enormous except in the case of very few missing values for the latter method;2, so called \"Working around\" strategies, for example, the Full Information Maximum Likelihood (FIML) integrates out the missing data when fitting the desired model;3, imputation strategies, these are the most widely used methods both in academia and industry, replacing missing value with an estimate of the actual value of that case. For instance, ‘hot-deck’ imputation consists of replacing the missing value by the observed value from another, similar case from the same dataset for which that variable was not missing; mean imputation consists of replacing the missing value by the mean of the variable in question; expectation Maximization (EM) arrives at the best point estimates of the true values, given the model (which itself is estimated on the basis of the imputed missings); regression-mean imputation replaces the missing value by the conditional regression mean, and multiple imputation, rather than a single imputed value, multiple ones are derived from a prediction equation.I came across an easy-to-use missing data imputation named Amelia II developed by professor Gary King from Harvard university, as its webpage introduces: Amelia II \"multiply imputes\" missing data in a single cross-section (such as a survey), from a time series (like variables collected for each year in a country), or from a time-series-cross-sectional data set (such as collected by years for each of several countries). Amelia II implements bootstrapping-based algorithm that gives essentially the same answers as the standard IP or EMis approaches, is usually considerably faster than existing approaches and can handle many more variables....Unlike...other statistically rigorous imputation software, it virtually never crashes.Amelia II was developed based on R language, so users have to install R before running it, installation of Amelia is staightforward: download and run the exe file, that's it. For me, the beauty of Amelia II is its friendly interface, I don't even need to run R software myself. Double clicking Amelia II shows the following as you can see from the input and output menus, it supports csv files, simply importing a csv file with missing data returns a csv with imputed data, amazing, isn't it?Downloading the software and help documents at http://gking.harvard.edu/amelia/.Tags - data , missingRead the full post at Missing data imputation.",
+    "twitter_title": "Missing data imputation | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/missing-data-imputation/",
+    "word_count": 635
+  }
+}

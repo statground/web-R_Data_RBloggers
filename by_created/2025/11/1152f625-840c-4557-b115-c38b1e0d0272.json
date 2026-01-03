@@ -1,0 +1,119 @@
+{
+  "uuid": "1152f625-840c-4557-b115-c38b1e0d0272",
+  "created_at": "2025-11-17 20:40:40",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/07/probability-exercise-negative-binomial-distribution/",
+    "crawled_at": "2025-11-17T10:31:59.171605",
+    "external_links": [
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/probability-exercise-negative-binomial.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://statistic-on-air.blogspot.com/2009/07/probability-exercise-negative-binomial.html",
+        "text": "Statistic on aiR"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Probability exercise: negative binomial distribution | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-4125226614947505357?l=statistic-on-air.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-4125226614947505357?l=statistic-on-air.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/todos-logos/",
+        "text": "Todos Logos"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/negative-binomial-distribution/",
+        "text": "Negative binomial distribution"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/probability/",
+        "text": "Probability"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r-functions/",
+        "text": "R functions"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-633 post type-post status-publish format-standard hentry category-r-bloggers tag-negative-binomial-distribution tag-probability tag-r-functions\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Probability exercise: negative binomial distribution</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 19, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/probability-exercise-negative-binomial.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->What is the probability you get the 4th cross before the 3rd head, flipping a coin?<br/><br/>The mathematical formula for solving this exercise, which follows a <b>negative binomial distribution</b>, is:<br/><br/>$$f(x)=P(X=x)=\\begin{pmatrix} x+y-1\\\\ y-1 \\end{pmatrix} \\cdot p^x \\cdot (1-p)^y$$<br/><br/><span class=\"fullpost\">To solve a problem like this, the number of experiments is not significant, since it is sufficient to know the probability of individual shots that are done and you want to combine, to obtain the required probability. To solve this problem in R, we can use the function <code>dnbinom(x, y, p)</code>. This distribution allows to calculate the probability that a number of <em>failures x</em> occurs before <em>y-th success</em>, in a <b>sequence of Bernoulli trials</b>, for which the probability of individual success is <em>p</em>.<br/><br/><pre>\ndnbinom(4,3,0.5)\n[1] 0.1171875</pre><br/><br/>The probability of obtaining the fourth cross before the third head (and then after two head) is equal to 11,72%.<br/><br/>It may seem a strange result, but to convince us about the accuracy of this function of R, let us consider this other problem: what are the chances of leaving the first, second, third, … the 25th head before the second cross?<br/>We can obtain a histogram in R, which shows what is required, in this manner: <br/><br/><pre>\nbarplot(dnbinom(1:25,2,0.5), col=\"grey\", names.arg=1:25)</pre><br/><br/>Observe that the probability to get the first head before the second cross is 0.25, which is the product <code>0.5 x 0.5</code> (probability to get H after T). As the number of flips have been going on, the probability falls more and more.</span><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-4125226614947505357?l=statistic-on-air.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-4125226614947505357?l=statistic-on-air.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-4125226614947505357?l=statistic-on-air.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/probability-exercise-negative-binomial.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/negative-binomial-distribution/\" rel=\"tag\">Negative binomial distribution</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/probability/\" rel=\"tag\">Probability</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-functions/\" rel=\"tag\">R functions</a></li></ul></div></article>",
+    "main_text": "Probability exercise: negative binomial distribution\nPosted on\nJuly 19, 2009\nby\nTodos Logos\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhat is the probability you get the 4th cross before the 3rd head, flipping a coin?\nThe mathematical formula for solving this exercise, which follows a\nnegative binomial distribution\n, is:\n$$f(x)=P(X=x)=\\begin{pmatrix} x+y-1\\\\ y-1 \\end{pmatrix} \\cdot p^x \\cdot (1-p)^y$$\nTo solve a problem like this, the number of experiments is not significant, since it is sufficient to know the probability of individual shots that are done and you want to combine, to obtain the required probability. To solve this problem in R, we can use the function\ndnbinom(x, y, p)\n. This distribution allows to calculate the probability that a number of\nfailures x\noccurs before\ny-th success\n, in a\nsequence of Bernoulli trials\n, for which the probability of individual success is\np\n.\ndnbinom(4,3,0.5)\n[1] 0.1171875\nThe probability of obtaining the fourth cross before the third head (and then after two head) is equal to 11,72%.\nIt may seem a strange result, but to convince us about the accuracy of this function of R, let us consider this other problem: what are the chances of leaving the first, second, third, … the 25th head before the second cross?\nWe can obtain a histogram in R, which shows what is required, in this manner:\nbarplot(dnbinom(1:25,2,0.5), col=\"grey\", names.arg=1:25)\nObserve that the probability to get the first head before the second cross is 0.25, which is the product\n0.5 x 0.5\n(probability to get H after T). As the number of flips have been going on, the probability falls more and more.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nNegative binomial distribution\nProbability\nR functions",
+    "meta_description": "What is the probability you get the 4th cross before the 3rd head, flipping a coin?The mathematical formula for solving this exercise, which follows a negative binomial distribution, is:$$f(x)=P(X=x)=\\begin{pmatrix} x+y-1\\ y-1 \\end{pmatrix} \\cdot p^x ...",
+    "meta_keywords": "negative binomial distribution,probability,r functions",
+    "og_description": "What is the probability you get the 4th cross before the 3rd head, flipping a coin?The mathematical formula for solving this exercise, which follows a negative binomial distribution, is:$$f(x)=P(X=x)=\\begin{pmatrix} x+y-1\\ y-1 \\end{pmatrix} \\cdot p^x ...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/4274823366855967619-4125226614947505357?l=statistic-on-air.blogspot.com",
+    "og_title": "Probability exercise: negative binomial distribution | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.1,
+    "sitemap_lastmod": "2010-09-06T21:00:28+00:00",
+    "twitter_description": "What is the probability you get the 4th cross before the 3rd head, flipping a coin?The mathematical formula for solving this exercise, which follows a negative binomial distribution, is:$$f(x)=P(X=x)=\\begin{pmatrix} x+y-1\\ y-1 \\end{pmatrix} \\cdot p^x ...",
+    "twitter_title": "Probability exercise: negative binomial distribution | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/07/probability-exercise-negative-binomial-distribution/",
+    "word_count": 427
+  }
+}

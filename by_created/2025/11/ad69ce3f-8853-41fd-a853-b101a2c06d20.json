@@ -1,0 +1,115 @@
+{
+  "uuid": "ad69ce3f-8853-41fd-a853-b101a2c06d20",
+  "created_at": "2025-11-17 20:39:41",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/using-complex-numbers-in-r/",
+    "crawled_at": "2025-11-17T10:10:31.073907",
+    "external_links": [
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/12/18/using-complex-numbers-in-r/",
+        "text": "John Myles White: Die Sudelbücher » Statistics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.clarku.edu/~djoyce/complex/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/12/18/using-complex-numbers-in-r/",
+        "text": "John Myles White: Die Sudelbücher » Statistics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Using Complex Numbers in R | R-bloggers",
+    "images": [
+      {
+        "alt": "mandelbrot.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/mandelbrot1.png?w=450"
+      },
+      {
+        "alt": "mandelbrot.png",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/mandelbrot1.png?w=450"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-myles-white/",
+        "text": "John Myles White"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-464 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Using Complex Numbers in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 18, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/18/using-complex-numbers-in-r/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>This post is a continuation of my series dealing with matrix operations for image processing. My next goal is to demonstrate the construction of simple low-pass and high-pass spatial frequency filters in R. It’s easy enough to construct simple versions of these filters in R using the Fast Fourier Transform (also known as the FFT), but, because the FFT is a slightly complicated tool, I’m going to build up to using it progressively over a few posts.</p>\n<p>For starters, I want to review the use of complex numbers in R. As always, if you’re interested in reviewing the mathematics of complex numbers, I’d start by browsing references online. The tutorial <a href=\"http://www.clarku.edu/~djoyce/complex/\" rel=\"nofollow\" target=\"_blank\">here</a> seemed good to me at first glance, though I can’t claim to have read it through.</p>\n<p>Because complex numbers are implemented in the “base” package, it’s very easy to start working with them. To construct the complex number <i>x + iy</i>, you use <code>complex</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754139\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n</pre></td><td class=\"code\" id=\"p3754code139\"><pre>x &lt;- 1\ny &lt;- 1\n \nz &lt;- complex(real = x, imaginary = y)\n \nz\n# [1] 1+1i</pre></td></tr></table></div>\n<p>It’s conventional in mathematics to use <i>z</i> to refer to a complex number, so I’ll continue on with that tradition.</p>\n<p>As always occurs with mathematical data types in R, you can convert other objects to class “complex” using <code>as.complex</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754140\"><td class=\"line_numbers\"><pre>1\n2\n</pre></td><td class=\"code\" id=\"p3754code140\"><pre>as.complex(-1)\n# [1] -1+0i</pre></td></tr></table></div>\n<p>And you can test that an object is complex using <code>is.complex</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754141\"><td class=\"line_numbers\"><pre>1\n2\n</pre></td><td class=\"code\" id=\"p3754code141\"><pre>is.complex(as.complex(-1))\n# [1] TRUE</pre></td></tr></table></div>\n<p>Beyond those standard operations, there are five essential mathematical operations you’d want to use on complex numbers.</p>\n<p>First off, you want to be able to extract the real and imaginary components of a complex number. You can do this using <code>Re</code> and <code>Im</code> respectively:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754142\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n</pre></td><td class=\"code\" id=\"p3754code142\"><pre>z &lt;- complex(real = 2, imaginary = 1)\n \nRe(z)\n# [1] 2\n \nIm(z)\n# [1] 1</pre></td></tr></table></div>\n<p>The <i>(x, y)</i> representation of numbers is easier to understand at first, but a polar coordinates representation is often more practical. You can get the relevant components of this representation by finding the modulus and complex argument of a complex number. In R, you would use <code>Mod</code> and <code>Arg</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754143\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n</pre></td><td class=\"code\" id=\"p3754code143\"><pre>z &lt;- complex(real = 0, imaginary = 1)\n \nMod(z)\n# [1] 1\n \nArg(z)\n# [1] 1.570796\n \npi / 2\n# [1] 1.570796</pre></td></tr></table></div>\n<p>This corresponds to the intuition that <i>i</i> should be at a distance 1 from the origin and an angle of <i>pi / 2</i>.</p>\n<p>Finally, you’ll want to be able to take the complex conjugate of a complex number; to do that in R, you can use <code>Conj</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754144\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n</pre></td><td class=\"code\" id=\"p3754code144\"><pre>Conj(z)\n# [1] 0-1i\n \nMod(z) == z * Conj(z)\n# [1] TRUE</pre></td></tr></table></div>\n<p>As you can see, the modulus of <i>z</i> equals z times the conjugate of z, which is exactly what you expect.</p>\n<p>Now, historically, complex numbers were invented so that you could find the square root of negative numbers. By default, <code>sqrt</code> does not return a complex number when you ask for the square root of a negative number. Instead, it produces a <code>NaN</code> error, as you can see below:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754145\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n</pre></td><td class=\"code\" id=\"p3754code145\"><pre>sqrt(-1)\n# [1] NaN\n# Warning message:\n# In sqrt(-1) : NaNs produced</pre></td></tr></table></div>\n<p>To get the complex square root, you need to cast your negative number as a complex number using <code>as.complex</code> before applying <code>sqrt</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754146\"><td class=\"line_numbers\"><pre>1\n2\n3\n</pre></td><td class=\"code\" id=\"p3754code146\"><pre>sqrt(as.complex(-1))\n \n# [1] 0+1i</pre></td></tr></table></div>\n<p>In practice, complex numbers can be used to solve a huge range of problems, not least of which is the efficient representation of the FFT of an input vector. For fun, I thought I’d show a simple application: building a fractal using the Mandelbrot set.</p>\n<p>To quote Wikipedia,</p>\n<blockquote><p>\nMathematically the Mandelbrot set can be defined as the set of complex values of <i>c</i> for which the orbit of 0 under iteration of the complex quadratic polynomial <i>z</i><sub><i>n</i>+1</sub> = <i>z</i><sub><i>n</i></sub><sup>2</sup> + <i>c</i> remains bounded. That is, a complex number, <i>c</i>, is in the Mandelbrot set if, when starting with <i>z</i><sub>0</sub> = 0 and applying the iteration repeatedly, the absolute value of <i>z</i><sub><i>n</i></sub> never exceeds a certain number (that number depends on <i>c</i>) however large <i>n</i> gets.\n</p></blockquote>\n<p>We can translate this definition into R pretty easily by making certain assumptions about the exactness we want in our results. For my purposes, I’ll say that a number is in the Mandelbrot set if, after 100 iterations of the Mandelbrot algorithm, it’s never once had a modulus greater than 1,000,000. As you’ll see from the image I produced, this assumption works out pretty well, though it takes some real number crunching to get results out of it for reasonable sized data sets.</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754147\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n</pre></td><td class=\"code\" id=\"p3754code147\"><pre>in.mandelbrot.set &lt;- function(c, iterations = 100, bound = 1000000)\n{\n  z &lt;- 0\n \n  for (i in 1:iterations)\n  {\n    z &lt;- z ** 2 + c\n    if (Mod(z) &gt; bound)\n    {\n      return(FALSE)\n    }\n  }\n \n  return(TRUE)\n}</pre></td></tr></table></div>\n<p>Once we have this algorithm, we can easily generate an image of the Mandelbrot set by producing a matrix of complex numbers and depicting their inclusion in the set using <code>image</code>:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3754148\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n</pre></td><td class=\"code\" id=\"p3754code148\"><pre>resolution &lt;- 0.001\n \nsequence &lt;- seq(-1, 1, by = resolution)\n \nm &lt;- matrix(nrow = length(sequence), ncol = length(sequence))\n \nfor (x in sequence)\n{\n  for (y in sequence)\n  {\n    mandelbrot &lt;- in.mandelbrot.set(complex(real = x, imaginary = y))\n    m[round((x + resolution + 1) / resolution), round((y + resolution + 1) / resolution)] &lt;- mandelbrot\n  }\n}\n \npng('mandelbrot.png')\nimage(m)\ndev.off()</pre></td></tr></table></div>\n<p>And here’s the resulting image:</p>\n<div style=\"text-align:center;\"><img alt=\"mandelbrot.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/mandelbrot1.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/mandelbrot1.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"mandelbrot.png\" border=\"0\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/mandelbrot1.png?w=450\"/></noscript></div>\n<p>UPDATE: Thanks to Giuseppe for pointing out the rounding error in the original code, producing an image with lines in it.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/18/using-complex-numbers-in-r/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+    "main_text": "Using Complex Numbers in R\nPosted on\nDecember 18, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJohn Myles White: Die Sudelbücher » Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis post is a continuation of my series dealing with matrix operations for image processing. My next goal is to demonstrate the construction of simple low-pass and high-pass spatial frequency filters in R. It’s easy enough to construct simple versions of these filters in R using the Fast Fourier Transform (also known as the FFT), but, because the FFT is a slightly complicated tool, I’m going to build up to using it progressively over a few posts.\nFor starters, I want to review the use of complex numbers in R. As always, if you’re interested in reviewing the mathematics of complex numbers, I’d start by browsing references online. The tutorial\nhere\nseemed good to me at first glance, though I can’t claim to have read it through.\nBecause complex numbers are implemented in the “base” package, it’s very easy to start working with them. To construct the complex number\nx + iy\n, you use\ncomplex\n:\n1\n2\n3\n4\n5\n6\n7\nx <- 1\ny <- 1\n \nz <- complex(real = x, imaginary = y)\n \nz\n# [1] 1+1i\nIt’s conventional in mathematics to use\nz\nto refer to a complex number, so I’ll continue on with that tradition.\nAs always occurs with mathematical data types in R, you can convert other objects to class “complex” using\nas.complex\n:\n1\n2\nas.complex(-1)\n# [1] -1+0i\nAnd you can test that an object is complex using\nis.complex\n:\n1\n2\nis.complex(as.complex(-1))\n# [1] TRUE\nBeyond those standard operations, there are five essential mathematical operations you’d want to use on complex numbers.\nFirst off, you want to be able to extract the real and imaginary components of a complex number. You can do this using\nRe\nand\nIm\nrespectively:\n1\n2\n3\n4\n5\n6\n7\nz <- complex(real = 2, imaginary = 1)\n \nRe(z)\n# [1] 2\n \nIm(z)\n# [1] 1\nThe\n(x, y)\nrepresentation of numbers is easier to understand at first, but a polar coordinates representation is often more practical. You can get the relevant components of this representation by finding the modulus and complex argument of a complex number. In R, you would use\nMod\nand\nArg\n:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nz <- complex(real = 0, imaginary = 1)\n \nMod(z)\n# [1] 1\n \nArg(z)\n# [1] 1.570796\n \npi / 2\n# [1] 1.570796\nThis corresponds to the intuition that\ni\nshould be at a distance 1 from the origin and an angle of\npi / 2\n.\nFinally, you’ll want to be able to take the complex conjugate of a complex number; to do that in R, you can use\nConj\n:\n1\n2\n3\n4\n5\nConj(z)\n# [1] 0-1i\n \nMod(z) == z * Conj(z)\n# [1] TRUE\nAs you can see, the modulus of\nz\nequals z times the conjugate of z, which is exactly what you expect.\nNow, historically, complex numbers were invented so that you could find the square root of negative numbers. By default,\nsqrt\ndoes not return a complex number when you ask for the square root of a negative number. Instead, it produces a\nNaN\nerror, as you can see below:\n1\n2\n3\n4\nsqrt(-1)\n# [1] NaN\n# Warning message:\n# In sqrt(-1) : NaNs produced\nTo get the complex square root, you need to cast your negative number as a complex number using\nas.complex\nbefore applying\nsqrt\n:\n1\n2\n3\nsqrt(as.complex(-1))\n \n# [1] 0+1i\nIn practice, complex numbers can be used to solve a huge range of problems, not least of which is the efficient representation of the FFT of an input vector. For fun, I thought I’d show a simple application: building a fractal using the Mandelbrot set.\nTo quote Wikipedia,\nMathematically the Mandelbrot set can be defined as the set of complex values of\nc\nfor which the orbit of 0 under iteration of the complex quadratic polynomial\nz\nn\n+1\n=\nz\nn\n2\n+\nc\nremains bounded. That is, a complex number,\nc\n, is in the Mandelbrot set if, when starting with\nz\n0\n= 0 and applying the iteration repeatedly, the absolute value of\nz\nn\nnever exceeds a certain number (that number depends on\nc\n) however large\nn\ngets.\nWe can translate this definition into R pretty easily by making certain assumptions about the exactness we want in our results. For my purposes, I’ll say that a number is in the Mandelbrot set if, after 100 iterations of the Mandelbrot algorithm, it’s never once had a modulus greater than 1,000,000. As you’ll see from the image I produced, this assumption works out pretty well, though it takes some real number crunching to get results out of it for reasonable sized data sets.\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nin.mandelbrot.set <- function(c, iterations = 100, bound = 1000000)\n{\n  z <- 0\n \n  for (i in 1:iterations)\n  {\n    z <- z ** 2 + c\n    if (Mod(z) > bound)\n    {\n      return(FALSE)\n    }\n  }\n \n  return(TRUE)\n}\nOnce we have this algorithm, we can easily generate an image of the Mandelbrot set by producing a matrix of complex numbers and depicting their inclusion in the set using\nimage\n:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nresolution <- 0.001\n \nsequence <- seq(-1, 1, by = resolution)\n \nm <- matrix(nrow = length(sequence), ncol = length(sequence))\n \nfor (x in sequence)\n{\n  for (y in sequence)\n  {\n    mandelbrot <- in.mandelbrot.set(complex(real = x, imaginary = y))\n    m[round((x + resolution + 1) / resolution), round((y + resolution + 1) / resolution)] <- mandelbrot\n  }\n}\n \npng('mandelbrot.png')\nimage(m)\ndev.off()\nAnd here’s the resulting image:\nUPDATE: Thanks to Giuseppe for pointing out the rounding error in the original code, producing an image with lines in it.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJohn Myles White: Die Sudelbücher » Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+    "meta_description": "This post is a continuation of my series dealing with matrix operations for image processing. My next goal is to demonstrate the construction of simple low-pass and high-pass spatial frequency filters in R. It’s easy enough to construct simple versions of these filters in R using the Fast Fourier Transform (also known as the FFT), [...]",
+    "meta_keywords": "statistics",
+    "og_description": "This post is a continuation of my series dealing with matrix operations for image processing. My next goal is to demonstrate the construction of simple low-pass and high-pass spatial frequency filters in R. It’s easy enough to construct simple versions of these filters in R using the Fast Fourier Transform (also known as the FFT), [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/12/mandelbrot1.png",
+    "og_title": "Using Complex Numbers in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.6,
+    "sitemap_lastmod": "2011-05-11T21:28:36+00:00",
+    "twitter_description": "This post is a continuation of my series dealing with matrix operations for image processing. My next goal is to demonstrate the construction of simple low-pass and high-pass spatial frequency filters in R. It’s easy enough to construct simple versions of these filters in R using the Fast Fourier Transform (also known as the FFT), [...]",
+    "twitter_title": "Using Complex Numbers in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/using-complex-numbers-in-r/",
+    "word_count": 1118
+  }
+}

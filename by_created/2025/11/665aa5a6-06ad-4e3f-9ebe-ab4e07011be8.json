@@ -1,0 +1,96 @@
+{
+  "uuid": "665aa5a6-06ad-4e3f-9ebe-ab4e07011be8",
+  "created_at": "2025-11-22 19:58:45",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/04/bollinger-bands-invesco-coinshares-etf/",
+    "crawled_at": "2025-11-22T10:49:55.301562",
+    "external_links": [
+      {
+        "href": "https://datageeek.com/2025/04/24/bollinger-bands-invesco-coinshares-etf/",
+        "text": "DataGeeek"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://datageeek.com/2025/04/24/bollinger-bands-invesco-coinshares-etf/",
+        "text": "DataGeeek"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Bollinger Bands: Invesco CoinShares ETF | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/selcuk-disci/",
+        "text": "Selcuk Disci"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-392074 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Bollinger Bands: Invesco CoinShares ETF </h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/selcuk-disci/\">Selcuk Disci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://datageeek.com/2025/04/24/bollinger-bands-invesco-coinshares-etf/\"> DataGeeek</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<ul class=\"wp-block-list\">\n<li>With the rising Bitcoin price movement, the downtrend of Invesco CoinShares Global Blockchain ETF has been fading and has moved to the consolidation phase.</li>\n<li>If the good news comes from trade deal talks between the USA and China, the uptrend is coming sooner than thought.</li>\n</ul>\n<p><strong><em>Source code:</em></strong></p>\n<pre>\n#https://x.com/data_geeek/status/1915042993725128710\nlibrary(tidyverse)\nlibrary(tidyquant)\n\n#Invesco CoinShares Global Blockchain UCITS ETF (BCHN.MI)\ndf_bchn &lt;- \n  tq_get(\"BCHN.MI\")\n\n\n#Bollinger Bands\ndf_bchn %&gt;%\n  filter(date &gt;= last(date) - months(36)) %&gt;% \n  arrange(date) %&gt;% \n  ggplot(aes(x = date, \n             y = close, \n             open = close,\n             high = close, \n             low = close, \n             close = close)) +\n  geom_bbands(ma_fun = SMA, \n              fill = \"purple\",\n              sd = 2, \n              n = 20) +\n  geom_candlestick(aes(open = open, \n                       high = high, \n                       low = low, \n                       close = close,\n                       colour_up = \"limegreen\",\n                       colour_down = \"black\",\n                       fill_up = \"limegreen\",\n                       fill_down = \"black\")) +\n  \n  scale_y_continuous(labels = scales::label_currency(prefix = \"€\"),\n                     limits = c(65,125)) +\n  coord_x_date(xlim = c(\"2025-01-01\",\"2025-04-17\")) +\n  scale_x_date(breaks = seq(make_date(2025,1,1), \n                            make_date(2025,4,22), \n                            by = \"month\"),\n               labels = scales::label_date(\"%b\"),\n               expand = expansion(mult = c(0, .05)))  +\n  labs(title = \"Invesco CoinShares Global Blockchain ETF\",\n       x = \"\",\n       y = \"\",\n       subtitle = \"&lt;span style = 'color:red;'&gt;Bollinger Bands&lt;/span&gt; applied with &lt;span style = 'color:blue;'&gt;SMA-20&lt;/span&gt;\") +\n  theme_minimal(base_family = \"Roboto Slab\") +\n  theme(panel.grid = element_blank(),\n        panel.grid.minor.y = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.minor.x = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.major.x = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.major.y = element_line(linetype = \"dashed\", color = \"gray\"),\n        axis.text = element_text(face = \"bold\", size = 18),\n        #axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1),\n        plot.title = ggtext::element_markdown(face = \"bold\",size = 20),\n        plot.subtitle = ggtext::element_markdown(face = \"bold\", size = 18),\n        plot.background = element_rect(fill = \"azure\", color = \"azure\"),\n        legend.position = \"none\")\n\n</pre>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://datageeek.com/2025/04/24/bollinger-bands-invesco-coinshares-etf/\"> DataGeeek</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Bollinger Bands: Invesco CoinShares ETF\nPosted on\nApril 24, 2025\nby\nSelcuk Disci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDataGeeek\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWith the rising Bitcoin price movement, the downtrend of Invesco CoinShares Global Blockchain ETF has been fading and has moved to the consolidation phase.\nIf the good news comes from trade deal talks between the USA and China, the uptrend is coming sooner than thought.\nSource code:\n#https://x.com/data_geeek/status/1915042993725128710\nlibrary(tidyverse)\nlibrary(tidyquant)\n\n#Invesco CoinShares Global Blockchain UCITS ETF (BCHN.MI)\ndf_bchn <- \n  tq_get(\"BCHN.MI\")\n\n#Bollinger Bands\ndf_bchn %>%\n  filter(date >= last(date) - months(36)) %>% \n  arrange(date) %>% \n  ggplot(aes(x = date, \n             y = close, \n             open = close,\n             high = close, \n             low = close, \n             close = close)) +\n  geom_bbands(ma_fun = SMA, \n              fill = \"purple\",\n              sd = 2, \n              n = 20) +\n  geom_candlestick(aes(open = open, \n                       high = high, \n                       low = low, \n                       close = close,\n                       colour_up = \"limegreen\",\n                       colour_down = \"black\",\n                       fill_up = \"limegreen\",\n                       fill_down = \"black\")) +\n  \n  scale_y_continuous(labels = scales::label_currency(prefix = \"€\"),\n                     limits = c(65,125)) +\n  coord_x_date(xlim = c(\"2025-01-01\",\"2025-04-17\")) +\n  scale_x_date(breaks = seq(make_date(2025,1,1), \n                            make_date(2025,4,22), \n                            by = \"month\"),\n               labels = scales::label_date(\"%b\"),\n               expand = expansion(mult = c(0, .05)))  +\n  labs(title = \"Invesco CoinShares Global Blockchain ETF\",\n       x = \"\",\n       y = \"\",\n       subtitle = \"<span style = 'color:red;'>Bollinger Bands</span> applied with <span style = 'color:blue;'>SMA-20</span>\") +\n  theme_minimal(base_family = \"Roboto Slab\") +\n  theme(panel.grid = element_blank(),\n        panel.grid.minor.y = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.minor.x = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.major.x = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.major.y = element_line(linetype = \"dashed\", color = \"gray\"),\n        axis.text = element_text(face = \"bold\", size = 18),\n        #axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1),\n        plot.title = ggtext::element_markdown(face = \"bold\",size = 20),\n        plot.subtitle = ggtext::element_markdown(face = \"bold\", size = 18),\n        plot.background = element_rect(fill = \"azure\", color = \"azure\"),\n        legend.position = \"none\")\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDataGeeek\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Source code:",
+    "meta_keywords": null,
+    "og_description": "Source code:",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Bollinger Bands: Invesco CoinShares ETF | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.1,
+    "sitemap_lastmod": null,
+    "twitter_description": "Source code:",
+    "twitter_title": "Bollinger Bands: Invesco CoinShares ETF | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/04/bollinger-bands-invesco-coinshares-etf/",
+    "word_count": 412
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "uuid": "9c01a79b-f19c-43d7-b8d3-81dcf487c0ef",
+  "created_at": "2025-11-22 19:57:28",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/10/d3po-1-0-0-is-here/",
+    "crawled_at": "2025-11-22T10:41:44.422650",
+    "external_links": [
+      {
+        "href": "https://pacha.dev/blog/2025/10/18/d3po/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://buymeacoffee.com/pacha/e/80976",
+        "text": "Buy Me a Coffee"
+      },
+      {
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLScMpMtKjDe2h53iHUvlYHDdBNMD1_x9WO5wg5wi_EO7ak_DRA/viewform?usp=sharing&ouid=115091451666829859711",
+        "text": "this form"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/10/18/d3po/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "D3po 1.0.0 is here! | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/pacha-dev-blog/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-396178 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">D3po 1.0.0 is here!</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 17, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/pacha-dev-blog/\">pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/10/18/d3po/\"> pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><em>If this post is useful to you I kindly ask a minimal donation on <a href=\"https://buymeacoffee.com/pacha/e/80976\" rel=\"nofollow\" target=\"_blank\">Buy Me a Coffee</a>. It shall be used to continue my Open Source efforts.</em></p>\n<p><em>You can send me questions for the blog using <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScMpMtKjDe2h53iHUvlYHDdBNMD1_x9WO5wg5wi_EO7ak_DRA/viewform?usp=sharing&amp;ouid=115091451666829859711\" rel=\"nofollow\" target=\"_blank\">this form</a> and subscribe to receive an email when there is a new post.</em></p>\n<p>D3po is a set of templates for D3 (version 7+) that lets you make interactive charts in R and Shiny without messing with JavaScript. It’s open source (Apache 2.0), so you can use it for free, even in government or NGO projects. It doesn’t have advanced features like commercial libraries such as Highcharts, but it covers the basics: area, box, column, donut, map, line, network, pie, scatter, and treemap charts. You can resize content automatically and export charts as SVG or PNG.</p>\n<p>Here’s a video showing what D3po can do:</p>\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/6pIq2rJONFQ?si=Ai6NUk-BSyG0MTFv\" title=\"YouTube video player\" width=\"450\">\n</iframe>\n<p>D3po was stuck on version 0.5.5 for a long time. The reason was that it was not easy to update it. I wrote D3po 0.1 back in 2015 using D3 3.5 while working for the Government of Chile. Over the years, I added more features and fixed bugs up to version 0.5.5 by the end of 2019. By that point I wanted to rewrite the D3 templates to use D3 5.8.0, but shortly after COVID-19 hit, I had to focus on other things, and struggling with breaking changes in D3 was not a priority.</p>\n<p>Finally, I decided to take the plunge and rewrite the templates. It took a while, but I’m happy to announce that D3po 1.0.0 is now available on the R-Universe. The updated CRAN release will need to wait until next week.</p>\n<p>Install it from R-Universe:</p>\n<pre>install.packages(\"d3po\", repos = \"https://pachadotdev.r-universe.dev\")</pre>\n<p>Or from GitHub:</p>\n<pre>remotes::install_github(\"pachadotdev/d3po\")</pre>\n<p>Here is an example of how to create a box and whiskers plot:</p>\n<pre>d3po(pokemon) %&gt;%\n    po_box(daes(x = type_1, y = speed, color = color_1)) %&gt;%\n    po_title(\"Distribution of Pokemon speed by main type\")</pre>\n<p>For more, see the vignettes and the Shiny demo app: https://github.com/pachadotdev/d3po/tree/main/d3podemo</p>\n<p>I hope it’s useful!</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/10/18/d3po/\"> pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "D3po 1.0.0 is here!\nPosted on\nOctober 17, 2025\nby\npacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\npacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIf this post is useful to you I kindly ask a minimal donation on\nBuy Me a Coffee\n. It shall be used to continue my Open Source efforts.\nYou can send me questions for the blog using\nthis form\nand subscribe to receive an email when there is a new post.\nD3po is a set of templates for D3 (version 7+) that lets you make interactive charts in R and Shiny without messing with JavaScript. It’s open source (Apache 2.0), so you can use it for free, even in government or NGO projects. It doesn’t have advanced features like commercial libraries such as Highcharts, but it covers the basics: area, box, column, donut, map, line, network, pie, scatter, and treemap charts. You can resize content automatically and export charts as SVG or PNG.\nHere’s a video showing what D3po can do:\nD3po was stuck on version 0.5.5 for a long time. The reason was that it was not easy to update it. I wrote D3po 0.1 back in 2015 using D3 3.5 while working for the Government of Chile. Over the years, I added more features and fixed bugs up to version 0.5.5 by the end of 2019. By that point I wanted to rewrite the D3 templates to use D3 5.8.0, but shortly after COVID-19 hit, I had to focus on other things, and struggling with breaking changes in D3 was not a priority.\nFinally, I decided to take the plunge and rewrite the templates. It took a while, but I’m happy to announce that D3po 1.0.0 is now available on the R-Universe. The updated CRAN release will need to wait until next week.\nInstall it from R-Universe:\ninstall.packages(\"d3po\", repos = \"https://pachadotdev.r-universe.dev\")\nOr from GitHub:\nremotes::install_github(\"pachadotdev/d3po\")\nHere is an example of how to create a box and whiskers plot:\nd3po(pokemon) %>%\n    po_box(daes(x = type_1, y = speed, color = color_1)) %>%\n    po_title(\"Distribution of Pokemon speed by main type\")\nFor more, see the vignettes and the Shiny demo app: https://github.com/pachadotdev/d3po/tree/main/d3podemo\nI hope it’s useful!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\npacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "If this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. You can send me questions for the blog using this form and subscribe to receive an email when there is a new po...",
+    "meta_keywords": null,
+    "og_description": "If this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. You can send me questions for the blog using this form and subscribe to receive an email when there is a new po...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "D3po 1.0.0 is here! | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.5,
+    "sitemap_lastmod": null,
+    "twitter_description": "If this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. You can send me questions for the blog using this form and subscribe to receive an email when there is a new po...",
+    "twitter_title": "D3po 1.0.0 is here! | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/10/d3po-1-0-0-is-here/",
+    "word_count": 510
+  }
+}

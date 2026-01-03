@@ -1,0 +1,141 @@
+{
+  "uuid": "860dc3cb-ba0c-4063-ad60-23e8ddeb87a3",
+  "created_at": "2025-11-17 20:39:25",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/kriging-with-metr/",
+    "crawled_at": "2025-11-17T10:01:16.449058",
+    "external_links": [
+      {
+        "href": "https://eliocamp.github.io/en/2023/11/kriging-metr-r/",
+        "text": "Code R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://eliocamp.github.io/metR/",
+        "text": "metR"
+      },
+      {
+        "href": "https://eliocamp.github.io/en/2023/11/kriging-metr-r/",
+        "text": "Code R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Kriging with metR | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-1-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-2-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-3-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-4-1.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/code-r/",
+        "text": "Code R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379652 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Kriging with metR</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 1, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/code-r/\">Code R</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://eliocamp.github.io/en/2023/11/kriging-metr-r/\"> Code R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>Say you have data measured at different weather stations, which in Argentina might look something like this</p>\n<pre>estaciones[data, on = c(\"nombre\" = \"station\")] |&gt; \n   ggplot(aes(lon, lat)) +\n   geom_point(aes(color = t)) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c()</pre>\n<p><img data-lazy-src=\"https://i0.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-1-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-1-1.png?w=450&amp;ssl=1\"/></noscript></p>\n<p>Because this is not a regular grid, it’s not possible to visualise this data with contours as is.\nInstead, it’s necessary to interpolate it into a regular grid.</p>\n<p>There are many ways to go from irregular measurement locations to a regular grid and it comes with a bunch of assumptions.\nBut for quick an dirty visualisations, <code>metR::geom_contour_fill()</code> can use kriging by setting <code>kriging = TRUE</code></p>\n<pre>estaciones[data, on = c(\"nombre\" = \"station\")] |&gt; \n   ggplot(aes(lon, lat)) +\n   metR::geom_contour_fill(aes(z = t), \n                           kriging = TRUE) +\n   geom_point(aes(fill = t), shape = 21) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c(aesthetics = c(\"fill\", \"colour\")) </pre>\n<p><img data-lazy-src=\"https://i1.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\"/></noscript></p>\n<p>One big problem with this is that by default it estimates values in the bounding box of the data, which in this case includes a bunch of the Atlantic Ocean.\nSo it would be nice to be able to only show the contours over land.</p>\n<p>In a desperate attempt to procrastinate from writing my thesis I implemented this functionality.\nNow, the <code>clip</code> argument takes a polygon which clips the contours.</p>\n<pre>estaciones[data, on = c(\"nombre\" = \"station\")] |&gt; \n   ggplot(aes(lon, lat)) +\n   metR::geom_contour_fill(aes(z = t), \n                           kriging = TRUE, \n                           clip = argentina_provincias_sin_malvinas) +\n   geom_point(aes(fill = t), shape = 21) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c(aesthetics = c(\"fill\", \"colour\")) </pre>\n<p><img data-lazy-src=\"https://i0.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-3-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-3-1.png?w=450&amp;ssl=1\"/></noscript></p>\n<p>Another small issue is that the default interpolates to a 40-pixel wide grid, which is a bit too coarse and doesn’t reach the top corners of the map.\nThe <code>kriging</code> argument now can take a numeric, which defines number of gridpoints each direction.</p>\n<pre>estaciones[data, on = c(\"nombre\" = \"station\")] |&gt; \n   ggplot(aes(lon, lat)) +\n   metR::geom_contour_fill(aes(z = t), \n                           kriging = 100, \n                           clip = argentina_provincias_sin_malvinas) +\n   geom_point(aes(fill = t), shape = 21) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c(aesthetics = c(\"fill\", \"colour\")) </pre>\n<p><img data-lazy-src=\"https://i2.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-4-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-4-1.png?w=450&amp;ssl=1\"/></noscript></p>\n<p>Much better!</p>\n<p>You can install the development version of <a href=\"https://eliocamp.github.io/metR/\" rel=\"nofollow\" target=\"_blank\">metR</a> with</p>\n<pre>install.packages(\"metR\", repos = c(\"https://eliocamp.github.io/metR\", getOption(\"repos\")))</pre>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://eliocamp.github.io/en/2023/11/kriging-metr-r/\"> Code R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Kriging with metR\nPosted on\nNovember 1, 2023\nby\nCode R\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nCode R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSay you have data measured at different weather stations, which in Argentina might look something like this\nestaciones[data, on = c(\"nombre\" = \"station\")] |> \n   ggplot(aes(lon, lat)) +\n   geom_point(aes(color = t)) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c()\nBecause this is not a regular grid, it’s not possible to visualise this data with contours as is.\nInstead, it’s necessary to interpolate it into a regular grid.\nThere are many ways to go from irregular measurement locations to a regular grid and it comes with a bunch of assumptions.\nBut for quick an dirty visualisations,\nmetR::geom_contour_fill()\ncan use kriging by setting\nkriging = TRUE\nestaciones[data, on = c(\"nombre\" = \"station\")] |> \n   ggplot(aes(lon, lat)) +\n   metR::geom_contour_fill(aes(z = t), \n                           kriging = TRUE) +\n   geom_point(aes(fill = t), shape = 21) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c(aesthetics = c(\"fill\", \"colour\"))\nOne big problem with this is that by default it estimates values in the bounding box of the data, which in this case includes a bunch of the Atlantic Ocean.\nSo it would be nice to be able to only show the contours over land.\nIn a desperate attempt to procrastinate from writing my thesis I implemented this functionality.\nNow, the\nclip\nargument takes a polygon which clips the contours.\nestaciones[data, on = c(\"nombre\" = \"station\")] |> \n   ggplot(aes(lon, lat)) +\n   metR::geom_contour_fill(aes(z = t), \n                           kriging = TRUE, \n                           clip = argentina_provincias_sin_malvinas) +\n   geom_point(aes(fill = t), shape = 21) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c(aesthetics = c(\"fill\", \"colour\"))\nAnother small issue is that the default interpolates to a 40-pixel wide grid, which is a bit too coarse and doesn’t reach the top corners of the map.\nThe\nkriging\nargument now can take a numeric, which defines number of gridpoints each direction.\nestaciones[data, on = c(\"nombre\" = \"station\")] |> \n   ggplot(aes(lon, lat)) +\n   metR::geom_contour_fill(aes(z = t), \n                           kriging = 100, \n                           clip = argentina_provincias_sin_malvinas) +\n   geom_point(aes(fill = t), shape = 21) +\n   geom_sf(data = argentina_provincias, inherit.aes = FALSE, fill = NA) + \n   scale_color_viridis_c(aesthetics = c(\"fill\", \"colour\"))\nMuch better!\nYou can install the development version of\nmetR\nwith\ninstall.packages(\"metR\", repos = c(\"https://eliocamp.github.io/metR\", getOption(\"repos\")))\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCode R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Say you have data measured at different weather stations, which in Argentina might look something like this estaciones[data, on = c(\"nombre\" = \"station\")] |> ggplot(aes(lon, lat)) + geom_point(aes(color = t)) + geom_...",
+    "meta_keywords": null,
+    "og_description": "Say you have data measured at different weather stations, which in Argentina might look something like this estaciones[data, on = c(\"nombre\" = \"station\")] |> ggplot(aes(lon, lat)) + geom_point(aes(color = t)) + geom_...",
+    "og_image": "https://eliocamp.github.io/en/2023/11/post/2023-11-03-metR-new-features.en_files/figure-html/unnamed-chunk-1-1.png",
+    "og_title": "Kriging with metR | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.5,
+    "sitemap_lastmod": "2023-11-02T00:00:00+00:00",
+    "twitter_description": "Say you have data measured at different weather stations, which in Argentina might look something like this estaciones[data, on = c(\"nombre\" = \"station\")] |> ggplot(aes(lon, lat)) + geom_point(aes(color = t)) + geom_...",
+    "twitter_title": "Kriging with metR | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/kriging-with-metr/",
+    "word_count": 494
+  }
+}

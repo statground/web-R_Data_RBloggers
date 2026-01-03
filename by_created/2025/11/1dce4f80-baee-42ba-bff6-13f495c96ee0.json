@@ -1,0 +1,92 @@
+{
+  "uuid": "1dce4f80-baee-42ba-bff6-13f495c96ee0",
+  "created_at": "2025-11-17 20:39:52",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/swfdevice-help-wanted-windows-build-and-outlook/",
+    "crawled_at": "2025-11-17T10:14:28.389992",
+    "external_links": [
+      {
+        "href": "http://cameron.bracken.bz/swfdevice-help-wanted-windows-build-and-outlook",
+        "text": "cameron.bracken.bz » R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://cameron.bracken.bz/swfdevice-help-wanted-windows-build-and-outlook",
+        "text": "cameron.bracken.bz » R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "swfDevice: Help Wanted (Windows Build) and Outlook | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/cameron/",
+        "text": "cameron"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-48965 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">swfDevice: Help Wanted (Windows Build) and Outlook</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 3, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/cameron/\">cameron</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://cameron.bracken.bz/swfdevice-help-wanted-windows-build-and-outlook\"> cameron.bracken.bz » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>swfDevice is an R package I am developing that produces swf (flash) files natively from R.</p>\n<p>If anyone can step up and help get a working windows build up and running that would be great! I have little expertise with windows and I am just about stuck as what to do next. The task involved linking to some precompiled dlls and such since ming depends on libpng, zlib, libungig and freetype. If you would like to help, send me an email (cameron.bracken [at] gmail.com).</p>\n<p>Todo before initial CRAN release:</p>\n<ul>\n<li>Working windows build that does not crash when any operation is performed</li>\n<li>option to wrap swf output in HTML</li>\n</ul>\n<p>Todo in the future (possibly before initial release but probably not):</p>\n<h3>Device features</h3>\n<ul>\n<li>xCharOffset yCharOffset </li>\n<li>yLineBias</li>\n<li>ipr: pixels per inch </li>\n<li>cra: default character size in pixels</li>\n<li>canClip: will be much harder than tikzDevice </li>\n<li>canChangeGamma</li>\n<li>canHAdj: not supported</li>\n<li>startps: ditto </li>\n<li>hasTextUTF8: should be possible with ming</li>\n<li>wantSymbolUTF8: ditto </li>\n</ul>\n<h3>Implement remaining graphics parameters</h3>\n<ul>\n<li>gamma </li>\n<li>lend</li>\n<li>ljoin</li>\n<li>lmitre</li>\n<li>lineheight</li>\n</ul>\n<h3>Graphics primitives</h3>\n<ul>\n<li>metricInfo (is currently returning the same metrics for all characters, this is bad but does not severely affect the text placement)</li>\n<li>textUTF8</li>\n<li>strWidthUTF8</li>\n</ul>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://cameron.bracken.bz/swfdevice-help-wanted-windows-build-and-outlook\"> cameron.bracken.bz » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "swfDevice: Help Wanted (Windows Build) and Outlook\nPosted on\nDecember 3, 2009\nby\ncameron\nin Uncategorized | 0 Comments\n[This article was first published on\ncameron.bracken.bz » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nswfDevice is an R package I am developing that produces swf (flash) files natively from R.\nIf anyone can step up and help get a working windows build up and running that would be great! I have little expertise with windows and I am just about stuck as what to do next. The task involved linking to some precompiled dlls and such since ming depends on libpng, zlib, libungig and freetype. If you would like to help, send me an email (cameron.bracken [at] gmail.com).\nTodo before initial CRAN release:\nWorking windows build that does not crash when any operation is performed\noption to wrap swf output in HTML\nTodo in the future (possibly before initial release but probably not):\nDevice features\nxCharOffset yCharOffset\nyLineBias\nipr: pixels per inch\ncra: default character size in pixels\ncanClip: will be much harder than tikzDevice\ncanChangeGamma\ncanHAdj: not supported\nstartps: ditto\nhasTextUTF8: should be possible with ming\nwantSymbolUTF8: ditto\nImplement remaining graphics parameters\ngamma\nlend\nljoin\nlmitre\nlineheight\nGraphics primitives\nmetricInfo (is currently returning the same metrics for all characters, this is bad but does not severely affect the text placement)\ntextUTF8\nstrWidthUTF8\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ncameron.bracken.bz » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "swfDevice is an R package I am developing that produces swf (flash) files natively from R. If anyone can step up and help get a working windows build up and running that would be great! I have little expertise with windows and I am just about stuck as what to do next. The task involved [...]",
+    "meta_keywords": null,
+    "og_description": "swfDevice is an R package I am developing that produces swf (flash) files natively from R. If anyone can step up and help get a working windows build up and running that would be great! I have little expertise with windows and I am just about stuck as what to do next. The task involved [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "swfDevice: Help Wanted (Windows Build) and Outlook | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.7,
+    "sitemap_lastmod": "2009-12-03T23:22:31+00:00",
+    "twitter_description": "swfDevice is an R package I am developing that produces swf (flash) files natively from R. If anyone can step up and help get a working windows build up and running that would be great! I have little expertise with windows and I am just about stuck as what to do next. The task involved [...]",
+    "twitter_title": "swfDevice: Help Wanted (Windows Build) and Outlook | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/swfdevice-help-wanted-windows-build-and-outlook/",
+    "word_count": 334
+  }
+}

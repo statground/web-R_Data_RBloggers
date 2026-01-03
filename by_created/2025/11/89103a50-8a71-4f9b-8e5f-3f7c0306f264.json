@@ -1,0 +1,155 @@
+{
+  "uuid": "89103a50-8a71-4f9b-8e5f-3f7c0306f264",
+  "created_at": "2025-11-17 20:41:14",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/02/fitting-legendre-orthogonal-polynomials-in-r/",
+    "crawled_at": "2025-11-17T10:44:24.800715",
+    "external_links": [
+      {
+        "href": "https://ggorjan.blogspot.com/2009/02/fitting-legendre-orthogonal-polynomials.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://cran.r-project.org/package=orthopolynom",
+        "text": "orthopolynom"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Legendre_polynomials",
+        "text": "Wikipedia"
+      },
+      {
+        "href": "http://mathworld.wolfram.com/LegendrePolynomial.html",
+        "text": "Wolfram"
+      },
+      {
+        "href": "http://www.aps.uoguelph.ca/~lrs/ABModels/NOTES/RRM14a.pdf",
+        "text": "link1"
+      },
+      {
+        "href": "http://www-personal.une.edu.au/~jvanderw/CFcoursenotes.pdf",
+        "text": "link2"
+      },
+      {
+        "href": "http://gbi.agrsci.dk/statistics/courses/mixed07/block3material/RandomRegression-notes.pdf",
+        "text": "link3"
+      },
+      {
+        "href": "http://www.scribd.com/doc/2551640",
+        "text": "our work"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Spline_(mathematics)",
+        "text": "Wikipedia"
+      },
+      {
+        "href": "http://mathworld.wolfram.com/Spline.html",
+        "text": "Wolfram"
+      },
+      {
+        "href": "http://nce.ads.uga.edu/~ignacy/splines-jabg.pdf",
+        "text": "link"
+      },
+      {
+        "href": "https://ggorjan.blogspot.com/2009/02/fitting-legendre-orthogonal-polynomials.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Fitting Legendre (orthogonal) polynomials in R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-8242388318175643054?l=ggorjan.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-8242388318175643054?l=ggorjan.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-320 post type-post status-publish format-standard hentry category-r-bloggers tag-r tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Fitting Legendre (orthogonal) polynomials in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 10, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2009/02/fitting-legendre-orthogonal-polynomials.html\"> Gregor Gorjanc</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\">Frederick Novomestky packaged a series of orthogonal polynomials in the <a href=\"http://cran.r-project.org/package=orthopolynom\" rel=\"nofollow\" target=\"_blank\">orthopolynom</a> R package. However, his functions can not be used “directly” in a statistical model, say in lm(). There is no need to use functions from orthopolynom package, since there is a poly() function in stats package that is shipped with R. Nevertheless, I played with class of Legendre polynomials. (<a href=\"https://en.wikipedia.org/wiki/Legendre_polynomials\" rel=\"nofollow\" target=\"_blank\">Wikipedia</a>, <a href=\"http://mathworld.wolfram.com/LegendrePolynomial.html\" rel=\"nofollow\" target=\"_blank\">Wolfram</a>) This class of polynomials is very popular in my field since the introduction of so called random regression models (e.g. <a href=\"http://www.aps.uoguelph.ca/~lrs/ABModels/NOTES/RRM14a.pdf\" rel=\"nofollow\" target=\"_blank\">link1</a>, <a href=\"http://www-personal.une.edu.au/~jvanderw/CFcoursenotes.pdf\" rel=\"nofollow\" target=\"_blank\">link2</a>, <a href=\"http://gbi.agrsci.dk/statistics/courses/mixed07/block3material/RandomRegression-notes.pdf\" rel=\"nofollow\" target=\"_blank\">link3</a>, …, and some of <a href=\"http://www.scribd.com/doc/2551640\" rel=\"nofollow\" target=\"_blank\">our work</a>), though the splines (<a href=\"https://en.wikipedia.org/wiki/Spline_(mathematics)\" rel=\"nofollow\" target=\"_blank\">Wikipedia</a>, <a href=\"http://mathworld.wolfram.com/Spline.html\" rel=\"nofollow\" target=\"_blank\">Wolfram</a>) are making their way through (see this <a href=\"http://nce.ads.uga.edu/~ignacy/splines-jabg.pdf\" rel=\"nofollow\" target=\"_blank\">link</a> and follow references). Let’s go to orthopolynom package. Say we want to use Legendre polynomial of 4th order for a variable x. First we need to get the coefficients for basis functions:<br/></div><blockquote>library(package=”orthopolynom”)<br/>(leg4coef &lt;- legendre.polynomials(n=4, normalized=TRUE)) <pre>[[1]]\n0.7071068\n\n[[2]]\n1.224745*x\n\n[[3]]\n-0.7905694 + 2.371708*x^2\n\n[[4]]\n-2.806243*x + 4.677072*x^3\n\n[[5]]\n0.7954951 – 7.954951*x^2 + 9.280777*x^4</pre></blockquote><div style=\"text-align: justify;\">To use this polynomial in a model, we need to create a design matrix with sensible column names and without the intercept:</div><blockquote><pre>x &lt;- 1:100\nleg4 &lt;- as.matrix(as.data.frame(polynomial.values(polynomials=leg4coef,\n                                                  x=scaleX(x, u=-1, v=1))))\ncolnames(leg4) &lt;- c(\"leg0\", \"leg1\", \"leg2\", \"leg3\", \"leg4\")\nleg4 &lt;- leg4[, 2:ncol(leg4)]</pre></blockquote><div style=\"text-align: justify;\">Now we can use this in a model, e.g., lm(y ~ leg4). I made this whole process easier - with the functions bellow, we can simply use lm(y ~ Legendre(x=scaleX(x, u=-1, v=1), n=4)). I contacted Fred and I hope he will add some version of these functions to his package.<br/><br/>Update 2009-03-16: If we want that the intercept has a value of 1, we need to rescale the polynomial coefficients by multiplying with sqrt(2).</div><blockquote><pre>Legendre &lt;- function(x, n, normalized=TRUE, intercept=FALSE, rescale=TRUE)\n{\n  ## Create a design matrix for Legendre polynomials\n  ## x - numeric\n  ## n - see orthopolynom\n  ## normalized - logical, see orthopolynom\n  ## intercept - logical, add intercept\n  tmp &lt;- legendre.polynomials(n=n, normalized=normalized)\n  if(!intercept) tmp &lt;- tmp[2:length(tmp)]\n  polynomial.values(polynomials=tmp, x=x, matrix=TRUE)\n}\n\npolynomial.values &lt;- function(polynomials, x, matrix=FALSE)\n{\n  ## Changed copy of polynomial.vales from orthopolynom in order\n  ## to add matrix argument\n  require(polynom)\n  n &lt;- length(polynomials)\n  if(!matrix) {\n    values &lt;- vector(mode=\"list\", length=n)\n  } else {\n    values &lt;- matrix(ncol=n, nrow=length(x))\n  }\n  j &lt;- 1\n  while(j </pre></blockquote><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-8242388318175643054?l=ggorjan.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-8242388318175643054?l=ggorjan.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-8242388318175643054?l=ggorjan.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2009/02/fitting-legendre-orthogonal-polynomials.html\"> Gregor Gorjanc</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+    "main_text": "Fitting Legendre (orthogonal) polynomials in R\nPosted on\nFebruary 10, 2009\nby\nGregor Gorjanc\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGregor Gorjanc\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nFrederick Novomestky packaged a series of orthogonal polynomials in the\northopolynom\nR package. However, his functions can not be used “directly” in a statistical model, say in lm(). There is no need to use functions from orthopolynom package, since there is a poly() function in stats package that is shipped with R. Nevertheless, I played with class of Legendre polynomials. (\nWikipedia\n,\nWolfram\n) This class of polynomials is very popular in my field since the introduction of so called random regression models (e.g.\nlink1\n,\nlink2\n,\nlink3\n, …, and some of\nour work\n), though the splines (\nWikipedia\n,\nWolfram\n) are making their way through (see this\nlink\nand follow references). Let’s go to orthopolynom package. Say we want to use Legendre polynomial of 4th order for a variable x. First we need to get the coefficients for basis functions:\nlibrary(package=”orthopolynom”)\n(leg4coef <- legendre.polynomials(n=4, normalized=TRUE))\n[[1]]\n0.7071068\n\n[[2]]\n1.224745*x\n\n[[3]]\n-0.7905694 + 2.371708*x^2\n\n[[4]]\n-2.806243*x + 4.677072*x^3\n\n[[5]]\n0.7954951 – 7.954951*x^2 + 9.280777*x^4\nTo use this polynomial in a model, we need to create a design matrix with sensible column names and without the intercept:\nx <- 1:100\nleg4 <- as.matrix(as.data.frame(polynomial.values(polynomials=leg4coef,\n                                                  x=scaleX(x, u=-1, v=1))))\ncolnames(leg4) <- c(\"leg0\", \"leg1\", \"leg2\", \"leg3\", \"leg4\")\nleg4 <- leg4[, 2:ncol(leg4)]\nNow we can use this in a model, e.g., lm(y ~ leg4). I made this whole process easier - with the functions bellow, we can simply use lm(y ~ Legendre(x=scaleX(x, u=-1, v=1), n=4)). I contacted Fred and I hope he will add some version of these functions to his package.\nUpdate 2009-03-16: If we want that the intercept has a value of 1, we need to rescale the polynomial coefficients by multiplying with sqrt(2).\nLegendre <- function(x, n, normalized=TRUE, intercept=FALSE, rescale=TRUE)\n{\n  ## Create a design matrix for Legendre polynomials\n  ## x - numeric\n  ## n - see orthopolynom\n  ## normalized - logical, see orthopolynom\n  ## intercept - logical, add intercept\n  tmp <- legendre.polynomials(n=n, normalized=normalized)\n  if(!intercept) tmp <- tmp[2:length(tmp)]\n  polynomial.values(polynomials=tmp, x=x, matrix=TRUE)\n}\n\npolynomial.values <- function(polynomials, x, matrix=FALSE)\n{\n  ## Changed copy of polynomial.vales from orthopolynom in order\n  ## to add matrix argument\n  require(polynom)\n  n <- length(polynomials)\n  if(!matrix) {\n    values <- vector(mode=\"list\", length=n)\n  } else {\n    values <- matrix(ncol=n, nrow=length(x))\n  }\n  j <- 1\n  while(j\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR\nstatistics",
+    "meta_description": "Frederick Novomestky packaged a series of orthogonal polynomials in the orthopolynom R package. However, his functions can not be used \"directly\" in a statistical model, say in lm(). There is no need to use functions from orthopolynom package, since th...",
+    "meta_keywords": "r,statistics",
+    "og_description": "Frederick Novomestky packaged a series of orthogonal polynomials in the orthopolynom R package. However, his functions can not be used \"directly\" in a statistical model, say in lm(). There is no need to use functions from orthopolynom package, since th...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/6715598735361401237-8242388318175643054?l=ggorjan.blogspot.com",
+    "og_title": "Fitting Legendre (orthogonal) polynomials in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.8,
+    "sitemap_lastmod": "2010-09-06T21:01:35+00:00",
+    "twitter_description": "Frederick Novomestky packaged a series of orthogonal polynomials in the orthopolynom R package. However, his functions can not be used \"directly\" in a statistical model, say in lm(). There is no need to use functions from orthopolynom package, since th...",
+    "twitter_title": "Fitting Legendre (orthogonal) polynomials in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/02/fitting-legendre-orthogonal-polynomials-in-r/",
+    "word_count": 557
+  }
+}

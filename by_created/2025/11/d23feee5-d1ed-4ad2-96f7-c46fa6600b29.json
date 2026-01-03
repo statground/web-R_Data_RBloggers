@@ -1,0 +1,111 @@
+{
+  "uuid": "d23feee5-d1ed-4ad2-96f7-c46fa6600b29",
+  "created_at": "2025-11-17 20:41:21",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/01/forecasting-presidential-elections/",
+    "crawled_at": "2025-11-17T10:47:24.709534",
+    "external_links": [
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/01/08/forecasting-presidential-elections/",
+        "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/01/08/forecasting-presidential-elections/",
+        "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Forecasting Presidential Elections | R-bloggers",
+    "images": [
+      {
+        "alt": "gallup.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/01/gallup1.png?w=450"
+      },
+      {
+        "alt": "gallup.png",
+        "base64": null,
+        "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/01/gallup1.png?w=450"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-myles-white/",
+        "text": "John Myles White"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-32 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Forecasting Presidential Elections</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 7, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/01/08/forecasting-presidential-elections/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>Because of Andrew Gelman’s strong, repeated recommendations, I’ve been reading “Forecasting Presidential Elections” by Steven J. Rosenstone for the last two days. It’s quite a remarkable book and complex enough that I’m sure I’ll return to it many times after I’ve finished it. I was particularly intrigued by a table in the first chapter noting the performance of the Gallup poll over the years. The very first Gallup polls were conducted well in advance of the elections, and it seems that Gallup thought that this had been a substantial source of error in his predictions. A review of the data in the aforementioned table, though, makes clear that there is essentially no meaningful relationship between the number of days in advance of the election when the poll was begun and the accuracy of that poll. If one assumes that the Gallup polls were accurate measures of the state of the public’s opinion on the dates when they were conducted, the data suggests that there are years when the public’s electoral decision is decided well in advance of the election and there are other years when the public’s decision is decided almost immediately before the election.</p>\n<p>To make all of this clear, I graphed the data describing the accuracy of all of the Gallup electoral polls from 1936 to 1980 as a function of how far ahead of the election the poll was conducted. As you can see, there’s virtually no pattern: the light blue line in the chart is the least squares line and the gray line is simply a horizontal line plotted at 0. The least squares line reflects a statistically insignificant correlation of 0.20.</p>\n<div style=\"text-align:center\"><img alt=\"gallup.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/01/gallup1.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/01/gallup1.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"gallup.png\" border=\"0\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/01/gallup1.png?w=450\"/></noscript></div>\n<p>Another point that struck me while reading Rosenstone’s book was his discussion of the non-response error of polls. Non-response error is normally explained as the errors in telephone polls caused by those who don’t pick up their phones, those who refuse to be surveyed and those who simply don’t own phones. The first two problems always make sense to me, but I always find myself wondering about the third: how many Americans actually vote in presidential elections who don’t own phones? I’d love to have an answer to that question if anyone has relevant data.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/01/08/forecasting-presidential-elections/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+    "main_text": "Forecasting Presidential Elections\nPosted on\nJanuary 7, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\n\"R-bloggers\" via Tal Galili in Google Reader\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBecause of Andrew Gelman’s strong, repeated recommendations, I’ve been reading “Forecasting Presidential Elections” by Steven J. Rosenstone for the last two days. It’s quite a remarkable book and complex enough that I’m sure I’ll return to it many times after I’ve finished it. I was particularly intrigued by a table in the first chapter noting the performance of the Gallup poll over the years. The very first Gallup polls were conducted well in advance of the elections, and it seems that Gallup thought that this had been a substantial source of error in his predictions. A review of the data in the aforementioned table, though, makes clear that there is essentially no meaningful relationship between the number of days in advance of the election when the poll was begun and the accuracy of that poll. If one assumes that the Gallup polls were accurate measures of the state of the public’s opinion on the dates when they were conducted, the data suggests that there are years when the public’s electoral decision is decided well in advance of the election and there are other years when the public’s decision is decided almost immediately before the election.\nTo make all of this clear, I graphed the data describing the accuracy of all of the Gallup electoral polls from 1936 to 1980 as a function of how far ahead of the election the poll was conducted. As you can see, there’s virtually no pattern: the light blue line in the chart is the least squares line and the gray line is simply a horizontal line plotted at 0. The least squares line reflects a statistically insignificant correlation of 0.20.\nAnother point that struck me while reading Rosenstone’s book was his discussion of the non-response error of polls. Non-response error is normally explained as the errors in telephone polls caused by those who don’t pick up their phones, those who refuse to be surveyed and those who simply don’t own phones. The first two problems always make sense to me, but I always find myself wondering about the third: how many Americans actually vote in presidential elections who don’t own phones? I’d love to have an answer to that question if anyone has relevant data.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\n\"R-bloggers\" via Tal Galili in Google Reader\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+    "meta_description": "Because of Andrew Gelman’s strong, repeated recommendations, I’ve been reading “Forecasting Presidential Elections” by Steven J. Rosenstone for the last two days. It’s quite a remarkable book and complex enough that I’m sure I’ll return t...",
+    "meta_keywords": "statistics",
+    "og_description": "Because of Andrew Gelman’s strong, repeated recommendations, I’ve been reading “Forecasting Presidential Elections” by Steven J. Rosenstone for the last two days. It’s quite a remarkable book and complex enough that I’m sure I’ll return t...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/01/gallup1.png",
+    "og_title": "Forecasting Presidential Elections | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.7,
+    "sitemap_lastmod": "2011-05-11T21:10:30+00:00",
+    "twitter_description": "Because of Andrew Gelman’s strong, repeated recommendations, I’ve been reading “Forecasting Presidential Elections” by Steven J. Rosenstone for the last two days. It’s quite a remarkable book and complex enough that I’m sure I’ll return t...",
+    "twitter_title": "Forecasting Presidential Elections | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/01/forecasting-presidential-elections/",
+    "word_count": 540
+  }
+}

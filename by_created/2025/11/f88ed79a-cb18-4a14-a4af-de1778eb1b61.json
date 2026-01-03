@@ -1,0 +1,100 @@
+{
+  "uuid": "f88ed79a-cb18-4a14-a4af-de1778eb1b61",
+  "created_at": "2025-11-17 20:41:51",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2006/05/aggregating-results-from-unreliable-functions-in-r/",
+    "crawled_at": "2025-11-17T10:58:40.398196",
+    "external_links": [
+      {
+        "href": "http://userprimary.net/user/2006/05/12/aggregating-results-from-unreliable-functions-in-r/",
+        "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://userprimary.net/user/2006/05/12/aggregating-results-from-unreliable-functions-in-r/",
+        "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Aggregating Results from Unreliable Functions in R | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/seth/",
+        "text": "seth"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-60 post type-post status-publish format-standard hentry category-r-bloggers tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Aggregating Results from Unreliable Functions in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 12, 2006</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/seth/\">seth</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://userprimary.net/user/2006/05/12/aggregating-results-from-unreliable-functions-in-r/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>I posted this as a response to a question on R-help.  I think the idea of a “collect” function could be useful both in the context of unreliable functions that sometimes error out and also in filtering contexts where currently one creates a list containing good elements and some sort of sentinel, usually NULL, which has itself to be filtered out in a separate subsetting operation after the main filtering loop.</p>\n<p>Here’s an example:</p>\n<pre>\n    d &lt;- runif(20, min=-2, max=8) # test data\n\n    aFunc &lt;- function(x) {  # gives error occasionally\n        if (x &gt; 0)\n          x\n        else\n          stop(\"encountered bad x\")\n    }\n\ncollect &lt;- function(x, FUN, skip_error=TRUE, args_list=NULL)\n{\n    if (!is.vector(x))\n      stop(\"arg x must be a vector\")\n    fname &lt;- deparse(substitute(FUN))\n    xvar &lt;- deparse(substitute(x))\n    i &lt;- 1\n    j &lt;- 1\n    result &lt;- vector(mode=mode(x), length=length(x))\n    while (i &lt;= length(x)) {\n        tryCatch({\n            args &lt;- list(x[i])\n            if (length(args_list))\n              args &lt;- c(args, args_list)\n            ans &lt;- do.call(FUN, args)\n            result[j] &lt;- ans\n            j &lt;- j + 1\n        }, error=function(e) {\n            if (!skip_error) {\n                msg &lt;- paste(\"collect\\n\",\n                             \"call to\", fname, \"failed at\",\n                             paste(xvar, \"[\",  i, \"]\\n\", sep=\"\"),\n                             \"Message:\\n\", conditionMessage(e))\n                stop(msg, call.=FALSE)\n            }\n            NULL\n        },\n                 finally={i &lt;- i + 1})\n    }\n    if (j &gt; 1)\n      result[1:(j-1)]\n    else\n      vector(mode=mode(x), length=0)\n}\n\n## Example\n\ncollect(d, aFunc, skip_error=FALSE)\nError: collect\n call to aFunc failed at d[2]\n Message:\n encountered bad x\n\ncollect(d, aFunc, skip_error=TRUE)\n [1] 7.7380303 0.7554328 1.8352623 0.5136118 4.4231091 2.5368103 1.8656615\n [8] 2.9244200 2.1364120 7.6711189 0.2141325 7.8216620 5.8347576 5.3939892\n</pre>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://userprimary.net/user/2006/05/12/aggregating-results-from-unreliable-functions-in-r/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+    "main_text": "Aggregating Results from Unreliable Functions in R\nPosted on\nMay 12, 2006\nby\nseth\nin\nR bloggers\n| 0 Comments\n[This article was first published on\n\"R-bloggers\" via Tal Galili in Google Reader\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI posted this as a response to a question on R-help.  I think the idea of a “collect” function could be useful both in the context of unreliable functions that sometimes error out and also in filtering contexts where currently one creates a list containing good elements and some sort of sentinel, usually NULL, which has itself to be filtered out in a separate subsetting operation after the main filtering loop.\nHere’s an example:\nd <- runif(20, min=-2, max=8) # test data\n\n    aFunc <- function(x) {  # gives error occasionally\n        if (x > 0)\n          x\n        else\n          stop(\"encountered bad x\")\n    }\n\ncollect <- function(x, FUN, skip_error=TRUE, args_list=NULL)\n{\n    if (!is.vector(x))\n      stop(\"arg x must be a vector\")\n    fname <- deparse(substitute(FUN))\n    xvar <- deparse(substitute(x))\n    i <- 1\n    j <- 1\n    result <- vector(mode=mode(x), length=length(x))\n    while (i <= length(x)) {\n        tryCatch({\n            args <- list(x[i])\n            if (length(args_list))\n              args <- c(args, args_list)\n            ans <- do.call(FUN, args)\n            result[j] <- ans\n            j <- j + 1\n        }, error=function(e) {\n            if (!skip_error) {\n                msg <- paste(\"collect\\n\",\n                             \"call to\", fname, \"failed at\",\n                             paste(xvar, \"[\",  i, \"]\\n\", sep=\"\"),\n                             \"Message:\\n\", conditionMessage(e))\n                stop(msg, call.=FALSE)\n            }\n            NULL\n        },\n                 finally={i <- i + 1})\n    }\n    if (j > 1)\n      result[1:(j-1)]\n    else\n      vector(mode=mode(x), length=0)\n}\n\n## Example\n\ncollect(d, aFunc, skip_error=FALSE)\nError: collect\n call to aFunc failed at d[2]\n Message:\n encountered bad x\n\ncollect(d, aFunc, skip_error=TRUE)\n [1] 7.7380303 0.7554328 1.8352623 0.5136118 4.4231091 2.5368103 1.8656615\n [8] 2.9244200 2.1364120 7.6711189 0.2141325 7.8216620 5.8347576 5.3939892\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\n\"R-bloggers\" via Tal Galili in Google Reader\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR",
+    "meta_description": "I posted this as a response to a question on R-help. I think the idea of a “collect” function could be useful both in the context of unreliable functions that sometimes error out and also in filtering contexts where currently one creates a list co...",
+    "meta_keywords": "r",
+    "og_description": "I posted this as a response to a question on R-help. I think the idea of a “collect” function could be useful both in the context of unreliable functions that sometimes error out and also in filtering contexts where currently one creates a list co...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Aggregating Results from Unreliable Functions in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.1,
+    "sitemap_lastmod": "2006-05-13T04:59:22+00:00",
+    "twitter_description": "I posted this as a response to a question on R-help. I think the idea of a “collect” function could be useful both in the context of unreliable functions that sometimes error out and also in filtering contexts where currently one creates a list co...",
+    "twitter_title": "Aggregating Results from Unreliable Functions in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2006/05/aggregating-results-from-unreliable-functions-in-r/",
+    "word_count": 419
+  }
+}

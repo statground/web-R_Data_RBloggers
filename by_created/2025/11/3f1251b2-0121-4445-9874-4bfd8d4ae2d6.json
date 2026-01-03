@@ -1,0 +1,120 @@
+{
+  "uuid": "3f1251b2-0121-4445-9874-4bfd8d4ae2d6",
+  "created_at": "2025-11-17 20:40:43",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/07/causal-inference-and-biostatistics/",
+    "crawled_at": "2025-11-17T10:32:57.911995",
+    "external_links": [
+      {
+        "href": "https://realizationsinbiostatistics.blogspot.com/2009/07/causal-inference-and-biostatistics.html",
+        "text": "Realizations in Biostatistics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.stat.columbia.edu/~cook/movabletype/archives/2009/07/rubinism_separa.html",
+        "text": "discussion on causal inference"
+      },
+      {
+        "href": "http://www.stat.columbia.edu/~cook/movabletype/mlm/",
+        "text": "Gelman’s blog"
+      },
+      {
+        "href": "https://www.amazon.com/Causality-Reasoning-Inference-Judea-Pearl/dp/0521773628/ref=sr_1_1?ie=UTF8&s=books&qid=1247342379&sr=8-1",
+        "text": "Judea Pearl’s latest book on causal inference"
+      },
+      {
+        "href": "https://scholar.google.com/scholar?q=donald+rubin+causal+inference&hl=en&btnG=Search",
+        "text": "theory that had been forwarded by Donald Rubin"
+      },
+      {
+        "href": "http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6T5R-409648D-1&_user=10&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_searchStrId=954596433&_rerunOrigin=scholar.google&_acct=C000050221&_version=1&_urlVersion=0&_userid=10&md5=86b81b4b9933b5ace617bbfdae3331f3",
+        "text": "intention-to-treat principle"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://www.mrc-bsu.cam.ac.uk/bugs/",
+        "text": "WinBUGS"
+      },
+      {
+        "href": "https://realizationsinbiostatistics.blogspot.com/2009/07/causal-inference-and-biostatistics.html",
+        "text": "Realizations in Biostatistics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Causal inference and biostatistics | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-johnson/",
+        "text": "John Johnson"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-59514 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Causal inference and biostatistics</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 11, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-johnson/\">John Johnson</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://realizationsinbiostatistics.blogspot.com/2009/07/causal-inference-and-biostatistics.html\"> Realizations in Biostatistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I’ve been following the <a href=\"http://www.stat.columbia.edu/~cook/movabletype/archives/2009/07/rubinism_separa.html\" rel=\"nofollow\" target=\"_blank\">discussion on causal inference</a> over at <a href=\"http://www.stat.columbia.edu/~cook/movabletype/mlm/\" rel=\"nofollow\" target=\"_blank\">Gelman’s blog</a> with quite a bit of interest. Of course, this is in response to <a href=\"https://www.amazon.com/Causality-Reasoning-Inference-Judea-Pearl/dp/0521773628/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1247342379&amp;sr=8-1\" rel=\"nofollow\" target=\"_blank\">Judea Pearl’s latest book on causal inference</a>, which differs quite a bit from the <a href=\"https://scholar.google.com/scholar?q=donald+rubin+causal+inference&amp;hl=en&amp;btnG=Search\" rel=\"nofollow\" target=\"_blank\">theory that had been forwarded by Donald Rubin</a> and his colleagues for the last 35 years or so.<br/><br/>This is a theory that I think deserves more attention in biostatistics. After all, it goes back to the root of why we are studying drugs. Ultimately, we really don’t give a damn about whether outcomes are better in the treated group than in the placebo group. Rather, we are more interested in whether we are able to benefit individuals by giving them a treatment. In other words, we are interested in the unknowable quantity of what each person’s outcome is if they are treated and what it is if they are not. If there’s an improvement and it outweighs the (unknowable) risks, the drug is worth while. The reason we are interested in outcomes of a treated group and outcomes of a placebo group is that it’s a surrogate for this unknowable quantity, especially if you use the <a href=\"http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6T5R-409648D-1&amp;_user=10&amp;_rdoc=1&amp;_fmt=&amp;_orig=search&amp;_sort=d&amp;_docanchor=&amp;view=c&amp;_searchStrId=954596433&amp;_rerunOrigin=scholar.google&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=86b81b4b9933b5ace617bbfdae3331f3\" rel=\"nofollow\" target=\"_blank\">intention-to-treat principle</a>. However, as mentioned in the linked article and the research by Rubin, the intention to treat principle fails to deliver on its promise despite its simplicity and popularity.<br/><br/>Some clinical trials are now being run with causal inference as a central part of the design. Tools such as <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> and <a href=\"http://www.mrc-bsu.cam.ac.uk/bugs/\" rel=\"nofollow\" target=\"_blank\">WinBUGS</a> and Bayesian concepts now make this logistically feasible. Further advances in statistical handling of partial compliance to treatment, biological pathways of drugs, and the intention to treat principle itself make causal inference look much more desirable by the day. It’s really only inertia caused by the popularity and (apparent) simplicity of intention to treat that makes this concept slower to catch on.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://realizationsinbiostatistics.blogspot.com/2009/07/causal-inference-and-biostatistics.html\"> Realizations in Biostatistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Causal inference and biostatistics\nPosted on\nJuly 11, 2009\nby\nJohn Johnson\nin Uncategorized | 0 Comments\n[This article was first published on\nRealizations in Biostatistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI’ve been following the\ndiscussion on causal inference\nover at\nGelman’s blog\nwith quite a bit of interest. Of course, this is in response to\nJudea Pearl’s latest book on causal inference\n, which differs quite a bit from the\ntheory that had been forwarded by Donald Rubin\nand his colleagues for the last 35 years or so.\nThis is a theory that I think deserves more attention in biostatistics. After all, it goes back to the root of why we are studying drugs. Ultimately, we really don’t give a damn about whether outcomes are better in the treated group than in the placebo group. Rather, we are more interested in whether we are able to benefit individuals by giving them a treatment. In other words, we are interested in the unknowable quantity of what each person’s outcome is if they are treated and what it is if they are not. If there’s an improvement and it outweighs the (unknowable) risks, the drug is worth while. The reason we are interested in outcomes of a treated group and outcomes of a placebo group is that it’s a surrogate for this unknowable quantity, especially if you use the\nintention-to-treat principle\n. However, as mentioned in the linked article and the research by Rubin, the intention to treat principle fails to deliver on its promise despite its simplicity and popularity.\nSome clinical trials are now being run with causal inference as a central part of the design. Tools such as\nR\nand\nWinBUGS\nand Bayesian concepts now make this logistically feasible. Further advances in statistical handling of partial compliance to treatment, biological pathways of drugs, and the intention to treat principle itself make causal inference look much more desirable by the day. It’s really only inertia caused by the popularity and (apparent) simplicity of intention to treat that makes this concept slower to catch on.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRealizations in Biostatistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I've been following the discussion on causal inference over at Gelman's blog with quite a bit of interest. Of course, this is in response to Judea Pearl's latest book on causal inference, which differs quite a bit from the theory that had been forwarde...",
+    "meta_keywords": null,
+    "og_description": "I've been following the discussion on causal inference over at Gelman's blog with quite a bit of interest. Of course, this is in response to Judea Pearl's latest book on causal inference, which differs quite a bit from the theory that had been forwarde...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Causal inference and biostatistics | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.3,
+    "sitemap_lastmod": "2009-07-11T20:12:05+00:00",
+    "twitter_description": "I've been following the discussion on causal inference over at Gelman's blog with quite a bit of interest. Of course, this is in response to Judea Pearl's latest book on causal inference, which differs quite a bit from the theory that had been forwarde...",
+    "twitter_title": "Causal inference and biostatistics | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/07/causal-inference-and-biostatistics/",
+    "word_count": 460
+  }
+}

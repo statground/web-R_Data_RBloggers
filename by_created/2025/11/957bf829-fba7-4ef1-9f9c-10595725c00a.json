@@ -1,0 +1,112 @@
+{
+  "uuid": "957bf829-fba7-4ef1-9f9c-10595725c00a",
+  "created_at": "2025-11-17 20:40:20",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-rle-2/",
+    "crawled_at": "2025-11-17T10:24:41.837749",
+    "external_links": [
+      {
+        "href": "http://www.sigmafield.org/2009/09/22/r-function-of-the-day-rle",
+        "text": "sigmafield - R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://finzi.psych.upenn.edu/R/library/base/html/rle.html",
+        "text": "rle"
+      },
+      {
+        "href": "http://www.codingthewheel.com/archives/the-coin-flip-a-fundamentally-unfair-proposition",
+        "text": "flip a coin"
+      },
+      {
+        "href": "http://blogisticreflections.wordpress.com/2009/09/20/r-function-of-the-day-tapply/#",
+        "text": "tapply"
+      },
+      {
+        "href": "http://www.sigmafield.org/tags/r",
+        "text": "R"
+      },
+      {
+        "href": "http://www.sigmafield.org/2009/09/22/r-function-of-the-day-rle",
+        "text": "sigmafield - R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R Function of the Day: rle | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/erik/",
+        "text": "erik"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-49380 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Function of the Day: rle</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/erik/\">erik</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.sigmafield.org/2009/09/22/r-function-of-the-day-rle\"> sigmafield - R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div class=\"field field-name-body field-type-text-with-summary field-label-hidden\">\n<div class=\"field-item even\" property=\"content:encoded\"><p>\n<i>Edit: This post originally appeared on my WordPress blog on September 22, 2009. I present it here in its original form.</i>\n</p><p>\nThe <b>R Function of the Day</b> series will focus on describing in <i>plain language</i> how certain <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> functions work, focusing on simple examples that you can apply to gain insight into your own data. \n</p>\n<p>\nToday, I will discuss the <a href=\"http://finzi.psych.upenn.edu/R/library/base/html/rle.html\" rel=\"nofollow\" target=\"_blank\"><b>rle</b></a> function. \n</p>\n<div class=\"outline-3\" id=\"outline-container-1.1\">\n<h3 id=\"sec-1.1\">What situation is rle useful in? </h3>\n<div id=\"text-1.1\">\n<p>\nThe <b>rle</b> function is named for the acronym of “run length encoding”. What does the term “run length” mean?  Imagine you <a href=\"http://www.codingthewheel.com/archives/the-coin-flip-a-fundamentally-unfair-proposition\" rel=\"nofollow\" target=\"_blank\">flip a coin</a> 10 times and record the outcome as “H” if the coin lands showing heads, and “T” if the coin lands showing tails.  You want to know what the longest streak of heads is.  You also want to know the longest streak of tails.  The <i>run length</i> is the length of consecutive types of a flip.  If the outcome of our experiment was “H T T H H H H H T H”, the longest run length of heads would be 5, since there are 5 consecutive heads starting at position 4, and the longest run length for tails would be 2, since there are two consecutive heads starting at position 2. If you just have 10 flips, it is pretty easy to simply eyeball the answer.  But if you had 100 flips, or 100,000, it would not be easy at all.  However, it is very easy with the <b>rle</b> function in R! That function will <i>encode</i> the entire result into its run lengths.  Using the example above, we start with 1 H, then 2 Ts, 5 Hs, 1 T, and finally 1 H.  That is exactly what the <b>rle</b> function computes, as you will see below in the example.\n</p>\n</div>\n</div>\n<div class=\"outline-3\" id=\"outline-container-1.2\">\n<h3 id=\"sec-1.2\">How do I use rle? </h3>\n<div id=\"text-1.2\">\n<p>\nFirst, we will simulate the results of a the coin flipping experiment.  This is trivial in R using the <b>sample</b> function. We simulate flipping a coin 1000 times. \n</p>\n<pre>\n\n&gt; ## generate data for coin flipping example \n&gt; coin &lt;- sample(c(\"H\", \"T\"), 1000, replace = TRUE)\n&gt; table(coin) \ncoin\n  H   T \n501 499  \n&gt; head(coin, n = 20)\n [1] \"T\" \"H\" \"T\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\"\n[15] \"T\" \"T\" \"H\" \"H\" \"H\" \"H\" \n\n</pre>\n<p>\nWe can see the results of the first 20 tosses by using the <b>head</b> (as in “beginning”, nothing to do with coin tosses) function on our <b>coin</b> vector. \n</p>\n<p>\nSo, our question is, what is the longest run of heads, and longest run of tails?  First, what does the output of the <b>rle</b> function look like? \n</p>\n<pre>\n\n&gt; ## use the rle function on our SMALL EXAMPLE above\n&gt; ## note results MATCH what I described above... \n&gt; rle(c(\"H\", \"T\", \"T\", \"H\", \"H\", \"H\", \"H\", \"H\", \"T\", \"H\"))\nRun Length Encoding\n  lengths: int [1:5] 1 2 5 1 1\n  values : chr [1:5] \"H\" \"T\" \"H\" \"T\" \"H\" \n&gt; ## use the rle function on our SIMULATED data\n&gt; coin.rle &lt;- rle(coin)\n&gt; ## what is the structure of the returned result? \n&gt; str(coin.rle)\nList of 2\n $ lengths: int [1:500] 1 1 3 1 1 1 2 1 1 1 ...\n $ values : chr [1:500] \"T\" \"H\" \"T\" \"H\" ...\n - attr(*, \"class\")= chr \"rle\" \n&gt; ## sort the data, this shows the longest run of\n&gt; ## ANY type (heads OR tails)\n&gt; sort(coin.rle$lengths, decreasing = TRUE)\n  [1] 9 8 7 7 7 7 7 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 5 5 5 5 5\n [28] 5 5 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4\n [55] 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n [82] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[109] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2\n[136] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[163] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[190] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[217] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[244] 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[271] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[298] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[325] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[352] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[379] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[406] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[433] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[460] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[487] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n&gt; ## use the tapply function to break up\n&gt; ## into 2 groups, and then find the maximum\n&gt; ## within each group\n&gt; \n&gt; tapply(coin.rle$lengths, coin.rle$values, max)\nH T \n9 8  \n\n</pre>\n<p>\nSo in this case the longest run of heads is 9 and the longest run of tails is 8.  The <a href=\"http://blogisticreflections.wordpress.com/2009/09/20/r-function-of-the-day-tapply/#\" rel=\"nofollow\" target=\"_blank\"><b>tapply</b></a> function was discussed in a previous <b>R Function of the Day</b> article. \n</p>\n</div>\n</div>\n<div class=\"outline-3\" id=\"outline-container-1.3\">\n<h3 id=\"sec-1.3\">Summary of rle </h3>\n<div id=\"text-1.3\">\n<p>\nThe <b>rle</b> function performs run length encoding.  Although it is not used terribly often when programming in R, there are certain situations, such as time series and longitudinal data analysis, where knowing how it works can save a lot of time and give you insight into your data. \n</p>\n</div>\n</div></div>\n</div>\n<section class=\"field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix\">\n<h2 class=\"field-label\">Tags: </h2>\n<ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"dc:subject\"><a href=\"http://www.sigmafield.org/tags/r\" property=\"rdfs:label skos:prefLabel\" rel=\"nofollow\" target=\"_blank\" typeof=\"skos:Concept\">R</a></li>\n</ul>\n</section>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.sigmafield.org/2009/09/22/r-function-of-the-day-rle\"> sigmafield - R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "R Function of the Day: rle\nPosted on\nSeptember 22, 2009\nby\nerik\nin Uncategorized | 0 Comments\n[This article was first published on\nsigmafield - R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEdit: This post originally appeared on my WordPress blog on September 22, 2009. I present it here in its original form.\nThe\nR Function of the Day\nseries will focus on describing in\nplain language\nhow certain\nR\nfunctions work, focusing on simple examples that you can apply to gain insight into your own data.\nToday, I will discuss the\nrle\nfunction.\nWhat situation is rle useful in?\nThe\nrle\nfunction is named for the acronym of “run length encoding”. What does the term “run length” mean?  Imagine you\nflip a coin\n10 times and record the outcome as “H” if the coin lands showing heads, and “T” if the coin lands showing tails.  You want to know what the longest streak of heads is.  You also want to know the longest streak of tails.  The\nrun length\nis the length of consecutive types of a flip.  If the outcome of our experiment was “H T T H H H H H T H”, the longest run length of heads would be 5, since there are 5 consecutive heads starting at position 4, and the longest run length for tails would be 2, since there are two consecutive heads starting at position 2. If you just have 10 flips, it is pretty easy to simply eyeball the answer.  But if you had 100 flips, or 100,000, it would not be easy at all.  However, it is very easy with the\nrle\nfunction in R! That function will\nencode\nthe entire result into its run lengths.  Using the example above, we start with 1 H, then 2 Ts, 5 Hs, 1 T, and finally 1 H.  That is exactly what the\nrle\nfunction computes, as you will see below in the example.\nHow do I use rle?\nFirst, we will simulate the results of a the coin flipping experiment.  This is trivial in R using the\nsample\nfunction. We simulate flipping a coin 1000 times.\n> ## generate data for coin flipping example \n> coin <- sample(c(\"H\", \"T\"), 1000, replace = TRUE)\n> table(coin) \ncoin\n  H   T \n501 499  \n> head(coin, n = 20)\n [1] \"T\" \"H\" \"T\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\" \"T\" \"H\" \"T\" \"H\" \"T\"\n[15] \"T\" \"T\" \"H\" \"H\" \"H\" \"H\"\nWe can see the results of the first 20 tosses by using the\nhead\n(as in “beginning”, nothing to do with coin tosses) function on our\ncoin\nvector.\nSo, our question is, what is the longest run of heads, and longest run of tails?  First, what does the output of the\nrle\nfunction look like?\n> ## use the rle function on our SMALL EXAMPLE above\n> ## note results MATCH what I described above... \n> rle(c(\"H\", \"T\", \"T\", \"H\", \"H\", \"H\", \"H\", \"H\", \"T\", \"H\"))\nRun Length Encoding\n  lengths: int [1:5] 1 2 5 1 1\n  values : chr [1:5] \"H\" \"T\" \"H\" \"T\" \"H\" \n> ## use the rle function on our SIMULATED data\n> coin.rle <- rle(coin)\n> ## what is the structure of the returned result? \n> str(coin.rle)\nList of 2\n $ lengths: int [1:500] 1 1 3 1 1 1 2 1 1 1 ...\n $ values : chr [1:500] \"T\" \"H\" \"T\" \"H\" ...\n - attr(*, \"class\")= chr \"rle\" \n> ## sort the data, this shows the longest run of\n> ## ANY type (heads OR tails)\n> sort(coin.rle$lengths, decreasing = TRUE)\n  [1] 9 8 7 7 7 7 7 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 5 5 5 5 5\n [28] 5 5 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4\n [55] 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n [82] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3\n[109] 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2\n[136] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[163] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[190] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[217] 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\n[244] 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[271] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[298] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[325] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[352] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[379] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[406] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[433] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[460] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n[487] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n> ## use the tapply function to break up\n> ## into 2 groups, and then find the maximum\n> ## within each group\n> \n> tapply(coin.rle$lengths, coin.rle$values, max)\nH T \n9 8\nSo in this case the longest run of heads is 9 and the longest run of tails is 8.  The\ntapply\nfunction was discussed in a previous\nR Function of the Day\narticle.\nSummary of rle\nThe\nrle\nfunction performs run length encoding.  Although it is not used terribly often when programming in R, there are certain situations, such as time series and longitudinal data analysis, where knowing how it works can save a lot of time and give you insight into your data.\nTags:\nR\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nsigmafield - R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Edit: This post originally appeared on my Wordpress blog on September 22, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on sim...",
+    "meta_keywords": null,
+    "og_description": "Edit: This post originally appeared on my Wordpress blog on September 22, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on sim...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "R Function of the Day: rle | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.6,
+    "sitemap_lastmod": "2009-09-23T03:56:54+00:00",
+    "twitter_description": "Edit: This post originally appeared on my Wordpress blog on September 22, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on sim...",
+    "twitter_title": "R Function of the Day: rle | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-rle-2/",
+    "word_count": 1321
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "uuid": "21192629-1453-467d-a516-7726cf55fc97",
+  "created_at": "2025-11-17 20:41:44",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2007/08/review-of-jim-alberts-bayesian-computation-with-r/",
+    "crawled_at": "2025-11-17T10:56:00.568811",
+    "external_links": [
+      {
+        "href": "https://realizationsinbiostatistics.blogspot.com/2007/08/review-of-jim-alberts-bayesian.html",
+        "text": "Realizations in Biostatistics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.stat.columbia.edu/~cook/movabletype/archives/2007/06/bayesian_comput.html",
+        "text": "So did Gelman"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R statistical package"
+      },
+      {
+        "href": "https://realizationsinbiostatistics.blogspot.com/2007/08/review-of-jim-alberts-bayesian.html",
+        "text": "Realizations in Biostatistics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Review of Jim Albert’s Bayesian Computation with R | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-johnson/",
+        "text": "John Johnson"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-59519 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Review of Jim Albert’s Bayesian Computation with R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 14, 2007</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-johnson/\">John Johnson</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://realizationsinbiostatistics.blogspot.com/2007/08/review-of-jim-alberts-bayesian.html\"> Realizations in Biostatistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->When I first read Andrew Gelman’s quick off-the-cuff review of the book <span style=\"font-style: italic;\">Bayesian Computation with R</span>, I thought it was a bit harsh. <a href=\"http://www.stat.columbia.edu/~cook/movabletype/archives/2007/06/bayesian_comput.html\" rel=\"nofollow\" target=\"_blank\">So did Gelman</a>.<br/><br/>I thumbed through the book at the joint statistical meetings, and decided to buy it along with <span style=\"font-style: italic;\">Bayesian Core</span>. And I’m glad I did. Albert clearly positioned the book to be a companion to an introductory and perhaps even intermediate course in Bayesian statistics. I’ve found the book to be very useful to learning about Bayesian computation and deepening my understanding of Bayesian statistics.<br/><br/><span style=\"font-weight: bold;\">The Bad</span><br/><br/>I include the bad first because there are few bad things.<br/><br/><ul><li>I thought the functions <span style=\"font-family: courier new;\">laplace</span> (which computes the normal approximation to a posterior using the Laplacian method) and the linear regression functions were a bit black-boxish. The text described these functions generally, but not nearly in the detail that it described other important functions such as <span style=\"font-family: courier new;\">rwmetrop</span> and <span style=\"font-family: courier new;\">indepmetrop</span> (which run random walk and independence Metropolis chains). Since I think that <span style=\"font-family: courier new;\">laplace</span> is a very useful function, I think it would have been better to go into a little more detail. However, Albert did show the function in action in many different situations, including the computation of Bayes factors.</li><li>The choice of starting points for <span style=\"font-family: courier new;\">laplace</span> seemed black-boxish as well. They were clearly chosen to be close to the mode (one of the functions of the function is to compute a mode of the log posterior distribution), but Albert doesn’t really go into how to choose “intelligent” starting points. I recommend using a grid search using the R function <span style=\"font-family: courier new;\">expand.grid</span> (and patience).</li><li>I wish the Chapter on MCMC included a problem on Gibbs sampling, though there is Chapter on Gibbs sampling in the end.</li><li>I wish it included a little more detail about accounting for the Jacobian when parameters are transformed. (Most parameters are transformed to the real line.)<br/></li><li>I wish the book included more about adaptive rejection sampling.</li></ul><span style=\"font-weight: bold;\">The Good</span><br/><br/>In no particular order:<br/><ul><li>Albert includes detailed examples from a wide variety of fields. The examples vary in difficulty from run-of-the-mill (such as estimating a single proportion) to the sophisticated (such as Weibull survival regression with censored data). Regression and generalized linear models are covered.<br/></li><li>The exercises really deepen the understanding of the material. You really need a computer with the <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R statistical package</a> to read this book and get the most out of it. Take the time to work through the examples. Because I did this, I much better understand the Metropolis algorithms and the importance of choosing the right algorithm (and right parameters) to run an MCMC. Do it incorrectly and the results are compromised due to high (sometimes very high) autocorrelation and poor mixing.</li><li>The book is accompanied by a package LearnBayes that contain a lot of good datasets and some very useful functions for learning and general use. The laplace, metropolis, and gibbs (which actually implements Metropolis within Gibbs sampling) functions all can be used outside of the context of the book.</li><li>The book covers several different sampling algorithms, including importance, rejection sampling (not adaptive), and sample importance resampling. Along with this material are examples and exercises that show the importance of good proposal densities and what can happen with bad proposal densities.</li><li>A lot of the exercises extend exercises in previous chapters, so that the active reader gets to compare different approaches to the same problem.</li><li>The book heavily refers to other books on Bayesian statistics, such as Berry and Stangl’s <span style=\"font-style: italic;\">Bayesian Biostatistics</span>, Carlin and Louis’s <span style=\"font-style: italic;\">Bayes and Emprical Bayes for Data Analysis</span>, and Gelman, et al’s <span style=\"font-style: italic;\">Bayesian Data Analysis</span>. In doing so, this book increases the instructive value of the other Bayesian books on the market.<br/></li></ul>Overall, this book is a great companion to any effort to learn about Bayesian statistics (estimation and inference) and Bayesian computation. Like any book, it’s rewards are commensurate with the effort. I highly recommend working the exercises and going beyond the scope of the exercises (such as investigating diagnostics when not explicitly directed to do so). Read/work this book in conjunction with other heavy-hitter books such as <span style=\"font-style: italic;\">Bayes and Empirical Bayes</span> or <span style=\"font-style: italic;\">Bayesian Data Analysis</span>.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://realizationsinbiostatistics.blogspot.com/2007/08/review-of-jim-alberts-bayesian.html\"> Realizations in Biostatistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Review of Jim Albert’s Bayesian Computation with R\nPosted on\nAugust 14, 2007\nby\nJohn Johnson\nin Uncategorized | 0 Comments\n[This article was first published on\nRealizations in Biostatistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhen I first read Andrew Gelman’s quick off-the-cuff review of the book\nBayesian Computation with R\n, I thought it was a bit harsh.\nSo did Gelman\n.\nI thumbed through the book at the joint statistical meetings, and decided to buy it along with\nBayesian Core\n. And I’m glad I did. Albert clearly positioned the book to be a companion to an introductory and perhaps even intermediate course in Bayesian statistics. I’ve found the book to be very useful to learning about Bayesian computation and deepening my understanding of Bayesian statistics.\nThe Bad\nI include the bad first because there are few bad things.\nI thought the functions\nlaplace\n(which computes the normal approximation to a posterior using the Laplacian method) and the linear regression functions were a bit black-boxish. The text described these functions generally, but not nearly in the detail that it described other important functions such as\nrwmetrop\nand\nindepmetrop\n(which run random walk and independence Metropolis chains). Since I think that\nlaplace\nis a very useful function, I think it would have been better to go into a little more detail. However, Albert did show the function in action in many different situations, including the computation of Bayes factors.\nThe choice of starting points for\nlaplace\nseemed black-boxish as well. They were clearly chosen to be close to the mode (one of the functions of the function is to compute a mode of the log posterior distribution), but Albert doesn’t really go into how to choose “intelligent” starting points. I recommend using a grid search using the R function\nexpand.grid\n(and patience).\nI wish the Chapter on MCMC included a problem on Gibbs sampling, though there is Chapter on Gibbs sampling in the end.\nI wish it included a little more detail about accounting for the Jacobian when parameters are transformed. (Most parameters are transformed to the real line.)\nI wish the book included more about adaptive rejection sampling.\nThe Good\nIn no particular order:\nAlbert includes detailed examples from a wide variety of fields. The examples vary in difficulty from run-of-the-mill (such as estimating a single proportion) to the sophisticated (such as Weibull survival regression with censored data). Regression and generalized linear models are covered.\nThe exercises really deepen the understanding of the material. You really need a computer with the\nR statistical package\nto read this book and get the most out of it. Take the time to work through the examples. Because I did this, I much better understand the Metropolis algorithms and the importance of choosing the right algorithm (and right parameters) to run an MCMC. Do it incorrectly and the results are compromised due to high (sometimes very high) autocorrelation and poor mixing.\nThe book is accompanied by a package LearnBayes that contain a lot of good datasets and some very useful functions for learning and general use. The laplace, metropolis, and gibbs (which actually implements Metropolis within Gibbs sampling) functions all can be used outside of the context of the book.\nThe book covers several different sampling algorithms, including importance, rejection sampling (not adaptive), and sample importance resampling. Along with this material are examples and exercises that show the importance of good proposal densities and what can happen with bad proposal densities.\nA lot of the exercises extend exercises in previous chapters, so that the active reader gets to compare different approaches to the same problem.\nThe book heavily refers to other books on Bayesian statistics, such as Berry and Stangl’s\nBayesian Biostatistics\n, Carlin and Louis’s\nBayes and Emprical Bayes for Data Analysis\n, and Gelman, et al’s\nBayesian Data Analysis\n. In doing so, this book increases the instructive value of the other Bayesian books on the market.\nOverall, this book is a great companion to any effort to learn about Bayesian statistics (estimation and inference) and Bayesian computation. Like any book, it’s rewards are commensurate with the effort. I highly recommend working the exercises and going beyond the scope of the exercises (such as investigating diagnostics when not explicitly directed to do so). Read/work this book in conjunction with other heavy-hitter books such as\nBayes and Empirical Bayes\nor\nBayesian Data Analysis\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRealizations in Biostatistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "When I first read Andrew Gelman's quick off-the-cuff review of the book Bayesian Computation with R, I thought it was a bit harsh. So did Gelman.I thumbed through the book at the joint statistical meetings, and decided to buy it along with Bayesian Cor...",
+    "meta_keywords": null,
+    "og_description": "When I first read Andrew Gelman's quick off-the-cuff review of the book Bayesian Computation with R, I thought it was a bit harsh. So did Gelman.I thumbed through the book at the joint statistical meetings, and decided to buy it along with Bayesian Cor...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Review of Jim Albert’s Bayesian Computation with R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.3,
+    "sitemap_lastmod": "2007-08-16T14:25:39+00:00",
+    "twitter_description": "When I first read Andrew Gelman's quick off-the-cuff review of the book Bayesian Computation with R, I thought it was a bit harsh. So did Gelman.I thumbed through the book at the joint statistical meetings, and decided to buy it along with Bayesian Cor...",
+    "twitter_title": "Review of Jim Albert’s Bayesian Computation with R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2007/08/review-of-jim-alberts-bayesian-computation-with-r/",
+    "word_count": 853
+  }
+}

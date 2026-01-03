@@ -1,0 +1,115 @@
+{
+  "uuid": "154aa045-278c-44fb-94cd-72e0994a645f",
+  "created_at": "2025-11-22 19:57:29",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/10/futures-interrupts-crashes-and-retries/",
+    "crawled_at": "2025-11-22T10:41:55.620108",
+    "external_links": [
+      {
+        "href": "https://www.jottr.org/2025/10/16/interrupts-crashes-retries/",
+        "text": "JottR on R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.jottr.org/2025/06/19/futureverse-10-years/",
+        "text": "celebrates ten years on CRAN"
+      },
+      {
+        "href": "https://www.futureverse.org/",
+        "text": "futureverse"
+      },
+      {
+        "href": "https://www.jottr.org/2025/10/16/interrupts-crashes-retries/",
+        "text": "JottR on R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Futures: Interrupts, Crashes, and Retries | R-bloggers",
+    "images": [
+      {
+        "alt": "Interrupts 🛑, Crashes 💥, Retries 🔁",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Interrupts 🛑, Crashes 💥, Retries 🔁",
+        "base64": null,
+        "src": "https://i0.wp.com/www.jottr.org/post/interrupts-crashes-retries.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jottr-on-r/",
+        "text": "JottR on R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-396155 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Futures: Interrupts, Crashes, and Retries</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jottr-on-r/\">JottR on R</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.jottr.org/2025/10/16/interrupts-crashes-retries/\"> JottR on R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<!--\n<div style=\"font-weight: bold; font-size: 200%; padding: 5ex\">\nInterrupts 🛑<br><br>\nCrashes 💥<br><br>\nRetries 🔁\n</div>\n-->\n<p><img alt=\"Interrupts 🛑, Crashes 💥, Retries 🔁\" data-lazy-src=\"https://i0.wp.com/www.jottr.org/post/interrupts-crashes-retries.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 30%; padding: 2ex; border: 1px solid; margin-left: 3ex; float: right;\"/><noscript><img alt=\"Interrupts 🛑, Crashes 💥, Retries 🔁\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.jottr.org/post/interrupts-crashes-retries.png?w=578&amp;ssl=1\" style=\"width: 30%; padding: 2ex; border: 1px solid; margin-left: 3ex; float: right;\"/></noscript></p>\n<p>The <strong>future</strong> package <a href=\"https://www.jottr.org/2025/06/19/futureverse-10-years/\" rel=\"nofollow\" target=\"_blank\">celebrates ten years on CRAN</a> as of June 19,\n2025. I got a bit stalled over the holidays and while attending the\nfantastic useR! 2025 conference, but, as promised, here is the fourth\nin a series of blog posts highlighting recent improvements to the\n<strong><a href=\"https://www.futureverse.org/\" rel=\"nofollow\" target=\"_blank\">futureverse</a></strong> ecosystem.</p>\n<h2 id=\"tl-dr\">TL;DR</h2>\n<p>In the past, futures that were interrupted or abruptly terminated\nwere likely putting the future ecosystem in a corrupt state, where you\nhad to manually restart the future backend. This is no longer needed;</p>\n<ol>\n<li><p>Futures now handle evaluation interrupts</p></li>\n<li><p>Futures now handle abrupt parallel worker terminations (“crashes”)</p></li>\n<li><p>Crashed workers are automatically restarted</p></li>\n</ol>\n<h2 id=\"interrupts\">Interrupts 🛑</h2>\n<p>Below is a future that emulates an R expression being interrupted\nmid-evaluation:</p>\n<pre>library(future)\n\nf &lt;- future({ a &lt;- 42; rlang::interrupt(); 2 * a })\n</pre>\n<p>If we attempt to retrieve the value of this future, we get:</p>\n<pre>v &lt;- value(f)\n#&gt; Error: A future (&lt;unnamed-1&gt;) of class SequentialFuture was interrupted\n#&gt; at 2025-10-15T15:37:09, while running on 'localhost' (pid 530375)\n</pre>\n<p>This works the same across all future backends, e.g.</p>\n<pre>plan(future.mirai::mirai_multisession)\nf &lt;- future({ a &lt;- 42; rlang::interrupt(); 2 * a })\nv &lt;- value(f)\n#&gt; Error: A future (&lt;unnamed-2&gt;) of class MiraiMultisessionFuture was\n#&gt; interrupted at 2025-10-15T15:39:17, while running on 'localhost' (pid 531734)\n</pre>\n<p>Having R interrupt itself like this is uncommon, but it can happen if\n<code>plan(sequential)</code> is used and the user presses <kbd>Ctrl-C</kbd>\n(common) or sends <code>kill -SIGINT &lt;worker-pid&gt;</code> (less common).</p>\n<p>There are other ways to interrupt a future - more on that in a future\npost.</p>\n<h2 id=\"crashed-workers\">Crashed workers 💥</h2>\n<p>Below is a future that emulates a parallel worker abruptly terminating\n(“crashing”) during evaluation:</p>\n<pre>library(future)\nplan(multisession)\n\nf &lt;- future({ a &lt;- 42; tools::pskill(Sys.getpid()); 2 * a })\n</pre>\n<p>Here <code>tools::pskill(Sys.getpid())</code> kills the R worker process\nevaluating the call.  In practice, a worker might crash for various\nreasons. For instance,</p>\n<ul>\n<li><p>The R process may run out of memory and be killed by the OS (“OOM\nkiller”)</p></li>\n<li><p>In an HPC environment, the job scheduler might terminate the worker\nif it exceeds memory or runtime limits</p></li>\n<li><p>The user might manually kill the worker (e.g., <code>kill -SIGQUIT\n&lt;worker-pid&gt;</code>) or cancel the HPC job (<code>scancel &lt;job-id&gt;</code> or <code>qdel\n&lt;job-id&gt;</code>)</p></li>\n</ul>\n<p>Regardless how the parallel worker is terminated, requesting the value\nyields:</p>\n<pre>v &lt;- value(f)\n#&gt; Error: Future (&lt;unnamed-4&gt;) of class MultisessionFuture interrupted,\n#&gt; while running on 'localhost' (pid 538181)\n</pre>\n<p>Technically, this error also inherits <code>FutureInterruptError</code>, just\nlike when there is a user interrupt. This behavior is consistent\nacross all backends, though some provide more detailed error messages.</p>\n<p>Crashed workers are automatically restarted by the future backend,\nmeaning that you no longer have to manually restart the backend to\nachieve the same.</p>\n<p>Note that only the worker is restarted - the future itself is <em>not</em>.</p>\n<h2 id=\"retrying-an-interrupted-future\">Retrying an interrupted future 🔁</h2>\n<p>Regardless of why a future was interrupted, you can restart it by\nfirst calling <code>reset()</code>, then triggering re-evaluation via\n<code>resolved()</code> or <code>value()</code>.</p>\n<p>For example, consider a problematic function that crashes the worker\nabout 50% of the time:</p>\n<pre>problematic_fcn &lt;- function(x) {\n  if (proc.time()[3] %% 1 &lt; 0.5)\n    tools::pskill(Sys.getpid())\n  sqrt(x)\n}\n</pre>\n<p>If called in a parallel worker, we could retry, say, up to ten times,\nbefore giving up:</p>\n<pre>library(future)\nplan(multisession)\n\nf &lt;- future({ problematic_fcn(9) })\n\nfor (kk in 10:1) \n  tryCatch({\n    v &lt;- value(f)\n    break\n  }, FutureInterruptError = function(e) {\n    if (kk == 1) stop(e)\n    message(\"future interrupted, retrying ...\") \n    f &lt;- reset(f)\n  })\n}\n\nmessage(\"value: \", v)\n</pre>\n<p>This might result in:</p>\n<pre>future interrupted, retrying ...\nfuture interrupted, retrying ...\nfuture interrupted, retrying ...\nvalue: 3\n</pre>\n<p>It is a fun excercise to write a help function <code>future_retry()</code> to\nsimplify this as:</p>\n<pre>f &lt;- future_retry({ problematic_fcn(9) }, times = 10)\nmessage(\"value: \", v)\n</pre>\n<p><em>May the future be with you!</em></p>\n<p>Henrik</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.jottr.org/2025/10/16/interrupts-crashes-retries/\"> JottR on R</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Futures: Interrupts, Crashes, and Retries\nPosted on\nOctober 15, 2025\nby\nJottR on R\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJottR on R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe\nfuture\npackage\ncelebrates ten years on CRAN\nas of June 19,\n2025. I got a bit stalled over the holidays and while attending the\nfantastic useR! 2025 conference, but, as promised, here is the fourth\nin a series of blog posts highlighting recent improvements to the\nfutureverse\necosystem.\nTL;DR\nIn the past, futures that were interrupted or abruptly terminated\nwere likely putting the future ecosystem in a corrupt state, where you\nhad to manually restart the future backend. This is no longer needed;\nFutures now handle evaluation interrupts\nFutures now handle abrupt parallel worker terminations (“crashes”)\nCrashed workers are automatically restarted\nInterrupts 🛑\nBelow is a future that emulates an R expression being interrupted\nmid-evaluation:\nlibrary(future)\n\nf <- future({ a <- 42; rlang::interrupt(); 2 * a })\nIf we attempt to retrieve the value of this future, we get:\nv <- value(f)\n#> Error: A future (<unnamed-1>) of class SequentialFuture was interrupted\n#> at 2025-10-15T15:37:09, while running on 'localhost' (pid 530375)\nThis works the same across all future backends, e.g.\nplan(future.mirai::mirai_multisession)\nf <- future({ a <- 42; rlang::interrupt(); 2 * a })\nv <- value(f)\n#> Error: A future (<unnamed-2>) of class MiraiMultisessionFuture was\n#> interrupted at 2025-10-15T15:39:17, while running on 'localhost' (pid 531734)\nHaving R interrupt itself like this is uncommon, but it can happen if\nplan(sequential)\nis used and the user presses\nCtrl-C\n(common) or sends\nkill -SIGINT <worker-pid>\n(less common).\nThere are other ways to interrupt a future - more on that in a future\npost.\nCrashed workers 💥\nBelow is a future that emulates a parallel worker abruptly terminating\n(“crashing”) during evaluation:\nlibrary(future)\nplan(multisession)\n\nf <- future({ a <- 42; tools::pskill(Sys.getpid()); 2 * a })\nHere\ntools::pskill(Sys.getpid())\nkills the R worker process\nevaluating the call.  In practice, a worker might crash for various\nreasons. For instance,\nThe R process may run out of memory and be killed by the OS (“OOM\nkiller”)\nIn an HPC environment, the job scheduler might terminate the worker\nif it exceeds memory or runtime limits\nThe user might manually kill the worker (e.g.,\nkill -SIGQUIT\n<worker-pid>\n) or cancel the HPC job (\nscancel <job-id>\nor\nqdel\n<job-id>\n)\nRegardless how the parallel worker is terminated, requesting the value\nyields:\nv <- value(f)\n#> Error: Future (<unnamed-4>) of class MultisessionFuture interrupted,\n#> while running on 'localhost' (pid 538181)\nTechnically, this error also inherits\nFutureInterruptError\n, just\nlike when there is a user interrupt. This behavior is consistent\nacross all backends, though some provide more detailed error messages.\nCrashed workers are automatically restarted by the future backend,\nmeaning that you no longer have to manually restart the backend to\nachieve the same.\nNote that only the worker is restarted - the future itself is\nnot\n.\nRetrying an interrupted future 🔁\nRegardless of why a future was interrupted, you can restart it by\nfirst calling\nreset()\n, then triggering re-evaluation via\nresolved()\nor\nvalue()\n.\nFor example, consider a problematic function that crashes the worker\nabout 50% of the time:\nproblematic_fcn <- function(x) {\n  if (proc.time()[3] %% 1 < 0.5)\n    tools::pskill(Sys.getpid())\n  sqrt(x)\n}\nIf called in a parallel worker, we could retry, say, up to ten times,\nbefore giving up:\nlibrary(future)\nplan(multisession)\n\nf <- future({ problematic_fcn(9) })\n\nfor (kk in 10:1) \n  tryCatch({\n    v <- value(f)\n    break\n  }, FutureInterruptError = function(e) {\n    if (kk == 1) stop(e)\n    message(\"future interrupted, retrying ...\") \n    f <- reset(f)\n  })\n}\n\nmessage(\"value: \", v)\nThis might result in:\nfuture interrupted, retrying ...\nfuture interrupted, retrying ...\nfuture interrupted, retrying ...\nvalue: 3\nIt is a fun excercise to write a help function\nfuture_retry()\nto\nsimplify this as:\nf <- future_retry({ problematic_fcn(9) }, times = 10)\nmessage(\"value: \", v)\nMay the future be with you!\nHenrik\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJottR on R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "The future package celebrates ten years on CRAN as of June 19, 2025. I got a bit stalled over the holidays and while attending the fantastic useR! 2025 conference, but, as promised, here is the fourth in a series of blog posts highlighting recent...",
+    "meta_keywords": null,
+    "og_description": "The future package celebrates ten years on CRAN as of June 19, 2025. I got a bit stalled over the holidays and while attending the fantastic useR! 2025 conference, but, as promised, here is the fourth in a series of blog posts highlighting recent...",
+    "og_image": "https://www.jottr.org/post/interrupts-crashes-retries.png",
+    "og_title": "Futures: Interrupts, Crashes, and Retries | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.8,
+    "sitemap_lastmod": null,
+    "twitter_description": "The future package celebrates ten years on CRAN as of June 19, 2025. I got a bit stalled over the holidays and while attending the fantastic useR! 2025 conference, but, as promised, here is the fourth in a series of blog posts highlighting recent...",
+    "twitter_title": "Futures: Interrupts, Crashes, and Retries | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/10/futures-interrupts-crashes-and-retries/",
+    "word_count": 762
+  }
+}

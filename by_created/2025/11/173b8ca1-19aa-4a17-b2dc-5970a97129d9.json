@@ -1,0 +1,191 @@
+{
+  "uuid": "173b8ca1-19aa-4a17-b2dc-5970a97129d9",
+  "created_at": "2025-11-17 20:40:54",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/05/r-tips-use-read-table-instead-of-strsplit-to-split-a-text-column-into-multiple-columns/",
+    "crawled_at": "2025-11-17T10:37:11.123169",
+    "external_links": [
+      {
+        "href": "http://www.cybaea.net/Blogs/Data/R-tips-Use-read_table-instead-of-strsplit-to-split-a-text-column-into-multiple-columns.html",
+        "text": "CYBAEA Data and Analysis"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://staff.pubhealth.ku.dk/~pd/",
+        "text": "Peter Dalgaard"
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:yIl2AUoC8zA",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:F7zBnMyn0Lo",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:V_sGLiPBpWU",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:qj6IDK7rITs",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:gIN9vFwOqvQ",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:TzevzKxY174",
+        "text": null
+      },
+      {
+        "href": "http://www.cybaea.net/Blogs/Data/R-tips-Use-read_table-instead-of-strsplit-to-split-a-text-column-into-multiple-columns.html",
+        "text": "CYBAEA Data and Analysis"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R tips: Use read.table instead of strsplit to split a text column into multiple columns | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:F7zBnMyn0Lo"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:F7zBnMyn0Lo"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:V_sGLiPBpWU"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:V_sGLiPBpWU"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:gIN9vFwOqvQ"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:gIN9vFwOqvQ"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/uowubtD_s_4"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/uowubtD_s_4"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/allan-engelhardt/",
+        "text": "Allan Engelhardt"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-1536 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R tips: Use read.table instead of strsplit to split a text column into multiple columns</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 29, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/allan-engelhardt/\">Allan Engelhardt</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.cybaea.net/Blogs/Data/R-tips-Use-read_table-instead-of-strsplit-to-split-a-text-column-into-multiple-columns.html\"> CYBAEA Data and Analysis</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div xmlns=\"http://www.w3.org/1999/xhtml\"><p>\r\nSomeone on the R-help mailing list had a data frame with a column containing IP addresses in quad-dot format (e.g. 1.10.100.200).  He wanted to sort by this column and I proposed a solution involving <code>strsplit</code>.  But <a href=\"http://staff.pubhealth.ku.dk/~pd/\" rel=\"nofollow\" target=\"_blank\">Peter Dalgaard</a> comes up with a much nicer method using <code>read.table</code> on a <code>textConnection</code> object:\r\n</p>\n<pre>&gt; a &lt;- data.frame(cbind(color=c(\"yellow\",\"red\",\"blue\",\"red\"),\r\n                        status=c(\"no\",\"yes\",\"yes\",\"no\"),\r\n                        ip=c(\"162.131.58.26\",\"2.131.58.16\",\"2.2.58.10\",\"162.131.58.17\")))\r\n&gt; con &lt;- textConnection(as.character(a$ip))\r\n&gt; o &lt;- do.call(order,read.table(con, sep=\".\"))\r\n&gt; close(con)\r\n&gt; a[o,]\r\n   color status            ip\r\n3   blue    yes     2.2.58.10\r\n2    red    yes   2.131.58.16\r\n4    red     no 162.131.58.17\r\n1 yellow     no 162.131.58.26\r\n</pre>\n<p>\r\nThat is very, very neat!  Thank you Peter.\r\n</p>\n</div><div class=\"feedflare\">\n<a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:yIl2AUoC8zA\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:F7zBnMyn0Lo\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4%3AJUmeZOR5FJ8%3AF7zBnMyn0Lo&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:F7zBnMyn0Lo\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:F7zBnMyn0Lo\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:V_sGLiPBpWU\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4%3AJUmeZOR5FJ8%3AV_sGLiPBpWU&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:V_sGLiPBpWU\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:V_sGLiPBpWU\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:qj6IDK7rITs\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:gIN9vFwOqvQ\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4%3AJUmeZOR5FJ8%3AgIN9vFwOqvQ&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:gIN9vFwOqvQ\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=uowubtD_s_4:JUmeZOR5FJ8:gIN9vFwOqvQ\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=uowubtD_s_4:JUmeZOR5FJ8:TzevzKxY174\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\"/></noscript></a>\n</div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/uowubtD_s_4?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/uowubtD_s_4\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/uowubtD_s_4\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.cybaea.net/Blogs/Data/R-tips-Use-read_table-instead-of-strsplit-to-split-a-text-column-into-multiple-columns.html\"> CYBAEA Data and Analysis</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "R tips: Use read.table instead of strsplit to split a text column into multiple columns\nPosted on\nMay 29, 2009\nby\nAllan Engelhardt\nin Uncategorized | 0 Comments\n[This article was first published on\nCYBAEA Data and Analysis\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSomeone on the R-help mailing list had a data frame with a column containing IP addresses in quad-dot format (e.g. 1.10.100.200).  He wanted to sort by this column and I proposed a solution involving\nstrsplit\n.  But\nPeter Dalgaard\ncomes up with a much nicer method using\nread.table\non a\ntextConnection\nobject:\n> a <- data.frame(cbind(color=c(\"yellow\",\"red\",\"blue\",\"red\"),\n                        status=c(\"no\",\"yes\",\"yes\",\"no\"),\n                        ip=c(\"162.131.58.26\",\"2.131.58.16\",\"2.2.58.10\",\"162.131.58.17\")))\n> con <- textConnection(as.character(a$ip))\n> o <- do.call(order,read.table(con, sep=\".\"))\n> close(con)\n> a[o,]\n   color status            ip\n3   blue    yes     2.2.58.10\n2    red    yes   2.131.58.16\n4    red     no 162.131.58.17\n1 yellow     no 162.131.58.26\nThat is very, very neat!  Thank you Peter.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCYBAEA Data and Analysis\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Someone on the R-help mailing list had a data frame with a column containing IP addresses in quad-dot format (e.g. 1.10.100.200). He wanted to sort by this column and I proposed a solution involving strsplit. But Peter Dalgaard comes up with a much nicer method using read.table on a textConnection object:",
+    "meta_keywords": null,
+    "og_description": "Someone on the R-help mailing list had a data frame with a column containing IP addresses in quad-dot format (e.g. 1.10.100.200). He wanted to sort by this column and I proposed a solution involving strsplit. But Peter Dalgaard comes up with a much nicer method using read.table on a textConnection object:",
+    "og_image": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA",
+    "og_title": "R tips: Use read.table instead of strsplit to split a text column into multiple columns | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.5,
+    "sitemap_lastmod": "2009-05-29T10:53:00+00:00",
+    "twitter_description": "Someone on the R-help mailing list had a data frame with a column containing IP addresses in quad-dot format (e.g. 1.10.100.200). He wanted to sort by this column and I proposed a solution involving strsplit. But Peter Dalgaard comes up with a much nicer method using read.table on a textConnection object:",
+    "twitter_title": "R tips: Use read.table instead of strsplit to split a text column into multiple columns | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/05/r-tips-use-read-table-instead-of-strsplit-to-split-a-text-column-into-multiple-columns/",
+    "word_count": 302
+  }
+}

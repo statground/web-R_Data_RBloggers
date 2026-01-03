@@ -1,0 +1,116 @@
+{
+  "uuid": "5646c273-5474-4b22-82da-f58011ca1ab0",
+  "created_at": "2025-11-17 20:41:42",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2007/09/organization-and-r/",
+    "crawled_at": "2025-11-17T10:55:15.087799",
+    "external_links": [
+      {
+        "href": "http://robjhyndman.com/researchtips/organization-and-r/",
+        "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://robjhyndman.com/software/monash",
+        "text": "monash"
+      },
+      {
+        "href": "http://cran.r-project.org/src/contrib/Descriptions/xtable.html",
+        "text": "xtable"
+      },
+      {
+        "href": "http://cran.r-project.org/src/contrib/Descriptions/Hmisc.html",
+        "text": "Hmisc"
+      },
+      {
+        "href": "http://robjhyndman.com/researchtips/organization-and-r/",
+        "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Organization and R | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/rob-j-hyndman/",
+        "text": "Rob J Hyndman"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/research-tips/",
+        "text": "Research tips"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-52 post type-post status-publish format-standard hentry category-r-bloggers tag-r tag-research-tips\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Organization and R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 5, 2007</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/rob-j-hyndman/\">Rob J Hyndman</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://robjhyndman.com/researchtips/organization-and-r/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>Many R users seem to get themselves in a bit of a mess with R files and workspaces scattered across different directories. The R files themselves also get messy and hard to follow. So here is some advice on keeping organized with R:</p>\n<ul>\n<li> Try to keep code strictly indented based on the code  structure such as loops, if statements, etc. Every left brace { should be followed by an extra level of indentation which continues until the matching right brace }.  You should be able to quickly identify what lines are part of a loop, or are conditioned by an if statement, simply by the levels of  indentation.</li>\n<li> Comment copiously. You need to be able to figure out what your code does in a year’s time.</li>\n<li> Have a single directory for each project. Within that,  keep an R workspace, an R file containing the functions you’ve written, and one or more R files containing the code to read in the data, apply  the functions to the data, plot some graphs, etc.</li>\n<li> Don’t have multiple versions of essentially the same code. If you are doing similar things to what you’ve done before, write a  function to do it and call it when required.</li>\n<li>Have a <span style=\"font-family:Helvetica,Arial,sans-serif;color:#000099\">main.R</span> file which does all the analysis for the paper,  chapter or report. It may simply consist of source lines such as</li>\n<div style=\"margin-left:80px\"><span style=\"font-family:Courier New,Courier,monospace\">source(”functions.R”)</span><br style=\"font-family:Courier New,Courier,monospace\"/><span style=\"font-family:Courier New,Courier,monospace\">source(”readdata.R”)</span><br style=\"font-family:Courier New,Courier,monospace\"/><span style=\"font-family:Courier New,Courier,monospace\">source(”fitmodel.R”)</span></div>\n<p>Then the whole project can be run by sourcing the main file. If you  find an error in your data, or you get updated or revised data, it is  then a simple matter of running  <span style=\"font-family:Helvetica,Arial,sans-serif;color:#000099\"> main.R</span> and all the graphs and analysis  will be re-created.</p>\n<li>Every graph and table to go into your written document should be created via code. Use <span style=\"font-family:Courier New,Courier,monospace\">savepdf()</span> or <span style=\"font-family:Courier New,Courier,monospace\">saveeps()</span> in the <a href=\"http://robjhyndman.com/software/monash\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight:bold;color:#ff0000\">monash</span></a> package for graphs, and <span style=\"font-family:Courier New,Courier,monospace\">xtable()</span> in the <a href=\"http://cran.r-project.org/src/contrib/Descriptions/xtable.html\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight:bold;color:#ff0000\">xtable </span></a> package for LaTeX tables. (For more complicated LaTeX tables, <span style=\"font-family:Courier New,Courier,monospace\">latex()</span> in the <a href=\"http://cran.r-project.org/src/contrib/Descriptions/Hmisc.html\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-weight:bold;color:#ff0000\">Hmisc</span></a> package is also useful.)</li>\n</ul>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://robjhyndman.com/researchtips/organization-and-r/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/research-tips/\" rel=\"tag\">Research tips</a></li></ul></div></article>",
+    "main_text": "Organization and R\nPosted on\nSeptember 5, 2007\nby\nRob J Hyndman\nin\nR bloggers\n| 0 Comments\n[This article was first published on\n\"R-bloggers\" via Tal Galili in Google Reader\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMany R users seem to get themselves in a bit of a mess with R files and workspaces scattered across different directories. The R files themselves also get messy and hard to follow. So here is some advice on keeping organized with R:\nTry to keep code strictly indented based on the code  structure such as loops, if statements, etc. Every left brace { should be followed by an extra level of indentation which continues until the matching right brace }.  You should be able to quickly identify what lines are part of a loop, or are conditioned by an if statement, simply by the levels of  indentation.\nComment copiously. You need to be able to figure out what your code does in a year’s time.\nHave a single directory for each project. Within that,  keep an R workspace, an R file containing the functions you’ve written, and one or more R files containing the code to read in the data, apply  the functions to the data, plot some graphs, etc.\nDon’t have multiple versions of essentially the same code. If you are doing similar things to what you’ve done before, write a  function to do it and call it when required.\nHave a\nmain.R\nfile which does all the analysis for the paper,  chapter or report. It may simply consist of source lines such as\nsource(”functions.R”)\nsource(”readdata.R”)\nsource(”fitmodel.R”)\nThen the whole project can be run by sourcing the main file. If you  find an error in your data, or you get updated or revised data, it is  then a simple matter of running\nmain.R\nand all the graphs and analysis  will be re-created.\nEvery graph and table to go into your written document should be created via code. Use\nsavepdf()\nor\nsaveeps()\nin the\nmonash\npackage for graphs, and\nxtable()\nin the\nxtable\npackage for LaTeX tables. (For more complicated LaTeX tables,\nlatex()\nin the\nHmisc\npackage is also useful.)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\n\"R-bloggers\" via Tal Galili in Google Reader\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR\nResearch tips",
+    "meta_description": "Many R users seem to get themselves in a bit of a mess with R files and workspaces scattered across different directories. The R files themselves also get messy and hard to follow. So here is some advice on keeping organized with R: Try to keep code ...",
+    "meta_keywords": "r,research tips",
+    "og_description": "Many R users seem to get themselves in a bit of a mess with R files and workspaces scattered across different directories. The R files themselves also get messy and hard to follow. So here is some advice on keeping organized with R: Try to keep code ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Organization and R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.4,
+    "sitemap_lastmod": "2007-09-06T04:04:54+00:00",
+    "twitter_description": "Many R users seem to get themselves in a bit of a mess with R files and workspaces scattered across different directories. The R files themselves also get messy and hard to follow. So here is some advice on keeping organized with R: Try to keep code ...",
+    "twitter_title": "Organization and R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2007/09/organization-and-r/",
+    "word_count": 485
+  }
+}

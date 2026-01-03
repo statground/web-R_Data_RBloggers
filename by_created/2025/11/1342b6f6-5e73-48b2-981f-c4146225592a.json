@@ -1,0 +1,692 @@
+{
+  "uuid": "1342b6f6-5e73-48b2-981f-c4146225592a",
+  "created_at": "2025-11-22 19:59:11",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/02/ropensci-news-digest-february-2025/",
+    "crawled_at": "2025-11-22T10:53:18.519259",
+    "external_links": [
+      {
+        "href": "https://ropensci.org/blog/2025/02/27/news-february-2025/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/02/27/news-february-2025",
+        "text": "on our blog"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/02/05/no-science-without-deia/",
+        "text": "blog post"
+      },
+      {
+        "href": "https://ropensci.org/author/mark-padgham",
+        "text": "Mark Padgham"
+      },
+      {
+        "href": "https://ropensci.org/blog/2024/03/29/hello-from-our-new-executive-director/",
+        "text": "last year"
+      },
+      {
+        "href": "https://ropensci.org/champions/",
+        "text": "Champion(a|e) Program"
+      },
+      {
+        "href": "https://ropensci.org/blog/2024/10/10/czi-latam-grant/",
+        "text": "funding by CZI"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=6PsbCPtxWXk",
+        "text": "recording"
+      },
+      {
+        "href": "https://ropensci.org/commcalls/first-time-contributor/",
+        "text": "“From Novice to Contributor: Making and Supporting First-Time Contributions to FOSS”"
+      },
+      {
+        "href": "https://serve.podhome.fm/episodepage/r-weekly-highlights/193",
+        "text": "R Weekly Highlights podcast"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/06/21/coworking/",
+        "text": "all about coworking"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2025-03/",
+        "text": "Coworking Mini-Hackatho for First-Time Contributors"
+      },
+      {
+        "href": "https://ropensci.org/blog/2024/10/22/first-time-contributions/",
+        "text": "package maintainers and other mentors"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2025-03",
+        "text": "Tuesday March 4th 14:00 European Central (13:00 UTC)"
+      },
+      {
+        "href": "https://ropensci.org/events/",
+        "text": "Events"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2025-04",
+        "text": "Tuesday April 1st 9:00 Americas Pacific (16:00 UTC)"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/author/yanina-bellini-saibene/",
+        "text": "Yanina Bellini Saibene"
+      },
+      {
+        "href": "https://docs.ropensci.org/pkgcheck/",
+        "text": "pkgcheck"
+      },
+      {
+        "href": "https://ropensci.org/software-review/",
+        "text": "software review"
+      },
+      {
+        "href": "https://github.com/ropensci-review-tools/pkgcheck-action",
+        "text": "pkgcheck-action"
+      },
+      {
+        "href": "https://docs.ropensci.org/pkgcheck/articles/list-checks.html#pkgchk_num_imports",
+        "text": "list excessive numbers of packageImports"
+      },
+      {
+        "href": "https://docs.ropensci.org/pkgcheck/articles/list-checks.html#pkgchk_branch_is_master",
+        "text": "name the default GitHub branch “master”"
+      },
+      {
+        "href": "https://www.tidyverse.org/blog/2021/10/renaming-default-branch/",
+        "text": "this tidyverse blog post"
+      },
+      {
+        "href": "https://github.com/ropensci-review-tools/pkgcheck-action",
+        "text": "pkgcheck-action"
+      },
+      {
+        "href": "https://quarto.org/",
+        "text": "Quarto"
+      },
+      {
+        "href": "https://docs.ropensci.org/commonmetar",
+        "text": "commonmetar"
+      },
+      {
+        "href": "https://docs.ropensci.org/repometrics",
+        "text": "repometrics"
+      },
+      {
+        "href": "https://docs.ropensci.org/fireexposuR",
+        "text": "fireexposuR"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/659",
+        "text": "reviewed"
+      },
+      {
+        "href": "https://docs.ropensci.org/QuadratiK",
+        "text": "QuadratiK"
+      },
+      {
+        "href": "doi:10.48550/arXiv.2402.02290",
+        "text": "doi:10.48550/arXiv.2402.02290"
+      },
+      {
+        "href": "doi:10.48550/arXiv.2407.16374",
+        "text": "doi:10.48550/arXiv.2407.16374"
+      },
+      {
+        "href": "doi:10.5705/ss.202022.0347",
+        "text": "doi:10.5705/ss.202022.0347"
+      },
+      {
+        "href": "doi:10.1080/10618600.2020.1740713",
+        "text": "doi:10.1080/10618600.2020.1740713"
+      },
+      {
+        "href": "https://cran.r-project.org/package=QuadratiK",
+        "text": "CRAN"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/632",
+        "text": "reviewed"
+      },
+      {
+        "href": "https://ropensci.org/packages",
+        "text": "more packages"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://docs.ropensci.org/agroclimatico",
+        "text": "agroclimatico"
+      },
+      {
+        "href": "https://github.com/ropensci/agroclimatico/releases/tag/1.1.1",
+        "text": "1.1.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/BaseSet",
+        "text": "BaseSet"
+      },
+      {
+        "href": "https://github.com/ropensci/BaseSet/releases/tag/v1.0.0",
+        "text": "v1.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/biomartr",
+        "text": "biomartr"
+      },
+      {
+        "href": "https://github.com/ropensci/biomartr/releases/tag/v1.0.10",
+        "text": "v1.0.10"
+      },
+      {
+        "href": "https://docs.ropensci.org/c14bazAAR",
+        "text": "c14bazAAR"
+      },
+      {
+        "href": "https://github.com/ropensci/c14bazAAR/releases/tag/5.1.0",
+        "text": "5.1.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/DataSpaceR",
+        "text": "DataSpaceR"
+      },
+      {
+        "href": "https://github.com/ropensci/DataSpaceR/releases/tag/v0.7.7",
+        "text": "v0.7.7"
+      },
+      {
+        "href": "https://docs.ropensci.org/getCRUCLdata",
+        "text": "getCRUCLdata"
+      },
+      {
+        "href": "https://github.com/ropensci/getCRUCLdata/releases/tag/v1.0.3",
+        "text": "v1.0.3"
+      },
+      {
+        "href": "https://docs.ropensci.org/gigs",
+        "text": "gigs"
+      },
+      {
+        "href": "https://github.com/ropensci/gigs/releases/tag/v0.5.2",
+        "text": "v0.5.2"
+      },
+      {
+        "href": "https://docs.ropensci.org/riem",
+        "text": "riem"
+      },
+      {
+        "href": "https://github.com/ropensci/riem/releases/tag/v1.0.0",
+        "text": "v1.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/rredlist",
+        "text": "rredlist"
+      },
+      {
+        "href": "https://github.com/ropensci/rredlist/releases/tag/v1.0.0",
+        "text": "v1.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/spiro",
+        "text": "spiro"
+      },
+      {
+        "href": "https://github.com/ropensci/spiro/releases/tag/v0.2.3",
+        "text": "v0.2.3"
+      },
+      {
+        "href": "https://docs.ropensci.org/tarchetypes",
+        "text": "tarchetypes"
+      },
+      {
+        "href": "https://github.com/ropensci/tarchetypes/releases/tag/0.12.0",
+        "text": "0.12.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/targets",
+        "text": "targets"
+      },
+      {
+        "href": "https://github.com/ropensci/targets/releases/tag/1.10.1",
+        "text": "1.10.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/taxize",
+        "text": "taxize"
+      },
+      {
+        "href": "https://github.com/ropensci/taxize/releases/tag/v0.10.0",
+        "text": "v0.10.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/weathercan",
+        "text": "weathercan"
+      },
+      {
+        "href": "https://github.com/ropensci/weathercan/releases/tag/v0.7.3",
+        "text": "v0.7.3"
+      },
+      {
+        "href": "https://docs.ropensci.org/weatherOz",
+        "text": "weatherOz"
+      },
+      {
+        "href": "https://github.com/ropensci/weatherOz/releases/tag/v2.0.0",
+        "text": "v2.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/webmockr",
+        "text": "webmockr"
+      },
+      {
+        "href": "https://github.com/ropensci/webmockr/releases/tag/v2.0.0",
+        "text": "v2.0.0"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%226/approved%22",
+        "text": "‘6/approved’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/663",
+        "text": "rredlist"
+      },
+      {
+        "href": "http://williamgearty.com/",
+        "text": "William Gearty"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/659",
+        "text": "fireexposuR"
+      },
+      {
+        "href": "https://wildfireanalytics.org/forbes.html",
+        "text": "Air Forbes"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/632",
+        "text": "QuadratiK"
+      },
+      {
+        "href": "https://github.com/giovsaraceno",
+        "text": "Giovanni Saraceno"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%224/review(s)-in-awaiting-changes%22",
+        "text": "‘4/review(s)-in-awaiting-changes’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/675",
+        "text": "geotargets"
+      },
+      {
+        "href": "https://www.njtierney.com/",
+        "text": "Nicholas Tierney"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/674",
+        "text": "mapmetadata"
+      },
+      {
+        "href": "https://github.com/RayStick",
+        "text": "Rachael Stickland"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/658",
+        "text": "mbquartR"
+      },
+      {
+        "href": "http://www.alexkoiter.ca/",
+        "text": "Alex Koiter"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/575",
+        "text": "pangoling"
+      },
+      {
+        "href": "https://bnicenboim.github.io/",
+        "text": "Bruno Nicenboim"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%223/reviewer(s)-assigned%22",
+        "text": "‘3/reviewer(s)-assigned’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/676",
+        "text": "butterfly"
+      },
+      {
+        "href": "https://thomaszwagerman.co.uk/",
+        "text": "Thomas Zwagerman"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/671",
+        "text": "pkgmatch"
+      },
+      {
+        "href": "https://mpadge.github.io/",
+        "text": "mark padgham"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/596",
+        "text": "sits"
+      },
+      {
+        "href": "https://www.gilbertocamara.org/",
+        "text": "Gilberto Camara"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/546",
+        "text": "fwildclusterboot"
+      },
+      {
+        "href": "https://s3alfisc.github.io/blog/",
+        "text": "Alexander Fischer"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%222/seeking-reviewer(s)%22",
+        "text": "‘2/seeking-reviewer(s)’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/684",
+        "text": "gtexr"
+      },
+      {
+        "href": "https://github.com/rmgpanw",
+        "text": "Alasdair Warwick"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/615",
+        "text": "galamm"
+      },
+      {
+        "href": "https://osorensen.rbind.io/",
+        "text": "Øystein Sørensen"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%221/editor-checks%22",
+        "text": "‘1/editor-checks’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/673",
+        "text": "sasquatch"
+      },
+      {
+        "href": "http://ryanzomorrodi.github.io/",
+        "text": "Ryan Zomorrodi"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/667",
+        "text": "read.abares"
+      },
+      {
+        "href": "https://adamhsparks.netlify.app/",
+        "text": "Adam H. Sparks"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/660",
+        "text": "forcis"
+      },
+      {
+        "href": "https://nicolascasajus.fr/",
+        "text": "Nicolas Casajus"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/645",
+        "text": "capybara"
+      },
+      {
+        "href": "https://pacha.dev/",
+        "text": "Mauricio “Pachá” Vargas Sepúlveda"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/02/05/no-science-without-deia",
+        "text": "Open Science and Open Source only with Diversity, Equity, Inclusion, and Accessibility"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2025/02/05/no-ciencia-sin-deia",
+        "text": "Ciencia Abierta y Código Abierto sólo con Diversidad, Equidad, Inclusión y Accesibilidad (es)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/02/20/forks-upstream-relationship",
+        "text": "The Dynamic Relationship of Forks with their Upstream Repository"
+      },
+      {
+        "href": "https://discuss.ropensci.org/t/metar-analysis-for-flight-conditions/4174",
+        "text": "METAR analysis for flight conditions"
+      },
+      {
+        "href": "https://ropensci.org/usecases",
+        "text": "other use cases"
+      },
+      {
+        "href": "https://discuss.ropensci.org/c/usecases/10",
+        "text": "report your own"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/",
+        "text": "What Does It Mean to Maintain a Package?"
+      },
+      {
+        "href": "https://docs.ropensci.org/photosearcher/",
+        "text": "photosearcher"
+      },
+      {
+        "href": "https://github.com/ropensci/photosearcher/issues/21",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/MODIStsp/",
+        "text": "MODIStsp"
+      },
+      {
+        "href": "https://github.com/ropensci/MODIStsp/issues/262",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/hddtools/",
+        "text": "hddtools"
+      },
+      {
+        "href": "https://github.com/ropensci/hddtools/issues/36",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/USAboundaries/",
+        "text": "USAboundaries"
+      },
+      {
+        "href": "https://github.com/ropensci/USAboundaries/issues/50",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/historydata/",
+        "text": "historydata"
+      },
+      {
+        "href": "https://github.com/ropensci/historydata/issues/23",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://ropensci.org/help-wanted/",
+        "text": "help wanted page"
+      },
+      {
+        "href": "https://github.com/ropensci/bib2df/issues/65",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://testthat.r-lib.org/articles/snapshotting.html",
+        "text": "Snapshot test"
+      },
+      {
+        "href": "https://github.com/tidyverse/ggplot2/blob/d835cfe2ffb0ff68c9a4b224ec1fcb4caba83892/tests/testthat/test-ggsave.R#L85",
+        "text": "call toexpect_snapshot()"
+      },
+      {
+        "href": "https://github.com/r-lib/testthat/issues/1822",
+        "text": "providing a set of default transformers for snapshot tests"
+      },
+      {
+        "href": "https://withr.r-lib.org/reference/with_envvar.html",
+        "text": "set in tests"
+      },
+      {
+        "href": "https://blog.r-hub.io/2024/03/21/mocking-new-take/",
+        "text": "mocking"
+      },
+      {
+        "href": "https://github.com/MargaretSiple-NOAA",
+        "text": "Margaret Siple"
+      },
+      {
+        "href": "https://r-pkgs.org/testing-design.html#sec-testing-design-tension",
+        "text": "pkg::function_name()"
+      },
+      {
+        "href": "https://r-pkgs.org/testing-design.html#plan-for-test-failure",
+        "text": "debugging of a failed test"
+      },
+      {
+        "href": "https://enpiar.com/httptest2/reference/use_httptest2.html",
+        "text": "loading of httptest2"
+      },
+      {
+        "href": "https://lorenzwalthert.github.io/precommit/",
+        "text": "precommit R package"
+      },
+      {
+        "href": "https://github.com/ropensci-review-tools/pkgmatch/blob/47e0775e6bdc3f96f146f4fd959affe50c9dd4bf/.pre-commit-config.yaml#L79-L82",
+        "text": "this example"
+      },
+      {
+        "href": "https://blog.r-hub.io/2025/02/13/lazy-meanings/",
+        "text": "Lazy introduction to laziness in R"
+      },
+      {
+        "href": "https://thinkr-open.r-universe.dev/checkhelper",
+        "text": "checkhelper package"
+      },
+      {
+        "href": "https://ropensci.org/author/s%C3%A9bastien-rochette/",
+        "text": "Sébastien Rochette"
+      },
+      {
+        "href": "https://github.com/ThinkR-open/checkhelper/issues/84",
+        "text": "issue"
+      },
+      {
+        "href": "https://contributing.ropensci.org/",
+        "text": "Contributing Guide"
+      },
+      {
+        "href": "https://ropensci.org/donate",
+        "text": "donations"
+      },
+      {
+        "href": "https://ropensci.org/news/",
+        "text": "do so via a form"
+      },
+      {
+        "href": "https://ropensci.org/",
+        "text": "website"
+      },
+      {
+        "href": "https://hachyderm.io/@rOpenSci",
+        "text": "Mastodon account"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/02/27/news-february-2025/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "rOpenSci News Digest, February 2025 | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-390846 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">rOpenSci News Digest, February 2025</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 26, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2025/02/27/news-february-2025/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<!-- Before sending DELETE THE INDEX_CACHE and re-knit! -->\n<p>Dear rOpenSci friends, it’s time for our monthly news roundup!</p>\n<!-- blabla -->\n<p>You can read this post <a href=\"https://ropensci.org/blog/2025/02/27/news-february-2025\" rel=\"nofollow\" target=\"_blank\">on our blog</a>.\nNow let’s dive into the activity at and around rOpenSci!</p>\n<h2>\nrOpenSci HQ\n</h2><h3>\nOpen Science and Open Source only with Diversity, Equity, Inclusion, and Accessibility\n</h3><p>Including all of humanity is and always will be at the heart of open science.\nRead more about our mission in our <a href=\"https://ropensci.org/blog/2025/02/05/no-science-without-deia/\" rel=\"nofollow\" target=\"_blank\">blog post</a>.</p>\n<h3>\nMark Padgham is now Software Review Lead\n</h3><p><a href=\"https://ropensci.org/author/mark-padgham\" rel=\"nofollow\" target=\"_blank\">Mark Padgham</a> is now lead for software peer review. Noam Ross, the former lead, became Executive Director <a href=\"https://ropensci.org/blog/2024/03/29/hello-from-our-new-executive-director/\" rel=\"nofollow\" target=\"_blank\">last year</a>.</p>\n<h3>\nNew rOpenSci Champion(a|e)s Program cohort\n</h3><p>We have great news! We will have a new cohort of our <a href=\"https://ropensci.org/champions/\" rel=\"nofollow\" target=\"_blank\">Champion(a|e) Program</a> during 2025!</p>\n<p>Our program seeks to identify, recognize, and reward individuals who are leaders in an open science community, research software engineering, and the R programming community.</p>\n<p>This year’s program, thanks to <a href=\"https://ropensci.org/blog/2024/10/10/czi-latam-grant/\" rel=\"nofollow\" target=\"_blank\">funding by CZI</a>, is focused on people from Latin America and will be conducted entirely in Spanish.</p>\n<p>This program is an incredible platform for developing your open-source project with expert support, interacting, sharing, and strengthening a network with other people determined to develop open and reproducible science in your part of the world.\nStay tuned for our announcement of the opening call to apply as a champion or mentor and join a global community of people using and developing scientific and open-source software.</p>\n<h3>\n“This is Tech Talks” episode with Yanina Bellini Saibene\n</h3><p>Yanina Bellini Saibene was interviewed by Santosh Yadav about her role as rOpenSci community manager.\nWatch the <a href=\"https://www.youtube.com/watch?v=6PsbCPtxWXk\" rel=\"nofollow\" target=\"_blank\">recording</a>.</p>\n<h3>\n“From Novice to Contributor” on the R Weekly Highlights podcast\n</h3><p>Our community call <a href=\"https://ropensci.org/commcalls/first-time-contributor/\" rel=\"nofollow\" target=\"_blank\">“From Novice to Contributor: Making and Supporting First-Time Contributions to FOSS”</a> with Yi-Chin Sunny Tseng, Pascal Burkhard, Yaoxiang Li, Hugo Gruson was featured in the <a href=\"https://serve.podhome.fm/episodepage/r-weekly-highlights/193\" rel=\"nofollow\" target=\"_blank\">R Weekly Highlights podcast</a> hosted by Eric Nantz and Mike Thomas.</p>\n<h3>\nCoworking Mini-hackathons\n</h3><p>Read <a href=\"https://ropensci.org/blog/2023/06/21/coworking/\" rel=\"nofollow\" target=\"_blank\">all about coworking</a>!</p>\n<p>Join us for our second <a href=\"https://ropensci.org/events/coworking-2025-03/\" rel=\"nofollow\" target=\"_blank\">Coworking Mini-Hackatho for First-Time Contributors</a>.\nIf you’re curious about contributing to Open Source Software, and would like some support to get started, this event is for you!</p>\n<p>During this session you’ll join others making contributions to R packages while <a href=\"https://ropensci.org/blog/2024/10/22/first-time-contributions/\" rel=\"nofollow\" target=\"_blank\">package maintainers and other mentors</a> are available ’live’ to answer questions and give guidance.</p>\n<ul>\n<li>\n<p><a href=\"https://ropensci.org/events/coworking-2025-03\" rel=\"nofollow\" target=\"_blank\">Tuesday March 4th 14:00 European Central (13:00 UTC)</a>\nAfter this we return to our regular monthly social coworking &amp; office hours held on first Tuesdays! Hosted by Steffi LaZerte and various community hosts. Everyone welcome. No RSVP needed. Consult our <a href=\"https://ropensci.org/events/\" rel=\"nofollow\" target=\"_blank\">Events</a> page to find your local time and how to join.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/events/coworking-2025-04\" rel=\"nofollow\" target=\"_blank\">Tuesday April 1st 9:00 Americas Pacific (16:00 UTC)</a>, “R you joking? Silly R packages for April Fools’ day” with <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a> and <a href=\"https://ropensci.org/author/yanina-bellini-saibene/\" rel=\"nofollow\" target=\"_blank\">Yanina Bellini Saibene</a></p>\n<ul>\n<li>Explore silly R packages</li>\n<li>Chat with our hosts and other attendees and share your favourite silly R packages!</li>\n</ul>\n</li>\n</ul>\n<p>And remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!</p>\n<h3>\nNew pkgcheck checks\n</h3><p>Our <a href=\"https://docs.ropensci.org/pkgcheck/\" rel=\"nofollow\" target=\"_blank\">pkgcheck</a> package is used both for our <a href=\"https://ropensci.org/software-review/\" rel=\"nofollow\" target=\"_blank\">software review</a> submission checks, and in <a href=\"https://github.com/ropensci-review-tools/pkgcheck-action\" rel=\"nofollow\" target=\"_blank\">pkgcheck-action</a>.\nIt now features two additional checks:</p>\n<ul>\n<li>A check that packages do not <a href=\"https://docs.ropensci.org/pkgcheck/articles/list-checks.html#pkgchk_num_imports\" rel=\"nofollow\" target=\"_blank\">list excessive numbers of package <em>Imports</em></a>.\nPackages with numbers of imports exceeding the 95% of current CRAN packages (which is currently 21 imported packages) will receive an 👀 note.</li>\n<li>A check that repositories do not <a href=\"https://docs.ropensci.org/pkgcheck/articles/list-checks.html#pkgchk_branch_is_master\" rel=\"nofollow\" target=\"_blank\">name the default GitHub branch “master”</a>, and will fail if so.\nSee <a href=\"https://www.tidyverse.org/blog/2021/10/renaming-default-branch/\" rel=\"nofollow\" target=\"_blank\">this tidyverse blog post</a> for helpful advice on renaming default branches.</li>\n</ul>\n<p>The <a href=\"https://github.com/ropensci-review-tools/pkgcheck-action\" rel=\"nofollow\" target=\"_blank\">pkgcheck-action</a> has also been updated to run on Ubuntu 24.04, and to include quarto to enable packages to use <a href=\"https://quarto.org/\" rel=\"nofollow\" target=\"_blank\">Quarto</a> as a vignette engine.</p>\n<h2>\nSoftware 📦\n</h2><h3>\nNew packages\n</h3><p>The following four packages recently became a part of our software suite:</p>\n<ul>\n<li>\n<p><a href=\"https://docs.ropensci.org/commonmetar\" rel=\"nofollow\" target=\"_blank\">commonmetar</a>, developed by Maëlle Salmon: Uses the commonmeta Go library to generate random DOI strings.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/repometrics\" rel=\"nofollow\" target=\"_blank\">repometrics</a>, developed by Mark Padgham: Metrics for your code repository. Call one function to generate an interactive dashboard displaying the state of your code.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/fireexposuR\" rel=\"nofollow\" target=\"_blank\">fireexposuR</a>, developed by Air Forbes: This package computes and visualizes wildfire exposure using the methods documented in a series of scientific publications. It has been <a href=\"https://github.com/ropensci/software-review/issues/659\" rel=\"nofollow\" target=\"_blank\">reviewed</a> by Sherry Zhang and Ronny A. Hernández Mora.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/QuadratiK\" rel=\"nofollow\" target=\"_blank\">QuadratiK</a>, developed by Giovanni Saraceno together with Marianthi Markatou, Raktim Mukhopadhyay, and Mojgan Golzy: It includes test for multivariate normality, test for uniformity on the d-dimensional Sphere, non-parametric two- and k-sample tests, random generation of points from the Poisson kernel-based density and clustering algorithm for spherical data. For more information see Saraceno G., Markatou M., Mukhopadhyay R. and Golzy M. (2024) <a href=\"doi:10.48550/arXiv.2402.02290\" rel=\"nofollow\" target=\"_blank\">doi:10.48550/arXiv.2402.02290</a> Markatou, M. and Saraceno, G. (2024) <a href=\"doi:10.48550/arXiv.2407.16374\" rel=\"nofollow\" target=\"_blank\">doi:10.48550/arXiv.2407.16374</a>, Ding, Y., Markatou, M. and Saraceno, G. (2023) <a href=\"doi:10.5705/ss.202022.0347\" rel=\"nofollow\" target=\"_blank\">doi:10.5705/ss.202022.0347</a>, and Golzy, M. and Markatou, M. (2020) <a href=\"doi:10.1080/10618600.2020.1740713\" rel=\"nofollow\" target=\"_blank\">doi:10.1080/10618600.2020.1740713</a>. It is available on <a href=\"https://cran.r-project.org/package=QuadratiK\" rel=\"nofollow\" target=\"_blank\">CRAN</a>. It has been <a href=\"https://github.com/ropensci/software-review/issues/632\" rel=\"nofollow\" target=\"_blank\">reviewed</a> by Hingee Kassel and Emi Tanaka.</p>\n</li>\n</ul>\n<p>Discover <a href=\"https://ropensci.org/packages\" rel=\"nofollow\" target=\"_blank\">more packages</a>, read more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a>.</p>\n<h3>\nNew versions\n</h3><p>The following sixteen packages have had an update since the last newsletter: <a href=\"https://docs.ropensci.org/agroclimatico\" rel=\"nofollow\" target=\"_blank\" title=\"Índices y Estadísticos Climáticos e Hidrológicos\">agroclimatico</a> (<a href=\"https://github.com/ropensci/agroclimatico/releases/tag/1.1.1\" rel=\"nofollow\" target=\"_blank\"><code>1.1.1</code></a>), <a href=\"https://docs.ropensci.org/BaseSet\" rel=\"nofollow\" target=\"_blank\" title=\"Working with Sets the Tidy Way\">BaseSet</a> (<a href=\"https://github.com/ropensci/BaseSet/releases/tag/v1.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.0</code></a>), <a href=\"https://docs.ropensci.org/biomartr\" rel=\"nofollow\" target=\"_blank\" title=\"Genomic Data Retrieval\">biomartr</a> (<a href=\"https://github.com/ropensci/biomartr/releases/tag/v1.0.10\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.10</code></a>), <a href=\"https://docs.ropensci.org/c14bazAAR\" rel=\"nofollow\" target=\"_blank\" title=\"Download and Prepare C14 Dates from Different Source Databases\">c14bazAAR</a> (<a href=\"https://github.com/ropensci/c14bazAAR/releases/tag/5.1.0\" rel=\"nofollow\" target=\"_blank\"><code>5.1.0</code></a>), <a href=\"https://docs.ropensci.org/DataSpaceR\" rel=\"nofollow\" target=\"_blank\" title=\"Interface to the CAVD DataSpace\">DataSpaceR</a> (<a href=\"https://github.com/ropensci/DataSpaceR/releases/tag/v0.7.7\" rel=\"nofollow\" target=\"_blank\"><code>v0.7.7</code></a>), <a href=\"https://docs.ropensci.org/getCRUCLdata\" rel=\"nofollow\" target=\"_blank\" title=\"CRU CL v. 2.0 Climatology Client\">getCRUCLdata</a> (<a href=\"https://github.com/ropensci/getCRUCLdata/releases/tag/v1.0.3\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.3</code></a>), <a href=\"https://docs.ropensci.org/gigs\" rel=\"nofollow\" target=\"_blank\" title=\"Assess Fetal, Newborn, and Child Growth with International Standards\">gigs</a> (<a href=\"https://github.com/ropensci/gigs/releases/tag/v0.5.2\" rel=\"nofollow\" target=\"_blank\"><code>v0.5.2</code></a>), <a href=\"https://docs.ropensci.org/riem\" rel=\"nofollow\" target=\"_blank\" title=\"Accesses Weather Data from the Iowa Environment Mesonet\">riem</a> (<a href=\"https://github.com/ropensci/riem/releases/tag/v1.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.0</code></a>), <a href=\"https://docs.ropensci.org/rredlist\" rel=\"nofollow\" target=\"_blank\" title=\"IUCN Red List Client\">rredlist</a> (<a href=\"https://github.com/ropensci/rredlist/releases/tag/v1.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.0</code></a>), <a href=\"https://docs.ropensci.org/spiro\" rel=\"nofollow\" target=\"_blank\" title=\"Manage Data from Cardiopulmonary Exercise Testing\">spiro</a> (<a href=\"https://github.com/ropensci/spiro/releases/tag/v0.2.3\" rel=\"nofollow\" target=\"_blank\"><code>v0.2.3</code></a>), <a href=\"https://docs.ropensci.org/tarchetypes\" rel=\"nofollow\" target=\"_blank\" title=\"Archetypes for Targets\">tarchetypes</a> (<a href=\"https://github.com/ropensci/tarchetypes/releases/tag/0.12.0\" rel=\"nofollow\" target=\"_blank\"><code>0.12.0</code></a>), <a href=\"https://docs.ropensci.org/targets\" rel=\"nofollow\" target=\"_blank\" title=\"Dynamic Function-Oriented Make-Like Declarative Pipelines\">targets</a> (<a href=\"https://github.com/ropensci/targets/releases/tag/1.10.1\" rel=\"nofollow\" target=\"_blank\"><code>1.10.1</code></a>), <a href=\"https://docs.ropensci.org/taxize\" rel=\"nofollow\" target=\"_blank\" title=\"Taxonomic Information from Around the Web\">taxize</a> (<a href=\"https://github.com/ropensci/taxize/releases/tag/v0.10.0\" rel=\"nofollow\" target=\"_blank\"><code>v0.10.0</code></a>), <a href=\"https://docs.ropensci.org/weathercan\" rel=\"nofollow\" target=\"_blank\" title=\"Download Weather Data from Environment and Climate Change Canada\">weathercan</a> (<a href=\"https://github.com/ropensci/weathercan/releases/tag/v0.7.3\" rel=\"nofollow\" target=\"_blank\"><code>v0.7.3</code></a>), <a href=\"https://docs.ropensci.org/weatherOz\" rel=\"nofollow\" target=\"_blank\" title=\"An API Client for Australian Weather and Climate Data Resources\">weatherOz</a> (<a href=\"https://github.com/ropensci/weatherOz/releases/tag/v2.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v2.0.0</code></a>), and <a href=\"https://docs.ropensci.org/webmockr\" rel=\"nofollow\" target=\"_blank\" title=\"Stubbing and Setting Expectations on HTTP Requests\">webmockr</a> (<a href=\"https://github.com/ropensci/webmockr/releases/tag/v2.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v2.0.0</code></a>).</p>\n<h2>\nSoftware Peer Review\n</h2><p>There are seventeen recently closed and active submissions and 5 submissions on hold. Issues are at different stages:</p>\n<ul>\n<li>\n<p>Three at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%226/approved%22\" rel=\"nofollow\" target=\"_blank\">‘6/approved’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/663\" rel=\"nofollow\" target=\"_blank\">rredlist</a>, IUCN Red List Client. Submitted by <a href=\"http://williamgearty.com/\" rel=\"nofollow\" target=\"_blank\">William Gearty</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/659\" rel=\"nofollow\" target=\"_blank\">fireexposuR</a>, Compute and Visualize Wildfire Exposure. Submitted by <a href=\"https://wildfireanalytics.org/forbes.html\" rel=\"nofollow\" target=\"_blank\">Air Forbes</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/632\" rel=\"nofollow\" target=\"_blank\">QuadratiK</a>, A Collection of Methods Using Kernel-Based Quadratic Distances for. Submitted by <a href=\"https://github.com/giovsaraceno\" rel=\"nofollow\" target=\"_blank\">Giovanni Saraceno</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Four at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%224/review(s)-in-awaiting-changes%22\" rel=\"nofollow\" target=\"_blank\">‘4/review(s)-in-awaiting-changes’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/675\" rel=\"nofollow\" target=\"_blank\">geotargets</a>, Targets Extensions for Geospatial Formats. Submitted by <a href=\"https://www.njtierney.com/\" rel=\"nofollow\" target=\"_blank\">Nicholas Tierney</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/674\" rel=\"nofollow\" target=\"_blank\">mapmetadata</a>, Map health metadata onto predefined research domains. Submitted by <a href=\"https://github.com/RayStick\" rel=\"nofollow\" target=\"_blank\">Rachael Stickland</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/658\" rel=\"nofollow\" target=\"_blank\">mbquartR</a>, Finding Manitoba Quarter Sections. Submitted by <a href=\"http://www.alexkoiter.ca/\" rel=\"nofollow\" target=\"_blank\">Alex Koiter</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/575\" rel=\"nofollow\" target=\"_blank\">pangoling</a>, Access to Large Language Model Predictions. Submitted by <a href=\"https://bnicenboim.github.io/\" rel=\"nofollow\" target=\"_blank\">Bruno Nicenboim</a>.</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Four at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%223/reviewer(s)-assigned%22\" rel=\"nofollow\" target=\"_blank\">‘3/reviewer(s)-assigned’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/676\" rel=\"nofollow\" target=\"_blank\">butterfly</a>, Verification For Continually Updating Timeseries Data. Submitted by <a href=\"https://thomaszwagerman.co.uk/\" rel=\"nofollow\" target=\"_blank\">Thomas Zwagerman</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/671\" rel=\"nofollow\" target=\"_blank\">pkgmatch</a>, Find R Packages Matching Either Descriptions or Other R Packages. Submitted by <a href=\"https://mpadge.github.io/\" rel=\"nofollow\" target=\"_blank\">mark padgham</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/596\" rel=\"nofollow\" target=\"_blank\">sits</a>, Satellite Image Time Series Analysis for Earth Observation Data Cubes. Submitted by <a href=\"https://www.gilbertocamara.org/\" rel=\"nofollow\" target=\"_blank\">Gilberto Camara</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/546\" rel=\"nofollow\" target=\"_blank\">fwildclusterboot</a>, Fast Wild Cluster Bootstrap Inference for Linear Models. Submitted by <a href=\"https://s3alfisc.github.io/blog/\" rel=\"nofollow\" target=\"_blank\">Alexander Fischer</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Two at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%222/seeking-reviewer(s)%22\" rel=\"nofollow\" target=\"_blank\">‘2/seeking-reviewer(s)’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/684\" rel=\"nofollow\" target=\"_blank\">gtexr</a>, Query the GTEx Portal API. Submitted by <a href=\"https://github.com/rmgpanw\" rel=\"nofollow\" target=\"_blank\">Alasdair Warwick</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/615\" rel=\"nofollow\" target=\"_blank\">galamm</a>, Generalized Additive Latent and Mixed Models. Submitted by <a href=\"https://osorensen.rbind.io/\" rel=\"nofollow\" target=\"_blank\">Øystein Sørensen</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Four at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%221/editor-checks%22\" rel=\"nofollow\" target=\"_blank\">‘1/editor-checks’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/673\" rel=\"nofollow\" target=\"_blank\">sasquatch</a>, Use SAS, R, and quarto Together. Submitted by <a href=\"http://ryanzomorrodi.github.io/\" rel=\"nofollow\" target=\"_blank\">Ryan Zomorrodi</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/667\" rel=\"nofollow\" target=\"_blank\">read.abares</a>, Provides simple downloading, parsing and importing of Australian. Submitted by <a href=\"https://adamhsparks.netlify.app/\" rel=\"nofollow\" target=\"_blank\">Adam H. Sparks</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/660\" rel=\"nofollow\" target=\"_blank\">forcis</a>, An R Client to Access the FORCIS Database. Submitted by <a href=\"https://nicolascasajus.fr/\" rel=\"nofollow\" target=\"_blank\">Nicolas Casajus</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/645\" rel=\"nofollow\" target=\"_blank\">capybara</a>, Fast and Memory Efficient Fitting of Linear Models With High-Dimensional. Submitted by <a href=\"https://pacha.dev/\" rel=\"nofollow\" target=\"_blank\">Mauricio “Pachá” Vargas Sepúlveda</a>.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>Find out more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a> and how to get involved.</p>\n<h2>\nOn the blog\n</h2><!-- Do not forget to rebase your branch! -->\n<ul>\n<li>\n<p><a href=\"https://ropensci.org/blog/2025/02/05/no-science-without-deia\" rel=\"nofollow\" target=\"_blank\">Open Science and Open Source only with Diversity, Equity, Inclusion, and Accessibility</a> by The rOpenSci Team. Including all of humanity is and always will be at the heart of open science. Other languages: <a href=\"https://ropensci.org/es/blog/2025/02/05/no-ciencia-sin-deia\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">Ciencia Abierta y Código Abierto sólo con Diversidad, Equidad, Inclusión y Accesibilidad (es)</a>.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2025/02/20/forks-upstream-relationship\" rel=\"nofollow\" target=\"_blank\">The Dynamic Relationship of Forks with their Upstream Repository</a> by Hugo Gruson, Stefanie Butland, and Ruby Krasnow.</p>\n</li>\n</ul>\n<h2>\nUse cases\n</h2><p>One use case of our packages and resources has been reported since we sent the last newsletter.</p>\n<ul>\n<li><a href=\"https://discuss.ropensci.org/t/metar-analysis-for-flight-conditions/4174\" rel=\"nofollow\" target=\"_blank\">METAR analysis for flight conditions</a>. Reported by Maëlle Salmon.</li>\n</ul>\n<p>Explore <a href=\"https://ropensci.org/usecases\" rel=\"nofollow\" target=\"_blank\">other use cases</a> and <a href=\"https://discuss.ropensci.org/c/usecases/10\" rel=\"nofollow\" target=\"_blank\">report your own</a>!</p>\n<h2>\nCalls for contributions\n</h2><h3>\nCalls for maintainers\n</h3><p>If you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post <a href=\"https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/\" rel=\"nofollow\" target=\"_blank\">What Does It Mean to Maintain a Package?</a>.</p>\n<ul>\n<li>\n<p><a href=\"https://docs.ropensci.org/photosearcher/\" rel=\"nofollow\" target=\"_blank\">photosearcher</a>, Searches Flickr for photographs and metadata. <a href=\"https://github.com/ropensci/photosearcher/issues/21\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/MODIStsp/\" rel=\"nofollow\" target=\"_blank\">MODIStsp</a>, automatic download and preprocessing of MODIS Land Products Time Series. <a href=\"https://github.com/ropensci/MODIStsp/issues/262\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/hddtools/\" rel=\"nofollow\" target=\"_blank\">hddtools</a>, Hydrological Data Discovery Tools. <a href=\"https://github.com/ropensci/hddtools/issues/36\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/USAboundaries/\" rel=\"nofollow\" target=\"_blank\">USAboundaries</a> (and USAboundariesdata), historical and contemporary boundaries of the United States of America . <a href=\"https://github.com/ropensci/USAboundaries/issues/50\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/historydata/\" rel=\"nofollow\" target=\"_blank\">historydata</a>, datasets for historians. <a href=\"https://github.com/ropensci/historydata/issues/23\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n</ul>\n<h3>\nCalls for contributions\n</h3><p>Refer to our <a href=\"https://ropensci.org/help-wanted/\" rel=\"nofollow\" target=\"_blank\">help wanted page</a> – before opening a PR, we recommend asking in the issue whether help is still needed.</p>\n<p>The bib2df package, for parsing BibTeX files into tibbles, would need some help! <a href=\"https://github.com/ropensci/bib2df/issues/65\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n<h2>\nPackage development corner\n</h2><p>Some useful tips for R package developers. 👀</p>\n<h3>\nHow to deal with testthat snapshots with variable output\n</h3><p><a href=\"https://testthat.r-lib.org/articles/snapshotting.html\" rel=\"nofollow\" target=\"_blank\">Snapshot test</a> are a great way to ensure messages and complicated output aren’t broken.\nNow, some randomness might lead to snapshot test failure: for instance, if your function’s message displays a Git commit hash that changes every time.</p>\n<p>How to handle this?\nTwo possibilities…</p>\n<ul>\n<li>You can use the <code>transform</code> argument of <code>testthat::expect_snapshot()</code>, that accepts a function transforming a character input into a character output. For instance, an unit test of <code>ggplot2::ggsave()</code> creates PNG files in a temporary directory. That temporary directory changes at every run. Therefore, the <a href=\"https://github.com/tidyverse/ggplot2/blob/d835cfe2ffb0ff68c9a4b224ec1fcb4caba83892/tests/testthat/test-ggsave.R#L85\" rel=\"nofollow\" target=\"_blank\">call to <code>expect_snapshot()</code></a> is:</li>\n</ul>\n<pre>expect_snapshot(\n x &lt;- suppressMessages(ggsave(c(file1, file2), plot)),\n transform = function(x) gsub(\" \\\\'.*\\\\.png\\\\'\", \"'PATH'\", x)\n)\n</pre><p>That handy <code>transform</code> argument of <code>expect_snapshot()</code> might get even better over time, as an open issue suggests <a href=\"https://github.com/r-lib/testthat/issues/1822\" rel=\"nofollow\" target=\"_blank\">providing a set of default transformers for snapshot tests</a>.</p>\n<ul>\n<li>Another solution is to make the random part of your function’s messages and output fixed based on an environment variable that you <a href=\"https://withr.r-lib.org/reference/with_envvar.html\" rel=\"nofollow\" target=\"_blank\">set in tests</a> (or using <a href=\"https://blog.r-hub.io/2024/03/21/mocking-new-take/\" rel=\"nofollow\" target=\"_blank\">mocking</a>).</li>\n</ul>\n<h3>\nHow to load packages in testthat tests\n</h3><p>Another testthat topic, thanks to software review editor <a href=\"https://github.com/MargaretSiple-NOAA\" rel=\"nofollow\" target=\"_blank\">Margaret Siple</a>.\nHow to load packages used in tests?</p>\n<ul>\n<li>There is no need to load the package under development, testthat will do it for you. This includes loading internal functions. This means that the test files of package <em>mypackage</em> should <em>not</em> start with <code>library(mypackage)</code>.</li>\n<li>There’s rarely a need for using <code>library()</code> calls in test files or helper files. Indeed, testthat will load your own package, and any package or function imported in your package. Now, for packages listed in for instance <code>Suggests</code> and used only in tests, you should use <a href=\"https://r-pkgs.org/testing-design.html#sec-testing-design-tension\" rel=\"nofollow\" target=\"_blank\"><code>pkg::function_name()</code></a>. This makes it possible for R to find the function, but also for easier <a href=\"https://r-pkgs.org/testing-design.html#plan-for-test-failure\" rel=\"nofollow\" target=\"_blank\">debugging of a failed test</a>. An example <em>exception</em> is the <a href=\"https://enpiar.com/httptest2/reference/use_httptest2.html\" rel=\"nofollow\" target=\"_blank\">loading of httptest2</a> in a helper file.</li>\n</ul>\n<h3>\nDon’t get bitten by GitHub Protected Branches\n</h3><p>GitHub’s branch protection rules can prevent pushing directly to protected branches.\nIt is, however, still possible to locally commit to a protected branch, but an attempt to push to GitHub will be rejected.\nYou then have a commit tree that can’t be pushed, and that must somehow be reverted.\nAn easy way to prevent this is to use Lorenz Walthert’s <a href=\"https://lorenzwalthert.github.io/precommit/\" rel=\"nofollow\" target=\"_blank\">precommit R package</a> with a local hook like this:</p>\n<pre>#!/usr/bin/env Rscript\n\nif (identical (gert::git_branch (), \"main\")) # or whatever protected branch is called\n stop (\"main branch is protected on GitHub; commits must be made via PR from other branch\")\n</pre><p>Local hooks can be called from your <code>.pre-commit-config.yaml</code> file like in <a href=\"https://github.com/ropensci-review-tools/pkgmatch/blob/47e0775e6bdc3f96f146f4fd959affe50c9dd4bf/.pre-commit-config.yaml#L79-L82\" rel=\"nofollow\" target=\"_blank\">this example</a>, which has the hook defined above in a <code>.hook/</code> sub-directory.\nThat precommit hook will then prevent you from local commits to any branch that is protected on GitHub.</p>\n<h3>\nWhat is laziness in R\n</h3><p>If you’re confused about the meaning of “lazy” in R programming, you might benefit from this blog post by Maëlle Salmon, Athanasia Mo Mowinckel and Hannah Frick on the R-hub blog: <a href=\"https://blog.r-hub.io/2025/02/13/lazy-meanings/\" rel=\"nofollow\" target=\"_blank\">Lazy introduction to laziness in R</a>.</p>\n<h3>\nFind missing .Rd tags with {checkhelper}\n</h3><p>The <a href=\"https://thinkr-open.r-universe.dev/checkhelper\" rel=\"nofollow\" target=\"_blank\">checkhelper package</a> by <a href=\"https://ropensci.org/author/s%C3%A9bastien-rochette/\" rel=\"nofollow\" target=\"_blank\">Sébastien Rochette</a> helps you identify missing documentation pieces before a submission to CRAN: for instance, missing <code>@return</code>.\nThere might be false positives, for instance if you document several functions on a single page with the same <code>@return</code> (<a href=\"https://github.com/ThinkR-open/checkhelper/issues/84\" rel=\"nofollow\" target=\"_blank\">issue</a>) but it’s nonetheless a handy tool when preparing a CRAN submission.</p>\n<h2>\nLast words\n</h2><p>Thanks for reading! If you want to get involved with rOpenSci, check out our <a href=\"https://contributing.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">Contributing Guide</a> that can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases.\nYou can also support our work through <a href=\"https://ropensci.org/donate\" rel=\"nofollow\" target=\"_blank\">donations</a>.</p>\n<p>If you haven’t subscribed to our newsletter yet, you can <a href=\"https://ropensci.org/news/\" rel=\"nofollow\" target=\"_blank\">do so via a form</a>. Until it’s time for our next newsletter, you can keep in touch with us via our <a href=\"https://ropensci.org/\" rel=\"nofollow\" target=\"_blank\">website</a> and <a href=\"https://hachyderm.io/@rOpenSci\" rel=\"nofollow\" target=\"_blank\">Mastodon account</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2025/02/27/news-february-2025/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "rOpenSci News Digest, February 2025\nPosted on\nFebruary 26, 2025\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDear rOpenSci friends, it’s time for our monthly news roundup!\nYou can read this post\non our blog\n.\nNow let’s dive into the activity at and around rOpenSci!\nrOpenSci HQ\nOpen Science and Open Source only with Diversity, Equity, Inclusion, and Accessibility\nIncluding all of humanity is and always will be at the heart of open science.\nRead more about our mission in our\nblog post\n.\nMark Padgham is now Software Review Lead\nMark Padgham\nis now lead for software peer review. Noam Ross, the former lead, became Executive Director\nlast year\n.\nNew rOpenSci Champion(a|e)s Program cohort\nWe have great news! We will have a new cohort of our\nChampion(a|e) Program\nduring 2025!\nOur program seeks to identify, recognize, and reward individuals who are leaders in an open science community, research software engineering, and the R programming community.\nThis year’s program, thanks to\nfunding by CZI\n, is focused on people from Latin America and will be conducted entirely in Spanish.\nThis program is an incredible platform for developing your open-source project with expert support, interacting, sharing, and strengthening a network with other people determined to develop open and reproducible science in your part of the world.\nStay tuned for our announcement of the opening call to apply as a champion or mentor and join a global community of people using and developing scientific and open-source software.\n“This is Tech Talks” episode with Yanina Bellini Saibene\nYanina Bellini Saibene was interviewed by Santosh Yadav about her role as rOpenSci community manager.\nWatch the\nrecording\n.\n“From Novice to Contributor” on the R Weekly Highlights podcast\nOur community call\n“From Novice to Contributor: Making and Supporting First-Time Contributions to FOSS”\nwith Yi-Chin Sunny Tseng, Pascal Burkhard, Yaoxiang Li, Hugo Gruson was featured in the\nR Weekly Highlights podcast\nhosted by Eric Nantz and Mike Thomas.\nCoworking Mini-hackathons\nRead\nall about coworking\n!\nJoin us for our second\nCoworking Mini-Hackatho for First-Time Contributors\n.\nIf you’re curious about contributing to Open Source Software, and would like some support to get started, this event is for you!\nDuring this session you’ll join others making contributions to R packages while\npackage maintainers and other mentors\nare available ’live’ to answer questions and give guidance.\nTuesday March 4th 14:00 European Central (13:00 UTC)\nAfter this we return to our regular monthly social coworking & office hours held on first Tuesdays! Hosted by Steffi LaZerte and various community hosts. Everyone welcome. No RSVP needed. Consult our\nEvents\npage to find your local time and how to join.\nTuesday April 1st 9:00 Americas Pacific (16:00 UTC)\n, “R you joking? Silly R packages for April Fools’ day” with\nSteffi LaZerte\nand\nYanina Bellini Saibene\nExplore silly R packages\nChat with our hosts and other attendees and share your favourite silly R packages!\nAnd remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!\nNew pkgcheck checks\nOur\npkgcheck\npackage is used both for our\nsoftware review\nsubmission checks, and in\npkgcheck-action\n.\nIt now features two additional checks:\nA check that packages do not\nlist excessive numbers of package\nImports\n.\nPackages with numbers of imports exceeding the 95% of current CRAN packages (which is currently 21 imported packages) will receive an 👀 note.\nA check that repositories do not\nname the default GitHub branch “master”\n, and will fail if so.\nSee\nthis tidyverse blog post\nfor helpful advice on renaming default branches.\nThe\npkgcheck-action\nhas also been updated to run on Ubuntu 24.04, and to include quarto to enable packages to use\nQuarto\nas a vignette engine.\nSoftware 📦\nNew packages\nThe following four packages recently became a part of our software suite:\ncommonmetar\n, developed by Maëlle Salmon: Uses the commonmeta Go library to generate random DOI strings.\nrepometrics\n, developed by Mark Padgham: Metrics for your code repository. Call one function to generate an interactive dashboard displaying the state of your code.\nfireexposuR\n, developed by Air Forbes: This package computes and visualizes wildfire exposure using the methods documented in a series of scientific publications. It has been\nreviewed\nby Sherry Zhang and Ronny A. Hernández Mora.\nQuadratiK\n, developed by Giovanni Saraceno together with Marianthi Markatou, Raktim Mukhopadhyay, and Mojgan Golzy: It includes test for multivariate normality, test for uniformity on the d-dimensional Sphere, non-parametric two- and k-sample tests, random generation of points from the Poisson kernel-based density and clustering algorithm for spherical data. For more information see Saraceno G., Markatou M., Mukhopadhyay R. and Golzy M. (2024)\ndoi:10.48550/arXiv.2402.02290\nMarkatou, M. and Saraceno, G. (2024)\ndoi:10.48550/arXiv.2407.16374\n, Ding, Y., Markatou, M. and Saraceno, G. (2023)\ndoi:10.5705/ss.202022.0347\n, and Golzy, M. and Markatou, M. (2020)\ndoi:10.1080/10618600.2020.1740713\n. It is available on\nCRAN\n. It has been\nreviewed\nby Hingee Kassel and Emi Tanaka.\nDiscover\nmore packages\n, read more about\nSoftware Peer Review\n.\nNew versions\nThe following sixteen packages have had an update since the last newsletter:\nagroclimatico\n(\n1.1.1\n),\nBaseSet\n(\nv1.0.0\n),\nbiomartr\n(\nv1.0.10\n),\nc14bazAAR\n(\n5.1.0\n),\nDataSpaceR\n(\nv0.7.7\n),\ngetCRUCLdata\n(\nv1.0.3\n),\ngigs\n(\nv0.5.2\n),\nriem\n(\nv1.0.0\n),\nrredlist\n(\nv1.0.0\n),\nspiro\n(\nv0.2.3\n),\ntarchetypes\n(\n0.12.0\n),\ntargets\n(\n1.10.1\n),\ntaxize\n(\nv0.10.0\n),\nweathercan\n(\nv0.7.3\n),\nweatherOz\n(\nv2.0.0\n), and\nwebmockr\n(\nv2.0.0\n).\nSoftware Peer Review\nThere are seventeen recently closed and active submissions and 5 submissions on hold. Issues are at different stages:\nThree at\n‘6/approved’\n:\nrredlist\n, IUCN Red List Client. Submitted by\nWilliam Gearty\n.\nfireexposuR\n, Compute and Visualize Wildfire Exposure. Submitted by\nAir Forbes\n.\nQuadratiK\n, A Collection of Methods Using Kernel-Based Quadratic Distances for. Submitted by\nGiovanni Saraceno\n. (Stats).\nFour at\n‘4/review(s)-in-awaiting-changes’\n:\ngeotargets\n, Targets Extensions for Geospatial Formats. Submitted by\nNicholas Tierney\n.\nmapmetadata\n, Map health metadata onto predefined research domains. Submitted by\nRachael Stickland\n.\nmbquartR\n, Finding Manitoba Quarter Sections. Submitted by\nAlex Koiter\n.\npangoling\n, Access to Large Language Model Predictions. Submitted by\nBruno Nicenboim\n.\nFour at\n‘3/reviewer(s)-assigned’\n:\nbutterfly\n, Verification For Continually Updating Timeseries Data. Submitted by\nThomas Zwagerman\n.\npkgmatch\n, Find R Packages Matching Either Descriptions or Other R Packages. Submitted by\nmark padgham\n.\nsits\n, Satellite Image Time Series Analysis for Earth Observation Data Cubes. Submitted by\nGilberto Camara\n.\nfwildclusterboot\n, Fast Wild Cluster Bootstrap Inference for Linear Models. Submitted by\nAlexander Fischer\n. (Stats).\nTwo at\n‘2/seeking-reviewer(s)’\n:\ngtexr\n, Query the GTEx Portal API. Submitted by\nAlasdair Warwick\n.\ngalamm\n, Generalized Additive Latent and Mixed Models. Submitted by\nØystein Sørensen\n. (Stats).\nFour at\n‘1/editor-checks’\n:\nsasquatch\n, Use SAS, R, and quarto Together. Submitted by\nRyan Zomorrodi\n.\nread.abares\n, Provides simple downloading, parsing and importing of Australian. Submitted by\nAdam H. Sparks\n.\nforcis\n, An R Client to Access the FORCIS Database. Submitted by\nNicolas Casajus\n.\ncapybara\n, Fast and Memory Efficient Fitting of Linear Models With High-Dimensional. Submitted by\nMauricio “Pachá” Vargas Sepúlveda\n.\nFind out more about\nSoftware Peer Review\nand how to get involved.\nOn the blog\nOpen Science and Open Source only with Diversity, Equity, Inclusion, and Accessibility\nby The rOpenSci Team. Including all of humanity is and always will be at the heart of open science. Other languages:\nCiencia Abierta y Código Abierto sólo con Diversidad, Equidad, Inclusión y Accesibilidad (es)\n.\nThe Dynamic Relationship of Forks with their Upstream Repository\nby Hugo Gruson, Stefanie Butland, and Ruby Krasnow.\nUse cases\nOne use case of our packages and resources has been reported since we sent the last newsletter.\nMETAR analysis for flight conditions\n. Reported by Maëlle Salmon.\nExplore\nother use cases\nand\nreport your own\n!\nCalls for contributions\nCalls for maintainers\nIf you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post\nWhat Does It Mean to Maintain a Package?\n.\nphotosearcher\n, Searches Flickr for photographs and metadata.\nIssue for volunteering\n.\nMODIStsp\n, automatic download and preprocessing of MODIS Land Products Time Series.\nIssue for volunteering\n.\nhddtools\n, Hydrological Data Discovery Tools.\nIssue for volunteering\n.\nUSAboundaries\n(and USAboundariesdata), historical and contemporary boundaries of the United States of America .\nIssue for volunteering\n.\nhistorydata\n, datasets for historians.\nIssue for volunteering\n.\nCalls for contributions\nRefer to our\nhelp wanted page\n– before opening a PR, we recommend asking in the issue whether help is still needed.\nThe bib2df package, for parsing BibTeX files into tibbles, would need some help!\nIssue for volunteering\n.\nPackage development corner\nSome useful tips for R package developers. 👀\nHow to deal with testthat snapshots with variable output\nSnapshot test\nare a great way to ensure messages and complicated output aren’t broken.\nNow, some randomness might lead to snapshot test failure: for instance, if your function’s message displays a Git commit hash that changes every time.\nHow to handle this?\nTwo possibilities…\nYou can use the\ntransform\nargument of\ntestthat::expect_snapshot()\n, that accepts a function transforming a character input into a character output. For instance, an unit test of\nggplot2::ggsave()\ncreates PNG files in a temporary directory. That temporary directory changes at every run. Therefore, the\ncall to\nexpect_snapshot()\nis:\nexpect_snapshot(\n x <- suppressMessages(ggsave(c(file1, file2), plot)),\n transform = function(x) gsub(\" \\\\'.*\\\\.png\\\\'\", \"'PATH'\", x)\n)\nThat handy\ntransform\nargument of\nexpect_snapshot()\nmight get even better over time, as an open issue suggests\nproviding a set of default transformers for snapshot tests\n.\nAnother solution is to make the random part of your function’s messages and output fixed based on an environment variable that you\nset in tests\n(or using\nmocking\n).\nHow to load packages in testthat tests\nAnother testthat topic, thanks to software review editor\nMargaret Siple\n.\nHow to load packages used in tests?\nThere is no need to load the package under development, testthat will do it for you. This includes loading internal functions. This means that the test files of package\nmypackage\nshould\nnot\nstart with\nlibrary(mypackage)\n.\nThere’s rarely a need for using\nlibrary()\ncalls in test files or helper files. Indeed, testthat will load your own package, and any package or function imported in your package. Now, for packages listed in for instance\nSuggests\nand used only in tests, you should use\npkg::function_name()\n. This makes it possible for R to find the function, but also for easier\ndebugging of a failed test\n. An example\nexception\nis the\nloading of httptest2\nin a helper file.\nDon’t get bitten by GitHub Protected Branches\nGitHub’s branch protection rules can prevent pushing directly to protected branches.\nIt is, however, still possible to locally commit to a protected branch, but an attempt to push to GitHub will be rejected.\nYou then have a commit tree that can’t be pushed, and that must somehow be reverted.\nAn easy way to prevent this is to use Lorenz Walthert’s\nprecommit R package\nwith a local hook like this:\n#!/usr/bin/env Rscript\n\nif (identical (gert::git_branch (), \"main\")) # or whatever protected branch is called\n stop (\"main branch is protected on GitHub; commits must be made via PR from other branch\")\nLocal hooks can be called from your\n.pre-commit-config.yaml\nfile like in\nthis example\n, which has the hook defined above in a\n.hook/\nsub-directory.\nThat precommit hook will then prevent you from local commits to any branch that is protected on GitHub.\nWhat is laziness in R\nIf you’re confused about the meaning of “lazy” in R programming, you might benefit from this blog post by Maëlle Salmon, Athanasia Mo Mowinckel and Hannah Frick on the R-hub blog:\nLazy introduction to laziness in R\n.\nFind missing .Rd tags with {checkhelper}\nThe\ncheckhelper package\nby\nSébastien Rochette\nhelps you identify missing documentation pieces before a submission to CRAN: for instance, missing\n@return\n.\nThere might be false positives, for instance if you document several functions on a single page with the same\n@return\n(\nissue\n) but it’s nonetheless a handy tool when preparing a CRAN submission.\nLast words\nThanks for reading! If you want to get involved with rOpenSci, check out our\nContributing Guide\nthat can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases.\nYou can also support our work through\ndonations\n.\nIf you haven’t subscribed to our newsletter yet, you can\ndo so via a form\n. Until it’s time for our next newsletter, you can keep in touch with us via our\nwebsite\nand\nMastodon account\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open Science and Open Source only with Diversity, Equity, Inclusion...",
+    "meta_keywords": null,
+    "og_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open Science and Open Source only with Diversity, Equity, Inclusion...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "rOpenSci News Digest, February 2025 | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 11.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open Science and Open Source only with Diversity, Equity, Inclusion...",
+    "twitter_title": "rOpenSci News Digest, February 2025 | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/02/ropensci-news-digest-february-2025/",
+    "word_count": 2255
+  }
+}

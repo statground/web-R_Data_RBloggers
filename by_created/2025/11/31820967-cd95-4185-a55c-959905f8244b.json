@@ -1,0 +1,309 @@
+{
+  "uuid": "31820967-cd95-4185-a55c-959905f8244b",
+  "created_at": "2025-11-17 20:38:35",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2024/01/xgboost-tuning-the-hyperparameters-my-secret-2-step-process-in-r/",
+    "crawled_at": "2025-11-17T09:18:28.356907",
+    "external_links": [
+      {
+        "href": "https://www.business-science.io/code-tools/2024/01/12/xgboost-hyperparameter-tuning.html",
+        "text": "business-science.io"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter",
+        "text": "R-tips newsletter"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 076 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/registration-chatgpt-2?el=website",
+        "text": "Inside the workshop"
+      },
+      {
+        "href": "https://learn.business-science.io/registration-chatgpt-2?el=website",
+        "text": "my free chatgpt for data scientists workshop"
+      },
+      {
+        "href": "https://learn.business-science.io/registration-chatgpt-2?el=website",
+        "text": "👉 Register Here"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "weekly video tutorial"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Sign up for our R-Tips Newsletter and get the code."
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 076 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter 076 Folder"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter 076 Folder"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter 076 Folder"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter 076 Folder"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter 076 Folder"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series/",
+        "text": "see my testimonials here"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series",
+        "text": "Here’s the system"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series",
+        "text": "Join My 5-Course R-Track Program Now!(And Become The Data Scientist You Were Meant To Be…)"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series",
+        "text": "This could be you."
+      },
+      {
+        "href": "https://www.business-science.io/code-tools/2024/01/12/xgboost-hyperparameter-tuning.html",
+        "text": "business-science.io"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "XGBoost: Tuning the Hyperparameters (My Secret 2 Step Process in R) | R-bloggers",
+    "images": [
+      {
+        "alt": "XGBoost R Code",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "XGBoost R Code",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/076_get_the_r_code.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "ChatGPT for Data Scientists",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "ChatGPT for Data Scientists",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/lab_82_chatgpt_rcode.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "XGBoost Hyperparameter Tuning",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "XGBoost Hyperparameter Tuning",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/076_xgboost_hyperparameters.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "R Code",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "R Code",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/076_get_the_r_code.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Libraries and Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Libraries and Data",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/076_1_libraries_data.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Customer Churn Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Customer Churn Data",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/076_2_churn_data.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Model and Preprocessor",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Model and Preprocessor",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/076_3_model_and_preprocessor.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Tune Learn Rate",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Tune Learn Rate",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/076_4_tune_learn_rate.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Tune Learn Rate Results",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Tune Learn Rate Results",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/076_5_rankings.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Tune Rest of Parameters",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Tune Rest of Parameters",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/076_6_tune_other_params.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Tune Rest of Parameters Results",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Tune Rest of Parameters Results",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/076_7_rankings.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Bonus Code",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Bonus Code",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/076_8_bonus_code.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "What They're Doing - 5 Course R-Track",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "What They're Doing - 5 Course R-Track",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/rtrack_what_theyre_doing_2.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Success Samantha Got The Job",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Success Samantha Got The Job",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/img/success_samantha_got_job.jpg?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/business-science/",
+        "text": "Business Science"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-381489 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">XGBoost: Tuning the Hyperparameters (My Secret 2 Step Process in R)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 12, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/business-science/\">Business Science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.business-science.io/code-tools/2024/01/12/xgboost-hyperparameter-tuning.html\"> business-science.io</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>Hey guys, welcome back to my <a href=\"https://learn.business-science.io/r-tips-newsletter\" rel=\"nofollow\" target=\"_blank\">R-tips newsletter</a>. For years, I was hyperparameter tuning XGBoost models wrong. In 3 minutes, I’ll share one secret that took me 3 years to figure out. When I did, it cut my training time 10X. Let’s dive in.</p>\n<h3 id=\"table-of-contents\">Table of Contents</h3>\n<p>Here’s what you’re learning today:</p>\n<ul>\n<li><strong>My big mistake</strong> I’ll explain what I was doing wrong for 3 years. And how I fixed it.</li>\n<li><strong>How I Hyperparameter Tune XGBoost Models Now in R</strong>. This will blow your mind.</li>\n</ul>\n<p><img alt=\"XGBoost R Code\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/076_get_the_r_code.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"XGBoost R Code\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/076_get_the_r_code.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 076 Folder)</a></p>\n<hr>\n<!--\n# SPECIAL ANNOUNCEMENT: How To Become A <u>6-Figure Business Scientist</u> (Even In A Recession) on August 30th\n\n![Business Scientist](/assets/business-science-cube-2.jpg)\n\n**What:** How To Become A 6-Figure Business Scientist (Even In A Recession)\n\n**When:** Wednesday August 30th, 2pm EST\n\n**How It Will Help You:** Data science in 2023 has changed. *The 10+ person data science team is out.* And the one-person Business Scientist is in. I'll show you how to become a 1-person data science team inside [my LIVE 6-figure business scientist masterclass](https://learn.business-science.io/registration-2-page?el=website). \n\n**Price:** Does **Free** sound good?\n\n**How To Join:** [**👉 Register Here**](https://learn.business-science.io/registration-2-page?el=website)\n-->\n<h1 id=\"special-announcement-chatgpt-for-data-scientists-workshop-on-january-17th\">SPECIAL ANNOUNCEMENT: ChatGPT for Data Scientists Workshop on January 17th</h1>\n<p><a href=\"https://learn.business-science.io/registration-chatgpt-2?el=website\" rel=\"nofollow\" target=\"_blank\">Inside the workshop</a> I’ll share how I built a Machine Learning Powered Production Shiny App with <code>ChatGPT</code> (extends this data analysis to an <em>insane</em> production app):</p>\n<p><img alt=\"ChatGPT for Data Scientists\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/lab_82_chatgpt_rcode.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"ChatGPT for Data Scientists\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/lab_82_chatgpt_rcode.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p><strong>What:</strong> ChatGPT for Data Scientists</p>\n<p><strong>When:</strong> Wednesday January 17th, 2pm EST</p>\n<p><strong>How It Will Help You:</strong> Whether you are new to data science or are an expert, ChatGPT is changing the game. There’s a ton of hype. But how can ChatGPT actually help you become a better data scientist and help you stand out in your career? I’ll show you inside <a href=\"https://learn.business-science.io/registration-chatgpt-2?el=website\" rel=\"nofollow\" target=\"_blank\">my free chatgpt for data scientists workshop</a>.</p>\n<p><strong>Price:</strong> Does <strong>Free</strong> sound good?</p>\n<p><strong>How To Join:</strong> <a href=\"https://learn.business-science.io/registration-chatgpt-2?el=website\" rel=\"nofollow\" target=\"_blank\"><strong>👉 Register Here</strong></a></p>\n<hr/>\n<h1 id=\"r-tips-weekly\">R-Tips Weekly</h1>\n<p>This article is part of R-Tips Weekly, a <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">weekly video tutorial</a> that shows you step-by-step how to do common R coding tasks. Pretty cool, right?</p>\n<p>Here are the links to get set up. 👇</p>\n<ul>\n<li><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Sign up for our R-Tips Newsletter and get the code.</a></li>\n<!-- <li><a href=\"https://youtu.be/fkwKQi7skAw\" rel=\"nofollow\" target=\"_blank\">YouTube Tutorial</a></li>-->\n</ul>\n<h1 id=\"for-years-i-was-hyperparameter-tuning-xgboost-wrong-heres-how-i-do-it-now\">For years I was hyperparameter tuning XGBoost wrong. Here’s how I do it now.</h1>\n<p>First, here’s a quick review of XGBoost and the algorithm’s hyperparameters.</p>\n<p><img alt=\"XGBoost Hyperparameter Tuning\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/076_xgboost_hyperparameters.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"XGBoost Hyperparameter Tuning\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/076_xgboost_hyperparameters.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<h3 id=\"what-is-xgboost\">What is XGBoost?</h3>\n<p>XGBoost (eXtreme Gradient Boosting) is a popular machine learning algorithm, especially for structured (tabular) data. It’s claim to fame is winning tons of Kaggle Competitions. But more importantly, it’s fast, accurate, and easy to use. But it’s also easy to screw it up.</p>\n<h3 id=\"hyperparameter-tuning\">Hyperparameter Tuning</h3>\n<p>To stabilize your XGBoost models, you need to perform hyperparameter tuning. Otherwise XGBoost can overfit your data causing predictions to be horribly wrong on out of sample data.</p>\n<h3 id=\"my-3-year-beginner-mistake\">My 3-Year “Beginner” Mistake:</h3>\n<p><strong>XGBoost has tons of parameters.</strong> The mistake I was making was treating all of the parameters equally. This caused me hours of tuning my models. And my results weren’t half as good until I started doing this.</p>\n<h3 id=\"how-i-improved-my-hyperparameter-tuning\">How I improved my hyperparameter tuning:</h3>\n<p>XGBoost has one parameter that rules them all. And after 3 years, I noticed that model stability was 80% driven by this parameter. What was it?</p>\n<p><strong>Learning rate.</strong> When I figured this out that’s when things started to change. My models got better. My training times were reduced. Win win.</p>\n<h3 id=\"my-simple-2-step-hyperparameter-tuning-method-for-xgboost\">My Simple 2 Step Hyperparameter Tuning Method for XGBoost:</h3>\n<p>What I was doing wrong was doing random grid search over all of the parameters. This took hours. So I made a key change. I began isolating Learning Rate, tuning it first. This was Step 1. The search space for one parameter is super fast to tune.</p>\n<p><strong>What about the other parameters?</strong> Once learning rate was tuned, I then opened the search space to more parameters. This is Step 2. The rest of the parameters have maybe 20% contribution to performance, so that means I can reduce the search space dramatically.</p>\n<h3 id=\"the-big-benefit\">The BIG benefit:</h3>\n<p>Separating tuning into 2 steps cut my training times by a factor of 10X. And my models actually became better. Faster training, better models. Win win.</p>\n<h1 id=\"xgboost-hyperparameter-tuning-how-to-do-my-2-step-process-in-r\">XGBoost Hyperparameter Tuning (how to do my 2 step process in <code>R</code>)</h1>\n<p>Now that you know the secret, let’s see how to do it in <code>R</code>.</p>\n<h3 id=\"r-code\">R Code</h3>\n<p><strong>Get The Code:</strong> You can follow along with the R code in the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter</a>. <strong>All code is avaliable in R-Tip 076.</strong></p>\n<p><img alt=\"R Code\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/076_get_the_r_code.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"R Code\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/076_get_the_r_code.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 076 Folder)</a></p>\n<h2 id=\"load-the-libraries-and-data\">Load the Libraries and Data</h2>\n<p>First, we load the libraries and data. Run this code from the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter 076 Folder</a>.</p>\n<p><img alt=\"Libraries and Data\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/076_1_libraries_data.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Libraries and Data\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/076_1_libraries_data.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p>This loads in the customer churn dataset. We’ll use this to demonstrate the 2 step process.</p>\n<p><img alt=\"Customer Churn Data\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/076_2_churn_data.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Customer Churn Data\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/076_2_churn_data.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<h2 id=\"set-up-a-model-and-preprocessor-specification\">Set up a Model and Preprocessor Specification</h2>\n<p>This is from <code>tidymodels</code>. We’ll use this to set up our model and preprocessing specification. Run this code from the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter 076 Folder</a>.</p>\n<p><strong>Important:</strong> We only specify the <code>learn_rate = tune()</code> as the only tuning parameter right now. This is Step 1. We’ll add more parameters in Step 2.</p>\n<p><img alt=\"Model and Preprocessor\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/076_3_model_and_preprocessor.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Model and Preprocessor\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/076_3_model_and_preprocessor.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<h2 id=\"step-1-tuning-the-learn-rate\">Step 1: Tuning the Learn Rate</h2>\n<p>For the first stage, we tune the learn rate. This is the most important parameter. Run this code from the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter 076 Folder</a>.</p>\n<p><img alt=\"Tune Learn Rate\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/076_4_tune_learn_rate.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Tune Learn Rate\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/076_4_tune_learn_rate.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p>In the code above:</p>\n<ol>\n<li>You make a Tuning Grid specifying 10 values for the learn rate.</li>\n<li>You set up the Workflow using the model and preprocessing specification.</li>\n<li>You set up the Resampling Specification using 5-fold cross validation. Then tune the learn rate using the <code>tune_grid()</code> function and optimizing for the maximum ROC AUC value.</li>\n</ol>\n<p>The last line of code returns the ranked results. You can see that the best learn rate is 2.91e-2.</p>\n<p><img alt=\"Tune Learn Rate Results\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/076_5_rankings.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Tune Learn Rate Results\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/076_5_rankings.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<h2 id=\"step-2-tuning-the-rest-of-the-parameters\">Step 2: Tuning the Rest of the Parameters</h2>\n<p>Now that we have the learn rate, we can tune the rest of the parameters. Run this code from the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter 076 Folder</a>.</p>\n<p><img alt=\"Tune Rest of Parameters\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/076_6_tune_other_params.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Tune Rest of Parameters\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/076_6_tune_other_params.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p>In the code above:</p>\n<ol>\n<li>Get the best learn rate from step 1</li>\n<li>Update the model specification with the best learn rate and the other parameters to tune.</li>\n<li>Make a new grid with 10 combinations of the new tuning parameters</li>\n<li>Tune the model using the new grid and the same resampling specification as before.</li>\n</ol>\n<p>The last line of code returns the ranked results. You can see that the best AUC is still 0.839, which is what we obtained before.</p>\n<p><img alt=\"Tune Rest of Parameters Results\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/076_7_rankings.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Tune Rest of Parameters Results\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/076_7_rankings.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<h2 id=\"bonus-code-finalize-the-model\">Bonus Code: Finalize the Model</h2>\n<p>Now that we have the best parameters, we can finalize the model. Run this code from the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter 076 Folder</a>.</p>\n<p><img alt=\"Bonus Code\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/076_8_bonus_code.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Bonus Code\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/076_8_bonus_code.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<h1 id=\"conclusions\">Conclusions:</h1>\n<p>You’ve learned my secret 2 step process for tuning XGBoost models in R. But there’s a lot more to becoming an elite data scientist.</p>\n<p>If you are struggling to become a Data Scientist for Business, then please read on…</p>\n<h1 id=\"struggling-to-become-a-data-scientist\">Struggling to become a data scientist?</h1>\n<p>You know the feeling. Being unhappy with your current job.</p>\n<p>Promotions aren’t happening. You’re stuck. Feeling Hopeless. Confused…</p>\n<p>And you’re praying that the next job interview will go better than the last 12…</p>\n<p>… But you know it won’t. Not unless you take control of your career.</p>\n<p>The good news is…</p>\n<h1 id=\"i-can-help-you-speed-it-up\">I Can Help You Speed It Up.</h1>\n<p>I’ve helped 6,107+ students learn data science for business from an elite business consultant’s perspective.</p>\n<p>I’ve worked with Fortune 500 companies like S&amp;P Global, Apple, MRM McCann, and more.</p>\n<p>And I built a training program that gets my students life-changing data science careers (don’t believe me? <a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series/\" rel=\"nofollow\" target=\"_blank\">see my testimonials here</a>):</p>\n<h4 class=\"text-center\">\n6-Figure Data Science Job at CVS Health ($125K)<br/><div style=\"height:10px;\"></div>\nSenior VP Of Analytics At JP Morgan ($200K)<br/><div style=\"height:10px;\"></div>\n50%+ Raises &amp; Promotions ($150K)<br/><div style=\"height:10px;\"></div>\nLead Data Scientist at Northwestern Mutual ($175K)<br/><div style=\"height:10px;\"></div>\n2X-ed Salary (From $60K to $120K)<br/><div style=\"height:10px;\"></div>\n2 Competing ML Job Offers ($150K)<br/><div style=\"height:10px;\"></div>\nPromotion to Lead Data Scientist ($175K)<br/><div style=\"height:10px;\"></div>\nData Scientist Job at Verizon ($125K+)<br/><div style=\"height:10px;\"></div>\nData Scientist Job at CitiBank ($100K + Bonus)<br/><div style=\"height:10px;\"></div>\n</h4>\n<h1 id=\"whenever-you-are-ready-heres-the-system-they-are-taking\">Whenever you are ready, here’s the system they are taking:</h1>\n<p><a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series\" rel=\"nofollow\" target=\"_blank\">Here’s the system</a> that has gotten aspiring data scientists, career transitioners, and life long learners data science jobs and promotions…</p>\n<p><img alt=\"What They're Doing - 5 Course R-Track\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/rtrack_what_theyre_doing_2.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"What They're Doing - 5 Course R-Track\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/rtrack_what_theyre_doing_2.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p style=\"font-size: 36px;text-align: center;\">\n<a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series\" rel=\"nofollow\" target=\"_blank\">\n<strong>Join My 5-Course R-Track Program Now!</strong><br/><small style=\"font-size:24px;\">(And Become The Data Scientist You Were Meant To Be…)</small>\n</a>\n</p>\n<p>P.S. – Samantha landed her NEW Data Science R Developer job at CVS Health (Fortune 500). <a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series\" rel=\"nofollow\" target=\"_blank\">This could be you.</a></p>\n<p><img alt=\"Success Samantha Got The Job\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/img/success_samantha_got_job.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Success Samantha Got The Job\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/img/success_samantha_got_job.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.business-science.io/code-tools/2024/01/12/xgboost-hyperparameter-tuning.html\"> business-science.io</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </hr></div>\n</article>",
+    "main_text": "XGBoost: Tuning the Hyperparameters (My Secret 2 Step Process in R)\nPosted on\nJanuary 12, 2024\nby\nBusiness Science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nbusiness-science.io\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nHey guys, welcome back to my\nR-tips newsletter\n. For years, I was hyperparameter tuning XGBoost models wrong. In 3 minutes, I’ll share one secret that took me 3 years to figure out. When I did, it cut my training time 10X. Let’s dive in.\nTable of Contents\nHere’s what you’re learning today:\nMy big mistake\nI’ll explain what I was doing wrong for 3 years. And how I fixed it.\nHow I Hyperparameter Tune XGBoost Models Now in R\n. This will blow your mind.\nGet the Code (In the R-Tip 076 Folder)\nSPECIAL ANNOUNCEMENT: ChatGPT for Data Scientists Workshop on January 17th\nInside the workshop\nI’ll share how I built a Machine Learning Powered Production Shiny App with\nChatGPT\n(extends this data analysis to an\ninsane\nproduction app):\nWhat:\nChatGPT for Data Scientists\nWhen:\nWednesday January 17th, 2pm EST\nHow It Will Help You:\nWhether you are new to data science or are an expert, ChatGPT is changing the game. There’s a ton of hype. But how can ChatGPT actually help you become a better data scientist and help you stand out in your career? I’ll show you inside\nmy free chatgpt for data scientists workshop\n.\nPrice:\nDoes\nFree\nsound good?\nHow To Join:\n👉 Register Here\nR-Tips Weekly\nThis article is part of R-Tips Weekly, a\nweekly video tutorial\nthat shows you step-by-step how to do common R coding tasks. Pretty cool, right?\nHere are the links to get set up. 👇\nSign up for our R-Tips Newsletter and get the code.\nFor years I was hyperparameter tuning XGBoost wrong. Here’s how I do it now.\nFirst, here’s a quick review of XGBoost and the algorithm’s hyperparameters.\nWhat is XGBoost?\nXGBoost (eXtreme Gradient Boosting) is a popular machine learning algorithm, especially for structured (tabular) data. It’s claim to fame is winning tons of Kaggle Competitions. But more importantly, it’s fast, accurate, and easy to use. But it’s also easy to screw it up.\nHyperparameter Tuning\nTo stabilize your XGBoost models, you need to perform hyperparameter tuning. Otherwise XGBoost can overfit your data causing predictions to be horribly wrong on out of sample data.\nMy 3-Year “Beginner” Mistake:\nXGBoost has tons of parameters.\nThe mistake I was making was treating all of the parameters equally. This caused me hours of tuning my models. And my results weren’t half as good until I started doing this.\nHow I improved my hyperparameter tuning:\nXGBoost has one parameter that rules them all. And after 3 years, I noticed that model stability was 80% driven by this parameter. What was it?\nLearning rate.\nWhen I figured this out that’s when things started to change. My models got better. My training times were reduced. Win win.\nMy Simple 2 Step Hyperparameter Tuning Method for XGBoost:\nWhat I was doing wrong was doing random grid search over all of the parameters. This took hours. So I made a key change. I began isolating Learning Rate, tuning it first. This was Step 1. The search space for one parameter is super fast to tune.\nWhat about the other parameters?\nOnce learning rate was tuned, I then opened the search space to more parameters. This is Step 2. The rest of the parameters have maybe 20% contribution to performance, so that means I can reduce the search space dramatically.\nThe BIG benefit:\nSeparating tuning into 2 steps cut my training times by a factor of 10X. And my models actually became better. Faster training, better models. Win win.\nXGBoost Hyperparameter Tuning (how to do my 2 step process in\nR\n)\nNow that you know the secret, let’s see how to do it in\nR\n.\nR Code\nGet The Code:\nYou can follow along with the R code in the\nR-Tips Newsletter\n.\nAll code is avaliable in R-Tip 076.\nGet the Code (In the R-Tip 076 Folder)\nLoad the Libraries and Data\nFirst, we load the libraries and data. Run this code from the\nR-Tips Newsletter 076 Folder\n.\nThis loads in the customer churn dataset. We’ll use this to demonstrate the 2 step process.\nSet up a Model and Preprocessor Specification\nThis is from\ntidymodels\n. We’ll use this to set up our model and preprocessing specification. Run this code from the\nR-Tips Newsletter 076 Folder\n.\nImportant:\nWe only specify the\nlearn_rate = tune()\nas the only tuning parameter right now. This is Step 1. We’ll add more parameters in Step 2.\nStep 1: Tuning the Learn Rate\nFor the first stage, we tune the learn rate. This is the most important parameter. Run this code from the\nR-Tips Newsletter 076 Folder\n.\nIn the code above:\nYou make a Tuning Grid specifying 10 values for the learn rate.\nYou set up the Workflow using the model and preprocessing specification.\nYou set up the Resampling Specification using 5-fold cross validation. Then tune the learn rate using the\ntune_grid()\nfunction and optimizing for the maximum ROC AUC value.\nThe last line of code returns the ranked results. You can see that the best learn rate is 2.91e-2.\nStep 2: Tuning the Rest of the Parameters\nNow that we have the learn rate, we can tune the rest of the parameters. Run this code from the\nR-Tips Newsletter 076 Folder\n.\nIn the code above:\nGet the best learn rate from step 1\nUpdate the model specification with the best learn rate and the other parameters to tune.\nMake a new grid with 10 combinations of the new tuning parameters\nTune the model using the new grid and the same resampling specification as before.\nThe last line of code returns the ranked results. You can see that the best AUC is still 0.839, which is what we obtained before.\nBonus Code: Finalize the Model\nNow that we have the best parameters, we can finalize the model. Run this code from the\nR-Tips Newsletter 076 Folder\n.\nConclusions:\nYou’ve learned my secret 2 step process for tuning XGBoost models in R. But there’s a lot more to becoming an elite data scientist.\nIf you are struggling to become a Data Scientist for Business, then please read on…\nStruggling to become a data scientist?\nYou know the feeling. Being unhappy with your current job.\nPromotions aren’t happening. You’re stuck. Feeling Hopeless. Confused…\nAnd you’re praying that the next job interview will go better than the last 12…\n… But you know it won’t. Not unless you take control of your career.\nThe good news is…\nI Can Help You Speed It Up.\nI’ve helped 6,107+ students learn data science for business from an elite business consultant’s perspective.\nI’ve worked with Fortune 500 companies like S&P Global, Apple, MRM McCann, and more.\nAnd I built a training program that gets my students life-changing data science careers (don’t believe me?\nsee my testimonials here\n):\n6-Figure Data Science Job at CVS Health ($125K)\nSenior VP Of Analytics At JP Morgan ($200K)\n50%+ Raises & Promotions ($150K)\nLead Data Scientist at Northwestern Mutual ($175K)\n2X-ed Salary (From $60K to $120K)\n2 Competing ML Job Offers ($150K)\nPromotion to Lead Data Scientist ($175K)\nData Scientist Job at Verizon ($125K+)\nData Scientist Job at CitiBank ($100K + Bonus)\nWhenever you are ready, here’s the system they are taking:\nHere’s the system\nthat has gotten aspiring data scientists, career transitioners, and life long learners data science jobs and promotions…\nJoin My 5-Course R-Track Program Now!\n(And Become The Data Scientist You Were Meant To Be…)\nP.S. – Samantha landed her NEW Data Science R Developer job at CVS Health (Fortune 500).\nThis could be you.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nbusiness-science.io\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Hey guys, welcome back to my R-tips newsletter. For years, I was hyperparameter tuning XGBoost models wrong. In 3 minutes, I’ll share one secret that took me 3 years to figure out. When I did, it cut my training time 10X. Let’s dive in. Table of Conte...",
+    "meta_keywords": null,
+    "og_description": "Hey guys, welcome back to my R-tips newsletter. For years, I was hyperparameter tuning XGBoost models wrong. In 3 minutes, I’ll share one secret that took me 3 years to figure out. When I did, it cut my training time 10X. Let’s dive in. Table of Conte...",
+    "og_image": "https://www.business-science.io/assets/076_get_the_r_code.jpg",
+    "og_title": "XGBoost: Tuning the Hyperparameters (My Secret 2 Step Process in R) | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 7.3,
+    "sitemap_lastmod": "2024-01-12T22:00:00+00:00",
+    "twitter_description": "Hey guys, welcome back to my R-tips newsletter. For years, I was hyperparameter tuning XGBoost models wrong. In 3 minutes, I’ll share one secret that took me 3 years to figure out. When I did, it cut my training time 10X. Let’s dive in. Table of Conte...",
+    "twitter_title": "XGBoost: Tuning the Hyperparameters (My Secret 2 Step Process in R) | R-bloggers",
+    "url": "https://www.r-bloggers.com/2024/01/xgboost-tuning-the-hyperparameters-my-secret-2-step-process-in-r/",
+    "word_count": 1451
+  }
+}

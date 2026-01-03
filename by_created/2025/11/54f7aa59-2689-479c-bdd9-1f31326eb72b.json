@@ -1,0 +1,107 @@
+{
+  "uuid": "54f7aa59-2689-479c-bdd9-1f31326eb72b",
+  "created_at": "2025-11-22 19:58:22",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/06/impact-of-budget-deficits-on-treasury-yields-with-xgboost/",
+    "crawled_at": "2025-11-22T10:47:29.402455",
+    "external_links": [
+      {
+        "href": "https://datageeek.com/2025/06/11/impact-of-budget-deficits-on-treasury-yields-with-xgboost/",
+        "text": "DataGeeek"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://datageeek.com/2025/06/11/impact-of-budget-deficits-on-treasury-yields-with-xgboost/",
+        "text": "DataGeeek"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Impact of Budget Deficits on Treasury Yields with XGBoost | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/selcuk-disci/",
+        "text": "Selcuk Disci"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-392992 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Impact of Budget Deficits on Treasury Yields with XGBoost</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/selcuk-disci/\">Selcuk Disci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://datageeek.com/2025/06/11/impact-of-budget-deficits-on-treasury-yields-with-xgboost/\"> DataGeeek</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Charles Schwab analysts said that historically, budget deficits have had minimal impact on Treasury yields, primarily due to the United States’ economic dominance and its status as the issuer of the world’s reserve currency.</p>\n<p>The variable importance analysis with the XGBoost machine learning model confirms the aforementioned statement.</p>\n<figure class=\"wp-block-image size-large\"><img alt=\"\" class=\"wp-image-10514\" data-attachment-id=\"10514\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-title=\"deficit\" data-large-file=\"https://i2.wp.com/datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=450&amp;ssl=1\" data-lazy-src=\"https://i2.wp.com/datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=450&amp;ssl=1\" data-medium-file=\"https://datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=300\" data-orig-file=\"https://datageeek.com/wp-content/uploads/2025/06/deficit-1.png\" data-orig-size=\"1131,773\" data-permalink=\"https://datageeek.com/2025/06/11/impact-of-budget-deficits-on-treasury-yields-with-xgboost/deficit-2/\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_len=\"\" class=\"wp-image-10514\" data-attachment-id=\"10514\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-meta=\"{\" data-image-title=\"deficit\" data-large-file=\"https://i2.wp.com/datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=450&amp;ssl=1\" data-medium-file=\"https://datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=300\" data-orig-file=\"https://datageeek.com/wp-content/uploads/2025/06/deficit-1.png\" data-orig-size=\"1131,773\" data-permalink=\"https://datageeek.com/2025/06/11/impact-of-budget-deficits-on-treasury-yields-with-xgboost/deficit-2/\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=450&amp;ssl=1\"/></noscript></figure>\n<p><strong><em>Source code:</em></strong></p>\n<pre>\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(tidyquant)\n\n#30-year Treasury yield (^TYX) \ndf_yield_30 &lt;- \n  tq_get(\"^TYX\") %&gt;% \n  tq_transmute(select = close,\n               mutate_fun = to.monthly,\n               col_rename = \"yield_30\") %&gt;% \n  mutate(date = as.Date(date))\n\n#Federal Surplus or Deficit [-] (MTSDS133FMS)\ndf_deficit &lt;- \n  tq_get(\"MTSDS133FMS\", get = \"economic.data\") %&gt;% \n  select(date, deficit = price)\n\n#Merging the datasets\ndf_merged &lt;- \n  df_yield_30 %&gt;% \n  left_join(df_deficit) %&gt;% \n  drop_na()\n\n#Data split\nsplits &lt;- initial_time_split(df_merged, prop = 0.8)\ndf_train &lt;- training(splits)\ndf_test &lt;- testing(splits)\n\n#Bootstrapping for tuning\nset.seed(12345)\ndf_folds &lt;- bootstraps(df_train,\n                       times = 100)\n#Model\nmodel_spec &lt;- \n  boost_tree(trees = tune(),\n             learn_rate = tune()) %&gt;%\n  set_engine(\"xgboost\") %&gt;% \n  set_mode(\"regression\")\n\n#Preprocessing\nrecipe_spec &lt;- \n  recipe(yield_30 ~ ., data = df_train) %&gt;%\n  step_date(date, features = \"month\", ordinal = FALSE) %&gt;%\n  step_dummy(all_nominal_predictors(), one_hot = TRUE) %&gt;% \n  step_mutate(date_num = as.numeric(date)) %&gt;%\n  step_normalize(all_numeric_predictors()) %&gt;%\n  step_rm(date)\n\n\n#Workflow sets\nwflow_xgboost &lt;- \n  workflow_set(\n    preproc = list(recipe = recipe_spec),\n    models = list(model = model_spec)\n  ) \n\n\n#Tuning and evaluating all the models\ngrid_ctrl &lt;-\n  control_grid(\n    save_pred = TRUE,\n    parallel_over = \"everything\",\n    save_workflow = TRUE\n  )\n\ngrid_results &lt;-\n  wflow_xgboost %&gt;%\n  workflow_map(\n    seed = 98765,\n    resamples = df_folds,\n    grid = 10,\n    control = grid_ctrl\n  )\n\n#Accuracy of the grid results\ngrid_results %&gt;% \n  rank_results(select_best = TRUE, \n               rank_metric = \"rsq\") %&gt;%\n  select(Models = wflow_id, .metric, mean)\n\n\n#Finalizing the model with the best parameters\nbest_param &lt;- \n  grid_results %&gt;%\n  extract_workflow_set_result(\"recipe_model\") %&gt;% \n  select_best(metric = \"rsq\")\n\n\nwflw_fit &lt;- \n  grid_results %&gt;% \n  extract_workflow(\"recipe_model\") %&gt;% \n  finalize_workflow(best_param) %&gt;% \n  fit(df_train)\n\n\n#Variable importance\nlibrary(DALEXtra)\n\n#Fitted workflow for KNN\nset.seed(98765)\n\nknn_wflow_fitted &lt;- \n  workflow() %&gt;% \n  add_recipe(rec_features) %&gt;% \n  add_model(spec_knn) %&gt;% \n  fit(df_train)\n\n#Processed data frame for variable importance calculation\nimp_data &lt;- \n  recipe_spec %&gt;% \n  prep() %&gt;% \n  bake(new_data = NULL) \n\n#Explainer object\nexplainer_xgboost &lt;- \n  explain_tidymodels(\n    wflw_fit %&gt;% extract_fit_parsnip(), \n    data = imp_data %&gt;% select(-yield_30), \n    y = imp_data$yield_30,\n    label = \"\",\n    verbose = FALSE\n  )\n\n\n#Calculating permutation-based variable importance \nset.seed(1983)\nvip_xgboost &lt;- model_parts(explainer_xgboost, \n                           loss_function = loss_root_mean_square,\n                           type = \"difference\",\n                           B = 100,#the number of permutations\n                           label = \"\")\n\n#Plot VIP\nvip_xgboost %&gt;% \n  plot() +\n  labs(color = \"\",\n       x = \"\",\n       y = \"\",\n       subtitle = \"Higher indicates more important\",\n       title = \"Factors Affecting 30-year Treasury Yield\") +\n  theme_minimal(base_family = \"Roboto Slab\",\n                base_size = 16) +\n  theme(legend.position = \"none\",\n        plot.title = element_text(hjust = 0.5, \n                                  size = 14,\n                                  face = \"bold\"),\n        plot.subtitle = element_text(hjust = 0.5, size = 12),\n        panel.grid.minor.x = element_blank(),\n        panel.grid.major.y = element_blank(),\n        plot.background = element_rect(fill = \"azure\"))\n</pre>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://datageeek.com/2025/06/11/impact-of-budget-deficits-on-treasury-yields-with-xgboost/\"> DataGeeek</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Impact of Budget Deficits on Treasury Yields with XGBoost\nPosted on\nJune 11, 2025\nby\nSelcuk Disci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDataGeeek\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nCharles Schwab analysts said that historically, budget deficits have had minimal impact on Treasury yields, primarily due to the United States’ economic dominance and its status as the issuer of the world’s reserve currency.\nThe variable importance analysis with the XGBoost machine learning model confirms the aforementioned statement.\nSource code:\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(tidyquant)\n\n#30-year Treasury yield (^TYX) \ndf_yield_30 <- \n  tq_get(\"^TYX\") %>% \n  tq_transmute(select = close,\n               mutate_fun = to.monthly,\n               col_rename = \"yield_30\") %>% \n  mutate(date = as.Date(date))\n\n#Federal Surplus or Deficit [-] (MTSDS133FMS)\ndf_deficit <- \n  tq_get(\"MTSDS133FMS\", get = \"economic.data\") %>% \n  select(date, deficit = price)\n\n#Merging the datasets\ndf_merged <- \n  df_yield_30 %>% \n  left_join(df_deficit) %>% \n  drop_na()\n\n#Data split\nsplits <- initial_time_split(df_merged, prop = 0.8)\ndf_train <- training(splits)\ndf_test <- testing(splits)\n\n#Bootstrapping for tuning\nset.seed(12345)\ndf_folds <- bootstraps(df_train,\n                       times = 100)\n#Model\nmodel_spec <- \n  boost_tree(trees = tune(),\n             learn_rate = tune()) %>%\n  set_engine(\"xgboost\") %>% \n  set_mode(\"regression\")\n\n#Preprocessing\nrecipe_spec <- \n  recipe(yield_30 ~ ., data = df_train) %>%\n  step_date(date, features = \"month\", ordinal = FALSE) %>%\n  step_dummy(all_nominal_predictors(), one_hot = TRUE) %>% \n  step_mutate(date_num = as.numeric(date)) %>%\n  step_normalize(all_numeric_predictors()) %>%\n  step_rm(date)\n\n#Workflow sets\nwflow_xgboost <- \n  workflow_set(\n    preproc = list(recipe = recipe_spec),\n    models = list(model = model_spec)\n  ) \n\n#Tuning and evaluating all the models\ngrid_ctrl <-\n  control_grid(\n    save_pred = TRUE,\n    parallel_over = \"everything\",\n    save_workflow = TRUE\n  )\n\ngrid_results <-\n  wflow_xgboost %>%\n  workflow_map(\n    seed = 98765,\n    resamples = df_folds,\n    grid = 10,\n    control = grid_ctrl\n  )\n\n#Accuracy of the grid results\ngrid_results %>% \n  rank_results(select_best = TRUE, \n               rank_metric = \"rsq\") %>%\n  select(Models = wflow_id, .metric, mean)\n\n#Finalizing the model with the best parameters\nbest_param <- \n  grid_results %>%\n  extract_workflow_set_result(\"recipe_model\") %>% \n  select_best(metric = \"rsq\")\n\nwflw_fit <- \n  grid_results %>% \n  extract_workflow(\"recipe_model\") %>% \n  finalize_workflow(best_param) %>% \n  fit(df_train)\n\n#Variable importance\nlibrary(DALEXtra)\n\n#Fitted workflow for KNN\nset.seed(98765)\n\nknn_wflow_fitted <- \n  workflow() %>% \n  add_recipe(rec_features) %>% \n  add_model(spec_knn) %>% \n  fit(df_train)\n\n#Processed data frame for variable importance calculation\nimp_data <- \n  recipe_spec %>% \n  prep() %>% \n  bake(new_data = NULL) \n\n#Explainer object\nexplainer_xgboost <- \n  explain_tidymodels(\n    wflw_fit %>% extract_fit_parsnip(), \n    data = imp_data %>% select(-yield_30), \n    y = imp_data$yield_30,\n    label = \"\",\n    verbose = FALSE\n  )\n\n#Calculating permutation-based variable importance \nset.seed(1983)\nvip_xgboost <- model_parts(explainer_xgboost, \n                           loss_function = loss_root_mean_square,\n                           type = \"difference\",\n                           B = 100,#the number of permutations\n                           label = \"\")\n\n#Plot VIP\nvip_xgboost %>% \n  plot() +\n  labs(color = \"\",\n       x = \"\",\n       y = \"\",\n       subtitle = \"Higher indicates more important\",\n       title = \"Factors Affecting 30-year Treasury Yield\") +\n  theme_minimal(base_family = \"Roboto Slab\",\n                base_size = 16) +\n  theme(legend.position = \"none\",\n        plot.title = element_text(hjust = 0.5, \n                                  size = 14,\n                                  face = \"bold\"),\n        plot.subtitle = element_text(hjust = 0.5, size = 12),\n        panel.grid.minor.x = element_blank(),\n        panel.grid.major.y = element_blank(),\n        plot.background = element_rect(fill = \"azure\"))\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDataGeeek\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Charles Schwab analysts said that historically, budget deficits have had minimal impact on Treasury yields, primarily due to the United States’ economic dominance and its status as the issuer of the world’s reserve currency. The variable importance analysis with the XGBoost machine learning model confirms the aforementioned statement. Source code:",
+    "meta_keywords": null,
+    "og_description": "Charles Schwab analysts said that historically, budget deficits have had minimal impact on Treasury yields, primarily due to the United States’ economic dominance and its status as the issuer of the world’s reserve currency. The variable importance analysis with the XGBoost machine learning model confirms the aforementioned statement. Source code:",
+    "og_image": "https://datageeek.com/wp-content/uploads/2025/06/deficit-1.png?w=1024",
+    "og_title": "Impact of Budget Deficits on Treasury Yields with XGBoost | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.6,
+    "sitemap_lastmod": null,
+    "twitter_description": "Charles Schwab analysts said that historically, budget deficits have had minimal impact on Treasury yields, primarily due to the United States’ economic dominance and its status as the issuer of the world’s reserve currency. The variable importance analysis with the XGBoost machine learning model confirms the aforementioned statement. Source code:",
+    "twitter_title": "Impact of Budget Deficits on Treasury Yields with XGBoost | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/06/impact-of-budget-deficits-on-treasury-yields-with-xgboost/",
+    "word_count": 511
+  }
+}

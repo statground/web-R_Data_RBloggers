@@ -1,0 +1,132 @@
+{
+  "uuid": "b6f7cbd0-1b84-45df-bd6f-286dbd8e6bcf",
+  "created_at": "2025-11-17 20:39:39",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/cpp-package-exposing-c-objects/",
+    "crawled_at": "2025-11-17T10:09:59.228847",
+    "external_links": [
+      {
+        "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/12/22/CPP-package-%3A-exposing-C-objects",
+        "text": "Romain Francois, Professional R Enthusiast"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://r-forge.r-project.org/projects/cpp/",
+        "text": "r-forge"
+      },
+      {
+        "href": "http://finzi.psych.upenn.edu/R/library/rJava/html/J.html",
+        "text": "J"
+      },
+      {
+        "href": "http://www.cplusplus.com/reference/stl/set/",
+        "text": "Sets"
+      },
+      {
+        "href": "http://dirk.eddelbuettel.com/code/rcpp.html",
+        "text": "Rcpp"
+      },
+      {
+        "href": "https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel",
+        "text": "Rcpp-devel"
+      },
+      {
+        "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/12/22/CPP-package-%3A-exposing-C-objects",
+        "text": "Romain Francois, Professional R Enthusiast"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "CPP package: exposing C++ objects | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/romain-francois/",
+        "text": "romain francois"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/cplusplus/",
+        "text": "cplusplus"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/cpp/",
+        "text": "CPP"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/package/",
+        "text": "package"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-471 post type-post status-publish format-standard hentry category-r-bloggers tag-cplusplus tag-cpp tag-package tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">CPP package: exposing C++ objects</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/romain-francois/\">romain francois</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/12/22/CPP-package-%3A-exposing-C-objects\"> Romain Francois, Professional R Enthusiast</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--> <p>I’ve just started working on the new package <strong>CPP</strong>, as usual the project is maintained in <a href=\"http://r-forge.r-project.org/projects/cpp/\" rel=\"nofollow\" target=\"_blank\">r-forge</a>. The package aims at exposing C++ classes at the R level, starting from classes from the c++ standard template library.</p>\n<p>key to the package is the <strong>CPP</strong> function (much inspired from the <a href=\"http://finzi.psych.upenn.edu/R/library/rJava/html/J.html\" rel=\"nofollow\" target=\"_blank\">J</a> function of rJava). The CPP function builds an S4 object of class “C++Class”. The “C++Class” currently is a placeholder wrapping the C++ class name, and defines the <strong>new</strong> method (again this trick or making <code>new</code> S4 generic comes from rJava). For example to create an R object that wraps up a <strong>std::vector<int></int></strong>, one would go like this: </p>\n<pre>\nx &lt;- new( CPP( \"vector&lt;int&gt;\" ) )\n</pre>\n<p>This is no magic and don’t expect to be able to send anything to CPP (C++ does not have reflection capabilities), currently only these classes are defined : <strong>std::vector<int></int></strong>, <strong>vector<double></double></strong>, <strong>vector<raw></raw></strong> and <strong>set<int></int></strong></p>\n<p>Because C++ does not offer reflection capabilities, we have to do something else to be able to invoke methods on the wrapped objects. Currently the approach that the package follows is a naming convention. The <code>$</code> method create the name of the C routine it wants to call based on the C++ class the object is wrapping, the name of the method, and the types of the input parameters. So for example calling the <code>size</code> method for a <code>vector&lt;:int&gt;</code> object yields this routine name: “vector_int____size”, calling the <code>push_back</code> method of the <code>vector&lt;double&gt;</code>\nclass, passing an integer vector as the first parameter yields this signature : “vector_double____push_back___integer” …. (the CPP:::getRoutineSignature implements the convention)</p>\n<p>Here is a full example using the <code>set&lt;int&gt;</code> class. <a href=\"http://www.cplusplus.com/reference/stl/set/\" rel=\"nofollow\" target=\"_blank\">Sets</a> are a good example of a data structure that is not available in R. Basically it keeps its objects sorted</p>\n<pre>\n&gt; # create the object\n&gt; x &lt;- new( CPP(\"set&lt;int&gt;\") )\n&gt; # insert data using the insert method\n&gt; # see : insert\n&gt; x$insert( sample( 1:20 ) )\n&gt; # ask for the size of the set\n&gt; x$size()\n[1] 20\n&gt; # bring it back as an R classic integer vector\n&gt; as.vector( x )\n [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20\n</pre>\n<p>Currently the package is my excuse to learn about the standard template library, and it is quite possible that the functionality will be merged into the <a href=\"http://dirk.eddelbuettel.com/code/rcpp.html\" rel=\"nofollow\" target=\"_blank\">Rcpp</a> it currently depends on. Because of this volatility, I’ll use the <a href=\"https://lists.r-forge.r-project.org/cgi-bin/mailman/listinfo/rcpp-devel\" rel=\"nofollow\" target=\"_blank\">Rcpp-devel</a> mailing list instead of creating a new one.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/12/22/CPP-package-%3A-exposing-C-objects\"> Romain Francois, Professional R Enthusiast</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/cplusplus/\" rel=\"tag\">cplusplus</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/cpp/\" rel=\"tag\">CPP</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/package/\" rel=\"tag\">package</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+    "main_text": "CPP package: exposing C++ objects\nPosted on\nDecember 22, 2009\nby\nromain francois\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRomain Francois, Professional R Enthusiast\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI’ve just started working on the new package\nCPP\n, as usual the project is maintained in\nr-forge\n. The package aims at exposing C++ classes at the R level, starting from classes from the c++ standard template library.\nkey to the package is the\nCPP\nfunction (much inspired from the\nJ\nfunction of rJava). The CPP function builds an S4 object of class “C++Class”. The “C++Class” currently is a placeholder wrapping the C++ class name, and defines the\nnew\nmethod (again this trick or making\nnew\nS4 generic comes from rJava). For example to create an R object that wraps up a\nstd::vector\n, one would go like this:\nx <- new( CPP( \"vector<int>\" ) )\nThis is no magic and don’t expect to be able to send anything to CPP (C++ does not have reflection capabilities), currently only these classes are defined :\nstd::vector\n,\nvector\n,\nvector\nand\nset\nBecause C++ does not offer reflection capabilities, we have to do something else to be able to invoke methods on the wrapped objects. Currently the approach that the package follows is a naming convention. The\n$\nmethod create the name of the C routine it wants to call based on the C++ class the object is wrapping, the name of the method, and the types of the input parameters. So for example calling the\nsize\nmethod for a\nvector<:int>\nobject yields this routine name: “vector_int____size”, calling the\npush_back\nmethod of the\nvector<double>\nclass, passing an integer vector as the first parameter yields this signature : “vector_double____push_back___integer” …. (the CPP:::getRoutineSignature implements the convention)\nHere is a full example using the\nset<int>\nclass.\nSets\nare a good example of a data structure that is not available in R. Basically it keeps its objects sorted\n> # create the object\n> x <- new( CPP(\"set<int>\") )\n> # insert data using the insert method\n> # see : insert\n> x$insert( sample( 1:20 ) )\n> # ask for the size of the set\n> x$size()\n[1] 20\n> # bring it back as an R classic integer vector\n> as.vector( x )\n [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20\nCurrently the package is my excuse to learn about the standard template library, and it is quite possible that the functionality will be merged into the\nRcpp\nit currently depends on. Because of this volatility, I’ll use the\nRcpp-devel\nmailing list instead of creating a new one.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRomain Francois, Professional R Enthusiast\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ncplusplus\nCPP\npackage\nR",
+    "meta_description": "I've just started working on the new package CPP, as usual the project is maintained in r-forge. The package aims at exposing C++ classes at the R level, starting from classes from the c++ standard template library. key to the package is the CPP f...",
+    "meta_keywords": "cplusplus,cpp,package,r",
+    "og_description": "I've just started working on the new package CPP, as usual the project is maintained in r-forge. The package aims at exposing C++ classes at the R level, starting from classes from the c++ standard template library. key to the package is the CPP f...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "CPP package: exposing C++ objects | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.8,
+    "sitemap_lastmod": "2009-12-22T17:14:00+00:00",
+    "twitter_description": "I've just started working on the new package CPP, as usual the project is maintained in r-forge. The package aims at exposing C++ classes at the R level, starting from classes from the c++ standard template library. key to the package is the CPP f...",
+    "twitter_title": "CPP package: exposing C++ objects | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/cpp-package-exposing-c-objects/",
+    "word_count": 557
+  }
+}

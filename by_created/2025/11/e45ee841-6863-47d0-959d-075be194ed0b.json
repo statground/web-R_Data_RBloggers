@@ -1,0 +1,140 @@
+{
+  "uuid": "e45ee841-6863-47d0-959d-075be194ed0b",
+  "created_at": "2025-11-22 19:58:52",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/04/exploring-a-3-d-synthetic-dataset/",
+    "crawled_at": "2025-11-22T10:50:40.286298",
+    "external_links": [
+      {
+        "href": "https://www.drjohnrussell.com/posts/2025-04-12-Plotly-Pollen-Dataset/",
+        "text": "John Russell"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://bsky.app/profile/drjohnrussell.com",
+        "text": "BlueSky"
+      },
+      {
+        "href": "https://github.com/ajstarks/dubois-data-portraits/tree/master/challenge/2025",
+        "text": "DuBois Challenge"
+      },
+      {
+        "href": "https://github.com/drjohnrussell/DuboisChallenge/tree/main/2025",
+        "text": "github"
+      },
+      {
+        "href": "https://github.com/30DayChartChallenge/Edition2025",
+        "text": "#30DayChartChallenge"
+      },
+      {
+        "href": "https://friendly.github.io/HistData/",
+        "text": "HistData"
+      },
+      {
+        "href": "https://www.hup.harvard.edu/books/9780674975231",
+        "text": "excellent book"
+      },
+      {
+        "href": "https://bsky.app/profile/drjohnrussell.com/post/3lmk6xta7hc2b",
+        "text": "John Snow"
+      },
+      {
+        "href": "https://bsky.app/profile/drjohnrussell.com/post/3lmcdncmrqc2h",
+        "text": "Trial of the Pyx"
+      },
+      {
+        "href": "https://bsky.app/profile/drjohnrussell.com/post/3lm55tphhjk26",
+        "text": "Florence Nightingale"
+      },
+      {
+        "href": "https://github.com/drjohnrussell/30DayChartChallenge/tree/main/2025",
+        "text": "github"
+      },
+      {
+        "href": "https://friendly.github.io/HistData/reference/Pollen.html",
+        "text": "Pollen dataset"
+      },
+      {
+        "href": "https://www.drjohnrussell.com/posts/2025-04-12-Plotly-Pollen-Dataset/",
+        "text": "John Russell"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Exploring a 3-D Synthetic Dataset | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-russell/",
+        "text": "John Russell"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-391838 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Exploring a 3-D Synthetic Dataset</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-russell/\">John Russell</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.drjohnrussell.com/posts/2025-04-12-Plotly-Pollen-Dataset/\"> John Russell</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level1\" id=\"exploring-the-histdata-package\">\n<h1>Exploring the HistData package</h1>\n<p>Over on <a href=\"https://bsky.app/profile/drjohnrussell.com\" rel=\"nofollow\" target=\"_blank\">BlueSky</a>, I have been working through a few challenges. For the months of February and March, I participated in the <a href=\"https://github.com/ajstarks/dubois-data-portraits/tree/master/challenge/2025\" rel=\"nofollow\" target=\"_blank\">DuBois Challenge</a>, where you take a week to recreate some of the powerful visualizations that came out of the Paris Exposition from W.E.B. Du Bois. My work there, complete with code, can be found in my <a href=\"https://github.com/drjohnrussell/DuboisChallenge/tree/main/2025\" rel=\"nofollow\" target=\"_blank\">github</a></p>\n<p>Inspired by this, I’ve also been doing the <a href=\"https://github.com/30DayChartChallenge/Edition2025\" rel=\"nofollow\" target=\"_blank\">#30DayChartChallenge</a>, where you make a chart a day on a theme that changes each day. I have taken this as an opportunity to explore Michael Friendly’s <a href=\"https://friendly.github.io/HistData/\" rel=\"nofollow\" target=\"_blank\">HistData</a> package, which draws from his <a href=\"https://www.hup.harvard.edu/books/9780674975231\" rel=\"nofollow\" target=\"_blank\">excellent book</a> with Howard Wainer. I have done posts on <a href=\"https://bsky.app/profile/drjohnrussell.com/post/3lmk6xta7hc2b\" rel=\"nofollow\" target=\"_blank\">John Snow</a>, the <a href=\"https://bsky.app/profile/drjohnrussell.com/post/3lmcdncmrqc2h\" rel=\"nofollow\" target=\"_blank\">Trial of the Pyx</a>, <a href=\"https://bsky.app/profile/drjohnrussell.com/post/3lm55tphhjk26\" rel=\"nofollow\" target=\"_blank\">Florence Nightingale</a>, and others on my <a href=\"https://github.com/drjohnrussell/30DayChartChallenge/tree/main/2025\" rel=\"nofollow\" target=\"_blank\">github</a>. However, one dataset that a simple plot doesn’t do justice to is the <a href=\"https://friendly.github.io/HistData/reference/Pollen.html\" rel=\"nofollow\" target=\"_blank\">Pollen dataset</a>. This dataset, like <code>mtcars</code> and <code>flights</code>, are synthetic datasets that were used as data challenges (the other two are now basic datasets for reprexes as well).</p>\n<p>This dataset, however, shows the power of <code>plotly</code>.</p>\n<div class=\"cell\">\n<details class=\"code-fold\" open=\"\">\n<summary>Code in R</summary>\n<pre>library(tidyverse)\nlibrary(HistData)\nlibrary(plotly)\n\ndata(\"Pollen\")\nhead(Pollen)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre># A tibble: 6 × 5\n  ridge   nub crack  weight density\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n1 -2.35  3.63  5.03  10.9     -1.39\n2 -1.15  1.48  3.24  -0.594    2.12\n3 -2.52 -6.86 -2.80   8.46    -3.41\n4  5.75 -6.51 -5.15   4.35   -10.3 \n5  8.75 -3.90 -1.38 -14.9     -2.42\n6 10.4  -3.16 12.8  -14.9     -6.49</pre>\n</div>\n</div>\n<p>The first three variables are meant to be plotted on the x, y and z axis, where the other variables are meant to describe the grains of pollen. Doing a quick correlation shows that there is at least one strong correlation that can be seen through the use of color, where weight is highly correlated with the x-axis.</p>\n<div class=\"cell\">\n<details class=\"code-fold\" open=\"\">\n<summary>Code in R</summary>\n<pre>res &lt;- cor(Pollen)\nround(res,2)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>        ridge   nub crack weight density\nridge    1.00  0.13 -0.13  -0.90   -0.57\nnub      0.13  1.00  0.08  -0.17    0.33\ncrack   -0.13  0.08  1.00   0.27   -0.15\nweight  -0.90 -0.17  0.27   1.00    0.24\ndensity -0.57  0.33 -0.15   0.24    1.00</pre>\n</div>\n</div>\n<p>However, when you plot the dataset, something else shows up. Thankfully, <code>plotly</code> allows you to drag a plot around to explore it.</p>\n<div class=\"cell\">\n<details class=\"code-fold\" open=\"\">\n<summary>Code in R</summary>\n<pre>plot_ly(Pollen, x = ~ridge, y = ~nub, z = ~crack)  |&gt; \n  add_markers(color = ~weight, size=2) |&gt; \n  layout(title=\"David Coleman's Synthetic Pollen Dataset\")|&gt;\n  config(displayModeBar=FALSE)</pre>\n</details>\n<div class=\"cell-output-display\">\n<div class=\"plotly html-widget html-fill-item\" id=\"htmlwidget-3891df632cd87f0b4692\" style=\"width:100%;height:464px;\"></div>\n</div></div></section>\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.drjohnrussell.com/posts/2025-04-12-Plotly-Pollen-Dataset/\"> John Russell</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Exploring a 3-D Synthetic Dataset\nPosted on\nApril 11, 2025\nby\nJohn Russell\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJohn Russell\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nExploring the HistData package\nOver on\nBlueSky\n, I have been working through a few challenges. For the months of February and March, I participated in the\nDuBois Challenge\n, where you take a week to recreate some of the powerful visualizations that came out of the Paris Exposition from W.E.B. Du Bois. My work there, complete with code, can be found in my\ngithub\nInspired by this, I’ve also been doing the\n#30DayChartChallenge\n, where you make a chart a day on a theme that changes each day. I have taken this as an opportunity to explore Michael Friendly’s\nHistData\npackage, which draws from his\nexcellent book\nwith Howard Wainer. I have done posts on\nJohn Snow\n, the\nTrial of the Pyx\n,\nFlorence Nightingale\n, and others on my\ngithub\n. However, one dataset that a simple plot doesn’t do justice to is the\nPollen dataset\n. This dataset, like\nmtcars\nand\nflights\n, are synthetic datasets that were used as data challenges (the other two are now basic datasets for reprexes as well).\nThis dataset, however, shows the power of\nplotly\n.\nCode in R\nlibrary(tidyverse)\nlibrary(HistData)\nlibrary(plotly)\n\ndata(\"Pollen\")\nhead(Pollen)\n# A tibble: 6 × 5\n  ridge   nub crack  weight density\n  <dbl> <dbl> <dbl>   <dbl>   <dbl>\n1 -2.35  3.63  5.03  10.9     -1.39\n2 -1.15  1.48  3.24  -0.594    2.12\n3 -2.52 -6.86 -2.80   8.46    -3.41\n4  5.75 -6.51 -5.15   4.35   -10.3 \n5  8.75 -3.90 -1.38 -14.9     -2.42\n6 10.4  -3.16 12.8  -14.9     -6.49\nThe first three variables are meant to be plotted on the x, y and z axis, where the other variables are meant to describe the grains of pollen. Doing a quick correlation shows that there is at least one strong correlation that can be seen through the use of color, where weight is highly correlated with the x-axis.\nCode in R\nres <- cor(Pollen)\nround(res,2)\nridge   nub crack weight density\nridge    1.00  0.13 -0.13  -0.90   -0.57\nnub      0.13  1.00  0.08  -0.17    0.33\ncrack   -0.13  0.08  1.00   0.27   -0.15\nweight  -0.90 -0.17  0.27   1.00    0.24\ndensity -0.57  0.33 -0.15   0.24    1.00\nHowever, when you plot the dataset, something else shows up. Thankfully,\nplotly\nallows you to drag a plot around to explore it.\nCode in R\nplot_ly(Pollen, x = ~ridge, y = ~nub, z = ~crack)  |> \n  add_markers(color = ~weight, size=2) |> \n  layout(title=\"David Coleman's Synthetic Pollen Dataset\")|>\n  config(displayModeBar=FALSE)\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJohn Russell\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Exploring the HistData package Over on BlueSky, I have been working through a few challenges. For the months of February and March, I participated in the DuBois Challenge, where you take a week to recreate some of the powerful visualizations that came out of the Paris Exposition from W.E.B. Du Bois. My work there, complete with code, can be found in my github Inspired by this, I’ve also been doing the #30DayChartChallenge, where you make a chart a day on a theme that changes each day. I have taken this as an opportunity to explore Michael Friendly’s HistData package, which draws from his excellent book with Howard Wainer. I have done posts on John Snow, the Trial of the Pyx, Florence Nightingale, and others on my github. However, one dataset that a simple plot doesn’t do justice to is the Pollen dataset. This dataset, like mtcars and flights, are synthetic datasets that were used as data challenges (the other two are now basic datasets for reprexes as well). This dataset, however, shows the power of plotly. Code in R library(tidyverse) library(HistData) library(plotly) data(\"Pollen\") head(Pollen) # A tibble: 6 × 5 ridge nub crack weight density 1 -2.35 3.63 5.03 10.9 -1.39 2 -1.15 1.48 3.24 -0.594 2.12 3 -2.52 -6.86 -2.80 8.46 -3.41 4 5.75 -6.51 -5.15 4.35 -10.3 5 8.75 -3.90 -1.38 -14.9 -2.42 6 10.4 -3.16 12.8 -14.9 -6.49 The first three variables are meant to be plotted on the x, y and z axis, where the other variables are meant to describe the grains of pollen. Doing a quick correlation shows that there is at least one strong correlation that can be seen through the use of color, where weight is highly correlated with the x-axis. Code in R res add_markers(color = ~weight, size=2) |> layout(title=\"David Coleman's Synthetic Pollen Dataset\")|> config(displayModeBar=FALSE) Can you see it? Image below to recreate… Eureka! CitationBibTeX citation:@online{russell2025, author = {Russell, John}, title = {Exploring a {3-D} {Synthetic} {Dataset}}, date = {2025-04-12}, url = {https://drjohnrussell.github.io/posts/2025-04-12-Plotly-Pollen-Dataset/}, langid = {en} } For attribution, please cite this work as: Russell, John. 2025. “Exploring a 3-D Synthetic Dataset.” April 12, 2025. https://drjohnrussell.github.io/posts/2025-04-12-Plotly-Pollen-Dataset/.",
+    "meta_keywords": null,
+    "og_description": "Exploring the HistData package Over on BlueSky, I have been working through a few challenges. For the months of February and March, I participated in the DuBois Challenge, where you take a week to recreate some of the powerful visualizations that came out of the Paris Exposition from W.E.B. Du Bois. My work there, complete with code, can be found in my github Inspired by this, I’ve also been doing the #30DayChartChallenge, where you make a chart a day on a theme that changes each day. I have taken this as an opportunity to explore Michael Friendly’s HistData package, which draws from his excellent book with Howard Wainer. I have done posts on John Snow, the Trial of the Pyx, Florence Nightingale, and others on my github. However, one dataset that a simple plot doesn’t do justice to is the Pollen dataset. This dataset, like mtcars and flights, are synthetic datasets that were used as data challenges (the other two are now basic datasets for reprexes as well). This dataset, however, shows the power of plotly. Code in R library(tidyverse) library(HistData) library(plotly) data(\"Pollen\") head(Pollen) # A tibble: 6 × 5 ridge nub crack weight density 1 -2.35 3.63 5.03 10.9 -1.39 2 -1.15 1.48 3.24 -0.594 2.12 3 -2.52 -6.86 -2.80 8.46 -3.41 4 5.75 -6.51 -5.15 4.35 -10.3 5 8.75 -3.90 -1.38 -14.9 -2.42 6 10.4 -3.16 12.8 -14.9 -6.49 The first three variables are meant to be plotted on the x, y and z axis, where the other variables are meant to describe the grains of pollen. Doing a quick correlation shows that there is at least one strong correlation that can be seen through the use of color, where weight is highly correlated with the x-axis. Code in R res add_markers(color = ~weight, size=2) |> layout(title=\"David Coleman's Synthetic Pollen Dataset\")|> config(displayModeBar=FALSE) Can you see it? Image below to recreate… Eureka! CitationBibTeX citation:@online{russell2025, author = {Russell, John}, title = {Exploring a {3-D} {Synthetic} {Dataset}}, date = {2025-04-12}, url = {https://drjohnrussell.github.io/posts/2025-04-12-Plotly-Pollen-Dataset/}, langid = {en} } For attribution, please cite this work as: Russell, John. 2025. “Exploring a 3-D Synthetic Dataset.” April 12, 2025. https://drjohnrussell.github.io/posts/2025-04-12-Plotly-Pollen-Dataset/.",
+    "og_image": "https://www.drjohnrussell.com/posts/2025-04-12-Plotly-Pollen-Dataset/img/plot2.png",
+    "og_title": "Exploring a 3-D Synthetic Dataset | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3,
+    "sitemap_lastmod": null,
+    "twitter_description": "Exploring the HistData package Over on BlueSky, I have been working through a few challenges. For the months of February and March, I participated in the DuBois Challenge, where you take a week to recreate some of the powerful visualizations that came out of the Paris Exposition from W.E.B. Du Bois. My work there, complete with code, can be found in my github Inspired by this, I’ve also been doing the #30DayChartChallenge, where you make a chart a day on a theme that changes each day. I have taken this as an opportunity to explore Michael Friendly’s HistData package, which draws from his excellent book with Howard Wainer. I have done posts on John Snow, the Trial of the Pyx, Florence Nightingale, and others on my github. However, one dataset that a simple plot doesn’t do justice to is the Pollen dataset. This dataset, like mtcars and flights, are synthetic datasets that were used as data challenges (the other two are now basic datasets for reprexes as well). This dataset, however, shows the power of plotly. Code in R library(tidyverse) library(HistData) library(plotly) data(\"Pollen\") head(Pollen) # A tibble: 6 × 5 ridge nub crack weight density 1 -2.35 3.63 5.03 10.9 -1.39 2 -1.15 1.48 3.24 -0.594 2.12 3 -2.52 -6.86 -2.80 8.46 -3.41 4 5.75 -6.51 -5.15 4.35 -10.3 5 8.75 -3.90 -1.38 -14.9 -2.42 6 10.4 -3.16 12.8 -14.9 -6.49 The first three variables are meant to be plotted on the x, y and z axis, where the other variables are meant to describe the grains of pollen. Doing a quick correlation shows that there is at least one strong correlation that can be seen through the use of color, where weight is highly correlated with the x-axis. Code in R res add_markers(color = ~weight, size=2) |> layout(title=\"David Coleman's Synthetic Pollen Dataset\")|> config(displayModeBar=FALSE) Can you see it? Image below to recreate… Eureka! CitationBibTeX citation:@online{russell2025, author = {Russell, John}, title = {Exploring a {3-D} {Synthetic} {Dataset}}, date = {2025-04-12}, url = {https://drjohnrussell.github.io/posts/2025-04-12-Plotly-Pollen-Dataset/}, langid = {en} } For attribution, please cite this work as: Russell, John. 2025. “Exploring a 3-D Synthetic Dataset.” April 12, 2025. https://drjohnrussell.github.io/posts/2025-04-12-Plotly-Pollen-Dataset/.",
+    "twitter_title": "Exploring a 3-D Synthetic Dataset | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/04/exploring-a-3-d-synthetic-dataset/",
+    "word_count": 590
+  }
+}

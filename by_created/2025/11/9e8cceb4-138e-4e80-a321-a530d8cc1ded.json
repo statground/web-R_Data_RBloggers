@@ -1,0 +1,103 @@
+{
+  "uuid": "9e8cceb4-138e-4e80-a321-a530d8cc1ded",
+  "created_at": "2025-11-17 20:40:06",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/10/tips-for-using-statet-and-eclipse-for-data-analysis-in-r/",
+    "crawled_at": "2025-11-17T10:19:30.621371",
+    "external_links": [
+      {
+        "href": "https://jeromyanglim.blogspot.com/2009/10/tips-for-using-statet-and-eclipse-for.html",
+        "text": "Jeromy Anglim's Blog: Psychology and Statistics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://jeromyanglim.blogspot.com/2009/10/tips-for-using-statet-and-eclipse-for.html",
+        "text": "Jeromy Anglim's Blog: Psychology and Statistics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Tips for Using StatET and Eclipse for Data Analysis in R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-1462696185533218216?l=jeromyanglim.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-1462696185533218216?l=jeromyanglim.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jeromy-anglim/",
+        "text": "Jeromy Anglim"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-534 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Tips for Using StatET and Eclipse for Data Analysis in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 29, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jeromy-anglim/\">Jeromy Anglim</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jeromyanglim.blogspot.com/2009/10/tips-for-using-statet-and-eclipse-for.html\"> Jeromy Anglim's Blog: Psychology and Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->My favourite editor for conducting analysis in R is the StatET plug-in for Eclipse. This post discusses an assortment of tips and tricks that I’ve discovered to make this editing environment even better.<br/><a name=\"more\"></a><br/><b>Search</b><br/><ul><li>Search (Control + H): I maintain projects in the project explorer. If I need to know how I have used an R function in the past, I search for the function name.</li></ul><b>Options for Running R Code</b><br/><ul><li>List Run Options (Control + R)</li><li>Run entire command (Control + R Control + E): Press this key combination on the identifier for a function to run entire function (particularly useful for running nested functions). It’s also useful when you have a line of code that spans multiple lines.</li><li>Run Function Definition (Control + R Control + F): Fun function definition; If you have nested functions, this key combination runs the both outer and inner functions. Thus, don’t use this to refresh the function definition of a nested function.</li><br/><ul></ul></ul><b>Coding</b><br/><ul><li>Fix Indentation  (Control + I)</li><li>Delete Line (Control + D)</li><li>Code Folding</li><br/><ul><li>Expand Current: (Control + Num “+”)</li></ul><ul><li>Collapse Current (Control + Num “-“)</li><li>Collapse All (Control + Shift + Num “/”)<br/></li><li>Expand All (Control + Num “*”)</li><li>Enable/Disable Code Folding (Control + Num “/”)</li></ul></ul><div><b>Help</b></div><ul><li>List tips and tricks (Help – Tips And Tricks – Eclipse Platform)</li><li>View all short cut keys (Control + Shift + L):</li></ul><b>Outline View</b><br/><ul><li>Highlight Outline (Alt + Shift Q, O)</li><li>Refresh code in a function (right click on function in Outline)</li><li>Cut and paste functions (Use Outline View)</li><br/><ul></ul></ul><b>Assorted</b><br/><ul><li>Get file path (Alt W, V, P, P, Enter; Navigate to file; Alt + Enter; Alt + L; Shift + End; Shift + Down; Control + c)</li><li>Go to function definition (Copy function name; Control + Tab to go to function sheet; control + home to go to top of function sheet; control + F to find; control + v to paste; Enter; Esc)</li><li>Activate cursor in console (Control + R, C)</li><li>Activate cursor in editor (F12)</li><li>Toggle maximisation of current window (Control + M)</li><li>Auto completion (Control + /); this does not worke with <span style=\"font-family: 'Courier New', Courier, monospace;\">dot.case.identifiers</span>. Thus, this is another reason to prefer <span style=\"font-family: 'Courier New', Courier, monospace;\">mixedCaseIdentifiers</span>.</li><li>Print current variable (Control + R, P); this is useful when writing functions; I might run an assignment (control + R, control + R) and then print the result. However, it is problematic when there is a lot of data.</li><li>Change variable names (Control + 1)</li><li>Opening Files in Project Editor based on standard file association (Right Click File – Open With – System Editor). Many files will open within StatET. This is sometimes undesirable.</li></ul><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-1462696185533218216?l=jeromyanglim.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-1462696185533218216?l=jeromyanglim.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-1462696185533218216?l=jeromyanglim.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jeromyanglim.blogspot.com/2009/10/tips-for-using-statet-and-eclipse-for.html\"> Jeromy Anglim's Blog: Psychology and Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Tips for Using StatET and Eclipse for Data Analysis in R\nPosted on\nOctober 29, 2009\nby\nJeromy Anglim\nin Uncategorized | 0 Comments\n[This article was first published on\nJeromy Anglim's Blog: Psychology and Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMy favourite editor for conducting analysis in R is the StatET plug-in for Eclipse. This post discusses an assortment of tips and tricks that I’ve discovered to make this editing environment even better.\nSearch\nSearch (Control + H): I maintain projects in the project explorer. If I need to know how I have used an R function in the past, I search for the function name.\nOptions for Running R Code\nList Run Options (Control + R)\nRun entire command (Control + R Control + E): Press this key combination on the identifier for a function to run entire function (particularly useful for running nested functions). It’s also useful when you have a line of code that spans multiple lines.\nRun Function Definition (Control + R Control + F): Fun function definition; If you have nested functions, this key combination runs the both outer and inner functions. Thus, don’t use this to refresh the function definition of a nested function.\nCoding\nFix Indentation  (Control + I)\nDelete Line (Control + D)\nCode Folding\nExpand Current: (Control + Num “+”)\nCollapse Current (Control + Num “-“)\nCollapse All (Control + Shift + Num “/”)\nExpand All (Control + Num “*”)\nEnable/Disable Code Folding (Control + Num “/”)\nHelp\nList tips and tricks (Help – Tips And Tricks – Eclipse Platform)\nView all short cut keys (Control + Shift + L):\nOutline View\nHighlight Outline (Alt + Shift Q, O)\nRefresh code in a function (right click on function in Outline)\nCut and paste functions (Use Outline View)\nAssorted\nGet file path (Alt W, V, P, P, Enter; Navigate to file; Alt + Enter; Alt + L; Shift + End; Shift + Down; Control + c)\nGo to function definition (Copy function name; Control + Tab to go to function sheet; control + home to go to top of function sheet; control + F to find; control + v to paste; Enter; Esc)\nActivate cursor in console (Control + R, C)\nActivate cursor in editor (F12)\nToggle maximisation of current window (Control + M)\nAuto completion (Control + /); this does not worke with\ndot.case.identifiers\n. Thus, this is another reason to prefer\nmixedCaseIdentifiers\n.\nPrint current variable (Control + R, P); this is useful when writing functions; I might run an assignment (control + R, control + R) and then print the result. However, it is problematic when there is a lot of data.\nChange variable names (Control + 1)\nOpening Files in Project Editor based on standard file association (Right Click File – Open With – System Editor). Many files will open within StatET. This is sometimes undesirable.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJeromy Anglim's Blog: Psychology and Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "My favourite editor for conducting analysis in R is the StatET plug-in for Eclipse. This post discusses an assortment of tips and tricks that I've discovered to make this editing environment even better.SearchSearch (Control + H): I maintain projects i...",
+    "meta_keywords": null,
+    "og_description": "My favourite editor for conducting analysis in R is the StatET plug-in for Eclipse. This post discusses an assortment of tips and tricks that I've discovered to make this editing environment even better.SearchSearch (Control + H): I maintain projects i...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/8909074830238091680-1462696185533218216?l=jeromyanglim.blogspot.com",
+    "og_title": "Tips for Using StatET and Eclipse for Data Analysis in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.8,
+    "sitemap_lastmod": "2010-09-06T20:56:10+00:00",
+    "twitter_description": "My favourite editor for conducting analysis in R is the StatET plug-in for Eclipse. This post discusses an assortment of tips and tricks that I've discovered to make this editing environment even better.SearchSearch (Control + H): I maintain projects i...",
+    "twitter_title": "Tips for Using StatET and Eclipse for Data Analysis in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/10/tips-for-using-statet-and-eclipse-for-data-analysis-in-r/",
+    "word_count": 554
+  }
+}

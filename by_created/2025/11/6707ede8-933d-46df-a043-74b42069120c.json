@@ -1,0 +1,165 @@
+{
+  "uuid": "6707ede8-933d-46df-a043-74b42069120c",
+  "created_at": "2025-11-17 20:40:38",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/07/select-operations-on-r-data-frames/",
+    "crawled_at": "2025-11-17T10:31:10.056524",
+    "external_links": [
+      {
+        "href": "https://digitheadslabnotebook.blogspot.com/2009/07/select-operations-on-r-data-frames.html",
+        "text": "Digithead's Lab Notebook"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": null
+      },
+      {
+        "href": "http://www.johndcook.com/R_language_for_programmers.html",
+        "text": "here"
+      },
+      {
+        "href": "http://www.johndcook.com/R_language_for_programmers.html",
+        "text": "R programming for those coming from other languages"
+      },
+      {
+        "href": "http://stat.ethz.ch/R-manual/R-patched/library/base/html/Extract.data.frame.html",
+        "text": "Extract or Replace Parts of a Data Frame"
+      },
+      {
+        "href": "http://stat.ethz.ch/R-manual/R-patched/library/base/html/subset.html",
+        "text": "Subsetting Vectors, Matrices and Data Frames"
+      },
+      {
+        "href": "http://faculty.ucr.edu/~tgirke/Documents/R_BioCond/R_BioCondManual.html",
+        "text": "R & BioConductor Manual"
+      },
+      {
+        "href": "http://search.r-project.org/",
+        "text": "R Help search engine"
+      },
+      {
+        "href": "http://www.burns-stat.com/pages/Tutor/R_inferno.pdf",
+        "text": "The R Inferno"
+      },
+      {
+        "href": "https://www.amazon.com/Programming-Bioinformatics-Chapman-Computer-Analysis/dp/1420063677",
+        "text": "R Programming for Bioinformatics"
+      },
+      {
+        "href": "https://digitheadslabnotebook.blogspot.com/2009/07/select-operations-on-r-data-frames.html",
+        "text": "Digithead's Lab Notebook"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Select operations on R data frames | R-bloggers",
+    "images": [
+      {
+        "alt": "The R Project",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/Rlogo3.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "The R Project",
+        "base64": null,
+        "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/Rlogo3.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/5964816804623588850-6331854624654353648?l=digitheadslabnotebook.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/5964816804623588850-6331854624654353648?l=digitheadslabnotebook.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/chris/",
+        "text": "Chris"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/bioinformatics/",
+        "text": "Bioinformatics"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/reference/",
+        "text": "reference"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-663 post type-post status-publish format-standard hentry category-r-bloggers tag-bioinformatics tag-r tag-reference\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Select operations on R data frames</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 26, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/chris/\">Chris</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://digitheadslabnotebook.blogspot.com/2009/07/select-operations-on-r-data-frames.html\"> Digithead's Lab Notebook</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><a data-cf-modified-522e448d3c337268048b063a-=\"\" href=\"https://www.r-project.org/\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img alt=\"The R Project\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/Rlogo3.jpg?w=578&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/Rlogo3.jpg?w=578&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;width: 100px; height: 76px;\"/><noscript><img alt=\"The R Project\" border=\"0\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/Rlogo3.jpg?w=578&amp;ssl=1\" style=\"float:right; margin:0 0 10px 10px;cursor:pointer; cursor:hand;width: 100px; height: 76px;\"/></noscript></a><p>The R language is weird – particularly for those coming from a typical programmer’s background, which likely includes OO languages in the curly-brace family and relational databases using SQL. A key data structure in R, the <b><i>data.frame</i></b>, is used something like a table in a relational database. In terms of R’s somewhat byzantine type system (which is explained nicely <a href=\"http://www.johndcook.com/R_language_for_programmers.html\" rel=\"nofollow\" target=\"_blank\">here</a>), a data.frame is a list of vectors of varying types. Each vector is a column in the data.frame making this a column-oriented data structure as opposed to the row-oriented nature of relational databases.</p><p>In spite of this difference, we often want to do the same sorts of things to an R data.frame that we would to a SQL table. The R docs confuse the SQL-savvy by using different terminology, so here is a quick crib-sheet for applying SQL concepts to data.frames.</p><p>We’re going to use a sample data.frame with the following configuration of columns, or schema, if you prefer: (sequence:factor, strand:factor, start:integer, end:integer, common_name:character, value:double) where the type <i>character</i> is a <i>string</i> and a <span style=\"font-style:italic;\">factor</span> is something like an <i>enum</i>. Well, more accurately, value is a vector of type double and so forth. Anyway, our example is motivated by annotation of genome sequences, but the techniques aren’t particular to any type of data.</p><pre>&gt; head(df)\n    sequence strand start   end common_name      value\n1 chromosome      +  1450  2112        yvrO  0.9542516\n2 chromosome      + 41063 41716       graD6  0.2374012\n3 chromosome      + 62927 63640       graD3  1.0454790\n4 chromosome      + 63881 64807         gmd  1.4383845\n5 chromosome      + 71811 72701        moaE -1.8739953\n6 chromosome      + 73639 74739        moaA  1.2711058\n</pre><p>So, given a data.frame of that schema, how do we do some simple select operations?</p><p>Selecting columns by name is easy:</p><pre>&gt; df[,c('sequence','start','end')]\n       sequence   start     end\n1    chromosome    1450    2112\n2    chromosome   41063   41716\n3    chromosome   62927   63640\n4    chromosome   63881   64807\n5    chromosome   71811   72701\n...</pre><p>As is selecting row names, or both:</p><pre>&gt; df[566:570,c('sequence','start','end')]\n      sequence  start    end\n566 chromosome 480999 479860\n567 chromosome 481397 480999\n568 chromosome 503053 501275\n569 chromosome 506476 505712\n570 chromosome 515461 514277</pre><p>Selecting rows that meet certain criteria is a lot like a SQL where clause:</p><pre>&gt; df[df$value&gt;3.0,]\n      sequence strand   start     end common_name    value\n199 chromosome      +  907743  909506        hutU 3.158821\n321 chromosome      + 1391811 1393337        nadB 3.092771\n556 chromosome      -  431600  431037         apt 3.043373\n572 chromosome      -  519043  518186        hbd1 3.077040</pre><p>For extra bonus points, let’s find tRNAs.</p><pre>&gt; df[grep(\"trna\", df$common_name, ignore.case=T),]\n      sequence strand   start     end common_name        value\n18  chromosome      +  115152  115224    Asn tRNA -0.461038128\n19  chromosome      +  115314  115422    Ile tRNA -0.925268307\n31  chromosome      +  167315  167388    Tyr tRNA  0.112527023\n32  chromosome      +  191112  191196    Ser tRNA  0.986357577\n...</pre><p><b>Duplicate row names</b></p><p>Row names are not necessarily unique in R, which breaks the method shown above for selecting by row name. Take matrix a:</p><pre>&lt; a = matrix(1:18, nrow=6, ncol=3)\n&lt; rownames(a) &lt;- c('a', 'a', 'a', 'b', 'b', 'b')\n&lt; colnames(a) &lt;- c('foo', 'bar', 'bat')\n&lt; a\n  foo bar bat\na   1   7  13\na   2   8  14\na   3   9  15\nb   4  10  16\nb   5  11  17\nb   6  12  18</pre><p>It looks to me like trying to index by the row names just returns the first row of a given name:</p><pre>&lt; a['a',]\nfoo bar bat \n  1   7  13\n&lt; a['b',]\nfoo bar bat \n  4  10  16 \n</pre><p>But this works:</p><pre>&lt; a[rownames(a)=='a',]\n  foo bar bat\na   1   7  13\na   2   8  14\na   3   9  15\n</pre><p>More Resources:</p><ul><li><a href=\"http://www.johndcook.com/R_language_for_programmers.html\" rel=\"nofollow\" target=\"_blank\">R programming for those coming from other languages</a></li><li><a href=\"http://stat.ethz.ch/R-manual/R-patched/library/base/html/Extract.data.frame.html\" rel=\"nofollow\" target=\"_blank\">Extract or Replace Parts of a Data Frame</a></li><li><a href=\"http://stat.ethz.ch/R-manual/R-patched/library/base/html/subset.html\" rel=\"nofollow\" target=\"_blank\">Subsetting Vectors, Matrices and Data Frames</a></li><li><a href=\"http://faculty.ucr.edu/~tgirke/Documents/R_BioCond/R_BioCondManual.html\" rel=\"nofollow\" target=\"_blank\">R &amp; BioConductor Manual</a></li><li><a href=\"http://search.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R Help search engine</a></li><li>Abandon hope all ye who enter <a href=\"http://www.burns-stat.com/pages/Tutor/R_inferno.pdf\" rel=\"nofollow\" target=\"_blank\">The R Inferno</a></li><li><a href=\"https://www.amazon.com/Programming-Bioinformatics-Chapman-Computer-Analysis/dp/1420063677\" rel=\"nofollow\" target=\"_blank\">R Programming for Bioinformatics</a></li></ul><p>Help for R, the R language, or the R project is notoriously hard to search for, so I like to stick in a few extra keywords, like <b>R</b>, data frames, data.frames, select subset, subsetting, selecting rows from a data.frame that meet certain criteria, and find.</p><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/5964816804623588850-6331854624654353648?l=digitheadslabnotebook.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/5964816804623588850-6331854624654353648?l=digitheadslabnotebook.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/5964816804623588850-6331854624654353648?l=digitheadslabnotebook.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://digitheadslabnotebook.blogspot.com/2009/07/select-operations-on-r-data-frames.html\"> Digithead's Lab Notebook</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/bioinformatics/\" rel=\"tag\">Bioinformatics</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/reference/\" rel=\"tag\">reference</a></li></ul></div></article>",
+    "main_text": "Select operations on R data frames\nPosted on\nJuly 26, 2009\nby\nChris\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDigithead's Lab Notebook\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe R language is weird – particularly for those coming from a typical programmer’s background, which likely includes OO languages in the curly-brace family and relational databases using SQL. A key data structure in R, the\ndata.frame\n, is used something like a table in a relational database. In terms of R’s somewhat byzantine type system (which is explained nicely\nhere\n), a data.frame is a list of vectors of varying types. Each vector is a column in the data.frame making this a column-oriented data structure as opposed to the row-oriented nature of relational databases.\nIn spite of this difference, we often want to do the same sorts of things to an R data.frame that we would to a SQL table. The R docs confuse the SQL-savvy by using different terminology, so here is a quick crib-sheet for applying SQL concepts to data.frames.\nWe’re going to use a sample data.frame with the following configuration of columns, or schema, if you prefer: (sequence:factor, strand:factor, start:integer, end:integer, common_name:character, value:double) where the type\ncharacter\nis a\nstring\nand a\nfactor\nis something like an\nenum\n. Well, more accurately, value is a vector of type double and so forth. Anyway, our example is motivated by annotation of genome sequences, but the techniques aren’t particular to any type of data.\n> head(df)\n    sequence strand start   end common_name      value\n1 chromosome      +  1450  2112        yvrO  0.9542516\n2 chromosome      + 41063 41716       graD6  0.2374012\n3 chromosome      + 62927 63640       graD3  1.0454790\n4 chromosome      + 63881 64807         gmd  1.4383845\n5 chromosome      + 71811 72701        moaE -1.8739953\n6 chromosome      + 73639 74739        moaA  1.2711058\nSo, given a data.frame of that schema, how do we do some simple select operations?\nSelecting columns by name is easy:\n> df[,c('sequence','start','end')]\n       sequence   start     end\n1    chromosome    1450    2112\n2    chromosome   41063   41716\n3    chromosome   62927   63640\n4    chromosome   63881   64807\n5    chromosome   71811   72701\n...\nAs is selecting row names, or both:\n> df[566:570,c('sequence','start','end')]\n      sequence  start    end\n566 chromosome 480999 479860\n567 chromosome 481397 480999\n568 chromosome 503053 501275\n569 chromosome 506476 505712\n570 chromosome 515461 514277\nSelecting rows that meet certain criteria is a lot like a SQL where clause:\n> df[df$value>3.0,]\n      sequence strand   start     end common_name    value\n199 chromosome      +  907743  909506        hutU 3.158821\n321 chromosome      + 1391811 1393337        nadB 3.092771\n556 chromosome      -  431600  431037         apt 3.043373\n572 chromosome      -  519043  518186        hbd1 3.077040\nFor extra bonus points, let’s find tRNAs.\n> df[grep(\"trna\", df$common_name, ignore.case=T),]\n      sequence strand   start     end common_name        value\n18  chromosome      +  115152  115224    Asn tRNA -0.461038128\n19  chromosome      +  115314  115422    Ile tRNA -0.925268307\n31  chromosome      +  167315  167388    Tyr tRNA  0.112527023\n32  chromosome      +  191112  191196    Ser tRNA  0.986357577\n...\nDuplicate row names\nRow names are not necessarily unique in R, which breaks the method shown above for selecting by row name. Take matrix a:\n< a = matrix(1:18, nrow=6, ncol=3)\n< rownames(a) <- c('a', 'a', 'a', 'b', 'b', 'b')\n< colnames(a) <- c('foo', 'bar', 'bat')\n< a\n  foo bar bat\na   1   7  13\na   2   8  14\na   3   9  15\nb   4  10  16\nb   5  11  17\nb   6  12  18\nIt looks to me like trying to index by the row names just returns the first row of a given name:\n< a['a',]\nfoo bar bat \n  1   7  13\n< a['b',]\nfoo bar bat \n  4  10  16\nBut this works:\n< a[rownames(a)=='a',]\n  foo bar bat\na   1   7  13\na   2   8  14\na   3   9  15\nMore Resources:\nR programming for those coming from other languages\nExtract or Replace Parts of a Data Frame\nSubsetting Vectors, Matrices and Data Frames\nR & BioConductor Manual\nR Help search engine\nAbandon hope all ye who enter\nThe R Inferno\nR Programming for Bioinformatics\nHelp for R, the R language, or the R project is notoriously hard to search for, so I like to stick in a few extra keywords, like\nR\n, data frames, data.frames, select subset, subsetting, selecting rows from a data.frame that meet certain criteria, and find.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDigithead's Lab Notebook\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBioinformatics\nR\nreference",
+    "meta_description": "The R language is weird - particularly for those coming from a typical programmer's background, which likely includes OO languages in the curly-brace family and relational databases using SQL. A key data structure in R, the data.frame, is used somethin...",
+    "meta_keywords": "bioinformatics,r,reference",
+    "og_description": "The R language is weird - particularly for those coming from a typical programmer's background, which likely includes OO languages in the curly-brace family and relational databases using SQL. A key data structure in R, the data.frame, is used somethin...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/07/Rlogo3.jpg",
+    "og_title": "Select operations on R data frames | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.2,
+    "sitemap_lastmod": "2011-05-11T21:18:42+00:00",
+    "twitter_description": "The R language is weird - particularly for those coming from a typical programmer's background, which likely includes OO languages in the curly-brace family and relational databases using SQL. A key data structure in R, the data.frame, is used somethin...",
+    "twitter_title": "Select operations on R data frames | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/07/select-operations-on-r-data-frames/",
+    "word_count": 849
+  }
+}

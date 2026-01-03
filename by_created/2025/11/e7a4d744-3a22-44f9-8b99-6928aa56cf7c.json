@@ -1,0 +1,111 @@
+{
+  "uuid": "e7a4d744-3a22-44f9-8b99-6928aa56cf7c",
+  "created_at": "2025-11-17 20:39:32",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/10/algorithms-for-unweighted-sampling-without-replacement/",
+    "crawled_at": "2025-11-17T10:06:37.643007",
+    "external_links": [
+      {
+        "href": "https://stubner.me/2023/10/algorithms-for-unweighted-sampling-without-replacement/",
+        "text": "R on Ralf Stubner"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/daqana/dqrng/pull/72",
+        "text": "#72"
+      },
+      {
+        "href": "https://stubner.me/2023/10/algorithms-for-unweighted-sampling-without-replacement/",
+        "text": "R on Ralf Stubner"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Algorithms for unweighted sampling without replacement | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/stubner.me/post/2023-10-22-algorithms-for-unweighted-sampling-without-replacement.en_files/figure-html/bench-1.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-on-ralf-stubner/",
+        "text": "R on Ralf Stubner"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379327 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Algorithms for unweighted sampling without replacement</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 21, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-ralf-stubner/\">R on Ralf Stubner</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://stubner.me/2023/10/algorithms-for-unweighted-sampling-without-replacement/\"> R on Ralf Stubner</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>I am currently working on weighted sampling for <code>dqrng</code>, c.f. <a href=\"https://github.com/daqana/dqrng/pull/72\" rel=\"nofollow\" target=\"_blank\">#72</a>, for which also have to decide on the algorithm(s) to use for weighted sampling without replacement. Before looking at that I wanted to verify my decisions for the unweighted case.</p>\n<p>Using the new header file <code>dqrng_sample.h</code> from the currently released version v0.3.1 and the ability to access the global RNG from the current development version, it is easy to write functions that make use of the three provided algorithms: Partial Fisher-Yates shuffle, rejection sampling using a hash set and rejection sampling using a bit set:</p>\n<pre>#include &lt;Rcpp.h&gt;\n// [[Rcpp::depends(dqrng)]]\n// requires dqrng &gt; v0.3.1\n#include &lt;dqrng.h&gt;\n#include &lt;dqrng_sample.h&gt;\n\n// [[Rcpp::export]]\nRcpp::IntegerVector sample_shuffle(int n, int size) {\n  dqrng::random_64bit_accessor rng;\n  return dqrng::sample::no_replacement_shuffle&lt;Rcpp::IntegerVector, uint32_t&gt;\n    (rng, uint32_t(n), uint32_t(size), 1);\n}\n\n// [[Rcpp::export]]\nRcpp::IntegerVector sample_hashset(int n, int size) {\n  dqrng::random_64bit_accessor rng;\n  using set_t = dqrng::minimal_hash_set&lt;uint32_t&gt;;\n      \n  return dqrng::sample::no_replacement_set&lt;Rcpp::IntegerVector, uint32_t, set_t&gt;\n    (rng, uint32_t(n), uint32_t(size), 1);\n}\n\n// [[Rcpp::export]]\nRcpp::IntegerVector sample_bitset(int n, int size) {\n  dqrng::random_64bit_accessor rng;\n  using set_t = dqrng::minimal_bit_set;\n      \n  return dqrng::sample::no_replacement_set&lt;Rcpp::IntegerVector, uint32_t, set_t&gt;\n    (rng, uint32_t(n), uint32_t(size), 1);\n}\n</pre>\n<p>Next we can benchmark these algorithms against each other and the implementation from R itself for different population sizes <code>n</code> and selection ratios <code>r</code>:</p>\n<pre>bp &lt;- bench::press(\n  n = 10^(1:8),\n  r = c(0.7, 0.5, 10^-(1:4)),\n  {\n    size &lt;- ceiling(r * n)\n    bench::mark(\n      sample.int(n, size),\n      sample_shuffle(n, size),\n      sample_hashset(n, size),\n      sample_bitset(n, size),\n      check = FALSE,\n      time_unit = \"s\"\n    )\n  }\n) |&gt; mutate(label = as.factor(attr(expression, \"description\")))\r\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\n\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\n\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\n\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\r\nggplot(bp, aes(x = n, y = median, color = label)) + \n  geom_line() + scale_x_log10() + scale_y_log10() + facet_wrap(vars(r))</pre>\n<p><img data-lazy-src=\"https://i2.wp.com/stubner.me/post/2023-10-22-algorithms-for-unweighted-sampling-without-replacement.en_files/figure-html/bench-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/stubner.me/post/2023-10-22-algorithms-for-unweighted-sampling-without-replacement.en_files/figure-html/bench-1.png?w=450&amp;ssl=1\"/></noscript>\nWe learn:</p>\n<ul>\n<li>The fastest method from <code>dqrng</code> is always faster than R itself.</li>\n<li>The increased performance for R at <code>n = 1e8</code> with low selection ratio is triggered by switching to a hash table. R should do this much earlier.</li>\n<li>For the three methods from <code>dqrng</code> we see:\n<ul>\n<li>For <code>0.5 &lt; r</code> the partial Fisher-Yates shuffle is optimal</li>\n<li>For <code>0.001 &lt; r &lt; 0.5</code> it is best to use rejection sampling using a bit set</li>\n<li>For <code>0.001 &gt; r</code> one should switch to rejection sampling using a hash set</li>\n</ul></li>\n</ul>\n<p>This is exactly how it is implemented in <code>dqrng::sample&lt;VEC, INT&gt;</code>, which is quite reassuring.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://stubner.me/2023/10/algorithms-for-unweighted-sampling-without-replacement/\"> R on Ralf Stubner</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Algorithms for unweighted sampling without replacement\nPosted on\nOctober 21, 2023\nby\nR on Ralf Stubner\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on Ralf Stubner\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI am currently working on weighted sampling for\ndqrng\n, c.f.\n#72\n, for which also have to decide on the algorithm(s) to use for weighted sampling without replacement. Before looking at that I wanted to verify my decisions for the unweighted case.\nUsing the new header file\ndqrng_sample.h\nfrom the currently released version v0.3.1 and the ability to access the global RNG from the current development version, it is easy to write functions that make use of the three provided algorithms: Partial Fisher-Yates shuffle, rejection sampling using a hash set and rejection sampling using a bit set:\n#include <Rcpp.h>\n// [[Rcpp::depends(dqrng)]]\n// requires dqrng > v0.3.1\n#include <dqrng.h>\n#include <dqrng_sample.h>\n\n// [[Rcpp::export]]\nRcpp::IntegerVector sample_shuffle(int n, int size) {\n  dqrng::random_64bit_accessor rng;\n  return dqrng::sample::no_replacement_shuffle<Rcpp::IntegerVector, uint32_t>\n    (rng, uint32_t(n), uint32_t(size), 1);\n}\n\n// [[Rcpp::export]]\nRcpp::IntegerVector sample_hashset(int n, int size) {\n  dqrng::random_64bit_accessor rng;\n  using set_t = dqrng::minimal_hash_set<uint32_t>;\n      \n  return dqrng::sample::no_replacement_set<Rcpp::IntegerVector, uint32_t, set_t>\n    (rng, uint32_t(n), uint32_t(size), 1);\n}\n\n// [[Rcpp::export]]\nRcpp::IntegerVector sample_bitset(int n, int size) {\n  dqrng::random_64bit_accessor rng;\n  using set_t = dqrng::minimal_bit_set;\n      \n  return dqrng::sample::no_replacement_set<Rcpp::IntegerVector, uint32_t, set_t>\n    (rng, uint32_t(n), uint32_t(size), 1);\n}\nNext we can benchmark these algorithms against each other and the implementation from R itself for different population sizes\nn\nand selection ratios\nr\n:\nbp <- bench::press(\n  n = 10^(1:8),\n  r = c(0.7, 0.5, 10^-(1:4)),\n  {\n    size <- ceiling(r * n)\n    bench::mark(\n      sample.int(n, size),\n      sample_shuffle(n, size),\n      sample_hashset(n, size),\n      sample_bitset(n, size),\n      check = FALSE,\n      time_unit = \"s\"\n    )\n  }\n) |> mutate(label = as.factor(attr(expression, \"description\")))\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\n\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\n\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\n\n## Warning: Some expressions had a GC in every iteration; so filtering is\n## disabled.\nggplot(bp, aes(x = n, y = median, color = label)) + \n  geom_line() + scale_x_log10() + scale_y_log10() + facet_wrap(vars(r))\nWe learn:\nThe fastest method from\ndqrng\nis always faster than R itself.\nThe increased performance for R at\nn = 1e8\nwith low selection ratio is triggered by switching to a hash table. R should do this much earlier.\nFor the three methods from\ndqrng\nwe see:\nFor\n0.5 < r\nthe partial Fisher-Yates shuffle is optimal\nFor\n0.001 < r < 0.5\nit is best to use rejection sampling using a bit set\nFor\n0.001 > r\none should switch to rejection sampling using a hash set\nThis is exactly how it is implemented in\ndqrng::sample<VEC, INT>\n, which is quite reassuring.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on Ralf Stubner\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I am currently working on weighted sampling for dqrng, c.f. #72, for which also have to decide on the algorithm(s) to use for weighted sampling without replacement. Before looking at that I wanted to verify my decisions for the unweighted case. Usin...",
+    "meta_keywords": null,
+    "og_description": "I am currently working on weighted sampling for dqrng, c.f. #72, for which also have to decide on the algorithm(s) to use for weighted sampling without replacement. Before looking at that I wanted to verify my decisions for the unweighted case. Usin...",
+    "og_image": "https://stubner.me/post/2023-10-22-algorithms-for-unweighted-sampling-without-replacement.en_files/figure-html/bench-1.png",
+    "og_title": "Algorithms for unweighted sampling without replacement | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3,
+    "sitemap_lastmod": "2023-10-22T00:00:00+00:00",
+    "twitter_description": "I am currently working on weighted sampling for dqrng, c.f. #72, for which also have to decide on the algorithm(s) to use for weighted sampling without replacement. Before looking at that I wanted to verify my decisions for the unweighted case. Usin...",
+    "twitter_title": "Algorithms for unweighted sampling without replacement | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/10/algorithms-for-unweighted-sampling-without-replacement/",
+    "word_count": 593
+  }
+}

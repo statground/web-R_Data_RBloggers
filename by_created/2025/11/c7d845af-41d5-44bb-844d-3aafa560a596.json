@@ -1,0 +1,323 @@
+{
+  "uuid": "c7d845af-41d5-44bb-844d-3aafa560a596",
+  "created_at": "2025-11-17 20:38:52",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/12/introduction-to-a-b-testing-in-r-for-marketing-analytics/",
+    "crawled_at": "2025-11-17T09:33:23.339385",
+    "external_links": [
+      {
+        "href": "https://www.business-science.io/code-tools/2023/12/16/ab-testing-in-r.html",
+        "text": "business-science.io"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter",
+        "text": "R-tips newsletter"
+      },
+      {
+        "href": "https://learn.business-science.io/registration-chatgpt-2?el=website",
+        "text": "Inside the workshop"
+      },
+      {
+        "href": "https://learn.business-science.io/registration-chatgpt-2?el=website",
+        "text": "my free chatgpt for data scientists workshop"
+      },
+      {
+        "href": "https://learn.business-science.io/registration-chatgpt-2?el=website",
+        "text": "👉 Register Here"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "weekly video tutorial"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Sign up for our R-Tips Newsletter and get the code."
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "R-Tips Newsletter"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Data (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=Otb340lyiAQ&t=1942s",
+        "text": "See Part 2 of this video"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://learn.business-science.io/r-tips-newsletter?el=website",
+        "text": "Get the Code (In the R-Tip 073 Folder)"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series/",
+        "text": "see my testimonials here"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series",
+        "text": "Here’s the system"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series",
+        "text": "Join My 5-Course R-Track Program Now!(And Become The Data Scientist You Were Meant To Be…)"
+      },
+      {
+        "href": "https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series",
+        "text": "This could be you."
+      },
+      {
+        "href": "https://www.business-science.io/code-tools/2023/12/16/ab-testing-in-r.html",
+        "text": "business-science.io"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Introduction to A/B Testing in R (For Marketing Analytics) | R-bloggers",
+    "images": [
+      {
+        "alt": "Statistical Test Selection",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Statistical Test Selection",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/073_statistical_test_selection.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "ChatGPT for Data Scientists",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "ChatGPT for Data Scientists",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/lab_82_chatgpt_rcode.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Statistical Test Selection",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Statistical Test Selection",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/assets/073_statistical_test_selection.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Statistical Test Selection",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Statistical Test Selection",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/073_hotel.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: Load the Libraries and Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: Load the Libraries and Data",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/073_01_libraries.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: Data",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/073_01_data.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: Visualize the Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: Visualize the Data",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/073_02_exploratory_code.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: Visualize the Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: Visualize the Data",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/073_02_time_series_ab_test.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: Split the Data",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: Split the Data",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/073_03_split_the_data.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: 2 Sample T-Test",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: 2 Sample T-Test",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/073_03_2_sample_t_test_code.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: 2 Sample T-Test Results",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: 2 Sample T-Test Results",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/073_03_results.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: Calculate the ROAS",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: Calculate the ROAS",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/073_03_roas.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "A/B Testing: ROAS Results",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "A/B Testing: ROAS Results",
+        "base64": null,
+        "src": "https://i1.wp.com/www.business-science.io/assets/073_03_roas_results.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "What They're Doing - 5 Course R-Track",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "What They're Doing - 5 Course R-Track",
+        "base64": null,
+        "src": "https://i2.wp.com/www.business-science.io/assets/rtrack_what_theyre_doing_2.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Success Samantha Got The Job",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Success Samantha Got The Job",
+        "base64": null,
+        "src": "https://i0.wp.com/www.business-science.io/img/success_samantha_got_job.jpg?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/business-science/",
+        "text": "Business Science"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-380899 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Introduction to A/B Testing in R (For Marketing Analytics)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 16, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/business-science/\">Business Science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.business-science.io/code-tools/2023/12/16/ab-testing-in-r.html\"> business-science.io</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>Hey guys, welcome back to my <a href=\"https://learn.business-science.io/r-tips-newsletter\" rel=\"nofollow\" target=\"_blank\">R-tips newsletter</a>. In today’s R-Tip, I’m sharing how to do A/B Testing in R. Let’s go!</p>\n<h3 id=\"table-of-contents\">Table of Contents</h3>\n<p>Here’s what you’re learning today:</p>\n<ul>\n<li><strong>What is A/B Testing (and how to pick the right Statistical Test)?</strong>: A/B Testing is a statistical method for comparing two groups to determine if there is a statistically significant difference between the two groups.</li>\n<li><strong>Business Case</strong>: We’ll use a business case to demonstrate how to do A/B Testing in R by measuring the effect of Adspend on Hotel Bookings.</li>\n<li><strong>R Code</strong>: We’ll walk step-by-step through how to perform A/B Testing in R.</li>\n</ul>\n<p><img alt=\"Statistical Test Selection\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/073_statistical_test_selection.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Statistical Test Selection\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/073_statistical_test_selection.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"date text-center\">Statistical Test Selection for A/B Testing!</p>\n<hr>\n<!--\n# SPECIAL ANNOUNCEMENT: How To Become A <u>6-Figure Business Scientist</u> (Even In A Recession) on August 30th\n\n![Business Scientist](/assets/business-science-cube-2.jpg)\n\n**What:** How To Become A 6-Figure Business Scientist (Even In A Recession)\n\n**When:** Wednesday August 30th, 2pm EST\n\n**How It Will Help You:** Data science in 2023 has changed. *The 10+ person data science team is out.* And the one-person Business Scientist is in. I'll show you how to become a 1-person data science team inside [my LIVE 6-figure business scientist masterclass](https://learn.business-science.io/registration-2-page?el=website). \n\n**Price:** Does **Free** sound good?\n\n**How To Join:** [**👉 Register Here**](https://learn.business-science.io/registration-2-page?el=website)\n-->\n<h1 id=\"special-announcement-chatgpt-for-data-scientists-workshop-on-january-17th\">SPECIAL ANNOUNCEMENT: ChatGPT for Data Scientists Workshop on January 17th</h1>\n<p><a href=\"https://learn.business-science.io/registration-chatgpt-2?el=website\" rel=\"nofollow\" target=\"_blank\">Inside the workshop</a> I’ll share how I built a Machine Learning Powered Production Shiny App with <code>ChatGPT</code> (extends this data analysis to an <em>insane</em> production app):</p>\n<p><img alt=\"ChatGPT for Data Scientists\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/lab_82_chatgpt_rcode.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"ChatGPT for Data Scientists\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/lab_82_chatgpt_rcode.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p><strong>What:</strong> ChatGPT for Data Scientists</p>\n<p><strong>When:</strong> Wednesday January 17th, 2pm EST</p>\n<p><strong>How It Will Help You:</strong> Whether you are new to data science or are an expert, ChatGPT is changing the game. There’s a ton of hype. But how can ChatGPT actually help you become a better data scientist and help you stand out in your career? I’ll show you inside <a href=\"https://learn.business-science.io/registration-chatgpt-2?el=website\" rel=\"nofollow\" target=\"_blank\">my free chatgpt for data scientists workshop</a>.</p>\n<p><strong>Price:</strong> Does <strong>Free</strong> sound good?</p>\n<p><strong>How To Join:</strong> <a href=\"https://learn.business-science.io/registration-chatgpt-2?el=website\" rel=\"nofollow\" target=\"_blank\"><strong>👉 Register Here</strong></a></p>\n<hr/>\n<h1 id=\"r-tips-weekly\">R-Tips Weekly</h1>\n<p>This article is part of R-Tips Weekly, a <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">weekly video tutorial</a> that shows you step-by-step how to do common R coding tasks. Pretty cool, right?</p>\n<p>Here are the links to get set up. 👇</p>\n<ul>\n<li><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Sign up for our R-Tips Newsletter and get the code.</a></li>\n<!-- <li><a href=\"https://youtu.be/fkwKQi7skAw\" rel=\"nofollow\" target=\"_blank\">YouTube Tutorial</a></li>-->\n</ul>\n<h1 id=\"this-tutorial-is-part-of-a-1-hour-live-workshop-on-causal-inference-and-ab-testing\">This Tutorial is Part of a 1-Hour Live Workshop on Causal Inference and A/B Testing</h1>\n<p>If you want to understanding A/B Testing, Geo Experimentation, Uplift Modeling, and Causal Inference at a deeper level, <strong>check out this free video</strong>. 👇</p>\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" frameborder=\"1\" height=\"450\" src=\"https://www.youtube.com/embed/Otb340lyiAQ?si=OcoJ1vI0P-nK1yUe\" title=\"YouTube video player\" width=\"450\"></iframe>\n<h1 id=\"what-is-ab-testing\">What is A/B Testing?</h1>\n<p><strong>A/B Testing</strong> is a statistical method for comparing two groups to determine if there is a statistically significant difference between the two groups.</p>\n<h2 id=\"how-is-ab-testing-used-in-marketing-analytics\">How is A/B Testing used in Marketing Analytics?</h2>\n<p><strong>A/B Testing is used commonly in Marketing Analytics</strong> to determine if a marketing campaign is effective:</p>\n<ul>\n<li>For example, a company may want to know if a marketing campaign is effective at <strong>driving sales</strong>.</li>\n<li>To do this, they will <strong>run an A/B Test</strong> where they compare the sales of a group that was exposed to the marketing campaign (the treatment group) to the sales of a group that was not exposed to the marketing campaign (the control group).</li>\n<li>If there is a <strong>statistically significant difference</strong> between the two groups and a <strong>positive average treatment effect (ATE)</strong>, then the company can conclude that the marketing campaign is effective at driving sales.</li>\n<li>And we can estimate the <strong>Lift (the increase in sales)</strong> that the marketing campaign drove.</li>\n</ul>\n<h2 id=\"how-to-pick-the-right-statistical-test\">How to pick the right Statistical Test?</h2>\n<p>There are many different types of statistical tests that can be used for A/B Testing. The type of statistical test that you use depends on the type of data that you have.</p>\n<p>The following diagram shows the <strong>different types of statistical tests</strong> that can be used for A/B Testing and the selection process.</p>\n<p><img alt=\"Statistical Test Selection\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/assets/073_statistical_test_selection.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Statistical Test Selection\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/assets/073_statistical_test_selection.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"date text-center\">Statistical Test Selection for A/B Testing!</p>\n<p>For our business case, we’ll rely on a very common test: <strong>The 2 sample T-Test</strong>, which is used to compare the means of two groups.</p>\n<p>For other types of A/B Testing, you may need to use a different type of statistical test depending on the metric you are interested in (e.g. conversion metrics, counts of page views, etc). The table above can be used as a guide to help you select the right statistical test for your A/B Testing needs.</p>\n<h2 id=\"how-to-create-an-experiment\">How to create an experiment?</h2>\n<p>To create an experiment, you need to have two groups of data: a treatment group and a control group.</p>\n<ul>\n<li><strong>The treatment group</strong> is the group that is exposed to the marketing campaign.</li>\n<li><strong>The control group</strong> is the group that is not exposed to the marketing campaign.</li>\n</ul>\n<p>Now that we know what A/B Testing is and how it is used in Marketing Analytics, let’s look at an example of how to do A/B Testing in R.</p>\n<h1 id=\"business-case-hotel-bookings-and-return-on-adspend\">Business Case: Hotel Bookings and Return on Adspend</h1>\n<p>In this example, you are part of the Data Science team working for an upscale hotel chain.</p>\n<p><img alt=\"Statistical Test Selection\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/073_hotel.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Statistical Test Selection\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/073_hotel.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p><strong>Your Mission:</strong>\nYour team has been tasked with developing an online experiment to use Google Ads to drive hotel bookings (the action of reserving a room at the hotel). We will use A/B Testing to determine if a marketing campaign is effective at driving hotel bookings.</p>\n<h1 id=\"r-tutorial-ab-testing-in-r\">R Tutorial: A/B Testing in R</h1>\n<p><strong>Super Important:</strong> We’ll start by trying to answer these business questions that are relevant to our Hotel Bookings business case:</p>\n<ol>\n<li><strong>Does Adspend increase bookings?</strong></li>\n<li><strong>By how much? Was there a Return on Adspend (ROAS)?</strong></li>\n</ol>\n<p>These questions drive our experiment setup and analysis (more on this in a minute).</p>\n<p><strong>Get The Code:</strong> You can follow along with the R code in the <a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">R-Tips Newsletter</a>. All code is avaliable in R-Tip 073.</p>\n<h2 id=\"step-1-load-the-libraries-and-data\">Step 1: Load the Libraries and Data</h2>\n<p><img alt=\"A/B Testing: Load the Libraries and Data\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/073_01_libraries.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: Load the Libraries and Data\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/073_01_libraries.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 073 Folder)</a></p>\n<h3 id=\"experiment-setup-data-description\">Experiment Setup (Data Description):</h3>\n<p>When you load the data, it looks like this:</p>\n<p><img alt=\"A/B Testing: Data\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/073_01_data.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: Data\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/073_01_data.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Data (In the R-Tip 073 Folder)</a></p>\n<p>The data contains the following columns:</p>\n<ul>\n<li>period = 0: Pre/Post Experiment, 1: During Experiment</li>\n<li>assigment = “control” part of the control group, “treatment” part of the treatment group</li>\n<li>treatment = 0: No Adspend, 1: Adspend</li>\n<li>geo: Segmentation was performed by geography (this is common in marketing experiments to track pre and post experiment performance)</li>\n<li>bookings: Target feature that we want to measure the effect of Adspend on</li>\n<li>cost: Adspend (the amount of money spent on the marketing campaign during the experiment period = 1)</li>\n</ul>\n<h2 id=\"step-2-visualize-the-data\">Step 2: Visualize the Data</h2>\n<p>Next, we will visualize the aggregate bookings by period for the control and treatment group to see if we can spot any visual effect of the adspend.</p>\n<ul>\n<li><strong>The Pre-Intervention Period (Period = 0)</strong> is from 2015-01-05 to 2015-02-15</li>\n<li><strong>The Post Intervention Period (Period = 1)</strong> is from 2015-02-16 to 2015-03-15 (This is when the experiment was run)</li>\n</ul>\n<h3 id=\"data-visualization-code\">Data Visualization Code</h3>\n<p>Run this code to visualize the experiment:</p>\n<p><img alt=\"A/B Testing: Visualize the Data\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/073_02_exploratory_code.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: Visualize the Data\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/073_02_exploratory_code.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 073 Folder)</a></p>\n<h3 id=\"ab-testing-analyzing-the-experiment-visually\">A/B Testing: Analyzing the Experiment Visually</h3>\n<p>The output is the following plot:</p>\n<p><img alt=\"A/B Testing: Visualize the Data\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/073_02_time_series_ab_test.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: Visualize the Data\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/073_02_time_series_ab_test.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p>We can see that it looks like there’s a slight bump in bookings during the experiment period for the treatment group (the group that was exposed to the marketing campaign). But:</p>\n<ol>\n<li>It’s hard to tell if this is a <strong>statistically significant effect or just random noise.</strong></li>\n<li>It’s hard to tell if there was a <strong>return on adspend.</strong></li>\n</ol>\n<p>To answer these questions, we’ll need to run a statistical test.</p>\n<h2 id=\"step-3-run-the-statistical-test\">Step 3: Run the Statistical Test</h2>\n<p>Next, we’ll run the statistical test to determine if there is a statistically significant difference between the control and treatment group.</p>\n<h3 id=\"split-the-data-into-pre-and-experiment-periods\">Split the data into pre and experiment periods</h3>\n<p>We’ll just need the experiment period (period = 1) for the statistical test. So, we’ll split the data into pre and experiment periods. Run this code:</p>\n<p><img alt=\"A/B Testing: Split the Data\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/073_03_split_the_data.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: Split the Data\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/073_03_split_the_data.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 073 Folder)</a></p>\n<h3 id=\"ab-testing-run-the-statistical-test\">A/B Testing: Run the Statistical Test</h3>\n<p>Run this code to run the statistical test:</p>\n<p><img alt=\"A/B Testing: 2 Sample T-Test\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/073_03_2_sample_t_test_code.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: 2 Sample T-Test\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/073_03_2_sample_t_test_code.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 073 Folder)</a></p>\n<h3 id=\"ab-testing-2-sample-t-test-results\">A/B Testing: 2 Sample T-Test Results</h3>\n<p>The output is the following:</p>\n<p><img alt=\"A/B Testing: 2 Sample T-Test Results\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/073_03_results.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: 2 Sample T-Test Results\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/073_03_results.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p>We can see that the:</p>\n<ul>\n<li>\n<p><strong>estimated average treatment effect (ATE) is 96.2:</strong> This means that on average each of the geo-segments saw an increase of $96.20 per booking-day during the experiment period (the period when the marketing campaign was run). This is good news.</p>\n</li>\n<li>\n<p><strong>p-value is 0.0545:</strong> Generally there is a 0.05 used as the cutoff. But this is a business decision. In this case, we see that the lower CI (confidence interval) around the ATE is -$1.87 and the upper CI is $194.00. So that gives me confidence that the ATE is likely positive.</p>\n</li>\n</ul>\n<h3 id=\"what-could-we-be-missing\">What could we be missing?</h3>\n<p>Sometimes there are other factors that can affect the results of an experiment. In this case, we may be missing the effect of seasonality.</p>\n<p><strong>For a more advanced tutorial on Uplift Modeling,</strong> <a href=\"https://www.youtube.com/watch?v=Otb340lyiAQ&amp;t=1942s\" rel=\"nofollow\" target=\"_blank\">See Part 2 of this video</a> where I discuss how to use Meta (Facebook) <code>GeoLift</code> package on this problem.</p>\n<h3 id=\"return-on-adspend-roas\">Return on Adspend (ROAS)</h3>\n<p>We have answered the first question- Is there an effect? Yes, there is a statistically significant effect. At a 0.10 level, we can say that there is a statistically significant effect. <strong>The Average Treatement Effect is $96.20.</strong></p>\n<p>But, we still need to answer the second question: <strong>Was there a return on adspend (ROAS)?</strong></p>\n<p>To answer this question, we need to calculate the ROAS.</p>\n<h3 id=\"ab-testing-calculate-the-roas\">A/B Testing: Calculate the ROAS</h3>\n<p>Run this code to calculate the ROAS:</p>\n<p><img alt=\"A/B Testing: Calculate the ROAS\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/073_03_roas.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: Calculate the ROAS\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/073_03_roas.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 073 Folder)</a></p>\n<h3 id=\"ab-testing-roas-results\">A/B Testing: ROAS Results</h3>\n<p>The output is the following:</p>\n<p><img alt=\"A/B Testing: ROAS Results\" data-lazy-src=\"https://i1.wp.com/www.business-science.io/assets/073_03_roas_results.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A/B Testing: ROAS Results\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.business-science.io/assets/073_03_roas_results.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p class=\"text-center date\"><a href=\"https://learn.business-science.io/r-tips-newsletter?el=website\" rel=\"nofollow\" target=\"_blank\">Get the Code (In the R-Tip 073 Folder)</a></p>\n<p>We can see that the <strong>Estimated ROAS is 2.67</strong>. This means that for every dollar spent on the marketing campaign, we get $2.67 back in bookings.</p>\n<h1 id=\"conclusions\">Conclusions:</h1>\n<p>We have answered the two questions that we set out to answer:</p>\n<ol>\n<li><strong>Does Adspend increase bookings?</strong> Yes, there is a statistically significant effect. At a 0.10 level, we can say that there is a statistically significant effect. <strong>The Average Treatement Effect is $96.20.</strong></li>\n<li><strong>By how much? Was there a Return on Adspend (ROAS)?</strong> Yes, there was a return on adspend. <strong>The Estimated ROAS is 2.67.</strong> This means that for every dollar spent on the marketing campaign, we get $2.67 back in bookings.</li>\n</ol>\n<p><strong>However, there is A LOT more to becoming a Data Scientist for Business than just A/B Testing.</strong></p>\n<p>If you are struggling to become a Data Scientist for Business, then please read on…</p>\n<h1 id=\"struggling-to-become-a-data-scientist\">Struggling to become a data scientist?</h1>\n<p>You know the feeling. Being unhappy with your current job.</p>\n<p>Promotions aren’t happening. You’re stuck. Feeling Hopeless. Confused…</p>\n<p>And you’re praying that the next job interview will go better than the last 12…</p>\n<p>… But you know it won’t. Not unless you take control of your career.</p>\n<p>The good news is…</p>\n<h1 id=\"i-can-help-you-speed-it-up\">I Can Help You Speed It Up.</h1>\n<p>I’ve helped 6,107+ students learn data science for business from an elite business consultant’s perspective.</p>\n<p>I’ve worked with Fortune 500 companies like S&amp;P Global, Apple, MRM McCann, and more.</p>\n<p>And I built a training program that gets my students life-changing data science careers (don’t believe me? <a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series/\" rel=\"nofollow\" target=\"_blank\">see my testimonials here</a>):</p>\n<h4 class=\"text-center\">\n6-Figure Data Science Job at CVS Health ($125K)<br/><div style=\"height:10px;\"></div>\nSenior VP Of Analytics At JP Morgan ($200K)<br/><div style=\"height:10px;\"></div>\n50%+ Raises &amp; Promotions ($150K)<br/><div style=\"height:10px;\"></div>\nLead Data Scientist at Northwestern Mutual ($175K)<br/><div style=\"height:10px;\"></div>\n2X-ed Salary (From $60K to $120K)<br/><div style=\"height:10px;\"></div>\n2 Competing ML Job Offers ($150K)<br/><div style=\"height:10px;\"></div>\nPromotion to Lead Data Scientist ($175K)<br/><div style=\"height:10px;\"></div>\nData Scientist Job at Verizon ($125K+)<br/><div style=\"height:10px;\"></div>\nData Scientist Job at CitiBank ($100K + Bonus)<br/><div style=\"height:10px;\"></div>\n</h4>\n<h1 id=\"whenever-you-are-ready-heres-the-system-they-are-taking\">Whenever you are ready, here’s the system they are taking:</h1>\n<p><a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series\" rel=\"nofollow\" target=\"_blank\">Here’s the system</a> that has gotten aspiring data scientists, career transitioners, and life long learners data science jobs and promotions…</p>\n<p><img alt=\"What They're Doing - 5 Course R-Track\" data-lazy-src=\"https://i2.wp.com/www.business-science.io/assets/rtrack_what_theyre_doing_2.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"What They're Doing - 5 Course R-Track\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.business-science.io/assets/rtrack_what_theyre_doing_2.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p style=\"font-size: 36px;text-align: center;\">\n<a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series\" rel=\"nofollow\" target=\"_blank\">\n<strong>Join My 5-Course R-Track Program Now!</strong><br/><small style=\"font-size:24px;\">(And Become The Data Scientist You Were Meant To Be…)</small>\n</a>\n</p>\n<p>P.S. – Samantha landed her NEW Data Science R Developer job at CVS Health (Fortune 500). <a href=\"https://university.business-science.io/p/5-course-bundle-machine-learning-web-apps-time-series\" rel=\"nofollow\" target=\"_blank\">This could be you.</a></p>\n<p><img alt=\"Success Samantha Got The Job\" data-lazy-src=\"https://i0.wp.com/www.business-science.io/img/success_samantha_got_job.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Success Samantha Got The Job\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.business-science.io/img/success_samantha_got_job.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.business-science.io/code-tools/2023/12/16/ab-testing-in-r.html\"> business-science.io</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </hr></div>\n</article>",
+    "main_text": "Introduction to A/B Testing in R (For Marketing Analytics)\nPosted on\nDecember 16, 2023\nby\nBusiness Science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nbusiness-science.io\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nHey guys, welcome back to my\nR-tips newsletter\n. In today’s R-Tip, I’m sharing how to do A/B Testing in R. Let’s go!\nTable of Contents\nHere’s what you’re learning today:\nWhat is A/B Testing (and how to pick the right Statistical Test)?\n: A/B Testing is a statistical method for comparing two groups to determine if there is a statistically significant difference between the two groups.\nBusiness Case\n: We’ll use a business case to demonstrate how to do A/B Testing in R by measuring the effect of Adspend on Hotel Bookings.\nR Code\n: We’ll walk step-by-step through how to perform A/B Testing in R.\nStatistical Test Selection for A/B Testing!\nSPECIAL ANNOUNCEMENT: ChatGPT for Data Scientists Workshop on January 17th\nInside the workshop\nI’ll share how I built a Machine Learning Powered Production Shiny App with\nChatGPT\n(extends this data analysis to an\ninsane\nproduction app):\nWhat:\nChatGPT for Data Scientists\nWhen:\nWednesday January 17th, 2pm EST\nHow It Will Help You:\nWhether you are new to data science or are an expert, ChatGPT is changing the game. There’s a ton of hype. But how can ChatGPT actually help you become a better data scientist and help you stand out in your career? I’ll show you inside\nmy free chatgpt for data scientists workshop\n.\nPrice:\nDoes\nFree\nsound good?\nHow To Join:\n👉 Register Here\nR-Tips Weekly\nThis article is part of R-Tips Weekly, a\nweekly video tutorial\nthat shows you step-by-step how to do common R coding tasks. Pretty cool, right?\nHere are the links to get set up. 👇\nSign up for our R-Tips Newsletter and get the code.\nThis Tutorial is Part of a 1-Hour Live Workshop on Causal Inference and A/B Testing\nIf you want to understanding A/B Testing, Geo Experimentation, Uplift Modeling, and Causal Inference at a deeper level,\ncheck out this free video\n. 👇\nWhat is A/B Testing?\nA/B Testing\nis a statistical method for comparing two groups to determine if there is a statistically significant difference between the two groups.\nHow is A/B Testing used in Marketing Analytics?\nA/B Testing is used commonly in Marketing Analytics\nto determine if a marketing campaign is effective:\nFor example, a company may want to know if a marketing campaign is effective at\ndriving sales\n.\nTo do this, they will\nrun an A/B Test\nwhere they compare the sales of a group that was exposed to the marketing campaign (the treatment group) to the sales of a group that was not exposed to the marketing campaign (the control group).\nIf there is a\nstatistically significant difference\nbetween the two groups and a\npositive average treatment effect (ATE)\n, then the company can conclude that the marketing campaign is effective at driving sales.\nAnd we can estimate the\nLift (the increase in sales)\nthat the marketing campaign drove.\nHow to pick the right Statistical Test?\nThere are many different types of statistical tests that can be used for A/B Testing. The type of statistical test that you use depends on the type of data that you have.\nThe following diagram shows the\ndifferent types of statistical tests\nthat can be used for A/B Testing and the selection process.\nStatistical Test Selection for A/B Testing!\nFor our business case, we’ll rely on a very common test:\nThe 2 sample T-Test\n, which is used to compare the means of two groups.\nFor other types of A/B Testing, you may need to use a different type of statistical test depending on the metric you are interested in (e.g. conversion metrics, counts of page views, etc). The table above can be used as a guide to help you select the right statistical test for your A/B Testing needs.\nHow to create an experiment?\nTo create an experiment, you need to have two groups of data: a treatment group and a control group.\nThe treatment group\nis the group that is exposed to the marketing campaign.\nThe control group\nis the group that is not exposed to the marketing campaign.\nNow that we know what A/B Testing is and how it is used in Marketing Analytics, let’s look at an example of how to do A/B Testing in R.\nBusiness Case: Hotel Bookings and Return on Adspend\nIn this example, you are part of the Data Science team working for an upscale hotel chain.\nYour Mission:\nYour team has been tasked with developing an online experiment to use Google Ads to drive hotel bookings (the action of reserving a room at the hotel). We will use A/B Testing to determine if a marketing campaign is effective at driving hotel bookings.\nR Tutorial: A/B Testing in R\nSuper Important:\nWe’ll start by trying to answer these business questions that are relevant to our Hotel Bookings business case:\nDoes Adspend increase bookings?\nBy how much? Was there a Return on Adspend (ROAS)?\nThese questions drive our experiment setup and analysis (more on this in a minute).\nGet The Code:\nYou can follow along with the R code in the\nR-Tips Newsletter\n. All code is avaliable in R-Tip 073.\nStep 1: Load the Libraries and Data\nGet the Code (In the R-Tip 073 Folder)\nExperiment Setup (Data Description):\nWhen you load the data, it looks like this:\nGet the Data (In the R-Tip 073 Folder)\nThe data contains the following columns:\nperiod = 0: Pre/Post Experiment, 1: During Experiment\nassigment = “control” part of the control group, “treatment” part of the treatment group\ntreatment = 0: No Adspend, 1: Adspend\ngeo: Segmentation was performed by geography (this is common in marketing experiments to track pre and post experiment performance)\nbookings: Target feature that we want to measure the effect of Adspend on\ncost: Adspend (the amount of money spent on the marketing campaign during the experiment period = 1)\nStep 2: Visualize the Data\nNext, we will visualize the aggregate bookings by period for the control and treatment group to see if we can spot any visual effect of the adspend.\nThe Pre-Intervention Period (Period = 0)\nis from 2015-01-05 to 2015-02-15\nThe Post Intervention Period (Period = 1)\nis from 2015-02-16 to 2015-03-15 (This is when the experiment was run)\nData Visualization Code\nRun this code to visualize the experiment:\nGet the Code (In the R-Tip 073 Folder)\nA/B Testing: Analyzing the Experiment Visually\nThe output is the following plot:\nWe can see that it looks like there’s a slight bump in bookings during the experiment period for the treatment group (the group that was exposed to the marketing campaign). But:\nIt’s hard to tell if this is a\nstatistically significant effect or just random noise.\nIt’s hard to tell if there was a\nreturn on adspend.\nTo answer these questions, we’ll need to run a statistical test.\nStep 3: Run the Statistical Test\nNext, we’ll run the statistical test to determine if there is a statistically significant difference between the control and treatment group.\nSplit the data into pre and experiment periods\nWe’ll just need the experiment period (period = 1) for the statistical test. So, we’ll split the data into pre and experiment periods. Run this code:\nGet the Code (In the R-Tip 073 Folder)\nA/B Testing: Run the Statistical Test\nRun this code to run the statistical test:\nGet the Code (In the R-Tip 073 Folder)\nA/B Testing: 2 Sample T-Test Results\nThe output is the following:\nWe can see that the:\nestimated average treatment effect (ATE) is 96.2:\nThis means that on average each of the geo-segments saw an increase of $96.20 per booking-day during the experiment period (the period when the marketing campaign was run). This is good news.\np-value is 0.0545:\nGenerally there is a 0.05 used as the cutoff. But this is a business decision. In this case, we see that the lower CI (confidence interval) around the ATE is -$1.87 and the upper CI is $194.00. So that gives me confidence that the ATE is likely positive.\nWhat could we be missing?\nSometimes there are other factors that can affect the results of an experiment. In this case, we may be missing the effect of seasonality.\nFor a more advanced tutorial on Uplift Modeling,\nSee Part 2 of this video\nwhere I discuss how to use Meta (Facebook)\nGeoLift\npackage on this problem.\nReturn on Adspend (ROAS)\nWe have answered the first question- Is there an effect? Yes, there is a statistically significant effect. At a 0.10 level, we can say that there is a statistically significant effect.\nThe Average Treatement Effect is $96.20.\nBut, we still need to answer the second question:\nWas there a return on adspend (ROAS)?\nTo answer this question, we need to calculate the ROAS.\nA/B Testing: Calculate the ROAS\nRun this code to calculate the ROAS:\nGet the Code (In the R-Tip 073 Folder)\nA/B Testing: ROAS Results\nThe output is the following:\nGet the Code (In the R-Tip 073 Folder)\nWe can see that the\nEstimated ROAS is 2.67\n. This means that for every dollar spent on the marketing campaign, we get $2.67 back in bookings.\nConclusions:\nWe have answered the two questions that we set out to answer:\nDoes Adspend increase bookings?\nYes, there is a statistically significant effect. At a 0.10 level, we can say that there is a statistically significant effect.\nThe Average Treatement Effect is $96.20.\nBy how much? Was there a Return on Adspend (ROAS)?\nYes, there was a return on adspend.\nThe Estimated ROAS is 2.67.\nThis means that for every dollar spent on the marketing campaign, we get $2.67 back in bookings.\nHowever, there is A LOT more to becoming a Data Scientist for Business than just A/B Testing.\nIf you are struggling to become a Data Scientist for Business, then please read on…\nStruggling to become a data scientist?\nYou know the feeling. Being unhappy with your current job.\nPromotions aren’t happening. You’re stuck. Feeling Hopeless. Confused…\nAnd you’re praying that the next job interview will go better than the last 12…\n… But you know it won’t. Not unless you take control of your career.\nThe good news is…\nI Can Help You Speed It Up.\nI’ve helped 6,107+ students learn data science for business from an elite business consultant’s perspective.\nI’ve worked with Fortune 500 companies like S&P Global, Apple, MRM McCann, and more.\nAnd I built a training program that gets my students life-changing data science careers (don’t believe me?\nsee my testimonials here\n):\n6-Figure Data Science Job at CVS Health ($125K)\nSenior VP Of Analytics At JP Morgan ($200K)\n50%+ Raises & Promotions ($150K)\nLead Data Scientist at Northwestern Mutual ($175K)\n2X-ed Salary (From $60K to $120K)\n2 Competing ML Job Offers ($150K)\nPromotion to Lead Data Scientist ($175K)\nData Scientist Job at Verizon ($125K+)\nData Scientist Job at CitiBank ($100K + Bonus)\nWhenever you are ready, here’s the system they are taking:\nHere’s the system\nthat has gotten aspiring data scientists, career transitioners, and life long learners data science jobs and promotions…\nJoin My 5-Course R-Track Program Now!\n(And Become The Data Scientist You Were Meant To Be…)\nP.S. – Samantha landed her NEW Data Science R Developer job at CVS Health (Fortune 500).\nThis could be you.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nbusiness-science.io\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Hey guys, welcome back to my R-tips newsletter. In today’s R-Tip, I’m sharing how to do A/B Testing in R. Let’s go! Table of Contents Here’s what you’re learning today: What is A/B Testing (and how to pick the right Statistical Test)?: A/B Testin...",
+    "meta_keywords": null,
+    "og_description": "Hey guys, welcome back to my R-tips newsletter. In today’s R-Tip, I’m sharing how to do A/B Testing in R. Let’s go! Table of Contents Here’s what you’re learning today: What is A/B Testing (and how to pick the right Statistical Test)?: A/B Testin...",
+    "og_image": "https://www.business-science.io/assets/073_statistical_test_selection.jpg",
+    "og_title": "Introduction to A/B Testing in R (For Marketing Analytics) | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 10.5,
+    "sitemap_lastmod": "2023-12-16T14:20:00+00:00",
+    "twitter_description": "Hey guys, welcome back to my R-tips newsletter. In today’s R-Tip, I’m sharing how to do A/B Testing in R. Let’s go! Table of Contents Here’s what you’re learning today: What is A/B Testing (and how to pick the right Statistical Test)?: A/B Testin...",
+    "twitter_title": "Introduction to A/B Testing in R (For Marketing Analytics) | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/12/introduction-to-a-b-testing-in-r-for-marketing-analytics/",
+    "word_count": 2106
+  }
+}

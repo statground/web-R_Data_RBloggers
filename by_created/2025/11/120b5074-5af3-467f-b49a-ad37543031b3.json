@@ -1,0 +1,112 @@
+{
+  "uuid": "120b5074-5af3-467f-b49a-ad37543031b3",
+  "created_at": "2025-11-22 19:57:25",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/10/simplifying-interactions-with-complex-widgets-in-shinytest2-using-javascript-apis/",
+    "crawled_at": "2025-11-22T10:41:24.117763",
+    "external_links": [
+      {
+        "href": "https://jakubsobolewski.com/blog/shinytest2-complex-widgets",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://jakubsobolewski.com/get-roadmap/",
+        "text": "Level-up your testing game! Grab your copy of the R testing roadmap."
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/bdd-shiny-feature/#3-implementing-driver",
+        "text": "BDD Shiny feature testing guide"
+      },
+      {
+        "href": "https://developer.snapappointments.com/bootstrap-select/methods/",
+        "text": "here"
+      },
+      {
+        "href": "https://air-datepicker.com/methods/",
+        "text": "here"
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/shinytest2-complex-widgets",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Simplifying Interactions with Complex Widgets in shinytest2 Using JavaScript APIs | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-396429 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Simplifying Interactions with Complex Widgets in shinytest2 Using JavaScript APIs</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 30, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsobolewski.com/blog/shinytest2-complex-widgets\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p><code>shinytest2</code> is powerful for writing Shiny tests effectively, but <code>AppDriver</code>’s methods don’t always cover every interaction you need.</p>\n<p>You might discover that the convenient <code>set_inputs()</code> method doesn’t work for everything. Take <code>shiny::selectizeInput</code> with the create option enabled. While <code>set_inputs()</code> will work for selecting existing options, it stumbles when you try to add new ones.</p>\n<p>Rather than fighting with high-level testing abstractions, or trying to simulate individual clicks to interact with the widget correctly, the solution lies in understanding how your widgets actually work under the hood.</p>\n<p>And that’s where <strong>JavaScript APIs become your secret weapon</strong>.</p>\n<blockquote>\n<p><a href=\"https://jakubsobolewski.com/get-roadmap/\" rel=\"nofollow\" target=\"_blank\">Level-up your testing game! Grab your copy of the R testing roadmap.</a></p>\n</blockquote>\n<h2 id=\"the-problem-with-complex-widget-interactions\">The Problem with Complex Widget Interactions</h2>\n<p>The challenge arises because complex widgets like selectize inputs operate through their own JavaScript layer.</p>\n<p>When shinytest2 can’t directly interact with them, you might be tempted to simulate what a user would do: open a dropdown, type an option, confirm the selection, close the dropdown. This manual choreography is not only tedious – it’s fragile.</p>\n<p>Or you might be tempted to skip writing tests for these interactions altogether – which is even worse.</p>\n<p>But if you decide to implement those interactions step by step, each step introduces potential points of failure:</p>\n<ul>\n<li>Timing issues emerge: has this animation finished?</li>\n<li>State management becomes unpredictable: is this dropdown already opened?</li>\n</ul>\n<p>A change to how the widget renders, and your entire test breaks.</p>\n<h2 id=\"simplifying-interactions-with-javascript-apis\">Simplifying interactions with JavaScript APIs</h2>\n<p>Instead of orchestrating a series of UI actions, you can directly call the widget’s JavaScript API.</p>\n<p>For creating new items in <code>shiny::selectizeInput</code>, this means bypassing the UI choreography entirely and using the <code>createItem</code> method:</p>\n<pre>app &lt;- shinytest2::AppDriver$new(...)\n\n# Use namespaced inputId\napp$run_js(sprintf(\n  \"$('#%s select')[0].selectize.createItem('%s');\",\n  inputId,\n  value\n))\n\n# If you're using test selectors - I highly recommend it\napp$run_js(sprintf(\n  \"$('[data-testid=%s] select')[0].selectize.createItem('%s');\",\n  testid,\n  value\n))</pre>\n<p>This approach accomplishes in <strong>one API call</strong> what would otherwise require multiple sequential actions. There’s no waiting for dropdowns to animate. No typing delays. No confirmation steps. Just direct, instantaneous manipulation of the widget’s state.</p>\n<h3 id=\"manual-interaction-would-look-something-like-this\">Manual interaction would look something like this</h3>\n<p>This is pseudocode, to illustrate the complexity:</p>\n<pre># Find HTML tag to click to trigger opening dropdown\n# Find &lt;input&gt; to type new option\n# Find HTML tag to click to confirm the new option\n# Use HTML tag to close the dropdown</pre>\n<p>With the API approach, you eliminate orchestration complexity. The code becomes shorter, clearer, and less dependent on implementation details that might change.</p>\n<p>We depend on the widget’s own API to handle the internal state correctly, so we’re still exposed to changes in the widget’s implementation, but:</p>\n<ul>\n<li><strong>Robustness improves dramatically</strong> because you’re not relying on UI timing, animation frames, or event sequencing. The widget’s API is a stable contract. When you call <code>createItem()</code>, it works the same way every time, regardless of the surrounding UI state. If the widget’s API changes, you only need to update that single API call in your tests, not a whole series of UI interactions.</li>\n<li><strong>Clarity increases</strong> because your test code expresses intent directly. Instead of a long sequence of UI manipulations, you have a single line that clearly states “create this item.” This makes your tests easier to read and maintain.</li>\n</ul>\n<p>But we can make it even better.</p>\n<h2 id=\"making-it-scalable-functions-and-appdriver-extensions\">Making It Scalable: Functions and AppDriver Extensions</h2>\n<p>Direct API calls are powerful, but they shouldn’t clutter your test files. When you find yourself using a particular widget manipulation pattern more than once, <strong>encapsulate it in a helper function or extend the AppDriver class itself</strong>.</p>\n<p>This pattern keeps your tests readable while centralizing your widget interaction logic. Instead of repeating JavaScript API calls throughout your test suite, you build a small library of domain-specific testing methods that express intent clearly.</p>\n<p>Instead of doing:</p>\n<pre>app$run_js(\n  \"$('#module-select select')[0].selectize.createItem('New Option');\"\n)</pre>\n<p>You could define a method in an extended <code>AppDriver</code>:</p>\n<pre>ShinyDriver &lt;- R6::R6Class(\n  inherit = shinytest2::AppDriver,\n  public = list(\n    create_selectize_item = function(inputId, value) {\n      self$run_js(sprintf(\n        \"$('#%s select')[0].selectize.createItem('%s');\",\n        inputId,\n        value\n      ))\n    }\n  )\n)</pre>\n<p>For a deeper exploration of this pattern, including real examples of how to structure an extended <code>AppDriver</code> with custom methods, read <a href=\"https://jakubsobolewski.com/blog/bdd-shiny-feature/#3-implementing-driver\" rel=\"nofollow\" target=\"_blank\">BDD Shiny feature testing guide</a>, which demonstrates how to build abstractions that make your tests both simple and maintainable.</p>\n<h2 id=\"how-to-discover-javascript-apis-for-widgets\">How to Discover JavaScript APIs for Widgets</h2>\n<p>Finding the right JavaScript API calls for your widgets can be straightforward if you know where to look.</p>\n<p>Usually, component documentation includes links to which JavaScript libraries power them.</p>\n<ul>\n<li><code>shinyWidgets::pickerInput</code> uses Boostrap Select with its own API documented <a href=\"https://developer.snapappointments.com/bootstrap-select/methods/\" rel=\"nofollow\" target=\"_blank\">here</a>.</li>\n<li><code>shinyWidgets::airDatePicker</code> uses Air Datepicker with its API documented <a href=\"https://air-datepicker.com/methods/\" rel=\"nofollow\" target=\"_blank\">here</a>.</li>\n</ul>\n<p>Just head over there and see if the widget exposes methods that let you manipulate it programmatically.</p>\n<hr/>\n<p>The most reliable path to testing complex widgets isn’t always the highest-level abstraction.</p>\n<p>Sometimes the answer lies one level down, in the actual APIs that power these components. By learning to work directly with JavaScript APIs, you gain both flexibility and stability – and your tests become more resilient to the inevitable changes that come with UI development.</p>\n<p>Passing JavaScript code in strings might feel crude at first, but with proper encapsulation and abstraction, you can build robust Shiny tests that stand the test of time.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsobolewski.com/blog/shinytest2-complex-widgets\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Simplifying Interactions with Complex Widgets in shinytest2 Using JavaScript APIs\nPosted on\nOctober 30, 2025\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nshinytest2\nis powerful for writing Shiny tests effectively, but\nAppDriver\n’s methods don’t always cover every interaction you need.\nYou might discover that the convenient\nset_inputs()\nmethod doesn’t work for everything. Take\nshiny::selectizeInput\nwith the create option enabled. While\nset_inputs()\nwill work for selecting existing options, it stumbles when you try to add new ones.\nRather than fighting with high-level testing abstractions, or trying to simulate individual clicks to interact with the widget correctly, the solution lies in understanding how your widgets actually work under the hood.\nAnd that’s where\nJavaScript APIs become your secret weapon\n.\nLevel-up your testing game! Grab your copy of the R testing roadmap.\nThe Problem with Complex Widget Interactions\nThe challenge arises because complex widgets like selectize inputs operate through their own JavaScript layer.\nWhen shinytest2 can’t directly interact with them, you might be tempted to simulate what a user would do: open a dropdown, type an option, confirm the selection, close the dropdown. This manual choreography is not only tedious – it’s fragile.\nOr you might be tempted to skip writing tests for these interactions altogether – which is even worse.\nBut if you decide to implement those interactions step by step, each step introduces potential points of failure:\nTiming issues emerge: has this animation finished?\nState management becomes unpredictable: is this dropdown already opened?\nA change to how the widget renders, and your entire test breaks.\nSimplifying interactions with JavaScript APIs\nInstead of orchestrating a series of UI actions, you can directly call the widget’s JavaScript API.\nFor creating new items in\nshiny::selectizeInput\n, this means bypassing the UI choreography entirely and using the\ncreateItem\nmethod:\napp <- shinytest2::AppDriver$new(...)\n\n# Use namespaced inputId\napp$run_js(sprintf(\n  \"$('#%s select')[0].selectize.createItem('%s');\",\n  inputId,\n  value\n))\n\n# If you're using test selectors - I highly recommend it\napp$run_js(sprintf(\n  \"$('[data-testid=%s] select')[0].selectize.createItem('%s');\",\n  testid,\n  value\n))\nThis approach accomplishes in\none API call\nwhat would otherwise require multiple sequential actions. There’s no waiting for dropdowns to animate. No typing delays. No confirmation steps. Just direct, instantaneous manipulation of the widget’s state.\nManual interaction would look something like this\nThis is pseudocode, to illustrate the complexity:\n# Find HTML tag to click to trigger opening dropdown\n# Find <input> to type new option\n# Find HTML tag to click to confirm the new option\n# Use HTML tag to close the dropdown\nWith the API approach, you eliminate orchestration complexity. The code becomes shorter, clearer, and less dependent on implementation details that might change.\nWe depend on the widget’s own API to handle the internal state correctly, so we’re still exposed to changes in the widget’s implementation, but:\nRobustness improves dramatically\nbecause you’re not relying on UI timing, animation frames, or event sequencing. The widget’s API is a stable contract. When you call\ncreateItem()\n, it works the same way every time, regardless of the surrounding UI state. If the widget’s API changes, you only need to update that single API call in your tests, not a whole series of UI interactions.\nClarity increases\nbecause your test code expresses intent directly. Instead of a long sequence of UI manipulations, you have a single line that clearly states “create this item.” This makes your tests easier to read and maintain.\nBut we can make it even better.\nMaking It Scalable: Functions and AppDriver Extensions\nDirect API calls are powerful, but they shouldn’t clutter your test files. When you find yourself using a particular widget manipulation pattern more than once,\nencapsulate it in a helper function or extend the AppDriver class itself\n.\nThis pattern keeps your tests readable while centralizing your widget interaction logic. Instead of repeating JavaScript API calls throughout your test suite, you build a small library of domain-specific testing methods that express intent clearly.\nInstead of doing:\napp$run_js(\n  \"$('#module-select select')[0].selectize.createItem('New Option');\"\n)\nYou could define a method in an extended\nAppDriver\n:\nShinyDriver <- R6::R6Class(\n  inherit = shinytest2::AppDriver,\n  public = list(\n    create_selectize_item = function(inputId, value) {\n      self$run_js(sprintf(\n        \"$('#%s select')[0].selectize.createItem('%s');\",\n        inputId,\n        value\n      ))\n    }\n  )\n)\nFor a deeper exploration of this pattern, including real examples of how to structure an extended\nAppDriver\nwith custom methods, read\nBDD Shiny feature testing guide\n, which demonstrates how to build abstractions that make your tests both simple and maintainable.\nHow to Discover JavaScript APIs for Widgets\nFinding the right JavaScript API calls for your widgets can be straightforward if you know where to look.\nUsually, component documentation includes links to which JavaScript libraries power them.\nshinyWidgets::pickerInput\nuses Boostrap Select with its own API documented\nhere\n.\nshinyWidgets::airDatePicker\nuses Air Datepicker with its API documented\nhere\n.\nJust head over there and see if the widget exposes methods that let you manipulate it programmatically.\nThe most reliable path to testing complex widgets isn’t always the highest-level abstraction.\nSometimes the answer lies one level down, in the actual APIs that power these components. By learning to work directly with JavaScript APIs, you gain both flexibility and stability – and your tests become more resilient to the inevitable changes that come with UI development.\nPassing JavaScript code in strings might feel crude at first, but with proper encapsulation and abstraction, you can build robust Shiny tests that stand the test of time.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "When shinytest2's `set_inputs()` won't work, leverage widget APIs directly. Learn to write cleaner, faster and more robust tests using JavaScript APIs.",
+    "meta_keywords": null,
+    "og_description": "When shinytest2's `set_inputs()` won't work, leverage widget APIs directly. Learn to write cleaner, faster and more robust tests using JavaScript APIs.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Simplifying Interactions with Complex Widgets in shinytest2 Using JavaScript APIs | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.2,
+    "sitemap_lastmod": null,
+    "twitter_description": "When shinytest2's `set_inputs()` won't work, leverage widget APIs directly. Learn to write cleaner, faster and more robust tests using JavaScript APIs.",
+    "twitter_title": "Simplifying Interactions with Complex Widgets in shinytest2 Using JavaScript APIs | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/10/simplifying-interactions-with-complex-widgets-in-shinytest2-using-javascript-apis/",
+    "word_count": 1034
+  }
+}

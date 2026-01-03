@@ -1,0 +1,144 @@
+{
+  "uuid": "ad965dbc-55d7-4cc6-b1a0-f5a709b9ffde",
+  "created_at": "2025-11-22 19:58:50",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/04/integration-testing-in-epiverse-trace/",
+    "crawled_at": "2025-11-22T10:50:29.400229",
+    "external_links": [
+      {
+        "href": "https://epiverse-trace.github.io/posts/integration-testing/",
+        "text": "Epiverse-TRACE: tools for outbreak analytics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/blueprints/principles.html",
+        "text": "guiding software design principles"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/slides/epireview-hackathon-july-2024/",
+        "text": "wider ecosystem of R packages in epidemiology"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/slides/interoperability-epiverse/",
+        "text": "three interoperability principles in our strategy"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/simulist/",
+        "text": "{simulist}"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/cleanepi/",
+        "text": "{cleanepi}"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Continuous_integration",
+        "text": "Continuous integration"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/epiverse/",
+        "text": "{epiverse}"
+      },
+      {
+        "href": "https://www.tidyverse.org/blog/2023/03/tidyverse-2-0-0/",
+        "text": "tidyverse meta-package"
+      },
+      {
+        "href": "https://testthat.r-lib.org/",
+        "text": "{testthat}"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/cleanepi/articles/design_principle.html#output",
+        "text": "report and appending it to the cleaned data"
+      },
+      {
+        "href": "https://creativecommons.org/licenses/by/4.0/",
+        "text": "CC BY 4.0"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/posts/integration-testing/",
+        "text": "https://epiverse-trace.github.io/posts/integration-testing/"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/posts/integration-testing/",
+        "text": "Epiverse-TRACE: tools for outbreak analytics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Integration testing in Epiverse-TRACE | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/joshua-w-lambert/",
+        "text": "Joshua W. Lambert"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-391879 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Integration testing in Epiverse-TRACE</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 13, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/joshua-w-lambert/\">Joshua W. Lambert</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://epiverse-trace.github.io/posts/integration-testing/\"> Epiverse-TRACE: tools for outbreak analytics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>In Epiverse-TRACE we develop a suite of R packages that tackle predictable tasks in infectious disease outbreak response. One of the <a href=\"https://epiverse-trace.github.io/blueprints/principles.html\" rel=\"nofollow\" target=\"_blank\">guiding software design principles</a> we have worked towards is <em>interoperability</em> of tooling, both between Epiverse software, but also integrating with the <a href=\"https://epiverse-trace.github.io/slides/epireview-hackathon-july-2024/\" rel=\"nofollow\" target=\"_blank\">wider ecosystem of R packages in epidemiology</a>.</p>\n<p>This principle stems from the needs of those responding to, quantifying, and understanding outbreaks, to create epidemiological pipelines. These pipelines combine a series of tasks, where the output of one task is input into the next, forming an analysis chain (directed acyclic graph of computational tasks). By building interoperability into our R packages we try to reduce the friction of connecting different blocks in the pipeline. The <a href=\"https://epiverse-trace.github.io/slides/interoperability-epiverse/\" rel=\"nofollow\" target=\"_blank\">three interoperability principles in our strategy</a> are: 1) <em>consistency</em>, 2) <em>composability</em>, and 3) <em>modularity</em>.</p>\n<p>To ensure interoperability between Epiverse-TRACE R packages is developed and maintained, we utilise <em>integration testing</em>. This post explains our use of integration testing with a case study looking at the complementary design and interoperability of the <a href=\"https://epiverse-trace.github.io/simulist/\" rel=\"nofollow\" target=\"_blank\">{simulist}</a> and <a href=\"https://epiverse-trace.github.io/cleanepi/\" rel=\"nofollow\" target=\"_blank\">{cleanepi}</a> R packages.</p>\n<div class=\"callout callout-style-default callout-tip callout-titled\" title=\"Different types of testing\">\n<div class=\"callout-header d-flex align-content-center\">\n<div class=\"callout-icon-container\">\n<i class=\"callout-icon\"></i>\n</div>\n<div class=\"callout-title-container flex-fill\">\nDifferent types of testing\n</div>\n</div>\n<div class=\"callout-body-container callout-body\">\n<p>In comparison to commonly used <em>unit testing</em>, which looks to isolate and test specific parts of a software package, e.g. a function; <em>integration testing</em> is the testing of several components of software, both within and between packages. Therefore, integration testing can be used to ensure interoperability is maintained while one or multiple components in pipelines are being developed. <a href=\"https://en.wikipedia.org/wiki/Continuous_integration\" rel=\"nofollow\" target=\"_blank\">Continuous integration</a> provides a way to run these tests before merging, releasing, or deploying code.</p>\n</div>\n</div>\n<section class=\"level2\" id=\"how-we-setup-integration-testing-in-epiverse\">\n<h2 class=\"anchored\" data-anchor-id=\"how-we-setup-integration-testing-in-epiverse\">How we setup integration testing in Epiverse</h2>\n<p>The Epiverse-TRACE collection of packages has a meta-package, <a href=\"https://epiverse-trace.github.io/epiverse/\" rel=\"nofollow\" target=\"_blank\">{epiverse}</a>, analogous to the <a href=\"https://www.tidyverse.org/blog/2023/03/tidyverse-2-0-0/\" rel=\"nofollow\" target=\"_blank\">tidyverse meta-package</a> (loaded with <code>library(tidyverse)</code>). By default, {epiverse} has dependencies on all released and stable Epiverse-TRACE packages, therefore it is a good home for integration testing. This avoids burdening individual Epiverse packages with taking on potentially extra dependencies purely to test interoperability.</p>\n<p>Just as with unit testing within the individual Epiverse packages, we use the <a href=\"https://testthat.r-lib.org/\" rel=\"nofollow\" target=\"_blank\">{testthat}</a> framework for integration testing (although integration testing can be achieved using other testing frameworks).</p>\n</section>\n<section class=\"level2\" id=\"case-study-of-interoperable-functionality-using-simulist-and-cleanepi\">\n<h2 class=\"anchored\" data-anchor-id=\"case-study-of-interoperable-functionality-using-simulist-and-cleanepi\">Case study of interoperable functionality using {simulist} and {cleanepi}</h2>\n<p>The aim of {simulist} is to simulate outbreak data, such as line lists or contact tracing data. By default it generates complete and accurate data, but can also augment this data to emulate empirical data via post-processing functionality. One such post-processing function is <code>simulist::messy_linelist()</code>, which introduces a range of irregularities, missingness, and type coercions to simulated line list data. Complementary to this, the {cleanepi} package has a set of cleaning functions that standardised tabular epidemiological data, recording the set of cleaning operations run by compiling a <a href=\"https://epiverse-trace.github.io/cleanepi/articles/design_principle.html#output\" rel=\"nofollow\" target=\"_blank\">report and appending it to the cleaned data</a>.</p>\n<section class=\"level3\" id=\"example-of-an-integration-test\">\n<h3 class=\"anchored\" data-anchor-id=\"example-of-an-integration-test\">Example of an integration test</h3>\n<p>The integration tests can be thought of as compound unit tests. Line list data is generated using <code>simulist::sim_linelist()</code>. In each testing block, a messy copy of the line list is made using <code>simulist::messy_linelist()</code> with arguments set to specifically target particular aspects of messyness; then a cleaning operation from {cleanepi} is applied targeting the messy element of the data; lastly, the cleaned line list is compared to the original complete and accurate simulated data. In other words, is the ideal data perfectly recovered when messied and cleaned?</p>\n<p>An example of an integration test is shown below:</p>\n<pre>set.seed(1)\nll &lt;- simulist::sim_linelist()\n\ntest_that(\"convert_to_numeric corrects prop_int_as_word\", {\n  # create messy data with 50% of integers converted to words\n  messy_ll &lt;- simulist::messy_linelist(\n    linelist = ll,\n    prop_missing = 0,\n    prop_spelling_mistakes = 0,\n    inconsistent_sex = FALSE,\n    numeric_as_char = FALSE,\n    date_as_char = FALSE,\n    prop_int_as_word = 0.5,\n    prop_duplicate_row = 0\n  )\n  \n  # convert columns with numbers as words into numbers as numeric\n  clean_ll &lt;- cleanepi::convert_to_numeric(\n    data = messy_ll, \n    target_columns = c(\"id\", \"age\")\n  )\n  \n  # the below is not TRUE because\n  # 1. `clean_ll` has an attribute used to store the report from the performed\n  # cleaning operation\n  # 2. the converted \"id\" and \"age\" columns are numeric not integer\n  expect_false(identical(ll, clean_ll))\n\n  # check whether report is created as expected\n  report &lt;- attr(clean_ll, \"report\")\n  expect_identical(names(report), \"converted_into_numeric\")\n  expect_identical(report$converted_into_numeric, \"id, age\")\n\n  # convert the 2 converted numeric columns into integer\n  clean_ll[, c(\"id\", \"age\")] &lt;- apply(\n    clean_ll[, c(\"id\", \"age\")], \n    MARGIN = 2, \n    FUN = as.integer\n  )\n\n  # remove report to check identical line list &lt;data.frame&gt;\n  attr(clean_ll, \"report\") &lt;- NULL\n  \n  expect_identical(ll, clean_ll)\n})</pre>\n</section>\n</section>\n<section class=\"level2\" id=\"conclusion\">\n<h2 class=\"anchored\" data-anchor-id=\"conclusion\">Conclusion</h2>\n<p>When developing multiple software tools that are explicitly designed to work together it is critical that they are routinely tested to ensure interoperability is maximised and maintained. These tests can be implementations of a data standard, or in the case of Epiverse-TRACE a more informal set of design principles. We have showcased integration testing with the compatibility of the {simulist} and {cleanepi} R packages, but there are other integration tests available in the {epiverse} meta-package. We hope that by regularly running these expectations of functioning pipelines, includes those as simple as two steps, like the case study show in this post, that maintainers and contributors will be aware of any interoperability breakages.</p>\n<p>If you’ve worked on a suite of tools, R packages or otherwise, and have found useful methods or frameworks for integration tests please share in the comments.</p>\n</section>\n<section class=\"level2\" id=\"acknowledgements\">\n<h2 class=\"anchored\" data-anchor-id=\"acknowledgements\">Acknowledgements</h2>\n<p>Thanks to Karim Mané, Hugo Gruson and Chris Hartgerink for helpful feedback when drafting this post.</p>\n</section>\n<div class=\"default\" id=\"quarto-appendix\"><section class=\"quarto-appendix-contents\" id=\"quarto-reuse\"><h2 class=\"anchored quarto-appendix-heading\">Reuse</h2><div class=\"quarto-appendix-contents\"><div><a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"nofollow\" target=\"_blank\">CC BY 4.0</a></div></div></section><section class=\"quarto-appendix-contents\" id=\"quarto-citation\"><h2 class=\"anchored quarto-appendix-heading\">Citation</h2><div><div class=\"quarto-appendix-secondary-label\">BibTeX citation:</div><pre>@online{w._lambert2025,\n  author = {W. Lambert, Joshua},\n  title = {Integration Testing in {Epiverse-TRACE}},\n  date = {2025-04-14},\n  url = {https://epiverse-trace.github.io/posts/integration-testing/},\n  langid = {en}\n}\n</pre><div class=\"quarto-appendix-secondary-label\">For attribution, please cite this work as:</div><div class=\"csl-entry quarto-appendix-citeas\" id=\"ref-w._lambert2025\">\nW. Lambert, Joshua. 2025. <span>“Integration Testing in\nEpiverse-TRACE.”</span> April 14, 2025. <a href=\"https://epiverse-trace.github.io/posts/integration-testing/\" rel=\"nofollow\" target=\"_blank\">https://epiverse-trace.github.io/posts/integration-testing/</a>.\n</div></div></section></div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://epiverse-trace.github.io/posts/integration-testing/\"> Epiverse-TRACE: tools for outbreak analytics</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Integration testing in Epiverse-TRACE\nPosted on\nApril 13, 2025\nby\nJoshua W. Lambert\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nEpiverse-TRACE: tools for outbreak analytics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn Epiverse-TRACE we develop a suite of R packages that tackle predictable tasks in infectious disease outbreak response. One of the\nguiding software design principles\nwe have worked towards is\ninteroperability\nof tooling, both between Epiverse software, but also integrating with the\nwider ecosystem of R packages in epidemiology\n.\nThis principle stems from the needs of those responding to, quantifying, and understanding outbreaks, to create epidemiological pipelines. These pipelines combine a series of tasks, where the output of one task is input into the next, forming an analysis chain (directed acyclic graph of computational tasks). By building interoperability into our R packages we try to reduce the friction of connecting different blocks in the pipeline. The\nthree interoperability principles in our strategy\nare: 1)\nconsistency\n, 2)\ncomposability\n, and 3)\nmodularity\n.\nTo ensure interoperability between Epiverse-TRACE R packages is developed and maintained, we utilise\nintegration testing\n. This post explains our use of integration testing with a case study looking at the complementary design and interoperability of the\n{simulist}\nand\n{cleanepi}\nR packages.\nDifferent types of testing\nIn comparison to commonly used\nunit testing\n, which looks to isolate and test specific parts of a software package, e.g. a function;\nintegration testing\nis the testing of several components of software, both within and between packages. Therefore, integration testing can be used to ensure interoperability is maintained while one or multiple components in pipelines are being developed.\nContinuous integration\nprovides a way to run these tests before merging, releasing, or deploying code.\nHow we setup integration testing in Epiverse\nThe Epiverse-TRACE collection of packages has a meta-package,\n{epiverse}\n, analogous to the\ntidyverse meta-package\n(loaded with\nlibrary(tidyverse)\n). By default, {epiverse} has dependencies on all released and stable Epiverse-TRACE packages, therefore it is a good home for integration testing. This avoids burdening individual Epiverse packages with taking on potentially extra dependencies purely to test interoperability.\nJust as with unit testing within the individual Epiverse packages, we use the\n{testthat}\nframework for integration testing (although integration testing can be achieved using other testing frameworks).\nCase study of interoperable functionality using {simulist} and {cleanepi}\nThe aim of {simulist} is to simulate outbreak data, such as line lists or contact tracing data. By default it generates complete and accurate data, but can also augment this data to emulate empirical data via post-processing functionality. One such post-processing function is\nsimulist::messy_linelist()\n, which introduces a range of irregularities, missingness, and type coercions to simulated line list data. Complementary to this, the {cleanepi} package has a set of cleaning functions that standardised tabular epidemiological data, recording the set of cleaning operations run by compiling a\nreport and appending it to the cleaned data\n.\nExample of an integration test\nThe integration tests can be thought of as compound unit tests. Line list data is generated using\nsimulist::sim_linelist()\n. In each testing block, a messy copy of the line list is made using\nsimulist::messy_linelist()\nwith arguments set to specifically target particular aspects of messyness; then a cleaning operation from {cleanepi} is applied targeting the messy element of the data; lastly, the cleaned line list is compared to the original complete and accurate simulated data. In other words, is the ideal data perfectly recovered when messied and cleaned?\nAn example of an integration test is shown below:\nset.seed(1)\nll <- simulist::sim_linelist()\n\ntest_that(\"convert_to_numeric corrects prop_int_as_word\", {\n  # create messy data with 50% of integers converted to words\n  messy_ll <- simulist::messy_linelist(\n    linelist = ll,\n    prop_missing = 0,\n    prop_spelling_mistakes = 0,\n    inconsistent_sex = FALSE,\n    numeric_as_char = FALSE,\n    date_as_char = FALSE,\n    prop_int_as_word = 0.5,\n    prop_duplicate_row = 0\n  )\n  \n  # convert columns with numbers as words into numbers as numeric\n  clean_ll <- cleanepi::convert_to_numeric(\n    data = messy_ll, \n    target_columns = c(\"id\", \"age\")\n  )\n  \n  # the below is not TRUE because\n  # 1. `clean_ll` has an attribute used to store the report from the performed\n  # cleaning operation\n  # 2. the converted \"id\" and \"age\" columns are numeric not integer\n  expect_false(identical(ll, clean_ll))\n\n  # check whether report is created as expected\n  report <- attr(clean_ll, \"report\")\n  expect_identical(names(report), \"converted_into_numeric\")\n  expect_identical(report$converted_into_numeric, \"id, age\")\n\n  # convert the 2 converted numeric columns into integer\n  clean_ll[, c(\"id\", \"age\")] <- apply(\n    clean_ll[, c(\"id\", \"age\")], \n    MARGIN = 2, \n    FUN = as.integer\n  )\n\n  # remove report to check identical line list <data.frame>\n  attr(clean_ll, \"report\") <- NULL\n  \n  expect_identical(ll, clean_ll)\n})\nConclusion\nWhen developing multiple software tools that are explicitly designed to work together it is critical that they are routinely tested to ensure interoperability is maximised and maintained. These tests can be implementations of a data standard, or in the case of Epiverse-TRACE a more informal set of design principles. We have showcased integration testing with the compatibility of the {simulist} and {cleanepi} R packages, but there are other integration tests available in the {epiverse} meta-package. We hope that by regularly running these expectations of functioning pipelines, includes those as simple as two steps, like the case study show in this post, that maintainers and contributors will be aware of any interoperability breakages.\nIf you’ve worked on a suite of tools, R packages or otherwise, and have found useful methods or frameworks for integration tests please share in the comments.\nAcknowledgements\nThanks to Karim Mané, Hugo Gruson and Chris Hartgerink for helpful feedback when drafting this post.\nReuse\nCC BY 4.0\nCitation\nBibTeX citation:\n@online{w._lambert2025,\n  author = {W. Lambert, Joshua},\n  title = {Integration Testing in {Epiverse-TRACE}},\n  date = {2025-04-14},\n  url = {https://epiverse-trace.github.io/posts/integration-testing/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nW. Lambert, Joshua. 2025.\n“Integration Testing in\nEpiverse-TRACE.”\nApril 14, 2025.\nhttps://epiverse-trace.github.io/posts/integration-testing/\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nEpiverse-TRACE: tools for outbreak analytics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "In Epiverse-TRACE we develop a suite of R packages that tackle predictable tasks in infectious disease outbreak response. One of the guiding software design principles we have worked towards is interoperability of tooling, both between Epiverse ...",
+    "meta_keywords": null,
+    "og_description": "In Epiverse-TRACE we develop a suite of R packages that tackle predictable tasks in infectious disease outbreak response. One of the guiding software design principles we have worked towards is interoperability of tooling, both between Epiverse ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Integration testing in Epiverse-TRACE | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.4,
+    "sitemap_lastmod": null,
+    "twitter_description": "In Epiverse-TRACE we develop a suite of R packages that tackle predictable tasks in infectious disease outbreak response. One of the guiding software design principles we have worked towards is interoperability of tooling, both between Epiverse ...",
+    "twitter_title": "Integration testing in Epiverse-TRACE | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/04/integration-testing-in-epiverse-trace/",
+    "word_count": 1077
+  }
+}

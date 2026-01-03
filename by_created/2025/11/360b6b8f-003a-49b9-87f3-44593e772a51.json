@@ -1,0 +1,237 @@
+{
+  "uuid": "360b6b8f-003a-49b9-87f3-44593e772a51",
+  "created_at": "2025-11-17 20:38:48",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/12/r-docker-how-to-run-your-r-scripts-in-a-docker-container/",
+    "crawled_at": "2025-11-17T09:28:23.870460",
+    "external_links": [
+      {
+        "href": "https://appsilon.com/r-docker-getting-started/",
+        "text": "Tag: r - Appsilon | Enterprise R Shiny Dashboards"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://appsilon.com/scaling-and-infrastructure-why-is-my-shiny-app-slow/",
+        "text": "You might want to consider scaling it at the infrastructure level"
+      },
+      {
+        "href": "https://appsilon.com/r-docker-getting-started/#what-is-docker",
+        "text": "What is Docker and Why is it Important in R Programming"
+      },
+      {
+        "href": "https://appsilon.com/r-docker-getting-started/#install-docker",
+        "text": "How to Install Docker"
+      },
+      {
+        "href": "https://appsilon.com/r-docker-getting-started/#dockerize-r",
+        "text": "How to Use R Docker to Run R Script in a Container"
+      },
+      {
+        "href": "https://appsilon.com/r-docker-getting-started/#conclusion",
+        "text": "Summing up R Docker"
+      },
+      {
+        "href": "https://www.docker.com/products/docker-desktop/",
+        "text": "Docker Desktop"
+      },
+      {
+        "href": "https://docs.docker.com/desktop/install/linux-install/",
+        "text": "official installation instructions"
+      },
+      {
+        "href": "https://rocker-project.org/images/versioned/r-ver",
+        "text": "details of this image"
+      },
+      {
+        "href": "https://appsilon.com/blog",
+        "text": "Appsilon Blog"
+      },
+      {
+        "href": "https://appsilon.com/shiny-worker-package/",
+        "text": "Speed it up by offloading heavy calculations with shiny.worker"
+      },
+      {
+        "href": "https://appsilon.com/r-docker-getting-started/",
+        "text": "Tag: r - Appsilon | Enterprise R Shiny Dashboards"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R Docker: How to Run Your R Scripts in a Docker Container | R-bloggers",
+    "images": [
+      {
+        "alt": "R Docker",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "R Docker",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/09/R-Docker.webp"
+      },
+      {
+        "alt": "Image 1 - Docker homepage",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 1 - Docker homepage",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-1-Docker-homepage-scaled.webp"
+      },
+      {
+        "alt": "Image 2 - The resulting CSV file",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 2 - The resulting CSV file",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/12/Image-2-The-resulting-CSV-file.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 3 - Building a container from Dockerfile",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 3 - Building a container from Dockerfile",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-3-Building-a-container-from-Dockerfile.webp"
+      },
+      {
+        "alt": "Image 4 - Container build finished",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 4 - Container build finished",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-4-Container-build-finished.webp"
+      },
+      {
+        "alt": "Image 5 - Launching a Docker container",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 5 - Launching a Docker container",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-5-Launching-a-Docker-container.webp"
+      },
+      {
+        "alt": "Image 6 - Docker container log output",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 6 - Docker container log output",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-6-Docker-container-log-output.webp"
+      },
+      {
+        "alt": "Image 7 - Docker container system files",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 7 - Docker container system files",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-7-Docker-container-system-files.webp"
+      },
+      {
+        "alt": "Image 8 - Saving the container file locally",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 8 - Saving the container file locally",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-8-Saving-the-container-file-locally.webp"
+      },
+      {
+        "alt": "Image 9 - Resulting CSV file contents",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 9 - Resulting CSV file contents",
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-9-Resulting-CSV-file-contents.webp"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/dario-radecic/",
+        "text": "Dario Radečić"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-381037 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Docker: How to Run Your R Scripts in a Docker Container</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 21, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/dario-radecic/\">Dario Radečić</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://appsilon.com/r-docker-getting-started/\"> Tag: r - Appsilon | Enterprise R Shiny Dashboards</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><div><img alt=\"R Docker\" class=\"attachment-medium size-medium wp-post-image\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/09/R-Docker.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"margin-bottom: 15px;\" width=\"450\"/><noscript><img alt=\"R Docker\" class=\"attachment-medium size-medium wp-post-image\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/09/R-Docker.webp\" style=\"margin-bottom: 15px;\" width=\"450\"/></noscript></div><p>So, you’ve written this amazing R script, but your coworkers can’t run it? It works on your machine, so they have to be doing something wrong, right? <b>Wrong</b>. It’s all about isolating and managing R environments.</p>\n<p>And that’s where R Docker comes in. Think of Docker as a program that allows you to run multiple operating systems (containers) on your machine, while also allowing you to share the blueprints for recreating the mentioned operating system. It’s like a virtual machine, minus everything you don’t need.</p>\n<p>Today you’ll learn the basics of R Docker, why it’s important in R programming language, and how to Dockerize your first R script.</p>\n<blockquote><p>Is your R Shiny app slow? <a href=\"https://appsilon.com/scaling-and-infrastructure-why-is-my-shiny-app-slow/\" rel=\"nofollow\" target=\"_blank\">You might want to consider scaling it at the infrastructure level</a>.</p></blockquote>\n<h3>Table of Contents</h3>\n<ul>\n<li><strong><a href=\"https://appsilon.com/r-docker-getting-started/#what-is-docker\" rel=\"nofollow\" target=\"_blank\">What is Docker and Why is it Important in R Programming</a></strong></li>\n<li><strong><a href=\"https://appsilon.com/r-docker-getting-started/#install-docker\" rel=\"nofollow\" target=\"_blank\">How to Install Docker</a></strong></li>\n<li><strong><a href=\"https://appsilon.com/r-docker-getting-started/#dockerize-r\" rel=\"nofollow\" target=\"_blank\">How to Use R Docker to Run R Script in a Container</a></strong></li>\n<li><strong><a href=\"https://appsilon.com/r-docker-getting-started/#conclusion\" rel=\"nofollow\" target=\"_blank\">Summing up R Docker</a></strong></li>\n</ul>\n<hr>\n<h2 id=\"what-is-docker\">What is Docker and Why is it Important in R Programming</h2>\n<p>Think of Docker as a platform for developing, shipping, and running applications in isolated environments called “containers”. These are lightweight units that package applications and all of their dependencies (think system dependencies and R packages).</p>\n<p>In the context of R programming, Docker addresses the problem of <b>environment consistency</b>. Needless to say, you want your code running consistently across different environments, from your laptop to production servers. Docker containers can help here, as they encapsulate the environment, so you can rest assured the code and dependencies won’t change as you change the development environment.</p>\n<p>Docker is also praised for the <b>reproducibility</b> aspect. They allow you not only to specify which R dependencies are needed but also specific versions of R itself and other system dependencies. This will ensure you don’t run into any issues when sharing your code with others. If it works on your laptop (in a Docker container, of course), it will work with other developers as well.</p>\n<p>The previous two points also give you the idea that Docker containers benefit from <b>portability</b>. You can create a container on your laptop and then run it on any platform that supports Docker, such as your other laptop, a cloud server, or even a home NAS system.</p>\n<p>And, of course, Docker makes <b>scaling</b> R applications a breeze. You can create multiple containers with the same configuration and scale your application horizontally as the workload increases.</p>\n<p>There are other benefits of using R Docker, but we think these few are enough to convince you Docker is the correct way of creating and scaling R scripts and applications.</p>\n<p>But how can you <b>install Docker?</b> That’s what we’ll cover next.</p>\n<h2 id=\"install-docker\">How to Install Docker</h2>\n<p>If you’re working on a PC/laptop, we recommend installing <a href=\"https://www.docker.com/products/docker-desktop/\" rel=\"nofollow\" target=\"_blank\">Docker Desktop</a>:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22545\" style=\"width: 2570px\"><img alt=\"Image 1 - Docker homepage\" aria-describedby=\"caption-attachment-22545\" class=\"size-full wp-image-22545\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-1-Docker-homepage-scaled.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 1 - Docker homepage\" aria-describedby=\"caption-attachment-22545\" class=\"size-full wp-image-22545\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-1-Docker-homepage-scaled.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22545\">Image 1 – Docker homepage</p></div>\n<p>Put simply, it’s a single <code>.exe</code> file for Windows, <code>.dmg</code> file for Mac, and <code>.deb</code>/<code>.rpm</code> file for Linux you can download at the URL supplied earlier.</p>\n<p>Just download the file and install it with a double click (Windows and Mac), or by running the following shell commands on Linux:</p>\n<pre>sudo apt-get update\r\nsudo apt-get install ./docker-desktop-&lt;version&gt;-&lt;arch&gt;.deb</pre>\n<p>Installation on Mac and Windows is easier, so we feel there’s no need to discuss it further. Linux might require some additional tweaking, so feel free to go over the <a href=\"https://docs.docker.com/desktop/install/linux-install/\" rel=\"nofollow\" target=\"_blank\">official installation instructions</a>.</p>\n<h2 id=\"dockerize-r\">How to Use R Docker to Run R Script in a Container</h2>\n<p>This section will walk you through the process of writing a simple R script, and then automating its execution in a Docker container.</p>\n<h3>Writing and Testing the R Script</h3>\n<p>This is likely your first introduction to Docker, so let’s not overcomplicate things where we don’t have to. We’ll keep the R portion fairly simple.</p>\n<p>Create a new R script file (ours is named <code>script.R</code>). It uses two external dependencies – <code>dplyr</code> and <code>gapminder</code> to load and summarize a dataset.</p>\n<p>To be more precise, the script gives us insights into average life expectancy and average GDP per capita for all European countries in 2007.</p>\n<p>The results are saved to a CSV file. Note the <b>save path</b>, this one is important for later:</p>\n<pre>library(dplyr)\r\nlibrary(gapminder)\r\n\r\n# Statistics of Europe countries for 2007\r\neu_stats &lt;- gapminder %&gt;%\r\n  filter(\r\n    continent == \"Europe\",\r\n    year == 2007\r\n  ) %&gt;%\r\n  group_by(country) %&gt;%\r\n  summarise(\r\n    AvgLifeExp = mean(lifeExp),\r\n    AvgGdpPercap = mean(gdpPercap)\r\n  )\r\n\r\n# Save the file as CSV\r\nwrite.csv(eu_stats, \"home/r-environment/eu_stats.csv\", row.names = FALSE)</pre>\n<p>This is what you’ll see once you run the script locally:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22547\" style=\"width: 2014px\"><img alt=\" Image 2 - The resulting CSV file\" aria-describedby=\"caption-attachment-22547\" class=\"size-full wp-image-22547\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/12/Image-2-The-resulting-CSV-file.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\" Image 2 - The resulting CSV file\" aria-describedby=\"caption-attachment-22547\" class=\"size-full wp-image-22547\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/12/Image-2-The-resulting-CSV-file.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22547\">Image 2 – The resulting CSV file</p></div>\n<p>Nothing fancy and nothing to write home about – but does the job. Running the script results in an output CSV file, which will be a verification to make sure things work properly when executed in a Docker container.</p>\n<p>Let’s see how to approach this next.</p>\n<h3>Writing the Dockerfile</h3>\n<p>We’ll leverage a <code>Dockerfile</code> to create our container for the R script. Create a new file in the same directory where your R script is, and name it <code>Dockerfile</code> – all one word, no extensions.</p>\n<p>This type of file uses a specific syntax to create a Docker container. Let’s go over a couple of common keywords:</p>\n<ul>\n<li><code>FROM</code>: A command every <code>Dockerfile</code> starts with. It’s used to describe what base image are we building our image from. For example, <code>rocker/r-ver</code> is built on Ubuntu LTS and installs a fixed version of R from source. You can specify the exact version of R by putting <code>:&lt;r-version&gt;</code> after <code>rocker/r-ver</code>. Feel free to explore the <a href=\"https://rocker-project.org/images/versioned/r-ver\" rel=\"nofollow\" target=\"_blank\">details of this image</a> further on your own.</li>\n<li><code>RUN</code>: This command mimics command line commands, and we can use them to do things such as directory creation, dependency installation, and much more.</li>\n<li><code>COPY</code>: A command used to copy the contents of your local machine to the container. Use the syntax <code>COPY &lt;path-tolocal-file&gt; &lt;path-in-container&gt;</code>, or replace <code>&lt;path-tolocal-file&gt;</code> with <code>.</code> to copy everything from the folder.</li>\n<li><code>CMD</code>: This is the command that will be used every time you launch the container. For example, we can use it to run our R script.</li>\n</ul>\n<p>There are more keywords you can use, but these will be enough for today.</p>\n<p>Here are the <code>Dockerfile</code> contents, so feel free to copy-paste them:</p>\n<pre># Base R image\r\nFROM rocker/r-ver\r\n\r\n# Make a directory in the container\r\nRUN mkdir /home/r-environment\r\n\r\n# Install R dependencies\r\nRUN R -e \"install.packages(c('dplyr', 'gapminder'))\"\r\n\r\n# Copy our R script to the container\r\nCOPY script.R /home/r-environment/script.R\r\n\r\n# Run the R script\r\nCMD R -e \"source('/home/r-environment/script.R')\"</pre>\n<p>In a nutshell, we’re using the latest version of the <code>r-ver</code> image, creating a directory, installing R dependencies, copying the local script to the container, and running it.</p>\n<p>That’s it! The syntax takes some time to get used to but is simple and readable. You’ll have more trouble writing than reading <code>Dockerfile</code> if you’re just starting out.</p>\n<h3>Creating a Docker Container and Running the Script</h3>\n<p>We’re only two shell commands away from running our R script in a Docker container.</p>\n<p>The first shell command is used to build a container per your <code>Dockerfile</code> instructions. Open up a new Terminal window and navigate to where your code is located. Then, run the following command:</p>\n<pre>docker build -t r-docker-demo .</pre>\n<p>This will build a new image named <code>r-docker-demo</code>:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22549\" style=\"width: 2500px\"><img alt=\"Image 3 - Building a container from Dockerfile\" aria-describedby=\"caption-attachment-22549\" class=\"size-full wp-image-22549\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-3-Building-a-container-from-Dockerfile.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 3 - Building a container from Dockerfile\" aria-describedby=\"caption-attachment-22549\" class=\"size-full wp-image-22549\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-3-Building-a-container-from-Dockerfile.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22549\">Image 3 – Building a container from Dockerfile</p></div>\n<p>You’ll see this message when the build finishes:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22551\" style=\"width: 2500px\"><img alt=\"Image 4 - Container build finished\" aria-describedby=\"caption-attachment-22551\" class=\"size-full wp-image-22551\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-4-Container-build-finished.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 4 - Container build finished\" aria-describedby=\"caption-attachment-22551\" class=\"size-full wp-image-22551\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-4-Container-build-finished.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22551\">Image 4 – Container build finished</p></div>\n<p>And now, we can finally create a container from the newly created image and run it:</p>\n<pre>docker run r-docker-demo</pre>\n<p>This is the shell output you’ll see:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22553\" style=\"width: 2500px\"><img alt=\"Image 5 - Launching a Docker container\" aria-describedby=\"caption-attachment-22553\" class=\"size-full wp-image-22553\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-5-Launching-a-Docker-container.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 5 - Launching a Docker container\" aria-describedby=\"caption-attachment-22553\" class=\"size-full wp-image-22553\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-5-Launching-a-Docker-container.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22553\">Image 5 – Launching a Docker container</p></div>\n<p>You can see the runtime logs by opening Docker Desktop and monitoring container runs. You’ll see the identical output as previously shown in Terminal:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22555\" style=\"width: 2550px\"><img alt=\"Image 6 - Docker container log output\" aria-describedby=\"caption-attachment-22555\" class=\"size-full wp-image-22555\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-6-Docker-container-log-output.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 6 - Docker container log output\" aria-describedby=\"caption-attachment-22555\" class=\"size-full wp-image-22555\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-6-Docker-container-log-output.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22555\">Image 6 – Docker container log output</p></div>\n<p>The <i>Files</i> tab is where things get interesting. Long story short, this tab provides you with an overview of the system file structure.</p>\n<p>If our R script finished successfully, we should see an <code>eu-stats.csv</code> file stored in <code>home/r-environment</code>:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22557\" style=\"width: 2550px\"><img alt=\"Image 7 - Docker container system files\" aria-describedby=\"caption-attachment-22557\" class=\"size-full wp-image-22557\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-7-Docker-container-system-files.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 7 - Docker container system files\" aria-describedby=\"caption-attachment-22557\" class=\"size-full wp-image-22557\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-7-Docker-container-system-files.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22557\">Image 7 – Docker container system files</p></div>\n<p>You can download this file locally to your system:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22559\" style=\"width: 870px\"><img alt=\"Image 8 - Saving the container file locally\" aria-describedby=\"caption-attachment-22559\" class=\"size-full wp-image-22559\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-8-Saving-the-container-file-locally.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 8 - Saving the container file locally\" aria-describedby=\"caption-attachment-22559\" class=\"size-full wp-image-22559\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-8-Saving-the-container-file-locally.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22559\">Image 8 – Saving the container file locally</p></div>\n<p>And here’s what it contains:</p>\n<div class=\"wp-caption alignnone\" id=\"attachment_22561\" style=\"width: 2228px\"><img alt=\"Image 9 - Resulting CSV file contents\" aria-describedby=\"caption-attachment-22561\" class=\"size-full wp-image-22561\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-9-Resulting-CSV-file-contents.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"Image 9 - Resulting CSV file contents\" aria-describedby=\"caption-attachment-22561\" class=\"size-full wp-image-22561\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/12/Image-9-Resulting-CSV-file-contents.webp\" width=\"450\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-22561\">Image 9 – Resulting CSV file contents</p></div>\n<p>To conclude, we’ve successfully written and Dockerized a simple R script. You can share the script and Dockerfile with your colleagues, and they’ll have no trouble reproducing your results.</p>\n<p>That’s the whole point, after all.</p>\n<hr/>\n<h2 id=\"conclusion\">Summing up R Docker</h2>\n<p>And there you have it – your first Dockerized R script. It takes some time to get used to writing <code>Dockerfile</code>s, but it’s nothing you can’t wrap your head around if you already understand more complex topics, such as programming.</p>\n<p>Today you’ve only Dockerized one R script, so the next step is to explore how to do the same (and more) with an entire R Shiny application. Make sure to stay tuned to <a href=\"https://appsilon.com/blog\" rel=\"nofollow\" target=\"_blank\">Appsilon Blog</a> if you want to learn more about deployment.</p>\n<p><i>What’s your preferred way of deploying and sharing R scripts and Shiny applications?</i> Let us know in the comment section below.</p>\n<blockquote><p>Is your R Shiny application slow? <a href=\"https://appsilon.com/shiny-worker-package/\" rel=\"nofollow\" target=\"_blank\">Speed it up by offloading heavy calculations with shiny.worker</a>.</p></blockquote>\n<p>The post appeared first on appsilon.com/blog/.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://appsilon.com/r-docker-getting-started/\"> Tag: r - Appsilon | Enterprise R Shiny Dashboards</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </hr></div>\n</article>",
+    "main_text": "R Docker: How to Run Your R Scripts in a Docker Container\nPosted on\nDecember 21, 2023\nby\nDario Radečić\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nTag: r - Appsilon | Enterprise R Shiny Dashboards\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSo, you’ve written this amazing R script, but your coworkers can’t run it? It works on your machine, so they have to be doing something wrong, right?\nWrong\n. It’s all about isolating and managing R environments.\nAnd that’s where R Docker comes in. Think of Docker as a program that allows you to run multiple operating systems (containers) on your machine, while also allowing you to share the blueprints for recreating the mentioned operating system. It’s like a virtual machine, minus everything you don’t need.\nToday you’ll learn the basics of R Docker, why it’s important in R programming language, and how to Dockerize your first R script.\nIs your R Shiny app slow?\nYou might want to consider scaling it at the infrastructure level\n.\nTable of Contents\nWhat is Docker and Why is it Important in R Programming\nHow to Install Docker\nHow to Use R Docker to Run R Script in a Container\nSumming up R Docker\nWhat is Docker and Why is it Important in R Programming\nThink of Docker as a platform for developing, shipping, and running applications in isolated environments called “containers”. These are lightweight units that package applications and all of their dependencies (think system dependencies and R packages).\nIn the context of R programming, Docker addresses the problem of\nenvironment consistency\n. Needless to say, you want your code running consistently across different environments, from your laptop to production servers. Docker containers can help here, as they encapsulate the environment, so you can rest assured the code and dependencies won’t change as you change the development environment.\nDocker is also praised for the\nreproducibility\naspect. They allow you not only to specify which R dependencies are needed but also specific versions of R itself and other system dependencies. This will ensure you don’t run into any issues when sharing your code with others. If it works on your laptop (in a Docker container, of course), it will work with other developers as well.\nThe previous two points also give you the idea that Docker containers benefit from\nportability\n. You can create a container on your laptop and then run it on any platform that supports Docker, such as your other laptop, a cloud server, or even a home NAS system.\nAnd, of course, Docker makes\nscaling\nR applications a breeze. You can create multiple containers with the same configuration and scale your application horizontally as the workload increases.\nThere are other benefits of using R Docker, but we think these few are enough to convince you Docker is the correct way of creating and scaling R scripts and applications.\nBut how can you\ninstall Docker?\nThat’s what we’ll cover next.\nHow to Install Docker\nIf you’re working on a PC/laptop, we recommend installing\nDocker Desktop\n:\nImage 1 – Docker homepage\nPut simply, it’s a single\n.exe\nfile for Windows,\n.dmg\nfile for Mac, and\n.deb\n/\n.rpm\nfile for Linux you can download at the URL supplied earlier.\nJust download the file and install it with a double click (Windows and Mac), or by running the following shell commands on Linux:\nsudo apt-get update\nsudo apt-get install ./docker-desktop-<version>-<arch>.deb\nInstallation on Mac and Windows is easier, so we feel there’s no need to discuss it further. Linux might require some additional tweaking, so feel free to go over the\nofficial installation instructions\n.\nHow to Use R Docker to Run R Script in a Container\nThis section will walk you through the process of writing a simple R script, and then automating its execution in a Docker container.\nWriting and Testing the R Script\nThis is likely your first introduction to Docker, so let’s not overcomplicate things where we don’t have to. We’ll keep the R portion fairly simple.\nCreate a new R script file (ours is named\nscript.R\n). It uses two external dependencies –\ndplyr\nand\ngapminder\nto load and summarize a dataset.\nTo be more precise, the script gives us insights into average life expectancy and average GDP per capita for all European countries in 2007.\nThe results are saved to a CSV file. Note the\nsave path\n, this one is important for later:\nlibrary(dplyr)\nlibrary(gapminder)\n\n# Statistics of Europe countries for 2007\neu_stats <- gapminder %>%\n  filter(\n    continent == \"Europe\",\n    year == 2007\n  ) %>%\n  group_by(country) %>%\n  summarise(\n    AvgLifeExp = mean(lifeExp),\n    AvgGdpPercap = mean(gdpPercap)\n  )\n\n# Save the file as CSV\nwrite.csv(eu_stats, \"home/r-environment/eu_stats.csv\", row.names = FALSE)\nThis is what you’ll see once you run the script locally:\nImage 2 – The resulting CSV file\nNothing fancy and nothing to write home about – but does the job. Running the script results in an output CSV file, which will be a verification to make sure things work properly when executed in a Docker container.\nLet’s see how to approach this next.\nWriting the Dockerfile\nWe’ll leverage a\nDockerfile\nto create our container for the R script. Create a new file in the same directory where your R script is, and name it\nDockerfile\n– all one word, no extensions.\nThis type of file uses a specific syntax to create a Docker container. Let’s go over a couple of common keywords:\nFROM\n: A command every\nDockerfile\nstarts with. It’s used to describe what base image are we building our image from. For example,\nrocker/r-ver\nis built on Ubuntu LTS and installs a fixed version of R from source. You can specify the exact version of R by putting\n:<r-version>\nafter\nrocker/r-ver\n. Feel free to explore the\ndetails of this image\nfurther on your own.\nRUN\n: This command mimics command line commands, and we can use them to do things such as directory creation, dependency installation, and much more.\nCOPY\n: A command used to copy the contents of your local machine to the container. Use the syntax\nCOPY <path-tolocal-file> <path-in-container>\n, or replace\n<path-tolocal-file>\nwith\n.\nto copy everything from the folder.\nCMD\n: This is the command that will be used every time you launch the container. For example, we can use it to run our R script.\nThere are more keywords you can use, but these will be enough for today.\nHere are the\nDockerfile\ncontents, so feel free to copy-paste them:\n# Base R image\nFROM rocker/r-ver\n\n# Make a directory in the container\nRUN mkdir /home/r-environment\n\n# Install R dependencies\nRUN R -e \"install.packages(c('dplyr', 'gapminder'))\"\n\n# Copy our R script to the container\nCOPY script.R /home/r-environment/script.R\n\n# Run the R script\nCMD R -e \"source('/home/r-environment/script.R')\"\nIn a nutshell, we’re using the latest version of the\nr-ver\nimage, creating a directory, installing R dependencies, copying the local script to the container, and running it.\nThat’s it! The syntax takes some time to get used to but is simple and readable. You’ll have more trouble writing than reading\nDockerfile\nif you’re just starting out.\nCreating a Docker Container and Running the Script\nWe’re only two shell commands away from running our R script in a Docker container.\nThe first shell command is used to build a container per your\nDockerfile\ninstructions. Open up a new Terminal window and navigate to where your code is located. Then, run the following command:\ndocker build -t r-docker-demo .\nThis will build a new image named\nr-docker-demo\n:\nImage 3 – Building a container from Dockerfile\nYou’ll see this message when the build finishes:\nImage 4 – Container build finished\nAnd now, we can finally create a container from the newly created image and run it:\ndocker run r-docker-demo\nThis is the shell output you’ll see:\nImage 5 – Launching a Docker container\nYou can see the runtime logs by opening Docker Desktop and monitoring container runs. You’ll see the identical output as previously shown in Terminal:\nImage 6 – Docker container log output\nThe\nFiles\ntab is where things get interesting. Long story short, this tab provides you with an overview of the system file structure.\nIf our R script finished successfully, we should see an\neu-stats.csv\nfile stored in\nhome/r-environment\n:\nImage 7 – Docker container system files\nYou can download this file locally to your system:\nImage 8 – Saving the container file locally\nAnd here’s what it contains:\nImage 9 – Resulting CSV file contents\nTo conclude, we’ve successfully written and Dockerized a simple R script. You can share the script and Dockerfile with your colleagues, and they’ll have no trouble reproducing your results.\nThat’s the whole point, after all.\nSumming up R Docker\nAnd there you have it – your first Dockerized R script. It takes some time to get used to writing\nDockerfile\ns, but it’s nothing you can’t wrap your head around if you already understand more complex topics, such as programming.\nToday you’ve only Dockerized one R script, so the next step is to explore how to do the same (and more) with an entire R Shiny application. Make sure to stay tuned to\nAppsilon Blog\nif you want to learn more about deployment.\nWhat’s your preferred way of deploying and sharing R scripts and Shiny applications?\nLet us know in the comment section below.\nIs your R Shiny application slow?\nSpeed it up by offloading heavy calculations with shiny.worker\n.\nThe post appeared first on appsilon.com/blog/.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nTag: r - Appsilon | Enterprise R Shiny Dashboards\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "So, you’ve written this amazing R script, but your coworkers can’t run it? It works on your machine, so they have to be doing something wrong, right? Wrong. It’s all about isolating and managing R environments. And that’s where R Docker comes in. Think of Docker as a program that allows you to run multiple […] The post appeared first on appsilon.com/blog/.",
+    "meta_keywords": null,
+    "og_description": "So, you’ve written this amazing R script, but your coworkers can’t run it? It works on your machine, so they have to be doing something wrong, right? Wrong. It’s all about isolating and managing R environments. And that’s where R Docker comes in. Think of Docker as a program that allows you to run multiple […] The post appeared first on appsilon.com/blog/.",
+    "og_image": "https://wordpress.appsilon.com/wp-content/uploads/2023/09/R-Docker.webp",
+    "og_title": "R Docker: How to Run Your R Scripts in a Docker Container | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 8.7,
+    "sitemap_lastmod": "2023-12-21T06:59:52+00:00",
+    "twitter_description": "So, you’ve written this amazing R script, but your coworkers can’t run it? It works on your machine, so they have to be doing something wrong, right? Wrong. It’s all about isolating and managing R environments. And that’s where R Docker comes in. Think of Docker as a program that allows you to run multiple […] The post appeared first on appsilon.com/blog/.",
+    "twitter_title": "R Docker: How to Run Your R Scripts in a Docker Container | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/12/r-docker-how-to-run-your-r-scripts-in-a-docker-container/",
+    "word_count": 1746
+  }
+}

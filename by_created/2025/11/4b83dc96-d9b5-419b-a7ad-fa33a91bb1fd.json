@@ -1,0 +1,124 @@
+{
+  "uuid": "4b83dc96-d9b5-419b-a7ad-fa33a91bb1fd",
+  "created_at": "2025-11-22 19:58:22",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/06/project-euler-35-circular-primes-below-one-million/",
+    "crawled_at": "2025-11-22T10:47:28.273614",
+    "external_links": [
+      {
+        "href": "https://lucidmanager.org/data-science/project-euler-35/",
+        "text": "Having Fun and Creating Value With the R Language on Lucid Manager"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Circular_prime",
+        "text": "circular primes"
+      },
+      {
+        "href": "https://oeis.org/A068652",
+        "text": "A068652"
+      },
+      {
+        "href": "https://projecteuler.net/problem=35",
+        "text": "How many circular primes are there below one million"
+      },
+      {
+        "href": "https://lucidmanager.org/data-science/project-euler-30/",
+        "text": "Euler Problem 30"
+      },
+      {
+        "href": "https://lucidmanager.org/data-science/project-euler-7/",
+        "text": "Euler Problem 7"
+      },
+      {
+        "href": "https://github.com/pprevos/ProjectEuler/",
+        "text": "ProjectEuler"
+      },
+      {
+        "href": "https://lucidmanager.org/data-science/project-euler-35/",
+        "text": "Having Fun and Creating Value With the R Language on Lucid Manager"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Project Euler 35: Circular Primes below One Million | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/peter-prevos/",
+        "text": "Peter Prevos"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "As seen on R Bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393004 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Project Euler 35: Circular Primes below One Million</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/peter-prevos/\">Peter Prevos</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://lucidmanager.org/data-science/project-euler-35/\"> Having Fun and Creating Value With the R Language on Lucid Manager</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>\nEuler Problem 35 takes us back to the world of prime numbers, in particular <a href=\"https://en.wikipedia.org/wiki/Circular_prime\" rel=\"nofollow\" target=\"_blank\">circular primes</a>. The Online Encyclopedia of Integers (<a href=\"https://oeis.org/A068652\" rel=\"nofollow\" target=\"_blank\">A068652</a>) lists the fist 46 numbers for which every cyclic permutation is a prime.</p>\n<div class=\"outline-2\" id=\"outline-container-headline-1\">\n<h2 id=\"headline-1\">\nProject Euler 35 Definition\n</h2>\n<div class=\"outline-text-2\" id=\"outline-text-headline-1\">\n<p>The number 197 is a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.</p>\n<p>\nThere are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.</p>\n<p>\n<a href=\"https://projecteuler.net/problem=35\" rel=\"nofollow\" target=\"_blank\">How many circular primes are there below one million</a>?</p>\n</div>\n</div>\n<div class=\"outline-2\" id=\"outline-container-headline-2\">\n<h2 id=\"headline-2\">\nProposed Solution in R\n</h2>\n<div class=\"outline-text-2\" id=\"outline-text-headline-2\">\n<p>This code reuses the function that strips all digits for a number, presented in <a href=\"https://lucidmanager.org/data-science/project-euler-30/\" rel=\"nofollow\" target=\"_blank\">Euler Problem 30</a>. The solution for this problem also use the <code>is.prime</code> function to test whether a number is a prime, developed for <a href=\"https://lucidmanager.org/data-science/project-euler-7/\" rel=\"nofollow\" target=\"_blank\">Euler Problem 7</a>.</p>\n<p>\nThe following auxiliary functions help to solve the problem:</p>\n<ul>\n<li><code>esieve</code>: Generate primes</li>\n<li><code>is_prime</code>: Checks whether a number is prime</li>\n<li><code>rotate_left</code>: Rotates the a number</li>\n</ul>\n<a alt=\"Download ProjectEuler from GitHub\" href=\"https://github.com/pprevos/ProjectEuler/\" title=\"Download ProjectEuler from GitHub\">\n<button class=\"button is-medium is-primary\">\n<span class=\"icon is-large\">\n<i class=\"fab fa-github\"></i>\n</span>\n<span style=\"font-family: monospace\">ProjectEuler</span>\n</button>\n</a>\n<div class=\"src src-r\">\n<pre>  # Sieve of Eratosthenes\n  esieve &lt;- function(x) {\n    if (x == 1) return(NULL)\n    if (x == 2) return(n)\n    l &lt;- 2:x\n    i &lt;- 1\n    p &lt;- 2\n    while (p^2 &lt;= x) {\n      l &lt;- l[l == p | l %% p!= 0]\n      i &lt;- i + 1\n      p &lt;- l[i]\n    }\n    return(l)\n  }\n\n  ## Check if a number is prime\n  is_prime &lt;- function(x) {\n    if (x &lt;= 1) return(FALSE)\n    if (x == 2 | x == 3) return(TRUE)\n    primes &lt;- esieve(ceiling(sqrt(x)))\n    return(all(x %% primes != 0))\n  }\n\n  ## Rotate a number to the left\n  rotate_left &lt;- function(x) {\n    if (x &lt;= 9) return(x)\n    i &lt;- 1\n    y &lt;- vector()\n    while(x &gt;= 1) {\n      d &lt;- x %% 10\n      y[i] &lt;- d\n      i &lt;- i + 1\n      x = x %/% 10\n    }\n    as.numeric(paste(y[c((length(y) - 1):1, length(y))], collapse = \"\"))\n  }\n\n  ## Check circularity\n  is_circular_prime &lt;- function(x) {\n    n &lt;- trunc(log10(x)) + 1\n    p &lt;- vector(length = n)\n    for (r in 1:n) {\n      p[r] &lt;- is_prime(x)\n      x &lt;- rotate_left(x)\n    }\n    all(p)\n  }\n\n  primes &lt;- esieve(1E6)\n  length(which(sapply(primes, is_circular_prime)))</pre>\n</div>\n<p>\nThe main program runs through each of the 78,498 primes below one million, saves their digits in a vector and then cycles the numbers to test for primality of each rotation.</p>\n<p>\n<a href=\"https://www.r-bloggers.com/\" title=\"Proudly associated with R-Bloggers\">\n<button class=\"button is-link is-medium\">\n<span class=\"icon is-large\">\n<i class=\"fab fa-r-project\"></i>\n</span>\n<span>As seen on R Bloggers</span>\n</button>\n</a>\n</p>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://lucidmanager.org/data-science/project-euler-35/\"> Having Fun and Creating Value With the R Language on Lucid Manager</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Project Euler 35: Circular Primes below One Million\nPosted on\nJune 11, 2025\nby\nPeter Prevos\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nHaving Fun and Creating Value With the R Language on Lucid Manager\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEuler Problem 35 takes us back to the world of prime numbers, in particular\ncircular primes\n. The Online Encyclopedia of Integers (\nA068652\n) lists the fist 46 numbers for which every cyclic permutation is a prime.\nProject Euler 35 Definition\nThe number 197 is a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.\nThere are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.\nHow many circular primes are there below one million\n?\nProposed Solution in R\nThis code reuses the function that strips all digits for a number, presented in\nEuler Problem 30\n. The solution for this problem also use the\nis.prime\nfunction to test whether a number is a prime, developed for\nEuler Problem 7\n.\nThe following auxiliary functions help to solve the problem:\nesieve\n: Generate primes\nis_prime\n: Checks whether a number is prime\nrotate_left\n: Rotates the a number\nProjectEuler\n# Sieve of Eratosthenes\n  esieve <- function(x) {\n    if (x == 1) return(NULL)\n    if (x == 2) return(n)\n    l <- 2:x\n    i <- 1\n    p <- 2\n    while (p^2 <= x) {\n      l <- l[l == p | l %% p!= 0]\n      i <- i + 1\n      p <- l[i]\n    }\n    return(l)\n  }\n\n  ## Check if a number is prime\n  is_prime <- function(x) {\n    if (x <= 1) return(FALSE)\n    if (x == 2 | x == 3) return(TRUE)\n    primes <- esieve(ceiling(sqrt(x)))\n    return(all(x %% primes != 0))\n  }\n\n  ## Rotate a number to the left\n  rotate_left <- function(x) {\n    if (x <= 9) return(x)\n    i <- 1\n    y <- vector()\n    while(x >= 1) {\n      d <- x %% 10\n      y[i] <- d\n      i <- i + 1\n      x = x %/% 10\n    }\n    as.numeric(paste(y[c((length(y) - 1):1, length(y))], collapse = \"\"))\n  }\n\n  ## Check circularity\n  is_circular_prime <- function(x) {\n    n <- trunc(log10(x)) + 1\n    p <- vector(length = n)\n    for (r in 1:n) {\n      p[r] <- is_prime(x)\n      x <- rotate_left(x)\n    }\n    all(p)\n  }\n\n  primes <- esieve(1E6)\n  length(which(sapply(primes, is_circular_prime)))\nThe main program runs through each of the 78,498 primes below one million, saves their digits in a vector and then cycles the numbers to test for primality of each rotation.\nAs seen on R Bloggers\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nHaving Fun and Creating Value With the R Language on Lucid Manager\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Euler Problem 35 takes us back to the world of prime numbers, in particular circular primes. The Online Encyclopedia of Integers (A068652) lists the fist 46 numbers for which every cyclic permutation is a prime. Project Euler 35 Definition The ...",
+    "meta_keywords": null,
+    "og_description": "Euler Problem 35 takes us back to the world of prime numbers, in particular circular primes. The Online Encyclopedia of Integers (A068652) lists the fist 46 numbers for which every cyclic permutation is a prime. Project Euler 35 Definition The ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Project Euler 35: Circular Primes below One Million | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.6,
+    "sitemap_lastmod": null,
+    "twitter_description": "Euler Problem 35 takes us back to the world of prime numbers, in particular circular primes. The Online Encyclopedia of Integers (A068652) lists the fist 46 numbers for which every cyclic permutation is a prime. Project Euler 35 Definition The ...",
+    "twitter_title": "Project Euler 35: Circular Primes below One Million | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/06/project-euler-35-circular-primes-below-one-million/",
+    "word_count": 512
+  }
+}

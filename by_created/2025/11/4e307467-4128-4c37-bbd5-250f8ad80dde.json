@@ -1,0 +1,215 @@
+{
+  "uuid": "4e307467-4128-4c37-bbd5-250f8ad80dde",
+  "created_at": "2025-11-22 19:58:09",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/from-r-to-tableau-leverage-both-tools-for-effective-dashboards/",
+    "crawled_at": "2025-11-22T10:46:01.395011",
+    "external_links": [
+      {
+        "href": "https://www.codingthepast.com/2025/07/06/From-R-to-Tableau.html",
+        "text": "coding-the-past"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Military_dictatorship_of_Chile",
+        "text": "Chile’s dictatorship (1973‑1990)"
+      },
+      {
+        "href": "https://danilofreire.github.io/dist/index.html",
+        "text": "Professor Danilo Freire"
+      },
+      {
+        "href": "https://cran.r-project.org/web/packages/pinochet/vignettes/pinochet.html",
+        "text": "thepinochetR package"
+      },
+      {
+        "href": "https://shiny.posit.co/",
+        "text": "Shiny"
+      },
+      {
+        "href": "https://plotly.com/",
+        "text": "Plotly"
+      },
+      {
+        "href": "https://public.tableau.com/app/discover",
+        "text": "Tableau Public"
+      },
+      {
+        "href": "https://public.tableau.com/app/discover",
+        "text": "Tableau Public"
+      },
+      {
+        "href": "https://ggplot2-book.org/",
+        "text": "ggplot2"
+      },
+      {
+        "href": "https://data.europa.eu/apps/data-visualisation-guide/foundation-of-the-grammar-of-graphics",
+        "text": "Grammar of Graphics"
+      },
+      {
+        "href": "https://data.europa.eu/apps/data-visualisation-guide/grammar-of-graphics-in-practice-tableau#tableau-online",
+        "text": "tutorial"
+      },
+      {
+        "href": "https://public.tableau.com/views/DitaduraChilena/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "text": "Tableau workbook"
+      },
+      {
+        "href": "https://public.tableau.com/views/DitaduraChilena/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+        "text": "Link to Tableau Public Dashboard"
+      },
+      {
+        "href": "https://www.codingthepast.com/2025/07/06/From-R-to-Tableau.html",
+        "text": "coding-the-past"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "From R to Tableau – Leverage Both Tools for Effective Dashboards | R-bloggers",
+    "images": [
+      {
+        "alt": "Mapping variables to visual elements of a plot in Tableau.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Mapping variables to visual elements of a plot in Tableau.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_01.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "Connecting to data in Tableau Public.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Connecting to data in Tableau Public.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_02.jpg?w=578&ssl=1"
+      },
+      {
+        "alt": "The Dashboard Overview",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "The Dashboard Overview",
+        "base64": null,
+        "src": "https://i1.wp.com/www.codingthepast.com/assets/images/lesson_28_03.gif?w=578&ssl=1"
+      },
+      {
+        "alt": "Victims over the years.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Victims over the years.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_04.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Victims by Occupation.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Victims by Occupation.",
+        "base64": null,
+        "src": "https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_05.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Victims by age and gender.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Victims by age and gender.",
+        "base64": null,
+        "src": "https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_06.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Map showing where victims disappeared.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Map showing where victims disappeared.",
+        "base64": null,
+        "src": "https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_07.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ponne-bruno/",
+        "text": "Ponne, Bruno"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393825 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">From R to Tableau – Leverage Both Tools for Effective Dashboards</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 5, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ponne-bruno/\">Ponne, Bruno</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.codingthepast.com/2025/07/06/From-R-to-Tableau.html\"> coding-the-past</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p><br/></p>\n<p><em>When the violence causes silence, we must be mistaken.</em></p>\n<p>Zombie, The Cranberries (1994)</p>\n<p><br/></p>\n<p>Data analysis can be more than quarterly KPIs or complicated statistical models — it can help us remember and critically retell our past. While Latin America is often viewed as a peaceful region, the second half of the 20th century saw several brutal authoritarian regimes. <a href=\"https://en.wikipedia.org/wiki/Military_dictatorship_of_Chile\" rel=\"nofollow\" target=\"_blank\">Chile’s dictatorship (1973‑1990)</a> was among the most violent.</p>\n<p><br/></p>\n<p>In this post, I show how I used an R package to obtain data about the victims of Chile’s dictatorship and visualize it in Tableau Public. You’ll also discover the strengths and limitations of each tool for dashboard creation.</p>\n<p><br/></p>\n<h2 id=\"1-the-pinochet-package\">1. The pinochet Package</h2>\n<p>Developed by <a href=\"https://danilofreire.github.io/dist/index.html\" rel=\"nofollow\" target=\"_blank\">Professor Danilo Freire</a> and colleagues, <a href=\"https://cran.r-project.org/web/packages/pinochet/vignettes/pinochet.html\" rel=\"nofollow\" target=\"_blank\">the <code>pinochet</code> R package</a> provides clean and tidy data on victims of the Chilean dictatorship. Each row in the dataset represents one individual.</p>\n<p><br/></p>\n<p><span class=\"material-symbols-outlined\" data-cf-modified-03f0e26b786eb8da49d62a69-=\"\" id=\"copy-button\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; copyCode('code-28-1')\">\n  content_copy\n  <span class=\"tooltiptext\">Copy</span>\n</span></p>\n<div id=\"code-28-1\">\n<figure class=\"highlight\"><pre>install.packages(\"pinochet\")\n\nlibrary(pinochet)\n\ndata(pinochet)  # loads the data in a data frame called pinochet\n\nstr(pinochet)   # explores the structure of the data frame</pre></figure>\n</div>\n<p><br/></p>\n<p>R excels at complex tasks — such as causal inference and statistical analyses — and it is equally powerful (and free) for data exploration and interactivity. With <a href=\"https://shiny.posit.co/\" rel=\"nofollow\" target=\"_blank\">Shiny</a>, you can build attractive dashboards entirely in R. However, mastering Shiny and producing polished interactive visuals with libraries like <a href=\"https://plotly.com/\" rel=\"nofollow\" target=\"_blank\">Plotly</a> can take significant time and practice.</p>\n<p><br/></p>\n<p>In this context, <a href=\"https://public.tableau.com/app/discover\" rel=\"nofollow\" target=\"_blank\">Tableau Public</a> is an appealing option. It is the free edition of Tableau, designed for exploring public datasets and building engaging dashboards, while you learn. Tableau is a drag-and-drop tool that lets you create visualizations without writing code. As noted earlier, it is less versatile than R, but it is also easier to learn and use. In just a few hours, you can build beautiful exploratory dashboards using drag-and-drop alone. That’s why I chose Tableau to visualize this data. To bring the dataset into Tableau, I saved it as an Excel (.xlsx) file.</p>\n<p><br/></p>\n<p><span class=\"material-symbols-outlined\" data-cf-modified-03f0e26b786eb8da49d62a69-=\"\" id=\"copy-button\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; copyCode('code-28-2')\">\n  content_copy\n  <span class=\"tooltiptext\">Copy</span>\n</span></p>\n<div id=\"code-28-2\">\n<figure class=\"highlight\"><pre>library(writexl)\n\nwrite_xlsx(pinochet, \"pinochet.xlsx\")</pre></figure>\n</div>\n<p><br/></p>\n<h2 id=\"2-tableau-public\">2. Tableau Public</h2>\n<p><a href=\"https://public.tableau.com/app/discover\" rel=\"nofollow\" target=\"_blank\">Tableau Public</a> is a free, public platform for exploring, creating, and sharing data visualizations. It offers a more limited version of the well-known data visualization tool, Tableau.</p>\n<p><br/></p>\n<p>Tableau, like <a href=\"https://ggplot2-book.org/\" rel=\"nofollow\" target=\"_blank\">ggplot2</a>, has its roots in the <a href=\"https://data.europa.eu/apps/data-visualisation-guide/foundation-of-the-grammar-of-graphics\" rel=\"nofollow\" target=\"_blank\">Grammar of Graphics</a>, a framework for understanding and creating visualizations. Within this framework, a plot is built by mapping data variables to visual aesthetics. In Tableau, this mapping is accomplished through drag-and-drop: you literally place fields onto the X-axis, Y-axis, Color shelf, and so on.</p>\n<p><br/></p>\n<p><img alt=\"Mapping variables to visual elements of a plot in Tableau. \" data-lazy-src=\"https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_01.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Mapping variables to visual elements of a plot in Tableau. \" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_01.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<p>In contrast, <code>ggplot2</code> mappings happen through code:</p>\n<p><br/></p>\n<p><span class=\"material-symbols-outlined\" data-cf-modified-03f0e26b786eb8da49d62a69-=\"\" id=\"copy-button\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; copyCode('code-28-3')\">\n  content_copy\n  <span class=\"tooltiptext\">Copy</span>\n</span></p>\n<div id=\"code-28-3\">\n<figure class=\"highlight\"><pre>ggplot(data = df, aes(x = x, y = y, color = gender)) + geom_point()</pre></figure>\n</div>\n<p><br/></p>\n<p>You can download Tableau Public Desktop in the official Tableau webpage. When you open it, you can easily load the Excel file you saved from R by selecting a connection to Microsoft Excel or Text File (if you prefer to save it as a .csv)</p>\n<p><br/></p>\n<p><img alt=\"Connecting to data in Tableau Public.\" data-lazy-src=\"https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_02.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Connecting to data in Tableau Public.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_02.jpg?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<p>Please, check out this <a href=\"https://data.europa.eu/apps/data-visualisation-guide/grammar-of-graphics-in-practice-tableau#tableau-online\" rel=\"nofollow\" target=\"_blank\">tutorial</a> to learn more about Tableau Public. You can also download my <a href=\"https://public.tableau.com/views/DitaduraChilena/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link\" rel=\"nofollow\" target=\"_blank\">Tableau workbook</a>, that contains the dashboard, and check out how I created the full dashboard. Don’t forget to leave a star if you enjoy it! 🙂</p>\n<p><br/></p>\n<p><img alt=\"The Dashboard Overview\" data-lazy-src=\"https://i1.wp.com/www.codingthepast.com/assets/images/lesson_28_03.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"The Dashboard Overview\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.codingthepast.com/assets/images/lesson_28_03.gif?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<h2 id=\"3-the-dashboard-and-key-insights\">3. The Dashboard and Key Insights</h2>\n<h3 id=\"31-the-dashboard\">3.1 The Dashboard</h3>\n<p>The dashboard is organized into four interactive sections:</p>\n<p><br/></p>\n<p><strong>1. Tough Years</strong><br/>\n  A bar chart of victims per year.<br/>\n<em>Tip: Scrub over the bars to filter by year.</em></p>\n<p><br/></p>\n<p><strong>2. Occupation &amp; Place of Disappearance</strong><br/>\n  Treemap and map views.<br/>\n<em>Tip: Click an occupation to highlight where those victims disappeared.</em></p>\n<p><br/></p>\n<p><strong>3. An Exploratory Memorial</strong><br/>\n  One star per confirmed victim.<br/>\n<em>Tip: Hover to read personal details.</em></p>\n<p><br/></p>\n<p><strong>4. Age &amp; Gender</strong><br/>\n  Histogram split by gender.<br/>\n<em>Tip: Hover bars to see counts; toggle genders in the legend.</em></p>\n<p><br/></p>\n<h3 id=\"32-key-insights\">3.2 Key Insights</h3>\n<p>Here are some insights from the dashboard:</p>\n<p><br/></p>\n<p><strong>1973 was the deadliest year</strong>, with ~1,230 victims during the coup.</p>\n<p><br/></p>\n<p><img alt=\"Victims over the years.\" data-lazy-src=\"https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_04.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Victims over the years.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.codingthepast.com/assets/images/lesson_28_04.png?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<p><strong>Blue-collar workers</strong> made up almost half the victims, revealing a class dimension of state violence.</p>\n<p><br/></p>\n<p><strong>Students</strong> (university and school) accounted for nearly 13% of the disappeared — a stark cost of activism.</p>\n<p><br/></p>\n<p><img alt=\"Victims by Occupation. \" data-lazy-src=\"https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_05.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Victims by Occupation. \" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_05.png?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<p><strong>96% of the victims were male</strong>, but the women’s stories reveal deep family traumas.</p>\n<p><br/></p>\n<p><strong>Most victims were between 20–30 years old</strong> — showing how youth were disproportionately targeted.</p>\n<p><br/></p>\n<p><img alt=\"Victims by age and gender. \" data-lazy-src=\"https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_06.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Victims by age and gender. \" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_06.png?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<p><strong>No place was safe</strong> — from Santiago to remote mining towns, disappearances happened everywhere.</p>\n<p><br/></p>\n<p><img alt=\"Map showing where victims disappeared. \" data-lazy-src=\"https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_07.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Map showing where victims disappeared. \" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.codingthepast.com/assets/images/lesson_28_07.png?w=578&amp;ssl=1\"/></noscript></p>\n<p><br/></p>\n<h2 id=\"4-conclusions-and-limitations\">4. Conclusions and Limitations</h2>\n<p>Tableau is a user-friendly tool for creating visual dashboards — especially good for quick exploration and sharing. It supports traditional charts and maps, and its drag‑and‑drop interface is great for beginners.</p>\n<p><br/></p>\n<p>However, it has limitations. It lacks advanced statistical tools and doesn’t support robust preprocessing or modeling tasks. That’s where R truly shines.</p>\n<p><br/></p>\n<p>Used together, R and Tableau offer a powerful combo for data-driven storytelling.</p>\n<p><br/></p>\n<p><strong>Data Source:</strong> Freire, D., Mingardi, L., &amp; McDonnell, R. (2019). <em>pinochet: Data About the Victims of the Pinochet Regime, 1973–1990</em></p>\n<p><br/></p>\n<p><a href=\"https://public.tableau.com/views/DitaduraChilena/Dashboard1?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link\" rel=\"nofollow\" target=\"_blank\"><strong>Link to Tableau Public Dashboard</strong></a></p>\n<p><br/></p>\n<hr/>\n<p><br/></p>\n<p>What other historical datasets would you like to see visualized? Share your ideas in the comments below!</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.codingthepast.com/2025/07/06/From-R-to-Tableau.html\"> coding-the-past</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "From R to Tableau – Leverage Both Tools for Effective Dashboards\nPosted on\nJuly 5, 2025\nby\nPonne, Bruno\nin\nR bloggers\n| 0 Comments\n[This article was first published on\ncoding-the-past\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhen the violence causes silence, we must be mistaken.\nZombie, The Cranberries (1994)\nData analysis can be more than quarterly KPIs or complicated statistical models — it can help us remember and critically retell our past. While Latin America is often viewed as a peaceful region, the second half of the 20th century saw several brutal authoritarian regimes.\nChile’s dictatorship (1973‑1990)\nwas among the most violent.\nIn this post, I show how I used an R package to obtain data about the victims of Chile’s dictatorship and visualize it in Tableau Public. You’ll also discover the strengths and limitations of each tool for dashboard creation.\n1. The pinochet Package\nDeveloped by\nProfessor Danilo Freire\nand colleagues,\nthe\npinochet\nR package\nprovides clean and tidy data on victims of the Chilean dictatorship. Each row in the dataset represents one individual.\ncontent_copy\nCopy\ninstall.packages(\"pinochet\")\n\nlibrary(pinochet)\n\ndata(pinochet)  # loads the data in a data frame called pinochet\n\nstr(pinochet)   # explores the structure of the data frame\nR excels at complex tasks — such as causal inference and statistical analyses — and it is equally powerful (and free) for data exploration and interactivity. With\nShiny\n, you can build attractive dashboards entirely in R. However, mastering Shiny and producing polished interactive visuals with libraries like\nPlotly\ncan take significant time and practice.\nIn this context,\nTableau Public\nis an appealing option. It is the free edition of Tableau, designed for exploring public datasets and building engaging dashboards, while you learn. Tableau is a drag-and-drop tool that lets you create visualizations without writing code. As noted earlier, it is less versatile than R, but it is also easier to learn and use. In just a few hours, you can build beautiful exploratory dashboards using drag-and-drop alone. That’s why I chose Tableau to visualize this data. To bring the dataset into Tableau, I saved it as an Excel (.xlsx) file.\ncontent_copy\nCopy\nlibrary(writexl)\n\nwrite_xlsx(pinochet, \"pinochet.xlsx\")\n2. Tableau Public\nTableau Public\nis a free, public platform for exploring, creating, and sharing data visualizations. It offers a more limited version of the well-known data visualization tool, Tableau.\nTableau, like\nggplot2\n, has its roots in the\nGrammar of Graphics\n, a framework for understanding and creating visualizations. Within this framework, a plot is built by mapping data variables to visual aesthetics. In Tableau, this mapping is accomplished through drag-and-drop: you literally place fields onto the X-axis, Y-axis, Color shelf, and so on.\nIn contrast,\nggplot2\nmappings happen through code:\ncontent_copy\nCopy\nggplot(data = df, aes(x = x, y = y, color = gender)) + geom_point()\nYou can download Tableau Public Desktop in the official Tableau webpage. When you open it, you can easily load the Excel file you saved from R by selecting a connection to Microsoft Excel or Text File (if you prefer to save it as a .csv)\nPlease, check out this\ntutorial\nto learn more about Tableau Public. You can also download my\nTableau workbook\n, that contains the dashboard, and check out how I created the full dashboard. Don’t forget to leave a star if you enjoy it! 🙂\n3. The Dashboard and Key Insights\n3.1 The Dashboard\nThe dashboard is organized into four interactive sections:\n1. Tough Years\nA bar chart of victims per year.\nTip: Scrub over the bars to filter by year.\n2. Occupation & Place of Disappearance\nTreemap and map views.\nTip: Click an occupation to highlight where those victims disappeared.\n3. An Exploratory Memorial\nOne star per confirmed victim.\nTip: Hover to read personal details.\n4. Age & Gender\nHistogram split by gender.\nTip: Hover bars to see counts; toggle genders in the legend.\n3.2 Key Insights\nHere are some insights from the dashboard:\n1973 was the deadliest year\n, with ~1,230 victims during the coup.\nBlue-collar workers\nmade up almost half the victims, revealing a class dimension of state violence.\nStudents\n(university and school) accounted for nearly 13% of the disappeared — a stark cost of activism.\n96% of the victims were male\n, but the women’s stories reveal deep family traumas.\nMost victims were between 20–30 years old\n— showing how youth were disproportionately targeted.\nNo place was safe\n— from Santiago to remote mining towns, disappearances happened everywhere.\n4. Conclusions and Limitations\nTableau is a user-friendly tool for creating visual dashboards — especially good for quick exploration and sharing. It supports traditional charts and maps, and its drag‑and‑drop interface is great for beginners.\nHowever, it has limitations. It lacks advanced statistical tools and doesn’t support robust preprocessing or modeling tasks. That’s where R truly shines.\nUsed together, R and Tableau offer a powerful combo for data-driven storytelling.\nData Source:\nFreire, D., Mingardi, L., & McDonnell, R. (2019).\npinochet: Data About the Victims of the Pinochet Regime, 1973–1990\nLink to Tableau Public Dashboard\nWhat other historical datasets would you like to see visualized? Share your ideas in the comments below!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ncoding-the-past\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "When the violence causes silence, we must be mistaken. Zombie, The Cranberries (1994) Data analysis can be more than quarterly KPIs or complicated statistical models — it can help us remember and critically retell our past. While Latin America is...",
+    "meta_keywords": null,
+    "og_description": "When the violence causes silence, we must be mistaken. Zombie, The Cranberries (1994) Data analysis can be more than quarterly KPIs or complicated statistical models — it can help us remember and critically retell our past. While Latin America is...",
+    "og_image": "https://www.codingthepast.com/assets/images/lesson_28_01.jpg",
+    "og_title": "From R to Tableau – Leverage Both Tools for Effective Dashboards | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.9,
+    "sitemap_lastmod": null,
+    "twitter_description": "When the violence causes silence, we must be mistaken. Zombie, The Cranberries (1994) Data analysis can be more than quarterly KPIs or complicated statistical models — it can help us remember and critically retell our past. While Latin America is...",
+    "twitter_title": "From R to Tableau – Leverage Both Tools for Effective Dashboards | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/from-r-to-tableau-leverage-both-tools-for-effective-dashboards/",
+    "word_count": 973
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "uuid": "d22b0ba9-f8f5-4eda-bada-be1304c25b24",
+  "created_at": "2025-11-22 19:59:33",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2024/12/calling-c-functions-from-r-using-rcpp-2/",
+    "crawled_at": "2025-11-22T10:56:22.930899",
+    "external_links": [
+      {
+        "href": "https://adam-gladstone.github.io/r-project/Calling-C++-functions-from-R-using-Rcpp/",
+        "text": "Adam's Software Lab"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://adv-r.had.co.nz/Rcpp.html",
+        "text": "Rcpp"
+      },
+      {
+        "href": "https://github.com/Adam-Gladstone/FinancialFunctions",
+        "text": "FinancialFunctions"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/FinancialFunctions.h",
+        "text": "FinancialFunctions.h"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/FinancialFunctions.cpp",
+        "text": "FinancialFunctions.cpp"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/assets/images/rcpp_functions.cpp",
+        "text": "rcpp_functions.cpp"
+      },
+      {
+        "href": "https://github.com/Adam-Gladstone/FinancialFunctions",
+        "text": "FinancialFunctions"
+      },
+      {
+        "href": "https://adam-gladstone.github.io/r-project/Calling-C++-functions-from-R-using-Rcpp/",
+        "text": "Adam's Software Lab"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Calling C++ functions from R using Rcpp | R-bloggers",
+    "images": [
+      {
+        "alt": "R Package using Rcpp",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "R Package using Rcpp",
+        "base64": null,
+        "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/Rcpp-project-type.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Rcpp Hello World",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Rcpp Hello World",
+        "base64": null,
+        "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/Rcpp-hello-world.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/adam-gladstone/",
+        "text": "Adam Gladstone"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393523 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Calling C++ functions from R using Rcpp</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 23, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/adam-gladstone/\">Adam Gladstone</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://adam-gladstone.github.io/r-project/Calling-C++-functions-from-R-using-Rcpp/\"> Adam's Software Lab</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h3 id=\"introduction\">Introduction</h3>\n<p>If you are an R/RStudio user and you are learning C/C++ then this blog post may be interesting. Suppose that you’ve written a function in C/C++ (or even a whole program). You know how to run your code from the command line, passing in arguments and so on. However, this is not necessarily very convenient. Wouldn’t it be nice to have your C/C++ functionality available in R? Well you can. In a few easy steps (using Rcpp) you can make your C/C++ functions available in R/RStudio.</p>\n<p>This blog post describes the steps required. I won’t dwell too much on the technicalities. The details are covered elsewhere: <a href=\"http://adv-r.had.co.nz/Rcpp.html\" rel=\"nofollow\" target=\"_blank\">Rcpp</a>. What I’m interested in here is <strong>setting up an Rcpp package that can call C++ functions from R/RStudio</strong>.</p>\n<p>This project is no more than a starting point. Later on, I may add bells-and-whistles. The complete <strong>FinancialFunctions</strong> project is available on GitHub <a href=\"https://github.com/Adam-Gladstone/FinancialFunctions\" rel=\"nofollow\" target=\"_blank\">FinancialFunctions</a>.</p>\n<p>We’ll start off by creating an Rcpp package. This will give us a framework that we can use to <em>drop in</em> the C++ code. Then, we will tweak the Rcpp code to call our C++ functions and build the package. For reference we are using the following versions:</p>\n<ul>\n<li>R version 4.4.1</li>\n<li>RStudio version 2024.04.2 (Build 764)</li>\n<li>RTools version 4.4</li>\n</ul>\n<h3 id=\"1-creating-an-rcpp-package\">1. Creating an Rcpp package</h3>\n<p>Follow these steps to create an Rcpp package.</p>\n<p>First, make sure Rcpp is installed. If not, just run the following command in RStudio: <code>install.packages(\"Rcpp\")</code></p>\n<ul>\n<li>Select File &gt; New Project …</li>\n<li>In the New Project Wizard dialog, select New Directory</li>\n<li>In the Project Type page, scroll down the list of project types and select ‘R Package using Rcpp’.</li>\n</ul>\n<p><img alt=\"R Package using Rcpp\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/Rcpp-project-type.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"R Package using Rcpp\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/Rcpp-project-type.png?w=578&amp;ssl=1\"/></noscript></p>\n<ul>\n<li>In the ‘Create R Package using Rcpp’ page, fill in the Directory name. In this case it is <strong>FinancialFunctions</strong>.</li>\n<li>Press the Create Project button. A new RStudio session is started, and the project opens with a helpful <strong>Read-and-delete-me</strong> file.</li>\n</ul>\n<p>Navigate to the \\src directory and open the file <strong>rcpp_hello_world.cpp</strong>. Here there is a test C++ function called <code>rcpp_hello_world()</code> which we can call from R after we build the package.</p>\n<p><img alt=\"Rcpp Hello World\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/Rcpp-hello-world.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Rcpp Hello World\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/Rcpp-hello-world.png?w=578&amp;ssl=1\"/></noscript></p>\n<ul>\n<li>Select the menu: Build &gt; Build binary package</li>\n</ul>\n<p>If everything goes okay, we should see a message similar to this:</p>\n<pre>...\npackaged installation of 'FinancialFunctions' as FinancialFunctions_1.0.zip\n─  DONE (FinancialFunctions)\n[1] \"D:/TEMP/FinancialFunctions_1.0.zip\"\n\nBinary package written to D:/TEMP\n</pre>\n<p>Now we have built a fully functional Rcpp package. Open the zip-file and copy the contents into your R library directory (e.g. D:\\R\\R-4.4.1\\library). Then, in RStudio, run the following script:</p>\n<pre>&gt; library(FinancialFunctions)\t\t# Load the package\n&gt; results &lt;- rcpp_hello_world()\t\t# Call the C++ function\n&gt; results\t\t\t\t\t\t\t# Print the results\n[[1]]\n[1] \"foo\" \"bar\"\n\n[[2]]\n[1] 0 1\n</pre>\n<h3 id=\"2-adding-c-code\">2. Adding C++ code</h3>\n<p>Now that we have a working skeleton, we can add our own C++ functions to the package.</p>\n<p>Copy the two files <a href=\"https://adam-gladstone.github.io/assets/images/FinancialFunctions.h\" rel=\"nofollow\" target=\"_blank\"><strong>FinancialFunctions.h</strong></a> and <a href=\"https://adam-gladstone.github.io/assets/images/FinancialFunctions.cpp\" rel=\"nofollow\" target=\"_blank\"><strong>FinancialFunctions.cpp</strong></a> into the <strong>\\src</strong> directory.</p>\n<p>There are two functions declared in the header file: <code>price</code> and <code>ytm</code> (yield-to-maturity).</p>\n<p>The price function computes the present value of a stream of periodic cashflows using a single discount rate. The yield-to-maturity function computes the single rate of return implied by the periodic cashflows and the price (present value).</p>\n<p>The price function takes a vector of times and a vector of cashflows (for a bond these are the coupons and the final principal repayment). In addition, the function takes a single rate, which is used to discount all the cashflows.</p>\n<p>The yield-to-maturity function also takes a vector of times and a vector of cashflows (as above) and a (bond) price. From this, it iteratively determines the single rate at which the periodic stream of cashflows should be discounted to obtain the supplied price.</p>\n<h3 id=\"3-connecting-r-with-c-using-rcpp\">3. Connecting R with C++ using Rcpp</h3>\n<p>Delete the file <strong>rcpp_hello_world.cpp</strong> as we no longer need the test function. Then copy the file <a href=\"https://adam-gladstone.github.io/assets/images/rcpp_functions.cpp\" rel=\"nofollow\" target=\"_blank\"><strong>rcpp_functions.cpp</strong></a> into the <strong>\\src</strong> directory. This file contains the functions that we want to <strong>export</strong> from C++ to R using Rcpp.</p>\n<p>At the top of the file, we include the main Rcpp header file. This is followed by the STL vector include and finally, we include the declarations of our functions in <strong>FinancialFunctions.h</strong>.</p>\n<p>The code in <strong>rcpp_functions.cpp</strong> declares an Rcpp function called <code>bond_price</code>. Most importantly, it is preceded by the line <code>// [[Rcpp::export]]</code>. This attribute indicates that the function should be <strong>exported</strong>, that is, made visible to R. As simple as that. Rcpp takes care of all the details. All we are concerned about is what parameters we are passed and how to call our function and get the results.</p>\n<p>The <code>bond_price</code> function takes as its parameters two numeric vectors (the times and the cashflows), and a rate (a double). These are passed in from R. The function returns a double value, the calculated price. The Rcpp function looks like this.</p>\n<pre>// [[Rcpp::export]]\ndouble bond_price(Rcpp::NumericVector times, Rcpp::NumericVector cashflows, double rate)\n{\n  std::vector&lt;double&gt; _times = Rcpp::as&lt;std::vector&lt;double&gt;&gt;(times);\n  std::vector&lt;double&gt; _cashflows = Rcpp::as&lt;std::vector&lt;double&gt;&gt;(cashflows);\n  \n  double price = FinancialFunctions::Bonds::price(_times, _cashflows, rate);\n \n  return price;\n}\n</pre>\n<p>Inside the function, the Rcpp types <code>NumericVector</code> are converted to <code>std::vector&lt;double&gt;</code>, which is what our function expects.</p>\n<p>Finally we call our function and return the result.</p>\n<p>The Rcpp code for <code>bond_ytm</code> is very similar.</p>\n<p>Everything is now ready to be built.</p>\n<ul>\n<li>Select the menu: Build &gt; Build binary package.</li>\n</ul>\n<p>Keep our fingers crossed that we have not made any mistakes. If everything goes okay, we should see a message similar to this:</p>\n<pre>Binary package written to D:/Development/Projects/R\n</pre>\n<p>Copy the contents of the zip file into your R library directory as previously, overwriting the initial version of the package.</p>\n<p>In order to check that everything works as expected, run the following script.</p>\n<pre>library(FinancialFunctions)\n# Example: a 3 year bond with a face value of $100 makes annual coupon \n# payments of 10%. The current interest rate (with annual compounding) is 9%.\ntimes &lt;- c(1, 2, 3)\ncashflows &lt;- c(10, 10, 110)\nrate &lt;- 0.09\n\n# Calculate price and yield to maturity\nprice &lt;- FinancialFunctions::bond_price(times, cashflows, rate)\nytm &lt;- FinancialFunctions::bond_ytm(times, cashflows, price)\n\n# Display the results\nprice\nytm\n</pre>\n<p>There should be no errors. We can check the results against the manual calculations in a spreadsheet if required.</p>\n<h3 id=\"wrap-up\">Wrap up.</h3>\n<p>That’s all there is to it. We now have a working Rcpp package that calls C/C++ functions from R.</p>\n<p>But that really is only the beginning. There’s a lot more that can be done. For starters, we could improve the project design by isolating our code in a static library. We could also add some test cases, perhaps using a package like ‘testthat’. Finally, we could add a couple more functions: perhaps bond duration and convexity calculations. I might look at how to do all this in a future article. The complete project is available on GitHub, <a href=\"https://github.com/Adam-Gladstone/FinancialFunctions\" rel=\"nofollow\" target=\"_blank\">FinancialFunctions</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://adam-gladstone.github.io/r-project/Calling-C++-functions-from-R-using-Rcpp/\"> Adam's Software Lab</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Calling C++ functions from R using Rcpp\nPosted on\nDecember 23, 2024\nby\nAdam Gladstone\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAdam's Software Lab\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nIf you are an R/RStudio user and you are learning C/C++ then this blog post may be interesting. Suppose that you’ve written a function in C/C++ (or even a whole program). You know how to run your code from the command line, passing in arguments and so on. However, this is not necessarily very convenient. Wouldn’t it be nice to have your C/C++ functionality available in R? Well you can. In a few easy steps (using Rcpp) you can make your C/C++ functions available in R/RStudio.\nThis blog post describes the steps required. I won’t dwell too much on the technicalities. The details are covered elsewhere:\nRcpp\n. What I’m interested in here is\nsetting up an Rcpp package that can call C++ functions from R/RStudio\n.\nThis project is no more than a starting point. Later on, I may add bells-and-whistles. The complete\nFinancialFunctions\nproject is available on GitHub\nFinancialFunctions\n.\nWe’ll start off by creating an Rcpp package. This will give us a framework that we can use to\ndrop in\nthe C++ code. Then, we will tweak the Rcpp code to call our C++ functions and build the package. For reference we are using the following versions:\nR version 4.4.1\nRStudio version 2024.04.2 (Build 764)\nRTools version 4.4\n1. Creating an Rcpp package\nFollow these steps to create an Rcpp package.\nFirst, make sure Rcpp is installed. If not, just run the following command in RStudio:\ninstall.packages(\"Rcpp\")\nSelect File > New Project …\nIn the New Project Wizard dialog, select New Directory\nIn the Project Type page, scroll down the list of project types and select ‘R Package using Rcpp’.\nIn the ‘Create R Package using Rcpp’ page, fill in the Directory name. In this case it is\nFinancialFunctions\n.\nPress the Create Project button. A new RStudio session is started, and the project opens with a helpful\nRead-and-delete-me\nfile.\nNavigate to the \\src directory and open the file\nrcpp_hello_world.cpp\n. Here there is a test C++ function called\nrcpp_hello_world()\nwhich we can call from R after we build the package.\nSelect the menu: Build > Build binary package\nIf everything goes okay, we should see a message similar to this:\n...\npackaged installation of 'FinancialFunctions' as FinancialFunctions_1.0.zip\n─  DONE (FinancialFunctions)\n[1] \"D:/TEMP/FinancialFunctions_1.0.zip\"\n\nBinary package written to D:/TEMP\nNow we have built a fully functional Rcpp package. Open the zip-file and copy the contents into your R library directory (e.g. D:\\R\\R-4.4.1\\library). Then, in RStudio, run the following script:\n> library(FinancialFunctions)\t\t# Load the package\n> results <- rcpp_hello_world()\t\t# Call the C++ function\n> results\t\t\t\t\t\t\t# Print the results\n[[1]]\n[1] \"foo\" \"bar\"\n\n[[2]]\n[1] 0 1\n2. Adding C++ code\nNow that we have a working skeleton, we can add our own C++ functions to the package.\nCopy the two files\nFinancialFunctions.h\nand\nFinancialFunctions.cpp\ninto the\n\\src\ndirectory.\nThere are two functions declared in the header file:\nprice\nand\nytm\n(yield-to-maturity).\nThe price function computes the present value of a stream of periodic cashflows using a single discount rate. The yield-to-maturity function computes the single rate of return implied by the periodic cashflows and the price (present value).\nThe price function takes a vector of times and a vector of cashflows (for a bond these are the coupons and the final principal repayment). In addition, the function takes a single rate, which is used to discount all the cashflows.\nThe yield-to-maturity function also takes a vector of times and a vector of cashflows (as above) and a (bond) price. From this, it iteratively determines the single rate at which the periodic stream of cashflows should be discounted to obtain the supplied price.\n3. Connecting R with C++ using Rcpp\nDelete the file\nrcpp_hello_world.cpp\nas we no longer need the test function. Then copy the file\nrcpp_functions.cpp\ninto the\n\\src\ndirectory. This file contains the functions that we want to\nexport\nfrom C++ to R using Rcpp.\nAt the top of the file, we include the main Rcpp header file. This is followed by the STL vector include and finally, we include the declarations of our functions in\nFinancialFunctions.h\n.\nThe code in\nrcpp_functions.cpp\ndeclares an Rcpp function called\nbond_price\n. Most importantly, it is preceded by the line\n// [[Rcpp::export]]\n. This attribute indicates that the function should be\nexported\n, that is, made visible to R. As simple as that. Rcpp takes care of all the details. All we are concerned about is what parameters we are passed and how to call our function and get the results.\nThe\nbond_price\nfunction takes as its parameters two numeric vectors (the times and the cashflows), and a rate (a double). These are passed in from R. The function returns a double value, the calculated price. The Rcpp function looks like this.\n// [[Rcpp::export]]\ndouble bond_price(Rcpp::NumericVector times, Rcpp::NumericVector cashflows, double rate)\n{\n  std::vector<double> _times = Rcpp::as<std::vector<double>>(times);\n  std::vector<double> _cashflows = Rcpp::as<std::vector<double>>(cashflows);\n  \n  double price = FinancialFunctions::Bonds::price(_times, _cashflows, rate);\n \n  return price;\n}\nInside the function, the Rcpp types\nNumericVector\nare converted to\nstd::vector<double>\n, which is what our function expects.\nFinally we call our function and return the result.\nThe Rcpp code for\nbond_ytm\nis very similar.\nEverything is now ready to be built.\nSelect the menu: Build > Build binary package.\nKeep our fingers crossed that we have not made any mistakes. If everything goes okay, we should see a message similar to this:\nBinary package written to D:/Development/Projects/R\nCopy the contents of the zip file into your R library directory as previously, overwriting the initial version of the package.\nIn order to check that everything works as expected, run the following script.\nlibrary(FinancialFunctions)\n# Example: a 3 year bond with a face value of $100 makes annual coupon \n# payments of 10%. The current interest rate (with annual compounding) is 9%.\ntimes <- c(1, 2, 3)\ncashflows <- c(10, 10, 110)\nrate <- 0.09\n\n# Calculate price and yield to maturity\nprice <- FinancialFunctions::bond_price(times, cashflows, rate)\nytm <- FinancialFunctions::bond_ytm(times, cashflows, price)\n\n# Display the results\nprice\nytm\nThere should be no errors. We can check the results against the manual calculations in a spreadsheet if required.\nWrap up.\nThat’s all there is to it. We now have a working Rcpp package that calls C/C++ functions from R.\nBut that really is only the beginning. There’s a lot more that can be done. For starters, we could improve the project design by isolating our code in a static library. We could also add some test cases, perhaps using a package like ‘testthat’. Finally, we could add a couple more functions: perhaps bond duration and convexity calculations. I might look at how to do all this in a future article. The complete project is available on GitHub,\nFinancialFunctions\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAdam's Software Lab\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction If you are an R/RStudio user and you are learning C/C++ then this blog post may be interesting. Suppose that you’ve written a function in C/C++ (or even a whole program). You know how to run your code from the command line, passing in argu...",
+    "meta_keywords": null,
+    "og_description": "Introduction If you are an R/RStudio user and you are learning C/C++ then this blog post may be interesting. Suppose that you’ve written a function in C/C++ (or even a whole program). You know how to run your code from the command line, passing in argu...",
+    "og_image": "https://adam-gladstone.github.io/assets/images/Rcpp-project-type.png",
+    "og_title": "Calling C++ functions from R using Rcpp | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.6,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction If you are an R/RStudio user and you are learning C/C++ then this blog post may be interesting. Suppose that you’ve written a function in C/C++ (or even a whole program). You know how to run your code from the command line, passing in argu...",
+    "twitter_title": "Calling C++ functions from R using Rcpp | R-bloggers",
+    "url": "https://www.r-bloggers.com/2024/12/calling-c-functions-from-r-using-rcpp-2/",
+    "word_count": 1315
+  }
+}

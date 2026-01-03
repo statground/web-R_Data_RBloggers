@@ -1,0 +1,281 @@
+{
+  "uuid": "4a0f9d2c-2123-4ca0-905e-4479e8a2836d",
+  "created_at": "2025-11-17 20:39:15",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/r-lubridate-how-to-efficiently-work-with-dates-and-times-in-r/",
+    "crawled_at": "2025-11-17T09:56:12.226142",
+    "external_links": [
+      {
+        "href": "https://appsilon.com/r-lubridate/",
+        "text": "Tag: r - Appsilon | Enterprise R Shiny Dashboards"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://appsilon.com/functional-programming-in-r-part-1/",
+        "text": "Here’s everything you need to know"
+      },
+      {
+        "href": "https://appsilon.com/r-lubridate/#why",
+        "text": "Why R Lubridate?"
+      },
+      {
+        "href": "https://appsilon.com/r-lubridate/#examples",
+        "text": "15 Examples to Master R Lubridate"
+      },
+      {
+        "href": "https://appsilon.com/r-lubridate/#summary",
+        "text": "Summing up R Lubridate"
+      },
+      {
+        "href": "https://www.tidyverse.org/",
+        "text": "tidyverse"
+      },
+      {
+        "href": "https://appsilon.com/excel-functions-in-r/",
+        "text": "Here’s a couple of advanced Excel-like functions in R for effective data manipulation"
+      },
+      {
+        "href": "https://appsilon.com/r-lubridate/",
+        "text": "Tag: r - Appsilon | Enterprise R Shiny Dashboards"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R lubridate: How To Efficiently Work With Dates and Times in R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://wordpress.appsilon.com/wp-content/uploads/2023/11/R-Lubridate.webp"
+      },
+      {
+        "alt": "Image 1 - Getting the current date and time",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 1 - Getting the current date and time",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/1-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 2 - Extracting components from a date",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 2 - Extracting components from a date",
+        "base64": null,
+        "src": "https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/2-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 3 - Parsing date from a character string",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 3 - Parsing date from a character string",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/3-1.png?resize=371%2C184&ssl=1"
+      },
+      {
+        "alt": "Image 4 - Converting string to datetime",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 4 - Converting string to datetime",
+        "base64": null,
+        "src": "https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/4-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 5 - Finding difference between dates",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 5 - Finding difference between dates",
+        "base64": null,
+        "src": "https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/5-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 6 - Adding and subtracting from dates",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 6 - Adding and subtracting from dates",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/6-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 7 - Comparing dates",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 7 - Comparing dates",
+        "base64": null,
+        "src": "https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/7-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 8 - Rounding dates",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 8 - Rounding dates",
+        "base64": null,
+        "src": "https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/8-1.png?resize=417%2C65&ssl=1"
+      },
+      {
+        "alt": "Image 9 - Working with time zones",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 9 - Working with time zones",
+        "base64": null,
+        "src": "https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/9-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 10 - Calculating age as a decimal number",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 10 - Calculating age as a decimal number",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/10-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 11 - Custom formatted date output",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 11 - Custom formatted date output",
+        "base64": null,
+        "src": "https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/11-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 12 - Creating a sequence between two dates",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 12 - Creating a sequence between two dates",
+        "base64": null,
+        "src": "https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/12-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Image 13 - Checking for leap years",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 13 - Checking for leap years",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/13-1.png?resize=365%2C123&ssl=1"
+      },
+      {
+        "alt": "Image 14 - Durations and periods",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 14 - Durations and periods",
+        "base64": null,
+        "src": "https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/14-1.png?resize=410%2C117&ssl=1"
+      },
+      {
+        "alt": "Image 15 - Extracting weekdays and numbers",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Image 15 - Extracting weekdays and numbers",
+        "base64": null,
+        "src": "https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/15-1.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/dario-radecic/",
+        "text": "Dario Radečić"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-380076 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R lubridate: How To Efficiently Work With Dates and Times in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 16, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/dario-radecic/\">Dario Radečić</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://appsilon.com/r-lubridate/\"> Tag: r - Appsilon | Enterprise R Shiny Dashboards</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><div><img alt=\"\" class=\"attachment-medium size-medium wp-post-image\" data-lazy-src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/11/R-Lubridate.webp\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"margin-bottom: 15px;\" width=\"450\"/><noscript><img alt=\"\" class=\"attachment-medium size-medium wp-post-image\" decoding=\"async\" loading=\"lazy\" src=\"https://wordpress.appsilon.com/wp-content/uploads/2023/11/R-Lubridate.webp\" style=\"margin-bottom: 15px;\" width=\"450\"/></noscript></div><p>Data analytics and programming don’t often have a lot of things in common. But where they’re almost indistinguishable is the topic of dates. The skill of working with datetimes is an integral part of both areas and is something you’ll want to master sooner rather than later.</p>\n<p>Newcomers often find this area challenging due to the sheer amount of options available, but the truth is that you’ll only need 5% of the functionality on a daily basis, and the rest you can quickly find online. Today, we’ll show you this 5% through a set of 15 useful examples with R lubridate.</p>\n<p>But first, <b>what is R lubridate, and what makes it better than the competition?</b> Let’s answer that next.</p>\n<blockquote><p>Functional programming in R? <a href=\"https://appsilon.com/functional-programming-in-r-part-1/\" rel=\"nofollow\" target=\"_blank\">Here’s everything you need to know</a>.</p></blockquote>\n<h3>Table of contents:</h3>\n<ul>\n<li><strong><a href=\"https://appsilon.com/r-lubridate/#why\" rel=\"nofollow\" target=\"_blank\">Why R Lubridate?</a></strong></li>\n<li><strong><a href=\"https://appsilon.com/r-lubridate/#examples\" rel=\"nofollow\" target=\"_blank\">15 Examples to Master R Lubridate</a></strong></li>\n<li><a href=\"https://appsilon.com/r-lubridate/#summary\" rel=\"nofollow\" target=\"_blank\"><strong>Summing up R Lubridate</strong></a></li>\n</ul>\n<hr>\n<h2 id=\"why\">Why R Lubridate?</h2>\n<p>You can think of R <code>lubridate</code> as a comprehensive R package specifically designed to simplify the working process with dates and times. It’s part of <a href=\"https://www.tidyverse.org/\" rel=\"nofollow\" target=\"_blank\">tidyverse</a>, so it aligns nicely with the philosophy of clear and expressive coding.</p>\n<p>The package brings to the table a set of intuitive functions that make it easy for developers and data professionals to perform common tasks such as parsing dates, performing date arithmetic, and handling time zones.</p>\n<p>One of the main reasons you want to consider <b>using lubridate over the other datetime packages in R</b> is its user-friendly and intuitive syntax. Traditional R functions are often verbose and complex, and lubridate is here to simplify things. For this reason, lubridate is also appealing to beginners and those who care about code simplicity and maintainability.</p>\n<p>The rest of the article <b>assumes you have lubridate installed and loaded</b>. Use the following command to import it:</p>\n<pre>library(lubridate)</pre>\n<p>Up next, we’ll go over 15 concrete and useful examples so you can see why lubridate is so heavily used and loved by data professionals.</p>\n<h2 id=\"examples\">15 Examples to Master R Lubridate</h2>\n<p>This section will get you started working with R lubridate. It doesn’t matter if you’re a newcomer to R and programming in general – the examples will be simple to follow and easy to understand.</p>\n<h3>1. Get the Current Date and Time</h3>\n<p>You can use the <code>now()</code> function in lubridate to get the current date and time based on your system’s time zone. The function doesn’t require any parameters.</p>\n<p>It is particularly useful when you need a timestamp for the exact moment when your script is running, such as logging events, timestamping transactions, or creating time-sensitive data entries:</p>\n<pre>current_time &lt;- now()\r\ncurrent_time</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21683\" style=\"width: 510px\"><img alt=\"Image 1 - Getting the current date and time\" aria-describedby=\"caption-attachment-21683\" class=\"size-full wp-image-21683\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/1-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 1 - Getting the current date and time\" aria-describedby=\"caption-attachment-21683\" class=\"size-full wp-image-21683\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/1-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21683\">Image 1 – Getting the current date and time</p></div>\n<h3>2. Extract Date Components</h3>\n<p>The <code>day()</code>, <code>month()</code>, and <code>year()</code> functions are handy for extracting the respective date components from date objects. Each function expects a date or datetime object as the input.</p>\n<p>These functions are great for breaking down a date into its constituent parts, which is useful for analysis, reporting, and data processing tasks where you need to categorize or compare data based on these individual components:</p>\n<pre>day(now())\r\nmonth(now())\r\nyear(now())</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21685\" style=\"width: 502px\"><img alt=\"Image 2 - Extracting components from a date\" aria-describedby=\"caption-attachment-21685\" class=\"size-full wp-image-21685\" data-lazy-src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/2-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 2 - Extracting components from a date\" aria-describedby=\"caption-attachment-21685\" class=\"size-full wp-image-21685\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/2-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21685\">Image 2 – Extracting components from a date</p></div>\n<h3>3. Parse Date From Character Strings</h3>\n<p>You can use the <code>ymd()</code>, <code>mdy()</code>, and <code>dmy()</code> functions to parse character strings into date objects. They expect the format to be year-month-day, month-day-year, and day-month-year, as the function name suggests.</p>\n<p>They are crucial for converting date strings from various sources into a standardized date format that R can understand and manipulate:</p>\n<pre>ymd(\"20231113\")\r\nmdy(\"11/13/2023\")\r\ndmy(\"13-11-2023\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21687\" style=\"width: 381px\"><img alt=\"Image 3 - Parsing date from a character string\" aria-describedby=\"caption-attachment-21687\" class=\"size-full wp-image-21687\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/3-1.png?resize=371%2C184&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" height=\"184\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"371\"/><noscript><img alt=\"Image 3 - Parsing date from a character string\" aria-describedby=\"caption-attachment-21687\" class=\"size-full wp-image-21687\" data-recalc-dims=\"1\" decoding=\"async\" height=\"184\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/3-1.png?resize=371%2C184&amp;ssl=1\" width=\"371\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21687\">Image 3 – Parsing date from a character string</p></div>\n<h3>4. Convert to Datetime From Other Formats</h3>\n<p>The <code>as_datetime()</code> function is used to convert different date and time formats into POSIXct, a common datetime format in R. It accepts a wide range of inputs like character strings, numeric types, and factors.</p>\n<p>This function is invaluable for standardizing datetime information into a format suitable for analysis and keeping track of your data over time in general:</p>\n<pre>as_datetime(\"2023-11-13 17:34:51\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21689\" style=\"width: 600px\"><img alt=\"Image 4 - Converting string to datetime\" aria-describedby=\"caption-attachment-21689\" class=\"size-full wp-image-21689\" data-lazy-src=\"https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/4-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 4 - Converting string to datetime\" aria-describedby=\"caption-attachment-21689\" class=\"size-full wp-image-21689\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/4-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21689\">Image 4 – Converting string to datetime</p></div>\n<h3>5. Find the Difference Between Dates</h3>\n<p>Subtracting two date objects in lubridate gives you the difference in time between them. This is a handy operation you’ll do pretty often and it doesn’t require a specific function – just subtract two dates the same way you would with numbers.</p>\n<p>You can use this technique in many areas like project planning, age calculation, and time series analysis:</p>\n<pre>start_date &lt;- ymd(\"20231101\")\r\nend_date &lt;- ymd(\"20231113\")\r\ntime_difference &lt;- end_date - start_date\r\ntime_difference</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21691\" style=\"width: 587px\"><img alt=\"Image 5 - Finding difference between dates\" aria-describedby=\"caption-attachment-21691\" class=\"size-full wp-image-21691\" data-lazy-src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/5-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 5 - Finding difference between dates\" aria-describedby=\"caption-attachment-21691\" class=\"size-full wp-image-21691\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/5-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21691\">Image 5 – Finding difference between dates</p></div>\n<h3>6. Add or Subtract Time Units</h3>\n<p>The <code>days()</code>, <code>months()</code> and <code>years()</code> functions can be used to create Period objects representing a specified number of days, months, or years. These can be added to or subtracted from date objects.</p>\n<p>A practical application of these functions would be calculating future dates (e.g., deadlines or anniversaries) or past dates (e.g., historical analysis):</p>\n<pre>future_date &lt;- now() + days(5)\r\nfuture_date\r\n\r\npast_date &lt;- now() - months(3)\r\npast_date</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21693\" style=\"width: 547px\"><img alt=\"Image 6 - Adding and subtracting from dates\" aria-describedby=\"caption-attachment-21693\" class=\"size-full wp-image-21693\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/6-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 6 - Adding and subtracting from dates\" aria-describedby=\"caption-attachment-21693\" class=\"size-full wp-image-21693\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/6-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21693\">Image 6 – Adding and subtracting from dates</p></div>\n<h3>7. Compare Dates</h3>\n<p>Date objects in R can be compared using standard comparison operators like <code>&lt;</code> or <code>&gt;</code>. This doesn’t require a specific lubridate function – just compare the dates exactly the same as you would numbers.</p>\n<p>Date comparison is essential for sorting, filtering, or conditional operations based on dates:</p>\n<pre>ymd(\"20231101\") &lt; ymd(\"20231029\") ymd(\"20231101\") &gt; ymd(\"20231029\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21695\" style=\"width: 554px\"><img alt=\"Image 7 - Comparing dates\" aria-describedby=\"caption-attachment-21695\" class=\"size-full wp-image-21695\" data-lazy-src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/7-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 7 - Comparing dates\" aria-describedby=\"caption-attachment-21695\" class=\"size-full wp-image-21695\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/7-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21695\">Image 7 – Comparing dates</p></div>\n<h3>8. Round Dates to the Nearest Unit</h3>\n<p>The <code>round_date()</code> function, as the name suggests, rounds a date to the specified time unit, such as “month” or “year”.</p>\n<p>This function is useful when you need to normalize dates for comparison or aggregation, like summarizing data on a monthly or yearly basis:</p>\n<pre>round_date(now(), \"month\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21697\" style=\"width: 427px\"><img alt=\"Image 8 - Rounding dates\" aria-describedby=\"caption-attachment-21697\" class=\"size-full wp-image-21697\" data-lazy-src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/8-1.png?resize=417%2C65&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" height=\"65\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"417\"/><noscript><img alt=\"Image 8 - Rounding dates\" aria-describedby=\"caption-attachment-21697\" class=\"size-full wp-image-21697\" data-recalc-dims=\"1\" decoding=\"async\" height=\"65\" loading=\"lazy\" src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/8-1.png?resize=417%2C65&amp;ssl=1\" width=\"417\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21697\">Image 8 – Rounding dates</p></div>\n<h3>9. Working with Time Zones</h3>\n<p>You can use the <code>with_tz()</code> function to change the time zone of a datetime object without changing the actual time. It expects a datetime object and a string representing the time zone.</p>\n<p>This function is crucial for handling data collected across different time zones, and ensures consistent and accurate time representations:</p>\n<pre>with_tz(now(), tzone = \"UTC\")\r\nwith_tz(now(), tzone = \"EST\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21699\" style=\"width: 500px\"><img alt=\"Image 9 - Working with time zones\" aria-describedby=\"caption-attachment-21699\" class=\"size-full wp-image-21699\" data-lazy-src=\"https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/9-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 9 - Working with time zones\" aria-describedby=\"caption-attachment-21699\" class=\"size-full wp-image-21699\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/9-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21699\">Image 9 – Working with time zones</p></div>\n<h3>10. Calculate Age from a Birthdate</h3>\n<p>If you want a practical use case of different lubridate functions, look no more. You can combine the <code>interval()</code> and <code>years(1)</code> to calculate the age from a birthdate by creating a time interval and dividing it by one year.</p>\n<p>These calculations are widespread in demographics, marketing, and other fields where age is a significant factor, especially when represented as a floating point number:</p>\n<pre>birthdate &lt;- ymd(\"1985-12-15\")\r\nage &lt;- interval(birthdate, now()) / years(1)\r\nage</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21701\" style=\"width: 639px\"><img alt=\"Image 10 - Calculating age as a decimal number\" aria-describedby=\"caption-attachment-21701\" class=\"size-full wp-image-21701\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/10-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 10 - Calculating age as a decimal number\" aria-describedby=\"caption-attachment-21701\" class=\"size-full wp-image-21701\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/10-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21701\">Image 10 – Calculating age as a decimal number</p></div>\n<h3>11. Format Date Output</h3>\n<p>The <code>format()</code> function in R isn’t specific to lubridate, but allows you to format date or POSIXct objects into character strings in different formats.</p>\n<p>This function is highly useful for preparing date-time data for reports, presentations, or exporting to other systems:</p>\n<pre>format(now(), \"%A, %d %B %Y\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21703\" style=\"width: 512px\"><img alt=\"Image 11 - Custom formatted date output\" aria-describedby=\"caption-attachment-21703\" class=\"size-full wp-image-21703\" data-lazy-src=\"https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/11-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 11 - Custom formatted date output\" aria-describedby=\"caption-attachment-21703\" class=\"size-full wp-image-21703\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i2.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/11-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21703\">Image 11 – Custom formatted date output</p></div>\n<h3>12. Create a Date Sequence</h3>\n<p>The <code>seq()</code> function, when used with date objects, generates a sequence of dates. The function requires start and end dates and a step size (e.g., “days”). Think of this last parameter as an interval.</p>\n<p>This function is useful for creating time series data, finding missing dates in your time series, and so on:</p>\n<pre>seq(ymd(\"20231001\"), ymd(\"20231031\"), by = \"days\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21705\" style=\"width: 758px\"><img alt=\"Image 12 - Creating a sequence between two dates\" aria-describedby=\"caption-attachment-21705\" class=\"size-full wp-image-21705\" data-lazy-src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/12-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 12 - Creating a sequence between two dates\" aria-describedby=\"caption-attachment-21705\" class=\"size-full wp-image-21705\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/12-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21705\">Image 12 – Creating a sequence between two dates</p></div>\n<h3>13. Handle Leap Years</h3>\n<p>You can use the <code>leap_year()</code> function to check whether a year is a leap year or not. It’s nothing you can’t implement on your own with the modulus operator, but this function is still the more convenient way to get the same functionality.</p>\n<p>This function is critical in calendar calculations, especially in applications that require precise date calculations, like age calculation or scheduling:</p>\n<pre>leap_year(2023)\r\nleap_year(2024)</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21707\" style=\"width: 375px\"><img alt=\"Image 13 - Checking for leap years\" aria-describedby=\"caption-attachment-21707\" class=\"size-full wp-image-21707\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/13-1.png?resize=365%2C123&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" height=\"123\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"365\"/><noscript><img alt=\"Image 13 - Checking for leap years\" aria-describedby=\"caption-attachment-21707\" class=\"size-full wp-image-21707\" data-recalc-dims=\"1\" decoding=\"async\" height=\"123\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/13-1.png?resize=365%2C123&amp;ssl=1\" width=\"365\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21707\">Image 13 – Checking for leap years</p></div>\n<h3>14. Work With Durations and Periods</h3>\n<p>The <code>duration()</code> and <code>period()</code> functions are used to create Duration and Period objects representing time spans. The first one represents exact time spans, while the second one respects calendar conventions.</p>\n<p>These functions are useful for precise time calculations and for handling regular time spans in scheduling:</p>\n<pre>duration(60, \"seconds\")\r\nperiod(2, \"hours\")</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21709\" style=\"width: 420px\"><img alt=\"Image 14 - Durations and periods\" aria-describedby=\"caption-attachment-21709\" class=\"size-full wp-image-21709\" data-lazy-src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/14-1.png?resize=410%2C117&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" height=\"117\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"410\"/><noscript><img alt=\"Image 14 - Durations and periods\" aria-describedby=\"caption-attachment-21709\" class=\"size-full wp-image-21709\" data-recalc-dims=\"1\" decoding=\"async\" height=\"117\" loading=\"lazy\" src=\"https://i1.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/14-1.png?resize=410%2C117&amp;ssl=1\" width=\"410\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21709\">Image 14 – Durations and periods</p></div>\n<h3>15. Extract Weekdays</h3>\n<p>The <code>wday()</code> function is used to extract a weekday from a given date object, either as an index integer or as a factor. Setting the optional <code>label</code> parameter to <code>TRUE</code> will give you the actual day name.</p>\n<p>It’s more or less a convenience function used when you want to aggregate or analyze data based on the day of the week:</p>\n<pre>wday(now())\r\nwday(now(), label = TRUE)</pre>\n<div class=\"wp-caption alignnone\" id=\"attachment_21711\" style=\"width: 640px\"><img alt=\"Image 15 - Extracting weekdays and numbers\" aria-describedby=\"caption-attachment-21711\" class=\"size-full wp-image-21711\" data-lazy-src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/15-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Image 15 - Extracting weekdays and numbers\" aria-describedby=\"caption-attachment-21711\" class=\"size-full wp-image-21711\" data-recalc-dims=\"1\" decoding=\"async\" loading=\"lazy\" src=\"https://i0.wp.com/wordpress.appsilon.com/wp-content/uploads/2023/11/15-1.png?w=450&amp;ssl=1\"/></noscript><p class=\"wp-caption-text\" id=\"caption-attachment-21711\">Image 15 – Extracting weekdays and numbers</p></div>\n<hr/>\n<h2 id=\"summary\">Summing up R Lubridate</h2>\n<p>And there you have it – a brain-friendly introduction to working with dates and times with R lubridate. We think these 15 examples will be enough for most of the date-related things you’ll want to do. Anything more complex will typically boil down to combining a couple of functions shown today.</p>\n<p><i>What do you think of R lubridate? Is it the package you use daily to handle date and time manipulations? If so, what’s your most commonly used function?</i> Make sure to let us know in the comment section below.</p>\n<blockquote><p>Coming to R from Excel? <a href=\"https://appsilon.com/excel-functions-in-r/\" rel=\"nofollow\" target=\"_blank\">Here’s a couple of advanced Excel-like functions in R for effective data manipulation</a>.</p></blockquote>\n<p>The post appeared first on appsilon.com/blog/.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://appsilon.com/r-lubridate/\"> Tag: r - Appsilon | Enterprise R Shiny Dashboards</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </hr></div>\n</article>",
+    "main_text": "R lubridate: How To Efficiently Work With Dates and Times in R\nPosted on\nNovember 16, 2023\nby\nDario Radečić\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nTag: r - Appsilon | Enterprise R Shiny Dashboards\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nData analytics and programming don’t often have a lot of things in common. But where they’re almost indistinguishable is the topic of dates. The skill of working with datetimes is an integral part of both areas and is something you’ll want to master sooner rather than later.\nNewcomers often find this area challenging due to the sheer amount of options available, but the truth is that you’ll only need 5% of the functionality on a daily basis, and the rest you can quickly find online. Today, we’ll show you this 5% through a set of 15 useful examples with R lubridate.\nBut first,\nwhat is R lubridate, and what makes it better than the competition?\nLet’s answer that next.\nFunctional programming in R?\nHere’s everything you need to know\n.\nTable of contents:\nWhy R Lubridate?\n15 Examples to Master R Lubridate\nSumming up R Lubridate\nWhy R Lubridate?\nYou can think of R\nlubridate\nas a comprehensive R package specifically designed to simplify the working process with dates and times. It’s part of\ntidyverse\n, so it aligns nicely with the philosophy of clear and expressive coding.\nThe package brings to the table a set of intuitive functions that make it easy for developers and data professionals to perform common tasks such as parsing dates, performing date arithmetic, and handling time zones.\nOne of the main reasons you want to consider\nusing lubridate over the other datetime packages in R\nis its user-friendly and intuitive syntax. Traditional R functions are often verbose and complex, and lubridate is here to simplify things. For this reason, lubridate is also appealing to beginners and those who care about code simplicity and maintainability.\nThe rest of the article\nassumes you have lubridate installed and loaded\n. Use the following command to import it:\nlibrary(lubridate)\nUp next, we’ll go over 15 concrete and useful examples so you can see why lubridate is so heavily used and loved by data professionals.\n15 Examples to Master R Lubridate\nThis section will get you started working with R lubridate. It doesn’t matter if you’re a newcomer to R and programming in general – the examples will be simple to follow and easy to understand.\n1. Get the Current Date and Time\nYou can use the\nnow()\nfunction in lubridate to get the current date and time based on your system’s time zone. The function doesn’t require any parameters.\nIt is particularly useful when you need a timestamp for the exact moment when your script is running, such as logging events, timestamping transactions, or creating time-sensitive data entries:\ncurrent_time <- now()\ncurrent_time\nImage 1 – Getting the current date and time\n2. Extract Date Components\nThe\nday()\n,\nmonth()\n, and\nyear()\nfunctions are handy for extracting the respective date components from date objects. Each function expects a date or datetime object as the input.\nThese functions are great for breaking down a date into its constituent parts, which is useful for analysis, reporting, and data processing tasks where you need to categorize or compare data based on these individual components:\nday(now())\nmonth(now())\nyear(now())\nImage 2 – Extracting components from a date\n3. Parse Date From Character Strings\nYou can use the\nymd()\n,\nmdy()\n, and\ndmy()\nfunctions to parse character strings into date objects. They expect the format to be year-month-day, month-day-year, and day-month-year, as the function name suggests.\nThey are crucial for converting date strings from various sources into a standardized date format that R can understand and manipulate:\nymd(\"20231113\")\nmdy(\"11/13/2023\")\ndmy(\"13-11-2023\")\nImage 3 – Parsing date from a character string\n4. Convert to Datetime From Other Formats\nThe\nas_datetime()\nfunction is used to convert different date and time formats into POSIXct, a common datetime format in R. It accepts a wide range of inputs like character strings, numeric types, and factors.\nThis function is invaluable for standardizing datetime information into a format suitable for analysis and keeping track of your data over time in general:\nas_datetime(\"2023-11-13 17:34:51\")\nImage 4 – Converting string to datetime\n5. Find the Difference Between Dates\nSubtracting two date objects in lubridate gives you the difference in time between them. This is a handy operation you’ll do pretty often and it doesn’t require a specific function – just subtract two dates the same way you would with numbers.\nYou can use this technique in many areas like project planning, age calculation, and time series analysis:\nstart_date <- ymd(\"20231101\")\nend_date <- ymd(\"20231113\")\ntime_difference <- end_date - start_date\ntime_difference\nImage 5 – Finding difference between dates\n6. Add or Subtract Time Units\nThe\ndays()\n,\nmonths()\nand\nyears()\nfunctions can be used to create Period objects representing a specified number of days, months, or years. These can be added to or subtracted from date objects.\nA practical application of these functions would be calculating future dates (e.g., deadlines or anniversaries) or past dates (e.g., historical analysis):\nfuture_date <- now() + days(5)\nfuture_date\n\npast_date <- now() - months(3)\npast_date\nImage 6 – Adding and subtracting from dates\n7. Compare Dates\nDate objects in R can be compared using standard comparison operators like\n<\nor\n>\n. This doesn’t require a specific lubridate function – just compare the dates exactly the same as you would numbers.\nDate comparison is essential for sorting, filtering, or conditional operations based on dates:\nymd(\"20231101\") < ymd(\"20231029\") ymd(\"20231101\") > ymd(\"20231029\")\nImage 7 – Comparing dates\n8. Round Dates to the Nearest Unit\nThe\nround_date()\nfunction, as the name suggests, rounds a date to the specified time unit, such as “month” or “year”.\nThis function is useful when you need to normalize dates for comparison or aggregation, like summarizing data on a monthly or yearly basis:\nround_date(now(), \"month\")\nImage 8 – Rounding dates\n9. Working with Time Zones\nYou can use the\nwith_tz()\nfunction to change the time zone of a datetime object without changing the actual time. It expects a datetime object and a string representing the time zone.\nThis function is crucial for handling data collected across different time zones, and ensures consistent and accurate time representations:\nwith_tz(now(), tzone = \"UTC\")\nwith_tz(now(), tzone = \"EST\")\nImage 9 – Working with time zones\n10. Calculate Age from a Birthdate\nIf you want a practical use case of different lubridate functions, look no more. You can combine the\ninterval()\nand\nyears(1)\nto calculate the age from a birthdate by creating a time interval and dividing it by one year.\nThese calculations are widespread in demographics, marketing, and other fields where age is a significant factor, especially when represented as a floating point number:\nbirthdate <- ymd(\"1985-12-15\")\nage <- interval(birthdate, now()) / years(1)\nage\nImage 10 – Calculating age as a decimal number\n11. Format Date Output\nThe\nformat()\nfunction in R isn’t specific to lubridate, but allows you to format date or POSIXct objects into character strings in different formats.\nThis function is highly useful for preparing date-time data for reports, presentations, or exporting to other systems:\nformat(now(), \"%A, %d %B %Y\")\nImage 11 – Custom formatted date output\n12. Create a Date Sequence\nThe\nseq()\nfunction, when used with date objects, generates a sequence of dates. The function requires start and end dates and a step size (e.g., “days”). Think of this last parameter as an interval.\nThis function is useful for creating time series data, finding missing dates in your time series, and so on:\nseq(ymd(\"20231001\"), ymd(\"20231031\"), by = \"days\")\nImage 12 – Creating a sequence between two dates\n13. Handle Leap Years\nYou can use the\nleap_year()\nfunction to check whether a year is a leap year or not. It’s nothing you can’t implement on your own with the modulus operator, but this function is still the more convenient way to get the same functionality.\nThis function is critical in calendar calculations, especially in applications that require precise date calculations, like age calculation or scheduling:\nleap_year(2023)\nleap_year(2024)\nImage 13 – Checking for leap years\n14. Work With Durations and Periods\nThe\nduration()\nand\nperiod()\nfunctions are used to create Duration and Period objects representing time spans. The first one represents exact time spans, while the second one respects calendar conventions.\nThese functions are useful for precise time calculations and for handling regular time spans in scheduling:\nduration(60, \"seconds\")\nperiod(2, \"hours\")\nImage 14 – Durations and periods\n15. Extract Weekdays\nThe\nwday()\nfunction is used to extract a weekday from a given date object, either as an index integer or as a factor. Setting the optional\nlabel\nparameter to\nTRUE\nwill give you the actual day name.\nIt’s more or less a convenience function used when you want to aggregate or analyze data based on the day of the week:\nwday(now())\nwday(now(), label = TRUE)\nImage 15 – Extracting weekdays and numbers\nSumming up R Lubridate\nAnd there you have it – a brain-friendly introduction to working with dates and times with R lubridate. We think these 15 examples will be enough for most of the date-related things you’ll want to do. Anything more complex will typically boil down to combining a couple of functions shown today.\nWhat do you think of R lubridate? Is it the package you use daily to handle date and time manipulations? If so, what’s your most commonly used function?\nMake sure to let us know in the comment section below.\nComing to R from Excel?\nHere’s a couple of advanced Excel-like functions in R for effective data manipulation\n.\nThe post appeared first on appsilon.com/blog/.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nTag: r - Appsilon | Enterprise R Shiny Dashboards\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Data analytics and programming don’t often have a lot of things in common. But where they’re almost indistinguishable is the topic of dates. The skill of working with datetimes is an integral part of both areas and is something you’ll want to master sooner rather than later. Newcomers often find this area challenging due to […] The post appeared first on appsilon.com/blog/.",
+    "meta_keywords": null,
+    "og_description": "Data analytics and programming don’t often have a lot of things in common. But where they’re almost indistinguishable is the topic of dates. The skill of working with datetimes is an integral part of both areas and is something you’ll want to master sooner rather than later. Newcomers often find this area challenging due to […] The post appeared first on appsilon.com/blog/.",
+    "og_image": "https://wordpress.appsilon.com/wp-content/uploads/2023/11/R-Lubridate.webp",
+    "og_title": "R lubridate: How To Efficiently Work With Dates and Times in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 8.8,
+    "sitemap_lastmod": "2023-11-16T13:53:34+00:00",
+    "twitter_description": "Data analytics and programming don’t often have a lot of things in common. But where they’re almost indistinguishable is the topic of dates. The skill of working with datetimes is an integral part of both areas and is something you’ll want to master sooner rather than later. Newcomers often find this area challenging due to […] The post appeared first on appsilon.com/blog/.",
+    "twitter_title": "R lubridate: How To Efficiently Work With Dates and Times in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/r-lubridate-how-to-efficiently-work-with-dates-and-times-in-r/",
+    "word_count": 1763
+  }
+}

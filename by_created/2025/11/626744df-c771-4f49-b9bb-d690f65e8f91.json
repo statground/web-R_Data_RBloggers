@@ -1,0 +1,116 @@
+{
+  "uuid": "626744df-c771-4f49-b9bb-d690f65e8f91",
+  "created_at": "2025-11-22 19:58:45",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/04/character-to-date-conversion-using-lazy-queries/",
+    "crawled_at": "2025-11-22T10:49:53.762403",
+    "external_links": [
+      {
+        "href": "https://klogr.netlify.app/posts/2025-04-25-char-date-lazy/",
+        "text": "klogr::blog(posts)"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://dbplyr.tidyverse.org/articles/sql-translation.html#known-functions",
+        "text": "sql translation article"
+      },
+      {
+        "href": "https://dbplyr.tidyverse.org/articles/translation-function.html#special-forms",
+        "text": "special forms article"
+      },
+      {
+        "href": "https://www.db-fiddle.com/",
+        "text": "DB Fiddle"
+      },
+      {
+        "href": "https://klogr.netlify.app/posts/2025-04-25-char-date-lazy/r-bloggers.com",
+        "text": "r-bloggers.com"
+      },
+      {
+        "href": "https://www.db-fiddle.com/",
+        "text": "DB Fiddle"
+      },
+      {
+        "href": "https://klogr.netlify.app/posts/2025-04-25-char-date-lazy/",
+        "text": "klogr::blog(posts)"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Character to Date conversion using lazy queries | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/author-kurtis-smith/",
+        "text": "Author: Kurtis Smith"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393839 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Character to Date conversion using lazy queries</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/author-kurtis-smith/\">Author: Kurtis Smith</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://klogr.netlify.app/posts/2025-04-25-char-date-lazy/\"> klogr::blog(posts)</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level2\" id=\"problem\">\n<h2 class=\"anchored\" data-anchor-id=\"problem\">Problem</h2>\n<p>How to convert a string with format DDMMYYYY, to a date type using <strong>lazy queries</strong>. The problem is that base r function <code>as.Date()</code> does not have a translatable SQL equivalent. More information on this is detailed in this <a href=\"https://dbplyr.tidyverse.org/articles/sql-translation.html#known-functions\" rel=\"nofollow\" target=\"_blank\">sql translation article</a>.</p>\n<p>This problem is largely addressed in the <a href=\"https://dbplyr.tidyverse.org/articles/translation-function.html#special-forms\" rel=\"nofollow\" target=\"_blank\">special forms article</a>. However, no example is given for converting a character to a date data type. This post will provide this example.</p>\n<p>Like most of my self described “self-tech-support” post categories, it was introduced through work. Took me a while to come to the answer so here is to saving someone sometime somewhere.</p>\n<p>Let’s begin with simulating a lazy connection.</p>\n<div class=\"cell\">\n<pre># Load packages\nlibrary(dplyr)\nlibrary(dbplyr)\nlibrary(DT)\n\n# Create a local lazy tibble with Postgres SQL connection\ntest_tbl &lt;- lazy_frame(char_date = c(\"01012020\", \"01022020\", \"01032020\"),\n                       con = simulate_postgres())\n\ntest_tbl</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>&lt;SQL&gt;\nSELECT *\nFROM `df`</pre>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"solution\">\n<h1>Solution</h1>\n<p>The below provides two workable examples or at least the translations. Whilst you can denote a SQL function by using uppercase as shown in example 1, the second example does provide an explicit marker for what is to be used as-is in SQL with function <code>sql()</code>.</p>\n<div class=\"cell\">\n<pre># example 1 \nmutate(test_tbl, date = TO_DATE(char_date, 'DDMMYYYY'))</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>&lt;SQL&gt;\nSELECT `df`.*, TO_DATE(`char_date`, 'DDMMYYYY') AS `date`\nFROM `df`</pre>\n</div>\n<pre># example 2\nmutate(test_tbl, date = sql(\"TO_DATE(char_date, 'DDMMYYYY')\"))</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>&lt;SQL&gt;\nSELECT `df`.*, TO_DATE(char_date, 'DDMMYYYY') AS `date`\nFROM `df`</pre>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"example-kind-of\">\n<h1>Example (kind of)</h1>\n<p>It’s “kind of” because it’s not a direct translation applied to SQL but creating an example without having an instance of SQL is difficult. At least for free. I’ll provide instruction below if you wish to follow along:</p>\n<ol type=\"1\">\n<li>Head to <a href=\"https://www.db-fiddle.com/\" rel=\"nofollow\" target=\"_blank\">DB Fiddle</a></li>\n<li>Change SQL in the top left to Postgres SQL version 17</li>\n<li>Copy &amp; paste below in <strong>Schema SQL</strong> box</li>\n</ol>\n<pre>CREATE TABLE test_tbl (\n  char_date varchar(8) NOT NULL\n);\nINSERT INTO test_tbl (char_date) VALUES ('01012020');\nINSERT INTO test_tbl (char_date) VALUES ('01022020');\nINSERT INTO test_tbl (char_date) VALUES ('01032020');</pre>\n<ol start=\"4\" type=\"1\">\n<li>Copy &amp; paste below in <strong>Query SQL</strong> box</li>\n</ol>\n<pre>SELECT char_date, pg_typeof(char_date) AS type\nFROM test_tbl;\n\nSELECT TO_DATE(char_date, 'DDMMYYYY') AS char_date, \n       pg_typeof(TO_DATE(char_date, 'DDMMYYYY')) AS type \nFROM test_tbl;</pre>\n<p><strong>Query #1</strong></p>\n<div class=\"cell\">\n<div class=\"cell-output-display\">\n<div class=\"datatables html-widget html-fill-item\" id=\"htmlwidget-9b8c9e3e2c104844bcc6\" style=\"width:100%;height:auto;\"></div>\n\n</div>\n</div>\n<p><strong>Query #2</strong></p>\n<div class=\"cell\">\n<div class=\"cell-output-display\">\n<div class=\"datatables html-widget html-fill-item\" id=\"htmlwidget-6e0bfafcd40df87bb421\" style=\"width:100%;height:auto;\"></div>\n\n</div>\n</div>\n<p>Query 2 shows the output of the translated mutate from <strong>Solution</strong> albeit manually added into SQL.</p>\n</section>\n<section class=\"level1\" id=\"consider\">\n<h1>Consider</h1>\n<p>The flavour of SQL for this example was be PostgreSQL version 17. Not all SQL flavours support the <code>TO_DATE</code> function, below is a short and not exhaustive list.</p>\n<div class=\"cell\">\n<div class=\"cell-output-display\">\n<div class=\"datatables html-widget html-fill-item\" id=\"htmlwidget-4260281dd1eefacee686\" style=\"width:100%;height:auto;\"></div>\n\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"conclusion\">\n<h1>Conclusion</h1>\n<p>Lazy all the way! My blocker, this date field as a character, was keeping my lazy queries from continued laziness. Thankfully there was a workaround. The blog does miss the step of directly showing the translated mutate query a SQL database but I hope this example from two sides helps.</p>\n<section class=\"level2\" id=\"acknowledgements\">\n<h2 class=\"anchored\" data-anchor-id=\"acknowledgements\">Acknowledgements</h2>\n<p><a href=\"https://klogr.netlify.app/posts/2025-04-25-char-date-lazy/r-bloggers.com\" rel=\"nofollow\" target=\"_blank\">r-bloggers.com</a> for the reach, platform, and content</p>\n<p><a href=\"https://www.db-fiddle.com/\" rel=\"nofollow\" target=\"_blank\">DB Fiddle</a> for SQL sandpit</p>\n<p>Packages and package maintainer(s):</p>\n<ul>\n<li>dplyr | Hadley Wickham</li>\n<li>dbplyr | Hadley Wickham</li>\n<li>DT | Joe Cheng</li>\n</ul>\n</section>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://klogr.netlify.app/posts/2025-04-25-char-date-lazy/\"> klogr::blog(posts)</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Character to Date conversion using lazy queries\nPosted on\nApril 24, 2025\nby\nAuthor: Kurtis Smith\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nklogr::blog(posts)\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nProblem\nHow to convert a string with format DDMMYYYY, to a date type using\nlazy queries\n. The problem is that base r function\nas.Date()\ndoes not have a translatable SQL equivalent. More information on this is detailed in this\nsql translation article\n.\nThis problem is largely addressed in the\nspecial forms article\n. However, no example is given for converting a character to a date data type. This post will provide this example.\nLike most of my self described “self-tech-support” post categories, it was introduced through work. Took me a while to come to the answer so here is to saving someone sometime somewhere.\nLet’s begin with simulating a lazy connection.\n# Load packages\nlibrary(dplyr)\nlibrary(dbplyr)\nlibrary(DT)\n\n# Create a local lazy tibble with Postgres SQL connection\ntest_tbl <- lazy_frame(char_date = c(\"01012020\", \"01022020\", \"01032020\"),\n                       con = simulate_postgres())\n\ntest_tbl\n<SQL>\nSELECT *\nFROM `df`\nSolution\nThe below provides two workable examples or at least the translations. Whilst you can denote a SQL function by using uppercase as shown in example 1, the second example does provide an explicit marker for what is to be used as-is in SQL with function\nsql()\n.\n# example 1 \nmutate(test_tbl, date = TO_DATE(char_date, 'DDMMYYYY'))\n<SQL>\nSELECT `df`.*, TO_DATE(`char_date`, 'DDMMYYYY') AS `date`\nFROM `df`\n# example 2\nmutate(test_tbl, date = sql(\"TO_DATE(char_date, 'DDMMYYYY')\"))\n<SQL>\nSELECT `df`.*, TO_DATE(char_date, 'DDMMYYYY') AS `date`\nFROM `df`\nExample (kind of)\nIt’s “kind of” because it’s not a direct translation applied to SQL but creating an example without having an instance of SQL is difficult. At least for free. I’ll provide instruction below if you wish to follow along:\nHead to\nDB Fiddle\nChange SQL in the top left to Postgres SQL version 17\nCopy & paste below in\nSchema SQL\nbox\nCREATE TABLE test_tbl (\n  char_date varchar(8) NOT NULL\n);\nINSERT INTO test_tbl (char_date) VALUES ('01012020');\nINSERT INTO test_tbl (char_date) VALUES ('01022020');\nINSERT INTO test_tbl (char_date) VALUES ('01032020');\nCopy & paste below in\nQuery SQL\nbox\nSELECT char_date, pg_typeof(char_date) AS type\nFROM test_tbl;\n\nSELECT TO_DATE(char_date, 'DDMMYYYY') AS char_date, \n       pg_typeof(TO_DATE(char_date, 'DDMMYYYY')) AS type \nFROM test_tbl;\nQuery #1\nQuery #2\nQuery 2 shows the output of the translated mutate from\nSolution\nalbeit manually added into SQL.\nConsider\nThe flavour of SQL for this example was be PostgreSQL version 17. Not all SQL flavours support the\nTO_DATE\nfunction, below is a short and not exhaustive list.\nConclusion\nLazy all the way! My blocker, this date field as a character, was keeping my lazy queries from continued laziness. Thankfully there was a workaround. The blog does miss the step of directly showing the translated mutate query a SQL database but I hope this example from two sides helps.\nAcknowledgements\nr-bloggers.com\nfor the reach, platform, and content\nDB Fiddle\nfor SQL sandpit\nPackages and package maintainer(s):\ndplyr | Hadley Wickham\ndbplyr | Hadley Wickham\nDT | Joe Cheng\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nklogr::blog(posts)\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Problem How to convert a string with format DDMMYYYY, to a date type using lazy queries. The problem is that base r function as.Date() does not have a translatable SQL equivalent. More information on this is detailed in this sql translation art...",
+    "meta_keywords": null,
+    "og_description": "Problem How to convert a string with format DDMMYYYY, to a date type using lazy queries. The problem is that base r function as.Date() does not have a translatable SQL equivalent. More information on this is detailed in this sql translation art...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Character to Date conversion using lazy queries | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.1,
+    "sitemap_lastmod": null,
+    "twitter_description": "Problem How to convert a string with format DDMMYYYY, to a date type using lazy queries. The problem is that base r function as.Date() does not have a translatable SQL equivalent. More information on this is detailed in this sql translation art...",
+    "twitter_title": "Character to Date conversion using lazy queries | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/04/character-to-date-conversion-using-lazy-queries/",
+    "word_count": 624
+  }
+}

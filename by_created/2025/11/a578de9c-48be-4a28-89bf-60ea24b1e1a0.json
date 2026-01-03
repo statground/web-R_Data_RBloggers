@@ -1,0 +1,144 @@
+{
+  "uuid": "a578de9c-48be-4a28-89bf-60ea24b1e1a0",
+  "created_at": "2025-11-22 19:58:09",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/creating-tutorial-worksheets-quarto-profiles-for-the-win/",
+    "crawled_at": "2025-11-22T10:46:02.478251",
+    "external_links": [
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-profiles-for-tutorials/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-conditional-content/",
+        "text": "previously posted"
+      },
+      {
+        "href": "https://quarto.org/docs/authoring/conditional.html",
+        "text": "conditional content"
+      },
+      {
+        "href": "https://quarto-dev.github.io/quarto-r/articles/dynamic-metadata.html",
+        "text": "vignette by Christophe Dervieux"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-conditional-content/#introduction",
+        "text": "I showed in my previous post"
+      },
+      {
+        "href": "https://quarto.org/docs/projects/profiles.html",
+        "text": "on this page of the Quarto documentation"
+      },
+      {
+        "href": "https://quarto.org/docs/projects/profiles.html#profile-content",
+        "text": "conditional content dependent upon profile"
+      },
+      {
+        "href": "https://github.com/remlapmot/tutorial-quarto-profiles",
+        "text": "here"
+      },
+      {
+        "href": "https://remlapmot.github.io/tutorial-quarto-profiles/",
+        "text": "here"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/multi-engine-quarto/",
+        "text": "another previous post"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-profiles-for-tutorials/#top",
+        "text": "is shown above"
+      },
+      {
+        "href": "https://quarto-dev.github.io/quarto-r/articles/dynamic-metadata.html",
+        "text": "quarto R package vignette"
+      },
+      {
+        "href": "https://quarto.org/docs/authoring/conditional.html#matching-against-metadata",
+        "text": "matching against them"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-profiles-for-tutorials/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Creating tutorial worksheets; Quarto profiles for the win! | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-dr-tom-palmer/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393827 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Creating tutorial worksheets; Quarto profiles for the win!</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 5, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-dr-tom-palmer/\">R | Dr Tom Palmer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://remlapmot.github.io/post/2025/quarto-profiles-for-tutorials/\"> R | Dr Tom Palmer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h2 id=\"introduction\">Introduction</h2>\n<p>I \n<a href=\"https://remlapmot.github.io/post/2025/quarto-conditional-content/\" rel=\"nofollow\" target=\"_blank\">previously posted</a> about creating tutorial worksheets for 4 different Quarto engines (for R, Python, Stata, and Julia) using \n<a href=\"https://quarto.org/docs/authoring/conditional.html\" rel=\"nofollow\" target=\"_blank\">conditional content</a>. However, that approach is a bit hacky and I wasn’t very happy with it.</p>\n<p>Thanks to a \n<a href=\"https://quarto-dev.github.io/quarto-r/articles/dynamic-metadata.html\" rel=\"nofollow\" target=\"_blank\">vignette by Christophe Dervieux</a> in the quarto R package I realised there is a more convenient, and less hacky, way to create tutorial documents using Quarto profiles. I don’t use the dynamic metadata approach in the vignette to achieve my solution but it led me to relevant Quarto documentation page and I discuss it at the end of this post.</p>\n<p>My aim is the following</p>\n<blockquote>\n<p>To have a single Quarto document from which both the question and solution documents can be rendered for a tutorial.</p></blockquote>\n<p>As a reminder, as \n<a href=\"https://remlapmot.github.io/post/2025/quarto-conditional-content/#introduction\" rel=\"nofollow\" target=\"_blank\">I showed in my previous post</a>, this has been possible to achieve for a long time with R Markdown and knitr because thanks to the brilliant work of Yihui Xie because they allow programmtic chunk options. Therefore, implementing this in a Quarto document using the knitr engine is also straighforward and I won’t repeat it in this post. However, it is the three other Quarto engines (for Python, Stata, and Julia) that I am interested in which are problematic because as far as I know they don’t allow programmtic chunk options and they don’t have the equivalent of the <code>! expr ...</code> YAML tag literal.</p>\n<h2 id=\"quarto-profiles\">Quarto profiles</h2>\n<p>Quarto profiles are introduced \n<a href=\"https://quarto.org/docs/projects/profiles.html\" rel=\"nofollow\" target=\"_blank\">on this page of the Quarto documentation</a>. Specifically, we shall make use of \n<a href=\"https://quarto.org/docs/projects/profiles.html#profile-content\" rel=\"nofollow\" target=\"_blank\">conditional content dependent upon profile</a>.</p>\n<p>First we will create a simple default Quarto profile file <em>_quarto.yml</em> which will simply contain the following.</p>\n<pre>execute:\n  eval: true\n</pre>\n<p>(This is because I usually have an R version of the tutorial in the same directory using programmatic chunk options, so I don’t want to set a default that is language specific nor will affect anything in the R Quarto documents.)</p>\n<p>Next for each language I will make profiles for the questions output and the solutions output in appropriately named YAML files (I just show the Python files as the other two just have Stata/Julia substituted in the appropraite places).</p>\n<h3 id=\"questions-and-solutions-profiles-for-python\">Questions and solutions profiles for Python</h3>\n<p><em>_quarto-python-questions.yml</em></p>\n<pre>project:\n  render:\n    - tutorial-python.qmd\ntitle: 'Questions document: Python version'\nexecute:\n  eval: false\n</pre>\n<p><em>_quarto-python-solutions.yml</em></p>\n<pre>project:\n  render:\n    - tutorial-python.qmd\ntitle: 'Solutions document: Python version'\n</pre>\n<p>Then our tutorial Quarto Python document, <em>tutorial-python.qmd</em>, will look like the following.</p>\n<pre>---\nformat:\n  html:\n    embed-resources: true\njupyter: python3\n---\n\n## Question 1\n\nQuestion text.\n\n```{python}\nprint(\"The code which is echoed in questions and evaluated in solutions.\")\n```\n\n::: {.content-visible when-profile=\"python-solutions\"}\nThe text for the solutions.\n:::\n\n</pre>\n<p>We see the use of the conditional content based upon profile for the text of the solutions, and we could included additional code chunks in these conditional content divs.</p>\n<p>We repeat this for the other 2 tricky Quarto engines, <code>engine: julia</code> and <code>jupyter: nbstata</code>, including making profile yaml files for each engine and the respective <em>tutorial-{stata/julia}.qmd</em> Quarto documents.</p>\n<p>Then we make a shell script with our render commands.</p>\n<pre>quarto render --profile python-questions -o tutorial-python-questions.html\nquarto render --profile python-solutions -o tutorial-python-solutions.html\n\nquarto render --profile stata-questions -o tutorial-stata-questions.html\nquarto render --profile stata-solutions -o tutorial-stata-solutions.html\n\nquarto render --profile julia-questions -o tutorial-julia-questions.html\nquarto render --profile julia-solutions -o tutorial-julia-solutions.html\n</pre>\n<p>And because I have an R version using parameters my shell script usually begins.</p>\n<pre>quarto render tutorial-r.qmd -P solutions:false -o tutorial-r-questions.html\nquarto render tutorial-r.qmd -o tutorial-r-solutions.html\n</pre>\n<p>And that’s it.</p>\n<p>You can find the full source code in my example repo \n<a href=\"https://github.com/remlapmot/tutorial-quarto-profiles\" rel=\"nofollow\" target=\"_blank\">here</a> and their rendered output can be viewed from \n<a href=\"https://remlapmot.github.io/tutorial-quarto-profiles/\" rel=\"nofollow\" target=\"_blank\">here</a>. This repo also contains a tutorial document including the 4 languages in the same document using the embed shortcode as I described in \n<a href=\"https://remlapmot.github.io/post/2025/multi-engine-quarto/\" rel=\"nofollow\" target=\"_blank\">another previous post</a>. A screenshot of the questions and solutions documents from this approach \n<a href=\"https://remlapmot.github.io/post/2025/quarto-profiles-for-tutorials/#top\" rel=\"nofollow\" target=\"_blank\">is shown above</a>.</p>\n<h2 id=\"an-honorable-mention-about-dynamic-metadata\">An honorable mention about dynamic metadata</h2>\n<p>When I started reading the \n<a href=\"https://quarto-dev.github.io/quarto-r/articles/dynamic-metadata.html\" rel=\"nofollow\" target=\"_blank\">quarto R package vignette</a> I began trying to use dynamic metadata to achieve the result above. Dynamic metadata involves writing extra YAML blocks into your Quarto document which can include programmatically specified values of parameters, which can then be used by including conditional content by \n<a href=\"https://quarto.org/docs/authoring/conditional.html#matching-against-metadata\" rel=\"nofollow\" target=\"_blank\">matching against them</a>. I found that I could achieve what I wanted except for modifying the <code>execute</code> state of the Quarto document, it seems that must be specified in the first YAML block/header. And this cannot be controlled by the <code>--execute</code> and <code>--no-execute</code> flags to <code>quarto render</code> because one needs the code which generates the additional YAML blocks to be run.</p>\n<p>For Quarto documents using the knitr engine, the R package vignette shows how to use the new <code>write_yaml_metadata_block()</code> function within an R code chunk with output type <code>asis</code> to write the YAML block. In case it is useful to anyone, below I show examples of how to write the YAML blocks in each of the three other engines I have been using.</p>\n<h3 id=\"python-jupyter-python3\">Python (jupyter: python3)</h3>\n<pre>```{python}\n#| include: false\n#| tags: [parameters]\nsolutions = 'true'\n```\n\n```{python}\n#| include: false\nfrom IPython.display import Markdown\nymltxt = f\"  solutions: {solutions}\"\nif solutions == 'true':\n    titletxt = \"title: Solutions document\"\nelse:\n    titletxt = \"title: Questions document\"\n```\n\n`{python} Markdown(\"---\")`\n`{python} Markdown(\"params:\")`\n`{python} Markdown(ymltxt)`\n`{python} Markdown(titletxt)`\n`{python} Markdown(\"---\")`\n\n::: {.content-visible when-meta=\"params.solutions\"}\n```{python}\nprint(\"A solution, which is hidden in questions\")\n```\n:::\n\n</pre>\n<h3 id=\"stata-jupyter-nbstata\">Stata (jupyter: nbstata)</h3>\n<pre>```{stata}\n*| include: false\nlocal solutions : env SOLUTIONS_STATA\nscalar ymltxt = \"  solutions: `solutions'\"\nif \"`solutions'\" == \"true\" {\n  scalar titletxt = \"title: Solutions document\"\n}\nelse {\n  scalar titletxt = \"title: Questions document\"\n}\n```\n\n`{stata} \"---\"`\n`{stata} \"params:\"`\n`{stata} scalar(ymltxt)`\n`{stata} scalar(titletxt)`\n`{stata} \"---\"`\n\n::: {.content-visible when-meta=\"params.solutions\"}\n```{stata}\ndisplay \"A solution, which is hidden in questions\"\n```\n:::\n</pre>\n<h3 id=\"julia-engine-julia\">Julia (engine: julia)</h3>\n<pre>```{julia}\n#| tags: [parameters]\n```\n\n```{julia}\n#| echo: false\n#| output: asis\nprintln(\"---\")\nif solutions\n  println(\"title: Solutions document\")\n  ymltxt = \"  solutions: true\"\nelse\n  println(\"title: Questions document\")\n  ymltxt = \"  solutions: false\"\nend\nprintln(\"params:\")\nprintln(ymltxt)\nprintln(\"---\")\n```\n\n::: {.content-visible when-meta=\"params.solutions\"}\n```{julia}\nprintln(\"A solution, hidden in questions\")\n```\n:::\n\n</pre>\n<h2 id=\"summary\">Summary</h2>\n<p>I have shown how to create Quarto profiles for creating tutorial worksheets; one for the questions and one for the solutions from the same Quarto document; for several Quarto engines (<code>engine: knitr</code>, <code>jupyter: python3</code>, <code>jupyter: nbstata</code>, and <code>engine: julia</code>). I have also shown how additional metadata may be written into your Quarto document in these engines which can be used in conjunction with parameterised documents and conditional content.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://remlapmot.github.io/post/2025/quarto-profiles-for-tutorials/\"> R | Dr Tom Palmer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Creating tutorial worksheets; Quarto profiles for the win!\nPosted on\nJuly 5, 2025\nby\nR | Dr Tom Palmer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Dr Tom Palmer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nI\npreviously posted\nabout creating tutorial worksheets for 4 different Quarto engines (for R, Python, Stata, and Julia) using\nconditional content\n. However, that approach is a bit hacky and I wasn’t very happy with it.\nThanks to a\nvignette by Christophe Dervieux\nin the quarto R package I realised there is a more convenient, and less hacky, way to create tutorial documents using Quarto profiles. I don’t use the dynamic metadata approach in the vignette to achieve my solution but it led me to relevant Quarto documentation page and I discuss it at the end of this post.\nMy aim is the following\nTo have a single Quarto document from which both the question and solution documents can be rendered for a tutorial.\nAs a reminder, as\nI showed in my previous post\n, this has been possible to achieve for a long time with R Markdown and knitr because thanks to the brilliant work of Yihui Xie because they allow programmtic chunk options. Therefore, implementing this in a Quarto document using the knitr engine is also straighforward and I won’t repeat it in this post. However, it is the three other Quarto engines (for Python, Stata, and Julia) that I am interested in which are problematic because as far as I know they don’t allow programmtic chunk options and they don’t have the equivalent of the\n! expr ...\nYAML tag literal.\nQuarto profiles\nQuarto profiles are introduced\non this page of the Quarto documentation\n. Specifically, we shall make use of\nconditional content dependent upon profile\n.\nFirst we will create a simple default Quarto profile file\n_quarto.yml\nwhich will simply contain the following.\nexecute:\n  eval: true\n(This is because I usually have an R version of the tutorial in the same directory using programmatic chunk options, so I don’t want to set a default that is language specific nor will affect anything in the R Quarto documents.)\nNext for each language I will make profiles for the questions output and the solutions output in appropriately named YAML files (I just show the Python files as the other two just have Stata/Julia substituted in the appropraite places).\nQuestions and solutions profiles for Python\n_quarto-python-questions.yml\nproject:\n  render:\n    - tutorial-python.qmd\ntitle: 'Questions document: Python version'\nexecute:\n  eval: false\n_quarto-python-solutions.yml\nproject:\n  render:\n    - tutorial-python.qmd\ntitle: 'Solutions document: Python version'\nThen our tutorial Quarto Python document,\ntutorial-python.qmd\n, will look like the following.\n---\nformat:\n  html:\n    embed-resources: true\njupyter: python3\n---\n\n## Question 1\n\nQuestion text.\n\n```{python}\nprint(\"The code which is echoed in questions and evaluated in solutions.\")\n```\n\n::: {.content-visible when-profile=\"python-solutions\"}\nThe text for the solutions.\n:::\nWe see the use of the conditional content based upon profile for the text of the solutions, and we could included additional code chunks in these conditional content divs.\nWe repeat this for the other 2 tricky Quarto engines,\nengine: julia\nand\njupyter: nbstata\n, including making profile yaml files for each engine and the respective\ntutorial-{stata/julia}.qmd\nQuarto documents.\nThen we make a shell script with our render commands.\nquarto render --profile python-questions -o tutorial-python-questions.html\nquarto render --profile python-solutions -o tutorial-python-solutions.html\n\nquarto render --profile stata-questions -o tutorial-stata-questions.html\nquarto render --profile stata-solutions -o tutorial-stata-solutions.html\n\nquarto render --profile julia-questions -o tutorial-julia-questions.html\nquarto render --profile julia-solutions -o tutorial-julia-solutions.html\nAnd because I have an R version using parameters my shell script usually begins.\nquarto render tutorial-r.qmd -P solutions:false -o tutorial-r-questions.html\nquarto render tutorial-r.qmd -o tutorial-r-solutions.html\nAnd that’s it.\nYou can find the full source code in my example repo\nhere\nand their rendered output can be viewed from\nhere\n. This repo also contains a tutorial document including the 4 languages in the same document using the embed shortcode as I described in\nanother previous post\n. A screenshot of the questions and solutions documents from this approach\nis shown above\n.\nAn honorable mention about dynamic metadata\nWhen I started reading the\nquarto R package vignette\nI began trying to use dynamic metadata to achieve the result above. Dynamic metadata involves writing extra YAML blocks into your Quarto document which can include programmatically specified values of parameters, which can then be used by including conditional content by\nmatching against them\n. I found that I could achieve what I wanted except for modifying the\nexecute\nstate of the Quarto document, it seems that must be specified in the first YAML block/header. And this cannot be controlled by the\n--execute\nand\n--no-execute\nflags to\nquarto render\nbecause one needs the code which generates the additional YAML blocks to be run.\nFor Quarto documents using the knitr engine, the R package vignette shows how to use the new\nwrite_yaml_metadata_block()\nfunction within an R code chunk with output type\nasis\nto write the YAML block. In case it is useful to anyone, below I show examples of how to write the YAML blocks in each of the three other engines I have been using.\nPython (jupyter: python3)\n```{python}\n#| include: false\n#| tags: [parameters]\nsolutions = 'true'\n```\n\n```{python}\n#| include: false\nfrom IPython.display import Markdown\nymltxt = f\"  solutions: {solutions}\"\nif solutions == 'true':\n    titletxt = \"title: Solutions document\"\nelse:\n    titletxt = \"title: Questions document\"\n```\n\n`{python} Markdown(\"---\")`\n`{python} Markdown(\"params:\")`\n`{python} Markdown(ymltxt)`\n`{python} Markdown(titletxt)`\n`{python} Markdown(\"---\")`\n\n::: {.content-visible when-meta=\"params.solutions\"}\n```{python}\nprint(\"A solution, which is hidden in questions\")\n```\n:::\nStata (jupyter: nbstata)\n```{stata}\n*| include: false\nlocal solutions : env SOLUTIONS_STATA\nscalar ymltxt = \"  solutions: `solutions'\"\nif \"`solutions'\" == \"true\" {\n  scalar titletxt = \"title: Solutions document\"\n}\nelse {\n  scalar titletxt = \"title: Questions document\"\n}\n```\n\n`{stata} \"---\"`\n`{stata} \"params:\"`\n`{stata} scalar(ymltxt)`\n`{stata} scalar(titletxt)`\n`{stata} \"---\"`\n\n::: {.content-visible when-meta=\"params.solutions\"}\n```{stata}\ndisplay \"A solution, which is hidden in questions\"\n```\n:::\nJulia (engine: julia)\n```{julia}\n#| tags: [parameters]\n```\n\n```{julia}\n#| echo: false\n#| output: asis\nprintln(\"---\")\nif solutions\n  println(\"title: Solutions document\")\n  ymltxt = \"  solutions: true\"\nelse\n  println(\"title: Questions document\")\n  ymltxt = \"  solutions: false\"\nend\nprintln(\"params:\")\nprintln(ymltxt)\nprintln(\"---\")\n```\n\n::: {.content-visible when-meta=\"params.solutions\"}\n```{julia}\nprintln(\"A solution, hidden in questions\")\n```\n:::\nSummary\nI have shown how to create Quarto profiles for creating tutorial worksheets; one for the questions and one for the solutions from the same Quarto document; for several Quarto engines (\nengine: knitr\n,\njupyter: python3\n,\njupyter: nbstata\n, and\nengine: julia\n). I have also shown how additional metadata may be written into your Quarto document in these engines which can be used in conjunction with parameterised documents and conditional content.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Dr Tom Palmer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction I previously posted about creating tutorial worksheets for 4 different Quarto engines (for R, Python, Stata, and Julia) using conditional content. However, that approach is a bit hacky and I wasn’t very happy with it. Thanks to a ...",
+    "meta_keywords": null,
+    "og_description": "Introduction I previously posted about creating tutorial worksheets for 4 different Quarto engines (for R, Python, Stata, and Julia) using conditional content. However, that approach is a bit hacky and I wasn’t very happy with it. Thanks to a ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Creating tutorial worksheets; Quarto profiles for the win! | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.2,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction I previously posted about creating tutorial worksheets for 4 different Quarto engines (for R, Python, Stata, and Julia) using conditional content. However, that approach is a bit hacky and I wasn’t very happy with it. Thanks to a ...",
+    "twitter_title": "Creating tutorial worksheets; Quarto profiles for the win! | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/creating-tutorial-worksheets-quarto-profiles-for-the-win/",
+    "word_count": 1243
+  }
+}

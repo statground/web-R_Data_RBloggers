@@ -1,0 +1,112 @@
+{
+  "uuid": "eae59110-8aaf-40a1-b458-1fcac8e9bbab",
+  "created_at": "2025-11-17 20:39:44",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/object-oriented-programming-in-r-the-setter-methods/",
+    "crawled_at": "2025-11-17T10:11:30.906582",
+    "external_links": [
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/12/14/object-oriented-programming-in-r-the-setter-methods/",
+        "text": "John Myles White: Die Sudelbücher » Statistics"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://had.co.nz/",
+        "text": "Hadley Wickham"
+      },
+      {
+        "href": "http://www.johnmyleswhite.com/notebook/2009/12/14/object-oriented-programming-in-r-the-setter-methods/",
+        "text": "John Myles White: Die Sudelbücher » Statistics"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Object-Oriented Programming in R: The Setter Methods | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/john-myles-white/",
+        "text": "John Myles White"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-412 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Object-Oriented Programming in R: The Setter Methods</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 14, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/14/object-oriented-programming-in-r-the-setter-methods/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>With a little guidance from the indefatigable <a href=\"http://had.co.nz/\" rel=\"nofollow\" target=\"_blank\">Hadley Wickham</a>, I figured out today how to implement the setter methods that were missing from my example user class. To review, let’s rebuild the getter methods for my user object:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3684161\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n</pre></td><td class=\"code\" id=\"p3684code161\"><pre>user &lt;- list(id = 1,\n             password = '286755fad04869ca523320acce0dc6a4',\n             email = '<a class=\"__cf_email__\" data-cfemail=\"e08a8d97a08a8f888e8d998c85939788899485ce838f8d\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>')\n \nclass(user) &lt;- 'user'\n \nid &lt;- function(x)\n{\n  UseMethod('id', x)\n}\n \nid.user &lt;- function(user)\n{\n  return(user[['id']])\n}\n \npassword &lt;- function(x)\n{\n  UseMethod('password', x)\n}\n \npassword.user &lt;- function(user)\n{\n  return(user[['password']])\n}\n \nemail &lt;- function(x)\n{\n  UseMethod('email', x)\n}\n \nemail.user &lt;- function(user)\n{\n  return(user[['email']])\n}</pre></td></tr></table></div>\n<p>With these working, my goal was to write setter methods that would work like the ideal code below:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3684162\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n</pre></td><td class=\"code\" id=\"p3684code162\"><pre>id(user) &lt;- 2\n \nif (id(user) == 2)\n{\n  print(\"Succeeded in editing the user's id attribute.\")\n}</pre></td></tr></table></div>\n<p>Defining this sort of setter method turned out to require a little effort. I wasted quite a lot of time walking down dead ends, but, thankfully, Hadley gave me the exact piece of information I was missing early this morning. The dead ends were interesting in themselves, though, so I’ll review them in another post tomorrow.</p>\n<p>For now I’ll just explain the correct implementation for my desired setter methods, which you can see below:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3684163\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n</pre></td><td class=\"code\" id=\"p3684code163\"><pre>'id&lt;-' &lt;- function(x, value)\n{\n  UseMethod('id&lt;-', x)\n}\n \n'id&lt;-.user' &lt;- function(x, value)\n{\n  x[['id']] &lt;- value\n  return(x)\n}</pre></td></tr></table></div>\n<p>There are three important ideas here:</p>\n<ol>\n<li>The generic setter method for <code>id</code> should be called <code>'id&lt;-'</code>, which must always be quoted to prevent parsing errors.</li>\n<li>The class level setter method should be called <code>'id&lt;-.user'</code>, which isn't surprising, though I had imagined it might be called <code>'id.user&lt;-'</code> at one point.</li>\n<li>The setter method should make a change to a copy of the original object and return the edited copy to the caller. R handles the assignment of this edited return value to the original object behind the scenes. In fact, not using this return value approach will make otherwise plausible looking code fail to edit your object correctly. I stumbled on that for quite a while before I was shown the light.</li>\n</ol>\n<p>With this in mind, a final user class looks like this:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3684164\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n</pre></td><td class=\"code\" id=\"p3684code164\"><pre>user &lt;- list(id = 1,\n             password = '286755fad04869ca523320acce0dc6a4',\n             email = '<a class=\"__cf_email__\" data-cfemail=\"c6acabb186aca9aea8abbfaaa3b5b1aeafb2a3e8a5a9ab\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>')\n \nclass(user) &lt;- 'user'\n \nid &lt;- function(x)\n{\n  UseMethod('id', x)\n}\n \nid.user &lt;- function(user)\n{\n  return(user[['id']])\n}\n \npassword &lt;- function(x)\n{\n  UseMethod('password', x)\n}\n \npassword.user &lt;- function(user)\n{\n  return(user[['password']])\n}\n \nemail &lt;- function(x)\n{\n  UseMethod('email', x)\n}\n \nemail.user &lt;- function(user)\n{\n  return(user[['email']])\n}\n \n'id&lt;-' &lt;- function(x, value)\n{\n  UseMethod('id&lt;-', x)\n}\n \n'id&lt;-.user' &lt;- function(x, value)\n{\n  x[['id']] &lt;- value\n  return(x)\n}\n \n'password&lt;-' &lt;- function(x, value)\n{\n  UseMethod('password&lt;-', x)\n}\n \n'password&lt;-.user' &lt;- function(x, value)\n{\n  x[['password']] &lt;- value\n  return(x)\n}\n \n'email&lt;-' &lt;- function(x, value)\n{\n  UseMethod('email&lt;-', x)\n}\n \n'email&lt;-.user' &lt;- function(x, value)\n{\n  x[['email']] &lt;- value\n  return(x)\n}</pre></td></tr></table></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/14/object-oriented-programming-in-r-the-setter-methods/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+    "main_text": "Object-Oriented Programming in R: The Setter Methods\nPosted on\nDecember 14, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJohn Myles White: Die Sudelbücher » Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWith a little guidance from the indefatigable\nHadley Wickham\n, I figured out today how to implement the setter methods that were missing from my example user class. To review, let’s rebuild the getter methods for my user object:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\nuser <- list(id = 1,\n             password = '286755fad04869ca523320acce0dc6a4',\n             email = '\n[email protected]\n')\n \nclass(user) <- 'user'\n \nid <- function(x)\n{\n  UseMethod('id', x)\n}\n \nid.user <- function(user)\n{\n  return(user[['id']])\n}\n \npassword <- function(x)\n{\n  UseMethod('password', x)\n}\n \npassword.user <- function(user)\n{\n  return(user[['password']])\n}\n \nemail <- function(x)\n{\n  UseMethod('email', x)\n}\n \nemail.user <- function(user)\n{\n  return(user[['email']])\n}\nWith these working, my goal was to write setter methods that would work like the ideal code below:\n1\n2\n3\n4\n5\n6\nid(user) <- 2\n \nif (id(user) == 2)\n{\n  print(\"Succeeded in editing the user's id attribute.\")\n}\nDefining this sort of setter method turned out to require a little effort. I wasted quite a lot of time walking down dead ends, but, thankfully, Hadley gave me the exact piece of information I was missing early this morning. The dead ends were interesting in themselves, though, so I’ll review them in another post tomorrow.\nFor now I’ll just explain the correct implementation for my desired setter methods, which you can see below:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n'id<-' <- function(x, value)\n{\n  UseMethod('id<-', x)\n}\n \n'id<-.user' <- function(x, value)\n{\n  x[['id']] <- value\n  return(x)\n}\nThere are three important ideas here:\nThe generic setter method for\nid\nshould be called\n'id<-'\n, which must always be quoted to prevent parsing errors.\nThe class level setter method should be called\n'id<-.user'\n, which isn't surprising, though I had imagined it might be called\n'id.user<-'\nat one point.\nThe setter method should make a change to a copy of the original object and return the edited copy to the caller. R handles the assignment of this edited return value to the original object behind the scenes. In fact, not using this return value approach will make otherwise plausible looking code fail to edit your object correctly. I stumbled on that for quite a while before I was shown the light.\nWith this in mind, a final user class looks like this:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\nuser <- list(id = 1,\n             password = '286755fad04869ca523320acce0dc6a4',\n             email = '\n[email protected]\n')\n \nclass(user) <- 'user'\n \nid <- function(x)\n{\n  UseMethod('id', x)\n}\n \nid.user <- function(user)\n{\n  return(user[['id']])\n}\n \npassword <- function(x)\n{\n  UseMethod('password', x)\n}\n \npassword.user <- function(user)\n{\n  return(user[['password']])\n}\n \nemail <- function(x)\n{\n  UseMethod('email', x)\n}\n \nemail.user <- function(user)\n{\n  return(user[['email']])\n}\n \n'id<-' <- function(x, value)\n{\n  UseMethod('id<-', x)\n}\n \n'id<-.user' <- function(x, value)\n{\n  x[['id']] <- value\n  return(x)\n}\n \n'password<-' <- function(x, value)\n{\n  UseMethod('password<-', x)\n}\n \n'password<-.user' <- function(x, value)\n{\n  x[['password']] <- value\n  return(x)\n}\n \n'email<-' <- function(x, value)\n{\n  UseMethod('email<-', x)\n}\n \n'email<-.user' <- function(x, value)\n{\n  x[['email']] <- value\n  return(x)\n}\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJohn Myles White: Die Sudelbücher » Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+    "meta_description": "With a little guidance from the indefatigable Hadley Wickham, I figured out today how to implement the setter methods that were missing from my example user class. To review, let’s rebuild the getter methods for my user object: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 [...]",
+    "meta_keywords": "statistics",
+    "og_description": "With a little guidance from the indefatigable Hadley Wickham, I figured out today how to implement the setter methods that were missing from my example user class. To review, let’s rebuild the getter methods for my user object: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Object-Oriented Programming in R: The Setter Methods | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.6,
+    "sitemap_lastmod": "2009-12-15T04:49:06+00:00",
+    "twitter_description": "With a little guidance from the indefatigable Hadley Wickham, I figured out today how to implement the setter methods that were missing from my example user class. To review, let’s rebuild the getter methods for my user object: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 [...]",
+    "twitter_title": "Object-Oriented Programming in R: The Setter Methods | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/object-oriented-programming-in-r-the-setter-methods/",
+    "word_count": 725
+  }
+}

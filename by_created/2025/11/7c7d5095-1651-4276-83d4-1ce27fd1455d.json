@@ -1,0 +1,112 @@
+{
+  "uuid": "7c7d5095-1651-4276-83d4-1ce27fd1455d",
+  "created_at": "2025-11-22 19:57:59",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/refactoring-cucumber-and-playwright-acceptance-tests-with-github-copilot/",
+    "crawled_at": "2025-11-22T10:45:00.445087",
+    "external_links": [
+      {
+        "href": "https://jakubsobolewski.com/blog/ai-assisted-test-code-refactoring",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://cucumber.io/docs/gherkin/step-organization",
+        "text": "step organization"
+      },
+      {
+        "href": "https://cucumber.io/docs/guides/anti-patterns",
+        "text": "anti-patterns"
+      },
+      {
+        "href": "https://github.com/cucumber/cucumber-js/blob/main/docs/support_files/world.md",
+        "text": "World object"
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/testing-legacy-shiny/",
+        "text": "Check this guide on testing legacy Shiny apps."
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/ai-assisted-test-code-refactoring",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Refactoring Cucumber and Playwright Acceptance Tests with GitHub Copilot | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394393 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Refactoring Cucumber and Playwright Acceptance Tests with GitHub Copilot</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 28, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsobolewski.com/blog/ai-assisted-test-code-refactoring\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>From my experience, LLMs are much better at writing JavaScript code than they are at writing R code at the moment.</p>\n<p>I wanted to check how well Copilot does with refactoring existing Playwright and Cucumber test code.</p>\n<h2 id=\"refactoring-existing-test-code\">Refactoring existing test code</h2>\n<p>Before refactoring, I had a single step definition file that contained all step implementations:</p>\n<ul>\n<li>interactions with forms,</li>\n<li>navigation steps,</li>\n<li>output verifications,</li>\n<li>and hooks</li>\n</ul>\n<p>mixed together.</p>\n<p>Putting all step definitions in a single file when you’re just starting writing tests is fine, but as more steps are added, it becomes unwieldy.</p>\n<h2 id=\"ask-with-documentation-context\">Ask with documentation context</h2>\n<p>I prompted Copilot with the following instruction to refactor my step files according to the best practices outlined in the referenced articles about <a href=\"https://cucumber.io/docs/gherkin/step-organization\" rel=\"nofollow\" target=\"_blank\">step organization</a> and <a href=\"https://cucumber.io/docs/guides/anti-patterns\" rel=\"nofollow\" target=\"_blank\">anti-patterns</a> from the Cucumber documentation.</p>\n<p>It suggests organizing step definitions by <em>domain concepts</em> to avoid duplication and support easier maintenance, and reuse across features. Let’s see how Copilot handles this.</p>\n<pre>I want to refactor my cucumber steps implementations to follow best practices.\n\nRead those articles:\n#fetch https://cucumber.io/docs/gherkin/step-organization\n#fetch https://cucumber.io/docs/guides/anti-patterns\nand apply what is suggested.\n\nBefore doing the changes, explain the plan.</pre>\n<p>The response was as follows:</p>\n<pre>I'll help you refactor your cucumber steps implementation to align with industry standards. Let me first gather information from the articles you've shared so I can create a comprehensive plan. Based on the Cucumber documentation, here's my plan to refactor your steps implementation to align with industry standards:\n\n## Refactoring Plan for Cucumber Steps\n\n### 1. Reorganize Step Files by Domain Concept\n\nCurrently, all your step definitions are in a single `steps.step.mjs` file. While this works for smaller projects, as your project grows, it's better to organize steps by domain concept.\n\n**Plan**:\n- Create separate step files for different domains in your application\n- Group related step definitions together based on functionality\n- Potential files could include:\n  - `navigation.steps.mjs` - For navigation steps\n  - `form.steps.mjs` - For form interactions\n  - `chat.steps.mjs` - For chat-related interactions\n  - `configuration.steps.mjs` - For configuration-related steps\n  - `file-operations.steps.mjs` - For file upload/download operations\n\n### 2. Create Helper Methods for Reusable Code\n\nThe current implementation has several step definitions with similar code patterns. We should extract common functionality into helper methods.\n\n**Plan**:\n- Create a `helpers/` directory with utility functions\n- Extract common patterns for:\n  - File operations (upload/download)\n  - Form interactions\n  - Waiting for UI elements\n  - JSON assertions and handling\n\n### 3. Make Steps More Atomic and Reusable\n\nSome of your steps are doing multiple things at once, which makes them less reusable.\n\n**Plan**:\n- Split conjunction steps to make them more atomic\n- Make step definitions more generalized to increase reusability\n- Parameterize steps to handle more variations without duplicating code\n\n### 4. Improved World Context and State Management\n\nCurrently, you're using a global `state` object. A more structured approach would be beneficial.\n\n**Plan**:\n- Use Cucumber's World object for state management\n- Create custom World extensions for different domains\n- Implement proper scoping of state variables\n\n### 5. Better Error Handling and Reporting\n\nEnhance error handling to provide more meaningful feedback when tests fail.\n\n**Plan**:\n- Add better error messages and context when assertions fail\n- Implement custom error handling where needed\n\n## Implementation Steps\n\nLet me start implementing these changes:\n\n1. First, I'll create a directory structure for our step definitions\n2. Create helper methods for common functionality\n3. Refactor the existing steps to use the new structure\n4. Apply proper state management patterns\n\nLet me know if you'd like me to proceed with these changes or if you want to modify the plan before I begin implementation.</pre>\n<h2 id=\"results\">Results</h2>\n<h3 id=\"was-it-a-good-split-of-files\">Was it a good split of files?</h3>\n<p>Copilot indeed split the file into multiple ones. But is it any good?</p>\n<p>It created the following files:</p>\n<ul>\n<li><code>navigation.steps.mjs</code> – For navigation steps</li>\n<li><code>form.steps.mjs</code> – For form interactions</li>\n<li><code>chat.steps.mjs</code> – For chat-related interactions</li>\n<li><code>configuration.steps.mjs</code> – For configuration-related steps</li>\n<li><code>file-operations.steps.mjs</code> – For file upload/download operations</li>\n</ul>\n<p>Is it a split by a <em>domain</em>? I’m not sure. It seems more like a split by <em>functionality</em>.</p>\n<p>But in my case, it’s still a good split, as it organizes the test code better than before. I can work with it and see if other domains emerge in the future. It definitely is not a tight coupling between features and step definitions, which is a step in the right direction.</p>\n<h3 id=\"improvement-in-helper-methods\">Improvement in helper methods</h3>\n<p>It created a <code>/helpers</code> directory with utility functions for:</p>\n<ul>\n<li>File operations (upload/download)</li>\n<li>Form interactions</li>\n<li>Waiting for UI elements</li>\n<li>JSON assertions and handling</li>\n</ul>\n<p>It helped me avoid code duplication and made the step definitions cleaner. Copilot wasn’t asked about it explicitly, but it was a good addition.</p>\n<h3 id=\"copilot-taught-me-about-cucumber-features-i-didnt-know\">Copilot taught me about Cucumber features I didn’t know</h3>\n<p>As Copilot refactored the code, it introduced me to a Cucumber feature I wasn’t aware of – the <a href=\"https://github.com/cucumber/cucumber-js/blob/main/docs/support_files/world.md\" rel=\"nofollow\" target=\"_blank\">World object</a>.</p>\n<p>Turns out this is a more convenient approach to manage state in Cucumber tests. You don’t need to implement your own state management logic. Instead, you can use the built-in World object to store and access state across steps.</p>\n<p><strong>Copilot may know more about the library you’re using than you do, so it’s worth paying attention to its suggestions.</strong></p>\n<h2 id=\"conclusions\">Conclusions</h2>\n<p>While the refactoring wasn’t perfect, it was quite an improvement over the original code.</p>\n<p>Telling an agent explicitly to follow practices in a given article can help prompt it to follow specific patterns that you want to see in the code. The biggest win was that I learned some new Cucumber features that I wasn’t aware of before.</p>\n<p><strong>I plan to test how well Copilot does in writing Playwright and Cucumber test code from scratch, maybe its good enough to quickly cover legacy Shiny apps with acceptance tests.</strong></p>\n<blockquote>\n<p>🧪 <strong><a href=\"https://jakubsobolewski.com/blog/testing-legacy-shiny/\" rel=\"nofollow\" target=\"_blank\">Check this guide on testing legacy Shiny apps.</a></strong></p>\n</blockquote>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsobolewski.com/blog/ai-assisted-test-code-refactoring\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Refactoring Cucumber and Playwright Acceptance Tests with GitHub Copilot\nPosted on\nJuly 28, 2025\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nFrom my experience, LLMs are much better at writing JavaScript code than they are at writing R code at the moment.\nI wanted to check how well Copilot does with refactoring existing Playwright and Cucumber test code.\nRefactoring existing test code\nBefore refactoring, I had a single step definition file that contained all step implementations:\ninteractions with forms,\nnavigation steps,\noutput verifications,\nand hooks\nmixed together.\nPutting all step definitions in a single file when you’re just starting writing tests is fine, but as more steps are added, it becomes unwieldy.\nAsk with documentation context\nI prompted Copilot with the following instruction to refactor my step files according to the best practices outlined in the referenced articles about\nstep organization\nand\nanti-patterns\nfrom the Cucumber documentation.\nIt suggests organizing step definitions by\ndomain concepts\nto avoid duplication and support easier maintenance, and reuse across features. Let’s see how Copilot handles this.\nI want to refactor my cucumber steps implementations to follow best practices.\n\nRead those articles:\n#fetch https://cucumber.io/docs/gherkin/step-organization\n#fetch https://cucumber.io/docs/guides/anti-patterns\nand apply what is suggested.\n\nBefore doing the changes, explain the plan.\nThe response was as follows:\nI'll help you refactor your cucumber steps implementation to align with industry standards. Let me first gather information from the articles you've shared so I can create a comprehensive plan. Based on the Cucumber documentation, here's my plan to refactor your steps implementation to align with industry standards:\n\n## Refactoring Plan for Cucumber Steps\n\n### 1. Reorganize Step Files by Domain Concept\n\nCurrently, all your step definitions are in a single `steps.step.mjs` file. While this works for smaller projects, as your project grows, it's better to organize steps by domain concept.\n\n**Plan**:\n- Create separate step files for different domains in your application\n- Group related step definitions together based on functionality\n- Potential files could include:\n  - `navigation.steps.mjs` - For navigation steps\n  - `form.steps.mjs` - For form interactions\n  - `chat.steps.mjs` - For chat-related interactions\n  - `configuration.steps.mjs` - For configuration-related steps\n  - `file-operations.steps.mjs` - For file upload/download operations\n\n### 2. Create Helper Methods for Reusable Code\n\nThe current implementation has several step definitions with similar code patterns. We should extract common functionality into helper methods.\n\n**Plan**:\n- Create a `helpers/` directory with utility functions\n- Extract common patterns for:\n  - File operations (upload/download)\n  - Form interactions\n  - Waiting for UI elements\n  - JSON assertions and handling\n\n### 3. Make Steps More Atomic and Reusable\n\nSome of your steps are doing multiple things at once, which makes them less reusable.\n\n**Plan**:\n- Split conjunction steps to make them more atomic\n- Make step definitions more generalized to increase reusability\n- Parameterize steps to handle more variations without duplicating code\n\n### 4. Improved World Context and State Management\n\nCurrently, you're using a global `state` object. A more structured approach would be beneficial.\n\n**Plan**:\n- Use Cucumber's World object for state management\n- Create custom World extensions for different domains\n- Implement proper scoping of state variables\n\n### 5. Better Error Handling and Reporting\n\nEnhance error handling to provide more meaningful feedback when tests fail.\n\n**Plan**:\n- Add better error messages and context when assertions fail\n- Implement custom error handling where needed\n\n## Implementation Steps\n\nLet me start implementing these changes:\n\n1. First, I'll create a directory structure for our step definitions\n2. Create helper methods for common functionality\n3. Refactor the existing steps to use the new structure\n4. Apply proper state management patterns\n\nLet me know if you'd like me to proceed with these changes or if you want to modify the plan before I begin implementation.\nResults\nWas it a good split of files?\nCopilot indeed split the file into multiple ones. But is it any good?\nIt created the following files:\nnavigation.steps.mjs\n– For navigation steps\nform.steps.mjs\n– For form interactions\nchat.steps.mjs\n– For chat-related interactions\nconfiguration.steps.mjs\n– For configuration-related steps\nfile-operations.steps.mjs\n– For file upload/download operations\nIs it a split by a\ndomain\n? I’m not sure. It seems more like a split by\nfunctionality\n.\nBut in my case, it’s still a good split, as it organizes the test code better than before. I can work with it and see if other domains emerge in the future. It definitely is not a tight coupling between features and step definitions, which is a step in the right direction.\nImprovement in helper methods\nIt created a\n/helpers\ndirectory with utility functions for:\nFile operations (upload/download)\nForm interactions\nWaiting for UI elements\nJSON assertions and handling\nIt helped me avoid code duplication and made the step definitions cleaner. Copilot wasn’t asked about it explicitly, but it was a good addition.\nCopilot taught me about Cucumber features I didn’t know\nAs Copilot refactored the code, it introduced me to a Cucumber feature I wasn’t aware of – the\nWorld object\n.\nTurns out this is a more convenient approach to manage state in Cucumber tests. You don’t need to implement your own state management logic. Instead, you can use the built-in World object to store and access state across steps.\nCopilot may know more about the library you’re using than you do, so it’s worth paying attention to its suggestions.\nConclusions\nWhile the refactoring wasn’t perfect, it was quite an improvement over the original code.\nTelling an agent explicitly to follow practices in a given article can help prompt it to follow specific patterns that you want to see in the code. The biggest win was that I learned some new Cucumber features that I wasn’t aware of before.\nI plan to test how well Copilot does in writing Playwright and Cucumber test code from scratch, maybe its good enough to quickly cover legacy Shiny apps with acceptance tests.\n🧪\nCheck this guide on testing legacy Shiny apps.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Given a set of existing Cucumber and Playwright acceptance tests, I asked Copilot to refactor them according to best practices for step organization and anti-patterns.",
+    "meta_keywords": null,
+    "og_description": "Given a set of existing Cucumber and Playwright acceptance tests, I asked Copilot to refactor them according to best practices for step organization and anti-patterns.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Refactoring Cucumber and Playwright Acceptance Tests with GitHub Copilot | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.6,
+    "sitemap_lastmod": null,
+    "twitter_description": "Given a set of existing Cucumber and Playwright acceptance tests, I asked Copilot to refactor them according to best practices for step organization and anti-patterns.",
+    "twitter_title": "Refactoring Cucumber and Playwright Acceptance Tests with GitHub Copilot | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/refactoring-cucumber-and-playwright-acceptance-tests-with-github-copilot/",
+    "word_count": 1120
+  }
+}

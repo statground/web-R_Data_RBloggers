@@ -1,0 +1,193 @@
+{
+  "uuid": "7f98c513-9f20-438e-9b4a-25c76c9f122c",
+  "created_at": "2025-11-17 20:39:24",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/improve-your-maps-in-one-line-of-code-changing-map-projections/",
+    "crawled_at": "2025-11-17T10:00:44.625551",
+    "external_links": [
+      {
+        "href": "https://ikashnitsky.github.io/2023/map-proj/index.html",
+        "text": "Ilya Kashnitsky"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://r-graph-gallery.com/cartogram.html",
+        "text": "cartograms"
+      },
+      {
+        "href": "https://i2.wp.com/ikashnitsky.phd/2023/map-proj/natgeo.png?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://twitter.com/ikashnitsky/status/1261186743585386496",
+        "text": "animated example"
+      },
+      {
+        "href": "https://twitter.com/ikashnitsky/status/1442512307502780422",
+        "text": "often"
+      },
+      {
+        "href": "https://twitter.com/ikashnitsky/status/1531395881559375872",
+        "text": "ridiculed"
+      },
+      {
+        "href": "https://i0.wp.com/ikashnitsky.phd/2023/map-proj/badeu.png?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://ropengov.github.io/eurostat/",
+        "text": "eurostat"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/map-borders/",
+        "text": "add borders between the countries as lines"
+      },
+      {
+        "href": "https://github.com/ikashnitsky/dataviz-art-skill",
+        "text": "dataviz course materials"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/map-borders/",
+        "text": "The easiest way to radically improve map aesthetics"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2020/background-data/",
+        "text": "Show all data in the background of your faceted ggplot"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2019/dotplot/",
+        "text": "Dotplot – the single most useful yet largely neglected dataviz type"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/shrink-space/",
+        "text": "Save space in faceted plots"
+      },
+      {
+        "href": "https://ikashnitsky.phd/2023/geocoding/",
+        "text": "Geocode address text strings usingtidygeocoder"
+      },
+      {
+        "href": "https://ikashnitsky.github.io/2023/map-proj/index.html",
+        "text": "Ilya Kashnitsky"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Improve your maps in one line of code changing map projections | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/natgeo.png?w=578&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/badeu.png?w=578&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/ikashnitsky.github.io/2023/map-proj/index_files/figure-html/unnamed-chunk-2-1.png?w=578&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/index_files/figure-html/unnamed-chunk-4-1.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ilya-kashnitsky/",
+        "text": "Ilya Kashnitsky"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379668 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Improve your maps in one line of code changing map projections</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 3, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ilya-kashnitsky/\">Ilya Kashnitsky</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ikashnitsky.github.io/2023/map-proj/index.html\"> Ilya Kashnitsky</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--> <hr/>\n<div class=\"page-columns page-full\"><p>Did you ever think why we (okay, I’m clearly biased, maybe just many of us, humans) love maps so much? Why do they often work so much better than other types of dataviz? I think<sup>1</sup> what makes the maps work is the speed with which we can recognize familiar shapes, most often countries. That’s why it’s so annoying when these shapes get distorted – it hinders the smoothness of reading the map and kills the pleasure of the process. I’m sure this is the main reason why <a href=\"https://r-graph-gallery.com/cartogram.html\" rel=\"nofollow\" target=\"_blank\">cartograms</a> exist forever as a cool idea but are rarely actually used – people love the concept of them but hate actually looking at them. I deeply believe that immediate shape recognition is the kill feature of maps as a type of dataviz.</p><div class=\"no-row-height column-margin column-container\"><li id=\"fn1\"><p><sup>1</sup> And here I have to say that I’m not an expert in the area of visual perception or psychology of human processing of dataviz. I know this is a huge, thrilling area of research, I just never followed systemically. Strictly speaking, what I’m going to tell further is likely some digested version of what I’ve seen, read, and thought through over years of being into dataviz.</p></li></div></div>\n<p>Geographic projections are a huge field of research in itself. There are infinite ways to project the spherical globe (geoid) to the surface. It’s a classical challenge with no single correct solution. Specific choice depends on the features we want to preserve/represent most correctly — distances, angles, shapes, or areas. In my experience, for most of our daily basic dataviz needs the most important is the shape — it helps recognizing objects and thus navigating through maps smoothly.</p>\n<p>There is a brilliant 6-min video explainer of maps projections, I heartily recommend:</p>\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" height=\"650\" src=\"https://www.youtube.com/embed/kIID5FDi2JQ\" title=\"YouTube video player\" width=\"450\">\n</iframe>\n<p>Beware, the choice of appropriate map projection can be a rabbit hole as deep as choosing fonts or colors for your dataviz – you are warned. In all practical terms, a good strategy is to check what are the canonical projections for the territories one plans to map – that would help not to repel the reader through instantaneous non-recognition of the shape. One good resource for the task is http://epsg.io.</p>\n<p>Just accept that the perfect projection does not exist – there’s no such thing as <del>free lunch</del> perfect projection. Map projections always excel or fail in specific contexts. Here is an example when a very non-standard geographic projection is just perfect for the data it is showing and the story it is telling.</p>\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\"><p><a href=\"https://i2.wp.com/ikashnitsky.phd/2023/map-proj/natgeo.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/natgeo.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:70.0%\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/natgeo.png?w=578&amp;ssl=1\" style=\"width:70.0%\"/></noscript></a></p>\n</figure>\n</div>\n<p>Here is another <a href=\"https://twitter.com/ikashnitsky/status/1261186743585386496\" rel=\"nofollow\" target=\"_blank\">animated example</a>.</p>\n<p>Even the most famous and <a href=\"https://twitter.com/ikashnitsky/status/1442512307502780422\" rel=\"nofollow\" target=\"_blank\">often</a> <a href=\"https://twitter.com/ikashnitsky/status/1531395881559375872\" rel=\"nofollow\" target=\"_blank\">ridiculed</a> Mercator projection has its major advantages – it preserves the angles and that’s why it was perfect for the early age of navigation. It’s also pretty safe at preserving coordinates and thus most often is used as the basic projection in which geodata is stored and distributed. And this is the reason why we see it in published maps so often. Honestly, I’m really allergic to the view of Europe in Mercator projection.</p>\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\"><p><a href=\"https://i0.wp.com/ikashnitsky.phd/2023/map-proj/badeu.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/badeu.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:70.0%\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/badeu.png?w=578&amp;ssl=1\" style=\"width:70.0%\"/></noscript></a></p>\n</figure>\n</div>\n<p>And it’s just unbelievable how often these repulsing maps come across in academic papers. Especially when you know that it really takes one line of code to fix it. So let’s see how it’s done.</p>\n<hr/>\n<p>For the illustration below I will produce maps of Europe in (A) Mercator and (B) Lambert Equal Area Azimuthal projections, as usual using the beautiful geodata stored in the <a href=\"https://ropengov.github.io/eurostat/\" rel=\"nofollow\" target=\"_blank\">eurostat</a> package.</p>\n<div class=\"cell\">\n<pre>library(tidyverse)\nlibrary(sf)\nlibrary(eurostat)\n\n# the built-in dataset of EU boundaries\ngd &lt;- eurostat_geodata_60_2016 %&gt;% \n    janitor::clean_names() \n\n# filters out only NUTS-2 regions \ngd_n2 &lt;- gd %&gt;%\n    filter(levl_code == 2) \n\n# let's build the most basic map\ngd_n2 %&gt;% \n    ggplot() +\n    geom_sf()</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"\" data-lazy-src=\"https://i2.wp.com/ikashnitsky.github.io/2023/map-proj/index_files/figure-html/unnamed-chunk-2-1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:100.0%;height:100.0%\"/><noscript><img class=\"\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/ikashnitsky.github.io/2023/map-proj/index_files/figure-html/unnamed-chunk-2-1.png?w=578&amp;ssl=1\" style=\"width:100.0%;height:100.0%\"/></noscript></p>\n</div>\n</div>\n<p>Note all the overseas territories of France, Spain, and Portugal. At the next step I will remove them to zoom in to the usual scope of mainland Europe. I will also <a href=\"https://ikashnitsky.phd/2023/map-borders/\" rel=\"nofollow\" target=\"_blank\">add borders between the countries as lines</a>.</p>\n<div class=\"cell\">\n<pre># remove overseas territories\ngd_n2_main &lt;- gd_n2 %&gt;% \n    filter(!id %in% c(paste0('ES', c(63, 64, 70)), paste('FRY', 1:5, sep = ''), 'PT20', 'PT30')) \n\n# the lines level with borders at country level\nbord &lt;- gd %&gt;%\n    filter(levl_code == 0) %&gt;% \n    rmapshaper::ms_innerlines()</pre>\n</div>\n<p>Now, back to reprojecting. There are two ways of changing the projections with {sf}: either apply <code>st_transform(crs = [EPSG code])</code> to change your the projection of the geodata object OR fix it directly at the plotting stage via <code>coord_sf(crs = [EPSG code])</code>. I think it’s generally easier to reproject the data once and work with it (panel B). But for completeness I will also show the on-the-fly <code>coord_sf()</code> when plotting in Mercator projection (panel A).</p>\n<div class=\"cell\">\n<pre># transform the projection to the one suitable for Europe\ngd_n2_main_laea &lt;- gd_n2_main %&gt;% \n    st_transform(crs = 3035)\n\na &lt;- gd_n2_main %&gt;% \n    ggplot() +\n    geom_sf(fill = \"#F48FB1\", color = NA)+\n    geom_sf(data = bord, color = \"#C2185B\", size = .5)+\n    coord_sf(crs = 3857)\n\nb &lt;- gd_n2_main_laea %&gt;% \n    ggplot() +\n    geom_sf(fill = \"#DCE775\", color = NA)+\n    geom_sf(data = bord, color = \"#AFB42B\", size = .5)\n\nlibrary(patchwork)\n\na + b + plot_annotation(tag_levels = \"A\")</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"\" data-lazy-src=\"https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/index_files/figure-html/unnamed-chunk-4-1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:100.0%;height:100.0%\"/><noscript><img class=\"\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/ikashnitsky.github.io/2023/map-proj/index_files/figure-html/unnamed-chunk-4-1.png?w=578&amp;ssl=1\" style=\"width:100.0%;height:100.0%\"/></noscript></p>\n</div>\n</div>\n<p>That’s it. That’s the whole one-line trick. Check out my other post based on my <a href=\"https://github.com/ikashnitsky/dataviz-art-skill\" rel=\"nofollow\" target=\"_blank\">dataviz course materials</a>.</p>\n<hr/>\n<div class=\"callout-note callout callout-style-default callout-captioned\">\n<div class=\"callout-header d-flex align-content-center\">\n<div class=\"callout-icon-container\">\n<i class=\"callout-icon\"></i>\n</div>\n<div class=\"callout-caption-container flex-fill\">\nThis post is one in the <strong>dataviz course series</strong>. Other posts:\n</div>\n</div>\n<div class=\"callout-body-container callout-body\">\n<ul>\n<li><a href=\"https://ikashnitsky.phd/2023/map-borders/\" rel=\"nofollow\" target=\"_blank\">The easiest way to radically improve map aesthetics</a></li>\n<li><a href=\"https://ikashnitsky.phd/2020/background-data/\" rel=\"nofollow\" target=\"_blank\">Show all data in the background of your faceted ggplot</a></li>\n<li><a href=\"https://ikashnitsky.phd/2019/dotplot/\" rel=\"nofollow\" target=\"_blank\">Dotplot – the single most useful yet largely neglected dataviz type</a></li>\n<li><a href=\"https://ikashnitsky.phd/2023/shrink-space/\" rel=\"nofollow\" target=\"_blank\">Save space in faceted plots</a></li>\n<li><a href=\"https://ikashnitsky.phd/2023/geocoding/\" rel=\"nofollow\" target=\"_blank\">Geocode address text strings using <code>tidygeocoder</code></a></li>\n</ul>\n</div>\n</div>\n<!-- -->\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ikashnitsky.github.io/2023/map-proj/index.html\"> Ilya Kashnitsky</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Improve your maps in one line of code changing map projections\nPosted on\nNovember 3, 2023\nby\nIlya Kashnitsky\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nIlya Kashnitsky\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDid you ever think why we (okay, I’m clearly biased, maybe just many of us, humans) love maps so much? Why do they often work so much better than other types of dataviz? I think\n1\nwhat makes the maps work is the speed with which we can recognize familiar shapes, most often countries. That’s why it’s so annoying when these shapes get distorted – it hinders the smoothness of reading the map and kills the pleasure of the process. I’m sure this is the main reason why\ncartograms\nexist forever as a cool idea but are rarely actually used – people love the concept of them but hate actually looking at them. I deeply believe that immediate shape recognition is the kill feature of maps as a type of dataviz.\n1\nAnd here I have to say that I’m not an expert in the area of visual perception or psychology of human processing of dataviz. I know this is a huge, thrilling area of research, I just never followed systemically. Strictly speaking, what I’m going to tell further is likely some digested version of what I’ve seen, read, and thought through over years of being into dataviz.\nGeographic projections are a huge field of research in itself. There are infinite ways to project the spherical globe (geoid) to the surface. It’s a classical challenge with no single correct solution. Specific choice depends on the features we want to preserve/represent most correctly — distances, angles, shapes, or areas. In my experience, for most of our daily basic dataviz needs the most important is the shape — it helps recognizing objects and thus navigating through maps smoothly.\nThere is a brilliant 6-min video explainer of maps projections, I heartily recommend:\nBeware, the choice of appropriate map projection can be a rabbit hole as deep as choosing fonts or colors for your dataviz – you are warned. In all practical terms, a good strategy is to check what are the canonical projections for the territories one plans to map – that would help not to repel the reader through instantaneous non-recognition of the shape. One good resource for the task is http://epsg.io.\nJust accept that the perfect projection does not exist – there’s no such thing as\nfree lunch\nperfect projection. Map projections always excel or fail in specific contexts. Here is an example when a very non-standard geographic projection is just perfect for the data it is showing and the story it is telling.\nHere is another\nanimated example\n.\nEven the most famous and\noften\nridiculed\nMercator projection has its major advantages – it preserves the angles and that’s why it was perfect for the early age of navigation. It’s also pretty safe at preserving coordinates and thus most often is used as the basic projection in which geodata is stored and distributed. And this is the reason why we see it in published maps so often. Honestly, I’m really allergic to the view of Europe in Mercator projection.\nAnd it’s just unbelievable how often these repulsing maps come across in academic papers. Especially when you know that it really takes one line of code to fix it. So let’s see how it’s done.\nFor the illustration below I will produce maps of Europe in (A) Mercator and (B) Lambert Equal Area Azimuthal projections, as usual using the beautiful geodata stored in the\neurostat\npackage.\nlibrary(tidyverse)\nlibrary(sf)\nlibrary(eurostat)\n\n# the built-in dataset of EU boundaries\ngd <- eurostat_geodata_60_2016 %>% \n    janitor::clean_names() \n\n# filters out only NUTS-2 regions \ngd_n2 <- gd %>%\n    filter(levl_code == 2) \n\n# let's build the most basic map\ngd_n2 %>% \n    ggplot() +\n    geom_sf()\nNote all the overseas territories of France, Spain, and Portugal. At the next step I will remove them to zoom in to the usual scope of mainland Europe. I will also\nadd borders between the countries as lines\n.\n# remove overseas territories\ngd_n2_main <- gd_n2 %>% \n    filter(!id %in% c(paste0('ES', c(63, 64, 70)), paste('FRY', 1:5, sep = ''), 'PT20', 'PT30')) \n\n# the lines level with borders at country level\nbord <- gd %>%\n    filter(levl_code == 0) %>% \n    rmapshaper::ms_innerlines()\nNow, back to reprojecting. There are two ways of changing the projections with {sf}: either apply\nst_transform(crs = [EPSG code])\nto change your the projection of the geodata object OR fix it directly at the plotting stage via\ncoord_sf(crs = [EPSG code])\n. I think it’s generally easier to reproject the data once and work with it (panel B). But for completeness I will also show the on-the-fly\ncoord_sf()\nwhen plotting in Mercator projection (panel A).\n# transform the projection to the one suitable for Europe\ngd_n2_main_laea <- gd_n2_main %>% \n    st_transform(crs = 3035)\n\na <- gd_n2_main %>% \n    ggplot() +\n    geom_sf(fill = \"#F48FB1\", color = NA)+\n    geom_sf(data = bord, color = \"#C2185B\", size = .5)+\n    coord_sf(crs = 3857)\n\nb <- gd_n2_main_laea %>% \n    ggplot() +\n    geom_sf(fill = \"#DCE775\", color = NA)+\n    geom_sf(data = bord, color = \"#AFB42B\", size = .5)\n\nlibrary(patchwork)\n\na + b + plot_annotation(tag_levels = \"A\")\nThat’s it. That’s the whole one-line trick. Check out my other post based on my\ndataviz course materials\n.\nThis post is one in the\ndataviz course series\n. Other posts:\nThe easiest way to radically improve map aesthetics\nShow all data in the background of your faceted ggplot\nDotplot – the single most useful yet largely neglected dataviz type\nSave space in faceted plots\nGeocode address text strings using\ntidygeocoder\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nIlya Kashnitsky\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Did you ever think why we (okay, I’m clearly biased, maybe just many of us, humans) love maps so much? Why do they often work so much better than other types of dataviz? I think1 what makes the maps work is the speed with which we can recognize famil...",
+    "meta_keywords": null,
+    "og_description": "Did you ever think why we (okay, I’m clearly biased, maybe just many of us, humans) love maps so much? Why do they often work so much better than other types of dataviz? I think1 what makes the maps work is the speed with which we can recognize famil...",
+    "og_image": "https://ikashnitsky.github.io/2023/map-proj/natgeo.png",
+    "og_title": "Improve your maps in one line of code changing map projections | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.2,
+    "sitemap_lastmod": "2023-11-03T23:00:00+00:00",
+    "twitter_description": "Did you ever think why we (okay, I’m clearly biased, maybe just many of us, humans) love maps so much? Why do they often work so much better than other types of dataviz? I think1 what makes the maps work is the speed with which we can recognize famil...",
+    "twitter_title": "Improve your maps in one line of code changing map projections | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/improve-your-maps-in-one-line-of-code-changing-map-projections/",
+    "word_count": 1038
+  }
+}

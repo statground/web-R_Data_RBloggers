@@ -1,0 +1,120 @@
+{
+  "uuid": "91a979e9-d092-4c33-b687-ac8bb9547b99",
+  "created_at": "2025-11-22 19:57:23",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/11/maestro-0-7-0-introduces-conditional-pipelines/",
+    "crawled_at": "2025-11-22T10:41:13.552125",
+    "external_links": [
+      {
+        "href": "https://whipson.github.io/data-in-flight/posts/maestro-0-7-0/maestro-0-7-0-release.html",
+        "text": "data-in-flight"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://whipson.github.io/maestro/index.html",
+        "text": "here"
+      },
+      {
+        "href": "https://whipson.github.io/maestro/articles/maestro-4-directed-acyclic-graphs.html",
+        "text": "DAG pipelines"
+      },
+      {
+        "href": "https://whipson.github.io/maestro/articles/maestro-8-conditionals.html",
+        "text": "vignette"
+      },
+      {
+        "href": "https://whipson.github.io/data-in-flight/posts/you-dont-need-airflow/main.html",
+        "text": "tech stack where I work"
+      },
+      {
+        "href": "https://www.linkedin.com/in/will-hipson/",
+        "text": "LinkedIn"
+      },
+      {
+        "href": "https://github.com/whipson/maestro/issues",
+        "text": "here"
+      },
+      {
+        "href": "https://whipson.github.io/data-in-flight/posts/maestro-0-7-0/maestro-0-7-0-release.html",
+        "text": "data-in-flight"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "maestro 0.7.0 introduces conditional pipelines | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/will-hipson/",
+        "text": "Will Hipson"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-396528 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">maestro 0.7.0 introduces conditional pipelines</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 2, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/will-hipson/\">Will Hipson</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://whipson.github.io/data-in-flight/posts/maestro-0-7-0/maestro-0-7-0-release.html\"> data-in-flight</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>The 0.7.0 release of maestro is out, and with it is the ability to conditionally run pipelines. In a nutshell, this is especially useful when you have DAG pipelines and you want to branch or only execute parts of a DAG when the output meets a particular condition.</p>\n<p>If you haven’t heard of maestro, it’s a script orchestrator for R. You can learn more about it <a href=\"https://whipson.github.io/maestro/index.html\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>Get it from CRAN:</p>\n<div class=\"cell\">\n<pre>install.packages(\"maestro\")</pre>\n</div>\n<section class=\"level2\" id=\"conditional-pipelines-with-maestrorunif\">\n<h2 class=\"anchored\" data-anchor-id=\"conditional-pipelines-with-maestrorunif\">Conditional pipelines with <code>@maestroRunIf</code></h2>\n<p>A pipeline can be made conditional using the <code>maestroRunIf</code> tag. The value of the tag must be an R expression that returns a single TRUE or FALSE. What makes this tag special is that it can be combined with <a href=\"https://whipson.github.io/maestro/articles/maestro-4-directed-acyclic-graphs.html\" rel=\"nofollow\" target=\"_blank\">DAG pipelines</a>.</p>\n<p>Let’s say we have a two-step DAG pipeline for getting weather bulletins and sending out a notification in the event of an active bulletin. The first step of the DAG is to extract the bulletins from an open data source. The second step is to send the notification. However, we only want the second step to execute if there’s an active bulletin.</p>\n<p>The code below shows this conditional logic. The pipeline <code>send_notification</code> has a <code>maestroRunIf</code> tag that checks the truthiness of <code>grepl(\"Alert\", .input$bulletin_title)</code>. Note the use of <code>.input</code> to get the value from the inputting pipeline.</p>\n<div class=\"cell\">\n<pre># ./pipelines/bulletins.R\n\n#' @maestroFrequency 15 minutes\n#' @maestroStartTime 00:00:00\nget_bulletins &lt;- function() {\n\n  req &lt;- httr2::request(glue::glue(\"https://weather.gc.ca/rss/battleboard/ns10_e.xml\"))\n  \n  resp &lt;- req |&gt;\n    httr2::req_perform() |&gt;\n    httr2::resp_body_xml() |&gt;\n    xml2::as_list()\n\n  bulletin_title &lt;- resp$feed$title[[1]]\n  \n  return(\n    list(\n      bulletin_title = bulletin_title\n    )\n  )\n}\n\n#' @maestroInputs get_bulletins\n#' @maestroRunIf grepl(\"Alert\", .input$bulletin_title)\nsend_notification &lt;- function(.input) {\n\n  # Pretend this code sends to email or whatever\n  message(.input$bulletin_title)\n}</pre>\n</div>\n<p>Now run the schedule and the <code>send_notification</code> pipeline will run conditional on a weather alert.</p>\n<div class=\"cell\">\n<pre>library(maestro)\n\nschedule &lt;- build_schedule(quiet = TRUE)\n\ninvocation &lt;- run_schedule(\n  schedule, \n  orch_frequency = \"15 minutes\",\n  log_to_console = TRUE\n)</pre>\n<div class=\"cell-output cell-output-stderr\">\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>── [2025-11-03 08:57:59]\nRunning pipelines ▶ </pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>ℹ get_bulletins</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>✔ get_bulletins [246ms]</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>ℹ ? send_notification</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>✔ ? send_notification [12ms]</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>ℹ |-send_notification</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>✔ |-send_notification [18ms]</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>── [2025-11-03 08:58:00]\nPipeline execution completed ■ | 0.294 sec elapsed </pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>✔ 2 successes | ! 0 warnings | ✖ 0 errors | ◼ 2 total</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>────────────────────────────────────────────────────────────────────────────────</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>── Next scheduled pipelines ❯ </pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>Pipe name | Next scheduled run</pre>\n</div>\n<div class=\"cell-output cell-output-stderr\">\n<pre>• get_bulletins | 2025-11-03 13:15:00</pre>\n</div>\n</div>\n<p>Conditional pipelines can be used for more complex branching logic as well. For more examples, check out the <a href=\"https://whipson.github.io/maestro/articles/maestro-8-conditionals.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> on conditionals.</p>\n</section>\n<section class=\"level2\" id=\"call-to-maestro-users\">\n<h2 class=\"anchored\" data-anchor-id=\"call-to-maestro-users\">Call to maestro users</h2>\n<p>maestro has been on CRAN for over 1 year now. It’s been a rewarding experience developing this package; not to mention it being an integral part in the <a href=\"https://whipson.github.io/data-in-flight/posts/you-dont-need-airflow/main.html\" rel=\"nofollow\" target=\"_blank\">tech stack where I work</a>. I’m excited about the future of maestro too. This is why I’m calling out to maestro users out there. I’d love to hear about how you’re using maestro - especially if you’re using it in production. I’d also welcome any feedback and suggestions as we chart the path for future of maestro. You can message me via <a href=\"https://www.linkedin.com/in/will-hipson/\" rel=\"nofollow\" target=\"_blank\">LinkedIn</a> or if you have specific feature requests I’d welcome issues on Github <a href=\"https://github.com/whipson/maestro/issues\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>As always, happy orchestrating!</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://whipson.github.io/data-in-flight/posts/maestro-0-7-0/maestro-0-7-0-release.html\"> data-in-flight</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "maestro 0.7.0 introduces conditional pipelines\nPosted on\nNovember 2, 2025\nby\nWill Hipson\nin\nR bloggers\n| 0 Comments\n[This article was first published on\ndata-in-flight\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe 0.7.0 release of maestro is out, and with it is the ability to conditionally run pipelines. In a nutshell, this is especially useful when you have DAG pipelines and you want to branch or only execute parts of a DAG when the output meets a particular condition.\nIf you haven’t heard of maestro, it’s a script orchestrator for R. You can learn more about it\nhere\n.\nGet it from CRAN:\ninstall.packages(\"maestro\")\nConditional pipelines with\n@maestroRunIf\nA pipeline can be made conditional using the\nmaestroRunIf\ntag. The value of the tag must be an R expression that returns a single TRUE or FALSE. What makes this tag special is that it can be combined with\nDAG pipelines\n.\nLet’s say we have a two-step DAG pipeline for getting weather bulletins and sending out a notification in the event of an active bulletin. The first step of the DAG is to extract the bulletins from an open data source. The second step is to send the notification. However, we only want the second step to execute if there’s an active bulletin.\nThe code below shows this conditional logic. The pipeline\nsend_notification\nhas a\nmaestroRunIf\ntag that checks the truthiness of\ngrepl(\"Alert\", .input$bulletin_title)\n. Note the use of\n.input\nto get the value from the inputting pipeline.\n# ./pipelines/bulletins.R\n\n#' @maestroFrequency 15 minutes\n#' @maestroStartTime 00:00:00\nget_bulletins <- function() {\n\n  req <- httr2::request(glue::glue(\"https://weather.gc.ca/rss/battleboard/ns10_e.xml\"))\n  \n  resp <- req |>\n    httr2::req_perform() |>\n    httr2::resp_body_xml() |>\n    xml2::as_list()\n\n  bulletin_title <- resp$feed$title[[1]]\n  \n  return(\n    list(\n      bulletin_title = bulletin_title\n    )\n  )\n}\n\n#' @maestroInputs get_bulletins\n#' @maestroRunIf grepl(\"Alert\", .input$bulletin_title)\nsend_notification <- function(.input) {\n\n  # Pretend this code sends to email or whatever\n  message(.input$bulletin_title)\n}\nNow run the schedule and the\nsend_notification\npipeline will run conditional on a weather alert.\nlibrary(maestro)\n\nschedule <- build_schedule(quiet = TRUE)\n\ninvocation <- run_schedule(\n  schedule, \n  orch_frequency = \"15 minutes\",\n  log_to_console = TRUE\n)\n── [2025-11-03 08:57:59]\nRunning pipelines ▶\nℹ get_bulletins\n✔ get_bulletins [246ms]\nℹ ? send_notification\n✔ ? send_notification [12ms]\nℹ |-send_notification\n✔ |-send_notification [18ms]\n── [2025-11-03 08:58:00]\nPipeline execution completed ■ | 0.294 sec elapsed\n✔ 2 successes | ! 0 warnings | ✖ 0 errors | ◼ 2 total\n────────────────────────────────────────────────────────────────────────────────\n── Next scheduled pipelines ❯\nPipe name | Next scheduled run\n• get_bulletins | 2025-11-03 13:15:00\nConditional pipelines can be used for more complex branching logic as well. For more examples, check out the\nvignette\non conditionals.\nCall to maestro users\nmaestro has been on CRAN for over 1 year now. It’s been a rewarding experience developing this package; not to mention it being an integral part in the\ntech stack where I work\n. I’m excited about the future of maestro too. This is why I’m calling out to maestro users out there. I’d love to hear about how you’re using maestro - especially if you’re using it in production. I’d also welcome any feedback and suggestions as we chart the path for future of maestro. You can message me via\nLinkedIn\nor if you have specific feature requests I’d welcome issues on Github\nhere\n.\nAs always, happy orchestrating!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ndata-in-flight\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "The 0.7.0 release of maestro is out, and with it is the ability to conditionally run pipelines. In a nutshell, this is especially useful when you have DAG pipelines and you want to branch or only execute parts of a DAG when the output meets a pa...",
+    "meta_keywords": null,
+    "og_description": "The 0.7.0 release of maestro is out, and with it is the ability to conditionally run pipelines. In a nutshell, this is especially useful when you have DAG pipelines and you want to branch or only execute parts of a DAG when the output meets a pa...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "maestro 0.7.0 introduces conditional pipelines | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "The 0.7.0 release of maestro is out, and with it is the ability to conditionally run pipelines. In a nutshell, this is especially useful when you have DAG pipelines and you want to branch or only execute parts of a DAG when the output meets a pa...",
+    "twitter_title": "maestro 0.7.0 introduces conditional pipelines | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/11/maestro-0-7-0-introduces-conditional-pipelines/",
+    "word_count": 655
+  }
+}

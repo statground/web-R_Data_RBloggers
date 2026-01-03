@@ -1,0 +1,96 @@
+{
+  "uuid": "0d668733-6def-4a01-8a64-9124da43fb88",
+  "created_at": "2025-11-17 20:41:37",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2008/02/drop-unused-factor-levels/",
+    "crawled_at": "2025-11-17T10:53:04.052771",
+    "external_links": [
+      {
+        "href": "https://quantitative-ecology.blogspot.com/2008/02/drop-unused-factor-levels.html",
+        "text": "Quantitative Ecology"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.nabble.com/Bug-in-levels%28%29-function--td15131875.html#a15135262",
+        "text": "this post to R-Help"
+      },
+      {
+        "href": "https://quantitative-ecology.blogspot.com/2008/02/drop-unused-factor-levels.html",
+        "text": "Quantitative Ecology"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Drop unused factor levels | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/forester/",
+        "text": "Forester"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-5289 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Drop unused factor levels</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 4, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/forester/\">Forester</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://quantitative-ecology.blogspot.com/2008/02/drop-unused-factor-levels.html\"> Quantitative Ecology</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->When creating a subset of a dataframe, I often exclude rows based on the level of a factor. However, the “levels” of the factor remain intact. This is the intended behavior of R, but it can cause problems in some cases. I finally discovered how to clean up levels in <a href=\"http://www.nabble.com/Bug-in-levels%28%29-function--td15131875.html#a15135262\" rel=\"nofollow\" target=\"_blank\">this post to R-Help</a>. Here is an example:<br/><div style=\"overflow: auto;\"><pre>&gt; a &lt;- factor(letters)\n&gt; a\n [1] a b c d e f g h i j k l m n o p q r s t u v w x y z\nLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z\n\n## Now, even though b only includes five letters, \n## all 26 are listed in the levels\n&gt; b &lt;- a[1:5]\n&gt; b\n[1] a b c d e\nLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z\n\n## This behavior can be changed using the following syntax:\n&gt; b &lt;- a[1:5,drop = TRUE]\n&gt; b\n[1] a b c d e\nLevels: a b c d e\n</pre><span style=\"font-size:85%;\"><span style=\"font-family:courier new;\"></span></span></div><br/>Another way to deal with this is to use the dropUnusedLevels() command in the Hmisc library. The only issue here is that behavior is changed globally which may have undesired consequences (see the post listed above).<br/><br/><span style=\"font-weight: bold;\">****UPDATE****</span><br/>As Jeff Hollister mentions in the comments, there is another way to do this:<br/><div style=\"overflow:auto\"><pre>\na&lt;-factor(letters)\nb&lt;-factor(a[1:5])\n</pre><span style=\"font-size:85%;\"><span style=\"font-family:courier&lt;br /&gt;new;\"></span></span></div><br/><br/>Yet another way, if you are working with data frames that by default convert characters into factors, was suggested on r-sig-ecology by Hadley Wickham:<br/><div style=\"overflow:auto\"><pre>\noptions(stringsAsFactors = FALSE)\na &lt;-data.frame(\"alpha\"=letters)\nb&lt;-a[1:5]\n</pre><span style=\"font-size:85%;\"><span style=\"font-family:courier&lt;br /&gt;new;\"></span></span></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://quantitative-ecology.blogspot.com/2008/02/drop-unused-factor-levels.html\"> Quantitative Ecology</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Drop unused factor levels\nPosted on\nFebruary 4, 2008\nby\nForester\nin Uncategorized | 0 Comments\n[This article was first published on\nQuantitative Ecology\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhen creating a subset of a dataframe, I often exclude rows based on the level of a factor. However, the “levels” of the factor remain intact. This is the intended behavior of R, but it can cause problems in some cases. I finally discovered how to clean up levels in\nthis post to R-Help\n. Here is an example:\n> a <- factor(letters)\n> a\n [1] a b c d e f g h i j k l m n o p q r s t u v w x y z\nLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z\n\n## Now, even though b only includes five letters, \n## all 26 are listed in the levels\n> b <- a[1:5]\n> b\n[1] a b c d e\nLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z\n\n## This behavior can be changed using the following syntax:\n> b <- a[1:5,drop = TRUE]\n> b\n[1] a b c d e\nLevels: a b c d e\nAnother way to deal with this is to use the dropUnusedLevels() command in the Hmisc library. The only issue here is that behavior is changed globally which may have undesired consequences (see the post listed above).\n****UPDATE****\nAs Jeff Hollister mentions in the comments, there is another way to do this:\na<-factor(letters)\nb<-factor(a[1:5])\nYet another way, if you are working with data frames that by default convert characters into factors, was suggested on r-sig-ecology by Hadley Wickham:\noptions(stringsAsFactors = FALSE)\na <-data.frame(\"alpha\"=letters)\nb<-a[1:5]\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nQuantitative Ecology\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "When creating a subset of a dataframe, I often exclude rows based on the level of a factor. However, the \"levels\" of the factor remain intact. This is the intended behavior of R, but it can cause problems in some cases. I finally discovered how to clean up levels in this post to R-Help. Here is an example: > a a [1] a b c d e f g h i j k l m n o p q r s t u v w x y zLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z## Now, even though b only includes five letters, ## all 26 are listed in the levels> b b[1] a b c d eLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z## This behavior can be changed using the following syntax:> b b[1] a b c d eLevels: a b c d e Another way to deal with this is to use the dropUnusedLevels() command in the Hmisc library. The only issue here is that behavior is changed globally which may have undesired consequences (see the post listed above).****UPDATE****As Jeff Hollister mentions in the comments, there is another way to do this: ab Yet another way, if you are working with data frames that by default convert characters into factors, was suggested on r-sig-ecology by Hadley Wickham: options(stringsAsFactors = FALSE)a b",
+    "meta_keywords": null,
+    "og_description": "When creating a subset of a dataframe, I often exclude rows based on the level of a factor. However, the \"levels\" of the factor remain intact. This is the intended behavior of R, but it can cause problems in some cases. I finally discovered how to clean up levels in this post to R-Help. Here is an example: > a a [1] a b c d e f g h i j k l m n o p q r s t u v w x y zLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z## Now, even though b only includes five letters, ## all 26 are listed in the levels> b b[1] a b c d eLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z## This behavior can be changed using the following syntax:> b b[1] a b c d eLevels: a b c d e Another way to deal with this is to use the dropUnusedLevels() command in the Hmisc library. The only issue here is that behavior is changed globally which may have undesired consequences (see the post listed above).****UPDATE****As Jeff Hollister mentions in the comments, there is another way to do this: ab Yet another way, if you are working with data frames that by default convert characters into factors, was suggested on r-sig-ecology by Hadley Wickham: options(stringsAsFactors = FALSE)a b",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Drop unused factor levels | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.2,
+    "sitemap_lastmod": "2008-12-01T16:03:49+00:00",
+    "twitter_description": "When creating a subset of a dataframe, I often exclude rows based on the level of a factor. However, the \"levels\" of the factor remain intact. This is the intended behavior of R, but it can cause problems in some cases. I finally discovered how to clean up levels in this post to R-Help. Here is an example: > a a [1] a b c d e f g h i j k l m n o p q r s t u v w x y zLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z## Now, even though b only includes five letters, ## all 26 are listed in the levels> b b[1] a b c d eLevels: a b c d e f g h i j k l m n o p q r s t u v w x y z## This behavior can be changed using the following syntax:> b b[1] a b c d eLevels: a b c d e Another way to deal with this is to use the dropUnusedLevels() command in the Hmisc library. The only issue here is that behavior is changed globally which may have undesired consequences (see the post listed above).****UPDATE****As Jeff Hollister mentions in the comments, there is another way to do this: ab Yet another way, if you are working with data frames that by default convert characters into factors, was suggested on r-sig-ecology by Hadley Wickham: options(stringsAsFactors = FALSE)a b",
+    "twitter_title": "Drop unused factor levels | R-bloggers",
+    "url": "https://www.r-bloggers.com/2008/02/drop-unused-factor-levels/",
+    "word_count": 431
+  }
+}

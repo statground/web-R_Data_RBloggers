@@ -1,0 +1,96 @@
+{
+  "uuid": "dfac942f-4bfb-4c71-aceb-580fe8f6250f",
+  "created_at": "2025-11-22 19:59:32",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/01/maximizing-efficiency-with-ai-assisted-testing-lessons-learned-2/",
+    "crawled_at": "2025-11-22T10:56:07.521105",
+    "external_links": [
+      {
+        "href": "https://jakubsobolewski.com/blog/ai-assisted-testing",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/ai-assisted-testing",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Maximizing Efficiency with AI-Assisted Testing: Lessons Learned | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393515 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Maximizing Efficiency with AI-Assisted Testing: Lessons Learned</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 12, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsobolewski.com/blog/ai-assisted-testing\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>With AI-assistance developers can focus on designing, not just writing code, so it’s even more important we know what good code, and tests, looks like.</p>\n<h2 id=\"ai-generated-tests-might-be-not-optimized-for-human-readability\">AI generated tests might be not optimized for human readability.</h2>\n<p>When we allow the AI to generate tests, we might end up with tests that are working and are difficult to maintain.</p>\n<p>One of the main reasons we write automated tests is to describe how the system should behave. If we can’t easily understand what tests are doing, it’s hard to know if the code is doing the right thing. Such tests will slow down the development process, as we need to spend more time understanding and maintaining them.</p>\n<p>In my experience, the best method to immediately improve test readability is to:</p>\n<ul>\n<li>Use Arrange, Act, Assert comments. Use them to separate each part of the test.</li>\n<li>Always test for a single outcome/behavior. If you call your tested code multiple times in a test, you should split it.</li>\n</ul>\n<p>If you are using a chat to generate tests, ask it to adhere to these rules, or write one test on your own and ask it to copy your style.</p>\n<p>If you can’t do that, refactor the tests.</p>\n<h2 id=\"ai-generated-tests-might-not-be-aware-of-the-intent\">AI generated tests might not be aware of the intent.</h2>\n<p>If we just ask AI to generate unit tests, it might not be aware why the code is there in the first place.</p>\n<p>If you see a generated test title that says, “it should work correctly”, you should refactor it and specify what “correctly” means in this context. Otherwise instead of just reading the title and immediately knowing what the test is about, you will need to read the whole test to understand it.</p>\n<p>Add context to your tests, your future self will thank you.</p>\n<h2 id=\"ai-generated-tests-can-be-added-only-after-the-code-was-written\">AI generated tests can be added only after the code was written.</h2>\n<p>AI can be a great help when adding tests to a legacy codebase, but if we develop new code, I suggest keeping to the old-fashioned TDD.</p>\n<p>When we write tests first, we are forced to think about the design of the code. We need to think about how the code should behave before we write it. We can also use tests to experiment with interfaces and select the best one.</p>\n<p>When we’re done with the design, we can ask AI to write the code to pass those tests.</p>\n<p>Human-written tests are a guardrail for AI-generated code. We know what was the intent of the code, and we can check if the AI code is doing what we wanted. Just pay attention if AI isn’t adding more code than necessary to pass the test.</p>\n<p>Use AI wisely, and it can speed you up in the long term, not just here and now.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsobolewski.com/blog/ai-assisted-testing\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Maximizing Efficiency with AI-Assisted Testing: Lessons Learned\nPosted on\nJanuary 12, 2025\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWith AI-assistance developers can focus on designing, not just writing code, so it’s even more important we know what good code, and tests, looks like.\nAI generated tests might be not optimized for human readability.\nWhen we allow the AI to generate tests, we might end up with tests that are working and are difficult to maintain.\nOne of the main reasons we write automated tests is to describe how the system should behave. If we can’t easily understand what tests are doing, it’s hard to know if the code is doing the right thing. Such tests will slow down the development process, as we need to spend more time understanding and maintaining them.\nIn my experience, the best method to immediately improve test readability is to:\nUse Arrange, Act, Assert comments. Use them to separate each part of the test.\nAlways test for a single outcome/behavior. If you call your tested code multiple times in a test, you should split it.\nIf you are using a chat to generate tests, ask it to adhere to these rules, or write one test on your own and ask it to copy your style.\nIf you can’t do that, refactor the tests.\nAI generated tests might not be aware of the intent.\nIf we just ask AI to generate unit tests, it might not be aware why the code is there in the first place.\nIf you see a generated test title that says, “it should work correctly”, you should refactor it and specify what “correctly” means in this context. Otherwise instead of just reading the title and immediately knowing what the test is about, you will need to read the whole test to understand it.\nAdd context to your tests, your future self will thank you.\nAI generated tests can be added only after the code was written.\nAI can be a great help when adding tests to a legacy codebase, but if we develop new code, I suggest keeping to the old-fashioned TDD.\nWhen we write tests first, we are forced to think about the design of the code. We need to think about how the code should behave before we write it. We can also use tests to experiment with interfaces and select the best one.\nWhen we’re done with the design, we can ask AI to write the code to pass those tests.\nHuman-written tests are a guardrail for AI-generated code. We know what was the intent of the code, and we can check if the AI code is doing what we wanted. Just pay attention if AI isn’t adding more code than necessary to pass the test.\nUse AI wisely, and it can speed you up in the long term, not just here and now.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Discover the benefits and challenges of AI-assisted testing, and learn how to optimize your testing process for better code quality and maintainability.",
+    "meta_keywords": null,
+    "og_description": "Discover the benefits and challenges of AI-assisted testing, and learn how to optimize your testing process for better code quality and maintainability.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Maximizing Efficiency with AI-Assisted Testing: Lessons Learned | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.1,
+    "sitemap_lastmod": null,
+    "twitter_description": "Discover the benefits and challenges of AI-assisted testing, and learn how to optimize your testing process for better code quality and maintainability.",
+    "twitter_title": "Maximizing Efficiency with AI-Assisted Testing: Lessons Learned | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/01/maximizing-efficiency-with-ai-assisted-testing-lessons-learned-2/",
+    "word_count": 611
+  }
+}

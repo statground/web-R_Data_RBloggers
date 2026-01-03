@@ -1,0 +1,96 @@
+{
+  "uuid": "d96b689e-6b42-404d-a937-485379c3791e",
+  "created_at": "2025-11-17 20:39:25",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/fitting-a-distribution-to-data-in-r/",
+    "crawled_at": "2025-11-17T10:01:06.788347",
+    "external_links": [
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-11-02/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-11-02/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Fitting a Distribution to Data in R | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/",
+        "text": "Steven P. Sanderson II, MPH"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379605 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Fitting a Distribution to Data in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 1, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/\">Steven P. Sanderson II, MPH</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-11-02/index.html\"> Steve's Data Tips and Tricks</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<section class=\"level1\" id=\"introduction\">\n<h1>Introduction</h1>\n<p>The gamma distribution is a continuous probability distribution that is often used to model waiting times or other positively skewed data. It is a two-parameter distribution, where the shape parameter controls the skewness of the distribution and the scale parameter controls the spread of the distribution.</p>\n</section>\n<section class=\"level1\" id=\"fitting-a-gamma-distribution-to-a-dataset-in-r\">\n<h1>Fitting a gamma distribution to a dataset in R</h1>\n<p>There are two main ways to fit a gamma distribution to a dataset in R:</p>\n<ol type=\"1\">\n<li><strong>Maximum likelihood estimation (MLE)</strong>: This method estimates the parameters of the gamma distribution that are most likely to have produced the observed data.</li>\n<li><strong>Method of moments:</strong> This method estimates the parameters of the gamma distribution by equating the sample mean and variance to the theoretical mean and variance of the gamma distribution.</li>\n</ol>\n<p><strong>MLE</strong> is the more common and generally more reliable method of fitting a gamma distribution to a dataset. To fit a gamma distribution to a dataset using MLE, we can use the <code>fitdist()</code> function from the <code>fitdistrplus</code> package.</p>\n<div class=\"cell\">\n<pre># Install the fitdistrplus package if necessary\n#install.packages(\"fitdistrplus\")\n\n# Load the fitdistrplus package\nlibrary(fitdistrplus)\nlibrary(TidyDensity)\n\nset.seed(123)\ndata &lt;- tidy_gamma(.n = 500)$y\n\n# Fit a gamma distribution to the data\nfit &lt;- fitdist(data, distr = \"gamma\", method = \"mle\")</pre>\n</div>\n<p>The <code>fit</code> object contains the estimated parameters of the gamma distribution, as well as other information about the fit. We can access the estimated parameters using the <code>coef()</code> function. Now the <code>tidy_gamma()</code> function from the TidyDensity package comes with a default setting of a <code>.scale = 0.3</code> and <code>shape = 1</code>. The rate is <code>1/.scale</code>, so by default it is 3.33333</p>\n<div class=\"cell\">\n<pre># Get the estimated parameters of the gamma distribution\ncoef(fit)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>   shape     rate \n1.031833 3.594773 </pre>\n</div>\n</div>\n<p>Now let’s see how that compares to the built in TidyDensity function:</p>\n<div class=\"cell\">\n<pre>util_gamma_param_estimate(data)$parameter_tbl[1,c(\"shape\",\"scale\",\"shape_ratio\")]</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre># A tibble: 1 × 3\n  shape scale shape_ratio\n  &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;\n1 0.983 0.292        3.36</pre>\n</div>\n</div>\n<p>In the above, the <code>shape_ratio</code> is the <code>rate</code></p>\n</section>\n<section class=\"level1\" id=\"try-on-your-own\">\n<h1>Try on your own!</h1>\n<p>I encourage you to try fitting a gamma distribution to your own data. You can use the <code>fitdistrplus</code> package in R to fit a gamma distribution to any dataset. Once you have fitted a gamma distribution to your data, you can use the estimated parameters to generate random samples from the gamma distribution or to calculate the probability of observing a particular value.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-11-02/index.html\"> Steve's Data Tips and Tricks</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Fitting a Distribution to Data in R\nPosted on\nNovember 1, 2023\nby\nSteven P. Sanderson II, MPH\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSteve's Data Tips and Tricks\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nThe gamma distribution is a continuous probability distribution that is often used to model waiting times or other positively skewed data. It is a two-parameter distribution, where the shape parameter controls the skewness of the distribution and the scale parameter controls the spread of the distribution.\nFitting a gamma distribution to a dataset in R\nThere are two main ways to fit a gamma distribution to a dataset in R:\nMaximum likelihood estimation (MLE)\n: This method estimates the parameters of the gamma distribution that are most likely to have produced the observed data.\nMethod of moments:\nThis method estimates the parameters of the gamma distribution by equating the sample mean and variance to the theoretical mean and variance of the gamma distribution.\nMLE\nis the more common and generally more reliable method of fitting a gamma distribution to a dataset. To fit a gamma distribution to a dataset using MLE, we can use the\nfitdist()\nfunction from the\nfitdistrplus\npackage.\n# Install the fitdistrplus package if necessary\n#install.packages(\"fitdistrplus\")\n\n# Load the fitdistrplus package\nlibrary(fitdistrplus)\nlibrary(TidyDensity)\n\nset.seed(123)\ndata <- tidy_gamma(.n = 500)$y\n\n# Fit a gamma distribution to the data\nfit <- fitdist(data, distr = \"gamma\", method = \"mle\")\nThe\nfit\nobject contains the estimated parameters of the gamma distribution, as well as other information about the fit. We can access the estimated parameters using the\ncoef()\nfunction. Now the\ntidy_gamma()\nfunction from the TidyDensity package comes with a default setting of a\n.scale = 0.3\nand\nshape = 1\n. The rate is\n1/.scale\n, so by default it is 3.33333\n# Get the estimated parameters of the gamma distribution\ncoef(fit)\nshape     rate \n1.031833 3.594773\nNow let’s see how that compares to the built in TidyDensity function:\nutil_gamma_param_estimate(data)$parameter_tbl[1,c(\"shape\",\"scale\",\"shape_ratio\")]\n# A tibble: 1 × 3\n  shape scale shape_ratio\n  <dbl> <dbl>       <dbl>\n1 0.983 0.292        3.36\nIn the above, the\nshape_ratio\nis the\nrate\nTry on your own!\nI encourage you to try fitting a gamma distribution to your own data. You can use the\nfitdistrplus\npackage in R to fit a gamma distribution to any dataset. Once you have fitted a gamma distribution to your data, you can use the estimated parameters to generate random samples from the gamma distribution or to calculate the probability of observing a particular value.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSteve's Data Tips and Tricks\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction The gamma distribution is a continuous probability distribution that is often used to model waiting times or other positively skewed data. It is a two-parameter distribution, where the shape parameter controls the skewness of the di...",
+    "meta_keywords": null,
+    "og_description": "Introduction The gamma distribution is a continuous probability distribution that is often used to model waiting times or other positively skewed data. It is a two-parameter distribution, where the shape parameter controls the skewness of the di...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Fitting a Distribution to Data in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.7,
+    "sitemap_lastmod": "2023-11-02T04:00:00+00:00",
+    "twitter_description": "Introduction The gamma distribution is a continuous probability distribution that is often used to model waiting times or other positively skewed data. It is a two-parameter distribution, where the shape parameter controls the skewness of the di...",
+    "twitter_title": "Fitting a Distribution to Data in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/fitting-a-distribution-to-data-in-r/",
+    "word_count": 544
+  }
+}

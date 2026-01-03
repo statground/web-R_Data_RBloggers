@@ -1,0 +1,588 @@
+{
+  "uuid": "064a30ec-8612-4b04-8649-f9413de4faf5",
+  "created_at": "2025-11-17 20:39:08",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/ropensci-news-digest-november-2023/",
+    "crawled_at": "2025-11-17T09:49:33.861033",
+    "external_links": [
+      {
+        "href": "https://ropensci.org/blog/2023/11/24/news-november-2023/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/11/24/news-november-2023",
+        "text": "on our blog"
+      },
+      {
+        "href": "https://ropensci.org/donate/",
+        "text": "https://ropensci.org/donate/"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/11/17/runiverse-wasm/",
+        "text": "tech note"
+      },
+      {
+        "href": "https://ropensci.org/commcalls/oct2023-government/",
+        "text": "R in Government"
+      },
+      {
+        "href": "https://ropensci.org/commcalls/oct2023-government/",
+        "text": "community call"
+      },
+      {
+        "href": "https://ropensci.org/author/lu%C3%ADza-andrade/",
+        "text": "Luíza Andrade"
+      },
+      {
+        "href": "https://ropensci.org/author/karly-harker/",
+        "text": "Karly Harker"
+      },
+      {
+        "href": "https://ropensci.org/author/ahmadou-dicko/",
+        "text": "Ahmadou Dicko"
+      },
+      {
+        "href": "https://ropensci.org/author/pablo-tiscornia/",
+        "text": "Pablo Tiscornia"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/06/21/coworking/",
+        "text": "all about coworking"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/06/21/coworking/",
+        "text": "post"
+      },
+      {
+        "href": "https://ropensci.org/events",
+        "text": "Events"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2023-12/",
+        "text": "Tuesday, December 5th, 9:00 Australian Western (01:00 UTC)"
+      },
+      {
+        "href": "https://ropensci.org/author/adam-sparks/",
+        "text": "Adam Sparks"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2024-01/",
+        "text": "Tuesday, January 9th, 14:00 Europe Central (13:00 UTC)"
+      },
+      {
+        "href": "https://ropensci.org/author/jon-harmon/",
+        "text": "Jon Harmon"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2024-02/",
+        "text": "Tuesday, February 6th, 9:00 Americas Pacific (17:00 UTC)"
+      },
+      {
+        "href": "https://ropensci.org/author/jeroen-ooms/",
+        "text": "Jeroen Ooms"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://r-universe.dev/",
+        "text": "R-Universe"
+      },
+      {
+        "href": "https://docs.ropensci.org/fastMatMR",
+        "text": "fastMatMR"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/606",
+        "text": "https://github.com/ropensci/software-review/issues/606"
+      },
+      {
+        "href": "https://cran.r-project.org/package=fastMatMR",
+        "text": "CRAN"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/606",
+        "text": "reviewed"
+      },
+      {
+        "href": "https://ropensci.org/packages",
+        "text": "more packages"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://docs.ropensci.org/assertr",
+        "text": "assertr"
+      },
+      {
+        "href": "https://github.com/ropensci/assertr/releases/tag/v3.0.1",
+        "text": "v3.0.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/beastier",
+        "text": "beastier"
+      },
+      {
+        "href": "https://github.com/ropensci/beastier/releases/tag/v2.5",
+        "text": "v2.5"
+      },
+      {
+        "href": "https://docs.ropensci.org/beautier",
+        "text": "beautier"
+      },
+      {
+        "href": "https://github.com/ropensci/beautier/releases/tag/v2.6.11",
+        "text": "v2.6.11"
+      },
+      {
+        "href": "https://docs.ropensci.org/biomartr",
+        "text": "biomartr"
+      },
+      {
+        "href": "https://github.com/ropensci/biomartr/releases/tag/v1.0.6",
+        "text": "v1.0.6"
+      },
+      {
+        "href": "https://docs.ropensci.org/drake",
+        "text": "drake"
+      },
+      {
+        "href": "https://github.com/ropensci/drake/releases/tag/7.13.8",
+        "text": "7.13.8"
+      },
+      {
+        "href": "https://docs.ropensci.org/eia",
+        "text": "eia"
+      },
+      {
+        "href": "https://github.com/ropensci/eia/releases/tag/v0.4.1",
+        "text": "v0.4.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/fastMatMR",
+        "text": "fastMatMR"
+      },
+      {
+        "href": "https://github.com/ropensci/fastMatMR/releases/tag/v1.2.4",
+        "text": "v1.2.4"
+      },
+      {
+        "href": "https://docs.ropensci.org/gutenbergr",
+        "text": "gutenbergr"
+      },
+      {
+        "href": "https://github.com/ropensci/gutenbergr/releases/tag/v0.2.4",
+        "text": "v0.2.4"
+      },
+      {
+        "href": "https://docs.ropensci.org/opencv",
+        "text": "opencv"
+      },
+      {
+        "href": "https://github.com/ropensci/opencv/releases/tag/v0.4.0",
+        "text": "v0.4.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/stats19",
+        "text": "stats19"
+      },
+      {
+        "href": "https://github.com/ropensci/stats19/releases/tag/v3.0.2",
+        "text": "v3.0.2"
+      },
+      {
+        "href": "https://docs.ropensci.org/waywiser",
+        "text": "waywiser"
+      },
+      {
+        "href": "https://github.com/ropensci/waywiser/releases/tag/v0.5.1",
+        "text": "v0.5.1"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A6/approved",
+        "text": "‘6/approved’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/606",
+        "text": "fastMatMR"
+      },
+      {
+        "href": "https://rgoswami.me/",
+        "text": "Rohit Goswami"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/522",
+        "text": "wmm"
+      },
+      {
+        "href": "https://github.com/wfrierson",
+        "text": "Will Frierson"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A4/review(s)-in-awaiting-changes",
+        "text": "‘4/review(s)-in-awaiting-changes’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/603",
+        "text": "GLMMcosinor"
+      },
+      {
+        "href": "https://rwparsons.github.io/",
+        "text": "Rex Parsons"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/600",
+        "text": "naijR"
+      },
+      {
+        "href": "https://victorordu.wordpress.com/",
+        "text": "Victor Ordu"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/502",
+        "text": "octolog"
+      },
+      {
+        "href": "https://github.com/assignUser",
+        "text": "Jacob Wujciak-Jens"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A3/reviewer(s)-assigned",
+        "text": "‘3/reviewer(s)-assigned’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/613",
+        "text": "comtradr"
+      },
+      {
+        "href": "https://github.com/datapumpernickel",
+        "text": "paulbochtler"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/609",
+        "text": "baRulho"
+      },
+      {
+        "href": "https://marceloarayasalas.weebly.com/",
+        "text": "Marcelo Araya-Salas"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/595",
+        "text": "rangr"
+      },
+      {
+        "href": "https://github.com/katarzynam-165",
+        "text": "Katarzyna Markowska"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/590",
+        "text": "mregions2"
+      },
+      {
+        "href": "https://salvafern.github.io/",
+        "text": "salvafern"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/575",
+        "text": "pangoling"
+      },
+      {
+        "href": "https://bnicenboim.github.io/",
+        "text": "Bruno Nicenboim"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/556",
+        "text": "dfms"
+      },
+      {
+        "href": "https://github.com/SebKrantz",
+        "text": "Sebastian Krantz"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/546",
+        "text": "fwildclusterboot"
+      },
+      {
+        "href": "https://s3alfisc.github.io/blog/",
+        "text": "Alexander Fischer"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A2/seeking-reviewer(s)",
+        "text": "‘2/seeking-reviewer(s)’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/598",
+        "text": "weatherOz"
+      },
+      {
+        "href": "https://github.com/bozaah",
+        "text": "Rodrigo Pires"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/489",
+        "text": "bssm"
+      },
+      {
+        "href": "https://jounihelske.netlify.app/",
+        "text": "Jouni Helske"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A1/editor-checks",
+        "text": "‘1/editor-checks’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/618",
+        "text": "fellingdateR"
+      },
+      {
+        "href": "https://wwww.researchgate.net/profile/Kristof_Haneca",
+        "text": "KriHa"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/608",
+        "text": "rgeeExtra"
+      },
+      {
+        "href": "http://csaybar.github.io/",
+        "text": "Cesar Aybar"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/599",
+        "text": "agromet"
+      },
+      {
+        "href": "https://paocorrales.github.io/",
+        "text": "Paola Corrales"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/572",
+        "text": "qualtdict"
+      },
+      {
+        "href": "https://github.com/lyh970817",
+        "text": "lyh970817"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/11/06/r-universe-stars-finale",
+        "text": "The rOpenSci Multiverse"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2023/11/06/r-universe-stars-finale-es",
+        "text": "El multiverso de rOpenSci (es)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/11/21/donation-2023",
+        "text": "Empowering Open Science: Donate to Support our Mission"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/10/30/opencv-qr",
+        "text": "Scanning QR codes in R"
+      },
+      {
+        "href": "https://rweekly.fireside.fm/143",
+        "text": "R Weekly Highlights podcast"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/11/17/runiverse-wasm",
+        "text": "R-universe now builds WASM binaries for all R packages"
+      },
+      {
+        "href": "https://discuss.ropensci.org/t/a-toolkit-workflow-for-climate-sensitive-infectious-disease-modelling/3659",
+        "text": "A toolkit workflow for climate-sensitive infectious disease modelling"
+      },
+      {
+        "href": "https://discuss.ropensci.org/t/targets-and-other-tools-to-make-college-comparison-website/3680",
+        "text": "Targets and other tools to make college comparison website"
+      },
+      {
+        "href": "https://discuss.ropensci.org/t/unlock-r-functions-with-qr-codes/3681",
+        "text": "Unlock R functions with QR codes"
+      },
+      {
+        "href": "https://ropensci.org/usecases",
+        "text": "other use cases"
+      },
+      {
+        "href": "https://discuss.ropensci.org/c/usecases/10",
+        "text": "report your own"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/",
+        "text": "What Does It Mean to Maintain a Package?"
+      },
+      {
+        "href": "https://rweekly.fireside.fm/111",
+        "text": "R Weekly highlights podcast"
+      },
+      {
+        "href": "https://cran.r-project.org/web/packages/rvertnet/index.html",
+        "text": "rvertnet"
+      },
+      {
+        "href": "https://vertnet.org/",
+        "text": "https://vertnet.org/"
+      },
+      {
+        "href": "https://github.com/ropensci-archive/rvertnet/issues/71",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://ropensci.org/blog/2022/10/17/maintain-or-co-maintain-an-ropensci-package/#packages-looking-for-co-maintainers",
+        "text": "recent blog post"
+      },
+      {
+        "href": "https://ropensci.org/help-wanted/",
+        "text": "help wanted page"
+      },
+      {
+        "href": "https://www.mm218.dev/posts/2023-11-07-classed-errors/",
+        "text": "Mike Mahoney’s short and insightful blog post"
+      },
+      {
+        "href": "https://lintr.r-lib.org/news/index.html#lintr-311",
+        "text": "changelog"
+      },
+      {
+        "href": "https://www.njtierney.com/post/2023/11/10/how-to-get-good-with-r/",
+        "text": "How to get good with R"
+      },
+      {
+        "href": "https://epiverse-trace.github.io/posts/for-vs-apply/",
+        "text": "“Lesser-known reasons to preferapply()over for loops”"
+      },
+      {
+        "href": "https://masalmon.eu/2023/06/06/basic-patterns/#use-a-default-if-the-user-provided-null",
+        "text": "might know"
+      },
+      {
+        "href": "https://github.com/wch/r-source/commit/10df7eac991c297271e16c7a1888240196d540f2",
+        "text": "the development version of base R"
+      },
+      {
+        "href": "https://mastodon.social/@jennybryan@fosstodon.org/111302964212692505",
+        "text": "toot of Jenny Bryan’s"
+      },
+      {
+        "href": "https://github.com/r-hub/evercran#readme",
+        "text": "evercran project"
+      },
+      {
+        "href": "https://contributing.ropensci.org/",
+        "text": "Contributing Guide"
+      },
+      {
+        "href": "https://ropensci.org/donate",
+        "text": "donations"
+      },
+      {
+        "href": "https://ropensci.org/news/",
+        "text": "do so via a form"
+      },
+      {
+        "href": "https://ropensci.org/",
+        "text": "website"
+      },
+      {
+        "href": "https://hachyderm.io/@rOpenSci",
+        "text": "Mastodon account"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/11/24/news-november-2023/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "rOpenSci News Digest, November 2023 | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-380280 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">rOpenSci News Digest, November 2023</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 23, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2023/11/24/news-november-2023/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<!-- Before sending DELETE THE INDEX_CACHE and re-knit! -->\n<p>Dear rOpenSci friends, it’s time for our monthly news roundup!</p>\n<!-- blabla -->\n<p>You can read this post <a href=\"https://ropensci.org/blog/2023/11/24/news-november-2023\" rel=\"nofollow\" target=\"_blank\">on our blog</a>.\nNow let’s dive into the activity at and around rOpenSci!</p>\n<h2>\nrOpenSci HQ\n</h2><h3>\nGiving season: consider donating to rOpenSci\n</h3><p>This Giving Season consider donating to rOpenSci to support our mission of empowering Open Science.</p>\n<p>Sustaining an open project with quality infrastructure freely accessible to the global and diverse community of R software users, research software developers, and engineers requires many different resources. Our organization’s ongoing costs are supported by grants and donations from individuals and organizations which share our vision and mission.</p>\n<p>By supporting us, you’re not just donating; you’re contributing to a community that’s breaking down barriers, creating opportunities, and shaping the future of open and reproducible science for everyone.</p>\n<p>Join us in this vital mission today! You can donate here: <a href=\"https://ropensci.org/donate/\" rel=\"nofollow\" target=\"_blank\">https://ropensci.org/donate/</a></p>\n<h3>\nR-universe now builds WASM binaries for all R packages!\n</h3><p>R-universe now builds WebAssembly binaries for all R packages for use in WebR applications such as shinylive.\nRead more in our <a href=\"https://ropensci.org/blog/2023/11/17/runiverse-wasm/\" rel=\"nofollow\" target=\"_blank\">tech note</a>.</p>\n<h3>\nRecording of comm call <a href=\"https://ropensci.org/commcalls/oct2023-government/\" rel=\"nofollow\" target=\"_blank\">R in Government</a>\n</h3><p>In this <a href=\"https://ropensci.org/commcalls/oct2023-government/\" rel=\"nofollow\" target=\"_blank\">community call</a>, our panelists shared their experiences and examples of projects with R at different levels of government and in different countries.</p>\n<p>With <a href=\"https://ropensci.org/author/lu%C3%ADza-andrade/\" rel=\"nofollow\" target=\"_blank\">Luíza Andrade</a>, <a href=\"https://ropensci.org/author/karly-harker/\" rel=\"nofollow\" target=\"_blank\">Karly Harker</a>, <a href=\"https://ropensci.org/author/ahmadou-dicko/\" rel=\"nofollow\" target=\"_blank\">Ahmadou Dicko</a>, <a href=\"https://ropensci.org/author/pablo-tiscornia/\" rel=\"nofollow\" target=\"_blank\">Pablo Tiscornia</a>.</p>\n<h3>\nCoworking\n</h3><p>Read <a href=\"https://ropensci.org/blog/2023/06/21/coworking/\" rel=\"nofollow\" target=\"_blank\">all about coworking</a> in our recent <a href=\"https://ropensci.org/blog/2023/06/21/coworking/\" rel=\"nofollow\" target=\"_blank\">post</a>!</p>\n<p>Join us for social coworking &amp; office hours monthly on first Tuesdays!\nHosted by Steffi LaZerte and various community hosts.\nEveryone welcome.\nNo RSVP needed.\nConsult our <a href=\"https://ropensci.org/events\" rel=\"nofollow\" target=\"_blank\">Events</a> page to find your local time and how to join.</p>\n<ul>\n<li>\n<p><a href=\"https://ropensci.org/events/coworking-2023-12/\" rel=\"nofollow\" target=\"_blank\">Tuesday, December 5th, 9:00 Australian Western (01:00 UTC)</a>, Why won’t it pass?! Troubleshooting R package checks. With community host <a href=\"https://ropensci.org/author/adam-sparks/\" rel=\"nofollow\" target=\"_blank\">Adam Sparks</a> and <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a>.</p>\n<ul>\n<li>Explore what R package checks are and where they might fail;</li>\n<li>Spend some time troubleshooting your own failing package checks;</li>\n<li>Discuss tips and tricks for troubleshooting package checks with our community host and other attendees.</li>\n</ul>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/events/coworking-2024-01/\" rel=\"nofollow\" target=\"_blank\">Tuesday, January 9th, 14:00 Europe Central (13:00 UTC)</a>, Working with APIs. With community host <a href=\"https://ropensci.org/author/jon-harmon/\" rel=\"nofollow\" target=\"_blank\">Jon Harmon</a> and <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a>.</p>\n<ul>\n<li>Explore using APIs in your own work;</li>\n<li>Learn about packages that can help;</li>\n<li>Discuss using APIs in R with our community host and other attendees.</li>\n</ul>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/events/coworking-2024-02/\" rel=\"nofollow\" target=\"_blank\">Tuesday, February 6th, 9:00 Americas Pacific (17:00 UTC)</a>, R-Universe Office Hours. With cohost <a href=\"https://ropensci.org/author/jeroen-ooms/\" rel=\"nofollow\" target=\"_blank\">Jeroen Ooms</a> and <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a>.</p>\n<ul>\n<li>Explore what the <a href=\"https://r-universe.dev/\" rel=\"nofollow\" target=\"_blank\">R-Universe</a> has to offer;</li>\n<li>Create your own R-Universe;</li>\n<li>Ask questions or troubleshoot your R-Universe problems with the cohost and other attendees.</li>\n</ul>\n</li>\n</ul>\n<p>And remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!</p>\n<h2>\nSoftware 📦\n</h2><h3>\nNew packages\n</h3><p>The following package recently became a part of our software suite:</p>\n<ul>\n<li><a href=\"https://docs.ropensci.org/fastMatMR\" rel=\"nofollow\" target=\"_blank\">fastMatMR</a>, developed by Rohit Goswami: An interface to the fast_matrix_market C++ library, this package offers efficient read and write operations for Matrix Market files in R. It supports both sparse and dense matrix formats. Peer-reviewed at ROpenSci (<a href=\"https://github.com/ropensci/software-review/issues/606\" rel=\"nofollow\" target=\"_blank\">https://github.com/ropensci/software-review/issues/606</a>). It is available on <a href=\"https://cran.r-project.org/package=fastMatMR\" rel=\"nofollow\" target=\"_blank\">CRAN</a>. It has been <a href=\"https://github.com/ropensci/software-review/issues/606\" rel=\"nofollow\" target=\"_blank\">reviewed</a> by Øystein Sørensen and Ildikó Czeller.</li>\n</ul>\n<p>Discover <a href=\"https://ropensci.org/packages\" rel=\"nofollow\" target=\"_blank\">more packages</a>, read more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a>.</p>\n<h3>\nNew versions\n</h3><p>The following eleven packages have had an update since the last newsletter: <a href=\"https://docs.ropensci.org/assertr\" rel=\"nofollow\" target=\"_blank\" title=\"Assertive Programming for R Analysis Pipelines\">assertr</a> (<a href=\"https://github.com/ropensci/assertr/releases/tag/v3.0.1\" rel=\"nofollow\" target=\"_blank\"><code>v3.0.1</code></a>), <a href=\"https://docs.ropensci.org/beastier\" rel=\"nofollow\" target=\"_blank\" title=\"Call BEAST2\">beastier</a> (<a href=\"https://github.com/ropensci/beastier/releases/tag/v2.5\" rel=\"nofollow\" target=\"_blank\"><code>v2.5</code></a>), <a href=\"https://docs.ropensci.org/beautier\" rel=\"nofollow\" target=\"_blank\" title=\"BEAUti from R\">beautier</a> (<a href=\"https://github.com/ropensci/beautier/releases/tag/v2.6.11\" rel=\"nofollow\" target=\"_blank\"><code>v2.6.11</code></a>), <a href=\"https://docs.ropensci.org/biomartr\" rel=\"nofollow\" target=\"_blank\" title=\"Genomic Data Retrieval\">biomartr</a> (<a href=\"https://github.com/ropensci/biomartr/releases/tag/v1.0.6\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.6</code></a>), <a href=\"https://docs.ropensci.org/drake\" rel=\"nofollow\" target=\"_blank\" title=\"A Pipeline Toolkit for Reproducible Computation at Scale\">drake</a> (<a href=\"https://github.com/ropensci/drake/releases/tag/7.13.8\" rel=\"nofollow\" target=\"_blank\"><code>7.13.8</code></a>), <a href=\"https://docs.ropensci.org/eia\" rel=\"nofollow\" target=\"_blank\" title=\"API Wrapper for US Energy Information Administration Open Data\">eia</a> (<a href=\"https://github.com/ropensci/eia/releases/tag/v0.4.1\" rel=\"nofollow\" target=\"_blank\"><code>v0.4.1</code></a>), <a href=\"https://docs.ropensci.org/fastMatMR\" rel=\"nofollow\" target=\"_blank\" title=\"High-Performance Matrix Market File Operations\">fastMatMR</a> (<a href=\"https://github.com/ropensci/fastMatMR/releases/tag/v1.2.4\" rel=\"nofollow\" target=\"_blank\"><code>v1.2.4</code></a>), <a href=\"https://docs.ropensci.org/gutenbergr\" rel=\"nofollow\" target=\"_blank\" title=\"Download and Process Public Domain Works from Project Gutenberg\">gutenbergr</a> (<a href=\"https://github.com/ropensci/gutenbergr/releases/tag/v0.2.4\" rel=\"nofollow\" target=\"_blank\"><code>v0.2.4</code></a>), <a href=\"https://docs.ropensci.org/opencv\" rel=\"nofollow\" target=\"_blank\" title=\"Bindings to OpenCV Computer Vision Library\">opencv</a> (<a href=\"https://github.com/ropensci/opencv/releases/tag/v0.4.0\" rel=\"nofollow\" target=\"_blank\"><code>v0.4.0</code></a>), <a href=\"https://docs.ropensci.org/stats19\" rel=\"nofollow\" target=\"_blank\" title=\"Work with Open Road Traffic Casualty Data from Great Britain\">stats19</a> (<a href=\"https://github.com/ropensci/stats19/releases/tag/v3.0.2\" rel=\"nofollow\" target=\"_blank\"><code>v3.0.2</code></a>), and <a href=\"https://docs.ropensci.org/waywiser\" rel=\"nofollow\" target=\"_blank\" title=\"Ergonomic Methods for Assessing Spatial Models\">waywiser</a> (<a href=\"https://github.com/ropensci/waywiser/releases/tag/v0.5.1\" rel=\"nofollow\" target=\"_blank\"><code>v0.5.1</code></a>).</p>\n<h2>\nSoftware Peer Review\n</h2><p>There are eighteen recently closed and active submissions and 3 submissions on hold. Issues are at different stages:</p>\n<ul>\n<li>\n<p>Two at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A6/approved\" rel=\"nofollow\" target=\"_blank\">‘6/approved’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/606\" rel=\"nofollow\" target=\"_blank\">fastMatMR</a>, “fastMatMR: High-Performance Matrix Market File Operations in R”. Submitted by <a href=\"https://rgoswami.me/\" rel=\"nofollow\" target=\"_blank\">Rohit Goswami</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/522\" rel=\"nofollow\" target=\"_blank\">wmm</a>, World Magnetic Model. Submitted by <a href=\"https://github.com/wfrierson\" rel=\"nofollow\" target=\"_blank\">Will Frierson</a>.</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Three at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A4/review(s)-in-awaiting-changes\" rel=\"nofollow\" target=\"_blank\">‘4/review(s)-in-awaiting-changes’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/603\" rel=\"nofollow\" target=\"_blank\">GLMMcosinor</a>, Fit a cosinor model using a generalised mixed modelling framework. Submitted by <a href=\"https://rwparsons.github.io/\" rel=\"nofollow\" target=\"_blank\">Rex Parsons</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/600\" rel=\"nofollow\" target=\"_blank\">naijR</a>, Operations to Ease Data Analyses Specific to Nigeria. Submitted by <a href=\"https://victorordu.wordpress.com/\" rel=\"nofollow\" target=\"_blank\">Victor Ordu </a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/502\" rel=\"nofollow\" target=\"_blank\">octolog</a>, Better Github Action Logging. Submitted by <a href=\"https://github.com/assignUser\" rel=\"nofollow\" target=\"_blank\">Jacob Wujciak-Jens</a>.</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Seven at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A3/reviewer(s)-assigned\" rel=\"nofollow\" target=\"_blank\">‘3/reviewer(s)-assigned’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/613\" rel=\"nofollow\" target=\"_blank\">comtradr</a>, Interface with the United Nations Comtrade API. Submitted by <a href=\"https://github.com/datapumpernickel\" rel=\"nofollow\" target=\"_blank\">paulbochtler</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/609\" rel=\"nofollow\" target=\"_blank\">baRulho</a>, Quantifying (Animal) Sound Degradation. Submitted by <a href=\"https://marceloarayasalas.weebly.com/\" rel=\"nofollow\" target=\"_blank\">Marcelo Araya-Salas</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/595\" rel=\"nofollow\" target=\"_blank\">rangr</a>, Mechanistic Simulation of Species Range Dynamics. Submitted by <a href=\"https://github.com/katarzynam-165\" rel=\"nofollow\" target=\"_blank\">Katarzyna Markowska</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/590\" rel=\"nofollow\" target=\"_blank\">mregions2</a>, Access Data from Marineregions.org: The Marine Regions Gazetteer and the Marine Regions Data Products. Submitted by <a href=\"https://salvafern.github.io/\" rel=\"nofollow\" target=\"_blank\">salvafern</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/575\" rel=\"nofollow\" target=\"_blank\">pangoling</a>, Access to Large Language Model Predictions. Submitted by <a href=\"https://bnicenboim.github.io/\" rel=\"nofollow\" target=\"_blank\">Bruno Nicenboim</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/556\" rel=\"nofollow\" target=\"_blank\">dfms</a>, Dynamic Factor Models. Submitted by <a href=\"https://github.com/SebKrantz\" rel=\"nofollow\" target=\"_blank\">Sebastian Krantz</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/546\" rel=\"nofollow\" target=\"_blank\">fwildclusterboot</a>, Fast Wild Cluster Bootstrap Inference for Linear Models. Submitted by <a href=\"https://s3alfisc.github.io/blog/\" rel=\"nofollow\" target=\"_blank\">Alexander Fischer</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Two at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A2/seeking-reviewer(s)\" rel=\"nofollow\" target=\"_blank\">‘2/seeking-reviewer(s)’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/598\" rel=\"nofollow\" target=\"_blank\">weatherOz</a>, An API Client for Australian Weather and Climate Data Resources. Submitted by <a href=\"https://github.com/bozaah\" rel=\"nofollow\" target=\"_blank\">Rodrigo Pires</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/489\" rel=\"nofollow\" target=\"_blank\">bssm</a>, Bayesian Inference of Non-Linear and Non-Gaussian State Space. Submitted by <a href=\"https://jounihelske.netlify.app/\" rel=\"nofollow\" target=\"_blank\">Jouni Helske</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Four at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A1/editor-checks\" rel=\"nofollow\" target=\"_blank\">‘1/editor-checks’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/618\" rel=\"nofollow\" target=\"_blank\">fellingdateR</a>, Estimate, report and combine felling dates of historical tree-ring. Submitted by <a href=\"https://wwww.researchgate.net/profile/Kristof_Haneca\" rel=\"nofollow\" target=\"_blank\">KriHa</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/608\" rel=\"nofollow\" target=\"_blank\">rgeeExtra</a>, Extensions for rgee. Submitted by <a href=\"http://csaybar.github.io/\" rel=\"nofollow\" target=\"_blank\">Cesar Aybar</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/599\" rel=\"nofollow\" target=\"_blank\">agromet</a>, Índices y Estadísticos Climáticos e Hidrológicos. Submitted by <a href=\"https://paocorrales.github.io/\" rel=\"nofollow\" target=\"_blank\">Paola Corrales</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/572\" rel=\"nofollow\" target=\"_blank\">qualtdict</a>, Generating Variable Dictionaries and Labelled Data Exports of Qualtrics. Submitted by <a href=\"https://github.com/lyh970817\" rel=\"nofollow\" target=\"_blank\">lyh970817</a>.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>Find out more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a> and how to get involved.</p>\n<h2>\nOn the blog\n</h2><!-- Do not forget to rebase your branch! -->\n<ul>\n<li>\n<p><a href=\"https://ropensci.org/blog/2023/11/06/r-universe-stars-finale\" rel=\"nofollow\" target=\"_blank\">The rOpenSci Multiverse</a> by Alejandra Bellini and Yanina Bellini Saibene. In this article we summarize the interviews of the series <em>Meeting the stars of the R universe</em> In this article, we bring you five examples of organizations and teams that choose the R Universe to facilitate access and promote community sharing of data and software. Other languages: <a href=\"https://ropensci.org/es/blog/2023/11/06/r-universe-stars-finale-es\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">El multiverso de rOpenSci (es)</a>.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2023/11/21/donation-2023\" rel=\"nofollow\" target=\"_blank\">Empowering Open Science: Donate to Support our Mission</a> by The rOpenSci Team. rOpenSci is a nonprofit organization that is funded entirely by grants and donations. These collaborations enable us to sustain our projects and meet our goals.</p>\n</li>\n</ul>\n<h3>\nTech Notes\n</h3><ul>\n<li>\n<p><a href=\"https://ropensci.org/blog/2023/10/30/opencv-qr\" rel=\"nofollow\" target=\"_blank\">Scanning QR codes in R</a> by Jeroen Ooms. The new version of the opencv package includes a cool QR code scanner. This post was featured in the <a href=\"https://rweekly.fireside.fm/143\" rel=\"nofollow\" target=\"_blank\">R Weekly Highlights podcast</a> hosted by Eric Nantz and Mike Thomas.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2023/11/17/runiverse-wasm\" rel=\"nofollow\" target=\"_blank\">R-universe now builds WASM binaries for all R packages</a> by Jeroen Ooms. R-universe now builds WebAssembly binaries for all R packages for use in WebR applications such as shinylive.</p>\n</li>\n</ul>\n<h2>\nUse cases\n</h2><p>Three use cases of our packages and resources have been reported since we sent the last newsletter.</p>\n<ul>\n<li>\n<p><a href=\"https://discuss.ropensci.org/t/a-toolkit-workflow-for-climate-sensitive-infectious-disease-modelling/3659\" rel=\"nofollow\" target=\"_blank\">A toolkit workflow for climate-sensitive infectious disease modelling</a>. Reported by Raphael Saldanha.</p>\n</li>\n<li>\n<p><a href=\"https://discuss.ropensci.org/t/targets-and-other-tools-to-make-college-comparison-website/3680\" rel=\"nofollow\" target=\"_blank\">Targets and other tools to make college comparison website</a>. Reported by Brian O’Meara.</p>\n</li>\n<li>\n<p><a href=\"https://discuss.ropensci.org/t/unlock-r-functions-with-qr-codes/3681\" rel=\"nofollow\" target=\"_blank\">Unlock R functions with QR codes</a>. Reported by Matt Dray.</p>\n</li>\n</ul>\n<p>Explore <a href=\"https://ropensci.org/usecases\" rel=\"nofollow\" target=\"_blank\">other use cases</a> and <a href=\"https://discuss.ropensci.org/c/usecases/10\" rel=\"nofollow\" target=\"_blank\">report your own</a>!</p>\n<h2>\nCall for maintainers\n</h2><p>If you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post <a href=\"https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/\" rel=\"nofollow\" target=\"_blank\">What Does It Mean to Maintain a Package?</a> (or listening to its discussion on the <a href=\"https://rweekly.fireside.fm/111\" rel=\"nofollow\" target=\"_blank\">R Weekly highlights podcast</a> hosted by Eric Nantz and Mike Thomas)!</p>\n<ul>\n<li><strong><a href=\"https://cran.r-project.org/web/packages/rvertnet/index.html\" rel=\"nofollow\" target=\"_blank\">rvertnet</a></strong>, Retrieve, map and summarize data from the VertNet.org archives (<a href=\"https://vertnet.org/\" rel=\"nofollow\" target=\"_blank\">https://vertnet.org/</a>). Functions allow searching by many parameters, including taxonomic names, places, and dates. In addition, there is an interface for conducting spatially delimited searches, and another for requesting large datasets via email. <a href=\"https://github.com/ropensci-archive/rvertnet/issues/71\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</li>\n</ul>\n<h3>\nCall for co-maintainers\n</h3><p>Refer to our somewhat <a href=\"https://ropensci.org/blog/2022/10/17/maintain-or-co-maintain-an-ropensci-package/#packages-looking-for-co-maintainers\" rel=\"nofollow\" target=\"_blank\">recent blog post</a> to identify other packages where help is especially wished for!\nSee also our <a href=\"https://ropensci.org/help-wanted/\" rel=\"nofollow\" target=\"_blank\">help wanted page</a> – before opening a PR, we recommend asking in the issue whether help is still needed.</p>\n<h2>\nPackage development corner\n</h2><p>Some useful tips for R package developers. 👀\nFor a change, this month’s tips are more about programming than about packaging.</p>\n<h3>\nClassed conditions from rlang functions\n</h3><p>If you use rlang (or cli, that will pass arguments to rlang) for messages, warnings, errors, you can add a class to the signal you’re returning.\nThis is handy for conditionally suppressing some warnings, and also for more specific testing, as explained in <a href=\"https://www.mm218.dev/posts/2023-11-07-classed-errors/\" rel=\"nofollow\" target=\"_blank\">Mike Mahoney’s short and insightful blog post</a>.</p>\n<h3>\nStatic code analysis with lintr\n</h3><p>The lintr package helps you write better R code by detecting common mistakes.\nIt is customizable: you can skip the linters you’re not interested in.</p>\n<p>A new version of the package was recently released on CRAN.\nRefer to the <a href=\"https://lintr.r-lib.org/news/index.html#lintr-311\" rel=\"nofollow\" target=\"_blank\">changelog</a> for the changes, including a way to exclude the next line for linting, and new linters, for instance <code>length_levels_linter()</code> “for using the specific function <code>nlevels()</code> instead of checking <code>length(levels(x))</code>”.</p>\n<h3>\nHow to get good with R\n</h3><p>Nick Tierney wrote a wise post on <a href=\"https://www.njtierney.com/post/2023/11/10/how-to-get-good-with-r/\" rel=\"nofollow\" target=\"_blank\">How to get good with R</a>, and the conclusion indicates he’s open to discussion.\nAn important topic not only for package developers.</p>\n<h3>\nLesser-known reasons to prefer <code>apply()</code> over for loops\n</h3><p>Hugo Gruson wrote a very informative blog post on <a href=\"https://epiverse-trace.github.io/posts/for-vs-apply/\" rel=\"nofollow\" target=\"_blank\">“Lesser-known reasons to prefer <code>apply()</code> over for loops”</a>.\nThe third one will surprise you. 😉 (Yes, this is click bait.)</p>\n<h3>\nNull coalescing operator soon in base R\n</h3><p>The <code>%||%</code> operator that you <a href=\"https://masalmon.eu/2023/06/06/basic-patterns/#use-a-default-if-the-user-provided-null\" rel=\"nofollow\" target=\"_blank\">might know</a> from rlang has been added to <a href=\"https://github.com/wch/r-source/commit/10df7eac991c297271e16c7a1888240196d540f2\" rel=\"nofollow\" target=\"_blank\">the development version of base R</a>!\nSource: a <a href=\"https://mastodon.social/@jennybryan@fosstodon.org/111302964212692505\" rel=\"nofollow\" target=\"_blank\">toot of Jenny Bryan’s</a>.</p>\n<h3>\nEvercran: run historical R versions on today’s computers\n</h3><p>Gábor Csárdi’s experimental <a href=\"https://github.com/r-hub/evercran#readme\" rel=\"nofollow\" target=\"_blank\">evercran project</a> helps you run historical R versions on today’s computers</p>\n<h2>\nLast words\n</h2><p>Thanks for reading! If you want to get involved with rOpenSci, check out our <a href=\"https://contributing.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">Contributing Guide</a> that can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases.\nYou can also support our work through <a href=\"https://ropensci.org/donate\" rel=\"nofollow\" target=\"_blank\">donations</a>.</p>\n<p>If you haven’t subscribed to our newsletter yet, you can <a href=\"https://ropensci.org/news/\" rel=\"nofollow\" target=\"_blank\">do so via a form</a>. Until it’s time for our next newsletter, you can keep in touch with us via our <a href=\"https://ropensci.org/\" rel=\"nofollow\" target=\"_blank\">website</a> and <a href=\"https://hachyderm.io/@rOpenSci\" rel=\"nofollow\" target=\"_blank\">Mastodon account</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2023/11/24/news-november-2023/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "rOpenSci News Digest, November 2023\nPosted on\nNovember 23, 2023\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDear rOpenSci friends, it’s time for our monthly news roundup!\nYou can read this post\non our blog\n.\nNow let’s dive into the activity at and around rOpenSci!\nrOpenSci HQ\nGiving season: consider donating to rOpenSci\nThis Giving Season consider donating to rOpenSci to support our mission of empowering Open Science.\nSustaining an open project with quality infrastructure freely accessible to the global and diverse community of R software users, research software developers, and engineers requires many different resources. Our organization’s ongoing costs are supported by grants and donations from individuals and organizations which share our vision and mission.\nBy supporting us, you’re not just donating; you’re contributing to a community that’s breaking down barriers, creating opportunities, and shaping the future of open and reproducible science for everyone.\nJoin us in this vital mission today! You can donate here:\nhttps://ropensci.org/donate/\nR-universe now builds WASM binaries for all R packages!\nR-universe now builds WebAssembly binaries for all R packages for use in WebR applications such as shinylive.\nRead more in our\ntech note\n.\nRecording of comm call\nR in Government\nIn this\ncommunity call\n, our panelists shared their experiences and examples of projects with R at different levels of government and in different countries.\nWith\nLuíza Andrade\n,\nKarly Harker\n,\nAhmadou Dicko\n,\nPablo Tiscornia\n.\nCoworking\nRead\nall about coworking\nin our recent\npost\n!\nJoin us for social coworking & office hours monthly on first Tuesdays!\nHosted by Steffi LaZerte and various community hosts.\nEveryone welcome.\nNo RSVP needed.\nConsult our\nEvents\npage to find your local time and how to join.\nTuesday, December 5th, 9:00 Australian Western (01:00 UTC)\n, Why won’t it pass?! Troubleshooting R package checks. With community host\nAdam Sparks\nand\nSteffi LaZerte\n.\nExplore what R package checks are and where they might fail;\nSpend some time troubleshooting your own failing package checks;\nDiscuss tips and tricks for troubleshooting package checks with our community host and other attendees.\nTuesday, January 9th, 14:00 Europe Central (13:00 UTC)\n, Working with APIs. With community host\nJon Harmon\nand\nSteffi LaZerte\n.\nExplore using APIs in your own work;\nLearn about packages that can help;\nDiscuss using APIs in R with our community host and other attendees.\nTuesday, February 6th, 9:00 Americas Pacific (17:00 UTC)\n, R-Universe Office Hours. With cohost\nJeroen Ooms\nand\nSteffi LaZerte\n.\nExplore what the\nR-Universe\nhas to offer;\nCreate your own R-Universe;\nAsk questions or troubleshoot your R-Universe problems with the cohost and other attendees.\nAnd remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!\nSoftware 📦\nNew packages\nThe following package recently became a part of our software suite:\nfastMatMR\n, developed by Rohit Goswami: An interface to the fast_matrix_market C++ library, this package offers efficient read and write operations for Matrix Market files in R. It supports both sparse and dense matrix formats. Peer-reviewed at ROpenSci (\nhttps://github.com/ropensci/software-review/issues/606\n). It is available on\nCRAN\n. It has been\nreviewed\nby Øystein Sørensen and Ildikó Czeller.\nDiscover\nmore packages\n, read more about\nSoftware Peer Review\n.\nNew versions\nThe following eleven packages have had an update since the last newsletter:\nassertr\n(\nv3.0.1\n),\nbeastier\n(\nv2.5\n),\nbeautier\n(\nv2.6.11\n),\nbiomartr\n(\nv1.0.6\n),\ndrake\n(\n7.13.8\n),\neia\n(\nv0.4.1\n),\nfastMatMR\n(\nv1.2.4\n),\ngutenbergr\n(\nv0.2.4\n),\nopencv\n(\nv0.4.0\n),\nstats19\n(\nv3.0.2\n), and\nwaywiser\n(\nv0.5.1\n).\nSoftware Peer Review\nThere are eighteen recently closed and active submissions and 3 submissions on hold. Issues are at different stages:\nTwo at\n‘6/approved’\n:\nfastMatMR\n, “fastMatMR: High-Performance Matrix Market File Operations in R”. Submitted by\nRohit Goswami\n.\nwmm\n, World Magnetic Model. Submitted by\nWill Frierson\n.\nThree at\n‘4/review(s)-in-awaiting-changes’\n:\nGLMMcosinor\n, Fit a cosinor model using a generalised mixed modelling framework. Submitted by\nRex Parsons\n.\nnaijR\n, Operations to Ease Data Analyses Specific to Nigeria. Submitted by\nVictor Ordu\n.\noctolog\n, Better Github Action Logging. Submitted by\nJacob Wujciak-Jens\n.\nSeven at\n‘3/reviewer(s)-assigned’\n:\ncomtradr\n, Interface with the United Nations Comtrade API. Submitted by\npaulbochtler\n.\nbaRulho\n, Quantifying (Animal) Sound Degradation. Submitted by\nMarcelo Araya-Salas\n.\nrangr\n, Mechanistic Simulation of Species Range Dynamics. Submitted by\nKatarzyna Markowska\n.\nmregions2\n, Access Data from Marineregions.org: The Marine Regions Gazetteer and the Marine Regions Data Products. Submitted by\nsalvafern\n.\npangoling\n, Access to Large Language Model Predictions. Submitted by\nBruno Nicenboim\n.\ndfms\n, Dynamic Factor Models. Submitted by\nSebastian Krantz\n.\nfwildclusterboot\n, Fast Wild Cluster Bootstrap Inference for Linear Models. Submitted by\nAlexander Fischer\n. (Stats).\nTwo at\n‘2/seeking-reviewer(s)’\n:\nweatherOz\n, An API Client for Australian Weather and Climate Data Resources. Submitted by\nRodrigo Pires\n.\nbssm\n, Bayesian Inference of Non-Linear and Non-Gaussian State Space. Submitted by\nJouni Helske\n. (Stats).\nFour at\n‘1/editor-checks’\n:\nfellingdateR\n, Estimate, report and combine felling dates of historical tree-ring. Submitted by\nKriHa\n.\nrgeeExtra\n, Extensions for rgee. Submitted by\nCesar Aybar\n.\nagromet\n, Índices y Estadísticos Climáticos e Hidrológicos. Submitted by\nPaola Corrales\n.\nqualtdict\n, Generating Variable Dictionaries and Labelled Data Exports of Qualtrics. Submitted by\nlyh970817\n.\nFind out more about\nSoftware Peer Review\nand how to get involved.\nOn the blog\nThe rOpenSci Multiverse\nby Alejandra Bellini and Yanina Bellini Saibene. In this article we summarize the interviews of the series\nMeeting the stars of the R universe\nIn this article, we bring you five examples of organizations and teams that choose the R Universe to facilitate access and promote community sharing of data and software. Other languages:\nEl multiverso de rOpenSci (es)\n.\nEmpowering Open Science: Donate to Support our Mission\nby The rOpenSci Team. rOpenSci is a nonprofit organization that is funded entirely by grants and donations. These collaborations enable us to sustain our projects and meet our goals.\nTech Notes\nScanning QR codes in R\nby Jeroen Ooms. The new version of the opencv package includes a cool QR code scanner. This post was featured in the\nR Weekly Highlights podcast\nhosted by Eric Nantz and Mike Thomas.\nR-universe now builds WASM binaries for all R packages\nby Jeroen Ooms. R-universe now builds WebAssembly binaries for all R packages for use in WebR applications such as shinylive.\nUse cases\nThree use cases of our packages and resources have been reported since we sent the last newsletter.\nA toolkit workflow for climate-sensitive infectious disease modelling\n. Reported by Raphael Saldanha.\nTargets and other tools to make college comparison website\n. Reported by Brian O’Meara.\nUnlock R functions with QR codes\n. Reported by Matt Dray.\nExplore\nother use cases\nand\nreport your own\n!\nCall for maintainers\nIf you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post\nWhat Does It Mean to Maintain a Package?\n(or listening to its discussion on the\nR Weekly highlights podcast\nhosted by Eric Nantz and Mike Thomas)!\nrvertnet\n, Retrieve, map and summarize data from the VertNet.org archives (\nhttps://vertnet.org/\n). Functions allow searching by many parameters, including taxonomic names, places, and dates. In addition, there is an interface for conducting spatially delimited searches, and another for requesting large datasets via email.\nIssue for volunteering\n.\nCall for co-maintainers\nRefer to our somewhat\nrecent blog post\nto identify other packages where help is especially wished for!\nSee also our\nhelp wanted page\n– before opening a PR, we recommend asking in the issue whether help is still needed.\nPackage development corner\nSome useful tips for R package developers. 👀\nFor a change, this month’s tips are more about programming than about packaging.\nClassed conditions from rlang functions\nIf you use rlang (or cli, that will pass arguments to rlang) for messages, warnings, errors, you can add a class to the signal you’re returning.\nThis is handy for conditionally suppressing some warnings, and also for more specific testing, as explained in\nMike Mahoney’s short and insightful blog post\n.\nStatic code analysis with lintr\nThe lintr package helps you write better R code by detecting common mistakes.\nIt is customizable: you can skip the linters you’re not interested in.\nA new version of the package was recently released on CRAN.\nRefer to the\nchangelog\nfor the changes, including a way to exclude the next line for linting, and new linters, for instance\nlength_levels_linter()\n“for using the specific function\nnlevels()\ninstead of checking\nlength(levels(x))\n”.\nHow to get good with R\nNick Tierney wrote a wise post on\nHow to get good with R\n, and the conclusion indicates he’s open to discussion.\nAn important topic not only for package developers.\nLesser-known reasons to prefer\napply()\nover for loops\nHugo Gruson wrote a very informative blog post on\n“Lesser-known reasons to prefer\napply()\nover for loops”\n.\nThe third one will surprise you. 😉 (Yes, this is click bait.)\nNull coalescing operator soon in base R\nThe\n%||%\noperator that you\nmight know\nfrom rlang has been added to\nthe development version of base R\n!\nSource: a\ntoot of Jenny Bryan’s\n.\nEvercran: run historical R versions on today’s computers\nGábor Csárdi’s experimental\nevercran project\nhelps you run historical R versions on today’s computers\nLast words\nThanks for reading! If you want to get involved with rOpenSci, check out our\nContributing Guide\nthat can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases.\nYou can also support our work through\ndonations\n.\nIf you haven’t subscribed to our newsletter yet, you can\ndo so via a form\n. Until it’s time for our next newsletter, you can keep in touch with us via our\nwebsite\nand\nMastodon account\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Giving season: consider donating to rOpenSci This Giving Season con...",
+    "meta_keywords": null,
+    "og_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Giving season: consider donating to rOpenSci This Giving Season con...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "rOpenSci News Digest, November 2023 | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 8.9,
+    "sitemap_lastmod": "2023-11-24T00:00:00+00:00",
+    "twitter_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Giving season: consider donating to rOpenSci This Giving Season con...",
+    "twitter_title": "rOpenSci News Digest, November 2023 | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/ropensci-news-digest-november-2023/",
+    "word_count": 1786
+  }
+}

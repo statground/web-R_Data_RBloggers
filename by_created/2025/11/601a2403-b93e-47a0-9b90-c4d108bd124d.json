@@ -1,0 +1,127 @@
+{
+  "uuid": "601a2403-b93e-47a0-9b90-c4d108bd124d",
+  "created_at": "2025-11-17 20:39:29",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/10/plotting-log-log-plots-in-base-r/",
+    "crawled_at": "2025-11-17T10:02:35.566129",
+    "external_links": [
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-10-27/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-10-27/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Plotting Log Log Plots In Base R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-1-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-2-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-3-1.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/",
+        "text": "Steven P. Sanderson II, MPH"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379474 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Plotting Log Log Plots In Base R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 26, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/\">Steven P. Sanderson II, MPH</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-10-27/index.html\"> Steve's Data Tips and Tricks</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<section class=\"level1\" id=\"introduction\">\n<h1>Introduction</h1>\n<p>A log-log plot is a type of graph where both the x-axis and y-axis are in logarithmic scales. This is particularly useful when dealing with data that spans several orders of magnitude. By taking the logarithm of the data, we can compress large values and reveal patterns that might be hidden on a linear scale.</p>\n<p>Let’s start with a simple example using base R.</p>\n</section>\n<section class=\"level1\" id=\"examples\">\n<h1>Examples</h1>\n<section class=\"level2\" id=\"example-1-scatter-plot-with-log-log-scales\">\n<h2 class=\"anchored\" data-anchor-id=\"example-1-scatter-plot-with-log-log-scales\">Example 1: Scatter Plot with Log-Log Scales</h2>\n<div class=\"cell\">\n<pre># Sample data\nx &lt;- c(1, 10, 100, 1000)\ny &lt;- c(0.1, 1, 10, 100)\n\n# Create a log-log plot\nplot(x, y, log = \"xy\", main = \"Log-Log Plot Example\", \n     xlab = \"X (log scale)\", ylab = \"Y (log scale)\")</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-1-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-1-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>In this code, we create a scatter plot with log scales for both the x and y-axes using the <code>plot</code> function. The <code>log = \"xy\"</code> argument specifies that both axes should be in logarithmic scale. This makes it easier to visualize the relationship between x and y.</p>\n</section>\n<section class=\"level2\" id=\"example-2-line-plot-with-log-log-scales\">\n<h2 class=\"anchored\" data-anchor-id=\"example-2-line-plot-with-log-log-scales\">Example 2: Line Plot with Log-Log Scales</h2>\n<p>Let’s say you have data for a power law relationship, where y is proportional to x raised to a power. A log-log plot can help you confirm this relationship.</p>\n<div class=\"cell\">\n<pre># Generate data for a power law relationship\nx &lt;- 1:10\ny &lt;- 2 * x^2\n\n# Create a log-log plot\nplot(x, y, log = \"xy\", type = \"b\", pch = 19, col = \"blue\", \n     main = \"Log-Log Plot for Power Law\", xlab = \"X (log scale)\", ylab = \"Y (log scale)\")</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>Here, we generate data for a power law relationship (y = 2 * x^2) and create a log-log plot. The <code>type = \"b\"</code> argument adds both points and lines, making the plot easier to interpret. You can see that on a log-log scale, this power law relationship appears as a straight line.</p>\n</section>\n<section class=\"level2\" id=\"example-3-customizing-log-log-plots\">\n<h2 class=\"anchored\" data-anchor-id=\"example-3-customizing-log-log-plots\">Example 3: Customizing Log-Log Plots</h2>\n<p>You can further customize your log-log plots with various options.</p>\n<div class=\"cell\">\n<pre># Customizing a log-log plot\nx &lt;- c(1, 10, 100, 1000)\ny &lt;- c(0.1, 1, 10, 100)\n\nplot(x, y, log = \"xy\", main = \"Custom Log-Log Plot\",\n     xlab = \"X (log scale)\", ylab = \"Y (log scale)\",\n     xlim = c(0.1, 1000), ylim = c(0.1, 100), col = \"red\", pch = 15)\n\n# Adding grid lines\ngrid()\n\n# Adding a trendline (linear regression)\nabline(lm(log10(y) ~ log10(x)), col = \"blue\")</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-3-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-3-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>In this example, we customize the log-log plot by setting axis limits, changing the point color and type, adding grid lines, and even fitting a trendline using linear regression.</p>\n</section>\n</section>\n<section class=\"level1\" id=\"exploration\">\n<h1>Exploration</h1>\n<p>Log-log plots are powerful tools for visualizing data, especially when dealing with a wide range of values. I encourage you to try creating log-log plots with your own datasets. It’s an excellent way to gain insights into your data and discover underlying patterns that may not be apparent on a linear scale.</p>\n<p>Remember, the key is to use the <code>log</code> argument with “xy” to set both axes to logarithmic scales. Experiment with different types of data and customize your plots to make them more informative and engaging. Happy plotting!</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-10-27/index.html\"> Steve's Data Tips and Tricks</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Plotting Log Log Plots In Base R\nPosted on\nOctober 26, 2023\nby\nSteven P. Sanderson II, MPH\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSteve's Data Tips and Tricks\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nA log-log plot is a type of graph where both the x-axis and y-axis are in logarithmic scales. This is particularly useful when dealing with data that spans several orders of magnitude. By taking the logarithm of the data, we can compress large values and reveal patterns that might be hidden on a linear scale.\nLet’s start with a simple example using base R.\nExamples\nExample 1: Scatter Plot with Log-Log Scales\n# Sample data\nx <- c(1, 10, 100, 1000)\ny <- c(0.1, 1, 10, 100)\n\n# Create a log-log plot\nplot(x, y, log = \"xy\", main = \"Log-Log Plot Example\", \n     xlab = \"X (log scale)\", ylab = \"Y (log scale)\")\nIn this code, we create a scatter plot with log scales for both the x and y-axes using the\nplot\nfunction. The\nlog = \"xy\"\nargument specifies that both axes should be in logarithmic scale. This makes it easier to visualize the relationship between x and y.\nExample 2: Line Plot with Log-Log Scales\nLet’s say you have data for a power law relationship, where y is proportional to x raised to a power. A log-log plot can help you confirm this relationship.\n# Generate data for a power law relationship\nx <- 1:10\ny <- 2 * x^2\n\n# Create a log-log plot\nplot(x, y, log = \"xy\", type = \"b\", pch = 19, col = \"blue\", \n     main = \"Log-Log Plot for Power Law\", xlab = \"X (log scale)\", ylab = \"Y (log scale)\")\nHere, we generate data for a power law relationship (y = 2 * x^2) and create a log-log plot. The\ntype = \"b\"\nargument adds both points and lines, making the plot easier to interpret. You can see that on a log-log scale, this power law relationship appears as a straight line.\nExample 3: Customizing Log-Log Plots\nYou can further customize your log-log plots with various options.\n# Customizing a log-log plot\nx <- c(1, 10, 100, 1000)\ny <- c(0.1, 1, 10, 100)\n\nplot(x, y, log = \"xy\", main = \"Custom Log-Log Plot\",\n     xlab = \"X (log scale)\", ylab = \"Y (log scale)\",\n     xlim = c(0.1, 1000), ylim = c(0.1, 100), col = \"red\", pch = 15)\n\n# Adding grid lines\ngrid()\n\n# Adding a trendline (linear regression)\nabline(lm(log10(y) ~ log10(x)), col = \"blue\")\nIn this example, we customize the log-log plot by setting axis limits, changing the point color and type, adding grid lines, and even fitting a trendline using linear regression.\nExploration\nLog-log plots are powerful tools for visualizing data, especially when dealing with a wide range of values. I encourage you to try creating log-log plots with your own datasets. It’s an excellent way to gain insights into your data and discover underlying patterns that may not be apparent on a linear scale.\nRemember, the key is to use the\nlog\nargument with “xy” to set both axes to logarithmic scales. Experiment with different types of data and customize your plots to make them more informative and engaging. Happy plotting!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSteve's Data Tips and Tricks\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction A log-log plot is a type of graph where both the x-axis and y-axis are in logarithmic scales. This is particularly useful when dealing with data that spans several orders of magnitude. By taking the logarithm of the data, we can com...",
+    "meta_keywords": null,
+    "og_description": "Introduction A log-log plot is a type of graph where both the x-axis and y-axis are in logarithmic scales. This is particularly useful when dealing with data that spans several orders of magnitude. By taking the logarithm of the data, we can com...",
+    "og_image": "https://www.spsanderson.com/steveondata/posts/2023-10-27/index_files/figure-html/unnamed-chunk-1-1.png",
+    "og_title": "Plotting Log Log Plots In Base R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.3,
+    "sitemap_lastmod": "2023-10-27T04:00:00+00:00",
+    "twitter_description": "Introduction A log-log plot is a type of graph where both the x-axis and y-axis are in logarithmic scales. This is particularly useful when dealing with data that spans several orders of magnitude. By taking the logarithm of the data, we can com...",
+    "twitter_title": "Plotting Log Log Plots In Base R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/10/plotting-log-log-plots-in-base-r/",
+    "word_count": 658
+  }
+}

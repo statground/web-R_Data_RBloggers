@@ -1,0 +1,116 @@
+{
+  "uuid": "35165295-8900-48c1-b578-fbefd54e0f0d",
+  "created_at": "2025-11-17 20:39:42",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/why-use-plyr/",
+    "crawled_at": "2025-11-17T10:10:57.138944",
+    "external_links": [
+      {
+        "href": "http://blog.revolution-computing.com/2009/12/why-use-plyr.html",
+        "text": "Revolutions"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://crantastic.org/packages/plyr",
+        "text": "plyr package"
+      },
+      {
+        "href": "http://www.cerebralmastication.com/?p=432",
+        "text": "associated blog post"
+      },
+      {
+        "href": "http://www.cerebralmastication.com/?p=432",
+        "text": "Struggling with apply() in R"
+      },
+      {
+        "href": "http://blog.revolution-computing.com/2009/12/why-use-plyr.html",
+        "text": "Revolutions"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Why use plyr? | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/david-smith/",
+        "text": "David Smith"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/packages/",
+        "text": "packages"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-425 post type-post status-publish format-standard hentry category-r-bloggers tag-packages tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Why use plyr?</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 17, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/david-smith/\">David Smith</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.revolution-computing.com/2009/12/why-use-plyr.html\"> Revolutions</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p>The “apply” family of functions in R (apply, sapply, lapply) is a very powerful suite of tools for iterating through structures of data and returning the combined results of each iteration. But with great power comes great responsibility (or something like that): these functions can sometimes be frustratingly difficult to get working exactly as you intended, especially for newcomers to R.</p><p>That’s where the functions from Hadley Wickham’s <a href=\"http://crantastic.org/packages/plyr\" rel=\"nofollow\" target=\"_blank\">plyr package</a> come in: they create a unified interface for iterating over data in R with a consistent syntax for specifying what the inputs are, and what the outputs should be. </p><p>JD Long captures both the frustration that come with mis-applying apply and the joy of overcoming it with plyr in this 5-minute video. Be sure to check the <a href=\"http://www.cerebralmastication.com/?p=432\" rel=\"nofollow\" target=\"_blank\">associated blog post</a> for the background and comments.</p><p><p align=\"center\" class=\"asset asset-video\" style=\"display: block; margin: 0 auto;\"><object height=\"344\" width=\"425\"><param name=\"movie\" value=\"https://www.youtube.com/v/tdoIwXT_lP8&amp;hl=en_US&amp;fs=1&amp;rel=0\"/><param name=\"allowFullScreen\" value=\"true\"/><param name=\"allowscriptaccess\" value=\"always\"/><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"344\" src=\"https://www.youtube.com/v/tdoIwXT_lP8&amp;hl=en_US&amp;fs=1&amp;rel=0\" type=\"application/x-shockwave-flash\" width=\"425\"/></object></p><br/><span> </span>Cerebral Mastication: <a href=\"http://www.cerebralmastication.com/?p=432\" rel=\"nofollow\" target=\"_blank\">Struggling with apply() in R</a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.revolution-computing.com/2009/12/why-use-plyr.html\"> Revolutions</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/packages/\" rel=\"tag\">packages</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+    "main_text": "Why use plyr?\nPosted on\nDecember 17, 2009\nby\nDavid Smith\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRevolutions\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe “apply” family of functions in R (apply, sapply, lapply) is a very powerful suite of tools for iterating through structures of data and returning the combined results of each iteration. But with great power comes great responsibility (or something like that): these functions can sometimes be frustratingly difficult to get working exactly as you intended, especially for newcomers to R.\nThat’s where the functions from Hadley Wickham’s\nplyr package\ncome in: they create a unified interface for iterating over data in R with a consistent syntax for specifying what the inputs are, and what the outputs should be.\nJD Long captures both the frustration that come with mis-applying apply and the joy of overcoming it with plyr in this 5-minute video. Be sure to check the\nassociated blog post\nfor the background and comments.\nCerebral Mastication:\nStruggling with apply() in R\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRevolutions\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\npackages\nR",
+    "meta_description": "The \"apply\" family of functions in R (apply, sapply, lapply) is a very powerful suite of tools for iterating through structures of data and returning the combined results of each iteration. But with great power comes great responsibility (or something like that): these functions can sometimes be frustratingly difficult to get working exactly as you intended, especially for newcomers to R. That's where the functions from Hadley Wickham's plyr package come in: they create a unified interface for iterating over data in R with a consistent syntax for specifying what the inputs are, and what the outputs should be. JD...",
+    "meta_keywords": "packages,r",
+    "og_description": "The \"apply\" family of functions in R (apply, sapply, lapply) is a very powerful suite of tools for iterating through structures of data and returning the combined results of each iteration. But with great power comes great responsibility (or something like that): these functions can sometimes be frustratingly difficult to get working exactly as you intended, especially for newcomers to R. That's where the functions from Hadley Wickham's plyr package come in: they create a unified interface for iterating over data in R with a consistent syntax for specifying what the inputs are, and what the outputs should be. JD...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Why use plyr? | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.4,
+    "sitemap_lastmod": "2009-12-17T16:46:19+00:00",
+    "twitter_description": "The \"apply\" family of functions in R (apply, sapply, lapply) is a very powerful suite of tools for iterating through structures of data and returning the combined results of each iteration. But with great power comes great responsibility (or something like that): these functions can sometimes be frustratingly difficult to get working exactly as you intended, especially for newcomers to R. That's where the functions from Hadley Wickham's plyr package come in: they create a unified interface for iterating over data in R with a consistent syntax for specifying what the inputs are, and what the outputs should be. JD...",
+    "twitter_title": "Why use plyr? | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/why-use-plyr/",
+    "word_count": 283
+  }
+}

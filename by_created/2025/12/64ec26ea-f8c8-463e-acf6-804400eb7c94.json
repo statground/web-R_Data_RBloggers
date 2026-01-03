@@ -1,0 +1,145 @@
+{
+  "uuid": "64ec26ea-f8c8-463e-acf6-804400eb7c94",
+  "created_at": "2025-12-12 22:44:44",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/12/un-debunking-the-gamlss-myth/",
+    "crawled_at": "2025-12-12T13:44:16.452499",
+    "external_links": [
+      {
+        "href": "https://www.zeileis.org/news/undebunking/",
+        "text": "Achim Zeileis"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://doi.org/10.48550/arXiv.2512.09179",
+        "text": "doi:10.48550/arXiv.2512.09179"
+      },
+      {
+        "href": "https://doi.org/10.1016/j.rmed.2024.107836",
+        "text": "Zavorsky (2025, Respiratory Medicine)"
+      },
+      {
+        "href": "https://arxiv.org/pdf/2512.09179",
+        "text": "Read full letter ›"
+      },
+      {
+        "href": "https://data.mendeley.com/public-files/datasets/dwjykg3xww/files/2ac262d6-7d46-426d-a6f0-b5c6b61d796a/file_downloaded",
+        "text": "NHANES_2007_2012_Only_Acceptable_Spirometry_Values.csv"
+      },
+      {
+        "href": "https://www.zeileis.org/assets/posts/2025-12-12-undebunking/undebunking.R",
+        "text": "undebunking.R"
+      },
+      {
+        "href": "https://topmodels.r-forge.r-project.org/topmodels/",
+        "text": "topmodels"
+      },
+      {
+        "href": "https://grantmcdermott.com/tinyplot/",
+        "text": "tinyplot"
+      },
+      {
+        "href": "https://www.zeileis.org/news/undebunking/",
+        "text": "Achim Zeileis"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Un-debunking the GAMLSS myth | R-bloggers",
+    "images": [
+      {
+        "alt": "Empirical proportions of observations below the 5% lower limit of normal (LLN) across different age groups (7.5 year intervals).",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Empirical proportions of observations below the 5% lower limit of normal (LLN) across different age groups (7.5 year intervals).",
+        "base64": null,
+        "src": "https://i2.wp.com/www.zeileis.org/assets/posts/2025-12-12-undebunking/lln.png?w=578&ssl=1"
+      },
+      {
+        "alt": "QQ plots of the z-scores from the SLR and GAMLSS models for a selected age group.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "QQ plots of the z-scores from the SLR and GAMLSS models for a selected age group.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.zeileis.org/assets/posts/2025-12-12-undebunking/qq.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/achim-zeileis/",
+        "text": "Achim Zeileis"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-397584 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Un-debunking the GAMLSS myth</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/achim-zeileis/\">Achim Zeileis</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.zeileis.org/news/undebunking/\"> Achim Zeileis</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Generalized additive models for location, scale, and shape (GAMLSS) are popular for estimating reference equations, e.g., for lung function measurements. A recent paper claimed to ‘debunk’ the GAMLSS myth in this context by showing that much simpler piecewise linear models work just as well. A new letter to the editor refutes these claims.</p>\n<h2 id=\"citation\">Citation</h2>\n<p>Robert A. Rigby, Mikis D. Stasinopoulos, Achim Zeileis, Sanja Stanojevic, Gillian Heller, Fernanda de Bastiani, Thomas Kneib, Andreas Mayr, Reto Stauffer, Nikolaus Umlauf (2025). “Letter to the Editor Refuting ‘Debunking the GAMLSS Myth: Simplicity Reigns in Pulmonary Function Diagnostics’.” Forthcoming in <em>Respiratory Medicine</em>. Preprint available at <em>arXiv.org E-Print Archive</em> arXiv:2512.09179 [stat.AP]. <a href=\"https://doi.org/10.48550/arXiv.2512.09179\" rel=\"nofollow\" target=\"_blank\">doi:10.48550/arXiv.2512.09179</a></p>\n<h2 id=\"abstract\">Abstract</h2>\n<p>We read with interest the above article by <a href=\"https://doi.org/10.1016/j.rmed.2024.107836\" rel=\"nofollow\" target=\"_blank\">Zavorsky (2025, Respiratory Medicine)</a> concerning reference equations for pulmonary function testing. The author compares a Generalized Additive Model for Location, Scale, and Shape (GAMLSS), which is the standard adopted by the Global Lung Function Initiative (GLI), with a segmented linear regression (SLR) model, for pulmonary function variables. The author presents an interesting comparison; however there are some fundamental issues with the approach. We welcome this opportunity for discussion of the issues that it raises. The author’s contention is that (1) SLR provides “prediction accuracies on par with GAMLSS”; and (2) the GAMLSS model equations are “complicated and require supplementary spline tables”, whereas the SLR is “more straightforward, parsimonious, and accessible to a broader audience”. We respectfully disagree with both of these points.</p>\n<p><a href=\"https://arxiv.org/pdf/2512.09179\" rel=\"nofollow\" target=\"_blank\">Read full letter ›</a></p>\n<h2 id=\"replication\">Replication</h2>\n<p>Zavorsky provides the data for his analysis in <a href=\"https://data.mendeley.com/public-files/datasets/dwjykg3xww/files/2ac262d6-7d46-426d-a6f0-b5c6b61d796a/file_downloaded\" rel=\"nofollow\" target=\"_blank\">NHANES_2007_2012_Only_Acceptable_Spirometry_Values.csv</a>.</p>\n<p>Based on Zavorsky’s code we were able to replicate most of his analyses and were able to re-assess the models. The replication code for the letter to the editor is available in <a href=\"https://www.zeileis.org/assets/posts/2025-12-12-undebunking/undebunking.R\" rel=\"nofollow\" target=\"_blank\">undebunking.R</a>.</p>\n<p>For illustration one pair of models for one of the response variables (in the male subgroup) is fitted and assessed below.</p>\n<h2 id=\"illustration\">Illustration</h2>\n<p>To illustrate the workflow we used for assessing the segmented linear regression (SLR) and the generalized additive models for location, scale, and shape (GAMLSS) for the spirometry data, we consider the response variable FEV1 for the male subgroup. FEV1 is the forced expiratory volume in 1 second in liters, i.e., the volume of air that can forcibly be blown out in the first second, after full inspiration.</p>\n<p>After downloading the data (see link above) we can read the CSV, compute squared age (which Zavorsky uses somewhat confusingly instead of age in SLR), and select the male subset.</p>\n<pre>d &lt;- \"NHANES_2007_2012_Only_Acceptable_Spirometry_Values.csv\" |&gt;\n  read.csv() |&gt;\n  transform(Age2 = Age^2) |&gt;\n  subset(Sex == \"Male\")\n</pre>\n<p>Then we load the packages we need, all available from CRAN except the <a href=\"https://topmodels.r-forge.r-project.org/topmodels/\" rel=\"nofollow\" target=\"_blank\">topmodels</a> package which is still on R-Forge.</p>\n<pre>library(\"segmented\")\nlibrary(\"gamlss\")\nlibrary(\"distributions3\")\nlibrary(\"topmodels\")\n</pre>\n<p>To enable the workflow for probabilistic forecasts and model assessments from the <code>distributions3</code> and <code>topmodels</code> packages for the SLR models fitted by <code>segmented</code> we need a <code>prodist()</code> method to extract/predict the corresponding probability distribution. This does not work out of the box because <code>segmented</code> employs just a single constant variance while Zavorsky employs a piecewise constant variance. The function below implements this for the special case of a segmented <code>lm()</code> with exactly one breakpoint.</p>\n<pre>prodist.segmented &lt;- function(object, newdata = NULL, ...) {\n  ## in-sample and out-of-sample data\n  fitdata &lt;- model.frame(object)\n  if (is.null(newdata)) newdata &lt;- fitdata\n\n  ## predicted mean (m) and standard deviation (s)\n  m &lt;- predict(object, newdata = newdata)\n  psi &lt;- object$psi[, \"Est.\"]\n  seg &lt;- as.numeric(fitdata[[object$nameUV$Z]] &gt; psi) + 1\n  s &lt;- sqrt(tapply(residuals(object)^2, seg, mean))\n  s &lt;- s[as.numeric(newdata[[object$nameUV$Z]] &gt; psi) + 1]\n\n  ## Normal distribution object\n  distributions3::Normal(mu = m, sigma = s)\n}\n</pre>\n<p>Then we fit the SLR and GAMLSS models in the (somewhat complicated) specification that Zavorsky considered for his paper.</p>\n<pre>lm_fev1_m &lt;- lm(Baseline_FEV1_L ~ Age2 + Height + I(Height^2) + Weight, data = d)\nseg_fev1_m &lt;- segmented(lm_fev1_m, seg.Z = ~ Age2, psi = 20^2)\n\ngam_fev1_m &lt;- gamlss(Baseline_FEV1_L ~ log(Height) + log(Age) + cs(Age, df = 3),\n  sigma.formula = ~ log(Age) + cs(Age, df = 3), family = BCCGo(mu.link = \"log\"), \n  data = d, method = mixed(50, 500),\n  control = gamlss.control(trace = TRUE, maxit = 500))\n</pre>\n<p>To show that the SLR with the piecewise constant variance does not provide a satisfactory fit for several age groups we provide the visualization below. It depicts the empirical proportions of observations below the 5% lower limit of normal (LLN) across different age groups (7.5 year intervals). The red line with triangles corresponds to the SLR model and the blue line with circles corresponds to the GAMLSS. The corresponding point-wise 95% intervals are added in gray in each panel.</p>\n<p><img alt=\"Empirical proportions of observations below the 5% lower limit of normal (LLN) across different age groups (7.5 year intervals).\" data-lazy-src=\"https://i2.wp.com/www.zeileis.org/assets/posts/2025-12-12-undebunking/lln.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Empirical proportions of observations below the 5% lower limit of normal (LLN) across different age groups (7.5 year intervals).\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.zeileis.org/assets/posts/2025-12-12-undebunking/lln.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>While the proportion of observations below the LLN roughly corresponds to the nominal 5% level for the GAMLSS in all age intervals, the SLR does rather poorly. For young persons (5 to 12.5 years of age) the LLN is much too small, so that very few observations actually fall below the LLN. Conversely, for persons between 12.5 and 20 years of age the LLN is too large and hence too many observations fall below the LLN. In other words, the SLR would fail to indicate critically low FEV1 values, either by producing too many or too few cases.</p>\n<p>Using the <code>procast()</code> function from <code>topmodels</code> we predict for each person the corresponding 5% LLN and then we aggregate the exceeding proportions in 7.5 year age intervals.</p>\n<pre>## proportion of observations below LLN\nd_lln &lt;- rbind(\n  data.frame(\n    proportion = d$Baseline_FEV1_L &lt; procast(gam_fev1_m, type = \"quantile\", at = 0.05, drop = TRUE),\n    fit = \"gamlss\",\n    age = d$Age),\n  data.frame(\n    proportion = d$Baseline_FEV1_L &lt; procast(seg_fev1_m, type = \"quantile\", at = 0.05, drop = TRUE),\n    fit = \"segmented\",\n    age = d$Age)\n)\n\n## set up age intervals\nbreaks &lt;- seq(5, 80, by = 7.5)\nmid &lt;- (head(breaks, -1) + tail(breaks, -1))/2\nd_lln &lt;- transform(d_lln,\n  age = cut(age, breaks, include.lowest = TRUE)\n)\n\n## aggregate in age groups\na_lln &lt;- d_lln |&gt;\n  aggregate(x = proportion ~ fit + age, FUN = mean) |&gt;\n  transform(nobs = aggregate(proportion ~ fit + age, data = d_lln, FUN = length)$proportion) |&gt;\n  transform(alpha = 0.05) |&gt;\n  transform(se = sqrt(alpha * (1 - alpha)/nobs)) |&gt;\n  transform(lower = alpha + qnorm(0.025) * se) |&gt;\n  transform(upper = alpha + qnorm(0.975) * se) |&gt;\n  transform(age = mid[age])\n</pre>\n<p>To display these aggregated values in an appealing display we leverage the recent <a href=\"https://grantmcdermott.com/tinyplot/\" rel=\"nofollow\" target=\"_blank\">tinyplot</a> package.</p>\n<pre>library(\"tinyplot\")\npal &lt;- palette.colors()[6:7]\ntinytheme(\"clean2\", grid.lwd = 1, grid.lty = 2)\ntinyplot(\n  proportion ~ age | fit,\n  data = a_lln,\n  type = \"o\",\n  pch = c(19, 17),\n  lwd = 1.5,\n  cex = 1.5,\n  col = pal,\n  ylim = c(0.01, 0.09),\n  yaxl = \"%\",\n  xlab = \"Age (mid points of 7.5 year intervals)\",\n  ylab = \"Proportion of observations below LLN\"\n)\ntinyplot_add(\n  alpha ~ age | fit,\n  ymin = a_lln$lower,\n  ymax = a_lln$upper,\n  type = \"ribbon\",\n  col = \"gray\"\n)\ntinyplot_add()\n</pre>\n<p>To bring out clearly that not only the 5% LLN is misspecified but that more generally the SLR provides a poor probabilistic fit for FEV1, we employ a detrended QQ plot (also known as worm plot) based on z-scores (also known as quantile residuals). Using the <code>qqrplot()</code> function from <code>topmodels</code> this can be set up as follow.</p>\n<pre>qqrplot(seg_fev1_m, detrend = TRUE, confint = \"polygon\",\n  col = pal[2], pch = 17, main = \"\")\nqqrplot(gam_fev1_m, detrend = TRUE, plot = FALSE) |&gt;\n  points(col = pal[1], pch = 19)\n</pre>\n<p><img alt=\"QQ plots of the z-scores from the SLR and GAMLSS models for a selected age group.\" data-lazy-src=\"https://i2.wp.com/www.zeileis.org/assets/posts/2025-12-12-undebunking/qq.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"QQ plots of the z-scores from the SLR and GAMLSS models for a selected age group.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.zeileis.org/assets/posts/2025-12-12-undebunking/qq.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>In the letter the QQ plots are used without detrending and are considered separately for different age groups.</p>\n<p>See the full replication code (linked above) for further details.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.zeileis.org/news/undebunking/\"> Achim Zeileis</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Un-debunking the GAMLSS myth\nPosted on\nDecember 11, 2025\nby\nAchim Zeileis\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAchim Zeileis\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nGeneralized additive models for location, scale, and shape (GAMLSS) are popular for estimating reference equations, e.g., for lung function measurements. A recent paper claimed to ‘debunk’ the GAMLSS myth in this context by showing that much simpler piecewise linear models work just as well. A new letter to the editor refutes these claims.\nCitation\nRobert A. Rigby, Mikis D. Stasinopoulos, Achim Zeileis, Sanja Stanojevic, Gillian Heller, Fernanda de Bastiani, Thomas Kneib, Andreas Mayr, Reto Stauffer, Nikolaus Umlauf (2025). “Letter to the Editor Refuting ‘Debunking the GAMLSS Myth: Simplicity Reigns in Pulmonary Function Diagnostics’.” Forthcoming in\nRespiratory Medicine\n. Preprint available at\narXiv.org E-Print Archive\narXiv:2512.09179 [stat.AP].\ndoi:10.48550/arXiv.2512.09179\nAbstract\nWe read with interest the above article by\nZavorsky (2025, Respiratory Medicine)\nconcerning reference equations for pulmonary function testing. The author compares a Generalized Additive Model for Location, Scale, and Shape (GAMLSS), which is the standard adopted by the Global Lung Function Initiative (GLI), with a segmented linear regression (SLR) model, for pulmonary function variables. The author presents an interesting comparison; however there are some fundamental issues with the approach. We welcome this opportunity for discussion of the issues that it raises. The author’s contention is that (1) SLR provides “prediction accuracies on par with GAMLSS”; and (2) the GAMLSS model equations are “complicated and require supplementary spline tables”, whereas the SLR is “more straightforward, parsimonious, and accessible to a broader audience”. We respectfully disagree with both of these points.\nRead full letter ›\nReplication\nZavorsky provides the data for his analysis in\nNHANES_2007_2012_Only_Acceptable_Spirometry_Values.csv\n.\nBased on Zavorsky’s code we were able to replicate most of his analyses and were able to re-assess the models. The replication code for the letter to the editor is available in\nundebunking.R\n.\nFor illustration one pair of models for one of the response variables (in the male subgroup) is fitted and assessed below.\nIllustration\nTo illustrate the workflow we used for assessing the segmented linear regression (SLR) and the generalized additive models for location, scale, and shape (GAMLSS) for the spirometry data, we consider the response variable FEV1 for the male subgroup. FEV1 is the forced expiratory volume in 1 second in liters, i.e., the volume of air that can forcibly be blown out in the first second, after full inspiration.\nAfter downloading the data (see link above) we can read the CSV, compute squared age (which Zavorsky uses somewhat confusingly instead of age in SLR), and select the male subset.\nd <- \"NHANES_2007_2012_Only_Acceptable_Spirometry_Values.csv\" |>\n  read.csv() |>\n  transform(Age2 = Age^2) |>\n  subset(Sex == \"Male\")\nThen we load the packages we need, all available from CRAN except the\ntopmodels\npackage which is still on R-Forge.\nlibrary(\"segmented\")\nlibrary(\"gamlss\")\nlibrary(\"distributions3\")\nlibrary(\"topmodels\")\nTo enable the workflow for probabilistic forecasts and model assessments from the\ndistributions3\nand\ntopmodels\npackages for the SLR models fitted by\nsegmented\nwe need a\nprodist()\nmethod to extract/predict the corresponding probability distribution. This does not work out of the box because\nsegmented\nemploys just a single constant variance while Zavorsky employs a piecewise constant variance. The function below implements this for the special case of a segmented\nlm()\nwith exactly one breakpoint.\nprodist.segmented <- function(object, newdata = NULL, ...) {\n  ## in-sample and out-of-sample data\n  fitdata <- model.frame(object)\n  if (is.null(newdata)) newdata <- fitdata\n\n  ## predicted mean (m) and standard deviation (s)\n  m <- predict(object, newdata = newdata)\n  psi <- object$psi[, \"Est.\"]\n  seg <- as.numeric(fitdata[[object$nameUV$Z]] > psi) + 1\n  s <- sqrt(tapply(residuals(object)^2, seg, mean))\n  s <- s[as.numeric(newdata[[object$nameUV$Z]] > psi) + 1]\n\n  ## Normal distribution object\n  distributions3::Normal(mu = m, sigma = s)\n}\nThen we fit the SLR and GAMLSS models in the (somewhat complicated) specification that Zavorsky considered for his paper.\nlm_fev1_m <- lm(Baseline_FEV1_L ~ Age2 + Height + I(Height^2) + Weight, data = d)\nseg_fev1_m <- segmented(lm_fev1_m, seg.Z = ~ Age2, psi = 20^2)\n\ngam_fev1_m <- gamlss(Baseline_FEV1_L ~ log(Height) + log(Age) + cs(Age, df = 3),\n  sigma.formula = ~ log(Age) + cs(Age, df = 3), family = BCCGo(mu.link = \"log\"), \n  data = d, method = mixed(50, 500),\n  control = gamlss.control(trace = TRUE, maxit = 500))\nTo show that the SLR with the piecewise constant variance does not provide a satisfactory fit for several age groups we provide the visualization below. It depicts the empirical proportions of observations below the 5% lower limit of normal (LLN) across different age groups (7.5 year intervals). The red line with triangles corresponds to the SLR model and the blue line with circles corresponds to the GAMLSS. The corresponding point-wise 95% intervals are added in gray in each panel.\nWhile the proportion of observations below the LLN roughly corresponds to the nominal 5% level for the GAMLSS in all age intervals, the SLR does rather poorly. For young persons (5 to 12.5 years of age) the LLN is much too small, so that very few observations actually fall below the LLN. Conversely, for persons between 12.5 and 20 years of age the LLN is too large and hence too many observations fall below the LLN. In other words, the SLR would fail to indicate critically low FEV1 values, either by producing too many or too few cases.\nUsing the\nprocast()\nfunction from\ntopmodels\nwe predict for each person the corresponding 5% LLN and then we aggregate the exceeding proportions in 7.5 year age intervals.\n## proportion of observations below LLN\nd_lln <- rbind(\n  data.frame(\n    proportion = d$Baseline_FEV1_L < procast(gam_fev1_m, type = \"quantile\", at = 0.05, drop = TRUE),\n    fit = \"gamlss\",\n    age = d$Age),\n  data.frame(\n    proportion = d$Baseline_FEV1_L < procast(seg_fev1_m, type = \"quantile\", at = 0.05, drop = TRUE),\n    fit = \"segmented\",\n    age = d$Age)\n)\n\n## set up age intervals\nbreaks <- seq(5, 80, by = 7.5)\nmid <- (head(breaks, -1) + tail(breaks, -1))/2\nd_lln <- transform(d_lln,\n  age = cut(age, breaks, include.lowest = TRUE)\n)\n\n## aggregate in age groups\na_lln <- d_lln |>\n  aggregate(x = proportion ~ fit + age, FUN = mean) |>\n  transform(nobs = aggregate(proportion ~ fit + age, data = d_lln, FUN = length)$proportion) |>\n  transform(alpha = 0.05) |>\n  transform(se = sqrt(alpha * (1 - alpha)/nobs)) |>\n  transform(lower = alpha + qnorm(0.025) * se) |>\n  transform(upper = alpha + qnorm(0.975) * se) |>\n  transform(age = mid[age])\nTo display these aggregated values in an appealing display we leverage the recent\ntinyplot\npackage.\nlibrary(\"tinyplot\")\npal <- palette.colors()[6:7]\ntinytheme(\"clean2\", grid.lwd = 1, grid.lty = 2)\ntinyplot(\n  proportion ~ age | fit,\n  data = a_lln,\n  type = \"o\",\n  pch = c(19, 17),\n  lwd = 1.5,\n  cex = 1.5,\n  col = pal,\n  ylim = c(0.01, 0.09),\n  yaxl = \"%\",\n  xlab = \"Age (mid points of 7.5 year intervals)\",\n  ylab = \"Proportion of observations below LLN\"\n)\ntinyplot_add(\n  alpha ~ age | fit,\n  ymin = a_lln$lower,\n  ymax = a_lln$upper,\n  type = \"ribbon\",\n  col = \"gray\"\n)\ntinyplot_add()\nTo bring out clearly that not only the 5% LLN is misspecified but that more generally the SLR provides a poor probabilistic fit for FEV1, we employ a detrended QQ plot (also known as worm plot) based on z-scores (also known as quantile residuals). Using the\nqqrplot()\nfunction from\ntopmodels\nthis can be set up as follow.\nqqrplot(seg_fev1_m, detrend = TRUE, confint = \"polygon\",\n  col = pal[2], pch = 17, main = \"\")\nqqrplot(gam_fev1_m, detrend = TRUE, plot = FALSE) |>\n  points(col = pal[1], pch = 19)\nIn the letter the QQ plots are used without detrending and are considered separately for different age groups.\nSee the full replication code (linked above) for further details.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAchim Zeileis\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Generalized additive models for location, scale, and shape (GAMLSS) are popular for estimating reference equations, e.g., for lung function measurements. A recent paper claimed to 'debunk' the GAMLSS myth in this context by showing that much ...",
+    "meta_keywords": null,
+    "og_description": "Generalized additive models for location, scale, and shape (GAMLSS) are popular for estimating reference equations, e.g., for lung function measurements. A recent paper claimed to 'debunk' the GAMLSS myth in this context by showing that much ...",
+    "og_image": "https://www.zeileis.org/assets/posts/2025-12-12-undebunking/lln.png",
+    "og_title": "Un-debunking the GAMLSS myth | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 6.8,
+    "sitemap_lastmod": null,
+    "twitter_description": "Generalized additive models for location, scale, and shape (GAMLSS) are popular for estimating reference equations, e.g., for lung function measurements. A recent paper claimed to 'debunk' the GAMLSS myth in this context by showing that much ...",
+    "twitter_title": "Un-debunking the GAMLSS myth | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/12/un-debunking-the-gamlss-myth/",
+    "word_count": 1358
+  }
+}

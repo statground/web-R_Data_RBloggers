@@ -1,0 +1,132 @@
+{
+  "uuid": "2ae883d4-7050-4dbb-b446-2ed7818359f8",
+  "created_at": "2025-11-22 19:57:43",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/09/step-by-step-guide-to-use-rselenium-with-firefox-linux-and-windows/",
+    "crawled_at": "2025-11-22T10:43:17.279047",
+    "external_links": [
+      {
+        "href": "https://pacha.dev/blog/2025/09/05/selenium-firefox/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://buymeacoffee.com/pacha/e/80976",
+        "text": "Buy Me a Coffee"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/08/11/",
+        "text": "A Personal Message from an Open Source Contributor"
+      },
+      {
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLScMpMtKjDe2h53iHUvlYHDdBNMD1_x9WO5wg5wi_EO7ak_DRA/viewform?usp=sharing&ouid=115091451666829859711",
+        "text": "this form"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/09/04/selenium-windows/",
+        "text": "previous post"
+      },
+      {
+        "href": "https://www.firefox.com/",
+        "text": "official website"
+      },
+      {
+        "href": "https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-win64.zip",
+        "text": "here"
+      },
+      {
+        "href": "https://docs.ropensci.org/RSelenium/articles/saucelabs.html",
+        "text": "official guide"
+      },
+      {
+        "href": "https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.9.1/selenium-server-standalone-3.9.1.jar",
+        "text": "this link"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/08/20/selenium/index.html",
+        "text": "original post"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/09/05/selenium-firefox/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Step-by-Step Guide to Use RSelenium with Firefox (Linux and Windows) | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/pacha-dev-blog/",
+        "text": "pacha.dev/blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-395225 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Step-by-Step Guide to Use RSelenium with Firefox (Linux and Windows)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 4, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/pacha-dev-blog/\">pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/09/05/selenium-firefox/\"> pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><em>Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on <a href=\"https://buymeacoffee.com/pacha/e/80976\" rel=\"nofollow\" target=\"_blank\">Buy Me a Coffee</a>. It shall be used to continue my Open Source efforts. The full explanation is here: <a href=\"https://pacha.dev/blog/2025/08/11/\" rel=\"nofollow\" target=\"_blank\">A Personal Message from an Open Source Contributor</a>.</em></p>\n<p><em>You can send me questions for the blog using <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScMpMtKjDe2h53iHUvlYHDdBNMD1_x9WO5wg5wi_EO7ak_DRA/viewform?usp=sharing&amp;ouid=115091451666829859711\" rel=\"nofollow\" target=\"_blank\">this form</a> and subscribe to receive an email when there is a new post.</em></p>\n<section class=\"level2\" id=\"motivation\">\n<h2 class=\"anchored\" data-anchor-id=\"motivation\">Motivation</h2>\n<p>Continuing with the <a href=\"https://pacha.dev/blog/2025/09/04/selenium-windows/\" rel=\"nofollow\" target=\"_blank\">previous post</a>, here I expand the instructions for Windows and Linux (I do not have a Mac laptop to test on OS X).</p>\n</section>\n<section class=\"level2\" id=\"required-software\">\n<h2 class=\"anchored\" data-anchor-id=\"required-software\">Required software</h2>\n<ul>\n<li>Mozilla Firefox and GeckoDriver: web browser and remote control program</li>\n<li>RSelenium: R-Selenium integration</li>\n<li>rvest: HTML processing</li>\n<li>dplyr: to load the pipe operator (can be used later for data cleaning)</li>\n<li>purrr: iteration (i.e., repeated operations)</li>\n</ul>\n<section class=\"level3\" id=\"mozilla-firefox-and-geckodriver\">\n<h3 class=\"anchored\" data-anchor-id=\"mozilla-firefox-and-geckodriver\">Mozilla Firefox and GeckoDriver</h3>\n<section class=\"level4\" id=\"windows\">\n<h4 class=\"anchored\" data-anchor-id=\"windows\">Windows</h4>\n<p>I installed Mozilla Firefox from the <a href=\"https://www.firefox.com/\" rel=\"nofollow\" target=\"_blank\">official website</a> and followed the installer.</p>\n<p>For GeckoDriver, I downloaded it from <a href=\"https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-win64.zip\" rel=\"nofollow\" target=\"_blank\">here</a> for Windows 64-bit and saved “geckodriver.exe” to a new folder “C:”. Then, I had to add the folder to the PATH like this:</p>\n<ol type=\"1\">\n<li>Press Win + S</li>\n<li>Type “Environment variables”</li>\n<li>Open “Edit the system environment variables”.</li>\n<li>Click “Environment variables”.</li>\n<li>In “System variables”, find and select “Path”, then click “Edit”.</li>\n<li>Click “New” and add “C:” without quotes</li>\n<li>Click OK to save.</li>\n</ol>\n<p>Then restart RStudio and close PowerShell if it is open. Not installing GeckoDrive would only result in this error message in R: “Unable to create new service geckodriverservice.”</p>\n</section>\n<section class=\"level4\" id=\"linux\">\n<h4 class=\"anchored\" data-anchor-id=\"linux\">Linux</h4>\n<p>I use Manjaro, so Firefox is the default browser.</p>\n<p>To install GeckoDriver I used these commands:</p>\n<pre>wget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz -O ~/Downloads/geckodriver.tar.gz\ntar -xzf ~/Downloads/geckodriver.tar.gz -C ~/Downloads\nrm ~/Downloads/geckodriver.tar.gz\nsudo mv ~/Downloads/geckodriver /usr/local/bin/\ngeckodriver --version</pre>\n<p>the output should show “geckodriver 0.36.0”.</p>\n</section>\n<section class=\"level4\" id=\"rselenium-and-selenium-server\">\n<h4 class=\"anchored\" data-anchor-id=\"rselenium-and-selenium-server\">RSelenium and Selenium Server</h4>\n<p>I installed RSelenium from the R console:</p>\n<pre>if (!require(RSelenium)) install.packages(\"RSelenium\")\n\n# or\n\nremotes::install_github(\"ropensci/RSelenium\")</pre>\n<p>I tried to start Selenium as it is mentioned in the <a href=\"https://docs.ropensci.org/RSelenium/articles/saucelabs.html\" rel=\"nofollow\" target=\"_blank\">official guide</a> and it did not work.</p>\n<p>I downloaded Selenium Server from <a href=\"https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.9.1/selenium-server-standalone-3.9.1.jar\" rel=\"nofollow\" target=\"_blank\">this link</a>.</p>\n<p>For the rest of the packages:</p>\n<pre>if (!require(rvest)) install.packages(\"rvest\")\nif (!require(dplyr)) install.packages(\"dplyr\")\nif (!require(purrr)) install.packages(\"purrr\")</pre>\n</section>\n</section>\n</section>\n<section class=\"level2\" id=\"running-selenium-server\">\n<h2 class=\"anchored\" data-anchor-id=\"running-selenium-server\">Running Selenium Server</h2>\n<p>These commands work on PowerShell (Windows) and sh/bash/zsh (Linux):</p>\n<pre>cd Downloads\njava -jar selenium-server-standalone-3.9.1.jar</pre>\n<p>The Selenium Server instance has to be run every time <em>before</em> running the R code unless the terminal remains open.</p>\n</section>\n<section class=\"level2\" id=\"controlling-the-browser\">\n<h2 class=\"anchored\" data-anchor-id=\"controlling-the-browser\">Controlling the Browser</h2>\n<p>From RStudio (same for an R terminal), I could control the browser from R:</p>\n<pre>library(RSelenium)\nlibrary(rvest)\nlibrary(dplyr)\nlibrary(purrr)\n\nrmDr &lt;- remoteDriver(port = 4444L, browserName = \"firefox\")\n\nrmDr$open(silent = TRUE)\n\nurl &lt;- \"https://pacha.dev/blog\"\n\nrmDr$navigate(url)</pre>\n<p>This should display a new Firefox window and show my blog. The rest of the steps are the same as in the <a href=\"https://pacha.dev/blog/2025/08/20/selenium/index.html\" rel=\"nofollow\" target=\"_blank\">original post</a> where I show practical examples.</p>\n<p>I hope this is useful 🙂</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/09/05/selenium-firefox/\"> pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Step-by-Step Guide to Use RSelenium with Firefox (Linux and Windows)\nPosted on\nSeptember 4, 2025\nby\npacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\npacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBecause of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on\nBuy Me a Coffee\n. It shall be used to continue my Open Source efforts. The full explanation is here:\nA Personal Message from an Open Source Contributor\n.\nYou can send me questions for the blog using\nthis form\nand subscribe to receive an email when there is a new post.\nMotivation\nContinuing with the\nprevious post\n, here I expand the instructions for Windows and Linux (I do not have a Mac laptop to test on OS X).\nRequired software\nMozilla Firefox and GeckoDriver: web browser and remote control program\nRSelenium: R-Selenium integration\nrvest: HTML processing\ndplyr: to load the pipe operator (can be used later for data cleaning)\npurrr: iteration (i.e., repeated operations)\nMozilla Firefox and GeckoDriver\nWindows\nI installed Mozilla Firefox from the\nofficial website\nand followed the installer.\nFor GeckoDriver, I downloaded it from\nhere\nfor Windows 64-bit and saved “geckodriver.exe” to a new folder “C:”. Then, I had to add the folder to the PATH like this:\nPress Win + S\nType “Environment variables”\nOpen “Edit the system environment variables”.\nClick “Environment variables”.\nIn “System variables”, find and select “Path”, then click “Edit”.\nClick “New” and add “C:” without quotes\nClick OK to save.\nThen restart RStudio and close PowerShell if it is open. Not installing GeckoDrive would only result in this error message in R: “Unable to create new service geckodriverservice.”\nLinux\nI use Manjaro, so Firefox is the default browser.\nTo install GeckoDriver I used these commands:\nwget https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz -O ~/Downloads/geckodriver.tar.gz\ntar -xzf ~/Downloads/geckodriver.tar.gz -C ~/Downloads\nrm ~/Downloads/geckodriver.tar.gz\nsudo mv ~/Downloads/geckodriver /usr/local/bin/\ngeckodriver --version\nthe output should show “geckodriver 0.36.0”.\nRSelenium and Selenium Server\nI installed RSelenium from the R console:\nif (!require(RSelenium)) install.packages(\"RSelenium\")\n\n# or\n\nremotes::install_github(\"ropensci/RSelenium\")\nI tried to start Selenium as it is mentioned in the\nofficial guide\nand it did not work.\nI downloaded Selenium Server from\nthis link\n.\nFor the rest of the packages:\nif (!require(rvest)) install.packages(\"rvest\")\nif (!require(dplyr)) install.packages(\"dplyr\")\nif (!require(purrr)) install.packages(\"purrr\")\nRunning Selenium Server\nThese commands work on PowerShell (Windows) and sh/bash/zsh (Linux):\ncd Downloads\njava -jar selenium-server-standalone-3.9.1.jar\nThe Selenium Server instance has to be run every time\nbefore\nrunning the R code unless the terminal remains open.\nControlling the Browser\nFrom RStudio (same for an R terminal), I could control the browser from R:\nlibrary(RSelenium)\nlibrary(rvest)\nlibrary(dplyr)\nlibrary(purrr)\n\nrmDr <- remoteDriver(port = 4444L, browserName = \"firefox\")\n\nrmDr$open(silent = TRUE)\n\nurl <- \"https://pacha.dev/blog\"\n\nrmDr$navigate(url)\nThis should display a new Firefox window and show my blog. The rest of the steps are the same as in the\noriginal post\nwhere I show practical examples.\nI hope this is useful 🙂\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\npacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal Message from an Open So...",
+    "meta_keywords": null,
+    "og_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal Message from an Open So...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Step-by-Step Guide to Use RSelenium with Firefox (Linux and Windows) | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal Message from an Open So...",
+    "twitter_title": "Step-by-Step Guide to Use RSelenium with Firefox (Linux and Windows) | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/09/step-by-step-guide-to-use-rselenium-with-firefox-linux-and-windows/",
+    "word_count": 661
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "uuid": "e74d4162-9063-4ac2-9806-931650e53530",
+  "created_at": "2025-11-17 20:39:21",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/11/how-to-simulate-plot-a-bivariate-normal-distribution-in-r-a-hands-on-guide/",
+    "crawled_at": "2025-11-17T09:58:28.884889",
+    "external_links": [
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-11-07/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.spsanderson.com/steveondata/posts/2023-11-07/index.html",
+        "text": "Steve's Data Tips and Tricks"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "How to Simulate & Plot a Bivariate Normal Distribution in R: A Hands-on Guide | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-2.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/",
+        "text": "Steven P. Sanderson II, MPH"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-379776 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">How to Simulate &amp; Plot a Bivariate Normal Distribution in R: A Hands-on Guide</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 7, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/\">Steven P. Sanderson II, MPH</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-11-07/index.html\"> Steve's Data Tips and Tricks</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<section class=\"level1\" id=\"introduction\">\n<h1>Introduction</h1>\n<p>Welcome to the fascinating world of bivariate normal distributions! In this blog post, we’ll embark on a journey to understand, simulate, and visualize these distributions using the powerful R programming language. Whether you’re a seasoned R expert or a curious beginner, this guide will equip you with the necessary tools to explore this intriguing aspect of probability theory.</p>\n</section>\n<section class=\"level1\" id=\"understanding-bivariate-normal-distributions\">\n<h1>Understanding Bivariate Normal Distributions</h1>\n<p>Imagine two variables, like height and weight, that exhibit a joint distribution. The bivariate normal distribution captures the relationship between these variables, describing how their values tend to cluster around certain means and how they vary together. It’s like a two-dimensional bell curve, where the peak represents the most likely combination of values for both variables.</p>\n</section>\n<section class=\"level1\" id=\"simulating-a-bivariate-normal-distribution\">\n<h1>Simulating a Bivariate Normal Distribution</h1>\n<p>Now, let’s bring this distribution to life using R. The <code>MASS</code> package provides the <code>mvrnorm()</code> function, which generates random samples from a multivariate normal distribution. We’ll use this function to simulate a bivariate normal distribution with mean vector <code>[10, 20]</code> and covariance matrix <code>[[5, 3], [3, 6]]</code>. These parameters determine the center and shape of the distribution.</p>\n<div class=\"cell\">\n<pre>library(MASS)\n\n# Simulate 100 observations from a bivariate normal distribution\nset.seed(123) # Set a seed for reproducibility\nbvnData &lt;- mvrnorm(\n  n = 100, \n  mu = c(10, 20), \n  Sigma = matrix(c(5, 3, 3, 6), \n                 ncol = 2)\n  )</pre>\n</div>\n</section>\n<section class=\"level1\" id=\"visualizing-the-bivariate-normal-distribution\">\n<h1>Visualizing the Bivariate Normal Distribution</h1>\n<p>To truly appreciate the beauty of the bivariate normal distribution, let’s visualize it using the <code>plot()</code> and <code>density()</code> functions</p>\n<div class=\"cell\">\n<pre>library(mnormt)\n\nx &lt;- bvnData[,1] |&gt; sort()\ny &lt;- bvnData[,2] |&gt; sort()\nmu &lt;- c(10, 20)\nsigma &lt;- matrix(c(5, 3, 3, 6), \n                 ncol = 2)\nf &lt;- function(x, y) dmnorm(cbind(x, y), mu, sigma)\nz &lt;- outer(x,y,f)\ncontour(x,y,z)</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<pre># Create a density plot of the simulated data\nplot(density(bvnData))</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>This plot should reveal an elliptical shape, with the highest density concentrated around the mean values. The contours represent the regions of equal probability.</p>\n</section>\n<section class=\"level1\" id=\"try-it-on-your-own\">\n<h1>Try It On Your Own!</h1>\n<p>Now, it’s your turn to experiment! Change the mean vector, covariance matrix, and sample size to see how they affect the shape and spread of the distribution. Play with different visualization options to explore different perspectives of the data.</p>\n<p>Remember, R is a vast and ever-evolving language, so there’s always more to learn. Keep exploring, asking questions, and seeking out new challenges to become a master R programmer.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2023-11-07/index.html\"> Steve's Data Tips and Tricks</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "How to Simulate & Plot a Bivariate Normal Distribution in R: A Hands-on Guide\nPosted on\nNovember 7, 2023\nby\nSteven P. Sanderson II, MPH\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSteve's Data Tips and Tricks\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nWelcome to the fascinating world of bivariate normal distributions! In this blog post, we’ll embark on a journey to understand, simulate, and visualize these distributions using the powerful R programming language. Whether you’re a seasoned R expert or a curious beginner, this guide will equip you with the necessary tools to explore this intriguing aspect of probability theory.\nUnderstanding Bivariate Normal Distributions\nImagine two variables, like height and weight, that exhibit a joint distribution. The bivariate normal distribution captures the relationship between these variables, describing how their values tend to cluster around certain means and how they vary together. It’s like a two-dimensional bell curve, where the peak represents the most likely combination of values for both variables.\nSimulating a Bivariate Normal Distribution\nNow, let’s bring this distribution to life using R. The\nMASS\npackage provides the\nmvrnorm()\nfunction, which generates random samples from a multivariate normal distribution. We’ll use this function to simulate a bivariate normal distribution with mean vector\n[10, 20]\nand covariance matrix\n[[5, 3], [3, 6]]\n. These parameters determine the center and shape of the distribution.\nlibrary(MASS)\n\n# Simulate 100 observations from a bivariate normal distribution\nset.seed(123) # Set a seed for reproducibility\nbvnData <- mvrnorm(\n  n = 100, \n  mu = c(10, 20), \n  Sigma = matrix(c(5, 3, 3, 6), \n                 ncol = 2)\n  )\nVisualizing the Bivariate Normal Distribution\nTo truly appreciate the beauty of the bivariate normal distribution, let’s visualize it using the\nplot()\nand\ndensity()\nfunctions\nlibrary(mnormt)\n\nx <- bvnData[,1] |> sort()\ny <- bvnData[,2] |> sort()\nmu <- c(10, 20)\nsigma <- matrix(c(5, 3, 3, 6), \n                 ncol = 2)\nf <- function(x, y) dmnorm(cbind(x, y), mu, sigma)\nz <- outer(x,y,f)\ncontour(x,y,z)\n# Create a density plot of the simulated data\nplot(density(bvnData))\nThis plot should reveal an elliptical shape, with the highest density concentrated around the mean values. The contours represent the regions of equal probability.\nTry It On Your Own!\nNow, it’s your turn to experiment! Change the mean vector, covariance matrix, and sample size to see how they affect the shape and spread of the distribution. Play with different visualization options to explore different perspectives of the data.\nRemember, R is a vast and ever-evolving language, so there’s always more to learn. Keep exploring, asking questions, and seeking out new challenges to become a master R programmer.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSteve's Data Tips and Tricks\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction Welcome to the fascinating world of bivariate normal distributions! In this blog post, we’ll embark on a journey to understand, simulate, and visualize these distributions using the powerful R programming language. Whether you’re a ...",
+    "meta_keywords": null,
+    "og_description": "Introduction Welcome to the fascinating world of bivariate normal distributions! In this blog post, we’ll embark on a journey to understand, simulate, and visualize these distributions using the powerful R programming language. Whether you’re a ...",
+    "og_image": "https://www.spsanderson.com/steveondata/posts/2023-11-07/index_files/figure-html/unnamed-chunk-2-1.png",
+    "og_title": "How to Simulate & Plot a Bivariate Normal Distribution in R: A Hands-on Guide | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.8,
+    "sitemap_lastmod": "2023-11-08T05:00:00+00:00",
+    "twitter_description": "Introduction Welcome to the fascinating world of bivariate normal distributions! In this blog post, we’ll embark on a journey to understand, simulate, and visualize these distributions using the powerful R programming language. Whether you’re a ...",
+    "twitter_title": "How to Simulate & Plot a Bivariate Normal Distribution in R: A Hands-on Guide | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/11/how-to-simulate-plot-a-bivariate-normal-distribution-in-r-a-hands-on-guide/",
+    "word_count": 559
+  }
+}

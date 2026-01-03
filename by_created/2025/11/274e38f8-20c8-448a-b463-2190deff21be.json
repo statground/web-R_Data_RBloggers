@@ -1,0 +1,167 @@
+{
+  "uuid": "274e38f8-20c8-448a-b463-2190deff21be",
+  "created_at": "2025-11-22 19:59:16",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/02/checking-your-r-packages-and-practicals-on-a-schedule-using-github-actions/",
+    "crawled_at": "2025-11-22T10:54:18.806192",
+    "external_links": [
+      {
+        "href": "https://remlapmot.github.io/post/2025/checking-packages-and-practicals/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://rstudio.github.io/renv/index.html",
+        "text": "renv"
+      },
+      {
+        "href": "https://packagemanager.posit.co/client/#/repos/cran/setup",
+        "text": "Public Posit Package Manager"
+      },
+      {
+        "href": "https://posit.cloud/",
+        "text": "Posit Cloud"
+      },
+      {
+        "href": "https://linux.die.net/man/8/cron",
+        "text": "cron"
+      },
+      {
+        "href": "https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule",
+        "text": "scheduling facility that usescronsyntax"
+      },
+      {
+        "href": "https://github.com/r-lib/actions",
+        "text": "r-lib/actions"
+      },
+      {
+        "href": "https://github.com/r-lib/actions/blob/v2-branch/examples/check-full.yaml",
+        "text": "check-full.yaml"
+      },
+      {
+        "href": "https://crontab.guru/",
+        "text": "crontab guru"
+      },
+      {
+        "href": "https://github.com/remlapmot/OneSampleMR/blob/main/.github/workflows/R-CMD-check.yaml",
+        "text": "one of my repositories"
+      },
+      {
+        "href": "https://github.com/quarto-dev/quarto-actions",
+        "text": "quarto-dev/quarto-actions"
+      },
+      {
+        "href": "https://github.com/remlapmot/example-exercise-to-run-on-schedule",
+        "text": "example repository"
+      },
+      {
+        "href": "https://github.com/r-lib/actions/blob/v2-branch/examples/render-rmarkdown.yaml",
+        "text": "R Markdown rendering example in r-lib/actions"
+      },
+      {
+        "href": "https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners",
+        "text": "More info about GitHub Actions runners is available"
+      },
+      {
+        "href": "https://github.com/remlapmot/example-exercise-to-run-on-schedule/blob/main/DESCRIPTION",
+        "text": "full file is in the repository"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/checking-packages-and-practicals/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Checking your R packages and practicals on a schedule using GitHub Actions | R-bloggers",
+    "images": [
+      {
+        "alt": "Screenshot from the crontab guru website.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot from the crontab guru website.",
+        "base64": null,
+        "src": "https://i2.wp.com/remlapmot.github.io/post/2025/checking-packages-and-practicals/img/cron-tab-guru-screenshot.png?w=450&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-dr-tom-palmer/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-390791 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Checking your R packages and practicals on a schedule using GitHub Actions</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 23, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-dr-tom-palmer/\">R | Dr Tom Palmer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://remlapmot.github.io/post/2025/checking-packages-and-practicals/\"> R | Dr Tom Palmer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h2 id=\"introduction\">Introduction</h2>\n<p>Do you have a R package that’s just on GitHub? How often do you check it? CRAN follows a rolling release model, so any day one of your package’s dependency packages could be updated – breaking your package!</p>\n<p>Or maybe you teach a course that runs once a year and it has some R practical sessions? It can be very frustrating when you rerun your practical after a year to find that several of the R packages it uses have been updated, and now you have to work out how to fix things. For this situation we might use \n<a href=\"https://rstudio.github.io/renv/index.html\" rel=\"nofollow\" target=\"_blank\"><strong>renv</strong></a> to record the packages and their versions. But then your course participants will need to use <strong>renv</strong> which might lead to a room full of 30 students all having <strong>renv</strong> problems. Alternatively, you might install all your packages from a single date, meaning you can restore them using the a snapshot date from the \n<a href=\"https://packagemanager.posit.co/client/#/repos/cran/setup\" rel=\"nofollow\" target=\"_blank\">Public Posit Package Manager</a> but you might find your course participants wondering why you use packages that are a year out of date. Another superb solution is to provide course participants with an R environment you have defined and tested your practical works in. Such a solution is offered by creating the practical as a project in a \n<a href=\"https://posit.cloud/\" rel=\"nofollow\" target=\"_blank\">Posit Cloud</a> workspace, indeed Posit Cloud is so good it almost makes running R practicals boring.</p>\n<p>My solution to these problems is to regularly run <code>R CMD check</code> on your package/run your practical with the latest versions of the required packages throughout the year. This way you’ll hopefully pick up any changes in dependency packages long before the next running of your course (although you might still be unlucky).</p>\n<p>If I had a server I could suggest setting up a \n<a href=\"https://linux.die.net/man/8/cron\" rel=\"nofollow\" target=\"_blank\"><code>cron</code></a> job to check the package or practical. However, most of us don’t have a server. Luckily if your package or practical is in a public GitHub repository then we can run GitHub Actions on it. It turns out GitHub Actions has a \n<a href=\"https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule\" rel=\"nofollow\" target=\"_blank\">scheduling facility that uses <code>cron</code> syntax</a>.</p>\n<p>Next I’ll show how to run R code on a schedule on GitHub Actions for these two cases.</p>\n<h2 id=\"checking-packages-on-a-schedule\">Checking packages on a schedule</h2>\n<p>I use the actions and example workflows from the \n<a href=\"https://github.com/r-lib/actions\" rel=\"nofollow\" target=\"_blank\">r-lib/actions</a> repository. For checking a package there are several examples, in the <em>examples</em> directory of that repository, that we can copy then amend. Let’s use the \n<a href=\"https://github.com/r-lib/actions/blob/v2-branch/examples/check-full.yaml\" rel=\"nofollow\" target=\"_blank\">check-full.yaml</a> example.</p>\n<p>Copy this file into a <em>.github/workflows</em> directory in the repository for your package. Now we need to enable scheduled running. Amend the first <code>on:</code> block to include the two lines I have inserted below.</p>\n<pre>on:\n  ...\n  schedule:\n    - cron: \"00 9 * * TUE\"\n</pre>\n<p>What does this syntax mean? Luckily there are many websites which will decipher that for us, such as \n<a href=\"https://crontab.guru/\" rel=\"nofollow\" target=\"_blank\">crontab guru</a>. (Nb. you can see a full version of this file in \n<a href=\"https://github.com/remlapmot/OneSampleMR/blob/main/.github/workflows/R-CMD-check.yaml\" rel=\"nofollow\" target=\"_blank\">one of my repositories</a>.)</p>\n<img alt=\"Screenshot from the crontab guru website.\" data-lazy-src=\"https://i2.wp.com/remlapmot.github.io/post/2025/checking-packages-and-practicals/img/cron-tab-guru-screenshot.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot from the crontab guru website.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/remlapmot.github.io/post/2025/checking-packages-and-practicals/img/cron-tab-guru-screenshot.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<p>From the crontab guru screenshot above, we see this means run at 9:00 am (UTC) on Tuesdays. Once you have committed this file to your repo and pushed it to GitHub on your main/master branch then your automated checking is taken care of. If a check fails GitHub will send a notification and you can then investigate further.</p>\n<h2 id=\"running-practicals-on-a-schedule\">Running practicals on a schedule</h2>\n<p>Let’s say we have prepared a practical worksheet in a Quarto document. In this case we’ll additionally use the actions and examples in the \n<a href=\"https://github.com/quarto-dev/quarto-actions\" rel=\"nofollow\" target=\"_blank\">quarto-dev/quarto-actions</a> repository.</p>\n<p>The workflow file I ended up with is shown below and is in this \n<a href=\"https://github.com/remlapmot/example-exercise-to-run-on-schedule\" rel=\"nofollow\" target=\"_blank\">example repository</a>. It is essentially an amended version of the \n<a href=\"https://github.com/r-lib/actions/blob/v2-branch/examples/render-rmarkdown.yaml\" rel=\"nofollow\" target=\"_blank\">R Markdown rendering example in r-lib/actions</a>.</p>\n<pre>on:\n  push:\n    branches:\n      - main\n  workflow_dispatch:\n  schedule:\n    - cron: \"0 0 1 * *\" # run on 1st day of month\n\nname: Render\n\npermissions: \n  contents: write\n\njobs:\n  build-deploy:\n    runs-on: ${{ matrix.config.os }}\n    \n    name: ${{ matrix.config.os }}\n\n    strategy:\n      fail-fast: false\n      max-parallel: 1\n      matrix:\n        config:\n          - { os: macos-latest }\n          - { os: windows-latest }\n          - { os: ubuntu-latest }\n    \n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n    \n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n        \n      - name: Setup R\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Setup R packages\n        uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          upgrade: 'TRUE'\n\n      - name: Render practical and commit output documents into repo\n        shell: bash\n        run: |\n          # Render questions\n          Rscript -e 'quarto::quarto_render(\"exercise-01.qmd\", output_file = \"exercise-01-questions-${{ matrix.config.os }}.html\", execute_params = list(solutions = FALSE, title = \"Example exercise: Questions\"))'\n          # Render solutions\n          Rscript -e 'quarto::quarto_render(\"exercise-01.qmd\", output_file = \"exercise-01-solutions-${{ matrix.config.os }}.html\")'\n          # Commit output documents\n          git config --local user.name $GITHUB_ACTOR\n          git config --local user.email <a class=\"__cf_email__\" data-cfemail=\"4460030d100c11061b0507100b160431372136376a2a2b362134283d6a232d302c31266a272b29\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>\n          git pull\n          git add \"*.html\"\n          git commit * -m \"Render practical on ${{ matrix.config.os }}\" || echo 'No changes to commit'\n          git push origin || echo 'No changes to commit'\n</pre>\n<p>Crikey, that’s alot, let’s break that down.</p>\n<ul>\n<li>The <code>on:</code> section defines this will run\n<ul>\n<li>on pushes to the main branch,</li>\n<li>if the workflow dispatch button is clicked in the GitHub interface,</li>\n<li>and once per month (at midnight on the first day on the month) as defined by our <code>cron</code> syntax</li>\n</ul>\n</li>\n<li>The <code>jobs:</code> section specifies\n<ul>\n<li>we will run this on 3 different operating systems, Windows (most of my students/course participants have Windows laptops, followed by macOS), macOS, and Ubuntu Linux. \n<a href=\"https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners\" rel=\"nofollow\" target=\"_blank\">More info about GitHub Actions runners is available</a>;</li>\n<li><code>max-parallel: 1</code> says that each job will run in turn (this isn’t really needed but just to be safe since I will commit the output documents back into the repository)</li>\n<li><code>env:</code> specifies that we grant the jobs permission with out GitHub token</li>\n<li><code>steps:</code> defines what will run, which is\n<ul>\n<li>\n<p>we checkout the repo</p>\n</li>\n<li>\n<p>we then install R and Quarto using the relevant actions</p>\n</li>\n<li>\n<p>we setup the R dependency packages. I am not using <strong>renv</strong>, so the action knows how to do this because I have included a <em>DESCRIPTION</em> file in the repo (to the action we are faking that the repo is an R package – this is a trick from Hadley Wickham). The \n<a href=\"https://github.com/remlapmot/example-exercise-to-run-on-schedule/blob/main/DESCRIPTION\" rel=\"nofollow\" target=\"_blank\">full file is in the repository</a> but the key entry is the <em>Imports</em> list of hard depdenency packages.</p>\n<pre>...\nImports:\n    knitr,\n    quarto,\n    sessioninfo\n...\n</pre>\n</li>\n</ul>\n</li>\n<li>we specify <code>upgrade: 'TRUE'</code> to always install the latest version of the dependency packages.</li>\n<li>then we finally render the two versions of our Quarto document. Here we append the operating system name into the output document filenames and we commit these files back into the repository for our records. We have to specify <code>shell: bash</code> because otherwise the Windows runner will use Powershell and the environment variable syntax in the <code>git config</code> commands would be incorrect. Also we need a <code>git pull</code> before making the commit because we have 3 jobs running in series, so there will new/amended files in the repo after the first and second jobs.</li>\n</ul>\n</li>\n</ul>\n<p>Phew!</p>\n<p>It’s worth pointing out that instead of a Quarto document our practical could be in an R Markdown document or an R script (we’d just need to make the relevant changes in the workflow file above such as adding Pandoc and amending the render commands).</p>\n<p>Note, GitHub Actions only works for free in a public repository; so obviously this can’t be used for any material that is assessed.</p>\n<h2 id=\"surprise-benefits\">Surprise benefits</h2>\n<p>A nice side effect of using the <code>r-lib/actions/setup-r</code> and <code>quarto-dev/quarto-actions/setup</code> actions is that they update to the release version of R/Quarto as updates are released. So you don’t have to worry about updating the version of R/Quarto.</p>\n<h2 id=\"github-actions-woes\">GitHub Actions woes</h2>\n<p>At this point I acknowledge that sometimes GitHub Actions can be more trouble than they are worth. This is because they often fail for reasons which are not problems with your code. For example, I had one repository in which the Windows runner would regularly lose internet connection (I have no idea why) half way through installing the R dependency packages and hence would regularly notify me of a failed check. Also you need to keep the code in your workflow file up-to-date. Usually a quick comparison to the current version of the example in the r-lib/actions repo is enough to show you what you need to change.</p>\n<h2 id=\"summary\">Summary</h2>\n<p>I have shown how to use GitHub Actions scheduling feature to automatically run scheduled checks on R packages and R scripts/R Markdown/Quarto documents for practicals enabling you to keep on top of any changes in your dependency packages and indeed in any changes in the release versions of R and Quarto.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://remlapmot.github.io/post/2025/checking-packages-and-practicals/\"> R | Dr Tom Palmer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Checking your R packages and practicals on a schedule using GitHub Actions\nPosted on\nFebruary 23, 2025\nby\nR | Dr Tom Palmer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Dr Tom Palmer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nDo you have a R package that’s just on GitHub? How often do you check it? CRAN follows a rolling release model, so any day one of your package’s dependency packages could be updated – breaking your package!\nOr maybe you teach a course that runs once a year and it has some R practical sessions? It can be very frustrating when you rerun your practical after a year to find that several of the R packages it uses have been updated, and now you have to work out how to fix things. For this situation we might use\nrenv\nto record the packages and their versions. But then your course participants will need to use\nrenv\nwhich might lead to a room full of 30 students all having\nrenv\nproblems. Alternatively, you might install all your packages from a single date, meaning you can restore them using the a snapshot date from the\nPublic Posit Package Manager\nbut you might find your course participants wondering why you use packages that are a year out of date. Another superb solution is to provide course participants with an R environment you have defined and tested your practical works in. Such a solution is offered by creating the practical as a project in a\nPosit Cloud\nworkspace, indeed Posit Cloud is so good it almost makes running R practicals boring.\nMy solution to these problems is to regularly run\nR CMD check\non your package/run your practical with the latest versions of the required packages throughout the year. This way you’ll hopefully pick up any changes in dependency packages long before the next running of your course (although you might still be unlucky).\nIf I had a server I could suggest setting up a\ncron\njob to check the package or practical. However, most of us don’t have a server. Luckily if your package or practical is in a public GitHub repository then we can run GitHub Actions on it. It turns out GitHub Actions has a\nscheduling facility that uses\ncron\nsyntax\n.\nNext I’ll show how to run R code on a schedule on GitHub Actions for these two cases.\nChecking packages on a schedule\nI use the actions and example workflows from the\nr-lib/actions\nrepository. For checking a package there are several examples, in the\nexamples\ndirectory of that repository, that we can copy then amend. Let’s use the\ncheck-full.yaml\nexample.\nCopy this file into a\n.github/workflows\ndirectory in the repository for your package. Now we need to enable scheduled running. Amend the first\non:\nblock to include the two lines I have inserted below.\non:\n  ...\n  schedule:\n    - cron: \"00 9 * * TUE\"\nWhat does this syntax mean? Luckily there are many websites which will decipher that for us, such as\ncrontab guru\n. (Nb. you can see a full version of this file in\none of my repositories\n.)\nFrom the crontab guru screenshot above, we see this means run at 9:00 am (UTC) on Tuesdays. Once you have committed this file to your repo and pushed it to GitHub on your main/master branch then your automated checking is taken care of. If a check fails GitHub will send a notification and you can then investigate further.\nRunning practicals on a schedule\nLet’s say we have prepared a practical worksheet in a Quarto document. In this case we’ll additionally use the actions and examples in the\nquarto-dev/quarto-actions\nrepository.\nThe workflow file I ended up with is shown below and is in this\nexample repository\n. It is essentially an amended version of the\nR Markdown rendering example in r-lib/actions\n.\non:\n  push:\n    branches:\n      - main\n  workflow_dispatch:\n  schedule:\n    - cron: \"0 0 1 * *\" # run on 1st day of month\n\nname: Render\n\npermissions: \n  contents: write\n\njobs:\n  build-deploy:\n    runs-on: ${{ matrix.config.os }}\n    \n    name: ${{ matrix.config.os }}\n\n    strategy:\n      fail-fast: false\n      max-parallel: 1\n      matrix:\n        config:\n          - { os: macos-latest }\n          - { os: windows-latest }\n          - { os: ubuntu-latest }\n    \n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n    \n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n        \n      - name: Setup R\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Setup R packages\n        uses: r-lib/actions/setup-r-dependencies@v2\n        with:\n          upgrade: 'TRUE'\n\n      - name: Render practical and commit output documents into repo\n        shell: bash\n        run: |\n          # Render questions\n          Rscript -e 'quarto::quarto_render(\"exercise-01.qmd\", output_file = \"exercise-01-questions-${{ matrix.config.os }}.html\", execute_params = list(solutions = FALSE, title = \"Example exercise: Questions\"))'\n          # Render solutions\n          Rscript -e 'quarto::quarto_render(\"exercise-01.qmd\", output_file = \"exercise-01-solutions-${{ matrix.config.os }}.html\")'\n          # Commit output documents\n          git config --local user.name $GITHUB_ACTOR\n          git config --local user.email\n[email protected]\ngit pull\n          git add \"*.html\"\n          git commit * -m \"Render practical on ${{ matrix.config.os }}\" || echo 'No changes to commit'\n          git push origin || echo 'No changes to commit'\nCrikey, that’s alot, let’s break that down.\nThe\non:\nsection defines this will run\non pushes to the main branch,\nif the workflow dispatch button is clicked in the GitHub interface,\nand once per month (at midnight on the first day on the month) as defined by our\ncron\nsyntax\nThe\njobs:\nsection specifies\nwe will run this on 3 different operating systems, Windows (most of my students/course participants have Windows laptops, followed by macOS), macOS, and Ubuntu Linux.\nMore info about GitHub Actions runners is available\n;\nmax-parallel: 1\nsays that each job will run in turn (this isn’t really needed but just to be safe since I will commit the output documents back into the repository)\nenv:\nspecifies that we grant the jobs permission with out GitHub token\nsteps:\ndefines what will run, which is\nwe checkout the repo\nwe then install R and Quarto using the relevant actions\nwe setup the R dependency packages. I am not using\nrenv\n, so the action knows how to do this because I have included a\nDESCRIPTION\nfile in the repo (to the action we are faking that the repo is an R package – this is a trick from Hadley Wickham). The\nfull file is in the repository\nbut the key entry is the\nImports\nlist of hard depdenency packages.\n...\nImports:\n    knitr,\n    quarto,\n    sessioninfo\n...\nwe specify\nupgrade: 'TRUE'\nto always install the latest version of the dependency packages.\nthen we finally render the two versions of our Quarto document. Here we append the operating system name into the output document filenames and we commit these files back into the repository for our records. We have to specify\nshell: bash\nbecause otherwise the Windows runner will use Powershell and the environment variable syntax in the\ngit config\ncommands would be incorrect. Also we need a\ngit pull\nbefore making the commit because we have 3 jobs running in series, so there will new/amended files in the repo after the first and second jobs.\nPhew!\nIt’s worth pointing out that instead of a Quarto document our practical could be in an R Markdown document or an R script (we’d just need to make the relevant changes in the workflow file above such as adding Pandoc and amending the render commands).\nNote, GitHub Actions only works for free in a public repository; so obviously this can’t be used for any material that is assessed.\nSurprise benefits\nA nice side effect of using the\nr-lib/actions/setup-r\nand\nquarto-dev/quarto-actions/setup\nactions is that they update to the release version of R/Quarto as updates are released. So you don’t have to worry about updating the version of R/Quarto.\nGitHub Actions woes\nAt this point I acknowledge that sometimes GitHub Actions can be more trouble than they are worth. This is because they often fail for reasons which are not problems with your code. For example, I had one repository in which the Windows runner would regularly lose internet connection (I have no idea why) half way through installing the R dependency packages and hence would regularly notify me of a failed check. Also you need to keep the code in your workflow file up-to-date. Usually a quick comparison to the current version of the example in the r-lib/actions repo is enough to show you what you need to change.\nSummary\nI have shown how to use GitHub Actions scheduling feature to automatically run scheduled checks on R packages and R scripts/R Markdown/Quarto documents for practicals enabling you to keep on top of any changes in your dependency packages and indeed in any changes in the release versions of R and Quarto.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Dr Tom Palmer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction Do you have a R package that’s just on GitHub? How often do you check it? CRAN follows a rolling release model, so any day one of your package’s dependency packages could be updated - breaking your package! Or maybe you teach a...",
+    "meta_keywords": null,
+    "og_description": "Introduction Do you have a R package that’s just on GitHub? How often do you check it? CRAN follows a rolling release model, so any day one of your package’s dependency packages could be updated - breaking your package! Or maybe you teach a...",
+    "og_image": "https://remlapmot.github.io/post/2025/checking-packages-and-practicals/img/cron-tab-guru-screenshot.png",
+    "og_title": "Checking your R packages and practicals on a schedule using GitHub Actions | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 8,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction Do you have a R package that’s just on GitHub? How often do you check it? CRAN follows a rolling release model, so any day one of your package’s dependency packages could be updated - breaking your package! Or maybe you teach a...",
+    "twitter_title": "Checking your R packages and practicals on a schedule using GitHub Actions | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/02/checking-your-r-packages-and-practicals-on-a-schedule-using-github-actions/",
+    "word_count": 1592
+  }
+}

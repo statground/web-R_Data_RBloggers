@@ -1,0 +1,119 @@
+{
+  "uuid": "931e2286-6b5c-4cb8-aa5a-849793bb3ffd",
+  "created_at": "2025-11-17 20:38:43",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/12/learningmachine-prediction-intervals-for-conformalized-kernel-ridge-regression-and-random-forest/",
+    "crawled_at": "2025-11-17T09:25:23.418020",
+    "external_links": [
+      {
+        "href": "https://thierrymoudiki.github.io//blog/2024/01/01/r/learningmachine/learningmachine",
+        "text": "T. Moudiki's Webpage - R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://r6.r-lib.org/",
+        "text": "R6"
+      },
+      {
+        "href": "https://github.com/Techtonique/learningmachine",
+        "text": "on GitHub"
+      },
+      {
+        "href": "https://techtonique.r-universe.dev/learningmachine",
+        "text": "R-universe"
+      },
+      {
+        "href": "https://thierrymoudiki.github.io//blog/2024/01/01/r/learningmachine/learningmachine",
+        "text": "T. Moudiki's Webpage - R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "learningmachine: prediction intervals for conformalized Kernel ridge regression and Random Forest | R-bloggers",
+    "images": [
+      {
+        "alt": "Prediction intervals",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Prediction intervals",
+        "base64": null,
+        "src": "https://i2.wp.com/thierrymoudiki.github.io/images/2024-01-01/2024-01-01-image1.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/t-moudiki/",
+        "text": "T. Moudiki"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-381210 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">learningmachine: prediction intervals for conformalized Kernel ridge regression and Random Forest</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 31, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/t-moudiki/\">T. Moudiki</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://thierrymoudiki.github.io//blog/2024/01/01/r/learningmachine/learningmachine\"> T. Moudiki's Webpage - R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>I created R package <code>learningmachine</code> in the first place, in order to have a unified, object-oriented (using <a href=\"https://r6.r-lib.org/\" rel=\"nofollow\" target=\"_blank\">R6</a>), interface for the machine learning algorithms I use the most on tabular data. This (<em>work in progress</em>) package is available <a href=\"https://github.com/Techtonique/learningmachine\" rel=\"nofollow\" target=\"_blank\">on GitHub</a> and the <a href=\"https://techtonique.r-universe.dev/learningmachine\" rel=\"nofollow\" target=\"_blank\">R-universe</a>. There will certainly be a Python version in the future.</p>\n<p>This post shows how to use <code>learningmachine</code> to compute prediction intervals for miles per gallon (mpg) car consumption using conformalized Kernel ridge regression and R package <code>ranger</code>’s Random Forest.</p>\n<h1 id=\"install-packages\"><strong>Install packages</strong></h1>\n<pre>utils::install.packages('learningmachine',\n                 repos = c('https://techtonique.r-universe.dev',\n                           'https://cloud.r-project.org'))\nutils::install.packages(\"skimr\")\n</pre>\n<h1 id=\"import-dataset\"><strong>Import dataset</strong></h1>\n<pre>data(mtcars)\n</pre>\n<h1 id=\"descriptive-statistics\"><strong>Descriptive statistics</strong></h1>\n<pre>skimr::skim(mtcars)\n\r\n── Data Summary ────────────────────────\n                           Values\nName                       mtcars\nNumber of rows             32    \nNumber of columns          11    \n_______________________          \nColumn type frequency:           \n  numeric                  11    \n________________________         \nGroup variables            None  \n\n── Variable type: numeric ──────────────────────────────────────────────────────\n   skim_variable n_missing complete_rate    mean      sd    p0    p25    p50\n 1 mpg                   0             1  20.1     6.03  10.4   15.4   19.2 \n 2 cyl                   0             1   6.19    1.79   4      4      6   \n 3 disp                  0             1 231.    124.    71.1  121.   196.  \n 4 hp                    0             1 147.     68.6   52     96.5  123   \n 5 drat                  0             1   3.60    0.535  2.76   3.08   3.70\n 6 wt                    0             1   3.22    0.978  1.51   2.58   3.32\n 7 qsec                  0             1  17.8     1.79  14.5   16.9   17.7 \n 8 vs                    0             1   0.438   0.504  0      0      0   \n 9 am                    0             1   0.406   0.499  0      0      0   \n10 gear                  0             1   3.69    0.738  3      3      4   \n11 carb                  0             1   2.81    1.62   1      2      2   \n      p75   p100 hist \n 1  22.8   33.9  ▃▇▅▁▂\n 2   8      8    ▆▁▃▁▇\n 3 326    472    ▇▃▃▃▂\n 4 180    335    ▇▇▆▃▁\n 5   3.92   4.93 ▇▃▇▅▁\n 6   3.61   5.42 ▃▃▇▁▂\n 7  18.9   22.9  ▃▇▇▂▁\n 8   1      1    ▇▁▁▁▆\n 9   1      1    ▇▁▁▁▆\n10   4      5    ▇▁▆▁▂\n11   4      8    ▇▂▅▁▁\n</pre>\n<h1 id=\"model-fitting-and-predictions\"><strong>Model fitting and predictions</strong></h1>\n<pre>library(learningmachine)\n\n## Data -----------------------------------------------------------------------------\nX &lt;- as.matrix(mtcars[,-1])\ny &lt;- mtcars$mpg\n\n# Split train/test\nset.seed(123)\n(index_train &lt;- base::sample.int(n = nrow(X),\n                                 size = floor(0.7*nrow(X)),\n                                 replace = FALSE))\nX_train &lt;- X[index_train, ]\ny_train &lt;- y[index_train]\nX_test &lt;- X[-index_train, ]\ny_test &lt;- y[-index_train]\ndim(X_train)\ndim(X_test)\n\n## Kernel Ridge Regressor (KRR) and Random Forest (RF) objects -----------------------------------------------------------------------------\nobj_KRR &lt;- learningmachine::KernelRidgeRegressor$new()\nobj_RF &lt;- learningmachine::RangerRegressor$new()\n\n## Fit KRR and RF -----------------------------------------------------------------------------\nt0 &lt;- proc.time()[3]\nobj_KRR$fit(X_train, y_train, lambda = 0.05)\ncat(\"Elapsed: \", proc.time()[3] - t0, \"s \\n\")\nt0 &lt;- proc.time()[3]\nobj_RF$fit(X_train, y_train)\ncat(\"Elapsed: \", proc.time()[3] - t0, \"s \\n\")\n\n## Predictions ------------------------------------------------------------\nres_KRR &lt;- obj_KRR$predict(X = X_test, level = 95,\n                   method = \"splitconformal\")\nres2_KRR &lt;- obj_KRR$predict(X = X_test, level = 95,\n                    method = \"jackknifeplus\")\nres_RF &lt;- obj_RF$predict(X = X_test, level = 95,\n                   method = \"splitconformal\")\nres2_RF &lt;- obj_RF$predict(X = X_test, level = 95,\n                    method = \"jackknifeplus\")\n\r\nElapsed:  0.005 s \nElapsed:  0.058 s \n  |======================================================================| 100%\n  |======================================================================| 100%\n</pre>\n<h1 id=\"graph\"><strong>Graph</strong></h1>\n<pre>par(mfrow=c(2, 2))\n\nplot(c(y_train, res_KRR$preds), type='l',\n     main=\"split conformal (KRR) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res_KRR$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_KRR$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_KRR$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n\nplot(c(y_train, res2_KRR$preds), type='l',\n     main=\"jackknife+ (KRR) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res2_KRR$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_KRR$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_KRR$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n\nplot(c(y_train, res_RF$preds), type='l',\n     main=\"split conformal (RF) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res_RF$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_RF$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_RF$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n\nplot(c(y_train, res2_RF$preds), type='l',\n     main=\"jackknife+ (RF) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res2_RF$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_RF$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_RF$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n</pre>\n<p><img alt=\"Prediction intervals\" class=\"img-responsive\" data-lazy-src=\"https://i2.wp.com/thierrymoudiki.github.io/images/2024-01-01/2024-01-01-image1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Prediction intervals\" class=\"img-responsive\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/thierrymoudiki.github.io/images/2024-01-01/2024-01-01-image1.png?w=578&amp;ssl=1\"/></noscript></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://thierrymoudiki.github.io//blog/2024/01/01/r/learningmachine/learningmachine\"> T. Moudiki's Webpage - R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "learningmachine: prediction intervals for conformalized Kernel ridge regression and Random Forest\nPosted on\nDecember 31, 2023\nby\nT. Moudiki\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nT. Moudiki's Webpage - R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI created R package\nlearningmachine\nin the first place, in order to have a unified, object-oriented (using\nR6\n), interface for the machine learning algorithms I use the most on tabular data. This (\nwork in progress\n) package is available\non GitHub\nand the\nR-universe\n. There will certainly be a Python version in the future.\nThis post shows how to use\nlearningmachine\nto compute prediction intervals for miles per gallon (mpg) car consumption using conformalized Kernel ridge regression and R package\nranger\n’s Random Forest.\nInstall packages\nutils::install.packages('learningmachine',\n                 repos = c('https://techtonique.r-universe.dev',\n                           'https://cloud.r-project.org'))\nutils::install.packages(\"skimr\")\nImport dataset\ndata(mtcars)\nDescriptive statistics\nskimr::skim(mtcars)\n\n── Data Summary ────────────────────────\n                           Values\nName                       mtcars\nNumber of rows             32    \nNumber of columns          11    \n_______________________          \nColumn type frequency:           \n  numeric                  11    \n________________________         \nGroup variables            None  \n\n── Variable type: numeric ──────────────────────────────────────────────────────\n   skim_variable n_missing complete_rate    mean      sd    p0    p25    p50\n 1 mpg                   0             1  20.1     6.03  10.4   15.4   19.2 \n 2 cyl                   0             1   6.19    1.79   4      4      6   \n 3 disp                  0             1 231.    124.    71.1  121.   196.  \n 4 hp                    0             1 147.     68.6   52     96.5  123   \n 5 drat                  0             1   3.60    0.535  2.76   3.08   3.70\n 6 wt                    0             1   3.22    0.978  1.51   2.58   3.32\n 7 qsec                  0             1  17.8     1.79  14.5   16.9   17.7 \n 8 vs                    0             1   0.438   0.504  0      0      0   \n 9 am                    0             1   0.406   0.499  0      0      0   \n10 gear                  0             1   3.69    0.738  3      3      4   \n11 carb                  0             1   2.81    1.62   1      2      2   \n      p75   p100 hist \n 1  22.8   33.9  ▃▇▅▁▂\n 2   8      8    ▆▁▃▁▇\n 3 326    472    ▇▃▃▃▂\n 4 180    335    ▇▇▆▃▁\n 5   3.92   4.93 ▇▃▇▅▁\n 6   3.61   5.42 ▃▃▇▁▂\n 7  18.9   22.9  ▃▇▇▂▁\n 8   1      1    ▇▁▁▁▆\n 9   1      1    ▇▁▁▁▆\n10   4      5    ▇▁▆▁▂\n11   4      8    ▇▂▅▁▁\nModel fitting and predictions\nlibrary(learningmachine)\n\n## Data -----------------------------------------------------------------------------\nX <- as.matrix(mtcars[,-1])\ny <- mtcars$mpg\n\n# Split train/test\nset.seed(123)\n(index_train <- base::sample.int(n = nrow(X),\n                                 size = floor(0.7*nrow(X)),\n                                 replace = FALSE))\nX_train <- X[index_train, ]\ny_train <- y[index_train]\nX_test <- X[-index_train, ]\ny_test <- y[-index_train]\ndim(X_train)\ndim(X_test)\n\n## Kernel Ridge Regressor (KRR) and Random Forest (RF) objects -----------------------------------------------------------------------------\nobj_KRR <- learningmachine::KernelRidgeRegressor$new()\nobj_RF <- learningmachine::RangerRegressor$new()\n\n## Fit KRR and RF -----------------------------------------------------------------------------\nt0 <- proc.time()[3]\nobj_KRR$fit(X_train, y_train, lambda = 0.05)\ncat(\"Elapsed: \", proc.time()[3] - t0, \"s \\n\")\nt0 <- proc.time()[3]\nobj_RF$fit(X_train, y_train)\ncat(\"Elapsed: \", proc.time()[3] - t0, \"s \\n\")\n\n## Predictions ------------------------------------------------------------\nres_KRR <- obj_KRR$predict(X = X_test, level = 95,\n                   method = \"splitconformal\")\nres2_KRR <- obj_KRR$predict(X = X_test, level = 95,\n                    method = \"jackknifeplus\")\nres_RF <- obj_RF$predict(X = X_test, level = 95,\n                   method = \"splitconformal\")\nres2_RF <- obj_RF$predict(X = X_test, level = 95,\n                    method = \"jackknifeplus\")\n\nElapsed:  0.005 s \nElapsed:  0.058 s \n  |======================================================================| 100%\n  |======================================================================| 100%\nGraph\npar(mfrow=c(2, 2))\n\nplot(c(y_train, res_KRR$preds), type='l',\n     main=\"split conformal (KRR) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res_KRR$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_KRR$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_KRR$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n\nplot(c(y_train, res2_KRR$preds), type='l',\n     main=\"jackknife+ (KRR) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res2_KRR$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_KRR$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_KRR$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n\nplot(c(y_train, res_RF$preds), type='l',\n     main=\"split conformal (RF) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res_RF$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_RF$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res_RF$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\n\nplot(c(y_train, res2_RF$preds), type='l',\n     main=\"jackknife+ (RF) \\n prediction intervals\",\n     xlab=\"obs.\",\n     ylab=\"mpg\",\n     ylim = c(3, 33))\nlines(c(y_train, res2_RF$upper), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_RF$lower), col=\"gray60\", lwd = 3)\nlines(c(y_train, res2_RF$preds), col = \"red\", lwd = 2)\nlines(c(y_train, y_test), col = \"blue\", lwd = 2)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nT. Moudiki's Webpage - R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "prediction intervals for miles per gallon (mpg) car consumption using conformalized Kernel ridge regression and random forest.",
+    "meta_keywords": null,
+    "og_description": "prediction intervals for miles per gallon (mpg) car consumption using conformalized Kernel ridge regression and random forest.",
+    "og_image": "https://thierrymoudiki.github.io/images/2024-01-01/2024-01-01-image1.png",
+    "og_title": "learningmachine: prediction intervals for conformalized Kernel ridge regression and Random Forest | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.3,
+    "sitemap_lastmod": "2024-01-01T00:00:00+00:00",
+    "twitter_description": "prediction intervals for miles per gallon (mpg) car consumption using conformalized Kernel ridge regression and random forest.",
+    "twitter_title": "learningmachine: prediction intervals for conformalized Kernel ridge regression and Random Forest | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/12/learningmachine-prediction-intervals-for-conformalized-kernel-ridge-regression-and-random-forest/",
+    "word_count": 864
+  }
+}

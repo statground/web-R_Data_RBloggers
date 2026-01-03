@@ -1,0 +1,131 @@
+{
+  "uuid": "774b8b18-9559-40d0-a84d-95de86d4a99d",
+  "created_at": "2025-11-17 20:41:25",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2008/11/first-and-easy-steps-with-r-and-sweave/",
+    "crawled_at": "2025-11-17T10:48:36.138025",
+    "external_links": [
+      {
+        "href": "https://worldofrcraft.blogspot.com/2008/11/first-and-easy-steps-with-r-and-sweave.html",
+        "text": "World of R-Craft"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.stat.umn.edu/~charlie/Sweave/",
+        "text": "Reproducible Research"
+      },
+      {
+        "href": "http://www.stat.umn.edu/~charlie/",
+        "text": "Charlie Geyer"
+      },
+      {
+        "href": "http://www.stat.umn.edu/~charlie/Sweave/#exam",
+        "text": "Reproducible Research Page"
+      },
+      {
+        "href": "https://4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s1600-h/Bild+5.png",
+        "text": null
+      },
+      {
+        "href": "https://worldofrcraft.blogspot.com/2008/11/first-and-easy-steps-with-r-and-sweave.html",
+        "text": "World of R-Craft"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "First and easy steps with R and Sweave | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s400/Bild+5.png?w=578"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s400/Bild+5.png?w=578"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/k/",
+        "text": ":)-k"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+        "text": "[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-41472 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">First and easy steps with R and Sweave</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 28, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/k/\">:)-k</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://worldofrcraft.blogspot.com/2008/11/first-and-easy-steps-with-r-and-sweave.html\"> World of R-Craft</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->What really sold me to the idea of using Sweave and therefore (re)learning LaTeX was the idea of <a href=\"http://www.stat.umn.edu/~charlie/Sweave/\" rel=\"nofollow\" target=\"_blank\">Reproducible Research</a>. <a href=\"http://www.stat.umn.edu/~charlie/\" rel=\"nofollow\" target=\"_blank\">Charlie Geyer</a> has put together some examples how to mix and match R and LaTeX with Sweave. Today’s goal therefore is to run his examples and to see, what problems I run into 🙂<br/><br/>Allright, if you all go to the example section of Charlie’s <a href=\"http://www.stat.umn.edu/~charlie/Sweave/#exam\" rel=\"nofollow\" target=\"_blank\">Reproducible Research Page</a>, you will find three examples. Let’s start with the first one.<br/><br/>To start, I created a folder ReproducibleResearch, copied my Sweave.sty file into it and created a project within Textmate by dragging the folder onto the Textmate icon in my dock. Then I created a document foo.Rnw, copied the contents of the first example into it and saved it (if you have the R, SWeave and LaTeX bundles installed, TextMate should be recognizing this *.Rnw document as a Sweave document.<br/><br/>Feeling lucky, I just pressed cmd-R to run this code in R.<br/><br/>…drumroll…<br/><br/>It just worked. Wow! A TextMate “Sweave, Typeset &amp; View” window just showed me “An (sic!) Sweave Demo” by Charles J. Geyer! Complete with LaTeX typesetting, R output and even graphics. That’s what I want, so this is a great start! Many kudos to Charles.<br/><br/>Now, let’s analyse the code to see what we can rip off this example.<br/><br/><blockquote>\\documentclass{article}<br/><br/>\\usepackage{amsmath}<br/>\\usepackage{amscd}<br/>\\usepackage[tableposition=top]{caption}<br/>\\usepackage{ifthen}<br/>\\usepackage[utf8]{inputenc}<br/><br/>\\begin{document}<br/><br/>\\title{An Sweave Demo}<br/>\\author{Charles J. Geyer}<br/>\\maketitle</blockquote><br/><br/>All right, so this is just plain LaTeX. It is a document of class article, it uses some packages, it begins the document and defines a title. Doesn’t look pretty in code, but hey, this is LaTeX – you better get used to this 😉<br/><br/><blockquote>This is a demo for using the \\verb@Sweave@ command in R.  To<br/>get started make a regular \\LaTeX\\ file (like this one) but<br/>give it the suffix \\<a class=\"__cf_email__\" data-cfemail=\"c7b1a2b5a587e995a9b0\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>@ instead of \\<a class=\"__cf_email__\" data-cfemail=\"98eefdeafad8b6ecfde0\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>@ and then<br/>turn it into a \\LaTeX\\ file (\\<a class=\"__cf_email__\" data-cfemail=\"fc8a998e9ebc9a9393d2889984\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>@) with the (unix) command<br/>\\begin{verbatim}<br/>R CMD Sweave foo.Rnw<br/>\\end{verbatim}<br/>So you can do<br/>\\begin{verbatim}<br/>latex foo<br/>xdvi foo<br/>\\end{verbatim}<br/>and so forth.</blockquote><br/><br/>Now there is some text – all this \\verb@sometext@ gives you a code-like text formating within normal text. \\begin{verbatim} starts a code block, \\end{verbatim} stops it. Pretty standard LaTeX stuff.<br/><br/>A few lines later it gets more interesting:<br/><blockquote><br/>&lt;<two>&gt;=<br/>2 + 2<br/>@</two></blockquote><br/><br/>Alright, so this is a code chunk, which will be run and the output of R will be written. Very nice! Try it out and alter the 2 + 2 to something else and sweave the file again. I typed in 2 * 1024 – 35 and the result has been 2013. Easy enough.<br/><br/><a data-cf-modified-911472ed09b217e990a23032-=\"\" href=\"https://4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s1600-h/Bild+5.png\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s400/Bild+5.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s400/Bild+5.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"display:block; margin:1px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 70px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5273849868399582834\" src=\"https://i1.wp.com/4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s400/Bild+5.png?w=578\" style=\"display:block; margin:1px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 70px;\"/></noscript></a><br/><br/>In the next post I will digg deeper into creating graphs and doing more complex analysis reports with Sweave. For tonight, I am happy with the first results.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://worldofrcraft.blogspot.com/2008/11/first-and-easy-steps-with-r-and-sweave.html\"> World of R-Craft</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "First and easy steps with R and Sweave\nPosted on\nNovember 28, 2008\nby\n:)-k\nin Uncategorized | 0 Comments\n[This article was first published on\nWorld of R-Craft\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhat really sold me to the idea of using Sweave and therefore (re)learning LaTeX was the idea of\nReproducible Research\n.\nCharlie Geyer\nhas put together some examples how to mix and match R and LaTeX with Sweave. Today’s goal therefore is to run his examples and to see, what problems I run into 🙂\nAllright, if you all go to the example section of Charlie’s\nReproducible Research Page\n, you will find three examples. Let’s start with the first one.\nTo start, I created a folder ReproducibleResearch, copied my Sweave.sty file into it and created a project within Textmate by dragging the folder onto the Textmate icon in my dock. Then I created a document foo.Rnw, copied the contents of the first example into it and saved it (if you have the R, SWeave and LaTeX bundles installed, TextMate should be recognizing this *.Rnw document as a Sweave document.\nFeeling lucky, I just pressed cmd-R to run this code in R.\n…drumroll…\nIt just worked. Wow! A TextMate “Sweave, Typeset & View” window just showed me “An (sic!) Sweave Demo” by Charles J. Geyer! Complete with LaTeX typesetting, R output and even graphics. That’s what I want, so this is a great start! Many kudos to Charles.\nNow, let’s analyse the code to see what we can rip off this example.\n\\documentclass{article}\n\\usepackage{amsmath}\n\\usepackage{amscd}\n\\usepackage[tableposition=top]{caption}\n\\usepackage{ifthen}\n\\usepackage[utf8]{inputenc}\n\\begin{document}\n\\title{An Sweave Demo}\n\\author{Charles J. Geyer}\n\\maketitle\nAll right, so this is just plain LaTeX. It is a document of class article, it uses some packages, it begins the document and defines a title. Doesn’t look pretty in code, but hey, this is LaTeX – you better get used to this 😉\nThis is a demo for using the \\verb@Sweave@ command in R.  To\nget started make a regular \\LaTeX\\ file (like this one) but\ngive it the suffix \\\n[email protected]\n@ instead of \\\n[email protected]\n@ and then\nturn it into a \\LaTeX\\ file (\\\n[email protected]\n@) with the (unix) command\n\\begin{verbatim}\nR CMD Sweave foo.Rnw\n\\end{verbatim}\nSo you can do\n\\begin{verbatim}\nlatex foo\nxdvi foo\n\\end{verbatim}\nand so forth.\nNow there is some text – all this \\verb@sometext@ gives you a code-like text formating within normal text. \\begin{verbatim} starts a code block, \\end{verbatim} stops it. Pretty standard LaTeX stuff.\nA few lines later it gets more interesting:\n<\n>=\n2 + 2\n@\nAlright, so this is a code chunk, which will be run and the output of R will be written. Very nice! Try it out and alter the 2 + 2 to something else and sweave the file again. I typed in 2 * 1024 – 35 and the result has been 2013. Easy enough.\nIn the next post I will digg deeper into creating graphs and doing more complex analysis reports with Sweave. For tonight, I am happy with the first results.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nWorld of R-Craft\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "What really sold me to the idea of using Sweave and therefore (re)learning LaTeX was the idea of Reproducible Research. Charlie Geyer has put together some examples how to mix and match R and LaTeX with Sweave. Today's goal therefore is to run his examples and to see, what problems I run into :)Allright, if you all go to the example section of Charlie's Reproducible Research Page, you will find three examples. Let's start with the first one.To start, I created a folder ReproducibleResearch, copied my Sweave.sty file into it and created a project within Textmate by dragging the folder onto the Textmate icon in my dock. Then I created a document foo.Rnw, copied the contents of the first example into it and saved it (if you have the R, SWeave and LaTeX bundles installed, TextMate should be recognizing this *.Rnw document as a Sweave document.Feeling lucky, I just pressed cmd-R to run this code in R.…drumroll…It just worked. Wow! A TextMate \"Sweave, Typeset & View\" window just showed me \"An (sic!) Sweave Demo\" by Charles J. Geyer! Complete with LaTeX typesetting, R output and even graphics. That's what I want, so this is a great start! Many kudos to Charles.Now, let's analyse the code to see what we can rip off this example.\\documentclass{article}\\usepackage{amsmath}\\usepackage{amscd}\\usepackage[tableposition=top]{caption}\\usepackage{ifthen}\\usepackage[utf8]{inputenc}\\begin{document}\\title{An Sweave Demo}\\author{Charles J. Geyer}\\maketitle All right, so this is just plain LaTeX. It is a document of class article, it uses some packages, it begins the document and defines a title. Doesn't look pretty in code, but hey, this is LaTeX - you better get used to this ;)This is a demo for using the \\verb@Sweave@ command in R. Toget started make a regular \\LaTeX\\ file (like this one) butgive it the suffix \\verb@.Rnw@ instead of \\verb@.tex@ and thenturn it into a \\LaTeX\\ file (\\verb@foo.tex@) with the (unix) command\\begin{verbatim}R CMD Sweave foo.Rnw\\end{verbatim}So you can do\\begin{verbatim}latex fooxdvi foo\\end{verbatim}and so forth. Now there is some text - all this \\verb@sometext@ gives you a code-like text formating within normal text. \\begin{verbatim} starts a code block, \\end{verbatim} stops it. Pretty standard LaTeX stuff.A few lines later it gets more interesting: >=2 + 2@ Alright, so this is a code chunk, which will be run and the output of R will be written. Very nice! Try it out and alter the 2 + 2 to something else and sweave the file again. I typed in 2 * 1024 - 35 and the result has been 2013. Easy enough.In the next post I will digg deeper into creating graphs and doing more complex analysis reports with Sweave. For tonight, I am happy with the first results.",
+    "meta_keywords": null,
+    "og_description": "What really sold me to the idea of using Sweave and therefore (re)learning LaTeX was the idea of Reproducible Research. Charlie Geyer has put together some examples how to mix and match R and LaTeX with Sweave. Today's goal therefore is to run his examples and to see, what problems I run into :)Allright, if you all go to the example section of Charlie's Reproducible Research Page, you will find three examples. Let's start with the first one.To start, I created a folder ReproducibleResearch, copied my Sweave.sty file into it and created a project within Textmate by dragging the folder onto the Textmate icon in my dock. Then I created a document foo.Rnw, copied the contents of the first example into it and saved it (if you have the R, SWeave and LaTeX bundles installed, TextMate should be recognizing this *.Rnw document as a Sweave document.Feeling lucky, I just pressed cmd-R to run this code in R.…drumroll…It just worked. Wow! A TextMate \"Sweave, Typeset & View\" window just showed me \"An (sic!) Sweave Demo\" by Charles J. Geyer! Complete with LaTeX typesetting, R output and even graphics. That's what I want, so this is a great start! Many kudos to Charles.Now, let's analyse the code to see what we can rip off this example.\\documentclass{article}\\usepackage{amsmath}\\usepackage{amscd}\\usepackage[tableposition=top]{caption}\\usepackage{ifthen}\\usepackage[utf8]{inputenc}\\begin{document}\\title{An Sweave Demo}\\author{Charles J. Geyer}\\maketitle All right, so this is just plain LaTeX. It is a document of class article, it uses some packages, it begins the document and defines a title. Doesn't look pretty in code, but hey, this is LaTeX - you better get used to this ;)This is a demo for using the \\verb@Sweave@ command in R. Toget started make a regular \\LaTeX\\ file (like this one) butgive it the suffix \\verb@.Rnw@ instead of \\verb@.tex@ and thenturn it into a \\LaTeX\\ file (\\verb@foo.tex@) with the (unix) command\\begin{verbatim}R CMD Sweave foo.Rnw\\end{verbatim}So you can do\\begin{verbatim}latex fooxdvi foo\\end{verbatim}and so forth. Now there is some text - all this \\verb@sometext@ gives you a code-like text formating within normal text. \\begin{verbatim} starts a code block, \\end{verbatim} stops it. Pretty standard LaTeX stuff.A few lines later it gets more interesting: >=2 + 2@ Alright, so this is a code chunk, which will be run and the output of R will be written. Very nice! Try it out and alter the 2 + 2 to something else and sweave the file again. I typed in 2 * 1024 - 35 and the result has been 2013. Easy enough.In the next post I will digg deeper into creating graphs and doing more complex analysis reports with Sweave. For tonight, I am happy with the first results.",
+    "og_image": "https://4.bp.blogspot.com/_UPTH3sS5XaU/STB6g2SynnI/AAAAAAAAABA/s1GumNUnTR8/s400/Bild+5.png",
+    "og_title": "First and easy steps with R and Sweave | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.2,
+    "sitemap_lastmod": "2008-11-28T23:12:16+00:00",
+    "twitter_description": "What really sold me to the idea of using Sweave and therefore (re)learning LaTeX was the idea of Reproducible Research. Charlie Geyer has put together some examples how to mix and match R and LaTeX with Sweave. Today's goal therefore is to run his examples and to see, what problems I run into :)Allright, if you all go to the example section of Charlie's Reproducible Research Page, you will find three examples. Let's start with the first one.To start, I created a folder ReproducibleResearch, copied my Sweave.sty file into it and created a project within Textmate by dragging the folder onto the Textmate icon in my dock. Then I created a document foo.Rnw, copied the contents of the first example into it and saved it (if you have the R, SWeave and LaTeX bundles installed, TextMate should be recognizing this *.Rnw document as a Sweave document.Feeling lucky, I just pressed cmd-R to run this code in R.…drumroll…It just worked. Wow! A TextMate \"Sweave, Typeset & View\" window just showed me \"An (sic!) Sweave Demo\" by Charles J. Geyer! Complete with LaTeX typesetting, R output and even graphics. That's what I want, so this is a great start! Many kudos to Charles.Now, let's analyse the code to see what we can rip off this example.\\documentclass{article}\\usepackage{amsmath}\\usepackage{amscd}\\usepackage[tableposition=top]{caption}\\usepackage{ifthen}\\usepackage[utf8]{inputenc}\\begin{document}\\title{An Sweave Demo}\\author{Charles J. Geyer}\\maketitle All right, so this is just plain LaTeX. It is a document of class article, it uses some packages, it begins the document and defines a title. Doesn't look pretty in code, but hey, this is LaTeX - you better get used to this ;)This is a demo for using the \\verb@Sweave@ command in R. Toget started make a regular \\LaTeX\\ file (like this one) butgive it the suffix \\verb@.Rnw@ instead of \\verb@.tex@ and thenturn it into a \\LaTeX\\ file (\\verb@foo.tex@) with the (unix) command\\begin{verbatim}R CMD Sweave foo.Rnw\\end{verbatim}So you can do\\begin{verbatim}latex fooxdvi foo\\end{verbatim}and so forth. Now there is some text - all this \\verb@sometext@ gives you a code-like text formating within normal text. \\begin{verbatim} starts a code block, \\end{verbatim} stops it. Pretty standard LaTeX stuff.A few lines later it gets more interesting: >=2 + 2@ Alright, so this is a code chunk, which will be run and the output of R will be written. Very nice! Try it out and alter the 2 + 2 to something else and sweave the file again. I typed in 2 * 1024 - 35 and the result has been 2013. Easy enough.In the next post I will digg deeper into creating graphs and doing more complex analysis reports with Sweave. For tonight, I am happy with the first results.",
+    "twitter_title": "First and easy steps with R and Sweave | R-bloggers",
+    "url": "https://www.r-bloggers.com/2008/11/first-and-easy-steps-with-r-and-sweave/",
+    "word_count": 635
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "uuid": "158d9b36-8341-426a-84fd-9b8da40db597",
+  "created_at": "2025-11-17 20:41:26",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2008/11/sweave-engine-for-texshop/",
+    "crawled_at": "2025-11-17T10:49:01.652521",
+    "external_links": [
+      {
+        "href": "http://cameron.bracken.bz/sweave-for-texshop",
+        "text": "cameron.bracken.bz » R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Sweave",
+        "text": "Sweave"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://www.uoregon.edu/~koch/texshop/",
+        "text": "TeXShop"
+      },
+      {
+        "href": "http://sharpsteen.net/",
+        "text": "Charlie Sharpsteen"
+      },
+      {
+        "href": "https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png",
+        "text": null
+      },
+      {
+        "href": "http://cameron.bracken.bz/sweave-for-texshop",
+        "text": "cameron.bracken.bz » R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Sweave Engine for TeXShop | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png?w=578"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png?w=578"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/cameron/",
+        "text": "cameron"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-48970 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Sweave Engine for TeXShop</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 17, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/cameron/\">cameron</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://cameron.bracken.bz/sweave-for-texshop\"> cameron.bracken.bz » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p><a href=\"https://en.wikipedia.org/wiki/Sweave\" rel=\"nofollow\" target=\"_blank\">Sweave</a> is an awesome utility for including the output of <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> code in a LaTeX document which I have started using regularly.</p>\n<p><a href=\"http://www.uoregon.edu/~koch/texshop/\" rel=\"nofollow\" target=\"_blank\">TeXShop</a> is my favorite editor/viewer for LaTeX under Mac OS X for many reasons. One of which is the speed of the edit -&gt; compile -&gt; view process which it enables.  Therefore, I have been reluctant to use Sweave in the past because of the extra LaTeX compilation step that is not supported by default in TeXShop.</p>\n<p>Recently, my friend <a href=\"http://sharpsteen.net/\" rel=\"nofollow\" target=\"_blank\">Charlie Sharpsteen</a> first showed me this way to get around this with a custom “engine”. The engine file looke like this:</p>\n<p><strong>Sweave.engine</strong></p>\n<p><div class=\"wp_syntax\" style=\"text-align: left;\">\n<div class=\"bash\" style=\"font-family:monospace;\"><span style=\"color: #666666; font-style: italic;\">#!/bin/bash</span><br/>\n<br/>\n<span style=\"color: #7a0874; font-weight: bold;\">export</span> <span style=\"color: #007800;\">PATH</span>=<span style=\"color: #007800;\">$PATH</span>:<span style=\"color: #000000; font-weight: bold;\">/</span>usr<span style=\"color: #000000; font-weight: bold;\">/</span>texbin:<span style=\"color: #000000; font-weight: bold;\">/</span>usr<span style=\"color: #000000; font-weight: bold;\">/</span>local<span style=\"color: #000000; font-weight: bold;\">/</span>bin<br/>\nR CMD Sweave <span style=\"color: #ff0000;\">“$1”</span><br/>\npdflatex <span style=\"color: #ff0000;\">“<span style=\"color: #007800;\">${1%.*}</span>“</span></div>\n</div></p>\n<p>Place this file in <code>~/Library/TeXShop/Engines/</code>, make sure <code>PATH</code> includes the location of you TeX distribution.</p>\n<p>Make sure executable permissions (like 744) are set on both files or TeXShop will give an error message.  Now open (or re-open) TeXShop and select “Sweave” from the list at the top left.  Now you can use command-t to compile Sweave and view your document in one step! Thanks Chuck!</p>\n<p><a href=\"https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png\" rel=\"nofollow\" target=\"_blank\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/cameron.bracken.bz/wp-content/images/end-result.png?w=578\"/></noscript></a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://cameron.bracken.bz/sweave-for-texshop\"> cameron.bracken.bz » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Sweave Engine for TeXShop\nPosted on\nNovember 17, 2008\nby\ncameron\nin Uncategorized | 0 Comments\n[This article was first published on\ncameron.bracken.bz » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSweave\nis an awesome utility for including the output of\nR\ncode in a LaTeX document which I have started using regularly.\nTeXShop\nis my favorite editor/viewer for LaTeX under Mac OS X for many reasons. One of which is the speed of the edit -> compile -> view process which it enables.  Therefore, I have been reluctant to use Sweave in the past because of the extra LaTeX compilation step that is not supported by default in TeXShop.\nRecently, my friend\nCharlie Sharpsteen\nfirst showed me this way to get around this with a custom “engine”. The engine file looke like this:\nSweave.engine\n#!/bin/bash\nexport\nPATH\n=\n$PATH\n:\n/\nusr\n/\ntexbin:\n/\nusr\n/\nlocal\n/\nbin\nR CMD Sweave\n“$1”\npdflatex\n“\n${1%.*}\n“\nPlace this file in\n~/Library/TeXShop/Engines/\n, make sure\nPATH\nincludes the location of you TeX distribution.\nMake sure executable permissions (like 744) are set on both files or TeXShop will give an error message.  Now open (or re-open) TeXShop and select “Sweave” from the list at the top left.  Now you can use command-t to compile Sweave and view your document in one step! Thanks Chuck!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ncameron.bracken.bz » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Sweave is an awesome utility for including the output of R code in a LaTeX document which I have started using regularly. TeXShop is my favorite editor/viewer for LaTeX under Mac OS X for many reasons. One of which is the speed of the edit -> compile -> view process which it enables. Therefore, I [...]",
+    "meta_keywords": null,
+    "og_description": "Sweave is an awesome utility for including the output of R code in a LaTeX document which I have started using regularly. TeXShop is my favorite editor/viewer for LaTeX under Mac OS X for many reasons. One of which is the speed of the edit -> compile -> view process which it enables. Therefore, I [...]",
+    "og_image": "https://cameron.bracken.bz/wp-content/images/end-result.png",
+    "og_title": "Sweave Engine for TeXShop | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.6,
+    "sitemap_lastmod": "2008-11-17T06:19:48+00:00",
+    "twitter_description": "Sweave is an awesome utility for including the output of R code in a LaTeX document which I have started using regularly. TeXShop is my favorite editor/viewer for LaTeX under Mac OS X for many reasons. One of which is the speed of the edit -> compile -> view process which it enables. Therefore, I [...]",
+    "twitter_title": "Sweave Engine for TeXShop | R-bloggers",
+    "url": "https://www.r-bloggers.com/2008/11/sweave-engine-for-texshop/",
+    "word_count": 329
+  }
+}

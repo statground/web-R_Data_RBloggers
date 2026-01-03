@@ -1,0 +1,139 @@
+{
+  "uuid": "91618899-87fc-419d-b24b-0da302bd30dd",
+  "created_at": "2025-11-17 20:41:24",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2008/12/memory-limit-management-in-r/",
+    "crawled_at": "2025-11-17T10:48:19.579569",
+    "external_links": [
+      {
+        "href": "https://ggorjan.blogspot.com/2008/12/memory-limit-management-in-r.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://www.insightful.com/",
+        "text": "S+"
+      },
+      {
+        "href": "http://www.sas.com/",
+        "text": "SAS"
+      },
+      {
+        "href": "https://ggorjan.blogspot.com/2008/07/proc-mixed-vs-lmer.html",
+        "text": "exceptions"
+      },
+      {
+        "href": "http://www.agrocampus-ouest.fr/math/useR-2009/tutorials/lumley.html",
+        "text": "tutorial"
+      },
+      {
+        "href": "http://cran.r-project.org/package=ff",
+        "text": "development"
+      },
+      {
+        "href": "http://cran.r-project.org/package=lme4",
+        "text": "lme4 package"
+      },
+      {
+        "href": "https://ggorjan.blogspot.com/2008/12/memory-limit-management-in-r.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Memory limit management in R | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-6870638133081141367?l=ggorjan.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-6870638133081141367?l=ggorjan.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-331 post type-post status-publish format-standard hentry category-r-bloggers tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Memory limit management in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 13, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2008/12/memory-limit-management-in-r.html\"> Gregor Gorjanc</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\"><a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> keeps all the data in RAM. I think I read somewhere that <a href=\"http://www.insightful.com/\" rel=\"nofollow\" target=\"_blank\">S+</a> does not hold all the data in RAM, which makes S+ slower than R. On the other hand, when we have a lot of data, R chockes. I know that <a href=\"http://www.sas.com/\" rel=\"nofollow\" target=\"_blank\">SAS</a> at some “periods” keeps data (tables) on disk in special files, but I do not know the details of interfacing these files. My overall impression is that SAS is more efficient with big datasets than R, but there are also <a href=\"https://ggorjan.blogspot.com/2008/07/proc-mixed-vs-lmer.html\" rel=\"nofollow\" target=\"_blank\">exceptions</a>, some special packages (see this <a href=\"http://www.agrocampus-ouest.fr/math/useR-2009/tutorials/lumley.html\" rel=\"nofollow\" target=\"_blank\">tutorial</a> for some info) and vibrant <a href=\"http://cran.r-project.org/package=ff\" rel=\"nofollow\" target=\"_blank\">development</a> which to my impression takles the problem of large data in the spirit of SAS – I really do not know the details, so please bear with me.</div><br/><div style=\"text-align: justify;\">Anyway, what can you do when you hit memory limit in R? Yesterday, I was fitting the so called mixed model using the lmer() function from the <a href=\"http://cran.r-project.org/package=lme4\" rel=\"nofollow\" target=\"_blank\">lme4 package</a> on Dell Inspiron I1520 laptop having Intel(R) Core(TM) Duo CPU T7500 @ 2.20GHz 2.20GHz and 2046 MB of RAM.  I was using MS Windows Vista. The fitting went fine, but when I wanted to summarize the returned object, I got the following error message:</div><br/><pre>&gt; fit &lt;- lmer(y ~ effect1 + ....) &gt; summary(fit)\nError: cannot allocate vector of size 130.4 Mb\nIn addition: There were 22 warnings (use warnings() to see them)</pre><div style=\"text-align: justify;\">First, I find this very odd, since I would expect that fitting the model should be much more memory consuming in comparison to summarizing the fitted object! I will ask the developers of the lme4 package, but until then I tried to find my way out.</div><br/><div style=\"text-align: justify;\">Message “<span style=\"font-family:courier new;\">Error: cannot allocate vector of size 130.4 Mb</span>” means that R can not get additional 130.4 Mb of RAM. That is weird since resource manager showed that I have at least cca 850 MB of RAM free. I printe the warnings using <span style=\"font-family:courier new;\">warnings()</span> and got a set of messages saying:</div><pre>&gt; warnings()\n1: In slot(from, what) &lt;- slot(value, what) ... :\nReached total allocation of 1535Mb: see help(memory.size) ...</pre><div style=\"text-align: justify;\">This did not make sense since I have 2GB of RAM. I closed all other applications and removed all objects in the R workspace instead of the fitted model object. However, that did not help. I started reading the help page of memory.size and I must confes that I did not understand  or find anything usefull. However, reading the help further, I follwed to the help page of memor.limit and found out that on my computer R by default can use up to ~ 1.5 GB of RAM and that the user can increase this limit. Using the following code, helped me to solve my problem.</div><pre>&gt;memory.limit()\n[1] 1535.875\n&gt; memory.limit(size=1800)\n&gt; summary(fit)\n</pre><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-6870638133081141367?l=ggorjan.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-6870638133081141367?l=ggorjan.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-6870638133081141367?l=ggorjan.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2008/12/memory-limit-management-in-r.html\"> Gregor Gorjanc</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+    "main_text": "Memory limit management in R\nPosted on\nDecember 13, 2008\nby\nGregor Gorjanc\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGregor Gorjanc\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR\nkeeps all the data in RAM. I think I read somewhere that\nS+\ndoes not hold all the data in RAM, which makes S+ slower than R. On the other hand, when we have a lot of data, R chockes. I know that\nSAS\nat some “periods” keeps data (tables) on disk in special files, but I do not know the details of interfacing these files. My overall impression is that SAS is more efficient with big datasets than R, but there are also\nexceptions\n, some special packages (see this\ntutorial\nfor some info) and vibrant\ndevelopment\nwhich to my impression takles the problem of large data in the spirit of SAS – I really do not know the details, so please bear with me.\nAnyway, what can you do when you hit memory limit in R? Yesterday, I was fitting the so called mixed model using the lmer() function from the\nlme4 package\non Dell Inspiron I1520 laptop having Intel(R) Core(TM) Duo CPU T7500 @ 2.20GHz 2.20GHz and 2046 MB of RAM.  I was using MS Windows Vista. The fitting went fine, but when I wanted to summarize the returned object, I got the following error message:\n> fit <- lmer(y ~ effect1 + ....) > summary(fit)\nError: cannot allocate vector of size 130.4 Mb\nIn addition: There were 22 warnings (use warnings() to see them)\nFirst, I find this very odd, since I would expect that fitting the model should be much more memory consuming in comparison to summarizing the fitted object! I will ask the developers of the lme4 package, but until then I tried to find my way out.\nMessage “\nError: cannot allocate vector of size 130.4 Mb\n” means that R can not get additional 130.4 Mb of RAM. That is weird since resource manager showed that I have at least cca 850 MB of RAM free. I printe the warnings using\nwarnings()\nand got a set of messages saying:\n> warnings()\n1: In slot(from, what) <- slot(value, what) ... :\nReached total allocation of 1535Mb: see help(memory.size) ...\nThis did not make sense since I have 2GB of RAM. I closed all other applications and removed all objects in the R workspace instead of the fitted model object. However, that did not help. I started reading the help page of memory.size and I must confes that I did not understand  or find anything usefull. However, reading the help further, I follwed to the help page of memor.limit and found out that on my computer R by default can use up to ~ 1.5 GB of RAM and that the user can increase this limit. Using the following code, helped me to solve my problem.\n>memory.limit()\n[1] 1535.875\n> memory.limit(size=1800)\n> summary(fit)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR",
+    "meta_description": "R keeps all the data in RAM. I think I read somewhere that S+ does not hold all the data in RAM, which makes S+ slower than R. On the other hand, when we have a lot of data, R chockes. I know that SAS at some \"periods\" keeps data (tables) on disk in sp...",
+    "meta_keywords": "r",
+    "og_description": "R keeps all the data in RAM. I think I read somewhere that S+ does not hold all the data in RAM, which makes S+ slower than R. On the other hand, when we have a lot of data, R chockes. I know that SAS at some \"periods\" keeps data (tables) on disk in sp...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/6715598735361401237-6870638133081141367?l=ggorjan.blogspot.com",
+    "og_title": "Memory limit management in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3,
+    "sitemap_lastmod": "2008-12-13T13:24:59+00:00",
+    "twitter_description": "R keeps all the data in RAM. I think I read somewhere that S+ does not hold all the data in RAM, which makes S+ slower than R. On the other hand, when we have a lot of data, R chockes. I know that SAS at some \"periods\" keeps data (tables) on disk in sp...",
+    "twitter_title": "Memory limit management in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2008/12/memory-limit-management-in-r/",
+    "word_count": 603
+  }
+}

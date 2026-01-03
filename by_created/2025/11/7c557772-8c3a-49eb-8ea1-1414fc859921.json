@@ -1,0 +1,140 @@
+{
+  "uuid": "7c557772-8c3a-49eb-8ea1-1414fc859921",
+  "created_at": "2025-11-17 20:40:56",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/05/simple-approach-to-converting-grass-db-backends/",
+    "crawled_at": "2025-11-17T10:37:38.014266",
+    "external_links": [
+      {
+        "href": "http://casoilresource.lawr.ucdavis.edu/drupal/node/733",
+        "text": "dylan's blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://grass.osgeo.org/grass64/manuals/html64_user/databaseintro.html",
+        "text": "database back-end"
+      },
+      {
+        "href": "http://grass.osgeo.org/",
+        "text": "GRASS"
+      },
+      {
+        "href": "http://trac.osgeo.org/grass/browser/grass/trunk/doc/vector",
+        "text": "vector model"
+      },
+      {
+        "href": "http://www.clicketyclick.dk/databases/xbase/format/index.html",
+        "text": "DBF"
+      },
+      {
+        "href": "http://www.sqlite.org/",
+        "text": "SQLite"
+      },
+      {
+        "href": "https://addons.mozilla.org/en-US/firefox/addon/5817",
+        "text": "SQLite manager"
+      },
+      {
+        "href": "http://sqlitebrowser.sourceforge.net/index.html",
+        "text": "SQLite data browser"
+      },
+      {
+        "href": "http://sqliteadmin.orbmu2k.de/",
+        "text": "SQLite Admin"
+      },
+      {
+        "href": "http://casoilresource.lawr.ucdavis.edu/drupal/node/733",
+        "text": "read more"
+      },
+      {
+        "href": "http://casoilresource.lawr.ucdavis.edu/drupal/node/733",
+        "text": "dylan's blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Simple Approach to Converting GRASS DB-backends | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/dylan/",
+        "text": "dylan"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/dylan/",
+        "text": "Dylan"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/open-source-gis-and-mapping-ideas/",
+        "text": "Open Source GIS and Mapping Ideas"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-101 post type-post status-publish format-standard hentry category-r-bloggers tag-dylan tag-open-source-gis-and-mapping-ideas\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Simple Approach to Converting GRASS DB-backends</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 23, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/dylan/\">dylan</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://casoilresource.lawr.ucdavis.edu/drupal/node/733\"> dylan's blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p> <br/>\n<b>Premise:</b><br/>\nThe current default <a href=\"http://grass.osgeo.org/grass64/manuals/html64_user/databaseintro.html\" rel=\"nofollow\" target=\"_blank\">database back-end</a> used by the <a href=\"http://grass.osgeo.org/\" rel=\"nofollow\" target=\"_blank\">GRASS</a> <a href=\"http://trac.osgeo.org/grass/browser/grass/trunk/doc/vector\" rel=\"nofollow\" target=\"_blank\">vector model</a> is <a href=\"http://www.clicketyclick.dk/databases/xbase/format/index.html\" rel=\"nofollow\" target=\"_blank\">DBF</a> (as of GRASS 6.5), however this is probably going to be changed (to <a href=\"http://www.sqlite.org/\" rel=\"nofollow\" target=\"_blank\">SQLite</a>) in GRASS 7. The DBF back-end works OK, however it tends to be very sensitive (i.e. breaks) when reserved words occur in column names or portions of a query. Complex UPDATE statements don’t work, and just about anything more complex than a simple SELECT statement usually results in an error. Switching to the SQLite (or Postgresql, etc.) back-end solves most of these problems.</p>\n<p>Currently GRASS uses a single SQLite (file-based) database per mapset– convenient if you are interested in joining attribute tables between vectors; but not set-in-stone as the final approach that will be used by default in GRASS 7. Regardless, converting the back-end is a fairly simple matter. Finally, taking the time to convert to an SQLite or Postgresql back-end will undoubtably save you time and sanity if you ever find yourself working with vector+attribute data on a regular basis. Having access to a complete implementation of SQL can make extracting, summarizing, joining, and re-formatting (column names, types, etc.) tabular data much simpler than what is available in the DBF back-end. Also, there are several convenient graphical SQLite managers available, such as <a href=\"https://addons.mozilla.org/en-US/firefox/addon/5817\" rel=\"nofollow\" target=\"_blank\">SQLite manager</a>, <a href=\"http://sqlitebrowser.sourceforge.net/index.html\" rel=\"nofollow\" target=\"_blank\">SQLite data browser</a>, and <a href=\"http://sqliteadmin.orbmu2k.de/\" rel=\"nofollow\" target=\"_blank\">SQLite Admin</a>.</p>\n<p><a href=\"http://casoilresource.lawr.ucdavis.edu/drupal/node/733\" rel=\"nofollow\" target=\"_blank\">read more</a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://casoilresource.lawr.ucdavis.edu/drupal/node/733\"> dylan's blog</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/dylan/\" rel=\"tag\">Dylan</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/open-source-gis-and-mapping-ideas/\" rel=\"tag\">Open Source GIS and Mapping Ideas</a></li></ul></div></article>",
+    "main_text": "Simple Approach to Converting GRASS DB-backends\nPosted on\nMay 23, 2009\nby\ndylan\nin\nR bloggers\n| 0 Comments\n[This article was first published on\ndylan's blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nPremise:\nThe current default\ndatabase back-end\nused by the\nGRASS\nvector model\nis\nDBF\n(as of GRASS 6.5), however this is probably going to be changed (to\nSQLite\n) in GRASS 7. The DBF back-end works OK, however it tends to be very sensitive (i.e. breaks) when reserved words occur in column names or portions of a query. Complex UPDATE statements don’t work, and just about anything more complex than a simple SELECT statement usually results in an error. Switching to the SQLite (or Postgresql, etc.) back-end solves most of these problems.\nCurrently GRASS uses a single SQLite (file-based) database per mapset– convenient if you are interested in joining attribute tables between vectors; but not set-in-stone as the final approach that will be used by default in GRASS 7. Regardless, converting the back-end is a fairly simple matter. Finally, taking the time to convert to an SQLite or Postgresql back-end will undoubtably save you time and sanity if you ever find yourself working with vector+attribute data on a regular basis. Having access to a complete implementation of SQL can make extracting, summarizing, joining, and re-formatting (column names, types, etc.) tabular data much simpler than what is available in the DBF back-end. Also, there are several convenient graphical SQLite managers available, such as\nSQLite manager\n,\nSQLite data browser\n, and\nSQLite Admin\n.\nread more\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ndylan's blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDylan\nOpen Source GIS and Mapping Ideas",
+    "meta_description": "Premise: The current default database back-end used by the GRASS vector model is DBF (as of GRASS 6.5), however this is probably going to be changed (to SQLite) in GRASS 7. The DBF back-end works OK, however it tends to be very sensitive (i.e. breaks) when reserved words occur in column names or portions of a query. Complex UPDATE statements don't work, and just about anything more complex than a simple SELECT statement usually results in an error. Switching to the SQLite (or Postgresql, etc.) back-end solves most of these problems. Currently GRASS uses a single SQLite (file-based) database per mapset-- convenient if you are interested in joining attribute tables between vectors; but not set-in-stone as the final approach that will be used by default in GRASS 7. Regardless, converting the back-end is a fairly simple matter. Finally, taking the time to convert to an SQLite or Postgresql back-end will undoubtably save you time and sanity if you ever find yourself working with vector+attribute data on a regular basis. Having access to a complete implementation of SQL can make extracting, summarizing, joining, and re-formatting (column names, types, etc.) tabular data much simpler than what is available in the DBF back-end. Also, there are several convenient graphical SQLite managers available, such as SQLite manager, SQLite data browser, and SQLite Admin. read more",
+    "meta_keywords": "dylan,open source gis and mapping ideas",
+    "og_description": "Premise: The current default database back-end used by the GRASS vector model is DBF (as of GRASS 6.5), however this is probably going to be changed (to SQLite) in GRASS 7. The DBF back-end works OK, however it tends to be very sensitive (i.e. breaks) when reserved words occur in column names or portions of a query. Complex UPDATE statements don't work, and just about anything more complex than a simple SELECT statement usually results in an error. Switching to the SQLite (or Postgresql, etc.) back-end solves most of these problems. Currently GRASS uses a single SQLite (file-based) database per mapset-- convenient if you are interested in joining attribute tables between vectors; but not set-in-stone as the final approach that will be used by default in GRASS 7. Regardless, converting the back-end is a fairly simple matter. Finally, taking the time to convert to an SQLite or Postgresql back-end will undoubtably save you time and sanity if you ever find yourself working with vector+attribute data on a regular basis. Having access to a complete implementation of SQL can make extracting, summarizing, joining, and re-formatting (column names, types, etc.) tabular data much simpler than what is available in the DBF back-end. Also, there are several convenient graphical SQLite managers available, such as SQLite manager, SQLite data browser, and SQLite Admin. read more",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Simple Approach to Converting GRASS DB-backends | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.9,
+    "sitemap_lastmod": "2009-05-23T21:32:27+00:00",
+    "twitter_description": "Premise: The current default database back-end used by the GRASS vector model is DBF (as of GRASS 6.5), however this is probably going to be changed (to SQLite) in GRASS 7. The DBF back-end works OK, however it tends to be very sensitive (i.e. breaks) when reserved words occur in column names or portions of a query. Complex UPDATE statements don't work, and just about anything more complex than a simple SELECT statement usually results in an error. Switching to the SQLite (or Postgresql, etc.) back-end solves most of these problems. Currently GRASS uses a single SQLite (file-based) database per mapset-- convenient if you are interested in joining attribute tables between vectors; but not set-in-stone as the final approach that will be used by default in GRASS 7. Regardless, converting the back-end is a fairly simple matter. Finally, taking the time to convert to an SQLite or Postgresql back-end will undoubtably save you time and sanity if you ever find yourself working with vector+attribute data on a regular basis. Having access to a complete implementation of SQL can make extracting, summarizing, joining, and re-formatting (column names, types, etc.) tabular data much simpler than what is available in the DBF back-end. Also, there are several convenient graphical SQLite managers available, such as SQLite manager, SQLite data browser, and SQLite Admin. read more",
+    "twitter_title": "Simple Approach to Converting GRASS DB-backends | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/05/simple-approach-to-converting-grass-db-backends/",
+    "word_count": 384
+  }
+}

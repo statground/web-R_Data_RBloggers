@@ -1,0 +1,203 @@
+{
+  "uuid": "985f0eb0-ef3a-4c1f-a385-f25a057ec7e6",
+  "created_at": "2025-11-22 19:59:28",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/01/seven-tips-for-creating-quarto-revealjs-presentations/",
+    "crawled_at": "2025-11-22T10:55:40.577417",
+    "external_links": [
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-revealjs-tips/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://quarto.org/docs/presentations/revealjs/",
+        "text": "the user guide"
+      },
+      {
+        "href": "https://quarto.org/docs/reference/formats/presentations/revealjs.html",
+        "text": "here"
+      },
+      {
+        "href": "https://quarto.org/docs/presentations/revealjs/advanced.html",
+        "text": "here"
+      },
+      {
+        "href": "https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size",
+        "text": "1050px wide by 700px tall"
+      },
+      {
+        "href": "https://bookdown.org/yihui/rmarkdown-cookbook/opts-tidy.html",
+        "text": "RMarkdown cookbook"
+      },
+      {
+        "href": "https://github.com/quarto-dev/quarto-cli/issues/5852",
+        "text": "this GitHub issue"
+      },
+      {
+        "href": "https://quarto.org/docs/presentations/revealjs/#code-block-height",
+        "text": "Quarto optioncode-block-height"
+      },
+      {
+        "href": "https://stackoverflow.com/questions/79092017/quarto-markdown-to-revealjs-or-html-desmos-embedded-iframes-not-loading",
+        "text": "to this post"
+      },
+      {
+        "href": "https://quarto.org/docs/reference/formats/presentations/revealjs.html#rendering",
+        "text": "as detailed in the Quarto documentation"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-revealjs-tips/#top",
+        "text": "top of this post"
+      },
+      {
+        "href": "https://www.danieldsjoberg.com/gtsummary/",
+        "text": "gtsummary"
+      },
+      {
+        "href": "https://strengejacke.github.io/sjPlot/",
+        "text": "sjPlot"
+      },
+      {
+        "href": "https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing",
+        "text": "disable Quarto’s html table processing"
+      },
+      {
+        "href": "https://quarto-dev.github.io/quarto-r/",
+        "text": "quarto"
+      },
+      {
+        "href": "https://remlapmot.github.io/post/2025/quarto-revealjs-tips/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Seven tips for creating Quarto revealjs presentations | R-bloggers",
+    "images": [
+      {
+        "alt": "Screenshot of using Google Chrome developer tools to inspect the size of a slide and to preview the slides at 1080p resolution.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of using Google Chrome developer tools to inspect the size of a slide and to preview the slides at 1080p resolution.",
+        "base64": null,
+        "src": "https://i2.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/slide-size-and-1080p.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Screenshot of Google Chrome context menu.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of Google Chrome context menu.",
+        "base64": null,
+        "src": "https://i1.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/chrome-context-menu-inspect.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Screenshot of using Google Chrome developer tools to inspect the CSS class of an element of a code output cell.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of using Google Chrome developer tools to inspect the CSS class of an element of a code output cell.",
+        "base64": null,
+        "src": "https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/inspect-output-cell.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Screenshot of the menu to copy the html code to embed a Mentimeter presentation.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Screenshot of the menu to copy the html code to embed a Mentimeter presentation.",
+        "base64": null,
+        "src": "https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/mentimeter-share-iframe-code.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Animated GIF of the spinning dots when a Mentimeter presentation is incorrectly embedded in an HTML document.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Animated GIF of the spinning dots when a Mentimeter presentation is incorrectly embedded in an HTML document.",
+        "base64": null,
+        "src": "https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/menti-failing-to-load.gif?w=170&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-dr-tom-palmer/",
+        "text": "R | Dr Tom Palmer"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-389965 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Seven tips for creating Quarto revealjs presentations</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 18, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-dr-tom-palmer/\">R | Dr Tom Palmer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://remlapmot.github.io/post/2025/quarto-revealjs-tips/\"> R | Dr Tom Palmer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div class=\"section level2\" id=\"introduction\">\n<h2>Introduction</h2>\n<p>Like alot of lecturers I’m teaching at the moment. If I have a presentation to do that’s mainly images I’ll use Powerpoint or Google Slides. If the presentation includes maths or code or both I used to use LaTeX Beamer. Over the years I have grown tired of Beamer and so I thought I’d try making some revealjs presentations using Quarto.</p>\n<p>Revealjs has been around far longer than Quarto, I remember seeing a colleague present using revealjs in about 2012, and you can happily make a revealjs presentation without Quarto. However, the convenience of writing in the Quarto Markdown format is fantastic.</p>\n<p>To learn the basics of making revealjs slides with Quarto I recommend reading <a href=\"https://quarto.org/docs/presentations/revealjs/\" rel=\"nofollow\" target=\"_blank\">the user guide</a>. And full documentation is available <a href=\"https://quarto.org/docs/reference/formats/presentations/revealjs.html\" rel=\"nofollow\" target=\"_blank\">here</a> and <a href=\"https://quarto.org/docs/presentations/revealjs/advanced.html\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>The following tips are solutions to little hurdles that I found I needed to overcome when making my first revealjs presentations using Quarto.</p>\n</div>\n<div class=\"section level2\" id=\"slide-size-and-testing-on-a-smaller-display-size-on-your-own-monitor\">\n<h2>1. Slide size and testing on a smaller display size on your own monitor</h2>\n<p>The great thing about making a presentation in Powerpoint or Google Slides is that you can instantly see if your content fits on a slide. So it helps to have an understanding of how big a slide is. By default a revealjs slide is <a href=\"https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size\" rel=\"nofollow\" target=\"_blank\">1050px wide by 700px tall</a>. This helps you when setting the size of figures and code blocks.</p>\n<p>Additionally it is helpful to be able to preview your slides on the size on monitor you will be presenting on. My University has 1080p monitors in most lecture theatres, however, my monitor is bigger than that. Chrome allows setting the size of the display by opening Developer Tools (Three dots | More tools | Developer Tools). Then you can enter the desired resolution in the top bar as follows (a 1080p screen is 1080 pixels tall and 1920 pixels wide).</p>\n<p><img alt=\"Screenshot of using Google Chrome developer tools to inspect the size of a slide and to preview the slides at 1080p resolution.\" data-lazy-src=\"https://i2.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/slide-size-and-1080p.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of using Google Chrome developer tools to inspect the size of a slide and to preview the slides at 1080p resolution.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/slide-size-and-1080p.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript></p>\n<p>I find this especially helpful when working on a Mac, whose laptops often have unusual screen resolutions.</p>\n</div>\n<div class=\"section level2\" id=\"wider-width-cutoff-in-code-chunks\">\n<h2>2. Wider width cutoff in code chunks</h2>\n<p>Vertical space on a slide is at a premium. Therefore, in a presentation I line break my code wider that I do when coding normally. As described in the <a href=\"https://bookdown.org/yihui/rmarkdown-cookbook/opts-tidy.html\" rel=\"nofollow\" target=\"_blank\">RMarkdown cookbook</a> and in <a href=\"https://github.com/quarto-dev/quarto-cli/issues/5852\" rel=\"nofollow\" target=\"_blank\">this GitHub issue</a> we can enable the use of the <strong>formatR</strong> package on a code chunk using the <code>tidy</code> and <code>tidy-opts</code> chunk options (I think the default is 85 characters, so I choose a value greater than that. I find that 110 is about the widest I can set).</p>\n<pre>```{r}\n#| tidy: TRUE\n#| tidy-opts: !expr list(width.cutoff = I(110))\n# ... Wide R code here ...\n```</pre>\n<p>We can also set these globally for the Quarto document in either the YAML header,</p>\n<pre>knitr:\n  opts_chunk: \n    tidy: TRUE\n    tidy-opts: !expr list(width.cutoff = I(110))</pre>\n<p>or in a chunk at the top of your Quarto document.</p>\n<pre>```{r}\n#| include: false\nknitr::opts_chunk$set(tidy = TRUE, tidy.opts = list(width.cutoff = I(110)))\n```</pre>\n</div>\n<div class=\"section level2\" id=\"taller-code-chunks\">\n<h2>3. Taller code chunks</h2>\n<p>Code chunks come in several flavours in a rendered presentation. There are code input chunks, code output chunks, and chunks for any code output errors. To make the input code chunks taller there is a convenient <a href=\"https://quarto.org/docs/presentations/revealjs/#code-block-height\" rel=\"nofollow\" target=\"_blank\">Quarto option <code>code-block-height</code></a> which is specified in the YAML header (the default is 500px, so pick a value greater than that).</p>\n<pre>---\nformat:\n  revealjs:\n    code-block-height: 650px\n---</pre>\n</div>\n<div class=\"section level2\" id=\"taller-code-output-chunks\">\n<h2>4. Taller code output chunks</h2>\n<p>Currently, there doesn’t seem to be a Quarto option to make the code output chunks taller. Therefore I had to inspect the source code of the html slides to find out how to modify this. In most browsers simply right click on a slide and in Chrome click <em>Inspect</em> – do this over the element on the page you want to find out about.</p>\n<p><img alt=\"Screenshot of Google Chrome context menu.\" data-lazy-src=\"https://i1.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/chrome-context-menu-inspect.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of Google Chrome context menu.\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/chrome-context-menu-inspect.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript></p>\n<p>Doing so over a code output cell shows the developer tools on the right handside. We can then see that the elements and classes for the code output cell are given just above the bottom right pane, i.e., <code>div.cell div.cell-output.cell-output-stdout pre code</code>.</p>\n<p><img alt=\"Screenshot of using Google Chrome developer tools to inspect the CSS class of an element of a code output cell.\" data-lazy-src=\"https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/inspect-output-cell.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of using Google Chrome developer tools to inspect the CSS class of an element of a code output cell.\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/inspect-output-cell.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript></p>\n<p>Therefore, we can make the code output cell have a taller maximum height by specifying <code>max-height</code> as follows in a CSS file which we reference in the YAML header. Note that the default is 400px, so choose a value larger than that.</p>\n<pre>---\nformat:\n  revealjs:\n    css: custom.css\n---</pre>\n<p>The contents of <em>custom.css</em> use the elements and classes of the code chunk we discovered as follows.</p>\n<pre>.cell .cell-output-stdout pre code {\n  max-height: 650px; // Adjust this value as needed\n  overflow-y: auto; // Add this to handle overflow\n}</pre>\n</div>\n<div class=\"section level2\" id=\"embedding-interactive-mentimeter-presentations\">\n<h2>5. Embedding interactive Mentimeter presentations</h2>\n<p>Mentimeter provides the html code required to embed a presentation within an html document. To obtain this, go into a presentation and click the <em>Share</em> button, then select the <em>Slides</em> tab, then click <em>Copy code</em> under <em>Embed slides</em>.</p>\n<p><img alt=\"Screenshot of the menu to copy the html code to embed a Mentimeter presentation.\" data-lazy-src=\"https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/mentimeter-share-iframe-code.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of the menu to copy the html code to embed a Mentimeter presentation.\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/mentimeter-share-iframe-code.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript></p>\n<p>This results in a div containing an iframe, which we can simply paste in as the content of our slide (I have added the line breaks and replaced part of the URL to my presentation with hashes).</p>\n<pre>## My slide with an embedded Menti\n\n&lt;div style='position: relative; padding-bottom: 56.25%; padding-top: 35px;\n  height: 0; overflow: hidden;'&gt;\n&lt;iframe sandbox='allow-scripts allow-same-origin allow-presentation'\n  allowfullscreen='true' allowtransparency='true' frameborder='0' height='315'\n  src='https://www.mentimeter.com/app/presentation/###############/embed'\n  style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'\n  width='420'&gt;\n&lt;/iframe&gt;\n&lt;/div&gt;</pre>\n<p>But when I first rendered a presentation using this code I didn’t see my Mentimeter presentation in the relevant slide but rather the following spinning dots.</p>\n<p><img alt=\"Animated GIF of the spinning dots when a Mentimeter presentation is incorrectly embedded in an HTML document.\" data-lazy-src=\"https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/menti-failing-to-load.gif?w=170&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Animated GIF of the spinning dots when a Mentimeter presentation is incorrectly embedded in an HTML document.\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/remlapmot.github.io/post/2025/quarto-revealjs-tips/img/menti-failing-to-load.gif?w=170&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript></p>\n<p>Thanks <a href=\"https://stackoverflow.com/questions/79092017/quarto-markdown-to-revealjs-or-html-desmos-embedded-iframes-not-loading\" rel=\"nofollow\" target=\"_blank\">to this post</a> it turns out this is because I had specified <code>embed-resources: true</code> in my revealjs options in the YAML header. When you do this you need to add the <code>data-external=\"1\"</code> attribute to the iframe <a href=\"https://quarto.org/docs/reference/formats/presentations/revealjs.html#rendering\" rel=\"nofollow\" target=\"_blank\">as detailed in the Quarto documentation</a> as follows.</p>\n<pre>&lt;iframe data-external=\"1\" sandbox=...</pre>\n<p>And then my Mentimeter presentation was correctly embedded in the slide as per the screenshot at the <a href=\"https://remlapmot.github.io/post/2025/quarto-revealjs-tips/#top\" rel=\"nofollow\" target=\"_blank\">top of this post</a>.</p>\n</div>\n<div class=\"section level2\" id=\"disable-html-table-processing-for-some-tables\">\n<h2>6. Disable HTML table processing for some tables</h2>\n<p>There are now so many fantastic R packages for html table generation. My two favourite are <a href=\"https://www.danieldsjoberg.com/gtsummary/\" rel=\"nofollow\" target=\"_blank\"><strong>gtsummary</strong></a> and <a href=\"https://strengejacke.github.io/sjPlot/\" rel=\"nofollow\" target=\"_blank\"><strong>sjPlot</strong></a>. However, I notice that for some <strong>sjPlot</strong> tables Quarto issues the following warning when rendering the slides.</p>\n<pre>WARNING (/Applications/quarto/share/filters/main.lua:9319) Unable to parse table from raw html block: skipping.</pre>\n<p>To avoid this it’s possible to <a href=\"https://quarto.org/docs/authoring/tables.html#disabling-quarto-table-processing\" rel=\"nofollow\" target=\"_blank\">disable Quarto’s html table processing</a> using the <code>html-table-processing</code> argument either at the document or chunk level. Here is an example slide doing so at the chunk level.</p>\n<pre>## Slide presenting a multilevel model\n\n```{r}\n#| html-table-processing: none\nlibrary(sjPlot)\nlibrary(lme4)\nfm1 &lt;- lmer(Reaction ~ Days + (Days | Subject), sleepstudy)\ntab_model(fm1)\n```</pre>\n</div>\n<div class=\"section level2\" id=\"programmatic-rendering-and-pdf-export-for-printing\">\n<h2>7. Programmatic rendering and pdf export for printing</h2>\n<p>To render a Quarto document we can click the <em>Render</em> button in RStudio, but I find it easier to make a <em>render.R</em> script with a call to the <a href=\"https://quarto-dev.github.io/quarto-r/\" rel=\"nofollow\" target=\"_blank\"><strong>quarto</strong></a> package’s <code>quarto_render()</code> function.</p>\n<p>It’s helpful to provide students with a pdf copy of the slides for printing. You can do this in a browser through the print menu or programmatically using <strong>pagedown</strong>’s <code>chrome_print()</code> function. When I called this function with no options the page size of the pdf was unusual, producing pages with neither A4 nor US paper size, so I call it as follows to ensure an A4 page size.</p>\n<p>Therefore, my <em>render.R</em> script often looks something like the following.</p>\n<pre>quarto::quarto_render(input = \"my-great-slides.qmd\")\n\npagedown::chrome_print(\"my-great-slides.html\", \n  options = \n    list(\n      printBackground = FALSE,\n      preferCSSPageSize = FALSE, \n      paperWidth = 8.3, paperHeight = 11.7, \n      marginTop = 0.1, marginBottom = 0.1, \n      marginLeft = 0.1, marginRight = 0.1))</pre>\n<p>I usually find that a few slides have slightly too much content for an A4 page, and so those slides will take up 2 pages in the pdf. And hence the pdf usually has a few more pages than the number of slides.</p>\n</div>\n<div class=\"section level2\" id=\"summary\">\n<h2>Summary</h2>\n<p>I have shown seven tips that I needed to workout when making revealjs presentations with Quarto.</p>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://remlapmot.github.io/post/2025/quarto-revealjs-tips/\"> R | Dr Tom Palmer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Seven tips for creating Quarto revealjs presentations\nPosted on\nJanuary 18, 2025\nby\nR | Dr Tom Palmer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Dr Tom Palmer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nLike alot of lecturers I’m teaching at the moment. If I have a presentation to do that’s mainly images I’ll use Powerpoint or Google Slides. If the presentation includes maths or code or both I used to use LaTeX Beamer. Over the years I have grown tired of Beamer and so I thought I’d try making some revealjs presentations using Quarto.\nRevealjs has been around far longer than Quarto, I remember seeing a colleague present using revealjs in about 2012, and you can happily make a revealjs presentation without Quarto. However, the convenience of writing in the Quarto Markdown format is fantastic.\nTo learn the basics of making revealjs slides with Quarto I recommend reading\nthe user guide\n. And full documentation is available\nhere\nand\nhere\n.\nThe following tips are solutions to little hurdles that I found I needed to overcome when making my first revealjs presentations using Quarto.\n1. Slide size and testing on a smaller display size on your own monitor\nThe great thing about making a presentation in Powerpoint or Google Slides is that you can instantly see if your content fits on a slide. So it helps to have an understanding of how big a slide is. By default a revealjs slide is\n1050px wide by 700px tall\n. This helps you when setting the size of figures and code blocks.\nAdditionally it is helpful to be able to preview your slides on the size on monitor you will be presenting on. My University has 1080p monitors in most lecture theatres, however, my monitor is bigger than that. Chrome allows setting the size of the display by opening Developer Tools (Three dots | More tools | Developer Tools). Then you can enter the desired resolution in the top bar as follows (a 1080p screen is 1080 pixels tall and 1920 pixels wide).\nI find this especially helpful when working on a Mac, whose laptops often have unusual screen resolutions.\n2. Wider width cutoff in code chunks\nVertical space on a slide is at a premium. Therefore, in a presentation I line break my code wider that I do when coding normally. As described in the\nRMarkdown cookbook\nand in\nthis GitHub issue\nwe can enable the use of the\nformatR\npackage on a code chunk using the\ntidy\nand\ntidy-opts\nchunk options (I think the default is 85 characters, so I choose a value greater than that. I find that 110 is about the widest I can set).\n```{r}\n#| tidy: TRUE\n#| tidy-opts: !expr list(width.cutoff = I(110))\n# ... Wide R code here ...\n```\nWe can also set these globally for the Quarto document in either the YAML header,\nknitr:\n  opts_chunk: \n    tidy: TRUE\n    tidy-opts: !expr list(width.cutoff = I(110))\nor in a chunk at the top of your Quarto document.\n```{r}\n#| include: false\nknitr::opts_chunk$set(tidy = TRUE, tidy.opts = list(width.cutoff = I(110)))\n```\n3. Taller code chunks\nCode chunks come in several flavours in a rendered presentation. There are code input chunks, code output chunks, and chunks for any code output errors. To make the input code chunks taller there is a convenient\nQuarto option\ncode-block-height\nwhich is specified in the YAML header (the default is 500px, so pick a value greater than that).\n---\nformat:\n  revealjs:\n    code-block-height: 650px\n---\n4. Taller code output chunks\nCurrently, there doesn’t seem to be a Quarto option to make the code output chunks taller. Therefore I had to inspect the source code of the html slides to find out how to modify this. In most browsers simply right click on a slide and in Chrome click\nInspect\n– do this over the element on the page you want to find out about.\nDoing so over a code output cell shows the developer tools on the right handside. We can then see that the elements and classes for the code output cell are given just above the bottom right pane, i.e.,\ndiv.cell div.cell-output.cell-output-stdout pre code\n.\nTherefore, we can make the code output cell have a taller maximum height by specifying\nmax-height\nas follows in a CSS file which we reference in the YAML header. Note that the default is 400px, so choose a value larger than that.\n---\nformat:\n  revealjs:\n    css: custom.css\n---\nThe contents of\ncustom.css\nuse the elements and classes of the code chunk we discovered as follows.\n.cell .cell-output-stdout pre code {\n  max-height: 650px; // Adjust this value as needed\n  overflow-y: auto; // Add this to handle overflow\n}\n5. Embedding interactive Mentimeter presentations\nMentimeter provides the html code required to embed a presentation within an html document. To obtain this, go into a presentation and click the\nShare\nbutton, then select the\nSlides\ntab, then click\nCopy code\nunder\nEmbed slides\n.\nThis results in a div containing an iframe, which we can simply paste in as the content of our slide (I have added the line breaks and replaced part of the URL to my presentation with hashes).\n## My slide with an embedded Menti\n\n<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px;\n  height: 0; overflow: hidden;'>\n<iframe sandbox='allow-scripts allow-same-origin allow-presentation'\n  allowfullscreen='true' allowtransparency='true' frameborder='0' height='315'\n  src='https://www.mentimeter.com/app/presentation/###############/embed'\n  style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'\n  width='420'>\n</iframe>\n</div>\nBut when I first rendered a presentation using this code I didn’t see my Mentimeter presentation in the relevant slide but rather the following spinning dots.\nThanks\nto this post\nit turns out this is because I had specified\nembed-resources: true\nin my revealjs options in the YAML header. When you do this you need to add the\ndata-external=\"1\"\nattribute to the iframe\nas detailed in the Quarto documentation\nas follows.\n<iframe data-external=\"1\" sandbox=...\nAnd then my Mentimeter presentation was correctly embedded in the slide as per the screenshot at the\ntop of this post\n.\n6. Disable HTML table processing for some tables\nThere are now so many fantastic R packages for html table generation. My two favourite are\ngtsummary\nand\nsjPlot\n. However, I notice that for some\nsjPlot\ntables Quarto issues the following warning when rendering the slides.\nWARNING (/Applications/quarto/share/filters/main.lua:9319) Unable to parse table from raw html block: skipping.\nTo avoid this it’s possible to\ndisable Quarto’s html table processing\nusing the\nhtml-table-processing\nargument either at the document or chunk level. Here is an example slide doing so at the chunk level.\n## Slide presenting a multilevel model\n\n```{r}\n#| html-table-processing: none\nlibrary(sjPlot)\nlibrary(lme4)\nfm1 <- lmer(Reaction ~ Days + (Days | Subject), sleepstudy)\ntab_model(fm1)\n```\n7. Programmatic rendering and pdf export for printing\nTo render a Quarto document we can click the\nRender\nbutton in RStudio, but I find it easier to make a\nrender.R\nscript with a call to the\nquarto\npackage’s\nquarto_render()\nfunction.\nIt’s helpful to provide students with a pdf copy of the slides for printing. You can do this in a browser through the print menu or programmatically using\npagedown\n’s\nchrome_print()\nfunction. When I called this function with no options the page size of the pdf was unusual, producing pages with neither A4 nor US paper size, so I call it as follows to ensure an A4 page size.\nTherefore, my\nrender.R\nscript often looks something like the following.\nquarto::quarto_render(input = \"my-great-slides.qmd\")\n\npagedown::chrome_print(\"my-great-slides.html\", \n  options = \n    list(\n      printBackground = FALSE,\n      preferCSSPageSize = FALSE, \n      paperWidth = 8.3, paperHeight = 11.7, \n      marginTop = 0.1, marginBottom = 0.1, \n      marginLeft = 0.1, marginRight = 0.1))\nI usually find that a few slides have slightly too much content for an A4 page, and so those slides will take up 2 pages in the pdf. And hence the pdf usually has a few more pages than the number of slides.\nSummary\nI have shown seven tips that I needed to workout when making revealjs presentations with Quarto.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Dr Tom Palmer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Introduction Like alot of lecturers I’m teaching at the moment. If I have a presentation to do that’s mainly images I’ll use Powerpoint or Google Slides. If the presentation includes maths or code or both I used to use LaTeX Beamer. Over the years ...",
+    "meta_keywords": null,
+    "og_description": "Introduction Like alot of lecturers I’m teaching at the moment. If I have a presentation to do that’s mainly images I’ll use Powerpoint or Google Slides. If the presentation includes maths or code or both I used to use LaTeX Beamer. Over the years ...",
+    "og_image": "https://remlapmot.github.io/post/2025/quarto-revealjs-tips/img/slide-size-and-1080p.png",
+    "og_title": "Seven tips for creating Quarto revealjs presentations | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 7.4,
+    "sitemap_lastmod": null,
+    "twitter_description": "Introduction Like alot of lecturers I’m teaching at the moment. If I have a presentation to do that’s mainly images I’ll use Powerpoint or Google Slides. If the presentation includes maths or code or both I used to use LaTeX Beamer. Over the years ...",
+    "twitter_title": "Seven tips for creating Quarto revealjs presentations | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/01/seven-tips-for-creating-quarto-revealjs-presentations/",
+    "word_count": 1488
+  }
+}

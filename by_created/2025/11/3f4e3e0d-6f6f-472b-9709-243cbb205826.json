@@ -1,0 +1,115 @@
+{
+  "uuid": "3f4e3e0d-6f6f-472b-9709-243cbb205826",
+  "created_at": "2025-11-17 20:40:09",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/10/running-jags-via-r2jags/",
+    "crawled_at": "2025-11-17T10:20:43.437868",
+    "external_links": [
+      {
+        "href": "https://sgsong.blogspot.com/2009/10/running-jags-via-r2jags.html",
+        "text": "Shige's Research Blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://sgsong.blogspot.com/2009/10/running-jags-via-r2jags.html",
+        "text": "Shige's Research Blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Running JAGS via R2jags | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/35916379-8889361462177159984?l=sgsong.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/35916379-8889361462177159984?l=sgsong.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/shige/",
+        "text": "Shige"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/bayesian/",
+        "text": "Bayesian"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-239 post type-post status-publish format-standard hentry category-r-bloggers tag-bayesian tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Running JAGS via R2jags</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 20, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/shige/\">Shige</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://sgsong.blogspot.com/2009/10/running-jags-via-r2jags.html\"> Shige's Research Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I finally figure out how to run WinBUGS examples in JAGS via R2jags. JAGS is preferred over WinBUGS for its cross-platform compatibility and performance (it was written in C++).<div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/35916379-8889361462177159984?l=sgsong.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/35916379-8889361462177159984?l=sgsong.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/35916379-8889361462177159984?l=sgsong.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://sgsong.blogspot.com/2009/10/running-jags-via-r2jags.html\"> Shige's Research Blog</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/bayesian/\" rel=\"tag\">Bayesian</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+    "main_text": "Running JAGS via R2jags\nPosted on\nOctober 20, 2009\nby\nShige\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nShige's Research Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI finally figure out how to run WinBUGS examples in JAGS via R2jags. JAGS is preferred over WinBUGS for its cross-platform compatibility and performance (it was written in C++).\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nShige's Research Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBayesian\nR",
+    "meta_description": "I finally figure out how to run WinBUGS examples in JAGS via R2jags. JAGS is preferred over WinBUGS for its cross-platform compatibility and performance (it was written in C++).",
+    "meta_keywords": "bayesian,r",
+    "og_description": "I finally figure out how to run WinBUGS examples in JAGS via R2jags. JAGS is preferred over WinBUGS for its cross-platform compatibility and performance (it was written in C++).",
+    "og_image": "https://blogger.googleusercontent.com/tracker/35916379-8889361462177159984?l=sgsong.blogspot.com",
+    "og_title": "Running JAGS via R2jags | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 0.9,
+    "sitemap_lastmod": "2009-10-20T18:46:59+00:00",
+    "twitter_description": "I finally figure out how to run WinBUGS examples in JAGS via R2jags. JAGS is preferred over WinBUGS for its cross-platform compatibility and performance (it was written in C++).",
+    "twitter_title": "Running JAGS via R2jags | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/10/running-jags-via-r2jags/",
+    "word_count": 173
+  }
+}

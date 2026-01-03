@@ -1,0 +1,139 @@
+{
+  "uuid": "185b0364-25db-4028-bd4e-943ce79c1acc",
+  "created_at": "2025-11-17 20:41:25",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2008/11/sweave-sh-plays-with-cachesweave/",
+    "crawled_at": "2025-11-17T10:48:39.352527",
+    "external_links": [
+      {
+        "href": "https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://gregor.gorjanc.googlepages.com/Sweave.sh",
+        "text": "Sweave.sh"
+      },
+      {
+        "href": "http://cran.r-project.org/package=cacheSweave",
+        "text": "cacheSweave"
+      },
+      {
+        "href": "http://www.biostat.jhsph.edu/%7Erpeng",
+        "text": "Roger D. Peng"
+      },
+      {
+        "href": "http://cran.r-project.org/web/packages/cacheSweave/vignettes/cacheSweave.pdf",
+        "text": "vignette"
+      },
+      {
+        "href": "https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Sweave.sh plays with cacheSweave | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-652242582121041170?l=ggorjan.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-652242582121041170?l=ggorjan.blogspot.com"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+        "text": "Gregor Gorjanc"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/latex/",
+        "text": "LaTex"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/sweave/",
+        "text": "sweave"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/sweave-sh/",
+        "text": "Sweave.sh"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-332 post type-post status-publish format-standard hentry category-r-bloggers tag-latex tag-r tag-sweave tag-sweave-sh\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Sweave.sh plays with cacheSweave</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 26, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html\"> Gregor Gorjanc</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\">I have added support for caching  to <a href=\"http://gregor.gorjanc.googlepages.com/Sweave.sh\" rel=\"nofollow\" target=\"_blank\">Sweave.sh</a> script as implemented in <a href=\"http://cran.r-project.org/package=cacheSweave\" rel=\"nofollow\" target=\"_blank\">cacheSweave</a> R package written by <a href=\"http://www.biostat.jhsph.edu/%7Erpeng\" rel=\"nofollow\" target=\"_blank\">Roger D. Peng</a>. Now, one can set caching on for chunks that are time consuming (data import, some calculations, …) and the Sweaving process will reuse the cached objects each time they are needed. Read the details about the cacheSweave package in the package <a href=\"http://cran.r-project.org/web/packages/cacheSweave/vignettes/cacheSweave.pdf\" rel=\"nofollow\" target=\"_blank\">vignette</a>. Option –cache for Sweave.sh script should also be easy to understand. However, here is a minimalist example:<br/><pre>\\documentclass{article}\n\\usepackage{Sweave}\n\\begin{document}\n\n&lt;&lt;setup&gt;&gt;=\nn &lt;- 10\ns &lt;- 15\n@\n\nLet us first simulate \\Sexpr{n} values from a normal distribution and add a \\Sexpr{s} sec pause to show the effect of caching.\n\n&lt;&lt;simulate, cache=true&gt;&gt;=\nx &lt;- rnorm(n)\nSys.sleep(s)\n@\n\nNow print the values:\n\n&lt;&lt;print, results=verbatim&gt;&gt;=\nprint(x)\n@\n\n\\end{document}</pre>Now, one can run the following command:<br/><blockquote>Sweave.sh –cache test.Rnw</blockquote>and the output on the command line is:<br/><pre>Run Sweave and postprocess with LaTeX directly from the command line\n- cache mode via cacheSweave R package\n\nR version 2.8.0 (2008-10-20)\nCopyright (C) 2008 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n&gt; library(package='cacheSweave'); Sweave(file='test.Rnw', driver=cacheSweaveDriver);\nLoading required package: filehash\nfilehash: Simple key-value database (2.0 2008-08-03)\nLoading required package: stashR\nA Set of Tools for Administering SHared Repositories (0.3-2 2008-04-30)\nWriting to file test.tex\nProcessing code chunks ...\n1 : echo term verbatim (label=setup)\n2 : echo term verbatim (label=simulate)\n3 : echo term verbatim (label=print)\n\nYou can now run LaTeX on 'test.tex'\n</pre><div style=\"text-align: justify;\">When you repeat the Sweaving process, which you more or less always do, there is no need to wait for 15 second since cacheSweave package takes the x object from the cache! Excellent job Roger!<br/></div></div><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-652242582121041170?l=ggorjan.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-652242582121041170?l=ggorjan.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-652242582121041170?l=ggorjan.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html\"> Gregor Gorjanc</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/latex/\" rel=\"tag\">LaTex</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sweave/\" rel=\"tag\">sweave</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sweave-sh/\" rel=\"tag\">Sweave.sh</a></li></ul></div></article>",
+    "main_text": "Sweave.sh plays with cacheSweave\nPosted on\nNovember 26, 2008\nby\nGregor Gorjanc\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGregor Gorjanc\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI have added support for caching  to\nSweave.sh\nscript as implemented in\ncacheSweave\nR package written by\nRoger D. Peng\n. Now, one can set caching on for chunks that are time consuming (data import, some calculations, …) and the Sweaving process will reuse the cached objects each time they are needed. Read the details about the cacheSweave package in the package\nvignette\n. Option –cache for Sweave.sh script should also be easy to understand. However, here is a minimalist example:\n\\documentclass{article}\n\\usepackage{Sweave}\n\\begin{document}\n\n<<setup>>=\nn <- 10\ns <- 15\n@\n\nLet us first simulate \\Sexpr{n} values from a normal distribution and add a \\Sexpr{s} sec pause to show the effect of caching.\n\n<<simulate, cache=true>>=\nx <- rnorm(n)\nSys.sleep(s)\n@\n\nNow print the values:\n\n<<print, results=verbatim>>=\nprint(x)\n@\n\n\\end{document}\nNow, one can run the following command:\nSweave.sh –cache test.Rnw\nand the output on the command line is:\nRun Sweave and postprocess with LaTeX directly from the command line\n- cache mode via cacheSweave R package\n\nR version 2.8.0 (2008-10-20)\nCopyright (C) 2008 The R Foundation for Statistical Computing\nISBN 3-900051-07-0\n\nR is free software and comes with ABSOLUTELY NO WARRANTY.\nYou are welcome to redistribute it under certain conditions.\nType 'license()' or 'licence()' for distribution details.\n\nR is a collaborative project with many contributors.\nType 'contributors()' for more information and\n'citation()' on how to cite R or R packages in publications.\n\nType 'demo()' for some demos, 'help()' for on-line help, or\n'help.start()' for an HTML browser interface to help.\nType 'q()' to quit R.\n\n> library(package='cacheSweave'); Sweave(file='test.Rnw', driver=cacheSweaveDriver);\nLoading required package: filehash\nfilehash: Simple key-value database (2.0 2008-08-03)\nLoading required package: stashR\nA Set of Tools for Administering SHared Repositories (0.3-2 2008-04-30)\nWriting to file test.tex\nProcessing code chunks ...\n1 : echo term verbatim (label=setup)\n2 : echo term verbatim (label=simulate)\n3 : echo term verbatim (label=print)\n\nYou can now run LaTeX on 'test.tex'\nWhen you repeat the Sweaving process, which you more or less always do, there is no need to wait for 15 second since cacheSweave package takes the x object from the cache! Excellent job Roger!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nLaTex\nR\nsweave\nSweave.sh",
+    "meta_description": "I have added support for caching to Sweave.sh script as implemented in cacheSweave R package written by Roger D. Peng. Now, one can set caching on for chunks that are time consuming (data import, some calculations, ...) and the Sweaving process will r...",
+    "meta_keywords": "latex,r,sweave,sweave.sh",
+    "og_description": "I have added support for caching to Sweave.sh script as implemented in cacheSweave R package written by Roger D. Peng. Now, one can set caching on for chunks that are time consuming (data import, some calculations, ...) and the Sweaving process will r...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/6715598735361401237-652242582121041170?l=ggorjan.blogspot.com",
+    "og_title": "Sweave.sh plays with cacheSweave | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.6,
+    "sitemap_lastmod": "2009-01-21T22:18:13+00:00",
+    "twitter_description": "I have added support for caching to Sweave.sh script as implemented in cacheSweave R package written by Roger D. Peng. Now, one can set caching on for chunks that are time consuming (data import, some calculations, ...) and the Sweaving process will r...",
+    "twitter_title": "Sweave.sh plays with cacheSweave | R-bloggers",
+    "url": "https://www.r-bloggers.com/2008/11/sweave-sh-plays-with-cachesweave/",
+    "word_count": 524
+  }
+}

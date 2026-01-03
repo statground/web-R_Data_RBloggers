@@ -1,0 +1,108 @@
+{
+  "uuid": "92ccee91-0489-4df7-801c-a39c84672d0b",
+  "created_at": "2025-11-17 20:40:26",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/09/tip-get-java-home-from-r-with-rjava/",
+    "crawled_at": "2025-11-17T10:27:04.711485",
+    "external_links": [
+      {
+        "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/09/02/Tip%3A-get-java-home-from-R-with-rJava",
+        "text": "Romain Francois, Professional R Enthusiast"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/09/02/Tip%3A-get-java-home-from-R-with-rJava",
+        "text": "Romain Francois, Professional R Enthusiast"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Tip: get java home from R with rJava | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/romain-francois/",
+        "text": "romain francois"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/java/",
+        "text": "java"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/tip/",
+        "text": "Tip"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-124 post type-post status-publish format-standard hentry category-r-bloggers tag-java tag-r tag-tip\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Tip: get java home from R with rJava</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 2, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/romain-francois/\">romain francois</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/09/02/Tip%3A-get-java-home-from-R-with-rJava\"> Romain Francois, Professional R Enthusiast</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--> <p>Assuming rJava is installed and works, it is possible to take advantage of its magic to get the path where java is installed:</p>\n<pre>\n$ Rscript --default-packages=\"methods,rJava\" -e \".jinit(); .jcall( 'java/lang/System', 'S', 'getProperty', 'java.home' ) \"\n[1] \"/opt/jdk/jre\"\n</pre>\n<p>This is useful when you develop scripts that need to call a java program without assuming that java is on the path, or the JAVA_HOME environment variable is set, etc …</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/09/02/Tip%3A-get-java-home-from-R-with-rJava\"> Romain Francois, Professional R Enthusiast</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/java/\" rel=\"tag\">java</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/tip/\" rel=\"tag\">Tip</a></li></ul></div></article>",
+    "main_text": "Tip: get java home from R with rJava\nPosted on\nSeptember 2, 2009\nby\nromain francois\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRomain Francois, Professional R Enthusiast\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAssuming rJava is installed and works, it is possible to take advantage of its magic to get the path where java is installed:\n$ Rscript --default-packages=\"methods,rJava\" -e \".jinit(); .jcall( 'java/lang/System', 'S', 'getProperty', 'java.home' ) \"\n[1] \"/opt/jdk/jre\"\nThis is useful when you develop scripts that need to call a java program without assuming that java is on the path, or the JAVA_HOME environment variable is set, etc …\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRomain Francois, Professional R Enthusiast\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\njava\nR\nTip",
+    "meta_description": "Assuming rJava is installed and works, it is possible to take advantage of its magic to get the path where java is installed: $ Rscript --default-packages=\"methods,rJava\" -e \".jinit(); .jcall( 'java/lang/System', 'S', 'getProperty', 'java.home' )...",
+    "meta_keywords": "java,r,tip",
+    "og_description": "Assuming rJava is installed and works, it is possible to take advantage of its magic to get the path where java is installed: $ Rscript --default-packages=\"methods,rJava\" -e \".jinit(); .jcall( 'java/lang/System', 'S', 'getProperty', 'java.home' )...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Tip: get java home from R with rJava | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.1,
+    "sitemap_lastmod": "2009-09-02T07:38:00+00:00",
+    "twitter_description": "Assuming rJava is installed and works, it is possible to take advantage of its magic to get the path where java is installed: $ Rscript --default-packages=\"methods,rJava\" -e \".jinit(); .jcall( 'java/lang/System', 'S', 'getProperty', 'java.home' )...",
+    "twitter_title": "Tip: get java home from R with rJava | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/09/tip-get-java-home-from-r-with-rjava/",
+    "word_count": 223
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "uuid": "9efde113-3a68-48b6-b7c5-3f1f9b3e6505",
+  "created_at": "2025-11-22 19:59:23",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/01/dysons-algorithm-the-general-case/",
+    "crawled_at": "2025-11-22T10:55:13.357702",
+    "external_links": [
+      {
+        "href": "https://rworks.dev/posts/dyson-general/",
+        "text": "R Works"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://i2.wp.com/rworks.dev/posts/dyson-general/golden-scale.jpeg?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://foto.wuestenigel.com/old-school-golden-scale-in-balance-with-a-hand-putting-a-coin-on-it/",
+        "text": "Source"
+      },
+      {
+        "href": "https://rworks.dev/posts/dysons-algorithm/",
+        "text": "previous post"
+      },
+      {
+        "href": "https://rworks.dev/posts/dyson-general/dyson_signed_general.R",
+        "text": "here"
+      },
+      {
+        "href": "https://www.jstor.org/stable/3611225",
+        "text": "https://www.jstor.org/stable/3611225"
+      },
+      {
+        "href": "https://rworks.dev/posts/dyson-general/",
+        "text": "R Works"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Dyson’s Algorithm: The General Case | R-bloggers",
+    "images": [
+      {
+        "alt": "Old-School Golden scale in balance with a hand putting a coin on it",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Old-School Golden scale in balance with a hand putting a coin on it",
+        "base64": null,
+        "src": "https://i2.wp.com/rworks.dev/posts/dyson-general/golden-scale.jpeg?w=578&ssl=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANBAMAAAC5okgUAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVQIHWNgYBD6zMDAwPI1AUiydwKJKQFAgoHdnYGBKz8BxNx2lIGB034BiHlBjoHBqgjEYrhwiYFhwlMIM5+BkwGklYFrwv4Fm7l/gZicC/gNJvAqgJi8DBzTFvAcgDBZJBk4LoCYtgw8Dgz7NwBZjEoX2A0Y/YMZGABTJhoTVgOLEwAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?M"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAIBAMAAADdFhi7AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVQIHWNgVHY2TWBgqMg0YFzAwCBgzcAUwMDAcJaBVQFIzWDgL2BgYP/AIMfBwMD8gOEsMwMDkwFDrggDAP0FCNipklNgAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?n"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANBAMAAAC5okgUAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVQIHWNgYBD6zMDAwPI1AUiydwKJKQFAgoHdnYGBKz8BxNx2lIGB034BiHlBjoHBqgjEYrhwiYFhwlMIM5+BkwGklYFrwv4Fm7l/gZicC/gNJvAqgJi8DBzTFvAcgDBZJBk4LoCYtgw8Dgz7NwBZjEoX2A0Y/YMZGABTJhoTVgOLEwAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?M"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAIBAMAAADdFhi7AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVQIHWNgVHY2TWBgqMg0YFzAwCBgzcAUwMDAcJaBVQFIzWDgL2BgYP/AIMfBwMD8gOEsMwMDkwFDrggDAP0FCNipklNgAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?n"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAATBAMAAACgknQCAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/UlEQVQ4EX2Sz2vUQBzFP3F3m80m2QVBpYpl0X8gFy+CuDdBEBfEm+CehEKlUbwIPfQmgmIO6k2Yi9RDoStCT+KuiIgiGBT1VNmDHlSQQhFRkPr9Zn8kG0kfzMz7vvdmMjMZKMBKoq/svWPygTARKmN595aw8s/OuB6O/WSIt6xoWof7ifBwLNvXhd1uj8vhaHfwP76gNPCCrLGxFOLEqhzA3vNViX0CaosdpSnKcJBGaIfVVAMr5he0VBrIAmu60PpzcI4b1VLcgzmqfS9YWE9FrAE3YFaUUshhKk1h8RwcvZwJKf2u3VpcZzXZqlYJan9hQVily02sTWHxW4i+DN1Jv6zsyqScELsFep66KnUpiBdx0OuDc68FT5U1pb1vK5uCf1bKhrSLKvcCubWoZx65f7RM4baUfzLaT8H/Jl838ErVU9Ic0wgiv6llilJLebI5GWd+KIaX8Bl2GeiLLP8BfKp3jadlBrUmPKOS2xPyCM4bPbsTSXhDJ/iUZ6kOl07Pvoz7G29TAxn0It4kV+eJOBMhs47hteh1MyGlJ2E/D8KcapnaNXgCq2IcuTDfxjoU24F1+kwueFVe476XOREuLUXJpj+Ic2t7u/1fYCQ8LjJEl8sf7GCrVTeFAbePW/jZ0awdAhWDHRQuPjLmCwPvRk+2MKCGW+h2M+Y/y8J1APIKmFkAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?M%20=%20(3%5En%20-%203)/2"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAIBAMAAADdFhi7AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVQIHWNgVHY2TWBgqMg0YFzAwCBgzcAUwMDAcJaBVQFIzWDgL2BgYP/AIMfBwMD8gOEsMwMDkwFDrggDAP0FCNipklNgAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?n"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAPcAAAATBAMAAAC+d4b0AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAZnaribvvEM2ZMiJURN3i+Cc2AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADV0lEQVRIDaWUTWgTURDH/5uvbbNJugoeFJGgRUppISiCiGJUpCJ+BFQUvVQ9ePGwVhCE2uYgiF7MpYj4tagHjxER9KBdv5CKQqWKlwrRi0erl9qq1Jl5+za7TSN+DOS9//xm3sx7u3kL/KGZeZ1YESFun8i+7SOODuo5psVfzonPLq04fyW6LK5dqyjqJI8FkfZ0whMRGky1xTqZu+q8ZXmdYlZFLfeAzFkNoWg3kD3HLFFF+5CHjA3ERmHMX4F0Ke4G2SSY4VGYsF7uRaoyQsLGVxGAOeSK6sgDp376UNMyrM5pZklqb34BykALsAFt+Vg+pZNlZsaxqEWrqliihMNKWatcEdZYBXgxqSB8ygeFNL+OnIurwDY53WakCnF37IGfLRMzzH4T0apBOh+DLLurqpBB+0n31ZSjaZKD0vwSUjZ2AmPAAc4ZtJM4zlsL2aCNbCHkk4xUrYdiZdaZ3Y6PDKOGTLIiXkDlwUrzEgf2AUR6WXbwMMuY9UZZuGo9Ylxknf6oe8PITsBLeQRDNMcuN8/aNFik2oAayYVql6TqJmyC/NaVbEWOhKqyq83Yy2qzp/1+a9Jyh9VeAnqPo9w8zoEWm07uWGWSWKAyWQbG7EjgiQhXDUfoGZJ1UEGx55jOYInvaHqLfWnOYgP9ck66zDopIz2SPWyqCLNPHKxbpKrGcRfX1N6f9Shm4+g7rNRxnw6wz81f0s/gFimYNWANWvW9IKZMsV7tqtmvSl/D20+ReGxnR8ZtDHtY76e9vSTCxmkPB4OligZ/uAIFxmH4fzjrB+ITQaoSPuslL/TO/ar2dKyUw/5Y8Vi8u4iEYx7Sq2/widI2VsP6rhkgtMUhQB8ek5qnr7wfAe4CZ4AenMjXU5USZpUiWFelr+HoQLrWOuq0VCmhfZkXSdvxAZ3YMuVGIGIezE3ftsIYpTPPzEwB84Au+sJuXBtNJE+YvJp6SFeN5XPOiFHJORiAUw//XlkFFU8GaXRH7gROo0jOXTruDmDd4uLD/q5nmWrjqiZE7iNwX4d5N00aSEqTjSVxE0vdy0/yr9+80qX8i+IFvhLq+gj1u3bqjFY6mVXRXuN8oRH9O8l6srakKyxiMa69htlwG9D/gKosViNJEVbTgs0joSW/AD8K0wtzlOfSAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?3%20%5Cleq%20M%20%5Cleq%20(1/2)(3%5En-3)%20=%20M_%7Bmax%7D"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMBAMAAACzedEdAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMARN0iMlSZEO+JZpCQXvYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAvSURBVAgdY2BgVGBgYBZggAGWMAaGUg4HBgFroMg0IG5hYGBVEGDgnLCAgWVqAQBJtQUoavjM8QAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?i"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMBAMAAACzedEdAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMARN0iMlSZEO+JZpCQXvYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAvSURBVAgdY2BgVGBgYBZggAGWMAaGUg4HBgFroMg0IG5hYGBVEGDgnLCAgWVqAQBJtQUoavjM8QAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?i"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAMBAMAAAB/4Ov2AAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMARLtmzTIidhCJq3yy14IAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAnSURBVAgdY2CAApEAGIshPRrBZuAmgy2kBATKDMTpFYDb27naMwAAqpgG9MUQs0kAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?-1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMBAMAAABcu7ojAAAAHlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGjDitAAAACXRSTlMARM0yInYQiat4/XZtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAHElEQVQIHWNgEDJgYHC1BBIMnMQSAgwM6Z3qBgBsXAQZn03r+gAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMARHZmiTLNIrtUme8Qq9MyhvYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABHSURBVAgdY2AQMhFgYGBNYEhnYOCYwKDFwMAXwCDNwBBXwBB3gEEOSIIRkFEXwDDvAAOfAMNsoEoDBl0GBsYGkC6GSVMEGACgDQxqAEhSYQAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?0"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAMBAMAAAB/4Ov2AAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMARLtmzTIidhCJq3yy14IAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAnSURBVAgdY2CAApEAGIshPRrBZuAmgy2kBATKDMTpFYDb27naMwAAqpgG9MUQs0kAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?-1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMBAMAAABcu7ojAAAAHlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGjDitAAAACXRSTlMARM0yInYQiat4/XZtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAHElEQVQIHWNgEDJgYHC1BBIMnMQSAgwM6Z3qBgBsXAQZn03r+gAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMARHZmiTLNIrtUme8Qq9MyhvYAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABHSURBVAgdY2AQMhFgYGBNYEhnYOCYwKDFwMAXwCDNwBBXwBB3gEEOSIIRkFEXwDDvAAOfAMNsoEoDBl0GBsYGkC6GSVMEGACgDQxqAEhSYQAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?0"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?k"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAATBAMAAADBilZAAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmatmdlQyIrvNie9EEN06o8i3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABCElEQVQoFWMQMmAgAJi1GBQIKAFKMw1WRS5hBWDXs7imo/gCJg5yOIcB0wTeCKB0M4MmQ/BCuDqQOJgDUmTBwLSANZKBgbmBQYvdgWkBTBVIHK5oMwP3AYZKBgZuA4Y9bBOASqEALA5iA01i/86QzwBSVF/A9oGBgWsBVA1Y/MqawAsgRUAZDx6QonwGloYDDPcuQBWBxQ2+cQWAQ3wD7yxmsHUMNxcYMKgxsOsyFF0AEiBxtgamBLCig6GJtiBFPKJhwhdYEgrYtjNkgwiQOIsDN1Lc1UEtOcPgAGWBKaaEQzVgk0A8ntXmYEH2//8XgBlQgoPhkgFcEbIEBhsUmAQBEwMRKVMRACn0Oya0kzIBAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAyBAMAAAB2XkIfAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmTJUdmYQ74nNq927RCLjefjKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACWElEQVRIDe1WP2gTURj/Lrl3aS+5NA46uPScXIRGi7M3dKggeIIUkSKBqgEH7VKcxIC23FBpxo5HVBAHm6mrN7o1IoJ0yuKgINYWrQHt8/25l/uO5JrrDeLgN9z3+36/3/feu7svfwCGhzH77sRwZQRLJuxHIywJ8hloJSgj6BlYHOFIkFvWq06CdDgdGM8PN/xX/9ITKND7Iiilvwe2PD/ARAShgSw+bvyK2DRo63voMia7afx9T50qf74iyZtPztYEIr5I4UWzcQVg0bYiViRwd8eqArmbSuF5SpIRtfYtwkCuPoNcYNq653lOuYkUuOzgiuFxipZahglHdwrSMuYiK6k3UMWh8fAgYlah4Jv29hfBFG9FAiyM+6gS8EIPM/fcEtyRW2k3kOCYsYNzRaMNZLiIMIMz57qCyNlam4OTL1m8EBTAazQzVyohKVPJDTcioO/EFF583a9F3DzCAPNgNoBP3jVvdbCRUD9qLDUjDLAEhQ6vjSpY6Bkqy0ZVoRZoPxRmuXwAU6LUGd7lKHaPsC5EdinvgYlPlNuBSxbxgZ/W2FOufjaZEsYK1B2FeV401gmbvM+9Gmz3XKxwjN6A/vhpTH07fWouPnlIzsdmGQkhjE0elk93cTWIY5OH5PIDVAyDsclDhmL/nhuITQHfKA+pKJQqa0FoMyY7qRqUKXwXd99v7SsqVbbYF2oYP1M1KJN+rB/Z/kCohf7pnJcDsBBkPOV0M2Nj4ocncb3rUjlyIyneZr8TXu3IjfAp446wnLVxc04etZ34FBKE410hfFiSeZjrDzCyi9pyHtHQAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?%0AA%20=%20%5Csum_%7Bi=1%7D%5En%20%7B3%5E%7Bn-i%7D%20a_i%7D%0A"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATBAMAAACAfiv/AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmbsyVHZmEO+JzavdRCI3lu4AAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWMQYIACAQYFMEuYAcgAM5m/wJmsX+HM9E4Yk91hNYzJyrALxjRmkIExExjioUy2mTP1ocwSBob7DyBWBDAwvDcAM1kSGBjqHUBMvv3LGXj3L4MoADuIGKYBRCUDgwEADgcThmDsJCYAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?%7CA%7C"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAATBAMAAADBilZAAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmatmdlQyIrvNie9EEN06o8i3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABCElEQVQoFWMQMmAgAJi1GBQIKAFKMw1WRS5hBWDXs7imo/gCJg5yOIcB0wTeCKB0M4MmQ/BCuDqQOJgDUmTBwLSANZKBgbmBQYvdgWkBTBVIHK5oMwP3AYZKBgZuA4Y9bBOASqEALA5iA01i/86QzwBSVF/A9oGBgWsBVA1Y/MqawAsgRUAZDx6QonwGloYDDPcuQBWBxQ2+cQWAQ3wD7yxmsHUMNxcYMKgxsOsyFF0AEiBxtgamBLCig6GJtiBFPKJhwhdYEgrYtjNkgwiQOIsDN1Lc1UEtOcPgAGWBKaaEQzVgk0A8ntXmYEH2//8XgBlQgoPhkgFcEbIEBhsUmAQBEwMRKVMRACn0Oya0kzIBAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAATBAMAAADBilZAAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmatmdlQyIrvNie9EEN06o8i3AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABCElEQVQoFWMQMmAgAJi1GBQIKAFKMw1WRS5hBWDXs7imo/gCJg5yOIcB0wTeCKB0M4MmQ/BCuDqQOJgDUmTBwLSANZKBgbmBQYvdgWkBTBVIHK5oMwP3AYZKBgZuA4Y9bBOASqEALA5iA01i/86QzwBSVF/A9oGBgWsBVA1Y/MqawAsgRUAZDx6QonwGloYDDPcuQBWBxQ2+cQWAQ3wD7yxmsHUMNxcYMKgxsOsyFF0AEiBxtgamBLCig6GJtiBFPKJhwhdYEgrYtjNkgwiQOIsDN1Lc1UEtOcPgAGWBKaaEQzVgk0A8ntXmYEH2//8XgBlQgoPhkgFcEbIEBhsUmAQBEwMRKVMRACn0Oya0kzIBAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAANBAMAAAAkr0GcAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmTJUdmYQ74nNq927RCLjefjKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAqElEQVQYGWNgAAJGBSCBBegboAjyuvZC+P4OKOKaDJwPQAKs6Q0gCg4OM7AIgDjJnAvgYiDGJwbeAhDtwDUBRMEA0z8Gpm9ADpMC4wYgxbgKBBoYGHiB4v+AAqwMLB+AFBwABYFSDAwRHT0o4nyfGJiB5rAZQKTh6hn+MjAXMDCwMDAAVSCZz3CUgWUBA4MpUMtnhGIg6w7IX69+JjDc+hmALMHs3MsAANjZKTjuJeimAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?A%20=%200"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAPBAMAAABnzp74AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABSklEQVQoFWWPO0sDQRSFv81rs9ndGEQEGwn24toKohZiGUEQ7GKpKAkqPn5CCmFFE0FEhhSGFIIo2Eks1MpisLMLiL0QtIiNszbJjKeYOffjcB/AYAdIfBXV25M1EaiisNwjf86uqO9k0aD7ITjzBsRegEypaOCdMlx+G5C7J9VhRujY3VCDjrs6BDkKU1sG9a028UbeoMhXCD8M6vt5nKx5BLKEQ3QfyZdIucj6qU/CdBjZPmXClrh1zc2abtcNWqIvF1lHDAShmqjrjI6DWk6XT7omvAcdIqms80JjuHp/hHUqU9U1qTYjMUJaGW1fyVzIIbJjt2O827krb1fdMY03S+ta7xuXPOL+EG97xXo8nyyKhEpYY9IOrMKSnh0cZ5uhr8Aux0TVX4wJ6gg98q/ygjrPb7mb5sGFY4z+l80yyV6wcl7eXK3xC4wTWMGWlRsWAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?M%20=%20M_%7Bmax%7D"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAMBAMAAADrBkIEAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiUlEQVQYGWNgwADMRkEYYkCBywz8CljEbzFwBmARZmDwN2BgVHY2TUCT1GNgqMg0YFwAFOYJBYELIAU2BxgYBKwZmNCNsnJgYDjLwKoAVIIMuB4wMMxg4C9AFmMIY+D5wsD+gUGOAygMN5v9IwPrBwbmBwxnmVFUX2HwVGBgMmDIFUERZroUyAAAXbMZUPmRKZwAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?n%20=%203"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAATBAMAAAA63aOfAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABR0lEQVQoFX2QP0jDQBjFX2ljksufFheJYgmOmYKjoHZzcLAgdHGJY4fSVAUn3d0iiFJEyOggWBFcGygadApCKy6SxV0QB538TnpiC+ZB7t3vvcvxJcB/kkQx+U67wocneOhXguUD2h1VBQqfgfEUc5BXANb0RC48xSyKPtHNLaAuhyIfet5HGUpElJSBha2xGlKHksuE949A8DremzzY4UvShAo+44gaRH0+NAu64bX2NVISPPDgJaTRwqIbGDbHv4o4mBXAgHIc6hFr1TeeS7D2UK+d0VsB0INE1xooWFASo+juwzbdFkviTUAHtE/ob8Ai9Aq6HSzhjtnzqDGs0s0X9Ezj3EduLpHd3No6duGo1T4cMJsBA+rlqXtahXrM1huHmnPSTk+BVMS/nuZL8rbUjicGlgeNf3mGZDejpOrn72Yc0UT3DYyNRXqDXZlBAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?M_%7Bmax%7D/3"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAIBAMAAADdFhi7AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVQIHWNgVHY2TWBgqMg0YFzAwCBgzcAUwMDAcJaBVQFIzWDgL2BgYP/AIMfBwMD8gOEsMwMDkwFDrggDAP0FCNipklNgAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?n"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANBAMAAAC5okgUAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVQIHWNgYBD6zMDAwPI1AUiydwKJKQFAgoHdnYGBKz8BxNx2lIGB034BiHlBjoHBqgjEYrhwiYFhwlMIM5+BkwGklYFrwv4Fm7l/gZicC/gNJvAqgJi8DBzTFvAcgDBZJBk4LoCYtgw8Dgz7NwBZjEoX2A0Y/YMZGABTJhoTVgOLEwAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?M"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAPBAMAAABnzp74AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0yzZlEdu9UECKrZrsQi3lRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABc0lEQVQoFV2RvUvDUBTFT5qY9DVJLUUEFynu4nMVRB3EsQVBcIujorSo+PEPCB2EiLaCiDw7WDoIougmVbSC4PBwcyuIFDeh1KEuvnxZmzO8c+4vl3ffJQCSTQBKyxJnR9IIFUV6rkPcpOWFHWRCdMsGyHQIQpsBYlkrhNdzwNl3COKmJm6YYAHW3aQvi0H77QAGzgeBsdWgkmvMiaZUh1xOOfG/+Ctgf/iENJibTDMFEg8vAZ4FgbOfUPnTc5jqF+yo2K9LMbvKrnTvZdcPwaeK3tZplQWl74T1UltMFFJ3fAYcoUkgHtctE9EiM+5c2LmXI7+EF5T7C7d7kA65WljkYmMoA4iK4Oj02XNwTNnYBW9q9QjetcS5sZEAxmFMonrh95gNN8gcj9B/INcNqySneiymiA5piGtUSs/6vVDvmYjJYayhr0W1XIQVzEyEoQSHh+T9Nx8atISnt8RlZfuEBKND/X9lHKPYpPPHuZWFIn4BlGRdvvkSNBEAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?M%20%3C%20M_%7Bmax%7D"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAANBAMAAABiNSBzAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMARIkiZlTdqxDvmc12uzLx0YIJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1UlEQVQoFX2RPWgUURSFv919484mgxlNZeP6wyoIQmJh6T4hP03EEQwIorGyXm0EEX1F+tVCbCxEEMHCTJMukDEsbqmNICoyhWASCG5YIYME8c6Msw5Zxtvc+84997xz34P/xonf0h795RaQSqsFjSHYeSzQ1WdDeAY0k2KqG2RAUXZWwK4XGYJEqKzZLRLI8Mm7YP0w2XEop0LveTLU2QPo07D+dg+YO6arYf+E0tEz57GmA9VZnF2fv58jxaWeAe9TDtzqT79YnHWxOm/g4NRC2nJ8MX72yEnucWByQ1vLXIsbL+9I3E4ouo5F/OBZ2Lts6NJD1hjRqsXFBFevJF05ZMbVDY57M0jqZgNptr2mOVeJ8uA2bdeO7IhKrx2mjw3qI5hTsO/DnMtzqgFf8jNi14yFnujnos/YhB1ZPdium0yIz8JYhvaE5EfUQrufG5FSUbtkqq08KEImE/r7/dWQJYOYpC3MSk/kle9K+e+NFKMNalqwQaRCsu7+SO5Pfq3p8UDc+7JayHXlc4GRQA8m4uIbVZ9m7HcQffEvlx8TrtPinZFG2dhPwQnETeOycTQNSo3BQFyUb2onLK++zoGbO4eXbn3fCVVHqHPzC1/j3lrX4w88V3kHCEdoAQAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?rem%20=%20M%20%5Cmod%203"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAMBAMAAAAkKHbHAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMARIkiZlTdqxDvmc12uzLx0YIJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA2UlEQVQYGWNgwAd4tK7ikwbKKTP0O+BXksfAlYBfxRQGpg8MjIpGjgwMITEMPh4uda3hD9C08G5gYDVTUGdgP8AoLDeFITqA9QJQBVc5CCiA1do/YIiQbBBmcGNgMmVJAFI8BWhmbGFgaNACiuWGHGTgUmCoYeA9gKqCyQHI38rAwPEZSHMKMMxj6DcAspCAC5DN8QOIPwAZ9gzMHxi8GYEshDsYAxgcGFg3AMXyGFgfeDOwXGBYwwLkIcArQdEFDDwHgAJGoR4MRxiYAhiEAhDSQNb8//8XAAD3Ui2cThLJqQAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?rem=2"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAAAMBAMAAADPH83EAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMARIkiZlTdqxDvmc12uzLx0YIJAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAv0lEQVQYGWNgwAukH+CVZmCweU9IBQM/USoYFY0cGRhCYhh8PFzqWsPR9IDMYDVTUGdgP8AoLDeFITqA9QIDAwNXOQgoAFlgWyIkG4QZ3BiYTFkSgBRPAUgcAUBmNGgB+bkhBxm4FBhqGHgPIGRBLLBLtzIwcHwGcjgFGOYx9BtgquD4AVTxAShuz8D8gcGbEchCcwfrBqBYHgPrA28GlgsMa1jQzBBgYOA5ABQzCvVgOMLAFMAgFICioql+0wMAhAQt3UgbQxwAAAAASUVORK5CYII=",
+        "src": "https://latex.codecogs.com/png.latex?rem=1"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKBAMAAACdwMn3AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdlQyIrtmq82J70QQmd0a05NiAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAS0lEQVQIHWNgYBQyYQCBMIYKBqYEBrYAhkoQlyuBYTWI9ndg/sCQzsBgz8AYsI3vAAMXw4kJCR4MDNyXlK8dmAZSAQRvEsAUwzUHAPRPDvFrvNrFAAAAAElFTkSuQmCC",
+        "src": "https://latex.codecogs.com/png.latex?a_i"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAPBAMAAAD0RitaAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAmTJUdmYQ74nNq927RCLjefjKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABZklEQVQ4Ea1SsUoDQRB9J7fHJXIXhfRuYZ9rLOyCWEgaYxEIgnAgqKWglVUQBBELsYqdtYXxE2wUBAuxUywsrGyURIUrIk5279idaAKKUwzz3pt5uzt3AIUjKf1TlCJmFBRPGa5VygwHhwwCdxLIyHneO43RR9Udq+xX8aaKNIUzbRsCTyWJjBSrDSZuwBlTxJLK/jm2mI4+LxQk6Zpczh3bvWEXYl0R2gvw3m09GzOc5VXOHxgeCNsQH8zLZfowrxHpnNGoc9KLBlUd+J+2lxhXyCT1HNNvvVHAfTV9VC3C4fcSl0wfsq/67j73Ejs1IujcI31P4Iq8Hq4pLpTpwN17EQL9JHN4uiC9+7zERGw0qgZ6uWrb9r5ukbtRs9rrJUKLWWmvn/Y1Rd+8w3qbWNA4/b9ib5Pp6HKIQu9oIp+TGPdJ1VYnZ1OovTBXiWzZ20u2bYy1VlN+I1kHgdSrn/4TXvnd1BflkWUaOPeVyAAAAABJRU5ErkJggg==",
+        "src": "https://latex.codecogs.com/png.latex?A%20=%209%20+%203%20-%201%20=%2011"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/nina-zumel/",
+        "text": "Nina Zumel"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-390127 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Dyson’s Algorithm: The General Case</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 23, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/nina-zumel/\">Nina Zumel</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/dyson-general/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-1\" href=\"https://i2.wp.com/rworks.dev/posts/dyson-general/golden-scale.jpeg?ssl=1\" rel=\"nofollow\" target=\"_blank\" title=\"Photo by Marco Verch, CC-2.0. Source\"><img alt=\"Old-School Golden scale in balance with a hand putting a coin on it\" class=\"img-fluid quarto-figure quarto-figure-center figure-img\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/dyson-general/golden-scale.jpeg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Old-School Golden scale in balance with a hand putting a coin on it\" class=\"img-fluid quarto-figure quarto-figure-center figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/dyson-general/golden-scale.jpeg?w=578&amp;ssl=1\"/></noscript></a></p>\n</figure>\n</div>\n<figcaption>Photo by Marco Verch, CC-2.0. <a href=\"https://foto.wuestenigel.com/old-school-golden-scale-in-balance-with-a-hand-putting-a-coin-on-it/\" rel=\"nofollow\" target=\"_blank\">Source</a></figcaption>\n</figure>\n</div>\n<p>In a <a href=\"https://rworks.dev/posts/dysons-algorithm/\" rel=\"nofollow\" target=\"_blank\">previous post</a>, we looked at Dyson’s algorithm <span class=\"citation\" data-cites=\"dyson\">(Dyson 1946)</span> for solving the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M\"/></noscript> Coins in <img data-lazy-src=\"https://latex.codecogs.com/png.latex?n\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?n\"/></noscript> Weighings problem :</p>\n<blockquote class=\"blockquote\">\n<p>You have <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M\"/></noscript> coins, to appearance exactly identical; but possibly one is counterfeit (we’ll call it a “dud”). You do not know if a dud is present, nor whether it is heavier or lighter than the good coins. Can you determine in <img data-lazy-src=\"https://latex.codecogs.com/png.latex?n\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?n\"/></noscript> weighings on a balance scale: (1) whether there is a dud, (2) if so, which coin, and (3) its relative weight (lighter or heavier than the good coins)?</p>\n</blockquote>\n<p>The most famous version of this problem is to resolve 12 coins in 3 weighings; this is an instance of the special case where <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M%20=%20(3%5En%20-%203)/2\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M%20=%20(3%5En%20-%203)/2\"/></noscript>, which is the maximum number of coins that can be resolved in <img data-lazy-src=\"https://latex.codecogs.com/png.latex?n\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?n\"/></noscript> weighings. The version of the algorithm we showed in the previous post solved exactly this case. In this post, we will adjust that algorithm to the more general case where <img data-lazy-src=\"https://latex.codecogs.com/png.latex?3%20%5Cleq%20M%20%5Cleq%20(1/2)(3%5En-3)%20=%20M_%7Bmax%7D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?3%20%5Cleq%20M%20%5Cleq%20(1/2)(3%5En-3)%20=%20M_%7Bmax%7D\"/></noscript>.</p>\n<section class=\"level2\" id=\"sketch-of-the-special-case-algorithm\">\n<h2 class=\"anchored\" data-anchor-id=\"sketch-of-the-special-case-algorithm\">Sketch of the Special Case Algorithm</h2>\n<p>You probably want to review the previous post before moving on to this one, but I’ll quickly sketch the special-case algorithm here.</p>\n<ul>\n<li>First, number the coins from <code>1:M</code>. Then assign each coin a label that corresponds to either the signed trinary representation of its number, or the negation of that number, depending on which representation rotates “forward” (defined to mean that the first change of digits increases by 1, modulo 3).</li>\n<li>Next, determine a “weighing schedule”: which coin goes where for each weighing. The position of each coin on the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?i\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?i\"/></noscript>th weighing is determined by its <img data-lazy-src=\"https://latex.codecogs.com/png.latex?i\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?i\"/></noscript>th digit (starting from the left): <img data-lazy-src=\"https://latex.codecogs.com/png.latex?-1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?-1\"/></noscript> means the left pan, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?1\"/></noscript> means the right pan, and <img data-lazy-src=\"https://latex.codecogs.com/png.latex?0\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?0\"/></noscript> means the table.<br/>\n</li>\n<li>Similarly, we record the outcome of each weighing by which pan is heavier (if any): <img data-lazy-src=\"https://latex.codecogs.com/png.latex?-1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?-1\"/></noscript> means the left pan is heavier, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?1\"/></noscript> means the right pan is heavier, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?0\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?0\"/></noscript> means the scale is balanced.</li>\n</ul>\n<p>As we showed in the last post, if the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript>th coin is a heavy dud, it will spell out its own label in signed trinary, as <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D\"/></noscript>. A light dud will spell out the negation of the label.</p>\n<p>You can recover the decimal representation of the final outcome, as</p>\n<p><img data-lazy-src=\"https://latex.codecogs.com/png.latex?%0AA%20=%20%5Csum_%7Bi=1%7D%5En%20%7B3%5E%7Bn-i%7D%20a_i%7D%0A\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%0AA%20=%20%5Csum_%7Bi=1%7D%5En%20%7B3%5E%7Bn-i%7D%20a_i%7D%0A\"/></noscript></p>\n<p>Then the location of the dud is <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%7CA%7C\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%7CA%7C\"/></noscript>, and the dud is heavy if <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D\"/></noscript> rotates forward, and it is light if <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Ba_1%20a_2%20...%20a_n%5D\"/></noscript> rotates backward. If there is no dud, then <img data-lazy-src=\"https://latex.codecogs.com/png.latex?A%20=%200\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?A%20=%200\"/></noscript>.</p>\n</section>\n<section class=\"level2\" id=\"the-general-case\">\n<h2 class=\"anchored\" data-anchor-id=\"the-general-case\">The General Case</h2>\n<p>The general case algorithm works basically the same way, but now the coin labels do not correspond directly to the coin numbers (which are still <code>1:M</code>). Instead, they are assigned from groups of “weighing triplets,” or cyclic groups, in a way that keeps the scale counts equal on the first round.</p>\n<p>We can then use the same weighing schedule as in the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M%20=%20M_%7Bmax%7D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M%20=%20M_%7Bmax%7D\"/></noscript> case, with a little extra bookkeeping to keep the scale counts equal on every round. As before, the scale will spell out the label of the dud coin if the dud is heavy, or the label’s negation, if the dud is light.</p>\n<p>To make this concrete, we’ll use the example of <img data-lazy-src=\"https://latex.codecogs.com/png.latex?n%20=%203\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?n%20=%203\"/></noscript> weighings, but now we want to resolve fewer than 12 coins. You can find the code I’m calling in this example <a href=\"https://rworks.dev/posts/dyson-general/dyson_signed_general.R\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>Let’s look again at the forward representations for 12 coins.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>source(\"dyson_signed_general.R\")\nlibrary(poorman) # dplyr will work here, too\n\nnrounds = 3\nFmat = get_forward_representation(nrounds)\nFmat</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>      [,1] [,2] [,3]\n [1,]    0    0    1\n [2,]    0    1   -1\n [3,]    0    1    0\n [4,]    0    1    1\n [5,]    1   -1   -1\n [6,]    1   -1    0\n [7,]    1   -1    1\n [8,]   -1    0    1\n [9,]   -1    0    0\n[10,]   -1    0   -1\n[11,]    1    1   -1\n[12,]   -1   -1    0</pre>\n</div>\n</div>\n<p>In the above, the row numbers of the matrix are the coin numbers. When we are resolving 12 coins, the forward representations of the coin numbers give the labels for each coin.</p>\n<p><strong>1. Create “weighing triplets”.</strong></p>\n<p>When we want to resolve fewer than 12 coins, the coin number and the forward representations no longer directly correspond. We have to assign the labels as follows.</p>\n<p>We’ll start with the label <code>[0 0 1]</code>, and increase each digit by 1 modulo 3, to get a new forward label, <code>[1 1 -1]</code>. We’ll call this a <em>cyclic shift</em>. Then we’ll take the new label, and shift it again to make a triplet.</p>\n<pre>coin 1: label [0 0 1] (1)\ncoin 2: label [1 1 -1] (11)\ncoin 3: label [-1 -1 0] (12) # -12, actually, but this is the forward representation</pre>\n<p>This is the first group (or triplet).</p>\n<p>Now get the next unassigned label (<code>[0 1 -1] = 2</code>), and make another triplet, and so on, until all the labels are assigned to a group. This results in <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M_%7Bmax%7D/3\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M_%7Bmax%7D/3\"/></noscript> groups. For this example, that’s 4 groups. You can think of each group as a “weighing triplet” because every weighing of those three coins together has one coin on the left, one on the right, and one on the table, every round.</p>\n<p>Here are all the possible coin labels, their groups, and the digits of the forward representations.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>gps = create_cyclic_groups(nrounds)\n\nM_max = (3^nrounds - 3) / 2\ngpmap = data.frame(group = gps, coin_label = 1:M_max)\ngpmap = cbind(gpmap, data.frame(Fmat))\narrange(gpmap, group, coin_label) |&gt; knitr::kable()</pre>\n</details>\n<div class=\"cell-output-display\">\n<table class=\"caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: right;\">group</th>\n<th style=\"text-align: right;\">coin_label</th>\n<th style=\"text-align: right;\">X1</th>\n<th style=\"text-align: right;\">X2</th>\n<th style=\"text-align: right;\">X3</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">1</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">11</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">-1</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">12</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">2</td>\n<td style=\"text-align: right;\">2</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">-1</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">2</td>\n<td style=\"text-align: right;\">6</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">2</td>\n<td style=\"text-align: right;\">8</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">1</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">3</td>\n<td style=\"text-align: right;\">3</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">3</td>\n<td style=\"text-align: right;\">7</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">1</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">3</td>\n<td style=\"text-align: right;\">10</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">-1</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">4</td>\n<td style=\"text-align: right;\">4</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">1</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">4</td>\n<td style=\"text-align: right;\">5</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">-1</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">4</td>\n<td style=\"text-align: right;\">9</td>\n<td style=\"text-align: right;\">-1</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<p>Note that the groups can be precompiled, if you know <img data-lazy-src=\"https://latex.codecogs.com/png.latex?n\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?n\"/></noscript>.</p>\n<p><strong>2. Assign labels to the coins</strong></p>\n<p>Now, if you have <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M\"/></noscript> coins, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?M%20%3C%20M_%7Bmax%7D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?M%20%3C%20M_%7Bmax%7D\"/></noscript>, instead of assigning them sequential labels, you assign them labels from each group, in order. The first 3 coins get labels from the first group, the next 3 from the second group, and so on. You will have <img data-lazy-src=\"https://latex.codecogs.com/png.latex?rem%20=%20M%20%5Cmod%203\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?rem%20=%20M%20%5Cmod%203\"/></noscript> coins left over. If <img data-lazy-src=\"https://latex.codecogs.com/png.latex?rem=2\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?rem=2\"/></noscript>, assign the last two coins to the members of the next group that start with the digits <code>-1</code> and <code>1</code>; if <img data-lazy-src=\"https://latex.codecogs.com/png.latex?rem=1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?rem=1\"/></noscript>, then assign the last coin to the member of the next group that starts with <code>0</code>.</p>\n<p>Let’s try some examples. The first group has the labels <code>(1, 11, 12)</code>, and the second group has the labels <code>(2, 6, 8)</code>. Suppose we have 5 coins. Then we’d assign the first three coins the labels 1, 11, 12, and the last two coins the labels 6 (<code>[1 -1 0]</code>) and 8 (<code>[-1 0 1]</code>).</p>\n<pre>coin 1: label [0 0 1] (1)\ncoin 2: label [1 1 -1] (11)\ncoin 3: label [-1 -1 0] (12) \ncoin 4: label [1 -1 0] (6)\ncoin 5: label [-1 0 1] (8)</pre>\n<p>If we have 4 coins, we’d assign the first three coins the labels 1, 11, 12, and the last coin the label 2 (<code>[0 1 -1]</code>).</p>\n<pre>coin 1: label [0 0 1] (1)\ncoin 2: label [1 1 -1] (11)\ncoin 3: label [-1 -1 0] (12) \ncoin 4: label [0 1 -1] (2)</pre>\n<p><strong>3. Weigh the coins according to the weighing schedule.</strong></p>\n<p>The weighing schedule is the same as it was before, but now we’re only using some of the labels. Each coin is placed on the scale according to the digits of its label. Here’s the weighing schedule for the first weighing:</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>Cset = compileC(Fmat)\nknitr::kable(Cset[[1]])</pre>\n</details>\n<div class=\"cell-output-display\">\n<table class=\"caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: right;\">left</th>\n<th style=\"text-align: right;\">table</th>\n<th style=\"text-align: right;\">right</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">8</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">5</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">9</td>\n<td style=\"text-align: right;\">2</td>\n<td style=\"text-align: right;\">6</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">10</td>\n<td style=\"text-align: right;\">3</td>\n<td style=\"text-align: right;\">7</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">12</td>\n<td style=\"text-align: right;\">4</td>\n<td style=\"text-align: right;\">11</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<p>So the first weighing of five coins is as follows:</p>\n<pre>coin1 (1): table\ncoin2 (11): right\ncoin3 (12): left\ncoin4 (6): right\ncoin5 (8): left\n\n[ {coin3, coin5} | {coin2, coin4} ]\n------------------------------------\ncoin1</pre>\n<p>This time, in addition to keeping track of the weighing outcome <img data-lazy-src=\"https://latex.codecogs.com/png.latex?a_i\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?a_i\"/></noscript>, we also need to keep track of which coins we know to be good, based on the outcome of the weighing. We know that</p>\n<ul>\n<li>if the scale is balanced, then all the coins on the scale are good (the dud is on the table), and</li>\n<li>if the scale is not balanced, then all the coins on the table are good (the dud is on the scale).</li>\n</ul>\n<p>Let’s suppose the scale tilts right (<code>a[1] = 1</code>). Then we know that <code>coin1</code> is good. Now, to the second weighing:</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>knitr::kable(Cset[[2]])</pre>\n</details>\n<div class=\"cell-output-display\">\n<table class=\"caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: right;\">left</th>\n<th style=\"text-align: right;\">table</th>\n<th style=\"text-align: right;\">right</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">5</td>\n<td style=\"text-align: right;\">1</td>\n<td style=\"text-align: right;\">2</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">6</td>\n<td style=\"text-align: right;\">8</td>\n<td style=\"text-align: right;\">3</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">7</td>\n<td style=\"text-align: right;\">9</td>\n<td style=\"text-align: right;\">4</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">12</td>\n<td style=\"text-align: right;\">10</td>\n<td style=\"text-align: right;\">11</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<pre>coin1 (1, good): table\ncoin2 (11): right\ncoin3 (12): left\ncoin4 (6): left\ncoin5 (8): table\n\n[{coin3, coin 4} | {coin2} ]\n------------------------------\ncoin1, coin5</pre>\n<p>Oops! Now, the scale counts aren’t equal. But we know that <code>coin1</code> is good, so we can put it in the right pan to equalize the coin counts without affecting the outcome.</p>\n<pre>[{coin3, coin 4} | {coin2, coin1} ]\n------------------------------\ncoin5</pre>\n<p>Sometimes the scale count isn’t equal, but none of the coins on the table have been marked good. In that case, find a good coin in the pan with more coins and put it on the table.</p>\n<p>To continue the example, let’s say that the scale again tilts right (<code>a[2] = 1</code>). Now we know that <code>coin5</code> is good. On to weighing three.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>knitr::kable(Cset[[3]])</pre>\n</details>\n<div class=\"cell-output-display\">\n<table class=\"caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: right;\">left</th>\n<th style=\"text-align: right;\">table</th>\n<th style=\"text-align: right;\">right</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">2</td>\n<td style=\"text-align: right;\">3</td>\n<td style=\"text-align: right;\">1</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">5</td>\n<td style=\"text-align: right;\">6</td>\n<td style=\"text-align: right;\">4</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">10</td>\n<td style=\"text-align: right;\">9</td>\n<td style=\"text-align: right;\">7</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">11</td>\n<td style=\"text-align: right;\">12</td>\n<td style=\"text-align: right;\">8</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<pre>coin1 (1, good): right\ncoin2 (11): left\ncoin3 (12): table\ncoin4 (6): table\ncoin5 (8, good): right\n\n[{coin2} | {coin1, coin5}]\n---------------------------\ncoin3, coin4\n\nMove either of coin1 or coin5 to the table.\n\n[ {coin2} | {coin1} ]\n-----------------------\ncoin3, coin4, coin5</pre>\n<p>Now, this time, the scale tilts left (<code>a[3] = -1</code>). We have <code>a = [1 1 -1]</code>, which means <img data-lazy-src=\"https://latex.codecogs.com/png.latex?A%20=%209%20+%203%20-%201%20=%2011\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?A%20=%209%20+%203%20-%201%20=%2011\"/></noscript>. The label 11 corresponds to <code>coin2</code>, and <code>a</code> rotates forward, so the dud is <code>coin2</code> and is heavy.</p>\n<p>Let’s confirm that with code. As before, the function <code>find_dud</code> returns a value <code>D</code> such that <code>abs(D)</code> gives the index of the dud, and <code>sign(D)</code> gives the dud’s relative weight: negative means the dud is light, and positive means the dud is heavy.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>nrounds = 3\nncoins = 5\ncoins = numeric(ncoins) + 1 # good coins weigh 1 unit\n\n# precompilation computes both\n# the weighing schedule and the label groups\nprecompiled = precompile(nrounds)\n\n# make coin 2 a heavy dud\ncoins[2] = 1.5\nfind_dud(coins, precompiled)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] 2</pre>\n</div>\n</div>\n<p>We’ll try 10 coins.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>ncoins = 10\ncoins = numeric(ncoins) + 1\n\n# no dud case\nfind_dud(coins, precompiled)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] \"No dud.\"</pre>\n</div>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] 0</pre>\n</div>\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre># 7, light\ncoins[7] = 0.5\nfind_dud(coins, precompiled)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] -7</pre>\n</div>\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre># confirm all possible cases work\nfor(icoin in 1:ncoins) {\n  for (direction in c(-1, 1)) {\n    coins = numeric(ncoins) + 1\n    coins[icoin] = 1 + 0.5 * direction\n    actual = icoin * direction\n    result = find_dud(coins, precompiled)\n    stopifnot(actual == result)\n  }\n}</pre>\n</details>\n</div>\n<p>This generalizes Dyson’s algorithm. It’s not as pretty as the special case version, but it works.</p>\n<p><em>Nina Zumel is a data scientist based in San Francisco, with 20+ years of experience in machine learning, statistics, and analytics. She is the co-founder of the data science consulting firm Win-Vector LLC, and (with John Mount) the co-author of Practical Data Science with R, now in its second edition.</em> ## References</p>\n<div class=\"references csl-bib-body hanging-indent\" data-entry-spacing=\"0\" id=\"refs\">\n<div class=\"csl-entry\" id=\"ref-dyson\">\nDyson, Freeman J. 1946. <span>“Note 1931–the Problem of the Pennies.”</span> <em>The Mathematical Gazette</em> 30 (281): 231–34. <a href=\"https://www.jstor.org/stable/3611225\" rel=\"nofollow\" target=\"_blank\">https://www.jstor.org/stable/3611225</a>.\n</div>\n</div>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/dyson-general/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Dyson’s Algorithm: The General Case\nPosted on\nJanuary 23, 2025\nby\nNina Zumel\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nPhoto by Marco Verch, CC-2.0.\nSource\nIn a\nprevious post\n, we looked at Dyson’s algorithm\n(Dyson 1946)\nfor solving the\nCoins in\nWeighings problem :\nYou have\ncoins, to appearance exactly identical; but possibly one is counterfeit (we’ll call it a “dud”). You do not know if a dud is present, nor whether it is heavier or lighter than the good coins. Can you determine in\nweighings on a balance scale: (1) whether there is a dud, (2) if so, which coin, and (3) its relative weight (lighter or heavier than the good coins)?\nThe most famous version of this problem is to resolve 12 coins in 3 weighings; this is an instance of the special case where\n, which is the maximum number of coins that can be resolved in\nweighings. The version of the algorithm we showed in the previous post solved exactly this case. In this post, we will adjust that algorithm to the more general case where\n.\nSketch of the Special Case Algorithm\nYou probably want to review the previous post before moving on to this one, but I’ll quickly sketch the special-case algorithm here.\nFirst, number the coins from\n1:M\n. Then assign each coin a label that corresponds to either the signed trinary representation of its number, or the negation of that number, depending on which representation rotates “forward” (defined to mean that the first change of digits increases by 1, modulo 3).\nNext, determine a “weighing schedule”: which coin goes where for each weighing. The position of each coin on the\nth weighing is determined by its\nth digit (starting from the left):\nmeans the left pan,\nmeans the right pan, and\nmeans the table.\nSimilarly, we record the outcome of each weighing by which pan is heavier (if any):\nmeans the left pan is heavier,\nmeans the right pan is heavier,\nmeans the scale is balanced.\nAs we showed in the last post, if the\nth coin is a heavy dud, it will spell out its own label in signed trinary, as\n. A light dud will spell out the negation of the label.\nYou can recover the decimal representation of the final outcome, as\nThen the location of the dud is\n, and the dud is heavy if\nrotates forward, and it is light if\nrotates backward. If there is no dud, then\n.\nThe General Case\nThe general case algorithm works basically the same way, but now the coin labels do not correspond directly to the coin numbers (which are still\n1:M\n). Instead, they are assigned from groups of “weighing triplets,” or cyclic groups, in a way that keeps the scale counts equal on the first round.\nWe can then use the same weighing schedule as in the\ncase, with a little extra bookkeeping to keep the scale counts equal on every round. As before, the scale will spell out the label of the dud coin if the dud is heavy, or the label’s negation, if the dud is light.\nTo make this concrete, we’ll use the example of\nweighings, but now we want to resolve fewer than 12 coins. You can find the code I’m calling in this example\nhere\n.\nLet’s look again at the forward representations for 12 coins.\nShow the code\nsource(\"dyson_signed_general.R\")\nlibrary(poorman) # dplyr will work here, too\n\nnrounds = 3\nFmat = get_forward_representation(nrounds)\nFmat\n[,1] [,2] [,3]\n [1,]    0    0    1\n [2,]    0    1   -1\n [3,]    0    1    0\n [4,]    0    1    1\n [5,]    1   -1   -1\n [6,]    1   -1    0\n [7,]    1   -1    1\n [8,]   -1    0    1\n [9,]   -1    0    0\n[10,]   -1    0   -1\n[11,]    1    1   -1\n[12,]   -1   -1    0\nIn the above, the row numbers of the matrix are the coin numbers. When we are resolving 12 coins, the forward representations of the coin numbers give the labels for each coin.\n1. Create “weighing triplets”.\nWhen we want to resolve fewer than 12 coins, the coin number and the forward representations no longer directly correspond. We have to assign the labels as follows.\nWe’ll start with the label\n[0 0 1]\n, and increase each digit by 1 modulo 3, to get a new forward label,\n[1 1 -1]\n. We’ll call this a\ncyclic shift\n. Then we’ll take the new label, and shift it again to make a triplet.\ncoin 1: label [0 0 1] (1)\ncoin 2: label [1 1 -1] (11)\ncoin 3: label [-1 -1 0] (12) # -12, actually, but this is the forward representation\nThis is the first group (or triplet).\nNow get the next unassigned label (\n[0 1 -1] = 2\n), and make another triplet, and so on, until all the labels are assigned to a group. This results in\ngroups. For this example, that’s 4 groups. You can think of each group as a “weighing triplet” because every weighing of those three coins together has one coin on the left, one on the right, and one on the table, every round.\nHere are all the possible coin labels, their groups, and the digits of the forward representations.\nShow the code\ngps = create_cyclic_groups(nrounds)\n\nM_max = (3^nrounds - 3) / 2\ngpmap = data.frame(group = gps, coin_label = 1:M_max)\ngpmap = cbind(gpmap, data.frame(Fmat))\narrange(gpmap, group, coin_label) |> knitr::kable()\ngroup\ncoin_label\nX1\nX2\nX3\n1\n1\n0\n0\n1\n1\n11\n1\n1\n-1\n1\n12\n-1\n-1\n0\n2\n2\n0\n1\n-1\n2\n6\n1\n-1\n0\n2\n8\n-1\n0\n1\n3\n3\n0\n1\n0\n3\n7\n1\n-1\n1\n3\n10\n-1\n0\n-1\n4\n4\n0\n1\n1\n4\n5\n1\n-1\n-1\n4\n9\n-1\n0\n0\nNote that the groups can be precompiled, if you know\n.\n2. Assign labels to the coins\nNow, if you have\ncoins,\n, instead of assigning them sequential labels, you assign them labels from each group, in order. The first 3 coins get labels from the first group, the next 3 from the second group, and so on. You will have\ncoins left over. If\n, assign the last two coins to the members of the next group that start with the digits\n-1\nand\n1\n; if\n, then assign the last coin to the member of the next group that starts with\n0\n.\nLet’s try some examples. The first group has the labels\n(1, 11, 12)\n, and the second group has the labels\n(2, 6, 8)\n. Suppose we have 5 coins. Then we’d assign the first three coins the labels 1, 11, 12, and the last two coins the labels 6 (\n[1 -1 0]\n) and 8 (\n[-1 0 1]\n).\ncoin 1: label [0 0 1] (1)\ncoin 2: label [1 1 -1] (11)\ncoin 3: label [-1 -1 0] (12) \ncoin 4: label [1 -1 0] (6)\ncoin 5: label [-1 0 1] (8)\nIf we have 4 coins, we’d assign the first three coins the labels 1, 11, 12, and the last coin the label 2 (\n[0 1 -1]\n).\ncoin 1: label [0 0 1] (1)\ncoin 2: label [1 1 -1] (11)\ncoin 3: label [-1 -1 0] (12) \ncoin 4: label [0 1 -1] (2)\n3. Weigh the coins according to the weighing schedule.\nThe weighing schedule is the same as it was before, but now we’re only using some of the labels. Each coin is placed on the scale according to the digits of its label. Here’s the weighing schedule for the first weighing:\nShow the code\nCset = compileC(Fmat)\nknitr::kable(Cset[[1]])\nleft\ntable\nright\n8\n1\n5\n9\n2\n6\n10\n3\n7\n12\n4\n11\nSo the first weighing of five coins is as follows:\ncoin1 (1): table\ncoin2 (11): right\ncoin3 (12): left\ncoin4 (6): right\ncoin5 (8): left\n\n[ {coin3, coin5} | {coin2, coin4} ]\n------------------------------------\ncoin1\nThis time, in addition to keeping track of the weighing outcome\n, we also need to keep track of which coins we know to be good, based on the outcome of the weighing. We know that\nif the scale is balanced, then all the coins on the scale are good (the dud is on the table), and\nif the scale is not balanced, then all the coins on the table are good (the dud is on the scale).\nLet’s suppose the scale tilts right (\na[1] = 1\n). Then we know that\ncoin1\nis good. Now, to the second weighing:\nShow the code\nknitr::kable(Cset[[2]])\nleft\ntable\nright\n5\n1\n2\n6\n8\n3\n7\n9\n4\n12\n10\n11\ncoin1 (1, good): table\ncoin2 (11): right\ncoin3 (12): left\ncoin4 (6): left\ncoin5 (8): table\n\n[{coin3, coin 4} | {coin2} ]\n------------------------------\ncoin1, coin5\nOops! Now, the scale counts aren’t equal. But we know that\ncoin1\nis good, so we can put it in the right pan to equalize the coin counts without affecting the outcome.\n[{coin3, coin 4} | {coin2, coin1} ]\n------------------------------\ncoin5\nSometimes the scale count isn’t equal, but none of the coins on the table have been marked good. In that case, find a good coin in the pan with more coins and put it on the table.\nTo continue the example, let’s say that the scale again tilts right (\na[2] = 1\n). Now we know that\ncoin5\nis good. On to weighing three.\nShow the code\nknitr::kable(Cset[[3]])\nleft\ntable\nright\n2\n3\n1\n5\n6\n4\n10\n9\n7\n11\n12\n8\ncoin1 (1, good): right\ncoin2 (11): left\ncoin3 (12): table\ncoin4 (6): table\ncoin5 (8, good): right\n\n[{coin2} | {coin1, coin5}]\n---------------------------\ncoin3, coin4\n\nMove either of coin1 or coin5 to the table.\n\n[ {coin2} | {coin1} ]\n-----------------------\ncoin3, coin4, coin5\nNow, this time, the scale tilts left (\na[3] = -1\n). We have\na = [1 1 -1]\n, which means\n. The label 11 corresponds to\ncoin2\n, and\na\nrotates forward, so the dud is\ncoin2\nand is heavy.\nLet’s confirm that with code. As before, the function\nfind_dud\nreturns a value\nD\nsuch that\nabs(D)\ngives the index of the dud, and\nsign(D)\ngives the dud’s relative weight: negative means the dud is light, and positive means the dud is heavy.\nShow the code\nnrounds = 3\nncoins = 5\ncoins = numeric(ncoins) + 1 # good coins weigh 1 unit\n\n# precompilation computes both\n# the weighing schedule and the label groups\nprecompiled = precompile(nrounds)\n\n# make coin 2 a heavy dud\ncoins[2] = 1.5\nfind_dud(coins, precompiled)\n[1] 2\nWe’ll try 10 coins.\nShow the code\nncoins = 10\ncoins = numeric(ncoins) + 1\n\n# no dud case\nfind_dud(coins, precompiled)\n[1] \"No dud.\"\n[1] 0\nShow the code\n# 7, light\ncoins[7] = 0.5\nfind_dud(coins, precompiled)\n[1] -7\nShow the code\n# confirm all possible cases work\nfor(icoin in 1:ncoins) {\n  for (direction in c(-1, 1)) {\n    coins = numeric(ncoins) + 1\n    coins[icoin] = 1 + 0.5 * direction\n    actual = icoin * direction\n    result = find_dud(coins, precompiled)\n    stopifnot(actual == result)\n  }\n}\nThis generalizes Dyson’s algorithm. It’s not as pretty as the special case version, but it works.\nNina Zumel is a data scientist based in San Francisco, with 20+ years of experience in machine learning, statistics, and analytics. She is the co-founder of the data science consulting firm Win-Vector LLC, and (with John Mount) the co-author of Practical Data Science with R, now in its second edition.\n## References\nDyson, Freeman J. 1946.\n“Note 1931–the Problem of the Pennies.”\nThe Mathematical Gazette\n30 (281): 231–34.\nhttps://www.jstor.org/stable/3611225\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Photo by Marco Verch, CC-2.0. Source In a previous post, we looked at Dyson’s algorithm (Dyson 1946) for solving the Coins in Weighings problem : You have coins, to appearance exactly identical; but possibly one is counterfeit (we’l...",
+    "meta_keywords": null,
+    "og_description": "Photo by Marco Verch, CC-2.0. Source In a previous post, we looked at Dyson’s algorithm (Dyson 1946) for solving the Coins in Weighings problem : You have coins, to appearance exactly identical; but possibly one is counterfeit (we’l...",
+    "og_image": "https://rworks.dev/posts/dyson-general/golden-scale.jpeg",
+    "og_title": "Dyson’s Algorithm: The General Case | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 10.2,
+    "sitemap_lastmod": null,
+    "twitter_description": "Photo by Marco Verch, CC-2.0. Source In a previous post, we looked at Dyson’s algorithm (Dyson 1946) for solving the Coins in Weighings problem : You have coins, to appearance exactly identical; but possibly one is counterfeit (we’l...",
+    "twitter_title": "Dyson’s Algorithm: The General Case | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/01/dysons-algorithm-the-general-case/",
+    "word_count": 2050
+  }
+}

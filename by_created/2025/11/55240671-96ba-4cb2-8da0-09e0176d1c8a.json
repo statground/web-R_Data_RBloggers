@@ -1,0 +1,112 @@
+{
+  "uuid": "55240671-96ba-4cb2-8da0-09e0176d1c8a",
+  "created_at": "2025-11-22 19:59:15",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/02/sentiment-word-cloud-in-r-step-by-step-guide-r-code/",
+    "crawled_at": "2025-11-22T10:54:04.756193",
+    "external_links": [
+      {
+        "href": "https://www.displayr.com/sentiment-word-clouds-r/?utm_medium=Feed&utm_source=Syndication",
+        "text": "R for Data Science - Displayr"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.displayr.com/how-to-show-sentiment-word-clouds/",
+        "text": "How to Show Sentiment in Word Clouds"
+      },
+      {
+        "href": "https://help.displayr.com/hc/en-us/articles/360003738456-How-to-Show-Sentiment-in-Word-Clouds",
+        "text": "How to Show Sentiment in Word Clouds"
+      },
+      {
+        "href": "https://help.displayr.com/hc/en-us",
+        "text": "Displayr Help Center"
+      },
+      {
+        "href": "https://app.displayr.com/creator/Anything/Visualization/Text%20Analysis/Word%20Cloud",
+        "text": "Create your own Word Cloud"
+      },
+      {
+        "href": "https://www.displayr.com/sentiment-word-clouds-r/?utm_medium=Feed&utm_source=Syndication",
+        "text": "R for Data Science - Displayr"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Sentiment Word Cloud in R: Step-by-Step Guide + R Code | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/tim-bock/",
+        "text": "Tim Bock"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-391772 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Sentiment Word Cloud in R: Step-by-Step Guide + R Code</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 14, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/tim-bock/\">Tim Bock</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.displayr.com/sentiment-word-clouds-r/?utm_medium=Feed&amp;utm_source=Syndication\"> R for Data Science - Displayr</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>The Word Cloud above summarizes some data from tweets by President Trump. The green words are words that are significantly more likely to be used in tweets with a positive sentiment. The red represents words more likely to be used in negative tweets.</p>\n<p>The code I used to create this tweet is below. All you need to do to run is to make sure you have installed the relevant packages (from github), and replace <span style=\"font-family: 'Courier New';\">input.phrases</span> in the first line with your data. Please read <a href=\"https://www.displayr.com/how-to-show-sentiment-word-clouds/\" rel=\"nofollow\" target=\"_blank\">How to Show Sentiment in Word Clouds</a> blog for a more general discussion of the logic behind the code below, and the <a href=\"https://help.displayr.com/hc/en-us/articles/360003738456-How-to-Show-Sentiment-in-Word-Clouds\" rel=\"nofollow\" target=\"_blank\">How to Show Sentiment in Word Clouds</a> article in our <a href=\"https://help.displayr.com/hc/en-us\" rel=\"nofollow\" target=\"_blank\">Displayr Help Center</a> for how to create this in Displayr.</p>\n<p style=\"text-align: center;\"><a class=\"maxbutton-9 maxbutton\" href=\"https://app.displayr.com/creator/Anything/Visualization/Text%20Analysis/Word%20Cloud\" rel=\"nofollow\" target=\"_blank\"><span class=\"mb-text\">Create your own Word Cloud</span></a></p>\n<h2>The R code</h2>\n<pre> \nlibrary(flipTextAnalysis)\ntext.to.analyze &lt;- input.phrases\n\n# Converting the text to a vector\ntext.to.analyze &lt;- as.character(text.to.analyze)\n\n# Extracting the words from the text\nlibrary(flipTextAnalysis)\noptions = GetTextAnalysisOptions(phrases = '', \n                                 extra.stopwords.text = 'amp',\n                                 replacements.text = '',\n                                 do.stem = TRUE,\n                                 do.spell = TRUE)\ntext.analysis.setup = InitializeWordBag(text.to.analyze, min.frequency = 5.0, operations = options$operations, manual.replacements = options$replacement.matrix, stoplist = options$stopwords, alphabetical.sort = FALSE, phrases = options$phrases, print.type = switch(\"Word Frequencies\", \"Word Frequencies\" = \"frequencies\", \"Transformed Text\" = \"transformations\")) \n\n# Sentiment analysis of the phrases \nphrase.sentiment = SaveNetSentimentScores(text.to.analyze, check.simple.suffixes = TRUE, blanks.as.missing = TRUE) \nphrase.sentiment[phrase.sentiment &gt;= 1] = 1\nphrase.sentiment[phrase.sentiment &lt;= -1] = -1\n\n# Sentiment analysis of the words\nfinal.tokens &lt;- text.analysis.setup$final.tokens\ntd &lt;- t(vapply(text.analysis.setup$transformed.tokenized, function(x) {\n    as.integer(final.tokens %in% x)\n}, integer(length(final.tokens))))\ncounts &lt;- text.analysis.setup$final.counts \nphrase.word.sentiment &lt;- sweep(td, 1, phrase.sentiment, \"*\")\nphrase.word.sentiment[td == 0] &lt;- NA # Setting missing values to Missing\nword.mean &lt;- apply(phrase.word.sentiment,2, FUN = mean, na.rm = TRUE)\nword.sd &lt;- apply(phrase.word.sentiment,2, FUN = sd, na.rm = TRUE)\nword.n &lt;- apply(!is.na(phrase.word.sentiment),2, FUN = sum, na.rm = TRUE)\nword.se &lt;- word.sd / sqrt(word.n)\nword.z &lt;- word.mean / word.se\nword.z[word.n &lt;= 3 || is.na(word.se)] &lt;- 0        \nwords &lt;- text.analysis.setup$final.tokens\nx &lt;- data.frame(word = words, \n      freq = counts, \n      \"Sentiment\" = word.mean,\n      \"Z-Score\" = word.z,\n      Length = nchar(words))\nword.data &lt;- x[order(counts, decreasing = TRUE), ]\n\n# Working out the colors\nn = nrow(word.data)\ncolors = rep(\"grey\", n)\ncolors[word.data$Z.Score &lt; -1.96] = \"Red\" \ncolors[word.data$Z.Score &gt; 1.96] =  \"Green\"\n\n# Creating the word cloud\nlibrary(wordcloud2)\nwordcloud2(data = word.data[, -3], color = colors, size = 0.4)\n</pre>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.displayr.com/sentiment-word-clouds-r/?utm_medium=Feed&amp;utm_source=Syndication\"> R for Data Science - Displayr</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Sentiment Word Cloud in R: Step-by-Step Guide + R Code\nPosted on\nFebruary 14, 2025\nby\nTim Bock\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR for Data Science - Displayr\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe Word Cloud above summarizes some data from tweets by President Trump. The green words are words that are significantly more likely to be used in tweets with a positive sentiment. The red represents words more likely to be used in negative tweets.\nThe code I used to create this tweet is below. All you need to do to run is to make sure you have installed the relevant packages (from github), and replace\ninput.phrases\nin the first line with your data. Please read\nHow to Show Sentiment in Word Clouds\nblog for a more general discussion of the logic behind the code below, and the\nHow to Show Sentiment in Word Clouds\narticle in our\nDisplayr Help Center\nfor how to create this in Displayr.\nCreate your own Word Cloud\nThe R code\nlibrary(flipTextAnalysis)\ntext.to.analyze <- input.phrases\n\n# Converting the text to a vector\ntext.to.analyze <- as.character(text.to.analyze)\n\n# Extracting the words from the text\nlibrary(flipTextAnalysis)\noptions = GetTextAnalysisOptions(phrases = '', \n                                 extra.stopwords.text = 'amp',\n                                 replacements.text = '',\n                                 do.stem = TRUE,\n                                 do.spell = TRUE)\ntext.analysis.setup = InitializeWordBag(text.to.analyze, min.frequency = 5.0, operations = options$operations, manual.replacements = options$replacement.matrix, stoplist = options$stopwords, alphabetical.sort = FALSE, phrases = options$phrases, print.type = switch(\"Word Frequencies\", \"Word Frequencies\" = \"frequencies\", \"Transformed Text\" = \"transformations\")) \n\n# Sentiment analysis of the phrases \nphrase.sentiment = SaveNetSentimentScores(text.to.analyze, check.simple.suffixes = TRUE, blanks.as.missing = TRUE) \nphrase.sentiment[phrase.sentiment >= 1] = 1\nphrase.sentiment[phrase.sentiment <= -1] = -1\n\n# Sentiment analysis of the words\nfinal.tokens <- text.analysis.setup$final.tokens\ntd <- t(vapply(text.analysis.setup$transformed.tokenized, function(x) {\n    as.integer(final.tokens %in% x)\n}, integer(length(final.tokens))))\ncounts <- text.analysis.setup$final.counts \nphrase.word.sentiment <- sweep(td, 1, phrase.sentiment, \"*\")\nphrase.word.sentiment[td == 0] <- NA # Setting missing values to Missing\nword.mean <- apply(phrase.word.sentiment,2, FUN = mean, na.rm = TRUE)\nword.sd <- apply(phrase.word.sentiment,2, FUN = sd, na.rm = TRUE)\nword.n <- apply(!is.na(phrase.word.sentiment),2, FUN = sum, na.rm = TRUE)\nword.se <- word.sd / sqrt(word.n)\nword.z <- word.mean / word.se\nword.z[word.n <= 3 || is.na(word.se)] <- 0        \nwords <- text.analysis.setup$final.tokens\nx <- data.frame(word = words, \n      freq = counts, \n      \"Sentiment\" = word.mean,\n      \"Z-Score\" = word.z,\n      Length = nchar(words))\nword.data <- x[order(counts, decreasing = TRUE), ]\n\n# Working out the colors\nn = nrow(word.data)\ncolors = rep(\"grey\", n)\ncolors[word.data$Z.Score < -1.96] = \"Red\" \ncolors[word.data$Z.Score > 1.96] =  \"Green\"\n\n# Creating the word cloud\nlibrary(wordcloud2)\nwordcloud2(data = word.data[, -3], color = colors, size = 0.4)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR for Data Science - Displayr\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "The Word Cloud above summarizes some data from tweets by President Trump. The green words are words that are significantly more likely to be used...",
+    "meta_keywords": null,
+    "og_description": "The Word Cloud above summarizes some data from tweets by President Trump. The green words are words that are significantly more likely to be used...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Sentiment Word Cloud in R: Step-by-Step Guide + R Code | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3,
+    "sitemap_lastmod": null,
+    "twitter_description": "The Word Cloud above summarizes some data from tweets by President Trump. The green words are words that are significantly more likely to be used...",
+    "twitter_title": "Sentiment Word Cloud in R: Step-by-Step Guide + R Code | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/02/sentiment-word-cloud-in-r-step-by-step-guide-r-code/",
+    "word_count": 592
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "uuid": "17fdd061-72f6-4fdd-b040-e8049312ea6d",
+  "created_at": "2025-11-17 20:39:43",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/according-to-microsoft-the-fourth-paradigm-of-science-is-data/",
+    "crawled_at": "2025-11-17T10:11:11.327100",
+    "external_links": [
+      {
+        "href": "http://blog.revolution-computing.com/2009/12/fourth-paradigm.html",
+        "text": "Revolutions"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://research.microsoft.com/en-us/collaboration/fourthparadigm/",
+        "text": "available for free download"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Jim_Gray_(computer_scientist)",
+        "text": "Dr Jim Gray"
+      },
+      {
+        "href": "http://www.nytimes.com/2009/12/15/science/15books.html",
+        "text": "New York Times review"
+      },
+      {
+        "href": "http://www.revolution-computing.com/community/r-project.php",
+        "text": "R"
+      },
+      {
+        "href": "http://research.microsoft.com/en-us/collaboration/fourthparadigm/",
+        "text": "The Fourth Paradigm: Data-Intensive Scientific Discovery"
+      },
+      {
+        "href": "http://blog.revolution-computing.com/2009/12/fourth-paradigm.html",
+        "text": "Revolutions"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "According to Microsoft, the fourth paradigm of science is data | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/david-smith/",
+        "text": "David Smith"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/high-performance-computing/",
+        "text": "high-performance computing"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-422 post type-post status-publish format-standard hentry category-r-bloggers tag-high-performance-computing\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">According to Microsoft, the fourth paradigm of science is data</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 16, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/david-smith/\">David Smith</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.revolution-computing.com/2009/12/fourth-paradigm.html\"> Revolutions</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p>In scientific discovery, the first three paradigms were experimental, theoretical and (more recently) computational science. A new book of essays published by Microsoft (and <a href=\"http://research.microsoft.com/en-us/collaboration/fourthparadigm/\" rel=\"nofollow\" target=\"_blank\">available for free download</a> — kudos, MS!) argues that a fourth paradigm of scientific discovery is at hand: the analysis of massive data sets. The book is dedicated to the late Microsoft researcher <a href=\"https://en.wikipedia.org/wiki/Jim_Gray_(computer_scientist)\" rel=\"nofollow\" target=\"_blank\">Dr Jim Gray</a>, who pioneered the idea with the catchphrase: “It’s the data, stupid”. The basic idea is that our capacity for collecting scientific data has far outstripped our present capacity to analyze it, and so our focus should be on developing technologies that will make sense of this “Deluge of Data” (as this <a href=\"http://www.nytimes.com/2009/12/15/science/15books.html\" rel=\"nofollow\" target=\"_blank\">New York Times review</a> of the book — well worth a read — calls it). </p><p>Dr Gray’s call-to-arms was not to develop isolated super-powerful super-computers but “to have a world in which all of the science literature is online, all of the science data is online, and they interoperate with each other.” This dream is already close to a reality in some scientific domains like astronomy, where advanced instruments routinely generate petabytes of data available for public analysis. And with further developments in distributed and high-performance computing, with freely-available high-scale data management tools like Hadoop, and with advanced open-source data-analysis tools like <a href=\"http://www.revolution-computing.com/community/r-project.php\" rel=\"nofollow\" target=\"_blank\">R</a> rapidly adapting to the scales of these data sets, the fourth paradigm is certain to become a mainstream reality in other scientific domains as well. </p><p>Microsoft Research: <a href=\"http://research.microsoft.com/en-us/collaboration/fourthparadigm/\" rel=\"nofollow\" target=\"_blank\">The Fourth Paradigm: Data-Intensive Scientific Discovery</a></p><p></p><p></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.revolution-computing.com/2009/12/fourth-paradigm.html\"> Revolutions</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/high-performance-computing/\" rel=\"tag\">high-performance computing</a></li></ul></div></article>",
+    "main_text": "According to Microsoft, the fourth paradigm of science is data\nPosted on\nDecember 16, 2009\nby\nDavid Smith\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRevolutions\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn scientific discovery, the first three paradigms were experimental, theoretical and (more recently) computational science. A new book of essays published by Microsoft (and\navailable for free download\n— kudos, MS!) argues that a fourth paradigm of scientific discovery is at hand: the analysis of massive data sets. The book is dedicated to the late Microsoft researcher\nDr Jim Gray\n, who pioneered the idea with the catchphrase: “It’s the data, stupid”. The basic idea is that our capacity for collecting scientific data has far outstripped our present capacity to analyze it, and so our focus should be on developing technologies that will make sense of this “Deluge of Data” (as this\nNew York Times review\nof the book — well worth a read — calls it).\nDr Gray’s call-to-arms was not to develop isolated super-powerful super-computers but “to have a world in which all of the science literature is online, all of the science data is online, and they interoperate with each other.” This dream is already close to a reality in some scientific domains like astronomy, where advanced instruments routinely generate petabytes of data available for public analysis. And with further developments in distributed and high-performance computing, with freely-available high-scale data management tools like Hadoop, and with advanced open-source data-analysis tools like\nR\nrapidly adapting to the scales of these data sets, the fourth paradigm is certain to become a mainstream reality in other scientific domains as well.\nMicrosoft Research:\nThe Fourth Paradigm: Data-Intensive Scientific Discovery\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRevolutions\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nhigh-performance computing",
+    "meta_description": "In scientific discovery, the first three paradigms were experimental, theoretical and (more recently) computational science. A new book of essays published by Microsoft (and available for free download -- kudos, MS!) argues that a fourth paradigm of scientific discovery is at hand: the analysis of massive data sets. The book is dedicated to the late Microsoft researcher Dr Jim Gray, who pioneered the idea with the catchphrase: \"It's the data, stupid\". The basic idea is that our capacity for collecting scientific data has far outstripped our present capacity to analyze it, and so our focus should be on developing technologies...",
+    "meta_keywords": "high-performance computing",
+    "og_description": "In scientific discovery, the first three paradigms were experimental, theoretical and (more recently) computational science. A new book of essays published by Microsoft (and available for free download -- kudos, MS!) argues that a fourth paradigm of scientific discovery is at hand: the analysis of massive data sets. The book is dedicated to the late Microsoft researcher Dr Jim Gray, who pioneered the idea with the catchphrase: \"It's the data, stupid\". The basic idea is that our capacity for collecting scientific data has far outstripped our present capacity to analyze it, and so our focus should be on developing technologies...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "According to Microsoft, the fourth paradigm of science is data | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2,
+    "sitemap_lastmod": "2009-12-16T17:40:10+00:00",
+    "twitter_description": "In scientific discovery, the first three paradigms were experimental, theoretical and (more recently) computational science. A new book of essays published by Microsoft (and available for free download -- kudos, MS!) argues that a fourth paradigm of scientific discovery is at hand: the analysis of massive data sets. The book is dedicated to the late Microsoft researcher Dr Jim Gray, who pioneered the idea with the catchphrase: \"It's the data, stupid\". The basic idea is that our capacity for collecting scientific data has far outstripped our present capacity to analyze it, and so our focus should be on developing technologies...",
+    "twitter_title": "According to Microsoft, the fourth paradigm of science is data | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/according-to-microsoft-the-fourth-paradigm-of-science-is-data/",
+    "word_count": 401
+  }
+}

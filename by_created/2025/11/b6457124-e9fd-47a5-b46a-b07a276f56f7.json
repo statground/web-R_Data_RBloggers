@@ -1,0 +1,112 @@
+{
+  "uuid": "b6457124-e9fd-47a5-b46a-b07a276f56f7",
+  "created_at": "2025-11-22 19:58:02",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/3-reasons-blocking-you-from-doing-automated-testing/",
+    "crawled_at": "2025-11-22T10:45:14.588574",
+    "external_links": [
+      {
+        "href": "https://jakubsobolewski.com/blog/3-reasons-youre-not-doing-testing",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/testing-legacy-shiny/",
+        "text": "Check this guide on testing legacy Shiny apps."
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/capturing-output-for-tests/",
+        "text": "See this guide how you can capture data from a session to save and reuse for testing."
+      },
+      {
+        "href": "https://testthat.r-lib.org/reference/local_mocked_bindings.html",
+        "text": "testthat::local_mocked_bindings"
+      },
+      {
+        "href": "https://github.com/r-lib/mockery",
+        "text": "mockery"
+      },
+      {
+        "href": "https://jakubsobolewski.com/blog/3-reasons-youre-not-doing-testing",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "3 Reasons Blocking You From Doing Automated Testing | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+        "text": "jakub::sobolewski"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394322 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">3 Reasons Blocking You From Doing Automated Testing</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 22, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsobolewski.com/blog/3-reasons-youre-not-doing-testing\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>No, lack of time is not one of them.</p>\n<p>Automated testing is celebrated as the cornerstone of high-quality, maintainable software. Yet, many teams still struggle to fully adopt it. The obstacles rarely boil down to “we’re too busy”—the real blockers are deeper and more fundamental.</p>\n<h2 id=\"1-your-code-is-not-testable-by-design\">1. Your Code is Not Testable by Design</h2>\n<p>A major blocker for automated testing: legacy code that’s not testable by design.</p>\n<p>Many teams inherit codebases where the architecture actively resists test automation. You might face:</p>\n<ul>\n<li>Tightly coupled components without clear boundaries, making it nearly impossible to test parts of the system in isolation.</li>\n<li>Hard-coded configuration (like direct references to production databases or APIs), which makes automated or even safe manual testing a high-risk proposition.</li>\n<li>Missing interfaces or points of control for injecting test doubles, dependencies, or test data.</li>\n</ul>\n<p>With code that isn’t designed for testability, introducing automated tests, even acceptance tests, can be a monumental task. Often, a significant refactor or even an architectural redesign is required before meaningful automated testing can be added at all. Until the system is made “acceptance testable,” every attempt at automation hits a wall.</p>\n<blockquote>\n<p>🧪 <strong><a href=\"https://jakubsobolewski.com/blog/testing-legacy-shiny/\" rel=\"nofollow\" target=\"_blank\">Check this guide on testing legacy Shiny apps.</a></strong></p>\n</blockquote>\n<h2 id=\"2-lack-of-test-data\">2. Lack of Test Data</h2>\n<p>Writing automated tests is easy, if you have the data.</p>\n<p>Developing on production data might sound easier, but it comes with significant risks. If the project is supposed to run on production data, why bother creating test version? That’s just extra work, right?</p>\n<p>It is extra work, but you won’t get far without it.</p>\n<p>Without accessible, realistic test data, tests either become brittle or, worse, never get written. Not only it prevents testing, but makes onboarding new developers difficult and hurts reproducibility. You shouldn’t have to give access to every production system to every developer for them to contribute to the project.</p>\n<p>Make your projects self-contained and testable.</p>\n<h3 id=\"solution\">Solution</h3>\n<p>Build a catalog of fakes, mocks, and factories that let you simulate data for every isolated piece of your codebase. Not only will your tests run safely, but they’ll be reliable and easy to maintain.</p>\n<p><strong>Have reusable data structures? Wrap each in a factory function to reuse across tests.</strong></p>\n<p>I name those functions <code>fixture_&lt;name&gt;</code>. That way, when I start typing <code>fixture_</code>, I get autocompletion for all available fixtures. This makes it easy to find and use the right data in tests.</p>\n<p>If a fixture is only used in one test file, define it in that file. If it’s used across multiple files, put it in a shared location, e.g. <code>tests/testthat/setup-fixtures.R</code>.</p>\n<blockquote>\n<p>🧪 <strong><a href=\"https://jakubsobolewski.com/blog/capturing-output-for-tests/\" rel=\"nofollow\" target=\"_blank\">See this guide how you can capture data from a session to save and reuse for testing.</a></strong></p>\n</blockquote>\n<p><strong>Is your test data too big to define programatically?</strong></p>\n<p>Put those structures in files, it can be a JSON, CSV, YAML, or any other format that suits your needs. I recommend using any human-readable format, so you can easily read and edit it. Load this data in your fixture function.</p>\n<p>If you load this data in a fixture function, you can easily swap it out for different data in the future and change only the fixture function, not every test that uses it.</p>\n<h2 id=\"3-tight-coupling-with-external-dependencies\">3. Tight Coupling with External Dependencies</h2>\n<p>Does your code only work when it talks to a “real” database or an external API? Tight coupling with external services, legacy systems, or specialized environments turns every test run into a intermittency nightmare.</p>\n<h3 id=\"solution-1\">Solution</h3>\n<p>Refactor code to decouple business logic from external dependencies via interfaces, adapters, or dependency injection.</p>\n<ul>\n<li>Need a database? Create a local instance and populate it.</li>\n<li>Need files from a datastore? Substitute them with local files.</li>\n<li>Need access to an LLM? Mock the responses.</li>\n</ul>\n<p>With <a href=\"https://testthat.r-lib.org/reference/local_mocked_bindings.html\" rel=\"nofollow\" target=\"_blank\">testthat::local_mocked_bindings</a>, you can substitute dependencies with controlled, predictable data, although dependency injection can achieve the same results. For mocking with finer control, consider using <a href=\"https://github.com/r-lib/mockery\" rel=\"nofollow\" target=\"_blank\">mockery</a>.</p>\n<hr/>\n<p>Refactor toward a testable architecture.</p>\n<p>Start by enabling automated acceptance tests: introduce decoupling, configuration via files or environment variables instead of hard-coded values, and clear, replaceable interfaces for dependencies. Only once you have a test-friendly foundation can you systematically introduce automated tests across the codebase.</p>\n<p>Isolate yourself from external dependencies, and you’ll find that automated testing becomes not just feasible, but a natural part of your development process.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsobolewski.com/blog/3-reasons-youre-not-doing-testing\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "3 Reasons Blocking You From Doing Automated Testing\nPosted on\nJuly 22, 2025\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nNo, lack of time is not one of them.\nAutomated testing is celebrated as the cornerstone of high-quality, maintainable software. Yet, many teams still struggle to fully adopt it. The obstacles rarely boil down to “we’re too busy”—the real blockers are deeper and more fundamental.\n1. Your Code is Not Testable by Design\nA major blocker for automated testing: legacy code that’s not testable by design.\nMany teams inherit codebases where the architecture actively resists test automation. You might face:\nTightly coupled components without clear boundaries, making it nearly impossible to test parts of the system in isolation.\nHard-coded configuration (like direct references to production databases or APIs), which makes automated or even safe manual testing a high-risk proposition.\nMissing interfaces or points of control for injecting test doubles, dependencies, or test data.\nWith code that isn’t designed for testability, introducing automated tests, even acceptance tests, can be a monumental task. Often, a significant refactor or even an architectural redesign is required before meaningful automated testing can be added at all. Until the system is made “acceptance testable,” every attempt at automation hits a wall.\n🧪\nCheck this guide on testing legacy Shiny apps.\n2. Lack of Test Data\nWriting automated tests is easy, if you have the data.\nDeveloping on production data might sound easier, but it comes with significant risks. If the project is supposed to run on production data, why bother creating test version? That’s just extra work, right?\nIt is extra work, but you won’t get far without it.\nWithout accessible, realistic test data, tests either become brittle or, worse, never get written. Not only it prevents testing, but makes onboarding new developers difficult and hurts reproducibility. You shouldn’t have to give access to every production system to every developer for them to contribute to the project.\nMake your projects self-contained and testable.\nSolution\nBuild a catalog of fakes, mocks, and factories that let you simulate data for every isolated piece of your codebase. Not only will your tests run safely, but they’ll be reliable and easy to maintain.\nHave reusable data structures? Wrap each in a factory function to reuse across tests.\nI name those functions\nfixture_<name>\n. That way, when I start typing\nfixture_\n, I get autocompletion for all available fixtures. This makes it easy to find and use the right data in tests.\nIf a fixture is only used in one test file, define it in that file. If it’s used across multiple files, put it in a shared location, e.g.\ntests/testthat/setup-fixtures.R\n.\n🧪\nSee this guide how you can capture data from a session to save and reuse for testing.\nIs your test data too big to define programatically?\nPut those structures in files, it can be a JSON, CSV, YAML, or any other format that suits your needs. I recommend using any human-readable format, so you can easily read and edit it. Load this data in your fixture function.\nIf you load this data in a fixture function, you can easily swap it out for different data in the future and change only the fixture function, not every test that uses it.\n3. Tight Coupling with External Dependencies\nDoes your code only work when it talks to a “real” database or an external API? Tight coupling with external services, legacy systems, or specialized environments turns every test run into a intermittency nightmare.\nSolution\nRefactor code to decouple business logic from external dependencies via interfaces, adapters, or dependency injection.\nNeed a database? Create a local instance and populate it.\nNeed files from a datastore? Substitute them with local files.\nNeed access to an LLM? Mock the responses.\nWith\ntestthat::local_mocked_bindings\n, you can substitute dependencies with controlled, predictable data, although dependency injection can achieve the same results. For mocking with finer control, consider using\nmockery\n.\nRefactor toward a testable architecture.\nStart by enabling automated acceptance tests: introduce decoupling, configuration via files or environment variables instead of hard-coded values, and clear, replaceable interfaces for dependencies. Only once you have a test-friendly foundation can you systematically introduce automated tests across the codebase.\nIsolate yourself from external dependencies, and you’ll find that automated testing becomes not just feasible, but a natural part of your development process.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Get them out of your way to start testing your code effectively.",
+    "meta_keywords": null,
+    "og_description": "Get them out of your way to start testing your code effectively.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "3 Reasons Blocking You From Doing Automated Testing | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 4.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "Get them out of your way to start testing your code effectively.",
+    "twitter_title": "3 Reasons Blocking You From Doing Automated Testing | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/3-reasons-blocking-you-from-doing-automated-testing/",
+    "word_count": 861
+  }
+}

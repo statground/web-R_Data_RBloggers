@@ -1,0 +1,119 @@
+{
+  "uuid": "9cc13eb8-558d-4aa4-956c-3becc4b8ae0c",
+  "created_at": "2025-11-22 19:58:16",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/06/its-a-linear-world-approximately-and-the-rule-of-72/",
+    "crawled_at": "2025-11-22T10:46:52.152780",
+    "external_links": [
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2025/06/its-linear-world-approximately-and-rule.html",
+        "text": "Online College Math Teacher"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitBVr5mq_TQHyS9vdU3CqYtwrIMsQgfdoLbm7GmXcOwFR3ZXNl4swiD6WE6QP4Va2ieVgkJNJ31JfUjxlsDv-IiPHMvFvqxFziK27xbdLMsxfJdzngINlE54fUR86zeBEOV1aLIpNDaZFUQn9zZIqMlqYiNHmKKpfLNkVZOF8T2Hfv-tsNEdLaMmeS51g/s1325/Screenshot_20.png?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://www.allrecipes.com/article/turkey-cooking-time-guide/",
+        "text": "website"
+      },
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2024/01/using-great-circle-distance-to.html",
+        "text": "Haversine Formula"
+      },
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2025/06/its-linear-world-approximately-and-rule.html",
+        "text": "Online College Math Teacher"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "It’s a linear world – approximately; and the \"Rule of 72\" | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitBVr5mq_TQHyS9vdU3CqYtwrIMsQgfdoLbm7GmXcOwFR3ZXNl4swiD6WE6QP4Va2ieVgkJNJ31JfUjxlsDv-IiPHMvFvqxFziK27xbdLMsxfJdzngINlE54fUR86zeBEOV1aLIpNDaZFUQn9zZIqMlqYiNHmKKpfLNkVZOF8T2Hfv-tsNEdLaMmeS51g/s600/Screenshot_20.png?resize=450%2C641&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jerry-tuttle/",
+        "text": "Jerry Tuttle"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-393186 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">It’s a linear world – approximately; and the \"Rule of 72\"</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 21, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jerry-tuttle/\">Jerry Tuttle</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://onlinecollegemathteacher.blogspot.com/2025/06/its-linear-world-approximately-and-rule.html\"> Online College Math Teacher</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><font size=\"3\">\n  \n     \nYou are probably familiar with the “Rule of 72” in investing:  if an investment compounds at annual interest rate i, then the number of years for money to double is approximately 72 / i.   For example, if an investment compounds at annual interest rate of 9%, then the investment will double in approximately 72/9 = 8 years.  The compound interest formula confirms this: 1 * 1.09 <sup> 8 </sup> = 1.992 (rounded), which is approximately 2. <p>\n  \n     \nFor fun, ask your banker or investment advisor <i>why</i> the Rule of 72 works. </p><p>\n  \n     \nIt works because in the short run, it’s a linear world – approximately.  A little more mathematical is that, in a small enough neighborhood, any differentiable function is approximately linear. </p><p>\n  \n     \nFor the Rule of 72 we are solving for n in the equation 1 * (1 + i/100) <sup> n </sup> = 2. We take natural logarithms of both sides: </p><p>\n  \n1 * (1 + i/100) <sup> n </sup> = 2  <br/>\nLN (1 + i/100) <sup> n </sup> = LN 2 <br/> \nn * LN (1 + i/100) = LN 2 <br/> \nn = LN 2 / LN (1 + i/100) <br/>\nn ≈ .693 / LN (1 + i/100) <br/>\n<b>n ≈ .693 / (i/100)</b><br/>\nn ≈ 69.3 / i <br/>\nn ≈ 72 / i   \n  </p><p>\n  \n     \nThe key step three lines above is that for small values of x, LN (1 + x) is approximately equal to x. One way to see this is that the Taylor series (sorry, not invented by Taylor Swift) expansion around a = 0 is: </p><p> \nLN (1+x) = x – x <sup> 2 </sup> / 2 + x <sup> 3 </sup> / 3 – x <sup> 4 </sup> / 4 + … .  </p><p>\nFor small x, LN (1+x) is approximately equal to x. </p><p>\n  \n     \nIn the following plots, the plot on the left shows that the logarithmic function 1 of y = LN (1 + x) is surely different than the linear function 2 of y = LN (1.05) + (1/1.05)*(x – .05).  Function 2 is the equation of the tangent line to function 1 at x = .05.  (To derive the tangent line, recall from calculus that if y = LN(1 + x), then dy/dx = 1/(1 + x) ). The plot on the right is of the same two functions, but with the x range shrunk to (0.0, 0.1).  In this small range the two functions are indistinguishable.  In this small neighborhood, the differentiable function y = LN(1 + X) is indistinguishable from its linear tangent. </p><p>\n</p><div class=\"separator\" style=\"clear: both;\"><a href=\"https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitBVr5mq_TQHyS9vdU3CqYtwrIMsQgfdoLbm7GmXcOwFR3ZXNl4swiD6WE6QP4Va2ieVgkJNJ31JfUjxlsDv-IiPHMvFvqxFziK27xbdLMsxfJdzngINlE54fUR86zeBEOV1aLIpNDaZFUQn9zZIqMlqYiNHmKKpfLNkVZOF8T2Hfv-tsNEdLaMmeS51g/s1325/Screenshot_20.png?ssl=1\" rel=\"nofollow\" style=\"display: block; padding: 1em 0; text-align: center; \" target=\"_blank\"><img alt=\"\" border=\"0\" data-lazy-src=\"https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitBVr5mq_TQHyS9vdU3CqYtwrIMsQgfdoLbm7GmXcOwFR3ZXNl4swiD6WE6QP4Va2ieVgkJNJ31JfUjxlsDv-IiPHMvFvqxFziK27xbdLMsxfJdzngINlE54fUR86zeBEOV1aLIpNDaZFUQn9zZIqMlqYiNHmKKpfLNkVZOF8T2Hfv-tsNEdLaMmeS51g/s600/Screenshot_20.png?resize=450%2C641&amp;ssl=1\" data-original-height=\"641\" data-original-width=\"450\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"\" border=\"0\" data-original-height=\"641\" data-original-width=\"450\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitBVr5mq_TQHyS9vdU3CqYtwrIMsQgfdoLbm7GmXcOwFR3ZXNl4swiD6WE6QP4Va2ieVgkJNJ31JfUjxlsDv-IiPHMvFvqxFziK27xbdLMsxfJdzngINlE54fUR86zeBEOV1aLIpNDaZFUQn9zZIqMlqYiNHmKKpfLNkVZOF8T2Hfv-tsNEdLaMmeS51g/s600/Screenshot_20.png?resize=450%2C641&amp;ssl=1\" width=\"450\"/></noscript></a></div> <p>\n  \n       \nOf course a “Rule of 69.3”, where LN 2 is .693 to three decimal places, would be a better approximation to the compound interest formula than the “Rule of 72”, but 72 is close enough and is useful because 72 has so many integer divisors. </p><p>\n  \n     \nIn the real world we often assume linearity holds within a small range.  For example in cooking a turkey (not that I have ever done this), one \n  <a href=\"https://www.allrecipes.com/article/turkey-cooking-time-guide/\" rel=\"nofollow\" target=\"_blank\">website </a> says to allow about 15 minutes per pound (on average!) at 350°F to cook a stuffed turkey. But their time estimates by pound are not linear, so for example their time estimate to cook a 24-pounder is less than twice as long to cook a 12-pounder. Perhaps a better approximation is a power curve y = a * (x <sup>b</sup>) . Presumably there are some physics considerations that are non-linear. </p><p>\n  \n     \nThe Newton-Raphson method, x <sub>n+1</sub> = x <sub>n</sub>  – f (x <sub>n</sub> ) / f <sup>‘</sup> (x <sub>n</sub> ), for finding approximations to roots of a function, is an example of a mathematical use of linearity.  N-R iteratively finds the x-intercept of the tangent of the graph of f. A number of R packages have N-R functions. </p><p>\n  \n\n     \nAnd before we end the subject of “it’s a linear world – approximately”, you can certainly measure the straight line distance between two cities, but if you travel by airplane, the airplane is flying the distance between two points on a sphere.  Given the latitude and longitude coordinates and the central angle between the two points, the spherical distance can be calculated by the \n<a href=\"https://onlinecollegemathteacher.blogspot.com/2024/01/using-great-circle-distance-to.html\" rel=\"nofollow\" target=\"_blank\">Haversine Formula</a>. </p><p>\n\n     \nR makes it easy not to settle for linearity.  But for those of who are not doing something where great precision is required, linearity may be just fine, </p><p>\n  \n     \nHere is the R-code to plot the graphs.  Note that in R, log(x) is the natural log function.  This is also true in Python and Excel. </p><p>\n</p><pre>\n\nlibrary(ggplot2)\n\ncommon_theme &lt;- theme(\n     legend.position=\"right\",\n     plot.title = element_text(size=15, face=\"bold\"),\n     plot.subtitle = element_text(size=12.5, face=\"bold\"),\n     axis.title = element_text(size=15, face=\"bold\"),\n     axis.text = element_text(size=15, face=\"bold\"),\n     axis.title.y = element_text(angle = 0),\n     legend.title = element_text(size=15, face=\"bold\"),\n     legend.text = element_text(size=15, face=\"bold\"))\n\na &lt;- 0.0\nb &lt;- 1.0\nx_values &lt;- seq(a, b, by = 0.01)\nfunc1 &lt;- function(x) {log(1 + x)}\nfunc2 &lt;- function(x) {log(1.05) + (1/1.05)*(x - .05)}\ndf1 &lt;- data.frame(x = x_values,\n           y = log(1 +x_values),\n           func = \"Function 1\")\ndf2 &lt;- data.frame(x = x_values,\n           y = log(1.05) + (1/1.05)*(x_values - .05),\n           func = \"Function 2\")\ncombined_df &lt;- rbind(df1, df2)\n\nggplot(combined_df, aes(x = x, y = y, color = func)) +\n   geom_line(size = 1.5) +\n   scale_color_manual(values = c(\"Function 1\" = \"#E41A1C\", \n            \"Function 2\" = \"royalblue4\")) +\n   ylim(c(0, 1)) + \n   labs(title = \"Plot of LN and Linear Functions\",\n              x = \"x\",\n              y = \"y\",\n              color = \"Functions\") +\n  common_theme\n\nggplot(combined_df, aes(x = x, y = y, color = func)) +\n   geom_line(size = 1.5) +\n   scale_color_manual(values = c(\"Function 1\" = \"#E41A1C\", \n            \"Function 2\" = \"royalblue4\")) +\n   xlim(c(0, 0.1)) +\n   ylim(c(0, 0.11)) + \n   labs(title = \"Plot of LN Function and its Tangent Line at x = .05\",\n              x = \"x\",\n              y = \"y\",\n              color = \"Functions\") +\n  common_theme\n\n</pre>\nEnd\n</font>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://onlinecollegemathteacher.blogspot.com/2025/06/its-linear-world-approximately-and-rule.html\"> Online College Math Teacher</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "It’s a linear world – approximately; and the \"Rule of 72\"\nPosted on\nJune 21, 2025\nby\nJerry Tuttle\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nOnline College Math Teacher\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nYou are probably familiar with the “Rule of 72” in investing:  if an investment compounds at annual interest rate i, then the number of years for money to double is approximately 72 / i.   For example, if an investment compounds at annual interest rate of 9%, then the investment will double in approximately 72/9 = 8 years.  The compound interest formula confirms this: 1 * 1.09\n8\n= 1.992 (rounded), which is approximately 2.\nFor fun, ask your banker or investment advisor\nwhy\nthe Rule of 72 works.\nIt works because in the short run, it’s a linear world – approximately.  A little more mathematical is that, in a small enough neighborhood, any differentiable function is approximately linear.\nFor the Rule of 72 we are solving for n in the equation 1 * (1 + i/100)\nn\n= 2. We take natural logarithms of both sides:\n1 * (1 + i/100)\nn\n= 2\nLN (1 + i/100)\nn\n= LN 2\nn * LN (1 + i/100) = LN 2\nn = LN 2 / LN (1 + i/100)\nn ≈ .693 / LN (1 + i/100)\nn ≈ .693 / (i/100)\nn ≈ 69.3 / i\nn ≈ 72 / i\nThe key step three lines above is that for small values of x, LN (1 + x) is approximately equal to x. One way to see this is that the Taylor series (sorry, not invented by Taylor Swift) expansion around a = 0 is:\nLN (1+x) = x – x\n2\n/ 2 + x\n3\n/ 3 – x\n4\n/ 4 + … .\nFor small x, LN (1+x) is approximately equal to x.\nIn the following plots, the plot on the left shows that the logarithmic function 1 of y = LN (1 + x) is surely different than the linear function 2 of y = LN (1.05) + (1/1.05)*(x – .05).  Function 2 is the equation of the tangent line to function 1 at x = .05.  (To derive the tangent line, recall from calculus that if y = LN(1 + x), then dy/dx = 1/(1 + x) ). The plot on the right is of the same two functions, but with the x range shrunk to (0.0, 0.1).  In this small range the two functions are indistinguishable.  In this small neighborhood, the differentiable function y = LN(1 + X) is indistinguishable from its linear tangent.\nOf course a “Rule of 69.3”, where LN 2 is .693 to three decimal places, would be a better approximation to the compound interest formula than the “Rule of 72”, but 72 is close enough and is useful because 72 has so many integer divisors.\nIn the real world we often assume linearity holds within a small range.  For example in cooking a turkey (not that I have ever done this), one\nwebsite\nsays to allow about 15 minutes per pound (on average!) at 350°F to cook a stuffed turkey. But their time estimates by pound are not linear, so for example their time estimate to cook a 24-pounder is less than twice as long to cook a 12-pounder. Perhaps a better approximation is a power curve y = a * (x\nb\n) . Presumably there are some physics considerations that are non-linear.\nThe Newton-Raphson method, x\nn+1\n= x\nn\n– f (x\nn\n) / f\n‘\n(x\nn\n), for finding approximations to roots of a function, is an example of a mathematical use of linearity.  N-R iteratively finds the x-intercept of the tangent of the graph of f. A number of R packages have N-R functions.\nAnd before we end the subject of “it’s a linear world – approximately”, you can certainly measure the straight line distance between two cities, but if you travel by airplane, the airplane is flying the distance between two points on a sphere.  Given the latitude and longitude coordinates and the central angle between the two points, the spherical distance can be calculated by the\nHaversine Formula\n.\nR makes it easy not to settle for linearity.  But for those of who are not doing something where great precision is required, linearity may be just fine,\nHere is the R-code to plot the graphs.  Note that in R, log(x) is the natural log function.  This is also true in Python and Excel.\nlibrary(ggplot2)\n\ncommon_theme <- theme(\n     legend.position=\"right\",\n     plot.title = element_text(size=15, face=\"bold\"),\n     plot.subtitle = element_text(size=12.5, face=\"bold\"),\n     axis.title = element_text(size=15, face=\"bold\"),\n     axis.text = element_text(size=15, face=\"bold\"),\n     axis.title.y = element_text(angle = 0),\n     legend.title = element_text(size=15, face=\"bold\"),\n     legend.text = element_text(size=15, face=\"bold\"))\n\na <- 0.0\nb <- 1.0\nx_values <- seq(a, b, by = 0.01)\nfunc1 <- function(x) {log(1 + x)}\nfunc2 <- function(x) {log(1.05) + (1/1.05)*(x - .05)}\ndf1 <- data.frame(x = x_values,\n           y = log(1 +x_values),\n           func = \"Function 1\")\ndf2 <- data.frame(x = x_values,\n           y = log(1.05) + (1/1.05)*(x_values - .05),\n           func = \"Function 2\")\ncombined_df <- rbind(df1, df2)\n\nggplot(combined_df, aes(x = x, y = y, color = func)) +\n   geom_line(size = 1.5) +\n   scale_color_manual(values = c(\"Function 1\" = \"#E41A1C\", \n            \"Function 2\" = \"royalblue4\")) +\n   ylim(c(0, 1)) + \n   labs(title = \"Plot of LN and Linear Functions\",\n              x = \"x\",\n              y = \"y\",\n              color = \"Functions\") +\n  common_theme\n\nggplot(combined_df, aes(x = x, y = y, color = func)) +\n   geom_line(size = 1.5) +\n   scale_color_manual(values = c(\"Function 1\" = \"#E41A1C\", \n            \"Function 2\" = \"royalblue4\")) +\n   xlim(c(0, 0.1)) +\n   ylim(c(0, 0.11)) + \n   labs(title = \"Plot of LN Function and its Tangent Line at x = .05\",\n              x = \"x\",\n              y = \"y\",\n              color = \"Functions\") +\n  common_theme\nEnd\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nOnline College Math Teacher\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "You are probably familiar with the \"Rule of 72\" in investing: if an investment compounds at annual interest rate i, then the number of years for money to double is approximately 72 / i. For example, if an investmen...",
+    "meta_keywords": null,
+    "og_description": "You are probably familiar with the \"Rule of 72\" in investing: if an investment compounds at annual interest rate i, then the number of years for money to double is approximately 72 / i. For example, if an investmen...",
+    "og_image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitBVr5mq_TQHyS9vdU3CqYtwrIMsQgfdoLbm7GmXcOwFR3ZXNl4swiD6WE6QP4Va2ieVgkJNJ31JfUjxlsDv-IiPHMvFvqxFziK27xbdLMsxfJdzngINlE54fUR86zeBEOV1aLIpNDaZFUQn9zZIqMlqYiNHmKKpfLNkVZOF8T2Hfv-tsNEdLaMmeS51g/s600/Screenshot_20.png",
+    "og_title": "It’s a linear world – approximately; and the \"Rule of 72\" | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.3,
+    "sitemap_lastmod": null,
+    "twitter_description": "You are probably familiar with the \"Rule of 72\" in investing: if an investment compounds at annual interest rate i, then the number of years for money to double is approximately 72 / i. For example, if an investmen...",
+    "twitter_title": "It’s a linear world – approximately; and the \"Rule of 72\" | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/06/its-a-linear-world-approximately-and-the-rule-of-72/",
+    "word_count": 1059
+  }
+}

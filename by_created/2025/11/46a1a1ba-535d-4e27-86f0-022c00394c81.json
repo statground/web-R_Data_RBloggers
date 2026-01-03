@@ -1,0 +1,96 @@
+{
+  "uuid": "46a1a1ba-535d-4e27-86f0-022c00394c81",
+  "created_at": "2025-11-22 19:59:03",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/03/the-difference-between-and-finally-explained/",
+    "crawled_at": "2025-11-22T10:52:28.481490",
+    "external_links": [
+      {
+        "href": "https://albert-rapp.de/posts/35_equal_vs_arrow/35_equal_vs_arrow.html",
+        "text": "Albert Rapp"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://albert-rapp.de/posts/35_equal_vs_arrow/35_equal_vs_arrow.html",
+        "text": "Albert Rapp"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "The difference between = and",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/albert-rapp/",
+        "text": "Albert Rapp"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394549 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">The difference between = and &lt;- finally explained</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/albert-rapp/\">Albert Rapp</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://albert-rapp.de/posts/35_equal_vs_arrow/35_equal_vs_arrow.html\"> Albert Rapp</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><link href=\"https://albert-rapp.de/new_code_theme.css\" rel=\"stylesheet\"/></p>\n<p>In today’s blogpost, we take a look at one of the most questions about R: What’s the difference between <code>&lt;-</code> and <code>=</code>? And as always, there’s a video version for you:</p>\n<div class=\"quarto-video ratio ratio-16x9\"><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" data-external=\"1\" frameborder=\"0\" src=\"https://www.youtube.com/embed/oQLcpkDXysM\" title=\"\"></iframe></div>\n<section class=\"level2\" id=\"similar-assignment\">\n<h2 class=\"anchored\" data-anchor-id=\"similar-assignment\">Similar assignment</h2>\n<p>Let’s first talk about the similarities of both operators. Obviously, both work as expected when you assign values to variable names.</p>\n<div class=\"cell\">\n<pre>a = 1\na\n## [1] 1\na &lt;- 2\na\n## [1] 2</pre>\n</div>\n<p>This even works in functions. Take this function, It always returns 5 whatever you stick into the argument <code>a</code>:</p>\n<div class=\"cell\">\n<pre>fct &lt;- function(some_nmbr) {\n  print(glue::glue('I received {some_nmbr}.'))\n  5\n}\nfct(some_nmbr = 10)\n## I received 10.\n## [1] 5\nfct(some_nmbr &lt;- 10)\n## I received 10.\n## [1] 5</pre>\n</div>\n<p>Boring function but have you seen how both <code>=</code> and <code>&lt;-</code> worked the same? That’s why it’s easy to think that both operators are indeed the same. But that’s where different scoping comes in.</p>\n</section>\n<section class=\"level2\" id=\"scoping\">\n<h2 class=\"anchored\" data-anchor-id=\"scoping\">Scoping</h2>\n<p>The <code>&lt;-</code> operator has a broader scope. It can create variables in the global environment when used inside functions, while <code>=</code> typically only assigns within the local function environment.</p>\n<div class=\"cell\">\n<pre>rm(some_nmbr) # make sure that some_nmbr doesn't currently \n              # exist in global env\nfct(some_nmbr = 10)\n## I received 10.\n## [1] 5</pre>\n</div>\n<p>Even though we assigned <code>some_nmbr =</code> inside the <code>fct()</code> the variable <code>some_nmbr</code> isn’t available once <code>fct()</code> completed.</p>\n<div class=\"cell\">\n<pre>some_nmbr\n## Error in eval(expr, envir, enclos): object 'some_nmbr' not found</pre>\n</div>\n<p>But watch what happens if we use <code>&lt;-</code> instead of <code>=</code>:</p>\n<div class=\"cell\">\n<pre>fct(some_nmbr &lt;- 10)\n## I received 10.\n## [1] 5\nsome_nmbr\n## [1] 10</pre>\n</div>\n<p>The function still tells us that it received 10 and returns 5. But this time the assignment <code>some_nmbr &lt;-</code> also worked globally. That’s why we can access <code>some_nmbr</code> after <code>fct()</code> terminated.</p>\n<p>Don’t believe me yet? Let’s try it again.</p>\n<div class=\"cell\">\n<pre>fct(some_nmbr &lt;- 20)\n## I received 20.\n## [1] 5\nsome_nmbr\n## [1] 20</pre>\n</div>\n<p>See? Now, <code>some_nmbr</code> in the global environment is 20. Interestingly, this only takes effect, when the variable <code>some_nmbr</code> is actually used inside of <code>fct()</code>. Let’s create another function.</p>\n<div class=\"cell\">\n<pre>fct2 &lt;- function(some_nmbr) {\n  5\n}</pre>\n</div>\n<p>This function doesn’t actually use <code>some_nmbr</code> in this function body at all. Now watch what happens when we use the <code>&lt;-</code> assignment again.</p>\n<div class=\"cell\">\n<pre>fct2(some_nmbr &lt;- 30)\n## [1] 5\nsome_nmbr\n## [1] 20</pre>\n</div>\n<p><code>some_nmbr</code> still has the value from before and not the new one. Funny, isn’t it? Anyway, due to these possible side effects you might want to use <code>=</code> inside of function calls.</p>\n</section>\n<section class=\"level2\" id=\"powerup-of--\">\n<h2 class=\"anchored\" data-anchor-id=\"powerup-of--\">Powerup of <code>&lt;-</code></h2>\n<p>Now that we have seen that <code>&lt;-</code> is in a sense more powerful than <code>=</code>, let me also mention another power-up. You see, you can make the <code>&lt;-</code> into <code>&lt;&lt;-</code> and get an even more powerful operator. You can use the <strong>inside</strong> a function to define a variable <strong>outside</strong> the function in the global environment.</p>\n<p>Check out this example.</p>\n<div class=\"cell\">\n<pre>power_fct &lt;- function() {\n  defined_inside &lt;- 20\n  5\n}</pre>\n</div>\n<p>This function first used the regular <code>&lt;-</code> operator to define a variable called <code>defined_inside</code>. This variable cannot be accessed once <code>power_fct()</code> terminates.</p>\n<div class=\"cell\">\n<pre>power_fct()\n## [1] 5\ndefined_inside\n## Error in eval(expr, envir, enclos): object 'defined_inside' not found</pre>\n</div>\n<p>But watch what happens when we make change <code>&lt;-</code> to <code>&lt;&lt;-</code> inside of <code>power_fct()</code>.</p>\n<div class=\"cell\">\n<pre>power_fct &lt;- function() {\n  defined_inside &lt;&lt;- 20\n  5\n}\npower_fct()\n## [1] 5\ndefined_inside\n## [1] 20</pre>\n</div>\n<p>Magical, isn’t it? This trick can be really handy sometimes but also quite dangerous. Make sure you use this trick only when you know what you want to do.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://albert-rapp.de/posts/35_equal_vs_arrow/35_equal_vs_arrow.html\"> Albert Rapp</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "The difference between = and <- finally explained\nPosted on\nMarch 15, 2025\nby\nAlbert Rapp\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAlbert Rapp\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn today’s blogpost, we take a look at one of the most questions about R: What’s the difference between\n<-\nand\n=\n? And as always, there’s a video version for you:\nSimilar assignment\nLet’s first talk about the similarities of both operators. Obviously, both work as expected when you assign values to variable names.\na = 1\na\n## [1] 1\na <- 2\na\n## [1] 2\nThis even works in functions. Take this function, It always returns 5 whatever you stick into the argument\na\n:\nfct <- function(some_nmbr) {\n  print(glue::glue('I received {some_nmbr}.'))\n  5\n}\nfct(some_nmbr = 10)\n## I received 10.\n## [1] 5\nfct(some_nmbr <- 10)\n## I received 10.\n## [1] 5\nBoring function but have you seen how both\n=\nand\n<-\nworked the same? That’s why it’s easy to think that both operators are indeed the same. But that’s where different scoping comes in.\nScoping\nThe\n<-\noperator has a broader scope. It can create variables in the global environment when used inside functions, while\n=\ntypically only assigns within the local function environment.\nrm(some_nmbr) # make sure that some_nmbr doesn't currently \n              # exist in global env\nfct(some_nmbr = 10)\n## I received 10.\n## [1] 5\nEven though we assigned\nsome_nmbr =\ninside the\nfct()\nthe variable\nsome_nmbr\nisn’t available once\nfct()\ncompleted.\nsome_nmbr\n## Error in eval(expr, envir, enclos): object 'some_nmbr' not found\nBut watch what happens if we use\n<-\ninstead of\n=\n:\nfct(some_nmbr <- 10)\n## I received 10.\n## [1] 5\nsome_nmbr\n## [1] 10\nThe function still tells us that it received 10 and returns 5. But this time the assignment\nsome_nmbr <-\nalso worked globally. That’s why we can access\nsome_nmbr\nafter\nfct()\nterminated.\nDon’t believe me yet? Let’s try it again.\nfct(some_nmbr <- 20)\n## I received 20.\n## [1] 5\nsome_nmbr\n## [1] 20\nSee? Now,\nsome_nmbr\nin the global environment is 20. Interestingly, this only takes effect, when the variable\nsome_nmbr\nis actually used inside of\nfct()\n. Let’s create another function.\nfct2 <- function(some_nmbr) {\n  5\n}\nThis function doesn’t actually use\nsome_nmbr\nin this function body at all. Now watch what happens when we use the\n<-\nassignment again.\nfct2(some_nmbr <- 30)\n## [1] 5\nsome_nmbr\n## [1] 20\nsome_nmbr\nstill has the value from before and not the new one. Funny, isn’t it? Anyway, due to these possible side effects you might want to use\n=\ninside of function calls.\nPowerup of\n<-\nNow that we have seen that\n<-\nis in a sense more powerful than\n=\n, let me also mention another power-up. You see, you can make the\n<-\ninto\n<<-\nand get an even more powerful operator. You can use the\ninside\na function to define a variable\noutside\nthe function in the global environment.\nCheck out this example.\npower_fct <- function() {\n  defined_inside <- 20\n  5\n}\nThis function first used the regular\n<-\noperator to define a variable called\ndefined_inside\n. This variable cannot be accessed once\npower_fct()\nterminates.\npower_fct()\n## [1] 5\ndefined_inside\n## Error in eval(expr, envir, enclos): object 'defined_inside' not found\nBut watch what happens when we make change\n<-\nto\n<<-\ninside of\npower_fct()\n.\npower_fct <- function() {\n  defined_inside <<- 20\n  5\n}\npower_fct()\n## [1] 5\ndefined_inside\n## [1] 20\nMagical, isn’t it? This trick can be really handy sometimes but also quite dangerous. Make sure you use this trick only when you know what you want to do.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAlbert Rapp\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "In today’s blogpost, we take a look at one of the most questions about R: What’s the difference between",
+    "meta_keywords": null,
+    "og_description": "In today’s blogpost, we take a look at one of the most questions about R: What’s the difference between",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "The difference between = and",
+    "raw_jsonld_article": null,
+    "reading_time_min": 3.4,
+    "sitemap_lastmod": null,
+    "twitter_description": "In today’s blogpost, we take a look at one of the most questions about R: What’s the difference between",
+    "twitter_title": "The difference between = and",
+    "url": "https://www.r-bloggers.com/2025/03/the-difference-between-and-finally-explained/",
+    "word_count": 682
+  }
+}

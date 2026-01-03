@@ -1,0 +1,217 @@
+{
+  "uuid": "5d5aee79-0396-47af-9efc-d9be2a98c7ab",
+  "created_at": "2025-11-22 19:57:58",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2025/07/animated-maps-with-ggplot2-and-gganimate/",
+    "crawled_at": "2025-11-22T10:44:52.890866",
+    "external_links": [
+      {
+        "href": "https://www.jumpingrivers.com/blog/animated-map/",
+        "text": "The Jumping Rivers Blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/blog/animated-map/",
+        "text": null
+      },
+      {
+        "href": "https://cran.r-project.org/web/packages/gapminder/readme/README.html",
+        "text": "{gapminder}"
+      },
+      {
+        "href": "https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/table/",
+        "text": "‘opendatasoft’"
+      },
+      {
+        "href": "https://www.gapminder.org/",
+        "text": "Gapminder"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/blog/animated-map/url",
+        "text": "{sf}"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/blog/animated-map/url",
+        "text": "dplyr"
+      },
+      {
+        "href": "https://epsg.io/",
+        "text": "epsg.io"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/training/course/r-spatial-analysis-sf-tmap-leaflet",
+        "text": "Spatial Data Analysis with R\ncourse"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/blog/2021-thinking-about-maps-and-ice-cream/",
+        "text": "Thinking About Maps and Ice\nCream"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/blog/animated-map/",
+        "text": "original post"
+      },
+      {
+        "href": "https://www.jumpingrivers.com/blog/animated-map/",
+        "text": "The Jumping Rivers Blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Animated Maps with {ggplot2} and {gganimate} | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/featured.png?w=400&ssl=1"
+      },
+      {
+        "alt": "Map of the World with some countries missing.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Map of the World with some countries missing.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/first-plotunnamed-chunk-5-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Map of the World with all countries.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Map of the World with all countries.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/full-plotunnamed-chunk-8-1.png?w=450&ssl=1"
+      },
+      {
+        "alt": "Map of The Americas.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Map of The Americas.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/americas-plot.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Map of The Americas with EPSG:8858 CRS.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Map of The Americas with EPSG:8858 CRS.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/new-crs-plot.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Map of The Americas to be animated.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Map of The Americas to be animated.",
+        "base64": null,
+        "src": "https://i0.wp.com/www.jumpingrivers.com/blog/animated-map/img/static-plot.png?w=578&ssl=1"
+      },
+      {
+        "alt": "Animation with missing values.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Animation with missing values.",
+        "base64": null,
+        "src": "https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/map.gif?w=578&ssl=1"
+      },
+      {
+        "alt": "Final animation with all countries.",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Final animation with all countries.",
+        "base64": null,
+        "src": "https://i0.wp.com/www.jumpingrivers.com/blog/animated-map/img/map2.gif?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/the-jumping-rivers-blog/",
+        "text": "The Jumping Rivers Blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-394431 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Animated Maps with {ggplot2} and {gganimate}</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 31, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/the-jumping-rivers-blog/\">The Jumping Rivers Blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.jumpingrivers.com/blog/animated-map/\"> The Jumping Rivers Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>\n<a href=\"https://www.jumpingrivers.com/blog/animated-map/\">\n<img class=\"image-center\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/featured.png?w=400&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:400px\"/><noscript><img class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/featured.png?w=400&amp;ssl=1\" style=\"width:400px\"/></noscript>\n</a>\n</p>\n<p>In this blog post, we are going to use data from the\n<a href=\"https://cran.r-project.org/web/packages/gapminder/readme/README.html\" rel=\"nofollow\" target=\"_blank\">{gapminder}</a>\nR package, along with global spatial boundaries from\n<a href=\"https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/table/\" rel=\"nofollow\" target=\"_blank\">‘opendatasoft’</a>.\nWe are going to plot the life expectancy of each country in the Americas\nand animate it to see the changes from 1957 to 2007.</p>\n<p>The {gapminder} package we are using is from the\n<a href=\"https://www.gapminder.org/\" rel=\"nofollow\" target=\"_blank\">Gapminder</a> foundation, an independent\neducational non-proﬁt ﬁghting global misconceptions. The cover issues\nlike global warming, plastic in the oceans and life satisfaction.</p>\n<p>First we will load the full dataset from the gapminder package, and see\nwhat is contained within it.</p>\n<pre>data(\"gapminder_unfiltered\", package = \"gapminder\")\nnames(gapminder_unfiltered)\n\n## [1] \"country\" \"continent\" \"year\" \"lifeExp\" \"pop\" \"gdpPercap\"\n</pre>\n<p>Then we will filter the dataset to keep life expectancy data for the\nyears from 1952 to 2007 (in 5-year steps).</p>\n<p>A shapefile (<code>*.shp</code>) containing the geographical boundaries of each\ncountry can be imported using the <a href=\"https://www.jumpingrivers.com/blog/animated-map/url\" rel=\"nofollow\" target=\"_blank\"><code>{sf}</code></a> R package.</p>\n<pre>library(sf)\nlibrary(dplyr)\nif (getwd() == \"/home/osheen/corporate-website\"){\n world = st_read(\"content/blog/2025-animated-map/data/world-administrative-boundaries.shp\") |&gt;\n select(-\"continent\")\n} else {\n world = st_read(\"data/world-administrative-boundaries.shp\") |&gt;\n select(-\"continent\")\n\n}\n\n## Reading layer `world-administrative-boundaries' from data source\n## `/home/osheen/corporate-website/content/blog/2025-animated-map/data/world-administrative-boundaries.shp'\n## using driver `ESRI Shapefile'\n## Simple feature collection with 256 features and 8 fields\n## Geometry type: MULTIPOLYGON\n## Dimension: XY\n## Bounding box: xmin: -180 ymin: -58.49861 xmax: 180 ymax: 83.6236\n## Geodetic CRS: WGS 84\n\nhead(world)\n\n## Simple feature collection with 6 features and 7 fields\n## Geometry type: MULTIPOLYGON\n## Dimension: XY\n## Bounding box: xmin: -58.43861 ymin: -34.94382 xmax: 148.8519 ymax: 51.09111\n## Geodetic CRS: WGS 84\n## iso3 status color_code name\n## 1 MNP US Territory USA Northern Mariana Islands\n## 2 &lt;NA&gt; Sovereignty unsettled RUS Kuril Islands\n## 3 FRA Member State FRA France\n## 4 SRB Member State SRB Serbia\n## 5 URY Member State URY Uruguay\n## 6 GUM US Non-Self-Governing Territory GUM Guam\n## region iso_3166_1_ french_shor\n## 1 Micronesia MP Northern Mariana Islands\n## 2 Eastern Asia &lt;NA&gt; Kuril Islands\n## 3 Western Europe FR France\n## 4 Southern Europe RS Serbie\n## 5 South America UY Uruguay\n## 6 Micronesia GU Guam\n## geometry\n## 1 MULTIPOLYGON (((145.6333 14...\n## 2 MULTIPOLYGON (((146.6827 43...\n## 3 MULTIPOLYGON (((9.4475 42.6...\n## 4 MULTIPOLYGON (((20.26102 46...\n## 5 MULTIPOLYGON (((-53.3743 -3...\n## 6 MULTIPOLYGON (((144.7094 13...\n</pre>\n<p>One of the nice things about the <code>{sf}</code> package is that it stores\ngeographical data in a specialised data-frame structure which allows us\nto merge our boundary data with the gapminder statistics using the same\nfunctions that we would use to combine more typical data-frames. Here we\njoin the two datasets, matching the entries by country name, using the\n<a href=\"https://www.jumpingrivers.com/blog/animated-map/url\" rel=\"nofollow\" target=\"_blank\">dplyr</a> <code>left_join</code> function.</p>\n<pre>joined = left_join(gapminder_unfiltered,\n world,\n by = c(\"country\" = \"name\")) |&gt;\n st_as_sf()\nhead(joined)\n\n## Simple feature collection with 6 features and 12 fields\n## Geometry type: MULTIPOLYGON\n## Dimension: XY\n## Bounding box: xmin: 60.50417 ymin: 29.40611 xmax: 74.91574 ymax: 38.47198\n## Geodetic CRS: WGS 84\n## # A tibble: 6 × 13\n## country continent year lifeExp pop gdpPercap iso3 status color_code\n## &lt;chr&gt; &lt;fct&gt; &lt;int&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;\n## 1 Afghanistan Asia 1952 28.8 8425333 779. AFG Membe… AFG\n## 2 Afghanistan Asia 1957 30.3 9240934 821. AFG Membe… AFG\n## 3 Afghanistan Asia 1962 32.0 10267083 853. AFG Membe… AFG\n## 4 Afghanistan Asia 1967 34.0 11537966 836. AFG Membe… AFG\n## 5 Afghanistan Asia 1972 36.1 13079460 740. AFG Membe… AFG\n## 6 Afghanistan Asia 1977 38.4 14880372 786. AFG Membe… AFG\n## # ℹ 4 more variables: region &lt;chr&gt;, iso_3166_1_ &lt;chr&gt;, french_shor &lt;chr&gt;,\n## # geometry &lt;MULTIPOLYGON [°]&gt;\n</pre>\n\n<p>I am going to select the country column and plot that using the base R\n<code>plot</code> function for a quick visualisation.</p>\n<pre>joined |&gt;\n select(\"country\") |&gt;\n plot()\n</pre><img alt=\"Map of the World with some countries missing.\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/first-plotunnamed-chunk-5-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Map of the World with some countries missing.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/first-plotunnamed-chunk-5-1.png?w=450&amp;ssl=1\"/></noscript>\n<p>Hmmmmmmm that doesn’t look quite right does it?</p>\n<p>The issue here is a common one when grabbing a spatial boundaries file\nfrom the internet. The data sets being joined have different names for\nsome of the countries. For example, in the <code>world</code> data we have USA as\n‘United States’ where as in <code>gapminder</code> it’s ‘United States of America’.\nThe <code>dplyr::anti_join</code> function can be helpful finding countries that\ndon’t match. I will use <code>fct_recode</code> from {forcats} to align the <code>world</code>\ncountry names with <code>gapminder</code>. In the example below, I am just fixing\nthe USA but you can see from the plot above that several other countries\nneed to be recoded (19 in total), I am doing this behind the scenes to\navoid clogging up the page.</p>\n<pre>library(forcats)\nworld = world |&gt;\n mutate(name = fct_recode(.data$name,\n \"United States\" =\n \"United States of America\"))\n</pre><p>Okay, lets see what this looks like now.</p>\n<pre>joined |&gt;\n select(\"country\") |&gt;\n plot()\n</pre><img alt=\"Map of the World with all countries.\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/full-plotunnamed-chunk-8-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Map of the World with all countries.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/full-plotunnamed-chunk-8-1.png?w=450&amp;ssl=1\"/></noscript>\n<p>That’s better! Now I’ve got the data I want to plot, I can use ggplot2\nto start creating the visualisation that I will be animating. Before\nthat, I will filter the data to keep only the Americas, then use\n<code>geom_sf</code> to plot the geometry data.</p>\n<pre>library(ggplot2)\n\namericas = joined |&gt;\n filter(continent == \"Americas\")\n\namericas_plot = ggplot(americas) +\n geom_sf()\n</pre><img alt=\"Map of The Americas.\" class=\"image-center\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/americas-plot.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 450px;\"/><noscript><img alt=\"Map of The Americas.\" class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/americas-plot.png?w=578&amp;ssl=1\" style=\"width: 450px;\"/></noscript>\n<p>This plot looks good but I’m going to change the coordinate reference\nsystem (CRS) to one (“EPSG:8858”) that is designed for the Americas. I\nfound this CRS on <a href=\"https://epsg.io/\" rel=\"nofollow\" target=\"_blank\">epsg.io</a>, a website I would\nrecommend if you are looking for some different CRS’s. <code>st_transform</code>\ncan be used to change the CRS to EPSG:8858. This is what it looks like\nnow:</p>\n<pre>americas = st_transform(americas, \"EPSG:8858\")\n\nnew_crs_plot = ggplot(americas) +\n geom_sf()\n</pre><img alt=\"Map of The Americas with EPSG:8858 CRS.\" class=\"image-center\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/new-crs-plot.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 450px;\"/><noscript><img alt=\"Map of The Americas with EPSG:8858 CRS.\" class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/new-crs-plot.png?w=578&amp;ssl=1\" style=\"width: 450px;\"/></noscript>\n<p>Okay so now the plot looks right we will start preparing it to be\nanimated.</p>\n<pre>library(ggplot2)\n\nplot = americas %&gt;%\n filter(year == 2007) %&gt;%\n ggplot() +\n geom_sf(aes(fill = lifeExp)) +\n labs(title = \"Year: 2007\",\n fill = \"Life Expectancy\") +\n theme_void() +\n ggplot2::scale_fill_viridis_b() +\n theme(legend.position = c(\"inside\"),\n legend.position.inside = c(0.23, 0.23),\n plot.title = element_text(size = 15,\n hjust = 0.5),\n panel.border = element_rect(color = \"black\",\n fill = NA))\n</pre><img alt=\"Map of The Americas to be animated.\" class=\"image-center\" data-lazy-src=\"https://i0.wp.com/www.jumpingrivers.com/blog/animated-map/img/static-plot.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 450px;\"/><noscript><img alt=\"Map of The Americas to be animated.\" class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.jumpingrivers.com/blog/animated-map/img/static-plot.png?w=578&amp;ssl=1\" style=\"width: 450px;\"/></noscript>\n<p>This is the plot we are going to animate now so we’ll use {gganimate}.\nThe <code>transition_states</code> function partitions the data using a <code>states</code>\ncolumn (here our ‘year’ column), iteratively creating a frame of the\nanimation for each year value in the input data. The next function is\n<code>animate</code> which will convert these frames into a GIF. Note, make sure\nyou have the dependencies installed or you may end up with 100 PNG files\nin your working directory rather than a GIF!</p>\n<pre>library(gganimate)\n\nanimation = plot +\n ggtitle(\"Year: {closest_state}\") +\n transition_states(states = year)\n\nanimate(animation,\n renderer = gifski_renderer(\"img/map.gif\"),\n alt = \"Animation with missing values.\")\n</pre><img alt=\"Animation with missing values.\" class=\"image-center\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/map.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 450px;\"/><noscript><img alt=\"Animation with missing values.\" class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/animated-map/img/map.gif?w=578&amp;ssl=1\" style=\"width: 450px;\"/></noscript>\n<p>The keener eyed of you will notice some countries don’t have a value for\nevery year.</p>\n<pre>americas |&gt;\n st_drop_geometry() |&gt;\n count(country) |&gt;\n arrange(n)\n\n## # A tibble: 36 × 2\n## country n\n## &lt;chr&gt; &lt;int&gt;\n## 1 French Guiana 1\n## 2 Guadeloupe 1\n## 3 Martinique 1\n## 4 Aruba 8\n## 5 Grenada 8\n## 6 Netherlands Antilles 8\n## 7 Suriname 8\n## 8 Bahamas 10\n## 9 Barbados 10\n## 10 Belize 10\n## # ℹ 26 more rows\n</pre>\n<p>So 25 countries have 12 observations (the max), four have 10 and 8\nrespectively and three have 1. To fill in these blanks, I’m going to use\n{tidyr} to compute some mock values using the dataset mean for each\nyear. The countries with one would continue with one value from from\n2002.</p>\n<pre>library(tidyr)\n\ncompleted = americas |&gt;\n mutate(country = forcats::fct_drop(country)) |&gt;\n complete(year, country) |&gt;\n select(country, lifeExp, year) |&gt;\n group_by(year) |&gt;\n mutate(lifeExp =\n replace_na(lifeExp,\n replace = mean(lifeExp,\n na.rm = TRUE)))\n\ngeoms = americas |&gt;\n select(country) |&gt;\n distinct()\n\nplot = left_join(completed,\n geoms,\n by = \"country\") |&gt;\n st_as_sf() |&gt;\n st_transform(\"EPSG:8858\") |&gt;\n ggplot() +\n geom_sf(aes(fill = lifeExp)) +\n labs(title = \"Year: {closest_state}\",\n fill = \"Life Expectancy\") +\n theme_void() +\n ggplot2::scale_fill_viridis_b() +\n theme(legend.position = c(\"inside\"),\n legend.position.inside = c(0.23, 0.23),\n plot.title = element_text(size = 15,\n hjust = 0.5),\n panel.border = element_rect(color = \"black\",\n fill = NA))\n\nanimation = plot +\n transition_states(states = year)\n\nanimate(animation,\n renderer = gifski_renderer(\"img/map2.gif\"))\n</pre><img alt=\"Final animation with all countries.\" class=\"image-center\" data-lazy-src=\"https://i0.wp.com/www.jumpingrivers.com/blog/animated-map/img/map2.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 450px;\"/><noscript><img alt=\"Final animation with all countries.\" class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.jumpingrivers.com/blog/animated-map/img/map2.gif?w=578&amp;ssl=1\" style=\"width: 450px;\"/></noscript>\n<p>So that is our final animated map, of course we could add more styling\nor complexity – maybe in a future blog. If you want to learn more about\nworking the topic, check out our <a href=\"https://www.jumpingrivers.com/training/course/r-spatial-analysis-sf-tmap-leaflet\" rel=\"nofollow\" target=\"_blank\">Spatial Data Analysis with R\ncourse</a>\nor another Jumping Rivers blog, <a href=\"https://www.jumpingrivers.com/blog/2021-thinking-about-maps-and-ice-cream/\" rel=\"nofollow\" target=\"_blank\"><em>Thinking About Maps and Ice\nCream</em></a>\nby Nicola Rennie.</p>\n<p>\nFor updates and revisions to this article, see the <a href=\"https://www.jumpingrivers.com/blog/animated-map/\">original post</a>\n</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.jumpingrivers.com/blog/animated-map/\"> The Jumping Rivers Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+    "main_text": "Animated Maps with {ggplot2} and {gganimate}\nPosted on\nJuly 31, 2025\nby\nThe Jumping Rivers Blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThe Jumping Rivers Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn this blog post, we are going to use data from the\n{gapminder}\nR package, along with global spatial boundaries from\n‘opendatasoft’\n.\nWe are going to plot the life expectancy of each country in the Americas\nand animate it to see the changes from 1957 to 2007.\nThe {gapminder} package we are using is from the\nGapminder\nfoundation, an independent\neducational non-proﬁt ﬁghting global misconceptions. The cover issues\nlike global warming, plastic in the oceans and life satisfaction.\nFirst we will load the full dataset from the gapminder package, and see\nwhat is contained within it.\ndata(\"gapminder_unfiltered\", package = \"gapminder\")\nnames(gapminder_unfiltered)\n\n## [1] \"country\" \"continent\" \"year\" \"lifeExp\" \"pop\" \"gdpPercap\"\nThen we will filter the dataset to keep life expectancy data for the\nyears from 1952 to 2007 (in 5-year steps).\nA shapefile (\n*.shp\n) containing the geographical boundaries of each\ncountry can be imported using the\n{sf}\nR package.\nlibrary(sf)\nlibrary(dplyr)\nif (getwd() == \"/home/osheen/corporate-website\"){\n world = st_read(\"content/blog/2025-animated-map/data/world-administrative-boundaries.shp\") |>\n select(-\"continent\")\n} else {\n world = st_read(\"data/world-administrative-boundaries.shp\") |>\n select(-\"continent\")\n\n}\n\n## Reading layer `world-administrative-boundaries' from data source\n## `/home/osheen/corporate-website/content/blog/2025-animated-map/data/world-administrative-boundaries.shp'\n## using driver `ESRI Shapefile'\n## Simple feature collection with 256 features and 8 fields\n## Geometry type: MULTIPOLYGON\n## Dimension: XY\n## Bounding box: xmin: -180 ymin: -58.49861 xmax: 180 ymax: 83.6236\n## Geodetic CRS: WGS 84\n\nhead(world)\n\n## Simple feature collection with 6 features and 7 fields\n## Geometry type: MULTIPOLYGON\n## Dimension: XY\n## Bounding box: xmin: -58.43861 ymin: -34.94382 xmax: 148.8519 ymax: 51.09111\n## Geodetic CRS: WGS 84\n## iso3 status color_code name\n## 1 MNP US Territory USA Northern Mariana Islands\n## 2 <NA> Sovereignty unsettled RUS Kuril Islands\n## 3 FRA Member State FRA France\n## 4 SRB Member State SRB Serbia\n## 5 URY Member State URY Uruguay\n## 6 GUM US Non-Self-Governing Territory GUM Guam\n## region iso_3166_1_ french_shor\n## 1 Micronesia MP Northern Mariana Islands\n## 2 Eastern Asia <NA> Kuril Islands\n## 3 Western Europe FR France\n## 4 Southern Europe RS Serbie\n## 5 South America UY Uruguay\n## 6 Micronesia GU Guam\n## geometry\n## 1 MULTIPOLYGON (((145.6333 14...\n## 2 MULTIPOLYGON (((146.6827 43...\n## 3 MULTIPOLYGON (((9.4475 42.6...\n## 4 MULTIPOLYGON (((20.26102 46...\n## 5 MULTIPOLYGON (((-53.3743 -3...\n## 6 MULTIPOLYGON (((144.7094 13...\nOne of the nice things about the\n{sf}\npackage is that it stores\ngeographical data in a specialised data-frame structure which allows us\nto merge our boundary data with the gapminder statistics using the same\nfunctions that we would use to combine more typical data-frames. Here we\njoin the two datasets, matching the entries by country name, using the\ndplyr\nleft_join\nfunction.\njoined = left_join(gapminder_unfiltered,\n world,\n by = c(\"country\" = \"name\")) |>\n st_as_sf()\nhead(joined)\n\n## Simple feature collection with 6 features and 12 fields\n## Geometry type: MULTIPOLYGON\n## Dimension: XY\n## Bounding box: xmin: 60.50417 ymin: 29.40611 xmax: 74.91574 ymax: 38.47198\n## Geodetic CRS: WGS 84\n## # A tibble: 6 × 13\n## country continent year lifeExp pop gdpPercap iso3 status color_code\n## <chr> <fct> <int> <dbl> <int> <dbl> <chr> <chr> <chr>\n## 1 Afghanistan Asia 1952 28.8 8425333 779. AFG Membe… AFG\n## 2 Afghanistan Asia 1957 30.3 9240934 821. AFG Membe… AFG\n## 3 Afghanistan Asia 1962 32.0 10267083 853. AFG Membe… AFG\n## 4 Afghanistan Asia 1967 34.0 11537966 836. AFG Membe… AFG\n## 5 Afghanistan Asia 1972 36.1 13079460 740. AFG Membe… AFG\n## 6 Afghanistan Asia 1977 38.4 14880372 786. AFG Membe… AFG\n## # ℹ 4 more variables: region <chr>, iso_3166_1_ <chr>, french_shor <chr>,\n## # geometry <MULTIPOLYGON [°]>\nI am going to select the country column and plot that using the base R\nplot\nfunction for a quick visualisation.\njoined |>\n select(\"country\") |>\n plot()\nHmmmmmmm that doesn’t look quite right does it?\nThe issue here is a common one when grabbing a spatial boundaries file\nfrom the internet. The data sets being joined have different names for\nsome of the countries. For example, in the\nworld\ndata we have USA as\n‘United States’ where as in\ngapminder\nit’s ‘United States of America’.\nThe\ndplyr::anti_join\nfunction can be helpful finding countries that\ndon’t match. I will use\nfct_recode\nfrom {forcats} to align the\nworld\ncountry names with\ngapminder\n. In the example below, I am just fixing\nthe USA but you can see from the plot above that several other countries\nneed to be recoded (19 in total), I am doing this behind the scenes to\navoid clogging up the page.\nlibrary(forcats)\nworld = world |>\n mutate(name = fct_recode(.data$name,\n \"United States\" =\n \"United States of America\"))\nOkay, lets see what this looks like now.\njoined |>\n select(\"country\") |>\n plot()\nThat’s better! Now I’ve got the data I want to plot, I can use ggplot2\nto start creating the visualisation that I will be animating. Before\nthat, I will filter the data to keep only the Americas, then use\ngeom_sf\nto plot the geometry data.\nlibrary(ggplot2)\n\namericas = joined |>\n filter(continent == \"Americas\")\n\namericas_plot = ggplot(americas) +\n geom_sf()\nThis plot looks good but I’m going to change the coordinate reference\nsystem (CRS) to one (“EPSG:8858”) that is designed for the Americas. I\nfound this CRS on\nepsg.io\n, a website I would\nrecommend if you are looking for some different CRS’s.\nst_transform\ncan be used to change the CRS to EPSG:8858. This is what it looks like\nnow:\namericas = st_transform(americas, \"EPSG:8858\")\n\nnew_crs_plot = ggplot(americas) +\n geom_sf()\nOkay so now the plot looks right we will start preparing it to be\nanimated.\nlibrary(ggplot2)\n\nplot = americas %>%\n filter(year == 2007) %>%\n ggplot() +\n geom_sf(aes(fill = lifeExp)) +\n labs(title = \"Year: 2007\",\n fill = \"Life Expectancy\") +\n theme_void() +\n ggplot2::scale_fill_viridis_b() +\n theme(legend.position = c(\"inside\"),\n legend.position.inside = c(0.23, 0.23),\n plot.title = element_text(size = 15,\n hjust = 0.5),\n panel.border = element_rect(color = \"black\",\n fill = NA))\nThis is the plot we are going to animate now so we’ll use {gganimate}.\nThe\ntransition_states\nfunction partitions the data using a\nstates\ncolumn (here our ‘year’ column), iteratively creating a frame of the\nanimation for each year value in the input data. The next function is\nanimate\nwhich will convert these frames into a GIF. Note, make sure\nyou have the dependencies installed or you may end up with 100 PNG files\nin your working directory rather than a GIF!\nlibrary(gganimate)\n\nanimation = plot +\n ggtitle(\"Year: {closest_state}\") +\n transition_states(states = year)\n\nanimate(animation,\n renderer = gifski_renderer(\"img/map.gif\"),\n alt = \"Animation with missing values.\")\nThe keener eyed of you will notice some countries don’t have a value for\nevery year.\namericas |>\n st_drop_geometry() |>\n count(country) |>\n arrange(n)\n\n## # A tibble: 36 × 2\n## country n\n## <chr> <int>\n## 1 French Guiana 1\n## 2 Guadeloupe 1\n## 3 Martinique 1\n## 4 Aruba 8\n## 5 Grenada 8\n## 6 Netherlands Antilles 8\n## 7 Suriname 8\n## 8 Bahamas 10\n## 9 Barbados 10\n## 10 Belize 10\n## # ℹ 26 more rows\nSo 25 countries have 12 observations (the max), four have 10 and 8\nrespectively and three have 1. To fill in these blanks, I’m going to use\n{tidyr} to compute some mock values using the dataset mean for each\nyear. The countries with one would continue with one value from from\n2002.\nlibrary(tidyr)\n\ncompleted = americas |>\n mutate(country = forcats::fct_drop(country)) |>\n complete(year, country) |>\n select(country, lifeExp, year) |>\n group_by(year) |>\n mutate(lifeExp =\n replace_na(lifeExp,\n replace = mean(lifeExp,\n na.rm = TRUE)))\n\ngeoms = americas |>\n select(country) |>\n distinct()\n\nplot = left_join(completed,\n geoms,\n by = \"country\") |>\n st_as_sf() |>\n st_transform(\"EPSG:8858\") |>\n ggplot() +\n geom_sf(aes(fill = lifeExp)) +\n labs(title = \"Year: {closest_state}\",\n fill = \"Life Expectancy\") +\n theme_void() +\n ggplot2::scale_fill_viridis_b() +\n theme(legend.position = c(\"inside\"),\n legend.position.inside = c(0.23, 0.23),\n plot.title = element_text(size = 15,\n hjust = 0.5),\n panel.border = element_rect(color = \"black\",\n fill = NA))\n\nanimation = plot +\n transition_states(states = year)\n\nanimate(animation,\n renderer = gifski_renderer(\"img/map2.gif\"))\nSo that is our final animated map, of course we could add more styling\nor complexity – maybe in a future blog. If you want to learn more about\nworking the topic, check out our\nSpatial Data Analysis with R\ncourse\nor another Jumping Rivers blog,\nThinking About Maps and Ice\nCream\nby Nicola Rennie.\nFor updates and revisions to this article, see the\noriginal post\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThe Jumping Rivers Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "In this blog post, we are going to use data from the {gapminder} R package, along with global spatial boundaries from ‘opendatasoft’. We are going to plot the life expectancy of each country in the Americas and animate it to see the changes from ...",
+    "meta_keywords": null,
+    "og_description": "In this blog post, we are going to use data from the {gapminder} R package, along with global spatial boundaries from ‘opendatasoft’. We are going to plot the life expectancy of each country in the Americas and animate it to see the changes from ...",
+    "og_image": "https://www.jumpingrivers.com/blog/animated-map/featured.png",
+    "og_title": "Animated Maps with {ggplot2} and {gganimate} | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 7.5,
+    "sitemap_lastmod": null,
+    "twitter_description": "In this blog post, we are going to use data from the {gapminder} R package, along with global spatial boundaries from ‘opendatasoft’. We are going to plot the life expectancy of each country in the Americas and animate it to see the changes from ...",
+    "twitter_title": "Animated Maps with {ggplot2} and {gganimate} | R-bloggers",
+    "url": "https://www.r-bloggers.com/2025/07/animated-maps-with-ggplot2-and-gganimate/",
+    "word_count": 1503
+  }
+}

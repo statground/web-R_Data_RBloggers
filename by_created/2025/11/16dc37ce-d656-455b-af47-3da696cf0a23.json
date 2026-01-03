@@ -1,0 +1,115 @@
+{
+  "uuid": "16dc37ce-d656-455b-af47-3da696cf0a23",
+  "created_at": "2025-11-17 20:38:56",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2023/12/diffusion-models-in-python-with-esgtoolkit/",
+    "crawled_at": "2025-11-17T09:37:46.992811",
+    "external_links": [
+      {
+        "href": "https://thierrymoudiki.github.io//blog/2023/12/11/r/python/esgtoolkit-python",
+        "text": "T. Moudiki's Webpage - R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://techtonique.r-universe.dev/esgtoolkit",
+        "text": "R API"
+      },
+      {
+        "href": "https://www.researchgate.net/publication/338549100_ESGtoolkit_a_tool_for_stochastic_simulation_v020",
+        "text": "https://www.researchgate.net/publication/338549100_ESGtoolkit_a_tool_for_stochastic_simulation_v020"
+      },
+      {
+        "href": "https://thierrymoudiki.github.io//blog/2023/12/11/r/python/esgtoolkit-python",
+        "text": "T. Moudiki's Webpage - R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Diffusion models in Python with esgtoolkit | R-bloggers",
+    "images": [
+      {
+        "alt": "Geometric Brownian motion simulations",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+      },
+      {
+        "alt": "Geometric Brownian motion simulations",
+        "base64": null,
+        "src": "https://i2.wp.com/thierrymoudiki.github.io/images/2023-12-11/2023-12-11-image1.png?w=578&ssl=1"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/t-moudiki/",
+        "text": "T. Moudiki"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-380775 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Diffusion models in Python with esgtoolkit</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 10, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/t-moudiki/\">T. Moudiki</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://thierrymoudiki.github.io//blog/2023/12/11/r/python/esgtoolkit-python\"> T. Moudiki's Webpage - R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>A few weeks ago, on 2023-10-02, I announced <strong>esgtoolkit</strong> <code>v1.0.0</code> for Python.</p>\n<p>Well, <code>v1.0.0</code> for Python is more like a <em>proof of concept</em> as of today, as there isn’t an exact mapping with the <a href=\"https://techtonique.r-universe.dev/esgtoolkit\" rel=\"nofollow\" target=\"_blank\">R API</a> so far. Next week, most likely in a <code>v1.1.0</code> for both, the Python version will be aligned with the R version – <strong>as much as possible</strong>.</p>\n<p>For those who aren’t familiar with <strong>esgtoolkit</strong> yet, I’ve been developing and maintaining it (with a lot of roller coasters, still not sure why) for R since 2014. e.s.g here, stands for <em>Economic Scenarios Generators</em>, but the name has become less relevant since diffusion models are widely used in Physics and – more recently – in Generative AI (for images).</p>\n<p>You can read this document (focusing on quantitative finance) for an introductory review: <a href=\"https://www.researchgate.net/publication/338549100_ESGtoolkit_a_tool_for_stochastic_simulation_v020\" rel=\"nofollow\" target=\"_blank\">https://www.researchgate.net/publication/338549100_ESGtoolkit_a_tool_for_stochastic_simulation_v020</a>.</p>\n<h1 id=\"examples-of-use-of-esgtoolkit-in-python\">Examples of use of <code>esgtoolkit</code> in Python</h1>\n<h2 id=\"1---install-and-import-packages\">1 – Install and import packages</h2>\n<pre>!pip install matplotlib numpy pandas esgtoolkit\n\r\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nfrom esgtoolkit import simdiff\n</pre>\n<h2 id=\"2---code-examples\">2 – Code examples</h2>\n<h3 id=\"2---1-ornstein-uhlenbeck-process\">2 – 1 Ornstein-Uhlenbeck process</h3>\n<pre>kappa = 1.5\nV0 = theta = 0.04\nsigma_v = 0.2\ntheta1 = kappa * theta\ntheta2 = kappa\ntheta3 = sigma_v\n\nsims_OU = simdiff(\n    n=7,\n    horizon=5,\n    frequency=\"quarterly\",\n    model=\"OU\",\n    x0=V0,\n    theta1=theta1,\n    theta2=theta2,\n    theta3=theta3,\n)\n\nprint(sims_OU)\n\r\n      Series 1  Series 2  Series 3  Series 4  Series 5  Series 6  Series 7\n0.00  0.040000  0.040000  0.040000  0.040000  0.040000  0.040000  0.040000\n0.25 -0.007010 -0.049564 -0.018269  0.071842  0.040483 -0.019586  0.049868\n0.50 -0.011616 -0.039839 -0.017487  0.019752  0.072648  0.020594 -0.032688\n0.75  0.135263 -0.100929 -0.105646 -0.001864  0.031349  0.005971 -0.051103\n1.00  0.111387 -0.117995  0.121822 -0.074206  0.088102 -0.012538 -0.044094\n1.25  0.099907 -0.121014  0.197554 -0.128390  0.054566 -0.075927  0.136858\n1.50  0.225026 -0.212136  0.054084 -0.050274  0.077840 -0.043452  0.051887\n1.75  0.205826 -0.063020  0.015887  0.015550  0.158005 -0.083190  0.067913\n2.00  0.047863 -0.017940 -0.015713  0.027641  0.157605 -0.184567  0.065723\n2.25 -0.012206 -0.095284  0.067129  0.108862  0.093491 -0.146234 -0.022997\n2.50 -0.033261  0.052185  0.051653  0.259280  0.173120 -0.010915 -0.009278\n2.75  0.092319  0.084145  0.069256  0.149523  0.214823 -0.043251  0.127294\n3.00  0.106138  0.045591  0.057713 -0.078409  0.206151  0.033776  0.137867\n3.25  0.119071  0.118922  0.048578  0.042976  0.174218 -0.099979  0.110721\n3.50  0.103628  0.167896  0.160688 -0.017439  0.079580 -0.060866  0.053169\n3.75  0.037109  0.196812  0.104011 -0.057185  0.181329  0.014241 -0.123167\n4.00  0.187892  0.205535  0.211189  0.059226  0.086787  0.047556  0.022749\n4.25  0.183402  0.200231  0.027754  0.029329  0.255620  0.054057 -0.094369\n4.50 -0.026393  0.144932  0.080618 -0.069723  0.316742 -0.004079  0.009713\n4.75  0.053196  0.086456  0.078305 -0.020204  0.210432 -0.061564  0.179312\n5.00  0.009414  0.040016  0.084439 -0.013027  0.071045 -0.115703  0.014640\n</pre>\n<h3 id=\"2---2-geometric-brownian-motion\">2 – 2 Geometric Brownian motion</h3>\n<pre>sims_GBM = simdiff(\n    n=10,\n    horizon=5,\n    frequency=\"semi-annual\",\n    model=\"GBM\",\n    x0=V0,\n    theta1=theta1,\n    theta2=theta2,\n    theta3=theta3,\n)\n\nprint(sims_GBM)\n\r\n     Series 1  Series 2      Series 3  Series 4  Series 5  Series 6  Series 7  \\\n0.0  0.040000  0.040000  4.000000e-02  0.040000  0.040000  0.040000  0.040000   \n0.5  0.012960  0.086032  7.566884e-03  0.036919  0.011241  0.030725  0.035130   \n1.0  0.005961  0.073984  3.525718e-03  0.015851  0.005294  0.017501  0.012107   \n1.5  0.018284  0.066449  6.972174e-04  0.024051  0.000812  0.009819  0.004992   \n2.0  0.011569  0.043875  1.889517e-04  0.035840  0.004758  0.024617  0.000995   \n2.5  0.007791  0.014286  5.717045e-05  0.050299  0.010060  0.011376  0.000187   \n3.0  0.028206  0.055817  5.609877e-06  0.061307  0.001795  0.033362  0.000152   \n3.5  0.027002  0.055569  8.009562e-06  0.064775  0.000687  0.003789  0.000143   \n4.0  0.004144  0.004052  5.533457e-06  0.035614  0.000246  0.004136  0.000089   \n4.5  0.001174  0.005006  9.715489e-07  0.015116  0.000330  0.002770  0.000139   \n5.0  0.000430  0.001780  2.156546e-06  0.005928  0.000178  0.002045  0.000718   \n\n     Series 8  Series 9  Series 10  \n0.0  0.040000  0.040000   0.040000  \n0.5  0.013951  0.023629   0.067367  \n1.0  0.000707  0.020877   0.070761  \n1.5  0.001207  0.008273   0.053518  \n2.0  0.000334  0.009621   0.016144  \n2.5  0.000095  0.004471   0.040134  \n3.0  0.000165  0.003732   0.012467  \n3.5  0.000071  0.007014   0.074483  \n4.0  0.000011  0.006534   0.222215  \n4.5  0.000008  0.002715   0.101611  \n5.0  0.000004  0.005391   0.020085  \n</pre>\n<h2 id=\"3---spaghetti-plot\">3 – Spaghetti plot</h2>\n<pre>#plt.style.use('seaborn-darkgrid')\n \npalette = plt.get_cmap('Set1')\n \nfor num, column in enumerate(sims_GBM):\n    \n    plt.plot(sims_GBM.index, sims_GBM[column], marker='', color=palette(num), linewidth=1, alpha=0.9, label=column)\n\n# Add legend\nplt.legend(loc=1, ncol=2)\n \n# Add titles\nplt.title(\"esgtoolkit.simdiff's result for Geometric Brownian Motion\", loc='left', fontsize=12, fontweight=0, color='orange')\nplt.xlabel(\"Time\")\nplt.ylabel(\"Series\")\n\n# Show the graph\nplt.show()\n</pre>\n<p><img alt=\"Geometric Brownian motion simulations\" class=\"img-responsive\" data-lazy-src=\"https://i2.wp.com/thierrymoudiki.github.io/images/2023-12-11/2023-12-11-image1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Geometric Brownian motion simulations\" class=\"img-responsive\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/thierrymoudiki.github.io/images/2023-12-11/2023-12-11-image1.png?w=578&amp;ssl=1\"/></noscript></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://thierrymoudiki.github.io//blog/2023/12/11/r/python/esgtoolkit-python\"> T. Moudiki's Webpage - R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+    "main_text": "Diffusion models in Python with esgtoolkit\nPosted on\nDecember 10, 2023\nby\nT. Moudiki\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nT. Moudiki's Webpage - R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nA few weeks ago, on 2023-10-02, I announced\nesgtoolkit\nv1.0.0\nfor Python.\nWell,\nv1.0.0\nfor Python is more like a\nproof of concept\nas of today, as there isn’t an exact mapping with the\nR API\nso far. Next week, most likely in a\nv1.1.0\nfor both, the Python version will be aligned with the R version –\nas much as possible\n.\nFor those who aren’t familiar with\nesgtoolkit\nyet, I’ve been developing and maintaining it (with a lot of roller coasters, still not sure why) for R since 2014. e.s.g here, stands for\nEconomic Scenarios Generators\n, but the name has become less relevant since diffusion models are widely used in Physics and – more recently – in Generative AI (for images).\nYou can read this document (focusing on quantitative finance) for an introductory review:\nhttps://www.researchgate.net/publication/338549100_ESGtoolkit_a_tool_for_stochastic_simulation_v020\n.\nExamples of use of\nesgtoolkit\nin Python\n1 – Install and import packages\n!pip install matplotlib numpy pandas esgtoolkit\n\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nfrom esgtoolkit import simdiff\n2 – Code examples\n2 – 1 Ornstein-Uhlenbeck process\nkappa = 1.5\nV0 = theta = 0.04\nsigma_v = 0.2\ntheta1 = kappa * theta\ntheta2 = kappa\ntheta3 = sigma_v\n\nsims_OU = simdiff(\n    n=7,\n    horizon=5,\n    frequency=\"quarterly\",\n    model=\"OU\",\n    x0=V0,\n    theta1=theta1,\n    theta2=theta2,\n    theta3=theta3,\n)\n\nprint(sims_OU)\n\n      Series 1  Series 2  Series 3  Series 4  Series 5  Series 6  Series 7\n0.00  0.040000  0.040000  0.040000  0.040000  0.040000  0.040000  0.040000\n0.25 -0.007010 -0.049564 -0.018269  0.071842  0.040483 -0.019586  0.049868\n0.50 -0.011616 -0.039839 -0.017487  0.019752  0.072648  0.020594 -0.032688\n0.75  0.135263 -0.100929 -0.105646 -0.001864  0.031349  0.005971 -0.051103\n1.00  0.111387 -0.117995  0.121822 -0.074206  0.088102 -0.012538 -0.044094\n1.25  0.099907 -0.121014  0.197554 -0.128390  0.054566 -0.075927  0.136858\n1.50  0.225026 -0.212136  0.054084 -0.050274  0.077840 -0.043452  0.051887\n1.75  0.205826 -0.063020  0.015887  0.015550  0.158005 -0.083190  0.067913\n2.00  0.047863 -0.017940 -0.015713  0.027641  0.157605 -0.184567  0.065723\n2.25 -0.012206 -0.095284  0.067129  0.108862  0.093491 -0.146234 -0.022997\n2.50 -0.033261  0.052185  0.051653  0.259280  0.173120 -0.010915 -0.009278\n2.75  0.092319  0.084145  0.069256  0.149523  0.214823 -0.043251  0.127294\n3.00  0.106138  0.045591  0.057713 -0.078409  0.206151  0.033776  0.137867\n3.25  0.119071  0.118922  0.048578  0.042976  0.174218 -0.099979  0.110721\n3.50  0.103628  0.167896  0.160688 -0.017439  0.079580 -0.060866  0.053169\n3.75  0.037109  0.196812  0.104011 -0.057185  0.181329  0.014241 -0.123167\n4.00  0.187892  0.205535  0.211189  0.059226  0.086787  0.047556  0.022749\n4.25  0.183402  0.200231  0.027754  0.029329  0.255620  0.054057 -0.094369\n4.50 -0.026393  0.144932  0.080618 -0.069723  0.316742 -0.004079  0.009713\n4.75  0.053196  0.086456  0.078305 -0.020204  0.210432 -0.061564  0.179312\n5.00  0.009414  0.040016  0.084439 -0.013027  0.071045 -0.115703  0.014640\n2 – 2 Geometric Brownian motion\nsims_GBM = simdiff(\n    n=10,\n    horizon=5,\n    frequency=\"semi-annual\",\n    model=\"GBM\",\n    x0=V0,\n    theta1=theta1,\n    theta2=theta2,\n    theta3=theta3,\n)\n\nprint(sims_GBM)\n\n     Series 1  Series 2      Series 3  Series 4  Series 5  Series 6  Series 7  \\\n0.0  0.040000  0.040000  4.000000e-02  0.040000  0.040000  0.040000  0.040000   \n0.5  0.012960  0.086032  7.566884e-03  0.036919  0.011241  0.030725  0.035130   \n1.0  0.005961  0.073984  3.525718e-03  0.015851  0.005294  0.017501  0.012107   \n1.5  0.018284  0.066449  6.972174e-04  0.024051  0.000812  0.009819  0.004992   \n2.0  0.011569  0.043875  1.889517e-04  0.035840  0.004758  0.024617  0.000995   \n2.5  0.007791  0.014286  5.717045e-05  0.050299  0.010060  0.011376  0.000187   \n3.0  0.028206  0.055817  5.609877e-06  0.061307  0.001795  0.033362  0.000152   \n3.5  0.027002  0.055569  8.009562e-06  0.064775  0.000687  0.003789  0.000143   \n4.0  0.004144  0.004052  5.533457e-06  0.035614  0.000246  0.004136  0.000089   \n4.5  0.001174  0.005006  9.715489e-07  0.015116  0.000330  0.002770  0.000139   \n5.0  0.000430  0.001780  2.156546e-06  0.005928  0.000178  0.002045  0.000718   \n\n     Series 8  Series 9  Series 10  \n0.0  0.040000  0.040000   0.040000  \n0.5  0.013951  0.023629   0.067367  \n1.0  0.000707  0.020877   0.070761  \n1.5  0.001207  0.008273   0.053518  \n2.0  0.000334  0.009621   0.016144  \n2.5  0.000095  0.004471   0.040134  \n3.0  0.000165  0.003732   0.012467  \n3.5  0.000071  0.007014   0.074483  \n4.0  0.000011  0.006534   0.222215  \n4.5  0.000008  0.002715   0.101611  \n5.0  0.000004  0.005391   0.020085\n3 – Spaghetti plot\n#plt.style.use('seaborn-darkgrid')\n \npalette = plt.get_cmap('Set1')\n \nfor num, column in enumerate(sims_GBM):\n    \n    plt.plot(sims_GBM.index, sims_GBM[column], marker='', color=palette(num), linewidth=1, alpha=0.9, label=column)\n\n# Add legend\nplt.legend(loc=1, ncol=2)\n \n# Add titles\nplt.title(\"esgtoolkit.simdiff's result for Geometric Brownian Motion\", loc='left', fontsize=12, fontweight=0, color='orange')\nplt.xlabel(\"Time\")\nplt.ylabel(\"Series\")\n\n# Show the graph\nplt.show()\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nT. Moudiki's Webpage - R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "Diffusion models in Python with esgtoolkit.",
+    "meta_keywords": null,
+    "og_description": "Diffusion models in Python with esgtoolkit.",
+    "og_image": "https://thierrymoudiki.github.io/images/2023-12-11/2023-12-11-image1.png",
+    "og_title": "Diffusion models in Python with esgtoolkit | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 5.6,
+    "sitemap_lastmod": "2023-12-11T00:00:00+00:00",
+    "twitter_description": "Diffusion models in Python with esgtoolkit.",
+    "twitter_title": "Diffusion models in Python with esgtoolkit | R-bloggers",
+    "url": "https://www.r-bloggers.com/2023/12/diffusion-models-in-python-with-esgtoolkit/",
+    "word_count": 1122
+  }
+}

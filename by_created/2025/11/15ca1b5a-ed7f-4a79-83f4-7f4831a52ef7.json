@@ -1,0 +1,129 @@
+{
+  "uuid": "15ca1b5a-ed7f-4a79-83f4-7f4831a52ef7",
+  "created_at": "2025-11-17 20:41:09",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/03/dealing-with-missing-values/",
+    "crawled_at": "2025-11-17T10:42:35.916850",
+    "external_links": [
+      {
+        "href": "https://feedproxy.google.com/~r/OneRTipADay/~3/IRdoJYN4uO8/dealing-with-missing-values.html",
+        "text": "One R Tip A Day"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.cs.dartmouth.edu/%7Ejv/",
+        "text": "Jason"
+      },
+      {
+        "href": "https://feedproxy.google.com/~r/OneRTipADay/~3/IRdoJYN4uO8/dealing-with-missing-values.html",
+        "text": "One R Tip A Day"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Dealing with missing values | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/7556813435224291579-8087383314634852533?l=onertipaday.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://blogger.googleusercontent.com/tracker/7556813435224291579-8087383314634852533?l=onertipaday.blogspot.com"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~r/OneRTipADay/~4/IRdoJYN4uO8"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~r/OneRTipADay/~4/IRdoJYN4uO8"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/paolo/",
+        "text": "Paolo"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/contributed/",
+        "text": "contributed"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/na/",
+        "text": "NA"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-355 post type-post status-publish format-standard hentry category-r-bloggers tag-contributed tag-na\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Dealing with missing values</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 8, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/paolo/\">Paolo</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/OneRTipADay/~3/IRdoJYN4uO8/dealing-with-missing-values.html\"> One R Tip A Day</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Two new quick tips from ‘almost regular’ contributor <a href=\"http://www.cs.dartmouth.edu/%7Ejv/\" rel=\"nofollow\" target=\"_blank\">Jason</a>:<br/>\n<br/>\nHandling missing values in R can be tricky.  Let’s say you have a table<br/>\nwith missing values you’d like to read from disk.  Reading in the table<br/>\nwith,<br/>\n<br/>\nread.table( fileName )<br/>\n<br/>\nmight fail.  If your table is properly formatted, then R can determine<br/>\nwhat’s a missing value by using the “sep” option in read.table:<br/>\n<br/>\nread.table( fileName, sep=”\\t” )<br/>\n<br/>\nThis tells R that all my columns will be separated by TABS regardless of<br/>\nwhether there’s data there or not.  So, make sure that your file on disk<br/>\nreally is fully TAB separated: if there is a missing data point you must<br/>\nhave a TAB to tell R that this datum is missing and to move to the next<br/>\nfield for processing.<br/>\n<br/>\nLastly, don’t forget the “header=T” option if you have a header line in<br/>\nyour file.<br/>\n<br/>\nHere’s the 2nd tip:<br/>\n<br/>\nSome algorithms in R don’t support missing (NA) values.  If you have a<br/>\ndata.frame with missing values and quickly want the ROWS with any<br/>\nmissing data to be removed then try:<br/>\n<br/>\nmyData[rowSums(is.na(myData))==0, ]<br/>\n<br/>\nTo find NA values in your data you have to use the “is.na” function.<div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/7556813435224291579-8087383314634852533?l=onertipaday.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/7556813435224291579-8087383314634852533?l=onertipaday.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/7556813435224291579-8087383314634852533?l=onertipaday.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/OneRTipADay/~4/IRdoJYN4uO8?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/OneRTipADay/~4/IRdoJYN4uO8\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/OneRTipADay/~4/IRdoJYN4uO8\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/OneRTipADay/~3/IRdoJYN4uO8/dealing-with-missing-values.html\"> One R Tip A Day</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/contributed/\" rel=\"tag\">contributed</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/na/\" rel=\"tag\">NA</a></li></ul></div></article>",
+    "main_text": "Dealing with missing values\nPosted on\nMarch 8, 2009\nby\nPaolo\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nOne R Tip A Day\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nTwo new quick tips from ‘almost regular’ contributor\nJason\n:\nHandling missing values in R can be tricky.  Let’s say you have a table\nwith missing values you’d like to read from disk.  Reading in the table\nwith,\nread.table( fileName )\nmight fail.  If your table is properly formatted, then R can determine\nwhat’s a missing value by using the “sep” option in read.table:\nread.table( fileName, sep=”\\t” )\nThis tells R that all my columns will be separated by TABS regardless of\nwhether there’s data there or not.  So, make sure that your file on disk\nreally is fully TAB separated: if there is a missing data point you must\nhave a TAB to tell R that this datum is missing and to move to the next\nfield for processing.\nLastly, don’t forget the “header=T” option if you have a header line in\nyour file.\nHere’s the 2nd tip:\nSome algorithms in R don’t support missing (NA) values.  If you have a\ndata.frame with missing values and quickly want the ROWS with any\nmissing data to be removed then try:\nmyData[rowSums(is.na(myData))==0, ]\nTo find NA values in your data you have to use the “is.na” function.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nOne R Tip A Day\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ncontributed\nNA",
+    "meta_description": "Two new quick tips from 'almost regular' contributor Jason: Handling missing values in R can be tricky. Let's say you have a table with missing values you'd like to read from disk. Reading in the table with, read.table( fileName ) might fail. If ...",
+    "meta_keywords": "contributed,na",
+    "og_description": "Two new quick tips from 'almost regular' contributor Jason: Handling missing values in R can be tricky. Let's say you have a table with missing values you'd like to read from disk. Reading in the table with, read.table( fileName ) might fail. If ...",
+    "og_image": "https://blogger.googleusercontent.com/tracker/7556813435224291579-8087383314634852533?l=onertipaday.blogspot.com",
+    "og_title": "Dealing with missing values | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.8,
+    "sitemap_lastmod": "2009-03-08T10:28:16+00:00",
+    "twitter_description": "Two new quick tips from 'almost regular' contributor Jason: Handling missing values in R can be tricky. Let's say you have a table with missing values you'd like to read from disk. Reading in the table with, read.table( fileName ) might fail. If ...",
+    "twitter_title": "Dealing with missing values | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/03/dealing-with-missing-values/",
+    "word_count": 356
+  }
+}

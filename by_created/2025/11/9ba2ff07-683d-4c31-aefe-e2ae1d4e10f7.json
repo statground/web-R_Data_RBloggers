@@ -1,0 +1,115 @@
+{
+  "uuid": "9ba2ff07-683d-4c31-aefe-e2ae1d4e10f7",
+  "created_at": "2025-11-17 20:40:26",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/09/learning-ggplot2-2d-plot-with-histograms-for-each-dimension/",
+    "crawled_at": "2025-11-17T10:26:55.334987",
+    "external_links": [
+      {
+        "href": "http://blog.mckuhn.de/2009/09/learning-ggplot2-2d-plot-with.html",
+        "text": "bioCS"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://had.co.nz/ggplot2/",
+        "text": "ggplot2"
+      },
+      {
+        "href": "http://learnr.wordpress.com/2009/05/26/ggplot2-two-or-more-plots-sharing-the-same-legend/",
+        "text": "Learning R"
+      },
+      {
+        "href": "https://i0.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768381.png",
+        "text": null
+      },
+      {
+        "href": "http://blog.mckuhn.de/2009/09/learning-ggplot2-2d-plot-with.html",
+        "text": "bioCS"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Learning ggplot2: 2D plot with histograms for each dimension | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768377.png?w=578"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://i2.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768377.png?w=578"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/michael-kuhn/",
+        "text": "Michael Kuhn"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-374 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Learning ggplot2: 2D plot with histograms for each dimension</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 3, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/michael-kuhn/\">Michael Kuhn</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.mckuhn.de/2009/09/learning-ggplot2-2d-plot-with.html\"> bioCS</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I have two 2D distributions and want to show on a 2D plot how they are related, but I also want to show the histograms (actually, density plots in this case) for each dimension. Thanks to <a href=\"http://had.co.nz/ggplot2/\" rel=\"nofollow\" target=\"_blank\">ggplot2</a> and a <a href=\"http://learnr.wordpress.com/2009/05/26/ggplot2-two-or-more-plots-sharing-the-same-legend/\" rel=\"nofollow\" target=\"_blank\">Learning R</a> post, I have sort of managed to do what I want to have:<br/><br/><a data-cf-modified-14c4374e18b61a98f9273482-=\"\" href=\"https://i0.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768381.png\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768377.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768377.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 400px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/blog.mckuhn.de/uploaded_images/Picture-1-768377.png?w=578\" style=\"margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 400px;\"/></noscript></a>There are still two problems: The overlapping labels for the bottom-right density axis, and a tiny bit of misalignment between the left side of the graphs on the left. I think that the dot in the labels for the density pushes the plot a tiny bit to the right compared with the 2D plot. Any ideas?<br/><br/>Here’s the code (strongly based on the afore-linked post on Learning R):<br/><br/><pre>\np &lt;- qplot(data = mtcars, mpg, hp, geom = \"point\", colour = cyl)\n\np1 &lt;- p + opts(legend.position = \"none\")\n\np2 &lt;- ggplot(mtcars, aes(x=mpg, group=cyl, colour=cyl))\np2 &lt;- p2 + stat_density(fill = NA, position=\"dodge\")\np2 &lt;- p2 + opts(legend.position = \"none\", axis.title.x=theme_blank(), \n      axis.text.x=theme_blank())\n\np3 &lt;- ggplot(mtcars, aes(x=hp, group=cyl, colour=cyl))\np3 &lt;- p3 + stat_density(fill = NA, position=\"dodge\") + coord_flip()\np3 &lt;- p3 + opts(legend.position = \"none\", axis.title.y=theme_blank(), \n      axis.text.y=theme_blank())\n\nlegend &lt;- p + opts(keep= \"legend_box\")\n\n## Plot Layout Setup\nLayout &lt;- grid.layout( nrow = 2, ncol = 2,\n   widths = unit (c(2,1), c(\"null\", \"null\")),\n   heights = unit (c(1,2), c(\"null\", \"null\")) \n)\nvplayout &lt;- function (...) {\n grid.newpage()\n pushViewport(viewport(layout= Layout))\n}\nsubplot &lt;- function(x, y) viewport(layout.pos.row=x, layout.pos.col=y)\n\n# Plotting\nvplayout()\nprint(p1, vp=subplot(2,1))\nprint(p2, vp=subplot(1,1))\nprint(p3, vp=subplot(2,2))\nprint(legend, vp=subplot(1,2))\n</pre>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.mckuhn.de/2009/09/learning-ggplot2-2d-plot-with.html\"> bioCS</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "Learning ggplot2: 2D plot with histograms for each dimension\nPosted on\nSeptember 3, 2009\nby\nMichael Kuhn\nin Uncategorized | 0 Comments\n[This article was first published on\nbioCS\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI have two 2D distributions and want to show on a 2D plot how they are related, but I also want to show the histograms (actually, density plots in this case) for each dimension. Thanks to\nggplot2\nand a\nLearning R\npost, I have sort of managed to do what I want to have:\nThere are still two problems: The overlapping labels for the bottom-right density axis, and a tiny bit of misalignment between the left side of the graphs on the left. I think that the dot in the labels for the density pushes the plot a tiny bit to the right compared with the 2D plot. Any ideas?\nHere’s the code (strongly based on the afore-linked post on Learning R):\np <- qplot(data = mtcars, mpg, hp, geom = \"point\", colour = cyl)\n\np1 <- p + opts(legend.position = \"none\")\n\np2 <- ggplot(mtcars, aes(x=mpg, group=cyl, colour=cyl))\np2 <- p2 + stat_density(fill = NA, position=\"dodge\")\np2 <- p2 + opts(legend.position = \"none\", axis.title.x=theme_blank(), \n      axis.text.x=theme_blank())\n\np3 <- ggplot(mtcars, aes(x=hp, group=cyl, colour=cyl))\np3 <- p3 + stat_density(fill = NA, position=\"dodge\") + coord_flip()\np3 <- p3 + opts(legend.position = \"none\", axis.title.y=theme_blank(), \n      axis.text.y=theme_blank())\n\nlegend <- p + opts(keep= \"legend_box\")\n\n## Plot Layout Setup\nLayout <- grid.layout( nrow = 2, ncol = 2,\n   widths = unit (c(2,1), c(\"null\", \"null\")),\n   heights = unit (c(1,2), c(\"null\", \"null\")) \n)\nvplayout <- function (...) {\n grid.newpage()\n pushViewport(viewport(layout= Layout))\n}\nsubplot <- function(x, y) viewport(layout.pos.row=x, layout.pos.col=y)\n\n# Plotting\nvplayout()\nprint(p1, vp=subplot(2,1))\nprint(p2, vp=subplot(1,1))\nprint(p3, vp=subplot(2,2))\nprint(legend, vp=subplot(1,2))\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nbioCS\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "I have two 2D distributions and want to show on a 2D plot how they are related, but I also want to show the histograms (actually, density plots in this case) for each dimension. Thanks to ggplot2 and a Learning R post, I have sort of managed to do what I want to have:There are still two problems: The overlapping labels for the bottom-right density axis, and a tiny bit of misalignment between the left side of the graphs on the left. I think that the dot in the labels for the density pushes the plot a tiny bit to the right compared with the 2D plot. Any ideas?Here's the code (strongly based on the afore-linked post on Learning R):p p1 p2 p2 p2 axis.text.x=theme_blank())p3 p3 p3 axis.text.y=theme_blank())legend ## Plot Layout SetupLayout widths = unit (c(2,1), c(\"null\", \"null\")), heights = unit (c(1,2), c(\"null\", \"null\")) )vplayout grid.newpage() pushViewport(viewport(layout= Layout))}subplot # Plottingvplayout()print(p1, vp=subplot(2,1))print(p2, vp=subplot(1,1))print(p3, vp=subplot(2,2))print(legend, vp=subplot(1,2))",
+    "meta_keywords": null,
+    "og_description": "I have two 2D distributions and want to show on a 2D plot how they are related, but I also want to show the histograms (actually, density plots in this case) for each dimension. Thanks to ggplot2 and a Learning R post, I have sort of managed to do what I want to have:There are still two problems: The overlapping labels for the bottom-right density axis, and a tiny bit of misalignment between the left side of the graphs on the left. I think that the dot in the labels for the density pushes the plot a tiny bit to the right compared with the 2D plot. Any ideas?Here's the code (strongly based on the afore-linked post on Learning R):p p1 p2 p2 p2 axis.text.x=theme_blank())p3 p3 p3 axis.text.y=theme_blank())legend ## Plot Layout SetupLayout widths = unit (c(2,1), c(\"null\", \"null\")), heights = unit (c(1,2), c(\"null\", \"null\")) )vplayout grid.newpage() pushViewport(viewport(layout= Layout))}subplot # Plottingvplayout()print(p1, vp=subplot(2,1))print(p2, vp=subplot(1,1))print(p3, vp=subplot(2,2))print(legend, vp=subplot(1,2))",
+    "og_image": "https://blog.mckuhn.de/uploaded_images/Picture-1-768377.png",
+    "og_title": "Learning ggplot2: 2D plot with histograms for each dimension | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2.1,
+    "sitemap_lastmod": "2009-09-03T08:32:03+00:00",
+    "twitter_description": "I have two 2D distributions and want to show on a 2D plot how they are related, but I also want to show the histograms (actually, density plots in this case) for each dimension. Thanks to ggplot2 and a Learning R post, I have sort of managed to do what I want to have:There are still two problems: The overlapping labels for the bottom-right density axis, and a tiny bit of misalignment between the left side of the graphs on the left. I think that the dot in the labels for the density pushes the plot a tiny bit to the right compared with the 2D plot. Any ideas?Here's the code (strongly based on the afore-linked post on Learning R):p p1 p2 p2 p2 axis.text.x=theme_blank())p3 p3 p3 axis.text.y=theme_blank())legend ## Plot Layout SetupLayout widths = unit (c(2,1), c(\"null\", \"null\")), heights = unit (c(1,2), c(\"null\", \"null\")) )vplayout grid.newpage() pushViewport(viewport(layout= Layout))}subplot # Plottingvplayout()print(p1, vp=subplot(2,1))print(p2, vp=subplot(1,1))print(p3, vp=subplot(2,2))print(legend, vp=subplot(1,2))",
+    "twitter_title": "Learning ggplot2: 2D plot with histograms for each dimension | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/09/learning-ggplot2-2d-plot-with-histograms-for-each-dimension/",
+    "word_count": 422
+  }
+}

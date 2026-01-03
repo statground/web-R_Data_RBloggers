@@ -1,0 +1,128 @@
+{
+  "uuid": "a5c8af55-aa3c-4243-8aea-d893a83de5f2",
+  "created_at": "2025-11-17 20:41:14",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/02/r-sessions-32-forward-lmer-basic-stepwise-function-for-mixed-effects-in-r/",
+    "crawled_at": "2025-11-17T10:44:18.470169",
+    "external_links": [
+      {
+        "href": "http://www.rensenieuwenhuis.nl/r-sessions-32/",
+        "text": "Curving Normality » R-Project"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.rensenieuwenhuis.nl/r-sessions-32/",
+        "text": "Curving Normality » R-Project"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R-Sessions 32: Forward.lmer: Basic stepwise function for mixed effects in R | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/rense-nieuwenhuis/",
+        "text": "Rense Nieuwenhuis"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/forward/",
+        "text": "forward"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/hierarchical/",
+        "text": "hierarchical"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/lme4/",
+        "text": "lme4"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/mixed-effects-models/",
+        "text": "mixed effects models"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/multilevel/",
+        "text": "multilevel"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r-project/",
+        "text": "r-project"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r-sessions/",
+        "text": "R-Sessions"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/stepwise/",
+        "text": "stepwise"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-17209 post type-post status-publish format-standard hentry category-r-bloggers tag-forward tag-hierarchical tag-lme4 tag-mixed-effects-models tag-multilevel tag-r-project tag-r-sessions tag-stepwise\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R-Sessions 32: Forward.lmer: Basic stepwise function for mixed effects in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 13, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/rense-nieuwenhuis/\">Rense Nieuwenhuis</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.rensenieuwenhuis.nl/r-sessions-32/\"> Curving Normality » R-Project</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Intended to be a customized solution, it may have grown to be a little more. forward.lmer is an early installment of a full stepwise function for mixed effects regression models in R-Project. I may put in some work to extend it, or I may not. Nevertheless, in a ‘forward sense …\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.rensenieuwenhuis.nl/r-sessions-32/\"> Curving Normality » R-Project</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/forward/\" rel=\"tag\">forward</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/hierarchical/\" rel=\"tag\">hierarchical</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/lme4/\" rel=\"tag\">lme4</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/mixed-effects-models/\" rel=\"tag\">mixed effects models</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/multilevel/\" rel=\"tag\">multilevel</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-project/\" rel=\"tag\">r-project</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-sessions/\" rel=\"tag\">R-Sessions</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/stepwise/\" rel=\"tag\">stepwise</a></li></ul></div></article>",
+    "main_text": "R-Sessions 32: Forward.lmer: Basic stepwise function for mixed effects in R\nPosted on\nFebruary 13, 2009\nby\nRense Nieuwenhuis\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nCurving Normality » R-Project\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntended to be a customized solution, it may have grown to be a little more. forward.lmer is an early installment of a full stepwise function for mixed effects regression models in R-Project. I may put in some work to extend it, or I may not. Nevertheless, in a ‘forward sense …\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCurving Normality » R-Project\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nforward\nhierarchical\nlme4\nmixed effects models\nmultilevel\nr-project\nR-Sessions\nstepwise",
+    "meta_description": "Intended to be a customized solution, it may have grown to be a little more. forward.lmer is an early installment of a full stepwise function for mixed effects regression models in R-Project. I may put in some work to extend it, or I may not. Neverthel...",
+    "meta_keywords": "forward,hierarchical,lme4,mixed effects models,multilevel,r-project,r-sessions,stepwise",
+    "og_description": "Intended to be a customized solution, it may have grown to be a little more. forward.lmer is an early installment of a full stepwise function for mixed effects regression models in R-Project. I may put in some work to extend it, or I may not. Neverthel...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "R-Sessions 32: Forward.lmer: Basic stepwise function for mixed effects in R | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.1,
+    "sitemap_lastmod": "2010-09-06T20:56:39+00:00",
+    "twitter_description": "Intended to be a customized solution, it may have grown to be a little more. forward.lmer is an early installment of a full stepwise function for mixed effects regression models in R-Project. I may put in some work to extend it, or I may not. Neverthel...",
+    "twitter_title": "R-Sessions 32: Forward.lmer: Basic stepwise function for mixed effects in R | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/02/r-sessions-32-forward-lmer-basic-stepwise-function-for-mixed-effects-in-r/",
+    "word_count": 215
+  }
+}

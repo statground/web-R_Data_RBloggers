@@ -1,0 +1,132 @@
+{
+  "uuid": "88988e94-428b-4891-a5d7-82ae8dc6d4ed",
+  "created_at": "2025-11-17 20:39:49",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/advanced-sna-with-r-via-harvard-political-nets-conference/",
+    "crawled_at": "2025-11-17T10:13:37.793664",
+    "external_links": [
+      {
+        "href": "http://www.drewconway.com/zia/?p=1602",
+        "text": "Zero Intelligence Agents » R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.iq.harvard.edu/blog/netgov/2009/12/goudreau-hunter_tutorial_on_ad.html",
+        "text": "Goudreau-Hunter tutorial on social network analysis using R"
+      },
+      {
+        "href": "https://vimeo.com/7827402",
+        "text": "Goudreau-Hunter Political Networks 2009 3 of 5"
+      },
+      {
+        "href": "https://vimeo.com/user2690333",
+        "text": "David Lazer"
+      },
+      {
+        "href": "https://vimeo.com",
+        "text": "Vimeo"
+      },
+      {
+        "href": "http://www.drewconway.com/zia/?p=1602",
+        "text": "Zero Intelligence Agents » R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "Advanced SNA with R, via Harvard Political Nets Conference | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/drew-conway/",
+        "text": "Drew Conway"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/links/",
+        "text": "Links"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/networks/",
+        "text": "Networks"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/statistics/",
+        "text": "statistics"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/video/",
+        "text": "video"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-571 post type-post status-publish format-standard hentry category-r-bloggers tag-links tag-networks tag-r tag-statistics tag-video\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Advanced SNA with R, via Harvard Political Nets Conference</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 7, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/drew-conway/\">Drew Conway</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.drewconway.com/zia/?p=1602\"> Zero Intelligence Agents » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>End of semester madness has begun, so posting will likely be light this week.  To keep you busy, David Lazer recently posted the five video series of the <a href=\"http://www.iq.harvard.edu/blog/netgov/2009/12/goudreau-hunter_tutorial_on_ad.html\" rel=\"nofollow\" target=\"_blank\">Goudreau-Hunter tutorial on social network analysis using R</a> from the 2009 Harvard Political Networks Conference.</p>\n<p>Each video run about 60 minutes, so these will literally provide hours of edutainment.  The first couple videos are introductions that review the basics, so I jump to video three below.</p>\n<p><span id=\"more-1602\"></span><center><object height=\"300\" width=\"400\"><param name=\"allowfullscreen\" value=\"true\"/><param name=\"allowscriptaccess\" value=\"always\"/><param name=\"movie\" value=\"http://vimeo.com/moogaloop.swf?clip_id=7827402&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1\"/><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"300\" src=\"https://vimeo.com/moogaloop.swf?clip_id=7827402&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1\" type=\"application/x-shockwave-flash\" width=\"400\"/></object>\n<p><a href=\"https://vimeo.com/7827402\" rel=\"nofollow\" target=\"_blank\">Goudreau-Hunter Political Networks 2009 3 of 5</a> from <a href=\"https://vimeo.com/user2690333\" rel=\"nofollow\" target=\"_blank\">David Lazer</a> on <a href=\"https://vimeo.com\" rel=\"nofollow\" target=\"_blank\">Vimeo</a>.</p>\n<p></p></center></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.drewconway.com/zia/?p=1602\"> Zero Intelligence Agents » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/links/\" rel=\"tag\">Links</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/networks/\" rel=\"tag\">Networks</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/video/\" rel=\"tag\">video</a></li></ul></div></article>",
+    "main_text": "Advanced SNA with R, via Harvard Political Nets Conference\nPosted on\nDecember 7, 2009\nby\nDrew Conway\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nZero Intelligence Agents » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEnd of semester madness has begun, so posting will likely be light this week.  To keep you busy, David Lazer recently posted the five video series of the\nGoudreau-Hunter tutorial on social network analysis using R\nfrom the 2009 Harvard Political Networks Conference.\nEach video run about 60 minutes, so these will literally provide hours of edutainment.  The first couple videos are introductions that review the basics, so I jump to video three below.\nGoudreau-Hunter Political Networks 2009 3 of 5\nfrom\nDavid Lazer\non\nVimeo\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nZero Intelligence Agents » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nLinks\nNetworks\nR\nstatistics\nvideo",
+    "meta_description": "End of semester madness has begun, so posting will likely be light this week. To keep you busy, David Lazer recently posted the five video series of the Goudreau-Hunter tutorial on social network analysis using R from the 2009 Harvard Political Networks Conference. Each video run about 60 minutes, so these will literally provide hours [...]",
+    "meta_keywords": "links,networks,r,statistics,video",
+    "og_description": "End of semester madness has begun, so posting will likely be light this week. To keep you busy, David Lazer recently posted the five video series of the Goudreau-Hunter tutorial on social network analysis using R from the 2009 Harvard Political Networks Conference. Each video run about 60 minutes, so these will literally provide hours [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "Advanced SNA with R, via Harvard Political Nets Conference | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.2,
+    "sitemap_lastmod": "2009-12-07T15:30:50+00:00",
+    "twitter_description": "End of semester madness has begun, so posting will likely be light this week. To keep you busy, David Lazer recently posted the five video series of the Goudreau-Hunter tutorial on social network analysis using R from the 2009 Harvard Political Networks Conference. Each video run about 60 minutes, so these will literally provide hours [...]",
+    "twitter_title": "Advanced SNA with R, via Harvard Political Nets Conference | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/advanced-sna-with-r-via-harvard-political-nets-conference/",
+    "word_count": 240
+  }
+}
