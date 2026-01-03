@@ -1,0 +1,96 @@
+{
+  "id": "2aae75b7336fdea5b32d4ed528ac041410821199",
+  "url": "https://www.r-bloggers.com/2025/12/a-primer-in-optimization-the-hitchhikeraposs-guide-to-linear-models/",
+  "created_at_utc": "2026-01-03T05:07:58Z",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/12/a-primer-in-optimization-the-hitchhikeraposs-guide-to-linear-models/",
+    "canonical_url": "https://www.r-bloggers.com/2025/12/a-primer-in-optimization-the-hitchhikeraposs-guide-to-linear-models/",
+    "html_title": "A Primer in Optimization + The Hitchhiker’apos;s Guide to Linear Models | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "A tiny book on optimization theory bundled with a practical guide to estimating linear models using R. These posts usually load d3po plots/maps and require JS; please click https://pacha.dev/blog/2025/12/22/optimization-primer/index.html to continue re...",
+    "meta_keywords": null,
+    "og_title": "A Primer in Optimization + The Hitchhiker’apos;s Guide to Linear Models | R-bloggers",
+    "og_description": "A tiny book on optimization theory bundled with a practical guide to estimating linear models using R. These posts usually load d3po plots/maps and require JS; please click https://pacha.dev/blog/2025/12/22/optimization-primer/index.html to continue re...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "A Primer in Optimization + The Hitchhiker’apos;s Guide to Linear Models | R-bloggers",
+    "twitter_description": "A tiny book on optimization theory bundled with a practical guide to estimating linear models using R. These posts usually load d3po plots/maps and require JS; please click https://pacha.dev/blog/2025/12/22/optimization-primer/index.html to continue re...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "A Primer in Optimization + The Hitchhiker’apos;s Guide to Linear Models\nPosted on\nDecember 21, 2025\nby\nhttps://pacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nhttps://pacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nA tiny book on optimization theory bundled with a practical guide to estimating linear models using R. These posts usually load d3po plots/maps and require JS; please click https://pacha.dev/blog/2025/12/22/optimization-primer/index.html to continue reading.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nhttps://pacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-397845 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">A Primer in Optimization + The Hitchhiker’apos;s Guide to Linear Models</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 21, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/https-pacha-dev-blog/\">https://pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/12/22/optimization-primer/index.html\"> https://pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->A tiny book on optimization theory bundled with a practical guide to estimating linear models using R. These posts usually load d3po plots/maps and require JS; please click https://pacha.dev/blog/2025/12/22/optimization-primer/index.html to continue reading.\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/12/22/optimization-primer/index.html\"> https://pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 195,
+    "reading_time_min": 1.0,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/https-pacha-dev-blog/",
+        "text": "https://pacha.dev/blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://pacha.dev/blog/2025/12/22/optimization-primer/index.html",
+        "text": "https://pacha.dev/blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/12/22/optimization-primer/index.html",
+        "text": "https://pacha.dev/blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-03T05:08:20Z"
+  }
+}
