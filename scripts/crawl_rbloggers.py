@@ -6,6 +6,7 @@ import base64
 import hashlib
 import datetime as dt
 from urllib.parse import urlparse, urljoin
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -275,6 +276,7 @@ def main():
     print(f"📌 collected urls: {len(urls)}")
 
     new_count = 0
+    new_files_relpaths = []
     now_utc = dt.datetime.utcnow().replace(microsecond=0)
     year = f"{now_utc.year:04d}"
     month = f"{now_utc.month:02d}"
@@ -282,7 +284,14 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     for url in urls:
-        file_id = sha1_hex(url)  # deterministic id by URL
+        # deterministic id by URL (original URL from listing)
+        file_id = sha1_hex(url)
+
+        # Avoid duplicates across months/years: if the same id already exists
+        # anywhere under by_created/, skip.
+        # (This keeps the repo append-only without re-saving the same URL next month.)
+        if list(Path(base_dir).rglob(f"{file_id}.json")):
+            continue
         out_path = os.path.join(out_dir, f"{file_id}.json")
 
         if os.path.exists(out_path):
@@ -294,10 +303,16 @@ def main():
             print(f"[fail] {url} -> {e}")
             continue
 
+        # Keep top-level convenience fields for downstream ingestion (e.g., Web-R backend)
+        # so it doesn't need to know internal nesting.
         payload = {
             "id": file_id,
-            "url": url,
+            # Use final URL after redirects if any
+            "url": data.get("url") or url,
             "created_at_utc": now_utc.isoformat() + "Z",
+            "crawled_at_utc": data.get("crawled_at_utc"),
+            "html_title": data.get("html_title"),
+            "meta_description": data.get("meta_description"),
             "data": data,
         }
 
@@ -306,13 +321,22 @@ def main():
 
         new_count += 1
         print(f"✅ new saved: {os.path.relpath(out_path, repo_root)}")
+        new_files_relpaths.append(os.path.relpath(out_path, repo_root))
         time.sleep(sleep_sec)
 
     print(f"🎉 done. new files: {new_count}")
 
     # action result for commit step / debug
     with open(os.path.join(repo_root, ".action_result.json"), "w", encoding="utf-8") as f:
-        json.dump({"new_files": new_count}, f)
+        json.dump(
+            {
+                "new_files": new_count,
+                "files": new_files_relpaths,
+            },
+            f,
+            ensure_ascii=False,
+            indent=2,
+        )
 
 
 if __name__ == "__main__":

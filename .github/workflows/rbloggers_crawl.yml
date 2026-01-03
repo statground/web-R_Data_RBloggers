@@ -1,9 +1,6 @@
 name: Crawl R-Bloggers (hourly)
 
 'on':
-  push:
-    branches: [ "main" ]
-
   # 매시간 1회 (UTC 기준)
   schedule:
     - cron: "0 * * * *"
@@ -55,3 +52,32 @@ jobs:
           else
             echo "No changes. Skip commit."
           fi
+
+      # Web-R backend will do DB INSERT. GitHub Actions only sends a signal.
+      - name: Notify Web-R backend to sync (webhook)
+        if: ${{ secrets.WEBR_SYNC_URL != '' && secrets.WEBR_SYNC_TOKEN != '' }}
+        env:
+          WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
+          WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
+          GH_REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [ ! -f .action_result.json ]; then
+            echo ".action_result.json not found. Skip notify."
+            exit 0
+          fi
+
+          CHANGED_COUNT=$(jq -r '.new_files // 0' .action_result.json)
+          if [ "$CHANGED_COUNT" = "0" ] || [ "$CHANGED_COUNT" = "null" ]; then
+            echo "No new files. Skip notify."
+            exit 0
+          fi
+
+          FILES_JSON=$(jq -c '.files // []' .action_result.json)
+          echo "Notifying backend. new_files=$CHANGED_COUNT"
+
+          # If this run created a commit, HEAD now points to it after push.
+          HEAD_SHA=$(git rev-parse HEAD)
+          curl -sS -X POST "$WEBR_SYNC_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
+            -d "{\"sha\":\"$HEAD_SHA\",\"ref\":\"$GH_REF_NAME\",\"files\":$FILES_JSON}" | cat
