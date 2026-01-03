@@ -1,8 +1,15 @@
 name: Crawl R-Bloggers (twice daily)
 
-on:
+'on':
+  # 테스트를 위해 push도 넣어둠 (원하면 안정화 후 제거 가능)
+  push:
+    branches: [ "main" ]
+
+  # UTC 00:00 / 12:00 (KST 09:00 / 21:00)
   schedule:
     - cron: "0 0,12 * * *"
+
+  # Actions 탭에서 수동 실행 버튼
   workflow_dispatch: {}
 
 permissions:
