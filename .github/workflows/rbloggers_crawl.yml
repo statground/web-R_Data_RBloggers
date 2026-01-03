@@ -66,20 +66,20 @@ jobs:
           GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
-          # ✅ Secrets 미설정이면 스킵 (workflow invalid 방지 위해 if 표현식에서 secrets 사용 금지)
+          # Secrets 없으면 스킵
           if [ -z "$WEBR_SYNC_URL" ] || [ -z "$WEBR_SYNC_TOKEN" ]; then
             echo "WEBR_SYNC_URL/TOKEN not set. Skip notify."
             exit 0
           fi
 
-          # ✅ 이번 커밋에서 바뀐 json만 추출
+          # 이번 커밋에서 바뀐 json만
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
             git diff --name-only HEAD~1 HEAD | grep -E '\.json$' > changed_files.txt || true
           else
             : > changed_files.txt
           fi
 
-          # ✅ by_created는 동기화 대상에서 제외
+          # by_created 제외
           grep -v '^by_created/' changed_files.txt > changed_files_filtered.txt || true
 
           COUNT=$(wc -l < changed_files_filtered.txt | tr -d ' ')
@@ -88,17 +88,8 @@ jobs:
             exit 0
           fi
 
-          FILES_JSON=$(python - <<'PY'
-import json
-files=[]
-with open("changed_files_filtered.txt","r",encoding="utf-8") as f:
-    for line in f:
-        p=line.strip()
-        if p:
-            files.append(p)
-print(json.dumps(files, ensure_ascii=False))
-PY
-          )
+          # ✅ jq로 파일 리스트를 JSON 배열로 변환 (heredoc 제거)
+          FILES_JSON=$(jq -R -s -c 'split("\n") | map(select(length>0))' changed_files_filtered.txt)
 
           curl -sS -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
