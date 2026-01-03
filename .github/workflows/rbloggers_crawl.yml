@@ -11,8 +11,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: rbloggers-crawl
-  cancel-in-progress: false
+  group: rbloggers-crawl-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   crawl:
@@ -43,15 +43,28 @@ jobs:
 
       - name: Commit & Push (if changed)
         run: |
-          if git status --porcelain | grep .; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add by_created .action_result.json
-            git commit -m "rbloggers: add new posts"
-            git push
-          else
-            echo "No changes. Skip commit."
-          fi
+if git status --porcelain | grep .; then
+  git config user.name "github-actions[bot]"
+  git config user.email "github-actions[bot]@users.noreply.github.com"
+
+  # stage outputs (by_created may be created by crawler)
+  if [ -d "by_created" ]; then
+    git add by_created
+  fi
+  git add .action_result.json || true
+
+  git commit -m "rbloggers: add new posts" || true
+
+  # avoid non-fast-forward when another run pushed first
+  BRANCH="${GITHUB_REF_NAME:-main}"
+  git fetch origin "$BRANCH"
+  git pull --rebase origin "$BRANCH"
+
+  # push (retry once)
+  git push || (sleep 3 && git push)
+else
+  echo "No changes. Skip commit."
+fi
 
       # Web-R backend will do DB INSERT. GitHub Actions only sends a signal.
       - name: Notify Web-R backend to sync (webhook)
@@ -69,13 +82,13 @@ jobs:
             exit 0
           fi
 
-          CHANGED_COUNT=$(jq -r '.new_files // 0' .action_result.json)
+          CHANGED_COUNT=$(jq -r '[.files[]? | select(startswith("by_created/")|not)] | length' .action_result.json)
           if [ "$CHANGED_COUNT" = "0" ] || [ "$CHANGED_COUNT" = "null" ]; then
             echo "No new files. Skip notify."
             exit 0
           fi
 
-          FILES_JSON=$(jq -c '.files // []' .action_result.json)
+          FILES_JSON=$(jq -c '[.files[]? | select(startswith("by_created/")|not)]' .action_result.json)
           echo "Notifying backend. new_files=$CHANGED_COUNT"
 
           # If this run created a commit, HEAD now points to it after push.
