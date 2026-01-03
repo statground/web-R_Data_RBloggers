@@ -1,0 +1,106 @@
+{
+  "id": "7cded26c593ec1a40e8b881639219b39e3f4832a",
+  "url": "https://www.r-bloggers.com/2009/10/rsperl-using-r-from-within-perl/",
+  "created_at_utc": "2025-11-17T20:40:07Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "45d3119b-8654-4e3a-90af-9b1d1bf95039",
+    "created_at": "2025-11-17 20:40:07",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/10/rsperl-using-r-from-within-perl/",
+      "crawled_at": "2025-11-17T10:20:00.310569",
+      "external_links": [
+        {
+          "href": "http://www.compbiome.com/2009/10/rsperl-using-r-from-within-perl.html",
+          "text": "compBiomeBlog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.omegahat.org/RSPerl/",
+          "text": "RSPerl"
+        },
+        {
+          "href": "http://www.omegahat.org/RSPerl/",
+          "text": "RSPerl"
+        },
+        {
+          "href": "http://www.compbiome.com/2009/10/rsperl-using-r-from-within-perl.html",
+          "text": "compBiomeBlog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "RSPerl : Using R from within Perl | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/stewart-macarthur/",
+          "text": "Stewart MacArthur"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-49042 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">RSPerl : Using R from within Perl</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 23, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/stewart-macarthur/\">Stewart MacArthur</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.compbiome.com/2009/10/rsperl-using-r-from-within-perl.html\"> compBiomeBlog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Some things I write in perl some in R, sometime I use perl to write R and run R. One thing that I find very useful is the functionality of <a href=\"http://www.omegahat.org/RSPerl/\" rel=\"nofollow\" target=\"_blank\">RSPerl</a> which enables you to call R functions from within perl and on perl variables. It can also call perl from R, though I have no idea why you would want to do this.<br/><br/>My main use is to carry out statistical tests on the results of things carried out in. For example I use perl to run patser to count the number of hits to a position weight matrix in a test sequence and a background sequences, then I use RSPerl to calculate the p-value via the binomial test (binom.test function).<br/><br/>It was a pain to setup, as I had to recompile R and install various modules in the correct places and setup some environment variables. Once working though it is a great tool. You can even use R’s great graphical capabilities to automatically generate figures from data in perl variables.<br/><br/><span style=\"font-family: courier new;\">perl -e ‘use R;&amp;R::initR(“–silent”,”–vanilla”);&amp;R::eval(“r &lt;- rnorm(100);plot(r,pch=20)\");'</span><br/><br/>This one plots a histogram of the length of perl scripts!<br/><br/><span style=\"font-family: courier new;\">for f in *.pl; do wc -l ${f}|cut -f 1 -d ” “; done | perl -ne ‘s/\\n/,/g;print;’ |perl -ne ‘use R;&amp;R::initR(“–silent”,”–vanilla”);chop;&amp;R::eval(“hist(c($_),main=\\”File Lengths\\”,xlab=\\”Number of Lines\\”)”);sleep 10’</span><br/><br/><a href=\"http://www.omegahat.org/RSPerl/\" rel=\"nofollow\" target=\"_blank\">RSPerl</a>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.compbiome.com/2009/10/rsperl-using-r-from-within-perl.html\"> compBiomeBlog</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "RSPerl : Using R from within Perl\nPosted on\nOctober 23, 2009\nby\nStewart MacArthur\nin Uncategorized | 0 Comments\n[This article was first published on\ncompBiomeBlog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSome things I write in perl some in R, sometime I use perl to write R and run R. One thing that I find very useful is the functionality of\nRSPerl\nwhich enables you to call R functions from within perl and on perl variables. It can also call perl from R, though I have no idea why you would want to do this.\nMy main use is to carry out statistical tests on the results of things carried out in. For example I use perl to run patser to count the number of hits to a position weight matrix in a test sequence and a background sequences, then I use RSPerl to calculate the p-value via the binomial test (binom.test function).\nIt was a pain to setup, as I had to recompile R and install various modules in the correct places and setup some environment variables. Once working though it is a great tool. You can even use R’s great graphical capabilities to automatically generate figures from data in perl variables.\nperl -e ‘use R;&R::initR(“–silent”,”–vanilla”);&R::eval(“r <- rnorm(100);plot(r,pch=20)\");'\nThis one plots a histogram of the length of perl scripts!\nfor f in *.pl; do wc -l ${f}|cut -f 1 -d ” “; done | perl -ne ‘s/\\n/,/g;print;’ |perl -ne ‘use R;&R::initR(“–silent”,”–vanilla”);chop;&R::eval(“hist(c($_),main=\\”File Lengths\\”,xlab=\\”Number of Lines\\”)”);sleep 10’\nRSPerl\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ncompBiomeBlog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Some things I write in perl some in R, sometime I use perl to write R and run R. One thing that I find very useful is the functionality of RSPerl which enables you to call R functions from within perl and on perl variables. It can also call perl from R, though I have no idea why you would want to do this.My main use is to carry out statistical tests on the results of things carried out in. For example I use perl to run patser to count the number of hits to a position weight matrix in a test sequence and a background sequences, then I use RSPerl to calculate the p-value via the binomial test (binom.test function).It was a pain to setup, as I had to recompile R and install various modules in the correct places and setup some environment variables. Once working though it is a great tool. You can even use R's great graphical capabilities to automatically generate figures from data in perl variables.perl -e 'use R;&R::initR(\"--silent\",\"--vanilla\");&R::eval(\"r This one plots a histogram of the length of perl scripts!for f in *.pl; do wc -l ${f}|cut -f 1 -d \" \"; done | perl -ne 's/\\n/,/g;print;' |perl -ne 'use R;&R::initR(\"--silent\",\"--vanilla\");chop;&R::eval(\"hist(c($_),main=\\\"File Lengths\\\",xlab=\\\"Number of Lines\\\")\");sleep 10'RSPerl",
+      "meta_keywords": null,
+      "og_description": "Some things I write in perl some in R, sometime I use perl to write R and run R. One thing that I find very useful is the functionality of RSPerl which enables you to call R functions from within perl and on perl variables. It can also call perl from R, though I have no idea why you would want to do this.My main use is to carry out statistical tests on the results of things carried out in. For example I use perl to run patser to count the number of hits to a position weight matrix in a test sequence and a background sequences, then I use RSPerl to calculate the p-value via the binomial test (binom.test function).It was a pain to setup, as I had to recompile R and install various modules in the correct places and setup some environment variables. Once working though it is a great tool. You can even use R's great graphical capabilities to automatically generate figures from data in perl variables.perl -e 'use R;&R::initR(\"--silent\",\"--vanilla\");&R::eval(\"r This one plots a histogram of the length of perl scripts!for f in *.pl; do wc -l ${f}|cut -f 1 -d \" \"; done | perl -ne 's/\\n/,/g;print;' |perl -ne 'use R;&R::initR(\"--silent\",\"--vanilla\");chop;&R::eval(\"hist(c($_),main=\\\"File Lengths\\\",xlab=\\\"Number of Lines\\\")\");sleep 10'RSPerl",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "RSPerl : Using R from within Perl | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.9,
+      "sitemap_lastmod": "2009-10-23T14:23:44+00:00",
+      "twitter_description": "Some things I write in perl some in R, sometime I use perl to write R and run R. One thing that I find very useful is the functionality of RSPerl which enables you to call R functions from within perl and on perl variables. It can also call perl from R, though I have no idea why you would want to do this.My main use is to carry out statistical tests on the results of things carried out in. For example I use perl to run patser to count the number of hits to a position weight matrix in a test sequence and a background sequences, then I use RSPerl to calculate the p-value via the binomial test (binom.test function).It was a pain to setup, as I had to recompile R and install various modules in the correct places and setup some environment variables. Once working though it is a great tool. You can even use R's great graphical capabilities to automatically generate figures from data in perl variables.perl -e 'use R;&R::initR(\"--silent\",\"--vanilla\");&R::eval(\"r This one plots a histogram of the length of perl scripts!for f in *.pl; do wc -l ${f}|cut -f 1 -d \" \"; done | perl -ne 's/\\n/,/g;print;' |perl -ne 'use R;&R::initR(\"--silent\",\"--vanilla\");chop;&R::eval(\"hist(c($_),main=\\\"File Lengths\\\",xlab=\\\"Number of Lines\\\")\");sleep 10'RSPerl",
+      "twitter_title": "RSPerl : Using R from within Perl | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/10/rsperl-using-r-from-within-perl/",
+      "word_count": 383
+    }
+  }
+}

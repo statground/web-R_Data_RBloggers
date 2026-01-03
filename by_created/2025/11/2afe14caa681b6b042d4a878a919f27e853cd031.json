@@ -1,0 +1,102 @@
+{
+  "id": "2afe14caa681b6b042d4a878a919f27e853cd031",
+  "url": "https://www.r-bloggers.com/2025/05/quicksummary-of-data-for-modeling-and-machine-learning/",
+  "created_at_utc": "2025-11-22T19:58:41Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "63fce6db-4ef4-481b-a209-3483687507da",
+    "created_at": "2025-11-22 19:58:41",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/05/quicksummary-of-data-for-modeling-and-machine-learning/",
+      "crawled_at": "2025-11-22T10:49:28.960207",
+      "external_links": [
+        {
+          "href": "https://www.jobnmadu.com/r-blog/2025-05-04-r-markdown/quicksummaries/",
+          "text": "R-Blog on Data modelling to develop ..."
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.jobnmadu.com/r-blog/2025-05-04-r-markdown/quicksummaries/",
+          "text": "R-Blog on Data modelling to develop ..."
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Quicksummary of data for modeling and Machine Learning | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-blog-on-data-modelling-to-develop/",
+          "text": "R-Blog on Data modelling to develop ..."
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392258 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Quicksummary of data for modeling and Machine Learning</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 3, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-blog-on-data-modelling-to-develop/\">R-Blog on Data modelling to develop ...</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.jobnmadu.com/r-blog/2025-05-04-r-markdown/quicksummaries/\"> R-Blog on Data modelling to develop ...</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div class=\"section level1\" id=\"introduction\">\n<h1>Introduction</h1>\n<p>This blog is about the improved function, <code>quicksummary</code> in the <code>Dyn4cast</code> package. The function provides quick overview of data and particularly outputting five different means.</p>\n<p>Observational study involves procuring large mass of data for analysis and modeling. So, there is always need to have an overview of the data to decide on the appropriate analysis to be undertaken. This is where this function is unique because five different means are computed simultaneously, in spite of the <em>one line code</em> arguments. The five means are:</p>\n<p>Arithmetic</p>\n<p>Geometric</p>\n<p>Harmonic</p>\n<p>Quadratic</p>\n<p>Cubic.</p>\n<p>The basic usage of the codes are:</p>\n<p><code>quicksummary(x, Type, Cut, Up, Down, ci = 0.95)</code></p>\n<p><strong>Arguments</strong></p>\n<p><code>x</code> The data to be summarised. Only numeric data is allowed.</p>\n<p><code>Type</code> The type of data to be summarized. There are two options here 1 or 2, 1 = Continuous and 2 = Likert-type</p>\n<p><code>Cut</code> The cut-off point for Likert-type data</p>\n<p><code>Up</code> The top Likert-type scale, for example, Agree, Constraints etc which would appear in the remark column.</p>\n<p><code>Down</code> The lower Likert-type scale, for example, Disagree, ⁠Not a Constraint⁠ etc which would appear in the remark column.</p>\n<p><code>ci</code> Confidence interval which is defaults to 0.95.</p>\n<p>Let us go!</p>\n</div>\n<div class=\"section level1\" id=\"load-library\">\n<h1>Load library</h1>\n<pre>library(Dyn4cast)</pre>\n</div>\n<div class=\"section level1\" id=\"computation-of-data-summaries\">\n<h1>Computation of data summaries</h1>\n<pre>Up &lt;- \"Constraint\"\nDown &lt;- \"Not a constraint\"\nsum1 &lt;- quicksummary(x = Quicksummary, Type = 2, Cut = 2.60, Up = Up, Down = Down)\n# Continuous data\nx &lt;- select(linearsystems, 1:6)\nsum2 &lt;- quicksummary(x = x, Type = 1)</pre>\n<div class=\"section level2\" id=\"likert-type-summaries\">\n<h2>Likert-type summaries</h2>\n<div class=\"section level3\" id=\"general-summaries\">\n<h3>General summaries</h3>\n<pre>sum1$Summary\n Mean SD SE.Mean Nobs Rank Remark\nLikert scores 1 4.34 1.13 0.11 103 1 Constraint\nLikert scores 14 3.85 1.35 0.13 103 2 Constraint\nLikert scores 3 3.49 1.36 0.13 103 3 Constraint\nLikert scores 10 3.49 1.51 0.15 103 4 Constraint\nLikert scores 15 3.43 1.38 0.14 103 5 Constraint\nLikert scores 19 3.43 1.23 0.12 103 6 Constraint\nLikert scores 17 3.41 1.25 0.12 103 7 Constraint\nLikert scores 2 3.23 1.57 0.15 103 8 Constraint\nLikert scores 18 3.23 1.21 0.12 103 9 Constraint\nLikert scores 4 3.17 1.34 0.13 103 10 Constraint\nLikert scores 7 3.07 1.32 0.13 103 11 Constraint\nLikert scores 21 3.07 1.32 0.13 103 12 Constraint\nLikert scores 26 3.03 1.22 0.12 103 13 Constraint\nLikert scores 20 2.98 1.18 0.12 103 14 Constraint\nLikert scores 16 2.94 1.47 0.14 103 15 Constraint\nLikert scores 22 2.94 1.31 0.13 103 16 Constraint\nLikert scores 13 2.93 1.37 0.14 103 17 Constraint\nLikert scores 11 2.89 1.20 0.12 103 18 Constraint\nLikert scores 25 2.88 1.31 0.13 103 19 Constraint\nLikert scores 23 2.84 1.48 0.15 103 20 Constraint\nLikert scores 8 2.83 1.33 0.13 103 21 Constraint\nLikert scores 6 2.77 1.44 0.14 103 22 Constraint\nLikert scores 24 2.71 1.30 0.13 103 23 Constraint\nLikert scores 5 2.67 1.27 0.13 103 24 Constraint\nLikert scores 9 2.63 1.34 0.13 103 25 Constraint\nLikert scores 12 2.41 1.26 0.12 103 26 Not a constraint\nLikert scores 27 2.41 1.35 0.13 103 27 Not a constraint\nLikert scores 29 0.89 1.78 0.18 103 28 Not a constraint\nLikert scores 28 0.26 0.83 0.08 103 29 Not a constraint</pre>\n</div>\n<div class=\"section level3\" id=\"means\">\n<h3>Means</h3>\n<pre>sum1$Means\n Arithmetic Geometric Quadratic Harmonic Cubic\nLikert scores 1 4.34 4.11 4.48 3.74 4.58\nLikert scores 2 3.23 2.74 3.59 2.21 3.83\nLikert scores 3 3.49 3.13 3.74 2.70 3.92\nLikert scores 4 3.17 2.84 3.43 2.48 3.64\nLikert scores 5 2.67 2.34 2.95 2.00 3.19\nLikert scores 6 2.77 2.37 3.12 1.99 3.39\nLikert scores 7 3.07 2.71 3.34 2.31 3.53\nLikert scores 8 2.83 2.47 3.12 2.10 3.35\nLikert scores 9 2.63 2.29 2.95 1.98 3.22\nLikert scores 10 3.49 3.04 3.80 2.50 4.01\nLikert scores 11 2.89 2.62 3.13 2.32 3.33\nLikert scores 12 2.41 2.08 2.72 1.79 2.98\nLikert scores 13 2.93 2.55 3.24 2.14 3.46\nLikert scores 14 3.85 3.49 4.08 2.96 4.23\nLikert scores 15 3.43 3.07 3.69 2.64 3.89\nLikert scores 16 2.94 2.55 3.28 2.18 3.56\nLikert scores 17 3.41 3.11 3.63 2.74 3.79\nLikert scores 18 3.23 2.93 3.45 2.55 3.61\nLikert scores 19 3.43 3.15 3.64 2.80 3.80\nLikert scores 20 2.98 2.70 3.20 2.38 3.38\nLikert scores 21 3.07 2.73 3.34 2.35 3.55\nLikert scores 22 2.94 2.60 3.22 2.22 3.43\nLikert scores 23 2.84 2.41 3.20 1.99 3.47\nLikert scores 24 2.71 2.37 3.00 2.03 3.24\nLikert scores 25 2.88 2.53 3.16 2.15 3.37\nLikert scores 26 3.03 2.74 3.26 2.40 3.45\nLikert scores 27 2.41 0.00 2.76 0.00 3.03\nLikert scores 28 0.26 0.00 0.86 0.00 1.36\nLikert scores 29 0.89 0.00 1.98 0.00 2.62</pre>\n</div>\n</div>\n<div class=\"section level2\" id=\"continous-data-summaries\">\n<h2>Continous data summaries</h2>\n<div class=\"section level3\" id=\"general-summaries-1\">\n<h3>General summaries</h3>\n<pre>sum2$Summary\n MKTcost Age Experience Years spent in formal education\nMean 3911.55 38.13 11.78 10.35\nSD 2754.19 11.14 4.55 5.19\nSE.Mean 275.42 1.11 0.46 0.52\nMin 0.00 20.00 2.00 0.00\nMedian 2950.00 36.50 11.00 12.00\nMax 14000.00 68.00 20.00 20.00\nQ1 1850.00 30.00 8.75 7.00\nQ3 5760.00 45.00 15.00 14.00\nSkewness 1.19 0.83 0.38 -0.72\nKurtosis 1.32 0.01 -0.77 -0.42\nNobs 100.00 100.00 100.00 100.00\nHousehold size Years as a cooperative member\nMean 8.30 10.16\nSD 3.60 3.80\nSE.Mean 0.36 0.38\nMin 0.00 2.00\nMedian 8.00 10.00\nMax 17.00 20.00\nQ1 5.00 7.75\nQ3 11.00 12.00\nSkewness 0.18 0.64\nKurtosis -0.37 -0.20\nNobs 100.00 100.00</pre>\n</div>\n<div class=\"section level3\" id=\"means-1\">\n<h3>Means</h3>\n<pre>sum2$Means\n MKTcost Age Experience Years spent in formal education\nArithmetic 3911.55 38.13 11.78 10.35\nGeometric 0.00 36.64 10.86 0.00\nQuadratic 4775.97 39.71 12.62 11.57\nHarmonic 0.00 35.26 9.81 0.00\nCubic 5561.65 41.33 13.38 12.25\nHousehold size Years as a cooperative member\nArithmetic 8.30 10.16\nGeometric 0.00 9.46\nQuadratic 9.04 10.84\nHarmonic 0.00 8.70\nCubic 9.65 11.49</pre>\n<p>Welcome to the world of easy Data Science and easy Machine Learning!</p>\n</div>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.jobnmadu.com/r-blog/2025-05-04-r-markdown/quicksummaries/\"> R-Blog on Data modelling to develop ...</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Quicksummary of data for modeling and Machine Learning\nPosted on\nMay 3, 2025\nby\nR-Blog on Data modelling to develop ...\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR-Blog on Data modelling to develop ...\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nThis blog is about the improved function,\nquicksummary\nin the\nDyn4cast\npackage. The function provides quick overview of data and particularly outputting five different means.\nObservational study involves procuring large mass of data for analysis and modeling. So, there is always need to have an overview of the data to decide on the appropriate analysis to be undertaken. This is where this function is unique because five different means are computed simultaneously, in spite of the\none line code\narguments. The five means are:\nArithmetic\nGeometric\nHarmonic\nQuadratic\nCubic.\nThe basic usage of the codes are:\nquicksummary(x, Type, Cut, Up, Down, ci = 0.95)\nArguments\nx\nThe data to be summarised. Only numeric data is allowed.\nType\nThe type of data to be summarized. There are two options here 1 or 2, 1 = Continuous and 2 = Likert-type\nCut\nThe cut-off point for Likert-type data\nUp\nThe top Likert-type scale, for example, Agree, Constraints etc which would appear in the remark column.\nDown\nThe lower Likert-type scale, for example, Disagree, ⁠Not a Constraint⁠ etc which would appear in the remark column.\nci\nConfidence interval which is defaults to 0.95.\nLet us go!\nLoad library\nlibrary(Dyn4cast)\nComputation of data summaries\nUp <- \"Constraint\"\nDown <- \"Not a constraint\"\nsum1 <- quicksummary(x = Quicksummary, Type = 2, Cut = 2.60, Up = Up, Down = Down)\n# Continuous data\nx <- select(linearsystems, 1:6)\nsum2 <- quicksummary(x = x, Type = 1)\nLikert-type summaries\nGeneral summaries\nsum1$Summary\n Mean SD SE.Mean Nobs Rank Remark\nLikert scores 1 4.34 1.13 0.11 103 1 Constraint\nLikert scores 14 3.85 1.35 0.13 103 2 Constraint\nLikert scores 3 3.49 1.36 0.13 103 3 Constraint\nLikert scores 10 3.49 1.51 0.15 103 4 Constraint\nLikert scores 15 3.43 1.38 0.14 103 5 Constraint\nLikert scores 19 3.43 1.23 0.12 103 6 Constraint\nLikert scores 17 3.41 1.25 0.12 103 7 Constraint\nLikert scores 2 3.23 1.57 0.15 103 8 Constraint\nLikert scores 18 3.23 1.21 0.12 103 9 Constraint\nLikert scores 4 3.17 1.34 0.13 103 10 Constraint\nLikert scores 7 3.07 1.32 0.13 103 11 Constraint\nLikert scores 21 3.07 1.32 0.13 103 12 Constraint\nLikert scores 26 3.03 1.22 0.12 103 13 Constraint\nLikert scores 20 2.98 1.18 0.12 103 14 Constraint\nLikert scores 16 2.94 1.47 0.14 103 15 Constraint\nLikert scores 22 2.94 1.31 0.13 103 16 Constraint\nLikert scores 13 2.93 1.37 0.14 103 17 Constraint\nLikert scores 11 2.89 1.20 0.12 103 18 Constraint\nLikert scores 25 2.88 1.31 0.13 103 19 Constraint\nLikert scores 23 2.84 1.48 0.15 103 20 Constraint\nLikert scores 8 2.83 1.33 0.13 103 21 Constraint\nLikert scores 6 2.77 1.44 0.14 103 22 Constraint\nLikert scores 24 2.71 1.30 0.13 103 23 Constraint\nLikert scores 5 2.67 1.27 0.13 103 24 Constraint\nLikert scores 9 2.63 1.34 0.13 103 25 Constraint\nLikert scores 12 2.41 1.26 0.12 103 26 Not a constraint\nLikert scores 27 2.41 1.35 0.13 103 27 Not a constraint\nLikert scores 29 0.89 1.78 0.18 103 28 Not a constraint\nLikert scores 28 0.26 0.83 0.08 103 29 Not a constraint\nMeans\nsum1$Means\n Arithmetic Geometric Quadratic Harmonic Cubic\nLikert scores 1 4.34 4.11 4.48 3.74 4.58\nLikert scores 2 3.23 2.74 3.59 2.21 3.83\nLikert scores 3 3.49 3.13 3.74 2.70 3.92\nLikert scores 4 3.17 2.84 3.43 2.48 3.64\nLikert scores 5 2.67 2.34 2.95 2.00 3.19\nLikert scores 6 2.77 2.37 3.12 1.99 3.39\nLikert scores 7 3.07 2.71 3.34 2.31 3.53\nLikert scores 8 2.83 2.47 3.12 2.10 3.35\nLikert scores 9 2.63 2.29 2.95 1.98 3.22\nLikert scores 10 3.49 3.04 3.80 2.50 4.01\nLikert scores 11 2.89 2.62 3.13 2.32 3.33\nLikert scores 12 2.41 2.08 2.72 1.79 2.98\nLikert scores 13 2.93 2.55 3.24 2.14 3.46\nLikert scores 14 3.85 3.49 4.08 2.96 4.23\nLikert scores 15 3.43 3.07 3.69 2.64 3.89\nLikert scores 16 2.94 2.55 3.28 2.18 3.56\nLikert scores 17 3.41 3.11 3.63 2.74 3.79\nLikert scores 18 3.23 2.93 3.45 2.55 3.61\nLikert scores 19 3.43 3.15 3.64 2.80 3.80\nLikert scores 20 2.98 2.70 3.20 2.38 3.38\nLikert scores 21 3.07 2.73 3.34 2.35 3.55\nLikert scores 22 2.94 2.60 3.22 2.22 3.43\nLikert scores 23 2.84 2.41 3.20 1.99 3.47\nLikert scores 24 2.71 2.37 3.00 2.03 3.24\nLikert scores 25 2.88 2.53 3.16 2.15 3.37\nLikert scores 26 3.03 2.74 3.26 2.40 3.45\nLikert scores 27 2.41 0.00 2.76 0.00 3.03\nLikert scores 28 0.26 0.00 0.86 0.00 1.36\nLikert scores 29 0.89 0.00 1.98 0.00 2.62\nContinous data summaries\nGeneral summaries\nsum2$Summary\n MKTcost Age Experience Years spent in formal education\nMean 3911.55 38.13 11.78 10.35\nSD 2754.19 11.14 4.55 5.19\nSE.Mean 275.42 1.11 0.46 0.52\nMin 0.00 20.00 2.00 0.00\nMedian 2950.00 36.50 11.00 12.00\nMax 14000.00 68.00 20.00 20.00\nQ1 1850.00 30.00 8.75 7.00\nQ3 5760.00 45.00 15.00 14.00\nSkewness 1.19 0.83 0.38 -0.72\nKurtosis 1.32 0.01 -0.77 -0.42\nNobs 100.00 100.00 100.00 100.00\nHousehold size Years as a cooperative member\nMean 8.30 10.16\nSD 3.60 3.80\nSE.Mean 0.36 0.38\nMin 0.00 2.00\nMedian 8.00 10.00\nMax 17.00 20.00\nQ1 5.00 7.75\nQ3 11.00 12.00\nSkewness 0.18 0.64\nKurtosis -0.37 -0.20\nNobs 100.00 100.00\nMeans\nsum2$Means\n MKTcost Age Experience Years spent in formal education\nArithmetic 3911.55 38.13 11.78 10.35\nGeometric 0.00 36.64 10.86 0.00\nQuadratic 4775.97 39.71 12.62 11.57\nHarmonic 0.00 35.26 9.81 0.00\nCubic 5561.65 41.33 13.38 12.25\nHousehold size Years as a cooperative member\nArithmetic 8.30 10.16\nGeometric 0.00 9.46\nQuadratic 9.04 10.84\nHarmonic 0.00 8.70\nCubic 9.65 11.49\nWelcome to the world of easy Data Science and easy Machine Learning!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR-Blog on Data modelling to develop ...\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introduction This blog is about the improved function, quicksummary in the Dyn4cast package. The function provides quick overview of data and particularly outputting five different means. Observational study involves procuring large mass of data for ...",
+      "meta_keywords": null,
+      "og_description": "Introduction This blog is about the improved function, quicksummary in the Dyn4cast package. The function provides quick overview of data and particularly outputting five different means. Observational study involves procuring large mass of data for ...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Quicksummary of data for modeling and Machine Learning | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 7.1,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introduction This blog is about the improved function, quicksummary in the Dyn4cast package. The function provides quick overview of data and particularly outputting five different means. Observational study involves procuring large mass of data for ...",
+      "twitter_title": "Quicksummary of data for modeling and Machine Learning | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/05/quicksummary-of-data-for-modeling-and-machine-learning/",
+      "word_count": 1429
+    }
+  }
+}

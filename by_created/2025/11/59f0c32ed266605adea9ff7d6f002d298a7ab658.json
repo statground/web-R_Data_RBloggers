@@ -1,0 +1,138 @@
+{
+  "id": "59f0c32ed266605adea9ff7d6f002d298a7ab658",
+  "url": "https://www.r-bloggers.com/2023/12/the-two-phases-of-commits-in-a-git-branch/",
+  "created_at_utc": "2025-11-17T20:38:58Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "b0fc380f-365c-45e0-8b80-86fc5dd19519",
+    "created_at": "2025-11-17 20:38:58",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/the-two-phases-of-commits-in-a-git-branch/",
+      "crawled_at": "2025-11-17T09:38:30.468500",
+      "external_links": [
+        {
+          "href": "https://masalmon.eu/2023/12/07/two-phases-git-branches/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://masalmon.eu/2023/11/01/reading-notes-git-in-practice/",
+          "text": "Git in practice"
+        },
+        {
+          "href": "https://docs.ropensci.org/gert/reference/git_fetch.html",
+          "text": "gert::git_push()"
+        },
+        {
+          "href": "https://masalmon.eu/2023/12/07/two-phases-git-branches/#fn:1",
+          "text": "1"
+        },
+        {
+          "href": "https://masalmon.eu/2023/11/01/reading-notes-git-in-practice/",
+          "text": "reading notes on Git in practice"
+        },
+        {
+          "href": "https://github.com/Bisaloo",
+          "text": "Hugo Gruson"
+        },
+        {
+          "href": "https://masalmon.eu/2023/12/07/two-phases-git-branches/#fn:2",
+          "text": "2"
+        },
+        {
+          "href": "https://github.blog/2022-06-30-write-better-commits-build-better-projects/",
+          "text": "“Write Better Commits, Build Better Projects”"
+        },
+        {
+          "href": "https://masalmon.eu/2023/12/07/two-phases-git-branches/#fnref:1",
+          "text": "↩︎"
+        },
+        {
+          "href": "https://masalmon.eu/2023/12/07/two-phases-git-branches/#fnref:2",
+          "text": "↩︎"
+        },
+        {
+          "href": "https://masalmon.eu/2023/12/07/two-phases-git-branches/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "The two phases of commits in a Git branch | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380691 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">The two phases of commits in a Git branch</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 6, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/\">Maëlle's R blog on Maëlle Salmon's personal website</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://masalmon.eu/2023/12/07/two-phases-git-branches/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>I seem to have at last entered my Git era. 🎉 Reading and applying <a href=\"https://masalmon.eu/2023/11/01/reading-notes-git-in-practice/\" rel=\"nofollow\" target=\"_blank\">Git in practice</a> was probably the best thing I did for my upskilling this year. One Git workflow aspect I’ve finally realized is that it’s fine to have two phases of work in a Git branch. I’ll explain it in this post.</p>\n<h2 id=\"set-up-create-a-branch-for-your-work\">Set up: create a branch for your work!</h2>\n<p>Ideally, in most cases, when adding a feature or fixing a bug or whatever, I’ll work in a branch.</p>\n<div class=\"highlight\">\n<pre>gert::git_branch_create(\"feature\")</pre>\n</div>\n<p>I really like running the code above as I feel it puts me in the right mind space. I signal my intention to work on a given issue to the universe, it can’t hurt, right. 😁</p>\n<h2 id=\"phase-1-do-not-think-about-a-clean-git-history-nor-your-reputation-just-commit-all-the-time\">Phase 1: do not think about a clean Git history nor your reputation, just commit all the time</h2>\n<p>Now, even if I might already open a <strong>draft</strong> PR to signal my working on a given thing, I just do the thing and try to not think about looking stupid with 1,000 commits “try to make R CMD check happy”. I absolutely do not want to lose my work so I commit (with RStudio IDE tab) and push (with <a href=\"https://docs.ropensci.org/gert/reference/git_fetch.html\" rel=\"nofollow\" target=\"_blank\"><code>gert::git_push()</code></a> or that same tab) regularly. In this phase, Git is merely my backup.</p>\n<h2 id=\"phase-2-clean-up\">Phase 2: clean up!</h2>\n<p>That’s the phase I used to never do<sup id=\"fnref:1\"><a class=\"footnote-ref\" href=\"https://masalmon.eu/2023/12/07/two-phases-git-branches/#fn:1\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">1</a></sup> but that I’m trying to consciously practice. I guess blogging about this will force me to keep doing it.</p>\n<p>In the comments of my <a href=\"https://masalmon.eu/2023/11/01/reading-notes-git-in-practice/\" rel=\"nofollow\" target=\"_blank\">reading notes on Git in practice</a>, one of my Git models, <a href=\"https://github.com/Bisaloo\" rel=\"nofollow\" target=\"_blank\">Hugo Gruson</a><sup id=\"fnref:2\"><a class=\"footnote-ref\" href=\"https://masalmon.eu/2023/12/07/two-phases-git-branches/#fn:2\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">2</a></sup>, recommended the post <a href=\"https://github.blog/2022-06-30-write-better-commits-build-better-projects/\" rel=\"nofollow\" target=\"_blank\">“Write Better Commits, Build Better Projects”</a>. The kind of posts I used to think were for other people since I did not understand half of the Git words in it. 😉 (Have I mentioned reading a Git book was life-changing? 😅)</p>\n<p>Basically once you have your PR code ready, you have to try and create nice commits, in a nice order. It’s important both for the people that will have to review your code (which might even be just you in a few days for lack of collaborators), and for the people who might have to perform a <code>Git bisect</code>-ion or some other form of archeology on the code base later (again, this might be you).</p>\n<p>Part of the work is thinking about what a good set of commits might be.</p>\n<p>Then in practice I’ll use</p>\n<ul>\n<li><code>Git rebase -i</code> to squash, reorder or even drop commits and to improve commit messages;</li>\n<li><code>Git reset --soft</code> to remove changes from the Git history but not from the files, and then commit them incrementally in a smarter way than when I was in phase 1.</li>\n<li><code>Git push -f</code> which is fine since my branch is mine only until I mark the PR as ready to review. 😈</li>\n</ul>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>In this post I explained how I now think as work in a branch as happening in two phases, one phase where Git is my backup, and one phase where I try to think more about code reviewers (for the PR) and code archeologists (for later when the PR is merged). I’m still very much learning so don’t think you’ll get perfect PRs from me just yet!</p>\n<section class=\"footnotes\" role=\"doc-endnotes\">\n<hr/>\n<ol>\n<li id=\"fn:1\" role=\"doc-endnote\">\n<p>And I was so embarrassed when a PR of mine was merged without being squashed. <a class=\"footnote-backref\" href=\"https://masalmon.eu/2023/12/07/two-phases-git-branches/#fnref:1\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n<li id=\"fn:2\" role=\"doc-endnote\">\n<p>If you’ve ever reviewed a PR by Hugo you have to know what I mean! Such good story-telling in commits! <a class=\"footnote-backref\" href=\"https://masalmon.eu/2023/12/07/two-phases-git-branches/#fnref:2\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n</ol>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://masalmon.eu/2023/12/07/two-phases-git-branches/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "The two phases of commits in a Git branch\nPosted on\nDecember 6, 2023\nby\nMaëlle's R blog on Maëlle Salmon's personal website\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nMaëlle's R blog on Maëlle Salmon's personal website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI seem to have at last entered my Git era. 🎉 Reading and applying\nGit in practice\nwas probably the best thing I did for my upskilling this year. One Git workflow aspect I’ve finally realized is that it’s fine to have two phases of work in a Git branch. I’ll explain it in this post.\nSet up: create a branch for your work!\nIdeally, in most cases, when adding a feature or fixing a bug or whatever, I’ll work in a branch.\ngert::git_branch_create(\"feature\")\nI really like running the code above as I feel it puts me in the right mind space. I signal my intention to work on a given issue to the universe, it can’t hurt, right. 😁\nPhase 1: do not think about a clean Git history nor your reputation, just commit all the time\nNow, even if I might already open a\ndraft\nPR to signal my working on a given thing, I just do the thing and try to not think about looking stupid with 1,000 commits “try to make R CMD check happy”. I absolutely do not want to lose my work so I commit (with RStudio IDE tab) and push (with\ngert::git_push()\nor that same tab) regularly. In this phase, Git is merely my backup.\nPhase 2: clean up!\nThat’s the phase I used to never do\n1\nbut that I’m trying to consciously practice. I guess blogging about this will force me to keep doing it.\nIn the comments of my\nreading notes on Git in practice\n, one of my Git models,\nHugo Gruson\n2\n, recommended the post\n“Write Better Commits, Build Better Projects”\n. The kind of posts I used to think were for other people since I did not understand half of the Git words in it. 😉 (Have I mentioned reading a Git book was life-changing? 😅)\nBasically once you have your PR code ready, you have to try and create nice commits, in a nice order. It’s important both for the people that will have to review your code (which might even be just you in a few days for lack of collaborators), and for the people who might have to perform a\nGit bisect\n-ion or some other form of archeology on the code base later (again, this might be you).\nPart of the work is thinking about what a good set of commits might be.\nThen in practice I’ll use\nGit rebase -i\nto squash, reorder or even drop commits and to improve commit messages;\nGit reset --soft\nto remove changes from the Git history but not from the files, and then commit them incrementally in a smarter way than when I was in phase 1.\nGit push -f\nwhich is fine since my branch is mine only until I mark the PR as ready to review. 😈\nConclusion\nIn this post I explained how I now think as work in a branch as happening in two phases, one phase where Git is my backup, and one phase where I try to think more about code reviewers (for the PR) and code archeologists (for later when the PR is merged). I’m still very much learning so don’t think you’ll get perfect PRs from me just yet!\nAnd I was so embarrassed when a PR of mine was merged without being squashed.\n↩︎\nIf you’ve ever reviewed a PR by Hugo you have to know what I mean! Such good story-telling in commits!\n↩︎\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMaëlle's R blog on Maëlle Salmon's personal website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I seem to have at last entered my Git era. 🎉 Reading and applying Git in practice was probably the best thing I did for my upskilling this year. One Git workflow aspect I’ve finally realized is that it’s fine to have two phases of work in a...",
+      "meta_keywords": null,
+      "og_description": "I seem to have at last entered my Git era. 🎉 Reading and applying Git in practice was probably the best thing I did for my upskilling this year. One Git workflow aspect I’ve finally realized is that it’s fine to have two phases of work in a...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "The two phases of commits in a Git branch | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.8,
+      "sitemap_lastmod": "2023-12-07T00:00:00+00:00",
+      "twitter_description": "I seem to have at last entered my Git era. 🎉 Reading and applying Git in practice was probably the best thing I did for my upskilling this year. One Git workflow aspect I’ve finally realized is that it’s fine to have two phases of work in a...",
+      "twitter_title": "The two phases of commits in a Git branch | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/the-two-phases-of-commits-in-a-git-branch/",
+      "word_count": 755
+    }
+  }
+}

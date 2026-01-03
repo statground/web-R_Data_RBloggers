@@ -1,0 +1,183 @@
+{
+  "id": "9de22408f0826184579474f22f3d80aacb1247e6",
+  "url": "https://www.r-bloggers.com/2025/03/amending-the-git-commit-message-of-a-previous-commit-that-isnt-the-most-recent-in-github-desktop-without-performing-an-interactive-rebase/",
+  "created_at_utc": "2025-11-22T19:59:05Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "857270b3-043c-4189-a25e-40921a9474b0",
+    "created_at": "2025-11-22 19:59:05",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/03/amending-the-git-commit-message-of-a-previous-commit-that-isnt-the-most-recent-in-github-desktop-without-performing-an-interactive-rebase/",
+      "crawled_at": "2025-11-22T10:52:42.411274",
+      "external_links": [
+        {
+          "href": "https://remlapmot.github.io/post/2025/amend-commit-messages/",
+          "text": "R | Dr Tom Palmer"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/apps/desktop",
+          "text": "GitHub Desktop"
+        },
+        {
+          "href": "https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message",
+          "text": "GitHub documentation"
+        },
+        {
+          "href": "https://git-scm.com/",
+          "text": "Git"
+        },
+        {
+          "href": "https://remlapmot.github.io/post/2025/amend-commit-messages/#top",
+          "text": "top"
+        },
+        {
+          "href": "https://github.com/jesseduffield/lazygit",
+          "text": "Lazygit"
+        },
+        {
+          "href": "https://remlapmot.github.io/post/2025/amend-commit-messages/",
+          "text": "R | Dr Tom Palmer"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Amending the Git commit message of a previous commit (that isn’t the most recent) in GitHub Desktop without performing an interactive rebase | R-bloggers",
+      "images": [
+        {
+          "alt": "Screenshot of amending a commit in GitHub Desktop.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Screenshot of amending a commit in GitHub Desktop.",
+          "base64": null,
+          "src": "https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/01-right-click-amend-commit.png?w=450&ssl=1"
+        },
+        {
+          "alt": "Screenshot of squashing commits GitHub Desktop.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Screenshot of squashing commits GitHub Desktop.",
+          "base64": null,
+          "src": "https://i0.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/02-commit-to-amend.png?w=450&ssl=1"
+        },
+        {
+          "alt": "Screenshot of squashing commits GitHub Desktop.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Screenshot of squashing commits GitHub Desktop.",
+          "base64": null,
+          "src": "https://i2.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/06-squashing-commits.png?w=450&ssl=1"
+        },
+        {
+          "alt": "Screenshot of finalising squashed commit in GitHub Desktop.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Screenshot of finalising squashed commit in GitHub Desktop.",
+          "base64": null,
+          "src": "https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/07-new-commit-message.png?w=450&ssl=1"
+        },
+        {
+          "alt": "Screenshot of your amend Git history ready to the pushed to GitHub in GitHub Desktop.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Screenshot of your amend Git history ready to the pushed to GitHub in GitHub Desktop.",
+          "base64": null,
+          "src": "https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/08-final-state.png?w=450&ssl=1"
+        },
+        {
+          "alt": "Screenshot of starting to amend a commit message in the Lazygit TUI.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Screenshot of starting to amend a commit message in the Lazygit TUI.",
+          "base64": null,
+          "src": "https://i2.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/09-lazygit.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-dr-tom-palmer/",
+          "text": "R | Dr Tom Palmer"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391067 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Amending the Git commit message of a previous commit (that isn’t the most recent) in GitHub Desktop without performing an interactive rebase</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 7, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-dr-tom-palmer/\">R | Dr Tom Palmer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://remlapmot.github.io/post/2025/amend-commit-messages/\"> R | Dr Tom Palmer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h2 id=\"introduction\">Introduction</h2>\n<p>As R developers I think we can all agree that Git is hard. There won’t be many of us who at some time haven’t broken a Git repository in some way or other, I know that I have (several times … ahem).</p>\n<p>A task I sometimes need to achieve when working on a branch is amending a commit message. I use \n<a href=\"https://github.com/apps/desktop\" rel=\"nofollow\" target=\"_blank\">GitHub Desktop</a> to help me with Git, and I recommend it to all my students. If the commit you want to amend the message of is the most recent commit you can simply right click on it and select <em>Amend Commit…</em>.</p>\n<img alt=\"Screenshot of amending a commit in GitHub Desktop.\" data-lazy-src=\"https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/01-right-click-amend-commit.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of amending a commit in GitHub Desktop.\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/01-right-click-amend-commit.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<p>This is providing a user friendly interface to running</p>\n<pre>git commit --amend\n</pre>\n<p>in the terminal for us. This is all covered in the \n<a href=\"https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message\" rel=\"nofollow\" target=\"_blank\">GitHub documentation</a>.</p>\n<p>However, what if the commit is not the most recent. If your commits after your target commit don’t touch the same lines in the same file/s you could reorder your commits such that your target commit is the most recent and then right click and <em>Amend Commit…</em> again. However, what if you can’t easily or don’t want to reorder your commits. The proper answer is to perform an interactive rebase, however, I have a simple trick in GitHub Desktop to avoid this.</p>\n<h2 id=\"the-trick-squashing-an-empty-commit-onto-the-target-commit\">The trick: squashing an empty commit onto the target commit</h2>\n<p>GitHub Desktop allows us to squash to commits together. When it does this it allows us to amend the commit message of the resulting commit. Therefore, to achieve our goal of amending previous commit messages we need to:</p>\n<ul>\n<li>Identify the commit you want to amend the message of. Here I have made a typo and want to fix the message to say <em>Use test-rcpp.R</em></li>\n</ul>\n<img alt=\"Screenshot of squashing commits GitHub Desktop.\" data-lazy-src=\"https://i0.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/02-commit-to-amend.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of squashing commits GitHub Desktop.\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/02-commit-to-amend.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<ul>\n<li>\n<p>Create an empty commit</p>\n<p>For this you will need command line \n<a href=\"https://git-scm.com/\" rel=\"nofollow\" target=\"_blank\">Git</a> installed (GitHub Desktop has a version of Git bundled within it, so not everyone who has GitHub Desktop installed has Git installed separately). Run the following (you don’t have to include the message).</p>\n<pre>git commit --allow-empty -m \"Empty commit for purposes of trick\"\n</pre>\n</li>\n<li>\n<p>Drag and drop the empty commit onto your target commit. See the screenshot at the \n<a href=\"https://remlapmot.github.io/post/2025/amend-commit-messages/#top\" rel=\"nofollow\" target=\"_blank\">top</a> of this post.</p>\n</li>\n<li>\n<p>Enter your amended commit message and delete the text in the <em>Description</em> box.</p>\n</li>\n</ul>\n<img alt=\"Screenshot of squashing commits GitHub Desktop.\" data-lazy-src=\"https://i2.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/06-squashing-commits.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of squashing commits GitHub Desktop.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/06-squashing-commits.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<ul>\n<li>Click <em>Squash 2 Commits</em>.</li>\n</ul>\n<img alt=\"Screenshot of finalising squashed commit in GitHub Desktop.\" data-lazy-src=\"https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/07-new-commit-message.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of finalising squashed commit in GitHub Desktop.\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/07-new-commit-message.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<ul>\n<li>That’s it, we’re finished! You can now push your branch upto GitHub (or in my case in the screenshot force push because I had previously pushed this branch to the remote).</li>\n</ul>\n<img alt=\"Screenshot of your amend Git history ready to the pushed to GitHub in GitHub Desktop.\" data-lazy-src=\"https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/08-final-state.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of your amend Git history ready to the pushed to GitHub in GitHub Desktop.\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/08-final-state.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<h2 id=\"the-proper-method-performing-an-interactive-rebase\">The proper method: performing an interactive rebase</h2>\n<p>If you want to do achieve this the proper way or amend the contents of previous commits you’ll need to perform an interactive rebase. That is a little bit tricky to perform in the terminal, although there are lots of helpful YouTube videos and blogposts showing how to do it.</p>\n<p>If you ever need to do this I recommend using the \n<a href=\"https://github.com/jesseduffield/lazygit\" rel=\"nofollow\" target=\"_blank\">Lazygit</a> terminal user interface, which has the best interface to interactive rebasing I’ve seen. To start the process, navigate to the <em>Reflog</em> pane (by pressing <kbd>Tab</kbd> twice), then use your up and down arrows to select your target commit, and press <kbd>Shift</kbd>+<kbd>A</kbd>.</p>\n<img alt=\"Screenshot of starting to amend a commit message in the Lazygit TUI.\" data-lazy-src=\"https://i2.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/09-lazygit.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto;\"/><noscript><img alt=\"Screenshot of starting to amend a commit message in the Lazygit TUI.\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/remlapmot.github.io/post/2025/amend-commit-messages/img/09-lazygit.png?w=450&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n<h2 id=\"summary\">Summary</h2>\n<p>I have shown how to amend commit messages for commits that aren’t the most recent commit in GitHub Desktop without performing an interactive rebase.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://remlapmot.github.io/post/2025/amend-commit-messages/\"> R | Dr Tom Palmer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Amending the Git commit message of a previous commit (that isn’t the most recent) in GitHub Desktop without performing an interactive rebase\nPosted on\nMarch 7, 2025\nby\nR | Dr Tom Palmer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Dr Tom Palmer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nAs R developers I think we can all agree that Git is hard. There won’t be many of us who at some time haven’t broken a Git repository in some way or other, I know that I have (several times … ahem).\nA task I sometimes need to achieve when working on a branch is amending a commit message. I use\nGitHub Desktop\nto help me with Git, and I recommend it to all my students. If the commit you want to amend the message of is the most recent commit you can simply right click on it and select\nAmend Commit…\n.\nThis is providing a user friendly interface to running\ngit commit --amend\nin the terminal for us. This is all covered in the\nGitHub documentation\n.\nHowever, what if the commit is not the most recent. If your commits after your target commit don’t touch the same lines in the same file/s you could reorder your commits such that your target commit is the most recent and then right click and\nAmend Commit…\nagain. However, what if you can’t easily or don’t want to reorder your commits. The proper answer is to perform an interactive rebase, however, I have a simple trick in GitHub Desktop to avoid this.\nThe trick: squashing an empty commit onto the target commit\nGitHub Desktop allows us to squash to commits together. When it does this it allows us to amend the commit message of the resulting commit. Therefore, to achieve our goal of amending previous commit messages we need to:\nIdentify the commit you want to amend the message of. Here I have made a typo and want to fix the message to say\nUse test-rcpp.R\nCreate an empty commit\nFor this you will need command line\nGit\ninstalled (GitHub Desktop has a version of Git bundled within it, so not everyone who has GitHub Desktop installed has Git installed separately). Run the following (you don’t have to include the message).\ngit commit --allow-empty -m \"Empty commit for purposes of trick\"\nDrag and drop the empty commit onto your target commit. See the screenshot at the\ntop\nof this post.\nEnter your amended commit message and delete the text in the\nDescription\nbox.\nClick\nSquash 2 Commits\n.\nThat’s it, we’re finished! You can now push your branch upto GitHub (or in my case in the screenshot force push because I had previously pushed this branch to the remote).\nThe proper method: performing an interactive rebase\nIf you want to do achieve this the proper way or amend the contents of previous commits you’ll need to perform an interactive rebase. That is a little bit tricky to perform in the terminal, although there are lots of helpful YouTube videos and blogposts showing how to do it.\nIf you ever need to do this I recommend using the\nLazygit\nterminal user interface, which has the best interface to interactive rebasing I’ve seen. To start the process, navigate to the\nReflog\npane (by pressing\nTab\ntwice), then use your up and down arrows to select your target commit, and press\nShift\n+\nA\n.\nSummary\nI have shown how to amend commit messages for commits that aren’t the most recent commit in GitHub Desktop without performing an interactive rebase.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Dr Tom Palmer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introduction As R developers I think we can all agree that Git is hard. There won’t be many of us who at some time haven’t broken a Git repository in some way or other, I know that I have (several times … ahem). A task I sometimes ne...",
+      "meta_keywords": null,
+      "og_description": "Introduction As R developers I think we can all agree that Git is hard. There won’t be many of us who at some time haven’t broken a Git repository in some way or other, I know that I have (several times … ahem). A task I sometimes ne...",
+      "og_image": "https://remlapmot.github.io/post/2025/amend-commit-messages/img/01-right-click-amend-commit.png",
+      "og_title": "Amending the Git commit message of a previous commit (that isn’t the most recent) in GitHub Desktop without performing an interactive rebase | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introduction As R developers I think we can all agree that Git is hard. There won’t be many of us who at some time haven’t broken a Git repository in some way or other, I know that I have (several times … ahem). A task I sometimes ne...",
+      "twitter_title": "Amending the Git commit message of a previous commit (that isn’t the most recent) in GitHub Desktop without performing an interactive rebase | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/03/amending-the-git-commit-message-of-a-previous-commit-that-isnt-the-most-recent-in-github-desktop-without-performing-an-interactive-rebase/",
+      "word_count": 719
+    }
+  }
+}

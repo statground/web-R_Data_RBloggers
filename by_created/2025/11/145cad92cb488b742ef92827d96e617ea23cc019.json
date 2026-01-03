@@ -1,0 +1,223 @@
+{
+  "id": "145cad92cb488b742ef92827d96e617ea23cc019",
+  "url": "https://www.r-bloggers.com/2025/04/benchmarking-2/",
+  "created_at_utc": "2025-11-22T19:58:50Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "eea2b292-20e4-403a-a969-55212fbeb148",
+    "created_at": "2025-11-22 19:58:50",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/04/benchmarking-2/",
+      "crawled_at": "2025-11-22T10:50:31.154868",
+      "external_links": [
+        {
+          "href": "https://mlr-org.com/gallery/appliedml/2025-04-10-intro-benchmarking/",
+          "text": "mlr-org"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://mlr-org.com/gallery/appliedml/2025-04-10-intro-benchmarking/",
+          "text": "mlr-org"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Benchmarking | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAANBAMAAACJLlk1AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAMrsQRO+Jq81mdlTdgIQlWAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUCB1jYNQ1YAACVxDBkA4mO8HkRRDJcoFxFgMDm4KgKAMDR6KDNQMDrwpI3FdMAUgmMRxhZGDoZDjIzcBwmGHXBgYAM30KYRgI//EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?k"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/giuseppe-casalicchio/",
+          "text": "Giuseppe Casalicchio"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392095 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Benchmarking</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 13, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/giuseppe-casalicchio/\">Giuseppe Casalicchio</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://mlr-org.com/gallery/appliedml/2025-04-10-intro-benchmarking/\"> mlr-org</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level1\" id=\"goal\">\n<h1>Goal</h1>\n<p>We will go beyond resampling single learners. We will learn how to compare a large number of different models using benchmarking. In this exercise, we will not show you how to tune a learner. Instead, we will compare identical learners with different hyperparameters that are set manually. In particular, we will learn how to set up benchmarking instances in <code>mlr3</code>.</p>\n</section>\n<section class=\"level1\" id=\"german-credit-data\">\n<h1>German Credit Data</h1>\n<p>We create the task as for the resampling exercise: Again, we make us of our work horse: The German Credit Data set.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>library(mlr3verse)</pre>\n<div class=\"cell-output cell-output-stderr\">\n<pre>Lade nötiges Paket: mlr3</pre>\n</div>\n<pre>task = tsk(\"german_credit\")\nset.seed(20220801)</pre>\n</div>\n</section>\n<section class=\"level1\" id=\"exercise-benchmark-multiple-learners\">\n<h1>Exercise: Benchmark multiple learners</h1>\n<p>We are going to compare a range of different KNN models ranging from a <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> of 3 to 30. Furthermore, we want to assess the performance of a logistic regression.</p>\n<section class=\"level2\" id=\"create-the-learners\">\n<h2 class=\"anchored\" data-anchor-id=\"create-the-learners\">Create the learners</h2>\n<p>Create a logistic regression learner and many KNN learners. You should cover all KNNs with a <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> between 3 and 30. Save all learners in a list. Give the KNN learners an appropriate <code>id</code> that reflects their <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript>.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nUse the <code>lapply</code> function or a for-loop to create the list of learners with <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> between 3 and 30. Don’t forget to also include the logistic regression learner in your list (the <code>append</code> function might be helpful here to extend a created list). The <code>lrn</code> function has an argument <code>id</code> that can be used to change the name of the learner (here, you should give the KNN learners an appropriate <code>id</code> that reflects their value of <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> to be able to distinguish the learners).\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\nTo create a list of KNN learners, you can use this template: <code>lapply(..., function(i) lrn(\"classif.kknn\", k = i, id = paste0(\"classif.knn\", i))</code>\n</details>\n</section>\n<section class=\"level2\" id=\"create-the-resampling\">\n<h2 class=\"anchored\" data-anchor-id=\"create-the-resampling\">Create the resampling</h2>\n<p>Create a 4-fold cross-validation resampling. Create a list that only contains this resampling (this is needed later for the <code>benchmark_grid</code> function).</p>\n<details>\n<summary>\n<strong>Show Hint:</strong>\n</summary>\nSee the previous resampling use case.\n</details>\n</section>\n<section class=\"level2\" id=\"create-a-benchmarking-design\">\n<h2 class=\"anchored\" data-anchor-id=\"create-a-benchmarking-design\">Create a benchmarking design</h2>\n<p>To design your benchmark experiment consisting of tasks, learners and resampling technique, you can use the <code>benchmark_grid</code> function from <code>mlr3</code>. Here, we will use only one task and one resampling technique but multiple learners. Use the previously created task (german credit), learners (the list of many KNN learners and a single logistic regression learner) and resampling (4 fold CV) as input.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nAlso make sure that the task is included in a list as the arguments of the <code>benchmark_grid</code> function requires lists as input.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\n<code>benchmark_grid(...</code>\n</details>\n</section>\n<section class=\"level2\" id=\"run-the-benchmark\">\n<h2 class=\"anchored\" data-anchor-id=\"run-the-benchmark\">Run the benchmark</h2>\n<p>Now you still need to run all experiments specified in the design. Do so by using the <code>benchmark</code> function. This may take some time. (Still less than a minute.) Make sure to store the benchmark in a new object called <code>bmr</code> as you will reuse and inspect the benchmark result in the subsequent exercises.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\n</details>\n</section>\n<section class=\"level2\" id=\"evaluate-the-benchmark\">\n<h2 class=\"anchored\" data-anchor-id=\"evaluate-the-benchmark\">Evaluate the benchmark</h2>\n<p>Choose two appropriate metrics to evaluate the different learners performance on the task. Compute these metrics and also visualize at least one of them using the <code>autoplot</code> function.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nThe previously stored benchmark object has a method <code>$aggregate(...)</code> just like the objects created with the <code>resample</code> function from the previous use case.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\n<code>autoplot(..., measure = msr(...))</code>\n</details>\n</section>\n<section class=\"level2\" id=\"interpret-the-results\">\n<h2 class=\"anchored\" data-anchor-id=\"interpret-the-results\">Interpret the results</h2>\n<p>Interpret the plot. Which <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> seems to work well given the task? Would you prefer a logistic regression over a KNN learner? ::: {.content-hidden unless-meta=“params.showsolution”} ::: {.callout-note collapse=“true”} ### Solution A <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> of approx. 12 seems to perform best (in terms of accuracy). A too small <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> underfits, a large one overfits. Not knowing the true <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript>, a logistic regression seems preferable. If <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> is too small, the average performance of the logistic regression is much better. If <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> is too large, the variance of the performance is much higher compared to the logistic regression. However, a KNN an optimal <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k\"/></noscript> has a consistently high accuracy.</p>\n<p>::: ::: # Extra: Parallelize your efforts</p>\n<p>Benchmarking is <strong>embarassingly</strong> parallel. That means it is very easy to run the experiments of the benchmarking on different machines or cores. In many cases (not all!), this can significantly speed up computation time. We recommend to do this using the <code>future::plan</code> function when paralellizing <code>mlr3</code> benchmarks.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nYou need to use the <code>plan</code> function twice. Once to set up a <code>multisession</code>, then go back to <code>parallel</code>.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>library(future)\nplan(multisession)\n# your code                     \nplan(sequential)</pre>\n</div>\n</details>\n</section>\n</section>\n<section class=\"level1\" id=\"summary\">\n<h1>Summary</h1>\n<p>We learnt how to set benchmark in <code>mlr3</code>. While we only looked at a single task and a single resampling, the procedure easily applies to more complex benchmarks with many tasks. Additionally, we learnt how to understand benchmark results. Last but not least, you may have parallelized your benchmark if you still had some time left.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://mlr-org.com/gallery/appliedml/2025-04-10-intro-benchmarking/\"> mlr-org</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Benchmarking\nPosted on\nApril 13, 2025\nby\nGiuseppe Casalicchio\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nmlr-org\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nGoal\nWe will go beyond resampling single learners. We will learn how to compare a large number of different models using benchmarking. In this exercise, we will not show you how to tune a learner. Instead, we will compare identical learners with different hyperparameters that are set manually. In particular, we will learn how to set up benchmarking instances in\nmlr3\n.\nGerman Credit Data\nWe create the task as for the resampling exercise: Again, we make us of our work horse: The German Credit Data set.\nlibrary(mlr3verse)\nLade nötiges Paket: mlr3\ntask = tsk(\"german_credit\")\nset.seed(20220801)\nExercise: Benchmark multiple learners\nWe are going to compare a range of different KNN models ranging from a\nof 3 to 30. Furthermore, we want to assess the performance of a logistic regression.\nCreate the learners\nCreate a logistic regression learner and many KNN learners. You should cover all KNNs with a\nbetween 3 and 30. Save all learners in a list. Give the KNN learners an appropriate\nid\nthat reflects their\n.\nShow Hint 1:\nUse the\nlapply\nfunction or a for-loop to create the list of learners with\nbetween 3 and 30. Don’t forget to also include the logistic regression learner in your list (the\nappend\nfunction might be helpful here to extend a created list). The\nlrn\nfunction has an argument\nid\nthat can be used to change the name of the learner (here, you should give the KNN learners an appropriate\nid\nthat reflects their value of\nto be able to distinguish the learners).\nShow Hint 2:\nTo create a list of KNN learners, you can use this template:\nlapply(..., function(i) lrn(\"classif.kknn\", k = i, id = paste0(\"classif.knn\", i))\nCreate the resampling\nCreate a 4-fold cross-validation resampling. Create a list that only contains this resampling (this is needed later for the\nbenchmark_grid\nfunction).\nShow Hint:\nSee the previous resampling use case.\nCreate a benchmarking design\nTo design your benchmark experiment consisting of tasks, learners and resampling technique, you can use the\nbenchmark_grid\nfunction from\nmlr3\n. Here, we will use only one task and one resampling technique but multiple learners. Use the previously created task (german credit), learners (the list of many KNN learners and a single logistic regression learner) and resampling (4 fold CV) as input.\nShow Hint 1:\nAlso make sure that the task is included in a list as the arguments of the\nbenchmark_grid\nfunction requires lists as input.\nShow Hint 2:\nbenchmark_grid(...\nRun the benchmark\nNow you still need to run all experiments specified in the design. Do so by using the\nbenchmark\nfunction. This may take some time. (Still less than a minute.) Make sure to store the benchmark in a new object called\nbmr\nas you will reuse and inspect the benchmark result in the subsequent exercises.\nShow Hint 1:\nEvaluate the benchmark\nChoose two appropriate metrics to evaluate the different learners performance on the task. Compute these metrics and also visualize at least one of them using the\nautoplot\nfunction.\nShow Hint 1:\nThe previously stored benchmark object has a method\n$aggregate(...)\njust like the objects created with the\nresample\nfunction from the previous use case.\nShow Hint 2:\nautoplot(..., measure = msr(...))\nInterpret the results\nInterpret the plot. Which\nseems to work well given the task? Would you prefer a logistic regression over a KNN learner? ::: {.content-hidden unless-meta=“params.showsolution”} ::: {.callout-note collapse=“true”} ### Solution A\nof approx. 12 seems to perform best (in terms of accuracy). A too small\nunderfits, a large one overfits. Not knowing the true\n, a logistic regression seems preferable. If\nis too small, the average performance of the logistic regression is much better. If\nis too large, the variance of the performance is much higher compared to the logistic regression. However, a KNN an optimal\nhas a consistently high accuracy.\n::: ::: # Extra: Parallelize your efforts\nBenchmarking is\nembarassingly\nparallel. That means it is very easy to run the experiments of the benchmarking on different machines or cores. In many cases (not all!), this can significantly speed up computation time. We recommend to do this using the\nfuture::plan\nfunction when paralellizing\nmlr3\nbenchmarks.\nShow Hint 1:\nYou need to use the\nplan\nfunction twice. Once to set up a\nmultisession\n, then go back to\nparallel\n.\nShow Hint 2:\nlibrary(future)\nplan(multisession)\n# your code                     \nplan(sequential)\nSummary\nWe learnt how to set benchmark in\nmlr3\n. While we only looked at a single task and a single resampling, the procedure easily applies to more complex benchmarks with many tasks. Additionally, we learnt how to understand benchmark results. Last but not least, you may have parallelized your benchmark if you still had some time left.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nmlr-org\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Goal We will go beyond resampling single learners. We will learn how to compare a large number of different models using benchmarking. In this exercise, we will not show you how to tune a learner. Instead, we will compare identical learners with...",
+      "meta_keywords": null,
+      "og_description": "Goal We will go beyond resampling single learners. We will learn how to compare a large number of different models using benchmarking. In this exercise, we will not show you how to tune a learner. Instead, we will compare identical learners with...",
+      "og_image": "https://latex.codecogs.com/png.latex?k",
+      "og_title": "Benchmarking | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "Goal We will go beyond resampling single learners. We will learn how to compare a large number of different models using benchmarking. In this exercise, we will not show you how to tune a learner. Instead, we will compare identical learners with...",
+      "twitter_title": "Benchmarking | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/04/benchmarking-2/",
+      "word_count": 918
+    }
+  }
+}

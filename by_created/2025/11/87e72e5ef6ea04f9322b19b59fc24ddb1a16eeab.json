@@ -1,0 +1,149 @@
+{
+  "id": "87e72e5ef6ea04f9322b19b59fc24ddb1a16eeab",
+  "url": "https://www.r-bloggers.com/2009/12/because-its-friday-detecting-cylons/",
+  "created_at_utc": "2025-11-17T20:39:46Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "10c2a35d-514c-49bd-9990-c1950d57b861",
+    "created_at": "2025-11-17 20:39:46",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/because-its-friday-detecting-cylons/",
+      "crawled_at": "2025-11-17T10:12:28.097183",
+      "external_links": [
+        {
+          "href": "http://blog.revolution-computing.com/2009/12/because-its-friday-detecting-cylons.html",
+          "text": "Revolutions"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.imdb.com/title/tt0407362/",
+          "text": "Battlestar Galactica"
+        },
+        {
+          "href": "http://www.chrisbilder.com",
+          "text": "Chris Bilder"
+        },
+        {
+          "href": "http://www.springerlink.com/content/u68835118l83/?p=87cd63baf4fa42be963825415ce75d84&pi=0",
+          "text": "Chance Magazine"
+        },
+        {
+          "href": "http://statistics.unl.edu/faculty/bilder/grouptesting/Bilder_Chance/Chance_paper.pdf",
+          "text": "PDF preprint here"
+        },
+        {
+          "href": "http://statistics.unl.edu/faculty/bilder/grouptesting/",
+          "text": "group testing"
+        },
+        {
+          "href": "http://www.revolution-computing.com/community/r-project.php",
+          "text": "R"
+        },
+        {
+          "href": "http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-pi",
+          "text": null
+        },
+        {
+          "href": "http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-pi",
+          "text": null
+        },
+        {
+          "href": "http://statistics.unl.edu/faculty/bilder/grouptesting/Bilder_Chance/",
+          "text": "Supplementary Material for Human or Cylon?"
+        },
+        {
+          "href": "http://blog.revolution-computing.com/2009/12/because-its-friday-detecting-cylons.html",
+          "text": "Revolutions"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Because it’s Friday: Detecting Cylons | R-bloggers",
+      "images": [
+        {
+          "alt": "Cylon group testing",
+          "base64": null,
+          "src": "http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-800wi"
+        },
+        {
+          "alt": "Cylon group testing",
+          "base64": null,
+          "src": "http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-800wi"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/david-smith/",
+          "text": "David Smith"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-402 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Because it’s Friday: Detecting Cylons</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 11, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/david-smith/\">David Smith</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.revolution-computing.com/2009/12/because-its-friday-detecting-cylons.html\"> Revolutions</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p><a href=\"https://www.imdb.com/title/tt0407362/\" rel=\"nofollow\" target=\"_blank\">Battlestar Galactica</a> (Ronald D Moore’s reimagined version of the rather cheesy 70’s sci-fi series) has been my favourite TV series (of any genre) of recent years, so I’m especially excited that <a href=\"http://www.chrisbilder.com\" rel=\"nofollow\" target=\"_blank\">Chris Bilder</a> has given me the chance to blog about it. Chris, an Associate Professor in the Department of Statistics at the University of Nebraska-Lincoln, recently published an article in <a href=\"http://www.springerlink.com/content/u68835118l83/?p=87cd63baf4fa42be963825415ce75d84&amp;pi=0\" rel=\"nofollow\" target=\"_blank\">Chance Magazine</a> looking at how a statistical method may have resolved a critical plot point early in the series.</p>\n<p>Let’s set the scene. Dr Gaius Baltar, a brilliant scientist among a band of 50,000 human refugees from system of planets devastated by the evil robotic Cylon race, has a problem. Some Cylons look just like humans, and may have infiltrated the refugee population. Baltar has invented a blood test that can distinguish humans from Cylons, but it takes 11 hours to test a blood sample, and there’s only one testing machine. On screen, Baltar discusses the problem with his imaginary Cylon companion (look, it’s complicated, ok?) named Six:</p>\n<blockquote><strong>Gaius Baltar</strong>: 47,905 people in the fleet. There’s 47,905 blood samples. 11 hours to test each one for Cylon indicators.<p></p>\n<p><strong>Six</strong>: Well, that’ll take a while.</p>\n<p><strong>Gaius Baltar</strong>: 21,956 days.</p>\n<p><strong>Six</strong>: 60.1534 years. </p>\n<p><strong>Gaius Baltar</strong>: Well, now, let’s figure in a few hours for sleep here and there. We’ll call that an even 61, shall we?</p>\n</blockquote>\n<p>Chris explains in the article (you can find a <a href=\"http://statistics.unl.edu/faculty/bilder/grouptesting/Bilder_Chance/Chance_paper.pdf\" rel=\"nofollow\" target=\"_blank\">PDF preprint here</a>, if you don’t subscribe to <em>Chance</em>) that the problem might have been resolved by employing <a href=\"http://statistics.unl.edu/faculty/bilder/grouptesting/\" rel=\"nofollow\" target=\"_blank\">group testing</a>. Rather than testing each blood sample sequentially, Baltar could have mixed a number of blood samples together and tested the combined sample for Cylon characteristics. Assuming the number of Cylon agents in the fleet was small (turns out there were fewer than 10)  this method could rule out whole swaths of subjects with a single test, or conversely identify one or more suspect pools for individual testing. </p><p>Group Testing isn’t science-fiction, either: it’s used in the real world for testing diseases where the incidence of the disease is rare, but the cost (in time or resources) of testing is high. Group testing is used to screen blood donations for HIV and other viruses, for example.</p><p>Of course, the size of the group pooled together for the group test matters: too small, and you’re not getting much efficiency out of the group method; too large and you risk invalidating the test by making the active agent (Cylon cells in our case, I guess) too difficult to detect in a highly-diluted sample. In addition to choosing a group size, there are also various procedures you could choose to allocate subjects to groups and how to retest a “positive” group. Chris used <a href=\"http://www.revolution-computing.com/community/r-project.php\" rel=\"nofollow\" target=\"_blank\">R</a> to plot the amount of time (in years) it would have taken Baltar to detect all the cylons in the fleet using various methods and group sizes:</p><p><a href=\"http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-pi\" rel=\"nofollow\" style=\"display: inline;\" target=\"_blank\"><img alt=\"Cylon group testing\" border=\"0\" class=\"asset asset-image at-xid-6a010534b1db25970b01287646bf2c970c image-full jetpack-lazy-image\" data-lazy-src=\"http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-800wi?is-pending-load=1\" src=\"http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-800wi\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"Cylon group testing\"/><noscript><img alt=\"Cylon group testing\" border=\"0\" class=\"asset asset-image at-xid-6a010534b1db25970b01287646bf2c970c image-full\" src=\"http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-800wi\" title=\"Cylon group testing\"/></noscript></a></p><p><a href=\"http://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-pi\" rel=\"nofollow\" style=\"display: inline;\" target=\"_blank\"></a>Using the “Halving” procedure and a group size of 500 (and assuming 7 Cylons in the fleet), Baltar could have completed his testing in 101 days. In the series, Baltar abandons his testing assuming it could never have been completed. But Baltar was a nasty piece of work anyway, so who knows what he was <em>really</em> thinking?</p><p>Chris Bilder: <a href=\"http://statistics.unl.edu/faculty/bilder/grouptesting/Bilder_Chance/\" rel=\"nofollow\" target=\"_blank\">Supplementary Material for Human or Cylon?</a></p><p></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.revolution-computing.com/2009/12/because-its-friday-detecting-cylons.html\"> Revolutions</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Because it’s Friday: Detecting Cylons\nPosted on\nDecember 11, 2009\nby\nDavid Smith\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRevolutions\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBattlestar Galactica\n(Ronald D Moore’s reimagined version of the rather cheesy 70’s sci-fi series) has been my favourite TV series (of any genre) of recent years, so I’m especially excited that\nChris Bilder\nhas given me the chance to blog about it. Chris, an Associate Professor in the Department of Statistics at the University of Nebraska-Lincoln, recently published an article in\nChance Magazine\nlooking at how a statistical method may have resolved a critical plot point early in the series.\nLet’s set the scene. Dr Gaius Baltar, a brilliant scientist among a band of 50,000 human refugees from system of planets devastated by the evil robotic Cylon race, has a problem. Some Cylons look just like humans, and may have infiltrated the refugee population. Baltar has invented a blood test that can distinguish humans from Cylons, but it takes 11 hours to test a blood sample, and there’s only one testing machine. On screen, Baltar discusses the problem with his imaginary Cylon companion (look, it’s complicated, ok?) named Six:\nGaius Baltar\n: 47,905 people in the fleet. There’s 47,905 blood samples. 11 hours to test each one for Cylon indicators.\nSix\n: Well, that’ll take a while.\nGaius Baltar\n: 21,956 days.\nSix\n: 60.1534 years.\nGaius Baltar\n: Well, now, let’s figure in a few hours for sleep here and there. We’ll call that an even 61, shall we?\nChris explains in the article (you can find a\nPDF preprint here\n, if you don’t subscribe to\nChance\n) that the problem might have been resolved by employing\ngroup testing\n. Rather than testing each blood sample sequentially, Baltar could have mixed a number of blood samples together and tested the combined sample for Cylon characteristics. Assuming the number of Cylon agents in the fleet was small (turns out there were fewer than 10)  this method could rule out whole swaths of subjects with a single test, or conversely identify one or more suspect pools for individual testing.\nGroup Testing isn’t science-fiction, either: it’s used in the real world for testing diseases where the incidence of the disease is rare, but the cost (in time or resources) of testing is high. Group testing is used to screen blood donations for HIV and other viruses, for example.\nOf course, the size of the group pooled together for the group test matters: too small, and you’re not getting much efficiency out of the group method; too large and you risk invalidating the test by making the active agent (Cylon cells in our case, I guess) too difficult to detect in a highly-diluted sample. In addition to choosing a group size, there are also various procedures you could choose to allocate subjects to groups and how to retest a “positive” group. Chris used\nR\nto plot the amount of time (in years) it would have taken Baltar to detect all the cylons in the fleet using various methods and group sizes:\nUsing the “Halving” procedure and a group size of 500 (and assuming 7 Cylons in the fleet), Baltar could have completed his testing in 101 days. In the series, Baltar abandons his testing assuming it could never have been completed. But Baltar was a nasty piece of work anyway, so who knows what he was\nreally\nthinking?\nChris Bilder:\nSupplementary Material for Human or Cylon?\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRevolutions\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Battlestar Galactica (Ronald D Moore's reimagined version of the rather cheesy 70's sci-fi series) has been my favourite TV series (of any genre) of recent years, so I'm especially excited that Chris Bilder has given me the chance to blog about it. Chris, an Associate Professor in the Department of Statistics at the University of Nebraska-Lincoln, recently published an article in Chance Magazine looking at how a statistical method may have resolved a critical plot point early in the series. Let's set the scene. Dr Gaius Baltar, a brilliant scientist among a band of 50,000 human refugees from system of...",
+      "meta_keywords": null,
+      "og_description": "Battlestar Galactica (Ronald D Moore's reimagined version of the rather cheesy 70's sci-fi series) has been my favourite TV series (of any genre) of recent years, so I'm especially excited that Chris Bilder has given me the chance to blog about it. Chris, an Associate Professor in the Department of Statistics at the University of Nebraska-Lincoln, recently published an article in Chance Magazine looking at how a statistical method may have resolved a critical plot point early in the series. Let's set the scene. Dr Gaius Baltar, a brilliant scientist among a band of 50,000 human refugees from system of...",
+      "og_image": "https://revolution-computing.typepad.com/.a/6a010534b1db25970b01287646bf2c970c-800wi",
+      "og_title": "Because it’s Friday: Detecting Cylons | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.5,
+      "sitemap_lastmod": "2009-12-11T17:36:25+00:00",
+      "twitter_description": "Battlestar Galactica (Ronald D Moore's reimagined version of the rather cheesy 70's sci-fi series) has been my favourite TV series (of any genre) of recent years, so I'm especially excited that Chris Bilder has given me the chance to blog about it. Chris, an Associate Professor in the Department of Statistics at the University of Nebraska-Lincoln, recently published an article in Chance Magazine looking at how a statistical method may have resolved a critical plot point early in the series. Let's set the scene. Dr Gaius Baltar, a brilliant scientist among a band of 50,000 human refugees from system of...",
+      "twitter_title": "Because it’s Friday: Detecting Cylons | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/because-its-friday-detecting-cylons/",
+      "word_count": 707
+    }
+  }
+}

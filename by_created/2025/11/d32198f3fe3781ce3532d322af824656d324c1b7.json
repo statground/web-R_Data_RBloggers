@@ -1,0 +1,117 @@
+{
+  "id": "d32198f3fe3781ce3532d322af824656d324c1b7",
+  "url": "https://www.r-bloggers.com/2009/11/matlab-style-stem-plot-with-r/",
+  "created_at_utc": "2025-11-17T20:40:00Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "1c7d22d8-ff19-4d2b-8c57-b2283ca76f9e",
+    "created_at": "2025-11-17 20:40:00",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/11/matlab-style-stem-plot-with-r/",
+      "crawled_at": "2025-11-17T10:17:37.267955",
+      "external_links": [
+        {
+          "href": "http://mpastell.com/2009/11/09/matlab-style-stem-plot-with-r/",
+          "text": "mpastell.com » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://mpastell.com/2009/11/09/matlab-style-stem-plot-with-r/",
+          "text": "mpastell.com » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "MATLAB style stem plot with R | R-bloggers",
+      "images": [
+        {
+          "alt": "stem",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/11/stem1.png?w=450&ssl=1"
+        },
+        {
+          "alt": "stem",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/11/stem1.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/matti-pastell/",
+          "text": "Matti Pastell"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-3109 post type-post status-publish format-standard hentry category-r-bloggers tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">MATLAB style stem plot with R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 9, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/matti-pastell/\">Matti Pastell</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://mpastell.com/2009/11/09/matlab-style-stem-plot-with-r/\"> mpastell.com » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>Recently I wanted to plot an impulse response function with R and missed the MATLAB style stem plot for doing it. I couldn’t find an R function for it with a quick Google search so I made my own. So here is the function and a small example :<br/>\n<span id=\"more-127\"></span></p>\n<pre>\n#The function\nstem &lt;- function(x,y,pch=16,linecol=1,clinecol=1,...){\nif (missing(y)){\n    y = x\n    x = 1:length(x) }\n    plot(x,y,pch=pch,...)\n    for (i in 1:length(x)){\n       lines(c(x[i],x[i]), c(0,y[i]),col=linecol)\n    }\n    lines(c(x[1]-2,x[length(x)]+2), c(0,0),col=clinecol)\n}\n\n#An example\nx &lt;- seq(0, 2*pi, by = 0.2)\npar(mfrow=c(2,1))\nstem(x,sin(x), main = 'Default style')\nstem(x,sin(x),main='With MATLAB colors', col=4,linecol=4,clinecol=2)\n</pre>\n<p><span style=\"color: #000080;\"><img alt=\"stem\" class=\"alignnone size-full wp-image-130 jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/11/stem1.png?w=450&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/11/stem1.png?w=450&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"stem\"/><noscript><img alt=\"stem\" class=\"alignnone size-full wp-image-130\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/11/stem1.png?w=450&amp;ssl=1\" title=\"stem\"/></noscript><br/>\n</span></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://mpastell.com/2009/11/09/matlab-style-stem-plot-with-r/\"> mpastell.com » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+      "main_text": "MATLAB style stem plot with R\nPosted on\nNovember 9, 2009\nby\nMatti Pastell\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nmpastell.com » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nRecently I wanted to plot an impulse response function with R and missed the MATLAB style stem plot for doing it. I couldn’t find an R function for it with a quick Google search so I made my own. So here is the function and a small example :\n#The function\nstem <- function(x,y,pch=16,linecol=1,clinecol=1,...){\nif (missing(y)){\n    y = x\n    x = 1:length(x) }\n    plot(x,y,pch=pch,...)\n    for (i in 1:length(x)){\n       lines(c(x[i],x[i]), c(0,y[i]),col=linecol)\n    }\n    lines(c(x[1]-2,x[length(x)]+2), c(0,0),col=clinecol)\n}\n\n#An example\nx <- seq(0, 2*pi, by = 0.2)\npar(mfrow=c(2,1))\nstem(x,sin(x), main = 'Default style')\nstem(x,sin(x),main='With MATLAB colors', col=4,linecol=4,clinecol=2)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nmpastell.com » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR",
+      "meta_description": "Recently I wanted to plot an impulse response function with R and missed the MATLAB style stem plot for doing it. I couldn’t find an R function for it with a quick Google search so I made my own. So here is the function and a small example : #T...",
+      "meta_keywords": "r",
+      "og_description": "Recently I wanted to plot an impulse response function with R and missed the MATLAB style stem plot for doing it. I couldn’t find an R function for it with a quick Google search so I made my own. So here is the function and a small example : #T...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/11/stem1.png",
+      "og_title": "MATLAB style stem plot with R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.4,
+      "sitemap_lastmod": "2011-05-11T21:25:59+00:00",
+      "twitter_description": "Recently I wanted to plot an impulse response function with R and missed the MATLAB style stem plot for doing it. I couldn’t find an R function for it with a quick Google search so I made my own. So here is the function and a small example : #T...",
+      "twitter_title": "MATLAB style stem plot with R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/11/matlab-style-stem-plot-with-r/",
+      "word_count": 286
+    }
+  }
+}

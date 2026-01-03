@@ -1,0 +1,143 @@
+{
+  "id": "f6c7a6b4c47f925e295c682be6dfcb59fc766fa0",
+  "url": "https://www.r-bloggers.com/2023/10/palindromic-phrase/",
+  "created_at_utc": "2025-11-17T20:39:32Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "64e31614-cf09-40df-858e-f4dfc75f6341",
+    "created_at": "2025-11-17 20:39:32",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/10/palindromic-phrase/",
+      "crawled_at": "2025-11-17T10:06:34.494708",
+      "external_links": [
+        {
+          "href": "https://medium.com/number-around-us/palindromic-phrase-e9c9a747f545",
+          "text": "Numbers around us - Medium"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.linkedin.com/in/excelbi/",
+          "text": "ExcelBI"
+        },
+        {
+          "href": "https://www.linkedin.com/feed/update/urn:li:activity:7120619593609416704/",
+          "text": "puzzle"
+        },
+        {
+          "href": "https://lnkd.in/dNgFi-br",
+          "text": "file"
+        },
+        {
+          "href": "https://medium.com/number-around-us/palindromic-phrase-e9c9a747f545",
+          "text": "Palindromic Phrase"
+        },
+        {
+          "href": "https://medium.com/number-around-us",
+          "text": "Numbers around us"
+        },
+        {
+          "href": "https://medium.com/number-around-us/palindromic-phrase-e9c9a747f545",
+          "text": "Numbers around us - Medium"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Palindromic Phrase | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/cdn-images-1.medium.com/max/1024/1*nk-aBJhDRWTlJvWsaoeczQ.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:application/octet-stream;base64,R0lGODlhAQABAO+/vQAA77+977+977+9AAAAIe+/vQQBAAAAACwAAAAAAQABAAACAkQBADs=",
+          "src": "https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=e9c9a747f545"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/numbers-around-us/",
+          "text": "Numbers around us"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-379329 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Palindromic Phrase</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 22, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/numbers-around-us/\">Numbers around us</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://medium.com/number-around-us/palindromic-phrase-e9c9a747f545\"> Numbers around us - Medium</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><h4>Excel BI’s Excel Challenge #307 — solved in R</h4><figure><img alt=\"\" data-lazy-src=\"https://i1.wp.com/cdn-images-1.medium.com/max/1024/1*nk-aBJhDRWTlJvWsaoeczQ.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/cdn-images-1.medium.com/max/1024/1*nk-aBJhDRWTlJvWsaoeczQ.png?w=578&amp;ssl=1\"/></noscript></figure><h3>Defining the Puzzle:</h3><p>Today <a href=\"https://www.linkedin.com/in/excelbi/\" rel=\"nofollow\" target=\"_blank\">ExcelBI</a> gave us another <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7120619593609416704/\" rel=\"nofollow\" target=\"_blank\">puzzle</a>, this time based on string manipulation rather than numbers.</p><p>List all Palindromic phrases.<br/>A Palindromic phrase is that which is same when read from backwards. When you are reading from backwards, only English alphabets need to be considered. Don’t consider spaces, questions marks or any other character which is not English alphabet.<br/>Ex. No lemon, no melon</p><h3>Loading Data from Excel:</h3><p>As usual our host gave us column of data to check, and column with correct solution. Let get this <a href=\"https://lnkd.in/dNgFi-br\" rel=\"nofollow\" target=\"_blank\">file </a>and read it.</p><pre>library(tidyverse)\nlibrary(readxl)\nlibrary(stringi)\n\ninput = read_excel(“Palindromic Phrase.xlsx”, range = “A1:A10”)\ntest = read_excel(“Palindromic Phrase.xlsx”, range = “B1:B6”)</pre><p>What we have to do is: clean phrase from punctuation and whitespaces, then unified case of letters (I will make them all lower). Finally we have to check if read backwards phrase is exactly the same.</p><h3>Approach 1: Tidyverse with purrr</h3><pre>result = input %&gt;%\n mutate(phrase = Phrase %&gt;% \n str_remove_all(“[[:punct:]]”) %&gt;%\n str_remove_all(“ “) %&gt;%\n str_to_lower(),\n is_palindromic = phrase == stri_reverse(phrase)) %&gt;%\n filter(is_palindromic) %&gt;%\n select(`Answer Expected` = Phrase) \n</pre><h3>Approach 2: Base R</h3><pre>result_base &lt;- subset(input, {\n phrase &lt;- tolower(gsub(“[[:punct:]]|\\\\s”, “”, Phrase))\n is_palindromic &lt;- phrase == stri_reverse(phrase)\n is_palindromic\n})\n</pre><h3>Approach 3: Data.table</h3><pre># Convert to data.table\ninput_dt = setDT(input)\n\n\ninput_dt[, phrase := tolower(gsub(“[[:punct:]]|\\\\s”, “”, Phrase))]\ninput_dt[, is_palindromic := phrase == stringi::stri_reverse(phrase)]\nresult_dt &lt;- input_dt[is_palindromic == TRUE, .(`Answer Expected` = Phrase)]</pre><h3>Validating Our Solutions:</h3><pre>identical(test, result)\n#&gt; [1] TRUE\n\nidentical(test$`Answer Expected`, result_base$Phrase)\n#&gt; [1] TRUE\n\nidentical(test$`Answer Expected`, result_dt$`Answer Expected`)\n#&gt; [1] TRUE</pre><p>If you like my publications or have your own ways to solve those puzzles in R, Python or whatever tool you choose, let me know.</p><img alt=\"\" data-lazy-src=\"https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=e9c9a747f545\" height=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" loading=\"lazy\" src=\"https://medium.com/_/stat?event=post.clientViewed&amp;referrerSource=full_rss&amp;postId=e9c9a747f545\" width=\"1\"/></noscript><hr/><p><a href=\"https://medium.com/number-around-us/palindromic-phrase-e9c9a747f545\" rel=\"nofollow\" target=\"_blank\">Palindromic Phrase</a> was originally published in <a href=\"https://medium.com/number-around-us\" rel=\"nofollow\" target=\"_blank\">Numbers around us</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://medium.com/number-around-us/palindromic-phrase-e9c9a747f545\"> Numbers around us - Medium</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Palindromic Phrase\nPosted on\nOctober 22, 2023\nby\nNumbers around us\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nNumbers around us - Medium\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nExcel BI’s Excel Challenge #307 — solved in R\nDefining the Puzzle:\nToday\nExcelBI\ngave us another\npuzzle\n, this time based on string manipulation rather than numbers.\nList all Palindromic phrases.\nA Palindromic phrase is that which is same when read from backwards. When you are reading from backwards, only English alphabets need to be considered. Don’t consider spaces, questions marks or any other character which is not English alphabet.\nEx. No lemon, no melon\nLoading Data from Excel:\nAs usual our host gave us column of data to check, and column with correct solution. Let get this\nfile\nand read it.\nlibrary(tidyverse)\nlibrary(readxl)\nlibrary(stringi)\n\ninput = read_excel(“Palindromic Phrase.xlsx”, range = “A1:A10”)\ntest = read_excel(“Palindromic Phrase.xlsx”, range = “B1:B6”)\nWhat we have to do is: clean phrase from punctuation and whitespaces, then unified case of letters (I will make them all lower). Finally we have to check if read backwards phrase is exactly the same.\nApproach 1: Tidyverse with purrr\nresult = input %>%\n mutate(phrase = Phrase %>% \n str_remove_all(“[[:punct:]]”) %>%\n str_remove_all(“ “) %>%\n str_to_lower(),\n is_palindromic = phrase == stri_reverse(phrase)) %>%\n filter(is_palindromic) %>%\n select(`Answer Expected` = Phrase)\nApproach 2: Base R\nresult_base <- subset(input, {\n phrase <- tolower(gsub(“[[:punct:]]|\\\\s”, “”, Phrase))\n is_palindromic <- phrase == stri_reverse(phrase)\n is_palindromic\n})\nApproach 3: Data.table\n# Convert to data.table\ninput_dt = setDT(input)\n\ninput_dt[, phrase := tolower(gsub(“[[:punct:]]|\\\\s”, “”, Phrase))]\ninput_dt[, is_palindromic := phrase == stringi::stri_reverse(phrase)]\nresult_dt <- input_dt[is_palindromic == TRUE, .(`Answer Expected` = Phrase)]\nValidating Our Solutions:\nidentical(test, result)\n#> [1] TRUE\n\nidentical(test$`Answer Expected`, result_base$Phrase)\n#> [1] TRUE\n\nidentical(test$`Answer Expected`, result_dt$`Answer Expected`)\n#> [1] TRUE\nIf you like my publications or have your own ways to solve those puzzles in R, Python or whatever tool you choose, let me know.\nPalindromic Phrase\nwas originally published in\nNumbers around us\non Medium, where people are continuing the conversation by highlighting and responding to this story.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nNumbers around us - Medium\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Excel BI’s Excel Challenge #307 — solved in RDefining the Puzzle:Today ExcelBI gave us another puzzle, this time based on string manipulation rather than numbers.List all Palindromic phrases.A Palindromic phrase is that which is same when read from bac...",
+      "meta_keywords": null,
+      "og_description": "Excel BI’s Excel Challenge #307 — solved in RDefining the Puzzle:Today ExcelBI gave us another puzzle, this time based on string manipulation rather than numbers.List all Palindromic phrases.A Palindromic phrase is that which is same when read from bac...",
+      "og_image": "https://cdn-images-1.medium.com/max/1024/1*nk-aBJhDRWTlJvWsaoeczQ.png",
+      "og_title": "Palindromic Phrase | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.2,
+      "sitemap_lastmod": "2023-10-22T16:42:14+00:00",
+      "twitter_description": "Excel BI’s Excel Challenge #307 — solved in RDefining the Puzzle:Today ExcelBI gave us another puzzle, this time based on string manipulation rather than numbers.List all Palindromic phrases.A Palindromic phrase is that which is same when read from bac...",
+      "twitter_title": "Palindromic Phrase | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/10/palindromic-phrase/",
+      "word_count": 449
+    }
+  }
+}

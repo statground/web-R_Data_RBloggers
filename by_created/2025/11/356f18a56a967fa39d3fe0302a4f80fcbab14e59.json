@@ -1,0 +1,131 @@
+{
+  "id": "356f18a56a967fa39d3fe0302a4f80fcbab14e59",
+  "url": "https://www.r-bloggers.com/2025/08/the-birthday-problem/",
+  "created_at_utc": "2025-11-22T19:57:51Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "96bfd85d-3c37-41b4-a9de-5764b0c962c4",
+    "created_at": "2025-11-22 19:57:51",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/08/the-birthday-problem/",
+      "crawled_at": "2025-11-22T10:44:07.408915",
+      "external_links": [
+        {
+          "href": "https://r.iresmi.net/posts/2025/birthdays/",
+          "text": "r.iresmi.net"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.flickr.com/photos/rosiemrogers/7363436746/",
+          "text": null
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Birthday_problem",
+          "text": "birthday problem"
+        },
+        {
+          "href": "https://r.iresmi.net/posts/2025/birthdays/",
+          "text": "r.iresmi.net"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "The birthday problem | R-bloggers",
+      "images": [
+        {
+          "alt": "A photo of a group of festive people",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "A photo of a group of festive people",
+          "base64": null,
+          "src": "https://i0.wp.com/r.iresmi.net/posts/2025/birthdays/images/7363436746_c080b9aeb4_c.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": "A line plot of probabilities that at least two people share the same birthday",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "A line plot of probabilities that at least two people share the same birthday",
+          "base64": null,
+          "src": "https://i1.wp.com/r.iresmi.net/posts/2025/birthdays/index_files/figure-html/fig-plot-1.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/michael/",
+          "text": "Michael"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394926 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">The birthday problem</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 22, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/michael/\">Michael</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://r.iresmi.net/posts/2025/birthdays/\"> r.iresmi.net</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><a href=\"https://www.flickr.com/photos/rosiemrogers/7363436746/\" rel=\"nofollow\" target=\"_blank\"><img alt=\"A photo of a group of festive people\" class=\"preview-image img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/r.iresmi.net/posts/2025/birthdays/images/7363436746_c080b9aeb4_c.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A photo of a group of festive people\" class=\"preview-image img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/r.iresmi.net/posts/2025/birthdays/images/7363436746_c080b9aeb4_c.jpg?w=578&amp;ssl=1\"/></noscript></a></p>\n<figcaption>Birthday bundle – CC-BY-NC-SA by Rosie Rogers</figcaption>\n</figure>\n</div>\n<p>The <a href=\"https://en.wikipedia.org/wiki/Birthday_problem\" rel=\"nofollow\" target=\"_blank\">birthday problem</a> is a classic counter-intuitive mathematical result concerning the probability that two people, in a group, have the same birthday. The formal solution is too complex for me but I can use simulations to find out…</p>\n<section class=\"level2\" id=\"config\">\n<h2 class=\"anchored\" data-anchor-id=\"config\">Config</h2>\n<div class=\"cell\">\n<pre># parameters --------------------------------------------------------------\n\nmax_group_size &lt;- 60 # we work on groups from 1 to max_group_size individuals\niterations &lt;- 1e5    # for a good precision use more than 1e4\ncores &lt;- 10          # number of CPU cores to use\n\n# config ------------------------------------------------------------------\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tibble)\nlibrary(furrr)\nlibrary(purrr)\n\nplan(multisession, workers = cores)</pre>\n</div>\n</section>\n<section class=\"level2\" id=\"utilities\">\n<h2 class=\"anchored\" data-anchor-id=\"utilities\">Utilities</h2>\n<p>Two functions to find birthday date collision in a simulated group and repeat this simulation for different group size.</p>\n<div class=\"cell\">\n<pre>#' detect a collision in a group of simulated birthdays\n#' \n#' bissextiles years are taken into account\n#'\n#' @param group_size (int) : group size\n#' @returns (lgl) : is there at least 2 people with the same birthday date ?\nbirthday_collision &lt;- function(group_size) {\n  days &lt;- sample(c(365, 366), size = 1, prob = c(.7575, .2425))\n  birthdays &lt;- sample(1:days, group_size, replace = TRUE)\n  collisions &lt;- group_size - length(unique(birthdays))\n  return(collisions &gt; 0)\n}\n\n#' simulate many groups and compute the collision probability\n#'\n#' @param group_size (int) : group size\n#' @param iterations (int) : number of simulations to run\n#' @returns (dbl) : collision probability\ncollision_prob &lt;- function(group_size, iterations = 1e5) {\n  res &lt;- vector(length = iterations) |&gt; \n    map_lgl(\\(x) birthday_collision(group_size))\n  return(sum(res) / length(res))\n}\n\n#' Convert scientific number to plotmath expression\n#'\n#' @param x (num) : a number in scientific format like 1e5\n#'\n#' @returns : plotmath expresion\nscientific_10 &lt;- function(x) {  \n  parse(text = gsub(\"e\\\\+*\", \" %*% 10^\", scales::scientific_format()(x))) }</pre>\n</div>\n<p>Let’s run it! (in parallell)</p>\n<div class=\"cell\">\n<pre># simulate for groups with different size\ngroups &lt;- 1:max_group_size |&gt; \n  future_map_dbl(\\(t) collision_prob(t, iterations),\n                 .options = furrr_options(seed = TRUE)) |&gt; \n  imap(\\(x, y) tibble(group_size = y, proba = x)) |&gt; \n  list_rbind() \n\n# find the 50% limit\npcent50 &lt;- groups |&gt; \n  filter(proba &gt;= .5) |&gt; \n  slice_head(n = 1)</pre>\n</div>\n<p>And plot it…</p>\n<div class=\"cell\">\n<pre>groups |&gt; \n  ggplot(aes(group_size, proba)) +\n  geom_step(direction = \"hv\") +\n  geom_segment(data = pcent50, aes(xend = group_size, yend = 0), linetype = 3) +\n  geom_segment(data = pcent50, aes(xend = 0, yend = proba), linetype = 3) +\n  annotate(geom = \"text\", x = pcent50[[1, \"group_size\"]], y = -.02, \n           size = 3,\n           label = pcent50[[1, \"group_size\"]]) +\n  scale_x_continuous(breaks = scales::breaks_pretty()) +\n  scale_y_continuous(breaks = scales::breaks_pretty(),\n                     labels = scales::label_percent(decimal.mark = \",\",\n                                                    suffix = \" %\")) +\n  labs(title = \"Probability that at least two people share the same birthday\",\n       subtitle = \"in a group\",\n       x = \"group size\",\n       y = \"probablity\",\n       caption = bquote(atop(\"https://r.iresmi.net/\", \n                             simulations~with~\n                               .(parse(text = scientific_10(iterations))[[1]])~\n                               iterations))) +\n  theme_minimal() +\n  theme(plot.caption = element_text(size = 6),\n        plot.background = element_rect(fill = \"white\"))</pre>\n<div class=\"cell-output-display\">\n<div alt=\"A line plot of probabilities that at least two people share the same birthday\" class=\"quarto-float quarto-figure quarto-figure-center anchored\" id=\"fig-plot\">\n<figure class=\"quarto-float quarto-float-fig figure\">\n<div aria-describedby=\"fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\n<img alt=\"A line plot of probabilities that at least two people share the same birthday\" class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/r.iresmi.net/posts/2025/birthdays/index_files/figure-html/fig-plot-1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:100.0%\"/><noscript><img alt=\"A line plot of probabilities that at least two people share the same birthday\" class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/r.iresmi.net/posts/2025/birthdays/index_files/figure-html/fig-plot-1.png?w=578&amp;ssl=1\" style=\"width:100.0%\"/></noscript>\n</div>\n<figcaption class=\"quarto-float-caption-bottom quarto-float-caption quarto-float-fig\" id=\"fig-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\nFigure 1: Simulation results\n</figcaption>\n</figure>\n</div>\n</div>\n</div>\n<p>We can see that a group of 23 people is enough to get a 50% probability to have at least two people with the same birthday date.</p>\n<!-- -->\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://r.iresmi.net/posts/2025/birthdays/\"> r.iresmi.net</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "The birthday problem\nPosted on\nAugust 22, 2025\nby\nMichael\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nr.iresmi.net\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBirthday bundle – CC-BY-NC-SA by Rosie Rogers\nThe\nbirthday problem\nis a classic counter-intuitive mathematical result concerning the probability that two people, in a group, have the same birthday. The formal solution is too complex for me but I can use simulations to find out…\nConfig\n# parameters --------------------------------------------------------------\n\nmax_group_size <- 60 # we work on groups from 1 to max_group_size individuals\niterations <- 1e5    # for a good precision use more than 1e4\ncores <- 10          # number of CPU cores to use\n\n# config ------------------------------------------------------------------\n\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tibble)\nlibrary(furrr)\nlibrary(purrr)\n\nplan(multisession, workers = cores)\nUtilities\nTwo functions to find birthday date collision in a simulated group and repeat this simulation for different group size.\n#' detect a collision in a group of simulated birthdays\n#' \n#' bissextiles years are taken into account\n#'\n#' @param group_size (int) : group size\n#' @returns (lgl) : is there at least 2 people with the same birthday date ?\nbirthday_collision <- function(group_size) {\n  days <- sample(c(365, 366), size = 1, prob = c(.7575, .2425))\n  birthdays <- sample(1:days, group_size, replace = TRUE)\n  collisions <- group_size - length(unique(birthdays))\n  return(collisions > 0)\n}\n\n#' simulate many groups and compute the collision probability\n#'\n#' @param group_size (int) : group size\n#' @param iterations (int) : number of simulations to run\n#' @returns (dbl) : collision probability\ncollision_prob <- function(group_size, iterations = 1e5) {\n  res <- vector(length = iterations) |> \n    map_lgl(\\(x) birthday_collision(group_size))\n  return(sum(res) / length(res))\n}\n\n#' Convert scientific number to plotmath expression\n#'\n#' @param x (num) : a number in scientific format like 1e5\n#'\n#' @returns : plotmath expresion\nscientific_10 <- function(x) {  \n  parse(text = gsub(\"e\\\\+*\", \" %*% 10^\", scales::scientific_format()(x))) }\nLet’s run it! (in parallell)\n# simulate for groups with different size\ngroups <- 1:max_group_size |> \n  future_map_dbl(\\(t) collision_prob(t, iterations),\n                 .options = furrr_options(seed = TRUE)) |> \n  imap(\\(x, y) tibble(group_size = y, proba = x)) |> \n  list_rbind() \n\n# find the 50% limit\npcent50 <- groups |> \n  filter(proba >= .5) |> \n  slice_head(n = 1)\nAnd plot it…\ngroups |> \n  ggplot(aes(group_size, proba)) +\n  geom_step(direction = \"hv\") +\n  geom_segment(data = pcent50, aes(xend = group_size, yend = 0), linetype = 3) +\n  geom_segment(data = pcent50, aes(xend = 0, yend = proba), linetype = 3) +\n  annotate(geom = \"text\", x = pcent50[[1, \"group_size\"]], y = -.02, \n           size = 3,\n           label = pcent50[[1, \"group_size\"]]) +\n  scale_x_continuous(breaks = scales::breaks_pretty()) +\n  scale_y_continuous(breaks = scales::breaks_pretty(),\n                     labels = scales::label_percent(decimal.mark = \",\",\n                                                    suffix = \" %\")) +\n  labs(title = \"Probability that at least two people share the same birthday\",\n       subtitle = \"in a group\",\n       x = \"group size\",\n       y = \"probablity\",\n       caption = bquote(atop(\"https://r.iresmi.net/\", \n                             simulations~with~\n                               .(parse(text = scientific_10(iterations))[[1]])~\n                               iterations))) +\n  theme_minimal() +\n  theme(plot.caption = element_text(size = 6),\n        plot.background = element_rect(fill = \"white\"))\nFigure 1: Simulation results\nWe can see that a group of 23 people is enough to get a 50% probability to have at least two people with the same birthday date.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nr.iresmi.net\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Birthday bundle – CC-BY-NC-SA by Rosie Rogers The birthday problem is a classic counter-intuitive mathematical result concerning the probability that two people, in a group, have the same birthday. The formal solution is too complex for me ...",
+      "meta_keywords": null,
+      "og_description": "Birthday bundle – CC-BY-NC-SA by Rosie Rogers The birthday problem is a classic counter-intuitive mathematical result concerning the probability that two people, in a group, have the same birthday. The formal solution is too complex for me ...",
+      "og_image": "https://r.iresmi.net/posts/2025/birthdays/images/7363436746_c080b9aeb4_c.jpg",
+      "og_title": "The birthday problem | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.9,
+      "sitemap_lastmod": null,
+      "twitter_description": "Birthday bundle – CC-BY-NC-SA by Rosie Rogers The birthday problem is a classic counter-intuitive mathematical result concerning the probability that two people, in a group, have the same birthday. The formal solution is too complex for me ...",
+      "twitter_title": "The birthday problem | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/08/the-birthday-problem/",
+      "word_count": 571
+    }
+  }
+}

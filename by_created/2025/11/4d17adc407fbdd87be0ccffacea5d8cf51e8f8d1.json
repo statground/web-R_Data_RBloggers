@@ -1,0 +1,114 @@
+{
+  "id": "4d17adc407fbdd87be0ccffacea5d8cf51e8f8d1",
+  "url": "https://www.r-bloggers.com/2009/12/times-series-methods-versus-recurrence-relations/",
+  "created_at_utc": "2025-11-17T20:39:46Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "8beab0ae-557a-49f8-89be-4b5f9d2968f8",
+    "created_at": "2025-11-17 20:39:46",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/times-series-methods-versus-recurrence-relations/",
+      "crawled_at": "2025-11-17T10:12:34.508071",
+      "external_links": [
+        {
+          "href": "http://www.johnmyleswhite.com/notebook/2009/12/10/times-series-methods-versus-recurrence-relations/",
+          "text": "John Myles White: Die Sudelbücher » Statistics"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Autoregressive_model",
+          "text": "AR(p) model"
+        },
+        {
+          "href": "http://www.johndcook.com/blog/2009/12/07/word-frequencies/",
+          "text": "John D. Cook"
+        },
+        {
+          "href": "http://www.johnmyleswhite.com/notebook/2009/12/10/times-series-methods-versus-recurrence-relations/",
+          "text": "John Myles White: Die Sudelbücher » Statistics"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Times Series Methods versus Recurrence Relations | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/john-myles-white/",
+          "text": "John Myles White"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/statistics/",
+          "text": "statistics"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-302 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Times Series Methods versus Recurrence Relations</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 10, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/10/times-series-methods-versus-recurrence-relations/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>This term, I’ve been sitting in on Rene Carmona’s course on Modern Regression and Time Series Analysis. Much of the material on regression covered in the course was familiar to me already, but I’ve never felt that I had a real command of times series analysis methods.</p>\n<p>When Carmona defined the <a href=\"https://en.wikipedia.org/wiki/Autoregressive_model\" rel=\"nofollow\" target=\"_blank\">AR(p) model</a> in class a few weeks ago, it struck me that, though I’d seen the defining equation several times before, I’d never realized earlier that the AR(p) model subsumes all possible linear recurrence relations. Also, the AR(p) model has the nice property that, if you already know the correct value of p, fitting the AR(p) model can be done with an ordinary least squares regression.</p>\n<p>With these observations in mind, I decided to see how well I could derive the formulas for simple recurrence relations from a small data set. The results I got on my 2.4 GHz Intel Core 2 Duo MacBook are a useful case study in the dangers of naively using the default methods for fitting AR(p) models, as well as a particularly clear example of the inevitable inaccuracies in floating point arithmetic.</p>\n<p>I hope <a href=\"http://www.johndcook.com/blog/2009/12/07/word-frequencies/\" rel=\"nofollow\" target=\"_blank\">John D. Cook</a> will forgive me for using the Fibonacci sequence as my example. While I totally agree with John that the Fibonacci sequence is not the ideal object to study if you’re interested in day-to-day programming tasks, its simplicity makes it perfect for understanding how recurrence relations work.</p>\n<p>The workhouse for fitting an AR(p) model in R is, predictably, the <code>ar</code> function. To see how well it would work for my purposes, I stored the first 15 Fibonacci terms in a vector and ran <code>ar</code> using all of its defaults settings. Here’s the results:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653164\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n</pre></td><td class=\"code\" id=\"p3653code164\"><pre>fibs &lt;- c(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610)\n \nar(fibs)\n \n#Call:\n#ar(x = fibs)\n#\n#Coefficients:\n#     1  \n#0.5922  \n#\n#Order selected 1  sigma^2 estimated as  21590</pre></td></tr></table></div>\n<p>These results are pretty terrible: the order for the model is chosen to be 1, which is clearly wrong. Given the wrong order, it’s no surprise that the estimated coefficient is off, though it’s strange that the result is so far off from the ideal coefficient for an order 1 model, which is <code>(1 + sqrt(5)) / 2</code>, or 1.618034. Thankfully, you can force <code>ar</code> to use the order you want by overriding some of the defaults:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653165\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n</pre></td><td class=\"code\" id=\"p3653code165\"><pre>ar(fibs, order.max = 2, aic = FALSE)\n \n#Call:\n#ar(x = fibs, aic = FALSE, order.max = 2)\n#\n#Coefficients:\n#      1        2  \n# 0.6108  -0.0315  \n#\n#Order selected 2  sigma^2 estimated as  23366</pre></td></tr></table></div>\n<p>You choose your preferred order using <code>order.max</code>, but this will only be an upper bound if you allow the function to use AIC scores to determine the order of the AR(p) model.</p>\n<p>To figure out what was going wrong, I decided to use <code>lm</code> instead of <code>ar</code>. To do that, I needed subsets of my input data:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653166\"><td class=\"line_numbers\"><pre>1\n2\n3\n</pre></td><td class=\"code\" id=\"p3653code166\"><pre>fibs.1 &lt;- fibs[1:(length(fibs) - 2)]\nfibs.2 &lt;- fibs[2:(length(fibs) - 1)]\nfibs.3 &lt;- fibs[3:length(fibs)]</pre></td></tr></table></div>\n<p>Given these subset inputs, the call to <code>lm</code> is simple:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653167\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n</pre></td><td class=\"code\" id=\"p3653code167\"><pre>lm(fibs.3 ~ fibs.1 + fibs.2)\n \n#Call:\n#lm(formula = fibs.3 ~ fibs.1 + fibs.2)\n#\n#Coefficients:\n#(Intercept)       fibs.1       fibs.2  \n#  2.365e-14    1.000e+00    1.000e+00</pre></td></tr></table></div>\n<p>As you can see, <code>lm</code> gets the right results, more or less. The non-zero intercept value is unfortunate, but suggests how easily floating point errors slip into these calculations.</p>\n<p>Having gotten good results with <code>lm</code>, I decided to review <code>ar</code> a bit more: this led me to the conclusion that I should try using the <code>method = 'ols'</code> setting instead of <code>method = 'yule-walker'</code>.</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653168\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n</pre></td><td class=\"code\" id=\"p3653code168\"><pre>ar(fibs, order.max = 2, method = 'ols')\n \n#Call:\n#ar(x = fibs, order.max = 2, method = \"ols\")\n#\n#Coefficients:\n#1  2  \n#1  1  \n#\n#Intercept: 106.4 (6.715e-07) \n#\n#Order selected 2  sigma^2 estimated as  6.276e-17</pre></td></tr></table></div>\n<p>This clearly works, though I find the output line about the intercept term confusing. I have to say that I’m a little surprised that the Yule-Walker method gives such bad results in this example: I’m not sure yet whether this is caused by the small sample size, a data set that can be fit without any error, intrinsic problems with the method, or something else I can’t even conceive of.</p>\n<p>Knowing that <code>ar</code> could work if the OLS method was enforced, I decided to try letting the AIC have its way again after reintroducing this method level constraint:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653169\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n</pre></td><td class=\"code\" id=\"p3653code169\"><pre>ar(fibs, method = 'ols')\n \n#Call:\n#ar(x = fibs, method = \"ols\")\n#\n#Coefficients:\n#1  2  \n#1  1  \n#\n#Intercept: 106.4 (6.715e-07) \n#\n#Order selected 2  sigma^2 estimated as  6.276e-17 \n#Warning message:\n#In ar.ols(x, aic = aic, order.max = order.max, na.action = na.action,  :\n#  model order: 3singularities in the computation of the projection\n#  matrixresults are only valid up to model order2</pre></td></tr></table></div>\n<p>As you can see, this also works, though there’s an error that I assume is a result of having input data that can be perfectly fit. In short, I think the take away lesson is that you can easily find the formula for recurrence relations using <code>ar</code> as long as you make sure you use ordinary least squares for fitting the various possible models.</p>\n<p>Just to confirm that the OLS method would also find the ideal coefficient if forced to use an order 1 model, I ran <code>ar</code> one last time:</p>\n<div class=\"wp_codebox\"><table><tr id=\"p3653170\"><td class=\"line_numbers\"><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n</pre></td><td class=\"code\" id=\"p3653code170\"><pre>ar(fibs, order.max = 1, method = 'ols')\n \n#Call:\n#ar(x = fibs, order.max = 1, method = \"ols\")\n#\n#Coefficients:\n#     1  \n#1.6182  \n#\n#Intercept: 65.74 (0.05852) \n#\n#Order selected 1  sigma^2 estimated as  0.04309</pre></td></tr></table></div>\n<p>That result is satisfying and further confirms that the problems I had at the start are entirely attributable to using the Yule-Walker method with this data set.</p>\n<p>[EDIT 12.11.2009: Replaced unfortunate term 'sparse' with non-overloaded word 'small'.]</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/10/times-series-methods-versus-recurrence-relations/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+      "main_text": "Times Series Methods versus Recurrence Relations\nPosted on\nDecember 10, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJohn Myles White: Die Sudelbücher » Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis term, I’ve been sitting in on Rene Carmona’s course on Modern Regression and Time Series Analysis. Much of the material on regression covered in the course was familiar to me already, but I’ve never felt that I had a real command of times series analysis methods.\nWhen Carmona defined the\nAR(p) model\nin class a few weeks ago, it struck me that, though I’d seen the defining equation several times before, I’d never realized earlier that the AR(p) model subsumes all possible linear recurrence relations. Also, the AR(p) model has the nice property that, if you already know the correct value of p, fitting the AR(p) model can be done with an ordinary least squares regression.\nWith these observations in mind, I decided to see how well I could derive the formulas for simple recurrence relations from a small data set. The results I got on my 2.4 GHz Intel Core 2 Duo MacBook are a useful case study in the dangers of naively using the default methods for fitting AR(p) models, as well as a particularly clear example of the inevitable inaccuracies in floating point arithmetic.\nI hope\nJohn D. Cook\nwill forgive me for using the Fibonacci sequence as my example. While I totally agree with John that the Fibonacci sequence is not the ideal object to study if you’re interested in day-to-day programming tasks, its simplicity makes it perfect for understanding how recurrence relations work.\nThe workhouse for fitting an AR(p) model in R is, predictably, the\nar\nfunction. To see how well it would work for my purposes, I stored the first 15 Fibonacci terms in a vector and ran\nar\nusing all of its defaults settings. Here’s the results:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nfibs <- c(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610)\n \nar(fibs)\n \n#Call:\n#ar(x = fibs)\n#\n#Coefficients:\n#     1  \n#0.5922  \n#\n#Order selected 1  sigma^2 estimated as  21590\nThese results are pretty terrible: the order for the model is chosen to be 1, which is clearly wrong. Given the wrong order, it’s no surprise that the estimated coefficient is off, though it’s strange that the result is so far off from the ideal coefficient for an order 1 model, which is\n(1 + sqrt(5)) / 2\n, or 1.618034. Thankfully, you can force\nar\nto use the order you want by overriding some of the defaults:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\nar(fibs, order.max = 2, aic = FALSE)\n \n#Call:\n#ar(x = fibs, aic = FALSE, order.max = 2)\n#\n#Coefficients:\n#      1        2  \n# 0.6108  -0.0315  \n#\n#Order selected 2  sigma^2 estimated as  23366\nYou choose your preferred order using\norder.max\n, but this will only be an upper bound if you allow the function to use AIC scores to determine the order of the AR(p) model.\nTo figure out what was going wrong, I decided to use\nlm\ninstead of\nar\n. To do that, I needed subsets of my input data:\n1\n2\n3\nfibs.1 <- fibs[1:(length(fibs) - 2)]\nfibs.2 <- fibs[2:(length(fibs) - 1)]\nfibs.3 <- fibs[3:length(fibs)]\nGiven these subset inputs, the call to\nlm\nis simple:\n1\n2\n3\n4\n5\n6\n7\n8\nlm(fibs.3 ~ fibs.1 + fibs.2)\n \n#Call:\n#lm(formula = fibs.3 ~ fibs.1 + fibs.2)\n#\n#Coefficients:\n#(Intercept)       fibs.1       fibs.2  \n#  2.365e-14    1.000e+00    1.000e+00\nAs you can see,\nlm\ngets the right results, more or less. The non-zero intercept value is unfortunate, but suggests how easily floating point errors slip into these calculations.\nHaving gotten good results with\nlm\n, I decided to review\nar\na bit more: this led me to the conclusion that I should try using the\nmethod = 'ols'\nsetting instead of\nmethod = 'yule-walker'\n.\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nar(fibs, order.max = 2, method = 'ols')\n \n#Call:\n#ar(x = fibs, order.max = 2, method = \"ols\")\n#\n#Coefficients:\n#1  2  \n#1  1  \n#\n#Intercept: 106.4 (6.715e-07) \n#\n#Order selected 2  sigma^2 estimated as  6.276e-17\nThis clearly works, though I find the output line about the intercept term confusing. I have to say that I’m a little surprised that the Yule-Walker method gives such bad results in this example: I’m not sure yet whether this is caused by the small sample size, a data set that can be fit without any error, intrinsic problems with the method, or something else I can’t even conceive of.\nKnowing that\nar\ncould work if the OLS method was enforced, I decided to try letting the AIC have its way again after reintroducing this method level constraint:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nar(fibs, method = 'ols')\n \n#Call:\n#ar(x = fibs, method = \"ols\")\n#\n#Coefficients:\n#1  2  \n#1  1  \n#\n#Intercept: 106.4 (6.715e-07) \n#\n#Order selected 2  sigma^2 estimated as  6.276e-17 \n#Warning message:\n#In ar.ols(x, aic = aic, order.max = order.max, na.action = na.action,  :\n#  model order: 3singularities in the computation of the projection\n#  matrixresults are only valid up to model order2\nAs you can see, this also works, though there’s an error that I assume is a result of having input data that can be perfectly fit. In short, I think the take away lesson is that you can easily find the formula for recurrence relations using\nar\nas long as you make sure you use ordinary least squares for fitting the various possible models.\nJust to confirm that the OLS method would also find the ideal coefficient if forced to use an order 1 model, I ran\nar\none last time:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nar(fibs, order.max = 1, method = 'ols')\n \n#Call:\n#ar(x = fibs, order.max = 1, method = \"ols\")\n#\n#Coefficients:\n#     1  \n#1.6182  \n#\n#Intercept: 65.74 (0.05852) \n#\n#Order selected 1  sigma^2 estimated as  0.04309\nThat result is satisfying and further confirms that the problems I had at the start are entirely attributable to using the Yule-Walker method with this data set.\n[EDIT 12.11.2009: Replaced unfortunate term 'sparse' with non-overloaded word 'small'.]\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJohn Myles White: Die Sudelbücher » Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+      "meta_description": "This term, I’ve been sitting in on Rene Carmona’s course on Modern Regression and Time Series Analysis. Much of the material on regression covered in the course was familiar to me already, but I’ve never felt that I had a real command of times series analysis methods. When Carmona defined the AR(p) model in class [...]",
+      "meta_keywords": "statistics",
+      "og_description": "This term, I’ve been sitting in on Rene Carmona’s course on Modern Regression and Time Series Analysis. Much of the material on regression covered in the course was familiar to me already, but I’ve never felt that I had a real command of times series analysis methods. When Carmona defined the AR(p) model in class [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Times Series Methods versus Recurrence Relations | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.1,
+      "sitemap_lastmod": "2009-12-11T03:07:46+00:00",
+      "twitter_description": "This term, I’ve been sitting in on Rene Carmona’s course on Modern Regression and Time Series Analysis. Much of the material on regression covered in the course was familiar to me already, but I’ve never felt that I had a real command of times series analysis methods. When Carmona defined the AR(p) model in class [...]",
+      "twitter_title": "Times Series Methods versus Recurrence Relations | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/times-series-methods-versus-recurrence-relations/",
+      "word_count": 1223
+    }
+  }
+}

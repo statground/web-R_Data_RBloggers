@@ -1,0 +1,121 @@
+{
+  "id": "60b320f5da2fc259a7107f602706055fd1b58fa1",
+  "url": "https://www.r-bloggers.com/2009/09/adjusting-correlations-for-reliability-attenuation-formula/",
+  "created_at_utc": "2025-11-17T20:40:18Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "25b21e32-28de-4497-80d5-e2fd1df33ce6",
+    "created_at": "2025-11-17 20:40:18",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/adjusting-correlations-for-reliability-attenuation-formula/",
+      "crawled_at": "2025-11-17T10:24:02.520549",
+      "external_links": [
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/09/adjusting-correlations-for-reliability.html",
+          "text": "Jeromy Anglim's Blog: Psychology and Statistics"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.sagepub.com/upm-data/4869_Kline_Chapter_5_Classical_Test_Theory.pdf",
+          "text": "Classical Test Theory"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Correction_for_attenuation",
+          "text": "Here it is on Wikipedia"
+        },
+        {
+          "href": "http://personality-project.org/r/html/correct.cor.html",
+          "text": "details see the help"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/09/adjusting-correlations-for-reliability.html",
+          "text": "Jeromy Anglim's Blog: Psychology and Statistics"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Adjusting Correlations for Reliability | Attenuation Formula | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-6015904608512186494?l=jeromyanglim.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-6015904608512186494?l=jeromyanglim.blogspot.com"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jeromy-anglim/",
+          "text": "Jeromy Anglim"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-543 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Adjusting Correlations for Reliability | Attenuation Formula</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 28, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jeromy-anglim/\">Jeromy Anglim</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jeromyanglim.blogspot.com/2009/09/adjusting-correlations-for-reliability.html\"> Jeromy Anglim's Blog: Psychology and Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->This post discusses ways of adjusting correlations for reliability.<br/><br/><a name=\"more\"></a><br/><a href=\"http://www.sagepub.com/upm-data/4869_Kline_Chapter_5_Classical_Test_Theory.pdf\" rel=\"nofollow\" target=\"_blank\">Classical Test Theory</a> states that an Observed variable is True Score plus Error. The true score variable is latent. In psychology theoretical interest typically relates more to the latent than the observed variable. How can you estimate the correlation between two latent variables?<br/><br/><b>The correction for attenuation formula:</b><br/><br/><ul><li><b>rxy / sqrt(rxx * ryy)</b></li><li>Or in words: The disattenuated correlation is the raw correlation between x and y (rxy) divided by the square root of the product of the reliability of x (rxx) and the reliability of y (ryy).</li><li>See Page 130 of Murphy, K. R. &amp; Davidshofer, C. O. (1988). Psychological Testing: Principles and Applications.</li><li><a href=\"https://en.wikipedia.org/wiki/Correction_for_attenuation\" rel=\"nofollow\" target=\"_blank\">Here it is on Wikipedia</a></li></ul><br/><b>In R:</b><br/>The<span style=\"font-family: 'Courier New', Courier, monospace;\"> psych</span> package has the following function which will return a correlation matrix of corrected correlations. For the<a href=\"http://personality-project.org/r/html/correct.cor.html\" rel=\"nofollow\" target=\"_blank\"> details see the help</a>.<br/><span style=\"font-family: 'Courier New', Courier, monospace;\">correct.cor(x, y)</span><br/>“Raw correlations below the diagonal, reliabilities on the diagonal, disattenuated above the diagonal.”<br/><br/><b>Structural Equation Modelling:</b><br/>A major motivation for doing Structural Equation Modelling is to estimate parameters (e.g., correlations and regression coefficients) after adjusting for reliability of measurement. You can either specify the reliability of measurement explicitly or you can estimate the reliability based on the indicators used.<br/><br/><b>Output:</b><br/>It can sometimes be nice to show a correlation matrix with reliability adjusted correlations in the upper diagonal and unadjusted correlations in the lower diagonal. The correct.cor function in the psych package provides this output.<br/><b><br/></b><br/><b>Comments on Assessing Variable Importance in Multiple Regression:</b><br/>If you are trying to assess the relative importance of a set of predictors in a multiple regression, it is problematic if the predictors differ in their reliability. The predictors with larger reliability will appear better than other predictors partially because of differences in reliability.<br/>In this situation, it is desirable to design a study where all measures are reliable and equally so. SEM provides a good option if the data is already collected and the measures differ in reliability.<div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-6015904608512186494?l=jeromyanglim.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-6015904608512186494?l=jeromyanglim.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-6015904608512186494?l=jeromyanglim.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jeromyanglim.blogspot.com/2009/09/adjusting-correlations-for-reliability.html\"> Jeromy Anglim's Blog: Psychology and Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Adjusting Correlations for Reliability | Attenuation Formula\nPosted on\nSeptember 28, 2009\nby\nJeromy Anglim\nin Uncategorized | 0 Comments\n[This article was first published on\nJeromy Anglim's Blog: Psychology and Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis post discusses ways of adjusting correlations for reliability.\nClassical Test Theory\nstates that an Observed variable is True Score plus Error. The true score variable is latent. In psychology theoretical interest typically relates more to the latent than the observed variable. How can you estimate the correlation between two latent variables?\nThe correction for attenuation formula:\nrxy / sqrt(rxx * ryy)\nOr in words: The disattenuated correlation is the raw correlation between x and y (rxy) divided by the square root of the product of the reliability of x (rxx) and the reliability of y (ryy).\nSee Page 130 of Murphy, K. R. & Davidshofer, C. O. (1988). Psychological Testing: Principles and Applications.\nHere it is on Wikipedia\nIn R:\nThe\npsych\npackage has the following function which will return a correlation matrix of corrected correlations. For the\ndetails see the help\n.\ncorrect.cor(x, y)\n“Raw correlations below the diagonal, reliabilities on the diagonal, disattenuated above the diagonal.”\nStructural Equation Modelling:\nA major motivation for doing Structural Equation Modelling is to estimate parameters (e.g., correlations and regression coefficients) after adjusting for reliability of measurement. You can either specify the reliability of measurement explicitly or you can estimate the reliability based on the indicators used.\nOutput:\nIt can sometimes be nice to show a correlation matrix with reliability adjusted correlations in the upper diagonal and unadjusted correlations in the lower diagonal. The correct.cor function in the psych package provides this output.\nComments on Assessing Variable Importance in Multiple Regression:\nIf you are trying to assess the relative importance of a set of predictors in a multiple regression, it is problematic if the predictors differ in their reliability. The predictors with larger reliability will appear better than other predictors partially because of differences in reliability.\nIn this situation, it is desirable to design a study where all measures are reliable and equally so. SEM provides a good option if the data is already collected and the measures differ in reliability.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJeromy Anglim's Blog: Psychology and Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "This post discusses ways of adjusting correlations for reliability.Classical Test Theory states that an Observed variable is True Score plus Error. The true score variable is latent. In psychology theoretical interest typically relates more to the late...",
+      "meta_keywords": null,
+      "og_description": "This post discusses ways of adjusting correlations for reliability.Classical Test Theory states that an Observed variable is True Score plus Error. The true score variable is latent. In psychology theoretical interest typically relates more to the late...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/8909074830238091680-6015904608512186494?l=jeromyanglim.blogspot.com",
+      "og_title": "Adjusting Correlations for Reliability | Attenuation Formula | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.4,
+      "sitemap_lastmod": "2010-09-06T20:56:12+00:00",
+      "twitter_description": "This post discusses ways of adjusting correlations for reliability.Classical Test Theory states that an Observed variable is True Score plus Error. The true score variable is latent. In psychology theoretical interest typically relates more to the late...",
+      "twitter_title": "Adjusting Correlations for Reliability | Attenuation Formula | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/adjusting-correlations-for-reliability-attenuation-formula/",
+      "word_count": 479
+    }
+  }
+}

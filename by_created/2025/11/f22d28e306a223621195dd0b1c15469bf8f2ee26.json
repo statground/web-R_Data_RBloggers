@@ -1,0 +1,134 @@
+{
+  "id": "f22d28e306a223621195dd0b1c15469bf8f2ee26",
+  "url": "https://www.r-bloggers.com/2025/04/ai-generated-code-comes-with-security-risks/",
+  "created_at_utc": "2025-11-22T19:58:51Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "eba68b40-6508-4003-8461-f47afa1a6e77",
+    "created_at": "2025-11-22 19:58:51",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/04/ai-generated-code-comes-with-security-risks/",
+      "crawled_at": "2025-11-22T10:50:34.667096",
+      "external_links": [
+        {
+          "href": "https://f.briatte.org/r/ai-generated-code-security-risks",
+          "text": "R / Notes"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+          "text": "AI-generated"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/ChatGPT",
+          "text": "ChatGPT"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Large_language_model",
+          "text": "Large Language Models"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Sandbox_(computer_security)",
+          "text": "sandboxed"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Kike",
+          "text": "kike"
+        },
+        {
+          "href": "https://www.jstatsoft.org/article/view/v055i07",
+          "text": "possible"
+        },
+        {
+          "href": "https://www.theregister.com/2025/04/12/ai_code_suggestions_sabotage_supply_chain/",
+          "text": "It is already happening."
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Attack_vector",
+          "text": "attack"
+        },
+        {
+          "href": "https://f.briatte.org/r/ai-generated-code-security-risks",
+          "text": "R / Notes"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "AI-generated code comes with security risks | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/franois-fbriatte-org/",
+          "text": "Françoisn -[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391887 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">AI-generated code comes with security risks</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 13, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/franois-fbriatte-org/\">Françoisn - <span class=\"__cf_email__\" data-cfemail=\"37517755455e5643435219584550\">[email protected]</span></a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://f.briatte.org/r/ai-generated-code-security-risks\"> R / Notes</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>More and more students are using <a href=\"https://en.wikipedia.org/wiki/Artificial_intelligence\" rel=\"nofollow\" target=\"_blank\">AI-generated</a> code in their studies, without necessarily understanding the security risks that this entails. This has consequences for users such as students learning how to code in R.</p>\n<h1>How AI-generated code happens</h1>\n<p>Generative AI services such as <a href=\"https://en.wikipedia.org/wiki/ChatGPT\" rel=\"nofollow\" target=\"_blank\">ChatGPT</a> use <a href=\"https://en.wikipedia.org/wiki/Large_language_model\" rel=\"nofollow\" target=\"_blank\">Large Language Models</a> to generate computer code. These models are ‘trained’ against a dataset of <strong>publicly available code</strong>.</p>\n<p>Many users of generative AI do not seem fully aware of what ‘publicly available code’ might contain, and therefore do not really seem aware, in turn, of the security risks that come with executing AI-generated code.</p>\n<p>Using generative AI services in a learning environment such as academia raises many concerns. Security is only one of them.</p>\n<h1>Where the security risk lies</h1>\n<p><strong>Programming languages like R are not <a href=\"https://en.wikipedia.org/wiki/Sandbox_(computer_security)\" rel=\"nofollow\" target=\"_blank\">sandboxed</a>.</strong> This means that these languages can execute malicious instructions such as ‘erase every image on the hard drive of that laptop,’ or ‘replace all occurrences of “Jewish” in that text with “<a href=\"https://en.wikipedia.org/wiki/Kike\" rel=\"nofollow\" target=\"_blank\">kike</a>”.’</p>\n<p>Sandboxing the execution of R code is <a href=\"https://www.jstatsoft.org/article/view/v055i07\" rel=\"nofollow\" target=\"_blank\">possible</a>, but this is not how R runs by default.</p>\n<h1>The risk is real and already active</h1>\n<p>Just like human languages have already been ‘poisoned’ in various ways, some of the computer code that make up the public codebase on which Large Language Models are trained has already been ‘poisoned’ in various ways.</p>\n<p>One of the ways that this has happened is through software packages. <strong>It is very easy to bundle harmful or malicious code into a software package</strong>, and then to give it a name that resembles the name of a legitimate software package.</p>\n<p>Executing R code that contains such a package will pose a security threat to the user, equivalent to that of opening emails or attachments sent by unknown sources. The consequences can be relatively innocuous, or extremely serious.</p>\n<p>Both AI-generated code and inattentive users can be misled into referring to these harmful or malicious software packages into their own code. The vulnerability will be triggered when the code is executed.</p>\n<p>This scenario is not a view of the future. <strong><a href=\"https://www.theregister.com/2025/04/12/ai_code_suggestions_sabotage_supply_chain/\" rel=\"nofollow\" target=\"_blank\">It is already happening.</a></strong></p>\n<h1>Real-world example threat</h1>\n<p>Even a user like myself, who has learnt how to code in R for research purposes, can very easily write up a malicious software package.</p>\n<p>An example of such a software package might do the following:</p>\n<ol>\n<li>Scan all text files on disk for credit card information</li>\n<li>Hide that information in a website address</li>\n<li>Automatically open a Web browser and point it to that address</li>\n<li>Collect the credit card information server-side</li>\n<li>Delete as many files as possible on the hard drive</li>\n</ol>\n<p>The steps above can be executed without the user noticing at all, or might execute in part or in full before the user can stop them from happening.</p>\n<p><strong>Privacy and security breaches of the sort are very easy to implement,</strong> and have been implemented in virtually all programming languages.</p>\n<p>The risk is of course not limited to AI-generated code. Executing computer code from any untrusted source can lead to the same issues.</p>\n<h1>How to minimise the risk</h1>\n<p>R users should always check where their packages come from.</p>\n<p>R users who use AI-generated code should be even more careful, and should also <strong>warn other users that their code was at least in part AI-generated.</strong></p>\n<hr/>\n<p>It goes without saying that I have never, and will never, design the kind of <a href=\"https://en.wikipedia.org/wiki/Attack_vector\" rel=\"nofollow\" target=\"_blank\">attack</a> described in this note.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://f.briatte.org/r/ai-generated-code-security-risks\"> R / Notes</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "AI-generated code comes with security risks\nPosted on\nApril 13, 2025\nby\nFrançoisn -\n[email protected]\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR / Notes\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMore and more students are using\nAI-generated\ncode in their studies, without necessarily understanding the security risks that this entails. This has consequences for users such as students learning how to code in R.\nHow AI-generated code happens\nGenerative AI services such as\nChatGPT\nuse\nLarge Language Models\nto generate computer code. These models are ‘trained’ against a dataset of\npublicly available code\n.\nMany users of generative AI do not seem fully aware of what ‘publicly available code’ might contain, and therefore do not really seem aware, in turn, of the security risks that come with executing AI-generated code.\nUsing generative AI services in a learning environment such as academia raises many concerns. Security is only one of them.\nWhere the security risk lies\nProgramming languages like R are not\nsandboxed\n.\nThis means that these languages can execute malicious instructions such as ‘erase every image on the hard drive of that laptop,’ or ‘replace all occurrences of “Jewish” in that text with “\nkike\n”.’\nSandboxing the execution of R code is\npossible\n, but this is not how R runs by default.\nThe risk is real and already active\nJust like human languages have already been ‘poisoned’ in various ways, some of the computer code that make up the public codebase on which Large Language Models are trained has already been ‘poisoned’ in various ways.\nOne of the ways that this has happened is through software packages.\nIt is very easy to bundle harmful or malicious code into a software package\n, and then to give it a name that resembles the name of a legitimate software package.\nExecuting R code that contains such a package will pose a security threat to the user, equivalent to that of opening emails or attachments sent by unknown sources. The consequences can be relatively innocuous, or extremely serious.\nBoth AI-generated code and inattentive users can be misled into referring to these harmful or malicious software packages into their own code. The vulnerability will be triggered when the code is executed.\nThis scenario is not a view of the future.\nIt is already happening.\nReal-world example threat\nEven a user like myself, who has learnt how to code in R for research purposes, can very easily write up a malicious software package.\nAn example of such a software package might do the following:\nScan all text files on disk for credit card information\nHide that information in a website address\nAutomatically open a Web browser and point it to that address\nCollect the credit card information server-side\nDelete as many files as possible on the hard drive\nThe steps above can be executed without the user noticing at all, or might execute in part or in full before the user can stop them from happening.\nPrivacy and security breaches of the sort are very easy to implement,\nand have been implemented in virtually all programming languages.\nThe risk is of course not limited to AI-generated code. Executing computer code from any untrusted source can lead to the same issues.\nHow to minimise the risk\nR users should always check where their packages come from.\nR users who use AI-generated code should be even more careful, and should also\nwarn other users that their code was at least in part AI-generated.\nIt goes without saying that I have never, and will never, design the kind of\nattack\ndescribed in this note.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR / Notes\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "More and more students are using AI-generated code in their studies, without necessarily understanding the security risks that this entails. This has consequences for users such as students learning how to code in R. How AI-generated code happens Gen...",
+      "meta_keywords": null,
+      "og_description": "More and more students are using AI-generated code in their studies, without necessarily understanding the security risks that this entails. This has consequences for users such as students learning how to code in R. How AI-generated code happens Gen...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "AI-generated code comes with security risks | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "More and more students are using AI-generated code in their studies, without necessarily understanding the security risks that this entails. This has consequences for users such as students learning how to code in R. How AI-generated code happens Gen...",
+      "twitter_title": "AI-generated code comes with security risks | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/04/ai-generated-code-comes-with-security-risks/",
+      "word_count": 714
+    }
+  }
+}

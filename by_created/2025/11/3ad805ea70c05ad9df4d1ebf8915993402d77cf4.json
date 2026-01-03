@@ -1,0 +1,113 @@
+{
+  "id": "3ad805ea70c05ad9df4d1ebf8915993402d77cf4",
+  "url": "https://www.r-bloggers.com/2025/04/resampling/",
+  "created_at_utc": "2025-11-22T19:58:49Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "db7e9706-5b0b-4933-a239-280a2276fcf7",
+    "created_at": "2025-11-22 19:58:49",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/04/resampling/",
+      "crawled_at": "2025-11-22T10:50:17.857169",
+      "external_links": [
+        {
+          "href": "https://mlr-org.com/gallery/appliedml/2025-04-10-intro-resampling/",
+          "text": "mlr-org"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://mlr-org.com/gallery/appliedml/2025-04-10-intro-resampling/",
+          "text": "mlr-org"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Resampling | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAANBAMAAAAtROHmAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAMrsQRO+Jq81mdlTdmSINXOHXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVQYGWNg1DdgwAJc0cReZC56wMCQjib65msdUKQTTfQ1mP8RmyjLB8ZZKOKvZqYwMLApCIoCRXnLQSAByLJi4BFg4Eh0sEZRC1ShwMCvgibGwMAVwOAvpoAqfJqB6wNDEsMRRqAwwtw+kAmdDAe5URRPZjB9wHCYYdcGFFHOZfcYAHAQH6gdy4ioAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?k%20=%205"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/giuseppe-casalicchio/",
+          "text": "Giuseppe Casalicchio"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392057 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Resampling</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 13, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/giuseppe-casalicchio/\">Giuseppe Casalicchio</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://mlr-org.com/gallery/appliedml/2025-04-10-intro-resampling/\"> mlr-org</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level1\" id=\"goal\">\n<h1>Goal</h1>\n<p>You will learn how to estimate the model performance with <code>mlr3</code> using resampling techniques such as 5-fold cross-validation. Additionally, you will compare k-NN model against a logistic regression model.</p>\n</section>\n<section class=\"level1\" id=\"german-credit-data\">\n<h1>German Credit Data</h1>\n<p>We work with the German credit data. You can either manually create the corresponding <code>mlr3</code> task as we did before or use a pre-defined task which is already included in the <code>mlr3</code> package (you can look at the output of <code>as.data.table(mlr_tasks)</code> to see which other pre-defined tasks that can be used to play around are included in the <code>mlr3</code> package).</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>library(mlr3verse)</pre>\n<div class=\"cell-output cell-output-stderr\">\n<pre>Loading required package: mlr3</pre>\n</div>\n<pre>task = tsk(\"german_credit\")\ntask </pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>&lt;TaskClassif:german_credit&gt; (1000 x 21): German Credit\n* Target: credit_risk\n* Properties: twoclass\n* Features (20):\n  - fct (14): credit_history, employment_duration, foreign_worker, housing, job, other_debtors,\n    other_installment_plans, people_liable, personal_status_sex, property, purpose, savings, status,\n    telephone\n  - int (3): age, amount, duration\n  - ord (3): installment_rate, number_credits, present_residence</pre>\n</div>\n<pre>task$positive # (check the positive class)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] \"good\"</pre>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"exercise-fairly-evaluate-the-performance-of-two-learners\">\n<h1>Exercise: Fairly evaluate the performance of two learners</h1>\n<p>We first create two <code>mlr3</code> learners, a logistic regression and a KNN learner. We then compare their performance via resampling.</p>\n<section class=\"level2\" id=\"create-the-learners\">\n<h2 class=\"anchored\" data-anchor-id=\"create-the-learners\">Create the learners</h2>\n<p>Create a logistic regression learner (store it as an R object called <code>log_reg</code>) and KNN learner with <img data-lazy-src=\"https://latex.codecogs.com/png.latex?k%20=%205\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?k%20=%205\"/></noscript> (store it as an R object called <code>knn</code>).</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nCheck <code>as.data.table(mlr_learners)</code> to find the appropriate learner.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\nMake sure to have the <code>kknn</code> package installed.\n</details>\n</section>\n<section class=\"level2\" id=\"set-up-a-resampling-instance\">\n<h2 class=\"anchored\" data-anchor-id=\"set-up-a-resampling-instance\">Set up a resampling instance</h2>\n<p>Use the <code>mlr3</code> to set up a resampling instance and store it as an R object called <code>cv5</code>. Here, we aim for 5-fold cross-validation. A table of possible resampling techniques implemented in <code>mlr3</code> can be shown by looking at <code>as.data.table(mlr_resamplings)</code>.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nLook at the table returned by <code>as.data.table(mlr_resamplings)</code> and use the <code>rsmp</code> function to set up a 5-fold cross-validation instance. Store the result of the <code>rsmp</code> function in an R object called <code>cv5</code>.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\n<code>rsmp(\"cv\")</code> by default sets up a 10-fold cross-validation instance. The number of folds can be set using an additional argument (see the <code>params</code> column from <code>as.data.table(mlr_resamplings)</code>).\n</details>\n</section>\n<section class=\"level2\" id=\"run-the-resampling\">\n<h2 class=\"anchored\" data-anchor-id=\"run-the-resampling\">Run the resampling</h2>\n<p>After having created a resampling instance, use it to apply the chosen resampling technique to both previously created learners.</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nYou need to supply the task, the learner and the previously created resampling instance as arguments to the <code>resample</code> function. See <code>?resample</code> for further details and examples.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\n<p>The key ingredients for <code>resample()</code> are a task (created by <code>tsk()</code>), a learner (created by <code>lrn()</code>) and a resampling strategy (created by <code>rsmp()</code>), e.g.,</p>\n<p><code>resample(task = task, learner = log_reg, resampling = cv5)</code></p>\n</details>\n</section>\n<section class=\"level2\" id=\"evaluation\">\n<h2 class=\"anchored\" data-anchor-id=\"evaluation\">Evaluation</h2>\n<p>Compute the cross-validated classification accuracy of both models. Which learner performed better?</p>\n<details>\n<summary>\n<strong>Show Hint 1:</strong>\n</summary>\nUse <code>msr(\"classif.acc\")</code> and the <code>aggregate</code> method of the resampling object.\n</details>\n<details>\n<summary>\n<strong>Show Hint 2:</strong>\n</summary>\n<code>res_knn$aggregate(msr(...))</code> to obtain the classification accuracy averaged across all folds.\n</details>\n</section>\n</section>\n<section class=\"level1\" id=\"summary\">\n<h1>Summary</h1>\n<p>We can now apply different resampling methods to estimate the performance of different learners and fairly compare them. We now have learnt how to obtain a better (in terms of variance) estimate of our model performance instead of doing a simple train and test split. This enables us to fairly compare different learners.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://mlr-org.com/gallery/appliedml/2025-04-10-intro-resampling/\"> mlr-org</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Resampling\nPosted on\nApril 13, 2025\nby\nGiuseppe Casalicchio\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nmlr-org\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nGoal\nYou will learn how to estimate the model performance with\nmlr3\nusing resampling techniques such as 5-fold cross-validation. Additionally, you will compare k-NN model against a logistic regression model.\nGerman Credit Data\nWe work with the German credit data. You can either manually create the corresponding\nmlr3\ntask as we did before or use a pre-defined task which is already included in the\nmlr3\npackage (you can look at the output of\nas.data.table(mlr_tasks)\nto see which other pre-defined tasks that can be used to play around are included in the\nmlr3\npackage).\nlibrary(mlr3verse)\nLoading required package: mlr3\ntask = tsk(\"german_credit\")\ntask\n<TaskClassif:german_credit> (1000 x 21): German Credit\n* Target: credit_risk\n* Properties: twoclass\n* Features (20):\n  - fct (14): credit_history, employment_duration, foreign_worker, housing, job, other_debtors,\n    other_installment_plans, people_liable, personal_status_sex, property, purpose, savings, status,\n    telephone\n  - int (3): age, amount, duration\n  - ord (3): installment_rate, number_credits, present_residence\ntask$positive # (check the positive class)\n[1] \"good\"\nExercise: Fairly evaluate the performance of two learners\nWe first create two\nmlr3\nlearners, a logistic regression and a KNN learner. We then compare their performance via resampling.\nCreate the learners\nCreate a logistic regression learner (store it as an R object called\nlog_reg\n) and KNN learner with\n(store it as an R object called\nknn\n).\nShow Hint 1:\nCheck\nas.data.table(mlr_learners)\nto find the appropriate learner.\nShow Hint 2:\nMake sure to have the\nkknn\npackage installed.\nSet up a resampling instance\nUse the\nmlr3\nto set up a resampling instance and store it as an R object called\ncv5\n. Here, we aim for 5-fold cross-validation. A table of possible resampling techniques implemented in\nmlr3\ncan be shown by looking at\nas.data.table(mlr_resamplings)\n.\nShow Hint 1:\nLook at the table returned by\nas.data.table(mlr_resamplings)\nand use the\nrsmp\nfunction to set up a 5-fold cross-validation instance. Store the result of the\nrsmp\nfunction in an R object called\ncv5\n.\nShow Hint 2:\nrsmp(\"cv\")\nby default sets up a 10-fold cross-validation instance. The number of folds can be set using an additional argument (see the\nparams\ncolumn from\nas.data.table(mlr_resamplings)\n).\nRun the resampling\nAfter having created a resampling instance, use it to apply the chosen resampling technique to both previously created learners.\nShow Hint 1:\nYou need to supply the task, the learner and the previously created resampling instance as arguments to the\nresample\nfunction. See\n?resample\nfor further details and examples.\nShow Hint 2:\nThe key ingredients for\nresample()\nare a task (created by\ntsk()\n), a learner (created by\nlrn()\n) and a resampling strategy (created by\nrsmp()\n), e.g.,\nresample(task = task, learner = log_reg, resampling = cv5)\nEvaluation\nCompute the cross-validated classification accuracy of both models. Which learner performed better?\nShow Hint 1:\nUse\nmsr(\"classif.acc\")\nand the\naggregate\nmethod of the resampling object.\nShow Hint 2:\nres_knn$aggregate(msr(...))\nto obtain the classification accuracy averaged across all folds.\nSummary\nWe can now apply different resampling methods to estimate the performance of different learners and fairly compare them. We now have learnt how to obtain a better (in terms of variance) estimate of our model performance instead of doing a simple train and test split. This enables us to fairly compare different learners.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nmlr-org\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Goal You will learn how to estimate the model performance with mlr3 using resampling techniques such as 5-fold cross-validation. Additionally, you will compare k-NN model against a logistic regression model. German Credit Data We work with the...",
+      "meta_keywords": null,
+      "og_description": "Goal You will learn how to estimate the model performance with mlr3 using resampling techniques such as 5-fold cross-validation. Additionally, you will compare k-NN model against a logistic regression model. German Credit Data We work with the...",
+      "og_image": "https://latex.codecogs.com/png.latex?k%20=%205",
+      "og_title": "Resampling | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.4,
+      "sitemap_lastmod": null,
+      "twitter_description": "Goal You will learn how to estimate the model performance with mlr3 using resampling techniques such as 5-fold cross-validation. Additionally, you will compare k-NN model against a logistic regression model. German Credit Data We work with the...",
+      "twitter_title": "Resampling | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/04/resampling/",
+      "word_count": 683
+    }
+  }
+}

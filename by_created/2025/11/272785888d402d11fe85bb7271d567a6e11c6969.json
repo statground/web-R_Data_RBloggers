@@ -1,0 +1,122 @@
+{
+  "id": "272785888d402d11fe85bb7271d567a6e11c6969",
+  "url": "https://www.r-bloggers.com/2025/04/running-r-on-windows-on-arm-on-github-actions/",
+  "created_at_utc": "2025-11-22T19:58:47Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "9ec3bf9d-86cf-4560-965e-384732846708",
+    "created_at": "2025-11-22 19:58:47",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/04/running-r-on-windows-on-arm-on-github-actions/",
+      "crawled_at": "2025-11-22T10:50:09.781542",
+      "external_links": [
+        {
+          "href": "https://remlapmot.github.io/post/2025/win-11-arm-gha/",
+          "text": "R | Dr Tom Palmer"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.blog/changelog/2025-04-14-windows-arm64-hosted-runners-now-available-in-public-preview/",
+          "text": "now available"
+        },
+        {
+          "href": "https://mrcieu.github.io/TwoSampleMR/",
+          "text": "TwoSampleMR"
+        },
+        {
+          "href": "https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md",
+          "text": "default software set"
+        },
+        {
+          "href": "https://blog.r-project.org/2023/08/23/will-r-work-on-64-bit-arm-windows/index.html",
+          "text": "here"
+        },
+        {
+          "href": "https://blog.r-project.org/2024/04/23/r-on-64-bit-arm-windows/index.html",
+          "text": "here"
+        },
+        {
+          "href": "https://remlapmot.github.io/post/2025/win-11-arm-gha/",
+          "text": "R | Dr Tom Palmer"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Running R on Windows on ARM on GitHub Actions | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-dr-tom-palmer/",
+          "text": "R | Dr Tom Palmer"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391931 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Running R on Windows on ARM on GitHub Actions</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-dr-tom-palmer/\">R | Dr Tom Palmer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://remlapmot.github.io/post/2025/win-11-arm-gha/\"> R | Dr Tom Palmer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h2 id=\"introduction\">Introduction</h2>\n<p>GitHub has recently announced that Windows ARM64 runners are \n<a href=\"https://github.blog/changelog/2025-04-14-windows-arm64-hosted-runners-now-available-in-public-preview/\" rel=\"nofollow\" target=\"_blank\">now available</a> under the <code>windows-11-arm</code> label.</p>\n<p>I help maintain an R package, \n<a href=\"https://mrcieu.github.io/TwoSampleMR/\" rel=\"nofollow\" target=\"_blank\">TwoSampleMR</a>, which has quite alot of users. The package is not on CRAN because several of its dependencies are only on GitHub, and for a package to be on CRAN essentially all of its dependencies must also be on CRAN. As a result I am always interested to try installing the package on new operating systems and architectures.</p>\n<p>(In this post I will use ARM and AARCH64 interchangeably.)</p>\n<h2 id=\"setting-up-r-aarch64-on-windows-on-arm\">Setting up R AARCH64 on Windows on ARM</h2>\n<h3 id=\"avoiding-confusion-with-the-default-runner-software\">Avoiding confusion with the default runner software</h3>\n<p>It is important to mention that the x86_64 version of R 4.4.2 and RTools44 are included in the \n<a href=\"https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md\" rel=\"nofollow\" target=\"_blank\">default software set</a> for the <code>windows-latest</code> GitHub Actions runner. And the directory including its binaries are on the <code>PATH</code> environment variable (specifically <em>C:\\Program Files (x86)\\R\\R-4.4.2\\bin\\x64</em>). As a result if you run <code>R</code>, <code>Rscript</code>, or <code>R CMD batch</code> etc. in a shell in the runner you will obtain the x86_64 version of R (which runs under emulation on the ARM runner). Let’s say this is not what we want, so to setup the ARM version of R we need to install it ourselves.</p>\n<h3 id=\"installing-aarch64-r-and-rtools45\">Installing AARCH64 R and RTools45</h3>\n<p>Tomas Kalibera from the R Core Team has provided several excellent posts (\n<a href=\"https://blog.r-project.org/2023/08/23/will-r-work-on-64-bit-arm-windows/index.html\" rel=\"nofollow\" target=\"_blank\">here</a> and \n<a href=\"https://blog.r-project.org/2024/04/23/r-on-64-bit-arm-windows/index.html\" rel=\"nofollow\" target=\"_blank\">here</a>) about R for Windows on ARM, and installers for it have been available for some time.</p>\n<p>The r-hub API does not yet provide the installer information for the AARCH64 version of R, so I came up with the following workflow file – amended from r-lib/actions to install R 4.5.0 and RTools45. Place such a (GitHub Actions workflow) file in a public GitHub repo in a <em>.github/workflows</em> directory, and enable GitHub Actions in the repo settings.</p>\n<pre>on:\n  push:\n    branches: [main, master]\n  pull_request:\n    branches: [main, master]\n  workflow_dispatch:\n\nname: Check-install-win-11-arm\n\npermissions: read-all\n\njobs:\n  windows-11-on-arm:\n    runs-on: windows-11-arm\n\n    name: windows-11-arm\n\n    strategy:\n      fail-fast: false\n\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n      R_KEEP_PKG_SOURCE: yes\n\n    steps:\n      - name: Install R and RTools for Windows on ARM and install TwoSampleMR\n        run: |\n          $url = \"https://www.r-project.org/nosvn/winutf8/aarch64/R-4-signed/R-4.5.0-aarch64.exe\"\n          Invoke-WebRequest -Uri \"$url\" -OutFile R-4.5.0-aarch64.exe -UseBasicParsing -UserAgent \"NativeHost\"\n          Start-Process -FilePath R-4.5.0-aarch64.exe -ArgumentList \"/install /norestart /verysilent /SUPPRESSMSGBOXES\" -NoNewWindow -Wait\n          $url = \"https://cran.r-project.org/bin/windows/Rtools/rtools45/files/rtools45-aarch64-6536-6492.exe\"\n          Invoke-WebRequest -Uri \"$url\" -OutFile rtools45-aarch64-6536-6492.exe -UseBasicParsing -UserAgent \"NativeHost\"\n          Start-Process -FilePath rtools45-aarch64-6536-6492.exe -ArgumentList \"/install /norestart /verysilent /SUPPRESSMSGBOXES\" -NoNewWindow -Wait\n          $rscript = \"C:\\Program Files\\R-aarch64\\R-4.5.0\\bin\\Rscript.exe\"\n          $arguments = \"-e\", \"print(R.version); # the rest of your R code goes here ...\"\n          &amp; $rscript $arguments\n</pre>\n<p>Breaking down the final <code>steps</code> section of this;</p>\n<ul>\n<li>we define the url of the R 4.5.0 aarch64 installer;</li>\n<li>we then download the installer using <code>Invoke-WebRequest</code> (note that the default shell in Windows is Powershell);</li>\n<li>we then run the installer using <code>Start-Process</code>. I am not sure if I need all of the arguments I have specified here but it seems to work.</li>\n<li>We then do the same for RTools45.</li>\n<li>We then define a variable for the path to the <em>Rscript.exe</em> binary;</li>\n<li>we define a variable containing the arguments we want to pass to <em>Rscript</em>;</li>\n<li>we then invoke <em>Rscript</em> using our two variables and the <code>&amp;</code> call operator.</li>\n</ul>\n<p>Then we navigate to our GitHub repo and view the output in the Actions tab under the relevant run.</p>\n<p>Of course if you want to run your own R script you’ll need an initial step to checkout your repo.</p>\n<p>To confirm that we really have launched the AARCH64 version of R we see the output of <code>print(R.version)</code> is as follows.</p>\n<pre>print(R.version)\n#&gt;                _                           \n#&gt; platform       aarch64-w64-mingw32              \n#&gt; arch           aarch64                          \n#&gt; os             mingw32                          \n#&gt; crt            ucrt                             \n#&gt; system         aarch64, mingw32                 \n#&gt; status                                          \n#&gt; major          4                                \n#&gt; minor          5.0                              \n#&gt; year           2025                             \n#&gt; month          04                               \n#&gt; day            11                               \n#&gt; svn rev        88135                            \n#&gt; language       R                                \n#&gt; version.string R version 4.5.0 (2025-04-11 ucrt)\n#&gt; nickname       How About a Twenty-Six \n</pre>\n<h2 id=\"summary\">Summary</h2>\n<p>I have shown how to install the AARCH64 version of R and RTools45 on the recently released Windows on ARM runner in GitHub Actions.</p>\n<p>As an aside, I note that we are now in the interesting position in that GitHub Actions now has Windows, macOS, and Ubuntu Linux all available on both x86_64 and ARM architectures.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://remlapmot.github.io/post/2025/win-11-arm-gha/\"> R | Dr Tom Palmer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Running R on Windows on ARM on GitHub Actions\nPosted on\nApril 15, 2025\nby\nR | Dr Tom Palmer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Dr Tom Palmer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nGitHub has recently announced that Windows ARM64 runners are\nnow available\nunder the\nwindows-11-arm\nlabel.\nI help maintain an R package,\nTwoSampleMR\n, which has quite alot of users. The package is not on CRAN because several of its dependencies are only on GitHub, and for a package to be on CRAN essentially all of its dependencies must also be on CRAN. As a result I am always interested to try installing the package on new operating systems and architectures.\n(In this post I will use ARM and AARCH64 interchangeably.)\nSetting up R AARCH64 on Windows on ARM\nAvoiding confusion with the default runner software\nIt is important to mention that the x86_64 version of R 4.4.2 and RTools44 are included in the\ndefault software set\nfor the\nwindows-latest\nGitHub Actions runner. And the directory including its binaries are on the\nPATH\nenvironment variable (specifically\nC:\\Program Files (x86)\\R\\R-4.4.2\\bin\\x64\n). As a result if you run\nR\n,\nRscript\n, or\nR CMD batch\netc. in a shell in the runner you will obtain the x86_64 version of R (which runs under emulation on the ARM runner). Let’s say this is not what we want, so to setup the ARM version of R we need to install it ourselves.\nInstalling AARCH64 R and RTools45\nTomas Kalibera from the R Core Team has provided several excellent posts (\nhere\nand\nhere\n) about R for Windows on ARM, and installers for it have been available for some time.\nThe r-hub API does not yet provide the installer information for the AARCH64 version of R, so I came up with the following workflow file – amended from r-lib/actions to install R 4.5.0 and RTools45. Place such a (GitHub Actions workflow) file in a public GitHub repo in a\n.github/workflows\ndirectory, and enable GitHub Actions in the repo settings.\non:\n  push:\n    branches: [main, master]\n  pull_request:\n    branches: [main, master]\n  workflow_dispatch:\n\nname: Check-install-win-11-arm\n\npermissions: read-all\n\njobs:\n  windows-11-on-arm:\n    runs-on: windows-11-arm\n\n    name: windows-11-arm\n\n    strategy:\n      fail-fast: false\n\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n      R_KEEP_PKG_SOURCE: yes\n\n    steps:\n      - name: Install R and RTools for Windows on ARM and install TwoSampleMR\n        run: |\n          $url = \"https://www.r-project.org/nosvn/winutf8/aarch64/R-4-signed/R-4.5.0-aarch64.exe\"\n          Invoke-WebRequest -Uri \"$url\" -OutFile R-4.5.0-aarch64.exe -UseBasicParsing -UserAgent \"NativeHost\"\n          Start-Process -FilePath R-4.5.0-aarch64.exe -ArgumentList \"/install /norestart /verysilent /SUPPRESSMSGBOXES\" -NoNewWindow -Wait\n          $url = \"https://cran.r-project.org/bin/windows/Rtools/rtools45/files/rtools45-aarch64-6536-6492.exe\"\n          Invoke-WebRequest -Uri \"$url\" -OutFile rtools45-aarch64-6536-6492.exe -UseBasicParsing -UserAgent \"NativeHost\"\n          Start-Process -FilePath rtools45-aarch64-6536-6492.exe -ArgumentList \"/install /norestart /verysilent /SUPPRESSMSGBOXES\" -NoNewWindow -Wait\n          $rscript = \"C:\\Program Files\\R-aarch64\\R-4.5.0\\bin\\Rscript.exe\"\n          $arguments = \"-e\", \"print(R.version); # the rest of your R code goes here ...\"\n          & $rscript $arguments\nBreaking down the final\nsteps\nsection of this;\nwe define the url of the R 4.5.0 aarch64 installer;\nwe then download the installer using\nInvoke-WebRequest\n(note that the default shell in Windows is Powershell);\nwe then run the installer using\nStart-Process\n. I am not sure if I need all of the arguments I have specified here but it seems to work.\nWe then do the same for RTools45.\nWe then define a variable for the path to the\nRscript.exe\nbinary;\nwe define a variable containing the arguments we want to pass to\nRscript\n;\nwe then invoke\nRscript\nusing our two variables and the\n&\ncall operator.\nThen we navigate to our GitHub repo and view the output in the Actions tab under the relevant run.\nOf course if you want to run your own R script you’ll need an initial step to checkout your repo.\nTo confirm that we really have launched the AARCH64 version of R we see the output of\nprint(R.version)\nis as follows.\nprint(R.version)\n#>                _                           \n#> platform       aarch64-w64-mingw32              \n#> arch           aarch64                          \n#> os             mingw32                          \n#> crt            ucrt                             \n#> system         aarch64, mingw32                 \n#> status                                          \n#> major          4                                \n#> minor          5.0                              \n#> year           2025                             \n#> month          04                               \n#> day            11                               \n#> svn rev        88135                            \n#> language       R                                \n#> version.string R version 4.5.0 (2025-04-11 ucrt)\n#> nickname       How About a Twenty-Six\nSummary\nI have shown how to install the AARCH64 version of R and RTools45 on the recently released Windows on ARM runner in GitHub Actions.\nAs an aside, I note that we are now in the interesting position in that GitHub Actions now has Windows, macOS, and Ubuntu Linux all available on both x86_64 and ARM architectures.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Dr Tom Palmer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introduction GitHub has recently announced that Windows ARM64 runners are now available under the windows-11-arm label. I help maintain an R package, TwoSampleMR, which has quite alot of users. The package is not on CRAN because several of its depend...",
+      "meta_keywords": null,
+      "og_description": "Introduction GitHub has recently announced that Windows ARM64 runners are now available under the windows-11-arm label. I help maintain an R package, TwoSampleMR, which has quite alot of users. The package is not on CRAN because several of its depend...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Running R on Windows on ARM on GitHub Actions | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introduction GitHub has recently announced that Windows ARM64 runners are now available under the windows-11-arm label. I help maintain an R package, TwoSampleMR, which has quite alot of users. The package is not on CRAN because several of its depend...",
+      "twitter_title": "Running R on Windows on ARM on GitHub Actions | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/04/running-r-on-windows-on-arm-on-github-actions/",
+      "word_count": 926
+    }
+  }
+}

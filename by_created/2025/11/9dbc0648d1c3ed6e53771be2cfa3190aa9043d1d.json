@@ -1,0 +1,214 @@
+{
+  "id": "9dbc0648d1c3ed6e53771be2cfa3190aa9043d1d",
+  "url": "https://www.r-bloggers.com/2023/11/useful-functions-for-dealing-with-object-names/",
+  "created_at_utc": "2025-11-17T20:39:23Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "9a294692-b79a-4682-9f89-878f8f5a3eb8",
+    "created_at": "2025-11-17 20:39:23",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/11/useful-functions-for-dealing-with-object-names/",
+      "crawled_at": "2025-11-17T10:00:24.969817",
+      "external_links": [
+        {
+          "href": "https://masalmon.eu/2023/11/06/functions-dealing-with-names/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://rdrr.io/r/stats/setNames.html",
+          "text": "setNames()"
+        },
+        {
+          "href": "https://rdrr.io/r/stats/setNames.html",
+          "text": "setNames()"
+        },
+        {
+          "href": "https://rdrr.io/r/base/unname.html",
+          "text": "unname()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/set_names.html",
+          "text": "rlang::set_names()"
+        },
+        {
+          "href": "https://rdrr.io/r/stats/setNames.html",
+          "text": "stats::setNames()"
+        },
+        {
+          "href": "https://rdrr.io/r/base/unname.html",
+          "text": "unname()"
+        },
+        {
+          "href": "https://sfirke.github.io/janitor/reference/clean_names.html",
+          "text": "janitor::clean_names()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/set_names.html",
+          "text": "purrr::set_names()"
+        },
+        {
+          "href": "https://rdrr.io/r/base/names.html",
+          "text": "names()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/names2.html",
+          "text": "rlang::names2()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/index.html#attributes",
+          "text": "dealing with object attributes"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/is_named.html",
+          "text": "rlang::have_name()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/has_name.html",
+          "text": "rlang::has_name()"
+        },
+        {
+          "href": "https://rdrr.io/r/utils/hasName.html",
+          "text": "utils::hasName()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/has_name.html",
+          "text": "rlang::has_name()"
+        },
+        {
+          "href": "https://testthat.r-lib.org/reference/expect_named.html",
+          "text": "testthat::expect_named()"
+        },
+        {
+          "href": "https://lintr.r-lib.org/reference/expect_named_linter.html",
+          "text": "help you a bit"
+        },
+        {
+          "href": "https://rdrr.io/r/stats/setNames.html",
+          "text": "stats::setNames()"
+        },
+        {
+          "href": "https://rdrr.io/r/base/unname.html",
+          "text": "unname()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/set_names.html",
+          "text": "rlang::set_names()"
+        },
+        {
+          "href": "https://rdrr.io/r/base/names.html",
+          "text": "names()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/names2.html",
+          "text": "rlang::names2()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/is_named.html",
+          "text": "rlang::is_named()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/is_named.html",
+          "text": "rlang::is_named2()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/is_named.html",
+          "text": "rlang::have_name()"
+        },
+        {
+          "href": "https://rdrr.io/r/utils/hasName.html",
+          "text": "utils::hasName()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/has_name.html",
+          "text": "rlang::has_name()"
+        },
+        {
+          "href": "https://testthat.r-lib.org/reference/expect_named.html",
+          "text": "testthat::expect_named()"
+        },
+        {
+          "href": "https://masalmon.eu/2023/11/06/functions-dealing-with-names/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Useful functions for dealing with object names | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-379718 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Useful functions for dealing with object names</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 5, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/\">Maëlle's R blog on Maëlle Salmon's personal website</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://masalmon.eu/2023/11/06/functions-dealing-with-names/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>My sticky note filled up quickly after I only added <a href=\"https://rdrr.io/r/stats/setNames.html\" rel=\"nofollow\" target=\"_blank\"><code>setNames()</code></a> on it, with related functions for dealing with object names, in base R and beyond!</p>\n<h2 id=\"unsetting-object-names-statssetnames-unname-and-rlangset_names\">(Un)Setting object names: <code>stats::setNames()</code>, <code>unname()</code> and <code>rlang::set_names()</code></h2>\n<p>I noticed a function ending with something like this:</p>\n<div class=\"highlight\">\n<pre>blop &lt;- function() {\n  \n  # code creating the df data.frame\n  # ...\n  \n  names(df) &lt;- c(\"col1\", \"col2\")\n  df\n}</pre>\n</div>\n<p>It struck me as simplifiable by:</p>\n<div class=\"highlight\">\n<pre>blop &lt;- function() {\n  \n  # code creating the df data.frame\n  # ...\n  \n  stats::setNames(df, c(\"col1\", \"col2\"))\n}</pre>\n</div>\n<p>Interestingly the docs for <a href=\"https://rdrr.io/r/stats/setNames.html\" rel=\"nofollow\" target=\"_blank\"><code>setNames()</code></a> sound as if it were created just for this use case!</p>\n<blockquote>\n<p>“This is a convenience function that sets the names on an object and returns the object. It is most useful at the end of a function definition where one is creating the object to be returned and would prefer not to store it under a name just so the names can be assigned.”</p>\n</blockquote>\n<p>For the opposite operation, removing the names of an object, we can use <a href=\"https://rdrr.io/r/base/unname.html\" rel=\"nofollow\" target=\"_blank\"><code>unname()</code></a>.</p>\n<p>Unsurprisingly, the rlang package has its own special <a href=\"https://rlang.r-lib.org/reference/set_names.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::set_names()</code></a>, that is more or less a <a href=\"https://rdrr.io/r/stats/setNames.html\" rel=\"nofollow\" target=\"_blank\"><code>stats::setNames()</code></a> + <a href=\"https://rdrr.io/r/base/unname.html\" rel=\"nofollow\" target=\"_blank\"><code>unname()</code></a> + generic <a href=\"https://sfirke.github.io/janitor/reference/clean_names.html\" rel=\"nofollow\" target=\"_blank\"><code>janitor::clean_names()</code></a> combo!</p>\n<div class=\"highlight\">\n<pre>(df &lt;- data.frame(c(1, 2), c(5, 7)))\n#&gt;   c.1..2. c.5..7.\n#&gt; 1       1       5\n#&gt; 2       2       7\n\nrlang::set_names(df, c(\"a\", \"b\")) # sets names!\n#&gt;   a b\n#&gt; 1 1 5\n#&gt; 2 2 7\n\nrlang::set_names(df, NULL) # removes names\n#&gt;      \n#&gt; 1 1 5\n#&gt; 2 2 7\n\ndf2 &lt;- rlang::set_names(df, c(\"SHOUTING\", \"LOUDLY\"))\ndf2\n#&gt;   SHOUTING LOUDLY\n#&gt; 1        1      5\n#&gt; 2        2      7\nrlang::set_names(df2, tolower) # using a function to transform names\n#&gt;   shouting loudly\n#&gt; 1        1      5\n#&gt; 2        2      7\n</pre>\n</div>\n<p>Of note,</p>\n<blockquote>\n<p>“<code>set_names()</code> is stable and exported in purrr”.</p>\n</blockquote>\n<p>So if you prefer, you can use <a href=\"https://rlang.r-lib.org/reference/set_names.html\" rel=\"nofollow\" target=\"_blank\"><code>purrr::set_names()</code></a> instead.</p>\n<p>Last but not least, despite the examples above being on a data.frame, these functions can be used on lists, vectors…</p>\n<h2 id=\"extracting-names-names-rlangnames2\">Extracting names: <code>names()</code>, <code>rlang::names2()</code></h2>\n<p><a href=\"https://rdrr.io/r/base/names.html\" rel=\"nofollow\" target=\"_blank\"><code>names()</code></a> probably doesn’t need any introduction, but it’s interesting to mention it in contrast to <a href=\"https://rlang.r-lib.org/reference/names2.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::names2()</code></a> that \" always returns a character vector, even when an object does not have a names attribute.”.</p>\n<div class=\"highlight\">\n<pre>vector &lt;- c(1, 2)\nnames(vector)\n#&gt; NULL\nrlang::names2(vector)\n#&gt; [1] \"\" \"\"\n</pre>\n</div>\n<p>rlang also has a replacement variant, <code>rlang::names2&lt;-</code>, that “never adds NA names and instead fills unnamed vectors with <code>\"\"</code>.”</p>\n<p>I didn’t know all this before skimming the list of rlang functions <a href=\"https://rlang.r-lib.org/reference/index.html#attributes\" rel=\"nofollow\" target=\"_blank\">dealing with object attributes</a>.</p>\n<h2 id=\"checking-names\">Checking names</h2>\n<h3 id=\"is-the-object-named-rlangis_named-rlangis_named2-rlanghave_name\">Is the object named: <code>rlang::is_named()</code>, <code>rlang::is_named2()</code>, <code>rlang::have_name()</code></h3>\n<p><a href=\"https://rlang.r-lib.org/reference/is_named.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::have_name()</code></a> is the vectorized version of <code>rlang::is_name()</code>, not to be confused with <a href=\"https://rlang.r-lib.org/reference/has_name.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::has_name()</code></a>. 😅</p>\n<div class=\"highlight\">\n<pre>rlang::is_named(c(a = 1))\n#&gt; [1] TRUE\n\nrlang::is_named(NULL)\n#&gt; [1] FALSE\nrlang::is_named2(NULL)\n#&gt; [1] TRUE\n\nrlang::have_name(c(a = 1, 2)) # the example from the manual page\n#&gt; [1]  TRUE FALSE\n</pre>\n</div>\n<p>I do not know of a base R equivalent, I mean I’d find a way to express it, but not as directly. But maybe I am missing yet another base R gem!</p>\n<h3 id=\"does-the-object-have-an-element-called-x-does-the-object-have-elements-called-x-y-utilshasname-rlanghas_name\">Does the object have an element called X, does the object have elements called X, Y: <code>utils::hasName()</code>, <code>rlang::has_name()</code></h3>\n<p>If you want to check that an object contains elements with certain names, you can use <a href=\"https://rdrr.io/r/utils/hasName.html\" rel=\"nofollow\" target=\"_blank\"><code>utils::hasName()</code></a></p>\n<div class=\"highlight\">\n<pre>expected_names &lt;- c(\"pof\", \"blop\")\n\nvector1 &lt;- c(pof = 1, bla = 2)\nvector2 &lt;- c(pof = 1, bla = 2, blop = 3)\n\nutils::hasName(vector1, expected_names)\n#&gt; [1]  TRUE FALSE\nutils::hasName(vector2, expected_names)\n#&gt; [1] TRUE TRUE\n</pre>\n</div>\n<p>The rlang package has a similar function, <a href=\"https://rlang.r-lib.org/reference/has_name.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::has_name()</code></a>.</p>\n<div class=\"highlight\">\n<pre>expected_names &lt;- c(\"pof\", \"blop\")\n\nvector1 &lt;- c(pof = 1, bla = 2)\nvector2 &lt;- c(pof = 1, bla = 2, blop = 3)\n\nrlang::has_name(vector1, expected_names)\n#&gt; [1]  TRUE FALSE\nrlang::has_name(vector2, expected_names)\n#&gt; [1] TRUE TRUE\n</pre>\n</div>\n<p>I’m honestly not sure whether there’s any difference between the utils and rlang versions, apart from the name!</p>\n<h3 id=\"in-package-tests-testthatexpect_named\">In package tests: <code>testthat::expect_named()</code></h3>\n<p><a href=\"https://testthat.r-lib.org/reference/expect_named.html\" rel=\"nofollow\" target=\"_blank\"><code>testthat::expect_named()</code></a> allows you to check that an object returned by your code has the names you expect, or simply has names. You can ignore case and order based on the arguments <code>ignore.case</code> and <code>ignore.order</code>.</p>\n<div class=\"highlight\">\n<pre>(object &lt;- tibble::tibble(a = c(1, 2), b = c(3, 4)))\n#&gt; # A tibble: 2 × 2\n#&gt;       a     b\n#&gt;   &lt;dbl&gt; &lt;dbl&gt;\n#&gt; 1     1     3\n#&gt; 2     2     4\n\ntestthat::expect_named(object)\n\nunnamed_object &lt;- unname(object)\ntestthat::expect_named(unnamed_object)\n#&gt; Error: `unnamed_object` does not have names.\n\ntestthat::expect_named(object, c(\"b\", \"a\"))\n#&gt; Error: Names of `object` ('a', 'b') don't match 'b', 'a'\ntestthat::expect_named(object, c(\"b\", \"a\"), ignore.order = TRUE)\n\ntestthat::expect_named(object, c(\"A\", \"B\"))\n#&gt; Error: Names of `object` ('a', 'b') don't match 'A', 'B'\ntestthat::expect_named(object, c(\"A\", \"B\"), ignore.case = TRUE)</pre>\n</div>\n<p>If you’re not used to using this expectation yet, lintr can <a href=\"https://lintr.r-lib.org/reference/expect_named_linter.html\" rel=\"nofollow\" target=\"_blank\">help you a bit</a>.</p>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>In this post I went through functions that deals with names: <a href=\"https://rdrr.io/r/stats/setNames.html\" rel=\"nofollow\" target=\"_blank\"><code>stats::setNames()</code></a>, <a href=\"https://rdrr.io/r/base/unname.html\" rel=\"nofollow\" target=\"_blank\"><code>unname()</code></a> and <a href=\"https://rlang.r-lib.org/reference/set_names.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::set_names()</code></a> for (un)setting names (my initial motivation for this post!); <a href=\"https://rdrr.io/r/base/names.html\" rel=\"nofollow\" target=\"_blank\"><code>names()</code></a>, <a href=\"https://rlang.r-lib.org/reference/names2.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::names2()</code></a> for extracting names; <a href=\"https://rlang.r-lib.org/reference/is_named.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::is_named()</code></a>, <a href=\"https://rlang.r-lib.org/reference/is_named.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::is_named2()</code></a> and <a href=\"https://rlang.r-lib.org/reference/is_named.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::have_name()</code></a> to find out whether an object is named; <a href=\"https://rdrr.io/r/utils/hasName.html\" rel=\"nofollow\" target=\"_blank\"><code>utils::hasName()</code></a> and <a href=\"https://rlang.r-lib.org/reference/has_name.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::has_name()</code></a> to find out whether an object contains elements of a given name; <a href=\"https://testthat.r-lib.org/reference/expect_named.html\" rel=\"nofollow\" target=\"_blank\"><code>testthat::expect_named()</code></a> for testing whether an object has names, or specific names. Any other related function that comes to mind?</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://masalmon.eu/2023/11/06/functions-dealing-with-names/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Useful functions for dealing with object names\nPosted on\nNovember 5, 2023\nby\nMaëlle's R blog on Maëlle Salmon's personal website\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nMaëlle's R blog on Maëlle Salmon's personal website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMy sticky note filled up quickly after I only added\nsetNames()\non it, with related functions for dealing with object names, in base R and beyond!\n(Un)Setting object names:\nstats::setNames()\n,\nunname()\nand\nrlang::set_names()\nI noticed a function ending with something like this:\nblop <- function() {\n  \n  # code creating the df data.frame\n  # ...\n  \n  names(df) <- c(\"col1\", \"col2\")\n  df\n}\nIt struck me as simplifiable by:\nblop <- function() {\n  \n  # code creating the df data.frame\n  # ...\n  \n  stats::setNames(df, c(\"col1\", \"col2\"))\n}\nInterestingly the docs for\nsetNames()\nsound as if it were created just for this use case!\n“This is a convenience function that sets the names on an object and returns the object. It is most useful at the end of a function definition where one is creating the object to be returned and would prefer not to store it under a name just so the names can be assigned.”\nFor the opposite operation, removing the names of an object, we can use\nunname()\n.\nUnsurprisingly, the rlang package has its own special\nrlang::set_names()\n, that is more or less a\nstats::setNames()\n+\nunname()\n+ generic\njanitor::clean_names()\ncombo!\n(df <- data.frame(c(1, 2), c(5, 7)))\n#>   c.1..2. c.5..7.\n#> 1       1       5\n#> 2       2       7\n\nrlang::set_names(df, c(\"a\", \"b\")) # sets names!\n#>   a b\n#> 1 1 5\n#> 2 2 7\n\nrlang::set_names(df, NULL) # removes names\n#>      \n#> 1 1 5\n#> 2 2 7\n\ndf2 <- rlang::set_names(df, c(\"SHOUTING\", \"LOUDLY\"))\ndf2\n#>   SHOUTING LOUDLY\n#> 1        1      5\n#> 2        2      7\nrlang::set_names(df2, tolower) # using a function to transform names\n#>   shouting loudly\n#> 1        1      5\n#> 2        2      7\nOf note,\n“\nset_names()\nis stable and exported in purrr”.\nSo if you prefer, you can use\npurrr::set_names()\ninstead.\nLast but not least, despite the examples above being on a data.frame, these functions can be used on lists, vectors…\nExtracting names:\nnames()\n,\nrlang::names2()\nnames()\nprobably doesn’t need any introduction, but it’s interesting to mention it in contrast to\nrlang::names2()\nthat \" always returns a character vector, even when an object does not have a names attribute.”.\nvector <- c(1, 2)\nnames(vector)\n#> NULL\nrlang::names2(vector)\n#> [1] \"\" \"\"\nrlang also has a replacement variant,\nrlang::names2<-\n, that “never adds NA names and instead fills unnamed vectors with\n\"\"\n.”\nI didn’t know all this before skimming the list of rlang functions\ndealing with object attributes\n.\nChecking names\nIs the object named:\nrlang::is_named()\n,\nrlang::is_named2()\n,\nrlang::have_name()\nrlang::have_name()\nis the vectorized version of\nrlang::is_name()\n, not to be confused with\nrlang::has_name()\n. 😅\nrlang::is_named(c(a = 1))\n#> [1] TRUE\n\nrlang::is_named(NULL)\n#> [1] FALSE\nrlang::is_named2(NULL)\n#> [1] TRUE\n\nrlang::have_name(c(a = 1, 2)) # the example from the manual page\n#> [1]  TRUE FALSE\nI do not know of a base R equivalent, I mean I’d find a way to express it, but not as directly. But maybe I am missing yet another base R gem!\nDoes the object have an element called X, does the object have elements called X, Y:\nutils::hasName()\n,\nrlang::has_name()\nIf you want to check that an object contains elements with certain names, you can use\nutils::hasName()\nexpected_names <- c(\"pof\", \"blop\")\n\nvector1 <- c(pof = 1, bla = 2)\nvector2 <- c(pof = 1, bla = 2, blop = 3)\n\nutils::hasName(vector1, expected_names)\n#> [1]  TRUE FALSE\nutils::hasName(vector2, expected_names)\n#> [1] TRUE TRUE\nThe rlang package has a similar function,\nrlang::has_name()\n.\nexpected_names <- c(\"pof\", \"blop\")\n\nvector1 <- c(pof = 1, bla = 2)\nvector2 <- c(pof = 1, bla = 2, blop = 3)\n\nrlang::has_name(vector1, expected_names)\n#> [1]  TRUE FALSE\nrlang::has_name(vector2, expected_names)\n#> [1] TRUE TRUE\nI’m honestly not sure whether there’s any difference between the utils and rlang versions, apart from the name!\nIn package tests:\ntestthat::expect_named()\ntestthat::expect_named()\nallows you to check that an object returned by your code has the names you expect, or simply has names. You can ignore case and order based on the arguments\nignore.case\nand\nignore.order\n.\n(object <- tibble::tibble(a = c(1, 2), b = c(3, 4)))\n#> # A tibble: 2 × 2\n#>       a     b\n#>   <dbl> <dbl>\n#> 1     1     3\n#> 2     2     4\n\ntestthat::expect_named(object)\n\nunnamed_object <- unname(object)\ntestthat::expect_named(unnamed_object)\n#> Error: `unnamed_object` does not have names.\n\ntestthat::expect_named(object, c(\"b\", \"a\"))\n#> Error: Names of `object` ('a', 'b') don't match 'b', 'a'\ntestthat::expect_named(object, c(\"b\", \"a\"), ignore.order = TRUE)\n\ntestthat::expect_named(object, c(\"A\", \"B\"))\n#> Error: Names of `object` ('a', 'b') don't match 'A', 'B'\ntestthat::expect_named(object, c(\"A\", \"B\"), ignore.case = TRUE)\nIf you’re not used to using this expectation yet, lintr can\nhelp you a bit\n.\nConclusion\nIn this post I went through functions that deals with names:\nstats::setNames()\n,\nunname()\nand\nrlang::set_names()\nfor (un)setting names (my initial motivation for this post!);\nnames()\n,\nrlang::names2()\nfor extracting names;\nrlang::is_named()\n,\nrlang::is_named2()\nand\nrlang::have_name()\nto find out whether an object is named;\nutils::hasName()\nand\nrlang::has_name()\nto find out whether an object contains elements of a given name;\ntestthat::expect_named()\nfor testing whether an object has names, or specific names. Any other related function that comes to mind?\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMaëlle's R blog on Maëlle Salmon's personal website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "My sticky note filled up quickly after I only added setNames() on it, with related functions for dealing with object names, in base R and beyond! (Un)Setting object names: stats::setNames(), unname() and rlang::set_names() I noticed a function ending w...",
+      "meta_keywords": null,
+      "og_description": "My sticky note filled up quickly after I only added setNames() on it, with related functions for dealing with object names, in base R and beyond! (Un)Setting object names: stats::setNames(), unname() and rlang::set_names() I noticed a function ending w...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Useful functions for dealing with object names | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.1,
+      "sitemap_lastmod": "2023-11-06T00:00:00+00:00",
+      "twitter_description": "My sticky note filled up quickly after I only added setNames() on it, with related functions for dealing with object names, in base R and beyond! (Un)Setting object names: stats::setNames(), unname() and rlang::set_names() I noticed a function ending w...",
+      "twitter_title": "Useful functions for dealing with object names | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/11/useful-functions-for-dealing-with-object-names/",
+      "word_count": 1020
+    }
+  }
+}

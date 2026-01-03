@@ -1,0 +1,113 @@
+{
+  "id": "3504e2c5e9c56056b07543f0df445c30f84cb498",
+  "url": "https://www.r-bloggers.com/2009/06/filtering-cases/",
+  "created_at_utc": "2025-11-17T20:40:46Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "2dd4c1c7-6d38-4a89-bdcb-ae1b70e09b1d",
+    "created_at": "2025-11-17 20:40:46",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/06/filtering-cases/",
+      "crawled_at": "2025-11-17T10:34:13.861089",
+      "external_links": [
+        {
+          "href": "https://learningrbasic.blogspot.com/2009/06/filtering-cases.html",
+          "text": "Learning R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i2.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s1600-h/110.png",
+          "text": null
+        },
+        {
+          "href": "https://learningrbasic.blogspot.com/2009/06/filtering-cases.html",
+          "text": "Learning R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Filtering cases | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s400/110.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s400/110.png?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jim/",
+          "text": "Jim"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-7366 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Filtering cases</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 26, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jim/\">Jim</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://learningrbasic.blogspot.com/2009/06/filtering-cases.html\"> Learning R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\">Something that’s very important to be able to do in data analysis and visualization is to filter out cases. Let’s say you want to do identical analyses of two different groups, or of one group and then a subset of it. R can do this a little differently; instead of merely filtering out cases you can create an object that is a subset, and then call it when necessary.<br/><br/>Let’s look at some data on the U.S. Congress. Keith Poole has developed a two-dimensional procedure that places members of Congress at specific points based on roll call votes. What we’ll do now is compare Democrats and Republicans in the 110th Congress.<br/></div><br/>First, we load the data into R.<br/><br/><span style=\";font-family:courier new;font-size:85%;\">voteview &lt;- read.csv (\"C:/Data/HouseSmall.csv\", header = TRUE)   attach (voteview) </span><br/><br/><div style=\"text-align: justify;\">The voteview data frame contains data on all Congresses beginning with the 101st. That’s more than we want to deal with, and also, we need a way to look at Democrats and Republicans separately. We’ll create an object just for Democrats in the 110th Congress. and then one for Republicans.<br/></div><br/><span style=\"font-size:85%;\"><span style=\"font-family:courier new;\">dems110 &lt;- subset(voteview, party == 100 &amp; cong == 110)</span><br/><br/><span style=\"font-family:courier new;\">reps110 &lt;- subset(voteview, party == 200 &amp; cong == 110)</span></span><br/><br/>Now let’s create a graph to compare them.<br/><br/><span style=\"font-size:85%;\"> <span style=\"font-family:courier new;\">plot (c (-1.5, 1.5), c(-1.5, 1.5), type = ‘n’,</span> <span style=\"font-family:courier new;\"><br/>xlab = “1st dimension”,</span> <span style=\"font-family:courier new;\"><br/>ylab = “2nd dimension”,</span> <span style=\"font-family:courier new;\"><br/>col.axis = “#777777”, </span> <span style=\"font-family:courier new;\"><br/>col.lab = “#777777”,</span> <span style=\"font-family:courier new;\"><br/>cex.axis = 0.75,</span> <span style=\"font-family:courier new;\"><br/>cex.lab = 1.25,</span> <span style=\"font-family:courier new;\"><br/>main = “DW-nominate scores, 110th Congress”,</span> <span style=\"font-family:courier new;\"><br/>col.main = “#444444”)</span> <span style=\"font-family:courier new;\"><br/>abline (v = 0, col = “#cccccc”)</span> <span style=\"font-family:courier new;\"><br/>points (dwnom2 ~ dwnom1, data = dems110, pch = “D”, col = “blue”, cex = 0.75)</span> <span style=\"font-family:courier new;\"><br/>points (dwnom2 ~ dwnom1, data = reps110, pch = “R”, col = “red”, cex = 0.75)</span></span><br/><br/><div style=\"text-align: justify;\">That’s all a bit complicated, so next time I’ll talk about what all those things do. But for now I’ll just show what it looks like.<br/></div><br/><div style=\"text-align: center;\"><span style=\"font-weight: bold;\">Figure 1. The polarization of Congress.</span><br/></div><div style=\"text-align: center;\"><a data-cf-modified-908a9896e99c32fb91188402-=\"\" href=\"https://i2.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s1600-h/110.png\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s400/110.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5351818178019380946\" src=\"https://i1.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s400/110.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"cursor: pointer; width: 400px; height: 399px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5351818178019380946\" src=\"https://i1.wp.com/1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s400/110.png?w=578\" style=\"cursor: pointer; width: 400px; height: 399px;\"/></noscript></a><br/></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://learningrbasic.blogspot.com/2009/06/filtering-cases.html\"> Learning R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Filtering cases\nPosted on\nJune 26, 2009\nby\nJim\nin Uncategorized | 0 Comments\n[This article was first published on\nLearning R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSomething that’s very important to be able to do in data analysis and visualization is to filter out cases. Let’s say you want to do identical analyses of two different groups, or of one group and then a subset of it. R can do this a little differently; instead of merely filtering out cases you can create an object that is a subset, and then call it when necessary.\nLet’s look at some data on the U.S. Congress. Keith Poole has developed a two-dimensional procedure that places members of Congress at specific points based on roll call votes. What we’ll do now is compare Democrats and Republicans in the 110th Congress.\nFirst, we load the data into R.\nvoteview <- read.csv (\"C:/Data/HouseSmall.csv\", header = TRUE)   attach (voteview)\nThe voteview data frame contains data on all Congresses beginning with the 101st. That’s more than we want to deal with, and also, we need a way to look at Democrats and Republicans separately. We’ll create an object just for Democrats in the 110th Congress. and then one for Republicans.\ndems110 <- subset(voteview, party == 100 & cong == 110)\nreps110 <- subset(voteview, party == 200 & cong == 110)\nNow let’s create a graph to compare them.\nplot (c (-1.5, 1.5), c(-1.5, 1.5), type = ‘n’,\nxlab = “1st dimension”,\nylab = “2nd dimension”,\ncol.axis = “#777777”,\ncol.lab = “#777777”,\ncex.axis = 0.75,\ncex.lab = 1.25,\nmain = “DW-nominate scores, 110th Congress”,\ncol.main = “#444444”)\nabline (v = 0, col = “#cccccc”)\npoints (dwnom2 ~ dwnom1, data = dems110, pch = “D”, col = “blue”, cex = 0.75)\npoints (dwnom2 ~ dwnom1, data = reps110, pch = “R”, col = “red”, cex = 0.75)\nThat’s all a bit complicated, so next time I’ll talk about what all those things do. But for now I’ll just show what it looks like.\nFigure 1. The polarization of Congress.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nLearning R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Something that's very important to be able to do in data analysis and visualization is to filter out cases. Let's say you want to do identical analyses of two different groups, or of one group and then a subset of it. R can do this a little differently; instead of merely filtering out cases you can create an object that is a subset, and then call it when necessary.Let's look at some data on the U.S. Congress. Keith Poole has developed a two-dimensional procedure that places members of Congress at specific points based on roll call votes. What we'll do now is compare Democrats and Republicans in the 110th Congress. First, we load the data into R.voteview The voteview data frame contains data on all Congresses beginning with the 101st. That's more than we want to deal with, and also, we need a way to look at Democrats and Republicans separately. We'll create an object just for Democrats in the 110th Congress. and then one for Republicans. dems110 reps110 Now let's create a graph to compare them. plot (c (-1.5, 1.5), c(-1.5, 1.5), type = 'n', xlab = \"1st dimension\", ylab = \"2nd dimension\", col.axis = \"#777777\", col.lab = \"#777777\", cex.axis = 0.75, cex.lab = 1.25, main = \"DW-nominate scores, 110th Congress\", col.main = \"#444444\") abline (v = 0, col = \"#cccccc\") points (dwnom2 ~ dwnom1, data = dems110, pch = \"D\", col = \"blue\", cex = 0.75) points (dwnom2 ~ dwnom1, data = reps110, pch = \"R\", col = \"red\", cex = 0.75)That's all a bit complicated, so next time I'll talk about what all those things do. But for now I'll just show what it looks like. Figure 1. The polarization of Congress.",
+      "meta_keywords": null,
+      "og_description": "Something that's very important to be able to do in data analysis and visualization is to filter out cases. Let's say you want to do identical analyses of two different groups, or of one group and then a subset of it. R can do this a little differently; instead of merely filtering out cases you can create an object that is a subset, and then call it when necessary.Let's look at some data on the U.S. Congress. Keith Poole has developed a two-dimensional procedure that places members of Congress at specific points based on roll call votes. What we'll do now is compare Democrats and Republicans in the 110th Congress. First, we load the data into R.voteview The voteview data frame contains data on all Congresses beginning with the 101st. That's more than we want to deal with, and also, we need a way to look at Democrats and Republicans separately. We'll create an object just for Democrats in the 110th Congress. and then one for Republicans. dems110 reps110 Now let's create a graph to compare them. plot (c (-1.5, 1.5), c(-1.5, 1.5), type = 'n', xlab = \"1st dimension\", ylab = \"2nd dimension\", col.axis = \"#777777\", col.lab = \"#777777\", cex.axis = 0.75, cex.lab = 1.25, main = \"DW-nominate scores, 110th Congress\", col.main = \"#444444\") abline (v = 0, col = \"#cccccc\") points (dwnom2 ~ dwnom1, data = dems110, pch = \"D\", col = \"blue\", cex = 0.75) points (dwnom2 ~ dwnom1, data = reps110, pch = \"R\", col = \"red\", cex = 0.75)That's all a bit complicated, so next time I'll talk about what all those things do. But for now I'll just show what it looks like. Figure 1. The polarization of Congress.",
+      "og_image": "https://1.bp.blogspot.com/_zIVrBDCf4e8/SkV6RxtSztI/AAAAAAAAAIM/dNXy9Fhbij0/s400/110.png",
+      "og_title": "Filtering cases | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.2,
+      "sitemap_lastmod": "2009-06-27T02:24:40+00:00",
+      "twitter_description": "Something that's very important to be able to do in data analysis and visualization is to filter out cases. Let's say you want to do identical analyses of two different groups, or of one group and then a subset of it. R can do this a little differently; instead of merely filtering out cases you can create an object that is a subset, and then call it when necessary.Let's look at some data on the U.S. Congress. Keith Poole has developed a two-dimensional procedure that places members of Congress at specific points based on roll call votes. What we'll do now is compare Democrats and Republicans in the 110th Congress. First, we load the data into R.voteview The voteview data frame contains data on all Congresses beginning with the 101st. That's more than we want to deal with, and also, we need a way to look at Democrats and Republicans separately. We'll create an object just for Democrats in the 110th Congress. and then one for Republicans. dems110 reps110 Now let's create a graph to compare them. plot (c (-1.5, 1.5), c(-1.5, 1.5), type = 'n', xlab = \"1st dimension\", ylab = \"2nd dimension\", col.axis = \"#777777\", col.lab = \"#777777\", cex.axis = 0.75, cex.lab = 1.25, main = \"DW-nominate scores, 110th Congress\", col.main = \"#444444\") abline (v = 0, col = \"#cccccc\") points (dwnom2 ~ dwnom1, data = dems110, pch = \"D\", col = \"blue\", cex = 0.75) points (dwnom2 ~ dwnom1, data = reps110, pch = \"R\", col = \"red\", cex = 0.75)That's all a bit complicated, so next time I'll talk about what all those things do. But for now I'll just show what it looks like. Figure 1. The polarization of Congress.",
+      "twitter_title": "Filtering cases | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/06/filtering-cases/",
+      "word_count": 450
+    }
+  }
+}

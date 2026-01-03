@@ -1,0 +1,113 @@
+{
+  "id": "f791dae6718fb5bc8d08f62716d1a0e6845e6e4c",
+  "url": "https://www.r-bloggers.com/2009/06/conservatism-of-congressional-delegation-and-bush-vote/",
+  "created_at_utc": "2025-11-17T20:40:46Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "f3b5e13b-1d11-48c0-9eb2-31cf693514fd",
+    "created_at": "2025-11-17 20:40:46",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/06/conservatism-of-congressional-delegation-and-bush-vote/",
+      "crawled_at": "2025-11-17T10:34:04.454614",
+      "external_links": [
+        {
+          "href": "https://learningrbasic.blogspot.com/2009/06/conservatism-of-congressional.html",
+          "text": "Learning R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i0.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s1600-h/acu_vote04.png",
+          "text": null
+        },
+        {
+          "href": "https://learningrbasic.blogspot.com/2009/06/conservatism-of-congressional.html",
+          "text": "Learning R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Conservatism of Congressional delegation and %Bush vote | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s400/acu_vote04.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s400/acu_vote04.png?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jim/",
+          "text": "Jim"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-7365 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Conservatism of Congressional delegation and %Bush vote</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 27, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jim/\">Jim</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://learningrbasic.blogspot.com/2009/06/conservatism-of-congressional.html\"> Learning R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Busy day today, so I’ll just post this:<br/><span style=\"font-family: courier new;font-size:85%;\"><br/>plot(bush04 ~ cons_hr, type = “n”,<br/>xlab=”Mean ACU rating”,<br/>ylab=”2004 Bush vote”,<br/>xlim=c(0,100),<br/>ylim=c(0,100),<br/>cex.lab=1.25,cex.axis=0.75,<br/>col.axis = “#777777”,<br/>col.lab = “#777777”)<br/>text(y=bush04,x=cons_hr, labels=stateid,cex=0.75)<br/>abline(lm2, lty=2, col=”red”)<br/>axis(side = 2, at = seq(0,100,by=5), cex=0.75)</span><br/><br/><a data-cf-modified-0d202b244102b1c8505840da-=\"\" href=\"https://i0.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s1600-h/acu_vote04.png\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s400/acu_vote04.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5352217616234391714\" src=\"https://i1.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s400/acu_vote04.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"cursor: pointer; width: 400px; height: 399px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5352217616234391714\" src=\"https://i1.wp.com/2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s400/acu_vote04.png?w=578\" style=\"cursor: pointer; width: 400px; height: 399px;\"/></noscript></a>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://learningrbasic.blogspot.com/2009/06/conservatism-of-congressional.html\"> Learning R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Conservatism of Congressional delegation and %Bush vote\nPosted on\nJune 27, 2009\nby\nJim\nin Uncategorized | 0 Comments\n[This article was first published on\nLearning R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBusy day today, so I’ll just post this:\nplot(bush04 ~ cons_hr, type = “n”,\nxlab=”Mean ACU rating”,\nylab=”2004 Bush vote”,\nxlim=c(0,100),\nylim=c(0,100),\ncex.lab=1.25,cex.axis=0.75,\ncol.axis = “#777777”,\ncol.lab = “#777777”)\ntext(y=bush04,x=cons_hr, labels=stateid,cex=0.75)\nabline(lm2, lty=2, col=”red”)\naxis(side = 2, at = seq(0,100,by=5), cex=0.75)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nLearning R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Busy day today, so I'll just post this:plot(bush04 ~ cons_hr, type = \"n\",xlab=\"Mean ACU rating\",ylab=\"2004 Bush vote\",xlim=c(0,100),ylim=c(0,100),cex.lab=1.25,cex.axis=0.75,col.axis = \"#777777\",col.lab = \"#777777\")text(y=bush04,x=cons_hr, labels=statei...",
+      "meta_keywords": null,
+      "og_description": "Busy day today, so I'll just post this:plot(bush04 ~ cons_hr, type = \"n\",xlab=\"Mean ACU rating\",ylab=\"2004 Bush vote\",xlim=c(0,100),ylim=c(0,100),cex.lab=1.25,cex.axis=0.75,col.axis = \"#777777\",col.lab = \"#777777\")text(y=bush04,x=cons_hr, labels=statei...",
+      "og_image": "https://2.bp.blogspot.com/_zIVrBDCf4e8/SkblkJA9KKI/AAAAAAAAAIU/MQP-AnxcPT4/s400/acu_vote04.png",
+      "og_title": "Conservatism of Congressional delegation and %Bush vote | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.1,
+      "sitemap_lastmod": "2009-06-28T03:40:15+00:00",
+      "twitter_description": "Busy day today, so I'll just post this:plot(bush04 ~ cons_hr, type = \"n\",xlab=\"Mean ACU rating\",ylab=\"2004 Bush vote\",xlim=c(0,100),ylim=c(0,100),cex.lab=1.25,cex.axis=0.75,col.axis = \"#777777\",col.lab = \"#777777\")text(y=bush04,x=cons_hr, labels=statei...",
+      "twitter_title": "Conservatism of Congressional delegation and %Bush vote | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/06/conservatism-of-congressional-delegation-and-bush-vote/",
+      "word_count": 211
+    }
+  }
+}

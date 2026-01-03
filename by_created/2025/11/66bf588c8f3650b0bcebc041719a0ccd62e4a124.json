@@ -1,0 +1,134 @@
+{
+  "id": "66bf588c8f3650b0bcebc041719a0ccd62e4a124",
+  "url": "https://www.r-bloggers.com/2009/09/new-r-package-ant/",
+  "created_at_utc": "2025-11-17T20:40:24Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "61edb2ef-e0b9-4ddd-bf68-596147dde98a",
+    "created_at": "2025-11-17 20:40:24",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/new-r-package-ant/",
+      "crawled_at": "2025-11-17T10:26:16.337957",
+      "external_links": [
+        {
+          "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/09/08/new-R-package-%3A-ant",
+          "text": "Romain Francois, Professional R Enthusiast"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/09/02/R-capable-version-of-ant",
+          "text": "here"
+        },
+        {
+          "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/09/03/update-on-ant-package",
+          "text": "here"
+        },
+        {
+          "href": "http://ant.apache.org/",
+          "text": "ant"
+        },
+        {
+          "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/09/08/new-R-package-%3A-ant",
+          "text": "Romain Francois, Professional R Enthusiast"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "new R package : ant | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/romain-francois/",
+          "text": "romain francois"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/ant/",
+          "text": "ant"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/cran/",
+          "text": "cran"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/java/",
+          "text": "java"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r-package/",
+          "text": "R package"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-121 post type-post status-publish format-standard hentry category-r-bloggers tag-ant tag-cran tag-java tag-r tag-r-package\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">new R package : ant</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 8, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/romain-francois/\">romain francois</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/09/08/new-R-package-%3A-ant\"> Romain Francois, Professional R Enthusiast</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--> <p>The ant package has been released to CRAN yesterday. As discussed in previous posts in this blog (<a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/09/02/R-capable-version-of-ant\" rel=\"nofollow\" target=\"_blank\">here</a> and <a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/09/03/update-on-ant-package\" rel=\"nofollow\" target=\"_blank\">here</a>), the ant R package provides an R-aware version of the <a href=\"http://ant.apache.org/\" rel=\"nofollow\" target=\"_blank\">ant</a> build tool from the apache project. </p>\n<p>The package contains an R script that can be used to invoke ant with enough plumbing so that it can use R code during the build process. Calling the script is further simplified with the <code>ant</code> function included in the package. </p>\n<pre>\n$ Rscript -e \"ant::ant()\"\n</pre>\n<p>The simplest way to take advantage of this package is to add it to the Depends list of yours, include a java source tree somewhere in your package tree (most likely somewhere in the inst tree) with a build.xml file, and include a configure and configure.win script at the root of the package that contains something like this: </p>\n<pre>\n#!/bin/sh\n\ncd inst/java_src\n\"${R_HOME}/bin/Rscript\" -e \"ant::ant()\"\ncd ../..\n</pre>\n<p>This will be further illustrated with the demo package <code>helloJavaWorld</code> in future posts</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/09/08/new-R-package-%3A-ant\"> Romain Francois, Professional R Enthusiast</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/ant/\" rel=\"tag\">ant</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/cran/\" rel=\"tag\">cran</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/java/\" rel=\"tag\">java</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-package/\" rel=\"tag\">R package</a></li></ul></div></article>",
+      "main_text": "new R package : ant\nPosted on\nSeptember 8, 2009\nby\nromain francois\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRomain Francois, Professional R Enthusiast\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe ant package has been released to CRAN yesterday. As discussed in previous posts in this blog (\nhere\nand\nhere\n), the ant R package provides an R-aware version of the\nant\nbuild tool from the apache project.\nThe package contains an R script that can be used to invoke ant with enough plumbing so that it can use R code during the build process. Calling the script is further simplified with the\nant\nfunction included in the package.\n$ Rscript -e \"ant::ant()\"\nThe simplest way to take advantage of this package is to add it to the Depends list of yours, include a java source tree somewhere in your package tree (most likely somewhere in the inst tree) with a build.xml file, and include a configure and configure.win script at the root of the package that contains something like this:\n#!/bin/sh\n\ncd inst/java_src\n\"${R_HOME}/bin/Rscript\" -e \"ant::ant()\"\ncd ../..\nThis will be further illustrated with the demo package\nhelloJavaWorld\nin future posts\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRomain Francois, Professional R Enthusiast\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nant\ncran\njava\nR\nR package",
+      "meta_description": "The ant package has been released to CRAN yesterday. As discussed in previous posts in this blog (here and here), the ant R package provides an R-aware version of the ant build tool from the apache project. The package contains an R script that c...",
+      "meta_keywords": "ant,cran,java,r,r package",
+      "og_description": "The ant package has been released to CRAN yesterday. As discussed in previous posts in this blog (here and here), the ant R package provides an R-aware version of the ant build tool from the apache project. The package contains an R script that c...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "new R package : ant | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.6,
+      "sitemap_lastmod": "2009-09-08T06:49:00+00:00",
+      "twitter_description": "The ant package has been released to CRAN yesterday. As discussed in previous posts in this blog (here and here), the ant R package provides an R-aware version of the ant build tool from the apache project. The package contains an R script that c...",
+      "twitter_title": "new R package : ant | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/new-r-package-ant/",
+      "word_count": 318
+    }
+  }
+}

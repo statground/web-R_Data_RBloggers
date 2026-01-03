@@ -1,0 +1,154 @@
+{
+  "id": "b56c7fd3a1f81f4a68f49b0581625bc454a702f2",
+  "url": "https://www.r-bloggers.com/2025/03/software-review-perspectives-from-an-academic/",
+  "created_at_utc": "2025-11-22T19:59:00Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "78a0bf25-2968-475f-8c3a-33329ad46274",
+    "created_at": "2025-11-22 19:59:00",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/03/software-review-perspectives-from-an-academic/",
+      "crawled_at": "2025-11-22T10:51:51.535156",
+      "external_links": [
+        {
+          "href": "https://ropensci.org/blog/2025/03/25/r-package-review/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Dominion_Land_Survey",
+          "text": "Dominion Land Survey system"
+        },
+        {
+          "href": "https://ropensci.org/author/steffi-lazerte/",
+          "text": "Steffi LaZerte"
+        },
+        {
+          "href": "https://github.com/ropensci/mbquartR/",
+          "text": "mbquartR"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Impostor_syndrome",
+          "text": "impostRsyndrome!"
+        },
+        {
+          "href": "https://dictionary.cambridge.org/dictionary/english/ymmv",
+          "text": "YMMV"
+        },
+        {
+          "href": "https://github.com/ropensci/software-review/issues/649",
+          "text": "Pre-Submission Enquiry"
+        },
+        {
+          "href": "https://github.com/ropensci/software-review/issues",
+          "text": "issue"
+        },
+        {
+          "href": "https://devguide.ropensci.org/",
+          "text": "rOpenSci Dev Guide"
+        },
+        {
+          "href": "https://github.com/ropensci/software-review/issues/658",
+          "text": "issue"
+        },
+        {
+          "href": "https://docs.ropensci.org/mbquartR/authors.html",
+          "text": "DESCRIPTION"
+        },
+        {
+          "href": "https://ropensci.org/author/jeff-hollister/",
+          "text": "Jeff Hollister"
+        },
+        {
+          "href": "https://github.com/sheilasaia",
+          "text": "Sheila Saia"
+        },
+        {
+          "href": "https://emilyhmarkowitz.github.io/emilyhmarkowitz/",
+          "text": "Emily (Em) Markowitz"
+        },
+        {
+          "href": "https://ropensci.org/blog/2025/03/25/r-package-review/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Software Review, Perspectives from an Academic | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391444 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Software Review, Perspectives from an Academic</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2025/03/25/r-package-review/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<blockquote>\n<p>There’s an R package for this… right?</p></blockquote>\n<h2>\nHow it started\n</h2><p>My journey in creating my first R package all started when I received an email from a colleague who was working with archived soil samples that were collected prior to the advent of GPS technology.\nThese samples were georeferenced using the Manitoba Original Survey Legal Descriptions, which originate from the <a href=\"https://en.wikipedia.org/wiki/Dominion_Land_Survey\" rel=\"nofollow\" target=\"_blank\">Dominion Land Survey system</a>, introduced in the late 19th century to organize the European settlement and colonization of Western Canada.\nI was asked by my colleague if there was an R package that could locate these samples so they could be plotted on a map.\nThere wasn’t.\nThe data was publicly available so I wrote a short script that searched the data set for the legal land description and returned the coordinates.\nThis morphed into a series of functions, which eventually turned into a package!\nAnd thanks to the encouragement of the rOpenSci community assistant, <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a>, I submitted my package for peer review.\nThat is how <a href=\"https://github.com/ropensci/mbquartR/\" rel=\"nofollow\" target=\"_blank\"><code>mbquartR</code></a> was born.</p>\n<h2>\nA little about me\n</h2><p>I have always thought of myself as more of a soil/environmental scientist than an R programmer so I was a bit apprehensive to even create an R package let alone have it peer reviewed.\nThis is was my first R package, and developing it not only tested my R skills, but meant I had to learn so much along the way.\nI also felt the functionality of my package was pretty minimal given all the excellent and extensive R packages already available.\nI definitely had a case of the <a href=\"https://en.wikipedia.org/wiki/Impostor_syndrome\" rel=\"nofollow\" target=\"_blank\">impost<strong>R</strong> syndrome!</a></p>\n<p>I have also had lots of experiences with peer review, all of it through academic journals.\nI have had my work reviewed by others, I have reviewed others’ work, and as a subject/submission editor for an international journal I have solicited and read many reviews.\nAll of this has been single-blind review, where the authors do not know the identity of the reviewers, but the reviewers know the identity of the authors.\nThe review process is also done in a closed manner, where only the authors, reviewers, and journal staff ever see the process.\nThis is relatively commonplace in my academic world.\nOverall, I would say that in my experience this type of review process has been fairly respectful and functional (<a href=\"https://dictionary.cambridge.org/dictionary/english/ymmv\" rel=\"nofollow\" target=\"_blank\">YMMV</a>).\nHowever, I have definitely seen both reviewer’s comments and author’s responses be somewhat rude, abrupt, and often lacking any pleasantries.\nFurther, both as an author and a reviewer I have often wished there was an opportunity and a space to have a discussion, ask for clarification and advice, and to say thank you to authors and reviewers for their work.\nFinally, there is also the dreaded “desk rejection”, where the manuscript never makes it out for peer review because the journal deems the work to be out of scope, lacking scientific rigor, poor fit, and/or lacking novelty.\nNever mind the hours spent formatting to meet author guidelines only to get rejected immediately.</p>\n<h2>\nMy rOpenSci software peer review experience\n</h2><p>Right from the start, I really appreciated the ability to do a <a href=\"https://github.com/ropensci/software-review/issues/649\" rel=\"nofollow\" target=\"_blank\">Pre-Submission Enquiry</a>.\nNo more hours of formatting only to get the dreaded desk rejection! or, in this case, meeting the submission requirements for package functionality and documentation.\nThis process was very straightforward, create a new <a href=\"https://github.com/ropensci/software-review/issues\" rel=\"nofollow\" target=\"_blank\">issue</a> and fill out the pre-submission template.\nI got an enthusiastic response within less than 2 weeks letting me know that <code>mbquartR</code> was a good fit.\nTime to get to work!\nOnce I felt that I had met all the guidelines as outlined in the <a href=\"https://devguide.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">rOpenSci Dev Guide</a> I was ready to submit.\nThe straightforward instructions made the submission process a breeze.\nI opened a new <a href=\"https://github.com/ropensci/software-review/issues/658\" rel=\"nofollow\" target=\"_blank\">issue</a> and filled in the template.</p>\n<p>The assigned editor and the two volunteer reviewers were fantastic!\nDespite the package returning errors at multiple steps along the review process I was never made to feel bad for submitting something that wasn’t perfect.\nAt every step and interaction I felt like the reviewers were trying to help me make the package better, not simply telling me to do better.\nThe reviewers had great suggestions on how to improve the package user experience.\nThe package now has more informative warnings and errors, and additional functionality was added to the mapping function.\nI also really appreciated the reviewers attention to package as a whole, not only did they review the functionality of the package, they also paid attention to all the documentation.\nFrom the README, to articles, to functions, it all got reviewed.</p>\n<p>The openness and discussion thread nature of the review process made it possible for me to ask questions and get clarification on revision requests, suggestions, and the review process itself.\nThis was a pretty big departure from my past experiences with the review process and one I would <strong>love</strong> to see more in the academic journal review process that I often find myself in.\nScientific writing, like all forms of communication, will be interpreted differently by different people and this is where having the ability to have a discussion between the authors and the reviewers can be so beneficial.\nI can still see a benefit even if the process remained blind (anonymous).\nI suspect this approach would promote a collaborative environment which would result in more robust and reliable science.\nI also really appreciate that the work and contributions of the reviewers are clearly visible to everyone and they get the credit they deserve.\nI was also able to thank them both as part of review process and within the package <a href=\"https://docs.ropensci.org/mbquartR/authors.html\" rel=\"nofollow\" target=\"_blank\">DESCRIPTION</a>.\nI have written journal articles that have been substantially improved based on reviewer suggestions and ideas and in many cases there is not a great way to acknowledge this contribution or for the reviewer to get credit.\nI feel the “Authors would like to thank the two anonymous reviewers for their help in improving this paper” statement doesn’t give them proper recognition or show my gratitude.</p>\n<h2>\nSummary\n</h2><p>Submitting my R package for peer review with rOpenSci was a completely different experience from the traditional academic reviews I am used to.\nThe process was open, collaborative, and constructive.\nInstead of the closed, single-blind system I was used to, where reviewers are often anonymous and interactions limited, the rOpenSci review felt more like a conversation.\nI could ask questions and get thoughtful and respectful feedback aimed at making the package better.\nThe reviewers focused on everything from package functionality to documentation and overall user experience.\nThe reviewers helped me improve the package and, importantly, they received clear recognition and my thanks for their contributions.\nIt made me realize how valuable open dialogue and credit-sharing can be in peer review, something I would love to see more of in academic publishing.</p>\n<p>A <strong>huge</strong> thank you to editor <a href=\"https://ropensci.org/author/jeff-hollister/\" rel=\"nofollow\" target=\"_blank\">Jeff Hollister</a>, as well as to <a href=\"https://github.com/sheilasaia\" rel=\"nofollow\" target=\"_blank\">Sheila Saia</a> and <a href=\"https://emilyhmarkowitz.github.io/emilyhmarkowitz/\" rel=\"nofollow\" target=\"_blank\">Emily (Em) Markowitz</a> for their thoughtful reviews and support in making my package shine!\nThey not only helped improve the package but also made the entire review experience an enjoyable one.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2025/03/25/r-package-review/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Software Review, Perspectives from an Academic\nPosted on\nMarch 24, 2025\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThere’s an R package for this… right?\nHow it started\nMy journey in creating my first R package all started when I received an email from a colleague who was working with archived soil samples that were collected prior to the advent of GPS technology.\nThese samples were georeferenced using the Manitoba Original Survey Legal Descriptions, which originate from the\nDominion Land Survey system\n, introduced in the late 19th century to organize the European settlement and colonization of Western Canada.\nI was asked by my colleague if there was an R package that could locate these samples so they could be plotted on a map.\nThere wasn’t.\nThe data was publicly available so I wrote a short script that searched the data set for the legal land description and returned the coordinates.\nThis morphed into a series of functions, which eventually turned into a package!\nAnd thanks to the encouragement of the rOpenSci community assistant,\nSteffi LaZerte\n, I submitted my package for peer review.\nThat is how\nmbquartR\nwas born.\nA little about me\nI have always thought of myself as more of a soil/environmental scientist than an R programmer so I was a bit apprehensive to even create an R package let alone have it peer reviewed.\nThis is was my first R package, and developing it not only tested my R skills, but meant I had to learn so much along the way.\nI also felt the functionality of my package was pretty minimal given all the excellent and extensive R packages already available.\nI definitely had a case of the\nimpost\nR\nsyndrome!\nI have also had lots of experiences with peer review, all of it through academic journals.\nI have had my work reviewed by others, I have reviewed others’ work, and as a subject/submission editor for an international journal I have solicited and read many reviews.\nAll of this has been single-blind review, where the authors do not know the identity of the reviewers, but the reviewers know the identity of the authors.\nThe review process is also done in a closed manner, where only the authors, reviewers, and journal staff ever see the process.\nThis is relatively commonplace in my academic world.\nOverall, I would say that in my experience this type of review process has been fairly respectful and functional (\nYMMV\n).\nHowever, I have definitely seen both reviewer’s comments and author’s responses be somewhat rude, abrupt, and often lacking any pleasantries.\nFurther, both as an author and a reviewer I have often wished there was an opportunity and a space to have a discussion, ask for clarification and advice, and to say thank you to authors and reviewers for their work.\nFinally, there is also the dreaded “desk rejection”, where the manuscript never makes it out for peer review because the journal deems the work to be out of scope, lacking scientific rigor, poor fit, and/or lacking novelty.\nNever mind the hours spent formatting to meet author guidelines only to get rejected immediately.\nMy rOpenSci software peer review experience\nRight from the start, I really appreciated the ability to do a\nPre-Submission Enquiry\n.\nNo more hours of formatting only to get the dreaded desk rejection! or, in this case, meeting the submission requirements for package functionality and documentation.\nThis process was very straightforward, create a new\nissue\nand fill out the pre-submission template.\nI got an enthusiastic response within less than 2 weeks letting me know that\nmbquartR\nwas a good fit.\nTime to get to work!\nOnce I felt that I had met all the guidelines as outlined in the\nrOpenSci Dev Guide\nI was ready to submit.\nThe straightforward instructions made the submission process a breeze.\nI opened a new\nissue\nand filled in the template.\nThe assigned editor and the two volunteer reviewers were fantastic!\nDespite the package returning errors at multiple steps along the review process I was never made to feel bad for submitting something that wasn’t perfect.\nAt every step and interaction I felt like the reviewers were trying to help me make the package better, not simply telling me to do better.\nThe reviewers had great suggestions on how to improve the package user experience.\nThe package now has more informative warnings and errors, and additional functionality was added to the mapping function.\nI also really appreciated the reviewers attention to package as a whole, not only did they review the functionality of the package, they also paid attention to all the documentation.\nFrom the README, to articles, to functions, it all got reviewed.\nThe openness and discussion thread nature of the review process made it possible for me to ask questions and get clarification on revision requests, suggestions, and the review process itself.\nThis was a pretty big departure from my past experiences with the review process and one I would\nlove\nto see more in the academic journal review process that I often find myself in.\nScientific writing, like all forms of communication, will be interpreted differently by different people and this is where having the ability to have a discussion between the authors and the reviewers can be so beneficial.\nI can still see a benefit even if the process remained blind (anonymous).\nI suspect this approach would promote a collaborative environment which would result in more robust and reliable science.\nI also really appreciate that the work and contributions of the reviewers are clearly visible to everyone and they get the credit they deserve.\nI was also able to thank them both as part of review process and within the package\nDESCRIPTION\n.\nI have written journal articles that have been substantially improved based on reviewer suggestions and ideas and in many cases there is not a great way to acknowledge this contribution or for the reviewer to get credit.\nI feel the “Authors would like to thank the two anonymous reviewers for their help in improving this paper” statement doesn’t give them proper recognition or show my gratitude.\nSummary\nSubmitting my R package for peer review with rOpenSci was a completely different experience from the traditional academic reviews I am used to.\nThe process was open, collaborative, and constructive.\nInstead of the closed, single-blind system I was used to, where reviewers are often anonymous and interactions limited, the rOpenSci review felt more like a conversation.\nI could ask questions and get thoughtful and respectful feedback aimed at making the package better.\nThe reviewers focused on everything from package functionality to documentation and overall user experience.\nThe reviewers helped me improve the package and, importantly, they received clear recognition and my thanks for their contributions.\nIt made me realize how valuable open dialogue and credit-sharing can be in peer review, something I would love to see more of in academic publishing.\nA\nhuge\nthank you to editor\nJeff Hollister\n, as well as to\nSheila Saia\nand\nEmily (Em) Markowitz\nfor their thoughtful reviews and support in making my package shine!\nThey not only helped improve the package but also made the entire review experience an enjoyable one.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "There’s an R package for this… right? How it started My journey in creating my first R package all started when I received an email from a colleague who was working with archived soil samples that were collected prior to the advent of G...",
+      "meta_keywords": null,
+      "og_description": "There’s an R package for this… right? How it started My journey in creating my first R package all started when I received an email from a colleague who was working with archived soil samples that were collected prior to the advent of G...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Software Review, Perspectives from an Academic | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.7,
+      "sitemap_lastmod": null,
+      "twitter_description": "There’s an R package for this… right? How it started My journey in creating my first R package all started when I received an email from a colleague who was working with archived soil samples that were collected prior to the advent of G...",
+      "twitter_title": "Software Review, Perspectives from an Academic | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/03/software-review-perspectives-from-an-academic/",
+      "word_count": 1340
+    }
+  }
+}

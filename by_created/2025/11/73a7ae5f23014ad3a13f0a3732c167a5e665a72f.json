@@ -1,0 +1,179 @@
+{
+  "id": "73a7ae5f23014ad3a13f0a3732c167a5e665a72f",
+  "url": "https://www.r-bloggers.com/2025/08/new-r-package-theseusplot-visualizing-decomposition-of-differences-in-rate-metrics/",
+  "created_at_utc": "2025-11-22T19:57:47Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "1f8b1e80-c72d-432a-872d-bf684dd9a4bd",
+    "created_at": "2025-11-22 19:57:47",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/08/new-r-package-theseusplot-visualizing-decomposition-of-differences-in-rate-metrics/",
+      "crawled_at": "2025-11-22T10:43:40.062557",
+      "external_links": [
+        {
+          "href": "https://hoxo-m.github.io/blog/posts/TheseusPlot/",
+          "text": "HOXO-M Blog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Ship_of_Theseus",
+          "text": "Ship of Theseus"
+        },
+        {
+          "href": "https://cran.r-project.org/package=TheseusPlot",
+          "text": "CRAN"
+        },
+        {
+          "href": "https://github.com/hoxo-m/TheseusPlot",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://cran.r-project.org/package=nycflights13",
+          "text": "nycflights13"
+        },
+        {
+          "href": "https://hoxo-m.github.io/blog/posts/TheseusPlot/",
+          "text": "HOXO-M Blog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "New R Package TheseusPlot: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/overview-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_origin-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_carrier-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/prot_carrier_n-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_dep_delay-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_dep_delay_n-1.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/koji-makiyama/",
+          "text": "Koji Makiyama"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-395079 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">New R Package TheseusPlot: Visualizing Decomposition of Differences in Rate Metrics</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 29, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/koji-makiyama/\">Koji Makiyama</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://hoxo-m.github.io/blog/posts/TheseusPlot/\"> HOXO-M Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level2\" id=\"overview\">\n<h2 class=\"anchored\" data-anchor-id=\"overview\">1. Overview</h2>\n<p>In data analysis, when a metric differs between two groups, we sometimes want to investigate whether a particular subgroup is driving that difference. For example, when a key metric decline is detected compared to the previous year, you may want to conduct a more detailed analysis. In this analysis, you may focus on gender among the attributes and examine whether the decline occurred among male, female, or both. However, this type of analysis is challenging when the metric is a rate, because the magnitude of each subgroup’s contribution to the rate cannot be simply calculated, unlike in the case of volume metrics.</p>\n<p>To address this issue, we propose an approach inspired by the story of the <em><a href=\"https://en.wikipedia.org/wiki/Ship_of_Theseus\" rel=\"nofollow\" target=\"_blank\">Ship of Theseus</a></em>. This approach involves gradually replacing the components of one group with those of another, recalculating the metric at each step. The change in the metric at each step can then be interpreted as the contribution of each subgroup to the overall difference.</p>\n<p>For instance, suppose the metric was 6.2% in 2024 and decreased to 5.2% in 2025. Again, we focus on gender. We replace the male data within the 2024 dataset with the male data from 2025 and recalculate the metric. As a result, the metric would drop by 0.8 percentage points, reaching 5.4%. In this case, the contribution of the male group to the change in the metric is -0.8 percentage points. Next, we replace the female data from 2024 with that from 2025. The dataset then consists entirely of 2025 data, and the metric drops by 0.2 percentage points, reaching 5.2%. Thus, the contribution of the female group is -0.2 percentage points.</p>\n<p>When visualized, the results appear as follows:</p>\n<div class=\"cell\">\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/overview-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/overview-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>From this plot, we can see that the decline in the metric is primarily driven by the male group. We call this visualization the “Theseus Plot.”</p>\n<p>The <strong>TheseusPlot</strong> package is designed to make it easy to generate Theseus Plots for various attributes.</p>\n</section>\n<section class=\"level2\" id=\"installation\">\n<h2 class=\"anchored\" data-anchor-id=\"installation\">2. Installation</h2>\n<p>You can install the <strong>TheseusPlot</strong> package from <a href=\"https://cran.r-project.org/package=TheseusPlot\" rel=\"nofollow\" target=\"_blank\">CRAN</a>.</p>\n<pre>install.packages(\"TheseusPlot\")</pre>\n<p>You can install the development version from <a href=\"https://github.com/hoxo-m/TheseusPlot\" rel=\"nofollow\" target=\"_blank\">GitHub</a> with:</p>\n<pre>remotes::install_github(\"hoxo-m/TheseusPlot\")</pre>\n</section>\n<section class=\"level2\" id=\"details\">\n<h2 class=\"anchored\" data-anchor-id=\"details\">3. Details</h2>\n<section class=\"level3\" id=\"prepare-data\">\n<h3 class=\"anchored\" data-anchor-id=\"prepare-data\">3.1 Prepare Data</h3>\n<p>To create Theseus plots, you need two data frames that share common columns.</p>\n<p>We use the 2013 New York City flight data from <a href=\"https://cran.r-project.org/package=nycflights13\" rel=\"nofollow\" target=\"_blank\">nycflights13</a> as a demo dataset. Here, we will define the rate metric as the proportion of flights that arrived on time. In December 2013, the on-time arrival rate dropped substantially compared to November. We investigate the cause using a Theseus plot.</p>\n<p>First, we create an <code>on_time</code> column in the data frame to indicate whether each flight arrived on time. Next, we extract the flights for November and December into separate data frames to form two comparison groups. The on-time arrival rate was 64% in November and dropped to 47% in December.</p>\n<div class=\"cell\">\n<pre>library(dplyr)\nlibrary(nycflights13)\n\ndata &lt;- flights |&gt; \n  filter(!is.na(arr_delay)) |&gt;\n  mutate(on_time = arr_delay &lt;= 0) |&gt;  # Arrived on time\n  left_join(airlines, by = \"carrier\") |&gt;\n  mutate(carrier = name) |&gt;  # Convert carrier abbreviations to full names\n  select(year, month, day, origin, dest, carrier, dep_delay, on_time)\n\ndata |&gt; head()\n#&gt; # A tibble: 6 × 8\n#&gt;    year month   day origin dest  carrier                dep_delay on_time\n#&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;                      &lt;dbl&gt; &lt;lgl&gt;  \n#&gt; 1  2013     1     1 EWR    IAH   United Air Lines Inc.          2 FALSE  \n#&gt; 2  2013     1     1 LGA    IAH   United Air Lines Inc.          4 FALSE  \n#&gt; 3  2013     1     1 JFK    MIA   American Airlines Inc.         2 FALSE  \n#&gt; 4  2013     1     1 JFK    BQN   JetBlue Airways               -1 TRUE   \n#&gt; 5  2013     1     1 LGA    ATL   Delta Air Lines Inc.          -6 TRUE   \n#&gt; 6  2013     1     1 EWR    ORD   United Air Lines Inc.         -4 FALSE\n\ndata_Nov &lt;- data |&gt; filter(month == 11)\ndata_Dec &lt;- data |&gt; filter(month == 12)\n\ndata_Nov |&gt; summarise(on_time_rate = mean(on_time)) |&gt; pull(on_time_rate)\n#&gt; [1] 0.6426161\ndata_Dec |&gt; summarise(on_time_rate = mean(on_time)) |&gt; pull(on_time_rate)\n#&gt; [1] 0.4672835</pre>\n</div>\n</section>\n<section class=\"level3\" id=\"basics\">\n<h3 class=\"anchored\" data-anchor-id=\"basics\">3.2 Basics</h3>\n<p>Using the two prepared data frames, we first create a <code>ship</code> object. The <code>ship</code> object is an instance of the R6 class <code>ShipOfTheseus</code>, designed to create Theseus plots.</p>\n<div class=\"cell\">\n<pre>library(TheseusPlot)\n\nship &lt;- create_ship(data_Nov, data_Dec, y = on_time, labels = c(\"November\", \"December\"))</pre>\n</div>\n<p>You can create a Theseus plot by passing column names to the <code>plot</code> method of a <code>ship</code> object. For example, to create a Theseus plot for the airport of origin:</p>\n<div class=\"cell\">\n<pre>ship$plot(origin)</pre>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_origin-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_origin-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>New York City has three major airports, and Newark Liberty International Airport (EWR) accounted for the largest share of the decline in the on-time arrival rate.</p>\n<p>Note that the number of flights at each airport matters, as a larger flight volume is expected to have a greater impact. To make this clear, the Theseus plot displays the data size for each group within each subgroup as a bar chart. From this, we see that the number of flights is similar across airports, allowing for direct comparison of contributions.</p>\n<p>In summary, a Theseus plot consists of two components:</p>\n<ul>\n<li>A waterfall plot showing how much each subgroup contributed to the change in the metric.</li>\n<li>A bar chart representing the sample size for each group within each subgroup.</li>\n</ul>\n<p>A <code>ship</code> object also provides the <code>table</code> method to inspect the exact values used in the Theseus plot.</p>\n<div class=\"cell\">\n<pre>ship$table(origin)\n#&gt; # A tibble: 3 × 8\n#&gt;   origin contrib    n1    n2    x1    x2 rate1 rate2\n#&gt;   &lt;chr&gt;    &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n#&gt; 1 EWR    -0.0831  9603  9410  6251  3901 0.651 0.415\n#&gt; 2 JFK    -0.0565  8645  8923  5702  4332 0.660 0.485\n#&gt; 3 LGA    -0.0358  8723  8687  5379  4393 0.617 0.506</pre>\n</div>\n</section>\n<section class=\"level3\" id=\"flipping-the-plot\">\n<h3 class=\"anchored\" data-anchor-id=\"flipping-the-plot\">3.3 Flipping the Plot</h3>\n<p>When there are many subgroups, a Theseus plot can become hard to read. In such cases, you can swap the x- and y-axes for better visualization.</p>\n<div class=\"cell\">\n<pre>ship$plot_flip(carrier)</pre>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_carrier-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_carrier-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>When the number of subgroups is large, those with small contributions are automatically grouped together. By default, this happens when there are more than 10 subgroups, but the threshold can be adjusted with the <code>n</code> argument.</p>\n<div class=\"cell\">\n<pre>ship$plot_flip(carrier, n = 5)</pre>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/prot_carrier_n-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/prot_carrier_n-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>From this plot, JetBlue Airways and United Air Lines appear to have the largest contributions to the decline in on-time arrival rate.</p>\n</section>\n<section class=\"level3\" id=\"automatic-discretization-of-continuous-values\">\n<h3 class=\"anchored\" data-anchor-id=\"automatic-discretization-of-continuous-values\">3.4 Automatic Discretization of Continuous Values</h3>\n<p>Theseus plots do not directly support continuous variables. If a continuous column is provided, it is automatically discretized. For example, we can create a Theseus plot for departure delays.</p>\n<div class=\"cell\">\n<pre>ship$plot_flip(dep_delay)</pre>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_dep_delay-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_dep_delay-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>By default, continuous variables are discretized so that each subgroup has roughly equal sample sizes, with the number of bins set to 10. You can modify these settings by passing the return value of <code>continuous_config()</code> to the <code>continuous</code> argument.</p>\n<div class=\"cell\">\n<pre>ship$plot_flip(dep_delay, continuous = continuous_config(n = 5))</pre>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_dep_delay_n-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/plot_dep_delay_n-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>This result shows that both a decrease in on-time departures and an increase in delayed departures contributed to the decline in on-time arrival rate.</p>\n</section>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://hoxo-m.github.io/blog/posts/TheseusPlot/\"> HOXO-M Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "New R Package TheseusPlot: Visualizing Decomposition of Differences in Rate Metrics\nPosted on\nAugust 29, 2025\nby\nKoji Makiyama\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nHOXO-M Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\n1. Overview\nIn data analysis, when a metric differs between two groups, we sometimes want to investigate whether a particular subgroup is driving that difference. For example, when a key metric decline is detected compared to the previous year, you may want to conduct a more detailed analysis. In this analysis, you may focus on gender among the attributes and examine whether the decline occurred among male, female, or both. However, this type of analysis is challenging when the metric is a rate, because the magnitude of each subgroup’s contribution to the rate cannot be simply calculated, unlike in the case of volume metrics.\nTo address this issue, we propose an approach inspired by the story of the\nShip of Theseus\n. This approach involves gradually replacing the components of one group with those of another, recalculating the metric at each step. The change in the metric at each step can then be interpreted as the contribution of each subgroup to the overall difference.\nFor instance, suppose the metric was 6.2% in 2024 and decreased to 5.2% in 2025. Again, we focus on gender. We replace the male data within the 2024 dataset with the male data from 2025 and recalculate the metric. As a result, the metric would drop by 0.8 percentage points, reaching 5.4%. In this case, the contribution of the male group to the change in the metric is -0.8 percentage points. Next, we replace the female data from 2024 with that from 2025. The dataset then consists entirely of 2025 data, and the metric drops by 0.2 percentage points, reaching 5.2%. Thus, the contribution of the female group is -0.2 percentage points.\nWhen visualized, the results appear as follows:\nFrom this plot, we can see that the decline in the metric is primarily driven by the male group. We call this visualization the “Theseus Plot.”\nThe\nTheseusPlot\npackage is designed to make it easy to generate Theseus Plots for various attributes.\n2. Installation\nYou can install the\nTheseusPlot\npackage from\nCRAN\n.\ninstall.packages(\"TheseusPlot\")\nYou can install the development version from\nGitHub\nwith:\nremotes::install_github(\"hoxo-m/TheseusPlot\")\n3. Details\n3.1 Prepare Data\nTo create Theseus plots, you need two data frames that share common columns.\nWe use the 2013 New York City flight data from\nnycflights13\nas a demo dataset. Here, we will define the rate metric as the proportion of flights that arrived on time. In December 2013, the on-time arrival rate dropped substantially compared to November. We investigate the cause using a Theseus plot.\nFirst, we create an\non_time\ncolumn in the data frame to indicate whether each flight arrived on time. Next, we extract the flights for November and December into separate data frames to form two comparison groups. The on-time arrival rate was 64% in November and dropped to 47% in December.\nlibrary(dplyr)\nlibrary(nycflights13)\n\ndata <- flights |> \n  filter(!is.na(arr_delay)) |>\n  mutate(on_time = arr_delay <= 0) |>  # Arrived on time\n  left_join(airlines, by = \"carrier\") |>\n  mutate(carrier = name) |>  # Convert carrier abbreviations to full names\n  select(year, month, day, origin, dest, carrier, dep_delay, on_time)\n\ndata |> head()\n#> # A tibble: 6 × 8\n#>    year month   day origin dest  carrier                dep_delay on_time\n#>   <int> <int> <int> <chr>  <chr> <chr>                      <dbl> <lgl>  \n#> 1  2013     1     1 EWR    IAH   United Air Lines Inc.          2 FALSE  \n#> 2  2013     1     1 LGA    IAH   United Air Lines Inc.          4 FALSE  \n#> 3  2013     1     1 JFK    MIA   American Airlines Inc.         2 FALSE  \n#> 4  2013     1     1 JFK    BQN   JetBlue Airways               -1 TRUE   \n#> 5  2013     1     1 LGA    ATL   Delta Air Lines Inc.          -6 TRUE   \n#> 6  2013     1     1 EWR    ORD   United Air Lines Inc.         -4 FALSE\n\ndata_Nov <- data |> filter(month == 11)\ndata_Dec <- data |> filter(month == 12)\n\ndata_Nov |> summarise(on_time_rate = mean(on_time)) |> pull(on_time_rate)\n#> [1] 0.6426161\ndata_Dec |> summarise(on_time_rate = mean(on_time)) |> pull(on_time_rate)\n#> [1] 0.4672835\n3.2 Basics\nUsing the two prepared data frames, we first create a\nship\nobject. The\nship\nobject is an instance of the R6 class\nShipOfTheseus\n, designed to create Theseus plots.\nlibrary(TheseusPlot)\n\nship <- create_ship(data_Nov, data_Dec, y = on_time, labels = c(\"November\", \"December\"))\nYou can create a Theseus plot by passing column names to the\nplot\nmethod of a\nship\nobject. For example, to create a Theseus plot for the airport of origin:\nship$plot(origin)\nNew York City has three major airports, and Newark Liberty International Airport (EWR) accounted for the largest share of the decline in the on-time arrival rate.\nNote that the number of flights at each airport matters, as a larger flight volume is expected to have a greater impact. To make this clear, the Theseus plot displays the data size for each group within each subgroup as a bar chart. From this, we see that the number of flights is similar across airports, allowing for direct comparison of contributions.\nIn summary, a Theseus plot consists of two components:\nA waterfall plot showing how much each subgroup contributed to the change in the metric.\nA bar chart representing the sample size for each group within each subgroup.\nA\nship\nobject also provides the\ntable\nmethod to inspect the exact values used in the Theseus plot.\nship$table(origin)\n#> # A tibble: 3 × 8\n#>   origin contrib    n1    n2    x1    x2 rate1 rate2\n#>   <chr>    <dbl> <int> <int> <int> <int> <dbl> <dbl>\n#> 1 EWR    -0.0831  9603  9410  6251  3901 0.651 0.415\n#> 2 JFK    -0.0565  8645  8923  5702  4332 0.660 0.485\n#> 3 LGA    -0.0358  8723  8687  5379  4393 0.617 0.506\n3.3 Flipping the Plot\nWhen there are many subgroups, a Theseus plot can become hard to read. In such cases, you can swap the x- and y-axes for better visualization.\nship$plot_flip(carrier)\nWhen the number of subgroups is large, those with small contributions are automatically grouped together. By default, this happens when there are more than 10 subgroups, but the threshold can be adjusted with the\nn\nargument.\nship$plot_flip(carrier, n = 5)\nFrom this plot, JetBlue Airways and United Air Lines appear to have the largest contributions to the decline in on-time arrival rate.\n3.4 Automatic Discretization of Continuous Values\nTheseus plots do not directly support continuous variables. If a continuous column is provided, it is automatically discretized. For example, we can create a Theseus plot for departure delays.\nship$plot_flip(dep_delay)\nBy default, continuous variables are discretized so that each subgroup has roughly equal sample sizes, with the number of bins set to 10. You can modify these settings by passing the return value of\ncontinuous_config()\nto the\ncontinuous\nargument.\nship$plot_flip(dep_delay, continuous = continuous_config(n = 5))\nThis result shows that both a decrease in on-time departures and an increase in delayed departures contributed to the decline in on-time arrival rate.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nHOXO-M Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "1. Overview In data analysis, when a metric differs between two groups, we sometimes want to investigate whether a particular subgroup is driving that difference. For example, when a key metric decline is detected compared to the previous year,...",
+      "meta_keywords": null,
+      "og_description": "1. Overview In data analysis, when a metric differs between two groups, we sometimes want to investigate whether a particular subgroup is driving that difference. For example, when a key metric decline is detected compared to the previous year,...",
+      "og_image": "https://hoxo-m.github.io/blog/posts/TheseusPlot/index_files/figure-html/overview-1.png",
+      "og_title": "New R Package TheseusPlot: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.4,
+      "sitemap_lastmod": null,
+      "twitter_description": "1. Overview In data analysis, when a metric differs between two groups, we sometimes want to investigate whether a particular subgroup is driving that difference. For example, when a key metric decline is detected compared to the previous year,...",
+      "twitter_title": "New R Package TheseusPlot: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/08/new-r-package-theseusplot-visualizing-decomposition-of-differences-in-rate-metrics/",
+      "word_count": 1278
+    }
+  }
+}

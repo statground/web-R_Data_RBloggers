@@ -1,0 +1,126 @@
+{
+  "id": "adde02da145e8c905c4da05324f43ab54822f980",
+  "url": "https://www.r-bloggers.com/2009/10/r-for-system-administration-and-scripting/",
+  "created_at_utc": "2025-11-17T20:40:13Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "0d824f09-38fe-4c11-b5e0-28c6900146f1",
+    "created_at": "2025-11-17 20:40:13",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/10/r-for-system-administration-and-scripting/",
+      "crawled_at": "2025-11-17T10:22:02.808691",
+      "external_links": [
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/10/10#r_for_systems_administration",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/04/10#new_garmin_405",
+          "text": "aforementioned Garmin Forerunner 405"
+        },
+        {
+          "href": "http://www.sbrk.co.uk/ant0_t3.tar.gz",
+          "text": "this file"
+        },
+        {
+          "href": "http://cgit.gromotion.com/cgit.cgi/gant/",
+          "text": "git archive"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/code/littler.html",
+          "text": "littler"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/10/10#r_for_systems_administration",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R for system administration and scripting | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/thinking-inside-the-box/",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-696 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R for system administration and scripting</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 10, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thinking-inside-the-box/\">Thinking inside the box</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/10/10#r_for_systems_administration\"> Thinking inside the box   </a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nOn several occassions, <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> had suggested\nitself as a language for <it>systems scripting</it>. By this I mean random\nlittle adminstrative task such as (re-)moving or maybe renaming files or\ndirectories and the like.\n\n<p>\nOne of such cases just happened a few minutes ago.\nThe <a href=\"http://dirk.eddelbuettel.com/blog/2009/04/10#new_garmin_405\" rel=\"nofollow\" target=\"_blank\">aforementioned Garmin Forerunner 405</a>\ncan cooperate quite nicely with Linux using the <tt>gant</tt> reader for the\nant wireless communication protocol between the usb hardware dongle and the\nGarmin 405. (Sources for <tt>gant</tt> are both\n<a href=\"http://www.sbrk.co.uk/ant0_t3.tar.gz\" rel=\"nofollow\" target=\"_blank\">this file</a> and this\n<a href=\"http://cgit.gromotion.com/cgit.cgi/gant/\" rel=\"nofollow\" target=\"_blank\">git archive</a>.)  I had meant\nto blog about this tool and the resulting files one of these days anyway, but\ntoday I just want to mention that the default filenames created by the program\nwere somewhat horrid such as <tt>20.09.2009 101112.TCX</tt> to denote the 20th of\nSeptember of this year at 10:11h and 12 seconds.  As we all know, filenames\nwith spaces are bad for the environment as well as plain annoying.  So I had made\nthe simple change in the <tt>C</tt> sources to switch to a saner format such as\n<tt>20090920-101112.TCX</tt> (and I see that the git archive now contains a\nsimilar fix).  But that still left me with some 80+ files with the dreaded\nnames.\n\n<p>\nThere are of course many ways to skin this cat and to rename the files in\nbulk.  However, I found the following four lines to be fairly succinct\n\n<pre>#!/usr/bin/r\nfiles &lt;- dir(\".\", pattern=\".*\\\\.TCX$\")\nres &lt;- lapply(files, function(f) {\n    pt &lt;- strptime(f, \"%d.%m.%Y %H%M%S.TCX\")  # parsed time\n    ft &lt;- strftime(pt, \"%Y%m%d-%H%M%S.TCX\")   # formatted time\n    file.rename(f, ft)\n})\n</pre>\n\nas they show, among other things,\n\n<ul>\n<li>the access to one of the three (soon four) regexp engines, here as a\n    simple <tt>patterns</tt> argument to <tt>dir()</tt> </li>\n<li>the functional programming nature of the beast: <tt>files</tt> is a\n    vector of filenames, and <tt>lapply()</tt> unrolls the vector one-by-one\n    calling the anonymous function and passing the current element off as\n    <tt>f</tt></li>\n<li>computing on times is particularly easy as we get <tt>strptime</tt> and\n    <tt>strftime</tt> as any self- and POSIX-respecting language should</li>\n<li>similarly, we get access to file system-level operations natively\n    avoiding all quoting issues that make files with spaces such fun in the\n    first place. </li>\n<li>the <a href=\"http://dirk.eddelbuettel.com/code/littler.html\" rel=\"nofollow\" target=\"_blank\">littler</a>\n    scripting frontend providing <tt>/usr/bin/r</tt> rules.\n</li></ul>\n\nSo about five lines and two minutes later, some eighty-ish files were renamed\nand sanity was restored.  Hm, and I took me five times as long to blog this.\n\n<p>\nLastly, I do not mean to imply that Python or Perl or Ruby or (insert\nfavourite tool here) cannot do it equally well.  I simply meant to say that\nprogrammatically creating new filenames is definitely easier in\n<a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> than it would have been in shell.\nAnd as an added bonus, we even get fully parsed time objects that I could\nhave tested for.  But then tests and documentation never get written on a\nSaturday. \r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/10/10#r_for_systems_administration\"> Thinking inside the box   </a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></p></div>\n</article>",
+      "main_text": "R for system administration and scripting\nPosted on\nOctober 10, 2009\nby\nThinking inside the box\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThinking inside the box\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nOn several occassions,\nR\nhad suggested\nitself as a language for\nsystems scripting\n. By this I mean random\nlittle adminstrative task such as (re-)moving or maybe renaming files or\ndirectories and the like.\nOne of such cases just happened a few minutes ago.\nThe\naforementioned Garmin Forerunner 405\ncan cooperate quite nicely with Linux using the\ngant\nreader for the\nant wireless communication protocol between the usb hardware dongle and the\nGarmin 405. (Sources for\ngant\nare both\nthis file\nand this\ngit archive\n.)  I had meant\nto blog about this tool and the resulting files one of these days anyway, but\ntoday I just want to mention that the default filenames created by the program\nwere somewhat horrid such as\n20.09.2009 101112.TCX\nto denote the 20th of\nSeptember of this year at 10:11h and 12 seconds.  As we all know, filenames\nwith spaces are bad for the environment as well as plain annoying.  So I had made\nthe simple change in the\nC\nsources to switch to a saner format such as\n20090920-101112.TCX\n(and I see that the git archive now contains a\nsimilar fix).  But that still left me with some 80+ files with the dreaded\nnames.\nThere are of course many ways to skin this cat and to rename the files in\nbulk.  However, I found the following four lines to be fairly succinct\n#!/usr/bin/r\nfiles <- dir(\".\", pattern=\".*\\\\.TCX$\")\nres <- lapply(files, function(f) {\n    pt <- strptime(f, \"%d.%m.%Y %H%M%S.TCX\")  # parsed time\n    ft <- strftime(pt, \"%Y%m%d-%H%M%S.TCX\")   # formatted time\n    file.rename(f, ft)\n})\nas they show, among other things,\nthe access to one of the three (soon four) regexp engines, here as a\n    simple\npatterns\nargument to\ndir()\nthe functional programming nature of the beast:\nfiles\nis a\n    vector of filenames, and\nlapply()\nunrolls the vector one-by-one\n    calling the anonymous function and passing the current element off as\nf\ncomputing on times is particularly easy as we get\nstrptime\nand\nstrftime\nas any self- and POSIX-respecting language should\nsimilarly, we get access to file system-level operations natively\n    avoiding all quoting issues that make files with spaces such fun in the\n    first place.\nthe\nlittler\nscripting frontend providing\n/usr/bin/r\nrules.\nSo about five lines and two minutes later, some eighty-ish files were renamed\nand sanity was restored.  Hm, and I took me five times as long to blog this.\nLastly, I do not mean to imply that Python or Perl or Ruby or (insert\nfavourite tool here) cannot do it equally well.  I simply meant to say that\nprogrammatically creating new filenames is definitely easier in\nR\nthan it would have been in shell.\nAnd as an added bonus, we even get fully parsed time objects that I could\nhave tested for.  But then tests and documentation never get written on a\nSaturday.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThinking inside the box\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "On several occassions, R had suggested itself as a language for systems scripting. By this I mean random little adminstrative task such as (re-)moving or maybe renaming files or directories and the like. One of such cases just happened a few minutes ago. The aforementioned Garmin Forerunner 405 can cooperate quite nicely with Linux using the gant reader for the ant wireless communication protocol between the usb hardware dongle and the Garmin 405. (Sources for gant are both this file and this git archive.) I had meant to blog about this tool and the resulting files one of these days anyway, but today I just want to mention that the default filenames created by the program were somewhat horrid such as 20.09.2009 101112.TCX to denote the 20th of September of this year at 10:11h and 12 seconds. As we all know, filenames with spaces are bad for the environment as well as plain annoying. So I had made the simple change in the C sources to switch to a saner format such as 20090920-101112.TCX (and I see that the git archive now contains a similar fix). But that still left me with some 80+ files with the dreaded names. There are of course many ways to skin this cat and to rename the files in bulk. However, I found the following four lines to be fairly succinct #!/usr/bin/r files",
+      "meta_keywords": null,
+      "og_description": "On several occassions, R had suggested itself as a language for systems scripting. By this I mean random little adminstrative task such as (re-)moving or maybe renaming files or directories and the like. One of such cases just happened a few minutes ago. The aforementioned Garmin Forerunner 405 can cooperate quite nicely with Linux using the gant reader for the ant wireless communication protocol between the usb hardware dongle and the Garmin 405. (Sources for gant are both this file and this git archive.) I had meant to blog about this tool and the resulting files one of these days anyway, but today I just want to mention that the default filenames created by the program were somewhat horrid such as 20.09.2009 101112.TCX to denote the 20th of September of this year at 10:11h and 12 seconds. As we all know, filenames with spaces are bad for the environment as well as plain annoying. So I had made the simple change in the C sources to switch to a saner format such as 20090920-101112.TCX (and I see that the git archive now contains a similar fix). But that still left me with some 80+ files with the dreaded names. There are of course many ways to skin this cat and to rename the files in bulk. However, I found the following four lines to be fairly succinct #!/usr/bin/r files",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "R for system administration and scripting | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.2,
+      "sitemap_lastmod": "2009-10-10T20:48:00+00:00",
+      "twitter_description": "On several occassions, R had suggested itself as a language for systems scripting. By this I mean random little adminstrative task such as (re-)moving or maybe renaming files or directories and the like. One of such cases just happened a few minutes ago. The aforementioned Garmin Forerunner 405 can cooperate quite nicely with Linux using the gant reader for the ant wireless communication protocol between the usb hardware dongle and the Garmin 405. (Sources for gant are both this file and this git archive.) I had meant to blog about this tool and the resulting files one of these days anyway, but today I just want to mention that the default filenames created by the program were somewhat horrid such as 20.09.2009 101112.TCX to denote the 20th of September of this year at 10:11h and 12 seconds. As we all know, filenames with spaces are bad for the environment as well as plain annoying. So I had made the simple change in the C sources to switch to a saner format such as 20090920-101112.TCX (and I see that the git archive now contains a similar fix). But that still left me with some 80+ files with the dreaded names. There are of course many ways to skin this cat and to rename the files in bulk. However, I found the following four lines to be fairly succinct #!/usr/bin/r files",
+      "twitter_title": "R for system administration and scripting | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/10/r-for-system-administration-and-scripting/",
+      "word_count": 636
+    }
+  }
+}

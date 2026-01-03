@@ -1,0 +1,134 @@
+{
+  "id": "05c02e04f96b67163a68a78a94a6e502e0954cc3",
+  "url": "https://www.r-bloggers.com/2025/08/deploying-a-golem-shiny-app-to-shinyapps-io/",
+  "created_at_utc": "2025-11-22T19:57:51Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "763f8008-ed68-4252-8a14-c7c0089d9338",
+    "created_at": "2025-11-22 19:57:51",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/08/deploying-a-golem-shiny-app-to-shinyapps-io/",
+      "crawled_at": "2025-11-22T10:44:06.283952",
+      "external_links": [
+        {
+          "href": "https://pacha.dev/blog/2025/08/24/golem/",
+          "text": "pacha.dev/blog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://buymeacoffee.com/pacha/e/80976",
+          "text": "Buy Me a Coffee"
+        },
+        {
+          "href": "https://pacha.dev/blog/2025/08/11/",
+          "text": "A Personal Message from an Open Source Contributor"
+        },
+        {
+          "href": "https://www.instagram.com/maplebooster/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/ThinkR-open/golem",
+          "text": "Golem"
+        },
+        {
+          "href": "https://pachadotdev.shinyapps.io/cobbdouglasge/",
+          "text": "Shiny Apps"
+        },
+        {
+          "href": "https://pachadotdev.shinyapps.io/cobbdouglasge/",
+          "text": "2×2 Cobb-Douglas General Equilibrium viewer"
+        },
+        {
+          "href": "https://github.com/pachadotdev/cobbdouglasge",
+          "text": "https://github.com/pachadotdev/cobbdouglasge"
+        },
+        {
+          "href": "https://shinyapps.io/",
+          "text": "ShinyApps.io"
+        },
+        {
+          "href": "https://pacha.dev/blog/2025/08/24/golem/",
+          "text": "pacha.dev/blog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Deploying a Golem Shiny App to ShinyApps.io | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/pacha-dev-blog/",
+          "text": "pacha.dev/blog"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394965 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Deploying a Golem Shiny App to ShinyApps.io</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 23, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/pacha-dev-blog/\">pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/08/24/golem/\"> pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><em>Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on <a href=\"https://buymeacoffee.com/pacha/e/80976\" rel=\"nofollow\" target=\"_blank\">Buy Me a Coffee</a>. It shall be used to continue my Open Source efforts. The full explanation is here: <a href=\"https://pacha.dev/blog/2025/08/11/\" rel=\"nofollow\" target=\"_blank\">A Personal Message from an Open Source Contributor</a>.</em> <em>If you play the electric guitar, the same scholarship chaos led me to turn my guitar pedals and DIY kits hobby into a business, and you can check those <a href=\"https://www.instagram.com/maplebooster/\" rel=\"nofollow\" target=\"_blank\">here</a>.</em></p>\n<p>I uploaded a Shiny app made with <a href=\"https://github.com/ThinkR-open/golem\" rel=\"nofollow\" target=\"_blank\">Golem</a> to <a href=\"https://pachadotdev.shinyapps.io/cobbdouglasge/\" rel=\"nofollow\" target=\"_blank\">Shiny Apps</a> for a live demo. I had to troubleshoot a few issues with the deployment so here are the steps I used. I hope this is useful 🙂</p>\n<p>After creating a Shiny app skeleton with <code>golem::create_golem(\"pkgname\")</code> you can create an app such as the <a href=\"https://pachadotdev.shinyapps.io/cobbdouglasge/\" rel=\"nofollow\" target=\"_blank\">2×2 Cobb-Douglas General Equilibrium viewer</a> (code on [GitHub(<a href=\"https://github.com/pachadotdev/cobbdouglasge\" rel=\"nofollow\" target=\"_blank\">https://github.com/pachadotdev/cobbdouglasge</a>]).</p>\n<p>When I tried to deploy that Cobb-Douglas app to <a href=\"https://shinyapps.io/\" rel=\"nofollow\" target=\"_blank\">ShinyApps.io</a> I got this message:</p>\n<pre>&gt; rsconnect::deployApp()\nℹ Capturing R dependencies\nThe following package(s) were installed from an unknown source:\n- cobbdouglasge [0.0.0.9000]\nrenv may be unable to restore these packages in the future.\nConsider reinstalling these packages from a known source (e.g. CRAN).\n\nError in renv_snapshot_validate_report(valid, prompt, force) : \n  aborting snapshot due to pre-flight validation failure</pre>\n<p>The cause of the problem is that when testing my app, I installed it locally with <code>devtools::install()</code>, and ShinyApps needs CRAN or GitHub as a source for the dependencies.</p>\n<p>To remedy that, I added the following to <code>dev/03_deploy.R</code> without running it:</p>\n<pre>golem::add_shinyappsio_file()\nremotes::install_github(\"pachadotdev/cobbdouglasge\")\nuse_git_ignore(\"rsconnect/\")\nrsconnect::deployApp()</pre>\n<p>I know <code>pak</code> is the standard these days, but it gave me a compilation error when I tried to install it, so I used <code>remotes</code>.</p>\n<p>As an optional step to save space in my ShinyApps account, I created the file <code>.rscignore</code> containing:</p>\n<pre>.here\nCODE_OF_CONDUCT.md\nLICENSE*\nNEWS*\nREADME*\ndev\nman\nvignettes\ntests</pre>\n<p>Then I ran the previous chunk that allowed me to deploy the Cobb-Douglas app without errors.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/08/24/golem/\"> pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Deploying a Golem Shiny App to ShinyApps.io\nPosted on\nAugust 23, 2025\nby\npacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\npacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBecause of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on\nBuy Me a Coffee\n. It shall be used to continue my Open Source efforts. The full explanation is here:\nA Personal Message from an Open Source Contributor\n.\nIf you play the electric guitar, the same scholarship chaos led me to turn my guitar pedals and DIY kits hobby into a business, and you can check those\nhere\n.\nI uploaded a Shiny app made with\nGolem\nto\nShiny Apps\nfor a live demo. I had to troubleshoot a few issues with the deployment so here are the steps I used. I hope this is useful 🙂\nAfter creating a Shiny app skeleton with\ngolem::create_golem(\"pkgname\")\nyou can create an app such as the\n2×2 Cobb-Douglas General Equilibrium viewer\n(code on [GitHub(\nhttps://github.com/pachadotdev/cobbdouglasge\n]).\nWhen I tried to deploy that Cobb-Douglas app to\nShinyApps.io\nI got this message:\n> rsconnect::deployApp()\nℹ Capturing R dependencies\nThe following package(s) were installed from an unknown source:\n- cobbdouglasge [0.0.0.9000]\nrenv may be unable to restore these packages in the future.\nConsider reinstalling these packages from a known source (e.g. CRAN).\n\nError in renv_snapshot_validate_report(valid, prompt, force) : \n  aborting snapshot due to pre-flight validation failure\nThe cause of the problem is that when testing my app, I installed it locally with\ndevtools::install()\n, and ShinyApps needs CRAN or GitHub as a source for the dependencies.\nTo remedy that, I added the following to\ndev/03_deploy.R\nwithout running it:\ngolem::add_shinyappsio_file()\nremotes::install_github(\"pachadotdev/cobbdouglasge\")\nuse_git_ignore(\"rsconnect/\")\nrsconnect::deployApp()\nI know\npak\nis the standard these days, but it gave me a compilation error when I tried to install it, so I used\nremotes\n.\nAs an optional step to save space in my ShinyApps account, I created the file\n.rscignore\ncontaining:\n.here\nCODE_OF_CONDUCT.md\nLICENSE*\nNEWS*\nREADME*\ndev\nman\nvignettes\ntests\nThen I ran the previous chunk that allowed me to deploy the Cobb-Douglas app without errors.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\npacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal Message from an Open So...",
+      "meta_keywords": null,
+      "og_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal Message from an Open So...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Deploying a Golem Shiny App to ShinyApps.io | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.4,
+      "sitemap_lastmod": null,
+      "twitter_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal Message from an Open So...",
+      "twitter_title": "Deploying a Golem Shiny App to ShinyApps.io | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/08/deploying-a-golem-shiny-app-to-shinyapps-io/",
+      "word_count": 489
+    }
+  }
+}

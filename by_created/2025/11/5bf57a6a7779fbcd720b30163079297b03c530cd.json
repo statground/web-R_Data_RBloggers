@@ -1,0 +1,161 @@
+{
+  "id": "5bf57a6a7779fbcd720b30163079297b03c530cd",
+  "url": "https://www.r-bloggers.com/2009/09/structural-equation-modelling-in-r/",
+  "created_at_utc": "2025-11-17T20:40:21Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "109dfb5e-736e-4868-9d59-9a2fa3d37a27",
+    "created_at": "2025-11-17 20:40:21",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/structural-equation-modelling-in-r/",
+      "crawled_at": "2025-11-17T10:25:10.651645",
+      "external_links": [
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/09/structural-equation-modelling-in-r.html",
+          "text": "Jeromy Anglim's Blog: Psychology and Statistics"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://faculty.chass.ncsu.edu/garson/PA765/structur.htm",
+          "text": "Structural Equation Modelling"
+        },
+        {
+          "href": "http://davidakenny.net/cm/mediate.htm",
+          "text": "standard three variable scenario"
+        },
+        {
+          "href": "http://www.ammonsscientific.com/summary1xbrief/PR-August-2009_0020_s.html",
+          "text": "Big Five Traits as predictors of subjective and psychological well-being."
+        },
+        {
+          "href": "http://web.psych.unimelb.edu.au/jkanglim/IntroductiontoSEM.pdf",
+          "text": "Structural Equation Modelling available online"
+        },
+        {
+          "href": "https://www.google.com.au/search?rlz=1C1GGLS_enAU291AU305&sourceid=chrome&ie=UTF-8&q=structural+equation+modelling+resources",
+          "text": "online resources"
+        },
+        {
+          "href": "http://ssc.utexas.edu/consulting/tutorials/stat/amos/",
+          "text": "Amos"
+        },
+        {
+          "href": "https://scholar.google.com/scholar?hl=en&q=hu%20and%20bentler%20fit%20statistics&um=1&ie=UTF-8&sa=N&tab=ws",
+          "text": "Hu and Bentller fit statistics boxes"
+        },
+        {
+          "href": "http://socserv.mcmaster.ca/jfox/",
+          "text": "John Fox"
+        },
+        {
+          "href": "http://socserv.mcmaster.ca/jfox/Misc/sem/index.html",
+          "text": "sem package"
+        },
+        {
+          "href": "http://psy-ed.wikidot.com/sem",
+          "text": "psychology wiki"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/06/learning-r-for-researchers-in.html",
+          "text": "links here"
+        },
+        {
+          "href": "http://openmx.psyc.virginia.edu/wiki/main-page",
+          "text": "OpenMx for release as an R package"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/06/learning-r-for-researchers-in.html",
+          "text": "learn the fundamentals of R"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/09/structural-equation-modelling-in-r.html",
+          "text": "Jeromy Anglim's Blog: Psychology and Statistics"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Structural Equation Modelling in R | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-2490324267666155484?l=jeromyanglim.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-2490324267666155484?l=jeromyanglim.blogspot.com"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jeromy-anglim/",
+          "text": "Jeromy Anglim"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-546 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Structural Equation Modelling in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 20, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jeromy-anglim/\">Jeromy Anglim</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jeromyanglim.blogspot.com/2009/09/structural-equation-modelling-in-r.html\"> Jeromy Anglim's Blog: Psychology and Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><a href=\"http://faculty.chass.ncsu.edu/garson/PA765/structur.htm\" rel=\"nofollow\" target=\"_blank\">Structural Equation Modelling</a> (SEM) Software is frequently used in psychology. This post discusses the exciting prospect of greater support for SEM in R. …<br/><br/><a name=\"more\"></a><br/>I have used SEM to:<br/><ul><li>Run confirmatory factor analyses to examine the measurement structure of multi-factor psychological scales</li><li>Compare the factor structure of a scale across multiple groups</li><li>Examine the plausibility of various structural and mediation models. It’s particularly useful when the mediation is more complex than the <a href=\"http://davidakenny.net/cm/mediate.htm\" rel=\"nofollow\" target=\"_blank\">standard three variable scenario</a>.</li><li>Estimate correlations or regression models of the latent variables (i.e., adjusting for reliability).</li><li>Determine parsimonious descriptions of a correlation matrix by exploring the fit that results from placing and removing various equality constraints. <span style=\"-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;\">For example of this see: Grant, S., Langan-Fox, J., &amp; Anglim, J. (2009). <a href=\"http://www.ammonsscientific.com/summary1xbrief/PR-August-2009_0020_s.html\" rel=\"nofollow\" target=\"_blank\">Big Five Traits as predictors of subjective and psychological well-being.</a> <i>Psychological Reports, 105, </i>201-231<i>.</i></span></li><li><span style=\"-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;\"><i><span style=\"-webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; font-style: normal;\">I have some materials on <a href=\"http://web.psych.unimelb.edu.au/jkanglim/IntroductiontoSEM.pdf\" rel=\"nofollow\" target=\"_blank\">Structural Equation Modelling available online</a>. There are of course many good books and <a href=\"https://www.google.com.au/search?rlz=1C1GGLS_enAU291AU305&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=structural+equation+modelling+resources\" rel=\"nofollow\" target=\"_blank\">online resources</a>.</span></i></span></li></ul><b>A little history: </b>I was originally taught to do Structural Equation modelling in <a href=\"http://ssc.utexas.edu/consulting/tutorials/stat/amos/\" rel=\"nofollow\" target=\"_blank\">Amos</a> (which was bought out by SPSS, which was bought out by IBM). Among other things Amos attempted to bring SEM to the masses. The main mode of creating models in Amos is to draw them graphically. This makes it fairly easy to draw simple confirmatory factor analysis models and simple structural models. There are also many drawing tools designed to make it more efficient to draw diagrams and so on. However, the switch from simple drawing of models to testing models programmatically is a big jump, especially considering that you have to learn a programming language for something you might only use occasionally. And even drawing a single model can eventually become quite time consuming and error prone. For this and several other reasons I have been excited about the idea of running structural equation models in R. A selection of reasons why R would be a natural fit for structural equation modelling include the following:<br/><br/><b>Model comparison: </b>Bad SEM style involves a researcher saying this is my model and testing only that model and ticking the <a href=\"https://scholar.google.com/scholar?hl=en&amp;q=hu%20and%20bentler%20fit%20statistics&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=ws\" rel=\"nofollow\" target=\"_blank\">Hu and Bentller fit statistics boxes</a>. Good SEM style typically involves adopting a model comparison approach. A series of models are specified: e.g., baseline simple model, an hypothesised model, a series of plausible alternative models, and one or models models based on post-hoc theoretically justifiable refinements. <b><span style=\"font-weight: normal;\">R is well-suited to such a model comparison approach. Each model can be stored in a list. Fit statistics can be extracted using code. Tables for comparing models in terms of fit and nested chi-squares can easily be obtained. </span></b><br/><br/><b>Specification of models in R: </b>The challenge is to provide a way of specifying models that is easy and efficient. It should then be easy to additionally adjust models by for example specifying equality constraints, constraint relationships to zero and so on.<br/><br/><b>Extracting model information in R: </b>SEM produces a lot of output. This is well suited to R where this information can be stored in a list structure. This information can then be selectively extracted as needed.<br/><br/><b>Writing code for SEM and R:</b> SEM tends to be a niche statistical task. I might use it 3 or 4 times per year. Thus, learning a whole new scripting environment is annoying. Using the same programming language as R makes a lot of sense. Scripts can more easily be shared to highlight common analyses, and those with more knowledge of SEM can lead the way in how to program more advanced models.<br/><br/><b>Graphically representing models in R: </b>R is great for graphics. It would be great to be able to specify an SEM model and simply run a plot function to graphically represent it with options for what information is represented and how it is presented.<br/><br/><b>Implementation of various preparatory processes in R: </b>R should make it easier to do various common preparatory activities, such as item parcelling, calculating alternatively estimates of correlations (e.g., polychoric correlations, etc.). The beauty of this is that the analysts could quickly examine the effect of tweaking various initial conditions on the final results.<br/><br/><b>Incremental improvement: </b>SEM practice is constantly evolving. R programs typically adopt a modular orientation that allow for incorporation of additional procedures. E.g. new fit measures, new estimation algorithms, and so on.<br/><br/><div style=\"text-align: center;\"><b>Status of SEM in R</b><br/></div><b>The sem package: <span style=\"font-weight: normal;\"><a href=\"http://socserv.mcmaster.ca/jfox/\" rel=\"nofollow\" target=\"_blank\">John Fox</a> wrote the <a href=\"http://socserv.mcmaster.ca/jfox/Misc/sem/index.html\" rel=\"nofollow\" target=\"_blank\">sem package</a>. It’s an excellent package. It provides a means for running structural equation models in R. There’s less handholding than with Amos. And specifying models efficiently takes some getting used to. It also does not have all the fit statistics and features of some of the bigger commercial packages. There’s further discussion on a <a href=\"http://psy-ed.wikidot.com/sem\" rel=\"nofollow\" target=\"_blank\">psychology wiki</a>. I list some additional <a href=\"https://jeromyanglim.blogspot.com/2009/06/learning-r-for-researchers-in.html\" rel=\"nofollow\" target=\"_blank\">links here</a>. In short, the sem package is awesome for what it can do. However, it wont yet replace the bigger commercial packages.</span></b><br/><br/><div><b>OpenMx as an R package: </b>For the above reasons it is particularly exciting to watch the development of <a href=\"http://openmx.psyc.virginia.edu/wiki/main-page\" rel=\"nofollow\" target=\"_blank\">OpenMx for release as an R package</a>. An open-beta is scheduled for release October 2009. I’ve never used Mx, but through the grapevine, I’ve heard that it is very feature rich. There appears to be considerable programming and development effort going into producing a powerful SEM package for R.<br/></div><div><br/>In short I hope OpenMx lives up my expectations and that lots of SEM users start to share their OpenMx R code to provide examples of how it all works. Good SEM software may also provide a good enough justification for some student and academic researchers in psychology to take the time to <a href=\"https://jeromyanglim.blogspot.com/2009/06/learning-r-for-researchers-in.html\" rel=\"nofollow\" target=\"_blank\">learn the fundamentals of R</a>.<br/></div><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-2490324267666155484?l=jeromyanglim.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-2490324267666155484?l=jeromyanglim.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-2490324267666155484?l=jeromyanglim.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jeromyanglim.blogspot.com/2009/09/structural-equation-modelling-in-r.html\"> Jeromy Anglim's Blog: Psychology and Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Structural Equation Modelling in R\nPosted on\nSeptember 20, 2009\nby\nJeromy Anglim\nin Uncategorized | 0 Comments\n[This article was first published on\nJeromy Anglim's Blog: Psychology and Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nStructural Equation Modelling\n(SEM) Software is frequently used in psychology. This post discusses the exciting prospect of greater support for SEM in R. …\nI have used SEM to:\nRun confirmatory factor analyses to examine the measurement structure of multi-factor psychological scales\nCompare the factor structure of a scale across multiple groups\nExamine the plausibility of various structural and mediation models. It’s particularly useful when the mediation is more complex than the\nstandard three variable scenario\n.\nEstimate correlations or regression models of the latent variables (i.e., adjusting for reliability).\nDetermine parsimonious descriptions of a correlation matrix by exploring the fit that results from placing and removing various equality constraints.\nFor example of this see: Grant, S., Langan-Fox, J., & Anglim, J. (2009).\nBig Five Traits as predictors of subjective and psychological well-being.\nPsychological Reports, 105,\n201-231\n.\nI have some materials on\nStructural Equation Modelling available online\n. There are of course many good books and\nonline resources\n.\nA little history:\nI was originally taught to do Structural Equation modelling in\nAmos\n(which was bought out by SPSS, which was bought out by IBM). Among other things Amos attempted to bring SEM to the masses. The main mode of creating models in Amos is to draw them graphically. This makes it fairly easy to draw simple confirmatory factor analysis models and simple structural models. There are also many drawing tools designed to make it more efficient to draw diagrams and so on. However, the switch from simple drawing of models to testing models programmatically is a big jump, especially considering that you have to learn a programming language for something you might only use occasionally. And even drawing a single model can eventually become quite time consuming and error prone. For this and several other reasons I have been excited about the idea of running structural equation models in R. A selection of reasons why R would be a natural fit for structural equation modelling include the following:\nModel comparison:\nBad SEM style involves a researcher saying this is my model and testing only that model and ticking the\nHu and Bentller fit statistics boxes\n. Good SEM style typically involves adopting a model comparison approach. A series of models are specified: e.g., baseline simple model, an hypothesised model, a series of plausible alternative models, and one or models models based on post-hoc theoretically justifiable refinements.\nR is well-suited to such a model comparison approach. Each model can be stored in a list. Fit statistics can be extracted using code. Tables for comparing models in terms of fit and nested chi-squares can easily be obtained.\nSpecification of models in R:\nThe challenge is to provide a way of specifying models that is easy and efficient. It should then be easy to additionally adjust models by for example specifying equality constraints, constraint relationships to zero and so on.\nExtracting model information in R:\nSEM produces a lot of output. This is well suited to R where this information can be stored in a list structure. This information can then be selectively extracted as needed.\nWriting code for SEM and R:\nSEM tends to be a niche statistical task. I might use it 3 or 4 times per year. Thus, learning a whole new scripting environment is annoying. Using the same programming language as R makes a lot of sense. Scripts can more easily be shared to highlight common analyses, and those with more knowledge of SEM can lead the way in how to program more advanced models.\nGraphically representing models in R:\nR is great for graphics. It would be great to be able to specify an SEM model and simply run a plot function to graphically represent it with options for what information is represented and how it is presented.\nImplementation of various preparatory processes in R:\nR should make it easier to do various common preparatory activities, such as item parcelling, calculating alternatively estimates of correlations (e.g., polychoric correlations, etc.). The beauty of this is that the analysts could quickly examine the effect of tweaking various initial conditions on the final results.\nIncremental improvement:\nSEM practice is constantly evolving. R programs typically adopt a modular orientation that allow for incorporation of additional procedures. E.g. new fit measures, new estimation algorithms, and so on.\nStatus of SEM in R\nThe sem package:\nJohn Fox\nwrote the\nsem package\n. It’s an excellent package. It provides a means for running structural equation models in R. There’s less handholding than with Amos. And specifying models efficiently takes some getting used to. It also does not have all the fit statistics and features of some of the bigger commercial packages. There’s further discussion on a\npsychology wiki\n. I list some additional\nlinks here\n. In short, the sem package is awesome for what it can do. However, it wont yet replace the bigger commercial packages.\nOpenMx as an R package:\nFor the above reasons it is particularly exciting to watch the development of\nOpenMx for release as an R package\n. An open-beta is scheduled for release October 2009. I’ve never used Mx, but through the grapevine, I’ve heard that it is very feature rich. There appears to be considerable programming and development effort going into producing a powerful SEM package for R.\nIn short I hope OpenMx lives up my expectations and that lots of SEM users start to share their OpenMx R code to provide examples of how it all works. Good SEM software may also provide a good enough justification for some student and academic researchers in psychology to take the time to\nlearn the fundamentals of R\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJeromy Anglim's Blog: Psychology and Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Structural Equation Modelling (SEM) Software is frequently used in psychology. This post discusses the exciting prospect of greater support for SEM in R. ...I have used SEM to:Run confirmatory factor analyses to examine the measurement structure of mul...",
+      "meta_keywords": null,
+      "og_description": "Structural Equation Modelling (SEM) Software is frequently used in psychology. This post discusses the exciting prospect of greater support for SEM in R. ...I have used SEM to:Run confirmatory factor analyses to examine the measurement structure of mul...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/8909074830238091680-2490324267666155484?l=jeromyanglim.blogspot.com",
+      "og_title": "Structural Equation Modelling in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.5,
+      "sitemap_lastmod": "2009-09-21T03:21:41+00:00",
+      "twitter_description": "Structural Equation Modelling (SEM) Software is frequently used in psychology. This post discusses the exciting prospect of greater support for SEM in R. ...I have used SEM to:Run confirmatory factor analyses to examine the measurement structure of mul...",
+      "twitter_title": "Structural Equation Modelling in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/structural-equation-modelling-in-r/",
+      "word_count": 1096
+    }
+  }
+}

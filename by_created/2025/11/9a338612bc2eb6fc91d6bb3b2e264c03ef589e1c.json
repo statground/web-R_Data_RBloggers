@@ -1,0 +1,177 @@
+{
+  "id": "9a338612bc2eb6fc91d6bb3b2e264c03ef589e1c",
+  "url": "https://www.r-bloggers.com/2024/01/optimizing-the-parameters-of-the-spatial-kinetic-ising-model-to-simulate-spatial-patterns/",
+  "created_at_utc": "2025-11-17T20:38:40Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "be83511e-3b25-4b57-a12f-cc575154be71",
+    "created_at": "2025-11-17 20:38:40",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2024/01/optimizing-the-parameters-of-the-spatial-kinetic-ising-model-to-simulate-spatial-patterns/",
+      "crawled_at": "2025-11-17T09:22:27.356683",
+      "external_links": [
+        {
+          "href": "https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index.html",
+          "text": "Jakub Nowosad's website"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2023-12-17-spatialising-bp1/",
+          "text": "a simple model of spatial patterns that can be used to simulate the evolution of spatial patterns over time"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2023-12-17-spatialising-bp1/",
+          "text": "the previous blog post"
+        },
+        {
+          "href": "https://doi.org/10.1088/2752-664x/acdbd2",
+          "text": "https://doi.org/10.1088/2752-664x/acdbd2"
+        },
+        {
+          "href": "https://doi.org/10.1098/rsos.231005",
+          "text": "https://doi.org/10.1098/rsos.231005"
+        },
+        {
+          "href": "https://creativecommons.org/licenses/by/4.0/",
+          "text": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2",
+          "text": "https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index.html",
+          "text": "Jakub Nowosad's website"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Optimizing the parameters of the spatial kinetic Ising model to simulate spatial patterns | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-4-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-8-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-10-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-11-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-12-1.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jakub-nowosad/",
+          "text": "Jakub Nowosad"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-381348 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Optimizing the parameters of the spatial kinetic Ising model to simulate spatial patterns</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 6, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakub-nowosad/\">Jakub Nowosad</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index.html\"> Jakub Nowosad's website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>The spatial kinetic Ising model is <a href=\"https://jakubnowosad.com/posts/2023-12-17-spatialising-bp1/\" rel=\"nofollow\" target=\"_blank\">a simple model of spatial patterns that can be used to simulate the evolution of spatial patterns over time</a>. Its two main parameters are <code>B</code> and <code>J</code>, which control the external pressure and the local autocorrelation tendency, respectively. Both of them have a strong effect on the results of the spatial kinetic Ising model. Thus, the question is how to find the best values of these parameters for a given situation.</p>\n<p>This blog post shows how to use the simulated annealing algorithm to find the best values of <code>B</code> and <code>J</code> that minimize the difference between the metrics of the expected map and the metrics of the last simulation.</p>\n<section class=\"level1\" id=\"data-preparation\">\n<h1>Data preparation</h1>\n<p>To reproduce the calculations in the following post, you need to attach the following packages:</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>library(terra)\nlibrary(spatialising)\nlibrary(ggplot2)</pre>\n</div>\n<!-- update with url -->\n<p>We will also use and process the same input data as in <a href=\"https://jakubnowosad.com/posts/2023-12-17-spatialising-bp1/\" rel=\"nofollow\" target=\"_blank\">the previous blog post</a>.</p>\n<div class=\"cell\" data-crop=\"true\" data-layout-align=\"center\">\n<pre>twomaps = rast(\"/vsicurl/https://github.com/Nowosad/bp-data/raw/main/spatialising-bp/twomaps.tif\")\nrcl = matrix(c(1, -1, 2, 1), byrow = TRUE, ncol = 2)\ntwomaps = classify(twomaps, rcl)\nmap1 = twomaps[[1]]\nmap2 = twomaps[[2]]\nplot(c(map1, map2))</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-4-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-4-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"optimizing-the-parameters\">\n<h1>Optimizing the parameters</h1>\n<p>In this case, we have two maps: the first map (<code>map1</code>) is the initial map, and the second map (<code>map2</code>) is the expected map. Our main goal is to find the best values of <code>B</code> and <code>J</code> that, given the initial map (<code>map1</code>), will result in a simulated map that is as similar as possible to the expected map (<code>map2</code>).</p>\n<p>One possible approach to find these best values of <code>B</code> and <code>J</code> is to use an optimization algorithm. This algorithm’s goal is to minimize the difference between the metrics of the expected map (e.g., <code>map2</code>) and the metrics of the last simulation.</p>\n<p>For that purpose, we can use the <code>optim_sa()</code> function from the <strong>optimization</strong> package that implements the simulated annealing algorithm. Firstly, we need to define a function that takes one variable (<code>x</code>) and returns a single numeric value. Here, we created the <code>optimize_model()</code> function that takes the <code>x</code> variable, which is a vector of two values: <code>B</code> and <code>J</code>. The function then runs the spatial kinetic Ising model with the given values of <code>B</code> and <code>J</code>, calculates the composition and texture indexes for the expected map (<code>map2</code>) and the last simulation, and returns the distance between the metrics of the expected map (<code>map2</code>) and the metrics of the last simulation.<sup>1</sup></p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>optimize_model = function(x){\n  sim = spatialising::kinetic_ising(x = map1, B = x[1], J = x[2], \n                                    updates = 4)  \n  map2_metrics = c(composition_index(map2), texture_index(map2))\n  sim_metrics = c(composition_index(sim[[4]]), texture_index(sim[[4]]))             \n  dist(rbind(map2_metrics, sim_metrics))[[1]]\n}</pre>\n</div>\n<p>Secondly, we need to use the <code>optim_sa()</code> function, which takes the <code>optimize_model()</code> function, the initial values of <code>B</code> and <code>J</code>, and the lower and upper bounds for <code>B</code> and <code>J</code>. Here, we set the bounds for <code>B</code> to be between <code>0</code> and <code>0.9</code> as we know that the proportion of the <code>1</code> (forest) values should increase over time. This operation may take about one minute in this case.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>optim_params = optimization::optim_sa(fun = optimize_model, \n                                      start = c(0.4, 0.4),\n                                      lower = c(0, 0), \n                                      upper = c(0.9, 0.9))</pre>\n</div>\n<p>The output of the <code>optim_sa()</code> function is a list with several elements, including the best values of <code>B</code> and <code>J</code> in the <code>par</code> element.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>optim_params$par</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] 0.78 0.51</pre>\n</div>\n</div>\n<p>Here, our optimal values of <code>B</code> and <code>J</code> are 0.78 and 0.51, respectively. Now, we can use the newly derived values to simulate the spatial kinetic Ising model similar to the second map (<code>map2</code>).</p>\n<div class=\"cell\" data-crop=\"true\" data-layout-align=\"center\">\n<pre>sim_optim = kinetic_ising(map1, \n                          B = optim_params$par[1], J = optim_params$par[2], \n                          updates = 4)\nplot(c(map2, sim_optim[[4]]))</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-8-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-8-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>The map on the left is the expected, true map, and the map on the right is our simulation. While both maps are not identical, they have a similar spatial pattern with a dominance of forest (<code>1</code>) (especially in the northeast part of the map) and a similar configuration of the patches.</p>\n</section>\n<section class=\"level1\" id=\"exploring-the-simulation-results\">\n<h1>Exploring the simulation results</h1>\n<p>In addition to looking at just the final map, we can also retrace the entire simulation process and its effect on the metrics of spatial patterns. Firstly, we can plot all of the simulated rasters:</p>\n<div class=\"cell\" data-crop=\"true\" data-layout-align=\"center\">\n<pre>names(sim_optim) = paste0(\"sim_year\", 2:5)\nplot(sim_optim, nr = 1)</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-10-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-10-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>Secondly, we can calculate their metrics of spatial patterns and compare their changes over time.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>ci_df = data.frame(year = 1:5, metric = \"composition index\",\n                   value = composition_index(c(map1, sim_optim)))\nti_df = data.frame(year = 1:5, metric = \"texture index\",\n                   value = texture_index(c(map1, sim_optim)))\npred_df = rbind(ci_df, ti_df)\nggplot(pred_df, aes(year, value)) +\n  geom_line() +\n  facet_wrap(~metric, scales = \"free_y\")</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-11-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-11-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>As expected, the composition index increases over time, from negative values indicating a dominance of the <code>-1</code> values to positive values indicating a dominance of the <code>1</code> values. The texture index, on the other hand, decreases for the first two simulations and then increases for the last two simulations. There is a good (and well-known) reason for that: the composition of values has an impact on the spatial texture. The larger the dominance of one category, the more clustered the values are, and thus the higher the texture index is.</p>\n</section>\n<section class=\"level1\" id=\"predicting-the-future-changes\">\n<h1>Predicting the future changes</h1>\n<p>Given the assumption that the external pressure and the local autocorrelation tendency will remain the same, we can use the <code>kinetic_ising()</code> function to predict future spatial patterns.</p>\n<div class=\"cell\" data-crop=\"true\" data-layout-align=\"center\">\n<pre>map2_pred = kinetic_ising(map2, \n                          B = optim_params$par[1], J = optim_params$par[2], \n                          updates = 4)\nnames(map2_pred) = paste0(\"sim_year\", 6:9)\nplot(map2_pred, nr = 1)</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-12-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-12-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<p>The above map shows the predicted spatial patterns for the years 6, 7, 8, and 9.</p>\n</section>\n<section class=\"level1\" id=\"conclusions\">\n<h1>Conclusions</h1>\n<p>This blog post showed how to use the simulated annealing algorithm to find the best values of <code>B</code> and <code>J</code> that minimize the difference between the metrics of the expected map and the metrics of the last simulation. It allows not only the simulation of spatial patterns similar to the expected map but also the analysis of the simulation process and prediction of future spatial patterns.</p>\n<p>Of course, there are many caveats and limitations of this approach. For example, the spatial kinetic Ising model assumes that the external pressure and the local autocorrelation tendency are constant over time over the entire area. Moreover, the model is not able to simulate patterns that create or modify linear features (e.g., rivers or roads).</p>\n<p>To learn more about the spatial kinetic Ising model, its background, possible applications, and limitations, I encourage you to read <span class=\"citation\" data-cites=\"Stepinski2023\">Tomasz F. Stepinski (2023)</span> and <span class=\"citation\" data-cites=\"spatialisingpaper\">Tomasz F. Stepinski and Nowosad (2023)</span>.</p>\n</section>\n<div class=\"default\" id=\"quarto-appendix\"><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">References</h2><div class=\"references csl-bib-body hanging-indent\" id=\"refs\">\n<div class=\"csl-entry\" id=\"ref-Stepinski2023\">\nStepinski, Tomasz F. 2023. <span>“Spatially Explicit Simulation of Deforestation Using the Ising-Like Neutral Model.”</span> <em>Environmental Research: Ecology</em> 2 (2): 025003. <a href=\"https://doi.org/10.1088/2752-664x/acdbd2\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1088/2752-664x/acdbd2</a>.\n</div>\n<div class=\"csl-entry\" id=\"ref-spatialisingpaper\">\nStepinski, Tomasz F., and Jakub Nowosad. 2023. <span>“The Kinetic Ising Model Encapsulates Essential Dynamics of Land Pattern Change.”</span> <em>Royal Society Open Science</em> 10 (10): 231005. <a href=\"https://doi.org/10.1098/rsos.231005\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1098/rsos.231005</a>.\n</div>\n</div></section><section class=\"footnotes footnotes-end-of-document\" id=\"footnotes\"><h2 class=\"anchored quarto-appendix-heading\">Footnotes</h2>\n<ol>\n<li id=\"fn1\"><p>The optimization is also explained at https://jakubnowosad.com/spatialising/articles/Optimizing_spatialising_parameters.html.↩︎</p></li>\n</ol>\n</section><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">Reuse</h2><div class=\"quarto-appendix-contents\" id=\"quarto-reuse\"><div><a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"nofollow\" target=\"_blank\">https://creativecommons.org/licenses/by/4.0/</a></div></div></section><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">Citation</h2><div><div class=\"quarto-appendix-secondary-label\">BibTeX citation:</div><pre>@online{nowosad2024,\n  author = {Nowosad, Jakub},\n  title = {Optimizing the Parameters of the Spatial Kinetic {Ising}\n    Model to Simulate Spatial Patterns},\n  date = {2024-01-07},\n  url = {https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2},\n  langid = {en}\n}\n</pre><div class=\"quarto-appendix-secondary-label\">For attribution, please cite this work as:</div><div class=\"csl-entry quarto-appendix-citeas\" id=\"ref-nowosad2024\">\nNowosad, Jakub. 2024. <span>“Optimizing the Parameters of the Spatial\nKinetic Ising Model to Simulate Spatial Patterns.”</span> January 7,\n2024. <a href=\"https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2\" rel=\"nofollow\" target=\"_blank\">https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2</a>.\n</div></div></section></div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index.html\"> Jakub Nowosad's website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Optimizing the parameters of the spatial kinetic Ising model to simulate spatial patterns\nPosted on\nJanuary 6, 2024\nby\nJakub Nowosad\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJakub Nowosad's website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe spatial kinetic Ising model is\na simple model of spatial patterns that can be used to simulate the evolution of spatial patterns over time\n. Its two main parameters are\nB\nand\nJ\n, which control the external pressure and the local autocorrelation tendency, respectively. Both of them have a strong effect on the results of the spatial kinetic Ising model. Thus, the question is how to find the best values of these parameters for a given situation.\nThis blog post shows how to use the simulated annealing algorithm to find the best values of\nB\nand\nJ\nthat minimize the difference between the metrics of the expected map and the metrics of the last simulation.\nData preparation\nTo reproduce the calculations in the following post, you need to attach the following packages:\nlibrary(terra)\nlibrary(spatialising)\nlibrary(ggplot2)\nWe will also use and process the same input data as in\nthe previous blog post\n.\ntwomaps = rast(\"/vsicurl/https://github.com/Nowosad/bp-data/raw/main/spatialising-bp/twomaps.tif\")\nrcl = matrix(c(1, -1, 2, 1), byrow = TRUE, ncol = 2)\ntwomaps = classify(twomaps, rcl)\nmap1 = twomaps[[1]]\nmap2 = twomaps[[2]]\nplot(c(map1, map2))\nOptimizing the parameters\nIn this case, we have two maps: the first map (\nmap1\n) is the initial map, and the second map (\nmap2\n) is the expected map. Our main goal is to find the best values of\nB\nand\nJ\nthat, given the initial map (\nmap1\n), will result in a simulated map that is as similar as possible to the expected map (\nmap2\n).\nOne possible approach to find these best values of\nB\nand\nJ\nis to use an optimization algorithm. This algorithm’s goal is to minimize the difference between the metrics of the expected map (e.g.,\nmap2\n) and the metrics of the last simulation.\nFor that purpose, we can use the\noptim_sa()\nfunction from the\noptimization\npackage that implements the simulated annealing algorithm. Firstly, we need to define a function that takes one variable (\nx\n) and returns a single numeric value. Here, we created the\noptimize_model()\nfunction that takes the\nx\nvariable, which is a vector of two values:\nB\nand\nJ\n. The function then runs the spatial kinetic Ising model with the given values of\nB\nand\nJ\n, calculates the composition and texture indexes for the expected map (\nmap2\n) and the last simulation, and returns the distance between the metrics of the expected map (\nmap2\n) and the metrics of the last simulation.\n1\noptimize_model = function(x){\n  sim = spatialising::kinetic_ising(x = map1, B = x[1], J = x[2], \n                                    updates = 4)  \n  map2_metrics = c(composition_index(map2), texture_index(map2))\n  sim_metrics = c(composition_index(sim[[4]]), texture_index(sim[[4]]))             \n  dist(rbind(map2_metrics, sim_metrics))[[1]]\n}\nSecondly, we need to use the\noptim_sa()\nfunction, which takes the\noptimize_model()\nfunction, the initial values of\nB\nand\nJ\n, and the lower and upper bounds for\nB\nand\nJ\n. Here, we set the bounds for\nB\nto be between\n0\nand\n0.9\nas we know that the proportion of the\n1\n(forest) values should increase over time. This operation may take about one minute in this case.\noptim_params = optimization::optim_sa(fun = optimize_model, \n                                      start = c(0.4, 0.4),\n                                      lower = c(0, 0), \n                                      upper = c(0.9, 0.9))\nThe output of the\noptim_sa()\nfunction is a list with several elements, including the best values of\nB\nand\nJ\nin the\npar\nelement.\noptim_params$par\n[1] 0.78 0.51\nHere, our optimal values of\nB\nand\nJ\nare 0.78 and 0.51, respectively. Now, we can use the newly derived values to simulate the spatial kinetic Ising model similar to the second map (\nmap2\n).\nsim_optim = kinetic_ising(map1, \n                          B = optim_params$par[1], J = optim_params$par[2], \n                          updates = 4)\nplot(c(map2, sim_optim[[4]]))\nThe map on the left is the expected, true map, and the map on the right is our simulation. While both maps are not identical, they have a similar spatial pattern with a dominance of forest (\n1\n) (especially in the northeast part of the map) and a similar configuration of the patches.\nExploring the simulation results\nIn addition to looking at just the final map, we can also retrace the entire simulation process and its effect on the metrics of spatial patterns. Firstly, we can plot all of the simulated rasters:\nnames(sim_optim) = paste0(\"sim_year\", 2:5)\nplot(sim_optim, nr = 1)\nSecondly, we can calculate their metrics of spatial patterns and compare their changes over time.\nci_df = data.frame(year = 1:5, metric = \"composition index\",\n                   value = composition_index(c(map1, sim_optim)))\nti_df = data.frame(year = 1:5, metric = \"texture index\",\n                   value = texture_index(c(map1, sim_optim)))\npred_df = rbind(ci_df, ti_df)\nggplot(pred_df, aes(year, value)) +\n  geom_line() +\n  facet_wrap(~metric, scales = \"free_y\")\nAs expected, the composition index increases over time, from negative values indicating a dominance of the\n-1\nvalues to positive values indicating a dominance of the\n1\nvalues. The texture index, on the other hand, decreases for the first two simulations and then increases for the last two simulations. There is a good (and well-known) reason for that: the composition of values has an impact on the spatial texture. The larger the dominance of one category, the more clustered the values are, and thus the higher the texture index is.\nPredicting the future changes\nGiven the assumption that the external pressure and the local autocorrelation tendency will remain the same, we can use the\nkinetic_ising()\nfunction to predict future spatial patterns.\nmap2_pred = kinetic_ising(map2, \n                          B = optim_params$par[1], J = optim_params$par[2], \n                          updates = 4)\nnames(map2_pred) = paste0(\"sim_year\", 6:9)\nplot(map2_pred, nr = 1)\nThe above map shows the predicted spatial patterns for the years 6, 7, 8, and 9.\nConclusions\nThis blog post showed how to use the simulated annealing algorithm to find the best values of\nB\nand\nJ\nthat minimize the difference between the metrics of the expected map and the metrics of the last simulation. It allows not only the simulation of spatial patterns similar to the expected map but also the analysis of the simulation process and prediction of future spatial patterns.\nOf course, there are many caveats and limitations of this approach. For example, the spatial kinetic Ising model assumes that the external pressure and the local autocorrelation tendency are constant over time over the entire area. Moreover, the model is not able to simulate patterns that create or modify linear features (e.g., rivers or roads).\nTo learn more about the spatial kinetic Ising model, its background, possible applications, and limitations, I encourage you to read\nTomasz F. Stepinski (2023)\nand\nTomasz F. Stepinski and Nowosad (2023)\n.\nReferences\nStepinski, Tomasz F. 2023.\n“Spatially Explicit Simulation of Deforestation Using the Ising-Like Neutral Model.”\nEnvironmental Research: Ecology\n2 (2): 025003.\nhttps://doi.org/10.1088/2752-664x/acdbd2\n.\nStepinski, Tomasz F., and Jakub Nowosad. 2023.\n“The Kinetic Ising Model Encapsulates Essential Dynamics of Land Pattern Change.”\nRoyal Society Open Science\n10 (10): 231005.\nhttps://doi.org/10.1098/rsos.231005\n.\nFootnotes\nThe optimization is also explained at https://jakubnowosad.com/spatialising/articles/Optimizing_spatialising_parameters.html.↩︎\nReuse\nhttps://creativecommons.org/licenses/by/4.0/\nCitation\nBibTeX citation:\n@online{nowosad2024,\n  author = {Nowosad, Jakub},\n  title = {Optimizing the Parameters of the Spatial Kinetic {Ising}\n    Model to Simulate Spatial Patterns},\n  date = {2024-01-07},\n  url = {https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNowosad, Jakub. 2024.\n“Optimizing the Parameters of the Spatial\nKinetic Ising Model to Simulate Spatial Patterns.”\nJanuary 7,\n2024.\nhttps://jakubnowosad.com/posts/2024-01-07-spatialising-bp2\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJakub Nowosad's website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The spatial kinetic Ising model is a simple model of spatial patterns that can be used to simulate the evolution of spatial patterns over time. Its two main parameters are B and J, which control the external pressure and the local autocorrelation...",
+      "meta_keywords": null,
+      "og_description": "The spatial kinetic Ising model is a simple model of spatial patterns that can be used to simulate the evolution of spatial patterns over time. Its two main parameters are B and J, which control the external pressure and the local autocorrelation...",
+      "og_image": "https://jakubnowosad.com/posts/2024-01-07-spatialising-bp2/index_files/figure-html/unnamed-chunk-4-1.png",
+      "og_title": "Optimizing the parameters of the spatial kinetic Ising model to simulate spatial patterns | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 7,
+      "sitemap_lastmod": "2024-01-07T00:00:00+00:00",
+      "twitter_description": "The spatial kinetic Ising model is a simple model of spatial patterns that can be used to simulate the evolution of spatial patterns over time. Its two main parameters are B and J, which control the external pressure and the local autocorrelation...",
+      "twitter_title": "Optimizing the parameters of the spatial kinetic Ising model to simulate spatial patterns | R-bloggers",
+      "url": "https://www.r-bloggers.com/2024/01/optimizing-the-parameters-of-the-spatial-kinetic-ising-model-to-simulate-spatial-patterns/",
+      "word_count": 1402
+    }
+  }
+}

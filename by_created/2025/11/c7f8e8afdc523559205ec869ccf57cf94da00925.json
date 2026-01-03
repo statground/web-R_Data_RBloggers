@@ -1,0 +1,185 @@
+{
+  "id": "c7f8e8afdc523559205ec869ccf57cf94da00925",
+  "url": "https://www.r-bloggers.com/2025/07/part-iii-using-r-in-excel-forecasting/",
+  "created_at_utc": "2025-11-22T19:58:00Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "e06af365-2103-4c2a-b7d0-8c55e9807292",
+    "created_at": "2025-11-22 19:58:00",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/07/part-iii-using-r-in-excel-forecasting/",
+      "crawled_at": "2025-11-22T10:45:04.507476",
+      "external_links": [
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-III-Using-R-in-Excel-Forecasting/",
+          "text": "Adam's Software Lab"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/",
+          "text": "Part I"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/",
+          "text": "Part II"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/assets/images/Part-III-R-in-Excel-Forecasting.xlsx",
+          "text": "“Part III – R in Excel – Forecasting.xlsx”"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/forecast/forecast.pdf",
+          "text": "forecast package"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/",
+          "text": "Part II"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/forecast/forecast.pdf",
+          "text": "forecast package"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/forecast/forecast.pdf",
+          "text": "documentation"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/",
+          "text": "Part II"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-III-Using-R-in-Excel-Forecasting/",
+          "text": "Adam's Software Lab"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Part III – Using R in Excel – Forecasting | R-bloggers",
+      "images": [
+        {
+          "alt": "Moving Average Model",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Moving Average Model",
+          "base64": null,
+          "src": "https://i2.wp.com/adam-gladstone.github.io/assets/images/MovingAverageModel.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Simple Exponential Smoothing",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Simple Exponential Smoothing",
+          "base64": null,
+          "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/SimpleExpSmoothing.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Model Results",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Model Results",
+          "base64": null,
+          "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/ModelResultsAndAccuracy.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Holt-Winters Models",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Holt-Winters Models",
+          "base64": null,
+          "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/HoltWintersModels.png?w=578&ssl=1"
+        },
+        {
+          "alt": "ARIMA Model",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "ARIMA Model",
+          "base64": null,
+          "src": "https://i2.wp.com/adam-gladstone.github.io/assets/images/ArimaModel.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/adam-gladstone/",
+          "text": "Adam Gladstone"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394370 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Part III – Using R in Excel – Forecasting</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/adam-gladstone/\">Adam Gladstone</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-III-Using-R-in-Excel-Forecasting/\"> Adam's Software Lab</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h3 id=\"introduction\">Introduction</h3>\n<p>We have already seen how to obtain descriptive statistics in <a href=\"https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/\" rel=\"nofollow\" target=\"_blank\">Part I</a> and how to use <code>lm()</code> in <a href=\"https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/\" rel=\"nofollow\" target=\"_blank\">Part II</a>. In this part (Part III) of the series we will look at using R in Excel to perform forecasting and time series analysis.</p>\n<p>In the previous two parts we have seen different ways to handle the output from R function calls, unpacking and massaging the data as required. In this part we are going to focus on setting up and interacting with a number of models in the ‘forecast’ package (<code>fpp2</code>).</p>\n<p>The workbook for this part of the series is: <a href=\"https://adam-gladstone.github.io/assets/images/Part-III-R-in-Excel-Forecasting.xlsx\" rel=\"nofollow\" target=\"_blank\">“Part III – R in Excel – Forecasting.xlsx”</a>. As before, the ‘References’ worksheet lists links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. In this demonstration, I use the <code>fpp2</code> package. The ‘Datasets’ worksheet contains the data referenced in the worksheets.</p>\n<h3 id=\"moving-average\">Moving Average</h3>\n<p>In this worksheet we are looking at the moving average function in the <a href=\"https://cran.r-project.org/web/packages/forecast/forecast.pdf\" rel=\"nofollow\" target=\"_blank\">forecast package</a>. <code>ma</code> computes a simple moving average smoother of a given time series. The data we use consists of ice cream sales.</p>\n<p>In the previous posts we have used ‘scripts’ to call R functions. So, in this case we could evaluate</p>\n<p><code>ma(Sales, 3, FALSE)</code></p>\n<p>and get back the smoothed time series.</p>\n<p>However, as the models become more complex, and the number and types of parameters increases, this approach becomes less manageable. An alternative is to use one of the custom <code>Forecast.</code> functions provided by the add-in. This allows us to set up the model parameters as a block of named parameters with their corresponding values. We have already seen an example of this in <a href=\"https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/\" rel=\"nofollow\" target=\"_blank\">Part II</a> where we set up a logistic regression model. In the case of <code>Forecast.MA</code>, we give the model a descriptive name. We know from the documentation that the model takes two parameters: the order (<em>“order of moving average smoother”</em>) and the center (<em>“if TRUE, then the moving average is centred for even orders”</em>). Then we just call a regular Excel worksheet function.</p>\n<p><img alt=\"Moving Average Model\" data-lazy-src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/MovingAverageModel.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Moving Average Model\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/MovingAverageModel.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The add-in provides wrappers around a number of the functions in the <a href=\"https://cran.r-project.org/web/packages/forecast/forecast.pdf\" rel=\"nofollow\" target=\"_blank\">forecast package</a>. These are as follows:</p>\n<ul>\n<li>Forecast.MA – Moving average smoothing</li>\n<li>Forecast.SES – Simple exponential smoothing</li>\n<li>Forecast.Holt – Holt exponential smoothing</li>\n<li>Forecast.HW – Holt-Winters exponential smoothing.</li>\n<li>Forecast.AutoETS – Exponential smoothing state space model.</li>\n<li>Forecast.Arima – Auto-Regressive Integrated Moving Average model</li>\n<li>Forecast.AutoArima – Fit best ARIMA model to univariate time series</li>\n<li>Forecast.FC – Generic function for forecasting from time series or time series models</li>\n<li>Forecast.meanf – Mean forecast</li>\n<li>Forecast.rwf – Forecasts and prediction intervals for a random walk with drift model</li>\n<li>Forecast.splinef – Local linear forecasts and prediction intervals using cubic smoothing splines</li>\n<li>Forecast.thetaf – Forecasts and prediction intervals for a theta method forecast</li>\n<li>Forecast.Croston – Forecasts and other information for Croston’s forecasts</li>\n</ul>\n<h3 id=\"simple-exponential-smoothing\">Simple Exponential Smoothing</h3>\n<p>In this example, we create a simple exponential smoothing model. As before we set up the model parameters following the forecast package <code>ses</code> <a href=\"https://cran.r-project.org/web/packages/forecast/forecast.pdf\" rel=\"nofollow\" target=\"_blank\">documentation</a>. Fortunately, most of the values are defaulted so we only provide inputs for the following:</p>\n<ul>\n<li><em>alpha</em> – the value of the smoothing parameter for the level. If NULL, it will be estimated.</li>\n<li><em>h</em> – the number of periods for forecasting.</li>\n</ul>\n<p>Then we can call the add-in function <code>Forecast.SES(...)</code>.</p>\n<p><img alt=\"Simple Exponential Smoothing\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/SimpleExpSmoothing.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Simple Exponential Smoothing\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/SimpleExpSmoothing.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The model returns the requested forecasts with the mean, and lower and upper limits for the prediction intervals.</p>\n<p>In previous examples, we have extracted model results by concatenating the returned model name (‘SES3’ in this case) with labels from the model. As illustrated in <a href=\"https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/\" rel=\"nofollow\" target=\"_blank\">Part II</a>, in order to make it easier to retrieve results, the add-in provides some additional functions for querying models: <code>Model.Results</code> outputs a list of results from the model. <code>Model.Result</code> outputs the result obtained from one item of the list of model results. Optionally, the result can be formatted as a data frame. This is somewhat more convenient than having to evaluate scripts of the form <code>model name'$coeffcients</code>, etc. Finally, <code>Model.Accuracy</code> returns a number of statistics relating to measures of model accuracy.</p>\n<p><img alt=\"Model Results\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/ModelResultsAndAccuracy.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Model Results\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/ModelResultsAndAccuracy.png?w=578&amp;ssl=1\"/></noscript></p>\n<h3 id=\"the-holt-winters-model\">The Holt-Winters model</h3>\n<p>The HW worksheet illustrates working with the Holt-Winters model. In this case, we set up two different models with their respective parameters, each with their own parameter block: an <strong>additive</strong> model and a <strong>multiplicative</strong> model. However, we first need to address an issue with the ‘data type’ of the dataset. Typically we can just create a numeric vector. Unfortunately, the series parameter of the Holt-Winters model requires information about the frequency with which the observations in the vector occur. Therefore we create a numeric vector first and then convert it into a <code>ts</code> time-series vector with embedded frequency information. Currently, the <strong>ExcelRAddIn</strong> does not support <strong>time series</strong> as a data type. This will be added as a future enhancement.</p>\n<p><img alt=\"Holt-Winters Models\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/HoltWintersModels.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Holt-Winters Models\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/HoltWintersModels.png?w=578&amp;ssl=1\"/></noscript></p>\n<h3 id=\"arima\">ARIMA</h3>\n<p>The final example concerns the ARIMA model. The setup of the model is somewhat more complicated than in previous cases. Specifically, the <code>order</code> and the <code>seasonal</code> parameters.</p>\n<p>From the documentation we know that the <code>order</code> parameter is a specification of the non-seasonal part of the ARIMA model: the three components (p, d, q) are the AR order, the degree of differencing, and the MA order. To handle this specification, we input the components using the vector notation: <code>c(0, 1, 1)</code>.</p>\n<p>For the <code>seasonal</code> parameter, the documentation says: <em>“A specification of the seasonal part of the ARIMA model, plus the period (which defaults to frequency(y)). This should be a list with components order and period, but a specification of just a numeric vector of length 3 will be turned into a suitable list with the specification as the order.”</em></p>\n<p>To achieve this we add a <strong>script</strong> parameter. This is a parameter with a leading ‘^’ character as follows:</p>\n<p><code>^list(order=c(0,1,1),period=12)</code></p>\n<p>With this setup we can create the ARIMA model.</p>\n<p><img alt=\"ARIMA Model\" data-lazy-src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/ArimaModel.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"ARIMA Model\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/adam-gladstone.github.io/assets/images/ArimaModel.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The results can be extracted using a combination of <code>Model.Results</code> and <code>Model.Result</code> functions or by using a ‘raw’ R script. The model accuracy can be checked via the function <code>Model.Accuracy(...)</code>.</p>\n<h3 id=\"wrap-up\">Wrap Up</h3>\n<p>In this post we have used R in Excel to perform some forecasting and time series analyses. We have seen how to set up and retrieve model data. In addition to evaluating R scripts, we have also made use of a number of wrapper functions around the <strong>Forecast</strong> package provided by the add-in to make model setup and evaluation easier.</p>\n<p>In the last part of the series I will look at using R in Excel to call Python scripts.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-III-Using-R-in-Excel-Forecasting/\"> Adam's Software Lab</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Part III – Using R in Excel – Forecasting\nPosted on\nJuly 24, 2025\nby\nAdam Gladstone\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAdam's Software Lab\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nWe have already seen how to obtain descriptive statistics in\nPart I\nand how to use\nlm()\nin\nPart II\n. In this part (Part III) of the series we will look at using R in Excel to perform forecasting and time series analysis.\nIn the previous two parts we have seen different ways to handle the output from R function calls, unpacking and massaging the data as required. In this part we are going to focus on setting up and interacting with a number of models in the ‘forecast’ package (\nfpp2\n).\nThe workbook for this part of the series is:\n“Part III – R in Excel – Forecasting.xlsx”\n. As before, the ‘References’ worksheet lists links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. In this demonstration, I use the\nfpp2\npackage. The ‘Datasets’ worksheet contains the data referenced in the worksheets.\nMoving Average\nIn this worksheet we are looking at the moving average function in the\nforecast package\n.\nma\ncomputes a simple moving average smoother of a given time series. The data we use consists of ice cream sales.\nIn the previous posts we have used ‘scripts’ to call R functions. So, in this case we could evaluate\nma(Sales, 3, FALSE)\nand get back the smoothed time series.\nHowever, as the models become more complex, and the number and types of parameters increases, this approach becomes less manageable. An alternative is to use one of the custom\nForecast.\nfunctions provided by the add-in. This allows us to set up the model parameters as a block of named parameters with their corresponding values. We have already seen an example of this in\nPart II\nwhere we set up a logistic regression model. In the case of\nForecast.MA\n, we give the model a descriptive name. We know from the documentation that the model takes two parameters: the order (\n“order of moving average smoother”\n) and the center (\n“if TRUE, then the moving average is centred for even orders”\n). Then we just call a regular Excel worksheet function.\nThe add-in provides wrappers around a number of the functions in the\nforecast package\n. These are as follows:\nForecast.MA – Moving average smoothing\nForecast.SES – Simple exponential smoothing\nForecast.Holt – Holt exponential smoothing\nForecast.HW – Holt-Winters exponential smoothing.\nForecast.AutoETS – Exponential smoothing state space model.\nForecast.Arima – Auto-Regressive Integrated Moving Average model\nForecast.AutoArima – Fit best ARIMA model to univariate time series\nForecast.FC – Generic function for forecasting from time series or time series models\nForecast.meanf – Mean forecast\nForecast.rwf – Forecasts and prediction intervals for a random walk with drift model\nForecast.splinef – Local linear forecasts and prediction intervals using cubic smoothing splines\nForecast.thetaf – Forecasts and prediction intervals for a theta method forecast\nForecast.Croston – Forecasts and other information for Croston’s forecasts\nSimple Exponential Smoothing\nIn this example, we create a simple exponential smoothing model. As before we set up the model parameters following the forecast package\nses\ndocumentation\n. Fortunately, most of the values are defaulted so we only provide inputs for the following:\nalpha\n– the value of the smoothing parameter for the level. If NULL, it will be estimated.\nh\n– the number of periods for forecasting.\nThen we can call the add-in function\nForecast.SES(...)\n.\nThe model returns the requested forecasts with the mean, and lower and upper limits for the prediction intervals.\nIn previous examples, we have extracted model results by concatenating the returned model name (‘SES3’ in this case) with labels from the model. As illustrated in\nPart II\n, in order to make it easier to retrieve results, the add-in provides some additional functions for querying models:\nModel.Results\noutputs a list of results from the model.\nModel.Result\noutputs the result obtained from one item of the list of model results. Optionally, the result can be formatted as a data frame. This is somewhat more convenient than having to evaluate scripts of the form\nmodel name'$coeffcients\n, etc. Finally,\nModel.Accuracy\nreturns a number of statistics relating to measures of model accuracy.\nThe Holt-Winters model\nThe HW worksheet illustrates working with the Holt-Winters model. In this case, we set up two different models with their respective parameters, each with their own parameter block: an\nadditive\nmodel and a\nmultiplicative\nmodel. However, we first need to address an issue with the ‘data type’ of the dataset. Typically we can just create a numeric vector. Unfortunately, the series parameter of the Holt-Winters model requires information about the frequency with which the observations in the vector occur. Therefore we create a numeric vector first and then convert it into a\nts\ntime-series vector with embedded frequency information. Currently, the\nExcelRAddIn\ndoes not support\ntime series\nas a data type. This will be added as a future enhancement.\nARIMA\nThe final example concerns the ARIMA model. The setup of the model is somewhat more complicated than in previous cases. Specifically, the\norder\nand the\nseasonal\nparameters.\nFrom the documentation we know that the\norder\nparameter is a specification of the non-seasonal part of the ARIMA model: the three components (p, d, q) are the AR order, the degree of differencing, and the MA order. To handle this specification, we input the components using the vector notation:\nc(0, 1, 1)\n.\nFor the\nseasonal\nparameter, the documentation says:\n“A specification of the seasonal part of the ARIMA model, plus the period (which defaults to frequency(y)). This should be a list with components order and period, but a specification of just a numeric vector of length 3 will be turned into a suitable list with the specification as the order.”\nTo achieve this we add a\nscript\nparameter. This is a parameter with a leading ‘^’ character as follows:\n^list(order=c(0,1,1),period=12)\nWith this setup we can create the ARIMA model.\nThe results can be extracted using a combination of\nModel.Results\nand\nModel.Result\nfunctions or by using a ‘raw’ R script. The model accuracy can be checked via the function\nModel.Accuracy(...)\n.\nWrap Up\nIn this post we have used R in Excel to perform some forecasting and time series analyses. We have seen how to set up and retrieve model data. In addition to evaluating R scripts, we have also made use of a number of wrapper functions around the\nForecast\npackage provided by the add-in to make model setup and evaluation easier.\nIn the last part of the series I will look at using R in Excel to call Python scripts.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAdam's Software Lab\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introduction We have already seen how to obtain descriptive statistics in Part I and how to use lm() in Part II. In this part (Part III) of the series we will look at using R in Excel to perform forecasting and time series analysis. In the previous tw...",
+      "meta_keywords": null,
+      "og_description": "Introduction We have already seen how to obtain descriptive statistics in Part I and how to use lm() in Part II. In this part (Part III) of the series we will look at using R in Excel to perform forecasting and time series analysis. In the previous tw...",
+      "og_image": "https://adam-gladstone.github.io/assets/images/MovingAverageModel.png",
+      "og_title": "Part III – Using R in Excel – Forecasting | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.2,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introduction We have already seen how to obtain descriptive statistics in Part I and how to use lm() in Part II. In this part (Part III) of the series we will look at using R in Excel to perform forecasting and time series analysis. In the previous tw...",
+      "twitter_title": "Part III – Using R in Excel – Forecasting | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/07/part-iii-using-r-in-excel-forecasting/",
+      "word_count": 1237
+    }
+  }
+}

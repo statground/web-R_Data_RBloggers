@@ -1,0 +1,139 @@
+{
+  "id": "bc59c0444e03d7aa2c772568ae690178842a1482",
+  "url": "https://www.r-bloggers.com/2008/09/how-do-you-measure-a-major-league-slugger/",
+  "created_at_utc": "2025-11-17T20:41:29Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "c03c3492-a49f-4524-aab1-cba7d25a2d66",
+    "created_at": "2025-11-17 20:41:29",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2008/09/how-do-you-measure-a-major-league-slugger/",
+      "crawled_at": "2025-11-17T10:50:18.282926",
+      "external_links": [
+        {
+          "href": "http://www.dataspora.com/2008/09/sabermetrics-using-r-programming/",
+          "text": "Dataspora » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/09/davidortiz_small.jpg",
+          "text": null
+        },
+        {
+          "href": "http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13118",
+          "text": "talk"
+        },
+        {
+          "href": "http://www.baseball-databank.org/",
+          "text": "baseball-databank.org"
+        },
+        {
+          "href": "http://dataspora.com/blog/r/sabermetrics-with-r/",
+          "text": "sabermetrics using R"
+        },
+        {
+          "href": "https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png",
+          "text": null
+        },
+        {
+          "href": "http://www.dataspora.com/2008/09/sabermetrics-using-r-programming/",
+          "text": "Dataspora » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "How do you measure a major league slugger? | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/dataspora.com/wp-content/uploads/2008/09/davidortiz_small-300x197.jpg?resize=200%2C126"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/dataspora.com/wp-content/uploads/2008/09/davidortiz_small-300x197.jpg?resize=200%2C126"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png?resize=233%2C661"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png?resize=233%2C661"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/mike/",
+          "text": "mike"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-42687 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">How do you measure a major league slugger?</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 1, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/mike/\">mike</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.dataspora.com/2008/09/sabermetrics-using-r-programming/\"> Dataspora » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p><a href=\"https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/09/davidortiz_small.jpg\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" class=\"alignnone size-medium wp-image-31 jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/dataspora.com/wp-content/uploads/2008/09/davidortiz_small-300x197.jpg?resize=200%2C126&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"126\" loading=\"lazy\" src=\"https://i2.wp.com/dataspora.com/wp-content/uploads/2008/09/davidortiz_small-300x197.jpg?resize=200%2C126\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"vertical-align: text-bottom;\" title=\"david.ortiz.small\" width=\"200\"/><noscript><img alt=\"\" class=\"alignnone size-medium wp-image-31\" data-recalc-dims=\"1\" height=\"126\" loading=\"lazy\" src=\"https://i2.wp.com/dataspora.com/wp-content/uploads/2008/09/davidortiz_small-300x197.jpg?resize=200%2C126\" style=\"vertical-align: text-bottom;\" title=\"david.ortiz.small\" width=\"200\"/></noscript></a> I gave a <a href=\"http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&amp;eventID=13118\" rel=\"nofollow\" target=\"_blank\">talk</a> last month at SAP Labs in Palo Alto, along with Jim Porzak of ResponSys, introducing the R Statistical Language to a Business Intelligence interest group.  The goal was to highlight how open source tools, like R, can be used to build predictive models.  The example I gave centered around baseball and a simple question:  how do you measure a baseball slugger?</p>\n<p>Michael Lewis, in <em> Moneyball </em>, described how the baseball analyst Bill James was frustrated by the fact that major league hitters were consistently rated by their batting averages.  James wrote:  <span id=\"more-125\"></span></p>\n<blockquote><p>“a hitter should be measured by his success in that which he is trying to do, … create runs. It is startling, when you think about it, how much confusion there is about this.”</p>\n<p style=\"text-align: right;\">– Bill James, 1979 <em>Baseball Abstract</em></p>\n</blockquote>\n<p>However, since teams create runs, not batters, the only way to connect batting statistics with runs is to use team averages.  The idea is that if we know which statistics predict runs at the team level, these statistics could be used to measure individual hitters.</p>\n<p>I decided to test the value of three batting statistics myself — batting average, slugging percentage, and OPS (on-base plus slugging) — and see how well they predicted team runs, using MLB team data for the years 2000-2005 (available from baseball-databank.org). The results are shown in the three scatter plots below, and no surprise, Bill James is right:  a team’s overall batting average (top-most chart) is a comparatively poor predictor of how many runs it will score in an average game.  Slugging percentage (middle plot) is a slightly better predictor, and OPS (bottom plot) is the best of the three statistics I looked at:  it has a 0.95 correlation with runs scored (the r shown in the upper right corner of the plots is the Pearson correlation coefficient, the red lines represent least-squares fits to the points).<br/>\n<span id=\"more-42687\"></span><br/>\nI highlighted a couple of interesting outliers in the top batting average plot: teams that achieved a high level of scoring with a comparatively low team batting average.  Who were these teams?  None other than Billy Beane’s 2000 and 2001 Oakland Athletics.  This suggests that the As management may have found excess value in fielding players who — despite having slightly lower batting averages — were capable of generating runs.</p>\n<p>These results show what Bill James and others already know:  that a baseball slugger should not be measured by his batting average, but by OPS or other hybrid statistics that best correlate with his success at generating runs.  There is nothing novel about the results of my analysis.  But what I hope is novel is showing how it can be done using open source tools (R and MySQL), free data (<a href=\"http://www.baseball-databank.org/\" rel=\"nofollow\" target=\"_blank\">baseball-databank.org</a>), and a few lines of code (<a href=\"http://dataspora.com/blog/r/sabermetrics-with-r/\" rel=\"nofollow\" target=\"_blank\"> sabermetrics using R</a> page).</p>\n<p><a href=\"https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" class=\"size-full wp-image-21 jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png?resize=233%2C661&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"661\" loading=\"lazy\" src=\"https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png?resize=233%2C661\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"vertical-align: middle;\" title=\"fig_batting\" width=\"233\"/><noscript><img alt=\"\" class=\"size-full wp-image-21\" data-recalc-dims=\"1\" height=\"661\" loading=\"lazy\" src=\"https://i1.wp.com/www.dataspora.com/wp-content/uploads/2008/07/fig_batting.png?resize=233%2C661\" style=\"vertical-align: middle;\" title=\"fig_batting\" width=\"233\"/></noscript></a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.dataspora.com/2008/09/sabermetrics-using-r-programming/\"> Dataspora » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "How do you measure a major league slugger?\nPosted on\nSeptember 1, 2008\nby\nmike\nin Uncategorized | 0 Comments\n[This article was first published on\nDataspora » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI gave a\ntalk\nlast month at SAP Labs in Palo Alto, along with Jim Porzak of ResponSys, introducing the R Statistical Language to a Business Intelligence interest group.  The goal was to highlight how open source tools, like R, can be used to build predictive models.  The example I gave centered around baseball and a simple question:  how do you measure a baseball slugger?\nMichael Lewis, in\nMoneyball\n, described how the baseball analyst Bill James was frustrated by the fact that major league hitters were consistently rated by their batting averages.  James wrote:\n“a hitter should be measured by his success in that which he is trying to do, … create runs. It is startling, when you think about it, how much confusion there is about this.”\n– Bill James, 1979\nBaseball Abstract\nHowever, since teams create runs, not batters, the only way to connect batting statistics with runs is to use team averages.  The idea is that if we know which statistics predict runs at the team level, these statistics could be used to measure individual hitters.\nI decided to test the value of three batting statistics myself — batting average, slugging percentage, and OPS (on-base plus slugging) — and see how well they predicted team runs, using MLB team data for the years 2000-2005 (available from baseball-databank.org). The results are shown in the three scatter plots below, and no surprise, Bill James is right:  a team’s overall batting average (top-most chart) is a comparatively poor predictor of how many runs it will score in an average game.  Slugging percentage (middle plot) is a slightly better predictor, and OPS (bottom plot) is the best of the three statistics I looked at:  it has a 0.95 correlation with runs scored (the r shown in the upper right corner of the plots is the Pearson correlation coefficient, the red lines represent least-squares fits to the points).\nI highlighted a couple of interesting outliers in the top batting average plot: teams that achieved a high level of scoring with a comparatively low team batting average.  Who were these teams?  None other than Billy Beane’s 2000 and 2001 Oakland Athletics.  This suggests that the As management may have found excess value in fielding players who — despite having slightly lower batting averages — were capable of generating runs.\nThese results show what Bill James and others already know:  that a baseball slugger should not be measured by his batting average, but by OPS or other hybrid statistics that best correlate with his success at generating runs.  There is nothing novel about the results of my analysis.  But what I hope is novel is showing how it can be done using open source tools (R and MySQL), free data (\nbaseball-databank.org\n), and a few lines of code (\nsabermetrics using R\npage).\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDataspora » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I gave a talk last month at SAP Labs in Palo Alto, along with Jim Porzak of ResponSys, introducing the R Statistical Language to a Business Intelligence interest group. The goal was to highlight how open source tools, like R, can be used to build predictive models. The example I gave centered around baseball and [...]",
+      "meta_keywords": null,
+      "og_description": "I gave a talk last month at SAP Labs in Palo Alto, along with Jim Porzak of ResponSys, introducing the R Statistical Language to a Business Intelligence interest group. The goal was to highlight how open source tools, like R, can be used to build predictive models. The example I gave centered around baseball and [...]",
+      "og_image": "https://dataspora.com/wp-content/uploads/2008/09/davidortiz_small-300x197.jpg",
+      "og_title": "How do you measure a major league slugger? | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.1,
+      "sitemap_lastmod": "2008-09-02T01:17:25+00:00",
+      "twitter_description": "I gave a talk last month at SAP Labs in Palo Alto, along with Jim Porzak of ResponSys, introducing the R Statistical Language to a Business Intelligence interest group. The goal was to highlight how open source tools, like R, can be used to build predictive models. The example I gave centered around baseball and [...]",
+      "twitter_title": "How do you measure a major league slugger? | R-bloggers",
+      "url": "https://www.r-bloggers.com/2008/09/how-do-you-measure-a-major-league-slugger/",
+      "word_count": 612
+    }
+  }
+}

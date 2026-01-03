@@ -1,0 +1,118 @@
+{
+  "id": "72dbb1748262f0a4f7be52631dfb32c724e8e22c",
+  "url": "https://www.r-bloggers.com/2009/08/completion-for-java-objects/",
+  "created_at_utc": "2025-11-17T20:40:32Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "757b5cc5-3390-4a54-8f44-fafd83a5df48",
+    "created_at": "2025-11-17 20:40:32",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/08/completion-for-java-objects/",
+      "crawled_at": "2025-11-17T10:29:10.090396",
+      "external_links": [
+        {
+          "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/08/09/Completion-for-java-objects",
+          "text": "Romain Francois, Professional R Enthusiast"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://tr.im/vQi9",
+          "text": "thread"
+        },
+        {
+          "href": "http://romainfrancois.blog.free.fr/index.php?post/2009/08/09/Completion-for-java-objects",
+          "text": "Romain Francois, Professional R Enthusiast"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Completion for java objects | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/romain-francois/",
+          "text": "romain francois"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/completion/",
+          "text": "completion"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/java/",
+          "text": "java"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-126 post type-post status-publish format-standard hentry category-r-bloggers tag-completion tag-java tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Completion for java objects</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 9, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/romain-francois/\">romain francois</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/08/09/Completion-for-java-objects\"> Romain Francois, Professional R Enthusiast</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--> <p>As indicated in this <a href=\"http://tr.im/vQi9\" rel=\"nofollow\" target=\"_blank\">thread</a>, completion after the dollar operator can be customized by defining a custom <code>names</code> method. Here I am showing how to take advantage of this to display fields and methods of java references (jobjRef objects from the rJava package)</p>\n<iframe ,=\"\" frameborder=\"1\" height=\"450\" src=\"https://romainfrancois.blog.free.fr/public/snippets/completion.html\" width=\"450\"></iframe>\n<p>Here it is in action (I hit tab twice after the dollar sign)</p>\n<iframe ,=\"\" frameborder=\"1\" height=\"150\" src=\"https://romainfrancois.blog.free.fr/public/snippets/completion-session.html\" width=\"450\"></iframe>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://romainfrancois.blog.free.fr/index.php?post/2009/08/09/Completion-for-java-objects\"> Romain Francois, Professional R Enthusiast</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/completion/\" rel=\"tag\">completion</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/java/\" rel=\"tag\">java</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+      "main_text": "Completion for java objects\nPosted on\nAugust 9, 2009\nby\nromain francois\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRomain Francois, Professional R Enthusiast\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAs indicated in this\nthread\n, completion after the dollar operator can be customized by defining a custom\nnames\nmethod. Here I am showing how to take advantage of this to display fields and methods of java references (jobjRef objects from the rJava package)\nHere it is in action (I hit tab twice after the dollar sign)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRomain Francois, Professional R Enthusiast\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ncompletion\njava\nR",
+      "meta_description": "As indicated in this thread, completion after the dollar operator can be customized by defining a custom names method. Here I am showing how to take advantage of this to display fields and methods of java references (jobjRef objects from the rJava ...",
+      "meta_keywords": "completion,java,r",
+      "og_description": "As indicated in this thread, completion after the dollar operator can be customized by defining a custom names method. Here I am showing how to take advantage of this to display fields and methods of java references (jobjRef objects from the rJava ...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Completion for java objects | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1,
+      "sitemap_lastmod": "2009-08-09T07:32:00+00:00",
+      "twitter_description": "As indicated in this thread, completion after the dollar operator can be customized by defining a custom names method. Here I am showing how to take advantage of this to display fields and methods of java references (jobjRef objects from the rJava ...",
+      "twitter_title": "Completion for java objects | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/08/completion-for-java-objects/",
+      "word_count": 203
+    }
+  }
+}

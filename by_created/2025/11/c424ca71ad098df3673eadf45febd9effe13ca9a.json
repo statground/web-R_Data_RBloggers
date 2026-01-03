@@ -1,0 +1,157 @@
+{
+  "id": "c424ca71ad098df3673eadf45febd9effe13ca9a",
+  "url": "https://www.r-bloggers.com/2009/08/example-7-8-plot-two-empirical-cumulative-density-functions-using-available-tools/",
+  "created_at_utc": "2025-11-17T20:40:35Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "2c672bc1-8f2e-4927-adce-8bf29ea16280",
+    "created_at": "2025-11-17 20:40:35",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/08/example-7-8-plot-two-empirical-cumulative-density-functions-using-available-tools/",
+      "crawled_at": "2025-11-17T10:30:18.166882",
+      "external_links": [
+        {
+          "href": "https://feedproxy.google.com/~r/SASandR/~3/-mqMZMbtxJw/example-78-plot-two-empirical.html",
+          "text": "SAS and R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example782.jpg",
+          "text": null
+        },
+        {
+          "href": "https://feedproxy.google.com/~r/SASandR/~3/-mqMZMbtxJw/example-78-plot-two-empirical.html",
+          "text": "SAS and R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Example 7.8: Plot two empirical cumulative density functions using available tools | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example783.jpg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example783.jpg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/1275149608391671670-3722424736289695299?l=sas-and-r.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/1275149608391671670-3722424736289695299?l=sas-and-r.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/SASandR/~4/-mqMZMbtxJw"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/SASandR/~4/-mqMZMbtxJw"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ken-kleinman/",
+          "text": "Ken Kleinman"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/cumulative-distribution-function/",
+          "text": "cumulative distribution function"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/graphics/",
+          "text": "graphics"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/read-data-in-r/",
+          "text": "Read data in R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/read-data-in-sas/",
+          "text": "Read data in SAS"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/read-from-url/",
+          "text": "read from URL"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-451 post type-post status-publish format-standard hentry category-r-bloggers tag-cumulative-distribution-function tag-graphics tag-read-data-in-r tag-read-data-in-sas tag-read-from-url\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Example 7.8: Plot two empirical cumulative density functions using available tools</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 1, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ken-kleinman/\">Ken Kleinman</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/SASandR/~3/-mqMZMbtxJw/example-78-plot-two-empirical.html\"> SAS and R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->The empirical cumulative density function (CDF) (section 5.1.16) is a useful way to compare distributions between populations.  The Kolmogorov-Smirnov (section 2.4.2) statistic <i>D</i> is the value of <i>x</i> with the maximum distance between the two curves. As an example, we compare the male and female distributions of <tt>pcs</tt> from the HELP data set described in the book.  Here, we use built-in tools to plot the graph; in later entries we will build it from scratch for greater control.<br/><br/>We begin by reading in the data (section 1.1.14) as a comma separated file from the book web site (section 1.1.6).<br/><br/><b>SAS</b><br/><pre>\nfilename myurl\n   url 'http://www.math.smith.edu/sasr/datasets/help.csv'\n   lrecl=704;\n\nproc import\n   datafile=myurl out=ds dbms=dlm;\n   delimiter=',';\n   getnames=yes;\nrun;\n</pre><br/>SAS <tt>proc univariate</tt> can do this plot automatically (section 5.1.15).  It is designed to compare two groups within the data set, using the <tt>class</tt> statement (section 3.1.3).<br/><br/><pre>\nproc univariate data=ds;\n   var pcs;\n   class female;\n   cdfplot pcs / overlay;\nrun;\n</pre><br/><br/><br/>In R, the <tt>plot()</tt> function accepts <tt>ecdf()</tt> objects (section 5.1.15) as input.  Applying this to <tt>pcs</tt>, conditional on including only the rows when <tt>female</tt> is <i>1</i> (section B.4.2) creates the first empirical CDF as well as the axes.  The <tt>lines()</tt> function (section 5.2.1) also accepts <tt>ecdf()</tt> objects as input, and applying this to <tt>pcs</tt> when <tt>female</tt> is <i>0</i> adds the second empirical CDF to the existing plot. A legend (section 5.2.14) is added to show which curve is which.  (Note that the Blogger software prevents displaying this image large enough to see the difference here, but it will be visible when run locally.<br/><br/><b>R</b><br/><pre>\n&gt; ds &lt;- read.csv(\n   \"http://www.math.smith.edu/sasr/datasets/helpmiss.csv\")\n&gt; attach(ds)\n&gt; plot(ecdf(pcs[female==1]), verticals=TRUE, pch=46)\n&gt; lines(ecdf(pcs[female==0]), verticals=TRUE, pch=46)\n&gt; legend(20, 0.8, legend=c(\"Women\", \"Men\"), lwd=1:3)\n</pre><br/><br/>Click the graphic below for a more legible image of the output.<br/><br/><br/><a data-cf-modified-1342160d3131c76f78a5167e-=\"\" href=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example782.jpg\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example783.jpg?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example783.jpg?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 240px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5365070004552861506\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example783.jpg?w=578\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 240px;\"/></noscript></a><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-3722424736289695299?l=sas-and-r.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-3722424736289695299?l=sas-and-r.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-3722424736289695299?l=sas-and-r.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/SASandR/~4/-mqMZMbtxJw?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/SASandR/~4/-mqMZMbtxJw\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/SASandR/~4/-mqMZMbtxJw\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/SASandR/~3/-mqMZMbtxJw/example-78-plot-two-empirical.html\"> SAS and R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/cumulative-distribution-function/\" rel=\"tag\">cumulative distribution function</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/graphics/\" rel=\"tag\">graphics</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/read-data-in-r/\" rel=\"tag\">Read data in R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/read-data-in-sas/\" rel=\"tag\">Read data in SAS</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/read-from-url/\" rel=\"tag\">read from URL</a></li></ul></div></article>",
+      "main_text": "Example 7.8: Plot two empirical cumulative density functions using available tools\nPosted on\nAugust 1, 2009\nby\nKen Kleinman\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSAS and R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe empirical cumulative density function (CDF) (section 5.1.16) is a useful way to compare distributions between populations.  The Kolmogorov-Smirnov (section 2.4.2) statistic\nD\nis the value of\nx\nwith the maximum distance between the two curves. As an example, we compare the male and female distributions of\npcs\nfrom the HELP data set described in the book.  Here, we use built-in tools to plot the graph; in later entries we will build it from scratch for greater control.\nWe begin by reading in the data (section 1.1.14) as a comma separated file from the book web site (section 1.1.6).\nSAS\nfilename myurl\n   url 'http://www.math.smith.edu/sasr/datasets/help.csv'\n   lrecl=704;\n\nproc import\n   datafile=myurl out=ds dbms=dlm;\n   delimiter=',';\n   getnames=yes;\nrun;\nSAS\nproc univariate\ncan do this plot automatically (section 5.1.15).  It is designed to compare two groups within the data set, using the\nclass\nstatement (section 3.1.3).\nproc univariate data=ds;\n   var pcs;\n   class female;\n   cdfplot pcs / overlay;\nrun;\nIn R, the\nplot()\nfunction accepts\necdf()\nobjects (section 5.1.15) as input.  Applying this to\npcs\n, conditional on including only the rows when\nfemale\nis\n1\n(section B.4.2) creates the first empirical CDF as well as the axes.  The\nlines()\nfunction (section 5.2.1) also accepts\necdf()\nobjects as input, and applying this to\npcs\nwhen\nfemale\nis\n0\nadds the second empirical CDF to the existing plot. A legend (section 5.2.14) is added to show which curve is which.  (Note that the Blogger software prevents displaying this image large enough to see the difference here, but it will be visible when run locally.\nR\n> ds <- read.csv(\n   \"http://www.math.smith.edu/sasr/datasets/helpmiss.csv\")\n> attach(ds)\n> plot(ecdf(pcs[female==1]), verticals=TRUE, pch=46)\n> lines(ecdf(pcs[female==0]), verticals=TRUE, pch=46)\n> legend(20, 0.8, legend=c(\"Women\", \"Men\"), lwd=1:3)\nClick the graphic below for a more legible image of the output.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSAS and R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ncumulative distribution function\ngraphics\nRead data in R\nRead data in SAS\nread from URL",
+      "meta_description": "The empirical cumulative density function (CDF) (section 5.1.16) is a useful way to compare distributions between populations. The Kolmogorov-Smirnov (section 2.4.2) statistic D is the value of x with the maximum distance between the two curves. As an...",
+      "meta_keywords": "cumulative distribution function,graphics,read data in r,read data in sas,read from url",
+      "og_description": "The empirical cumulative density function (CDF) (section 5.1.16) is a useful way to compare distributions between populations. The Kolmogorov-Smirnov (section 2.4.2) statistic D is the value of x with the maximum distance between the two curves. As an...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/08/example783.jpg",
+      "og_title": "Example 7.8: Plot two empirical cumulative density functions using available tools | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.5,
+      "sitemap_lastmod": "2011-05-11T21:18:54+00:00",
+      "twitter_description": "The empirical cumulative density function (CDF) (section 5.1.16) is a useful way to compare distributions between populations. The Kolmogorov-Smirnov (section 2.4.2) statistic D is the value of x with the maximum distance between the two curves. As an...",
+      "twitter_title": "Example 7.8: Plot two empirical cumulative density functions using available tools | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/08/example-7-8-plot-two-empirical-cumulative-density-functions-using-available-tools/",
+      "word_count": 509
+    }
+  }
+}

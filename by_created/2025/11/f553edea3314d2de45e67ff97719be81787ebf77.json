@@ -1,0 +1,117 @@
+{
+  "id": "f553edea3314d2de45e67ff97719be81787ebf77",
+  "url": "https://www.r-bloggers.com/2009/11/type-ii-error/",
+  "created_at_utc": "2025-11-17T20:39:56Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "64687142-11eb-4510-81e6-e084ff842849",
+    "created_at": "2025-11-17 20:39:56",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/11/type-ii-error/",
+      "crawled_at": "2025-11-17T10:15:55.127665",
+      "external_links": [
+        {
+          "href": "http://www.r-tutor.com/elementary-statistics/type-2-errors",
+          "text": "R Tutorial"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.r-tutor.com/elementary-statistics/type-2-errors",
+          "text": null
+        },
+        {
+          "href": "http://www.r-tutor.com/elementary-statistics/type-2-errors",
+          "text": "read more"
+        },
+        {
+          "href": "http://www.r-tutor.com/elementary-statistics/type-2-errors",
+          "text": "R Tutorial"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Type II Error | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-tutor.com/elementary-statistics/fractal-12h.jpeg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-tutor.com/elementary-statistics/fractal-12h.jpeg?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/rtutor-chiyau/",
+          "text": "rtutor.chiyau"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-48875 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Type II Error</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/rtutor-chiyau/\">rtutor.chiyau</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.r-tutor.com/elementary-statistics/type-2-errors\"> R Tutorial</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p class=\"noindent\">\n<a href=\"http://www.r-tutor.com/elementary-statistics/type-2-errors\" rel=\"nofollow\" target=\"_blank\"><img alt=\"  \" class=\"float-left jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-tutor.com/elementary-statistics/fractal-12h.jpeg?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-tutor.com/elementary-statistics/fractal-12h.jpeg?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"  \" class=\"float-left\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-tutor.com/elementary-statistics/fractal-12h.jpeg?w=578\"/></noscript></a>\nIn hypothesis testing, a <span class=\"ecbx-1000\">type II error </span>is due to a failure of rejecting\nan invalid null hypothesis. The probability of avoiding a type II error is\ncalled the <span class=\"ecbx-1000\">power </span>of the hypothesis test, and is denoted by the quantity\n<span class=\"cmr-10\">1 </span><span class=\"cmsy-10\">– </span><span class=\"cmmi-10\">β</span><span class=\"cmmi-10\"> </span>.\n</p>\n<p><a href=\"http://www.r-tutor.com/elementary-statistics/type-2-errors\" rel=\"nofollow\" target=\"_blank\">read more</a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.r-tutor.com/elementary-statistics/type-2-errors\"> R Tutorial</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Type II Error\nPosted on\nNovember 22, 2009\nby\nrtutor.chiyau\nin Uncategorized | 0 Comments\n[This article was first published on\nR Tutorial\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn hypothesis testing, a\ntype II error\nis due to a failure of rejecting\nan invalid null hypothesis. The probability of avoiding a type II error is\ncalled the\npower\nof the hypothesis test, and is denoted by the quantity\n1\n–\nβ\n.\nread more\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Tutorial\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "In hypothesis testing, a type II error is due to a failure of rejecting an invalid null hypothesis. The probability of avoiding a type II error is called the power of the hypothesis test, and is denoted by the quantity 1 - β . read more",
+      "meta_keywords": null,
+      "og_description": "In hypothesis testing, a type II error is due to a failure of rejecting an invalid null hypothesis. The probability of avoiding a type II error is called the power of the hypothesis test, and is denoted by the quantity 1 - β . read more",
+      "og_image": "https://www.r-tutor.com/elementary-statistics/fractal-12h.jpeg",
+      "og_title": "Type II Error | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 0.9,
+      "sitemap_lastmod": "2009-11-23T05:12:03+00:00",
+      "twitter_description": "In hypothesis testing, a type II error is due to a failure of rejecting an invalid null hypothesis. The probability of avoiding a type II error is called the power of the hypothesis test, and is denoted by the quantity 1 - β . read more",
+      "twitter_title": "Type II Error | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/11/type-ii-error/",
+      "word_count": 180
+    }
+  }
+}

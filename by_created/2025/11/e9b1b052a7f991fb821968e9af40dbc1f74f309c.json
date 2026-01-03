@@ -1,0 +1,191 @@
+{
+  "id": "e9b1b052a7f991fb821968e9af40dbc1f74f309c",
+  "url": "https://www.r-bloggers.com/2009/12/r-tutorial-series-multiple-linear-regression/",
+  "created_at_utc": "2025-11-17T20:39:49Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "1b4e6646-e4ea-496b-a432-5e575bc4c942",
+    "created_at": "2025-11-17 20:39:49",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/r-tutorial-series-multiple-linear-regression/",
+      "crawled_at": "2025-11-17T10:13:25.227891",
+      "external_links": [
+        {
+          "href": "https://feedproxy.google.com/~r/RTutorialSeries/~3/mQE97RL6ut4/r-tutorial-series-multiple-linear.html",
+          "text": "R Tutorial Series"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.dailyi.org/blogFiles/RTutorialSeries/dataset_enrollmentForecast.csv",
+          "text": "sample data (.csv)"
+        },
+        {
+          "href": "https://dl.dropboxusercontent.com/u/10246536/Web/RTutorialSeries/example_multipleRegression.txt",
+          "text": "multiple linear regression example (.txt)"
+        },
+        {
+          "href": "https://feedproxy.google.com/~r/RTutorialSeries/~3/mQE97RL6ut4/r-tutorial-series-multiple-linear.html",
+          "text": "R Tutorial Series"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R Tutorial Series: Multiple Linear Regression | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_11.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_11.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_21.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_21.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_31.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_31.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_41.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_41.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/6710487119650146215-7944847432852357126?l=rtutorialseries.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/6710487119650146215-7944847432852357126?l=rtutorialseries.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/RTutorialSeries/~4/mQE97RL6ut4"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/RTutorialSeries/~4/mQE97RL6ut4"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/john-m-quick/",
+          "text": "John M. Quick"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/multiple-linear-regression/",
+          "text": "multiple linear regression"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r-tutorial-series/",
+          "text": "R Tutorial Series"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r-project/",
+          "text": "r-project"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/statistics/",
+          "text": "statistics"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/tutorial/",
+          "text": "tutorial"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-8786 post type-post status-publish format-standard hentry category-r-bloggers tag-multiple-linear-regression tag-r-tutorial-series tag-r-project tag-statistics tag-tutorial\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Tutorial Series: Multiple Linear Regression</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 8, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-m-quick/\">John M. Quick</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/RTutorialSeries/~3/mQE97RL6ut4/r-tutorial-series-multiple-linear.html\"> R Tutorial Series</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>In R, multiple linear regression is only a small step away from simple linear regression. In fact, the same lm() function can be used for this technique, but with the addition of a one or more predictors. This tutorial will explore how R can be used to perform multiple linear regression.</p><h3>Tutorial Files</h3><p>Before we begin, you may want to download the <a href=\"http://www.dailyi.org/blogFiles/RTutorialSeries/dataset_enrollmentForecast.csv\" rel=\"nofollow\" target=\"_blank\">sample data (.csv)</a> used in this tutorial. Be sure to right-click and save the file to your R working directory. This dataset contains information used to estimate undergraduate enrollment at the University of New Mexico (Office of Institutional Research, 1990). Note that all code samples in this tutorial assume that this data has already been read into an R variable and has been attached.</p><h3>Creating A Linear Model With Two Predictors</h3><h4>The lm() function</h4><p>In R, the lm(), or “linear model,” function can be used to create a multiple regression model. The lm() function accepts a number of arguments (“Fitting Linear Models,” n.d.). The following list explains the two most commonly used parameters.</p><ul><li>formula: describes the model</li><p>Note that the formula argument follows a specific format. For multiple linear regression, this is “YVAR ~ XVAR1 + XVAR2 + … + XVARi” where YVAR is the dependent, or predicted, variable and XVAR1, XVAR2, etc. are the independent, or predictor, variables.</p><li>data: the variable that contains the dataset</li></ul><p>It is recommended that you save a newly created linear model into a variable. By doing so, the model can be used in subsequent calculations and analyses without having to retype the entire lm() function each time. The sample code below demonstrates how to create a linear model with two predictors and save it into a variable. In this particular case, we are using the unemployment rate (UNEM) and number of spring high school graduates (HGRAD) to predict the fall enrollment (ROLL).</p><blockquote class=\"codeBlock\"><ol><li>&gt; #create a linear model using lm(FORMULA, DATAVAR)</li><li>&gt; #predict the fall enrollment (ROLL) using the unemployment rate (UNEM) and number of spring high school graduates (HGRAD)</li><li>&gt; twoPredictorModel &lt;- lm(ROLL ~ UNEM + HGRAD, datavar)</li><li>&gt; #display model</li><li>&gt; twoPredictorModel</li></ol></blockquote><p>The output of the preceding function is pictured below.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_11.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_11.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_11.png?w=578\"/></noscript></p><p>From this output, we can determine that the intercept is -8255.8, the coefficient for the unemployment rate is 698.2, and the coefficient for number of spring high school graduates is 0.9. Therefore, the complete regression equation is <em>Fall Enrollment = -8255.8 + 698.2 * Unemployment Rate + 0.9 * Number of Spring High School Graduates</em>. This equation tells us that the predicted fall enrollment for the University of New Mexico will increase by 698.2 students for every one percent increase in the unemployment rate and 0.9 students for every one high school graduate. Suppose that our research question asks what the expected fall enrollment is, given this year’s unemployment rate of 9% and spring high school graduating class of 100,000 students. As follows, we can use the regression equation to calculate the answer to this question.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #what is the expected fall enrollment (ROLL) given this year’s unemployment rate (UNEM) of 9% and spring high school graduating class (HGRAD) of 100,000</li><li>&gt; -8255.8 + 698.2 * 9 + 0.9 * 100000</li><li>[1] 88028</li><li>&gt; #the predicted fall enrollment, given a 9% unemployment rate and 100,000 student spring high school graduating class, is 88,028 students.</li></ol></blockquote><h3>Creating A Linear Model With Three or More Predictors</h3><p>When creating a model with more than two predictors, the lm() function can again be used. Simply, one can just continue to add variables to the FORMULA argument until all of them are accounted for. A three predictor model is demonstrated below. It seeks to predict the fall enrollment (ROLL) via the unemployment rate (UNEM), number of spring high school graduates (HGRAD), and per capita income (INC).</p><blockquote class=\"codeBlock\"><ol><li>&gt; #create a linear model using lm(FORMULA, DATAVAR)</li><li>&gt; #predict the fall enrollment (ROLL) using the unemployment rate (UNEM), number of spring high school graduates (HGRAD), and per capita income (INC)</li><li>&gt; threePredictorModel &lt;- lm(ROLL ~ UNEM + HGRAD + INC, datavar)</li><li>&gt; #display model</li><li>&gt; threePredictorModel</li></ol></blockquote><p>The output of the preceding function is pictured below.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_21.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_21.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_21.png?w=578\"/></noscript></p><p>From this output, we can determine that the intercept is -9153.3, the coefficient for the unemployment rate is 450.1, the coefficient for number of spring high school graduates is 0.4, and the coefficient for per capita income is 4.3. Therefore, the complete regression equation is <em>Fall Enrollment = -9153.3 + 450.1 * Unemployment Rate + 0.4 * Number of Spring High School Graduates + 4.3 * Per Capita Income</em>. This equation tells us that the predicted fall enrollment for the University of New Mexico will increase by 450.1 students for every one percent increase in the unemployment rate, 0.4 students for every one high school graduate, and 4.3 students for every one dollar of per capita income. Let’s revisit our research question, this time including a per capita income of $30,000.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #what is the expected fall enrollment (ROLL) given this year’s unemployment rate (UNEM) of 9%, spring high school graduating class (HGRAD) of 100,000, and a per capita income (INC) of $30,000</li><li>&gt; -9153.3 + 450.1 * 9 + 0.4 * 100000 + 4.3 * 30000</li><li>[1] 163897.6</li><li>&gt; #the predicted fall enrollment, given a 9% unemployment rate, 100,000 student spring high school graduating class, and $30000 per capita income, is 163,898 students.</li></ol></blockquote><h3>Summarizing The Models</h3><p>A multiple linear regression model can be used to do much more than just calculate expected values. Here, the summary(OBJECT) function is a useful tool. It is capable of generating a wealth of important information about a linear model. The example below demonstrates the use of the summary function on the two models created during this tutorial.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #use summary(OBJECT) to display information about the linear model</li><li>&gt; summary(twoPredictorModel)</li><li>&gt; summary(threePredictorModel)</li></ol></blockquote><p>The output of the preceding functions is pictured below.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_31.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_31.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_31.png?w=578\"/></noscript></p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_41.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_41.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_41.png?w=578\"/></noscript></p><p>The summary(OBJECT) function has provided us with t-test, F-test, R-squared, residual, and significance values. All of this data can be used to answer important questions related to our models.</p><h3>Alternative Modeling Options</h3><p>Although lm() was used in this tutorial, note that there are alternative modeling functions available in R, such as glm() and rlm(). Depending on your unique circumstances, it may be beneficial or necessary to investigate alternatives to lm() before choosing how to conduct your regression analysis.</p><h3>Complete Multiple Linear Regression Example</h3><p>To see a complete example of how multiple linear regression can be conducted in R, please download the <a href=\"https://dl.dropboxusercontent.com/u/10246536/Web/RTutorialSeries/example_multipleRegression.txt\" rel=\"nofollow\" target=\"_blank\">multiple linear regression example (.txt)</a> file.</p><h3>References</h3><p>Fitting Linear Models. (n.d.). Retrieved November 22, 2009 from http://sekhon.berkeley.edu/library/stats/html/lm.html</p><p>Office of Institutional Research (1990). Enrollment Forecast [Data File]. Retrieved November 22, 2009 from http://lib.stat.cmu.edu/DASL/Datafiles/enrolldat.html</p><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6710487119650146215-7944847432852357126?l=rtutorialseries.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6710487119650146215-7944847432852357126?l=rtutorialseries.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6710487119650146215-7944847432852357126?l=rtutorialseries.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/RTutorialSeries/~4/mQE97RL6ut4?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/RTutorialSeries/~4/mQE97RL6ut4\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/RTutorialSeries/~4/mQE97RL6ut4\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/RTutorialSeries/~3/mQE97RL6ut4/r-tutorial-series-multiple-linear.html\"> R Tutorial Series</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/multiple-linear-regression/\" rel=\"tag\">multiple linear regression</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-tutorial-series/\" rel=\"tag\">R Tutorial Series</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-project/\" rel=\"tag\">r-project</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/tutorial/\" rel=\"tag\">tutorial</a></li></ul></div></article>",
+      "main_text": "R Tutorial Series: Multiple Linear Regression\nPosted on\nDecember 8, 2009\nby\nJohn M. Quick\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Tutorial Series\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn R, multiple linear regression is only a small step away from simple linear regression. In fact, the same lm() function can be used for this technique, but with the addition of a one or more predictors. This tutorial will explore how R can be used to perform multiple linear regression.\nTutorial Files\nBefore we begin, you may want to download the\nsample data (.csv)\nused in this tutorial. Be sure to right-click and save the file to your R working directory. This dataset contains information used to estimate undergraduate enrollment at the University of New Mexico (Office of Institutional Research, 1990). Note that all code samples in this tutorial assume that this data has already been read into an R variable and has been attached.\nCreating A Linear Model With Two Predictors\nThe lm() function\nIn R, the lm(), or “linear model,” function can be used to create a multiple regression model. The lm() function accepts a number of arguments (“Fitting Linear Models,” n.d.). The following list explains the two most commonly used parameters.\nformula: describes the model\nNote that the formula argument follows a specific format. For multiple linear regression, this is “YVAR ~ XVAR1 + XVAR2 + … + XVARi” where YVAR is the dependent, or predicted, variable and XVAR1, XVAR2, etc. are the independent, or predictor, variables.\ndata: the variable that contains the dataset\nIt is recommended that you save a newly created linear model into a variable. By doing so, the model can be used in subsequent calculations and analyses without having to retype the entire lm() function each time. The sample code below demonstrates how to create a linear model with two predictors and save it into a variable. In this particular case, we are using the unemployment rate (UNEM) and number of spring high school graduates (HGRAD) to predict the fall enrollment (ROLL).\n> #create a linear model using lm(FORMULA, DATAVAR)\n> #predict the fall enrollment (ROLL) using the unemployment rate (UNEM) and number of spring high school graduates (HGRAD)\n> twoPredictorModel <- lm(ROLL ~ UNEM + HGRAD, datavar)\n> #display model\n> twoPredictorModel\nThe output of the preceding function is pictured below.\nFrom this output, we can determine that the intercept is -8255.8, the coefficient for the unemployment rate is 698.2, and the coefficient for number of spring high school graduates is 0.9. Therefore, the complete regression equation is\nFall Enrollment = -8255.8 + 698.2 * Unemployment Rate + 0.9 * Number of Spring High School Graduates\n. This equation tells us that the predicted fall enrollment for the University of New Mexico will increase by 698.2 students for every one percent increase in the unemployment rate and 0.9 students for every one high school graduate. Suppose that our research question asks what the expected fall enrollment is, given this year’s unemployment rate of 9% and spring high school graduating class of 100,000 students. As follows, we can use the regression equation to calculate the answer to this question.\n> #what is the expected fall enrollment (ROLL) given this year’s unemployment rate (UNEM) of 9% and spring high school graduating class (HGRAD) of 100,000\n> -8255.8 + 698.2 * 9 + 0.9 * 100000\n[1] 88028\n> #the predicted fall enrollment, given a 9% unemployment rate and 100,000 student spring high school graduating class, is 88,028 students.\nCreating A Linear Model With Three or More Predictors\nWhen creating a model with more than two predictors, the lm() function can again be used. Simply, one can just continue to add variables to the FORMULA argument until all of them are accounted for. A three predictor model is demonstrated below. It seeks to predict the fall enrollment (ROLL) via the unemployment rate (UNEM), number of spring high school graduates (HGRAD), and per capita income (INC).\n> #create a linear model using lm(FORMULA, DATAVAR)\n> #predict the fall enrollment (ROLL) using the unemployment rate (UNEM), number of spring high school graduates (HGRAD), and per capita income (INC)\n> threePredictorModel <- lm(ROLL ~ UNEM + HGRAD + INC, datavar)\n> #display model\n> threePredictorModel\nThe output of the preceding function is pictured below.\nFrom this output, we can determine that the intercept is -9153.3, the coefficient for the unemployment rate is 450.1, the coefficient for number of spring high school graduates is 0.4, and the coefficient for per capita income is 4.3. Therefore, the complete regression equation is\nFall Enrollment = -9153.3 + 450.1 * Unemployment Rate + 0.4 * Number of Spring High School Graduates + 4.3 * Per Capita Income\n. This equation tells us that the predicted fall enrollment for the University of New Mexico will increase by 450.1 students for every one percent increase in the unemployment rate, 0.4 students for every one high school graduate, and 4.3 students for every one dollar of per capita income. Let’s revisit our research question, this time including a per capita income of $30,000.\n> #what is the expected fall enrollment (ROLL) given this year’s unemployment rate (UNEM) of 9%, spring high school graduating class (HGRAD) of 100,000, and a per capita income (INC) of $30,000\n> -9153.3 + 450.1 * 9 + 0.4 * 100000 + 4.3 * 30000\n[1] 163897.6\n> #the predicted fall enrollment, given a 9% unemployment rate, 100,000 student spring high school graduating class, and $30000 per capita income, is 163,898 students.\nSummarizing The Models\nA multiple linear regression model can be used to do much more than just calculate expected values. Here, the summary(OBJECT) function is a useful tool. It is capable of generating a wealth of important information about a linear model. The example below demonstrates the use of the summary function on the two models created during this tutorial.\n> #use summary(OBJECT) to display information about the linear model\n> summary(twoPredictorModel)\n> summary(threePredictorModel)\nThe output of the preceding functions is pictured below.\nThe summary(OBJECT) function has provided us with t-test, F-test, R-squared, residual, and significance values. All of this data can be used to answer important questions related to our models.\nAlternative Modeling Options\nAlthough lm() was used in this tutorial, note that there are alternative modeling functions available in R, such as glm() and rlm(). Depending on your unique circumstances, it may be beneficial or necessary to investigate alternatives to lm() before choosing how to conduct your regression analysis.\nComplete Multiple Linear Regression Example\nTo see a complete example of how multiple linear regression can be conducted in R, please download the\nmultiple linear regression example (.txt)\nfile.\nReferences\nFitting Linear Models. (n.d.). Retrieved November 22, 2009 from http://sekhon.berkeley.edu/library/stats/html/lm.html\nOffice of Institutional Research (1990). Enrollment Forecast [Data File]. Retrieved November 22, 2009 from http://lib.stat.cmu.edu/DASL/Datafiles/enrolldat.html\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Tutorial Series\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nmultiple linear regression\nR Tutorial Series\nr-project\nstatistics\ntutorial",
+      "meta_description": "In R, multiple linear regression is only a small step away from simple linear regression. In fact, the same lm() function can be used for this technique, but with the addition of a one or more predictors. This tutorial will explore how R can be used to...",
+      "meta_keywords": "multiple linear regression,r tutorial series,r-project,statistics,tutorial",
+      "og_description": "In R, multiple linear regression is only a small step away from simple linear regression. In fact, the same lm() function can be used for this technique, but with the addition of a one or more predictors. This tutorial will explore how R can be used to...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/12/multiReg_lm_11.png",
+      "og_title": "R Tutorial Series: Multiple Linear Regression | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.4,
+      "sitemap_lastmod": "2016-10-02T11:59:39+00:00",
+      "twitter_description": "In R, multiple linear regression is only a small step away from simple linear regression. In fact, the same lm() function can be used for this technique, but with the addition of a one or more predictors. This tutorial will explore how R can be used to...",
+      "twitter_title": "R Tutorial Series: Multiple Linear Regression | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/r-tutorial-series-multiple-linear-regression/",
+      "word_count": 1277
+    }
+  }
+}

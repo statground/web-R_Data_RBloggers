@@ -1,0 +1,161 @@
+{
+  "id": "4d715a543ea93ed9cdd132ad72373c66c3b06da3",
+  "url": "https://www.r-bloggers.com/2009/05/bootstrapping-and-the-boot-package-in-r/",
+  "created_at_utc": "2025-11-17T20:40:56Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "6be8efd2-6155-4ad4-b76f-74738965edd6",
+    "created_at": "2025-11-17 20:40:56",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/05/bootstrapping-and-the-boot-package-in-r/",
+      "crawled_at": "2025-11-17T10:37:48.452649",
+      "external_links": [
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/05/bootstrapping.html",
+          "text": "Jeromy Anglim's Blog: Psychology, Statistics, & Research Design"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://cran.r-project.org/web/packages/boot/index.html",
+          "text": null
+        },
+        {
+          "href": "http://cran.r-project.org/web/packages/boot/index.html",
+          "text": "boot"
+        },
+        {
+          "href": "http://cran.r-project.org/web/packages/boot/index.html",
+          "text": "package"
+        },
+        {
+          "href": "http://www.statmethods.net/advstats/bootstrapping.html",
+          "text": "Quick-R"
+        },
+        {
+          "href": "http://www.mayin.org/ajayshah/KB/R/documents/boot.html",
+          "text": "introduction to the boot package"
+        },
+        {
+          "href": "http://www.ats.ucla.edu/stat/R/library/bootstrap.htm",
+          "text": "another"
+        },
+        {
+          "href": "http://www.ats.ucla.edu/stat/R/library/bootstrap.htm",
+          "text": null
+        },
+        {
+          "href": "http://cran.r-project.org/doc/contrib/Fox-Companion/appendix-bootstrapping.pdf",
+          "text": "John Fox’s article in relation to regression"
+        },
+        {
+          "href": "http://www.comm.ohio-state.edu/ahayes/SPSS%20programs/indirect.htm",
+          "text": "indirect effects"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/search/label/R",
+          "text": "All other posts on R"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/06/learning-r-for-researchers-in.html",
+          "text": "How to learn R"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/09/blogs-on-r-statistics.html",
+          "text": "List of blogs on R"
+        },
+        {
+          "href": "https://jeromyanglim.blogspot.com/2009/05/bootstrapping.html",
+          "text": "Jeromy Anglim's Blog: Psychology, Statistics, & Research Design"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Bootstrapping and the boot package in R | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-7336513193797614303?l=jeromyanglim.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/8909074830238091680-7336513193797614303?l=jeromyanglim.blogspot.com"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jeromy-anglim/",
+          "text": "Jeromy Anglim"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-503 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Bootstrapping and the boot package in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 21, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jeromy-anglim/\">Jeromy Anglim</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jeromyanglim.blogspot.com/2009/05/bootstrapping.html\"> Jeromy Anglim's Blog: Psychology, Statistics, &amp; Research Design</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I was recently asked about options for bootstrapping. The following post sets out some applications of bootstrapping and strategies for implementing it in R.<br/><a name=\"more\"></a><br/>I’ve found bootstrapping useful in several settings:<br/><ul><li>where the statistic I’m interested in is a little unusual: the average R-square across five separate regressions; the difference in the average correlation of a set of variables between two groups</li><li>non parametric statistics, such as the median</li><li>when assumptions such as normality of homoscedasticity are not satisfied</li></ul><b>Bootstrapping in R</b><br/><a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> is very cool for bootstrapping. I’ve mainly used the<a href=\"http://cran.r-project.org/web/packages/boot/index.html\" rel=\"nofollow\" target=\"_blank\"> </a><span style=\"font-family: 'courier new';\"><a href=\"http://cran.r-project.org/web/packages/boot/index.html\" rel=\"nofollow\" target=\"_blank\">boot</a></span><a href=\"http://cran.r-project.org/web/packages/boot/index.html\" rel=\"nofollow\" target=\"_blank\"> package</a> and found it very good. In fact, it is a classic example of something that R makes easy. It’s easy to run loops in R, and R is excellent at  taking output from one function and using it as input to another. This is the essence of bootstrapping: taking different samples of your data, getting a statistic for each sample (e.g., the mean, median, correlation, regression coefficient, etc.), and using the variability in the statistic across samples to indicate something about the standard error and confidence intervals for the statistic.<br/><ul><li><a href=\"http://www.statmethods.net/advstats/bootstrapping.html\" rel=\"nofollow\" target=\"_blank\">Quick-R </a>has a good introduction to the boot package:</li><li>Here’s another <a href=\"http://www.mayin.org/ajayshah/KB/R/documents/boot.html\" rel=\"nofollow\" target=\"_blank\">introduction to the boot package</a></li><li>And <a href=\"http://www.ats.ucla.edu/stat/R/library/bootstrap.htm\" rel=\"nofollow\" target=\"_blank\">another</a></li><li><a href=\"http://www.ats.ucla.edu/stat/R/library/bootstrap.htm\" rel=\"nofollow\" target=\"_blank\"></a>Further information on the web can be found in <a href=\"http://cran.r-project.org/doc/contrib/Fox-Companion/appendix-bootstrapping.pdf\" rel=\"nofollow\" target=\"_blank\">John Fox’s article in relation to regression</a>.</li></ul><b>Bootstrapping in SPSS</b><br/>You can do bootstrapping with SPSS. I seem to remember there being some Python add-on package that’s designed to make bootstrapping easier. I’ve never used it and I don’t imagine that it would be as easy to use as R given how difficult it is in SPSS to take SPSS output and process it further programmatically (even if the OMS is trying to make this easier). For certain specific tests you might be able to find already available macros (e.g., for <a href=\"http://www.comm.ohio-state.edu/ahayes/SPSS%20programs/indirect.htm\" rel=\"nofollow\" target=\"_blank\">indirect effects</a> ).<br/><br/><b>Related Posts:</b><br/><br/><ul><li><a href=\"https://jeromyanglim.blogspot.com/search/label/R\" rel=\"nofollow\" target=\"_blank\">All other posts on R</a></li><li><a href=\"https://jeromyanglim.blogspot.com/2009/06/learning-r-for-researchers-in.html\" rel=\"nofollow\" target=\"_blank\">How to learn R</a></li><li><a href=\"https://jeromyanglim.blogspot.com/2009/09/blogs-on-r-statistics.html\" rel=\"nofollow\" target=\"_blank\">List of blogs on R</a></li></ul><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-7336513193797614303?l=jeromyanglim.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-7336513193797614303?l=jeromyanglim.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/8909074830238091680-7336513193797614303?l=jeromyanglim.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jeromyanglim.blogspot.com/2009/05/bootstrapping.html\"> Jeromy Anglim's Blog: Psychology, Statistics, &amp; Research Design</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Bootstrapping and the boot package in R\nPosted on\nMay 21, 2009\nby\nJeromy Anglim\nin Uncategorized | 0 Comments\n[This article was first published on\nJeromy Anglim's Blog: Psychology, Statistics, & Research Design\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI was recently asked about options for bootstrapping. The following post sets out some applications of bootstrapping and strategies for implementing it in R.\nI’ve found bootstrapping useful in several settings:\nwhere the statistic I’m interested in is a little unusual: the average R-square across five separate regressions; the difference in the average correlation of a set of variables between two groups\nnon parametric statistics, such as the median\nwhen assumptions such as normality of homoscedasticity are not satisfied\nBootstrapping in R\nR\nis very cool for bootstrapping. I’ve mainly used the\nboot\npackage\nand found it very good. In fact, it is a classic example of something that R makes easy. It’s easy to run loops in R, and R is excellent at  taking output from one function and using it as input to another. This is the essence of bootstrapping: taking different samples of your data, getting a statistic for each sample (e.g., the mean, median, correlation, regression coefficient, etc.), and using the variability in the statistic across samples to indicate something about the standard error and confidence intervals for the statistic.\nQuick-R\nhas a good introduction to the boot package:\nHere’s another\nintroduction to the boot package\nAnd\nanother\nFurther information on the web can be found in\nJohn Fox’s article in relation to regression\n.\nBootstrapping in SPSS\nYou can do bootstrapping with SPSS. I seem to remember there being some Python add-on package that’s designed to make bootstrapping easier. I’ve never used it and I don’t imagine that it would be as easy to use as R given how difficult it is in SPSS to take SPSS output and process it further programmatically (even if the OMS is trying to make this easier). For certain specific tests you might be able to find already available macros (e.g., for\nindirect effects\n).\nRelated Posts:\nAll other posts on R\nHow to learn R\nList of blogs on R\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJeromy Anglim's Blog: Psychology, Statistics, & Research Design\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I was recently asked about options for bootstrapping. The following post sets out some applications of bootstrapping and strategies for implementing it in R.I've found bootstrapping useful in several settings:where the statistic I'm interested in is a ...",
+      "meta_keywords": null,
+      "og_description": "I was recently asked about options for bootstrapping. The following post sets out some applications of bootstrapping and strategies for implementing it in R.I've found bootstrapping useful in several settings:where the statistic I'm interested in is a ...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/8909074830238091680-7336513193797614303?l=jeromyanglim.blogspot.com",
+      "og_title": "Bootstrapping and the boot package in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.4,
+      "sitemap_lastmod": "2009-11-24T09:57:49+00:00",
+      "twitter_description": "I was recently asked about options for bootstrapping. The following post sets out some applications of bootstrapping and strategies for implementing it in R.I've found bootstrapping useful in several settings:where the statistic I'm interested in is a ...",
+      "twitter_title": "Bootstrapping and the boot package in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/05/bootstrapping-and-the-boot-package-in-r/",
+      "word_count": 486
+    }
+  }
+}

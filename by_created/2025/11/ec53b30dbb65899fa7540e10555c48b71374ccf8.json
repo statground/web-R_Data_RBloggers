@@ -1,0 +1,117 @@
+{
+  "id": "ec53b30dbb65899fa7540e10555c48b71374ccf8",
+  "url": "https://www.r-bloggers.com/2025/03/three-tips-for-better-quarto-plots/",
+  "created_at_utc": "2025-11-22T19:58:58Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "3308e49a-afce-4395-a2a7-090069dff4d4",
+    "created_at": "2025-11-22 19:58:58",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/03/three-tips-for-better-quarto-plots/",
+      "crawled_at": "2025-11-22T10:51:28.835463",
+      "external_links": [
+        {
+          "href": "https://boyd.tarlinton.au/posts/quarto_plots.html",
+          "text": "Boyd Tarlinton"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://fonts.google.com/",
+          "text": "Google Font"
+        },
+        {
+          "href": "https://boyd.tarlinton.au/posts/quarto_plots.html",
+          "text": "Boyd Tarlinton"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Three Tips for Better Quarto Plots | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/boyd.tarlinton.au/posts/quarto_plots_files/figure-html/unnamed-chunk-2-1.png?w=384&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/boyd-tarlinton/",
+          "text": "Boyd Tarlinton"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-393237 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Three Tips for Better Quarto Plots</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 28, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/boyd-tarlinton/\">Boyd Tarlinton</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://boyd.tarlinton.au/posts/quarto_plots.html\"> Boyd Tarlinton</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>If you regularly create <code>Quarto</code> documents, it s important to ensure that you can incorporate quality figures without spending a long time messing about. These are some of my favourite settings to ensure that my figures look great every time I render a <code>Quarto</code> document.</p>\n<section class=\"level3\" id=\"use-showtext-through-knitr\">\n<h3 class=\"anchored\" data-anchor-id=\"use-showtext-through-knitr\">Use <code>showtext</code> through <code>Knitr</code></h3>\n<p><code>Showtext</code> offers better text rendering, as well as great control over settings such as DPI, which controls text size. Setting up <code>showtext</code> in your <code>Quarto</code> YAML metadata is much easier the calling <code>showtext_begin()</code> and <code>showtext_end()</code> every time you want to produce a plot!</p>\n<pre>---\nknitr:\n  opts_chunk: \n    fig-showtext: true\n---</pre>\n</section>\n<section class=\"level3 page-columns page-full\" id=\"use-google-fonts-with-sysfonts\">\n<h3 class=\"anchored\" data-anchor-id=\"use-google-fonts-with-sysfonts\">Use Google Fonts with <code>sysfonts</code></h3>\n<p>Simply calling <code>font_add_google()</code> with your chosen <a href=\"https://fonts.google.com/\" rel=\"nofollow\" target=\"_blank\">Google Font</a> will make that font available in your R session and will look excellent in your <code>showtext</code>-enabled plots. Using Google Fonts has the added benefit of make your code much more portable.</p>\n<p>Let’s load something a bit wacky:</p>\n<div class=\"cell\">\n<pre>```{r}\nlibrary(sysfonts)\nfont_add_google(\"Bungee Tint\", db_cache = FALSE)\n```</pre>\n</div>\n<div class=\"no-row-height column-margin column-container\"><div class=\"\">\n<p>You may need to specify <code>db_cache = FALSE</code> for some fonts that have not been cached in your <code>sysfonts</code> install.</p>\n</div></div></section>\n<section class=\"level3\" id=\"set-dev-options-in-knitr-chunks\">\n<h3 class=\"anchored\" data-anchor-id=\"set-dev-options-in-knitr-chunks\">Set dev options in <code>Knitr</code> chunks</h3>\n<p>You can set dev arguments in your chunks, again avoiding the (in my opinion) rather clunky dev functions. I typically use this to set a transparent background, but that’s a pretty poor example on a white page. Let’s set a solid background and see how a plot looks with our custom settings!</p>\n<div class=\"cell\">\n<pre>```{r}\n#| dev.args: !expr list(bg=\"beige\")\n#| fig-cap: \"An example figure\"\n\nlibrary(ggplot2)\ndata(\"mtcars\")\n\nmtcars |&gt;\n  ggplot(aes(x = disp,\n             y = mpg)) +\n  geom_point() +\n  theme(text = element_text(family = \"Bungee Tint\"),\n        panel.background = element_blank(),\n        plot.background = element_blank())\n```</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/boyd.tarlinton.au/posts/quarto_plots_files/figure-html/unnamed-chunk-2-1.png?w=384&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/boyd.tarlinton.au/posts/quarto_plots_files/figure-html/unnamed-chunk-2-1.png?w=384&amp;ssl=1\"/></noscript></p>\n<figcaption>An example figure</figcaption>\n</figure>\n</div>\n</div>\n</div>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://boyd.tarlinton.au/posts/quarto_plots.html\"> Boyd Tarlinton</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Three Tips for Better Quarto Plots\nPosted on\nMarch 28, 2025\nby\nBoyd Tarlinton\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nBoyd Tarlinton\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIf you regularly create\nQuarto\ndocuments, it s important to ensure that you can incorporate quality figures without spending a long time messing about. These are some of my favourite settings to ensure that my figures look great every time I render a\nQuarto\ndocument.\nUse\nshowtext\nthrough\nKnitr\nShowtext\noffers better text rendering, as well as great control over settings such as DPI, which controls text size. Setting up\nshowtext\nin your\nQuarto\nYAML metadata is much easier the calling\nshowtext_begin()\nand\nshowtext_end()\nevery time you want to produce a plot!\n---\nknitr:\n  opts_chunk: \n    fig-showtext: true\n---\nUse Google Fonts with\nsysfonts\nSimply calling\nfont_add_google()\nwith your chosen\nGoogle Font\nwill make that font available in your R session and will look excellent in your\nshowtext\n-enabled plots. Using Google Fonts has the added benefit of make your code much more portable.\nLet’s load something a bit wacky:\n```{r}\nlibrary(sysfonts)\nfont_add_google(\"Bungee Tint\", db_cache = FALSE)\n```\nYou may need to specify\ndb_cache = FALSE\nfor some fonts that have not been cached in your\nsysfonts\ninstall.\nSet dev options in\nKnitr\nchunks\nYou can set dev arguments in your chunks, again avoiding the (in my opinion) rather clunky dev functions. I typically use this to set a transparent background, but that’s a pretty poor example on a white page. Let’s set a solid background and see how a plot looks with our custom settings!\n```{r}\n#| dev.args: !expr list(bg=\"beige\")\n#| fig-cap: \"An example figure\"\n\nlibrary(ggplot2)\ndata(\"mtcars\")\n\nmtcars |>\n  ggplot(aes(x = disp,\n             y = mpg)) +\n  geom_point() +\n  theme(text = element_text(family = \"Bungee Tint\"),\n        panel.background = element_blank(),\n        plot.background = element_blank())\n```\nAn example figure\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nBoyd Tarlinton\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "If you regularly create Quarto documents, it s important to ensure that you can incorporate quality figures without spending a long time messing about. These are some of my favourite settings to ensure that my figures look great every time I rend...",
+      "meta_keywords": null,
+      "og_description": "If you regularly create Quarto documents, it s important to ensure that you can incorporate quality figures without spending a long time messing about. These are some of my favourite settings to ensure that my figures look great every time I rend...",
+      "og_image": "https://boyd.tarlinton.au/posts/quarto_plots_files/figure-html/unnamed-chunk-2-1.png",
+      "og_title": "Three Tips for Better Quarto Plots | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.1,
+      "sitemap_lastmod": null,
+      "twitter_description": "If you regularly create Quarto documents, it s important to ensure that you can incorporate quality figures without spending a long time messing about. These are some of my favourite settings to ensure that my figures look great every time I rend...",
+      "twitter_title": "Three Tips for Better Quarto Plots | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/03/three-tips-for-better-quarto-plots/",
+      "word_count": 415
+    }
+  }
+}

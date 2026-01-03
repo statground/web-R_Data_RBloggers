@@ -1,0 +1,98 @@
+{
+  "id": "08ee77bd086d5b186f23daa6b287ec5e95028017",
+  "url": "https://www.r-bloggers.com/2009/07/comparison-of-two-proportions-parametric-z-test-and-non-parametric-chi-squared-methods/",
+  "created_at_utc": "2025-11-17T20:40:36Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "8ee9a092-c3f6-44f8-84e0-051730e335bb",
+    "created_at": "2025-11-17 20:40:36",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/07/comparison-of-two-proportions-parametric-z-test-and-non-parametric-chi-squared-methods/",
+      "crawled_at": "2025-11-17T10:30:30.971351",
+      "external_links": [
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/07/comparison-of-two-proportions.html",
+          "text": "Statistic on aiR"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/07/comparison-of-two-proportions.html",
+          "text": "Statistic on aiR"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Comparison of two proportions: parametric (Z-test) and non-parametric (chi-squared) methods | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/todos-logos/",
+          "text": "Todos Logos"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-505 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Comparison of two proportions: parametric (Z-test) and non-parametric (chi-squared) methods</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 29, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/comparison-of-two-proportions.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Consider for example the following problem.<br/>The owner of a betting company wants to verify whether a customer is cheating or not. To do this want to compare the number of successes of one player with the number of successes of one of his employees, of which he is certain that he is not cheating. In a month’s time, the player performs 74 bets and wins 30; the player in the same period of time making 103 bets, wins 65. Your client is a cheat or not?<br/><br/><span class=\"fullpost\">A problem of this kind can be solved in two different ways: using a parametric and a non-parametric method.<br/><br/> <span style=\"font-weight: bold;\">* Solution with the parametric method: Z-test.</span><br/><br/>You can use a Z-test if you can do the following two assumptions: the probability of common success is approximate 0.5, and the number of games is very high (under these assumption, a binomial distribution is approximate a gaussian distribution). Suppose that this is the case. In R there is no function to calculate the value of Z, so we remember the mathematical formula, and we write our function:<br/><br/>$$Z=\\frac{\\frac{x_1}{n_1}-\\frac{x_2}{n_s}}{\\sqrt{\\widehat{p}(1-\\widehat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}$$<br/><br/><pre>\nz.prop = function(x1,x2,n1,n2){\n  numerator = (x1/n1) - (x2/n2)\n  p.common = (x1+x2) / (n1+n2)\n  denominator = sqrt(p.common * (1-p.common) * (1/n1 + 1/n2))\n  z.prop.ris = numerator / denominator\n  return(z.prop.ris)\n}</pre><br/><br/><code>Z.prop</code> function calculates the value of Z, receiving input the number of successes (x1 and x2), and the total number of games (n1 and n2). We apply the function just written with the data of our problem:<br/><br/><pre>\nz.prop(30, 65, 74, 103)\n[1] -2.969695</pre><br/><br/>We obtained a value of z greater than the value of z-tabulated (1.96), which leads us to conclude that the player that the director was looking at is actually a cheat, since its probability of success is higher than a non-cheat user.<br/><br/> <span style=\"font-weight: bold;\">* Solution with the non-parametric method: Chi-squared test.</span><br/><br/><br/>Suppose now that it can not make any assumption on the data of the problem, so that it can not approximate the binomial with a Gauss. We solve the problem with the test of chi-square applied to a 2×2 <b>contingency table</b>. In R there is the function prop.test.<br/><br/><pre>\nprop.test(x = c(30, 65), n = c(74, 103), correct = FALSE)\n\n    2-sample test for equality of proportions without continuity correction\n\ndata: c(30, 65) out of c(74, 103)\nX-squared = 8.8191, df = 1, p-value = 0.002981\nalternative hypothesis: two.sided\n95 percent confidence interval:\n  -0.37125315 -0.08007196\nsample estimates:\nprop 1     prop 2\n0.4054054  0.6310680</pre><br/><br/><code>Prop.test</code> function calculates the value of chi-square, given the values of success (in the vector <code>x</code>) and total attempts (in the vector <code>n</code>). The vectors x and n can also be previously declared, and then be retrieved as usual: <code>prop.test (x, n, correct = FALSE)</code>.<br/><br/>In the case of small samples (low value of n), you must specify <code>correct = TRUE</code>, so as to change the computation of chi-square based on the <b>continuity of Yates</b>:<br/><br/><pre>\nprop.test(x = c(30, 65), n = c(74, 103), correct=TRUE)\n\n    2-sample test for equality of proportions with continuity correction\n\ndata: c(30, 65) out of c(74, 103)\nX-squared = 7.9349, df = 1, p-value = 0.004849\nalternative hypothesis: two.sided\n95 percent confidence interval:\n  -0.38286428 -0.06846083\nsample estimates:\nprop 1     prop 2\n0.4054054  0.6310680</pre><br/><br/>In both cases, we obtained p-value less than 0.05, which leads us to reject the hypothesis of equal probability. In conclusion, the customer is a cheat. For confirmation we compare the value chi-square-value calculated with the chi-square-tabulation, which we calculate in this way:<br/><br/><pre>\nqchisq(0.950, 1)\n[1] 3.841459</pre><br/><br/><code>qchisq</code> function calculates the value of chi-square as a function of alpha and degrees of freedom. Since chi-square-calculated is greater than chi-square-tabulation, we conclude by rejecting the hypothesis H0 (as stated by the p-value, and the parametric test).</span>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/comparison-of-two-proportions.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Comparison of two proportions: parametric (Z-test) and non-parametric (chi-squared) methods\nPosted on\nJuly 29, 2009\nby\nTodos Logos\nin Uncategorized | 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nConsider for example the following problem.\nThe owner of a betting company wants to verify whether a customer is cheating or not. To do this want to compare the number of successes of one player with the number of successes of one of his employees, of which he is certain that he is not cheating. In a month’s time, the player performs 74 bets and wins 30; the player in the same period of time making 103 bets, wins 65. Your client is a cheat or not?\nA problem of this kind can be solved in two different ways: using a parametric and a non-parametric method.\n* Solution with the parametric method: Z-test.\nYou can use a Z-test if you can do the following two assumptions: the probability of common success is approximate 0.5, and the number of games is very high (under these assumption, a binomial distribution is approximate a gaussian distribution). Suppose that this is the case. In R there is no function to calculate the value of Z, so we remember the mathematical formula, and we write our function:\n$$Z=\\frac{\\frac{x_1}{n_1}-\\frac{x_2}{n_s}}{\\sqrt{\\widehat{p}(1-\\widehat{p})(\\frac{1}{n_1}+\\frac{1}{n_2})}}$$\nz.prop = function(x1,x2,n1,n2){\n  numerator = (x1/n1) - (x2/n2)\n  p.common = (x1+x2) / (n1+n2)\n  denominator = sqrt(p.common * (1-p.common) * (1/n1 + 1/n2))\n  z.prop.ris = numerator / denominator\n  return(z.prop.ris)\n}\nZ.prop\nfunction calculates the value of Z, receiving input the number of successes (x1 and x2), and the total number of games (n1 and n2). We apply the function just written with the data of our problem:\nz.prop(30, 65, 74, 103)\n[1] -2.969695\nWe obtained a value of z greater than the value of z-tabulated (1.96), which leads us to conclude that the player that the director was looking at is actually a cheat, since its probability of success is higher than a non-cheat user.\n* Solution with the non-parametric method: Chi-squared test.\nSuppose now that it can not make any assumption on the data of the problem, so that it can not approximate the binomial with a Gauss. We solve the problem with the test of chi-square applied to a 2×2\ncontingency table\n. In R there is the function prop.test.\nprop.test(x = c(30, 65), n = c(74, 103), correct = FALSE)\n\n    2-sample test for equality of proportions without continuity correction\n\ndata: c(30, 65) out of c(74, 103)\nX-squared = 8.8191, df = 1, p-value = 0.002981\nalternative hypothesis: two.sided\n95 percent confidence interval:\n  -0.37125315 -0.08007196\nsample estimates:\nprop 1     prop 2\n0.4054054  0.6310680\nProp.test\nfunction calculates the value of chi-square, given the values of success (in the vector\nx\n) and total attempts (in the vector\nn\n). The vectors x and n can also be previously declared, and then be retrieved as usual:\nprop.test (x, n, correct = FALSE)\n.\nIn the case of small samples (low value of n), you must specify\ncorrect = TRUE\n, so as to change the computation of chi-square based on the\ncontinuity of Yates\n:\nprop.test(x = c(30, 65), n = c(74, 103), correct=TRUE)\n\n    2-sample test for equality of proportions with continuity correction\n\ndata: c(30, 65) out of c(74, 103)\nX-squared = 7.9349, df = 1, p-value = 0.004849\nalternative hypothesis: two.sided\n95 percent confidence interval:\n  -0.38286428 -0.06846083\nsample estimates:\nprop 1     prop 2\n0.4054054  0.6310680\nIn both cases, we obtained p-value less than 0.05, which leads us to reject the hypothesis of equal probability. In conclusion, the customer is a cheat. For confirmation we compare the value chi-square-value calculated with the chi-square-tabulation, which we calculate in this way:\nqchisq(0.950, 1)\n[1] 3.841459\nqchisq\nfunction calculates the value of chi-square as a function of alpha and degrees of freedom. Since chi-square-calculated is greater than chi-square-tabulation, we conclude by rejecting the hypothesis H0 (as stated by the p-value, and the parametric test).\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Consider for example the following problem.The owner of a betting company wants to verify whether a customer is cheating or not. To do this want to compare the number of successes of one player with the number of successes of one of his employees, of w...",
+      "meta_keywords": null,
+      "og_description": "Consider for example the following problem.The owner of a betting company wants to verify whether a customer is cheating or not. To do this want to compare the number of successes of one player with the number of successes of one of his employees, of w...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Comparison of two proportions: parametric (Z-test) and non-parametric (chi-squared) methods | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.2,
+      "sitemap_lastmod": "2009-08-05T08:22:51+00:00",
+      "twitter_description": "Consider for example the following problem.The owner of a betting company wants to verify whether a customer is cheating or not. To do this want to compare the number of successes of one player with the number of successes of one of his employees, of w...",
+      "twitter_title": "Comparison of two proportions: parametric (Z-test) and non-parametric (chi-squared) methods | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/07/comparison-of-two-proportions-parametric-z-test-and-non-parametric-chi-squared-methods/",
+      "word_count": 847
+    }
+  }
+}

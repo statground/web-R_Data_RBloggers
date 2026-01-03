@@ -1,0 +1,110 @@
+{
+  "id": "62f6b52b4329086fe5d140fb1fce564fcef887fe",
+  "url": "https://www.r-bloggers.com/2009/09/truncated-normal-distribution/",
+  "created_at_utc": "2025-11-17T20:40:26Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "6a013b06-5940-42fd-a10b-b836a572029c",
+    "created_at": "2025-11-17 20:40:26",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/truncated-normal-distribution/",
+      "crawled_at": "2025-11-17T10:26:49.081488",
+      "external_links": [
+        {
+          "href": "https://quantitative-ecology.blogspot.com/2009/09/truncated-normal-distribution.html",
+          "text": "Quantitative Ecology"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Beta_distribution",
+          "text": "beta distribution"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Truncated_normal_distribution",
+          "text": "truncated normal"
+        },
+        {
+          "href": "http://cran.r-project.org/web/packages/msm/index.html",
+          "text": "msm pacakge"
+        },
+        {
+          "href": "https://quantitative-ecology.blogspot.com/2009/09/truncated-normal-distribution.html",
+          "text": "Quantitative Ecology"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Truncated Normal Distribution | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/forester/",
+          "text": "Forester"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-5284 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Truncated Normal Distribution</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 3, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/forester/\">Forester</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://quantitative-ecology.blogspot.com/2009/09/truncated-normal-distribution.html\"> Quantitative Ecology</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Many distributions may be used to describe patterns that are non-negative; however, there are not as many choices when an upper bound is also needed (although the <a href=\"https://en.wikipedia.org/wiki/Beta_distribution\" rel=\"nofollow\" target=\"_blank\">beta distribution</a> <span style=\"text-decoration: underline;\"></span>is very flexible). For various reasons, truncated distributions are sometimes preferred, and the <a href=\"https://en.wikipedia.org/wiki/Truncated_normal_distribution\" rel=\"nofollow\" target=\"_blank\">truncated normal</a> is particularly popular. While R has a package that includes the standard functions for this distribution (see rtnorm, dtnorm, etc. in the <a href=\"http://cran.r-project.org/web/packages/msm/index.html\" rel=\"nofollow\" target=\"_blank\">msm pacakge</a>), the true expectation and variance of the distribution may be of interest. It turns out that the first two moments of the truncated normal are not too hard to calculate (but worth writing functions for):<br/><div style=\"overflow: auto;\"><pre>\nmean.tnorm&lt;-function(mu,sd,lower,upper){\n  ##return the expectation of a truncated normal distribution\n  lower.std=(lower-mu)/sd\n  upper.std=(upper-mu)/sd\n  mean=mu+sd*(dnorm(lower.std)-dnorm(upper.std))/\n      (pnorm(upper.std)-pnorm(lower.std))\n  return(mean)\n}\n\nvar.tnorm&lt;-function(mu,sd,lower,upper){\n  ##return the variance of a truncated normal distribution\n  lower.std=(lower-mu)/sd\n  upper.std=(upper-mu)/sd\n  variance=sd^2*(1+(lower.std*dnorm(lower.std)-upper.std*dnorm(upper.std))/\n    (pnorm(upper.std)-pnorm(lower.std))-((dnorm(lower.std)-dnorm(upper.std))/\n    (pnorm(upper.std)-pnorm(lower.std)))^2)\n  return(variance)\n}\n\n###Testing\n&gt; library(msm)\n&gt; a=rtnorm(1000000,-5,2,1,3)\n&gt; paste(mean(a),var(a))\n[1] \"1.52135857341077 0.197281057170982\"\n&gt; paste(mean.tnorm(-5,2,1,3),var.tnorm(-5,2,1,3))\n[1] \"1.52090857118 0.197111175109889\"</pre><br/><span style=\"font-size:85%;\"><span style=\"font-family:courier new;\"></span></span></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://quantitative-ecology.blogspot.com/2009/09/truncated-normal-distribution.html\"> Quantitative Ecology</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Truncated Normal Distribution\nPosted on\nSeptember 3, 2009\nby\nForester\nin Uncategorized | 0 Comments\n[This article was first published on\nQuantitative Ecology\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMany distributions may be used to describe patterns that are non-negative; however, there are not as many choices when an upper bound is also needed (although the\nbeta distribution\nis very flexible). For various reasons, truncated distributions are sometimes preferred, and the\ntruncated normal\nis particularly popular. While R has a package that includes the standard functions for this distribution (see rtnorm, dtnorm, etc. in the\nmsm pacakge\n), the true expectation and variance of the distribution may be of interest. It turns out that the first two moments of the truncated normal are not too hard to calculate (but worth writing functions for):\nmean.tnorm<-function(mu,sd,lower,upper){\n  ##return the expectation of a truncated normal distribution\n  lower.std=(lower-mu)/sd\n  upper.std=(upper-mu)/sd\n  mean=mu+sd*(dnorm(lower.std)-dnorm(upper.std))/\n      (pnorm(upper.std)-pnorm(lower.std))\n  return(mean)\n}\n\nvar.tnorm<-function(mu,sd,lower,upper){\n  ##return the variance of a truncated normal distribution\n  lower.std=(lower-mu)/sd\n  upper.std=(upper-mu)/sd\n  variance=sd^2*(1+(lower.std*dnorm(lower.std)-upper.std*dnorm(upper.std))/\n    (pnorm(upper.std)-pnorm(lower.std))-((dnorm(lower.std)-dnorm(upper.std))/\n    (pnorm(upper.std)-pnorm(lower.std)))^2)\n  return(variance)\n}\n\n###Testing\n> library(msm)\n> a=rtnorm(1000000,-5,2,1,3)\n> paste(mean(a),var(a))\n[1] \"1.52135857341077 0.197281057170982\"\n> paste(mean.tnorm(-5,2,1,3),var.tnorm(-5,2,1,3))\n[1] \"1.52090857118 0.197111175109889\"\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nQuantitative Ecology\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Many distributions may be used to describe patterns that are non-negative; however, there are not as many choices when an upper bound is also needed (although the beta distribution is very flexible). For various reasons, truncated distributions are som...",
+      "meta_keywords": null,
+      "og_description": "Many distributions may be used to describe patterns that are non-negative; however, there are not as many choices when an upper bound is also needed (although the beta distribution is very flexible). For various reasons, truncated distributions are som...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Truncated Normal Distribution | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.9,
+      "sitemap_lastmod": "2009-09-03T13:11:07+00:00",
+      "twitter_description": "Many distributions may be used to describe patterns that are non-negative; however, there are not as many choices when an upper bound is also needed (although the beta distribution is very flexible). For various reasons, truncated distributions are som...",
+      "twitter_title": "Truncated Normal Distribution | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/truncated-normal-distribution/",
+      "word_count": 379
+    }
+  }
+}

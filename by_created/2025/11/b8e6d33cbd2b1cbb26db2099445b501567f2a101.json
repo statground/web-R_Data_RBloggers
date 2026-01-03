@@ -1,0 +1,102 @@
+{
+  "id": "b8e6d33cbd2b1cbb26db2099445b501567f2a101",
+  "url": "https://www.r-bloggers.com/2025/06/benchmarks-vs-baselines-when-above-average-isnt-good-enough/",
+  "created_at_utc": "2025-11-22T19:58:27Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "2cb42def-136c-4da7-9809-a19ad9690a4f",
+    "created_at": "2025-11-22 19:58:27",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/06/benchmarks-vs-baselines-when-above-average-isnt-good-enough/",
+      "crawled_at": "2025-11-22T10:47:55.941446",
+      "external_links": [
+        {
+          "href": "http://www.stencilled.me/posts/2025-06-02-benchmarks-baselines/",
+          "text": "Stencilled"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.stencilled.me/posts/2025-06-02-benchmarks-baselines/",
+          "text": "Stencilled"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Benchmarks vs. Baselines: When ‘Above Average’ Isn’t Good Enough | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/stencilled/",
+          "text": "Stencilled"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392819 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Benchmarks vs. Baselines: When ‘Above Average’ Isn’t Good Enough</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 1, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/stencilled/\">Stencilled</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"http://www.stencilled.me/posts/2025-06-02-benchmarks-baselines/\"> Stencilled</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->Why relying on external benchmarks in media analytics can be misleading, and how building your own baselines leads to smarter, more context-aware decision making.\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.stencilled.me/posts/2025-06-02-benchmarks-baselines/\"> Stencilled</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Benchmarks vs. Baselines: When ‘Above Average’ Isn’t Good Enough\nPosted on\nJune 1, 2025\nby\nStencilled\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nStencilled\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhy relying on external benchmarks in media analytics can be misleading, and how building your own baselines leads to smarter, more context-aware decision making.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStencilled\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Why relying on external benchmarks in media analytics can be misleading, and how building your own baselines leads to smarter, more context-aware decision making.",
+      "meta_keywords": null,
+      "og_description": "Why relying on external benchmarks in media analytics can be misleading, and how building your own baselines leads to smarter, more context-aware decision making.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Benchmarks vs. Baselines: When ‘Above Average’ Isn’t Good Enough | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 0.8,
+      "sitemap_lastmod": null,
+      "twitter_description": "Why relying on external benchmarks in media analytics can be misleading, and how building your own baselines leads to smarter, more context-aware decision making.",
+      "twitter_title": "Benchmarks vs. Baselines: When ‘Above Average’ Isn’t Good Enough | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/06/benchmarks-vs-baselines-when-above-average-isnt-good-enough/",
+      "word_count": 166
+    }
+  }
+}

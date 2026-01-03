@@ -1,0 +1,1145 @@
+{
+  "id": "0ff7aecabce9e01d9cdb4b9a7af0a8696a3b2ca2",
+  "url": "https://www.r-bloggers.com/2025/05/benchmarking-memory-usage-in-r/",
+  "created_at_utc": "2025-11-22T19:58:38Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "4658f4b9-a6ee-44d5-9a4b-86f6b627a327",
+    "created_at": "2025-11-22 19:58:38",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/05/benchmarking-memory-usage-in-r/",
+      "crawled_at": "2025-11-22T10:49:12.963617",
+      "external_links": [
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-05-08-memory_R-jangorecki/",
+          "text": "Blog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/gsauthof/cgmemtime",
+          "text": "cgmemtime"
+        },
+        {
+          "href": "https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping",
+          "text": "2B rows data.frame grouping benchmark"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": "data.table is a NumFOCUS project!"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html",
+          "text": "Jul 10, 2025Community Team"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": "data.tablevsdplyr: A Side-by-Side Comparison"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html",
+          "text": "Jul 6, 2025Albert Rapp"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": "Use of non-API entry points indata.table"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html",
+          "text": "Jan 13, 2025Ivan Krylov"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": "Advent of Code withdata.table: Week One"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html",
+          "text": "Dec 7, 2024Kelly Bodwin"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": "Continuous performance testing using GitHub Actions"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html",
+          "text": "Nov 11, 2024Anirban Chetia"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": "Comparingdata.tablereshape toduckdbandpolars"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html",
+          "text": "Oct 17, 2024Toby Dylan Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": "Visualizing performance regression ofdata.tablewithatime"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html",
+          "text": "Oct 10, 2024Doris Afriyie Amoakohene"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": "Seal of Approval: mlr3"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html",
+          "text": "Oct 1, 2024Maximilian Mücke"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": "Seal of Approval: collapse"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html",
+          "text": "Sep 21, 2024Sebastian Krantz"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": "Newly awarded translation projects"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html",
+          "text": "Aug 20, 2024Toby Dylan Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": "Seal of Approval: dtplyr"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html",
+          "text": "Aug 1, 2024Kelly Bodwin"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": "Seal of Approval: nc"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html",
+          "text": "Aug 1, 2024Toby Dylan Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": "Seal of Approval: tidyfast"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html",
+          "text": "Aug 1, 2024Tyson S. Barrett"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": "Announcement: The ‘Seal of Approval’"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html",
+          "text": "Jul 31, 2024Kelly Bodwin"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": "Announcement: Paola Corrales, data.table Ambassador"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html",
+          "text": "Jun 12, 2024Community Team"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": "Two Roads Diverged"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html",
+          "text": "Jun 4, 2024Kelly Bodwin"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": "Testing infrastructure for data.table"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html",
+          "text": "Mar 10, 2024Toby Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": "Community interviews about data.table"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html",
+          "text": "Mar 6, 2024Anirban Chetia"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": "Results of the 2023 survey"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html",
+          "text": "Feb 25, 2024Aljaž Sluga"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": "Column assignment and reference semantics in data.table"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html",
+          "text": "Feb 18, 2024Toby Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": "The Benefits ofdata.tableSyntax"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html",
+          "text": "Feb 5, 2024Tyson Barrett"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": "New governance, release with new features"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html",
+          "text": "Jan 30, 2024Toby Dylan Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": "Piping data.tables"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html",
+          "text": "Jan 28, 2024Elio Campitelli"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": "Announcement: Jan Gorecki, data.table Ambassador"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html",
+          "text": "Jan 14, 2024Kelly Bodwin"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": "Summary of LatinR conference"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html",
+          "text": "Nov 19, 2023Toby Dylan Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": "Announcement: The data.table Ambassadors Travel Grant"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html",
+          "text": "Nov 1, 2023Kelly Bodwin"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": "Announcement: data.table translation projects"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html",
+          "text": "Oct 17, 2023"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": "Welcome to the data.table ecosystem project!"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": "An NSF-POSE funded venture."
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": null
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html",
+          "text": "Oct 15, 2023Toby Hocking"
+        },
+        {
+          "href": "https://rdatatable-community.github.io/The-Raft/posts/2025-05-08-memory_R-jangorecki/",
+          "text": "Blog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Benchmarking memory usage in R | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/NumFocus_LRG.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/image.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/image.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/aoc2.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/gh_actions.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/duckdb.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/atime.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/hex_approved.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/hex_approved.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/languages.jpeg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/hex_approved.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/hex_approved.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/hex_approved.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/seal_of_approval.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/Paola_Corrales.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/paths.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/code_testing.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.jpeg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/usage_frequency.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/copy_on_modify.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/brackets.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/New-Release.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/image.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/jan.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/image.jpg?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jan-gorecki/",
+          "text": "Jan Gorecki"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-393991 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Benchmarking memory usage in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 8, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jan-gorecki/\">Jan Gorecki</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-05-08-memory_R-jangorecki/\"> Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level1\" id=\"benchmarking-memory-usage-in-r\">\n<h1>Benchmarking memory usage in R</h1>\n<p>Profiling memory in R has never been a trivial task.<br/>\nIn this post, I would like to emphasize that currently popular methods are quite inaccurate and should therefore be used with caution. More importantly, they should not be used for drawing conclusions about the actual memory usage of R functions.</p>\n<p>The root cause of the inaccuracy with many memory profiling tools in R is that they measure memory allocated by R (including R’s C code). They do not take into account memory allocated using C.</p>\n<section class=\"level2\" id=\"memory-allocation-in-r\">\n<h2 class=\"anchored\" data-anchor-id=\"memory-allocation-in-r\">Memory allocation in R</h2>\n<p>Following example should make it very clear.</p>\n<p>Below R chunk is the content of <code>memtest.R</code> file.</p>\n<div class=\"cell\">\n<pre>code = \"\n  int nx = LENGTH(x);\n  double *y = (double*)(\n    LOGICAL(r_alloc)[0] ?\n      R_alloc(nx, sizeof(*y)) : // allocated by R's C\n      malloc(nx * sizeof(*y))   // allocated by C\n  );\n  double *xp = REAL(x);\n  // populate y\n  for (int i=0; i&lt;nx; i++)\n    y[i] = xp[i];\n  // do something with y\n  for (int i=1; i&lt;nx; i++)\n    y[i] = y[i-1]+y[i];\n  // sum double array to ensure compiler wont optimize it away\n  double sum = 0.0;\n  for (int i=0; i&lt;nx; i++)\n    sum += y[i];\n  SEXP res = PROTECT(Rf_allocVector(REALSXP, 1));\n  REAL(res)[0] = sum;\n  if (!LOGICAL(r_alloc)[0])\n    free(y);\n  UNPROTECT(1);\n  return res;\n\"\nfunx = inline::cfunction(signature(x=\"numeric\", r_alloc=\"logical\"), code, language=\"C\")\nset.seed(108)\nx = rnorm(1e8)</pre>\n</div>\n</section>\n<section class=\"level2\" id=\"check-equal\">\n<h2 class=\"anchored\" data-anchor-id=\"check-equal\">Check equal</h2>\n<p>First, we will ensure that the results are the same, regardless of whether we allocate temporary working memory using R or C:</p>\n<div class=\"cell\">\n<pre>Rscript -e 'source(\"memtest.R\"); funx(x, r_alloc=TRUE)'\n#[1] 1.160649e+12\nRscript -e 'source(\"memtest.R\"); funx(x, r_alloc=FALSE)'\n#[1] 1.160649e+12</pre>\n</div>\n</section>\n<section class=\"level2\" id=\"memory-benchmark-using-bench\">\n<h2 class=\"anchored\" data-anchor-id=\"memory-benchmark-using-bench\">Memory benchmark using <code>bench</code></h2>\n<p>Next, we will use the currently most popular package for profiling memory, <code>bench</code>:</p>\n<div class=\"cell\">\n<pre>Rscript -e 'source(\"memtest.R\"); bench::mark(funx(x, r_alloc=TRUE))'\n## A tibble: 1 × 13\n#  expression      min median `itr/sec` mem_alloc `gc/sec` n_itr  n_gc total_time\n#  &lt;bch:expr&gt;    &lt;bch&gt; &lt;bch:&gt;     &lt;dbl&gt; &lt;bch:byt&gt;    &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt;   &lt;bch:tm&gt;\n#1 funx(x, r_al… 577ms  577ms      1.73     763MB     1.73     1     1      577ms\nRscript -e 'source(\"memtest.R\"); bench::mark(funx(x, r_alloc=FALSE))'\n## A tibble: 1 × 13\n#  expression      min median `itr/sec` mem_alloc `gc/sec` n_itr  n_gc total_time\n#  &lt;bch:expr&gt;    &lt;bch&gt; &lt;bch:&gt;     &lt;dbl&gt; &lt;bch:byt&gt;    &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt;   &lt;bch:tm&gt;\n#1 funx(x, r_al… 589ms  589ms      1.70        0B        0     1     0      589ms</pre>\n</div>\n<p>As we can see in the output of <code>mark</code> function, <code>mem_alloc</code> is reported to be 0B when we use <code>malloc</code>, while for <code>R_alloc</code> it reports 763MB. The difference we observe here should serve as a warning. It is because <code>bench::mark</code> tracks memory allocations managed by R’s memory allocator and doesn’t inherently account for memory allocated directly through C functions like <code>malloc</code> or <code>calloc</code>. If one intends to use the <code>mark</code> function to draw conclusions about memory usage, it’s crucial to also examine the source code of the function being benchmarked.</p>\n<p>It is worth to note that <code>?mark</code> explains this issue:</p>\n<blockquote class=\"blockquote\">\n<p><code>mem_alloc</code> - <code>bench_bytes</code> Total amount of memory allocated by R while running the expression. Memory allocated outside the R heap, e.g. by <code>malloc()</code> or <code>new</code> directly is not tracked, take care to avoid misinterpreting the results if running code that may do this.</p>\n</blockquote>\n<p>Unfortunately, people are not aware of it and often publish memory usage benchmarks believing they are accurate.</p>\n</section>\n<section class=\"level2\" id=\"memory-benchmark-using-cgmemtime\">\n<h2 class=\"anchored\" data-anchor-id=\"memory-benchmark-using-cgmemtime\">Memory benchmark using <code>cgmemtime</code></h2>\n<p>Lastly, we will use an external process to measure memory, <a href=\"https://github.com/gsauthof/cgmemtime\" rel=\"nofollow\" target=\"_blank\">cgmemtime</a>, proposed by Matt Dowle in 2014 during his work on <a href=\"https://github.com/Rdatatable/data.table/wiki/Benchmarks-:-Grouping\" rel=\"nofollow\" target=\"_blank\">2B rows data.frame grouping benchmark</a>.</p>\n<blockquote class=\"blockquote\">\n<p><code>cgmemtime</code> measures the high-water RSS+CACHE memory usage of a process and its descendant processes.</p>\n</blockquote>\n<div class=\"cell\">\n<pre>./cgmemtime Rscript -e 'source(\"memtest.R\"); funx(x, r_alloc=TRUE)'\n#child_RSS_high:    1641808 KiB\n#group_mem_high:    1626264 KiB\n./cgmemtime Rscript -e 'source(\"memtest.R\"); funx(x, r_alloc=FALSE)'\n#child_RSS_high:    1641096 KiB\n#group_mem_high:    1625820 KiB</pre>\n</div>\n<p>While <code>cgmemtime</code> will report very accurate memory usage statistics, it cannot directly measure the memory usage of an individual function call in isolation as it tracks the memory footprint of the entire process (and its child processes).<br/>\nTo estimate the memory usage of the <code>funx()</code> call in this simple example, we can first measure the R process without calling <code>funx()</code>.</p>\n<div class=\"cell\">\n<pre>./cgmemtime Rscript -e 'source(\"memtest.R\");'\n#child_RSS_high:     860884 KiB\n#group_mem_high:     843844 KiB</pre>\n</div>\n<p>And then subtract this baseline from the memory usage when <code>funx()</code> is executed:</p>\n<div class=\"cell\">\n<pre>(1641096-860884)/1024\n#[1] 761.9258</pre>\n</div>\n</section>\n<section class=\"level2\" id=\"thank-you\">\n<h2 class=\"anchored\" data-anchor-id=\"thank-you\">Thank you</h2>\n<p>I hope this post will help people to be a bit more skeptical when reading R’s memory benchmarks.</p>\n<pre>R version 4.5.0 (2025-04-11)\nPlatform: x86_64-redhat-linux-gnu\nRunning under: Fedora Linux 42 (Workstation Edition)\n\nMatrix products: default\nBLAS/LAPACK: FlexiBLAS OPENBLAS-OPENMP;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              \n [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    \n [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   \n [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 \n [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       \n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n[1] bench_1.1.4   inline_0.3.21\n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.0  cli_3.6.4       pillar_1.10.2   glue_1.8.0     \n[5] vctrs_0.6.5     lifecycle_1.0.4 rlang_1.1.6   </pre>\n</section>\n</section>\n<div class=\"quarto-listing quarto-listing-container-default\" id=\"listing-listing\">\n<div class=\"list quarto-listing-default\">\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50\" data-index=\"0\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1752130800000\" data-listing-file-modified-sort=\"1752189062227\" data-listing-reading-time-sort=\"3\" data-listing-word-count-sort=\"505\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/NumFocus_LRG.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/NumFocus_LRG.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">data.table is a NumFOCUS project!</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2025-07-10-numfocus-community_team/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJul 10, 2025\n</div>\n<div class=\"listing-author\">\nCommunity Team\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"Z3Vlc3QlMjBwb3N0JTJDdHV0b3JpYWxz\" data-index=\"1\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1751785200000\" data-listing-file-modified-sort=\"1752189062227\" data-listing-reading-time-sort=\"11\" data-listing-word-count-sort=\"2068\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/image.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/image.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\"><code>data.table</code> vs <code>dplyr</code>: A Side-by-Side Comparison</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3Vlc3QlMjBwb3N0'); return false;\">\nguest post\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHV0b3JpYWxz'); return false;\">\ntutorials\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-07-06-common_operations_datatable_and_dplyr-albert_rapp/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJul 6, 2025\n</div>\n<div class=\"listing-author\">\nAlbert Rapp\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"ZGV2ZWxvcGVyJTJDZ3Vlc3QlMjBwb3N0JTJDcGVyZm9ybWFuY2U=\" data-index=\"2\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1736755200000\" data-listing-file-modified-sort=\"1752182335093\" data-listing-reading-time-sort=\"39\" data-listing-word-count-sort=\"7775\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/image.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/image.jpg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\">Use of non-API entry points in <code>data.table</code></a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZGV2ZWxvcGVy'); return false;\">\ndeveloper\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3Vlc3QlMjBwb3N0'); return false;\">\nguest post\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('cGVyZm9ybWFuY2U='); return false;\">\nperformance\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2025-01-13-non-api-use/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-01-13-non-api-use/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJan 13, 2025\n</div>\n<div class=\"listing-author\">\nIvan Krylov\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"dHV0b3JpYWxzJTJDY29tbXVuaXR5\" data-index=\"3\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1733558400000\" data-listing-file-modified-sort=\"1733699642000\" data-listing-reading-time-sort=\"2\" data-listing-word-count-sort=\"326\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/aoc2.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/aoc2.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\">Advent of Code with <code>data.table</code>: Week One</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHV0b3JpYWxz'); return false;\">\ntutorials\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Y29tbXVuaXR5'); return false;\">\ncommunity\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-12-07-advent_of_code-kelly_bodwin/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-12-07-advent_of_code-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nDec 7, 2024\n</div>\n<div class=\"listing-author\">\nKelly Bodwin\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"ZGV2ZWxvcGVyJTJDcGVyZm9ybWFuY2UlMkNnaXRodWI=\" data-index=\"4\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1731312000000\" data-listing-file-modified-sort=\"1752189928797\" data-listing-reading-time-sort=\"9\" data-listing-word-count-sort=\"1646\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/gh_actions.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/gh_actions.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\">Continuous performance testing using GitHub Actions</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZGV2ZWxvcGVy'); return false;\">\ndeveloper\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('cGVyZm9ybWFuY2U='); return false;\">\nperformance\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z2l0aHVi'); return false;\">\ngithub\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-11-11-performance-testing-gha-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nNov 11, 2024\n</div>\n<div class=\"listing-author\">\nAnirban Chetia\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"dGlwcyUyQ3R1dG9yaWFscyUyQ2RldmVsb3BlciUyQ2JlbmNobWFya3M=\" data-index=\"5\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1729148400000\" data-listing-file-modified-sort=\"1752182335093\" data-listing-reading-time-sort=\"21\" data-listing-word-count-sort=\"4191\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/duckdb.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/duckdb.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">Comparing <code>data.table</code> reshape to <code>duckdb</code> and <code>polars</code></a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dGlwcw=='); return false;\">\ntips\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHV0b3JpYWxz'); return false;\">\ntutorials\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZGV2ZWxvcGVy'); return false;\">\ndeveloper\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YmVuY2htYXJrcw=='); return false;\">\nbenchmarks\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-17-duckdb_polars_reshape-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nOct 17, 2024\n</div>\n<div class=\"listing-author\">\nToby Dylan Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"cGVyZm9ybWFuY2UlMkN0ZXN0aW5nJTJDZGV2ZWxvcGVy\" data-index=\"6\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1728543600000\" data-listing-file-modified-sort=\"1729222897000\" data-listing-reading-time-sort=\"12\" data-listing-word-count-sort=\"2217\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/atime.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/atime.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\">Visualizing performance regression of <code>data.table</code> with <code>atime</code></a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('cGVyZm9ybWFuY2U='); return false;\">\nperformance\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dGVzdGluZw=='); return false;\">\ntesting\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZGV2ZWxvcGVy'); return false;\">\ndeveloper\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-10-10-Performance-Doris_Amoakohene/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-10-Performance-Doris_Amoakohene/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nOct 10, 2024\n</div>\n<div class=\"listing-author\">\nDoris Afriyie Amoakohene\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"c2VhbCUyMG9mJTIwYXBwcm92YWwlMkNhcHBsaWNhdGlvbiUyMHBhY2thZ2U=\" data-index=\"7\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1727766000000\" data-listing-file-modified-sort=\"1729222312000\" data-listing-reading-time-sort=\"2\" data-listing-word-count-sort=\"381\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/hex_approved.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/hex_approved.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\">Seal of Approval: mlr3</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('c2VhbCUyMG9mJTIwYXBwcm92YWw='); return false;\">\nseal of approval\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YXBwbGljYXRpb24lMjBwYWNrYWdl'); return false;\">\napplication package\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-10-01-seal_of_approval-mlr3/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-10-01-seal_of_approval-mlr3/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nOct 1, 2024\n</div>\n<div class=\"listing-author\">\nMaximilian Mücke\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"c2VhbCUyMG9mJTIwYXBwcm92YWwlMkNwYXJ0bmVyJTIwcGFja2FnZQ==\" data-index=\"8\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1726902000000\" data-listing-file-modified-sort=\"1729222824000\" data-listing-reading-time-sort=\"5\" data-listing-word-count-sort=\"981\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/hex_approved.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/hex_approved.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\">Seal of Approval: collapse</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('c2VhbCUyMG9mJTIwYXBwcm92YWw='); return false;\">\nseal of approval\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('cGFydG5lciUyMHBhY2thZ2U='); return false;\">\npartner package\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-09-21-seal_of_approval-collapse/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-09-21-seal_of_approval-collapse/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nSep 21, 2024\n</div>\n<div class=\"listing-author\">\nSebastian Krantz\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50JTJDdHJhbnNsYXRpb24=\" data-index=\"9\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1724137200000\" data-listing-file-modified-sort=\"1729223516000\" data-listing-reading-time-sort=\"1\" data-listing-word-count-sort=\"140\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/languages.jpeg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/languages.jpeg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">Newly awarded translation projects</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHJhbnNsYXRpb24='); return false;\">\ntranslation\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-08-20-translation_projects-community_team/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-20-translation_projects-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nAug 20, 2024\n</div>\n<div class=\"listing-author\">\nToby Dylan Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"c2VhbCUyMG9mJTIwYXBwcm92YWwlMkNicmlkZ2UlMjBwYWNrYWdl\" data-index=\"10\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1722495600000\" data-listing-file-modified-sort=\"1723483115000\" data-listing-reading-time-sort=\"2\" data-listing-word-count-sort=\"253\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/hex_approved.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/hex_approved.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\">Seal of Approval: dtplyr</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('c2VhbCUyMG9mJTIwYXBwcm92YWw='); return false;\">\nseal of approval\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YnJpZGdlJTIwcGFja2FnZQ=='); return false;\">\nbridge package\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-08-01-seal_of_approval-dtplyr/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-dtplyr/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nAug 1, 2024\n</div>\n<div class=\"listing-author\">\nKelly Bodwin\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"c2VhbCUyMG9mJTIwYXBwcm92YWwlMkNleHRlbnNpb24lMjBwYWNrYWdl\" data-index=\"11\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1722495600000\" data-listing-file-modified-sort=\"1723507004000\" data-listing-reading-time-sort=\"4\" data-listing-word-count-sort=\"698\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/hex_approved.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/hex_approved.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\">Seal of Approval: nc</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('c2VhbCUyMG9mJTIwYXBwcm92YWw='); return false;\">\nseal of approval\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZXh0ZW5zaW9uJTIwcGFja2FnZQ=='); return false;\">\nextension package\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-08-01-seal_of_approval-nc/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-nc/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nAug 1, 2024\n</div>\n<div class=\"listing-author\">\nToby Dylan Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"c2VhbCUyMG9mJTIwYXBwcm92YWwlMkNicmlkZ2UlMjBwYWNrYWdl\" data-index=\"12\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1722495600000\" data-listing-file-modified-sort=\"1727154989000\" data-listing-reading-time-sort=\"4\" data-listing-word-count-sort=\"657\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/hex_approved.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/hex_approved.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\">Seal of Approval: tidyfast</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('c2VhbCUyMG9mJTIwYXBwcm92YWw='); return false;\">\nseal of approval\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YnJpZGdlJTIwcGFja2FnZQ=='); return false;\">\nbridge package\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-08-01-seal_of_approval-tidyfast/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-08-01-seal_of_approval-tidyfast/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nAug 1, 2024\n</div>\n<div class=\"listing-author\">\nTyson S. Barrett\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50JTJDY29tbXVuaXR5JTJDc2VhbCUyMG9mJTIwYXBwcm92YWw=\" data-index=\"13\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1722409200000\" data-listing-file-modified-sort=\"1727154989000\" data-listing-reading-time-sort=\"2\" data-listing-word-count-sort=\"215\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/seal_of_approval.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/seal_of_approval.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">Announcement: The ‘Seal of Approval’</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Y29tbXVuaXR5'); return false;\">\ncommunity\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('c2VhbCUyMG9mJTIwYXBwcm92YWw='); return false;\">\nseal of approval\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-07-31-seal_of_approval_announcement-community_team/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-07-31-seal_of_approval_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJul 31, 2024\n</div>\n<div class=\"listing-author\">\nKelly Bodwin\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50JTJDYW1iYXNzYWRvcnMlMkN0cmF2ZWw=\" data-index=\"14\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1718175600000\" data-listing-file-modified-sort=\"1729222001000\" data-listing-reading-time-sort=\"2\" data-listing-word-count-sort=\"311\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/Paola_Corrales.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/Paola_Corrales.jpg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">Announcement: Paola Corrales, data.table Ambassador</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW1iYXNzYWRvcnM='); return false;\">\nambassadors\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHJhdmVs'); return false;\">\ntravel\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-06-09-ambassador_corrales-community_team/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-06-09-ambassador_corrales-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJun 12, 2024\n</div>\n<div class=\"listing-author\">\nCommunity Team\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"b3Bpbmlvbg==\" data-index=\"15\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1717484400000\" data-listing-file-modified-sort=\"1736843179000\" data-listing-reading-time-sort=\"8\" data-listing-word-count-sort=\"1405\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/paths.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/paths.jpg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\">Two Roads Diverged</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('b3Bpbmlvbg=='); return false;\">\nopinion\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-05-20-kelly_bodwin/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-05-20-kelly_bodwin/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJun 4, 2024\n</div>\n<div class=\"listing-author\">\nKelly Bodwin\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"Z3JhbnQlMkN0ZXN0aW5nJTJDZGV2ZWxvcGVy\" data-index=\"16\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1710057600000\" data-listing-file-modified-sort=\"1727154989000\" data-listing-reading-time-sort=\"8\" data-listing-word-count-sort=\"1527\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/code_testing.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/code_testing.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">Testing infrastructure for data.table</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dGVzdGluZw=='); return false;\">\ntesting\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZGV2ZWxvcGVy'); return false;\">\ndeveloper\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-03-10-testing_plan-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-10-testing_plan-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nMar 10, 2024\n</div>\n<div class=\"listing-author\">\nToby Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"Y29tbXVuaXR5JTJDZ3JhbnQ=\" data-index=\"17\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1709712000000\" data-listing-file-modified-sort=\"1727154989000\" data-listing-reading-time-sort=\"17\" data-listing-word-count-sort=\"3396\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.jpeg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.jpeg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\">Community interviews about data.table</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Y29tbXVuaXR5'); return false;\">\ncommunity\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-03-06-interviews-anirban_chetia/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-03-06-interviews-anirban_chetia/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nMar 6, 2024\n</div>\n<div class=\"listing-author\">\nAnirban Chetia\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"Y29tbXVuaXR5JTJDZ3Vlc3QlMjBwb3N0JTJDZ292ZXJuYW5jZQ==\" data-index=\"18\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1708848000000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"6\" data-listing-word-count-sort=\"1190\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/usage_frequency.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/usage_frequency.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\">Results of the 2023 survey</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Y29tbXVuaXR5'); return false;\">\ncommunity\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3Vlc3QlMjBwb3N0'); return false;\">\nguest post\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z292ZXJuYW5jZQ=='); return false;\">\ngovernance\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-02-25-survey_2023-aljaz_sluga/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-25-survey_2023-aljaz_sluga/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nFeb 25, 2024\n</div>\n<div class=\"listing-author\">\nAljaž Sluga\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"dGlwcyUyQ3R1dG9yaWFscyUyQ2RldmVsb3Blcg==\" data-index=\"19\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1708243200000\" data-listing-file-modified-sort=\"1727154989000\" data-listing-reading-time-sort=\"5\" data-listing-word-count-sort=\"918\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/copy_on_modify.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/copy_on_modify.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">Column assignment and reference semantics in data.table</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dGlwcw=='); return false;\">\ntips\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHV0b3JpYWxz'); return false;\">\ntutorials\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZGV2ZWxvcGVy'); return false;\">\ndeveloper\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-02-18-dt_particularities-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-18-dt_particularities-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nFeb 18, 2024\n</div>\n<div class=\"listing-author\">\nToby Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"dGlwcyUyQ3R1dG9yaWFscyUyQ2RvY3VtZW50YXRpb24=\" data-index=\"20\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1707120000000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"5\" data-listing-word-count-sort=\"914\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/brackets.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/brackets.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\">The Benefits of <code>data.table</code> Syntax</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dGlwcw=='); return false;\">\ntips\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHV0b3JpYWxz'); return false;\">\ntutorials\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZG9jdW1lbnRhdGlvbg=='); return false;\">\ndocumentation\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-02-05-tips_tricks_1-tyson_barrett/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nFeb 5, 2024\n</div>\n<div class=\"listing-author\">\nTyson Barrett\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"Z292ZXJuYW5jZSUyQ3JlbGVhc2Vz\" data-index=\"21\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1706601600000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"4\" data-listing-word-count-sort=\"696\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/New-Release.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/New-Release.jpg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">New governance, release with new features</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z292ZXJuYW5jZQ=='); return false;\">\ngovernance\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('cmVsZWFzZXM='); return false;\">\nreleases\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-01-30-new_governance_new_release-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-30-new_governance_new_release-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJan 30, 2024\n</div>\n<div class=\"listing-author\">\nToby Dylan Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"dGlwcyUyQ3R1dG9yaWFscyUyQ2RvY3VtZW50YXRpb24lMkNndWVzdCUyMHBvc3Q=\" data-index=\"22\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1706428800000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"5\" data-listing-word-count-sort=\"988\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/image.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/image.jpg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\">Piping data.tables</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dGlwcw=='); return false;\">\ntips\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('dHV0b3JpYWxz'); return false;\">\ntutorials\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZG9jdW1lbnRhdGlvbg=='); return false;\">\ndocumentation\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3Vlc3QlMjBwb3N0'); return false;\">\nguest post\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-01-28-piping_data_tables-elio_campitelli/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-28-piping_data_tables-elio_campitelli/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJan 28, 2024\n</div>\n<div class=\"listing-author\">\nElio Campitelli\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50JTJDYW1iYXNzYWRvcnM=\" data-index=\"23\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1705219200000\" data-listing-file-modified-sort=\"1723483462000\" data-listing-reading-time-sort=\"2\" data-listing-word-count-sort=\"292\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/jan.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/jan.png?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">Announcement: Jan Gorecki, data.table Ambassador</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW1iYXNzYWRvcnM='); return false;\">\nambassadors\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2024-01-14-ambassador_gorecki-community_team/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2024-01-14-ambassador_gorecki-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nJan 14, 2024\n</div>\n<div class=\"listing-author\">\nKelly Bodwin\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"Y29uZmVyZW5jZXM=\" data-index=\"24\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1700380800000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"3\" data-listing-word-count-sort=\"581\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-lazy-src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/image.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"thumbnail-image\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/image.jpg?w=578&amp;ssl=1\"/></noscript></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">Summary of LatinR conference</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Y29uZmVyZW5jZXM='); return false;\">\nconferences\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2023-11-19-LatinR_summary-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-19-LatinR_summary-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nNov 19, 2023\n</div>\n<div class=\"listing-author\">\nToby Dylan Hocking\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50JTJDZnVuZGluZyUyMG9wcG9ydHVuaXR5\" data-index=\"25\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1698822000000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"3\" data-listing-word-count-sort=\"428\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-src=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/image.jpg\" loading=\"lazy\"/></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">Announcement: The data.table Ambassadors Travel Grant</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZnVuZGluZyUyMG9wcG9ydHVuaXR5'); return false;\">\nfunding opportunity\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2023-11-01-travel_grant_announcement-community_team/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-11-01-travel_grant_announcement-community_team/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nNov 1, 2023\n</div>\n<div class=\"listing-author\">\nKelly Bodwin\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50JTJDZnVuZGluZyUyMG9wcG9ydHVuaXR5\" data-index=\"26\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1697526000000\" data-listing-file-modified-sort=\"1715120890000\" data-listing-reading-time-sort=\"4\" data-listing-word-count-sort=\"664\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-src=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/translate.jpeg\" loading=\"lazy\"/></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">Announcement: data.table translation projects</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('ZnVuZGluZyUyMG9wcG9ydHVuaXR5'); return false;\">\nfunding opportunity\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2023-10-17-translation_announcement-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-17-translation_announcement-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nOct 17, 2023\n</div>\n</a>\n</div>\n</div>\n<div class=\"quarto-post image-right\" data-categories=\"YW5ub3VuY2VtZW50cyUyQ2dyYW50\" data-index=\"27\" data-listing-date-modified-sort=\"NaN\" data-listing-date-sort=\"1697353200000\" data-listing-file-modified-sort=\"1727154989000\" data-listing-reading-time-sort=\"4\" data-listing-word-count-sort=\"640\">\n<div class=\"thumbnail\">\n<p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<p><img class=\"thumbnail-image\" data-src=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/sea_lions.jpg\" loading=\"lazy\"/></p>\n</a><p><a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"></a></p>\n</div>\n<div class=\"body\">\n<h3 class=\"no-anchor listing-title\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">Welcome to the data.table ecosystem project!</a>\n</h3>\n<div class=\"listing-subtitle\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">An NSF-POSE funded venture.</a>\n</div>\n<div class=\"listing-categories\">\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('YW5ub3VuY2VtZW50cw=='); return false;\">\nannouncements\n</div>\n<div class=\"listing-category\" data-cf-modified-73d77f8326d8e6b8cef402da-=\"\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; window.quartoListingCategory('Z3JhbnQ='); return false;\">\ngrant\n</div>\n</div>\n<div class=\"listing-description\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\"><!-- desc(5A0113B34292)[max=175]:posts/2023-10-15-intro_to_grant-toby_hocking/index.html --></a>\n</div>\n</div>\n<div class=\"metadata\">\n<a class=\"no-external\" href=\"https://rdatatable-community.github.io/The-Raft/posts/2023-10-15-intro_to_grant-toby_hocking/index.html\" rel=\"nofollow\" target=\"_blank\">\n<div class=\"listing-date\">\nOct 15, 2023\n</div>\n<div class=\"listing-author\">\nToby Hocking\n</div>\n</a>\n</div>\n</div>\n</div>\n<div class=\"listing-no-matching d-none\">\nNo matching items\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rdatatable-community.github.io/The-Raft/posts/2025-05-08-memory_R-jangorecki/\"> Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Benchmarking memory usage in R\nPosted on\nMay 8, 2025\nby\nJan Gorecki\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nBlog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBenchmarking memory usage in R\nProfiling memory in R has never been a trivial task.\nIn this post, I would like to emphasize that currently popular methods are quite inaccurate and should therefore be used with caution. More importantly, they should not be used for drawing conclusions about the actual memory usage of R functions.\nThe root cause of the inaccuracy with many memory profiling tools in R is that they measure memory allocated by R (including R’s C code). They do not take into account memory allocated using C.\nMemory allocation in R\nFollowing example should make it very clear.\nBelow R chunk is the content of\nmemtest.R\nfile.\ncode = \"\n  int nx = LENGTH(x);\n  double *y = (double*)(\n    LOGICAL(r_alloc)[0] ?\n      R_alloc(nx, sizeof(*y)) : // allocated by R's C\n      malloc(nx * sizeof(*y))   // allocated by C\n  );\n  double *xp = REAL(x);\n  // populate y\n  for (int i=0; i<nx; i++)\n    y[i] = xp[i];\n  // do something with y\n  for (int i=1; i<nx; i++)\n    y[i] = y[i-1]+y[i];\n  // sum double array to ensure compiler wont optimize it away\n  double sum = 0.0;\n  for (int i=0; i<nx; i++)\n    sum += y[i];\n  SEXP res = PROTECT(Rf_allocVector(REALSXP, 1));\n  REAL(res)[0] = sum;\n  if (!LOGICAL(r_alloc)[0])\n    free(y);\n  UNPROTECT(1);\n  return res;\n\"\nfunx = inline::cfunction(signature(x=\"numeric\", r_alloc=\"logical\"), code, language=\"C\")\nset.seed(108)\nx = rnorm(1e8)\nCheck equal\nFirst, we will ensure that the results are the same, regardless of whether we allocate temporary working memory using R or C:\nRscript -e 'source(\"memtest.R\"); funx(x, r_alloc=TRUE)'\n#[1] 1.160649e+12\nRscript -e 'source(\"memtest.R\"); funx(x, r_alloc=FALSE)'\n#[1] 1.160649e+12\nMemory benchmark using\nbench\nNext, we will use the currently most popular package for profiling memory,\nbench\n:\nRscript -e 'source(\"memtest.R\"); bench::mark(funx(x, r_alloc=TRUE))'\n## A tibble: 1 × 13\n#  expression      min median `itr/sec` mem_alloc `gc/sec` n_itr  n_gc total_time\n#  <bch:expr>    <bch> <bch:>     <dbl> <bch:byt>    <dbl> <int> <dbl>   <bch:tm>\n#1 funx(x, r_al… 577ms  577ms      1.73     763MB     1.73     1     1      577ms\nRscript -e 'source(\"memtest.R\"); bench::mark(funx(x, r_alloc=FALSE))'\n## A tibble: 1 × 13\n#  expression      min median `itr/sec` mem_alloc `gc/sec` n_itr  n_gc total_time\n#  <bch:expr>    <bch> <bch:>     <dbl> <bch:byt>    <dbl> <int> <dbl>   <bch:tm>\n#1 funx(x, r_al… 589ms  589ms      1.70        0B        0     1     0      589ms\nAs we can see in the output of\nmark\nfunction,\nmem_alloc\nis reported to be 0B when we use\nmalloc\n, while for\nR_alloc\nit reports 763MB. The difference we observe here should serve as a warning. It is because\nbench::mark\ntracks memory allocations managed by R’s memory allocator and doesn’t inherently account for memory allocated directly through C functions like\nmalloc\nor\ncalloc\n. If one intends to use the\nmark\nfunction to draw conclusions about memory usage, it’s crucial to also examine the source code of the function being benchmarked.\nIt is worth to note that\n?mark\nexplains this issue:\nmem_alloc\n-\nbench_bytes\nTotal amount of memory allocated by R while running the expression. Memory allocated outside the R heap, e.g. by\nmalloc()\nor\nnew\ndirectly is not tracked, take care to avoid misinterpreting the results if running code that may do this.\nUnfortunately, people are not aware of it and often publish memory usage benchmarks believing they are accurate.\nMemory benchmark using\ncgmemtime\nLastly, we will use an external process to measure memory,\ncgmemtime\n, proposed by Matt Dowle in 2014 during his work on\n2B rows data.frame grouping benchmark\n.\ncgmemtime\nmeasures the high-water RSS+CACHE memory usage of a process and its descendant processes.\n./cgmemtime Rscript -e 'source(\"memtest.R\"); funx(x, r_alloc=TRUE)'\n#child_RSS_high:    1641808 KiB\n#group_mem_high:    1626264 KiB\n./cgmemtime Rscript -e 'source(\"memtest.R\"); funx(x, r_alloc=FALSE)'\n#child_RSS_high:    1641096 KiB\n#group_mem_high:    1625820 KiB\nWhile\ncgmemtime\nwill report very accurate memory usage statistics, it cannot directly measure the memory usage of an individual function call in isolation as it tracks the memory footprint of the entire process (and its child processes).\nTo estimate the memory usage of the\nfunx()\ncall in this simple example, we can first measure the R process without calling\nfunx()\n.\n./cgmemtime Rscript -e 'source(\"memtest.R\");'\n#child_RSS_high:     860884 KiB\n#group_mem_high:     843844 KiB\nAnd then subtract this baseline from the memory usage when\nfunx()\nis executed:\n(1641096-860884)/1024\n#[1] 761.9258\nThank you\nI hope this post will help people to be a bit more skeptical when reading R’s memory benchmarks.\nR version 4.5.0 (2025-04-11)\nPlatform: x86_64-redhat-linux-gnu\nRunning under: Fedora Linux 42 (Workstation Edition)\n\nMatrix products: default\nBLAS/LAPACK: FlexiBLAS OPENBLAS-OPENMP;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              \n [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    \n [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   \n [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 \n [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       \n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n[1] bench_1.1.4   inline_0.3.21\n\nloaded via a namespace (and not attached):\n[1] compiler_4.5.0  cli_3.6.4       pillar_1.10.2   glue_1.8.0     \n[5] vctrs_0.6.5     lifecycle_1.0.4 rlang_1.1.6\ndata.table is a NumFOCUS project!\nannouncements\ngrant\nJul 10, 2025\nCommunity Team\ndata.table\nvs\ndplyr\n: A Side-by-Side Comparison\nguest post\ntutorials\nJul 6, 2025\nAlbert Rapp\nUse of non-API entry points in\ndata.table\ndeveloper\nguest post\nperformance\nJan 13, 2025\nIvan Krylov\nAdvent of Code with\ndata.table\n: Week One\ntutorials\ncommunity\nDec 7, 2024\nKelly Bodwin\nContinuous performance testing using GitHub Actions\ndeveloper\nperformance\ngithub\nNov 11, 2024\nAnirban Chetia\nComparing\ndata.table\nreshape to\nduckdb\nand\npolars\ntips\ntutorials\ndeveloper\nbenchmarks\nOct 17, 2024\nToby Dylan Hocking\nVisualizing performance regression of\ndata.table\nwith\natime\nperformance\ntesting\ndeveloper\nOct 10, 2024\nDoris Afriyie Amoakohene\nSeal of Approval: mlr3\nseal of approval\napplication package\nOct 1, 2024\nMaximilian Mücke\nSeal of Approval: collapse\nseal of approval\npartner package\nSep 21, 2024\nSebastian Krantz\nNewly awarded translation projects\nannouncements\ngrant\ntranslation\nAug 20, 2024\nToby Dylan Hocking\nSeal of Approval: dtplyr\nseal of approval\nbridge package\nAug 1, 2024\nKelly Bodwin\nSeal of Approval: nc\nseal of approval\nextension package\nAug 1, 2024\nToby Dylan Hocking\nSeal of Approval: tidyfast\nseal of approval\nbridge package\nAug 1, 2024\nTyson S. Barrett\nAnnouncement: The ‘Seal of Approval’\nannouncements\ngrant\ncommunity\nseal of approval\nJul 31, 2024\nKelly Bodwin\nAnnouncement: Paola Corrales, data.table Ambassador\nannouncements\ngrant\nambassadors\ntravel\nJun 12, 2024\nCommunity Team\nTwo Roads Diverged\nopinion\nJun 4, 2024\nKelly Bodwin\nTesting infrastructure for data.table\ngrant\ntesting\ndeveloper\nMar 10, 2024\nToby Hocking\nCommunity interviews about data.table\ncommunity\ngrant\nMar 6, 2024\nAnirban Chetia\nResults of the 2023 survey\ncommunity\nguest post\ngovernance\nFeb 25, 2024\nAljaž Sluga\nColumn assignment and reference semantics in data.table\ntips\ntutorials\ndeveloper\nFeb 18, 2024\nToby Hocking\nThe Benefits of\ndata.table\nSyntax\ntips\ntutorials\ndocumentation\nFeb 5, 2024\nTyson Barrett\nNew governance, release with new features\ngovernance\nreleases\nJan 30, 2024\nToby Dylan Hocking\nPiping data.tables\ntips\ntutorials\ndocumentation\nguest post\nJan 28, 2024\nElio Campitelli\nAnnouncement: Jan Gorecki, data.table Ambassador\nannouncements\ngrant\nambassadors\nJan 14, 2024\nKelly Bodwin\nSummary of LatinR conference\nconferences\nNov 19, 2023\nToby Dylan Hocking\nAnnouncement: The data.table Ambassadors Travel Grant\nannouncements\ngrant\nfunding opportunity\nNov 1, 2023\nKelly Bodwin\nAnnouncement: data.table translation projects\nannouncements\ngrant\nfunding opportunity\nOct 17, 2023\nWelcome to the data.table ecosystem project!\nAn NSF-POSE funded venture.\nannouncements\ngrant\nOct 15, 2023\nToby Hocking\nNo matching items\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nBlog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Benchmarking memory usage in R Profiling memory in R has never been a trivial task. In this post, I would like to emphasize that currently popular methods are quite inaccurate and should therefore be used with caution. More importantly, they sh...",
+      "meta_keywords": null,
+      "og_description": "Benchmarking memory usage in R Profiling memory in R has never been a trivial task. In this post, I would like to emphasize that currently popular methods are quite inaccurate and should therefore be used with caution. More importantly, they sh...",
+      "og_image": "https://rdatatable-community.github.io/The-Raft/posts/2025-07-10-numfocus-community_team/NumFocus_LRG.png",
+      "og_title": "Benchmarking memory usage in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 7.2,
+      "sitemap_lastmod": null,
+      "twitter_description": "Benchmarking memory usage in R Profiling memory in R has never been a trivial task. In this post, I would like to emphasize that currently popular methods are quite inaccurate and should therefore be used with caution. More importantly, they sh...",
+      "twitter_title": "Benchmarking memory usage in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/05/benchmarking-memory-usage-in-r/",
+      "word_count": 1434
+    }
+  }
+}

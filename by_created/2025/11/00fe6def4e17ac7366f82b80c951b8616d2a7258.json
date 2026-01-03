@@ -1,0 +1,261 @@
+{
+  "id": "00fe6def4e17ac7366f82b80c951b8616d2a7258",
+  "url": "https://www.r-bloggers.com/2023/11/calculating-number-needed-to-treat-harm-nnt-h-with-odds-ratio/",
+  "created_at_utc": "2025-11-17T20:39:25Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "a794a6ff-5c56-47da-92cf-8dbb2bb54dc5",
+    "created_at": "2025-11-17 20:39:25",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/11/calculating-number-needed-to-treat-harm-nnt-h-with-odds-ratio/",
+      "crawled_at": "2025-11-17T10:01:19.761384",
+      "external_links": [
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/",
+          "text": "r on Everyday Is A School Day"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#objectives",
+          "text": null
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#odds",
+          "text": "Breaking down odds ratio"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#weights",
+          "text": "Calculating random effect pooled odds ratio"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#convert",
+          "text": "Converting Odds ratio to Event Proportion"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#nnt",
+          "text": "Calculate NNT"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#learnt",
+          "text": "Lessons Learnt"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#odds",
+          "text": null
+        },
+        {
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7442954/#:~:text=On%20day%2011%2C%20patients%20in,02",
+          "text": "Spinner C et al JAMA. 2020 Sep 15; 324(11): 1–10."
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#what-if-we-dont-have-the-actual-counts",
+          "text": null
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#visualizing-p1-treatment-event-proportions-vs-p0-control-event-proportions-that-makes-up-or-1534",
+          "text": null
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#weights",
+          "text": null
+        },
+        {
+          "href": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2612117",
+          "text": "R Tariq JAMA Intern Med. 2017;177(6):784-791"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/metannt/#both",
+          "text": "blog"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#convert",
+          "text": null
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#nnt",
+          "text": null
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/#learnt",
+          "text": null
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/metannt/#both",
+          "text": "previous"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/",
+          "text": "comment or visit my other blogs"
+        },
+        {
+          "href": "https://twitter.com/kenkoonwong/",
+          "text": "twitter"
+        },
+        {
+          "href": "https://github.com/kenkoonwong/",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://med-mastodon.com/@kenkoonwong",
+          "text": "Mastodon"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/contact/",
+          "text": "contact me"
+        },
+        {
+          "href": "https://www.kenkoonwong.com/blog/oddsnnt/",
+          "text": "r on Everyday Is A School Day"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Calculating Number Needed to Treat/Harm (NNT/H) with Odds Ratio | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.kenkoonwong.com/blog/oddsnnt/feature.jpeg?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/abstract.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/index_files/figure-html/unnamed-chunk-1-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": "image",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "image",
+          "base64": null,
+          "src": "https://i2.wp.com/www.kenkoonwong.com/blog/oddsnnt/sample.png?w=50%25&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.kenkoonwong.com/blog/oddsnnt/summary.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/forest.png?w=578&ssl=1"
+        },
+        {
+          "alt": "image",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "image",
+          "base64": null,
+          "src": "https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/hurray.jpg?w=50%25&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-on-everyday-is-a-school-day/",
+          "text": "r on Everyday Is A School Day"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-379680 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Calculating Number Needed to Treat/Harm (NNT/H) with Odds Ratio</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 1, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-everyday-is-a-school-day/\">r on Everyday Is A School Day</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.kenkoonwong.com/blog/oddsnnt/\"> r on Everyday Is A School Day</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><blockquote>\n<p>We learned how to convert the pooled odds ratio from a random-effects model and subsequently calculate the number needed to treat (NNT) or harm (NNH). It’s important to understand that without knowing the event proportions in either the treatment or control groups, we cannot accurately estimate the absolute risk reduction for an individual study or for a meta-analysis. Fascinating indeed! Everyday is a school day! 🙌</p>\n</blockquote>\n<p><img alt=\"\" data-lazy-src=\"https://i1.wp.com/www.kenkoonwong.com/blog/oddsnnt/feature.jpeg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.kenkoonwong.com/blog/oddsnnt/feature.jpeg?w=578&amp;ssl=1\"/></noscript>. <br/>\nImage generated via DALL-E</p>\n<p>Last week, we have demonstrated how to calculate event proportion of treatment and control group with random effect weights, and use it to eventually calculate NNT. Now, we will learn how to convert odds ratio to NNT.</p>\n<h2 id=\"objectives\">Objectives:\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#objectives\" rel=\"nofollow\" target=\"_blank\"><svg aria-hidden=\"true\" class=\"anchor-symbol\" height=\"26\" viewbox=\"0 0 22 22\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0h24v24H0z\" fill=\"currentColor\"></path>\n<path d=\"M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z\"></path>\n</svg></a>\n</h2>\n<ul>\n<li>\n<a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#odds\" rel=\"nofollow\" target=\"_blank\">Breaking down odds ratio</a></li>\n<li>\n<a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#weights\" rel=\"nofollow\" target=\"_blank\">Calculating random effect pooled odds ratio</a></li>\n<li>\n<a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#convert\" rel=\"nofollow\" target=\"_blank\">Converting Odds ratio to Event Proportion</a></li>\n<li>\n<a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#nnt\" rel=\"nofollow\" target=\"_blank\">Calculate NNT</a></li>\n<li>\n<a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#learnt\" rel=\"nofollow\" target=\"_blank\">Lessons Learnt</a></li>\n</ul>\n<h2 id=\"odds\">Breaking down odds ratio\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#odds\" rel=\"nofollow\" target=\"_blank\"><svg aria-hidden=\"true\" class=\"anchor-symbol\" height=\"26\" viewbox=\"0 0 22 22\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0h24v24H0z\" fill=\"currentColor\"></path>\n<path d=\"M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z\"></path>\n</svg></a>\n</h2>\n<p><code>$$\\begin{gather} \\text{Odds ratio} = \\frac{\\text{Odds}_t}{\\text{Odds}_c} \\\\ \\text{Odds ratio} = \\frac{\\frac{\\text{Event}_t}{n_t-\\text{Event}_t}}{\\frac{\\text{Event}_c}{n_t-\\text{Event}_c}}  \\end{gather}$$</code></p>\n<p><code>\\(\\text{Odds}_t\\)</code>: Odds for treatment group   <br/>\n<code>\\(\\text{Odds}_c\\)</code>: Odds for control group   <br/>\n<code>\\(\\text{Event}_t\\)</code>: Event count for treatment group (e.g., how many patients are cured after treatment)   <br/>\n<code>\\(n_t\\)</code>: Total patients in treatment group   <br/>\n<code>\\(\\text{Event}_c\\)</code>: Event count for control group (e.g., how many patients are cured after placebo)   <br/>\n<code>\\(n_c\\)</code>: Total patients in control group</p>\n<p>Let’s look at <code>Effect of Remdesivir vs Standard Care on Clinical Status at 11 Days in Patients With Moderate COVID-19</code>\n<a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7442954/#:~:text=On%20day%2011%2C%20patients%20in,02\" rel=\"nofollow\" target=\"_blank\">Spinner C et al JAMA. 2020 Sep 15; 324(11): 1–10.</a>.) as an example.</p>\n<p><img alt=\"\" data-lazy-src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/abstract.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/abstract.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>Let’s see if we can get close to that odds ratio using information provided by the manuscript. Let’s see if we can get to OR <code>1.65</code>. Looking at 5-day remdesivir group, we have <code>\\(n_t\\)</code> of <code>191</code> and standard of care <code>\\(n_c\\)</code> of <code>200</code>. Through table 2, we see that <code>134</code> <code>\\(event_t\\)</code> in treatment group had clinical improvement and <code>121</code> <code>\\(event_c\\)</code> in SOC group had clinical improvement.</p>\n<p>Given the information above, to calculate OR, it would be:\n<code>$$\\begin{gather} \\text{Odds ratio} = \\frac{\\frac{134}{191-134}}{\\frac{121}{200-121}} \\\\ \\text{Odds ratio} = 1.534 \\end{gather}$$</code></p>\n<p>Close enough for calculating simple odds ratio. 🤷‍♂️ The study uses proportional odds model, which the supplement did say that there were adjustments for certain variables. Hence, it’s more of an <code>exp(coef)</code> from the proportional odds model than calculation above. But for our demonstration purposes, that is how one calculates odds ratio.</p>\n<p>Since we know how odds ratio come about, one could see that we can easily then convert these numbers to event proportions for both treatment and control groups, which in turn we can then calculate absolute risk reduction and eventually NNT! Event proportion on treatment group would be 134/191 = 0.7015707, and event proportion on control group would be 121/200 = 0.605. ARR would be 0.702-0.605=0.097. Hence NNT would be 1/0.097 = 12! Yes, we did it!</p>\n<h4 id=\"what-if-we-dont-have-the-actual-counts\">What If We Don’t Have The Actual Counts?\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#what-if-we-dont-have-the-actual-counts\" rel=\"nofollow\" target=\"_blank\"></a>\n</h4>\n<p>If we don’t have the actual counts (in our case we do but since we cannot reconstruct their proportional odds model, we cannot directly calculate odds ratio that is exactly their value), we then at least need a baseline / control event proportion to further estimate treatment event proportion. Without either of these information, I’m afraid we cannot estimate ARR and NNT accurately.</p>\n<p>What if we do have control group even porportion, how do we then back-calculate to get the treatment event proportion?</p>\n<p><code>$$\\begin{gather} \\text{Odds ratio} = \\frac{\\frac{\\text{Prop}_t}{1-\\text{Prop}_t}}{\\frac{\\text{Prop}_c}{1-\\text{Prop}_c}} \\end{gather}$$</code>\n<code>\\(\\text{Prop}_t\\)</code>: Event proportion for treatment group (e.g., what percentage of patients are cured after treatment)   <br/>\n<code>\\(\\text{Prop}_c\\)</code>: Event proportion for control group (e.g., what percentage patients are cured after placebo)</p>\n<p>Let’s take our event proportion for control group is <code>0.605</code>, and OR of <code>1.534</code>, let’s back-calculate and see if we can get bacck to <code>0.702</code> for event proportion of treatment group.</p>\n<p><code>$$\\begin{gather} 1.534 = \\frac{\\frac{\\text{Prop}_t}{1-\\text{Prop}_t}}{\\frac{0.605}{1-0.605}} \\\\ 1.534 = \\frac{\\frac{\\text{Prop}_t}{1-\\text{Prop}_t}}{1.532} \\\\ 1.534\\cdot1.532 = \\frac{\\text{Prop}_t}{1-\\text{Prop}_t} \\\\ 2.35 = \\frac{\\text{Prop}_t}{1-\\text{Prop}_t} \\\\ 2.35\\cdot(1-\\text{Prop}_t) = \\text{Prop}_t \\\\ 2.35 - 2.35\\text{Prop}_t = \\text{Prop}_t \\\\ 2.35 = \\text{Prop}_t + 2.35\\text{Prop}_t \\\\ 2.35 = 3.35\\text{Prop}_t \\\\ \\text{Prop}_t = \\frac{2.35}{3.35} \\\\ \\text{Prop}_t = 0.70149 \\\\ \\end{gather}$$</code></p>\n<p>Et Viola! Very very close to our previous number!</p>\n<h4 id=\"visualizing-p1-treatment-event-proportions-vs-p0-control-event-proportions-that-makes-up-or-1534\">Visualizing p1 (treatment event proportions) vs p0 (control event proportions) That Makes Up OR 1.534\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#visualizing-p1-treatment-event-proportions-vs-p0-control-event-proportions-that-makes-up-or-1534\" rel=\"nofollow\" target=\"_blank\"></a>\n</h4>\n<pre>library(tidyverse)\n\neg &lt;- expand_grid(p0=seq(0,1,0.001),p1=seq(0,1,0.001))\n\neg |&gt;\n  mutate(or = p1/(1-p1)/(p0/(1-p0))) |&gt; \n  filter(or &gt; 1.533, or &lt; 1.535) |&gt;\n  ggplot(aes(x=p0,y=p1)) +\n  geom_point() +\n  geom_smooth() +\n  theme_minimal()\n</pre><img data-lazy-src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/index_files/figure-html/unnamed-chunk-1-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/index_files/figure-html/unnamed-chunk-1-1.png?w=450&amp;ssl=1\"/></noscript>\n<p>The reason that we cannot calculate ARR and NNT without at least one of the event proportion is because all these combinations shown on the graph can make up OR of 1.534! For example, if treatment event proportion is 0.173, control event proportion should be 0.12 to make or OR of 1.534. Event proportions clearly are not the same as our previous reported numbers clerly have the same OR.</p>\n<p>Guess what? If we have different event proportion we may not have the same difference of event proportion (ARR), especially if they don’t follow a straight line. Let’s take a look at random sampling of 20 experiments and see what their ARR and NNT are.</p>\n<pre>eg |&gt;\n  mutate(or = p1/(1-p1)/(p0/(1-p0))) |&gt; \n  filter(or &gt; 1.533, or &lt; 1.535) |&gt;\n  mutate(arr = p1-p0,\n         nnt = ceiling(1/arr)) |&gt;\n  slice_sample(n = 20) |&gt; view()\n</pre><p align=\"center\">\n<img alt=\"image\" data-lazy-src=\"https://i2.wp.com/www.kenkoonwong.com/blog/oddsnnt/sample.png?w=50%25&amp;ssl=1\" data-recalc-dims=\"1\" height=\"auto\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"image\" data-recalc-dims=\"1\" height=\"auto\" loading=\"lazy\" src=\"https://i2.wp.com/www.kenkoonwong.com/blog/oddsnnt/sample.png?w=50%25&amp;ssl=1\"/></noscript>\n</p>\n<p>Notice that ARRs are quite different, sure sometimes we may get lucky that the NNT might be close to our calculated NNT, but it would not have come from accurate event proportions.</p>\n<br/>\n<h2 id=\"weights\">Calculating Random Effect Pooled Odds Ratio\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#weights\" rel=\"nofollow\" target=\"_blank\"><svg aria-hidden=\"true\" class=\"anchor-symbol\" height=\"26\" viewbox=\"0 0 22 22\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0h24v24H0z\" fill=\"currentColor\"></path>\n<path d=\"M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z\"></path>\n</svg></a>\n</h2>\n<p>Let’s take a look at this article <code>Association of Gastric Acid Suppression With Recurrent Clostridium difficile Infection A Systematic Review and Meta-analysis</code>\n<a href=\"https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2612117\" rel=\"nofollow\" target=\"_blank\">R Tariq JAMA Intern Med. 2017;177(6):784-791</a></p>\n<pre>library(meta)\n\ndf1 &lt;- tibble(study=c(\"Abdelfatah 2015\",\"Cadena 2010\",\"Cadle 2007\", \"Freedberg 2013\", \"Hebert 2013\", \"Hikone 2015\", \"Khanna 2012\",\"Kim 2010\", \"Kim 2012\", \"Linsky 2010\", \"McDonald 2015\",\"Moshkowitz 2007\", \"Rodriguez-Pardo 2013\",\"Samie 2013\",\"Tal  2002\",\"Weiss 2015\"),event.c=c(78,0,7,74,120,2,79,10,7,118,61,9,14,1,20,33),n.c=c(1038,1,43,343,578,16,245,69,18,639,235,38,107,29,47,219))\n\ndf2 &lt;- tibble(study=c(\"Abdelfatah 2015\",\"Cadena 2010\",\"Cadle 2007\", \"Freedberg 2013\", \"Hebert 2013\", \"Hikone 2015\", \"Khanna 2012\",\"Kim 2010\", \"Kim 2012\", \"Linsky 2010\", \"McDonald 2015\",\"Moshkowitz 2007\", \"Rodriguez-Pardo 2013\",\"Samie 2013\",\"Tal  2002\",\"Weiss 2015\"),event.t=c(131,38,40,93,78,12,37,17,14,133,132,5,48,19,23,72),n.t=c(981,128,97,551,251,60,140,56,24,527,411,13,208,75,34,482))\n\ndf &lt;- df1 |&gt;\n  full_join(df2, by = \"study\") \n\ndef &lt;- metabin(event.c = event.c,n.c = n.c, event.e = event.t, n.e = n.t, studlab = study,data = df,sm=\"OR\",level = 0.95,comb.fixed=T,comb.random=T,hakn = F, method.tau = \"REML\",overall = T)\n\nsummary(def)\nforest(def)\n</pre><p>Summary of the meta-analysis:  <br/>\n<img alt=\"\" data-lazy-src=\"https://i2.wp.com/www.kenkoonwong.com/blog/oddsnnt/summary.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.kenkoonwong.com/blog/oddsnnt/summary.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>Forest plot:    <br/>\n<img alt=\"\" data-lazy-src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/forest.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/forest.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>Alright, now that I had <code>{meta}</code> do the magic random effect for me, how on earth do I then use this aggregated OR to further calculate ARR and then NNT? One may say, well, we have all these numbers, can’t we just total them up? We can’t, but let’s try and see how wrong our answer is.</p>\n<p>So, if we were to think event proportion for treatment group is <code>\\(\\frac{\\sum{event_t}}{\\sum{n_t}}\\)</code> = <code>\\(\\frac{892}{4038}\\)</code> = 0.221. Event proportion for the control group is <code>\\(\\frac{\\sum{event_c}}{\\sum{n_c}}\\)</code> = <code>\\(\\frac{633}{3665}\\)</code> = 0.173. ❌</p>\n<p>Let’s take a look at our numbers that are influenced by the random effect weights.</p>\n<pre>weights &lt;- def$w.random / sum(def$w.random)\n\ndf_new &lt;- df |&gt;\n  mutate(weights = weights,\n         log_c = log(event.c/(n.c-event.c))*weights,\n         log_c = case_when(\n           event.c == 0 ~ log(0.5/(n.c-0.5))*weights,\n           TRUE ~ log_c),\n         log_t = log(event.t/(n.t-event.t))*weights,\n         log_t = case_when(\n           event.t == 0 ~ log(0.5/(n.t-0.5))*weights,\n           TRUE ~ log_t),\n         log_c_prop = log(event.c/n.c)*weights,\n         log_c_prop = case_when(\n           event.c == 0 ~ log(0.5/n.c)*weights,\n           TRUE ~ log_c_prop\n         ))\n\n# average odds  on treatment\nodds_t &lt;- exp(sum(df_new$log_t) / sum(weights))\n\n# average odds  of control\nodds_c &lt;- exp(sum(df_new$log_c) / sum(weights))\n\n\n# odds ratio\nodds &lt;- odds_t / odds_c\n\nprop_c &lt;- odds_c / (1+odds_c)\nprop_t &lt;- odds_t / (1+odds_t)\n\n\n## NNT\narr &lt;- prop_t - prop_c         \n\nvar_arr &lt;- prop_t * (1-prop_t) / sum(df_new$n.t) + prop_c * (1-prop_c) / sum(df_new$n.c)\nnnt_l3 &lt;- ceiling(1/abs(arr - 1.96*sqrt(var_arr)))\n\n# NNT upper\nnnt_u3 &lt;- ceiling(1/abs(arr + 1.96*sqrt(var_arr)))\n\nnnt_ci_3 &lt;- paste0(ceiling(1/arr),\" [95%CI \",nnt_u3, \"-\",nnt_l3,\"]\")\n</pre><p>✅ Our event proportion for treatment group is 0.2641518 and our event proportion for control group is 0.1899116. Quite different isn’t it? Our calculated OR is 1.5312512, quite similar to the forest plot, hurray! If you are interested in how to use those weights, please visit my previous \n<a href=\"https://www.kenkoonwong.com/blog/metannt/#both\" rel=\"nofollow\" target=\"_blank\">blog</a>. I basically replaced proportion equation to odds equation.</p>\n<br/>\n<h2 id=\"convert\">Converting Odds ratio to Event Proportion\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#convert\" rel=\"nofollow\" target=\"_blank\"><svg aria-hidden=\"true\" class=\"anchor-symbol\" height=\"26\" viewbox=\"0 0 22 22\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0h24v24H0z\" fill=\"currentColor\"></path>\n<path d=\"M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z\"></path>\n</svg></a>\n</h2>\n<p>How do we then back-calculate the event proportion using our odds? Let’s just take a look at odds for treatment. Our aggregated odds for treatment is 0.358976</p>\n<p><code>$$\\begin{gather} \\text{Odds}_t = \\frac{\\text{Prop}_t}{1-\\text{Prop}_t} \\\\ \\text{Odds}_t \\cdot (1-\\text{Prop}_t) = \\text{Prop}_t \\\\ 0.358976 \\cdot (1-\\text{Prop}_t) = \\text{Prop}_t \\\\ 0.358976 - 0.358976(\\text{Prop}_t) = \\text{Prop}_t \\\\ 0.358976 = \\text{Prop}_t + 0.358976(\\text{Prop}_t) \\\\ 0.358976 = 1.358976(\\text{Prop}_t) \\\\ \\text{Prop}_t = \\frac{0.358976}{1.358976} \\\\ \\text{Prop}_t = 0.2641518 \\end{gather}$$</code></p>\n<p>Not too shabby! Exact number, sweet! There is also another simple equation where <code>\\(prop_t = \\frac{\\text{odds}_t}{1+\\text{odds}_t}\\)</code>. You can do the same for <code>\\(prop_c\\)</code> as well which I will not repeat.</p>\n<br/>\n<h2 id=\"nnt\">Calculate NNT\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#nnt\" rel=\"nofollow\" target=\"_blank\"><svg aria-hidden=\"true\" class=\"anchor-symbol\" height=\"26\" viewbox=\"0 0 22 22\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0h24v24H0z\" fill=\"currentColor\"></path>\n<path d=\"M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z\"></path>\n</svg></a>\n</h2>\n<p>This part should be simple, since we have <code>\\(prop_t\\)</code> and <code>\\(prop_c\\)</code>. Let’s calculate ARR which is <code>\\(prop_t - prop_c\\)</code> = 0.0742403. NNT is <code>\\(\\frac{1}{ARR}\\)</code> = 14 [95%CI 11-18].</p>\n<p>So, with this study, it’s not appropriate to call it Number Needed To Treat since what we’re measuring is the harm 👿 of treatment compared to no treatment, we call this Number Needed To Treat and Harm or Number Needed to Harm (NNTM or NNH). Essentially, what we’re saying, given this aggregated odds ratio with random effect, is for every 14 patients we treat with PPI, we may expect 1 case of <em>Clostridiodes difficile</em> colitis, when compared to those who’s not on PPI.</p>\n<p align=\"center\">\n<img alt=\"image\" data-lazy-src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/hurray.jpg?w=50%25&amp;ssl=1\" data-recalc-dims=\"1\" height=\"auto\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"image\" data-recalc-dims=\"1\" height=\"auto\" loading=\"lazy\" src=\"https://i0.wp.com/www.kenkoonwong.com/blog/oddsnnt/hurray.jpg?w=50%25&amp;ssl=1\"/></noscript>\n</p>\n<h2 id=\"learnt\">Lessons Learnt\n  <a href=\"https://www.kenkoonwong.com/blog/oddsnnt/#learnt\" rel=\"nofollow\" target=\"_blank\"><svg aria-hidden=\"true\" class=\"anchor-symbol\" height=\"26\" viewbox=\"0 0 22 22\" width=\"26\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0 0h24v24H0z\" fill=\"currentColor\"></path>\n<path d=\"M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z\"></path>\n</svg></a>\n</h2>\n<ul>\n<li>Random effect odds ratio calculation is quite similar to \n<a href=\"https://www.kenkoonwong.com/blog/metannt/#both\" rel=\"nofollow\" target=\"_blank\">previous</a>, please let me know if there is mistake or if you’d like me to elaborate more here on this blog</li>\n<li>Learnt to use <code>fig.show='hide'</code></li>\n<li>Learnt to use <code>group</code> in <code>{meta}</code>, though not shown here. This would be helpful when the random effect is pooled from both adjusted and unadjusted studies where you can see the different estimates prior to total pooled estimates.</li>\n</ul>\n<br/>\n<p>If you like this article:</p>\n<ul>\n<li>please feel free to send me a \n<a href=\"https://www.kenkoonwong.com/blog/\" rel=\"nofollow\" target=\"_blank\">comment or visit my other blogs</a></li>\n<li>please feel free to follow me on \n<a href=\"https://twitter.com/kenkoonwong/\" rel=\"nofollow\" target=\"_blank\">twitter</a>, \n<a href=\"https://github.com/kenkoonwong/\" rel=\"nofollow\" target=\"_blank\">GitHub</a> or \n<a href=\"https://med-mastodon.com/@kenkoonwong\" rel=\"nofollow\" target=\"_blank\">Mastodon</a></li>\n<li>if you would like collaborate please feel free to \n<a href=\"https://www.kenkoonwong.com/contact/\" rel=\"nofollow\" target=\"_blank\">contact me</a></li>\n</ul>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.kenkoonwong.com/blog/oddsnnt/\"> r on Everyday Is A School Day</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Calculating Number Needed to Treat/Harm (NNT/H) with Odds Ratio\nPosted on\nNovember 1, 2023\nby\nr on Everyday Is A School Day\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nr on Everyday Is A School Day\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWe learned how to convert the pooled odds ratio from a random-effects model and subsequently calculate the number needed to treat (NNT) or harm (NNH). It’s important to understand that without knowing the event proportions in either the treatment or control groups, we cannot accurately estimate the absolute risk reduction for an individual study or for a meta-analysis. Fascinating indeed! Everyday is a school day! 🙌\n.\nImage generated via DALL-E\nLast week, we have demonstrated how to calculate event proportion of treatment and control group with random effect weights, and use it to eventually calculate NNT. Now, we will learn how to convert odds ratio to NNT.\nObjectives:\nBreaking down odds ratio\nCalculating random effect pooled odds ratio\nConverting Odds ratio to Event Proportion\nCalculate NNT\nLessons Learnt\nBreaking down odds ratio\n$$\\begin{gather} \\text{Odds ratio} = \\frac{\\text{Odds}_t}{\\text{Odds}_c} \\\\ \\text{Odds ratio} = \\frac{\\frac{\\text{Event}_t}{n_t-\\text{Event}_t}}{\\frac{\\text{Event}_c}{n_t-\\text{Event}_c}}  \\end{gather}$$\n\\(\\text{Odds}_t\\)\n: Odds for treatment group\n\\(\\text{Odds}_c\\)\n: Odds for control group\n\\(\\text{Event}_t\\)\n: Event count for treatment group (e.g., how many patients are cured after treatment)\n\\(n_t\\)\n: Total patients in treatment group\n\\(\\text{Event}_c\\)\n: Event count for control group (e.g., how many patients are cured after placebo)\n\\(n_c\\)\n: Total patients in control group\nLet’s look at\nEffect of Remdesivir vs Standard Care on Clinical Status at 11 Days in Patients With Moderate COVID-19\nSpinner C et al JAMA. 2020 Sep 15; 324(11): 1–10.\n.) as an example.\nLet’s see if we can get close to that odds ratio using information provided by the manuscript. Let’s see if we can get to OR\n1.65\n. Looking at 5-day remdesivir group, we have\n\\(n_t\\)\nof\n191\nand standard of care\n\\(n_c\\)\nof\n200\n. Through table 2, we see that\n134\n\\(event_t\\)\nin treatment group had clinical improvement and\n121\n\\(event_c\\)\nin SOC group had clinical improvement.\nGiven the information above, to calculate OR, it would be:\n$$\\begin{gather} \\text{Odds ratio} = \\frac{\\frac{134}{191-134}}{\\frac{121}{200-121}} \\\\ \\text{Odds ratio} = 1.534 \\end{gather}$$\nClose enough for calculating simple odds ratio. 🤷‍♂️ The study uses proportional odds model, which the supplement did say that there were adjustments for certain variables. Hence, it’s more of an\nexp(coef)\nfrom the proportional odds model than calculation above. But for our demonstration purposes, that is how one calculates odds ratio.\nSince we know how odds ratio come about, one could see that we can easily then convert these numbers to event proportions for both treatment and control groups, which in turn we can then calculate absolute risk reduction and eventually NNT! Event proportion on treatment group would be 134/191 = 0.7015707, and event proportion on control group would be 121/200 = 0.605. ARR would be 0.702-0.605=0.097. Hence NNT would be 1/0.097 = 12! Yes, we did it!\nWhat If We Don’t Have The Actual Counts?\nIf we don’t have the actual counts (in our case we do but since we cannot reconstruct their proportional odds model, we cannot directly calculate odds ratio that is exactly their value), we then at least need a baseline / control event proportion to further estimate treatment event proportion. Without either of these information, I’m afraid we cannot estimate ARR and NNT accurately.\nWhat if we do have control group even porportion, how do we then back-calculate to get the treatment event proportion?\n$$\\begin{gather} \\text{Odds ratio} = \\frac{\\frac{\\text{Prop}_t}{1-\\text{Prop}_t}}{\\frac{\\text{Prop}_c}{1-\\text{Prop}_c}} \\end{gather}$$\n\\(\\text{Prop}_t\\)\n: Event proportion for treatment group (e.g., what percentage of patients are cured after treatment)\n\\(\\text{Prop}_c\\)\n: Event proportion for control group (e.g., what percentage patients are cured after placebo)\nLet’s take our event proportion for control group is\n0.605\n, and OR of\n1.534\n, let’s back-calculate and see if we can get bacck to\n0.702\nfor event proportion of treatment group.\n$$\\begin{gather} 1.534 = \\frac{\\frac{\\text{Prop}_t}{1-\\text{Prop}_t}}{\\frac{0.605}{1-0.605}} \\\\ 1.534 = \\frac{\\frac{\\text{Prop}_t}{1-\\text{Prop}_t}}{1.532} \\\\ 1.534\\cdot1.532 = \\frac{\\text{Prop}_t}{1-\\text{Prop}_t} \\\\ 2.35 = \\frac{\\text{Prop}_t}{1-\\text{Prop}_t} \\\\ 2.35\\cdot(1-\\text{Prop}_t) = \\text{Prop}_t \\\\ 2.35 - 2.35\\text{Prop}_t = \\text{Prop}_t \\\\ 2.35 = \\text{Prop}_t + 2.35\\text{Prop}_t \\\\ 2.35 = 3.35\\text{Prop}_t \\\\ \\text{Prop}_t = \\frac{2.35}{3.35} \\\\ \\text{Prop}_t = 0.70149 \\\\ \\end{gather}$$\nEt Viola! Very very close to our previous number!\nVisualizing p1 (treatment event proportions) vs p0 (control event proportions) That Makes Up OR 1.534\nlibrary(tidyverse)\n\neg <- expand_grid(p0=seq(0,1,0.001),p1=seq(0,1,0.001))\n\neg |>\n  mutate(or = p1/(1-p1)/(p0/(1-p0))) |> \n  filter(or > 1.533, or < 1.535) |>\n  ggplot(aes(x=p0,y=p1)) +\n  geom_point() +\n  geom_smooth() +\n  theme_minimal()\nThe reason that we cannot calculate ARR and NNT without at least one of the event proportion is because all these combinations shown on the graph can make up OR of 1.534! For example, if treatment event proportion is 0.173, control event proportion should be 0.12 to make or OR of 1.534. Event proportions clearly are not the same as our previous reported numbers clerly have the same OR.\nGuess what? If we have different event proportion we may not have the same difference of event proportion (ARR), especially if they don’t follow a straight line. Let’s take a look at random sampling of 20 experiments and see what their ARR and NNT are.\neg |>\n  mutate(or = p1/(1-p1)/(p0/(1-p0))) |> \n  filter(or > 1.533, or < 1.535) |>\n  mutate(arr = p1-p0,\n         nnt = ceiling(1/arr)) |>\n  slice_sample(n = 20) |> view()\nNotice that ARRs are quite different, sure sometimes we may get lucky that the NNT might be close to our calculated NNT, but it would not have come from accurate event proportions.\nCalculating Random Effect Pooled Odds Ratio\nLet’s take a look at this article\nAssociation of Gastric Acid Suppression With Recurrent Clostridium difficile Infection A Systematic Review and Meta-analysis\nR Tariq JAMA Intern Med. 2017;177(6):784-791\nlibrary(meta)\n\ndf1 <- tibble(study=c(\"Abdelfatah 2015\",\"Cadena 2010\",\"Cadle 2007\", \"Freedberg 2013\", \"Hebert 2013\", \"Hikone 2015\", \"Khanna 2012\",\"Kim 2010\", \"Kim 2012\", \"Linsky 2010\", \"McDonald 2015\",\"Moshkowitz 2007\", \"Rodriguez-Pardo 2013\",\"Samie 2013\",\"Tal  2002\",\"Weiss 2015\"),event.c=c(78,0,7,74,120,2,79,10,7,118,61,9,14,1,20,33),n.c=c(1038,1,43,343,578,16,245,69,18,639,235,38,107,29,47,219))\n\ndf2 <- tibble(study=c(\"Abdelfatah 2015\",\"Cadena 2010\",\"Cadle 2007\", \"Freedberg 2013\", \"Hebert 2013\", \"Hikone 2015\", \"Khanna 2012\",\"Kim 2010\", \"Kim 2012\", \"Linsky 2010\", \"McDonald 2015\",\"Moshkowitz 2007\", \"Rodriguez-Pardo 2013\",\"Samie 2013\",\"Tal  2002\",\"Weiss 2015\"),event.t=c(131,38,40,93,78,12,37,17,14,133,132,5,48,19,23,72),n.t=c(981,128,97,551,251,60,140,56,24,527,411,13,208,75,34,482))\n\ndf <- df1 |>\n  full_join(df2, by = \"study\") \n\ndef <- metabin(event.c = event.c,n.c = n.c, event.e = event.t, n.e = n.t, studlab = study,data = df,sm=\"OR\",level = 0.95,comb.fixed=T,comb.random=T,hakn = F, method.tau = \"REML\",overall = T)\n\nsummary(def)\nforest(def)\nSummary of the meta-analysis:\nForest plot:\nAlright, now that I had\n{meta}\ndo the magic random effect for me, how on earth do I then use this aggregated OR to further calculate ARR and then NNT? One may say, well, we have all these numbers, can’t we just total them up? We can’t, but let’s try and see how wrong our answer is.\nSo, if we were to think event proportion for treatment group is\n\\(\\frac{\\sum{event_t}}{\\sum{n_t}}\\)\n=\n\\(\\frac{892}{4038}\\)\n= 0.221. Event proportion for the control group is\n\\(\\frac{\\sum{event_c}}{\\sum{n_c}}\\)\n=\n\\(\\frac{633}{3665}\\)\n= 0.173. ❌\nLet’s take a look at our numbers that are influenced by the random effect weights.\nweights <- def$w.random / sum(def$w.random)\n\ndf_new <- df |>\n  mutate(weights = weights,\n         log_c = log(event.c/(n.c-event.c))*weights,\n         log_c = case_when(\n           event.c == 0 ~ log(0.5/(n.c-0.5))*weights,\n           TRUE ~ log_c),\n         log_t = log(event.t/(n.t-event.t))*weights,\n         log_t = case_when(\n           event.t == 0 ~ log(0.5/(n.t-0.5))*weights,\n           TRUE ~ log_t),\n         log_c_prop = log(event.c/n.c)*weights,\n         log_c_prop = case_when(\n           event.c == 0 ~ log(0.5/n.c)*weights,\n           TRUE ~ log_c_prop\n         ))\n\n# average odds  on treatment\nodds_t <- exp(sum(df_new$log_t) / sum(weights))\n\n# average odds  of control\nodds_c <- exp(sum(df_new$log_c) / sum(weights))\n\n# odds ratio\nodds <- odds_t / odds_c\n\nprop_c <- odds_c / (1+odds_c)\nprop_t <- odds_t / (1+odds_t)\n\n## NNT\narr <- prop_t - prop_c         \n\nvar_arr <- prop_t * (1-prop_t) / sum(df_new$n.t) + prop_c * (1-prop_c) / sum(df_new$n.c)\nnnt_l3 <- ceiling(1/abs(arr - 1.96*sqrt(var_arr)))\n\n# NNT upper\nnnt_u3 <- ceiling(1/abs(arr + 1.96*sqrt(var_arr)))\n\nnnt_ci_3 <- paste0(ceiling(1/arr),\" [95%CI \",nnt_u3, \"-\",nnt_l3,\"]\")\n✅ Our event proportion for treatment group is 0.2641518 and our event proportion for control group is 0.1899116. Quite different isn’t it? Our calculated OR is 1.5312512, quite similar to the forest plot, hurray! If you are interested in how to use those weights, please visit my previous\nblog\n. I basically replaced proportion equation to odds equation.\nConverting Odds ratio to Event Proportion\nHow do we then back-calculate the event proportion using our odds? Let’s just take a look at odds for treatment. Our aggregated odds for treatment is 0.358976\n$$\\begin{gather} \\text{Odds}_t = \\frac{\\text{Prop}_t}{1-\\text{Prop}_t} \\\\ \\text{Odds}_t \\cdot (1-\\text{Prop}_t) = \\text{Prop}_t \\\\ 0.358976 \\cdot (1-\\text{Prop}_t) = \\text{Prop}_t \\\\ 0.358976 - 0.358976(\\text{Prop}_t) = \\text{Prop}_t \\\\ 0.358976 = \\text{Prop}_t + 0.358976(\\text{Prop}_t) \\\\ 0.358976 = 1.358976(\\text{Prop}_t) \\\\ \\text{Prop}_t = \\frac{0.358976}{1.358976} \\\\ \\text{Prop}_t = 0.2641518 \\end{gather}$$\nNot too shabby! Exact number, sweet! There is also another simple equation where\n\\(prop_t = \\frac{\\text{odds}_t}{1+\\text{odds}_t}\\)\n. You can do the same for\n\\(prop_c\\)\nas well which I will not repeat.\nCalculate NNT\nThis part should be simple, since we have\n\\(prop_t\\)\nand\n\\(prop_c\\)\n. Let’s calculate ARR which is\n\\(prop_t - prop_c\\)\n= 0.0742403. NNT is\n\\(\\frac{1}{ARR}\\)\n= 14 [95%CI 11-18].\nSo, with this study, it’s not appropriate to call it Number Needed To Treat since what we’re measuring is the harm 👿 of treatment compared to no treatment, we call this Number Needed To Treat and Harm or Number Needed to Harm (NNTM or NNH). Essentially, what we’re saying, given this aggregated odds ratio with random effect, is for every 14 patients we treat with PPI, we may expect 1 case of\nClostridiodes difficile\ncolitis, when compared to those who’s not on PPI.\nLessons Learnt\nRandom effect odds ratio calculation is quite similar to\nprevious\n, please let me know if there is mistake or if you’d like me to elaborate more here on this blog\nLearnt to use\nfig.show='hide'\nLearnt to use\ngroup\nin\n{meta}\n, though not shown here. This would be helpful when the random effect is pooled from both adjusted and unadjusted studies where you can see the different estimates prior to total pooled estimates.\nIf you like this article:\nplease feel free to send me a\ncomment or visit my other blogs\nplease feel free to follow me on\ntwitter\n,\nGitHub\nor\nMastodon\nif you would like collaborate please feel free to\ncontact me\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nr on Everyday Is A School Day\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "We learned how to convert the pooled odds ratio from a random-effects model and subsequently calculate the number needed to treat (NNT) or harm (NNH). It’s important to understand that without knowing the event proportions in either the treatment or c...",
+      "meta_keywords": null,
+      "og_description": "We learned how to convert the pooled odds ratio from a random-effects model and subsequently calculate the number needed to treat (NNT) or harm (NNH). It’s important to understand that without knowing the event proportions in either the treatment or c...",
+      "og_image": "https://www.kenkoonwong.com/blog/oddsnnt/feature.jpeg",
+      "og_title": "Calculating Number Needed to Treat/Harm (NNT/H) with Odds Ratio | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 10.9,
+      "sitemap_lastmod": "2023-11-02T00:00:00+00:00",
+      "twitter_description": "We learned how to convert the pooled odds ratio from a random-effects model and subsequently calculate the number needed to treat (NNT) or harm (NNH). It’s important to understand that without knowing the event proportions in either the treatment or c...",
+      "twitter_title": "Calculating Number Needed to Treat/Harm (NNT/H) with Odds Ratio | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/11/calculating-number-needed-to-treat-harm-nnt-h-with-odds-ratio/",
+      "word_count": 2179
+    }
+  }
+}

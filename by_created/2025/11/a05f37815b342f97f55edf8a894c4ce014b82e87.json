@@ -1,0 +1,110 @@
+{
+  "id": "a05f37815b342f97f55edf8a894c4ce014b82e87",
+  "url": "https://www.r-bloggers.com/2009/12/rcpp-and-inline-example/",
+  "created_at_utc": "2025-11-17T20:39:40Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "fb17ee6d-d36a-4ce0-8815-d1d543af2e83",
+    "created_at": "2025-11-17 20:39:40",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/rcpp-and-inline-example/",
+      "crawled_at": "2025-11-17T10:10:18.535694",
+      "external_links": [
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/12/20#rcpp_inline_example",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/12/19#rcpp_0.7.0",
+          "text": "Rcpp 0.7.0\nrelease"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/12/20#rcpp_inline_example",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Rcpp and inline example | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/thinking-inside-the-box/",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-466 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Rcpp and inline example</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 20, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thinking-inside-the-box/\">Thinking inside the box</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/12/20#rcpp_inline_example\"> Thinking inside the box   </a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nFollowing up on yesterday’s\n<a href=\"http://dirk.eddelbuettel.com/blog/2009/12/19#rcpp_0.7.0\" rel=\"nofollow\" target=\"_blank\">Rcpp 0.7.0\nrelease</a>, here is a quick example of why the new feastures can be so useful.\n\n<p>\nThe following <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> code defines a character\nvariable <code>gslrng</code>. This variable contains a short C++ code\nsegment, which is then transformed by the function <code>cfunction</code>\ninto a function of two arguments assigned to <code>funx</code>:\n\n<body style=\"background-color:#ffffff\">\n<pre>    ## now use Rcpp to pass down a parameter for the seed, and a vector size\n    gslrng &lt;- '\n       int seed = RcppSexp(s).asInt();\n       int len = RcppSexp(n).asInt();\n\n       gsl_rng *r;\n       gsl_rng_env_setup();\n       std::vector&lt;double&gt; v(len);\n\n       r = gsl_rng_alloc (gsl_rng_default);\n\n       gsl_rng_set (r, (unsigned long) seed);\n       for (int i=0; i&lt;len; i++) {\n           v[i] = gsl_rng_get (r);\n       }\n       gsl_rng_free(r);\n\n       return RcppSexp(v).asSexp();\n    '\n\n    ## turn into a function that R can call\n    ## compileargs redundant on Debian/Ubuntu as gsl headers are found anyway\n    funx &lt;- cfunction(signature(s=\"numeric\", n=\"numeric\"),\n                      gslrng,\n                      includes=\"#include &lt;gsl/gsl_rng.h&gt;\",\n                      Rcpp=TRUE,\n                      cppargs=\"-I/usr/include\",\n                      libargs=\"-lgsl -lgslcblas\")\n    print(funx(0, 5))\n\n</pre>\n</body>\n<p>\nThe <code>signature</code> argument to <code>cfunction</code> defines two\nvariables <code>s</code> and <code>n</code> — which the C++ function then\nreads in from R and converts to two integers <code>seed</code> and\n<code>len</code>.\n<code>seed</code> is used to initialize the random-number generator, and\n<code>len</code> draws are then taken and stored in the STL vector\n<code>v</code> which returned at the end.\n\n<p>\nAs the R level, we now have a function of two arguments returning a vector of\nRNG draws of the given lenth and using the given seed.\n\n<p>\nAlso note how we tell <code>cfunction</code> to add the GSL include line,\nspecify that we want to compile and link against Rcpp and provide\n<code>-I</code> and <code>-L</code> arguments to compile and link with the\nGSL. (The include statement is not needed as the compiler would have found them\nin <code>/usr/include</code> anyway, but it shows how to set this if needed.)\n<p>\nFinally, we simply call our freshly compiled, linked and loaded C++\nfunction with arguments zero for the seed and five for the length, and print\nthe results vector returned to R from C++.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/12/20#rcpp_inline_example\"> Thinking inside the box   </a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></p></p></p></div>\n</article>",
+      "main_text": "Rcpp and inline example\nPosted on\nDecember 20, 2009\nby\nThinking inside the box\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThinking inside the box\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nFollowing up on yesterday’s\nRcpp 0.7.0\nrelease\n, here is a quick example of why the new feastures can be so useful.\nThe following\nR\ncode defines a character\nvariable\ngslrng\n. This variable contains a short C++ code\nsegment, which is then transformed by the function\ncfunction\ninto a function of two arguments assigned to\nfunx\n:\n## now use Rcpp to pass down a parameter for the seed, and a vector size\n    gslrng <- '\n       int seed = RcppSexp(s).asInt();\n       int len = RcppSexp(n).asInt();\n\n       gsl_rng *r;\n       gsl_rng_env_setup();\n       std::vector<double> v(len);\n\n       r = gsl_rng_alloc (gsl_rng_default);\n\n       gsl_rng_set (r, (unsigned long) seed);\n       for (int i=0; i<len; i++) {\n           v[i] = gsl_rng_get (r);\n       }\n       gsl_rng_free(r);\n\n       return RcppSexp(v).asSexp();\n    '\n\n    ## turn into a function that R can call\n    ## compileargs redundant on Debian/Ubuntu as gsl headers are found anyway\n    funx <- cfunction(signature(s=\"numeric\", n=\"numeric\"),\n                      gslrng,\n                      includes=\"#include <gsl/gsl_rng.h>\",\n                      Rcpp=TRUE,\n                      cppargs=\"-I/usr/include\",\n                      libargs=\"-lgsl -lgslcblas\")\n    print(funx(0, 5))\nThe\nsignature\nargument to\ncfunction\ndefines two\nvariables\ns\nand\nn\n— which the C++ function then\nreads in from R and converts to two integers\nseed\nand\nlen\n.\nseed\nis used to initialize the random-number generator, and\nlen\ndraws are then taken and stored in the STL vector\nv\nwhich returned at the end.\nAs the R level, we now have a function of two arguments returning a vector of\nRNG draws of the given lenth and using the given seed.\nAlso note how we tell\ncfunction\nto add the GSL include line,\nspecify that we want to compile and link against Rcpp and provide\n-I\nand\n-L\narguments to compile and link with the\nGSL. (The include statement is not needed as the compiler would have found them\nin\n/usr/include\nanyway, but it shows how to set this if needed.)\nFinally, we simply call our freshly compiled, linked and loaded C++\nfunction with arguments zero for the seed and five for the length, and print\nthe results vector returned to R from C++.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThinking inside the box\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Following up on yesterday's Rcpp 0.7.0 release, here is a quick example of why the new feastures can be so useful. The following R code defines a character variable gslrng. This variable contains a short C++ code segment, which is then transformed by the function cfunction into a function of two arguments assigned to funx: ## now use Rcpp to pass down a parameter for the seed, and a vector size gslrng",
+      "meta_keywords": null,
+      "og_description": "Following up on yesterday's Rcpp 0.7.0 release, here is a quick example of why the new feastures can be so useful. The following R code defines a character variable gslrng. This variable contains a short C++ code segment, which is then transformed by the function cfunction into a function of two arguments assigned to funx: ## now use Rcpp to pass down a parameter for the seed, and a vector size gslrng",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Rcpp and inline example | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.4,
+      "sitemap_lastmod": "2009-12-20T20:57:00+00:00",
+      "twitter_description": "Following up on yesterday's Rcpp 0.7.0 release, here is a quick example of why the new feastures can be so useful. The following R code defines a character variable gslrng. This variable contains a short C++ code segment, which is then transformed by the function cfunction into a function of two arguments assigned to funx: ## now use Rcpp to pass down a parameter for the seed, and a vector size gslrng",
+      "twitter_title": "Rcpp and inline example | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/rcpp-and-inline-example/",
+      "word_count": 482
+    }
+  }
+}

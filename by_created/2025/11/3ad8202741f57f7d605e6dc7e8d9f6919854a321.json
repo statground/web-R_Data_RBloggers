@@ -1,0 +1,131 @@
+{
+  "id": "3ad8202741f57f7d605e6dc7e8d9f6919854a321",
+  "url": "https://www.r-bloggers.com/2009/02/single-letter-frequencies-in-english/",
+  "created_at_utc": "2025-11-17T20:41:13Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "e4c8211d-71d1-43f5-866d-3122a7ee0c5a",
+    "created_at": "2025-11-17 20:41:13",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/02/single-letter-frequencies-in-english/",
+      "crawled_at": "2025-11-17T10:44:12.121734",
+      "external_links": [
+        {
+          "href": "http://www.johnmyleswhite.com/notebook/2009/02/15/single-letter-frequencies-in-english/",
+          "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.gutenberg.org/wiki/Main_Page",
+          "text": "Project Gutenberg"
+        },
+        {
+          "href": "http://www.johnmyleswhite.com/notebook/2009/02/15/single-letter-frequencies-in-english/",
+          "text": "\"R-bloggers\" via Tal Galili in Google Reader"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Single Letter Frequencies in English | R-bloggers",
+      "images": [
+        {
+          "alt": "Single Letter Probabilities.png",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-probabilities1.png?w=450"
+        },
+        {
+          "alt": "Single Letter Probabilities.png",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-probabilities1.png?w=450"
+        },
+        {
+          "alt": "Single Letter Inverse Probabilities.png",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-inverse-probabilities1.png?w=450"
+        },
+        {
+          "alt": "Single Letter Inverse Probabilities.png",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-inverse-probabilities1.png?w=450"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/john-myles-white/",
+          "text": "John Myles White"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/statistics/",
+          "text": "statistics"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-28 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Single Letter Frequencies in English</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 15, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/02/15/single-letter-frequencies-in-english/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>Every time that I read a paper that discusses the frequencies of single letters in English, I feel like I should sit down and calculate them for myself from a sample of English text. Today, I finally did. Here are the probabilities and negative log probabilities of the characters in English over the corpus of Shakespeare’s plays:</p>\n<div style=\"text-align:center\"><img alt=\"Single Letter Probabilities.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-probabilities1.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-probabilities1.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"Single Letter Probabilities.png\" border=\"0\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-probabilities1.png?w=450\"/></noscript></div>\n<div style=\"text-align:center\"><img alt=\"Single Letter Inverse Probabilities.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-inverse-probabilities1.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-inverse-probabilities1.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"Single Letter Inverse Probabilities.png\" border=\"0\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-inverse-probabilities1.png?w=450\"/></noscript></div>\n<p>And, for those who care, here’s the code to generate the data from the plays, which I downloaded from <a href=\"http://www.gutenberg.org/wiki/Main_Page\" rel=\"nofollow\" target=\"_blank\">Project Gutenberg</a>:</p>\n<div><table><tr><td><pre>1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n</pre></td><td><pre>def initialize_letter_counts(letter_counts)\n  ('a'..'z').each do |chr|\n    letter_counts[chr] = 0\n  end\nend\n \ndef parse_file(filename, letter_counts)\n  f = File.new(filename)\n  begin\n    while 1\n      char = f.readchar().chr.downcase\n      if char.match(/[a-z]/)\n        letter_counts[char] = letter_counts[char] + 1\n      end\n    end\n  rescue EOFError\n    return nil\n  end\nend\n \ndirectory = '/Users/johnmyleswhite/Princeton/Research/Letter Frequency'\n \nDir.chdir(directory)\n \nletter_counts = {}\n \ninitialize_letter_counts(letter_counts)\n \nDir.new('Data').entries.each do |entry|\n  if entry.match(/.txt$/)\n    entry = File.expand_path(entry, directory + '/Data')\n    parse_file(entry, letter_counts)\n  end\nend\n \nletter_counts.keys.sort.each do |key|\n  puts \"'#{key}',#{letter_counts[key]}\"\nend</pre></td></tr></table></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/02/15/single-letter-frequencies-in-english/\"> \"R-bloggers\" via Tal Galili in Google Reader</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+      "main_text": "Single Letter Frequencies in English\nPosted on\nFebruary 15, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\n\"R-bloggers\" via Tal Galili in Google Reader\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEvery time that I read a paper that discusses the frequencies of single letters in English, I feel like I should sit down and calculate them for myself from a sample of English text. Today, I finally did. Here are the probabilities and negative log probabilities of the characters in English over the corpus of Shakespeare’s plays:\nAnd, for those who care, here’s the code to generate the data from the plays, which I downloaded from\nProject Gutenberg\n:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\ndef initialize_letter_counts(letter_counts)\n  ('a'..'z').each do |chr|\n    letter_counts[chr] = 0\n  end\nend\n \ndef parse_file(filename, letter_counts)\n  f = File.new(filename)\n  begin\n    while 1\n      char = f.readchar().chr.downcase\n      if char.match(/[a-z]/)\n        letter_counts[char] = letter_counts[char] + 1\n      end\n    end\n  rescue EOFError\n    return nil\n  end\nend\n \ndirectory = '/Users/johnmyleswhite/Princeton/Research/Letter Frequency'\n \nDir.chdir(directory)\n \nletter_counts = {}\n \ninitialize_letter_counts(letter_counts)\n \nDir.new('Data').entries.each do |entry|\n  if entry.match(/.txt$/)\n    entry = File.expand_path(entry, directory + '/Data')\n    parse_file(entry, letter_counts)\n  end\nend\n \nletter_counts.keys.sort.each do |key|\n  puts \"'#{key}',#{letter_counts[key]}\"\nend\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\n\"R-bloggers\" via Tal Galili in Google Reader\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+      "meta_description": "Every time that I read a paper that discusses the frequencies of single letters in English, I feel like I should sit down and calculate them for myself from a sample of English text. Today, I finally did. Here are the probabilities and negative log pro...",
+      "meta_keywords": "statistics",
+      "og_description": "Every time that I read a paper that discusses the frequencies of single letters in English, I feel like I should sit down and calculate them for myself from a sample of English text. Today, I finally did. Here are the probabilities and negative log pro...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/02/single-letter-probabilities1.png",
+      "og_title": "Single Letter Frequencies in English | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.8,
+      "sitemap_lastmod": "2011-05-11T21:12:18+00:00",
+      "twitter_description": "Every time that I read a paper that discusses the frequencies of single letters in English, I feel like I should sit down and calculate them for myself from a sample of English text. Today, I finally did. Here are the probabilities and negative log pro...",
+      "twitter_title": "Single Letter Frequencies in English | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/02/single-letter-frequencies-in-english/",
+      "word_count": 364
+    }
+  }
+}

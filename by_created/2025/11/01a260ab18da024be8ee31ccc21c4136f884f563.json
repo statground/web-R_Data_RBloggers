@@ -1,0 +1,187 @@
+{
+  "id": "01a260ab18da024be8ee31ccc21c4136f884f563",
+  "url": "https://www.r-bloggers.com/2025/07/part-ii-using-r-in-excel-linear-regression/",
+  "created_at_utc": "2025-11-22T19:58:01Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "7339e6f9-ccaa-4ea3-9683-f5c5418e7e22",
+    "created_at": "2025-11-22 19:58:01",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/07/part-ii-using-r-in-excel-linear-regression/",
+      "crawled_at": "2025-11-22T10:45:08.399908",
+      "external_links": [
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/",
+          "text": "Adam's Software Lab"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/",
+          "text": "first part"
+        },
+        {
+          "href": "https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm",
+          "text": "function"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/assets/images/Part-II-R-in-Excel-Linear-Regression.xlsx",
+          "text": "“Part II – R in Excel – Linear Regression.xlsx”"
+        },
+        {
+          "href": "https://search.r-project.org/CRAN/refmans/datarium/html/marketing.html",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/broom/vignettes/broom.html",
+          "text": "tidy up"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-III-Using-R-in-Excel-Forecasting/",
+          "text": "Part III in the series"
+        },
+        {
+          "href": "https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/",
+          "text": "Adam's Software Lab"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Part II – Using R in Excel – Linear Regression | R-bloggers",
+      "images": [
+        {
+          "alt": "Marketing Dataset",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Marketing Dataset",
+          "base64": null,
+          "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/MarketingDataset.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Residuals and Coefficients",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Residuals and Coefficients",
+          "base64": null,
+          "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/ResidualsAndCoefficients.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Model Summary",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Model Summary",
+          "base64": null,
+          "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/ModelSummaryList.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Summary Output",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Summary Output",
+          "base64": null,
+          "src": "https://i0.wp.com/adam-gladstone.github.io/assets/images/SummaryOutput.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Tidy Output",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Tidy Output",
+          "base64": null,
+          "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/TidyOutput.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Regression.GLM",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Regression.GLM",
+          "base64": null,
+          "src": "https://i1.wp.com/adam-gladstone.github.io/assets/images/RegressionGLM.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/adam-gladstone/",
+          "text": "Adam Gladstone"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394363 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Part II – Using R in Excel – Linear Regression</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 24, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/adam-gladstone/\">Adam Gladstone</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/\"> Adam's Software Lab</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h3 id=\"introduction\">Introduction</h3>\n<p>In the <a href=\"https://adam-gladstone.github.io/r-project/Part-I-Using-R-in-Excel-Descriptive-Statistics/\" rel=\"nofollow\" target=\"_blank\">first part</a> of this series, I looked at using R in Excel to obtain descriptive statistics. In this second part of the series I am going to look at using R in Excel to perform linear regression, specifically using the <code>lm()</code> <a href=\"https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/lm\" rel=\"nofollow\" target=\"_blank\">function</a>. <code>lm()</code> is a real workhorse function. It can be used to carry out both single and multiple regression and different types of analysis of variance. For this demonstration I will only focus on single and multiple regression.</p>\n<p>The workbook for this part of the series is: <a href=\"https://adam-gladstone.github.io/assets/images/Part-II-R-in-Excel-Linear-Regression.xlsx\" rel=\"nofollow\" target=\"_blank\">“Part II – R in Excel – Linear Regression.xlsx”</a>. As before, the ‘References’ worksheet lists links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. In this demonstration, I use the <code>datarium</code> and <code>broom</code> packages. The ‘Datasets’ worksheet contains the data referenced in the worksheets.</p>\n<h3 id=\"the-data\">The Data</h3>\n<p>The dataset is the marketing dataset from the <code>datarium</code> package. It consists of a data frame containing the impact of three advertising medias (youtube, facebook and newspaper) on sales. Data are the advertising budget in thousands of dollars along with the sales. The advertising experiment has been repeated 200 times. The dataset is described <a href=\"https://search.r-project.org/CRAN/refmans/datarium/html/marketing.html\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p><img alt=\"Marketing Dataset\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/MarketingDataset.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Marketing Dataset\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/MarketingDataset.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>If the dataset is not available, check that the <code>datarium</code> library is loaded by going to the Libraries worksheet and evaluating:</p>\n<p><code>=RScript.Evaluate(library(datarium), TRUE)</code></p>\n<h3 id=\"simple-linear-regression\">Simple Linear Regression</h3>\n<p>In the Simple Linear Regression worksheet we create a simple linear model.</p>\n<p><code>smodel &lt;- lm(sales ~ youtube, data = marketing)</code></p>\n<p>As we did in the first part of this series, we unpack the ‘smodel’. Mostly this is simply a question of evaluating the corresponding R objects, for example the residuals and the coefficients. We also request the 95% confidence intervals for the coefficients.</p>\n<p><img alt=\"Residuals and Coefficients\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/ResidualsAndCoefficients.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Residuals and Coefficients\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/ResidualsAndCoefficients.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>At this point, we can compare the results to the Summary Output provided by the Analysis ToolPak’s regression function (including the 95% confidence intervals).</p>\n<p>It’s worth emphasising that the output that is returned to Excel via the add-in is not ‘formatted’ as it is in R/RStudio. If we call <code>summary(smodel)</code> in R we are presented with a familiar tabular output summarising the main features of the model. However, what is returned to Excel via the add-in is more basic. So it is worth spending some time looking at this. We can see from the add-in environment, that the <code>smodel_summary</code> is a list of 11 items. To use this we need to unpack some of the individual list items.</p>\n<p><img alt=\"Model Summary\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/ModelSummaryList.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Model Summary\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/ModelSummaryList.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>Here we can see the actual call made and the details of the model including the statistics (<code>sigma</code>, <code>r-squared</code> and so on). It needs some extra work to unpack the summary data from the model residuals in order to produce a tabular output.</p>\n<p><code>as.data.frame(as.array(summary(smodel$residuals)))</code></p>\n<p>This formula summarises the model residuals and coerces the data into an array first (to get the names) and then as a data frame. We perform a similar operation to get the coefficients into a tabular format.</p>\n<p>With all the data available in this form, and with a little effort, we can now construct a summary output similar to R.</p>\n<p><img alt=\"Summary Output\" data-lazy-src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/SummaryOutput.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Summary Output\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/adam-gladstone.github.io/assets/images/SummaryOutput.png?w=578&amp;ssl=1\"/></noscript></p>\n<h3 id=\"multiple-linear-regression\">Multiple Linear Regression</h3>\n<p>The next worksheet demonstrates multiple linear regression using the same marketing data. This is similar to the previous worksheet and illustrates how to extract relevant values from the returned model data.</p>\n<p>However, in this case we make use of the package <code>broom</code>. This can help <a href=\"https://cran.r-project.org/web/packages/broom/vignettes/broom.html\" rel=\"nofollow\" target=\"_blank\">tidy up</a> the output data.</p>\n<p><img alt=\"Tidy Output\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/TidyOutput.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Tidy Output\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/TidyOutput.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>In previous examples, we have extracted model results by concatenating the returned model name with labels from the model. To make it easier to retrieve results, the add-in provides some additional functions for querying models: <code>Model.Results</code> outputs a list of results from the model. <code>Model.Result</code> outputs the result obtained from one item of the list of model results. Optionally, the result can be formatted as a data frame. This is somewhat more convenient than having to evaluate scripts of the form <code>model name'$coeffcients</code>, etc. By extracting the model data and the summary, we can construct an output that is similar to that provided by R.</p>\n<h3 id=\"logistic-regression\">Logistic Regression</h3>\n<p>The final example demonstrates logistic regression. At this point you might be thinking that this massaging and extracting output data is not entirely satisfactory. It’s a lot of work and it can be quite brittle (if the cell references change, for example). Furthermore, as the models become more complicated (see <a href=\"https://adam-gladstone.github.io/r-project/Part-III-Using-R-in-Excel-Forecasting/\" rel=\"nofollow\" target=\"_blank\">Part III in the series</a>) this approach potentially becomes messier. To mitigate this, the add-in provides a couple of wrapper functions around regression. These help with both the setup and the output of more complex models.</p>\n<p><img alt=\"Regression.GLM\" data-lazy-src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/RegressionGLM.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Regression.GLM\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/adam-gladstone.github.io/assets/images/RegressionGLM.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>The model inputs are specified as a block of parameters, and the function <code>Regression.GLM</code> is used instead of the R script equivalent using <code>glm</code>. The model outputs can be ‘queried’ using the <code>Model.Results</code> and the <code>Model.Result</code> formulas. However, even with this, it takes some effort to output a summary similar to the one provided by R.</p>\n<h3 id=\"wrap-up\">Wrap Up</h3>\n<p>In this post, we have looked at how to use R in Excel to perform linear regression, and we have spent some time demonstrating how to extract the different components from the model data. This will be useful in the next two parts of this series.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://adam-gladstone.github.io/r-project/Part-II-Using-R-in-Excel-Linear-Regression/\"> Adam's Software Lab</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Part II – Using R in Excel – Linear Regression\nPosted on\nJuly 24, 2025\nby\nAdam Gladstone\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nAdam's Software Lab\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nIn the\nfirst part\nof this series, I looked at using R in Excel to obtain descriptive statistics. In this second part of the series I am going to look at using R in Excel to perform linear regression, specifically using the\nlm()\nfunction\n.\nlm()\nis a real workhorse function. It can be used to carry out both single and multiple regression and different types of analysis of variance. For this demonstration I will only focus on single and multiple regression.\nThe workbook for this part of the series is:\n“Part II – R in Excel – Linear Regression.xlsx”\n. As before, the ‘References’ worksheet lists links to external references. The ‘Libraries’ worksheet loads additional (non-default) packages. In this demonstration, I use the\ndatarium\nand\nbroom\npackages. The ‘Datasets’ worksheet contains the data referenced in the worksheets.\nThe Data\nThe dataset is the marketing dataset from the\ndatarium\npackage. It consists of a data frame containing the impact of three advertising medias (youtube, facebook and newspaper) on sales. Data are the advertising budget in thousands of dollars along with the sales. The advertising experiment has been repeated 200 times. The dataset is described\nhere\n.\nIf the dataset is not available, check that the\ndatarium\nlibrary is loaded by going to the Libraries worksheet and evaluating:\n=RScript.Evaluate(library(datarium), TRUE)\nSimple Linear Regression\nIn the Simple Linear Regression worksheet we create a simple linear model.\nsmodel <- lm(sales ~ youtube, data = marketing)\nAs we did in the first part of this series, we unpack the ‘smodel’. Mostly this is simply a question of evaluating the corresponding R objects, for example the residuals and the coefficients. We also request the 95% confidence intervals for the coefficients.\nAt this point, we can compare the results to the Summary Output provided by the Analysis ToolPak’s regression function (including the 95% confidence intervals).\nIt’s worth emphasising that the output that is returned to Excel via the add-in is not ‘formatted’ as it is in R/RStudio. If we call\nsummary(smodel)\nin R we are presented with a familiar tabular output summarising the main features of the model. However, what is returned to Excel via the add-in is more basic. So it is worth spending some time looking at this. We can see from the add-in environment, that the\nsmodel_summary\nis a list of 11 items. To use this we need to unpack some of the individual list items.\nHere we can see the actual call made and the details of the model including the statistics (\nsigma\n,\nr-squared\nand so on). It needs some extra work to unpack the summary data from the model residuals in order to produce a tabular output.\nas.data.frame(as.array(summary(smodel$residuals)))\nThis formula summarises the model residuals and coerces the data into an array first (to get the names) and then as a data frame. We perform a similar operation to get the coefficients into a tabular format.\nWith all the data available in this form, and with a little effort, we can now construct a summary output similar to R.\nMultiple Linear Regression\nThe next worksheet demonstrates multiple linear regression using the same marketing data. This is similar to the previous worksheet and illustrates how to extract relevant values from the returned model data.\nHowever, in this case we make use of the package\nbroom\n. This can help\ntidy up\nthe output data.\nIn previous examples, we have extracted model results by concatenating the returned model name with labels from the model. To make it easier to retrieve results, the add-in provides some additional functions for querying models:\nModel.Results\noutputs a list of results from the model.\nModel.Result\noutputs the result obtained from one item of the list of model results. Optionally, the result can be formatted as a data frame. This is somewhat more convenient than having to evaluate scripts of the form\nmodel name'$coeffcients\n, etc. By extracting the model data and the summary, we can construct an output that is similar to that provided by R.\nLogistic Regression\nThe final example demonstrates logistic regression. At this point you might be thinking that this massaging and extracting output data is not entirely satisfactory. It’s a lot of work and it can be quite brittle (if the cell references change, for example). Furthermore, as the models become more complicated (see\nPart III in the series\n) this approach potentially becomes messier. To mitigate this, the add-in provides a couple of wrapper functions around regression. These help with both the setup and the output of more complex models.\nThe model inputs are specified as a block of parameters, and the function\nRegression.GLM\nis used instead of the R script equivalent using\nglm\n. The model outputs can be ‘queried’ using the\nModel.Results\nand the\nModel.Result\nformulas. However, even with this, it takes some effort to output a summary similar to the one provided by R.\nWrap Up\nIn this post, we have looked at how to use R in Excel to perform linear regression, and we have spent some time demonstrating how to extract the different components from the model data. This will be useful in the next two parts of this series.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nAdam's Software Lab\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introduction In the first part of this series, I looked at using R in Excel to obtain descriptive statistics. In this second part of the series I am going to look at using R in Excel to perform linear regression, specifically using the lm() function. l...",
+      "meta_keywords": null,
+      "og_description": "Introduction In the first part of this series, I looked at using R in Excel to obtain descriptive statistics. In this second part of the series I am going to look at using R in Excel to perform linear regression, specifically using the lm() function. l...",
+      "og_image": "https://adam-gladstone.github.io/assets/images/MarketingDataset.png",
+      "og_title": "Part II – Using R in Excel – Linear Regression | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.1,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introduction In the first part of this series, I looked at using R in Excel to obtain descriptive statistics. In this second part of the series I am going to look at using R in Excel to perform linear regression, specifically using the lm() function. l...",
+      "twitter_title": "Part II – Using R in Excel – Linear Regression | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/07/part-ii-using-r-in-excel-linear-regression/",
+      "word_count": 1026
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "3701b595d9425183405ed4783c321269d4345454",
+  "url": "https://www.r-bloggers.com/2024/01/how-to-update-a-translation-with-babeldown/",
+  "created_at_utc": "2025-11-17T20:38:34Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "5adf285c-e205-432e-b356-51fca0cd170c",
+    "created_at": "2025-11-17 20:38:34",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2024/01/how-to-update-a-translation-with-babeldown/",
+      "crawled_at": "2025-11-17T09:17:52.074065",
+      "external_links": [
+        {
+          "href": "https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://ropensci.org/multilingual-publishing/",
+          "text": "multilingual publishing project"
+        },
+        {
+          "href": "https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/#fn:1",
+          "text": "1"
+        },
+        {
+          "href": "https://docs.ropensci.org/babeldown/",
+          "text": "babeldown"
+        },
+        {
+          "href": "https://ropensci.org/blog/2023/09/26/how-to-translate-a-hugo-blog-post-with-babeldown/",
+          "text": "use of babeldown for translating a blog post"
+        },
+        {
+          "href": "https://devguide.ropensci.org/",
+          "text": "developer’s guide"
+        },
+        {
+          "href": "http://docs.ropensci.org/babeldown/reference/deepl_translate_markdown_string.html",
+          "text": "babeldown::deepl_translate_markdown_string()"
+        },
+        {
+          "href": "http://docs.ropensci.org/babeldown/reference/deepl_update.html",
+          "text": "babeldown::deepl_update()"
+        },
+        {
+          "href": "https://github.com/maelle/auto-update-translations/pull/1",
+          "text": "Pull request"
+        },
+        {
+          "href": "https://docs.ropensci.org/tinkr",
+          "text": "tinkr"
+        },
+        {
+          "href": "https://github.com/ropensci-review-tools/babeldown/blob/e8ef563eca232f1ba08b84c7bb0f999d4f452938/R/update.R#L136",
+          "text": "identified by having the samexml2::xml_text()and children of the same type"
+        },
+        {
+          "href": "https://www.r-consortium.org/all-projects/awarded-projects/2022-group-2",
+          "text": "funding from the R Consortium"
+        },
+        {
+          "href": "https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/#fnref:1",
+          "text": "↩︎"
+        },
+        {
+          "href": "https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "How to Update a Translation with Babeldown | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-381537 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">How to Update a Translation with Babeldown</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 15, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>As part of rOpenSci’s <a href=\"https://ropensci.org/multilingual-publishing/\" rel=\"nofollow\" target=\"_blank\">multilingual publishing project</a><sup id=\"fnref:1\"><a class=\"footnote-ref\" href=\"https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/#fn:1\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">1</a></sup>, we have been developing the <a href=\"https://docs.ropensci.org/babeldown/\" rel=\"nofollow\" target=\"_blank\">babeldown</a> R package, for translating Markdown-based content using the DeepL API.</p>\n<p>In a previous tech note we demonstrated the <a href=\"https://ropensci.org/blog/2023/09/26/how-to-translate-a-hugo-blog-post-with-babeldown/\" rel=\"nofollow\" target=\"_blank\">use of babeldown for translating a blog post</a> in a workflow supported by Git.\nHere we use babeldown for translating <strong>living</strong> documents, such as our <a href=\"https://devguide.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">developer’s guide</a>.\nIn this case, translations not only need to be created at the time in first writing, but also updated as the document is changed over time.</p>\n<p>In this tech note, we’ll show how you can use babeldown to update a translation after you’ve edited a document.</p>\n<h2>\nInitial situation: an English document and its French translation\n</h2><p>Let’s assume we have an English document called <code>bla.md</code>.</p>\n<pre>dir &lt;- withr::local_tempdir()\nfile &lt;- file.path(dir, \"bla.md\")\nfs::file_create(file)\nenglish_text &lt;- c(\"# header\", \"\", \"this is some text\", \"\", \"## subtitle\", \"\", \"nice!\")\nbrio::write_lines(english_text, file)\n\r\n# header\nthis is some text\n## subtitle\nnice!\n</pre><p>We have already translated it with babeldown, which provides us with an AI-based translation from DeepL, then edited the translation manually to provide the context the AI missed.</p>\n<pre>Sys.setenv(\"DEEPL_API_URL\" = \"https://api.deepl.com\")\nSys.setenv(DEEPL_API_KEY = keyring::key_get(\"deepl\"))\n\nout_file &lt;- file.path(dir, \"bla.fr.md\")\ndeepl_translate(\n path = file,\n out_path = out_file,\n source_lang = \"EN\",\n target_lang = \"FR\",\n formality = \"less\",\n yaml_fields = NULL\n)\n</pre><p>Here’s the French text:</p>\n<pre># titre\nceci est du texte\n## sous-titre\nchouette !\n</pre><p>At this stage let’s set up the Git infrastructure for the folder containing the two documents.\nIn real life, we might already have it in place.\nThe important thing is to start tracking changes before we edit the English document again.</p>\n<pre>gert::git_init(dir)\ngert::git_config_set(\"user.name\", \"Jane Doe\", repo = dir)\ngert::git_config_set(\"user.email\", \"<a class=\"__cf_email__\" data-cfemail=\"e88289868da88d90898598848dc68b8785\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>\", repo = dir)\ngert::git_add(c(fs::path_file(file), fs::path_file(out_file)), repo = dir)\n\r\n file status staged\n1 bla.fr.md new TRUE\n2 bla.md new TRUE\n\r\ngert::git_commit_all(\"First commit\", repo = dir)\n\r\n[1] \"5b7ae61fb72bd89ee912889207efbce5e662c405\"\n\r\ngert::git_log(repo = dir)\n\r\n commit author\n1 5b7ae61fb72bd89ee912889207efbce5e662c405 Jane Doe &lt;<a class=\"__cf_email__\" data-cfemail=\"5b313a353e1b3e233a362b373e75383436\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>&gt;\ntime files merge message\n1 2024-01-16 15:59:49 2 FALSE First commit\\n\n</pre><h2>\nChanging the English document\n</h2><p>Now imagine we change the English document.</p>\n<pre>new_english_text &lt;- c(\"# a title\", \"\", \"this is some text\", \"\", \"awesome\", \"\", \"## subtitle\", \"\")\nbrio::write_lines(\n new_english_text,\n file\n)\ngert::git_add(fs::path_file(file), repo = dir)\n\r\n file status staged\n1 bla.md modified TRUE\n\r\ngert::git_commit(\"Second commit\", repo = dir)\n\r\n[1] \"b398bf63c6c86cb3817d88e40f47afde72158e7a\"\n\r\n# a title\nthis is some text\nawesome\n## subtitle\n</pre><h2>\nUpdating the translation\n</h2><p>We don’t want to send the whole document to DeepL API again!\nIndeed, we do not want the text fragments that haven’t to be updated, as we would lose the improvements from careful work by human translators.\nFurthermore, if we were to send all the text to the API again, we’d be spending unnecessary money (or free credits).</p>\n<p>Fortunately we have two babeldown functions at our disposal:</p>\n<ul>\n<li><a href=\"http://docs.ropensci.org/babeldown/reference/deepl_translate_markdown_string.html\" rel=\"nofollow\" target=\"_blank\"><code>babeldown::deepl_translate_markdown_string()</code></a>, which sends an individual string for translation. We could copy-and-paste the changed text into this function. We won’t show this approach here.</li>\n<li><a href=\"http://docs.ropensci.org/babeldown/reference/deepl_update.html\" rel=\"nofollow\" target=\"_blank\"><code>babeldown::deepl_update()</code></a> that operates more automatically by sending the lines or blocks of text that have changed for translation. This may be more text than needed, as it will send whole paragraphs to DeepL API if it changed, even if a single sentence or less changed.</li>\n</ul>\n<pre>Sys.setenv(\"DEEPL_API_URL\" = \"https://api.deepl.com\")\nSys.setenv(DEEPL_API_KEY = keyring::key_get(\"deepl\"))\nbabeldown::deepl_update(\n path = file,\n out_path = out_file,\n source_lang = \"EN\",\n target_lang = \"FR\",\n formality = \"less\",\n yaml_fields = NULL\n)\n</pre><p>Let’s look at the new French document:</p>\n<pre># titre\nceci est du texte\n## sous-titre\nchouette !\n</pre><p>One would then carefully look at the Git diff to ensure only what was needed was changed, then commit the automatic translation.\nThat translation would then be should then be reviewed by a human. For our multilingual work at rOpenSci, a translator (native speaker) reviews all our patches for consistency, tone, and context.</p>\n<p>You can also find an example of <code>babeldown::deepl_update()</code> in a <a href=\"https://github.com/maelle/auto-update-translations/pull/1\" rel=\"nofollow\" target=\"_blank\">Pull request</a>: the first two commits update the English document, the third one uses the function to update the Spanish document.</p>\n<h2>\nHow <code>babeldown::deepl_update()</code> works under the hood\n</h2><p>Contrary to what one might guess, <code>babeldown::deepl_update()</code> doesn’t use the Git diff at all!\nAlthough that definitely was the first idea we explored.</p>\n<p><code>babeldown::deepl_update()</code> does scour the Git log to use the snapshot of the main language version that was in sync with the translation.\nIt’s the “old English document”, that goes with the “old French document”.\nThe old English document is the English document as it was the last time the French document was featured in a Git commit.\nThe French document is the French document as it was in that same commit snapshot.</p>\n<p>We have the “new English document” and what’s missing is the “new French document”.\nWe want that new French document to use as much as possible of the old French document, only using an automatic translation for the parts that are new.</p>\n<p>The function uses an XML representation of the documents, as created by <a href=\"https://docs.ropensci.org/tinkr\" rel=\"nofollow\" target=\"_blank\">tinkr</a>.\nA necessary condition for using <code>babeldown::deepl_update()</code> is that the old English document and the old French document need to have the same XML structure: say, one heading followed by two paragraphs then a list.</p>\n<p>For each child of the body of the new English document (a paragraph, a list, a heading…), <code>babeldown::deepl_update()</code> tries finding the same tag in the old English document (<a href=\"https://github.com/ropensci-review-tools/babeldown/blob/e8ef563eca232f1ba08b84c7bb0f999d4f452938/R/update.R#L136\" rel=\"nofollow\" target=\"_blank\">identified by having the same <code>xml2::xml_text()</code> and children of the same type</a>).\nIf it finds the same tag, it uses the tag located at the same position in the old French document.\nIf it does not find it, it sends it to DeepL API.</p>\n<p>A consequence of this approach is that we find the largest matching structural block between two documents. For instance, in list where we changed one item, the whole list would be re-translated, as opposed to only the item. However, this also means we use logical blocks, rather than fragments of text as defined by words or line breaks.</p>\n<h2>\nConclusion\n</h2><p>In this post we explained how to use babeldown to update translations of living document.\nWe at rOpenSci are ourselves users of babeldown for this scenario!\nMaintaining translations is time consuming but important work.\nWe’d be thrilled to hear your feedback if you use <code>babeldown::deepl_update()</code>!</p>\n<div class=\"footnotes\" role=\"doc-endnotes\">\n<hr/>\n<ol>\n<li id=\"fn:1\">\n<p>Thanks to <a href=\"https://www.r-consortium.org/all-projects/awarded-projects/2022-group-2\" rel=\"nofollow\" target=\"_blank\">funding from the R Consortium</a>! <a class=\"footnote-backref\" href=\"https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/#fnref:1\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n</ol>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2024/01/16/deepl-update-babeldown/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "How to Update a Translation with Babeldown\nPosted on\nJanuary 15, 2024\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAs part of rOpenSci’s\nmultilingual publishing project\n1\n, we have been developing the\nbabeldown\nR package, for translating Markdown-based content using the DeepL API.\nIn a previous tech note we demonstrated the\nuse of babeldown for translating a blog post\nin a workflow supported by Git.\nHere we use babeldown for translating\nliving\ndocuments, such as our\ndeveloper’s guide\n.\nIn this case, translations not only need to be created at the time in first writing, but also updated as the document is changed over time.\nIn this tech note, we’ll show how you can use babeldown to update a translation after you’ve edited a document.\nInitial situation: an English document and its French translation\nLet’s assume we have an English document called\nbla.md\n.\ndir <- withr::local_tempdir()\nfile <- file.path(dir, \"bla.md\")\nfs::file_create(file)\nenglish_text <- c(\"# header\", \"\", \"this is some text\", \"\", \"## subtitle\", \"\", \"nice!\")\nbrio::write_lines(english_text, file)\n\n# header\nthis is some text\n## subtitle\nnice!\nWe have already translated it with babeldown, which provides us with an AI-based translation from DeepL, then edited the translation manually to provide the context the AI missed.\nSys.setenv(\"DEEPL_API_URL\" = \"https://api.deepl.com\")\nSys.setenv(DEEPL_API_KEY = keyring::key_get(\"deepl\"))\n\nout_file <- file.path(dir, \"bla.fr.md\")\ndeepl_translate(\n path = file,\n out_path = out_file,\n source_lang = \"EN\",\n target_lang = \"FR\",\n formality = \"less\",\n yaml_fields = NULL\n)\nHere’s the French text:\n# titre\nceci est du texte\n## sous-titre\nchouette !\nAt this stage let’s set up the Git infrastructure for the folder containing the two documents.\nIn real life, we might already have it in place.\nThe important thing is to start tracking changes before we edit the English document again.\ngert::git_init(dir)\ngert::git_config_set(\"user.name\", \"Jane Doe\", repo = dir)\ngert::git_config_set(\"user.email\", \"\n[email protected]\n\", repo = dir)\ngert::git_add(c(fs::path_file(file), fs::path_file(out_file)), repo = dir)\n\n file status staged\n1 bla.fr.md new TRUE\n2 bla.md new TRUE\n\ngert::git_commit_all(\"First commit\", repo = dir)\n\n[1] \"5b7ae61fb72bd89ee912889207efbce5e662c405\"\n\ngert::git_log(repo = dir)\n\n commit author\n1 5b7ae61fb72bd89ee912889207efbce5e662c405 Jane Doe <\n[email protected]\n>\ntime files merge message\n1 2024-01-16 15:59:49 2 FALSE First commit\\n\nChanging the English document\nNow imagine we change the English document.\nnew_english_text <- c(\"# a title\", \"\", \"this is some text\", \"\", \"awesome\", \"\", \"## subtitle\", \"\")\nbrio::write_lines(\n new_english_text,\n file\n)\ngert::git_add(fs::path_file(file), repo = dir)\n\n file status staged\n1 bla.md modified TRUE\n\ngert::git_commit(\"Second commit\", repo = dir)\n\n[1] \"b398bf63c6c86cb3817d88e40f47afde72158e7a\"\n\n# a title\nthis is some text\nawesome\n## subtitle\nUpdating the translation\nWe don’t want to send the whole document to DeepL API again!\nIndeed, we do not want the text fragments that haven’t to be updated, as we would lose the improvements from careful work by human translators.\nFurthermore, if we were to send all the text to the API again, we’d be spending unnecessary money (or free credits).\nFortunately we have two babeldown functions at our disposal:\nbabeldown::deepl_translate_markdown_string()\n, which sends an individual string for translation. We could copy-and-paste the changed text into this function. We won’t show this approach here.\nbabeldown::deepl_update()\nthat operates more automatically by sending the lines or blocks of text that have changed for translation. This may be more text than needed, as it will send whole paragraphs to DeepL API if it changed, even if a single sentence or less changed.\nSys.setenv(\"DEEPL_API_URL\" = \"https://api.deepl.com\")\nSys.setenv(DEEPL_API_KEY = keyring::key_get(\"deepl\"))\nbabeldown::deepl_update(\n path = file,\n out_path = out_file,\n source_lang = \"EN\",\n target_lang = \"FR\",\n formality = \"less\",\n yaml_fields = NULL\n)\nLet’s look at the new French document:\n# titre\nceci est du texte\n## sous-titre\nchouette !\nOne would then carefully look at the Git diff to ensure only what was needed was changed, then commit the automatic translation.\nThat translation would then be should then be reviewed by a human. For our multilingual work at rOpenSci, a translator (native speaker) reviews all our patches for consistency, tone, and context.\nYou can also find an example of\nbabeldown::deepl_update()\nin a\nPull request\n: the first two commits update the English document, the third one uses the function to update the Spanish document.\nHow\nbabeldown::deepl_update()\nworks under the hood\nContrary to what one might guess,\nbabeldown::deepl_update()\ndoesn’t use the Git diff at all!\nAlthough that definitely was the first idea we explored.\nbabeldown::deepl_update()\ndoes scour the Git log to use the snapshot of the main language version that was in sync with the translation.\nIt’s the “old English document”, that goes with the “old French document”.\nThe old English document is the English document as it was the last time the French document was featured in a Git commit.\nThe French document is the French document as it was in that same commit snapshot.\nWe have the “new English document” and what’s missing is the “new French document”.\nWe want that new French document to use as much as possible of the old French document, only using an automatic translation for the parts that are new.\nThe function uses an XML representation of the documents, as created by\ntinkr\n.\nA necessary condition for using\nbabeldown::deepl_update()\nis that the old English document and the old French document need to have the same XML structure: say, one heading followed by two paragraphs then a list.\nFor each child of the body of the new English document (a paragraph, a list, a heading…),\nbabeldown::deepl_update()\ntries finding the same tag in the old English document (\nidentified by having the same\nxml2::xml_text()\nand children of the same type\n).\nIf it finds the same tag, it uses the tag located at the same position in the old French document.\nIf it does not find it, it sends it to DeepL API.\nA consequence of this approach is that we find the largest matching structural block between two documents. For instance, in list where we changed one item, the whole list would be re-translated, as opposed to only the item. However, this also means we use logical blocks, rather than fragments of text as defined by words or line breaks.\nConclusion\nIn this post we explained how to use babeldown to update translations of living document.\nWe at rOpenSci are ourselves users of babeldown for this scenario!\nMaintaining translations is time consuming but important work.\nWe’d be thrilled to hear your feedback if you use\nbabeldown::deepl_update()\n!\nThanks to\nfunding from the R Consortium\n!\n↩︎\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "As part of rOpenSci’s multilingual publishing project1, we have been developing the babeldown R package, for translating Markdown-based content using the DeepL API. In a previous tech note we demonstrated the use of babeldown for translating a b...",
+      "meta_keywords": null,
+      "og_description": "As part of rOpenSci’s multilingual publishing project1, we have been developing the babeldown R package, for translating Markdown-based content using the DeepL API. In a previous tech note we demonstrated the use of babeldown for translating a b...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "How to Update a Translation with Babeldown | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.1,
+      "sitemap_lastmod": "2024-01-16T00:00:00+00:00",
+      "twitter_description": "As part of rOpenSci’s multilingual publishing project1, we have been developing the babeldown R package, for translating Markdown-based content using the DeepL API. In a previous tech note we demonstrated the use of babeldown for translating a b...",
+      "twitter_title": "How to Update a Translation with Babeldown | R-bloggers",
+      "url": "https://www.r-bloggers.com/2024/01/how-to-update-a-translation-with-babeldown/",
+      "word_count": 1227
+    }
+  }
+}

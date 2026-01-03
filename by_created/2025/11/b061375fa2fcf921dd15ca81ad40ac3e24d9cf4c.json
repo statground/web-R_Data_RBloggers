@@ -1,0 +1,138 @@
+{
+  "id": "b061375fa2fcf921dd15ca81ad40ac3e24d9cf4c",
+  "url": "https://www.r-bloggers.com/2009/01/combining-r-and-latex-with-sweave/",
+  "created_at_utc": "2025-11-17T20:41:22Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "c4f20253-79aa-4d99-8e0d-70eb5a1ac65c",
+    "created_at": "2025-11-17 20:41:22",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/01/combining-r-and-latex-with-sweave/",
+      "crawled_at": "2025-11-17T10:47:31.291519",
+      "external_links": [
+        {
+          "href": "https://worldofrcraft.blogspot.com/2009/01/combining-r-and-latex-with-sweave.html",
+          "text": "World of R-Craft"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.scribd.com/doc/9789620/First-Demo",
+          "text": "First Demo"
+        },
+        {
+          "href": "http://www.scribd.com/upload",
+          "text": "Publish at Scribd"
+        },
+        {
+          "href": "http://www.scribd.com/browse",
+          "text": "explore"
+        },
+        {
+          "href": "http://www.scribd.com/browse?c=117-unix",
+          "text": "UNIX"
+        },
+        {
+          "href": "http://www.scribd.com/browse?c=114-technology",
+          "text": "Technology"
+        },
+        {
+          "href": "http://www.scribd.com/tag/latex",
+          "text": "latex"
+        },
+        {
+          "href": "http://www.scribd.com/tag/sweave",
+          "text": "sweave"
+        },
+        {
+          "href": "http://www.scribd.com/doc/9789711/firstDemoRnw",
+          "text": "firstDemo.Rnw"
+        },
+        {
+          "href": "http://www.scribd.com/upload",
+          "text": "Publish at Scribd"
+        },
+        {
+          "href": "http://www.scribd.com/browse",
+          "text": "explore"
+        },
+        {
+          "href": "https://worldofrcraft.blogspot.com/2009/01/combining-r-and-latex-with-sweave.html",
+          "text": "World of R-Craft"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Combining R and LaTeX with Sweave | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/k/",
+          "text": ":)-k"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-41470 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Combining R and LaTeX with Sweave</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 6, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/k/\">:)-k</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://worldofrcraft.blogspot.com/2009/01/combining-r-and-latex-with-sweave.html\"> World of R-Craft</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Today I did some experiments to learn how to combine R and LaTeX to create reproducible research reports. Here are my first results:<br/><br/><a href=\"http://www.scribd.com/doc/9789620/First-Demo\" rel=\"nofollow\" style=\"margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block; text-decoration: underline;\" target=\"_blank\" title=\"View First Demo on Scribd\">First Demo</a> <object align=\"middle\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0\" height=\"500\" id=\"doc_333878907645871\" name=\"doc_333878907645871\" width=\"450\"> <param name=\"movie\" value=\"http://documents.scribd.com/ScribdViewer.swf?document_id=9789620&amp;access_key=key-19043xlq76bun5nlxzpz&amp;page=1&amp;version=1&amp;viewMode=\"/> <param name=\"quality\" value=\"high\"/> <param name=\"play\" value=\"true\"/> <param name=\"loop\" value=\"true\"/> <param name=\"scale\" value=\"showall\"/> <param name=\"wmode\" value=\"opaque\"/> <param name=\"devicefont\" value=\"false\"/> <param name=\"bgcolor\" value=\"#ffffff\"/> <param name=\"menu\" value=\"true\"/> <param name=\"allowFullScreen\" value=\"true\"/> <param name=\"allowScriptAccess\" value=\"always\"/> <param name=\"salign\" value=\"\"/> <embed align=\"middle\" allowfullscreen=\"true\" allowscriptaccess=\"always\" bgcolor=\"#ffffff\" devicefont=\"false\" height=\"500\" loop=\"true\" menu=\"true\" name=\"doc_333878907645871_object\" play=\"true\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" quality=\"high\" salign=\"\" scale=\"showall\" src=\"http://documents.scribd.com/ScribdViewer.swf?document_id=9789620&amp;access_key=key-19043xlq76bun5nlxzpz&amp;page=1&amp;version=1&amp;viewMode=\" type=\"application/x-shockwave-flash\" width=\"450\" wmode=\"opaque\"/> </object> <div style=\"margin: 6px auto 3px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;\"> <a href=\"http://www.scribd.com/upload\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">Publish at Scribd</a> or <a href=\"http://www.scribd.com/browse\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">explore</a> others:            <a href=\"http://www.scribd.com/browse?c=117-unix\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">UNIX</a> <a href=\"http://www.scribd.com/browse?c=114-technology\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">Technology</a> <a href=\"http://www.scribd.com/tag/latex\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">latex</a> <a href=\"http://www.scribd.com/tag/sweave\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">sweave</a> </div><br/><br/><br/><br/>And this is the source code:<br/><br/><a href=\"http://www.scribd.com/doc/9789711/firstDemoRnw\" rel=\"nofollow\" style=\"margin: 12px auto 6px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block; text-decoration: underline;\" target=\"_blank\" title=\"View firstDemo.Rnw on Scribd\">firstDemo.Rnw</a> <object align=\"middle\" classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0\" height=\"500\" id=\"doc_676324289496456\" name=\"doc_676324289496456\" width=\"450\"> <param name=\"movie\" value=\"http://documents.scribd.com/ScribdViewer.swf?document_id=9789711&amp;access_key=key-2g6kp9ezxsfhg7fjcbdo&amp;page=1&amp;version=1&amp;viewMode=\"/> <param name=\"quality\" value=\"high\"/> <param name=\"play\" value=\"true\"/> <param name=\"loop\" value=\"true\"/> <param name=\"scale\" value=\"showall\"/> <param name=\"wmode\" value=\"opaque\"/> <param name=\"devicefont\" value=\"false\"/> <param name=\"bgcolor\" value=\"#ffffff\"/> <param name=\"menu\" value=\"true\"/> <param name=\"allowFullScreen\" value=\"true\"/> <param name=\"allowScriptAccess\" value=\"always\"/> <param name=\"salign\" value=\"\"/> <embed align=\"middle\" allowfullscreen=\"true\" allowscriptaccess=\"always\" bgcolor=\"#ffffff\" devicefont=\"false\" height=\"500\" loop=\"true\" menu=\"true\" name=\"doc_676324289496456_object\" play=\"true\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" quality=\"high\" salign=\"\" scale=\"showall\" src=\"http://documents.scribd.com/ScribdViewer.swf?document_id=9789711&amp;access_key=key-2g6kp9ezxsfhg7fjcbdo&amp;page=1&amp;version=1&amp;viewMode=\" type=\"application/x-shockwave-flash\" width=\"450\" wmode=\"opaque\"/> </object> <div style=\"margin: 6px auto 3px auto; font-family: Helvetica,Arial,Sans-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none; display: block;\"> <a href=\"http://www.scribd.com/upload\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">Publish at Scribd</a> or <a href=\"http://www.scribd.com/browse\" rel=\"nofollow\" style=\"text-decoration: underline;\" target=\"_blank\">explore</a> others:         </div><br/><br/>Very nice stuff for a first 60 minute session. I will come back with more examples over the next few weeks.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://worldofrcraft.blogspot.com/2009/01/combining-r-and-latex-with-sweave.html\"> World of R-Craft</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Combining R and LaTeX with Sweave\nPosted on\nJanuary 6, 2009\nby\n:)-k\nin Uncategorized | 0 Comments\n[This article was first published on\nWorld of R-Craft\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nToday I did some experiments to learn how to combine R and LaTeX to create reproducible research reports. Here are my first results:\nFirst Demo\nPublish at Scribd\nor\nexplore\nothers:\nUNIX\nTechnology\nlatex\nsweave\nAnd this is the source code:\nfirstDemo.Rnw\nPublish at Scribd\nor\nexplore\nothers:\nVery nice stuff for a first 60 minute session. I will come back with more examples over the next few weeks.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nWorld of R-Craft\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Today I did some experiments to learn how to combine R and LaTeX to create reproducible research reports. Here are my first results:First Demo Publish at Scribd or explore others: UNIX ...",
+      "meta_keywords": null,
+      "og_description": "Today I did some experiments to learn how to combine R and LaTeX to create reproducible research reports. Here are my first results:First Demo Publish at Scribd or explore others: UNIX ...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Combining R and LaTeX with Sweave | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.1,
+      "sitemap_lastmod": "2009-01-08T19:41:21+00:00",
+      "twitter_description": "Today I did some experiments to learn how to combine R and LaTeX to create reproducible research reports. Here are my first results:First Demo Publish at Scribd or explore others: UNIX ...",
+      "twitter_title": "Combining R and LaTeX with Sweave | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/01/combining-r-and-latex-with-sweave/",
+      "word_count": 212
+    }
+  }
+}

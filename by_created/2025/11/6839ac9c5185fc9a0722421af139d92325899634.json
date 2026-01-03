@@ -1,0 +1,135 @@
+{
+  "id": "6839ac9c5185fc9a0722421af139d92325899634",
+  "url": "https://www.r-bloggers.com/2009/02/r-graphics-margins-are-way-to-large/",
+  "created_at_utc": "2025-11-17T20:41:12Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "c6aedeb3-c6b0-4c8e-8da7-78136e06a4a3",
+    "created_at": "2025-11-17 20:41:12",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/02/r-graphics-margins-are-way-to-large/",
+      "crawled_at": "2025-11-17T10:43:43.766141",
+      "external_links": [
+        {
+          "href": "https://ggorjan.blogspot.com/2009/02/r-graphics-margins-are-way-to-large.html",
+          "text": "Gregor Gorjanc (gg)"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://addictedtor.free.fr/graphiques/thumbs.php?sort=votes",
+          "text": "gallery"
+        },
+        {
+          "href": "https://i2.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s1600-h/default.png",
+          "text": null
+        },
+        {
+          "href": "https://i2.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s1600-h/changed.png",
+          "text": null
+        },
+        {
+          "href": "https://ggorjan.blogspot.com/2009/02/r-graphics-margins-are-way-to-large.html",
+          "text": "Gregor Gorjanc (gg)"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R graphics: margins are way to large | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s320/default.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s320/default.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s320/changed.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s320/changed.png?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+          "text": "Gregor Gorjanc"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-317 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R graphics: margins are way to large</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2009/02/r-graphics-margins-are-way-to-large.html\"> Gregor Gorjanc (gg)</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\">For me <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> has a very nice and powerfull capabilities for graphics (for example see this <a href=\"http://addictedtor.free.fr/graphiques/thumbs.php?sort=votes\" rel=\"nofollow\" target=\"_blank\">gallery</a>). However, I dislike the default setting for margins and placement of axis numbers and labels. Since I always forget the setting of parameters I prefer I am adding this post. For example:</div><blockquote><pre>library(package=\"MASS\")\nSigma &lt;- matrix(c(10, 10, 10, 20), nrow=2)\nmu &lt;- c(100, 100)\ntmp &lt;- mvrnorm(n=200, mu=mu, Sigma=Sigma, empirical=TRUE)\nplot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\") </pre></blockquote><div style=\"text-align: center;\"><a data-cf-modified-eccdeae170c8a155ee7d76ca-=\"\" href=\"https://i2.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s1600-h/default.png\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s320/default.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s320/default.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 319px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5305706144995385666\" src=\"https://i0.wp.com/2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s320/default.png?w=578\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 319px;\"/></noscript></a></div>Now compare this plot to the version I prefer much more:<blockquote><pre>par(bty=\"l\", pty=\"m\", mar=c(3, 3, 1, 1), mgp=c(1.75, 0.75, 0))\nplot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\")</pre></blockquote><div style=\"text-align: center;\"><a data-cf-modified-eccdeae170c8a155ee7d76ca-=\"\" href=\"https://i2.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s1600-h/changed.png\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s320/changed.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s320/changed.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 319px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5305706329223508274\" src=\"https://i1.wp.com/3.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGny6vosTI/AAAAAAAAAkI/NwMBVxwhwUk/s320/changed.png?w=578\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 320px; height: 319px;\"/></noscript></a></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2009/02/r-graphics-margins-are-way-to-large.html\"> Gregor Gorjanc (gg)</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "R graphics: margins are way to large\nPosted on\nFebruary 22, 2009\nby\nGregor Gorjanc\nin Uncategorized | 0 Comments\n[This article was first published on\nGregor Gorjanc (gg)\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nFor me\nR\nhas a very nice and powerfull capabilities for graphics (for example see this\ngallery\n). However, I dislike the default setting for margins and placement of axis numbers and labels. Since I always forget the setting of parameters I prefer I am adding this post. For example:\nlibrary(package=\"MASS\")\nSigma <- matrix(c(10, 10, 10, 20), nrow=2)\nmu <- c(100, 100)\ntmp <- mvrnorm(n=200, mu=mu, Sigma=Sigma, empirical=TRUE)\nplot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\")\nNow compare this plot to the version I prefer much more:\npar(bty=\"l\", pty=\"m\", mar=c(3, 3, 1, 1), mgp=c(1.75, 0.75, 0))\nplot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\")\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc (gg)\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "For me R has a very nice and powerfull capabilities for graphics (for example see this gallery). However, I dislike the default setting for margins and placement of axis numbers and labels. Since I always forget the setting of parameters I prefer I am adding this post. For example: library(package=\"MASS\")Sigma mu tmp plot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\") Now compare this plot to the version I prefer much more:par(bty=\"l\", pty=\"m\", mar=c(3, 3, 1, 1), mgp=c(1.75, 0.75, 0))plot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\")",
+      "meta_keywords": null,
+      "og_description": "For me R has a very nice and powerfull capabilities for graphics (for example see this gallery). However, I dislike the default setting for margins and placement of axis numbers and labels. Since I always forget the setting of parameters I prefer I am adding this post. For example: library(package=\"MASS\")Sigma mu tmp plot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\") Now compare this plot to the version I prefer much more:par(bty=\"l\", pty=\"m\", mar=c(3, 3, 1, 1), mgp=c(1.75, 0.75, 0))plot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\")",
+      "og_image": "https://2.bp.blogspot.com/_Tjw3ZkhCUaQ/SaGnoMcOoUI/AAAAAAAAAkA/c49Fe6zTl04/s320/default.png",
+      "og_title": "R graphics: margins are way to large | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.3,
+      "sitemap_lastmod": "2009-02-22T19:34:25+00:00",
+      "twitter_description": "For me R has a very nice and powerfull capabilities for graphics (for example see this gallery). However, I dislike the default setting for margins and placement of axis numbers and labels. Since I always forget the setting of parameters I prefer I am adding this post. For example: library(package=\"MASS\")Sigma mu tmp plot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\") Now compare this plot to the version I prefer much more:par(bty=\"l\", pty=\"m\", mar=c(3, 3, 1, 1), mgp=c(1.75, 0.75, 0))plot(tmp, xlab=\"X variable (unit)\", ylab=\"Y variable (unit)\")",
+      "twitter_title": "R graphics: margins are way to large | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/02/r-graphics-margins-are-way-to-large/",
+      "word_count": 266
+    }
+  }
+}

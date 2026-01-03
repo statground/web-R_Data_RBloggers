@@ -1,0 +1,106 @@
+{
+  "id": "054f9d97cc4f94c089e1960c2e8ff1d2585299b6",
+  "url": "https://www.r-bloggers.com/2025/01/acceptance-test-driven-development-with-shiny-2/",
+  "created_at_utc": "2025-11-22T19:59:25Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "5dcd904e-baf7-4c3c-b719-336883c1d871",
+    "created_at": "2025-11-22 19:59:25",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/01/acceptance-test-driven-development-with-shiny-2/",
+      "crawled_at": "2025-11-22T10:55:23.655953",
+      "external_links": [
+        {
+          "href": "https://jakubsobolewski.com/blog/acceptance-test-driven-development",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/jakubsob/shiny-acceptance-tdd",
+          "text": "https://github.com/jakubsob/shiny-acceptance-tdd"
+        },
+        {
+          "href": "https://jakubsobolewski.com/blog/acceptance-test-driven-development",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Acceptance Test-Driven Development with Shiny | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-393513 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Acceptance Test-Driven Development with Shiny</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 21, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsobolewski.com/blog/acceptance-test-driven-development\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>I’ve created this Shiny project to showcase how I practice Acceptance Test-Driven Development with {shinytest2}. The app is very simple – calculate net income from income and expenses inputs. Even in such a simple example we can see:</p>\n<ul>\n<li>how to start a Shiny project by writing a test first. I’m using {rhino}, but the same method can be used for any Shiny framework you use,</li>\n<li>how to interact with the app from tests in a way that won’t break them often by using {selenider} instead of {shinytest2} snapshots,</li>\n<li>how to evolve your project from the simplest solutioan, to implementing more usable app – here we’re starting with a “forgetful” app, then implementing persistent storage,</li>\n<li>how to cycle between ATDD and TDD – from specifying user’s needs to working on implementation details that are hidden from users,</li>\n<li>how using robust selectors allows us to refactor UI without breaking tests.</li>\n</ul>\n<p>💡 <strong>The best way to explore the repo is to go commit by commit listed in the README.</strong></p>\n<p>See how we can go from a failing test to a working app.\nI know, it’s a very simple app, but the same process can be applied to any project, no matter how complex it is.</p>\n<p>Check it out here: <a href=\"https://github.com/jakubsob/shiny-acceptance-tdd\" rel=\"nofollow\" target=\"_blank\">https://github.com/jakubsob/shiny-acceptance-tdd</a></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsobolewski.com/blog/acceptance-test-driven-development\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Acceptance Test-Driven Development with Shiny\nPosted on\nJanuary 21, 2025\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI’ve created this Shiny project to showcase how I practice Acceptance Test-Driven Development with {shinytest2}. The app is very simple – calculate net income from income and expenses inputs. Even in such a simple example we can see:\nhow to start a Shiny project by writing a test first. I’m using {rhino}, but the same method can be used for any Shiny framework you use,\nhow to interact with the app from tests in a way that won’t break them often by using {selenider} instead of {shinytest2} snapshots,\nhow to evolve your project from the simplest solutioan, to implementing more usable app – here we’re starting with a “forgetful” app, then implementing persistent storage,\nhow to cycle between ATDD and TDD – from specifying user’s needs to working on implementation details that are hidden from users,\nhow using robust selectors allows us to refactor UI without breaking tests.\n💡\nThe best way to explore the repo is to go commit by commit listed in the README.\nSee how we can go from a failing test to a working app.\nI know, it’s a very simple app, but the same process can be applied to any project, no matter how complex it is.\nCheck it out here:\nhttps://github.com/jakubsob/shiny-acceptance-tdd\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Learn how to apply Acceptance Test-Driven Development (ATDD) to build robust Shiny applications using {shinytest2} and {selenider}.",
+      "meta_keywords": null,
+      "og_description": "Learn how to apply Acceptance Test-Driven Development (ATDD) to build robust Shiny applications using {shinytest2} and {selenider}.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Acceptance Test-Driven Development with Shiny | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.8,
+      "sitemap_lastmod": null,
+      "twitter_description": "Learn how to apply Acceptance Test-Driven Development (ATDD) to build robust Shiny applications using {shinytest2} and {selenider}.",
+      "twitter_title": "Acceptance Test-Driven Development with Shiny | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/01/acceptance-test-driven-development-with-shiny-2/",
+      "word_count": 356
+    }
+  }
+}

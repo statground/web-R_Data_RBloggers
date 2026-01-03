@@ -1,0 +1,257 @@
+{
+  "id": "49089abc561dfafecedc3626fe5b893f8b8e3a39",
+  "url": "https://www.r-bloggers.com/2025/08/introduction-to-generalised-linear-models-with-prussian-horse-kicks/",
+  "created_at_utc": "2025-11-22T19:57:57Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "0f63ea33-13be-497c-8a41-4e32fb5a96b7",
+    "created_at": "2025-11-22 19:57:57",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/08/introduction-to-generalised-linear-models-with-prussian-horse-kicks/",
+      "crawled_at": "2025-11-22T10:44:48.256918",
+      "external_links": [
+        {
+          "href": "https://cbowdon.github.io/posts/horsekicks/",
+          "text": "Chris Bowdon"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://cloud.r-project.org/web/packages/Horsekicks/vignettes/hkdeaths.html",
+          "text": "publishing it to CRAN"
+        },
+        {
+          "href": "https://cbowdon.github.io/posts/horsekicks/",
+          "text": "Chris Bowdon"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Introduction to Generalised Linear Models with Prussian Horse Kicks | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAAATBAMAAADv47WXAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid3vmau7RHYyVGYizRAHtTi9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+0lEQVRIDbVVS2gTURQ9sZkmk0zGpMW1ghs3ShdVEIuOu+Km0dKVWGdlcWUEwc/G7KQu7IBSi1g6biQUtONChSoYikVFpBUEN5ZON0UsqLW66IfqfffNJDMvhm70Lu4775z77pn3CQGCSJ4MwON8SP2Xsa2zsKMTGl6uWEDPAIqKy1LFVRiYk9eZMtt/+ZmV/mbywpF+TOz3Y3KrDVwgN5wm+hlUN9PDp1g9TZaQqzKX3oBpM4qmmjxUxWJUILy9DKSF21UXutvglgYGwhV+AMpoLTE0l5EIRaBB/paHei9jDpARbi02PtNS5SRfAYeJ5XgqB6OEFl/C3mi7BlnriHyLXDCELAFyS2zyUsXNQ7JMOkfQjuq7A2as4geIhgZZX7tRVyU6g2kC5KavJ3xCqlvfe1lHOWynncoH3Laumvg3eXc1IjM8UBDtyA17nwtCuCX7RHBL7+IwRipCqLdLXbbN+8wkN2j4YjOufQzJmUeW4HqqdEsSiilgrOI2DcJtZ0kQwq0eehVJ1856zAR7uwscyzxg5spPGsZnZX1Efo3jxKUmLEBCWYHsdzhw2a2Nqbgb3VHyWlG3eb9zcr9k3Y13olh3eykbwo2OIyKP4glxd7QOQEKaidCo1JBuH5gocg4TueUuWTqtogg+3gM+Sre3GKMJuykyCsR7+rpYRjCMljx9lzzJNeaKlOv3Rk94KmEZHSwFbnkYu9jNzCM32+DGsrkPWADmaJ2AYcyU2JzuLbXJnHCrxy2YZ9PxvekWFh12mwayq6qblDUHBnV64dBGHEz7Rj8lJOaPFk6QjQazbZkk9ZU8nKz4qWLKZn+5t8zSOP2M6N6GVxyM/igrJynlQUM/dxD6/B5g0MDNqt5FiZuIJN6kjPjeXEHOxt5khuumOHOic+UIPkbgVCktuRgMqaZunqgYuSfrvvJAD4d6tPOPk4nzh6o8RuSZ38tMUYrAkGrmZvDh1qoYvIlP1dkWMpc3OUl5avGGbnyqzraQubz+322py//d/A9Xx8tAbpbaqAAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?%0AE%5BY%5D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...%0A"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAPBAMAAAD5dJlYAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAEInvq1R2Irsy3ZlEZs19rnf+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAdklEQVQIHWNgYFT+IsD62ZEBDNi+MzA2QJgMjJ8YmKBMBgZnBgU4e36YAJzNZQ5nMnB/B7JFG8ACR38DqdAHIDZngDOQZH8AJBhqGeZfgLIZFRj4gGLsQMxQwsDA+xPCnvF5AsO8XwkQcaAUCLAvAFNg4pBtAQA+9RrHxE8/AQAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?X_1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAPBAMAAAD5dJlYAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAEInvq1R2Irsy3ZlEZs19rnf+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAhElEQVQIHWNgYFT+IsD62ZEBDNi+MzA2QJgMjJ8YmKBMBgZnBgU4e36YAJzNZQ5nMnB/B7JjtcECR38zMLAnsCgAOZwBzkDiAW8DkF3LMP8CkGJSYGBgVGDge8DAwCAFNKyEgYH3J5DtycAw4/MEhnm/EhjYJhQABSDgDEMCjMn+/78CAMrgGdm3MYhEAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?X_2"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARBAMAAAD5z0voAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAEGZUds0iu0TvmauJMt2G7x8SAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAYUlEQVQIHWNgYGBUdmYAAiEG1gQg5cDA3sDAwNbAwCnAwMDEwLAEKMbEvfUAiOLoLQBS1xgYFgMpBYgckIoA8g4wsD1gYOBdwCB+gYGBWcjYESjGDMRAADQEBHIhlAGYAgApvgyOoHr31QAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?%5Cbeta"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAATBAMAAADlk9mAAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid3vmau7RHYyVGYizRAHtTi9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAw0lEQVQYGWNggALXDVDGVgEgQ8hEUNSEIYDH34SBgeVbAUMAUIwtgYGhBMhi/cDAwA1UDRLjb2Bg4ACy2H8xMMwC8kFi8ycwMHCBWGYMfEBpsFg/AzeEJf+AEcgAi6UxHIWw5m+Qg4mZCV6EiDHdPgAV4/nJMB0ixvgdJATSy/2BYQLDAhCLUQEoAhZjvcDAwAMW43WAiTELAJ0PluVfABM7X8DAIAgWq38AFWO87ygY9A8k9lBfEqYOTIPVUZWFCGcHADcILEyxxnEtAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?E%5BY%5D"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAATBAMAAAAzNgPlAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid3vmau7RHYyVGYizRAHtTi9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABI0lEQVQoFa2SvUoDQRRGvyUZ47iLZhesU9jYCCmiYGV8ghixE8xWWmphr09gthNs3DeIvYJbaK0B25CkETsVKxMI3p8Z8gJOsXPmO9w7l2UAt8qHnpoewjZR0ohXGzB4+qG8dYIUGO8cobc5MmQX6HhOFh063IMtugXewRlWLoFFposcNlf7WUVV7W0GLLEtpfiAWlMPiLi2i1ApmHGBdLaTK2eP8axkp8HIWawVmmEr7jvaeCCQWrQKzaJfXCuhdkYgttJrahZ+IUMuEyQsxd6YulrzCkRq37yN7uxUbYnmLOv0E2/HwEDtC10Wi63MnI32gMeMs2C4G+9TbLCcfFNC99rTbdjhuvaTAplKKdWNvvyvdM0p9dE/2fnbkNG4e3jwB/baO2YYtpAlAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?E%5BY%20%7C%20X%5D"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAAATBAMAAAAaHT4nAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAEIlmIs3vVER2q5nduzIm4CZBAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9UlEQVQ4EbVUTWsTURQ9k0w6SSaNIwFdtOpgoYLdRF3UjTIgFa1fwQ8qXSn2B4wWKcVNcKEloIwLqSBIK7SLWUh3Ylf1H6Q7VyUL242UagldqLTed997M5lp3Old3HveOe+8O+8jATiMQFZV5OD/5KJati+9vDE8m6ZQmfYFZwz+dKyd+bSsHX+R8UYZrGrKWUHOS1FGFbeZKrRhNFMiEDm6y6hpRwQUEaC3rqChagH4wtDYRkZxVBwFI0dS1hPjzZzQlKxmHT16jWxdcpeA+xItwpVA5LMSmrEjIUsV6PU0amggaxb4pBndqgo7kNzWtP4MGqtWHY6ELBzGwCmnh2qxjjVAoI7IFhdcPYxahTcVVZrQGlXdKnYkZDFzxDlULVE94Bk/KAtqOaR4L1A2/7JZnpWbiFrNbOJwU6h2m5KEcStyWKeXInlySEAZY9RkhOAzWCu0q44jIfIr8LEXZ3imalX2YPtTNUE9/0VJwqiVcFwGf6eQzaDoiqki8t+pyTqBk7DpW0rJVlW6qwY2SV4OF8Z5p3QZdmCKVmV/kTJDOwzvhKFLQ+FYxzktl2vZJmGOQo2a9BMcQ8nfd1dkvPsWGzxT7Ypa5eq8/gVskc6QJqi7Eg7gOBFSRsZlNyXayi1+DG0cO+rIZxHflQtzZQgXebJqRT+lq7y+4SJX29dKOGB8pucmZfQ77KZkzWXbyDnI72KQPvia5rmWl3CkldrVNxhr3GqUXs1uuhU7UGwBSsYHmPMYdShhYPoeCj4y41N9dAbyBeh+VmXqFRp4wWO1q4fD9GuiU9vcaWH9d5A6QHbgnRnJhZZXnsCGSEBmDuYccj6vt6q7cLVEziVfIM+jQ9KhobwrduTr9OelYgaBhvToyLxKL14w1LMz6ETpoc26zBkOl6rITx94POiAB5lgx429ba2ae3uuxq/xmOAVevEibLkcY0rXNYir2YpxF9TFEc16MukSzvuPmDkf8Qxov+ngE0qT8biLIxYl8hIlrf6T8R9YX66FoaK+TQAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?%0Ag(%5Cmu)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...%0A"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAEIlmIs3vVER2q5ndcL2iNwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEtJREFUCB1jYGBUNhRgYHAVEDNgYAhn4HVg4LjA0MbAwBnAoMXAwL2BIZiBgX0B8xUGBgblygQgycC0AETyFDAwTGUoBbKqixUYGABabgpE9omgCgAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?g"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMBAMAAABGh1qtAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMAq0S7MiIQ71TdiZnNZgbEMwIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABJSURBVAgdY2BgVGAwYWBg4Atgewak1Bk4JgCphQzcG4DUCQbOBiD1lCEvJYGB6QnDcl4GBq6DHdmXGBh4QBIgbWBKHUwydIEpAEhtDOiQpn1yAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?%5Cmu"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMAEIlmIs3vVER2q5ndcL2iNwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEtJREFUCB1jYGBUNhRgYHAVEDNgYAhn4HVg4LjA0MbAwBnAoMXAwL2BIZiBgX0B8xUGBgblygQgycC0AETyFDAwTGUoBbKqixUYGABabgpE9omgCgAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?g"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAARBAMAAAA1VnEDAAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMAid2ZzVQQRGYi76sydunVvOUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACSSURBVAgdY2AQMmBAAJYABJuBLwGJU4TEZhBG5ngwMLDekGFgSOxIY2B4ycBgyzCLgdONbQUD+wIGDgcGvgNAQ18yMG5g4GpgyDtQBxJmaWCYN4Ghj+EKSJhv5oFzDAy+DMYg4TwOBqYDHBsYohn6JjAwtjNwinYwMDC23mJAAtJIbAZVOIfXgdUBzmE1bWRgAAAoexvhU1PBMwAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?log"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMBAMAAABhKdtFAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVGZ2q0TdiSK7EDKZze8+nr3SAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAkUlEQVQIHWNgYFQ0YAg8EXSK0bhJh4GBwZkhlFtgp0LqwvUKPAoMTAkMFcwM+xcoBMQxsDswsE1UDmBgMAEqM2FgOcCwvgHIYrgIxBMZ+AQY1gMZrBy/GAwYfjGEMTCwbWCQVmPKYmrg/sVwm4GBo1BoQbtEuDQD8yHhBqBKGOBUgLHANH8DCnc/Co/1fgGQDwApKxyHvHrOYQAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?exp"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-deaths-over-time-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-boxplots-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-deaths-over-time-fitted-1.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/chris-bowdon/",
+          "text": "Chris Bowdon"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394514 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Introduction to Generalised Linear Models with Prussian Horse Kicks</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 1, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/chris-bowdon/\">Chris Bowdon</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://cbowdon.github.io/posts/horsekicks/\"> Chris Bowdon</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Time to finally patch a hole in the leaky roof of my knowledge: what are Generalised Linear Models anyway?</p>\n<section class=\"level2\" id=\"groundwork-what-are-linear-models-anyway\">\n<h2 class=\"anchored\" data-anchor-id=\"groundwork-what-are-linear-models-anyway\">Groundwork: what are Linear Models anyway?</h2>\n<p>Generalised Linear Models (GLMs) are a short step from Linear Models, <em>provided you have the right understanding of linear models</em>. There’s also some stats jargon to get a handle on. So we’ll start with an intuitive explanation of linear models.</p>\n<p>With a linear model, we have some quantity (the response variable) that we’re trying to predict from some other quantities (the predictors). The predictors are knowable things that you can measure with good precision, such as age and weight. The response variable is something with natural variation and/or measurement uncertainty, like maximum jump height. Different people of the same age and weight will have different maximum jumps. For every age and weight combination, we aim to predict the average jump height.</p>\n<p>The natural variation usually (but not always) follows a <em>normal</em> distribution for given predictors. That is to say, we should expect a bell curve of jump heights for people who are 80 years of age and weigh 80kg. For people who are 18 years of age and weight 60kg, we should expect a bell curve with a different (probably higher) mean but the same variance. Having the the variance in jump height <em>not</em> change for different ages and weights is important, we’ll come back to that later.</p>\n<p>What we do in a linear model is devise a weighted sum of our predictors (a linear combination, in the lingo) that best predicts the mean of the bell curve. Here’s the general form of it:</p>\n<p><img data-lazy-src=\"https://latex.codecogs.com/png.latex?%0AE%5BY%5D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...%0A\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%0AE%5BY%5D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...%0A\"/></noscript></p>\n<p><img data-lazy-src=\"https://latex.codecogs.com/png.latex?X_1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?X_1\"/></noscript> could be age and <img data-lazy-src=\"https://latex.codecogs.com/png.latex?X_2\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?X_2\"/></noscript> could be weight. The <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cbeta\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cbeta\"/></noscript> values are the intercept and coefficients that we learn.</p>\n<p>Here <img data-lazy-src=\"https://latex.codecogs.com/png.latex?E%5BY%5D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?E%5BY%5D\"/></noscript> means the <em>expectation</em> of Y, which in this case is just the mean. Strictly speaking, we should say that we’re predicting the mean <em>conditioned on the predictors</em> because it’s not the mean of all maximum jump height observations, it’s the mean of the maximum jump heights for a particular age and weight. So we ought to write <img data-lazy-src=\"https://latex.codecogs.com/png.latex?E%5BY%20%7C%20X%5D\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?E%5BY%20%7C%20X%5D\"/></noscript>.</p>\n<p>To determine those coefficients we use an algorithm like Ordinary Least Squares (OLS) which works to find the coefficients that give the means with the smallest (squared) residuals, i.e. minimal squared distance between the observations and the mean for any given predictors. We don’t need to know too much about how this works today, just that it’s an efficient and useful.</p>\n</section>\n<section class=\"level2\" id=\"next-level-the-glm\">\n<h2 class=\"anchored\" data-anchor-id=\"next-level-the-glm\">Next level: the GLM</h2>\n<p>With that under our belt, GLMs aren’t so scary. There are just two things to recognise.</p>\n<p>First, a normal distribution isn’t always appropriate for the natural variation. What if rather than jump height, our response variable was something discrete, like number of pets? You can’t have a non-integer or negative number of pets. We’d want to swap the normal distribution for a discrete distribution from the same exponential family, most likely a Poisson distribution.</p>\n<p>That leads directly to the second thing: the mean of a Poisson distribution must be positive, so we need to transform the result of that weighted sum in some way that maps it into the valid range of Poisson means. This transformation is called the <em>link function</em>. The form of this would be:</p>\n<p><img data-lazy-src=\"https://latex.codecogs.com/png.latex?%0Ag(%5Cmu)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...%0A\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%0Ag(%5Cmu)%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...%0A\"/></noscript></p>\n<p>where <img data-lazy-src=\"https://latex.codecogs.com/png.latex?g\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?g\"/></noscript> is the link function, and <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cmu\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cmu\"/></noscript> is the mean of the target distribution. If we had a normal distribution and no need to transform the result of the weighted sum, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?g\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?g\"/></noscript> would simply be the identity function. For a Poisson distribution, the usual choice is <img data-lazy-src=\"https://latex.codecogs.com/png.latex?log\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?log\"/></noscript>, because it’s the inverse of a function <img data-lazy-src=\"https://latex.codecogs.com/png.latex?exp\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?exp\"/></noscript> that maps any number to positive number.</p>\n<p>For different types of data, you’d choose a different type of distribution:</p>\n<ul>\n<li>Poisson for counts</li>\n<li>Binomial for binary probabilities</li>\n<li>Gamma for positive continuous data</li>\n<li>Normal for normally distributed data</li>\n</ul>\n<p>Each of these has a “canonical” (standard) link function:</p>\n<ul>\n<li>Poisson: log</li>\n<li>Binomial: logit</li>\n<li>Gamma: inverse</li>\n<li>Normal: identity</li>\n</ul>\n<p>You can choose another link function, but let’s leave that for another day.</p>\n<p>Remember that the linear model assumed the variance was constant? GLMs don’t need this, because for distributions other than the normal distribution, the variance is a function of the mean. The technical term for this property is heteroscedasticity (whereas a constant mean is homoscedasticity).</p>\n<p>One more important consequence: because of the link function, we don’t necessarily have a mean of the response variable that varies linearly with the predictors. In other words we can model non-linear relationships, which is of course <em>powerful</em>.</p>\n</section>\n<section class=\"level2\" id=\"play-time\">\n<h2 class=\"anchored\" data-anchor-id=\"play-time\">Play time</h2>\n<p>Time to learn by playing. We can use a quirky dataset compiled by Russian statistician Ladislaus von Bortkiewicz in the late 1800s: deaths by horse kick per year for regiments in the Prussian army. In February 2025 Antony Unwin and Bill Venables updated the dataset with additional data and realised von Bortkiewicz’s original dream of <a href=\"https://cloud.r-project.org/web/packages/Horsekicks/vignettes/hkdeaths.html\" rel=\"nofollow\" target=\"_blank\">publishing it to CRAN</a>.</p>\n<div class=\"cell\">\n<pre>library(tidyverse)\nlibrary(knitr)\nlibrary(Horsekicks)\n\nhk.tidy &lt;- hkdeaths |&gt;\n  pivot_longer(\n    c(kick, drown, fall),\n    names_to = \"death.type\",\n    values_to = \"death.count\"\n  )\n\nhk.tidy |&gt; head() |&gt; kable()</pre>\n<div class=\"cell quarto-float quarto-figure quarto-figure-center anchored\" id=\"tbl-hkdeaths\">\n<figure class=\"quarto-float quarto-float-tbl figure\">\n<figcaption class=\"quarto-float-caption-top quarto-float-caption quarto-float-tbl\" id=\"tbl-hkdeaths-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\nTable 1: Sample of the horse kick data (tidied).\n</figcaption>\n<div aria-describedby=\"tbl-hkdeaths-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\n<div class=\"cell-output-display\">\n<table class=\"do-not-create-environment cell caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: right;\">year</th>\n<th style=\"text-align: left;\">corps</th>\n<th style=\"text-align: right;\">regiments</th>\n<th style=\"text-align: right;\">NCOs</th>\n<th style=\"text-align: right;\">vonB_kick</th>\n<th style=\"text-align: left;\">death.type</th>\n<th style=\"text-align: right;\">death.count</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">1875</td>\n<td style=\"text-align: left;\">G</td>\n<td style=\"text-align: right;\">8</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: left;\">kick</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">1875</td>\n<td style=\"text-align: left;\">G</td>\n<td style=\"text-align: right;\">8</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: left;\">drown</td>\n<td style=\"text-align: right;\">3</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">1875</td>\n<td style=\"text-align: left;\">G</td>\n<td style=\"text-align: right;\">8</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: left;\">fall</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">1875</td>\n<td style=\"text-align: left;\">I</td>\n<td style=\"text-align: right;\">6</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: left;\">kick</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: right;\">1875</td>\n<td style=\"text-align: left;\">I</td>\n<td style=\"text-align: right;\">6</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: left;\">drown</td>\n<td style=\"text-align: right;\">5</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: right;\">1875</td>\n<td style=\"text-align: left;\">I</td>\n<td style=\"text-align: right;\">6</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: right;\">0</td>\n<td style=\"text-align: left;\">fall</td>\n<td style=\"text-align: right;\">0</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n</figure>\n</div>\n</div>\n<p>Unwin and Venables added deaths by drowning, and deaths by falling off a horse among other improvements. The data cover 14 corps, each with a fixed number of regiments, over 33 years. A regiment is about 500 soldiers, as far as I can tell. I have no idea where Prussia was or where it’s gone.</p>\n<p>Let’s explore data visually. Plotting deaths over time shows that equestrian misadventures seem quite stable, but deaths by drowning did reduce. We will fit a GLM to these time series.</p>\n<div class=\"cell\">\n<pre>prussian.colours &lt;- c(\"#333333\", \"#F9BE11\", \"#BE0007\")\n\nhk.year &lt;- hk.tidy |&gt;\n  group_by(year, death.type) |&gt;\n  summarise(death.count = sum(death.count))\n\nggplot(hk.year) +\n  aes(x = year, y = death.count, group = death.type, colour = death.type) +\n  geom_line() +\n  scale_colour_manual(values = prussian.colours, name = \"Death type\") +\n  labs(x = \"Year\", y = \"Number of deaths\") +\n  theme_minimal()</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-float quarto-figure quarto-figure-center anchored\" id=\"fig-deaths-over-time\">\n<figure class=\"quarto-float quarto-float-fig figure\">\n<div aria-describedby=\"fig-deaths-over-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\n<img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-deaths-over-time-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-deaths-over-time-1.png?w=450&amp;ssl=1\"/></noscript>\n</div>\n<figcaption class=\"quarto-float-caption-bottom quarto-float-caption quarto-float-fig\" id=\"fig-deaths-over-time-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\nFigure 1: Accidental death by type over time.\n</figcaption>\n</figure>\n</div>\n</div>\n</div>\n<p>Note that for each death type and each year we actually have a distribution across all regiments, not just a single number. We could choose to plot the distributions as a series of box plots.</p>\n<div class=\"cell\">\n<pre>ggplot(hk.tidy) +\n  aes(x = year, y = death.count, group = year, fill = death.type) +\n  facet_wrap(~death.type, dir = \"v\") +\n  geom_boxplot(alpha = 0.5) +\n  scale_fill_manual(values = prussian.colours, name = \"Death type\") +\n  theme_minimal() +\n  labs(x = \"Year\", y = \"Number of deaths\")</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-float quarto-figure quarto-figure-center anchored\" id=\"fig-boxplots\">\n<figure class=\"quarto-float quarto-float-fig figure\">\n<div aria-describedby=\"fig-boxplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\n<img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-boxplots-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-boxplots-1.png?w=450&amp;ssl=1\"/></noscript>\n</div>\n<figcaption class=\"quarto-float-caption-bottom quarto-float-caption quarto-float-fig\" id=\"fig-boxplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\nFigure 2: Distributions of deaths for each year and death type.\n</figcaption>\n</figure>\n</div>\n</div>\n</div>\n<p>Time for that model. Since you can’t literally be kicked half to death, at least not as far as <em>Preussische Statistik</em> was concerned, all the death statistics are integer counts. Therefore the obvious choice for the distribution is Poisson. We don’t have a reason to provide a different link function, so we just take the canonical link function for Poisson (log).</p>\n<p>R makes this trivial to do. <code>glm</code> is a built-in function:</p>\n<div class=\"cell\">\n<pre>glm(\n  formula = drown ~ year, # i.e. drownings are the response variable, year is the predictor\n  family = poisson,\n  data = hkdeaths\n)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>\nCall:  glm(formula = drown ~ year, family = poisson, data = hkdeaths)\n\nCoefficients:\n(Intercept)         year  \n   44.05820     -0.02256  \n\nDegrees of Freedom: 461 Total (i.e. Null);  460 Residual\nNull Deviance:      854.3 \nResidual Deviance: 766.9    AIC: 2170</pre>\n</div>\n</div>\n<p>The result is an intercept (which we con’t care much about) and a coefficient for the year of -0.022, which tells us that the model predicts drownings are decreasing 2.2% every year.</p>\n<p><code>ggplot2</code> makes it even easier by allowing us to bung the above model into <code>stat_smooth</code> and run it for each death type.</p>\n<div class=\"cell\">\n<pre>ggplot(hk.year) +\n  aes(x = year, y = death.count, group = death.type, colour = death.type) +\n  geom_point() +\n  stat_smooth(\n    method = \"glm\",\n    formula = y ~ x,\n    method.args = list(family = poisson)\n  ) +\n  scale_colour_manual(values = prussian.colours, name = \"Death type\") +\n  theme_minimal() +\n  labs(x = \"Year\", y = \"Number of deaths\")</pre>\n<div class=\"cell-output-display\">\n<div class=\"quarto-float quarto-figure quarto-figure-center anchored\" id=\"fig-deaths-over-time-fitted\">\n<figure class=\"quarto-float quarto-float-fig figure\">\n<div aria-describedby=\"fig-deaths-over-time-fitted-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\n<img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-deaths-over-time-fitted-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/cbowdon.github.io/posts/horsekicks/index_files/figure-html/fig-deaths-over-time-fitted-1.png?w=450&amp;ssl=1\"/></noscript>\n</div>\n<figcaption class=\"quarto-float-caption-bottom quarto-float-caption quarto-float-fig\" id=\"fig-deaths-over-time-fitted-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca\">\nFigure 3: Death by type over time, with GLM fits.\n</figcaption>\n</figure>\n</div>\n</div>\n</div>\n<p>Et voila. That’s really all there was to it!</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://cbowdon.github.io/posts/horsekicks/\"> Chris Bowdon</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Introduction to Generalised Linear Models with Prussian Horse Kicks\nPosted on\nAugust 1, 2025\nby\nChris Bowdon\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nChris Bowdon\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nTime to finally patch a hole in the leaky roof of my knowledge: what are Generalised Linear Models anyway?\nGroundwork: what are Linear Models anyway?\nGeneralised Linear Models (GLMs) are a short step from Linear Models,\nprovided you have the right understanding of linear models\n. There’s also some stats jargon to get a handle on. So we’ll start with an intuitive explanation of linear models.\nWith a linear model, we have some quantity (the response variable) that we’re trying to predict from some other quantities (the predictors). The predictors are knowable things that you can measure with good precision, such as age and weight. The response variable is something with natural variation and/or measurement uncertainty, like maximum jump height. Different people of the same age and weight will have different maximum jumps. For every age and weight combination, we aim to predict the average jump height.\nThe natural variation usually (but not always) follows a\nnormal\ndistribution for given predictors. That is to say, we should expect a bell curve of jump heights for people who are 80 years of age and weigh 80kg. For people who are 18 years of age and weight 60kg, we should expect a bell curve with a different (probably higher) mean but the same variance. Having the the variance in jump height\nnot\nchange for different ages and weights is important, we’ll come back to that later.\nWhat we do in a linear model is devise a weighted sum of our predictors (a linear combination, in the lingo) that best predicts the mean of the bell curve. Here’s the general form of it:\ncould be age and\ncould be weight. The\nvalues are the intercept and coefficients that we learn.\nHere\nmeans the\nexpectation\nof Y, which in this case is just the mean. Strictly speaking, we should say that we’re predicting the mean\nconditioned on the predictors\nbecause it’s not the mean of all maximum jump height observations, it’s the mean of the maximum jump heights for a particular age and weight. So we ought to write\n.\nTo determine those coefficients we use an algorithm like Ordinary Least Squares (OLS) which works to find the coefficients that give the means with the smallest (squared) residuals, i.e. minimal squared distance between the observations and the mean for any given predictors. We don’t need to know too much about how this works today, just that it’s an efficient and useful.\nNext level: the GLM\nWith that under our belt, GLMs aren’t so scary. There are just two things to recognise.\nFirst, a normal distribution isn’t always appropriate for the natural variation. What if rather than jump height, our response variable was something discrete, like number of pets? You can’t have a non-integer or negative number of pets. We’d want to swap the normal distribution for a discrete distribution from the same exponential family, most likely a Poisson distribution.\nThat leads directly to the second thing: the mean of a Poisson distribution must be positive, so we need to transform the result of that weighted sum in some way that maps it into the valid range of Poisson means. This transformation is called the\nlink function\n. The form of this would be:\nwhere\nis the link function, and\nis the mean of the target distribution. If we had a normal distribution and no need to transform the result of the weighted sum,\nwould simply be the identity function. For a Poisson distribution, the usual choice is\n, because it’s the inverse of a function\nthat maps any number to positive number.\nFor different types of data, you’d choose a different type of distribution:\nPoisson for counts\nBinomial for binary probabilities\nGamma for positive continuous data\nNormal for normally distributed data\nEach of these has a “canonical” (standard) link function:\nPoisson: log\nBinomial: logit\nGamma: inverse\nNormal: identity\nYou can choose another link function, but let’s leave that for another day.\nRemember that the linear model assumed the variance was constant? GLMs don’t need this, because for distributions other than the normal distribution, the variance is a function of the mean. The technical term for this property is heteroscedasticity (whereas a constant mean is homoscedasticity).\nOne more important consequence: because of the link function, we don’t necessarily have a mean of the response variable that varies linearly with the predictors. In other words we can model non-linear relationships, which is of course\npowerful\n.\nPlay time\nTime to learn by playing. We can use a quirky dataset compiled by Russian statistician Ladislaus von Bortkiewicz in the late 1800s: deaths by horse kick per year for regiments in the Prussian army. In February 2025 Antony Unwin and Bill Venables updated the dataset with additional data and realised von Bortkiewicz’s original dream of\npublishing it to CRAN\n.\nlibrary(tidyverse)\nlibrary(knitr)\nlibrary(Horsekicks)\n\nhk.tidy <- hkdeaths |>\n  pivot_longer(\n    c(kick, drown, fall),\n    names_to = \"death.type\",\n    values_to = \"death.count\"\n  )\n\nhk.tidy |> head() |> kable()\nTable 1: Sample of the horse kick data (tidied).\nyear\ncorps\nregiments\nNCOs\nvonB_kick\ndeath.type\ndeath.count\n1875\nG\n8\n0\n0\nkick\n0\n1875\nG\n8\n0\n0\ndrown\n3\n1875\nG\n8\n0\n0\nfall\n0\n1875\nI\n6\n0\n0\nkick\n0\n1875\nI\n6\n0\n0\ndrown\n5\n1875\nI\n6\n0\n0\nfall\n0\nUnwin and Venables added deaths by drowning, and deaths by falling off a horse among other improvements. The data cover 14 corps, each with a fixed number of regiments, over 33 years. A regiment is about 500 soldiers, as far as I can tell. I have no idea where Prussia was or where it’s gone.\nLet’s explore data visually. Plotting deaths over time shows that equestrian misadventures seem quite stable, but deaths by drowning did reduce. We will fit a GLM to these time series.\nprussian.colours <- c(\"#333333\", \"#F9BE11\", \"#BE0007\")\n\nhk.year <- hk.tidy |>\n  group_by(year, death.type) |>\n  summarise(death.count = sum(death.count))\n\nggplot(hk.year) +\n  aes(x = year, y = death.count, group = death.type, colour = death.type) +\n  geom_line() +\n  scale_colour_manual(values = prussian.colours, name = \"Death type\") +\n  labs(x = \"Year\", y = \"Number of deaths\") +\n  theme_minimal()\nFigure 1: Accidental death by type over time.\nNote that for each death type and each year we actually have a distribution across all regiments, not just a single number. We could choose to plot the distributions as a series of box plots.\nggplot(hk.tidy) +\n  aes(x = year, y = death.count, group = year, fill = death.type) +\n  facet_wrap(~death.type, dir = \"v\") +\n  geom_boxplot(alpha = 0.5) +\n  scale_fill_manual(values = prussian.colours, name = \"Death type\") +\n  theme_minimal() +\n  labs(x = \"Year\", y = \"Number of deaths\")\nFigure 2: Distributions of deaths for each year and death type.\nTime for that model. Since you can’t literally be kicked half to death, at least not as far as\nPreussische Statistik\nwas concerned, all the death statistics are integer counts. Therefore the obvious choice for the distribution is Poisson. We don’t have a reason to provide a different link function, so we just take the canonical link function for Poisson (log).\nR makes this trivial to do.\nglm\nis a built-in function:\nglm(\n  formula = drown ~ year, # i.e. drownings are the response variable, year is the predictor\n  family = poisson,\n  data = hkdeaths\n)\nCall:  glm(formula = drown ~ year, family = poisson, data = hkdeaths)\n\nCoefficients:\n(Intercept)         year  \n   44.05820     -0.02256  \n\nDegrees of Freedom: 461 Total (i.e. Null);  460 Residual\nNull Deviance:      854.3 \nResidual Deviance: 766.9    AIC: 2170\nThe result is an intercept (which we con’t care much about) and a coefficient for the year of -0.022, which tells us that the model predicts drownings are decreasing 2.2% every year.\nggplot2\nmakes it even easier by allowing us to bung the above model into\nstat_smooth\nand run it for each death type.\nggplot(hk.year) +\n  aes(x = year, y = death.count, group = death.type, colour = death.type) +\n  geom_point() +\n  stat_smooth(\n    method = \"glm\",\n    formula = y ~ x,\n    method.args = list(family = poisson)\n  ) +\n  scale_colour_manual(values = prussian.colours, name = \"Death type\") +\n  theme_minimal() +\n  labs(x = \"Year\", y = \"Number of deaths\")\nFigure 3: Death by type over time, with GLM fits.\nEt voila. That’s really all there was to it!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nChris Bowdon\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Time to finally patch a hole in the leaky roof of my knowledge: what are Generalised Linear Models anyway? Groundwork: what are Linear Models anyway? Generalised Linear Models (GLMs) are a short step from Linear Models, provided you have the ri...",
+      "meta_keywords": null,
+      "og_description": "Time to finally patch a hole in the leaky roof of my knowledge: what are Generalised Linear Models anyway? Groundwork: what are Linear Models anyway? Generalised Linear Models (GLMs) are a short step from Linear Models, provided you have the ri...",
+      "og_image": "https://latex.codecogs.com/png.latex?E%5BY%5D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20X_1%20+%20%5Cbeta_2%20X_2%20...",
+      "og_title": "Introduction to Generalised Linear Models with Prussian Horse Kicks | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 7.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "Time to finally patch a hole in the leaky roof of my knowledge: what are Generalised Linear Models anyway? Groundwork: what are Linear Models anyway? Generalised Linear Models (GLMs) are a short step from Linear Models, provided you have the ri...",
+      "twitter_title": "Introduction to Generalised Linear Models with Prussian Horse Kicks | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/08/introduction-to-generalised-linear-models-with-prussian-horse-kicks/",
+      "word_count": 1526
+    }
+  }
+}

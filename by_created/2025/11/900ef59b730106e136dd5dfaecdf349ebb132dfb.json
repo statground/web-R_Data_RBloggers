@@ -1,0 +1,114 @@
+{
+  "id": "900ef59b730106e136dd5dfaecdf349ebb132dfb",
+  "url": "https://www.r-bloggers.com/2025/05/mock-them-all-simulate-to-better-test-with-testthat/",
+  "created_at_utc": "2025-11-22T19:58:36Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "2b726e33-2dad-4448-8b20-e976122b2a17",
+    "created_at": "2025-11-22 19:58:36",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/05/mock-them-all-simulate-to-better-test-with-testthat/",
+      "crawled_at": "2025-11-22T10:48:56.710834",
+      "external_links": [
+        {
+          "href": "https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/",
+          "text": "Rtask"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://rtask.thinkr.fr/",
+          "text": "Rtask"
+        },
+        {
+          "href": "https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/",
+          "text": "Mock Them All: Simulate to Better Test with testthat"
+        },
+        {
+          "href": "https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/",
+          "text": "Mock Them All: Simulate to Better Test with testthat"
+        },
+        {
+          "href": "https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/",
+          "text": "Rtask"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Mock Them All: Simulate to Better Test with testthat | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/murielle-delmotte/",
+          "text": "Murielle Delmotte"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392425 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Mock Them All: Simulate to Better Test with testthat</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/murielle-delmotte/\">Murielle Delmotte</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/\"> Rtask</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>You can read the original post in its original format on <a href=\"https://rtask.thinkr.fr/\" rel=\"nofollow\" target=\"_blank\">Rtask</a> website by ThinkR here: <a href=\"https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/\" rel=\"nofollow\" target=\"_blank\">Mock Them All: Simulate to Better Test with testthat</a></p>\n<p>Unit testing in R. You know, those small functions that ensure your code works flawlessly—even when you’re on vacation or writing new modules at 2 a.m.<br/>\nBut let’s be honest: when it comes to testing user interactions or external resources, things can quickly turn into a headache.<br/>\nWhat do you do when your code requires a file selection dialog or a connection to an API that takes forever to respond?<br/>\nNo way you want to block everything just for a test!</p>\n<p>In those cases, it’s time to get clever. The idea isn’t to give up on testing, but to cleverly bypass what’s problematic. That’s where a well-known technique comes in: <code>mocking</code>.<br/>\nLuckily, R and the <code>testthat</code> package provide tools just for this.</p>\n<p><code>Mocking</code> means temporarily replacing a function or resource with a fake, controlled version that simulates the expected behavior.</p>\n<p>Intrigued? Let’s dive in.</p>\n<h2>The Art of <code>Pretending</code>: Simulating user interactions</h2>\n<p>Imagine a function that asks the user to select a file.<br/>\nIf you had to test that function with a real dialog box, it would be a total waste of time—not to mention impossible to automate easily in a CI environment.<br/>\nThat’s where the magic of <code>mocking</code> comes in.</p>\n<p>Here’s an example of such a function:</p>\n<pre>select_file &lt;- function() {\n  file_path &lt;- choose.files()  # Cette fonction ouvre une boîte de dialogue\n  cat(\"You have chosen the file :\", file_path)\n}</pre>\n<p>You don’t want to manually select a file every time you run the test.<br/>\nWith <code>with_mocked_bindings()</code> from the <code>{testthat}</code> package, you can replace <code>choose.files</code> with a version that simply returns a predefined path.<br/>\nThis avoids any interaction and makes the test instant:</p>\n<pre>test_that(\"select_file works without a dialog box\", {\n  with_mocked_bindings(\n    code = {\n      expect_output(select_file(), \"You have chosen the file : C:/fakedir/fakefile.txt\")\n    },\n    choose.files = function() {\"C:/fakedir/fakefile.txt\"}\n  )\n})\n</pre>\n<p>And that’s it! You test the function as if the user already selected a file—no dialog box involved.</p>\n<h2>When simulation becomes essential: Testing external resources</h2>\n<p>Unit tests are often used to verify functions that rely on external resources such as APIs, databases, or network interactions.<br/>\nImagine a function that retrieves data from an API.<br/>\nActually calling the API during every test would be slow, costly, and completely unnecessary.<br/>\nInstead, you can simulate the API response. Here’s how:</p>\n<pre>fetch_data &lt;- function() {\n  response &lt;- httr::GET(\"https://api.exemple.com/data\")\n  content &lt;- httr::content(response)\n  return(content)\n}</pre>\n<p>To test this function without making a real API call, you can mock the response using <code>with_mocked_bindings</code>.</p>\n<p>Here’s an example where the API call is replaced with a handcrafted response:</p>\n<p>Now you’re testing the function without ever hitting the real API, and you have full control over what’s returned.<br/>\nYou can simulate different situations (successful response, error, timeout, etc.) without depending on the actual API state.</p>\n<h2>⚠️ Not everything can be mocked: The limitations</h2>\n<p>Some functions can’t be mocked directly, for example:</p>\n<pre>Sys.time()\nSys.getenv()</pre>\n<p>Trying to override them with <code>with_mocked_bindings()</code> results in:</p>\n<pre>Error in `local_mocked_bindings(...)`: Can't find binding for `Sys.time`</pre>\n<p>Why? Because certain functions like <code>Sys.time()</code> and <code>Sys.getenv()</code> are primitive functions in R.<br/>\nThey’re deeply embedded in the language core and not regular R objects you can easily override like user-defined functions.</p>\n<h3>🩹 The workaround: Encapsulate the behavior</h3>\n<p>The solution: create a wrapper function in your code that you can <code>mock</code>.</p>\n<p>Example:</p>\n<pre># Dans votre package\nget_current_time &lt;- function() { Sys.time()}\nsay_hello &lt;- function() {\n  if (format(get_current_time(), \"%H\") == \"12\") {\n    \"Time for lunch!\"\n  } else {\n    \"Just a little longer...\"\n  }\n}</pre>\n<p>Et dans vos tests :</p>\n<pre>test_that(\"say_hello correctly detects noon\", {\n  with_mocked_bindings(\n    code = expect_equal(say_hello(), \"Time for lunch!\"),\n    get_current_time = function() as.POSIXct(\"2025-04-25 12:00:00\")\n  )\n})</pre>\n<h2>🚪 In summary</h2>\n<ul>\n<li><code>with_mocked_bindings()</code> allows you to simulate functions whose behavior varies depending on user input, system state, or time, in an elegant way;</li>\n<li>Some functions can’t be mocked directly (like <code>Sys.time</code>, <code>Sys.getenv</code>): wrap them in a separate function;</li>\n<li>It’s a great way to create fast, reliable, non-interactive tests.</li>\n</ul>\n<p>This post is better presented on its original ThinkR website here: <a href=\"https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/\" rel=\"nofollow\" target=\"_blank\">Mock Them All: Simulate to Better Test with testthat</a></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rtask.thinkr.fr/mock-them-all-simulate-to-better-test-with-testthat/\"> Rtask</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Mock Them All: Simulate to Better Test with testthat\nPosted on\nMay 15, 2025\nby\nMurielle Delmotte\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nRtask\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nYou can read the original post in its original format on\nRtask\nwebsite by ThinkR here:\nMock Them All: Simulate to Better Test with testthat\nUnit testing in R. You know, those small functions that ensure your code works flawlessly—even when you’re on vacation or writing new modules at 2 a.m.\nBut let’s be honest: when it comes to testing user interactions or external resources, things can quickly turn into a headache.\nWhat do you do when your code requires a file selection dialog or a connection to an API that takes forever to respond?\nNo way you want to block everything just for a test!\nIn those cases, it’s time to get clever. The idea isn’t to give up on testing, but to cleverly bypass what’s problematic. That’s where a well-known technique comes in:\nmocking\n.\nLuckily, R and the\ntestthat\npackage provide tools just for this.\nMocking\nmeans temporarily replacing a function or resource with a fake, controlled version that simulates the expected behavior.\nIntrigued? Let’s dive in.\nThe Art of\nPretending\n: Simulating user interactions\nImagine a function that asks the user to select a file.\nIf you had to test that function with a real dialog box, it would be a total waste of time—not to mention impossible to automate easily in a CI environment.\nThat’s where the magic of\nmocking\ncomes in.\nHere’s an example of such a function:\nselect_file <- function() {\n  file_path <- choose.files()  # Cette fonction ouvre une boîte de dialogue\n  cat(\"You have chosen the file :\", file_path)\n}\nYou don’t want to manually select a file every time you run the test.\nWith\nwith_mocked_bindings()\nfrom the\n{testthat}\npackage, you can replace\nchoose.files\nwith a version that simply returns a predefined path.\nThis avoids any interaction and makes the test instant:\ntest_that(\"select_file works without a dialog box\", {\n  with_mocked_bindings(\n    code = {\n      expect_output(select_file(), \"You have chosen the file : C:/fakedir/fakefile.txt\")\n    },\n    choose.files = function() {\"C:/fakedir/fakefile.txt\"}\n  )\n})\nAnd that’s it! You test the function as if the user already selected a file—no dialog box involved.\nWhen simulation becomes essential: Testing external resources\nUnit tests are often used to verify functions that rely on external resources such as APIs, databases, or network interactions.\nImagine a function that retrieves data from an API.\nActually calling the API during every test would be slow, costly, and completely unnecessary.\nInstead, you can simulate the API response. Here’s how:\nfetch_data <- function() {\n  response <- httr::GET(\"https://api.exemple.com/data\")\n  content <- httr::content(response)\n  return(content)\n}\nTo test this function without making a real API call, you can mock the response using\nwith_mocked_bindings\n.\nHere’s an example where the API call is replaced with a handcrafted response:\nNow you’re testing the function without ever hitting the real API, and you have full control over what’s returned.\nYou can simulate different situations (successful response, error, timeout, etc.) without depending on the actual API state.\n⚠️ Not everything can be mocked: The limitations\nSome functions can’t be mocked directly, for example:\nSys.time()\nSys.getenv()\nTrying to override them with\nwith_mocked_bindings()\nresults in:\nError in `local_mocked_bindings(...)`: Can't find binding for `Sys.time`\nWhy? Because certain functions like\nSys.time()\nand\nSys.getenv()\nare primitive functions in R.\nThey’re deeply embedded in the language core and not regular R objects you can easily override like user-defined functions.\n🩹 The workaround: Encapsulate the behavior\nThe solution: create a wrapper function in your code that you can\nmock\n.\nExample:\n# Dans votre package\nget_current_time <- function() { Sys.time()}\nsay_hello <- function() {\n  if (format(get_current_time(), \"%H\") == \"12\") {\n    \"Time for lunch!\"\n  } else {\n    \"Just a little longer...\"\n  }\n}\nEt dans vos tests :\ntest_that(\"say_hello correctly detects noon\", {\n  with_mocked_bindings(\n    code = expect_equal(say_hello(), \"Time for lunch!\"),\n    get_current_time = function() as.POSIXct(\"2025-04-25 12:00:00\")\n  )\n})\n🚪 In summary\nwith_mocked_bindings()\nallows you to simulate functions whose behavior varies depending on user input, system state, or time, in an elegant way;\nSome functions can’t be mocked directly (like\nSys.time\n,\nSys.getenv\n): wrap them in a separate function;\nIt’s a great way to create fast, reliable, non-interactive tests.\nThis post is better presented on its original ThinkR website here:\nMock Them All: Simulate to Better Test with testthat\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nRtask\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "You can read the original post in its original format on Rtask website by ThinkR here: Mock Them All: Simulate to Better Test with testthat Unit testing in R. You know, those small functions that ensure your code works flawlessly—even when you’re on vacation or writing new modules at 2 a.m. But let’s be honest: when it comes to testing user interactions or external resources, things can quickly turn into a headache. What do you do when your code requires a file selection dialog or This post is better presented on its original ThinkR website here: Mock Them All: Simulate to Better Test with testthat",
+      "meta_keywords": null,
+      "og_description": "You can read the original post in its original format on Rtask website by ThinkR here: Mock Them All: Simulate to Better Test with testthat Unit testing in R. You know, those small functions that ensure your code works flawlessly—even when you’re on vacation or writing new modules at 2 a.m. But let’s be honest: when it comes to testing user interactions or external resources, things can quickly turn into a headache. What do you do when your code requires a file selection dialog or This post is better presented on its original ThinkR website here: Mock Them All: Simulate to Better Test with testthat",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Mock Them All: Simulate to Better Test with testthat | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.3,
+      "sitemap_lastmod": null,
+      "twitter_description": "You can read the original post in its original format on Rtask website by ThinkR here: Mock Them All: Simulate to Better Test with testthat Unit testing in R. You know, those small functions that ensure your code works flawlessly—even when you’re on vacation or writing new modules at 2 a.m. But let’s be honest: when it comes to testing user interactions or external resources, things can quickly turn into a headache. What do you do when your code requires a file selection dialog or This post is better presented on its original ThinkR website here: Mock Them All: Simulate to Better Test with testthat",
+      "twitter_title": "Mock Them All: Simulate to Better Test with testthat | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/05/mock-them-all-simulate-to-better-test-with-testthat/",
+      "word_count": 855
+    }
+  }
+}

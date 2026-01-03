@@ -1,0 +1,134 @@
+{
+  "id": "ef20493a6fc995dd1a4234bf3938803c1a828320",
+  "url": "https://www.r-bloggers.com/2009/07/biomart/",
+  "created_at_utc": "2025-11-17T20:40:37Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "e3cbe56e-567b-45b9-881a-29ec6aa6997f",
+    "created_at": "2025-11-17 20:40:37",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/07/biomart/",
+      "crawled_at": "2025-11-17T10:31:00.278115",
+      "external_links": [
+        {
+          "href": "http://www.compbiome.com/2009/07/biomart.html",
+          "text": "compBiomeBlog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://www.bioconductor.org/",
+          "text": "Bioconductor"
+        },
+        {
+          "href": "http://www.perl.org/",
+          "text": "Perl"
+        },
+        {
+          "href": "http://www.biomart.org/",
+          "text": "BioMart"
+        },
+        {
+          "href": "http://www.ensembl.org/",
+          "text": "Ensembl"
+        },
+        {
+          "href": "http://www.geneontology.org/",
+          "text": "GO"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism",
+          "text": "SNPs"
+        },
+        {
+          "href": "http://www.bioconductor.org/packages/release/bioc/html/biomaRt.html",
+          "text": "http://www.bioconductor.org/packages/release/bioc/html/biomaRt.html"
+        },
+        {
+          "href": "http://www.compbiome.com/2009/07/biomart.html",
+          "text": "compBiomeBlog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "biomaRt | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/stewart-macarthur/",
+          "text": "Stewart MacArthur"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-134783 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">biomaRt</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 27, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/stewart-macarthur/\">Stewart MacArthur</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.compbiome.com/2009/07/biomart.html\"> compBiomeBlog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->I use <a href=\"http://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a> and <a href=\"http://www.bioconductor.org/\" rel=\"nofollow\" target=\"_blank\">Bioconductor</a> for most of my work. I am also increasingly replacing things I would have done before in <a href=\"http://www.perl.org/\" rel=\"nofollow\" target=\"_blank\">Perl</a> with R. One such example of this is the Bioconductor module biomaRt.<br/><br/>As the name suggest it allows for access to <a href=\"http://www.biomart.org/\" rel=\"nofollow\" target=\"_blank\">BioMart</a> via R. BioMart is a method of accessing large online databases such as <a href=\"http://www.ensembl.org/\" rel=\"nofollow\" target=\"_blank\">Ensembl</a>. For example you may want to convert gene IDs from Entrez to Symbols, or retrieve 5kb upstream from the transcription start site of a list of genes etc etc. There are lots of things you can do with it.<br/><br/>biomaRt lets you do all this via R. This is particular appealing to me as I do differential gene expression analysis in R, so I have lists of genes already in R objects which I can retrieve lots of information about.  Maybe I want all the <a href=\"http://www.geneontology.org/\" rel=\"nofollow\" target=\"_blank\">GO</a> annotations for a gene list, or to find a list of any <a href=\"https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism\" rel=\"nofollow\" target=\"_blank\">SNPs</a> within the coding region or something.<br/><br/>Anyway it is pretty useful, the documentation isn’t bad either.<br/><br/><a href=\"http://www.bioconductor.org/packages/release/bioc/html/biomaRt.html\" rel=\"nofollow\" target=\"_blank\">http://www.bioconductor.org/packages/release/bioc/html/biomaRt.html</a><br/><br/>To give a brief example of how it works:<br/><br/><blockquote style=\"font-family: courier new;\"><span style=\"font-size:85%;\">library(biomaRt)<br/>ids &lt;- c(\"7157\",\"3845\") ensembl = useMart(\"ensembl\", dataset = \"hsapiens_gene_ensembl\") seqs &lt;- getSequence(id = ids, type = \"entrezgene\", seqType = \"transcript_flank\", upstream = 5000, mart = ensembl) seqs &lt;- getSequence(id = ids, type = \"entrezgene\", seqType = \"transcript_flank\", upstream = 5000, mart = ensembl) exportFASTA(sequences=seqs,file=\"example.fas\") library(xtable) results &lt;- getGene(id=ids,type=\"entrezgene\",mart=ensembl) print(xtable(results),type=\"html\",file=\"Example.html\")  </span></blockquote>This code will retrieve 5kb upstream of the transcription start sites of the two genes listed in the ‘ids’ list (though this could be a much longer list). It will then generate an html output file with information about these genes. Simple and effective.<br/><br/>The functions<br/><ul><li>listAttributes(ensembl)</li><li>listFilters(ensembl)</li></ul>can be used to show the names of the things you can query and the things you can filter on.<br/><br/>You can also access lots of other databases, not just Ensemble as shown here.<br/><br/>Enjoy.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.compbiome.com/2009/07/biomart.html\"> compBiomeBlog</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "biomaRt\nPosted on\nJuly 27, 2009\nby\nStewart MacArthur\nin\nR bloggers\n| 0 Comments\n[This article was first published on\ncompBiomeBlog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI use\nR\nand\nBioconductor\nfor most of my work. I am also increasingly replacing things I would have done before in\nPerl\nwith R. One such example of this is the Bioconductor module biomaRt.\nAs the name suggest it allows for access to\nBioMart\nvia R. BioMart is a method of accessing large online databases such as\nEnsembl\n. For example you may want to convert gene IDs from Entrez to Symbols, or retrieve 5kb upstream from the transcription start site of a list of genes etc etc. There are lots of things you can do with it.\nbiomaRt lets you do all this via R. This is particular appealing to me as I do differential gene expression analysis in R, so I have lists of genes already in R objects which I can retrieve lots of information about.  Maybe I want all the\nGO\nannotations for a gene list, or to find a list of any\nSNPs\nwithin the coding region or something.\nAnyway it is pretty useful, the documentation isn’t bad either.\nhttp://www.bioconductor.org/packages/release/bioc/html/biomaRt.html\nTo give a brief example of how it works:\nlibrary(biomaRt)\nids <- c(\"7157\",\"3845\") ensembl = useMart(\"ensembl\", dataset = \"hsapiens_gene_ensembl\") seqs <- getSequence(id = ids, type = \"entrezgene\", seqType = \"transcript_flank\", upstream = 5000, mart = ensembl) seqs <- getSequence(id = ids, type = \"entrezgene\", seqType = \"transcript_flank\", upstream = 5000, mart = ensembl) exportFASTA(sequences=seqs,file=\"example.fas\") library(xtable) results <- getGene(id=ids,type=\"entrezgene\",mart=ensembl) print(xtable(results),type=\"html\",file=\"Example.html\")\nThis code will retrieve 5kb upstream of the transcription start sites of the two genes listed in the ‘ids’ list (though this could be a much longer list). It will then generate an html output file with information about these genes. Simple and effective.\nThe functions\nlistAttributes(ensembl)\nlistFilters(ensembl)\ncan be used to show the names of the things you can query and the things you can filter on.\nYou can also access lots of other databases, not just Ensemble as shown here.\nEnjoy.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\ncompBiomeBlog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I use R and Bioconductor for most of my work. I am also increasingly replacing things I would have done before in Perl with R. One such example of this is the Bioconductor module biomaRt.As the name suggest it allows for access to BioMart via R. BioMart is a method of accessing large online databases such as Ensembl. For example you may want to convert gene IDs from Entrez to Symbols, or retrieve 5kb upstream from the transcription start site of a list of genes etc etc. There are lots of things you can do with it.biomaRt lets you do all this via R. This is particular appealing to me as I do differential gene expression analysis in R, so I have lists of genes already in R objects which I can retrieve lots of information about. Maybe I want all the GO annotations for a gene list, or to find a list of any SNPs within the coding region or something.Anyway it is pretty useful, the documentation isn't bad either.http://www.bioconductor.org/packages/release/bioc/html/biomaRt.htmlTo give a brief example of how it works:library(biomaRt)ids This code will retrieve 5kb upstream of the transcription start sites of the two genes listed in the 'ids' list (though this could be a much longer list). It will then generate an html output file with information about these genes. Simple and effective.The functionslistAttributes(ensembl)listFilters(ensembl)can be used to show the names of the things you can query and the things you can filter on.You can also access lots of other databases, not just Ensemble as shown here.Enjoy.",
+      "meta_keywords": null,
+      "og_description": "I use R and Bioconductor for most of my work. I am also increasingly replacing things I would have done before in Perl with R. One such example of this is the Bioconductor module biomaRt.As the name suggest it allows for access to BioMart via R. BioMart is a method of accessing large online databases such as Ensembl. For example you may want to convert gene IDs from Entrez to Symbols, or retrieve 5kb upstream from the transcription start site of a list of genes etc etc. There are lots of things you can do with it.biomaRt lets you do all this via R. This is particular appealing to me as I do differential gene expression analysis in R, so I have lists of genes already in R objects which I can retrieve lots of information about. Maybe I want all the GO annotations for a gene list, or to find a list of any SNPs within the coding region or something.Anyway it is pretty useful, the documentation isn't bad either.http://www.bioconductor.org/packages/release/bioc/html/biomaRt.htmlTo give a brief example of how it works:library(biomaRt)ids This code will retrieve 5kb upstream of the transcription start sites of the two genes listed in the 'ids' list (though this could be a much longer list). It will then generate an html output file with information about these genes. Simple and effective.The functionslistAttributes(ensembl)listFilters(ensembl)can be used to show the names of the things you can query and the things you can filter on.You can also access lots of other databases, not just Ensemble as shown here.Enjoy.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "biomaRt | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.4,
+      "sitemap_lastmod": "2009-07-28T13:27:12+00:00",
+      "twitter_description": "I use R and Bioconductor for most of my work. I am also increasingly replacing things I would have done before in Perl with R. One such example of this is the Bioconductor module biomaRt.As the name suggest it allows for access to BioMart via R. BioMart is a method of accessing large online databases such as Ensembl. For example you may want to convert gene IDs from Entrez to Symbols, or retrieve 5kb upstream from the transcription start site of a list of genes etc etc. There are lots of things you can do with it.biomaRt lets you do all this via R. This is particular appealing to me as I do differential gene expression analysis in R, so I have lists of genes already in R objects which I can retrieve lots of information about. Maybe I want all the GO annotations for a gene list, or to find a list of any SNPs within the coding region or something.Anyway it is pretty useful, the documentation isn't bad either.http://www.bioconductor.org/packages/release/bioc/html/biomaRt.htmlTo give a brief example of how it works:library(biomaRt)ids This code will retrieve 5kb upstream of the transcription start sites of the two genes listed in the 'ids' list (though this could be a much longer list). It will then generate an html output file with information about these genes. Simple and effective.The functionslistAttributes(ensembl)listFilters(ensembl)can be used to show the names of the things you can query and the things you can filter on.You can also access lots of other databases, not just Ensemble as shown here.Enjoy.",
+      "twitter_title": "biomaRt | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/07/biomart/",
+      "word_count": 471
+    }
+  }
+}

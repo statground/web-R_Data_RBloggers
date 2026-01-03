@@ -1,0 +1,157 @@
+{
+  "id": "1a965edf82b5d1d6505522516249ffbbb56287c8",
+  "url": "https://www.r-bloggers.com/2024/01/security-headers-for-shiny-applications/",
+  "created_at_utc": "2025-11-17T20:38:36Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "a6efa8e1-0a96-44d2-bdd3-a9cb2829d0d5",
+    "created_at": "2025-11-17 20:38:36",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2024/01/security-headers-for-shiny-applications/",
+      "crawled_at": "2025-11-17T09:18:47.740308",
+      "external_links": [
+        {
+          "href": "https://www.jumpingrivers.com/blog/shiny-security-server-headers/",
+          "text": "The Jumping Rivers Blog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.jumpingrivers.com/blog/shiny-security-server-headers/",
+          "text": null
+        },
+        {
+          "href": "https://github.com/jumpingrivers/serverheaders",
+          "text": "R\npackage"
+        },
+        {
+          "href": "https://jumpingrivers.com/",
+          "text": "jumpingrivers.com"
+        },
+        {
+          "href": "https://securityheaders.com/",
+          "text": "securityheaders.com"
+        },
+        {
+          "href": "https://www.jumpingrivers.com/",
+          "text": "jumpingrivers.com"
+        },
+        {
+          "href": "https://www.jumpingrivers.com/blog/content-security-policy-shiny-posit-connect/",
+          "text": "Content Security\nPolicies"
+        },
+        {
+          "href": "https://www.jumpingrivers.com/data-science/visualisation-and-dashboards/?utm_source=blog&utm_medium=banner&utm_campaign=2024-shiny-security-server-headers",
+          "text": "Shiny health check"
+        },
+        {
+          "href": "http://jumpingrivers.com/",
+          "text": "http://jumpingrivers.com"
+        },
+        {
+          "href": "https://github.com/jumpingrivers/serverheaders",
+          "text": "package"
+        },
+        {
+          "href": "https://github.com/hrbrmstr/hdrs",
+          "text": "hdrs"
+        },
+        {
+          "href": "https://www.jumpingrivers.com/blog/shiny-security-server-headers/",
+          "text": "original post"
+        },
+        {
+          "href": "https://www.jumpingrivers.com/blog/shiny-security-server-headers/",
+          "text": "The Jumping Rivers Blog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Security Headers for Shiny Applications | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.jumpingrivers.com/blog/shiny-security-server-headers/featured.png?w=400&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/the-jumping-rivers-blog/",
+          "text": "The Jumping Rivers Blog"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-381422 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Security Headers for Shiny Applications</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 11, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/the-jumping-rivers-blog/\">The Jumping Rivers Blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.jumpingrivers.com/blog/shiny-security-server-headers/\"> The Jumping Rivers Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>\n<a href=\"https://www.jumpingrivers.com/blog/shiny-security-server-headers/\">\n<img class=\"image-center\" data-lazy-src=\"https://i2.wp.com/www.jumpingrivers.com/blog/shiny-security-server-headers/featured.png?w=400&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:400px\"/><noscript><img class=\"image-center\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.jumpingrivers.com/blog/shiny-security-server-headers/featured.png?w=400&amp;ssl=1\" style=\"display: block; margin: auto;\"/></noscript>\n</a>\n</p>\n<!-- Just have \"Server header in a box on excel draw\" -->\n<p>Over the last few years, we have been performing audits on Posit\nset-ups, Shiny Applications and general R set-ups. One of our standard\nchecks is to examine the server headers of a Shiny Server. Numerous\nwebsites do this check for you, but as we have an R-based/Quarto\nworkflow, it was helpful to write a quick <a href=\"https://github.com/jumpingrivers/serverheaders\" rel=\"nofollow\" target=\"_blank\">R\npackage</a>.</p>\n<p>The package isn’t on CRAN, but is on the R-universe, so installing is\nstraightforward</p>\n<pre>install.packages(\"serverHeaders\",\n repos = c(\"https://jumpingrivers.r-universe.dev\",\n \"https://cloud.r-project.org\"))\n</pre><p>There are only a couple of exported functions. The core function is\n<code>check()</code>. As an example, let’s use\n<a href=\"https://jumpingrivers.com/\" rel=\"nofollow\" target=\"_blank\">jumpingrivers.com</a>.</p>\n<pre># check returns an invisible data frame of results\nserverHeaders::check(\"jumpingrivers.com\")\n## \n## ── Checking Server ──\n## \n## ✔ Status code: 301 → 301 → 200\n## ✔ SSL available\n## ✔ SSL redirection successful: http -&gt; https\n## ✔ content-security-policy: Policy present but not parsed\n## ✔ content-type: charset set\n## ✔ permissions-policy: Value present but not verified\n## ✔ referrer-policy: Acceptable setting found\n## ✔ strict-transport-security: max_age = 365 days and is greater than 1 year\n## ✔ x-content-type-options: Acceptable setting found\n## ✔ x-frame-options: Acceptable setting found\n</pre><p>The output to the console highlights key server headers that we are\ninterested in. Of course, the definition of <em>key</em> is open to a lot of\ndiscussion, but we just used\n<a href=\"https://securityheaders.com/\" rel=\"nofollow\" target=\"_blank\">securityheaders.com</a> for guidance.</p>\n<h3 id=\"comments-on-jumpingriverscom\">Comments on jumpingrivers.com</h3>\n<p>Before we go further, it’s worth noting that a few years ago we decided\nto move from WordPress to a static site generator – Hugo. We made this\ndecision based on</p>\n<ul>\n<li>static sites are faster;</li>\n<li>static sites are easier to maintain;</li>\n<li>our previous site (WordPress) had to be constantly updated; dealing\nwith numerous WordPress plugins always worried us – too much much for\nwhat is essentially a simple site.</li>\n</ul>\n<p>One of the significant consequences of having a static site is the\nattack surface is significantly reduced.</p>\n<h4 id=\"status-codes\">Status codes</h4>\n<p>The first header is the status code. You’re probably familiar with a\nstatus code of 200 indicating a successful request, and the dreaded 404\nindicating a missing page. However, when we look at\n<a href=\"https://www.jumpingrivers.com/\" rel=\"nofollow\" target=\"_blank\">jumpingrivers.com</a>, we actually got\nthree status codes: <code>301</code>, <code>301</code>, and then the magical <code>200</code>. This is\nfairly standard. What happens is that jumpingrivers.com is actually the\nsame as <code>http://jumpingrivers.com</code>. This redirects (code <code>301</code>) to\n<code>https://jumpingrivers.com</code> which redirects to\n<code>https://www.jumpingrivers.com</code></p>\n<p>A “bad” site, wouldn’t redirect to the “https” version.</p>\n<h4 id=\"content-security-policy\">Content security policy</h4>\n<p>We’ve covered <a href=\"https://www.jumpingrivers.com/blog/content-security-policy-shiny-posit-connect/\" rel=\"nofollow\" target=\"_blank\">Content Security\nPolicies</a>\n(or CSP) in previous blog posts. By being explicit about where external\nresources are loaded from, e.g. Javascript, it gives applications an\nextra layer of security.</p>\n<p>For example, we can state that Javascript can only be loaded from\njumpingrivers.com and example.com. Any JavaScript resource that is\nloaded from another site is automatically blocked by the browser. This\nsafeguards against attacks such as cross-site scripting.</p>\n<p>As jumpingrivers.com is a static site (we use Hugo), we don’t need to\nworry about cross-site scripting quite as much; it’s probably overkill.\nHowever, adding CSP to our site has highlighted exactly where we load\nexternal resources from and has encouraged us to keep resources local\nwhere possible.</p>\n<h4 id=\"permissions-policy\">Permissions policy</h4>\n<p>Permissions policy is similar to CSPs. Essentially, we specify the\nresources we would load on our website. For example, would we expect to\nuse a camera or microphone? Again, for our static site this is overkill,\nbut for a Shiny application it’s certainly something you should\nconsider.</p>\n<hr>\n<p>\nWant to ensure that your application or dashboard follows the latest standards? You might benefit from our <a href=\"https://www.jumpingrivers.com/data-science/visualisation-and-dashboards/?utm_source=blog&amp;utm_medium=banner&amp;utm_campaign=2024-shiny-security-server-headers\" rel=\"nofollow\" target=\"_blank\">Shiny health check</a>.\n</p>\n<hr/>\n<h4 id=\"referrer-policy\">Referrer policy</h4>\n<p>When someone clicks a link on a site that takes them to another domain,\nthe destination site receives information about where that user came\nfrom. This is how we get website analytics about our site traffic.</p>\n<p>This isn’t too important for a site like jumpingrivers.com as we don’t\nhave anything private on our site – everything is open to the world!\nHowever, if your URL contains potentially private information that you\ndon’t want to be leaked, e.g. example.com/private-info then you should\nset the Referrer Policy.</p>\n<p>For jumpingrivers.com, we set it to <code>no-referrer-when-downgrade</code>. This\nmeans when going from https to http, we won’t send the referrer header.\nOther than that, we’ll send the full path.</p>\n<h4 id=\"strict-transport-security\">Strict transport security</h4>\n<p>This header informs browsers that a site should only be accessed using\nHTTPS. Once set, any future visits will automatically convert http to\nhttps. Remember, from the status code, that typing jumpingrivers.com\ninto a browser, the URL automatically resolves to\n<a href=\"http://jumpingrivers.com/\" rel=\"nofollow\" target=\"_blank\">http://jumpingrivers.com</a>, so this (after the first visit) tightens up\nthis issue.</p>\n<h4 id=\"x-content-type-options\">X content type options</h4>\n<p>This stops a browser from trying to MIME-sniff the content type. This\nshould be set to <code>x-content-type-options: nosniff</code>.</p>\n<h4 id=\"x-frame-options\">X frame options</h4>\n<p>This tells the browser whether or not you want to allow your site to be\nframed. At jumpingrivers.com this is set to <code>DENY</code>.</p>\n<h3 id=\"shiny-servers\">Shiny servers</h3>\n<p>The {serverHeaders} package checks common security related headers.\nThere are certainly others, but the headers described above are\ncertainly the important one. Many Shiny applications we work with\ncontain sensitive data, help make business critical decisions and/or are\nfundamental to a business process. As such, spending some time securing\nyour server is to be recommended (a little bit of understatement here).</p>\n<h3 id=\"acknowlegements\">Acknowlegements</h3>\n<p>This <a href=\"https://github.com/jumpingrivers/serverheaders\" rel=\"nofollow\" target=\"_blank\">package</a> is based\non a package originally created by Bob Rudis –\n<a href=\"https://github.com/hrbrmstr/hdrs\" rel=\"nofollow\" target=\"_blank\">hdrs</a>.</p>\n<p>\nFor updates and revisions to this article, see the <a href=\"https://www.jumpingrivers.com/blog/shiny-security-server-headers/\">original post</a>\n</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.jumpingrivers.com/blog/shiny-security-server-headers/\"> The Jumping Rivers Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </hr></div>\n</article>",
+      "main_text": "Security Headers for Shiny Applications\nPosted on\nJanuary 11, 2024\nby\nThe Jumping Rivers Blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThe Jumping Rivers Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nOver the last few years, we have been performing audits on Posit\nset-ups, Shiny Applications and general R set-ups. One of our standard\nchecks is to examine the server headers of a Shiny Server. Numerous\nwebsites do this check for you, but as we have an R-based/Quarto\nworkflow, it was helpful to write a quick\nR\npackage\n.\nThe package isn’t on CRAN, but is on the R-universe, so installing is\nstraightforward\ninstall.packages(\"serverHeaders\",\n repos = c(\"https://jumpingrivers.r-universe.dev\",\n \"https://cloud.r-project.org\"))\nThere are only a couple of exported functions. The core function is\ncheck()\n. As an example, let’s use\njumpingrivers.com\n.\n# check returns an invisible data frame of results\nserverHeaders::check(\"jumpingrivers.com\")\n## \n## ── Checking Server ──\n## \n## ✔ Status code: 301 → 301 → 200\n## ✔ SSL available\n## ✔ SSL redirection successful: http -> https\n## ✔ content-security-policy: Policy present but not parsed\n## ✔ content-type: charset set\n## ✔ permissions-policy: Value present but not verified\n## ✔ referrer-policy: Acceptable setting found\n## ✔ strict-transport-security: max_age = 365 days and is greater than 1 year\n## ✔ x-content-type-options: Acceptable setting found\n## ✔ x-frame-options: Acceptable setting found\nThe output to the console highlights key server headers that we are\ninterested in. Of course, the definition of\nkey\nis open to a lot of\ndiscussion, but we just used\nsecurityheaders.com\nfor guidance.\nComments on jumpingrivers.com\nBefore we go further, it’s worth noting that a few years ago we decided\nto move from WordPress to a static site generator – Hugo. We made this\ndecision based on\nstatic sites are faster;\nstatic sites are easier to maintain;\nour previous site (WordPress) had to be constantly updated; dealing\nwith numerous WordPress plugins always worried us – too much much for\nwhat is essentially a simple site.\nOne of the significant consequences of having a static site is the\nattack surface is significantly reduced.\nStatus codes\nThe first header is the status code. You’re probably familiar with a\nstatus code of 200 indicating a successful request, and the dreaded 404\nindicating a missing page. However, when we look at\njumpingrivers.com\n, we actually got\nthree status codes:\n301\n,\n301\n, and then the magical\n200\n. This is\nfairly standard. What happens is that jumpingrivers.com is actually the\nsame as\nhttp://jumpingrivers.com\n. This redirects (code\n301\n) to\nhttps://jumpingrivers.com\nwhich redirects to\nhttps://www.jumpingrivers.com\nA “bad” site, wouldn’t redirect to the “https” version.\nContent security policy\nWe’ve covered\nContent Security\nPolicies\n(or CSP) in previous blog posts. By being explicit about where external\nresources are loaded from, e.g. Javascript, it gives applications an\nextra layer of security.\nFor example, we can state that Javascript can only be loaded from\njumpingrivers.com and example.com. Any JavaScript resource that is\nloaded from another site is automatically blocked by the browser. This\nsafeguards against attacks such as cross-site scripting.\nAs jumpingrivers.com is a static site (we use Hugo), we don’t need to\nworry about cross-site scripting quite as much; it’s probably overkill.\nHowever, adding CSP to our site has highlighted exactly where we load\nexternal resources from and has encouraged us to keep resources local\nwhere possible.\nPermissions policy\nPermissions policy is similar to CSPs. Essentially, we specify the\nresources we would load on our website. For example, would we expect to\nuse a camera or microphone? Again, for our static site this is overkill,\nbut for a Shiny application it’s certainly something you should\nconsider.\nWant to ensure that your application or dashboard follows the latest standards? You might benefit from our\nShiny health check\n.\nReferrer policy\nWhen someone clicks a link on a site that takes them to another domain,\nthe destination site receives information about where that user came\nfrom. This is how we get website analytics about our site traffic.\nThis isn’t too important for a site like jumpingrivers.com as we don’t\nhave anything private on our site – everything is open to the world!\nHowever, if your URL contains potentially private information that you\ndon’t want to be leaked, e.g. example.com/private-info then you should\nset the Referrer Policy.\nFor jumpingrivers.com, we set it to\nno-referrer-when-downgrade\n. This\nmeans when going from https to http, we won’t send the referrer header.\nOther than that, we’ll send the full path.\nStrict transport security\nThis header informs browsers that a site should only be accessed using\nHTTPS. Once set, any future visits will automatically convert http to\nhttps. Remember, from the status code, that typing jumpingrivers.com\ninto a browser, the URL automatically resolves to\nhttp://jumpingrivers.com\n, so this (after the first visit) tightens up\nthis issue.\nX content type options\nThis stops a browser from trying to MIME-sniff the content type. This\nshould be set to\nx-content-type-options: nosniff\n.\nX frame options\nThis tells the browser whether or not you want to allow your site to be\nframed. At jumpingrivers.com this is set to\nDENY\n.\nShiny servers\nThe {serverHeaders} package checks common security related headers.\nThere are certainly others, but the headers described above are\ncertainly the important one. Many Shiny applications we work with\ncontain sensitive data, help make business critical decisions and/or are\nfundamental to a business process. As such, spending some time securing\nyour server is to be recommended (a little bit of understatement here).\nAcknowlegements\nThis\npackage\nis based\non a package originally created by Bob Rudis –\nhdrs\n.\nFor updates and revisions to this article, see the\noriginal post\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThe Jumping Rivers Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Over the last few years, we have been performing audits on Posit set-ups, Shiny Applications and general R set-ups. One of our standard checks is to examine the server headers of a Shiny Server. Numerous websites do this check for you, but as we...",
+      "meta_keywords": null,
+      "og_description": "Over the last few years, we have been performing audits on Posit set-ups, Shiny Applications and general R set-ups. One of our standard checks is to examine the server headers of a Shiny Server. Numerous websites do this check for you, but as we...",
+      "og_image": "https://www.jumpingrivers.com/blog/shiny-security-server-headers/featured.png",
+      "og_title": "Security Headers for Shiny Applications | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.4,
+      "sitemap_lastmod": "2024-01-11T23:59:00+00:00",
+      "twitter_description": "Over the last few years, we have been performing audits on Posit set-ups, Shiny Applications and general R set-ups. One of our standard checks is to examine the server headers of a Shiny Server. Numerous websites do this check for you, but as we...",
+      "twitter_title": "Security Headers for Shiny Applications | R-bloggers",
+      "url": "https://www.r-bloggers.com/2024/01/security-headers-for-shiny-applications/",
+      "word_count": 1078
+    }
+  }
+}

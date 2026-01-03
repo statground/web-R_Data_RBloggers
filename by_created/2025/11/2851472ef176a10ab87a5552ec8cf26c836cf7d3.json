@@ -1,0 +1,999 @@
+{
+  "id": "2851472ef176a10ab87a5552ec8cf26c836cf7d3",
+  "url": "https://www.r-bloggers.com/2025/05/april-2025-top-40-new-cran-packages/",
+  "created_at_utc": "2025-11-22T19:58:28Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "94c80a02-be0a-497d-a973-b009bd6302be",
+    "created_at": "2025-11-22 19:58:28",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/05/april-2025-top-40-new-cran-packages/",
+      "crawled_at": "2025-11-22T10:48:07.423261",
+      "external_links": [
+        {
+          "href": "https://rworks.dev/posts/april-2025-top-40-new-cran-packages/",
+          "text": "R Works"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=ananke",
+          "text": "ananke"
+        },
+        {
+          "href": "https://packages.tesselle.org/ananke/",
+          "text": "here"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ananke.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=emend",
+          "text": "emend"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/emend/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=PacketLLM",
+          "text": "PacketLLM"
+        },
+        {
+          "href": "https://platform.openai.com/docs/api-reference/introduction",
+          "text": "OpenAI"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/PacketLLM/vignettes/PacketLLM-introduction.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=pangoling",
+          "text": "pangoling"
+        },
+        {
+          "href": "https://huggingface.co/",
+          "text": "Hugging Face"
+        },
+        {
+          "href": "https://storage.prod.researchhub.com/uploads/papers/2020/06/01/language-models.pdf",
+          "text": "Radford et al. (2019)"
+        },
+        {
+          "href": "https://arxiv.org/abs/1810.04805",
+          "text": "Devlin et al. (2019)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pangoling/vignettes/intro-bert.html",
+          "text": "Using BERT"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pangoling/vignettes/intro-gpt2.html",
+          "text": "Using GPT2"
+        },
+        {
+          "href": "https://cran.r-project.org/package=clockSim",
+          "text": "clockSim"
+        },
+        {
+          "href": "https://journals.sagepub.com/doi/10.1177/074873098128999934",
+          "text": "Leloup and Goldbeter (1998)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/clockSim/vignettes/noisy-LG-model.html",
+          "text": "noisy LG model"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/clockSim.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=PhotoGEA",
+          "text": "PhotoGEA"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/PhotoGEA/vignettes/PhotoGEA.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/PhotoGEA.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=puff",
+          "text": "puff"
+        },
+        {
+          "href": "https://chemrxiv.org/engage/chemrxiv/article-details/672a296b7be152b1d00fcc60",
+          "text": "Jia et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/puff/vignettes/getting-started.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/puff.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=connector",
+          "text": "connector"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/connector/vignettes/connector.html",
+          "text": "connector"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/connector/vignettes/customize.html",
+          "text": "How to extend connector"
+        },
+        {
+          "href": "https://cran.r-project.org/package=verdata",
+          "text": "verdata"
+        },
+        {
+          "href": "https://www.jstatsoft.org/article/view/v045i03",
+          "text": "Van Buuren and Groothuis-Oudshoorn (2011)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/verdata/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=RRgeo",
+          "text": "RRgeo"
+        },
+        {
+          "href": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14478",
+          "text": "Mondanaro et al. (2023)"
+        },
+        {
+          "href": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14066",
+          "text": "Mondanaro et al. (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/RRgeo/vignettes/ENphylo.html",
+          "text": "ENphylo"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/RRgeo/vignettes/Preparing-Data.html",
+          "text": "Preparing Data"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/RRgeo.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=spotr",
+          "text": "spotr"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/pii/S1470160X25003656?via%3Dihub",
+          "text": "Knape (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/spotr/vignettes/spotr-intro.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/spotr.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=branchingprocess",
+          "text": "branchingprocess"
+        },
+        {
+          "href": "https://wwwnc.cdc.gov/eid/article/21/8/15-0170_article",
+          "text": "Toth et al. (2015)"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/pii/S1755436516300123?via%3Dihub",
+          "text": "Toth et al. (2016)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/branchingprocess/vignettes/H5N1Example.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=simBKMRdata",
+          "text": "simBKMRdata"
+        },
+        {
+          "href": "https://www.medrxiv.org/content/10.1101/2025.04.14.25325822v1",
+          "text": "Hasan et al. (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/simBKMRdata/vignettes/bkmr_threshold.html",
+          "text": "Calculate PIP Threshold from Response Vector"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/simBKMRdata/vignettes/estimation_and_simulation.html",
+          "text": "Simulation and Estimation"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/simBK.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=DeSciDe",
+          "text": "DeSciDe"
+        },
+        {
+          "href": "https://academic.oup.com/nar/article/51/D1/D638/6825349?login=false",
+          "text": "Szklarczyk et al. (2023)"
+        },
+        {
+          "href": "https://journal.r-project.org/archive/2017/RJ-2017-066/index.html",
+          "text": "Winter (2017)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/DeSciDe/vignettes/DeSciDe-vignette.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/DeSciDe.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=HTGM2D",
+          "text": "HTGM2D"
+        },
+        {
+          "href": "https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-4-4-r28",
+          "text": "GoMiner"
+        },
+        {
+          "href": "https://geneontology.org/",
+          "text": "GO"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/HTGM2D/vignettes/HTGM2D.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/HTGM2D.jpeg?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=geoprofiler",
+          "text": "geoprofiler"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/10.1002/mma.9823",
+          "text": "Schaeben et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/geoprofiler/vignettes/A_Distances.html",
+          "text": "Distances Along Oriented Profiles"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/geoprofiler/vignettes/B_Swath.html",
+          "text": "Swath Profiles"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/geoprofiler.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=tabs",
+          "text": "tabs"
+        },
+        {
+          "href": "https://preprints.arphahub.com/article/151900/",
+          "text": "De Groeve et al. (2025)"
+        },
+        {
+          "href": "https://uva_ibed_piac.gitlab.io/tabs/",
+          "text": "here"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tabs.gif?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=assertHE",
+          "text": "assertHE"
+        },
+        {
+          "href": "https://wellcomeopenresearch.org/articles/9-701/v1",
+          "text": "Smith et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/assertHE/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/assertHE.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=tlda",
+          "text": "tlda"
+        },
+        {
+          "href": "https://link.springer.com/chapter/10.1007/978-3-030-46216-1_5",
+          "text": "Gries (2021)"
+        },
+        {
+          "href": "https://www.euppublishing.com/doi/10.3366/cor.2025.0326",
+          "text": "Soenning (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/tlda/vignettes/dispersion-analysis.html",
+          "text": "Dispersion Analysis"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/tlda/vignettes/frequency-adjustment.html",
+          "text": "Frequency adjusted dispersion scores"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tlda.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=ClassificationEnsembles",
+          "text": "ClassificationEnsembles"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/ClassificationEnsembles/vignettes/ClassificationEnsembles-vignette.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=LogisticEnsembles",
+          "text": "LogisticEnsembles"
+        },
+        {
+          "href": "https://cran.r-project.org/package=NumericEnsembles",
+          "text": "NumericEnsembles"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/censemble.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=e2tree",
+          "text": "e2tree"
+        },
+        {
+          "href": "https://link.springer.com/article/10.1007/s00180-022-01312-6",
+          "text": "Aria et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/e2tree/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/e2tree.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=lsoda",
+          "text": "lsoda"
+        },
+        {
+          "href": "https://computing.llnl.gov/sites/default/files/ODEPACK_pub1_u88007.pdf",
+          "text": "Hindmarsh (1982)"
+        },
+        {
+          "href": "https://github.com/mclements/lsoda",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=MCSimMod",
+          "text": "MCSimMod"
+        },
+        {
+          "href": "https://academic.oup.com/bioinformatics/article/25/11/1453/330661?login=false",
+          "text": "Bois (2009)"
+        },
+        {
+          "href": "https://www.jstatsoft.org/article/view/v033i09",
+          "text": "Soetaert et al. (2010)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/MCSimMod/vignettes/quickstart.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/MCSimMod/vignettes/newt_cool_demo.html",
+          "text": "A Model of Newton’s Law of Cooling"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/MCSimMod.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=riemtan",
+          "text": "riemtan"
+        },
+        {
+          "href": "https://link.springer.com/article/10.1007/s11263-005-3222-z",
+          "text": "Pennec et al. (2006)"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/10.1002/mrm.20965",
+          "text": "Arsigny et al. (2006)"
+        },
+        {
+          "href": "https://epubs.siam.org/doi/10.1137/18M1221084",
+          "text": "see Lin (2019)"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/pii/S0723086918300021?via%3Dihub",
+          "text": "Bhatia et al. (2019)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/riemtan/vignettes/riemtan.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=neuroim2",
+          "text": "neuroim2"
+        },
+        {
+          "href": "https://www.cambridge.org/core/books/handbook-of-functional-mri-data-analysis/8EDF966C65811FCCC306F7C916228529",
+          "text": "Poldrack et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/neuroim2/vignettes/ImageVolumes.html",
+          "text": "Working with Image Volumes"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/neuroim2/vignettes/regionOfInterest.html",
+          "text": "Regions of Interest"
+        },
+        {
+          "href": "https://cran.r-project.org/package=NHSRwaitinglist",
+          "text": "NHSRwaitinglist"
+        },
+        {
+          "href": "https://www.medrxiv.org/content/10.1101/2022.08.23.22279117v1",
+          "text": "Fong et al. (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/NHSRwaitinglist/vignettes/three_example_waiting_lists.html",
+          "text": "Three example waiting lists"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/NHSRwaitinglist/vignettes/waiting_list_sim.html",
+          "text": "Exploring with Simulation"
+        },
+        {
+          "href": "https://cran.r-project.org/package=ernm",
+          "text": "ernm"
+        },
+        {
+          "href": "https://arxiv.org/abs/1208.0121",
+          "text": "Fellows and Handcock (2012)"
+        },
+        {
+          "href": "https://cran.r-project.org/package=IRTM",
+          "text": "IRTM"
+        },
+        {
+          "href": "https://www.cambridge.org/core/journals/american-political-science-review/article/measurement-that-matches-theory-theorydriven-identification-in-item-response-theory-models/395DA1DFE3DCD7B866DC053D7554A30B",
+          "text": "Morucci et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/IRTM/vignettes/introduction_synth.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=RStanTVA",
+          "text": "RStanTVA"
+        },
+        {
+          "href": "https://psycnet.apa.org/doiLanding?doi=10.1037%2F0033-295X.97.4.523",
+          "text": "Bundesen (1990)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/RStanTVA/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=ctsmTMB",
+          "text": "ctsmTMB"
+        },
+        {
+          "href": "https://ctsm.info/ctsmr-reference.pdf",
+          "text": "documentation"
+        },
+        {
+          "href": "https://arxiv.org/abs/2503.21358",
+          "text": "Thygesen (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/ctsmTMB/vignettes/ctsmTMB.html",
+          "text": "Getting Started"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/ctsmTMB/vignettes/predict.html",
+          "text": "Moment Predictions"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ctsmTMB.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=fitdistcp",
+          "text": "fitdistcp"
+        },
+        {
+          "href": "https://ascmo.copernicus.org/articles/11/1/2025/",
+          "text": "Jewson et al. (2024)"
+        },
+        {
+          "href": "https://www.fitdistcp.info/index.html",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=funMoDisco",
+          "text": "funMoDisco"
+        },
+        {
+          "href": "https://www.tandfonline.com/doi/full/10.1080/10618600.2022.2156522",
+          "text": "Cremona and Chiaromonte (2023)"
+        },
+        {
+          "href": "https://arxiv.org/abs/2306.04254",
+          "text": "Cremona, and Chiaromonte (2023)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/funMoDisco/vignettes/funMoDisco_vignette.pdf",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/funMo.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=hdMTD",
+          "text": "hdMTD"
+        },
+        {
+          "href": "https://www.image.ucar.edu/staff/uli/DOWNLOAD/ps_notes.pdf",
+          "text": "perfect sampling algorithm"
+        },
+        {
+          "href": "http://jmlr.org/papers/v24/22-0266.html",
+          "text": "Ost & Takahashi (2023)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/hdMTD/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=joker",
+          "text": "joker"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/joker/vignettes/joker.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=postcard",
+          "text": "postcard"
+        },
+        {
+          "href": "https://arxiv.org/abs/2503.22284",
+          "text": "Højbjerre-Frandsen et al. (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/postcard/vignettes/postcard.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/postcard/vignettes/prospective-power.html",
+          "text": "Prospective Power Estimation"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/postcard.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=tvcure",
+          "text": "tvcure"
+        },
+        {
+          "href": "https://academic.oup.com/jrsssa/advance-article/doi/10.1093/jrsssa/qnaf035/8098090?login=false",
+          "text": "Lambert and Kreyenfeld (2025)"
+        },
+        {
+          "href": "https://github.com/plambertULiege/tvcure",
+          "text": "here"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tvcure.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=butterfly",
+          "text": "butterfly"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/butterfly/vignettes/butterfly.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/butterfly.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=tsissm",
+          "text": "tsissm"
+        },
+        {
+          "href": "https://www.tandfonline.com/doi/abs/10.1198/jasa.2011.tm09771",
+          "text": "Hyndman et al. (2012)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/tsissm/vignettes/issm_introduction.pdf",
+          "text": "The Innovations State Space Model"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/tsissm/vignettes/demo_filtering.html",
+          "text": "Filtering and Prediction"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tsissm.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=%20v0.2.0",
+          "text": "cheetahR"
+        },
+        {
+          "href": "https://github.com/future-architect/cheetah-grid",
+          "text": "Cheetah Grid"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/cheetahR/vignettes/cheetahR.html",
+          "text": "Get Started"
+        },
+        {
+          "href": "https://cran.r-project.org/package=whirl",
+          "text": "whirl"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/whirl/vignettes/whirl.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=vayr",
+          "text": "vayr"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/vayr/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/vayr.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://rworks.dev/posts/april-2025-top-40-new-cran-packages/",
+          "text": "R Works"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "April 2025 Top 40 New CRAN Packages | R-bloggers",
+      "images": [
+        {
+          "alt": "Calibration plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Calibration plot",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ananke.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Noise plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Noise plot",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/clockSim.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of noe CO2 assimilation",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of noe CO2 assimilation",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/PhotoGEA.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Censor Plots",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Censor Plots",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/puff.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Map showing suitability for Ursus Maritimus",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Map showing suitability for Ursus Maritimus",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/RRgeo.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plots of indices of abundance",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots of indices of abundance",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/spotr.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Density Plots for Metals",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Density Plots for Metals",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/simBK.png?w=578&ssl=1"
+        },
+        {
+          "alt": "PubMed Search Results",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "PubMed Search Results",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/DeSciDe.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Heat Map of Gene Ontology",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Heat Map of Gene Ontology",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/HTGM2D.jpeg?w=578&ssl=1"
+        },
+        {
+          "alt": "Profile Plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Profile Plot",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/geoprofiler.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Coastline reconstruction",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Coastline reconstruction",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tabs.gif?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of function network",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of function network",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/assertHE.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of minimally even dispersion",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of minimally even dispersion",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tlda.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Accuracy plot of ensembles",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Accuracy plot of ensembles",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/censemble.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Ensemble Tree",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Ensemble Tree",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/e2tree.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of cooling over time",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of cooling over time",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/MCSimMod.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plots of posterior distributions",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots of posterior distributions",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/IRTM.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of forecast and actual data",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of forecast and actual data",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ctsmTMB.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of random curve motifs",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of random curve motifs",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/funMo.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plots of power curve approcimations",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots of power curve approcimations",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/postcard.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Survival plot and hazzard plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Survival plot and hazzard plot",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tvcure.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Illustration of continually updating timeseries",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Illustration of continually updating timeseries",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/butterfly.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of actual data and forecasts",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of actual data and forecasts",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tsissm.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plots with different aspect ratios",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots with different aspect ratios",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/vayr.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/joseph-rickert/",
+          "text": "Joseph Rickert"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392705 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">April 2025 Top 40 New CRAN Packages</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 27, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/joseph-rickert/\">Joseph Rickert</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/april-2025-top-40-new-cran-packages/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div class=\"columns\">\n<div class=\"column\" style=\"width:45%;\">\n<section class=\"level2\" id=\"archaeology\">\n<h2 class=\"anchored\" data-anchor-id=\"archaeology\">Archaeology</h2>\n<p><a href=\"https://cran.r-project.org/package=ananke\" rel=\"nofollow\" target=\"_blank\">ananke</a> v0.1.0: Implements tools for calibration of radiocarbon ages and modern carbon fraction values using multiple calibration curves. Functions calculate the highest density region intervals and credible intervals, and visualize results. Look <a href=\"https://packages.tesselle.org/ananke/\" rel=\"nofollow\" target=\"_blank\">here</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-1\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ananke.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Calibration plot\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ananke.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Calibration plot\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ananke.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"artificial-intelligence\">\n<h2 class=\"anchored\" data-anchor-id=\"artificial-intelligence\">Artificial Intelligence</h2>\n<p><a href=\"https://cran.r-project.org/package=emend\" rel=\"nofollow\" target=\"_blank\">emend</a> v0.1.0: Provides functions to clean and standardize messy data, including textual categories and free-text addresses, using Large Language Models. Functions correct typos, expand abbreviations, and map inconsistent entries to standardized values. Ideal for Bioinformatics, business, and general data cleaning tasks. See the <a href=\"https://cran.r-project.org/web/packages/emend/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a href=\"https://cran.r-project.org/package=PacketLLM\" rel=\"nofollow\" target=\"_blank\">PacketLLM</a> v0.1.0: Implements interactive <em>RStudio</em> gadget interface for communicating with <a href=\"https://platform.openai.com/docs/api-reference/introduction\" rel=\"nofollow\" target=\"_blank\"><em>OpenAI</em></a> LLMs e.g., <code>gpt-4o</code>, <code>gpt-4o-mini</code>, <code>gpt-4.1</code>, <code>o1</code>, and <code>o3-mini</code>, enabling users to conduct multiple chat conversations simultaneously in separate tabs. See the <a href=\"https://cran.r-project.org/web/packages/PacketLLM/vignettes/PacketLLM-introduction.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=pangoling\" rel=\"nofollow\" target=\"_blank\">pangoling</a> v1.0.3: Provides access to word predictability estimates using large language models (LLMs) based on <em>transformer</em> architectures via integration with the <a href=\"https://huggingface.co/\" rel=\"nofollow\" target=\"_blank\">Hugging Face</a> ecosystem. The package interfaces with pre-trained neural networks and supports both causal/auto-regressive LLMs (e.g., ‘GPT-2’) and masked/bidirectional LLMs (e.g., ‘BERT’) to compute the probability of words, phrases, or tokens given their linguistic context. For details on GPT-2 and causal models, see <a href=\"https://storage.prod.researchhub.com/uploads/papers/2020/06/01/language-models.pdf\" rel=\"nofollow\" target=\"_blank\">Radford et al. (2019)</a>. For details on BERT and masked models, see <a href=\"https://arxiv.org/abs/1810.04805\" rel=\"nofollow\" target=\"_blank\">Devlin et al. (2019)</a>. There are four vignettes, including <a href=\"https://cran.r-project.org/web/packages/pangoling/vignettes/intro-bert.html\" rel=\"nofollow\" target=\"_blank\">Using BERT</a> and <a href=\"https://cran.r-project.org/web/packages/pangoling/vignettes/intro-gpt2.html\" rel=\"nofollow\" target=\"_blank\">Using GPT2</a>.</p>\n</section>\n<section class=\"level2\" id=\"biology\">\n<h2 class=\"anchored\" data-anchor-id=\"biology\">Biology</h2>\n<p><a href=\"https://cran.r-project.org/package=clockSim\" rel=\"nofollow\" target=\"_blank\">clockSim</a> v0.1.2: Provides tools to open up system-level exploration of the circadian clock to wet-lab experimentalists. Current models are based on <a href=\"https://journals.sagepub.com/doi/10.1177/074873098128999934\" rel=\"nofollow\" target=\"_blank\">Leloup and Goldbeter (1998)</a>. There are three vignettes including [Simulation of the circadian clock]{https://cran.r-project.org/web/packages/clockSim/vignettes/clock-models.html) and <a href=\"https://cran.r-project.org/web/packages/clockSim/vignettes/noisy-LG-model.html\" rel=\"nofollow\" target=\"_blank\">noisy LG model</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-2\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/clockSim.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Noise plot\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/clockSim.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Noise plot\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/clockSim.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"chemistry\">\n<h2 class=\"anchored\" data-anchor-id=\"chemistry\">Chemistry</h2>\n<p><a href=\"https://cran.r-project.org/package=PhotoGEA\" rel=\"nofollow\" target=\"_blank\">PhotoGEA</a> v1.3.2: Provides functions to read, process, fit, and analyze photosynthetic gas exchange measurements. See Lochocki, Salesse-Smith, &amp; McGrath (2025)](https://onlinelibrary.wiley.com/doi/10.1111/pce.15501) for background and the <a href=\"https://cran.r-project.org/web/packages/PhotoGEA/vignettes/PhotoGEA.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-3\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/PhotoGEA.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of noe CO2 assimilation\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/PhotoGEA.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of noe CO2 assimilation\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/PhotoGEA.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"climate\">\n<h2 class=\"anchored\" data-anchor-id=\"climate\">Climate</h2>\n<p><a href=\"https://cran.r-project.org/package=puff\" rel=\"nofollow\" target=\"_blank\">puff</a> v0.1.0: Provides functions to simulate the Gaussian puff forward atmospheric model in sensor (specific sensor coordinates) or grid (across the grid of a full oil and gas operations site) modes, following <a href=\"https://chemrxiv.org/engage/chemrxiv/article-details/672a296b7be152b1d00fcc60\" rel=\"nofollow\" target=\"_blank\">Jia et al. (2024)</a> and offers numerous visualization options, including static and animated, 2D and 3D, and a site map generator. See the <a href=\"https://cran.r-project.org/web/packages/puff/vignettes/getting-started.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-4\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/puff.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Censor Plots\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/puff.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Censor Plots\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/puff.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"data\">\n<h2 class=\"anchored\" data-anchor-id=\"data\">Data</h2>\n<p><a href=\"https://cran.r-project.org/package=connector\" rel=\"nofollow\" target=\"_blank\">connector</a> v0.1.1: Facilitates clinical research by providing a consistent interface for connecting to various data sources, including file systems and databases such as <em>ADAM</em> and <em>SDTM</em>. See the vignettes <a href=\"https://cran.r-project.org/web/packages/connector/vignettes/connector.html\" rel=\"nofollow\" target=\"_blank\">connector</a> and <a href=\"https://cran.r-project.org/web/packages/connector/vignettes/customize.html\" rel=\"nofollow\" target=\"_blank\">How to extend connector</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=verdata\" rel=\"nofollow\" target=\"_blank\">verdata</a> v1.0.0: Facilitates use and analysis of data about the armed conflict in Colombia resulting from the joint project between La Jurisdicción Especial para la Paz (JEP), La Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No repetición (CEV), and the Human Rights Data Analysis Group (HRDAG). The data are 100 replicates from a multiple imputation through chained equations as described in <a href=\"https://www.jstatsoft.org/article/view/v045i03\" rel=\"nofollow\" target=\"_blank\">Van Buuren and Groothuis-Oudshoorn (2011)</a>. See the <a href=\"https://cran.r-project.org/web/packages/verdata/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> to get started.</p>\n</section>\n<section class=\"level2\" id=\"ecology\">\n<h2 class=\"anchored\" data-anchor-id=\"ecology\">Ecology</h2>\n<p><a href=\"https://cran.r-project.org/package=RRgeo\" rel=\"nofollow\" target=\"_blank\">RRgeo</a> v0.0.3: Provides tools to perform accurate species distribution modeling for rare species. See <a href=\"https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14478\" rel=\"nofollow\" target=\"_blank\">Mondanaro et al. (2023)</a> and <a href=\"https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14066\" rel=\"nofollow\" target=\"_blank\">Mondanaro et al. (2025)</a> for background on finding the area of origin of species and past inter-species contact while considering climatic variability. There are four vignettes, including <a href=\"https://cran.r-project.org/web/packages/RRgeo/vignettes/ENphylo.html\" rel=\"nofollow\" target=\"_blank\">ENphylo</a> and <a href=\"https://cran.r-project.org/web/packages/RRgeo/vignettes/Preparing-Data.html\" rel=\"nofollow\" target=\"_blank\">Preparing Data</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-5\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/RRgeo.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Map showing suitability for Ursus Maritimus\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/RRgeo.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Map showing suitability for Ursus Maritimus\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/RRgeo.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=spotr\" rel=\"nofollow\" target=\"_blank\">spotr</a> v0.1.0: Provides functions to compute relative or absolute population trends across space and time using predictions from models fitted to ecological population abundance data, as described in <a href=\"https://www.sciencedirect.com/science/article/pii/S1470160X25003656?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Knape (2025)</a>. See the <a href=\"https://cran.r-project.org/web/packages/spotr/vignettes/spotr-intro.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-6\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/spotr.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plots of indices of abundance\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/spotr.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots of indices of abundance\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/spotr.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"epidemiology\">\n<h2 class=\"anchored\" data-anchor-id=\"epidemiology\">Epidemiology</h2>\n<p><a href=\"https://cran.r-project.org/package=branchingprocess\" rel=\"nofollow\" target=\"_blank\">branchingprocess</a> v0.1.0: Provides tools to quantify outbreak risk posed by individual importers of a transmissible pathogen and calculate probabilities of final outbreak size and generations of transmission. See <a href=\"https://wwwnc.cdc.gov/eid/article/21/8/15-0170_article\" rel=\"nofollow\" target=\"_blank\">Toth et al. (2015)</a> and <a href=\"https://www.sciencedirect.com/science/article/pii/S1755436516300123?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Toth et al. (2016)</a> for the theory and the <a href=\"https://cran.r-project.org/web/packages/branchingprocess/vignettes/H5N1Example.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for an example.</p>\n<p><a href=\"https://cran.r-project.org/package=simBKMRdata\" rel=\"nofollow\" target=\"_blank\">simBKMRdata</a> v0.3.1: Provides functions to support Bayesian Kernel Machine Regression analyses in environmental health research. It enables the simulation of realistic multivariate exposure data, estimation of distributional parameters by subgroup, and application of adaptive, data-driven thresholds for feature selection via Posterior Inclusion Probabilities. See <a href=\"https://www.medrxiv.org/content/10.1101/2025.04.14.25325822v1\" rel=\"nofollow\" target=\"_blank\">Hasan et al. (2025)</a>. There are three vignettes, including <a href=\"https://cran.r-project.org/web/packages/simBKMRdata/vignettes/bkmr_threshold.html\" rel=\"nofollow\" target=\"_blank\">Calculate PIP Threshold from Response Vector</a> and <a href=\"https://cran.r-project.org/web/packages/simBKMRdata/vignettes/estimation_and_simulation.html\" rel=\"nofollow\" target=\"_blank\">Simulation and Estimation</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-7\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/simBK.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Density Plots for Metals\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/simBK.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Density Plots for Metals\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/simBK.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"genomics\">\n<h2 class=\"anchored\" data-anchor-id=\"genomics\">Genomics</h2>\n<p><a href=\"https://cran.r-project.org/package=DeSciDe\" rel=\"nofollow\" target=\"_blank\">DeSciDe</a> v1.0.0: Facilitates genomic and proteomic data analysis by providing tools for unbiased PubMed searching, protein interaction network visualization, and comprehensive data summarization. See <a href=\"https://academic.oup.com/nar/article/51/D1/D638/6825349?login=false\" rel=\"nofollow\" target=\"_blank\">Szklarczyk et al. (2023)</a> and <a href=\"https://journal.r-project.org/archive/2017/RJ-2017-066/index.html\" rel=\"nofollow\" target=\"_blank\">Winter (2017)</a> for background and the <a href=\"https://cran.r-project.org/web/packages/DeSciDe/vignettes/DeSciDe-vignette.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-8\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/DeSciDe.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"PubMed Search Results\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/DeSciDe.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"PubMed Search Results\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/DeSciDe.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=HTGM2D\" rel=\"nofollow\" target=\"_blank\">HTGM2D</a> v1.1: Provides a two-dimensional heat map to be used with <a href=\"https://genomebiology.biomedcentral.com/articles/10.1186/gb-2003-4-4-r28\" rel=\"nofollow\" target=\"_blank\">GoMiner</a> for the ontological analysis of microarray and proteomics studies that leverage the Gene Ontology Consortium <a href=\"https://geneontology.org/\" rel=\"nofollow\" target=\"_blank\">GO</a> resource. The heat map reflects the Jaccard metric p-value for the number of genes in common for each corresponding pair. See the <a href=\"https://cran.r-project.org/web/packages/HTGM2D/vignettes/HTGM2D.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-9\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/HTGM2D.jpeg?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Heat Map of Gene Ontology\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/HTGM2D.jpeg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Heat Map of Gene Ontology\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/HTGM2D.jpeg?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"geoscience\">\n<h2 class=\"anchored\" data-anchor-id=\"geoscience\">Geoscience</h2>\n<p><a href=\"https://cran.r-project.org/package=geoprofiler\" rel=\"nofollow\" target=\"_blank\">geoprofiler</a> v0.0.2: Implements a tool set to create perpendicular profile graphs and swath profiles. Method is based on the coordinate rotation algorithm by <a href=\"https://onlinelibrary.wiley.com/doi/10.1002/mma.9823\" rel=\"nofollow\" target=\"_blank\">Schaeben et al. (2024)</a>. There are two vignettes: <a href=\"https://cran.r-project.org/web/packages/geoprofiler/vignettes/A_Distances.html\" rel=\"nofollow\" target=\"_blank\">Distances Along Oriented Profiles</a> and <a href=\"https://cran.r-project.org/web/packages/geoprofiler/vignettes/B_Swath.html\" rel=\"nofollow\" target=\"_blank\">Swath Profiles</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-10\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/geoprofiler.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Profile Plot\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/geoprofiler.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Profile Plot\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/geoprofiler.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=tabs\" rel=\"nofollow\" target=\"_blank\">tabs</a> v0.1.1: Implements a standardized workflow to reconstruct spatial configurations of altitude-bounded biogeographic systems over time; for example, model how island archipelagos expand or contract with changing sea levels or how alpine biomes shift in response to tree line movements. For details, see <a href=\"https://preprints.arphahub.com/article/151900/\" rel=\"nofollow\" target=\"_blank\">De Groeve et al. (2025)</a> and look <a href=\"https://uva_ibed_piac.gitlab.io/tabs/\" rel=\"nofollow\" target=\"_blank\">here</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-11\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tabs.gif?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Coastline reconstruction\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tabs.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Coastline reconstruction\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tabs.gif?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"health-technology-assessment\">\n<h2 class=\"anchored\" data-anchor-id=\"health-technology-assessment\">Health Technology Assessment</h2>\n<p><a href=\"https://cran.r-project.org/package=assertHE\" rel=\"nofollow\" target=\"_blank\">assertHE</a> v1.0.0: Provides tools to help health economic modelers when building and reviewing models. The visualization functions allow users to more easily review the network of functions in a project and get lay summaries of them. The asserts included are intended to check for common errors. See <a href=\"https://wellcomeopenresearch.org/articles/9-701/v1\" rel=\"nofollow\" target=\"_blank\">Smith et al. (2024)</a> for details and the <a href=\"https://cran.r-project.org/web/packages/assertHE/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-12\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/assertHE.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of function network\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/assertHE.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of function network\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/assertHE.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n</div><div class=\"column\" style=\"width:10%;\">\n</div><div class=\"column\" style=\"width:45%;\">\n<section class=\"level2\" id=\"linguistics\">\n<h2 class=\"anchored\" data-anchor-id=\"linguistics\">Linguistics</h2>\n<p><a href=\"https://cran.r-project.org/package=tlda\" rel=\"nofollow\" target=\"_blank\">tlda</a> v0.1.0: Provides support functions and datasets to facilitate the analysis of linguistic data with a focus on the calculation of corpus-linguistic dispersion measures as described in <a href=\"https://link.springer.com/chapter/10.1007/978-3-030-46216-1_5\" rel=\"nofollow\" target=\"_blank\">Gries (2021)</a> and <a href=\"https://www.euppublishing.com/doi/10.3366/cor.2025.0326\" rel=\"nofollow\" target=\"_blank\">Soenning (2025)</a>. See the vignettes <a href=\"https://cran.r-project.org/web/packages/tlda/vignettes/dispersion-analysis.html\" rel=\"nofollow\" target=\"_blank\">Dispersion Analysis</a> and <a href=\"https://cran.r-project.org/web/packages/tlda/vignettes/frequency-adjustment.html\" rel=\"nofollow\" target=\"_blank\">Frequency adjusted dispersion scores</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-13\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tlda.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of minimally even dispersion\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tlda.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of minimally even dispersion\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tlda.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"machine-learning\">\n<h2 class=\"anchored\" data-anchor-id=\"machine-learning\">Machine Learning</h2>\n<p><a href=\"https://cran.r-project.org/package=ClassificationEnsembles\" rel=\"nofollow\" target=\"_blank\">ClassificationEnsembles</a> v0.5.0: Automatically builds 12 individual classification models, including error (RMSE) and predictions. These results are used to create an ensemble, which is then modeled using eight methods. See the <a href=\"https://cran.r-project.org/web/packages/ClassificationEnsembles/vignettes/ClassificationEnsembles-vignette.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> and the two sister packages by the same author: <a href=\"https://cran.r-project.org/package=LogisticEnsembles\" rel=\"nofollow\" target=\"_blank\">LogisticEnsembles</a> and <a href=\"https://cran.r-project.org/package=NumericEnsembles\" rel=\"nofollow\" target=\"_blank\">NumericEnsembles</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-14\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/censemble.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Accuracy plot of ensembles\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/censemble.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Accuracy plot of ensembles\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/censemble.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=e2tree\" rel=\"nofollow\" target=\"_blank\">e2tree</a> v0.1.2: Implements the explainable ensemble trees ’approach proposed by <a href=\"https://link.springer.com/article/10.1007/s00180-022-01312-6\" rel=\"nofollow\" target=\"_blank\">Aria et al. (2024)</a>, which aims to explain and interpret decision tree ensemble models using a single tree-like structure. See the <a href=\"https://cran.r-project.org/web/packages/e2tree/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-15\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/e2tree.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Ensemble Tree\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/e2tree.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Ensemble Tree\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/e2tree.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"mathematics\">\n<h2 class=\"anchored\" data-anchor-id=\"mathematics\">Mathematics</h2>\n<p><a href=\"https://cran.r-project.org/package=lsoda\" rel=\"nofollow\" target=\"_blank\">lsoda</a> v1.2: Provides an implementation of the <code>lsoda</code> function from the <code>ODEPACK</code> library for solving initial value problems for first-order ordinary differential equations <a href=\"https://computing.llnl.gov/sites/default/files/ODEPACK_pub1_u88007.pdf\" rel=\"nofollow\" target=\"_blank\">Hindmarsh (1982)</a>, which can be called inline using <code>Rcpp</code>, and an <code>R</code> function, <code>ode</code>. Look <a href=\"https://github.com/mclements/lsoda\" rel=\"nofollow\" target=\"_blank\">here</a> for examples.</p>\n<p><a href=\"https://cran.r-project.org/package=MCSimMod\" rel=\"nofollow\" target=\"_blank\">MCSimMod</a> v0.0.1: Provides tools to facilitate ordinary differential equation (ODE) modeling by performing simulations for ODE models that are encoded in the GNU <code>MCSim</code> model specification language (<a href=\"https://academic.oup.com/bioinformatics/article/25/11/1453/330661?login=false\" rel=\"nofollow\" target=\"_blank\">Bois (2009)</a>) using ODE solvers from <code>deSolve</code> (<a href=\"https://www.jstatsoft.org/article/view/v033i09\" rel=\"nofollow\" target=\"_blank\">Soetaert et al. (2010)</a>). There are seven vignettes, including an <a href=\"https://cran.r-project.org/web/packages/MCSimMod/vignettes/quickstart.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and <a href=\"https://cran.r-project.org/web/packages/MCSimMod/vignettes/newt_cool_demo.html\" rel=\"nofollow\" target=\"_blank\">A Model of Newton’s Law of Cooling</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-16\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/MCSimMod.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of cooling over time\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/MCSimMod.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of cooling over time\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/MCSimMod.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=riemtan\" rel=\"nofollow\" target=\"_blank\">riemtan</a> v0.1.0: Implements various Riemannian metrics for symmetric positive definite matrices, including AIRM (Affine Invariant Riemannian Metric, see <a href=\"https://link.springer.com/article/10.1007/s11263-005-3222-z\" rel=\"nofollow\" target=\"_blank\">Pennec et al. (2006)</a>; Log-Euclidean, see <a href=\"https://onlinelibrary.wiley.com/doi/10.1002/mrm.20965\" rel=\"nofollow\" target=\"_blank\">Arsigny et al. (2006)</a>; Euclidean; Log-Cholesky. <a href=\"https://epubs.siam.org/doi/10.1137/18M1221084\" rel=\"nofollow\" target=\"_blank\">see Lin (2019)</a>; and Bures-Wasserstein metrics, see <a href=\"https://www.sciencedirect.com/science/article/pii/S0723086918300021?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Bhatia et al. (2019)</a>. It also provides functions for computing logarithmic and exponential maps, vectorization, and statistical operations on the manifold of positive definite matrices. See the <a href=\"https://cran.r-project.org/web/packages/riemtan/vignettes/riemtan.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n</section>\n<section class=\"level2\" id=\"medicine\">\n<h2 class=\"anchored\" data-anchor-id=\"medicine\">Medicine</h2>\n<p><a href=\"https://cran.r-project.org/package=neuroim2\" rel=\"nofollow\" target=\"_blank\">neuroim2</a> v0.8.1: Provides data structures and methods for handling volumetric brain imaging data, with a focus on functional magnetic resonance imaging (fMRI) and efficient representations for three-dimensional and four-dimensional neuroimaging data. Implements methods for image resampling, spatial filtering, region of interest analysis, and connected component labeling. See <a href=\"https://www.cambridge.org/core/books/handbook-of-functional-mri-data-analysis/8EDF966C65811FCCC306F7C916228529\" rel=\"nofollow\" target=\"_blank\">Poldrack et al. (2024)</a>. There are four vignettes, including <a href=\"https://cran.r-project.org/web/packages/neuroim2/vignettes/ImageVolumes.html\" rel=\"nofollow\" target=\"_blank\">Working with Image Volumes</a> and <a href=\"https://cran.r-project.org/web/packages/neuroim2/vignettes/regionOfInterest.html\" rel=\"nofollow\" target=\"_blank\">Regions of Interest</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=NHSRwaitinglist\" rel=\"nofollow\" target=\"_blank\">NHSRwaitinglist</a> v0.1.1: Provides queueing theory functions to assist with waiting list management based on the approach described in <a href=\"https://www.medrxiv.org/content/10.1101/2022.08.23.22279117v1\" rel=\"nofollow\" target=\"_blank\">Fong et al. (2022)</a>. There are three vignettes including <a href=\"https://cran.r-project.org/web/packages/NHSRwaitinglist/vignettes/three_example_waiting_lists.html\" rel=\"nofollow\" target=\"_blank\">Three example waiting lists</a> and <a href=\"https://cran.r-project.org/web/packages/NHSRwaitinglist/vignettes/waiting_list_sim.html\" rel=\"nofollow\" target=\"_blank\">Exploring with Simulation</a>.</p>\n</section>\n<section class=\"level2\" id=\"networks\">\n<h2 class=\"anchored\" data-anchor-id=\"networks\">Networks</h2>\n<p><a href=\"https://cran.r-project.org/package=ernm\" rel=\"nofollow\" target=\"_blank\">ernm</a> v1.0.0: Provides functions to estimate fully and partially observed Exponential-Family Random Network Models (ERNM). Exponential-family Random Graph Models (ERGM) and Gibbs Fields are special cases of ERNMs and can also be estimated with the package. See <a href=\"https://arxiv.org/abs/1208.0121\" rel=\"nofollow\" target=\"_blank\">Fellows and Handcock (2012)</a>.</p>\n</section>\n<section class=\"level2\" id=\"psychology\">\n<h2 class=\"anchored\" data-anchor-id=\"psychology\">Psychology</h2>\n<p><a href=\"https://cran.r-project.org/package=IRTM\" rel=\"nofollow\" target=\"_blank\">IRTM</a> v0.0.1.1: Implements a semi-supervised approach based on Bayesian Item Response Theory that produces theoretically identified underlying dimensions from input data and a constraints matrix. The methodology is described in <a href=\"https://www.cambridge.org/core/journals/american-political-science-review/article/measurement-that-matches-theory-theorydriven-identification-in-item-response-theory-models/395DA1DFE3DCD7B866DC053D7554A30B\" rel=\"nofollow\" target=\"_blank\">Morucci et al. (2024)</a>. See the <a href=\"https://cran.r-project.org/web/packages/IRTM/vignettes/introduction_synth.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><img alt=\"Plots of posterior distributions\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/IRTM.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots of posterior distributions\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/IRTM.png?w=578&amp;ssl=1\"/></noscript> <a href=\"https://cran.r-project.org/package=RStanTVA\" rel=\"nofollow\" target=\"_blank\">RStanTVA</a> v0.3.0: Provides a <code>Stan</code> implementation of the Theory of Visual Attention described in <a href=\"https://psycnet.apa.org/doiLanding?doi=10.1037%2F0033-295X.97.4.523\" rel=\"nofollow\" target=\"_blank\">Bundesen (1990)</a> along with numerous convenience functions for generating, compiling, fitting, and analyzing TVA models. See the <a href=\"https://cran.r-project.org/web/packages/RStanTVA/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n</section>\n<section class=\"level2\" id=\"statistics\">\n<h2 class=\"anchored\" data-anchor-id=\"statistics\">Statistics</h2>\n<p><a href=\"https://cran.r-project.org/package=ctsmTMB\" rel=\"nofollow\" target=\"_blank\">ctsmTMB</a> v1.0.0: Provides an interface for defining and fitting continuous-time state space models built with the <code>R6</code> ctsmTMB class. Available inter-inference methods include Kalman filters and a Laplace approximation-based smoothing method. For details on the methods, see the <a href=\"https://ctsm.info/ctsmr-reference.pdf\" rel=\"nofollow\" target=\"_blank\">documentation</a>) for the <code>CTSMR</code> package and <a href=\"https://arxiv.org/abs/2503.21358\" rel=\"nofollow\" target=\"_blank\">Thygesen (2025)</a>. There are six vignettes, including a <a href=\"https://cran.r-project.org/web/packages/ctsmTMB/vignettes/ctsmTMB.html\" rel=\"nofollow\" target=\"_blank\">Getting Started</a> guide and <a href=\"https://cran.r-project.org/web/packages/ctsmTMB/vignettes/predict.html\" rel=\"nofollow\" target=\"_blank\">Moment Predictions</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-17\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ctsmTMB.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of forecast and actual data\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ctsmTMB.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of forecast and actual data\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/ctsmTMB.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=fitdistcp\" rel=\"nofollow\" target=\"_blank\">fitdistcp</a> v0.1.1: Provides functions to generate predictive distributions based on calibrating priors for various commonly used statistical models, including models with predictors. Functions are provided for densities, probabilities, quantiles, random deviates, and the parameter posterior. Predictions are generated from the Bayesian prediction integral, with priors chosen to give good reliability (also known as calibration). See <a href=\"https://ascmo.copernicus.org/articles/11/1/2025/\" rel=\"nofollow\" target=\"_blank\">Jewson et al. (2024)</a> for background, and look <a href=\"https://www.fitdistcp.info/index.html\" rel=\"nofollow\" target=\"_blank\">here</a> for detailed documentation.</p>\n<p><a href=\"https://cran.r-project.org/package=funMoDisco\" rel=\"nofollow\" target=\"_blank\">funMoDisco</a> v1.0.0: Implements two complementary methodologies for discovering motifs in functional data: <em>ProbKMA</em>, a probabilistic K-Means algorithm (<a href=\"https://www.tandfonline.com/doi/full/10.1080/10618600.2022.2156522\" rel=\"nofollow\" target=\"_blank\">Cremona and Chiaromonte (2023)</a>), and <em>FunBIalign</em>, a hierarchical algorithm for functional motif discovery based on mean square residue (<a href=\"https://arxiv.org/abs/2306.04254\" rel=\"nofollow\" target=\"_blank\">Cremona, and Chiaromonte (2023)</a>). See the <a href=\"https://cran.r-project.org/web/packages/funMoDisco/vignettes/funMoDisco_vignette.pdf\" rel=\"nofollow\" target=\"_blank\">vignette</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-18\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/funMo.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of random curve motifs\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/funMo.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of random curve motifs\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/funMo.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=hdMTD\" rel=\"nofollow\" target=\"_blank\">hdMTD</a> v0.1.0: Provides functions to estimate parameters in Mixture Transition Distribution (MTD) models, a class of high-order Markov chains. Estimated parameters include pasts (lags), transition probabilities, and oscillations. A <a href=\"https://www.image.ucar.edu/staff/uli/DOWNLOAD/ps_notes.pdf\" rel=\"nofollow\" target=\"_blank\">perfect sampling algorithm</a> generates samples of an MTD model from its invariant distribution. See <a href=\"http://jmlr.org/papers/v24/22-0266.html\" rel=\"nofollow\" target=\"_blank\">Ost &amp; Takahashi (2023)</a> for the theory and the <a href=\"https://cran.r-project.org/web/packages/hdMTD/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a href=\"https://cran.r-project.org/package=joker\" rel=\"nofollow\" target=\"_blank\">joker</a> v0.14.2: Extends the range of available distribution families and facilitates the computation of key parametric quantities, such as moments and information-theoretic measures. All package features are available both in a stats-like syntax for entry-level users, and in an S4 object-oriented programming system for more experienced ones. See the <a href=\"https://cran.r-project.org/web/packages/joker/vignettes/joker.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=postcard\" rel=\"nofollow\" target=\"_blank\">postcard</a> v1.0.0: Provides functions to perform power analysis and inference on marginal effects using plug-in estimation and influence functions that optionally leverage historical data to increase precision with prognostic covariate adjustment. The methods are described in <a href=\"https://arxiv.org/abs/2503.22284\" rel=\"nofollow\" target=\"_blank\">Højbjerre-Frandsen et al. (2025)</a>. There are three vignettes, including an <a href=\"https://cran.r-project.org/web/packages/postcard/vignettes/postcard.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and <a href=\"https://cran.r-project.org/web/packages/postcard/vignettes/prospective-power.html\" rel=\"nofollow\" target=\"_blank\">Prospective Power Estimation</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-19\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/postcard.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plots of power curve approcimations\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/postcard.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots of power curve approcimations\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/postcard.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=tvcure\" rel=\"nofollow\" target=\"_blank\">tvcure</a> v0.1.0: Implements a double additive cure survival model with time-varying covariates. The additive terms in the long- and short-term survival submodels, modelling the cure probability and the event timing for susceptible units, are estimated using Laplace P-splines. See <a href=\"https://academic.oup.com/jrsssa/advance-article/doi/10.1093/jrsssa/qnaf035/8098090?login=false\" rel=\"nofollow\" target=\"_blank\">Lambert and Kreyenfeld (2025)</a> for details and look <a href=\"https://github.com/plambertULiege/tvcure\" rel=\"nofollow\" target=\"_blank\">here</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-20\" href=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tvcure.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Survival plot and hazzard plot\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tvcure.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Survival plot and hazzard plot\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tvcure.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"time-series\">\n<h2 class=\"anchored\" data-anchor-id=\"time-series\">Time Series</h2>\n<p><a href=\"https://cran.r-project.org/package=butterfly\" rel=\"nofollow\" target=\"_blank\">butterfly</a> v1.1.2: Provides functions to verify continually updating time series data where new values are expected, but previous data should remain unchanged. See the <a href=\"https://cran.r-project.org/web/packages/butterfly/vignettes/butterfly.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-21\" href=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/butterfly.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Illustration of continually updating timeseries\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/butterfly.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Illustration of continually updating timeseries\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/butterfly.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=tsissm\" rel=\"nofollow\" target=\"_blank\">tsissm</a> v1.0.1: Implements an unobserved components time series model using the linear innovations state space representation with a choice of error distributions and an option for dynamic variance. Features include automatic differentiation, automatic model selection and ensembling, prediction, filtering, simulation and backtesting. See <a href=\"https://www.tandfonline.com/doi/abs/10.1198/jasa.2011.tm09771\" rel=\"nofollow\" target=\"_blank\">Hyndman et al. (2012)</a> for background. There are five vignettes, including <a href=\"https://cran.r-project.org/web/packages/tsissm/vignettes/issm_introduction.pdf\" rel=\"nofollow\" target=\"_blank\">The Innovations State Space Model</a> and <a href=\"https://cran.r-project.org/web/packages/tsissm/vignettes/demo_filtering.html\" rel=\"nofollow\" target=\"_blank\">Filtering and Prediction</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-22\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tsissm.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of actual data and forecasts\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tsissm.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of actual data and forecasts\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/tsissm.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"utilities\">\n<h2 class=\"anchored\" data-anchor-id=\"utilities\">Utilities</h2>\n<p><a href=\"https://cran.r-project.org/package=%20v0.2.0\" rel=\"nofollow\" target=\"_blank\">cheetahR</a>: Provides an interface to <a href=\"https://github.com/future-architect/cheetah-grid\" rel=\"nofollow\" target=\"_blank\">Cheetah Grid</a>, a high-performance JavaScript table widget. See <a href=\"https://cran.r-project.org/web/packages/cheetahR/vignettes/cheetahR.html\" rel=\"nofollow\" target=\"_blank\">Get Started</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=whirl\" rel=\"nofollow\" target=\"_blank\">whirl</a> v0.2.0: Enables execution of scripts in batch, while simultaneously creating logs for the execution of each script, and providing an overview summary log of the entire batch execution. The package is suitable for clinical trials using <code>Quarto</code> to create nice human-readable logs. See the <a href=\"https://cran.r-project.org/web/packages/whirl/vignettes/whirl.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n</section>\n<section class=\"level2\" id=\"visualization\">\n<h2 class=\"anchored\" data-anchor-id=\"visualization\">Visualization</h2>\n<p><a href=\"https://cran.r-project.org/package=vayr\" rel=\"nofollow\" target=\"_blank\">vayr</a> v1.0.0: Implements position adjustment “visualize as you randomize” principles for <code>ggplot2</code>, which can be especially useful when plotting experimental data. See <a href=\"https://cran.r-project.org/web/packages/vayr/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-23\" href=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/vayr.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plots with different aspect ratios\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/vayr.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots with different aspect ratios\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/april-2025-top-40-new-cran-packages/vayr.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/april-2025-top-40-new-cran-packages/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "April 2025 Top 40 New CRAN Packages\nPosted on\nMay 27, 2025\nby\nJoseph Rickert\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nArchaeology\nananke\nv0.1.0: Implements tools for calibration of radiocarbon ages and modern carbon fraction values using multiple calibration curves. Functions calculate the highest density region intervals and credible intervals, and visualize results. Look\nhere\nfor examples.\nArtificial Intelligence\nemend\nv0.1.0: Provides functions to clean and standardize messy data, including textual categories and free-text addresses, using Large Language Models. Functions correct typos, expand abbreviations, and map inconsistent entries to standardized values. Ideal for Bioinformatics, business, and general data cleaning tasks. See the\nREADME\nfor examples.\nPacketLLM\nv0.1.0: Implements interactive\nRStudio\ngadget interface for communicating with\nOpenAI\nLLMs e.g.,\ngpt-4o\n,\ngpt-4o-mini\n,\ngpt-4.1\n,\no1\n, and\no3-mini\n, enabling users to conduct multiple chat conversations simultaneously in separate tabs. See the\nvignette\n.\npangoling\nv1.0.3: Provides access to word predictability estimates using large language models (LLMs) based on\ntransformer\narchitectures via integration with the\nHugging Face\necosystem. The package interfaces with pre-trained neural networks and supports both causal/auto-regressive LLMs (e.g., ‘GPT-2’) and masked/bidirectional LLMs (e.g., ‘BERT’) to compute the probability of words, phrases, or tokens given their linguistic context. For details on GPT-2 and causal models, see\nRadford et al. (2019)\n. For details on BERT and masked models, see\nDevlin et al. (2019)\n. There are four vignettes, including\nUsing BERT\nand\nUsing GPT2\n.\nBiology\nclockSim\nv0.1.2: Provides tools to open up system-level exploration of the circadian clock to wet-lab experimentalists. Current models are based on\nLeloup and Goldbeter (1998)\n. There are three vignettes including [Simulation of the circadian clock]{https://cran.r-project.org/web/packages/clockSim/vignettes/clock-models.html) and\nnoisy LG model\n.\nChemistry\nPhotoGEA\nv1.3.2: Provides functions to read, process, fit, and analyze photosynthetic gas exchange measurements. See Lochocki, Salesse-Smith, & McGrath (2025)](https://onlinelibrary.wiley.com/doi/10.1111/pce.15501) for background and the\nvignette\nto get started.\nClimate\npuff\nv0.1.0: Provides functions to simulate the Gaussian puff forward atmospheric model in sensor (specific sensor coordinates) or grid (across the grid of a full oil and gas operations site) modes, following\nJia et al. (2024)\nand offers numerous visualization options, including static and animated, 2D and 3D, and a site map generator. See the\nvignette\nto get started.\nData\nconnector\nv0.1.1: Facilitates clinical research by providing a consistent interface for connecting to various data sources, including file systems and databases such as\nADAM\nand\nSDTM\n. See the vignettes\nconnector\nand\nHow to extend connector\n.\nverdata\nv1.0.0: Facilitates use and analysis of data about the armed conflict in Colombia resulting from the joint project between La Jurisdicción Especial para la Paz (JEP), La Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No repetición (CEV), and the Human Rights Data Analysis Group (HRDAG). The data are 100 replicates from a multiple imputation through chained equations as described in\nVan Buuren and Groothuis-Oudshoorn (2011)\n. See the\nREADME\nto get started.\nEcology\nRRgeo\nv0.0.3: Provides tools to perform accurate species distribution modeling for rare species. See\nMondanaro et al. (2023)\nand\nMondanaro et al. (2025)\nfor background on finding the area of origin of species and past inter-species contact while considering climatic variability. There are four vignettes, including\nENphylo\nand\nPreparing Data\n.\nspotr\nv0.1.0: Provides functions to compute relative or absolute population trends across space and time using predictions from models fitted to ecological population abundance data, as described in\nKnape (2025)\n. See the\nvignette\n.\nEpidemiology\nbranchingprocess\nv0.1.0: Provides tools to quantify outbreak risk posed by individual importers of a transmissible pathogen and calculate probabilities of final outbreak size and generations of transmission. See\nToth et al. (2015)\nand\nToth et al. (2016)\nfor the theory and the\nvignette\nfor an example.\nsimBKMRdata\nv0.3.1: Provides functions to support Bayesian Kernel Machine Regression analyses in environmental health research. It enables the simulation of realistic multivariate exposure data, estimation of distributional parameters by subgroup, and application of adaptive, data-driven thresholds for feature selection via Posterior Inclusion Probabilities. See\nHasan et al. (2025)\n. There are three vignettes, including\nCalculate PIP Threshold from Response Vector\nand\nSimulation and Estimation\n.\nGenomics\nDeSciDe\nv1.0.0: Facilitates genomic and proteomic data analysis by providing tools for unbiased PubMed searching, protein interaction network visualization, and comprehensive data summarization. See\nSzklarczyk et al. (2023)\nand\nWinter (2017)\nfor background and the\nvignette\nfor examples.\nHTGM2D\nv1.1: Provides a two-dimensional heat map to be used with\nGoMiner\nfor the ontological analysis of microarray and proteomics studies that leverage the Gene Ontology Consortium\nGO\nresource. The heat map reflects the Jaccard metric p-value for the number of genes in common for each corresponding pair. See the\nvignette\n.\nGeoscience\ngeoprofiler\nv0.0.2: Implements a tool set to create perpendicular profile graphs and swath profiles. Method is based on the coordinate rotation algorithm by\nSchaeben et al. (2024)\n. There are two vignettes:\nDistances Along Oriented Profiles\nand\nSwath Profiles\n.\ntabs\nv0.1.1: Implements a standardized workflow to reconstruct spatial configurations of altitude-bounded biogeographic systems over time; for example, model how island archipelagos expand or contract with changing sea levels or how alpine biomes shift in response to tree line movements. For details, see\nDe Groeve et al. (2025)\nand look\nhere\nto get started.\nHealth Technology Assessment\nassertHE\nv1.0.0: Provides tools to help health economic modelers when building and reviewing models. The visualization functions allow users to more easily review the network of functions in a project and get lay summaries of them. The asserts included are intended to check for common errors. See\nSmith et al. (2024)\nfor details and the\nREADME\nfor examples.\nLinguistics\ntlda\nv0.1.0: Provides support functions and datasets to facilitate the analysis of linguistic data with a focus on the calculation of corpus-linguistic dispersion measures as described in\nGries (2021)\nand\nSoenning (2025)\n. See the vignettes\nDispersion Analysis\nand\nFrequency adjusted dispersion scores\n.\nMachine Learning\nClassificationEnsembles\nv0.5.0: Automatically builds 12 individual classification models, including error (RMSE) and predictions. These results are used to create an ensemble, which is then modeled using eight methods. See the\nvignette\nand the two sister packages by the same author:\nLogisticEnsembles\nand\nNumericEnsembles\n.\ne2tree\nv0.1.2: Implements the explainable ensemble trees ’approach proposed by\nAria et al. (2024)\n, which aims to explain and interpret decision tree ensemble models using a single tree-like structure. See the\nREADME\nfor examples.\nMathematics\nlsoda\nv1.2: Provides an implementation of the\nlsoda\nfunction from the\nODEPACK\nlibrary for solving initial value problems for first-order ordinary differential equations\nHindmarsh (1982)\n, which can be called inline using\nRcpp\n, and an\nR\nfunction,\node\n. Look\nhere\nfor examples.\nMCSimMod\nv0.0.1: Provides tools to facilitate ordinary differential equation (ODE) modeling by performing simulations for ODE models that are encoded in the GNU\nMCSim\nmodel specification language (\nBois (2009)\n) using ODE solvers from\ndeSolve\n(\nSoetaert et al. (2010)\n). There are seven vignettes, including an\nIntroduction\nand\nA Model of Newton’s Law of Cooling\n.\nriemtan\nv0.1.0: Implements various Riemannian metrics for symmetric positive definite matrices, including AIRM (Affine Invariant Riemannian Metric, see\nPennec et al. (2006)\n; Log-Euclidean, see\nArsigny et al. (2006)\n; Euclidean; Log-Cholesky.\nsee Lin (2019)\n; and Bures-Wasserstein metrics, see\nBhatia et al. (2019)\n. It also provides functions for computing logarithmic and exponential maps, vectorization, and statistical operations on the manifold of positive definite matrices. See the\nvignette\n.\nMedicine\nneuroim2\nv0.8.1: Provides data structures and methods for handling volumetric brain imaging data, with a focus on functional magnetic resonance imaging (fMRI) and efficient representations for three-dimensional and four-dimensional neuroimaging data. Implements methods for image resampling, spatial filtering, region of interest analysis, and connected component labeling. See\nPoldrack et al. (2024)\n. There are four vignettes, including\nWorking with Image Volumes\nand\nRegions of Interest\n.\nNHSRwaitinglist\nv0.1.1: Provides queueing theory functions to assist with waiting list management based on the approach described in\nFong et al. (2022)\n. There are three vignettes including\nThree example waiting lists\nand\nExploring with Simulation\n.\nNetworks\nernm\nv1.0.0: Provides functions to estimate fully and partially observed Exponential-Family Random Network Models (ERNM). Exponential-family Random Graph Models (ERGM) and Gibbs Fields are special cases of ERNMs and can also be estimated with the package. See\nFellows and Handcock (2012)\n.\nPsychology\nIRTM\nv0.0.1.1: Implements a semi-supervised approach based on Bayesian Item Response Theory that produces theoretically identified underlying dimensions from input data and a constraints matrix. The methodology is described in\nMorucci et al. (2024)\n. See the\nvignette\nto get started.\nRStanTVA\nv0.3.0: Provides a\nStan\nimplementation of the Theory of Visual Attention described in\nBundesen (1990)\nalong with numerous convenience functions for generating, compiling, fitting, and analyzing TVA models. See the\nREADME\nfor examples.\nStatistics\nctsmTMB\nv1.0.0: Provides an interface for defining and fitting continuous-time state space models built with the\nR6\nctsmTMB class. Available inter-inference methods include Kalman filters and a Laplace approximation-based smoothing method. For details on the methods, see the\ndocumentation\n) for the\nCTSMR\npackage and\nThygesen (2025)\n. There are six vignettes, including a\nGetting Started\nguide and\nMoment Predictions\n.\nfitdistcp\nv0.1.1: Provides functions to generate predictive distributions based on calibrating priors for various commonly used statistical models, including models with predictors. Functions are provided for densities, probabilities, quantiles, random deviates, and the parameter posterior. Predictions are generated from the Bayesian prediction integral, with priors chosen to give good reliability (also known as calibration). See\nJewson et al. (2024)\nfor background, and look\nhere\nfor detailed documentation.\nfunMoDisco\nv1.0.0: Implements two complementary methodologies for discovering motifs in functional data:\nProbKMA\n, a probabilistic K-Means algorithm (\nCremona and Chiaromonte (2023)\n), and\nFunBIalign\n, a hierarchical algorithm for functional motif discovery based on mean square residue (\nCremona, and Chiaromonte (2023)\n). See the\nvignette\nfor examples.\nhdMTD\nv0.1.0: Provides functions to estimate parameters in Mixture Transition Distribution (MTD) models, a class of high-order Markov chains. Estimated parameters include pasts (lags), transition probabilities, and oscillations. A\nperfect sampling algorithm\ngenerates samples of an MTD model from its invariant distribution. See\nOst & Takahashi (2023)\nfor the theory and the\nREADME\nfor examples.\njoker\nv0.14.2: Extends the range of available distribution families and facilitates the computation of key parametric quantities, such as moments and information-theoretic measures. All package features are available both in a stats-like syntax for entry-level users, and in an S4 object-oriented programming system for more experienced ones. See the\nvignette\n.\npostcard\nv1.0.0: Provides functions to perform power analysis and inference on marginal effects using plug-in estimation and influence functions that optionally leverage historical data to increase precision with prognostic covariate adjustment. The methods are described in\nHøjbjerre-Frandsen et al. (2025)\n. There are three vignettes, including an\nIntroduction\nand\nProspective Power Estimation\n.\ntvcure\nv0.1.0: Implements a double additive cure survival model with time-varying covariates. The additive terms in the long- and short-term survival submodels, modelling the cure probability and the event timing for susceptible units, are estimated using Laplace P-splines. See\nLambert and Kreyenfeld (2025)\nfor details and look\nhere\nfor examples.\nTime Series\nbutterfly\nv1.1.2: Provides functions to verify continually updating time series data where new values are expected, but previous data should remain unchanged. See the\nvignette\n.\ntsissm\nv1.0.1: Implements an unobserved components time series model using the linear innovations state space representation with a choice of error distributions and an option for dynamic variance. Features include automatic differentiation, automatic model selection and ensembling, prediction, filtering, simulation and backtesting. See\nHyndman et al. (2012)\nfor background. There are five vignettes, including\nThe Innovations State Space Model\nand\nFiltering and Prediction\n.\nUtilities\ncheetahR\n: Provides an interface to\nCheetah Grid\n, a high-performance JavaScript table widget. See\nGet Started\n.\nwhirl\nv0.2.0: Enables execution of scripts in batch, while simultaneously creating logs for the execution of each script, and providing an overview summary log of the entire batch execution. The package is suitable for clinical trials using\nQuarto\nto create nice human-readable logs. See the\nvignette\nto get started.\nVisualization\nvayr\nv1.0.0: Implements position adjustment “visualize as you randomize” principles for\nggplot2\n, which can be especially useful when plotting experimental data. See\nREADME\nfor examples.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Archaeology ananke v0.1.0: Implements tools for calibration of radiocarbon ages and modern carbon fraction values using multiple calibration curves. Functions calculate the highest density region intervals and credible intervals, and visualiz...",
+      "meta_keywords": null,
+      "og_description": "Archaeology ananke v0.1.0: Implements tools for calibration of radiocarbon ages and modern carbon fraction values using multiple calibration curves. Functions calculate the highest density region intervals and credible intervals, and visualiz...",
+      "og_image": "https://rworks.dev/posts/april-2025-top-40-new-cran-packages/ananke.png",
+      "og_title": "April 2025 Top 40 New CRAN Packages | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 11.2,
+      "sitemap_lastmod": null,
+      "twitter_description": "Archaeology ananke v0.1.0: Implements tools for calibration of radiocarbon ages and modern carbon fraction values using multiple calibration curves. Functions calculate the highest density region intervals and credible intervals, and visualiz...",
+      "twitter_title": "April 2025 Top 40 New CRAN Packages | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/05/april-2025-top-40-new-cran-packages/",
+      "word_count": 2234
+    }
+  }
+}

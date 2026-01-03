@@ -1,0 +1,1027 @@
+{
+  "id": "cb845f6e36544dfaf1c24bcd82b6b715f4a8108c",
+  "url": "https://www.r-bloggers.com/2025/03/february-2025-top-40-new-cran-packages/",
+  "created_at_utc": "2025-11-22T19:58:58Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "d6fa864f-e590-4ad3-b1c6-f639ec2c4670",
+    "created_at": "2025-11-22 19:58:58",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/03/february-2025-top-40-new-cran-packages/",
+      "crawled_at": "2025-11-22T10:51:31.167186",
+      "external_links": [
+        {
+          "href": "https://rworks.dev/posts/february-2025-top-40-new-cran-packages/",
+          "text": "R Works"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=chores",
+          "text": "chores"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/chores/vignettes/chores.html",
+          "text": "Getting started"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/chores/vignettes/custom.html",
+          "text": "Custom helpers"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/chores/vignettes/gallery.html",
+          "text": "Gallery"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/chores.gif?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=gander",
+          "text": "gander"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/gander/vignettes/gander.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/gander.gif?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=GitAI",
+          "text": "GitAI"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/GitAI/vignettes/building-shiny-app-chatbot.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/GitAI.gif?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=nlpembeds",
+          "text": "nlpembeds"
+        },
+        {
+          "href": "https://www.nature.com/articles/s41746-021-00519-z",
+          "text": "Hong (2021)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/nlpembeds/vignettes/cooc_pmi_svd.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=NLPwavelet",
+          "text": "NLPwavelet"
+        },
+        {
+          "href": "https://link.springer.com/article/10.1007/s13571-016-0129-3",
+          "text": "Sanyal & Ferreira (2017)"
+        },
+        {
+          "href": "https://arxiv.org/abs/2501.18134",
+          "text": "Sanyal (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/NLPwavelet/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/NLPwavelet.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=pnd",
+          "text": "pnd"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pnd/vignettes/compatibility-with-numDeriv.html",
+          "text": "Compatibility with numDeriv"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pnd/vignettes/fast-and-accurate.html",
+          "text": "Parallel numerical derivatives"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pnd/vignettes/step-size-selection.html",
+          "text": "Step-size selection"
+        },
+        {
+          "href": "https://cran.r-project.org/package=rmcmc",
+          "text": "rmcmc"
+        },
+        {
+          "href": "https://academic.oup.com/jrsssb/article/84/2/496/7056132?login=false",
+          "text": "Livingstone and Zanella (2022)"
+        },
+        {
+          "href": "https://roualdes.github.io/bridgestan/latest/languages/r.html",
+          "text": "BridgeStan’s R interface"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/rmcmc/vignettes/barker-proposal.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/rmcmc/vignettes/adjusting-noise-distribution.html",
+          "text": "Adjusting the noise distribution"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rmcmc.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=sgdGMF",
+          "text": "sgdGMF"
+        },
+        {
+          "href": "https://arxiv.org/abs/2412.20509",
+          "text": "Castiglione et al. (2024)"
+        },
+        {
+          "href": "http://jmlr.org/papers/v23/20-1104.html",
+          "text": "Kidzinski et al. (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/sgdGMF/vignettes/introduction.html",
+          "text": "introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/sgdGMF/vignettes/residuals.html",
+          "text": "residuals"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/sgdGMF.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=acledR",
+          "text": "acledR"
+        },
+        {
+          "href": "https://apidocs.acleddata.com/",
+          "text": "ACLED’s API"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/acledR/vignettes/get_started.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=Horsekicks",
+          "text": "Horsekicks"
+        },
+        {
+          "href": "https://archive.org/details/dasgesetzderklei00bortrich/mode/1up",
+          "text": "Das Gesetz der kleinen Zahlen"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/Horsekicks/vignettes/hkdeaths.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/horse.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=OhdsiReportGenerator",
+          "text": "OhdsiReportGenerator"
+        },
+        {
+          "href": "https://ohdsi.github.io/Strategus/results-schema/index.html",
+          "text": "Observational Health Data Sciences and Informatics result database"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/OhdsiReportGenerator/vignettes/ExampleCode.html",
+          "text": "package guide"
+        },
+        {
+          "href": "https://cran.r-project.org/package=wbwdi",
+          "text": "wbwdi"
+        },
+        {
+          "href": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+          "text": "the corresponding API"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/wbwdi/vignettes/data-model.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/wbwdi.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=rangr",
+          "text": "rangr"
+        },
+        {
+          "href": "https://docs.ropensci.org/rangr/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/rangr/vignettes/rangr.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rangr.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=godley",
+          "text": "godley"
+        },
+        {
+          "href": "https://link.springer.com/book/10.1007/978-1-137-08599-3",
+          "text": "Godley and Lavoie (2007)"
+        },
+        {
+          "href": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1729205",
+          "text": "Kinsella and O’Shea (2010)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/godley/vignettes/package_outline.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/godley.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=gimap",
+          "text": "gimap"
+        },
+        {
+          "href": "https://www.cell.com/cell-reports/fulltext/S2211-1247%2821%2901035-4",
+          "text": "Berger et al. (2021)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/gimap/vignettes/quick-start.html",
+          "text": "Quick Start"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/gimap/vignettes/timepoint-example.html",
+          "text": "Timepoint Experiment"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/gimap/vignettes/treatment_example.html",
+          "text": "Treatment Experiment"
+        },
+        {
+          "href": "https://cran.r-project.org/package=MIC",
+          "text": "MIC"
+        },
+        {
+          "href": "https://www.idexx.com/files/microbiology-guide-interpreting-mic.pdf",
+          "text": "minimum inhibitory concentration"
+        },
+        {
+          "href": "https://academic.oup.com/nar/article/42/D1/D581/1049866?login=false",
+          "text": "Pathosystems Resource Integration Center (2013)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/MIC/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/MIC.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=matriz",
+          "text": "matriz"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/matriz/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=flint",
+          "text": "flint"
+        },
+        {
+          "href": "https://flintlib.org/",
+          "text": "FLINT"
+        },
+        {
+          "href": "https://www.mpfr.org/",
+          "text": "MPFR"
+        },
+        {
+          "href": "https://gmplib.org/",
+          "text": "MP"
+        },
+        {
+          "href": "https://ieeexplore.ieee.org/document/7891956",
+          "text": "Johansson (2017)"
+        },
+        {
+          "href": "https://dlmf.nist.gov/",
+          "text": "NIST Digital Library of Mathematical Functions"
+        },
+        {
+          "href": "https://github.com/jaganmn/flint",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=tall",
+          "text": "tall"
+        },
+        {
+          "href": "https://www.k-synth.com/tall/",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=BayesERtools",
+          "text": "BayesERtools"
+        },
+        {
+          "href": "https://genentech.github.io/BayesERbook/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/BayesERtools/vignettes/overview_of_the_package.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BayesER.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=PatientLevelPrediction",
+          "text": "PatientLevelPrediction"
+        },
+        {
+          "href": "https://www.ohdsi.org/data-standardization/",
+          "text": "Observational Medical Outcomes Partnership Common Data Model"
+        },
+        {
+          "href": "https://academic.oup.com/jamia/article/25/8/969/4989437?login=false",
+          "text": "Reps et al. (2017)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/PatientLevelPrediction/vignettes/BuildingPredictiveModels.html",
+          "text": "Building Patient Level Prediction Models"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/PatientLevelPrediction/vignettes/BestPractices.html",
+          "text": "Best Practices"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/PLPM.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=SimTOST",
+          "text": "SimTOST"
+        },
+        {
+          "href": "https://link.springer.com/article/10.1007/BF01068419",
+          "text": "Schuirmann (1987)"
+        },
+        {
+          "href": "https://www.tandfonline.com/doi/full/10.1080/19466315.2017.1371071",
+          "text": "Mielke et al. (2018)"
+        },
+        {
+          "href": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269128",
+          "text": "Shieh (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SimTOST/vignettes/intropkg.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SimTOST/vignettes/sampleSize_parallel_2A1E.html",
+          "text": "Bioequivalence Tests for Parallel Trial Designs: 2 Arms, 1 Endpoint"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SimTost.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=musicXML",
+          "text": "musicXML"
+        },
+        {
+          "href": "https://usermanuals.musicxml.com/MusicXML/Content/XS-MusicXML.htm",
+          "text": "musicXML"
+        },
+        {
+          "href": "https://globxblog.github.io/",
+          "text": "the blog"
+        },
+        {
+          "href": "https://hal.science/hal-03710340v1",
+          "text": "Renard and Le Bescond (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/musicXML/vignettes/GettingStarted.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/musicXML.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=emcAdr",
+          "text": "emcAdr"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/emcAdr/vignettes/base.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/emcAdr.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=SynergyLMM",
+          "text": "SynergyLMM"
+        },
+        {
+          "href": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224137",
+          "text": "Demidenko & Miller (2019"
+        },
+        {
+          "href": "https://link.springer.com/book/10.1007/b98882",
+          "text": "Pinheiro and Bates (2000)"
+        },
+        {
+          "href": "https://link.springer.com/book/10.1007/978-1-4614-3900-4",
+          "text": "Gałecki & Burzykowski (2013)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SynergyLMM/vignettes/SynergyLMM.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SynergyLLM.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=vigicaen",
+          "text": "vigicaen"
+        },
+        {
+          "href": "https://who-umc.org/",
+          "text": "VigiBase"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/vigicaen/vignettes/basic_workflow.html",
+          "text": "basic workflow"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/vigicaen/vignettes/routine_pharmacovigilance.html",
+          "text": "routine pharmacoviligance"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/vigicaen.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=cogirt",
+          "text": "cogirt"
+        },
+        {
+          "href": "https://journals.sagepub.com/doi/10.1177/0013164420919898",
+          "text": "Thomas et al. (2020)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/cogirt/vignettes/cogirt.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/cogirt.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=DiscreteDLM",
+          "text": "DiscreteDLM"
+        },
+        {
+          "href": "https://arxiv.org/abs/2403.03646",
+          "text": "Dempsey and Wyse (2025)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/DiscreteDLM/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=oneinfl",
+          "text": "oneinfl"
+        },
+        {
+          "href": "https://arxiv.org/abs/2402.02272",
+          "text": "Godwin (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/oneinfl/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/oneinfl.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=BayesChange",
+          "text": "BayesChange"
+        },
+        {
+          "href": "https://projecteuclid.org/journals/bayesian-analysis/volume-9/issue-4/On-a-Nonparametric-Change-Point-Detection-Model-in-Markovian-Regimes/10.1214/14-BA878.full",
+          "text": "Martinez & Mena (2014)"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0888613X21002231?via%3Dihub",
+          "text": "Corradin et al. (2022)"
+        },
+        {
+          "href": "https://arxiv.org/abs/2410.09552",
+          "text": "Corradin et. al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/BayesChange/vignettes/tutorial.html",
+          "text": "tutorial"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BC.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=echos",
+          "text": "echos"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/echos/vignettes/vignette_01_baseR.html",
+          "text": "Base functions"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/echos/vignettes/vignette_02_tidyR.html",
+          "text": "Tidy functions"
+        },
+        {
+          "href": "https://cran.r-project.org/package=quadVAR",
+          "text": "quadVAR"
+        },
+        {
+          "href": "https://www.tandfonline.com/doi/full/10.1080/01621459.2016.1264956",
+          "text": "Hao et al. (2018)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/quadVAR/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/quadVAR.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=aftables",
+          "text": "aftables"
+        },
+        {
+          "href": "https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/",
+          "text": "UK government’s Analysis Function"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/aftables/vignettes/aftables.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/aftables/vignettes/checklist.html",
+          "text": "Accessibility"
+        },
+        {
+          "href": "https://cran.r-project.org/package=watcher",
+          "text": "watcher"
+        },
+        {
+          "href": "https://emcrisostomo.github.io/fswatch/doc/1.9.3/libfswatch.html/",
+          "text": "libfswatch"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/watcher/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=jellyfisher",
+          "text": "jellyfisher"
+        },
+        {
+          "href": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(23)00143-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1535610823001435%3Fshowall%3Dtrue",
+          "text": "Lahtinen et al. (2023)"
+        },
+        {
+          "href": "https://hautaniemilab.github.io/jellyfisher/",
+          "text": "vignette"
+        },
+        {
+          "href": "https://rworks.dev/posts/february-2025-top-40-new-cran-packages/jelly.svg",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/xdvir/index.html#:~:text=https%3A//CRAN.R-project.org/package%3Dxdvir",
+          "text": "xdvir"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/xdvir/vignettes/xdvir-intro.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/xdvir.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=RFplus",
+          "text": "RFplus"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/RFplus/vignettes/RFplus.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=SPIChanges",
+          "text": "SPIChanges"
+        },
+        {
+          "href": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.7550",
+          "text": "Blain et al. (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SPIChanges/vignettes/SPIChanges.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SPIChanges/vignettes/CaseStudies.html",
+          "text": "Monte Carlo Experiments and Case Studies"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SPI.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://rworks.dev/posts/february-2025-top-40-new-cran-packages/",
+          "text": "R Works"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "February 2025 Top 40 New CRAN Packages | R-bloggers",
+      "images": [
+        {
+          "alt": "Working with chores gif",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Working with chores gif",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/chores.gif?w=578&ssl=1"
+        },
+        {
+          "alt": "Gifof gander use",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Gifof gander use",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/gander.gif?w=578&ssl=1"
+        },
+        {
+          "alt": "Exaple GIF",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Exaple GIF",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/GitAI.gif?w=578&ssl=1"
+        },
+        {
+          "alt": "Wavelet plot of posterior",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Wavelet plot of posterior",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/NLPwavelet.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of mcmc chain adapting to Langevin proposal",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of mcmc chain adapting to Langevin proposal",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rmcmc.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plots of Deviance and Pearson residuals",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots of Deviance and Pearson residuals",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/sgdGMF.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Dangers to the Prussian Cavalry",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Dangers to the Prussian Cavalry",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/horse.png?w=578&ssl=1"
+        },
+        {
+          "alt": "wbwdi data model",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "wbwdi data model",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/wbwdi.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Abundance plotsl",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Abundance plotsl",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rangr.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Example model structure",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Example model structure",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/godley.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Results of MIC test",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Results of MIC test",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/MIC.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Automatic Lemmatization and PoS-Tagging through LLM",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Automatic Lemmatization and PoS-Tagging through LLM",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/tall.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Chart of supported model types",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Chart of supported model types",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BayesER.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Scematic of the Prediction problem",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Scematic of the Prediction problem",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/PLPM.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Power estimation plots",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Power estimation plots",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SimTost.png?w=578&ssl=1"
+        },
+        {
+          "alt": "WaggaWagga time series is mapped to pitch.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "WaggaWagga time series is mapped to pitch.",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/musicXML.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plots of estimated andtrue distributions",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots of estimated andtrue distributions",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/emcAdr.png?w=578&ssl=1"
+        },
+        {
+          "alt": "the SynergyLLM workflow",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "the SynergyLLM workflow",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SynergyLLM.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Example of vigibase analysis",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Example of vigibase analysis",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/vigicaen.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot showing subjects timescore data",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot showing subjects timescore data",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/cogirt.png?w=578&ssl=1"
+        },
+        {
+          "alt": "A regression slopes ridge plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "A regression slopes ridge plot",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/DiscreteDLM.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot of distributions vs actual data",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of distributions vs actual data",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/oneinfl.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Time series clusters",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Time series clusters",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BC.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Example of time series forecast",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Example of time series forecast",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/echos.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Example model plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Example model plot",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/quadVAR.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Example Jellyfisher Plot",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Example Jellyfisher Plot",
+          "base64": "data:image/jpeg;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI4MzAiIGhlaWdodD0iMzYwIj48ZGVmcz48bWFya2VyIGlkPSJzbWFsbC1hcnJvd2hlYWQiIHZpZXdCb3g9IjAgMCAxMCAxMCIgcmVmWD0iNSIgcmVmWT0iNSIgbWFya2VyV2lkdGg9IjYiIG1hcmtlckhlaWdodD0iNiIgb3JpZW50PSJhdXRvLXN0YXJ0LXJldmVyc2UiPgogICAgICA8cGF0aCBkPSJNIDAgMCBMIDkgNSBMIDAgMTAgeiIgZmlsbD0iIzYwNjA2MCI+PC9wYXRoPgogICAgPC9tYXJrZXI+PC9kZWZzPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsNDAuNSwxODAuNSkiPjxnIGNsYXNzPSJzYW1wbGUtZ3JvdXAiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwtNjApIiBjbGFzcz0ic2FtcGxlIiBkYXRhLXNhbXBsZT0icm9vdCI+PGcgY2xhc3M9ImJlbGwiPjxwYXRoIGQ9Ik0wLDYwTDEuOCw2MC4zTDMuNiw2MC43TDUuNCw2MS4yTDcuMiw2MS44TDksNjIuNUwxMC44LDYzLjRMMTIuNiw2NC4zTDE0LjQsNjUuNEwxNi4yLDY2LjVMMTgsNjcuOEwxOS44LDY5LjJMMjEuNiw3MC43TDIzLjQsNzIuMkwyNS4yLDczLjlMMjcsNzUuNkwyOC44LDc3LjVMMzAuNiw3OS4zTDMyLjQsODEuMkwzNC4yLDgzLjJMMzYsODUuMkwzNy44LDg3LjJMMzkuNiw4OS4zTDQxLjQsOTEuM0w0My4yLDkzLjRMNDUsOTUuNEw0Ni44LDk3LjRMNDguNiw5OS4zTDUwLjQsMTAxLjJMNTIuMiwxMDNMNTQsMTA0LjhMNTUuOCwxMDYuNUw1Ny42LDEwOC4xTDU5LjQsMTA5LjZMNjEuMiwxMTEuMUw2MywxMTIuNEw2NC44LDExMy42TDY2LjYsMTE0LjdMNjguNCwxMTUuN0w3MC4yLDExNi42TDcyLDExNy40TDczLjgsMTE4TDc1LjYsMTE4LjZMNzcuNCwxMTlMNzkuMiwxMTkuNEw4MSwxMTkuNkw4Mi44LDExOS44TDg0LjYsMTE5LjlMODYuNCwxMjBMODguMiwxMjBMOTAsMTIwTDkwLDBMODguMiwwTDg2LjQsMEw4NC42LDAuMUw4Mi44LDAuMkw4MSwwLjRMNzkuMiwwLjZMNzcuNCwxTDc1LjYsMS40TDczLjgsMkw3MiwyLjZMNzAuMiwzLjRMNjguNCw0LjNMNjYuNiw1LjNMNjQuOCw2LjRMNjMsNy42TDYxLjIsOC45TDU5LjQsMTAuNEw1Ny42LDExLjlMNTUuOCwxMy41TDU0LDE1LjJMNTIuMiwxN0w1MC40LDE4LjhMNDguNiwyMC43TDQ2LjgsMjIuNkw0NSwyNC42TDQzLjIsMjYuNkw0MS40LDI4LjdMMzkuNiwzMC43TDM3LjgsMzIuOEwzNiwzNC44TDM0LjIsMzYuOEwzMi40LDM4LjhMMzAuNiw0MC43TDI4LjgsNDIuNUwyNyw0NC40TDI1LjIsNDYuMUwyMy40LDQ3LjhMMjEuNiw0OS4zTDE5LjgsNTAuOEwxOCw1Mi4yTDE2LjIsNTMuNUwxNC40LDU0LjZMMTIuNiw1NS43TDEwLjgsNTYuNkw5LDU3LjVMNy4yLDU4LjJMNS40LDU4LjhMMy42LDU5LjNMMS44LDU5LjdMMCw2MEwwLDYwIiBmaWxsPSIjZGVkZWRlIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iI2IzYjNiMyIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSIxIiBkYXRhLWRlc2NlbmRhbnQtc3ViY2xvbmVzPSJbJnF1b3Q7MSZxdW90OywmcXVvdDsyJnF1b3Q7LCZxdW90OzEwJnF1b3Q7LCZxdW90OzUmcXVvdDssJnF1b3Q7NCZxdW90OywmcXVvdDs5JnF1b3Q7LCZxdW90OzYmcXVvdDssJnF1b3Q7MTEmcXVvdDtdIj48dGl0bGU+U3ViY2xvbmU6IDEKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMjUwCkNhbmNlciBjZWxsIGZyYWN0aW9uOiAxLjAwMDwvdGl0bGU+PC9wYXRoPjxwYXRoIGQ9Ik0yMS42LDYxLjhMMjMuNCw2Mi4xTDI1LjIsNjIuNUwyNyw2Mi45TDI4LjgsNjMuNUwzMC42LDY0LjJMMzIuNCw2NUwzNC4yLDY1LjlMMzYsNjdMMzcuOCw2OC4zTDM5LjYsNjkuN0w0MS40LDcxLjNMNDMuMiw3My4xTDQ1LDc1LjFMNDYuOCw3Ny4yTDQ4LjYsNzkuNkw1MC40LDgyTDUyLjIsODQuNkw1NCw4Ny4zTDU1LjgsOTBMNTcuNiw5Mi44TDU5LjQsOTUuNkw2MS4yLDk4LjRMNjMsMTAxLjFMNjQuOCwxMDMuN0w2Ni42LDEwNi4yTDY4LjQsMTA4LjVMNzAuMiwxMTAuNkw3MiwxMTIuNkw3My44LDExNC4zTDc1LjYsMTE1LjhMNzcuNCwxMTdMNzkuMiwxMThMODEsMTE4LjhMODIuOCwxMTkuM0w4NC42LDExOS43TDg2LjQsMTE5LjlMODguMiwxMjBMOTAsMTIwTDkwLDMwTDg4LjIsMzBMODYuNCwzMEw4NC42LDMwLjFMODIuOCwzMC4zTDgxLDMwLjZMNzkuMiwzMS4xTDc3LjQsMzEuN0w3NS42LDMyLjVMNzMuOCwzMy41TDcyLDM0LjZMNzAuMiwzNS45TDY4LjQsMzcuNEw2Ni42LDM4LjlMNjQuOCw0MC42TDYzLDQyLjRMNjEuMiw0NC4yTDU5LjQsNDZMNTcuNiw0Ny45TDU1LjgsNDkuN0w1NCw1MS40TDUyLjIsNTMuMUw1MC40LDU0LjZMNDguNiw1Ni4xTDQ2LjgsNTcuNEw0NSw1OC42TDQzLjIsNTkuNkw0MS40LDYwLjRMMzkuNiw2MS4xTDM3LjgsNjEuN0wzNiw2Mi4xTDM0LjIsNjIuM0wzMi40LDYyLjVMMzAuNiw2Mi41TDI4LjgsNjIuNUwyNyw2Mi40TDI1LjIsNjIuMkwyMy40LDYyTDIxLjYsNjEuOEwyMS42LDYxLjgiIGZpbGw9IiNjNGRlYzIiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjOWViMzlkIiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjEwIiBkYXRhLWRlc2NlbmRhbnQtc3ViY2xvbmVzPSJbJnF1b3Q7MTAmcXVvdDssJnF1b3Q7NSZxdW90OywmcXVvdDs0JnF1b3Q7LCZxdW90OzkmcXVvdDssJnF1b3Q7NiZxdW90OywmcXVvdDsxMSZxdW90O10iPjx0aXRsZT5TdWJjbG9uZTogMTAKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMjUwCkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjc1MDwvdGl0bGU+PC9wYXRoPjxwYXRoIGQ9Ik00NSw2OC43TDQ2LjgsNjkuNkw0OC42LDcwLjdMNTAuNCw3MS45TDUyLjIsNzMuNEw1NCw3NS4xTDU1LjgsNzdMNTcuNiw3OS4zTDU5LjQsODEuOEw2MS4yLDg0LjZMNjMsODcuNkw2NC44LDkwLjhMNjYuNiw5NC4yTDY4LjQsOTcuN0w3MC4yLDEwMS4xTDcyLDEwNC41TDczLjgsMTA3LjZMNzUuNiwxMTAuNUw3Ny40LDExMy4xTDc5LjIsMTE1LjJMODEsMTE3TDgyLjgsMTE4LjNMODQuNiwxMTkuMkw4Ni40LDExOS43TDg4LjIsMTE5LjlMOTAsMTIwTDkwLDYwTDg4LjIsNjBMODYuNCw2MEw4NC42LDYwLjFMODIuOCw2MC4zTDgxLDYwLjhMNzkuMiw2MS40TDc3LjQsNjIuM0w3NS42LDYzLjNMNzMuOCw2NC40TDcyLDY1LjdMNzAuMiw2Ni45TDY4LjQsNjguMkw2Ni42LDY5LjNMNjQuOCw3MC4zTDYzLDcxLjJMNjEuMiw3MS44TDU5LjQsNzIuMkw1Ny42LDcyLjNMNTUuOCw3Mi4zTDU0LDcyTDUyLjIsNzEuNUw1MC40LDcwLjlMNDguNiw3MC4yTDQ2LjgsNjkuNUw0NSw2OC43TDQ1LDY4LjciIGZpbGw9IiNhMWRkZDciIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjODJiMmFlIiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjkiIGRhdGEtZGVzY2VuZGFudC1zdWJjbG9uZXM9IlsmcXVvdDs5JnF1b3Q7LCZxdW90OzYmcXVvdDssJnF1b3Q7MTEmcXVvdDtdIj48dGl0bGU+U3ViY2xvbmU6IDkKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMjUwCkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjUwMDwvdGl0bGU+PC9wYXRoPjxwYXRoIGQ9Ik02Ni42LDg1LjlMNjguNCw4Ny45TDcwLjIsOTAuM0w3Miw5My4xTDczLjgsOTYuNEw3NS42LDEwMC4xTDc3LjQsMTA0LjFMNzkuMiwxMDhMODEsMTExLjhMODIuOCwxMTQuOUw4NC42LDExNy40TDg2LjQsMTE5TDg4LjIsMTE5LjhMOTAsMTIwTDkwLDkwTDg4LjIsODkuOUw4Ni40LDg5LjlMODQuNiw5MEw4Mi44LDkwLjNMODEsOTAuOEw3OS4yLDkxLjNMNzcuNCw5MS43TDc1LjYsOTEuN0w3My44LDkxLjRMNzIsOTAuNkw3MC4yLDg5LjRMNjguNCw4Ny44TDY2LjYsODUuOUw2Ni42LDg1LjkiIGZpbGw9IiM5ZWQ1ZjMiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjODBhY2M0IiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjExIiBkYXRhLWRlc2NlbmRhbnQtc3ViY2xvbmVzPSJbJnF1b3Q7MTEmcXVvdDtdIj48dGl0bGU+U3ViY2xvbmU6IDExCkNsb25hbCBwcmV2YWxlbmNlOiAwLjI1MApDYW5jZXIgY2VsbCBmcmFjdGlvbjogMC4yNTA8L3RpdGxlPjwvcGF0aD48L2c+PHRleHQgeD0iNDUiIHk9Ii02IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InNhbXBsZS1kaXNwbGF5LW5hbWUiPjx0c3BhbiBkeT0iMCIgeD0iNDUiPkluZmVycmVkIHJvb3Q8L3RzcGFuPjwvdGV4dD48L2c+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxODAsLTE0MCkiIGNsYXNzPSJzYW1wbGUiIGRhdGEtc2FtcGxlPSJQM19wQXNjX0ROQTEiPjxnIGNsYXNzPSJiZWxsIj48cmVjdCB3aWR0aD0iOTAiIGhlaWdodD0iMTA5LjciIHg9IjAiIHk9IjAuMiIgZmlsbD0iI2RlZGVkZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiNiM2IzYjMiIGNsYXNzPSJzdWJjbG9uZSIgZGF0YS1zdWJjbG9uZT0iMSI+PHRpdGxlPlN1YmNsb25lOiAxCkNsb25hbCBwcmV2YWxlbmNlOiAwLjAwMApDYW5jZXIgY2VsbCBmcmFjdGlvbjogMC45OTc8L3RpdGxlPjwvcmVjdD48cGF0aCBkPSJNMTkuOCwxNy43TDIxLjYsMTcuN0wyMy40LDE4TDI1LjIsMTguNUwyNywxOS4xTDI4LjgsMTkuOEwzMC42LDIwLjdMMzIuNCwyMS43TDM0LjIsMjIuOEwzNiwyNEwzNy44LDI1LjNMMzkuNiwyNi42TDQxLjQsMjcuOUw0My4yLDI5LjFMNDUsMzAuM0w0Ni44LDMxLjRMNDguNiwzMi4zTDUwLjQsMzMuMkw1Mi4yLDMzLjhMNTQsMzQuNEw1NS44LDM0LjdMNTcuNiwzNUw1OS40LDM1LjFMNjEuMiwzNS4xTDYzLDM1LjFMNjQuOCwzNS4xTDY2LjYsMzUuMUw2OC40LDM1LjFMNzAuMiwzNS4xTDcyLDM1LjFMNzMuOCwzNS4xTDc1LjYsMzUuMUw3Ny40LDM1LjFMNzkuMiwzNS4xTDgxLDM1LjFMODIuOCwzNS4xTDg0LjYsMzUuMUw4Ni40LDM1LjFMODguMiwzNS4xTDkwLDM1LjFMOTAsMC4yTDg4LjIsMC4yTDg2LjQsMC4yTDg0LjYsMC4yTDgyLjgsMC4yTDgxLDAuMkw3OS4yLDAuMkw3Ny40LDAuMkw3NS42LDAuMkw3My44LDAuMkw3MiwwLjJMNzAuMiwwLjJMNjguNCwwLjJMNjYuNiwwLjJMNjQuOCwwLjJMNjMsMC4yTDYxLjIsMC4yTDU5LjQsMC4yTDU3LjYsMC4zTDU1LjgsMC42TDU0LDAuOUw1Mi4yLDEuNUw1MC40LDIuMUw0OC42LDNMNDYuOCwzLjlMNDUsNUw0My4yLDYuMkw0MS40LDcuNEwzOS42LDguN0wzNy44LDEwTDM2LDExLjNMMzQuMiwxMi41TDMyLjQsMTMuNkwzMC42LDE0LjZMMjguOCwxNS41TDI3LDE2LjJMMjUuMiwxNi44TDIzLjQsMTcuM0wyMS42LDE3LjZMMTkuOCwxNy43TDE5LjgsMTcuNyIgZmlsbD0iI2RlZDhiYSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiNiM2FlOTYiIGNsYXNzPSJzdWJjbG9uZSIgZGF0YS1zdWJjbG9uZT0iMiIgZGF0YS1kZXNjZW5kYW50LXN1YmNsb25lcz0iWyZxdW90OzImcXVvdDtdIj48dGl0bGU+U3ViY2xvbmU6IDIKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMzE4CkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjMxODwvdGl0bGU+PC9wYXRoPjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSI3NC43IiB4PSIwIiB5PSIzNS4xIiBmaWxsPSIjYTFkZGQ3IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzgyYjJhZSIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSI5Ij48dGl0bGU+U3ViY2xvbmU6IDkKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMjQ0CkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjY3OTwvdGl0bGU+PC9yZWN0PjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSI0Ny45IiB4PSIwIiB5PSI2MiIgZmlsbD0iIzllZDVmMyIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiM4MGFjYzQiIGNsYXNzPSJzdWJjbG9uZSIgZGF0YS1zdWJjbG9uZT0iMTEiPjx0aXRsZT5TdWJjbG9uZTogMTEKQ2xvbmFsIHByZXZhbGVuY2U6IDAuNDM1CkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjQzNTwvdGl0bGU+PC9yZWN0PjxsaW5lIHgxPSIwIiB5MT0iMzUuMTQ0OTk5OTk5OTk5OTk2IiB4Mj0iOTAiIHkyPSIzNS4xNDQ5OTk5OTk5OTk5OTYiIHN0cm9rZS1kYXNoYXJyYXk9IjYsNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNjNGRlYzIiIGNsYXNzPSJwYXNzLXRocm91Z2giIHBvaW50ZXItZXZlbnRzPSJub25lIiBkYXRhLXN1YmNsb25lPSIxMCIgZmlsbD0ibnVsbCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWw7Ij48L2xpbmU+PGxpbmUgeDE9IjY4IiB5MT0iMSIgeDI9IjY4IiB5Mj0iMTA5IiBzdHJva2UtZGFzaGFycmF5PSIxLDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW9wYWNpdHk9IjAuNSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9ImJsYWNrIiBjbGFzcz0ic2FtcGxlLXRha2VuLWxpbmUiPjwvbGluZT48ZyBjbGFzcz0ic2FtcGxlLXRha2VuLWxhYmVsIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDAsMTEwKSI+PHBhdGggZD0iTTY1LDEyTDc2LDEyQTMsMywwLDAsMCw3OSw5TDc5LDUiIGNsYXNzPSJhcnJvdyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzYwNjA2MCIgZmlsbD0ibm9uZSIgbWFya2VyLWVuZD0idXJsKCNzbWFsbC1hcnJvd2hlYWQpIj48L3BhdGg+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAiIHRleHQtYW5jaG9yPSJlbmQiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDYyLDEyKSI+U2FtcGxlIHRha2VuPC90ZXh0PjwvZz48L2c+PHRleHQgeD0iNDUiIHk9Ii02IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InNhbXBsZS1kaXNwbGF5LW5hbWUiPjx0c3BhbiBkeT0iMCIgeD0iNDUiPnBBc2M8L3RzcGFuPjwvdGV4dD48L2c+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxODAsMzApIiBjbGFzcz0ic2FtcGxlIiBkYXRhLXNhbXBsZT0iUDNfcFBlcjFfRE5BIj48ZyBjbGFzcz0iYmVsbCI+PHJlY3Qgd2lkdGg9IjkwIiBoZWlnaHQ9IjExMC4xIiB4PSIwIiB5PSIwIiBmaWxsPSIjZGVkZWRlIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iI2IzYjNiMyIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSIxIj48dGl0bGU+U3ViY2xvbmU6IDEKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMTcwCkNhbmNlciBjZWxsIGZyYWN0aW9uOiAxLjAwMDwvdGl0bGU+PC9yZWN0PjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSI5MS40IiB4PSIwIiB5PSIxOC42IiBmaWxsPSIjYTFkZGQ3IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzgyYjJhZSIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSI5Ij48dGl0bGU+U3ViY2xvbmU6IDkKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMzE3CkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjgzMTwvdGl0bGU+PC9yZWN0PjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSI1Ni42IiB4PSIwIiB5PSI1My40IiBmaWxsPSIjOWVkNWYzIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzgwYWNjNCIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSIxMSI+PHRpdGxlPlN1YmNsb25lOiAxMQpDbG9uYWwgcHJldmFsZW5jZTogMC41MTQKQ2FuY2VyIGNlbGwgZnJhY3Rpb246IDAuNTE0PC90aXRsZT48L3JlY3Q+PGxpbmUgeDE9IjY4IiB5MT0iMSIgeDI9IjY4IiB5Mj0iMTA5IiBzdHJva2UtZGFzaGFycmF5PSIxLDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW9wYWNpdHk9IjAuMiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9ImJsYWNrIiBjbGFzcz0ic2FtcGxlLXRha2VuLWxpbmUiPjwvbGluZT48L2c+PHRleHQgeD0iNDUiIHk9Ii02IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InNhbXBsZS1kaXNwbGF5LW5hbWUiPjx0c3BhbiBkeT0iMCIgeD0iNDUiPnBQZXIxPC90c3Bhbj48L3RleHQ+PC9nPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMzYwLC01NSkiIGNsYXNzPSJzYW1wbGUiIGRhdGEtc2FtcGxlPSJQM19yQXNjX0ROQTQiPjxnIGNsYXNzPSJiZWxsIj48cmVjdCB3aWR0aD0iOTAiIGhlaWdodD0iMTEwLjEiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZWRlZGUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjYjNiM2IzIiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjEiPjx0aXRsZT5TdWJjbG9uZTogMQpDbG9uYWwgcHJldmFsZW5jZTogMC4wNTQKQ2FuY2VyIGNlbGwgZnJhY3Rpb246IDEuMDAwPC90aXRsZT48L3JlY3Q+PHJlY3Qgd2lkdGg9IjkwIiBoZWlnaHQ9IjMuNiIgeD0iMCIgeT0iNS45IiBmaWxsPSIjZGVkOGJhIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iI2IzYWU5NiIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSIyIj48dGl0bGU+U3ViY2xvbmU6IDIKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMDMzCkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjAzMzwvdGl0bGU+PC9yZWN0PjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSIxMDAuNSIgeD0iMCIgeT0iOS41IiBmaWxsPSIjYzRkZWMyIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzllYjM5ZCIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSIxMCI+PHRpdGxlPlN1YmNsb25lOiAxMApDbG9uYWwgcHJldmFsZW5jZTogMC4wNzIKQ2FuY2VyIGNlbGwgZnJhY3Rpb246IDAuOTEzPC90aXRsZT48L3JlY3Q+PHBhdGggZD0iTTE5LjgsMzMuNkwyMS42LDMzLjdMMjMuNCwzNEwyNS4yLDM0LjRMMjcsMzQuOUwyOC44LDM1LjZMMzAuNiwzNi40TDMyLjQsMzcuM0wzNC4yLDM4LjRMMzYsMzkuNUwzNy44LDQwLjdMMzkuNiw0MS45TDQxLjQsNDNMNDMuMiw0NC4yTDQ1LDQ1LjNMNDYuOCw0Ni4zTDQ4LjYsNDcuMkw1MC40LDQ3LjlMNTIuMiw0OC41TDU0LDQ5TDU1LjgsNDkuNEw1Ny42LDQ5LjZMNTkuNCw0OS43TDYxLjIsNDkuN0w2Myw0OS43TDY0LjgsNDkuN0w2Ni42LDQ5LjdMNjguNCw0OS43TDcwLjIsNDkuN0w3Miw0OS43TDczLjgsNDkuN0w3NS42LDQ5LjdMNzcuNCw0OS43TDc5LjIsNDkuN0w4MSw0OS43TDgyLjgsNDkuN0w4NC42LDQ5LjdMODYuNCw0OS43TDg4LjIsNDkuN0w5MCw0OS43TDkwLDE3LjVMODguMiwxNy41TDg2LjQsMTcuNUw4NC42LDE3LjVMODIuOCwxNy41TDgxLDE3LjVMNzkuMiwxNy41TDc3LjQsMTcuNUw3NS42LDE3LjVMNzMuOCwxNy41TDcyLDE3LjVMNzAuMiwxNy41TDY4LjQsMTcuNUw2Ni42LDE3LjVMNjQuOCwxNy41TDYzLDE3LjVMNjEuMiwxNy41TDU5LjQsMTcuNUw1Ny42LDE3LjZMNTUuOCwxNy44TDU0LDE4LjJMNTIuMiwxOC43TDUwLjQsMTkuM0w0OC42LDIwLjFMNDYuOCwyMC45TDQ1LDIxLjlMNDMuMiwyM0w0MS40LDI0LjJMMzkuNiwyNS40TDM3LjgsMjYuNUwzNiwyNy43TDM0LjIsMjguOEwzMi40LDI5LjlMMzAuNiwzMC44TDI4LjgsMzEuNkwyNywzMi4zTDI1LjIsMzIuOUwyMy40LDMzLjNMMjEuNiwzMy41TDE5LjgsMzMuNkwxOS44LDMzLjYiIGZpbGw9IiNkNzdlZTYiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjYWU2NmJhIiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjUiIGRhdGEtZGVzY2VuZGFudC1zdWJjbG9uZXM9IlsmcXVvdDs1JnF1b3Q7LCZxdW90OzQmcXVvdDtdIj48dGl0bGU+U3ViY2xvbmU6IDUKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMjkzCkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjI5MzwvdGl0bGU+PC9wYXRoPjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSI2MC4zIiB4PSIwIiB5PSI0OS43IiBmaWxsPSIjYTFkZGQ3IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzgyYjJhZSIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSI5Ij48dGl0bGU+U3ViY2xvbmU6IDkKQ2xvbmFsIHByZXZhbGVuY2U6IDAuMjk0CkNhbmNlciBjZWxsIGZyYWN0aW9uOiAwLjU0ODwvdGl0bGU+PC9yZWN0PjxwYXRoIGQ9Ik0xOS44LDk0LjlMMjEuNiw5NUwyMy40LDk1LjJMMjUuMiw5NS41TDI3LDk2TDI4LjgsOTYuNUwzMC42LDk3LjJMMzIuNCw5Ny45TDM0LjIsOTguN0wzNiw5OS42TDM3LjgsMTAwLjVMMzkuNiwxMDEuNUw0MS40LDEwMi40TDQzLjIsMTAzLjNMNDUsMTA0LjJMNDYuOCwxMDVMNDguNiwxMDUuN0w1MC40LDEwNi4zTDUyLjIsMTA2LjhMNTQsMTA3LjJMNTUuOCwxMDcuNEw1Ny42LDEwNy42TDU5LjQsMTA3LjdMNjEuMiwxMDcuN0w2MywxMDcuN0w2NC44LDEwNy43TDY2LjYsMTA3LjdMNjguNCwxMDcuN0w3MC4yLDEwNy43TDcyLDEwNy43TDczLjgsMTA3LjdMNzUuNiwxMDcuN0w3Ny40LDEwNy43TDc5LjIsMTA3LjdMODEsMTA3LjdMODIuOCwxMDcuN0w4NC42LDEwNy43TDg2LjQsMTA3LjdMODguMiwxMDcuN0w5MCwxMDcuN0w5MCw4Mi4xTDg4LjIsODIuMUw4Ni40LDgyLjFMODQuNiw4Mi4xTDgyLjgsODIuMUw4MSw4Mi4xTDc5LjIsODIuMUw3Ny40LDgyLjFMNzUuNiw4Mi4xTDczLjgsODIuMUw3Miw4Mi4xTDcwLjIsODIuMUw2OC40LDgyLjFMNjYuNiw4Mi4xTDY0LjgsODIuMUw2Myw4Mi4xTDYxLjIsODIuMUw1OS40LDgyLjJMNTcuNiw4Mi4zTDU1LjgsODIuNEw1NCw4Mi43TDUyLjIsODMuMUw1MC40LDgzLjZMNDguNiw4NC4yTDQ2LjgsODQuOUw0NSw4NS43TDQzLjIsODYuNkw0MS40LDg3LjVMMzkuNiw4OC40TDM3LjgsODkuM0wzNiw5MC4zTDM0LjIsOTEuMUwzMi40LDkyTDMwLjYsOTIuN0wyOC44LDkzLjRMMjcsOTMuOUwyNS4yLDk0LjNMMjMuNCw5NC43TDIxLjYsOTQuOUwxOS44LDk0LjlMMTkuOCw5NC45IiBmaWxsPSIjYTRhZWZmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzg0OGNjZSIgY2xhc3M9InN1YmNsb25lIiBkYXRhLXN1YmNsb25lPSI2IiBkYXRhLWRlc2NlbmRhbnQtc3ViY2xvbmVzPSJbJnF1b3Q7NiZxdW90O10iPjx0aXRsZT5TdWJjbG9uZTogNgpDbG9uYWwgcHJldmFsZW5jZTogMC4yMzMKQ2FuY2VyIGNlbGwgZnJhY3Rpb246IDAuMjMzPC90aXRsZT48L3BhdGg+PHJlY3Qgd2lkdGg9IjkwIiBoZWlnaHQ9IjIuMyIgeD0iMCIgeT0iMTA3LjciIGZpbGw9IiM5ZWQ1ZjMiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjODBhY2M0IiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjExIj48dGl0bGU+U3ViY2xvbmU6IDExCkNsb25hbCBwcmV2YWxlbmNlOiAwLjAyMQpDYW5jZXIgY2VsbCBmcmFjdGlvbjogMC4wMjE8L3RpdGxlPjwvcmVjdD48bGluZSB4MT0iNjgiIHkxPSIxIiB4Mj0iNjgiIHkyPSIxMDkiIHN0cm9rZS1kYXNoYXJyYXk9IjEsNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utb3BhY2l0eT0iMC4yIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iYmxhY2siIGNsYXNzPSJzYW1wbGUtdGFrZW4tbGluZSI+PC9saW5lPjwvZz48dGV4dCB4PSI0NSIgeT0iLTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ic2FtcGxlLWRpc3BsYXktbmFtZSI+PHRzcGFuIGR5PSIwIiB4PSI0NSI+ckFzYzwvdHNwYW4+PC90ZXh0PjwvZz48ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDU0MCwtNTUpIiBjbGFzcz0ic2FtcGxlIiBkYXRhLXNhbXBsZT0iUDNfcjJBc2NfRE5BIj48ZyBjbGFzcz0iYmVsbCI+PHJlY3Qgd2lkdGg9IjkwIiBoZWlnaHQ9IjEwOC4yIiB4PSIwIiB5PSIwLjkiIGZpbGw9IiNkNzdlZTYiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjYWU2NmJhIiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjUiPjx0aXRsZT5TdWJjbG9uZTogNQpDbG9uYWwgcHJldmFsZW5jZTogMC4wMzQKQ2FuY2VyIGNlbGwgZnJhY3Rpb246IDAuOTg0PC90aXRsZT48L3JlY3Q+PHBhdGggZD0iTTE5LjgsNTYuOUwyMS42LDU3LjFMMjMuNCw1OEwyNS4yLDU5LjNMMjcsNjEuMUwyOC44LDYzLjNMMzAuNiw2NS45TDMyLjQsNjlMMzQuMiw3Mi4zTDM2LDc1LjlMMzcuOCw3OS43TDM5LjYsODMuNkw0MS40LDg3LjRMNDMuMiw5MS4xTDQ1LDk0LjZMNDYuOCw5Ny45TDQ4LjYsMTAwLjdMNTAuNCwxMDMuMkw1Mi4yLDEwNS4yTDU0LDEwNi44TDU1LjgsMTA3LjlMNTcuNiwxMDguNkw1OS40LDEwOUw2MS4yLDEwOS4xTDYzLDEwOS4xTDY0LjgsMTA5LjFMNjYuNiwxMDkuMUw2OC40LDEwOS4xTDcwLjIsMTA5LjFMNzIsMTA5LjFMNzMuOCwxMDkuMUw3NS42LDEwOS4xTDc3LjQsMTA5LjFMNzkuMiwxMDkuMUw4MSwxMDkuMUw4Mi44LDEwOS4xTDg0LjYsMTA5LjFMODYuNCwxMDkuMUw4OC4yLDEwOS4xTDkwLDEwOS4xTDkwLDQuNkw4OC4yLDQuNkw4Ni40LDQuNkw4NC42LDQuNkw4Mi44LDQuNkw4MSw0LjZMNzkuMiw0LjZMNzcuNCw0LjZMNzUuNiw0LjZMNzMuOCw0LjZMNzIsNC42TDcwLjIsNC42TDY4LjQsNC42TDY2LjYsNC42TDY0LjgsNC42TDYzLDQuNkw2MS4yLDQuNkw1OS40LDQuN0w1Ny42LDUuMUw1NS44LDUuOEw1NCw2LjlMNTIuMiw4LjVMNTAuNCwxMC41TDQ4LjYsMTNMNDYuOCwxNS45TDQ1LDE5LjFMNDMuMiwyMi42TDQxLjQsMjYuNEwzOS42LDMwLjJMMzcuOCwzNEwzNiwzNy44TDM0LjIsNDEuNEwzMi40LDQ0LjhMMzAuNiw0Ny44TDI4LjgsNTAuNEwyNyw1Mi43TDI1LjIsNTQuNEwyMy40LDU1LjdMMjEuNiw1Ni42TDE5LjgsNTYuOUwxOS44LDU2LjkiIGZpbGw9IiNmYzU3ODciIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjY2I0NjZkIiBjbGFzcz0ic3ViY2xvbmUiIGRhdGEtc3ViY2xvbmU9IjQiIGRhdGEtZGVzY2VuZGFudC1zdWJjbG9uZXM9IlsmcXVvdDs0JnF1b3Q7XSI+PHRpdGxlPlN1YmNsb25lOiA0CkNsb25hbCBwcmV2YWxlbmNlOiAwLjk1MApDYW5jZXIgY2VsbCBmcmFjdGlvbjogMC45NTA8L3RpdGxlPjwvcGF0aD48bGluZSB4MT0iNjgiIHkxPSIxIiB4Mj0iNjgiIHkyPSIxMDkiIHN0cm9rZS1kYXNoYXJyYXk9IjEsNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utb3BhY2l0eT0iMC4yIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iYmxhY2siIGNsYXNzPSJzYW1wbGUtdGFrZW4tbGluZSI+PC9saW5lPjwvZz48dGV4dCB4PSI0NSIgeT0iLTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ic2FtcGxlLWRpc3BsYXktbmFtZSI+PHRzcGFuIGR5PSIwIiB4PSI0NSI+cjJBc2M8L3RzcGFuPjwvdGV4dD48L2c+PC9nPjxnIGNsYXNzPSJ0ZW50YWNsZS1ncm91cCIgcG9pbnRlci1ldmVudHM9Im5vbmUiPjxnIGNsYXNzPSJ0ZW50YWNsZS1idW5kbGUiIGRhdGEtc2FtcGxlPSJQM19wQXNjX0ROQTEiPjxwYXRoIGQ9Ik0xODAsLTEyMi4zQzE1MywtMTIyLjMsMTUzLjUsLTkzLjUsMTM1LC01OC41QzExNi41LC0yMy42LDExNywtNTAsOTAsLTUwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iI2QxZDFkMSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZmlsbD0idHJhbnNwYXJlbnQiIGNsYXNzPSJ0ZW50YWNsZSIgZGF0YS1zdWJjbG9uZT0iMSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWw7Ij48L3BhdGg+PHBhdGggZD0iTTE4MCwtMTA0LjlDMTUzLC0xMDQuOSwxNTIuOCwtODEuNSwxMzUsLTQ3LjhDMTE3LjIsLTE0LjIsMTE3LC0xNSw5MCwtMTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjYzBkOWJlIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJ0cmFuc3BhcmVudCIgY2xhc3M9InRlbnRhY2xlIiBkYXRhLXN1YmNsb25lPSIxMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWw7Ij48L3BhdGg+PHBhdGggZD0iTTE4MCwtOTEuNEMxNTMsLTkxLjQsMTUyLjMsLTY5LjksMTM1LC0zNy4yQzExNy43LC00LjQsMTE3LDEwLDkwLDEwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iI2ExZGRkNyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZmlsbD0idHJhbnNwYXJlbnQiIGNsYXNzPSJ0ZW50YWNsZSIgZGF0YS1zdWJjbG9uZT0iOSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWw7Ij48L3BhdGg+PHBhdGggZD0iTTE4MCwtNTQuMUMxNTMsLTU0LjEsMTUyLjYsLTU5LjgsMTM1LC0yNi41QzExNy40LDYuOCwxMTcsNDAsOTAsNDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjOWVkNWYzIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJ0cmFuc3BhcmVudCIgY2xhc3M9InRlbnRhY2xlIiBkYXRhLXN1YmNsb25lPSIxMSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWw7Ij48L3BhdGg+PC9nPjxnIGNsYXNzPSJ0ZW50YWNsZS1idW5kbGUiIGRhdGEtc2FtcGxlPSJQM19wUGVyMV9ETkEiPjxwYXRoIGQ9Ik0xODAsMzkuM0MxNTMsMzkuMywxNTMuMiw2Ni4yLDEzNSwzMS44QzExNi44LC0yLjYsMTE3LC00MCw5MCwtNDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjZDFkMWQxIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJ0cmFuc3BhcmVudCIgY2xhc3M9InRlbnRhY2xlIiBkYXRhLXN1YmNsb25lPSIxIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbDsiPjwvcGF0aD48cGF0aCBkPSJNMTgwLDY2QzE1Myw2NiwxNTQuNSw3OS4yLDEzNSw0Mi41QzExNS41LDUuOCwxMTcsMjAsOTAsMjAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjYTFkZGQ3IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJ0cmFuc3BhcmVudCIgY2xhc3M9InRlbnRhY2xlIiBkYXRhLXN1YmNsb25lPSI5IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbDsiPjwvcGF0aD48cGF0aCBkPSJNMTgwLDExMS43QzE1MywxMTEuNywxNTMuOSw4OC45LDEzNSw1My4yQzExNi4xLDE3LjUsMTE3LDUwLDkwLDUwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzllZDVmMyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZmlsbD0idHJhbnNwYXJlbnQiIGNsYXNzPSJ0ZW50YWNsZSIgZGF0YS1zdWJjbG9uZT0iMTEiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsOyI+PC9wYXRoPjwvZz48ZyBjbGFzcz0idGVudGFjbGUtYnVuZGxlIiBkYXRhLXNhbXBsZT0iUDNfckFzY19ETkE0Ij48cGF0aCBkPSJNMzYwLC01Mi4xQzMzMywtNTIuMSwzMzIuOSwtMzAuMSwzMTUsLTYzLjlDMjk3LjEsLTk3LjcsMjk3LC0xMzkuOCwyNzAsLTEzOS44IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iI2QxZDFkMSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZmlsbD0idHJhbnNwYXJlbnQiIGNsYXNzPSJ0ZW50YWNsZSIgZGF0YS1zdWJjbG9uZT0iMSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWw7Ij48L3BhdGg+PHBhdGggZD0iTTM2MCwtNDcuM0MzMzMsLTQ3LjMsMzMzLjQsLTE4LjQsMzE1LC01My4yQzI5Ni42LC04Ny45LDI5NywtMTIyLjMsMjcwLC0xMjIuMyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNkOGQyYjQiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIGZpbGw9InRyYW5zcGFyZW50IiBjbGFzcz0idGVudGFjbGUiIGRhdGEtc3ViY2xvbmU9IjIiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsOyI+PC9wYXRoPjxwYXRoIGQ9Ik0zNjAsLTI1LjRDMzMzLC0yNS40LDMzMy4yLC04LjEsMzE1LC00Mi41QzI5Ni44LC03Ni45LDI5NywtMTA0LjksMjcwLC0xMDQuOSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNjMGQ5YmUiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIGZpbGw9InRyYW5zcGFyZW50IiBjbGFzcz0idGVudGFjbGUiIGRhdGEtc3ViY2xvbmU9IjEwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbDsiPjwvcGF0aD48cGF0aCBkPSJNMzYwLDIzLjdDMzMzLDIzLjcsMzMxLjgsLTAuMiwzMTUsLTMxLjhDMjk4LjIsLTYzLjUsMjk3LC05MS40LDI3MCwtOTEuNCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiNhMWRkZDciIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIGZpbGw9InRyYW5zcGFyZW50IiBjbGFzcz0idGVudGFjbGUiIGRhdGEtc3ViY2xvbmU9IjkiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsOyI+PC9wYXRoPjxwYXRoIGQ9Ik0zNjAsNTMuOUMzMzMsNTMuOSwzMzIuMSwxMS4xLDMxNSwtMjEuMUMyOTcuOSwtNTMuMywyOTcsLTU0LjEsMjcwLC01NC4xIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzllZDVmMyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgZmlsbD0idHJhbnNwYXJlbnQiIGNsYXNzPSJ0ZW50YWNsZSIgZGF0YS1zdWJjbG9uZT0iMTEiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsOyI+PC9wYXRoPjwvZz48ZyBjbGFzcz0idGVudGFjbGUtYnVuZGxlIiBkYXRhLXNhbXBsZT0iUDNfcjJBc2NfRE5BIj48cGF0aCBkPSJNNTQwLDBDNTEzLDAsNTE1LjEsMCw0OTUsMEM0NzQuOSwwLDQ3NywtMjEuNCw0NTAsLTIxLjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjZDc3ZWU2IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJ0cmFuc3BhcmVudCIgY2xhc3M9InRlbnRhY2xlIiBkYXRhLXN1YmNsb25lPSI1IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbDsiPjwvcGF0aD48L2c+PC9nPjxnIGNsYXNzPSJsZWdlbmQiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsNjcwLC02NSkiPjxyZWN0IHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgZmlsbD0iI2RlZGVkZSIgc3Ryb2tlPSIjYjNiM2IzIiB4PSIwIiB5PSIwIiBjbGFzcz0ibGVnZW5kLXJlY3QiIGRhdGEtc3ViY2xvbmU9IjEiPjx0aXRsZT5CcmFuY2ggbGVuZ3RoOiA0OTYxPC90aXRsZT48L3JlY3Q+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB4PSIxNyIgeT0iMTEiPjx0c3BhbiBkeT0iMCIgeD0iMTciPjE8L3RzcGFuPjwvdGV4dD48cmVjdCB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIGZpbGw9IiNkZWQ4YmEiIHN0cm9rZT0iI2IzYWU5NiIgeD0iMCIgeT0iMTciIGNsYXNzPSJsZWdlbmQtcmVjdCIgZGF0YS1zdWJjbG9uZT0iMiI+PHRpdGxlPkJyYW5jaCBsZW5ndGg6IDIzOTwvdGl0bGU+PC9yZWN0Pjx0ZXh0IGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgeD0iMTciIHk9IjI4Ij48dHNwYW4gZHk9IjAiIHg9IjE3Ij4yPC90c3Bhbj48L3RleHQ+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiBmaWxsPSIjYzRkZWMyIiBzdHJva2U9IiM5ZWIzOWQiIHg9IjAiIHk9IjM0IiBjbGFzcz0ibGVnZW5kLXJlY3QiIGRhdGEtc3ViY2xvbmU9IjEwIj48dGl0bGU+QnJhbmNoIGxlbmd0aDogMzE0PC90aXRsZT48L3JlY3Q+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB4PSIxNyIgeT0iNDUiPjx0c3BhbiBkeT0iMCIgeD0iMTciPjEwPC90c3Bhbj48L3RleHQ+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiBmaWxsPSIjYTFkZGQ3IiBzdHJva2U9IiM4MmIyYWUiIHg9IjAiIHk9IjUxIiBjbGFzcz0ibGVnZW5kLXJlY3QiIGRhdGEtc3ViY2xvbmU9IjkiPjx0aXRsZT5CcmFuY2ggbGVuZ3RoOiAyMjM8L3RpdGxlPjwvcmVjdD48dGV4dCBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiIHg9IjE3IiB5PSI2MiI+PHRzcGFuIGR5PSIwIiB4PSIxNyI+OTwvdHNwYW4+PC90ZXh0PjxyZWN0IHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgZmlsbD0iIzllZDVmMyIgc3Ryb2tlPSIjODBhY2M0IiB4PSIwIiB5PSI2OCIgY2xhc3M9ImxlZ2VuZC1yZWN0IiBkYXRhLXN1YmNsb25lPSIxMSI+PHRpdGxlPkJyYW5jaCBsZW5ndGg6IDExNzwvdGl0bGU+PC9yZWN0Pjx0ZXh0IGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgeD0iMTciIHk9Ijc5Ij48dHNwYW4gZHk9IjAiIHg9IjE3Ij4xMTwvdHNwYW4+PC90ZXh0PjxyZWN0IHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgZmlsbD0iI2E0YWVmZiIgc3Ryb2tlPSIjODQ4Y2NlIiB4PSIwIiB5PSI4NSIgY2xhc3M9ImxlZ2VuZC1yZWN0IiBkYXRhLXN1YmNsb25lPSI2Ij48dGl0bGU+QnJhbmNoIGxlbmd0aDogOTc5PC90aXRsZT48L3JlY3Q+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB4PSIxNyIgeT0iOTYiPjx0c3BhbiBkeT0iMCIgeD0iMTciPjY8L3RzcGFuPjwvdGV4dD48cmVjdCB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIGZpbGw9IiNkNzdlZTYiIHN0cm9rZT0iI2FlNjZiYSIgeD0iMCIgeT0iMTAyIiBjbGFzcz0ibGVnZW5kLXJlY3QiIGRhdGEtc3ViY2xvbmU9IjUiPjx0aXRsZT5CcmFuY2ggbGVuZ3RoOiAxODAyPC90aXRsZT48L3JlY3Q+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB4PSIxNyIgeT0iMTEzIj48dHNwYW4gZHk9IjAiIHg9IjE3Ij41PC90c3Bhbj48L3RleHQ+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiBmaWxsPSIjZmM1Nzg3IiBzdHJva2U9IiNjYjQ2NmQiIHg9IjAiIHk9IjExOSIgY2xhc3M9ImxlZ2VuZC1yZWN0IiBkYXRhLXN1YmNsb25lPSI0Ij48dGl0bGU+QnJhbmNoIGxlbmd0aDogNDM3PC90aXRsZT48L3JlY3Q+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB4PSIxNyIgeT0iMTMwIj48dHNwYW4gZHk9IjAiIHg9IjE3Ij40PC90c3Bhbj48L3RleHQ+PGcgY2xhc3M9InNhbXBsZS10YWtlbi1sYWJlbCI+PHBhdGggZD0iTTE1LC0xN0w5LC0xN0EzLDMsMCwwLDAsNiwtMTRMNiwtNSIgY2xhc3M9ImFycm93IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjNjA2MDYwIiBmaWxsPSJub25lIiBtYXJrZXItZW5kPSJ1cmwoI3NtYWxsLWFycm93aGVhZCkiPjwvcGF0aD48dGV4dCBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgdGV4dC1hbmNob3I9InN0YXJ0IiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwxOCwtMTcpIj5TdWJjbG9uZTwvdGV4dD48L2c+PGcgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwzNywwKSI+PGxpbmUgeDE9IjAiIHkxPSI2IiB4Mj0iMzMuOTExMzg0NTQwNzIzNyIgeTI9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2U9IiNiMGIwYjAiPjwvbGluZT48bGluZSB4MT0iMCIgeTE9IjIzIiB4Mj0iNy41Njc5NTgwMTg5NjI3NTIiIHkyPSIyMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZT0iI2IwYjBiMCI+PC9saW5lPjxsaW5lIHgxPSIwIiB5MT0iNDAiIHgyPSI5LjkzODU5Mjk2MTQ2NDI5MSIgeTI9IjQwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlPSIjYjBiMGIwIj48L2xpbmU+PGxpbmUgeDE9IjAiIHkxPSI1NyIgeDI9IjYuOTY2MDk3MjYwOTYzMjEiIHkyPSI1NyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZT0iI2IwYjBiMCI+PC9saW5lPjxsaW5lIHgxPSIwIiB5MT0iNzQiIHgyPSIxLjM2MzcxNzIzNDkyMzIzMDUiIHkyPSI3NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZT0iI2IwYjBiMCI+PC9saW5lPjxsaW5lIHgxPSIwIiB5MT0iOTEiIHgyPSIxOS44MTU2NTM4MzYwNjI3NSIgeTI9IjkxIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlPSIjYjBiMGIwIj48L2xpbmU+PGxpbmUgeDE9IjAiIHkxPSIxMDgiIHgyPSIyNS4xMTUwOTU3MzI4NjA4NzYiIHkyPSIxMDgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2U9IiNiMGIwYjAiPjwvbGluZT48bGluZSB4MT0iMCIgeTE9IjEyNSIgeDI9IjEyLjgwOTYyODczOTQwODQzIiB5Mj0iMTI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlPSIjYjBiMGIwIj48L2xpbmU+PGcgY2xhc3M9ImxlZ2VuZC10aWNrcyIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwwLDEzNikiPjxsaW5lIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjYTBhMGEwIj48L2xpbmU+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOS42MDAwMDAwMDAwMDAwMDEiIHRleHQtYW5jaG9yPSJlbmQiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCA4KSByb3RhdGUoLTQ1KSI+MTAwPC90ZXh0PjxsaW5lIHgxPSIxOS45OTk5OTk5OTk5OTk5OTMiIHkxPSIwIiB4Mj0iMTkuOTk5OTk5OTk5OTk5OTkzIiB5Mj0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iI2EwYTBhMCI+PC9saW5lPjx0ZXh0IGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjkuNjAwMDAwMDAwMDAwMDAxIiB0ZXh0LWFuY2hvcj0iZW5kIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuOTk5OTk5OTk5OTk5OTkzLCA4KSByb3RhdGUoLTQ1KSI+MTAwMDwvdGV4dD48bGluZSB4MT0iNDAiIHkxPSIwIiB4Mj0iNDAiIHkyPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjYTBhMGEwIj48L2xpbmU+PHRleHQgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iOS42MDAwMDAwMDAwMDAwMDEiIHRleHQtYW5jaG9yPSJlbmQiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MCwgOCkgcm90YXRlKC00NSkiPjEwMDAwPC90ZXh0PjxsaW5lIHgxPSIwIiB5MT0iMCIgeDI9IjQwIiB5Mj0iMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iI2EwYTBhMCI+PC9saW5lPjwvZz48dGV4dCBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtMywxKSIgY2xhc3M9ImxlZ2VuZC10aXRsZSI+VmFyaWFudHM8L3RleHQ+PC9nPjwvZz48L2c+PC9zdmc+",
+          "src": "https://rworks.dev/posts/february-2025-top-40-new-cran-packages/jelly.svg"
+        },
+        {
+          "alt": "Plot of normal distribution with defining equation",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of normal distribution with defining equation",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/xdvir.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Year-to-year changes in drought frequency",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Year-to-year changes in drought frequency",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SPI.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/joseph-rickert/",
+          "text": "Joseph Rickert"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391513 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">February 2025 Top 40 New CRAN Packages</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 27, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/joseph-rickert/\">Joseph Rickert</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/february-2025-top-40-new-cran-packages/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>In February, one hundred fifty-nine new packages made it to CRAN. Here are my Top 40 picks in fifteen categories: Artificial Intelligence, Computational Methods, Ecology, Genomics, Health Sciences, Mathematics, Machine Learning, Medicine, Music, Pharma, Statistics, Time Series, Utilities, Visualization, and Weather.</p>\n<div class=\"columns\">\n<div class=\"column\" style=\"width:45%;\">\n<section class=\"level2\" id=\"artificial-intelligence\">\n<h2 class=\"anchored\" data-anchor-id=\"artificial-intelligence\">Artificial Intelligence</h2>\n<p><a href=\"https://cran.r-project.org/package=chores\" rel=\"nofollow\" target=\"_blank\">chores</a> v0.1.0: Provides a collection of ergonomic large language model assistants designed to help you complete repetitive, hard-to-automate tasks quickly. After selecting some code, press the keyboard shortcut you’ve chosen to trigger the package app, select an assistant, and watch your chore be carried out. Users can create custom helpers just by writing some instructions in a markdown file. There are three vignettes: <a href=\"https://cran.r-project.org/web/packages/chores/vignettes/chores.html\" rel=\"nofollow\" target=\"_blank\">Getting started</a>, <a href=\"https://cran.r-project.org/web/packages/chores/vignettes/custom.html\" rel=\"nofollow\" target=\"_blank\">Custom helpers</a>, and <a href=\"https://cran.r-project.org/web/packages/chores/vignettes/gallery.html\" rel=\"nofollow\" target=\"_blank\">Gallery</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-1\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/chores.gif?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Working with chores gif\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/chores.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Working with chores gif\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/chores.gif?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=gander\" rel=\"nofollow\" target=\"_blank\">gander</a> v0.1.0: Provides a <em>Copilot</em> completion experience that knows how to talk to the objects in your R environment. <code>ellmer</code> chats are integrated directly into your <code>RStudio</code> and <code>Positron</code> sessions, automatically incorporating relevant context from surrounding lines of code and your global environment. See the <a href=\"https://cran.r-project.org/web/packages/gander/vignettes/gander.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-2\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/gander.gif?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Gifof gander use\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/gander.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Gifof gander use\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/gander.gif?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=GitAI\" rel=\"nofollow\" target=\"_blank\">GitAI</a> v0.1.0: Provides functions to scan multiple <code>Git</code> repositories, pull content from specified files, and process it with LLMs. You can summarize the content, extract information and data, or find answers to your questions about the repositories. The output can be stored in a vector database and used for semantic search or as a part of a RAG (Retrieval Augmented Generation) prompt. See the <a href=\"https://cran.r-project.org/web/packages/GitAI/vignettes/building-shiny-app-chatbot.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-3\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/GitAI.gif?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Exaple GIF\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/GitAI.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Exaple GIF\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/GitAI.gif?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"computational-methods\">\n<h2 class=\"anchored\" data-anchor-id=\"computational-methods\">Computational Methods</h2>\n<p><a href=\"https://cran.r-project.org/package=nlpembeds\" rel=\"nofollow\" target=\"_blank\">nlpembeds</a> v1.0.0: Provides efficient methods to compute co-occurrence matrices, point wise mutual information (PMI), and singular value decomposition (SVD), especially useful when working with huge databases in biomedical and clinical settings. Functions can be called on <code>SQL</code> databases, enabling the computation of co-occurrence matrices of tens of gigabytes of data, representing millions of patients over tens of years. See <a href=\"https://www.nature.com/articles/s41746-021-00519-z\" rel=\"nofollow\" target=\"_blank\">Hong (2021)</a> for background and the <a href=\"https://cran.r-project.org/web/packages/nlpembeds/vignettes/cooc_pmi_svd.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for examples.</p>\n<p><a href=\"https://cran.r-project.org/package=NLPwavelet\" rel=\"nofollow\" target=\"_blank\">NLPwavelet</a> v1.0: Provides functions for Bayesian wavelet analysis using individual non-local priors as described in <a href=\"https://link.springer.com/article/10.1007/s13571-016-0129-3\" rel=\"nofollow\" target=\"_blank\">Sanyal &amp; Ferreira (2017)</a> and non-local prior mixtures as described in <a href=\"https://arxiv.org/abs/2501.18134\" rel=\"nofollow\" target=\"_blank\">Sanyal (2025)</a>. See <a href=\"https://cran.r-project.org/web/packages/NLPwavelet/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-4\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/NLPwavelet.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Wavelet plot of posterior \" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/NLPwavelet.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Wavelet plot of posterior \" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/NLPwavelet.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=pnd\" rel=\"nofollow\" target=\"_blank\">pnd</a> v0.0.9: Provides functions to compute numerical derivatives including gradients, Jacobians, and Hessians through finite-difference approximations with parallel capabilities and optimal step-size selection to improve accuracy. Advanced features include computing derivatives of arbitrary order. There are three vignettes on the topics: <a href=\"https://cran.r-project.org/web/packages/pnd/vignettes/compatibility-with-numDeriv.html\" rel=\"nofollow\" target=\"_blank\">Compatibility with numDeriv</a>, <a href=\"https://cran.r-project.org/web/packages/pnd/vignettes/fast-and-accurate.html\" rel=\"nofollow\" target=\"_blank\">Parallel numerical derivatives</a>, and <a href=\"https://cran.r-project.org/web/packages/pnd/vignettes/step-size-selection.html\" rel=\"nofollow\" target=\"_blank\">Step-size selection</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=rmcmc\" rel=\"nofollow\" target=\"_blank\">rmcmc</a> v0.1.1: Provides functions to simulate Markov chains using the proposal from <a href=\"https://academic.oup.com/jrsssb/article/84/2/496/7056132?login=false\" rel=\"nofollow\" target=\"_blank\">Livingstone and Zanella (2022)</a> to compute MCMC estimates of expectations with respect to a target distribution on a real-valued vector space. The package also provides implementations of alternative proposal distributions, such as (Gaussian) random walk and Langevin proposals. Optionally, <a href=\"https://roualdes.github.io/bridgestan/latest/languages/r.html\" rel=\"nofollow\" target=\"_blank\">BridgeStan’s R interface</a> <code>BridgeStan</code> can be used to specify the target distribution. There is an <a href=\"https://cran.r-project.org/web/packages/rmcmc/vignettes/barker-proposal.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> to the Barker proposal and a vignette on <a href=\"https://cran.r-project.org/web/packages/rmcmc/vignettes/adjusting-noise-distribution.html\" rel=\"nofollow\" target=\"_blank\">Adjusting the noise distribution</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-5\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rmcmc.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of mcmc chain adapting to Langevin proposal\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rmcmc.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of mcmc chain adapting to Langevin proposal\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rmcmc.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=sgdGMF\" rel=\"nofollow\" target=\"_blank\">sgdGMF</a> v1.0: Implements a framework to estimate high-dimensional, generalized matrix factorization models using penalized maximum likelihood under a dispersion exponential family specification, including the stochastic gradient descent algorithm with a block-wise mini-batch strategy and an efficient adaptive learning rate schedule to stabilize convergence. All the theoretical details can be found in <a href=\"https://arxiv.org/abs/2412.20509\" rel=\"nofollow\" target=\"_blank\">Castiglione et al. (2024)</a>. Also included are the alternated iterative re-weighted least squares and the quasi-Newton method with diagonal approximation of the Fisher information matrix discussed in <a href=\"http://jmlr.org/papers/v23/20-1104.html\" rel=\"nofollow\" target=\"_blank\">Kidzinski et al. (2022)</a>. There are four vignettes, including <a href=\"https://cran.r-project.org/web/packages/sgdGMF/vignettes/introduction.html\" rel=\"nofollow\" target=\"_blank\">introduction</a> and <a href=\"https://cran.r-project.org/web/packages/sgdGMF/vignettes/residuals.html\" rel=\"nofollow\" target=\"_blank\">residuals</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-6\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/sgdGMF.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plots of Deviance and Pearson residuals\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/sgdGMF.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots of Deviance and Pearson residuals\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/sgdGMF.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"data\">\n<h2 class=\"anchored\" data-anchor-id=\"data\">Data</h2>\n<p><a href=\"https://cran.r-project.org/package=acledR\" rel=\"nofollow\" target=\"_blank\">acledR</a> v0.1.0: Provides tools for working with data from ACLED (Armed Conflict Location and Event Data). Functions include simplified access to <a href=\"https://apidocs.acleddata.com/\" rel=\"nofollow\" target=\"_blank\">ACLED’s API</a>, methods for keeping local versions of ACLED data up-to-date, and functions for common ACLED data transformations. See the <a href=\"https://cran.r-project.org/web/packages/acledR/vignettes/get_started.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a href=\"https://cran.r-project.org/package=Horsekicks\" rel=\"nofollow\" target=\"_blank\">Horsekicks</a> v1/0/2: Provides extensions to the classical dataset <em>Death by the kick of a horse in the Prussian Army</em> first used by Ladislaus von Bortkeiwicz in his treatise on the Poisson distribution <a href=\"https://archive.org/details/dasgesetzderklei00bortrich/mode/1up\" rel=\"nofollow\" target=\"_blank\"><em>Das Gesetz der kleinen Zahlen</em></a>. Also included are deaths by falling from a horse and by drowning. See the <a href=\"https://cran.r-project.org/web/packages/Horsekicks/vignettes/hkdeaths.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-7\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/horse.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Dangers to the Prussian Cavalry\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/horse.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Dangers to the Prussian Cavalry\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/horse.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=OhdsiReportGenerator\" rel=\"nofollow\" target=\"_blank\">OhdsiReportGenerator</a> v1.0.1: Extracts results from the <a href=\"https://ohdsi.github.io/Strategus/results-schema/index.html\" rel=\"nofollow\" target=\"_blank\">Observational Health Data Sciences and Informatics result database</a> and generates <code>Quarto</code> reports and presentations. See the <a href=\"https://cran.r-project.org/web/packages/OhdsiReportGenerator/vignettes/ExampleCode.html\" rel=\"nofollow\" target=\"_blank\">package guide</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=wbwdi\" rel=\"nofollow\" target=\"_blank\">wbwdi</a> v1.0.0: Provides functions to access and analyze the World Bank’s World Development Indicators (WDI) using <a href=\"https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation\" rel=\"nofollow\" target=\"_blank\">the corresponding API</a>. WDI provides more than 24,000 country or region-level indicators for various contexts. See the <a href=\"https://cran.r-project.org/web/packages/wbwdi/vignettes/data-model.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-8\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/wbwdi.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"wbwdi data model\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/wbwdi.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"wbwdi data model\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/wbwdi.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"ecology\">\n<h2 class=\"anchored\" data-anchor-id=\"ecology\">Ecology</h2>\n<p><a href=\"https://cran.r-project.org/package=rangr\" rel=\"nofollow\" target=\"_blank\">rangr</a> v1.0.6: Implements a mechanistic virtual species simulator that integrates population dynamics and dispersal to study the effects of environmental change on population growth and range shifts. Look <a href=\"https://docs.ropensci.org/rangr/\" rel=\"nofollow\" target=\"_blank\">here</a> for background and see the <a href=\"https://cran.r-project.org/web/packages/rangr/vignettes/rangr.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-9\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rangr.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Abundance plotsl\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rangr.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Abundance plotsl\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/rangr.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"economics\">\n<h2 class=\"anchored\" data-anchor-id=\"economics\">Economics</h2>\n<p><a href=\"https://cran.r-project.org/package=godley\" rel=\"nofollow\" target=\"_blank\">godley</a> v0.2.2: Provides tools to define, simulate, and validate stock-flow consistent (SFC) macroeconomic models by specifying governing systems of equations. Users can analyze how macroeconomic structures affect key variables, perform sensitivity analyses, introduce policy shocks, and visualize resulting economic scenarios. See <a href=\"https://link.springer.com/book/10.1007/978-1-137-08599-3\" rel=\"nofollow\" target=\"_blank\">Godley and Lavoie (2007)</a>, <a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1729205\" rel=\"nofollow\" target=\"_blank\">Kinsella and O’Shea (2010)</a> for background and the <a href=\"https://cran.r-project.org/web/packages/godley/vignettes/package_outline.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-10\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/godley.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Example model structure\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/godley.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Example model structure\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/godley.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"genomics\">\n<h2 class=\"anchored\" data-anchor-id=\"genomics\">Genomics</h2>\n<p><a href=\"https://cran.r-project.org/package=gimap\" rel=\"nofollow\" target=\"_blank\">gimap</a> v1.0.3: Helps to calculate genetic interactions in <em>CRISPR</em> targets by taking data from paired CRISPR screens that have been pre-processed to count tables of paired gRNA reads. Output are genetic interaction scores, the distance between the observed CRISPR score and the expected CRISPR score. See <a href=\"https://www.cell.com/cell-reports/fulltext/S2211-1247%2821%2901035-4\" rel=\"nofollow\" target=\"_blank\">Berger et al. (2021)</a> for background and the vignettes <a href=\"https://cran.r-project.org/web/packages/gimap/vignettes/quick-start.html\" rel=\"nofollow\" target=\"_blank\">Quick Start</a>, <a href=\"https://cran.r-project.org/web/packages/gimap/vignettes/timepoint-example.html\" rel=\"nofollow\" target=\"_blank\">Timepoint Experiment</a>, and <a href=\"https://cran.r-project.org/web/packages/gimap/vignettes/treatment_example.html\" rel=\"nofollow\" target=\"_blank\">Treatment Experiment</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=MIC\" rel=\"nofollow\" target=\"_blank\">MIC</a> v1.0.2: Provides functions to analyze, plot, and tabulate antimicrobial <a href=\"https://www.idexx.com/files/microbiology-guide-interpreting-mic.pdf\" rel=\"nofollow\" target=\"_blank\">minimum inhibitory concentration</a> (MIC) data and predict MIC values from whole genome sequence data stored in the <a href=\"https://academic.oup.com/nar/article/42/D1/D581/1049866?login=false\" rel=\"nofollow\" target=\"_blank\">Pathosystems Resource Integration Center (2013)</a> database or locally. See <a href=\"https://cran.r-project.org/web/packages/MIC/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-11\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/MIC.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Results of MIC test\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/MIC.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Results of MIC test\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/MIC.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"health-sciences\">\n<h2 class=\"anchored\" data-anchor-id=\"health-sciences\">Health Sciences</h2>\n<p><a href=\"https://cran.r-project.org/package=matriz\" rel=\"nofollow\" target=\"_blank\">matriz</a> v1.0.1: Implements a workflow that provides tools to create, update, and fill literature matrices commonly used in research, specifically epidemiology and health sciences research. See <a href=\"https://cran.r-project.org/web/packages/matriz/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> to get started.</p>\n</section>\n<section class=\"level2\" id=\"mathematics\">\n<h2 class=\"anchored\" data-anchor-id=\"mathematics\">Mathematics</h2>\n<p><a href=\"https://cran.r-project.org/package=flint\" rel=\"nofollow\" target=\"_blank\">flint</a> v0.0.3: Provides an interface to <a href=\"https://flintlib.org/\" rel=\"nofollow\" target=\"_blank\"><code>FLINT</code></a>, a C library for number theory which extends GNU <a href=\"https://www.mpfr.org/\" rel=\"nofollow\" target=\"_blank\">MPFR</a> and GNU <a href=\"https://gmplib.org/\" rel=\"nofollow\" target=\"_blank\">MP</a> with support for arithmetic in standard rings (the integers, the integers modulo n, the rational, p-adic, real, and complex numbers) as well as vectors, matrices, polynomials, and power series over rings and implements midpoint-radius interval arithmetic, in the real and complex numbers See <a href=\"https://ieeexplore.ieee.org/document/7891956\" rel=\"nofollow\" target=\"_blank\">Johansson (2017)</a> for information on computation in arbitrary precision with rigorous propagation of errors and see the <a href=\"https://dlmf.nist.gov/\" rel=\"nofollow\" target=\"_blank\">NIST Digital Library of Mathematical Functions</a> for information on additional capabilities. Look <a href=\"https://github.com/jaganmn/flint\" rel=\"nofollow\" target=\"_blank\">here</a> to get started.</p>\n</section>\n<section class=\"level2\" id=\"machine-learning\">\n<h2 class=\"anchored\" data-anchor-id=\"machine-learning\">Machine Learning</h2>\n<p><a href=\"https://cran.r-project.org/package=tall\" rel=\"nofollow\" target=\"_blank\">tall</a> v0.1.1: Implements a general-purpose tool for analyzing textual data as a <code>shiny</code> application with features that include a comprehensive workflow, data cleaning, preprocessing, statistical analysis, and visualization. See the <a href=\"https://www.k-synth.com/tall/\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><img alt=\"Automatic Lemmatization and PoS-Tagging through LLM\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/tall.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Automatic Lemmatization and PoS-Tagging through LLM\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/tall.png?w=578&amp;ssl=1\"/></noscript> “}</p>\n</section>\n<section class=\"level2\" id=\"medicine\">\n<h2 class=\"anchored\" data-anchor-id=\"medicine\">Medicine</h2>\n<p><a href=\"https://cran.r-project.org/package=BayesERtools\" rel=\"nofollow\" target=\"_blank\">BayesERtools</a> v0.2.1: Provides tools that facilitate exposure-response analysis using Bayesian methods. These include a streamlined workflow for fitting types of models that are commonly used in exposure-response analysis – linear and Emax for continuous endpoints, logistic linear and logistic Emax for binary endpoints, as well as performing simulation and visualization. Look <a href=\"https://genentech.github.io/BayesERbook/\" rel=\"nofollow\" target=\"_blank\">here</a> to learn more about the workflow, and see the <a href=\"https://cran.r-project.org/web/packages/BayesERtools/vignettes/overview_of_the_package.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for an overview.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-12\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BayesER.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Chart of supported model types\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BayesER.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Chart of supported model types\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BayesER.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n</div><div class=\"column\" style=\"width:10%;\">\n</div><div class=\"column\" style=\"width:45%;\">\n<section class=\"level2\" id=\"medicine-continued\">\n<h2 class=\"anchored\" data-anchor-id=\"medicine-continued\">Medicine Continued</h2>\n<p><a href=\"https://cran.r-project.org/package=PatientLevelPrediction\" rel=\"nofollow\" target=\"_blank\">PatientLevelPrediction</a> v6.4.0: Implements a framework to create patient-level prediction models using the <a href=\"https://www.ohdsi.org/data-standardization/\" rel=\"nofollow\" target=\"_blank\">Observational Medical Outcomes Partnership Common Data Model</a>. Given a cohort of interest and an outcome of interest, the package can use data in the Common Data Model to build a large set of features, which can then be used to fit a predictive model with a number of machine learning algorithms. This is further described in <a href=\"https://academic.oup.com/jamia/article/25/8/969/4989437?login=false\" rel=\"nofollow\" target=\"_blank\">Reps et al. (2017)</a>. There are fourteen vignettes, including <a href=\"https://cran.r-project.org/web/packages/PatientLevelPrediction/vignettes/BuildingPredictiveModels.html\" rel=\"nofollow\" target=\"_blank\">Building Patient Level Prediction Models</a> and <a href=\"https://cran.r-project.org/web/packages/PatientLevelPrediction/vignettes/BestPractices.html\" rel=\"nofollow\" target=\"_blank\">Best Practices</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-13\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/PLPM.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Scematic of the Prediction problem\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/PLPM.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Scematic of the Prediction problem\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/PLPM.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=SimTOST\" rel=\"nofollow\" target=\"_blank\">SimTOST</a> v1.0.2: Implements a Monte Carlo simulation approach to estimating sample sizes, power, and type I error rates for bio-equivalence trials that are based on the Two One-Sided Tests (TOST) procedure. Users can model complex trial scenarios, including parallel and crossover designs, intra-subject variability, and different equivalence margins. See <a href=\"https://link.springer.com/article/10.1007/BF01068419\" rel=\"nofollow\" target=\"_blank\">Schuirmann (1987)</a>, <a href=\"https://www.tandfonline.com/doi/full/10.1080/19466315.2017.1371071\" rel=\"nofollow\" target=\"_blank\">Mielke et al. (2018)</a>, and <a href=\"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269128\" rel=\"nofollow\" target=\"_blank\">Shieh (2022)</a> for background. There are seven vignettes including <a href=\"https://cran.r-project.org/web/packages/SimTOST/vignettes/intropkg.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and <a href=\"https://cran.r-project.org/web/packages/SimTOST/vignettes/sampleSize_parallel_2A1E.html\" rel=\"nofollow\" target=\"_blank\">Bioequivalence Tests for Parallel Trial Designs: 2 Arms, 1 Endpoint</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-14\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SimTost.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Power estimation plots\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SimTost.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Power estimation plots\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SimTost.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"music\">\n<h2 class=\"anchored\" data-anchor-id=\"music\">Music</h2>\n<p><a href=\"https://cran.r-project.org/package=musicXML\" rel=\"nofollow\" target=\"_blank\">musicXML</a> v1.0.1: Implements tools to facilitate data sonification and create files to share music notation in the <a href=\"https://usermanuals.musicxml.com/MusicXML/Content/XS-MusicXML.htm\" rel=\"nofollow\" target=\"_blank\">musicXML</a> format. Several classes are defined for basic musical objects such as note pitch, note duration, note, measure, and score. Sonification functions map data into musical attributes such as pitch, loudness, or duration. See <a href=\"https://globxblog.github.io/\" rel=\"nofollow\" target=\"_blank\">the blog</a> and <a href=\"https://hal.science/hal-03710340v1\" rel=\"nofollow\" target=\"_blank\">Renard and Le Bescond (2022)</a> for examples and the <a href=\"https://cran.r-project.org/web/packages/musicXML/vignettes/GettingStarted.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-15\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/musicXML.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"WaggaWagga time series is mapped to pitch.\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/musicXML.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"WaggaWagga time series is mapped to pitch.\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/musicXML.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"pharma\">\n<h2 class=\"anchored\" data-anchor-id=\"pharma\">Pharma</h2>\n<p><a href=\"https://cran.r-project.org/package=emcAdr\" rel=\"nofollow\" target=\"_blank\">emcAdr</a> v1.2: Provides computational methods for detecting adverse high-order drug interactions from individual case safety reports using statistical techniques, allowing the exploration of higher-order interactions among drug cocktails. See the <a href=\"https://cran.r-project.org/web/packages/emcAdr/vignettes/base.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-16\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/emcAdr.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plots of estimated andtrue distributions\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/emcAdr.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots of estimated andtrue distributions\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/emcAdr.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=SynergyLMM\" rel=\"nofollow\" target=\"_blank\">SynergyLMM</a> v1.0.1: Implements a framework for evaluating drug combination effects in preclinical in vivo studies, which provides functions to analyze longitudinal tumor growth experiments using linear mixed-effects models, perform time-dependent analyses of synergy and antagonism, evaluate model diagnostics and performance, and assess both post-hoc and a priori statistical power. See <a href=\"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224137\" rel=\"nofollow\" target=\"_blank\">Demidenko &amp; Miller (2019</a> for the calculation of drug combination synergy and <a href=\"https://link.springer.com/book/10.1007/b98882\" rel=\"nofollow\" target=\"_blank\">Pinheiro and Bates (2000)</a> and <a href=\"https://link.springer.com/book/10.1007/978-1-4614-3900-4\" rel=\"nofollow\" target=\"_blank\">Gałecki &amp; Burzykowski (2013)</a> for information on linear mixed-effects models. The <a href=\"https://cran.r-project.org/web/packages/SynergyLMM/vignettes/SynergyLMM.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> offers a tutorial.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-17\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SynergyLLM.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"the SynergyLLM workflow\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SynergyLLM.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"the SynergyLLM workflow\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SynergyLLM.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=vigicaen\" rel=\"nofollow\" target=\"_blank\">vigicaen</a> v0.15.6: Implements a toolbox to perform the analysis of the World Health Organization (WHO) Pharmacovigilance database, <a href=\"https://who-umc.org/\" rel=\"nofollow\" target=\"_blank\">VigiBase</a>, with functions to load data, perform data management, disproportionality analysis, and descriptive statistics. Intended for pharmacovigilance routine use or studies. There are eight vignettes, including <a href=\"https://cran.r-project.org/web/packages/vigicaen/vignettes/basic_workflow.html\" rel=\"nofollow\" target=\"_blank\">basic workflow</a> and <a href=\"https://cran.r-project.org/web/packages/vigicaen/vignettes/routine_pharmacovigilance.html\" rel=\"nofollow\" target=\"_blank\">routine pharmacoviligance</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-18\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/vigicaen.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Example of vigibase analysis\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/vigicaen.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Example of vigibase analysis\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/vigicaen.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"psychology\">\n<h2 class=\"anchored\" data-anchor-id=\"psychology\">Psychology</h2>\n<p><a href=\"https://cran.r-project.org/package=cogirt\" rel=\"nofollow\" target=\"_blank\">cogirt</a> v1.0.0: Provides tools to psychometrically analyze latent individual differences related to tasks, interventions, or maturational/aging effects in the context of experimental or longitudinal cognitive research using methods first described by <a href=\"https://journals.sagepub.com/doi/10.1177/0013164420919898\" rel=\"nofollow\" target=\"_blank\">Thomas et al. (2020)</a>. See the <a href=\"https://cran.r-project.org/web/packages/cogirt/vignettes/cogirt.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-19\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/cogirt.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot showing subjects timescore data\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/cogirt.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot showing subjects timescore data\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/cogirt.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"statistics\">\n<h2 class=\"anchored\" data-anchor-id=\"statistics\">Statistics</h2>\n<p><a href=\"https://cran.r-project.org/package=DiscreteDLM\" rel=\"nofollow\" target=\"_blank\">DiscreteDLM</a> v1.0.0: Provides tools for fitting Bayesian distributed lag models (DLMs) to count or binary, longitudinal response data. Count data are fit using negative binomial regression, binary are fit using quantile regression. Lag contribution is fit via b-splines. See <a href=\"https://arxiv.org/abs/2403.03646\" rel=\"nofollow\" target=\"_blank\">Dempsey and Wyse (2025)</a> for background and <a href=\"https://cran.r-project.org/web/packages/DiscreteDLM/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><img alt=\"A regression slopes ridge plot\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/DiscreteDLM.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"A regression slopes ridge plot\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/DiscreteDLM.png?w=578&amp;ssl=1\"/></noscript> <a href=\"https://cran.r-project.org/package=oneinfl\" rel=\"nofollow\" target=\"_blank\">oneinfl</a> v1.0.1: Provides functions to estimate Estimates one-inflated positive Poisson, one-inflated zero-truncated negative binomial regression models, positive Poisson models, and zero-truncated negative binomial models along with marginal effects and their standard errors. The models and applications are described in <a href=\"https://arxiv.org/abs/2402.02272\" rel=\"nofollow\" target=\"_blank\">Godwin (2024)</a>. See <a href=\"https://cran.r-project.org/web/packages/oneinfl/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for and example.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-20\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/oneinfl.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of distributions vs actual data\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/oneinfl.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of distributions vs actual data\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/oneinfl.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"time-series\">\n<h2 class=\"anchored\" data-anchor-id=\"time-series\">Time Series</h2>\n<p><a href=\"https://cran.r-project.org/package=BayesChange\" rel=\"nofollow\" target=\"_blank\">BayesChange</a> v2/0/0: Provides functions for change point detection on univariate and multivariate time series according to the methods presented by <a href=\"https://projecteuclid.org/journals/bayesian-analysis/volume-9/issue-4/On-a-Nonparametric-Change-Point-Detection-Model-in-Markovian-Regimes/10.1214/14-BA878.full\" rel=\"nofollow\" target=\"_blank\">Martinez &amp; Mena (2014)</a> and <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0888613X21002231?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Corradin et al. (2022)</a> along with methods for clustering time dependent data with common change points. See <a href=\"https://arxiv.org/abs/2410.09552\" rel=\"nofollow\" target=\"_blank\">Corradin et. al. (2024)</a>. There is a <a href=\"https://cran.r-project.org/web/packages/BayesChange/vignettes/tutorial.html\" rel=\"nofollow\" target=\"_blank\">tutorial</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-21\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BC.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Time series clusters\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BC.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Time series clusters\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/BC.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=echos\" rel=\"nofollow\" target=\"_blank\">echos</a> v1.0.3: Provides a lightweight implementation of functions and methods for fast and fully automatic time series modeling and forecasting using Echo State Networks. See the vignettes <a href=\"https://cran.r-project.org/web/packages/echos/vignettes/vignette_01_baseR.html\" rel=\"nofollow\" target=\"_blank\">Base functions</a> and <a href=\"https://cran.r-project.org/web/packages/echos/vignettes/vignette_02_tidyR.html\" rel=\"nofollow\" target=\"_blank\">Tidy functions</a>.</p>\n<p><img alt=\"Example of time series forecast\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/echos.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Example of time series forecast\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/echos.png?w=578&amp;ssl=1\"/></noscript> <a href=\"https://cran.r-project.org/package=quadVAR\" rel=\"nofollow\" target=\"_blank\">quadVAR</a> v0.1.2: Provides functions to estimate quadratic vector autoregression models with the strong hierarchy using the Regularization Algorithm under Marginality Principle of <a href=\"https://www.tandfonline.com/doi/full/10.1080/01621459.2016.1264956\" rel=\"nofollow\" target=\"_blank\">Hao et al. (2018)</a> to compare the performance with linear models and construct networks with partial derivatives. See <a href=\"https://cran.r-project.org/web/packages/quadVAR/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-22\" href=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/quadVAR.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Example model plot\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/quadVAR.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Example model plot\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/quadVAR.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"utilities\">\n<h2 class=\"anchored\" data-anchor-id=\"utilities\">Utilities</h2>\n<p><a href=\"https://cran.r-project.org/package=aftables\" rel=\"nofollow\" target=\"_blank\">aftables</a> v1.0.2: Provides tools to generate spreadsheet publications that follow best practice guidance from the <a href=\"https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/\" rel=\"nofollow\" target=\"_blank\">UK government’s Analysis Function</a>. There are four vignettes, including an <a href=\"https://cran.r-project.org/web/packages/aftables/vignettes/aftables.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and <a href=\"https://cran.r-project.org/web/packages/aftables/vignettes/checklist.html\" rel=\"nofollow\" target=\"_blank\">Accessibility</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=watcher\" rel=\"nofollow\" target=\"_blank\">watcher</a> v0.1.2: Implements an <code>R</code> binding for <a href=\"https://emcrisostomo.github.io/fswatch/doc/1.9.3/libfswatch.html/\" rel=\"nofollow\" target=\"_blank\"><code>libfswatch</code></a>, a file system monitoring library, that enables users to watch files or directories recursively for changes in the background. Log activity or run an <code>R</code> function every time a change event occurs. See the <a href=\"https://cran.r-project.org/web/packages/watcher/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for an example.</p>\n</section>\n<section class=\"level2\" id=\"visualization\">\n<h2 class=\"anchored\" data-anchor-id=\"visualization\">Visualization</h2>\n<p><a href=\"https://cran.r-project.org/package=jellyfisher\" rel=\"nofollow\" target=\"_blank\">jellyfisher</a> v1.0.4: Generates interactive <em>Jellyfish</em> plots to visualize spatiotemporal tumor evolution by integrating sample and phylogenetic trees into a unified plot. This approach provides an intuitive way to analyze tumor heterogeneity and evolution over time and across anatomical locations. The Jellyfish plot visualization design was first introduced by <a href=\"https://www.cell.com/cancer-cell/fulltext/S1535-6108(23)00143-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1535610823001435%3Fshowall%3Dtrue\" rel=\"nofollow\" target=\"_blank\">Lahtinen et al. (2023)</a>. See the <a href=\"https://hautaniemilab.github.io/jellyfisher/\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-23\" href=\"https://rworks.dev/posts/february-2025-top-40-new-cran-packages/jelly.svg\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Example Jellyfisher Plot\" class=\"img-fluid\" data-lazy-src=\"https://rworks.dev/posts/february-2025-top-40-new-cran-packages/jelly.svg\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Example Jellyfisher Plot\" class=\"img-fluid\" src=\"https://rworks.dev/posts/february-2025-top-40-new-cran-packages/jelly.svg\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/web/packages/xdvir/index.html#:~:text=https%3A//CRAN.R-project.org/package%3Dxdvir\" rel=\"nofollow\" target=\"_blank\">xdvir</a> v0.1-2: Provides high-level functions to render <code>LaTeX</code> fragments as labels and data symbols in <code>ggplot2</code> plots, plus low-level functions to author, produce, and typeset <code>LaTeX</code> documents, and to produce, read, and render <code>DVI</code>files. See the <a href=\"https://cran.r-project.org/web/packages/xdvir/vignettes/xdvir-intro.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-24\" href=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/xdvir.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of normal distribution with defining equation\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/xdvir.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of normal distribution with defining equation\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/xdvir.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level2\" id=\"weather\">\n<h2 class=\"anchored\" data-anchor-id=\"weather\">Weather</h2>\n<p><a href=\"https://cran.r-project.org/package=RFplus\" rel=\"nofollow\" target=\"_blank\">RFplus</a> v1.4-0: Implements a machine learning algorithm that merges satellite and ground precipitation data using Random Forest for spatial prediction, residual modeling for bias correction, and quantile mapping for adjustment, ensuring accurate estimates across temporal scales and regions. See the <a href=\"https://cran.r-project.org/web/packages/RFplus/vignettes/RFplus.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=SPIChanges\" rel=\"nofollow\" target=\"_blank\">SPIChanges</a> v0.1.0: Provides methods to improve the interpretation of the Standardized Precipitation Index under changing climate conditions. It implements the nonstationary approach of <a href=\"https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.7550\" rel=\"nofollow\" target=\"_blank\">Blain et al. (2022)</a> to detect trends in rainfall quantities and quantify the effect of such trends on the probability of a drought event occurring. There is an <a href=\"https://cran.r-project.org/web/packages/SPIChanges/vignettes/SPIChanges.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and a vignette <a href=\"https://cran.r-project.org/web/packages/SPIChanges/vignettes/CaseStudies.html\" rel=\"nofollow\" target=\"_blank\">Monte Carlo Experiments and Case Studies</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-25\" href=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SPI.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Year-to-year changes in drought frequency\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SPI.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Year-to-year changes in drought frequency\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/february-2025-top-40-new-cran-packages/SPI.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/february-2025-top-40-new-cran-packages/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "February 2025 Top 40 New CRAN Packages\nPosted on\nMarch 27, 2025\nby\nJoseph Rickert\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn February, one hundred fifty-nine new packages made it to CRAN. Here are my Top 40 picks in fifteen categories: Artificial Intelligence, Computational Methods, Ecology, Genomics, Health Sciences, Mathematics, Machine Learning, Medicine, Music, Pharma, Statistics, Time Series, Utilities, Visualization, and Weather.\nArtificial Intelligence\nchores\nv0.1.0: Provides a collection of ergonomic large language model assistants designed to help you complete repetitive, hard-to-automate tasks quickly. After selecting some code, press the keyboard shortcut you’ve chosen to trigger the package app, select an assistant, and watch your chore be carried out. Users can create custom helpers just by writing some instructions in a markdown file. There are three vignettes:\nGetting started\n,\nCustom helpers\n, and\nGallery\n.\ngander\nv0.1.0: Provides a\nCopilot\ncompletion experience that knows how to talk to the objects in your R environment.\nellmer\nchats are integrated directly into your\nRStudio\nand\nPositron\nsessions, automatically incorporating relevant context from surrounding lines of code and your global environment. See the\nvignette\nto get started.\nGitAI\nv0.1.0: Provides functions to scan multiple\nGit\nrepositories, pull content from specified files, and process it with LLMs. You can summarize the content, extract information and data, or find answers to your questions about the repositories. The output can be stored in a vector database and used for semantic search or as a part of a RAG (Retrieval Augmented Generation) prompt. See the\nvignette\n.\nComputational Methods\nnlpembeds\nv1.0.0: Provides efficient methods to compute co-occurrence matrices, point wise mutual information (PMI), and singular value decomposition (SVD), especially useful when working with huge databases in biomedical and clinical settings. Functions can be called on\nSQL\ndatabases, enabling the computation of co-occurrence matrices of tens of gigabytes of data, representing millions of patients over tens of years. See\nHong (2021)\nfor background and the\nvignette\nfor examples.\nNLPwavelet\nv1.0: Provides functions for Bayesian wavelet analysis using individual non-local priors as described in\nSanyal & Ferreira (2017)\nand non-local prior mixtures as described in\nSanyal (2025)\n. See\nREADME\nto get started.\npnd\nv0.0.9: Provides functions to compute numerical derivatives including gradients, Jacobians, and Hessians through finite-difference approximations with parallel capabilities and optimal step-size selection to improve accuracy. Advanced features include computing derivatives of arbitrary order. There are three vignettes on the topics:\nCompatibility with numDeriv\n,\nParallel numerical derivatives\n, and\nStep-size selection\n.\nrmcmc\nv0.1.1: Provides functions to simulate Markov chains using the proposal from\nLivingstone and Zanella (2022)\nto compute MCMC estimates of expectations with respect to a target distribution on a real-valued vector space. The package also provides implementations of alternative proposal distributions, such as (Gaussian) random walk and Langevin proposals. Optionally,\nBridgeStan’s R interface\nBridgeStan\ncan be used to specify the target distribution. There is an\nIntroduction\nto the Barker proposal and a vignette on\nAdjusting the noise distribution\n.\nsgdGMF\nv1.0: Implements a framework to estimate high-dimensional, generalized matrix factorization models using penalized maximum likelihood under a dispersion exponential family specification, including the stochastic gradient descent algorithm with a block-wise mini-batch strategy and an efficient adaptive learning rate schedule to stabilize convergence. All the theoretical details can be found in\nCastiglione et al. (2024)\n. Also included are the alternated iterative re-weighted least squares and the quasi-Newton method with diagonal approximation of the Fisher information matrix discussed in\nKidzinski et al. (2022)\n. There are four vignettes, including\nintroduction\nand\nresiduals\n.\nData\nacledR\nv0.1.0: Provides tools for working with data from ACLED (Armed Conflict Location and Event Data). Functions include simplified access to\nACLED’s API\n, methods for keeping local versions of ACLED data up-to-date, and functions for common ACLED data transformations. See the\nvignette\nto get started.\nHorsekicks\nv1/0/2: Provides extensions to the classical dataset\nDeath by the kick of a horse in the Prussian Army\nfirst used by Ladislaus von Bortkeiwicz in his treatise on the Poisson distribution\nDas Gesetz der kleinen Zahlen\n. Also included are deaths by falling from a horse and by drowning. See the\nvignette\n.\nOhdsiReportGenerator\nv1.0.1: Extracts results from the\nObservational Health Data Sciences and Informatics result database\nand generates\nQuarto\nreports and presentations. See the\npackage guide\n.\nwbwdi\nv1.0.0: Provides functions to access and analyze the World Bank’s World Development Indicators (WDI) using\nthe corresponding API\n. WDI provides more than 24,000 country or region-level indicators for various contexts. See the\nvignette\n.\nEcology\nrangr\nv1.0.6: Implements a mechanistic virtual species simulator that integrates population dynamics and dispersal to study the effects of environmental change on population growth and range shifts. Look\nhere\nfor background and see the\nvignette\nto get started.\nEconomics\ngodley\nv0.2.2: Provides tools to define, simulate, and validate stock-flow consistent (SFC) macroeconomic models by specifying governing systems of equations. Users can analyze how macroeconomic structures affect key variables, perform sensitivity analyses, introduce policy shocks, and visualize resulting economic scenarios. See\nGodley and Lavoie (2007)\n,\nKinsella and O’Shea (2010)\nfor background and the\nvignette\nto get started.\nGenomics\ngimap\nv1.0.3: Helps to calculate genetic interactions in\nCRISPR\ntargets by taking data from paired CRISPR screens that have been pre-processed to count tables of paired gRNA reads. Output are genetic interaction scores, the distance between the observed CRISPR score and the expected CRISPR score. See\nBerger et al. (2021)\nfor background and the vignettes\nQuick Start\n,\nTimepoint Experiment\n, and\nTreatment Experiment\n.\nMIC\nv1.0.2: Provides functions to analyze, plot, and tabulate antimicrobial\nminimum inhibitory concentration\n(MIC) data and predict MIC values from whole genome sequence data stored in the\nPathosystems Resource Integration Center (2013)\ndatabase or locally. See\nREADME\nfor examples.\nHealth Sciences\nmatriz\nv1.0.1: Implements a workflow that provides tools to create, update, and fill literature matrices commonly used in research, specifically epidemiology and health sciences research. See\nREADME\nto get started.\nMathematics\nflint\nv0.0.3: Provides an interface to\nFLINT\n, a C library for number theory which extends GNU\nMPFR\nand GNU\nMP\nwith support for arithmetic in standard rings (the integers, the integers modulo n, the rational, p-adic, real, and complex numbers) as well as vectors, matrices, polynomials, and power series over rings and implements midpoint-radius interval arithmetic, in the real and complex numbers See\nJohansson (2017)\nfor information on computation in arbitrary precision with rigorous propagation of errors and see the\nNIST Digital Library of Mathematical Functions\nfor information on additional capabilities. Look\nhere\nto get started.\nMachine Learning\ntall\nv0.1.1: Implements a general-purpose tool for analyzing textual data as a\nshiny\napplication with features that include a comprehensive workflow, data cleaning, preprocessing, statistical analysis, and visualization. See the\nvignette\n.\n“}\nMedicine\nBayesERtools\nv0.2.1: Provides tools that facilitate exposure-response analysis using Bayesian methods. These include a streamlined workflow for fitting types of models that are commonly used in exposure-response analysis – linear and Emax for continuous endpoints, logistic linear and logistic Emax for binary endpoints, as well as performing simulation and visualization. Look\nhere\nto learn more about the workflow, and see the\nvignette\nfor an overview.\nMedicine Continued\nPatientLevelPrediction\nv6.4.0: Implements a framework to create patient-level prediction models using the\nObservational Medical Outcomes Partnership Common Data Model\n. Given a cohort of interest and an outcome of interest, the package can use data in the Common Data Model to build a large set of features, which can then be used to fit a predictive model with a number of machine learning algorithms. This is further described in\nReps et al. (2017)\n. There are fourteen vignettes, including\nBuilding Patient Level Prediction Models\nand\nBest Practices\n.\nSimTOST\nv1.0.2: Implements a Monte Carlo simulation approach to estimating sample sizes, power, and type I error rates for bio-equivalence trials that are based on the Two One-Sided Tests (TOST) procedure. Users can model complex trial scenarios, including parallel and crossover designs, intra-subject variability, and different equivalence margins. See\nSchuirmann (1987)\n,\nMielke et al. (2018)\n, and\nShieh (2022)\nfor background. There are seven vignettes including\nIntroduction\nand\nBioequivalence Tests for Parallel Trial Designs: 2 Arms, 1 Endpoint\n.\nMusic\nmusicXML\nv1.0.1: Implements tools to facilitate data sonification and create files to share music notation in the\nmusicXML\nformat. Several classes are defined for basic musical objects such as note pitch, note duration, note, measure, and score. Sonification functions map data into musical attributes such as pitch, loudness, or duration. See\nthe blog\nand\nRenard and Le Bescond (2022)\nfor examples and the\nvignette\nto get started.\nPharma\nemcAdr\nv1.2: Provides computational methods for detecting adverse high-order drug interactions from individual case safety reports using statistical techniques, allowing the exploration of higher-order interactions among drug cocktails. See the\nvignette\n.\nSynergyLMM\nv1.0.1: Implements a framework for evaluating drug combination effects in preclinical in vivo studies, which provides functions to analyze longitudinal tumor growth experiments using linear mixed-effects models, perform time-dependent analyses of synergy and antagonism, evaluate model diagnostics and performance, and assess both post-hoc and a priori statistical power. See\nDemidenko & Miller (2019\nfor the calculation of drug combination synergy and\nPinheiro and Bates (2000)\nand\nGałecki & Burzykowski (2013)\nfor information on linear mixed-effects models. The\nvignette\noffers a tutorial.\nvigicaen\nv0.15.6: Implements a toolbox to perform the analysis of the World Health Organization (WHO) Pharmacovigilance database,\nVigiBase\n, with functions to load data, perform data management, disproportionality analysis, and descriptive statistics. Intended for pharmacovigilance routine use or studies. There are eight vignettes, including\nbasic workflow\nand\nroutine pharmacoviligance\n.\nPsychology\ncogirt\nv1.0.0: Provides tools to psychometrically analyze latent individual differences related to tasks, interventions, or maturational/aging effects in the context of experimental or longitudinal cognitive research using methods first described by\nThomas et al. (2020)\n. See the\nvignette\n.\nStatistics\nDiscreteDLM\nv1.0.0: Provides tools for fitting Bayesian distributed lag models (DLMs) to count or binary, longitudinal response data. Count data are fit using negative binomial regression, binary are fit using quantile regression. Lag contribution is fit via b-splines. See\nDempsey and Wyse (2025)\nfor background and\nREADME\nfor examples.\noneinfl\nv1.0.1: Provides functions to estimate Estimates one-inflated positive Poisson, one-inflated zero-truncated negative binomial regression models, positive Poisson models, and zero-truncated negative binomial models along with marginal effects and their standard errors. The models and applications are described in\nGodwin (2024)\n. See\nREADME\nfor and example.\nTime Series\nBayesChange\nv2/0/0: Provides functions for change point detection on univariate and multivariate time series according to the methods presented by\nMartinez & Mena (2014)\nand\nCorradin et al. (2022)\nalong with methods for clustering time dependent data with common change points. See\nCorradin et. al. (2024)\n. There is a\ntutorial\n.\nechos\nv1.0.3: Provides a lightweight implementation of functions and methods for fast and fully automatic time series modeling and forecasting using Echo State Networks. See the vignettes\nBase functions\nand\nTidy functions\n.\nquadVAR\nv0.1.2: Provides functions to estimate quadratic vector autoregression models with the strong hierarchy using the Regularization Algorithm under Marginality Principle of\nHao et al. (2018)\nto compare the performance with linear models and construct networks with partial derivatives. See\nREADME\nfor examples.\nUtilities\naftables\nv1.0.2: Provides tools to generate spreadsheet publications that follow best practice guidance from the\nUK government’s Analysis Function\n. There are four vignettes, including an\nIntroduction\nand\nAccessibility\n.\nwatcher\nv0.1.2: Implements an\nR\nbinding for\nlibfswatch\n, a file system monitoring library, that enables users to watch files or directories recursively for changes in the background. Log activity or run an\nR\nfunction every time a change event occurs. See the\nREADME\nfor an example.\nVisualization\njellyfisher\nv1.0.4: Generates interactive\nJellyfish\nplots to visualize spatiotemporal tumor evolution by integrating sample and phylogenetic trees into a unified plot. This approach provides an intuitive way to analyze tumor heterogeneity and evolution over time and across anatomical locations. The Jellyfish plot visualization design was first introduced by\nLahtinen et al. (2023)\n. See the\nvignette\n.\nxdvir\nv0.1-2: Provides high-level functions to render\nLaTeX\nfragments as labels and data symbols in\nggplot2\nplots, plus low-level functions to author, produce, and typeset\nLaTeX\ndocuments, and to produce, read, and render\nDVI\nfiles. See the\nvignette\n.\nWeather\nRFplus\nv1.4-0: Implements a machine learning algorithm that merges satellite and ground precipitation data using Random Forest for spatial prediction, residual modeling for bias correction, and quantile mapping for adjustment, ensuring accurate estimates across temporal scales and regions. See the\nvignette\n.\nSPIChanges\nv0.1.0: Provides methods to improve the interpretation of the Standardized Precipitation Index under changing climate conditions. It implements the nonstationary approach of\nBlain et al. (2022)\nto detect trends in rainfall quantities and quantify the effect of such trends on the probability of a drought event occurring. There is an\nIntroduction\nand a vignette\nMonte Carlo Experiments and Case Studies\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "In February, one hundred fifty-nine new packages made it to CRAN. Here are my Top 40 picks in fifteen categories: Artificial Intelligence, Computational Methods, Ecology, Genomics, Health Sciences, Mathematics, Machine Learning, Medicine, Music,...",
+      "meta_keywords": null,
+      "og_description": "In February, one hundred fifty-nine new packages made it to CRAN. Here are my Top 40 picks in fifteen categories: Artificial Intelligence, Computational Methods, Ecology, Genomics, Health Sciences, Mathematics, Machine Learning, Medicine, Music,...",
+      "og_image": "https://rworks.dev/posts/february-2025-top-40-new-cran-packages/chores.gif",
+      "og_title": "February 2025 Top 40 New CRAN Packages | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 11.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "In February, one hundred fifty-nine new packages made it to CRAN. Here are my Top 40 picks in fifteen categories: Artificial Intelligence, Computational Methods, Ecology, Genomics, Health Sciences, Mathematics, Machine Learning, Medicine, Music,...",
+      "twitter_title": "February 2025 Top 40 New CRAN Packages | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/03/february-2025-top-40-new-cran-packages/",
+      "word_count": 2319
+    }
+  }
+}

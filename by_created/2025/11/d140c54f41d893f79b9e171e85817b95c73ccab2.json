@@ -1,0 +1,182 @@
+{
+  "id": "d140c54f41d893f79b9e171e85817b95c73ccab2",
+  "url": "https://www.r-bloggers.com/2023/10/the-real-reset-button-for-local-mess-fom-tests-withrdeferred_run/",
+  "created_at_utc": "2025-11-17T20:39:35Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "2a703830-47c0-4612-b5a2-ca4ef1d25a44",
+    "created_at": "2025-11-17 20:39:35",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/10/the-real-reset-button-for-local-mess-fom-tests-withrdeferred_run/",
+      "crawled_at": "2025-11-17T10:07:56.031634",
+      "external_links": [
+        {
+          "href": "https://masalmon.eu/2023/10/17/test-local-mess-reset/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://withr.r-lib.org/reference/with_envvar.html",
+          "text": "withr::local_envvar()"
+        },
+        {
+          "href": "https://withr.r-lib.org/reference/with_dir.html",
+          "text": "withr::local_dir()"
+        },
+        {
+          "href": "https://usethis.r-lib.org/reference/proj_utils.html",
+          "text": "usethis::local_project()"
+        },
+        {
+          "href": "https://withr.r-lib.org/reference/defer.html",
+          "text": "withr::deferred_run()"
+        },
+        {
+          "href": "https://testthat.r-lib.org/articles/test-fixtures.html",
+          "text": "test fixtures"
+        },
+        {
+          "href": "https://github.com/r-lib/withr/blob/0c5254ebc74590e80cc0056303d74b049b943920/R/defer.R#L152",
+          "text": "messages from withr"
+        },
+        {
+          "href": "https://masalmon.eu/2023/10/17/test-local-mess-reset/#fn:1",
+          "text": "1"
+        },
+        {
+          "href": "https://rdrr.io/r/base/browser.html",
+          "text": "browser()"
+        },
+        {
+          "href": "https://masalmon.eu/2023/10/17/test-local-mess-reset/#fn:2",
+          "text": "2"
+        },
+        {
+          "href": "https://devtools.r-lib.org/reference/load_all.html",
+          "text": "devtools::load_all()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/is_interactive.html",
+          "text": "rlang::local_interactive()"
+        },
+        {
+          "href": "https://rlang.r-lib.org/reference/local_options.html",
+          "text": "rlang::local_options()"
+        },
+        {
+          "href": "https://withr.r-lib.org/reference/defer.html",
+          "text": "withr::deferred_run()"
+        },
+        {
+          "href": "https://github.com/r-lib/rlang/blob/7a78dc3f0d5b2fb73289f820e39afb5c4d665802/R/import-standalone-defer.R",
+          "text": "the standalone defer script"
+        },
+        {
+          "href": "https://withr.r-lib.org/reference/with_.html",
+          "text": "withr::local_"
+        },
+        {
+          "href": "https://withr.r-lib.org/reference/defer.html",
+          "text": "withr::deferred_run()"
+        },
+        {
+          "href": "https://blog.r-hub.io/2023/01/23/code-switch-escape-hatch-test/",
+          "text": "Test switches"
+        },
+        {
+          "href": "https://masalmon.eu/2023/10/17/test-local-mess-reset/#fnref:1",
+          "text": "↩︎"
+        },
+        {
+          "href": "https://www.pipinghotdata.com/talks/2022-11-11-debugging/",
+          "text": "Shannon Pileggi’s materials"
+        },
+        {
+          "href": "https://masalmon.eu/2023/10/17/test-local-mess-reset/#fnref:2",
+          "text": "↩︎"
+        },
+        {
+          "href": "https://masalmon.eu/2023/10/17/test-local-mess-reset/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "The real reset button for local mess fom tests: withr::deferred_run() | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/",
+          "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-379178 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">The real reset button for local mess fom tests: withr::deferred_run()</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 16, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/\">Maëlle's R blog on Maëlle Salmon's personal website</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://masalmon.eu/2023/10/17/test-local-mess-reset/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>Following last week’s post on my testing workflow enhancements, Jenny Bryan kindly reminded me of the existence of an actual reset button when you’ve been interactively running tests that include some “local mess”: <a href=\"https://withr.r-lib.org/reference/with_envvar.html\" rel=\"nofollow\" target=\"_blank\"><code>withr::local_envvar()</code></a>, <a href=\"https://withr.r-lib.org/reference/with_dir.html\" rel=\"nofollow\" target=\"_blank\"><code>withr::local_dir()</code></a>, <a href=\"https://usethis.r-lib.org/reference/proj_utils.html\" rel=\"nofollow\" target=\"_blank\"><code>usethis::local_project()</code></a>… The reset button is <a href=\"https://withr.r-lib.org/reference/defer.html\" rel=\"nofollow\" target=\"_blank\"><code>withr::deferred_run()</code></a>.</p>\n<p>It is documented in Jenny’s article about <a href=\"https://testthat.r-lib.org/articles/test-fixtures.html\" rel=\"nofollow\" target=\"_blank\">test fixtures</a>:</p>\n<blockquote>\n<p>Since the global environment isn’t perishable, like a test environment is, you have to call deferred_run() explicitly to execute the deferred events. You can also clear them, without running, with deferred_clear().</p>\n</blockquote>\n<p>It is also mentioned in <a href=\"https://github.com/r-lib/withr/blob/0c5254ebc74590e80cc0056303d74b049b943920/R/defer.R#L152\" rel=\"nofollow\" target=\"_blank\">messages from withr</a>.</p>\n<p>For some reason it hadn’t clicked for me until now?! But now I know better!</p>\n<h2 id=\"example-making-a-withrlocal_-mess-and-wiping-it-with-withrdeferred_run\">Example: making a <code>withr::local_</code> mess and wiping it with <code>withr::deferred_run()</code></h2>\n<p>Imagine a test file<sup id=\"fnref:1\"><a class=\"footnote-ref\" href=\"https://masalmon.eu/2023/10/17/test-local-mess-reset/#fn:1\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">1</a></sup></p>\n<pre>test_that(\"My function works\", {\n  temp_dir &lt;- withr::local_tempdir()\n  withr::local_options(blop = TRUE)\n  usethis::local_project(temp_dir, force = TRUE)\n  withr::local_envvar(\"TEST_SWITCH\" = \"something\")\n  expect_something(my_function()) # not actual test code, you get the idea\n})\n</pre><p>Imagine the test fails and I run this in my R session probably after throwing a <a href=\"https://rdrr.io/r/base/browser.html\" rel=\"nofollow\" target=\"_blank\"><code>browser()</code></a><sup id=\"fnref:2\"><a class=\"footnote-ref\" href=\"https://masalmon.eu/2023/10/17/test-local-mess-reset/#fn:2\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">2</a></sup> somewhere and running <a href=\"https://devtools.r-lib.org/reference/load_all.html\" rel=\"nofollow\" target=\"_blank\"><code>devtools::load_all()</code></a>:</p>\n<div class=\"highlight\">\n<pre>temp_dir &lt;- withr::local_tempdir()\nwithr::local_options(blop = FALSE)\nusethis::local_project(temp_dir, force = TRUE)\n#&gt; ✔ Setting active project to '/tmp/RtmpFH1MM4/file645e1b25d736'\nwithr::local_envvar(\"TEST_SWITCH\" = \"something\")</pre>\n</div>\n<p>Then I do the actual debugging. At the end my session is all messy!</p>\n<div class=\"highlight\">\n<pre>Sys.getenv(\"TEST_SWITCH\")\n#&gt; [1] \"something\"\ngetOption(\"blop\")\n#&gt; [1] FALSE\nusethis::proj_sitrep() # cool function!\n#&gt; •   working_directory: '/home/maelle/Documents/blog/simplymaelle/content/post/2023-10-16-deferred-run'\n#&gt; • active_usethis_proj: '/tmp/RtmpFH1MM4/file645e1b25d736'\n#&gt; • active_rstudio_proj: &lt;unset&gt;\n#&gt; • Your working directory is not the same as the active usethis project.\n#&gt;   Set working directory to the project: `setwd(proj_get())`\n#&gt;   Set project to working directory:     `proj_set(getwd())`\n</pre>\n</div>\n<p>Instead of fixing each thing by hand I can run</p>\n<div class=\"highlight\">\n<pre>withr::deferred_run()</pre>\n</div>\n<p>And now all is right in my session again, you’ll have to believe me or run the example yourself: indeed, demonstrating all of this in a knitr document makes it a bit more challenging. I swear that outside of a knitr document, this all works even for code that changes the current directory!</p>\n<div class=\"highlight\">\n<pre>Sys.getenv(\"TEST_SWITCH\")\ngetOption(\"blop\")\nusethis::proj_get()</pre>\n</div>\n<p>So I can go and debug the next failing test. 😸</p>\n<h2 id=\"what-about-rlangs-local-mess\">What about rlang’s local mess?</h2>\n<p>rlang itself has <a href=\"https://rlang.r-lib.org/reference/is_interactive.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::local_interactive()</code></a> and <a href=\"https://rlang.r-lib.org/reference/local_options.html\" rel=\"nofollow\" target=\"_blank\"><code>rlang::local_options()</code></a>. Luckily they are reset by <a href=\"https://withr.r-lib.org/reference/defer.html\" rel=\"nofollow\" target=\"_blank\"><code>withr::deferred_run()</code></a>.</p>\n<p>I’m not sure exactly where the compatibility comes from, maybe from <a href=\"https://github.com/r-lib/rlang/blob/7a78dc3f0d5b2fb73289f820e39afb5c4d665802/R/import-standalone-defer.R\" rel=\"nofollow\" target=\"_blank\">the standalone defer script</a>. In any case, that’s good news!</p>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>So, in summary, if you’re running test code interactively to debug them, and this test code changed some things using <a href=\"https://withr.r-lib.org/reference/with_.html\" rel=\"nofollow\" target=\"_blank\"><code>withr::local_</code></a> or other compatible <code>local_</code> functions, to get back your session back to its initial state without restarting R, run <a href=\"https://withr.r-lib.org/reference/defer.html\" rel=\"nofollow\" target=\"_blank\"><code>withr::deferred_run()</code></a>! Thanks Jenny for the reminder!</p>\n<section class=\"footnotes\" role=\"doc-endnotes\">\n<hr/>\n<ol>\n<li id=\"fn:1\" role=\"doc-endnote\">\n<p><a href=\"https://blog.r-hub.io/2023/01/23/code-switch-escape-hatch-test/\" rel=\"nofollow\" target=\"_blank\">Test switches</a> are sooo handy. <a class=\"footnote-backref\" href=\"https://masalmon.eu/2023/10/17/test-local-mess-reset/#fnref:1\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n<li id=\"fn:2\" role=\"doc-endnote\">\n<p>For better debugging advice, refer to <a href=\"https://www.pipinghotdata.com/talks/2022-11-11-debugging/\" rel=\"nofollow\" target=\"_blank\">Shannon Pileggi’s materials</a>! <a class=\"footnote-backref\" href=\"https://masalmon.eu/2023/10/17/test-local-mess-reset/#fnref:2\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n</ol>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://masalmon.eu/2023/10/17/test-local-mess-reset/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "The real reset button for local mess fom tests: withr::deferred_run()\nPosted on\nOctober 16, 2023\nby\nMaëlle's R blog on Maëlle Salmon's personal website\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nMaëlle's R blog on Maëlle Salmon's personal website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nFollowing last week’s post on my testing workflow enhancements, Jenny Bryan kindly reminded me of the existence of an actual reset button when you’ve been interactively running tests that include some “local mess”:\nwithr::local_envvar()\n,\nwithr::local_dir()\n,\nusethis::local_project()\n… The reset button is\nwithr::deferred_run()\n.\nIt is documented in Jenny’s article about\ntest fixtures\n:\nSince the global environment isn’t perishable, like a test environment is, you have to call deferred_run() explicitly to execute the deferred events. You can also clear them, without running, with deferred_clear().\nIt is also mentioned in\nmessages from withr\n.\nFor some reason it hadn’t clicked for me until now?! But now I know better!\nExample: making a\nwithr::local_\nmess and wiping it with\nwithr::deferred_run()\nImagine a test file\n1\ntest_that(\"My function works\", {\n  temp_dir <- withr::local_tempdir()\n  withr::local_options(blop = TRUE)\n  usethis::local_project(temp_dir, force = TRUE)\n  withr::local_envvar(\"TEST_SWITCH\" = \"something\")\n  expect_something(my_function()) # not actual test code, you get the idea\n})\nImagine the test fails and I run this in my R session probably after throwing a\nbrowser()\n2\nsomewhere and running\ndevtools::load_all()\n:\ntemp_dir <- withr::local_tempdir()\nwithr::local_options(blop = FALSE)\nusethis::local_project(temp_dir, force = TRUE)\n#> ✔ Setting active project to '/tmp/RtmpFH1MM4/file645e1b25d736'\nwithr::local_envvar(\"TEST_SWITCH\" = \"something\")\nThen I do the actual debugging. At the end my session is all messy!\nSys.getenv(\"TEST_SWITCH\")\n#> [1] \"something\"\ngetOption(\"blop\")\n#> [1] FALSE\nusethis::proj_sitrep() # cool function!\n#> •   working_directory: '/home/maelle/Documents/blog/simplymaelle/content/post/2023-10-16-deferred-run'\n#> • active_usethis_proj: '/tmp/RtmpFH1MM4/file645e1b25d736'\n#> • active_rstudio_proj: <unset>\n#> • Your working directory is not the same as the active usethis project.\n#>   Set working directory to the project: `setwd(proj_get())`\n#>   Set project to working directory:     `proj_set(getwd())`\nInstead of fixing each thing by hand I can run\nwithr::deferred_run()\nAnd now all is right in my session again, you’ll have to believe me or run the example yourself: indeed, demonstrating all of this in a knitr document makes it a bit more challenging. I swear that outside of a knitr document, this all works even for code that changes the current directory!\nSys.getenv(\"TEST_SWITCH\")\ngetOption(\"blop\")\nusethis::proj_get()\nSo I can go and debug the next failing test. 😸\nWhat about rlang’s local mess?\nrlang itself has\nrlang::local_interactive()\nand\nrlang::local_options()\n. Luckily they are reset by\nwithr::deferred_run()\n.\nI’m not sure exactly where the compatibility comes from, maybe from\nthe standalone defer script\n. In any case, that’s good news!\nConclusion\nSo, in summary, if you’re running test code interactively to debug them, and this test code changed some things using\nwithr::local_\nor other compatible\nlocal_\nfunctions, to get back your session back to its initial state without restarting R, run\nwithr::deferred_run()\n! Thanks Jenny for the reminder!\nTest switches\nare sooo handy.\n↩︎\nFor better debugging advice, refer to\nShannon Pileggi’s materials\n!\n↩︎\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMaëlle's R blog on Maëlle Salmon's personal website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Following last week’s post on my testing workflow enhancements, Jenny Bryan kindly reminded me of the existence of an actual reset button when you’ve been interactively running tests that include some “local mess”: withr::local_...",
+      "meta_keywords": null,
+      "og_description": "Following last week’s post on my testing workflow enhancements, Jenny Bryan kindly reminded me of the existence of an actual reset button when you’ve been interactively running tests that include some “local mess”: withr::local_...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "The real reset button for local mess fom tests: withr::deferred_run() | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.2,
+      "sitemap_lastmod": "2023-10-17T00:00:00+00:00",
+      "twitter_description": "Following last week’s post on my testing workflow enhancements, Jenny Bryan kindly reminded me of the existence of an actual reset button when you’ve been interactively running tests that include some “local mess”: withr::local_...",
+      "twitter_title": "The real reset button for local mess fom tests: withr::deferred_run() | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/10/the-real-reset-button-for-local-mess-fom-tests-withrdeferred_run/",
+      "word_count": 640
+    }
+  }
+}

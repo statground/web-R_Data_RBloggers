@@ -1,0 +1,147 @@
+{
+  "id": "cc1a9f5b591eaaaa2b33260f7b2a6799da5b9045",
+  "url": "https://www.r-bloggers.com/2023/10/scanning-qr-codes-in-r/",
+  "created_at_utc": "2025-11-17T20:39:28Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "1bd66636-6b13-4fc2-9300-acbe5f82c2a8",
+    "created_at": "2025-11-17 20:39:28",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/10/scanning-qr-codes-in-r/",
+      "crawled_at": "2025-11-17T10:02:15.742514",
+      "external_links": [
+        {
+          "href": "https://ropensci.org/blog/2023/10/30/opencv-qr/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://ropensci.r-universe.dev/opencv",
+          "text": "opencv R package"
+        },
+        {
+          "href": "https://docs.ropensci.org/opencv/reference/qrcode.html",
+          "text": "ocv_qr_detect"
+        },
+        {
+          "href": "https://docs.ropensci.org/opencv/reference/qrcode.html",
+          "text": "qr_scanner"
+        },
+        {
+          "href": "https://ropensci.org/blog/2023/10/30/opencv-qr/input.jpg",
+          "text": null
+        },
+        {
+          "href": "https://ropensci.org/blog/2023/10/30/opencv-qr/output.jpg",
+          "text": null
+        },
+        {
+          "href": "https://thierryo.github.io/qrcode/",
+          "text": "qrcode"
+        },
+        {
+          "href": "https://ropensci.org/blog/2023/10/30/opencv-qr/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Scanning QR codes in R | R-bloggers",
+      "images": [
+        {
+          "alt": "Input photo which includes a QR code",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Input photo which includes a QR code",
+          "base64": null,
+          "src": "https://i2.wp.com/ropensci.org/blog/2023/10/30/opencv-qr/input.jpg?w=578&ssl=1"
+        },
+        {
+          "alt": "Annotated output which shows the input plus highlighted QR area",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Annotated output which shows the input plus highlighted QR area",
+          "base64": null,
+          "src": "https://i1.wp.com/ropensci.org/blog/2023/10/30/opencv-qr/output.jpg?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+          "text": "rOpenSci - open tools for open science"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-379534 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Scanning QR codes in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 29, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2023/10/30/opencv-qr/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>The latest version of the <a href=\"https://ropensci.r-universe.dev/opencv\" rel=\"nofollow\" target=\"_blank\">opencv R package</a> can detect and decode QR codes!</p>\n<pre># Install latest opencv\ninstall.packages(\"opencv\", repos = \"https://ropensci.r-universe.dev\")\n</pre><p>There are two ways of using this: the <a href=\"https://docs.ropensci.org/opencv/reference/qrcode.html\" rel=\"nofollow\" target=\"_blank\"><code>ocv_qr_detect</code></a> function tries to find the QR in an image file. It returns either a text string or NULL (if no QR code was found in the image):</p>\n<pre>img &lt;- opencv::ocv_read('https://jeroen.github.io/images/qrtest.jpg')\nopencv::ocv_qr_detect(img)\n## https://www.r-project.org\n</pre><p>Alternatively if your laptop has a camera, you can use R as a true QR code scanner! The <a href=\"https://docs.ropensci.org/opencv/reference/qrcode.html\" rel=\"nofollow\" target=\"_blank\"><code>qr_scanner</code></a> function starts the camera device and filters the video stream through the above <code>ocv_qr_detect</code> until a QR code has been detected.</p>\n<pre># This requires a camera\ntxt &lt;- opencv::qr_scanner()\n</pre><p>By default, both <code>ocv_qr_detect</code> and <code>qr_scanner</code> return the text value of the decoded QR code. But both functions also have an option <code>draw = TRUE</code> which will instead return an annotated image with the position and value of the QR drawn into the image, and qr text value as an attribute.</p>\n<div class=\"gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition\">\n<div class=\"box\">\n<figure>\n<div class=\"img\" style=\"background-image: url('input.jpg');\">\n<img alt=\"Input photo which includes a QR code\" data-lazy-src=\"https://i2.wp.com/ropensci.org/blog/2023/10/30/opencv-qr/input.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Input photo which includes a QR code\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/ropensci.org/blog/2023/10/30/opencv-qr/input.jpg?w=578&amp;ssl=1\"/></noscript>\n</div>\n<a href=\"https://ropensci.org/blog/2023/10/30/opencv-qr/input.jpg\" rel=\"nofollow\" target=\"_blank\"></a>\n</figure>\n</div>\n<div class=\"box\">\n<figure>\n<div class=\"img\" style=\"background-image: url('output.jpg');\">\n<img alt=\"Annotated output which shows the input plus highlighted QR area\" data-lazy-src=\"https://i1.wp.com/ropensci.org/blog/2023/10/30/opencv-qr/output.jpg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Annotated output which shows the input plus highlighted QR area\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/ropensci.org/blog/2023/10/30/opencv-qr/output.jpg?w=578&amp;ssl=1\"/></noscript>\n</div>\n<a href=\"https://ropensci.org/blog/2023/10/30/opencv-qr/output.jpg\" rel=\"nofollow\" target=\"_blank\"></a>\n</figure>\n</div>\n</div>\n<h2>\nGenerating QR codes in R\n</h2><p>There exists another package on CRAN called <a href=\"https://thierryo.github.io/qrcode/\" rel=\"nofollow\" target=\"_blank\">qrcode</a> (currently maintained by Thierry Onkelinx) which can generate most types of QR codes using R graphics, which is super cool.</p>\n<p>We can combine the two packages to roundtrip text to QR codes in R:</p>\n<pre>## generate a qr code image\npng(\"qr-test.png\")\nplot(qrcode::qr_code(\"This is a test!\"))\ndev.off()\n\n# Verify that we can read it:\nocv_qr_detect(ocv_read('qr-test.png'))\n## [1] \"This is a test!\"\n</pre><p>So this provides a quick way to exchange small blobs of information between computers running R, without the need for any network connection.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2023/10/30/opencv-qr/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Scanning QR codes in R\nPosted on\nOctober 29, 2023\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe latest version of the\nopencv R package\ncan detect and decode QR codes!\n# Install latest opencv\ninstall.packages(\"opencv\", repos = \"https://ropensci.r-universe.dev\")\nThere are two ways of using this: the\nocv_qr_detect\nfunction tries to find the QR in an image file. It returns either a text string or NULL (if no QR code was found in the image):\nimg <- opencv::ocv_read('https://jeroen.github.io/images/qrtest.jpg')\nopencv::ocv_qr_detect(img)\n## https://www.r-project.org\nAlternatively if your laptop has a camera, you can use R as a true QR code scanner! The\nqr_scanner\nfunction starts the camera device and filters the video stream through the above\nocv_qr_detect\nuntil a QR code has been detected.\n# This requires a camera\ntxt <- opencv::qr_scanner()\nBy default, both\nocv_qr_detect\nand\nqr_scanner\nreturn the text value of the decoded QR code. But both functions also have an option\ndraw = TRUE\nwhich will instead return an annotated image with the position and value of the QR drawn into the image, and qr text value as an attribute.\nGenerating QR codes in R\nThere exists another package on CRAN called\nqrcode\n(currently maintained by Thierry Onkelinx) which can generate most types of QR codes using R graphics, which is super cool.\nWe can combine the two packages to roundtrip text to QR codes in R:\n## generate a qr code image\npng(\"qr-test.png\")\nplot(qrcode::qr_code(\"This is a test!\"))\ndev.off()\n\n# Verify that we can read it:\nocv_qr_detect(ocv_read('qr-test.png'))\n## [1] \"This is a test!\"\nSo this provides a quick way to exchange small blobs of information between computers running R, without the need for any network connection.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The latest version of the opencv R package can detect and decode QR codes! # Install latest opencv install.packages(\"opencv\", repos = \"https://ropensci.r-universe.dev\") There are two ways of using this: the ocv_qr_detect function tries...",
+      "meta_keywords": null,
+      "og_description": "The latest version of the opencv R package can detect and decode QR codes! # Install latest opencv install.packages(\"opencv\", repos = \"https://ropensci.r-universe.dev\") There are two ways of using this: the ocv_qr_detect function tries...",
+      "og_image": "https://ropensci.org/blog/2023/10/30/opencv-qr/input.jpg",
+      "og_title": "Scanning QR codes in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.2,
+      "sitemap_lastmod": "2023-10-30T00:00:00+00:00",
+      "twitter_description": "The latest version of the opencv R package can detect and decode QR codes! # Install latest opencv install.packages(\"opencv\", repos = \"https://ropensci.r-universe.dev\") There are two ways of using this: the ocv_qr_detect function tries...",
+      "twitter_title": "Scanning QR codes in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/10/scanning-qr-codes-in-r/",
+      "word_count": 432
+    }
+  }
+}

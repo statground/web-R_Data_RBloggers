@@ -1,0 +1,127 @@
+{
+  "id": "ba70c44041f111836173e2f8400463736864ba08",
+  "url": "https://www.r-bloggers.com/2023/11/why-is-this-hyperbolic-background-invariant/",
+  "created_at_utc": "2025-11-17T20:39:13Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "85dd8268-df2c-4c91-801e-224b6d730dc6",
+    "created_at": "2025-11-17 20:39:13",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/11/why-is-this-hyperbolic-background-invariant/",
+      "crawled_at": "2025-11-17T09:54:42.311982",
+      "external_links": [
+        {
+          "href": "https://laustep.github.io/stlahblog/posts/modularLambda.html",
+          "text": "Saturn Elephant"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/cj-holmes/isocuboids",
+          "text": "isocuboids"
+        },
+        {
+          "href": "https://laustep.github.io/stlahblog/posts/modularLambda.html",
+          "text": "Saturn Elephant"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Why is this hyperbolic background invariant? | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/laustep.github.io/stlahblog/posts/figures/lambdaOnSquare.gif?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/laustep.github.io/stlahblog/posts/figures/isocuboids_lambdaOnSquare-gray.gif?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/stephane-laurent/",
+          "text": "Stéphane Laurent"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380180 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Why is this hyperbolic background invariant?</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 19, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/stephane-laurent/\">Stéphane Laurent</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://laustep.github.io/stlahblog/posts/modularLambda.html\"> Saturn Elephant</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><div class=\"container-fluid\">\n<div class=\"main col-sm-12\">\n<div class=\"content\">\n<p>\n        I have a mathematical question for you, because it is a mystery for me.\n      </p>\n<p>Look at this animation:</p>\n<p>\n<img data-lazy-src=\"https://i0.wp.com/laustep.github.io/stlahblog/posts/figures/lambdaOnSquare.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/laustep.github.io/stlahblog/posts/figures/lambdaOnSquare.gif?w=578&amp;ssl=1\"/></noscript>\n</p>\n<p>\n        I get it as follows. Each frame corresponds to a value of\n        <span class=\"math inline\">\\(t \\in [0,3[\\)</span> (I take\n        <span class=\"math inline\">\\(160\\)</span> values of\n        <span class=\"math inline\">\\(t\\)</span> subdivising\n        <span class=\"math inline\">\\([0,3[\\)</span>). Here is how I get the frame\n        corresponding to one value of <span class=\"math inline\">\\(t\\)</span>:\n      </p>\n<ul>\n<li>\n<p>\n            for each point in the unit square\n            <span class=\"math inline\">\\(S = {[0,1]}^2\\)</span>, I take its\n            complex affix <span class=\"math inline\">\\(z\\)</span>, and I send\n            <span class=\"math inline\">\\(z\\)</span> to the open upper half-plane\n            <span class=\"math inline\">\\(\\mathbb{H} = \\bigl\\{z | \\Im(z) &gt; 0\\bigr\\}\\)</span>\n            with a conformal map <span class=\"math inline\">\\(\\psi\\)</span> from\n            <span class=\"math inline\">\\(S\\)</span> to\n            <span class=\"math inline\">\\(\\mathbb{H}\\)</span>;\n          </p>\n</li>\n<li>\n<p>\n            I attribute a color to\n            <span class=\"math inline\">\\(R^t\\Bigl(\\lambda\\bigl(\\psi(z)\\bigr)\\Bigr)\\)</span>\n            where <span class=\"math inline\">\\(R\\)</span> is the Möbius\n            transformation of order\n            <span class=\"math inline\">\\(3\\)</span> defined by\n            <span class=\"math inline\">\\(R(z) = -\\dfrac{1}{z+1}\\)</span> and\n            <span class=\"math inline\">\\(\\lambda\\)</span> is the modular lambda\n            function.\n          </p>\n</li>\n</ul>\n<p>\n        The modular lambda function and the conformal map\n        <span class=\"math inline\">\\(\\psi\\)</span> are implemented in my R\n        package <strong>jacobi</strong>.\n      </p>\n<p>\n        My question is: why does the hyperbolic tessellation that we can see as\n        the “background” of the animation not move? Why is it invariant?\n      </p>\n<p>\n        I observed the same phenomenon for other modular functions, for example\n        the Klein j-invariant function.\n      </p>\n<p>\n        The color mapping <span class=\"math inline\">\\(\\mathcal{C}\\)</span> is\n        defined with the help of the HSI color space. The color\n        <span class=\"math inline\">\\(\\mathcal{C}(z)\\)</span> depends on the phase\n        of <span class=\"math inline\">\\(z\\)</span> only. Precisely,\n        <span class=\"math inline\">\\(\\mathcal{C}(z)\\)</span> is the HSI color\n        with:\n      </p>\n<ul>\n<li>\n<p>\n<em>hue</em> <span class=\"math inline\">\\(\\in [0, 360[\\)</span> given\n            by the phase\n            <span class=\"math inline\">\\(\\varphi(z) \\in [0, 2\\pi[\\)</span> of\n            <span class=\"math inline\">\\(z\\)</span> converted to degrees;\n          </p>\n</li>\n<li>\n<p>\n<em>saturation</em> given by\n            <span class=\"math inline\">\\(\\sqrt{\\bigl(1 + \\sin(w)\\bigr) / 2}\\)</span>\n            where\n            <span class=\"math inline\">\\(w = 2\\pi\\log\\bigl(1+\\varphi(z)\\bigr)\\)</span>;\n          </p>\n</li>\n<li>\n<p>\n<em>intensity</em> given by\n            <span class=\"math inline\">\\(\\bigl(1 + \\cos(w)\\bigr) / 2\\)</span>\n            with <span class=\"math inline\">\\(w\\)</span> as above.\n          </p>\n</li>\n</ul>\n<p>Why do we get such a result? I really don’t know.</p>\n<p>\n        Before leaving you, let me show you a 3D version of this animation that\n        I made with the\n        <a href=\"https://github.com/cj-holmes/isocuboids\" rel=\"nofollow\" target=\"_blank\"><strong>isocuboids</strong></a>\n        R package:\n      </p>\n<p>\n<img data-lazy-src=\"https://i2.wp.com/laustep.github.io/stlahblog/posts/figures/isocuboids_lambdaOnSquare-gray.gif?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/laustep.github.io/stlahblog/posts/figures/isocuboids_lambdaOnSquare-gray.gif?w=578&amp;ssl=1\"/></noscript>\n</p>\n<p>I hope you like it.</p>\n</div>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://laustep.github.io/stlahblog/posts/modularLambda.html\"> Saturn Elephant</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Why is this hyperbolic background invariant?\nPosted on\nNovember 19, 2023\nby\nStéphane Laurent\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSaturn Elephant\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI have a mathematical question for you, because it is a mystery for me.\nLook at this animation:\nI get it as follows. Each frame corresponds to a value of\n\\(t \\in [0,3[\\)\n(I take\n\\(160\\)\nvalues of\n\\(t\\)\nsubdivising\n\\([0,3[\\)\n). Here is how I get the frame\n        corresponding to one value of\n\\(t\\)\n:\nfor each point in the unit square\n\\(S = {[0,1]}^2\\)\n, I take its\n            complex affix\n\\(z\\)\n, and I send\n\\(z\\)\nto the open upper half-plane\n\\(\\mathbb{H} = \\bigl\\{z | \\Im(z) > 0\\bigr\\}\\)\nwith a conformal map\n\\(\\psi\\)\nfrom\n\\(S\\)\nto\n\\(\\mathbb{H}\\)\n;\nI attribute a color to\n\\(R^t\\Bigl(\\lambda\\bigl(\\psi(z)\\bigr)\\Bigr)\\)\nwhere\n\\(R\\)\nis the Möbius\n            transformation of order\n\\(3\\)\ndefined by\n\\(R(z) = -\\dfrac{1}{z+1}\\)\nand\n\\(\\lambda\\)\nis the modular lambda\n            function.\nThe modular lambda function and the conformal map\n\\(\\psi\\)\nare implemented in my R\n        package\njacobi\n.\nMy question is: why does the hyperbolic tessellation that we can see as\n        the “background” of the animation not move? Why is it invariant?\nI observed the same phenomenon for other modular functions, for example\n        the Klein j-invariant function.\nThe color mapping\n\\(\\mathcal{C}\\)\nis\n        defined with the help of the HSI color space. The color\n\\(\\mathcal{C}(z)\\)\ndepends on the phase\n        of\n\\(z\\)\nonly. Precisely,\n\\(\\mathcal{C}(z)\\)\nis the HSI color\n        with:\nhue\n\\(\\in [0, 360[\\)\ngiven\n            by the phase\n\\(\\varphi(z) \\in [0, 2\\pi[\\)\nof\n\\(z\\)\nconverted to degrees;\nsaturation\ngiven by\n\\(\\sqrt{\\bigl(1 + \\sin(w)\\bigr) / 2}\\)\nwhere\n\\(w = 2\\pi\\log\\bigl(1+\\varphi(z)\\bigr)\\)\n;\nintensity\ngiven by\n\\(\\bigl(1 + \\cos(w)\\bigr) / 2\\)\nwith\n\\(w\\)\nas above.\nWhy do we get such a result? I really don’t know.\nBefore leaving you, let me show you a 3D version of this animation that\n        I made with the\nisocuboids\nR package:\nI hope you like it.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSaturn Elephant\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I have a mathematical question for you, because it is a mystery for me. Look at this animation: I get it as follows. Each frame corresponds to a value of \\(t \\in [0,3[\\)...",
+      "meta_keywords": null,
+      "og_description": "I have a mathematical question for you, because it is a mystery for me. Look at this animation: I get it as follows. Each frame corresponds to a value of \\(t \\in [0,3[\\)...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Why is this hyperbolic background invariant? | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.3,
+      "sitemap_lastmod": "2023-11-20T00:00:00+00:00",
+      "twitter_description": "I have a mathematical question for you, because it is a mystery for me. Look at this animation: I get it as follows. Each frame corresponds to a value of \\(t \\in [0,3[\\)...",
+      "twitter_title": "Why is this hyperbolic background invariant? | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/11/why-is-this-hyperbolic-background-invariant/",
+      "word_count": 461
+    }
+  }
+}

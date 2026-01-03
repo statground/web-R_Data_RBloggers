@@ -1,0 +1,145 @@
+{
+  "id": "3eb6b6b591a61a62e42fb5cd98266c17898750bc",
+  "url": "https://www.r-bloggers.com/2009/01/sweave-sh-plays-with-weaver/",
+  "created_at_utc": "2025-11-17T20:41:18Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "ab7de776-37b5-448b-925c-13de8c3428d6",
+    "created_at": "2025-11-17 20:41:18",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/01/sweave-sh-plays-with-weaver/",
+      "crawled_at": "2025-11-17T10:45:58.248593",
+      "external_links": [
+        {
+          "href": "https://ggorjan.blogspot.com/2009/01/sweavesh-plays-with-weaver.html",
+          "text": "Gregor Gorjanc"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://cran.r-project.org/package=cacheSweave",
+          "text": "cacheSweave"
+        },
+        {
+          "href": "https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html",
+          "text": "here"
+        },
+        {
+          "href": "http://www.bioconductor.org/packages/bioc/html/weaver.html",
+          "text": "weaver"
+        },
+        {
+          "href": "http://gregor.gorjanc.googlepages.com/Sweave.sh",
+          "text": "here"
+        },
+        {
+          "href": "https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html",
+          "text": "previous post"
+        },
+        {
+          "href": "https://ggorjan.blogspot.com/2009/01/sweavesh-plays-with-weaver.html",
+          "text": "Gregor Gorjanc"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Sweave.sh plays with weaver | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-7843268782954188465?l=ggorjan.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/6715598735361401237-7843268782954188465?l=ggorjan.blogspot.com"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+          "text": "Gregor Gorjanc"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sweave/",
+          "text": "sweave"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sweave-sh/",
+          "text": "Sweave.sh"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-322 post type-post status-publish format-standard hentry category-r-bloggers tag-r tag-sweave tag-sweave-sh\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Sweave.sh plays with weaver</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 21, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2009/01/sweavesh-plays-with-weaver.html\"> Gregor Gorjanc</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\">After adding support for the <a href=\"http://cran.r-project.org/package=cacheSweave\" rel=\"nofollow\" target=\"_blank\">cacheSweave</a> package (see <a href=\"https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html\" rel=\"nofollow\" target=\"_blank\">here</a>) I have also added support for the <a href=\"http://www.bioconductor.org/packages/bioc/html/weaver.html\" rel=\"nofollow\" target=\"_blank\">weaver</a> package to my Sweave.sh script. The experimental version is available <a href=\"http://gregor.gorjanc.googlepages.com/Sweave.sh\" rel=\"nofollow\" target=\"_blank\">here</a>. After testing and feedback I will upload it to CRAN. One can use this new feature with the command (see <a href=\"https://ggorjan.blogspot.com/2008/11/sweavesh-plays-with-cachesweave.html\" rel=\"nofollow\" target=\"_blank\">previous post</a> for the Sweave file):</div><blockquote>Sweave.sh –weaver test.Rnw</blockquote><div style=\"text-align: justify;\">This will turn caching on. If one has Sweave file with code chunks specifying chunk=true, but would like to recompute all information that is cached, the following command can be used:</div><blockquote>Sweave.sh –skipweaver test.Rnw</blockquote><div style=\"text-align: justify;\">I noticed that weaver does not play nice with example from my previous posts, i.e., it still waits for 15 seconds. My guess is that cacheSweave is a more complete implementation, but I might be wrong!</div><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-7843268782954188465?l=ggorjan.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-7843268782954188465?l=ggorjan.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6715598735361401237-7843268782954188465?l=ggorjan.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2009/01/sweavesh-plays-with-weaver.html\"> Gregor Gorjanc</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sweave/\" rel=\"tag\">sweave</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sweave-sh/\" rel=\"tag\">Sweave.sh</a></li></ul></div></article>",
+      "main_text": "Sweave.sh plays with weaver\nPosted on\nJanuary 21, 2009\nby\nGregor Gorjanc\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGregor Gorjanc\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAfter adding support for the\ncacheSweave\npackage (see\nhere\n) I have also added support for the\nweaver\npackage to my Sweave.sh script. The experimental version is available\nhere\n. After testing and feedback I will upload it to CRAN. One can use this new feature with the command (see\nprevious post\nfor the Sweave file):\nSweave.sh –weaver test.Rnw\nThis will turn caching on. If one has Sweave file with code chunks specifying chunk=true, but would like to recompute all information that is cached, the following command can be used:\nSweave.sh –skipweaver test.Rnw\nI noticed that weaver does not play nice with example from my previous posts, i.e., it still waits for 15 seconds. My guess is that cacheSweave is a more complete implementation, but I might be wrong!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR\nsweave\nSweave.sh",
+      "meta_description": "After adding support for the cacheSweave package (see here) I have also added support for the weaver package to my Sweave.sh script. The experimental version is available here. After testing and feedback I will upload it to CRAN. One can use this new f...",
+      "meta_keywords": "r,sweave,sweave.sh",
+      "og_description": "After adding support for the cacheSweave package (see here) I have also added support for the weaver package to my Sweave.sh script. The experimental version is available here. After testing and feedback I will upload it to CRAN. One can use this new f...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/6715598735361401237-7843268782954188465?l=ggorjan.blogspot.com",
+      "og_title": "Sweave.sh plays with weaver | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.4,
+      "sitemap_lastmod": "2010-09-06T21:01:35+00:00",
+      "twitter_description": "After adding support for the cacheSweave package (see here) I have also added support for the weaver package to my Sweave.sh script. The experimental version is available here. After testing and feedback I will upload it to CRAN. One can use this new f...",
+      "twitter_title": "Sweave.sh plays with weaver | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/01/sweave-sh-plays-with-weaver/",
+      "word_count": 277
+    }
+  }
+}

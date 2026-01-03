@@ -1,0 +1,118 @@
+{
+  "id": "85c34d9615d757acbc191b6983c3122f49333d94",
+  "url": "https://www.r-bloggers.com/2023/12/regression-analyses-with-common-checks-in-pesticide-research/",
+  "created_at_utc": "2025-11-17T20:38:53Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "92514765-7347-40ce-8df9-4626249e3041",
+    "created_at": "2025-11-17 20:38:53",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/regression-analyses-with-common-checks-in-pesticide-research/",
+      "crawled_at": "2025-11-17T09:33:37.331238",
+      "external_links": [
+        {
+          "href": "https://www.statforbiology.com/2023/stat_lm_augmentedfactorial_regression/",
+          "text": "R on The broken bridge between biologists and statisticians"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.statforbiology.com/2023/stat_lm_augmentedfactorial/",
+          "text": "see here"
+        },
+        {
+          "href": "https://twitter.com/onofriandreapg?ref_src=twsrc%5Etfw",
+          "text": "Follow@onofriandreapg"
+        },
+        {
+          "href": "https://doi.org/10.1111/jac.12267",
+          "text": "https://doi.org/10.1111/jac.12267"
+        },
+        {
+          "href": "https://www.statforbiology.com/2023/stat_lm_augmentedfactorial_regression/",
+          "text": "R on The broken bridge between biologists and statisticians"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Regression analyses with common checks in pesticide research | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-on-the-broken-bridge-between-biologists-and-stat/",
+          "text": "R on The broken bridge between biologists and statisticians"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection#9efff0faecfbffb0f1f0f1f8ecf7deebf0f7eef9b0f7ea",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380949 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Regression analyses with common checks in pesticide research</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 14, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-the-broken-bridge-between-biologists-and-stat/\">R on The broken bridge between biologists and statisticians</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.statforbiology.com/2023/stat_lm_augmentedfactorial_regression/\"> R on The broken bridge between biologists and statisticians</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>In pesticide research or, in general, agriculture research, we very commonly encounter experiments with, e.g., several herbicides tested at different doses and in different conditions. For these experiments, the untreated control is always added and, of course, such control is common to all herbicides.</p>\n<p>For example, in another post (<a href=\"https://www.statforbiology.com/2023/stat_lm_augmentedfactorial/\" rel=\"nofollow\" target=\"_blank\">see here</a>) we have considered an experiment with two herbicides (rimsulfuron and dicamba) at two rates (40 and 60 g/ha for rimsulfuron and 0.6 and 1 kg/ha for dicamba) and with four adjuvant treatments (surfactant, frigate, mineral oil and no adjuvant). The dataset is loaded in the box below: there are three predictors (Herbicide, Adjuvant and Dose) and two quantitative response variables (WeedCoverage and Yield).</p>\n<pre>rm(list = ls())\nlibrary(emmeans)\nlibrary(multcomp)\nfileName &lt;- \"https://www.casaonofri.it/_datasets/adjuvants.csv\"\ndataset &lt;- read.csv(fileName)\nhead(dataset)\n##   Plot   Herbicide   Adjuvant Dose Block WeedCoverage Yield\n## 1    1  HandWeeded       None    0     1         0.00 14.55\n## 2    2     Dicamba    Frigate    1     1        27.70 11.10\n## 3    3     Dicamba Surfactant    1     1        22.60 13.16\n## 4    4     Dicamba MineralOil    1     1        16.35 14.22\n## 5    5     Dicamba       None    1     1        45.00 14.69\n## 6    6 Rimsulfuron MineralOil   60     1        16.65 12.01\ndataset[,c(1:3,5)] &lt;- lapply(dataset[,c(1:3,5)], \n                             function(i) factor(i))</pre>\n<p>In the previous post we have taken the dose as a factor and fitted an augmented factorial model. More appropriately, in this post we would like to take the dose as a quantitative variable and fit a regression model. If we consider the common control (dose = 0), we have three available doses for each herbicide and, thus, we can fit a simple linear regression model. In particular, we should fit 8 regression lines, one per each adjuvant/herbicide combination and we should assume that these lines have a common intercept, as they share a common control. It will also be necessary to assume that the adjuvants have no effect on themselves, which may not be true in this case, but we are not attempting to draw any biological conclusions, we only want to give an example of the method.</p>\n<p>First of all, we remove the hand weeded control, that plays no role in regression analysis, because it has no explicit or implicit dose value.</p>\n<pre>dataset &lt;- subset(dataset, Herbicide != \"HandWeeded\")\ndataset[,c(1:3,5)] &lt;- lapply(dataset[,c(1:3,5)], \n                             function(i) factor(i))</pre>\n<p>In order to code for a set of models with a common intercept, we have to remove the main effects of herbicide and adjuvant from the model, because they would imply an adjuvant/herbicide-specific intercept, which is inappropriate. Next, we can fit eight different slopes by nesting the regression effect within the ‘herbicide by adjuvant’ combination, by using the nesting operator ‘%in%’. We could also use the ‘/’ operator, although in this case we would have the slopes expressed as differences with respect to one of the ‘herbicide by adjuvant’ combinations (i.e.: Rimsulfuron:Surfactant).</p>\n<pre>model &lt;- lm(Yield ~ Dose %in% (Herbicide:Adjuvant) - Herbicide\n            - Adjuvant, data = dataset)\nsummary(model)$coef[,1:3]\n##                                                 Estimate  Std. Error   t value\n## (Intercept)                                  12.28612378 0.315604824 38.928821\n## Dose:HerbicideDicamba:AdjuvantFrigate         1.03544261 0.584247220  1.772268\n## Dose:HerbicideRimsulfuron:AdjuvantFrigate     0.04480531 0.009489724  4.721456\n## Dose:HerbicideDicamba:AdjuvantMineralOil      2.17845732 0.584247220  3.728657\n## Dose:HerbicideRimsulfuron:AdjuvantMineralOil  0.03691108 0.009489724  3.889584\n## Dose:HerbicideDicamba:AdjuvantNone            1.77478085 0.584247220  3.037722\n## Dose:HerbicideRimsulfuron:AdjuvantNone        0.01283416 0.009489724  1.352427\n## Dose:HerbicideDicamba:AdjuvantSurfactant      1.41081026 0.584247220  2.414749\n## Dose:HerbicideRimsulfuron:AdjuvantSurfactant  0.04518031 0.009489724  4.760972\n# Alternative\n# model &lt;- lm(Yield ~ Dose / (Herbicide:Adjuvant) - Herbicide\n#            - Adjuvant, data = dataset)</pre>\n<p>Obviously, the slope for the herbicide ‘Unweeded’ (the control), is not estimable. With some further effort, we can compare the regression coefficients, within each herbicides. For example, with rimsulfuron, we need to retrieve the slopes from the model fit, that are, respectively, the coefficients in 3rd, 6th, 9th, and 12nd position.</p>\n<pre>coefs &lt;- coef(model)[c(3,6,9,12)]</pre>\n<p>Second, we have to retrieve the variances-covariances for the selected parameters:</p>\n<pre>varCov &lt;- vcov(model)[c(3,6,9,12), c(3,6,9,12)]</pre>\n<p>Now, we can input these elements into the <code>pairComp()</code> function in the ‘aomisc’ package, considering that we have 63 degrees of freedom in the residuals (see above):</p>\n<pre>library(aomisc)\npairComp(coefs, vcovMat = varCov, dfr = 63)$Letters\n##                                                    Mean          SE CLD\n## Dose:HerbicideRimsulfuron:AdjuvantNone       0.01283416 0.009489724   a\n## Dose:HerbicideRimsulfuron:AdjuvantMineralOil 0.03691108 0.009489724   b\n## Dose:HerbicideRimsulfuron:AdjuvantFrigate    0.04480531 0.009489724   b\n## Dose:HerbicideRimsulfuron:AdjuvantSurfactant 0.04518031 0.009489724   b</pre>\n<p>Thanks for reading and happy coding!</p>\n<p>Andrea Onofri<br/>\nDepartment of Agricultural, Food and Environmental Sciences<br/>\nUniversity of Perugia (Italy)<br/>\n<a href=\"/cdn-cgi/l/email-protection#9efff0faecfbffb0f1f0f1f8ecf7deebf0f7eef9b0f7ea\" rel=\"nofollow\" target=\"_blank\"><span class=\"__cf_email__\" data-cfemail=\"0f6e616b7d6a6e21606160697d664f7a61667f6821667b\">[email protected]</span></a></p>\n<a class=\"twitter-follow-button\" data-show-count=\"false\" href=\"https://twitter.com/onofriandreapg?ref_src=twsrc%5Etfw\" rel=\"nofollow\" target=\"_blank\">Follow <span class=\"citation\">@onofriandreapg</span></a>\n\n<hr>\n<div class=\"section level1\" id=\"reference\">\n<h1>Reference</h1>\n<ol style=\"list-style-type: decimal\">\n<li>Piepho, H.P., Edmondson, R.N., 2018. A tutorial on the statistical analysis of factorial experiments with qualitative and quantitative treatment factor levels. J Agronomy Crop Science 204, 429–455. <a class=\"uri\" href=\"https://doi.org/10.1111/jac.12267\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1111/jac.12267</a></li>\n</ol>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.statforbiology.com/2023/stat_lm_augmentedfactorial_regression/\"> R on The broken bridge between biologists and statisticians</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </hr></div>\n</article>",
+      "main_text": "Regression analyses with common checks in pesticide research\nPosted on\nDecember 14, 2023\nby\nR on The broken bridge between biologists and statisticians\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on The broken bridge between biologists and statisticians\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn pesticide research or, in general, agriculture research, we very commonly encounter experiments with, e.g., several herbicides tested at different doses and in different conditions. For these experiments, the untreated control is always added and, of course, such control is common to all herbicides.\nFor example, in another post (\nsee here\n) we have considered an experiment with two herbicides (rimsulfuron and dicamba) at two rates (40 and 60 g/ha for rimsulfuron and 0.6 and 1 kg/ha for dicamba) and with four adjuvant treatments (surfactant, frigate, mineral oil and no adjuvant). The dataset is loaded in the box below: there are three predictors (Herbicide, Adjuvant and Dose) and two quantitative response variables (WeedCoverage and Yield).\nrm(list = ls())\nlibrary(emmeans)\nlibrary(multcomp)\nfileName <- \"https://www.casaonofri.it/_datasets/adjuvants.csv\"\ndataset <- read.csv(fileName)\nhead(dataset)\n##   Plot   Herbicide   Adjuvant Dose Block WeedCoverage Yield\n## 1    1  HandWeeded       None    0     1         0.00 14.55\n## 2    2     Dicamba    Frigate    1     1        27.70 11.10\n## 3    3     Dicamba Surfactant    1     1        22.60 13.16\n## 4    4     Dicamba MineralOil    1     1        16.35 14.22\n## 5    5     Dicamba       None    1     1        45.00 14.69\n## 6    6 Rimsulfuron MineralOil   60     1        16.65 12.01\ndataset[,c(1:3,5)] <- lapply(dataset[,c(1:3,5)], \n                             function(i) factor(i))\nIn the previous post we have taken the dose as a factor and fitted an augmented factorial model. More appropriately, in this post we would like to take the dose as a quantitative variable and fit a regression model. If we consider the common control (dose = 0), we have three available doses for each herbicide and, thus, we can fit a simple linear regression model. In particular, we should fit 8 regression lines, one per each adjuvant/herbicide combination and we should assume that these lines have a common intercept, as they share a common control. It will also be necessary to assume that the adjuvants have no effect on themselves, which may not be true in this case, but we are not attempting to draw any biological conclusions, we only want to give an example of the method.\nFirst of all, we remove the hand weeded control, that plays no role in regression analysis, because it has no explicit or implicit dose value.\ndataset <- subset(dataset, Herbicide != \"HandWeeded\")\ndataset[,c(1:3,5)] <- lapply(dataset[,c(1:3,5)], \n                             function(i) factor(i))\nIn order to code for a set of models with a common intercept, we have to remove the main effects of herbicide and adjuvant from the model, because they would imply an adjuvant/herbicide-specific intercept, which is inappropriate. Next, we can fit eight different slopes by nesting the regression effect within the ‘herbicide by adjuvant’ combination, by using the nesting operator ‘%in%’. We could also use the ‘/’ operator, although in this case we would have the slopes expressed as differences with respect to one of the ‘herbicide by adjuvant’ combinations (i.e.: Rimsulfuron:Surfactant).\nmodel <- lm(Yield ~ Dose %in% (Herbicide:Adjuvant) - Herbicide\n            - Adjuvant, data = dataset)\nsummary(model)$coef[,1:3]\n##                                                 Estimate  Std. Error   t value\n## (Intercept)                                  12.28612378 0.315604824 38.928821\n## Dose:HerbicideDicamba:AdjuvantFrigate         1.03544261 0.584247220  1.772268\n## Dose:HerbicideRimsulfuron:AdjuvantFrigate     0.04480531 0.009489724  4.721456\n## Dose:HerbicideDicamba:AdjuvantMineralOil      2.17845732 0.584247220  3.728657\n## Dose:HerbicideRimsulfuron:AdjuvantMineralOil  0.03691108 0.009489724  3.889584\n## Dose:HerbicideDicamba:AdjuvantNone            1.77478085 0.584247220  3.037722\n## Dose:HerbicideRimsulfuron:AdjuvantNone        0.01283416 0.009489724  1.352427\n## Dose:HerbicideDicamba:AdjuvantSurfactant      1.41081026 0.584247220  2.414749\n## Dose:HerbicideRimsulfuron:AdjuvantSurfactant  0.04518031 0.009489724  4.760972\n# Alternative\n# model <- lm(Yield ~ Dose / (Herbicide:Adjuvant) - Herbicide\n#            - Adjuvant, data = dataset)\nObviously, the slope for the herbicide ‘Unweeded’ (the control), is not estimable. With some further effort, we can compare the regression coefficients, within each herbicides. For example, with rimsulfuron, we need to retrieve the slopes from the model fit, that are, respectively, the coefficients in 3rd, 6th, 9th, and 12nd position.\ncoefs <- coef(model)[c(3,6,9,12)]\nSecond, we have to retrieve the variances-covariances for the selected parameters:\nvarCov <- vcov(model)[c(3,6,9,12), c(3,6,9,12)]\nNow, we can input these elements into the\npairComp()\nfunction in the ‘aomisc’ package, considering that we have 63 degrees of freedom in the residuals (see above):\nlibrary(aomisc)\npairComp(coefs, vcovMat = varCov, dfr = 63)$Letters\n##                                                    Mean          SE CLD\n## Dose:HerbicideRimsulfuron:AdjuvantNone       0.01283416 0.009489724   a\n## Dose:HerbicideRimsulfuron:AdjuvantMineralOil 0.03691108 0.009489724   b\n## Dose:HerbicideRimsulfuron:AdjuvantFrigate    0.04480531 0.009489724   b\n## Dose:HerbicideRimsulfuron:AdjuvantSurfactant 0.04518031 0.009489724   b\nThanks for reading and happy coding!\nAndrea Onofri\nDepartment of Agricultural, Food and Environmental Sciences\nUniversity of Perugia (Italy)\n[email protected]\nFollow\n@onofriandreapg\nReference\nPiepho, H.P., Edmondson, R.N., 2018. A tutorial on the statistical analysis of factorial experiments with qualitative and quantitative treatment factor levels. J Agronomy Crop Science 204, 429–455.\nhttps://doi.org/10.1111/jac.12267\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on The broken bridge between biologists and statisticians\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "In pesticide research or, in general, agriculture research, we very commonly encounter experiments with, e.g., several herbicides tested at different doses and in different conditions. For these experiments, the untreated control is always added and...",
+      "meta_keywords": null,
+      "og_description": "In pesticide research or, in general, agriculture research, we very commonly encounter experiments with, e.g., several herbicides tested at different doses and in different conditions. For these experiments, the untreated control is always added and...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Regression analyses with common checks in pesticide research | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5,
+      "sitemap_lastmod": "2023-12-15T00:00:00+00:00",
+      "twitter_description": "In pesticide research or, in general, agriculture research, we very commonly encounter experiments with, e.g., several herbicides tested at different doses and in different conditions. For these experiments, the untreated control is always added and...",
+      "twitter_title": "Regression analyses with common checks in pesticide research | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/regression-analyses-with-common-checks-in-pesticide-research/",
+      "word_count": 990
+    }
+  }
+}

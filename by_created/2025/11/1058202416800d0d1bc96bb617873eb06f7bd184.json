@@ -1,0 +1,102 @@
+{
+  "id": "1058202416800d0d1bc96bb617873eb06f7bd184",
+  "url": "https://www.r-bloggers.com/2025/01/anomaly-detection-of-the-sp-500/",
+  "created_at_utc": "2025-11-22T19:59:21Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "fda6f012-a679-4e25-8576-415ed08060b2",
+    "created_at": "2025-11-22 19:59:21",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/01/anomaly-detection-of-the-sp-500/",
+      "crawled_at": "2025-11-22T10:54:53.159849",
+      "external_links": [
+        {
+          "href": "https://datageeek.com/2025/01/29/anomaly-detection-of-the-sp-500/",
+          "text": "DataGeeek"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://datageeek.com/2025/01/29/anomaly-detection-of-the-sp-500/",
+          "text": "DataGeeek"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Anomaly Detection of the S&P 500 | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/selcuk-disci/",
+          "text": "Selcuk Disci"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-390217 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Anomaly Detection of the S&amp;P 500</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 29, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/selcuk-disci/\">Selcuk Disci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://datageeek.com/2025/01/29/anomaly-detection-of-the-sp-500/\"> DataGeeek</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Since the date the Bank of Japan (BoJ) increased the interest rate, there seems to have yet been tested an anomaly for the S&amp;P 500 despite the strategists saying it is overvalued.</p>\n<p><strong><em>Source code:</em></strong></p>\n<pre>\nlibrary(tidyverse)\nlibrary(tidyquant)\nlibrary(timetk)\n\n#S&amp;P 500 (^GSPC)\ndf_sp500 &lt;- \n  tq_get(\"^GSPC\")\n\n\n#Anomaly Plot\ndf_sp500 %&gt;% \n  filter(date &gt;= as.Date(\"2024-01-22\")) %&gt;% \n  anomalize(date, close) %&gt;% \n  plot_anomalies(date, \n                 .line_size = 1,\n                 .interactive = FALSE,\n                 .title = \"&lt;span style= 'color:red;'&gt;Anomaly&lt;/span&gt; Chart of the S&amp;P 500\") + \n  scale_x_date(breaks = seq(make_date(2024,1,22), \n                            make_date(2025,1,22), \n                            by = \"month\"),\n               labels = scales::label_date(\"%b'%y\")) +\n  scale_y_continuous(labels = scales::label_currency()) +\n  geom_vline(xintercept = as.Date(\"2024-07-31\"), \n             size = 1, \n             linetype= \"dashed\", \n             color = \"orange\") +\n  labs(subtitle = \"&lt;span style ='color:orange;'&gt;The BoJ increased the interest rate&lt;/span&gt;\") +\n  theme_minimal(base_family = \"Roboto Slab\") +\n  theme(legend.position = \"none\",\n        panel.grid = element_blank(),\n        axis.text = element_text(face = \"bold\", size = 16),\n        axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1),\n        plot.background = element_rect(fill = \"snow\", color = \"snow\"),\n        panel.grid.major.x = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.major.y = element_line(linetype = \"dashed\", color = \"gray\"),\n        plot.subtitle = ggtext::element_markdown(size = 18),\n        plot.title = ggtext::element_markdown(size = 20, face = \"bold\"))\n</pre>\n<p></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://datageeek.com/2025/01/29/anomaly-detection-of-the-sp-500/\"> DataGeeek</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Anomaly Detection of the S&P 500\nPosted on\nJanuary 29, 2025\nby\nSelcuk Disci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDataGeeek\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSince the date the Bank of Japan (BoJ) increased the interest rate, there seems to have yet been tested an anomaly for the S&P 500 despite the strategists saying it is overvalued.\nSource code:\nlibrary(tidyverse)\nlibrary(tidyquant)\nlibrary(timetk)\n\n#S&P 500 (^GSPC)\ndf_sp500 <- \n  tq_get(\"^GSPC\")\n\n#Anomaly Plot\ndf_sp500 %>% \n  filter(date >= as.Date(\"2024-01-22\")) %>% \n  anomalize(date, close) %>% \n  plot_anomalies(date, \n                 .line_size = 1,\n                 .interactive = FALSE,\n                 .title = \"<span style= 'color:red;'>Anomaly</span> Chart of the S&P 500\") + \n  scale_x_date(breaks = seq(make_date(2024,1,22), \n                            make_date(2025,1,22), \n                            by = \"month\"),\n               labels = scales::label_date(\"%b'%y\")) +\n  scale_y_continuous(labels = scales::label_currency()) +\n  geom_vline(xintercept = as.Date(\"2024-07-31\"), \n             size = 1, \n             linetype= \"dashed\", \n             color = \"orange\") +\n  labs(subtitle = \"<span style ='color:orange;'>The BoJ increased the interest rate</span>\") +\n  theme_minimal(base_family = \"Roboto Slab\") +\n  theme(legend.position = \"none\",\n        panel.grid = element_blank(),\n        axis.text = element_text(face = \"bold\", size = 16),\n        axis.text.x = element_text(angle = 60, hjust = 1, vjust = 1),\n        plot.background = element_rect(fill = \"snow\", color = \"snow\"),\n        panel.grid.major.x = element_line(linetype = \"dashed\", color = \"gray\"),\n        panel.grid.major.y = element_line(linetype = \"dashed\", color = \"gray\"),\n        plot.subtitle = ggtext::element_markdown(size = 18),\n        plot.title = ggtext::element_markdown(size = 20, face = \"bold\"))\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDataGeeek\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Since the date the Bank of Japan (BoJ) increased the interest rate, there seems to have yet been tested an anomaly for the S&P 500 despite the strategists saying it is overvalued. Source code:",
+      "meta_keywords": null,
+      "og_description": "Since the date the Bank of Japan (BoJ) increased the interest rate, there seems to have yet been tested an anomaly for the S&P 500 despite the strategists saying it is overvalued. Source code:",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Anomaly Detection of the S&P 500 | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.7,
+      "sitemap_lastmod": null,
+      "twitter_description": "Since the date the Bank of Japan (BoJ) increased the interest rate, there seems to have yet been tested an anomaly for the S&P 500 despite the strategists saying it is overvalued. Source code:",
+      "twitter_title": "Anomaly Detection of the S&P 500 | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/01/anomaly-detection-of-the-sp-500/",
+      "word_count": 334
+    }
+  }
+}

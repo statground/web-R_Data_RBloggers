@@ -1,0 +1,122 @@
+{
+  "id": "b340204779d0189fcaadb0bf1ca9ac2d8ab84c2c",
+  "url": "https://www.r-bloggers.com/2009/02/data-analysis-workflow%E2%80%A6-part-1-of-infinity/",
+  "created_at_utc": "2025-11-17T20:41:11Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "0873be0d-4988-4b93-9d6e-7f77da07c593",
+    "created_at": "2025-11-17 20:41:11",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/02/data-analysis-workflow%e2%80%a6-part-1-of-infinity/",
+      "crawled_at": "2025-11-17T10:43:24.798902",
+      "external_links": [
+        {
+          "href": "http://www.cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/",
+          "text": "Cerebral Mastication » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://dataspora.com/blog/predictive-analytics-using-r/",
+          "text": "a presentation on how Google and Facebook use R"
+        },
+        {
+          "href": "http://cran.r-project.org/web/packages/rpart",
+          "text": "rpart"
+        },
+        {
+          "href": "http://www.cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/",
+          "text": "Cerebral Mastication » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Data Analysis Workflow… Part 1 of Infinity | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jd-long/",
+          "text": "JD Long"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/uncategorized/",
+          "text": "Uncategorized"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/workflow/",
+          "text": "workflow"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-2522 post type-post status-publish format-standard hentry category-r-bloggers category-uncategorized tag-r tag-workflow\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Data Analysis Workflow… Part 1 of Infinity</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 26, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jd-long/\">JD Long</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a>, <a href=\"https://www.r-bloggers.com/category/uncategorized/\" rel=\"category tag\">Uncategorized</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/\"> Cerebral Mastication » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>One of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the whole process from the time the analytical guy thinks, “Hey, I need to understand the velocity of new purchases between different types of sales campaigns.” until he writes down his findings in a presentation or even just a notebook. In the middle I assume this guy extracts some data from a warehouse or live system, does some work on said data, tests some theories, does more stuff, goes and gets coffee, comes back and plays some flash games, goes home and does it again the next day.</p>\n<p>Today I was reading over at Data Evolution about <a data-cf-modified-35348fefba20ba435987723d-=\"\" href=\"http://dataspora.com/blog/predictive-analytics-using-r/\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/dataspora.com/blog/predictive-analytics-using-r/?referer=');\" rel=\"nofollow\" target=\"_blank\">a presentation on how Google and Facebook use R</a>. The following was a summary of what Bo Cowgill of Google said about his workflow:</p>\n<blockquote><p>The typical workflow that Bo thus described for using R was: (i) pulling data with some external tool, (ii) loading it into R, (iii) performing analysis and modeling within R, (iv) implementing a resulting model in Python or C++ for a production environment.</p></blockquote>\n<p>I found this interesting as I have been masticating on the idea of learning Python for some time. I have run into situations where R was slow, but generally I have solved those through rethinking my algorithm. I’m not really a good programmer in R (or any other language for that matter), but I do want/need/like the statistical functions and ease of plotting in R. If I do learn Python I’ll certainly use it to call R… but maybe I should just stick to R.</p>\n<p>This has nothing to do with workflow, but the most thought provoking insights in the article above came from Itamar Rosenn at Facebook:</p>\n<blockquote><p>Itamar’s team used recursive partitioning (via the <a data-cf-modified-35348fefba20ba435987723d-=\"\" href=\"http://cran.r-project.org/web/packages/rpart\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/cran.r-project.org/web/packages/rpart?referer=');\" rel=\"nofollow\" target=\"_blank\">rpart</a> package) to infer that just two data points are significantly predictive of whether a user remains on Facebook: (i) having more than one session as a new user, and (ii) entering basic profile information.</p>\n<p>… [they also] found that activity at three months was predicted by variables related to three classes of behavior: (i) how often a user was reached out to by others, (ii) frequency of third party application use, and (iii) what Itamar termed “receptiveness” — related to how forthcoming a user was on the site.</p></blockquote>\n<p>So Facebook really wants new users to put more info into FB, use it more, and play with third party apps. I guess that logic is why LinkedIn is always telling me I am only 90% complete on my profile and I would be 95% if I would just, yada yada yada… The more info I put into their walled garden, the more I will play there. And the more ads I will see. Makes sense to me. I guess I follow the same model when I try to get my clients to use my services more and more… I want to be sticky too. But not in a bad way.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.cerebralmastication.com/2009/02/data-analysis-workflow-part-1-of-infinity/\"> Cerebral Mastication » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/workflow/\" rel=\"tag\">workflow</a></li></ul></div></article>",
+      "main_text": "Data Analysis Workflow… Part 1 of Infinity\nPosted on\nFebruary 26, 2009\nby\nJD Long\nin\nR bloggers\n,\nUncategorized\n| 0 Comments\n[This article was first published on\nCerebral Mastication » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nOne of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the whole process from the time the analytical guy thinks, “Hey, I need to understand the velocity of new purchases between different types of sales campaigns.” until he writes down his findings in a presentation or even just a notebook. In the middle I assume this guy extracts some data from a warehouse or live system, does some work on said data, tests some theories, does more stuff, goes and gets coffee, comes back and plays some flash games, goes home and does it again the next day.\nToday I was reading over at Data Evolution about\na presentation on how Google and Facebook use R\n. The following was a summary of what Bo Cowgill of Google said about his workflow:\nThe typical workflow that Bo thus described for using R was: (i) pulling data with some external tool, (ii) loading it into R, (iii) performing analysis and modeling within R, (iv) implementing a resulting model in Python or C++ for a production environment.\nI found this interesting as I have been masticating on the idea of learning Python for some time. I have run into situations where R was slow, but generally I have solved those through rethinking my algorithm. I’m not really a good programmer in R (or any other language for that matter), but I do want/need/like the statistical functions and ease of plotting in R. If I do learn Python I’ll certainly use it to call R… but maybe I should just stick to R.\nThis has nothing to do with workflow, but the most thought provoking insights in the article above came from Itamar Rosenn at Facebook:\nItamar’s team used recursive partitioning (via the\nrpart\npackage) to infer that just two data points are significantly predictive of whether a user remains on Facebook: (i) having more than one session as a new user, and (ii) entering basic profile information.\n… [they also] found that activity at three months was predicted by variables related to three classes of behavior: (i) how often a user was reached out to by others, (ii) frequency of third party application use, and (iii) what Itamar termed “receptiveness” — related to how forthcoming a user was on the site.\nSo Facebook really wants new users to put more info into FB, use it more, and play with third party apps. I guess that logic is why LinkedIn is always telling me I am only 90% complete on my profile and I would be 95% if I would just, yada yada yada… The more info I put into their walled garden, the more I will play there. And the more ads I will see. Makes sense to me. I guess I follow the same model when I try to get my clients to use my services more and more… I want to be sticky too. But not in a bad way.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCerebral Mastication » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR\nworkflow",
+      "meta_description": "One of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the [...]",
+      "meta_keywords": "r,workflow",
+      "og_description": "One of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Data Analysis Workflow… Part 1 of Infinity | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.4,
+      "sitemap_lastmod": "2009-02-26T14:41:04+00:00",
+      "twitter_description": "One of the many things that I sit around pondering when I should be doing productive things is the idea of analytical workflow. I have only worked with one analytical guru who I felt really gave thought and structure to workflow and its impact on analyist productivity. When I talk about workflow I mean the [...]",
+      "twitter_title": "Data Analysis Workflow… Part 1 of Infinity | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/02/data-analysis-workflow%E2%80%A6-part-1-of-infinity/",
+      "word_count": 682
+    }
+  }
+}

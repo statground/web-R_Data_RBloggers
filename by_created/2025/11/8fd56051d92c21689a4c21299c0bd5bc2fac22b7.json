@@ -1,0 +1,137 @@
+{
+  "id": "8fd56051d92c21689a4c21299c0bd5bc2fac22b7",
+  "url": "https://www.r-bloggers.com/2025/10/rpweave-unified-r-python-latex-system-using-uv/",
+  "created_at_utc": "2025-11-22T19:57:32Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "1d06ef26-7ee1-49ae-8887-2c92e8496127",
+    "created_at": "2025-11-22 19:57:32",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/10/rpweave-unified-r-python-latex-system-using-uv/",
+      "crawled_at": "2025-11-22T10:42:08.353057",
+      "external_links": [
+        {
+          "href": "https://thierrymoudiki.github.io//blog/2025/10/19/r/python/RPweave",
+          "text": "T. Moudiki's Webpage - R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://thierrymoudiki.github.io/blog/2025/09/21/r/synthetic-copulas",
+          "text": "esgtoolkit"
+        },
+        {
+          "href": "https://github.com/Techtonique/RPweave",
+          "text": "RPweave"
+        },
+        {
+          "href": "https://github.com/Techtonique/RPweave",
+          "text": "https://github.com/Techtonique/RPweave"
+        },
+        {
+          "href": "https://github.com/Techtonique/RPweave",
+          "text": "https://github.com/Techtonique/RPweave"
+        },
+        {
+          "href": "https://docs.astral.sh/uv/",
+          "text": "https://docs.astral.sh/uv/"
+        },
+        {
+          "href": "https://yihui.org/knitr/",
+          "text": "https://yihui.org/knitr/"
+        },
+        {
+          "href": "https://thierrymoudiki.github.io//blog/2025/10/19/r/python/RPweave",
+          "text": "T. Moudiki's Webpage - R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "RPweave: Unified R + Python + LaTeX System using uv | R-bloggers",
+      "images": [
+        {
+          "alt": "image-title-here",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "image-title-here",
+          "base64": null,
+          "src": "https://i0.wp.com/thierrymoudiki.github.io/images/2025-10-20/2025-10-20-image1.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/t-moudiki/",
+          "text": "T. Moudiki"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-396862 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">RPweave: Unified R + Python + LaTeX System using uv</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 18, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/t-moudiki/\">T. Moudiki</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://thierrymoudiki.github.io//blog/2025/10/19/r/python/RPweave\"> T. Moudiki's Webpage - R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h1 id=\"rpweave-unified-r--python--latex-document-system\">RPweave: Unified R + Python + LaTeX Document System</h1>\n<h2 id=\"the-problem-language-fragmentation-in-research\">The Problem: Language Fragmentation in Research</h2>\n<p>As data scientists and researchers, we often find ourselves using three worlds:</p>\n<ul>\n<li>R for statistical analysis and beautiful visualizations (e.g ggplot2 or <a href=\"https://thierrymoudiki.github.io/blog/2025/09/21/r/synthetic-copulas\" rel=\"nofollow\" target=\"_blank\">esgtoolkit</a>)</li>\n<li>Python for machine learning and broader ecosystem (scikit-learn, PyTorch)</li>\n<li>LaTeX for professional typesetting and academic publishing</li>\n</ul>\n<p>Traditionally (a long time ago, though), this meant maintaining separate scripts, manually copying results, and struggling with reproducible workflows.</p>\n<p>There are existing solutions like R Markdown and Jupyter Notebooks,and Quarto, but none of them fully address <strong>my</strong> needs for reproducibility and environment management using any LaTeX template.</p>\n<p>So, I hacked a workflow with <a href=\"https://github.com/Techtonique/RPweave\" rel=\"nofollow\" target=\"_blank\"><strong>RPweave</strong></a> – a unified document system that brings together the best of all worlds. It relies on:</p>\n<ul>\n<li><strong>Knitr</strong> for R and Python code chunks</li>\n<li><strong>Reticulate</strong> for Python integration in R</li>\n<li><strong>LaTeX</strong> for high-quality typesetting</li>\n<li><strong>uv</strong> for Python environment management</li>\n<li><strong>Makefile</strong>/command line for automated builds (see below, as it’s <strong>especially designed for command-line use</strong>)</li>\n<li><strong>Git</strong> template for version control (<a href=\"https://github.com/Techtonique/RPweave\" rel=\"nofollow\" target=\"_blank\">https://github.com/Techtonique/RPweave</a>)</li>\n</ul>\n<h2 id=\"getting-started\">Getting Started</h2>\n<pre># 1. Use the GitHub template\ngit clone https://github.com/Techtonique/RPweave my-paper\ncd my-paper\n\n# 2. Setup environments\nuv venv venv\nsource venv/bin/activate\nmake setup\n\n# 3. Start writing!\nmake view\n</pre>\n<h2 id=\"more-on-rpweave\">More on RPweave</h2>\n<p>Example document structure:</p>\n<pre>\\documentclass{article}\n\\begin{document}\n\n%mandatory Rnw setup\n&lt;&lt;setup&gt;&gt;=\nlibrary(knitr)\nlibrary(reticulate)\nuse_python(\"venv/bin/python\")\n@\n\n\\section{R Analysis}\n&lt;&lt;r-analysis&gt;&gt;=\nggplot(mtcars, aes(x=wt, y=mpg)) + geom_point()\n@\n\n\\section{Python Analysis}  \n&lt;&lt;python-analysis, engine='python'&gt;&gt;=\nimport pandas as pd\ndf = pd.DataFrame({'x': range(100)})\nprint(df.describe())\n@\n\n\\end{document}\n</pre>\n<h2 id=\"key-features\">Key Features</h2>\n<p><strong>ENVIRONMENT MANAGEMENT</strong></p>\n<ul>\n<li>Python: Managed by uv – the fast, modern Python package manager</li>\n<li>R: Simple, conditional package installation</li>\n<li>Isolated: Virtual environments for reproducible builds</li>\n</ul>\n<p><strong>SEAMLESS CROSS-LANGUAGE INTEGRATION</strong></p>\n<pre># R to Python data sharing\nr_data &lt;- data.frame(x=1:10, y=rnorm(10))\npy$shared_data &lt;- r_data  # Available in Python chunks!\n</pre>\n<p><strong>PROFESSIONAL LATEX OUTPUT</strong></p>\n<ul>\n<li>Academic-quality typesetting</li>\n<li>Automatic figure generation and placement</li>\n<li>Code syntax highlighting</li>\n<li>Bibliography support</li>\n</ul>\n<p><strong>WORKFLOW</strong></p>\n<pre># One-time setup\n## create and activate Python virtual environment\nuv venv venv &amp;&amp; source venv/bin/activate\n## install R and Python dependencies\nmake setup\n\n# Daily development  \nmake view  # Build and open PDF after edits in main.Rnw\n</pre>\n<h2 id=\"project-structure\">Project Structure</h2>\n<pre>research-paper/\n├── main.Rnw          # Your paper with embedded R/Python\n├── chunks/           # Modular code organization\n├── data/             # Research datasets  \n├── outputs/          # Generated figures\n├── requirements.txt  # Python dependencies\n└── Makefile          # Automated build system\n</pre>\n<h2 id=\"real-world-use-case\">Real-World Use Case</h2>\n<p>Imagine writing a paper that needs:</p>\n<ol>\n<li>Complex statistical models (R: lme4, brms)</li>\n<li>Deep learning analysis (Python: PyTorch, TensorFlow)</li>\n<li>Professional formatting (LaTeX: equations, algorithms)</li>\n<li>Reproducible results (isolated environments)</li>\n</ol>\n<p>With RPweave, you get all of this in a single, version-controlled document.</p>\n<h2 id=\"pro-tips-from-production-use\">Pro Tips from Production Use</h2>\n<ol>\n<li>Use <code>make view</code> as your primary writing command - it’s like “Save &amp; Preview”</li>\n<li>Organize long code in named <code>chunks/</code> directory to keep main.Rnw clean</li>\n<li>Version control everything except generated files (use <code>.gitignore</code>)</li>\n<li>R→Python data flow works seamlessly - structure analyses accordingly</li>\n</ol>\n<h2 id=\"the-expected-result-for-me\">The Expected Result for Me</h2>\n<ul>\n<li>No more context switching between RStudio and Jupyter for LaTeX writing</li>\n<li>Integrated workflow that saves time and reduces errors</li>\n<li>Single source of <em>truth</em> for analysis and manuscript</li>\n<li>Professional output that meets academic standards</li>\n<li>Truly reproducible research with pinned dependencies (but don’t forget to <code>git commit</code>)</li>\n</ul>\n<h2 id=\"links--resources\">Links &amp; Resources</h2>\n<ul>\n<li>RPweave GitHub Repository: <a href=\"https://github.com/Techtonique/RPweave\" rel=\"nofollow\" target=\"_blank\">https://github.com/Techtonique/RPweave</a></li>\n<li>UV Documentation: <a href=\"https://docs.astral.sh/uv/\" rel=\"nofollow\" target=\"_blank\">https://docs.astral.sh/uv/</a></li>\n<li>Knitr Documentation: <a href=\"https://yihui.org/knitr/\" rel=\"nofollow\" target=\"_blank\">https://yihui.org/knitr/</a></li>\n</ul>\n<p><img alt=\"image-title-here\" class=\"img-responsive\" data-lazy-src=\"https://i0.wp.com/thierrymoudiki.github.io/images/2025-10-20/2025-10-20-image1.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"image-title-here\" class=\"img-responsive\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/thierrymoudiki.github.io/images/2025-10-20/2025-10-20-image1.png?w=578&amp;ssl=1\"/></noscript></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://thierrymoudiki.github.io//blog/2025/10/19/r/python/RPweave\"> T. Moudiki's Webpage - R</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "RPweave: Unified R + Python + LaTeX System using uv\nPosted on\nOctober 18, 2025\nby\nT. Moudiki\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nT. Moudiki's Webpage - R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nRPweave: Unified R + Python + LaTeX Document System\nThe Problem: Language Fragmentation in Research\nAs data scientists and researchers, we often find ourselves using three worlds:\nR for statistical analysis and beautiful visualizations (e.g ggplot2 or\nesgtoolkit\n)\nPython for machine learning and broader ecosystem (scikit-learn, PyTorch)\nLaTeX for professional typesetting and academic publishing\nTraditionally (a long time ago, though), this meant maintaining separate scripts, manually copying results, and struggling with reproducible workflows.\nThere are existing solutions like R Markdown and Jupyter Notebooks,and Quarto, but none of them fully address\nmy\nneeds for reproducibility and environment management using any LaTeX template.\nSo, I hacked a workflow with\nRPweave\n– a unified document system that brings together the best of all worlds. It relies on:\nKnitr\nfor R and Python code chunks\nReticulate\nfor Python integration in R\nLaTeX\nfor high-quality typesetting\nuv\nfor Python environment management\nMakefile\n/command line for automated builds (see below, as it’s\nespecially designed for command-line use\n)\nGit\ntemplate for version control (\nhttps://github.com/Techtonique/RPweave\n)\nGetting Started\n# 1. Use the GitHub template\ngit clone https://github.com/Techtonique/RPweave my-paper\ncd my-paper\n\n# 2. Setup environments\nuv venv venv\nsource venv/bin/activate\nmake setup\n\n# 3. Start writing!\nmake view\nMore on RPweave\nExample document structure:\n\\documentclass{article}\n\\begin{document}\n\n%mandatory Rnw setup\n<<setup>>=\nlibrary(knitr)\nlibrary(reticulate)\nuse_python(\"venv/bin/python\")\n@\n\n\\section{R Analysis}\n<<r-analysis>>=\nggplot(mtcars, aes(x=wt, y=mpg)) + geom_point()\n@\n\n\\section{Python Analysis}  \n<<python-analysis, engine='python'>>=\nimport pandas as pd\ndf = pd.DataFrame({'x': range(100)})\nprint(df.describe())\n@\n\n\\end{document}\nKey Features\nENVIRONMENT MANAGEMENT\nPython: Managed by uv – the fast, modern Python package manager\nR: Simple, conditional package installation\nIsolated: Virtual environments for reproducible builds\nSEAMLESS CROSS-LANGUAGE INTEGRATION\n# R to Python data sharing\nr_data <- data.frame(x=1:10, y=rnorm(10))\npy$shared_data <- r_data  # Available in Python chunks!\nPROFESSIONAL LATEX OUTPUT\nAcademic-quality typesetting\nAutomatic figure generation and placement\nCode syntax highlighting\nBibliography support\nWORKFLOW\n# One-time setup\n## create and activate Python virtual environment\nuv venv venv && source venv/bin/activate\n## install R and Python dependencies\nmake setup\n\n# Daily development  \nmake view  # Build and open PDF after edits in main.Rnw\nProject Structure\nresearch-paper/\n├── main.Rnw          # Your paper with embedded R/Python\n├── chunks/           # Modular code organization\n├── data/             # Research datasets  \n├── outputs/          # Generated figures\n├── requirements.txt  # Python dependencies\n└── Makefile          # Automated build system\nReal-World Use Case\nImagine writing a paper that needs:\nComplex statistical models (R: lme4, brms)\nDeep learning analysis (Python: PyTorch, TensorFlow)\nProfessional formatting (LaTeX: equations, algorithms)\nReproducible results (isolated environments)\nWith RPweave, you get all of this in a single, version-controlled document.\nPro Tips from Production Use\nUse\nmake view\nas your primary writing command - it’s like “Save & Preview”\nOrganize long code in named\nchunks/\ndirectory to keep main.Rnw clean\nVersion control everything except generated files (use\n.gitignore\n)\nR→Python data flow works seamlessly - structure analyses accordingly\nThe Expected Result for Me\nNo more context switching between RStudio and Jupyter for LaTeX writing\nIntegrated workflow that saves time and reduces errors\nSingle source of\ntruth\nfor analysis and manuscript\nProfessional output that meets academic standards\nTruly reproducible research with pinned dependencies (but don’t forget to\ngit commit\n)\nLinks & Resources\nRPweave GitHub Repository:\nhttps://github.com/Techtonique/RPweave\nUV Documentation:\nhttps://docs.astral.sh/uv/\nKnitr Documentation:\nhttps://yihui.org/knitr/\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nT. Moudiki's Webpage - R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introducing RPweave, a unified document system that seamlessly integrates R, Python, and LaTeX for reproducible research and professional typesetting.",
+      "meta_keywords": null,
+      "og_description": "Introducing RPweave, a unified document system that seamlessly integrates R, Python, and LaTeX for reproducible research and professional typesetting.",
+      "og_image": "https://thierrymoudiki.github.io/images/2025-10-20/2025-10-20-image1.png",
+      "og_title": "RPweave: Unified R + Python + LaTeX System using uv | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introducing RPweave, a unified document system that seamlessly integrates R, Python, and LaTeX for reproducible research and professional typesetting.",
+      "twitter_title": "RPweave: Unified R + Python + LaTeX System using uv | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/10/rpweave-unified-r-python-latex-system-using-uv/",
+      "word_count": 713
+    }
+  }
+}

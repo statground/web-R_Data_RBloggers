@@ -1,0 +1,154 @@
+{
+  "id": "cd86a189d499ef03edc2f23fd65f84e65668e15c",
+  "url": "https://www.r-bloggers.com/2023/12/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/",
+  "created_at_utc": "2025-11-17T20:38:55Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "40fe102d-62a7-4964-9279-17fe3a2f60e8",
+    "created_at": "2025-11-17 20:38:55",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/",
+      "crawled_at": "2025-11-17T09:37:29.588464",
+      "external_links": [
+        {
+          "href": "https://discindo.org/post/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/",
+          "text": "R | Discindo"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://analythium.io/",
+          "text": "Analythium"
+        },
+        {
+          "href": "https://marketplace.digitalocean.com/apps/shinyproxy",
+          "text": "https://marketplace.digitalocean.com/apps/shinyproxy"
+        },
+        {
+          "href": "https://www.shinyproxy.io/documentation/getting-started/",
+          "text": "ShinyProxy from scratch"
+        },
+        {
+          "href": "https://discindo.org/post/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/hub.docker.com",
+          "text": "Docker hub"
+        },
+        {
+          "href": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry",
+          "text": "GitHub’s docker registry"
+        },
+        {
+          "href": "https://www.digitalocean.com/products/container-registry",
+          "text": "DigitalOcean’s container\nregistry solution"
+        },
+        {
+          "href": "https://docs.digitalocean.com/reference/api/create-personal-access-token/",
+          "text": "help page"
+        },
+        {
+          "href": "https://discindo.org/post/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/",
+          "text": "R | Discindo"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "How to deploy Shiny application to Digital Ocean using GitHub Actions | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-discindo/",
+          "text": "R | Discindo"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/cdn-cgi/l/email-protection",
+          "text": "[email protected]"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380811 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">How to deploy Shiny application to Digital Ocean using GitHub Actions</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 11, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-discindo/\">R | Discindo</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://discindo.org/post/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/\"> R | Discindo</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><h2 id=\"shinyproxy-on-digitalocean\">ShinyProxy on DigitalOcean</h2>\n<p>For the remainder of this walkthrough, I’ll assume that a DigitalOcean droplet\nrunning ShinyProxy is already set up. The great people at <a href=\"https://analythium.io/\" rel=\"nofollow\" target=\"_blank\">Analythium</a> have made setting up an encrypted ShinyProxy server seamless with their 1-click (<a href=\"https://marketplace.digitalocean.com/apps/shinyproxy\" rel=\"nofollow\" target=\"_blank\">https://marketplace.digitalocean.com/apps/shinyproxy</a>) application solution. Please follow their tutorials to set this up.</p>\n<p>Having said that, this is in no way limited to the Analythium 1-click solution.\nYou can set up a new DigitalOcean server running <a href=\"https://www.shinyproxy.io/documentation/getting-started/\" rel=\"nofollow\" target=\"_blank\">ShinyProxy from scratch</a>, or adapt the below protocol to different cloud service provider.</p>\n<h2 id=\"github-actions-and-digitalocean-setup\">GitHub Actions and DigitalOcean setup</h2>\n<p>In this section we’ll set up SSH access on Digital Ocean servers for GH actions:</p>\n<ol>\n<li>Set up a user for GHActions on the server</li>\n</ol>\n<p>We can use <code>root</code> to login to the remote server, but its better for GH Actions\nto run things without root priveledges. So, login to the droplet as user:</p>\n<pre>ssh <a class=\"__cf_email__\" data-cfemail=\"7705181803371e07591613130559181159130518071b1203\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>\n</pre><p>and run</p>\n<pre>useradd ghactions\n</pre><p>This will create our user and should not prompt for password. The only way to\naccess the server with this user is through <code>ssh keys</code> (see below).</p>\n<p>Because the user will most likely require to pull docker images, its also good\nto add it to the docker user group. This will bypass the requirement for sudo\nwhen running docker commands:</p>\n<pre>sudo usermod -aG docker ghactions\nnewgrp docker\n</pre><ol start=\"2\">\n<li>Create ssh keys for the <code>ghactions</code> user on your local computer</li>\n</ol>\n<p>On your local machine, we want to create a <em>private-public ssh key pair</em> for\nour ghactions user. We <em>don’t want to use the personal ssh keys</em>. To do this,\nwe generate the keys in a temporary location:</p>\n<pre>ssh-keygen -C ghactions -f /tmp/ghactions-keys\n</pre><ol start=\"3\">\n<li>Upload the public key to the server</li>\n</ol>\n<ul>\n<li>\n<p>log in as root: <code>ssh <a class=\"__cf_email__\" data-cfemail=\"f785989883b79e87d996939385d99891d9938598879b9283\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a></code></p>\n</li>\n<li>\n<p>create <code>.ssh</code> folder for user <code>ghactions</code>: <code>mkdir /home/ghactions/.ssh</code></p>\n</li>\n<li>\n<p>create <code>.ssh/authorized_keys</code> file for user <code>ghactions</code>: <code>touch /home/ghactions/.ssh/authorized_keys</code></p>\n</li>\n<li>\n<p>change ownership for the ssh config files: <code>chown ghactions:ghactions -R /home/ghactions/.ssh</code></p>\n</li>\n<li>\n<p>change permissions for the files: <code>chmod 700 -R /home/ghactions/.ssh</code></p>\n</li>\n<li>\n<p>copy paste the public key from your local computer (<code>/tmp/ghactions-keys.pub</code>)\nto the <code>/home/ghactions/.ssh/authorized_keys</code> file</p>\n</li>\n<li>\n<p>disconnect from the server (<code>exit</code> or <code>ctrl+d</code>)</p>\n</li>\n<li>\n<p>try connecting as the ghactions user: <code>ssh -i /tmp/ghactions-keys <a class=\"__cf_email__\" data-cfemail=\"dfb8b7bebcabb6b0b1ac9fb6aff1bebbbbadf1b0b9f1bbadb0afb3baab\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a></code></p>\n</li>\n<li>\n<p>if you can log in, the ssh setup should be good to go</p>\n</li>\n<li>\n<p>test that you can run <code>docker</code> without <code>sudo</code>: <code>docker run hello-world</code></p>\n</li>\n</ul>\n<ol start=\"4\">\n<li>Store the private key to the GitHub repository secret</li>\n</ol>\n<p>This requires <em>admin</em> priveledges on the github repo.</p>\n<p>Go to <code>Settings -&gt; Secrets and Variables -&gt; Actions</code> and click <code>New repository secret</code>.\nPaste the entire contents of your temporary private key, file <code>/tmp/ghactions.keys</code>\n(including the first and last line</p>\n<p><code>-----BEGIN OPENSSH PRIVATE KEY-----</code></p>\n<p>and</p>\n<p><code>-----END OPENSSH PRIVATE KEY-----</code>\n).</p>\n<p>Call the secret <code>SSH_PRIVATE_KEY</code>.</p>\n<ol start=\"5\">\n<li>Test your github action. A simple action to verify that the GitHub Action\nrunner can access the droplet could be as follows:</li>\n</ol>\n<pre> on:\npush:\nbranches: - dev\njobs:\ntest_gh_to_do_ssh:\nname: test gh to do ssh connection\nruns-on: ubuntu-latest\nsteps:\n- name: Create a dummy file on server\nuses: appleboy/<a class=\"__cf_email__\" data-cfemail=\"bbc8c8d396dad8cfd2d4d5fbcd8a958b958b\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>\nwith:\nhost: ip.addr.of.droplet\nusername: ghactions\nkey: ${{ secrets.SSH_PRIVATE_KEY }}\nscript: touch github-actions-made-this-file\n</pre><p>If you got no errors, login to the server as user ghactions and check if the\nfile is there. Then delete it.</p>\n<ol start=\"6\">\n<li>Delete your local copy of the <em>ssh keys for ghactions user</em></li>\n</ol>\n<p>If everything went well, you can delete the temporary ssh files you created for\nthe <code>ghactions</code> user: <code>rm /tmp/ghactions-keys /tmp/ghactions-keys.pub</code>.</p>\n<p>The private key is safe in github secrets. For added security you could periodically\nchange update the key.</p>\n<h2 id=\"docker-container-registry-on-digitalocean\">Docker container registry on DigitalOcean</h2>\n<p>One of the components of the deployment workflow is that we have to host our <code>docker</code>\nimages on a remote repository and pull them to the DigitalOcean server. To do this,\none can use any Docker registry, including <a href=\"https://discindo.org/post/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/hub.docker.com\" rel=\"nofollow\" target=\"_blank\">Docker hub</a>, <a href=\"https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry\" rel=\"nofollow\" target=\"_blank\">GitHub’s docker registry</a>. For this post, I’ll use <a href=\"https://www.digitalocean.com/products/container-registry\" rel=\"nofollow\" target=\"_blank\">DigitalOcean’s container\nregistry solution</a>.</p>\n<p>To set this up we simply create a registry for our account or team. Then, to access\nthe registry, we need to generate an access token. For example, by following this\n<a href=\"https://docs.digitalocean.com/reference/api/create-personal-access-token/\" rel=\"nofollow\" target=\"_blank\">help page</a></p>\n<p>Finally, we need provide this access token as a repository secret to GitHub Actions,\nbecause it is needed for the runners to be able to push and pull images. To do this,\ngo <code>Settings -&gt; Secrets and Variables -&gt; Actions</code> and click <code>New repository secret</code>.\nPaste the access token string and name the secret <code>DIGITALOCEAN_ACCESS_TOKEN</code>.</p>\n<p>We are now ready to use the token in our workflow.</p>\n<h2 id=\"gh-actions-workflow-for-deployment\">GH Actions workflow for deployment</h2>\n<p>The workflow below is fairly straighforward. Mostly calling <code>docker</code> to\nlogin, push and pull images. The <code>appleboy/<a class=\"__cf_email__\" data-cfemail=\"2c5f5f44014d4f584543426c5a1d021c021c\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a></code> is used to\naccess the DigitalOcean droplet via ssh following our earlier setup of the\n<code>ghactions</code> user.</p>\n<p>In sequence, the steps are:</p>\n<ol>\n<li>The workflow will run on push to dev. For example after merging a PR for example</li>\n<li>Checkout the dev branch</li>\n<li>Build a docker image out of it using the Dockerfile included in the repo.\nFor this I used <code>golem::add_dockerfile_shinyproxy()</code></li>\n<li>Push the docker image to the DO registry under a tag <code>latest</code>. One can also use\na SHA string to tag the image specifically</li>\n<li><code>ssh</code> to the droplet using USERNAME@HOST with key <code>SSH_PRIVATE_KEY</code> (as we set it up earlier),\nThe user name and host are hard-coded here, but if necessary they can be set as\nsecrets or variables.</li>\n<li>Pull the image using the same tag (the DigitalOcean access token is passed as\nan environmental variable so the runner has access to the container registry after <code>ssh</code>-ing)</li>\n<li>Next time you log in the app ShinyProxy will automatically serve the latest <code>docker</code> image</li>\n</ol>\n<pre>on:\npush:\nbranches:\n- dev\njobs:\ndeploy_to_dev:\nname: deploy to dev\nruns-on: ubuntu-latest\nsteps:\n- name: Checkout dev\nuses: actions/checkout@v4\nwith:\nref: dev\n- name: Build container image\nrun: docker build -t registry.digitalocean.com/myregistry/testgolem:latest .\n- name: Log in to DigitalOcean Container Registry with short-lived credentials\nrun: echo ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} | docker login registry.digitalocean.com/myregistry -u $(echo ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}) --password-stdin\n- name: Push image to DigitalOcean Container Registry\nrun: docker push registry.digitalocean.com/myregistry/testgolem:latest\n- name: Pull image on DigitalOcean ShinyProxy Server\nuses: appleboy/<a class=\"__cf_email__\" data-cfemail=\"0b787863266a687f6264654b7d3a253b253b\" href=\"/cdn-cgi/l/email-protection\">[email protected]</a>\nenv:\nDO_REGISTRY_TOKEN: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}\nwith:\nhost: ip.addr.do.droplet\nusername: ghactions\nkey: ${{ secrets.SSH_PRIVATE_KEY }}\nenvs: DO_REGISTRY_TOKEN\nscript: |\necho $DO_REGISTRY_TOKEN | docker login registry.digitalocean.com/myregistry -u $(echo $DO_REGISTRY_TOKEN) --password-stdin\ndocker pull registry.digitalocean.com/myregistry/testgolem:latest\n</pre><h2 id=\"gist\">Gist</h2>\n<p>For quick access to the main files visit this gist</p>\n\n<h2 id=\"summary\">Summary</h2>\n<p>This article includes a step-by-step tutorial on setting up automatic deployment\nof a Shiny application to a DigitalOcean server running ShinyProxy via GitHub Actions.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://discindo.org/post/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/\"> R | Discindo</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "How to deploy Shiny application to Digital Ocean using GitHub Actions\nPosted on\nDecember 11, 2023\nby\nR | Discindo\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR | Discindo\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nShinyProxy on DigitalOcean\nFor the remainder of this walkthrough, I’ll assume that a DigitalOcean droplet\nrunning ShinyProxy is already set up. The great people at\nAnalythium\nhave made setting up an encrypted ShinyProxy server seamless with their 1-click (\nhttps://marketplace.digitalocean.com/apps/shinyproxy\n) application solution. Please follow their tutorials to set this up.\nHaving said that, this is in no way limited to the Analythium 1-click solution.\nYou can set up a new DigitalOcean server running\nShinyProxy from scratch\n, or adapt the below protocol to different cloud service provider.\nGitHub Actions and DigitalOcean setup\nIn this section we’ll set up SSH access on Digital Ocean servers for GH actions:\nSet up a user for GHActions on the server\nWe can use\nroot\nto login to the remote server, but its better for GH Actions\nto run things without root priveledges. So, login to the droplet as user:\nssh\n[email protected]\nand run\nuseradd ghactions\nThis will create our user and should not prompt for password. The only way to\naccess the server with this user is through\nssh keys\n(see below).\nBecause the user will most likely require to pull docker images, its also good\nto add it to the docker user group. This will bypass the requirement for sudo\nwhen running docker commands:\nsudo usermod -aG docker ghactions\nnewgrp docker\nCreate ssh keys for the\nghactions\nuser on your local computer\nOn your local machine, we want to create a\nprivate-public ssh key pair\nfor\nour ghactions user. We\ndon’t want to use the personal ssh keys\n. To do this,\nwe generate the keys in a temporary location:\nssh-keygen -C ghactions -f /tmp/ghactions-keys\nUpload the public key to the server\nlog in as root:\nssh\n[email protected]\ncreate\n.ssh\nfolder for user\nghactions\n:\nmkdir /home/ghactions/.ssh\ncreate\n.ssh/authorized_keys\nfile for user\nghactions\n:\ntouch /home/ghactions/.ssh/authorized_keys\nchange ownership for the ssh config files:\nchown ghactions:ghactions -R /home/ghactions/.ssh\nchange permissions for the files:\nchmod 700 -R /home/ghactions/.ssh\ncopy paste the public key from your local computer (\n/tmp/ghactions-keys.pub\n)\nto the\n/home/ghactions/.ssh/authorized_keys\nfile\ndisconnect from the server (\nexit\nor\nctrl+d\n)\ntry connecting as the ghactions user:\nssh -i /tmp/ghactions-keys\n[email protected]\nif you can log in, the ssh setup should be good to go\ntest that you can run\ndocker\nwithout\nsudo\n:\ndocker run hello-world\nStore the private key to the GitHub repository secret\nThis requires\nadmin\npriveledges on the github repo.\nGo to\nSettings -> Secrets and Variables -> Actions\nand click\nNew repository secret\n.\nPaste the entire contents of your temporary private key, file\n/tmp/ghactions.keys\n(including the first and last line\n-----BEGIN OPENSSH PRIVATE KEY-----\nand\n-----END OPENSSH PRIVATE KEY-----\n).\nCall the secret\nSSH_PRIVATE_KEY\n.\nTest your github action. A simple action to verify that the GitHub Action\nrunner can access the droplet could be as follows:\non:\npush:\nbranches: - dev\njobs:\ntest_gh_to_do_ssh:\nname: test gh to do ssh connection\nruns-on: ubuntu-latest\nsteps:\n- name: Create a dummy file on server\nuses: appleboy/\n[email protected]\nwith:\nhost: ip.addr.of.droplet\nusername: ghactions\nkey: ${{ secrets.SSH_PRIVATE_KEY }}\nscript: touch github-actions-made-this-file\nIf you got no errors, login to the server as user ghactions and check if the\nfile is there. Then delete it.\nDelete your local copy of the\nssh keys for ghactions user\nIf everything went well, you can delete the temporary ssh files you created for\nthe\nghactions\nuser:\nrm /tmp/ghactions-keys /tmp/ghactions-keys.pub\n.\nThe private key is safe in github secrets. For added security you could periodically\nchange update the key.\nDocker container registry on DigitalOcean\nOne of the components of the deployment workflow is that we have to host our\ndocker\nimages on a remote repository and pull them to the DigitalOcean server. To do this,\none can use any Docker registry, including\nDocker hub\n,\nGitHub’s docker registry\n. For this post, I’ll use\nDigitalOcean’s container\nregistry solution\n.\nTo set this up we simply create a registry for our account or team. Then, to access\nthe registry, we need to generate an access token. For example, by following this\nhelp page\nFinally, we need provide this access token as a repository secret to GitHub Actions,\nbecause it is needed for the runners to be able to push and pull images. To do this,\ngo\nSettings -> Secrets and Variables -> Actions\nand click\nNew repository secret\n.\nPaste the access token string and name the secret\nDIGITALOCEAN_ACCESS_TOKEN\n.\nWe are now ready to use the token in our workflow.\nGH Actions workflow for deployment\nThe workflow below is fairly straighforward. Mostly calling\ndocker\nto\nlogin, push and pull images. The\nappleboy/\n[email protected]\nis used to\naccess the DigitalOcean droplet via ssh following our earlier setup of the\nghactions\nuser.\nIn sequence, the steps are:\nThe workflow will run on push to dev. For example after merging a PR for example\nCheckout the dev branch\nBuild a docker image out of it using the Dockerfile included in the repo.\nFor this I used\ngolem::add_dockerfile_shinyproxy()\nPush the docker image to the DO registry under a tag\nlatest\n. One can also use\na SHA string to tag the image specifically\nssh\nto the droplet using USERNAME@HOST with key\nSSH_PRIVATE_KEY\n(as we set it up earlier),\nThe user name and host are hard-coded here, but if necessary they can be set as\nsecrets or variables.\nPull the image using the same tag (the DigitalOcean access token is passed as\nan environmental variable so the runner has access to the container registry after\nssh\n-ing)\nNext time you log in the app ShinyProxy will automatically serve the latest\ndocker\nimage\non:\npush:\nbranches:\n- dev\njobs:\ndeploy_to_dev:\nname: deploy to dev\nruns-on: ubuntu-latest\nsteps:\n- name: Checkout dev\nuses: actions/checkout@v4\nwith:\nref: dev\n- name: Build container image\nrun: docker build -t registry.digitalocean.com/myregistry/testgolem:latest .\n- name: Log in to DigitalOcean Container Registry with short-lived credentials\nrun: echo ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} | docker login registry.digitalocean.com/myregistry -u $(echo ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}) --password-stdin\n- name: Push image to DigitalOcean Container Registry\nrun: docker push registry.digitalocean.com/myregistry/testgolem:latest\n- name: Pull image on DigitalOcean ShinyProxy Server\nuses: appleboy/\n[email protected]\nenv:\nDO_REGISTRY_TOKEN: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}\nwith:\nhost: ip.addr.do.droplet\nusername: ghactions\nkey: ${{ secrets.SSH_PRIVATE_KEY }}\nenvs: DO_REGISTRY_TOKEN\nscript: |\necho $DO_REGISTRY_TOKEN | docker login registry.digitalocean.com/myregistry -u $(echo $DO_REGISTRY_TOKEN) --password-stdin\ndocker pull registry.digitalocean.com/myregistry/testgolem:latest\nGist\nFor quick access to the main files visit this gist\nSummary\nThis article includes a step-by-step tutorial on setting up automatic deployment\nof a Shiny application to a DigitalOcean server running ShinyProxy via GitHub Actions.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR | Discindo\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "ShinyProxy on DigitalOcean For the remainder of this walkthrough, I’ll assume that a DigitalOcean droplet running ShinyProxy is already set up. The great people at Analythium have made setting up an encrypted ShinyProxy server seamless with their...",
+      "meta_keywords": null,
+      "og_description": "ShinyProxy on DigitalOcean For the remainder of this walkthrough, I’ll assume that a DigitalOcean droplet running ShinyProxy is already set up. The great people at Analythium have made setting up an encrypted ShinyProxy server seamless with their...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "How to deploy Shiny application to Digital Ocean using GitHub Actions | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.4,
+      "sitemap_lastmod": "2023-12-12T00:00:00+00:00",
+      "twitter_description": "ShinyProxy on DigitalOcean For the remainder of this walkthrough, I’ll assume that a DigitalOcean droplet running ShinyProxy is already set up. The great people at Analythium have made setting up an encrypted ShinyProxy server seamless with their...",
+      "twitter_title": "How to deploy Shiny application to Digital Ocean using GitHub Actions | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/how-to-deploy-shiny-application-to-digital-ocean-using-github-actions/",
+      "word_count": 1279
+    }
+  }
+}

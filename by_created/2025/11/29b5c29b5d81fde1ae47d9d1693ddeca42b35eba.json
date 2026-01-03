@@ -1,0 +1,118 @@
+{
+  "id": "29b5c29b5d81fde1ae47d9d1693ddeca42b35eba",
+  "url": "https://www.r-bloggers.com/2007/11/an-r-based-genetic-algorithm/",
+  "created_at_utc": "2025-11-17T20:41:40Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "c07cde73-48d0-4d05-86d0-297bb244214e",
+    "created_at": "2025-11-17 20:41:40",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2007/11/an-r-based-genetic-algorithm/",
+      "crawled_at": "2025-11-17T10:54:10.580429",
+      "external_links": [
+        {
+          "href": "https://chem-bla-ics.blogspot.com/2007/11/r-based-genetic-algorithm.html",
+          "text": "chem-bla-ics"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://cran.r-project.org/src/contrib/Descriptions/genalg.html",
+          "text": "genetic algorithm package"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://sourceforge.net/",
+          "text": "SourceForge"
+        },
+        {
+          "href": "http://sourceforge.net/projects/genalg",
+          "text": "genalg"
+        },
+        {
+          "href": "https://chem-bla-ics.blogspot.com/2007/11/r-based-genetic-algorithm.html",
+          "text": "chem-bla-ics"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "An R-based genetic algorithm | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/egon-willighagen/",
+          "text": "Egon Willighagen"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-58476 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">An R-based genetic algorithm</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 19, 2007</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/egon-willighagen/\">Egon Willighagen</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://chem-bla-ics.blogspot.com/2007/11/r-based-genetic-algorithm.html\"> chem-bla-ics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->During my PhD I wrote a simple but effective <a href=\"http://cran.r-project.org/src/contrib/Descriptions/genalg.html\" rel=\"nofollow\" target=\"_blank\">genetic algorithm package</a> for <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a>. Because there was a bug recently found, and there is interest in extending the functionality, I have set up a <a href=\"http://sourceforge.net/\" rel=\"nofollow\" target=\"_blank\">SourceForge</a> project called <a href=\"http://sourceforge.net/projects/genalg\" rel=\"nofollow\" target=\"_blank\">genalg</a>.<br/><br/>The package provides GA support for binary and real-value chromosomes (and integer chromosomes is something that will be added soon), and allows to use custom evaluation functions. Here is some example code:<pre># optimize two values to match pi and sqrt(50)\nevaluate &lt;- function(string=c()) {\n    returnVal = NA;\n    if (length(string) == 2) {\n        returnVal = abs(string[1]-pi) + abs(string[2]-sqrt(50));\n    } else {\n        stop(\"Expecting a chromosome of length 2!\");\n    }\n    returnVal\n}\nmonitor &lt;- function(obj) {\n    # plot the population\n    xlim = c(obj$stringMin[1], obj$stringMax[1]);\n    ylim = c(obj$stringMin[2], obj$stringMax[2]);\n    plot(obj$population, xlim=xlim, ylim=ylim, xlab=\"pi\", ylab=\"sqrt(50)\");\n}\nrbga.results = rbga(c(1, 1), c(5, 10), monitorFunc=monitor,\n    evalFunc=evaluate, verbose=TRUE, mutationChance=0.01)\nplot(rbga.results)\nplot(rbga.results, type=\"hist\")\nplot(rbga.results, type=\"vars\")</pre>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://chem-bla-ics.blogspot.com/2007/11/r-based-genetic-algorithm.html\"> chem-bla-ics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "An R-based genetic algorithm\nPosted on\nNovember 19, 2007\nby\nEgon Willighagen\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nchem-bla-ics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDuring my PhD I wrote a simple but effective\ngenetic algorithm package\nfor\nR\n. Because there was a bug recently found, and there is interest in extending the functionality, I have set up a\nSourceForge\nproject called\ngenalg\n.\nThe package provides GA support for binary and real-value chromosomes (and integer chromosomes is something that will be added soon), and allows to use custom evaluation functions. Here is some example code:\n# optimize two values to match pi and sqrt(50)\nevaluate <- function(string=c()) {\n    returnVal = NA;\n    if (length(string) == 2) {\n        returnVal = abs(string[1]-pi) + abs(string[2]-sqrt(50));\n    } else {\n        stop(\"Expecting a chromosome of length 2!\");\n    }\n    returnVal\n}\nmonitor <- function(obj) {\n    # plot the population\n    xlim = c(obj$stringMin[1], obj$stringMax[1]);\n    ylim = c(obj$stringMin[2], obj$stringMax[2]);\n    plot(obj$population, xlim=xlim, ylim=ylim, xlab=\"pi\", ylab=\"sqrt(50)\");\n}\nrbga.results = rbga(c(1, 1), c(5, 10), monitorFunc=monitor,\n    evalFunc=evaluate, verbose=TRUE, mutationChance=0.01)\nplot(rbga.results)\nplot(rbga.results, type=\"hist\")\nplot(rbga.results, type=\"vars\")\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nchem-bla-ics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "During my PhD I wrote a simple but effective genetic algorithm package for R. Because there was a bug recently found, and there is interest in extending the functionality, I have set up a SourceForge project called genalg.The package provides GA support for binary and real-value chromosomes (and integer chromosomes is something that will be added soon), and allows to use custom evaluation functions. Here is some example code:# optimize two values to match pi and sqrt(50)evaluate returnVal = NA; if (length(string) == 2) { returnVal = abs(string[1]-pi) + abs(string[2]-sqrt(50)); } else { stop(\"Expecting a chromosome of length 2!\"); } returnVal}monitor # plot the population xlim = c(obj$stringMin[1], obj$stringMax[1]); ylim = c(obj$stringMin[2], obj$stringMax[2]); plot(obj$population, xlim=xlim, ylim=ylim, xlab=\"pi\", ylab=\"sqrt(50)\");}rbga.results = rbga(c(1, 1), c(5, 10), monitorFunc=monitor, evalFunc=evaluate, verbose=TRUE, mutationChance=0.01)plot(rbga.results)plot(rbga.results, type=\"hist\")plot(rbga.results, type=\"vars\")",
+      "meta_keywords": null,
+      "og_description": "During my PhD I wrote a simple but effective genetic algorithm package for R. Because there was a bug recently found, and there is interest in extending the functionality, I have set up a SourceForge project called genalg.The package provides GA support for binary and real-value chromosomes (and integer chromosomes is something that will be added soon), and allows to use custom evaluation functions. Here is some example code:# optimize two values to match pi and sqrt(50)evaluate returnVal = NA; if (length(string) == 2) { returnVal = abs(string[1]-pi) + abs(string[2]-sqrt(50)); } else { stop(\"Expecting a chromosome of length 2!\"); } returnVal}monitor # plot the population xlim = c(obj$stringMin[1], obj$stringMax[1]); ylim = c(obj$stringMin[2], obj$stringMax[2]); plot(obj$population, xlim=xlim, ylim=ylim, xlab=\"pi\", ylab=\"sqrt(50)\");}rbga.results = rbga(c(1, 1), c(5, 10), monitorFunc=monitor, evalFunc=evaluate, verbose=TRUE, mutationChance=0.01)plot(rbga.results)plot(rbga.results, type=\"hist\")plot(rbga.results, type=\"vars\")",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "An R-based genetic algorithm | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.6,
+      "sitemap_lastmod": "2007-11-19T11:30:00+00:00",
+      "twitter_description": "During my PhD I wrote a simple but effective genetic algorithm package for R. Because there was a bug recently found, and there is interest in extending the functionality, I have set up a SourceForge project called genalg.The package provides GA support for binary and real-value chromosomes (and integer chromosomes is something that will be added soon), and allows to use custom evaluation functions. Here is some example code:# optimize two values to match pi and sqrt(50)evaluate returnVal = NA; if (length(string) == 2) { returnVal = abs(string[1]-pi) + abs(string[2]-sqrt(50)); } else { stop(\"Expecting a chromosome of length 2!\"); } returnVal}monitor # plot the population xlim = c(obj$stringMin[1], obj$stringMax[1]); ylim = c(obj$stringMin[2], obj$stringMax[2]); plot(obj$population, xlim=xlim, ylim=ylim, xlab=\"pi\", ylab=\"sqrt(50)\");}rbga.results = rbga(c(1, 1), c(5, 10), monitorFunc=monitor, evalFunc=evaluate, verbose=TRUE, mutationChance=0.01)plot(rbga.results)plot(rbga.results, type=\"hist\")plot(rbga.results, type=\"vars\")",
+      "twitter_title": "An R-based genetic algorithm | R-bloggers",
+      "url": "https://www.r-bloggers.com/2007/11/an-r-based-genetic-algorithm/",
+      "word_count": 315
+    }
+  }
+}

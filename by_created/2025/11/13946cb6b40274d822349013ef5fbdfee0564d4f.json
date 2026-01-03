@@ -1,0 +1,125 @@
+{
+  "id": "13946cb6b40274d822349013ef5fbdfee0564d4f",
+  "url": "https://www.r-bloggers.com/2009/06/one-outlier-and-youre-out-influential-data-and-racial-prejudice/",
+  "created_at_utc": "2025-11-17T20:40:50Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "afed9717-75da-40d0-a0dd-a23328375e17",
+    "created_at": "2025-11-17 20:40:50",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/06/one-outlier-and-youre-out-influential-data-and-racial-prejudice/",
+      "crawled_at": "2025-11-17T10:35:31.300304",
+      "external_links": [
+        {
+          "href": "http://www.rensenieuwenhuis.nl/one-outlier-and-youre-out-influential-data-and-racial-prejudice/",
+          "text": "Curving Normality » R-Project"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.researchblogging.org/",
+          "text": null
+        },
+        {
+          "href": "http://www.rensenieuwenhuis.nl/r-project/influenceme/",
+          "text": "analyzing influential data in mixed effects models"
+        },
+        {
+          "href": "https://dx.doi.org/10.1037/a0014665",
+          "text": "10.1037/a0014665"
+        },
+        {
+          "href": "https://dx.doi.org/10.1037/a0014649",
+          "text": "10.1037/a0014649"
+        },
+        {
+          "href": "http://www.rensenieuwenhuis.nl/one-outlier-and-youre-out-influential-data-and-racial-prejudice/",
+          "text": "Curving Normality » R-Project"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "One outlier and you’re out: Influential data and racial prejudice | R-bloggers",
+      "images": [
+        {
+          "alt": "ResearchBlogging.org",
+          "base64": null,
+          "src": "https://i0.wp.com/www.researchblogging.org/public/citation_icons/20_rb2_large_gray.png?w=578"
+        },
+        {
+          "alt": "ResearchBlogging.org",
+          "base64": null,
+          "src": "https://i0.wp.com/www.researchblogging.org/public/citation_icons/20_rb2_large_gray.png?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/rense-nieuwenhuis/",
+          "text": "Rense Nieuwenhuis"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-17206 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">One outlier and you’re out: Influential data and racial prejudice</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 16, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/rense-nieuwenhuis/\">Rense Nieuwenhuis</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.rensenieuwenhuis.nl/one-outlier-and-youre-out-influential-data-and-racial-prejudice/\"> Curving Normality » R-Project</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p><span style=\"float: left; padding: 5px;\"><a href=\"http://www.researchblogging.org/\" rel=\"nofollow\" target=\"_blank\"><img alt=\"ResearchBlogging.org\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.researchblogging.org/public/citation_icons/20_rb2_large_gray.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.researchblogging.org/public/citation_icons/20_rb2_large_gray.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"border:0;\"/><noscript><img alt=\"ResearchBlogging.org\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.researchblogging.org/public/citation_icons/20_rb2_large_gray.png?w=578\" style=\"border:0;\"/></noscript></a></span><br/>\nCurrently preparing a presentation on <a href=\"http://www.rensenieuwenhuis.nl/r-project/influenceme/\" rel=\"nofollow\" target=\"_blank\">analyzing influential data in mixed effects models</a> myself, my eye fell on an article in which important claims on racial prejudice were refuted. An important aspect of the criticism on existing work, is that in one article the main correlation was <i>completely</i> due to a single observation. Solely based on this single observation, the study’s outcomes showed the Implicit Association Test (IAT) to predict overall interaction quality between White or Black people. Removing that single observation (out of 41) from the data removed the complete effect. </p>\n<p>With survey research showing declines in “American’s endorsement of prejudice sentiments” (p.568), the question rose whether such declines actually took place, or that they are an artifact of social desirability determining respondents’ responses to survey questions. Naturally, tests like the  Implicit Association Test (IAT) gained considerable attention, for the attractive claim of such tests is to be able to show levels of prejudice that people themselves are unaware of and which do not show when asked about explicitly (e.g. in a survey).<br/>\n<span id=\"more-1008\"></span><br/>\nBlanton et al. (2009) decided to test several of the articles on which the strong claims for the predictive validity of the IAT were based. They re-analyzed the (partial) data of two articles. In one of these analyses, on which 2001 article was based, it was found that one of the main findings was that high scores on the IAT were associated with worse interaction quality with Black experimenters, compared with White experimenters. I’m not completely sure what this interaction quality entails, but based on the re-study I would say that it is a combination of aspects such as ‘forward leaning’, ‘facing the experimenter’, ‘expressiveness’, ‘smiling’ and making ‘eye contact’.</p>\n<p>How can just a single observation dominate the outcomes of a statistical analysis? Unfortunately, the answer to this question is: quite easily, especially when the analysis is based on a small number of observations. In this case, the refuted correlation was between the participants’ IAT score and the way the participants’ interacted with either Black of White experimenters. While it is known that the IAT score is determined by the participant’s age, one single participant had an exceptionally high age compared to the overall test group, and indeed that participant score very high on the IAT. Also, the quality of the interaction of that participant with the Black experimenter was rated very low. Now the thing is, that in the rest of the observations no association between IAT score and the quality of the interaction was to be observed, this single observation with extreme scores on both variables, completely dominated the outcomes of the study on this aspect. Deletion of this single observation brought the significant correlation of .32 down to non-significance: no association could be inferred between participants’ IAT score and how they interacted with the Black experimenter.</p>\n<p>Blanton et al. didn’t write a full article based on just this point, and of course this is not the only criticism on the original article. Other aspects include low timing of the measures (respondents were probably aware of being tested for discriminatory behavior, before the ‘actual’ test took place), inter-rater reliability, improper statistical analysis due to recoding of the data (due to which the coding of a single rater influenced the findings). Nevertheless, from my current point of view, I’m especially interested in the bias caused by the influential observation.</p>\n<p>Of course, McConnell et al. (2009), whose work was criticized, were given the opportunity to respond. Regarding the influence exerted by the outlier, they respond with two arguments. First they state that Blanton et al. did not study the correct outlier, for although this outlier did have an extreme IAT score, another participant did have an even higher score. Their second reaction states that Blanton et al. did focus on only one of the outcome measures, and not on all the various measure used in the original study. In their response, they show that deletion of the outlier found by Blanton et al. does not influence the outcomes of the analyses on the other outcome measures.</p>\n<p>I find this response curious on two accounts. First, influential data and outliers are not two of a kind. McConnell’s response that the wrong outlier was selected is not necessarily true, for just having an extreme score on one variable is not enough to make an observation influential. Generally, it has to be an outlier, and to have leverage (changing the slope of the regression line). If the other outlier (mentioned by McConnell) did have a more extreme score on the IAT variable, but an average score on the behavior-quality variable, it may very well prove not to (overly) influence the outcomes of the study. Secondly, an observation is only influential <i>relative to</i> the specification of the analysis and the variables used in it. So, simple deletion of this single observation to show that it does not influence other analyses (on other outcome measures), it not much of a defense to the initial argument that the observation influenced the outcomes of a specific analysis.</p>\n<p>All in all, an interesting debate. There is much more to it in both the articles by Blanton et al. (2009) and McConnell et al. (2009). But still, I find it especially striking to see how careful one should be when analyzing data and making inferences on it. And, of course, I can add a nice example of the impact of influential data to my collection. </p>\n<h3>References</h3>\n<p><span class=\"Z3988\" title=\"ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.jtitle=Journal+of+Applied+Psychology&amp;rft_id=info%3Adoi%2F10.1037%2Fa0014665&amp;rfr_id=info%3Asid%2Fresearchblogging.org&amp;rft.atitle=Strong+claims+and+weak+evidence%3A+Reassessing+the+predictive+validity+of+the+IAT.&amp;rft.issn=1939-1854&amp;rft.date=2009&amp;rft.volume=94&amp;rft.issue=3&amp;rft.spage=567&amp;rft.epage=582&amp;rft.artnum=http%3A%2F%2Fdoi.apa.org%2Fgetdoi.cfm%3Fdoi%3D10.1037%2Fa0014665&amp;rft.au=Blanton%2C+H.&amp;rft.au=Jaccard%2C+J.&amp;rft.au=Klick%2C+J.&amp;rft.au=Mellers%2C+B.&amp;rft.au=Mitchell%2C+G.&amp;rft.au=Tetlock%2C+P.&amp;rfe_dat=bpr3.included=1;bpr3.tags=Psychology%2CSocial+Science%2CSociology%2C+Quantitative+Psychology%2C+Social+Psychology\">Blanton, H., Jaccard, J., Klick, J., Mellers, B., Mitchell, G., &amp; Tetlock, P. (2009). Strong claims and weak evidence: Reassessing the predictive validity of the IAT. <span style=\"font-style: italic;\">Journal of Applied Psychology, 94</span> (3), 567-582 DOI: <a href=\"https://dx.doi.org/10.1037/a0014665\" rel=\"nofollow\" rev=\"review\" target=\"_blank\">10.1037/a0014665</a></span></p>\n<p><span class=\"Z3988\" title=\"ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.jtitle=Journal+of+Applied+Psychology&amp;rft_id=info%3Adoi%2F10.1037%2Fa0014649&amp;rfr_id=info%3Asid%2Fresearchblogging.org&amp;rft.atitle=Weak+criticisms+and+selective+evidence%3A+Reply+to+Blanton+et+al.+%282009%29.&amp;rft.issn=1939-1854&amp;rft.date=2009&amp;rft.volume=94&amp;rft.issue=3&amp;rft.spage=583&amp;rft.epage=589&amp;rft.artnum=http%3A%2F%2Fdoi.apa.org%2Fgetdoi.cfm%3Fdoi%3D10.1037%2Fa0014649&amp;rft.au=McConnell%2C+A.&amp;rft.au=Leibold%2C+J.&amp;rfe_dat=bpr3.included=1;bpr3.tags=Psychology%2CSocial+Science%2CSociology%2C+Social+Psychology%2C+Quantitative+Psychology%2C+Sociology%2C+IAT\">McConnell, A., &amp; Leibold, J. (2009). Weak criticisms and selective evidence: Reply to Blanton et al. (2009). <span style=\"font-style: italic;\">Journal of Applied Psychology, 94</span> (3), 583-589 DOI: <a href=\"https://dx.doi.org/10.1037/a0014649\" rel=\"nofollow\" rev=\"review\" target=\"_blank\">10.1037/a0014649</a></span></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.rensenieuwenhuis.nl/one-outlier-and-youre-out-influential-data-and-racial-prejudice/\"> Curving Normality » R-Project</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "One outlier and you’re out: Influential data and racial prejudice\nPosted on\nJune 16, 2009\nby\nRense Nieuwenhuis\nin Uncategorized | 0 Comments\n[This article was first published on\nCurving Normality » R-Project\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nCurrently preparing a presentation on\nanalyzing influential data in mixed effects models\nmyself, my eye fell on an article in which important claims on racial prejudice were refuted. An important aspect of the criticism on existing work, is that in one article the main correlation was\ncompletely\ndue to a single observation. Solely based on this single observation, the study’s outcomes showed the Implicit Association Test (IAT) to predict overall interaction quality between White or Black people. Removing that single observation (out of 41) from the data removed the complete effect.\nWith survey research showing declines in “American’s endorsement of prejudice sentiments” (p.568), the question rose whether such declines actually took place, or that they are an artifact of social desirability determining respondents’ responses to survey questions. Naturally, tests like the  Implicit Association Test (IAT) gained considerable attention, for the attractive claim of such tests is to be able to show levels of prejudice that people themselves are unaware of and which do not show when asked about explicitly (e.g. in a survey).\nBlanton et al. (2009) decided to test several of the articles on which the strong claims for the predictive validity of the IAT were based. They re-analyzed the (partial) data of two articles. In one of these analyses, on which 2001 article was based, it was found that one of the main findings was that high scores on the IAT were associated with worse interaction quality with Black experimenters, compared with White experimenters. I’m not completely sure what this interaction quality entails, but based on the re-study I would say that it is a combination of aspects such as ‘forward leaning’, ‘facing the experimenter’, ‘expressiveness’, ‘smiling’ and making ‘eye contact’.\nHow can just a single observation dominate the outcomes of a statistical analysis? Unfortunately, the answer to this question is: quite easily, especially when the analysis is based on a small number of observations. In this case, the refuted correlation was between the participants’ IAT score and the way the participants’ interacted with either Black of White experimenters. While it is known that the IAT score is determined by the participant’s age, one single participant had an exceptionally high age compared to the overall test group, and indeed that participant score very high on the IAT. Also, the quality of the interaction of that participant with the Black experimenter was rated very low. Now the thing is, that in the rest of the observations no association between IAT score and the quality of the interaction was to be observed, this single observation with extreme scores on both variables, completely dominated the outcomes of the study on this aspect. Deletion of this single observation brought the significant correlation of .32 down to non-significance: no association could be inferred between participants’ IAT score and how they interacted with the Black experimenter.\nBlanton et al. didn’t write a full article based on just this point, and of course this is not the only criticism on the original article. Other aspects include low timing of the measures (respondents were probably aware of being tested for discriminatory behavior, before the ‘actual’ test took place), inter-rater reliability, improper statistical analysis due to recoding of the data (due to which the coding of a single rater influenced the findings). Nevertheless, from my current point of view, I’m especially interested in the bias caused by the influential observation.\nOf course, McConnell et al. (2009), whose work was criticized, were given the opportunity to respond. Regarding the influence exerted by the outlier, they respond with two arguments. First they state that Blanton et al. did not study the correct outlier, for although this outlier did have an extreme IAT score, another participant did have an even higher score. Their second reaction states that Blanton et al. did focus on only one of the outcome measures, and not on all the various measure used in the original study. In their response, they show that deletion of the outlier found by Blanton et al. does not influence the outcomes of the analyses on the other outcome measures.\nI find this response curious on two accounts. First, influential data and outliers are not two of a kind. McConnell’s response that the wrong outlier was selected is not necessarily true, for just having an extreme score on one variable is not enough to make an observation influential. Generally, it has to be an outlier, and to have leverage (changing the slope of the regression line). If the other outlier (mentioned by McConnell) did have a more extreme score on the IAT variable, but an average score on the behavior-quality variable, it may very well prove not to (overly) influence the outcomes of the study. Secondly, an observation is only influential\nrelative to\nthe specification of the analysis and the variables used in it. So, simple deletion of this single observation to show that it does not influence other analyses (on other outcome measures), it not much of a defense to the initial argument that the observation influenced the outcomes of a specific analysis.\nAll in all, an interesting debate. There is much more to it in both the articles by Blanton et al. (2009) and McConnell et al. (2009). But still, I find it especially striking to see how careful one should be when analyzing data and making inferences on it. And, of course, I can add a nice example of the impact of influential data to my collection.\nReferences\nBlanton, H., Jaccard, J., Klick, J., Mellers, B., Mitchell, G., & Tetlock, P. (2009). Strong claims and weak evidence: Reassessing the predictive validity of the IAT.\nJournal of Applied Psychology, 94\n(3), 567-582 DOI:\n10.1037/a0014665\nMcConnell, A., & Leibold, J. (2009). Weak criticisms and selective evidence: Reply to Blanton et al. (2009).\nJournal of Applied Psychology, 94\n(3), 583-589 DOI:\n10.1037/a0014649\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCurving Normality » R-Project\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Currently preparing a presentation on analyzing influential data in mixed effects models myself, my eye fell on an article in which important claims on racial prejudice were refuted. An important aspect of the criticism on existing work, is that in ...",
+      "meta_keywords": null,
+      "og_description": "Currently preparing a presentation on analyzing influential data in mixed effects models myself, my eye fell on an article in which important claims on racial prejudice were refuted. An important aspect of the criticism on existing work, is that in ...",
+      "og_image": "https://www.researchblogging.org/public/citation_icons/20_rb2_large_gray.png",
+      "og_title": "One outlier and you’re out: Influential data and racial prejudice | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.7,
+      "sitemap_lastmod": "2009-06-16T11:00:54+00:00",
+      "twitter_description": "Currently preparing a presentation on analyzing influential data in mixed effects models myself, my eye fell on an article in which important claims on racial prejudice were refuted. An important aspect of the criticism on existing work, is that in ...",
+      "twitter_title": "One outlier and you’re out: Influential data and racial prejudice | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/06/one-outlier-and-youre-out-influential-data-and-racial-prejudice/",
+      "word_count": 1137
+    }
+  }
+}

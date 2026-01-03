@@ -1,0 +1,121 @@
+{
+  "id": "ecbcb7622358198a1fc2168b81aa7647e789c1c9",
+  "url": "https://www.r-bloggers.com/2009/10/long-r-short-excel/",
+  "created_at_utc": "2025-11-17T20:40:05Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "74575005-e3eb-481d-bc89-6a03701d78ab",
+    "created_at": "2025-11-17 20:40:05",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/10/long-r-short-excel/",
+      "crawled_at": "2025-11-17T10:19:11.381949",
+      "external_links": [
+        {
+          "href": "http://www.milktrader.net/2009/10/long-r-short-excel.html",
+          "text": "Milk Trader"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.milktrader.net/2009/10/long-r-short-excel.html",
+          "text": "Milk Trader"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Long R, Short Excel | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/3910008585223856206-2031357835879879211?l=www.milktrader.net"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/3910008585223856206-2031357835879879211?l=www.milktrader.net"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/milk-trader/",
+          "text": "Milk Trader"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/excel/",
+          "text": "excel"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-50019 post type-post status-publish format-standard hentry category-r-bloggers tag-excel tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Long R, Short Excel</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 29, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/milk-trader/\">Milk Trader</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.milktrader.net/2009/10/long-r-short-excel.html\"> Milk Trader</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->R is very speedy statistical package that’s like an F-18A Hornet, versus Excel which is like a paper airplane. R is professional sports, Excel is Pop Warner. R is Mona Lisa, Excel is stick figures. R is … okay, you get the idea. I’m long R, and short Excel. For traders that are analyzing vasts amount of data, it’s time you made the switch to the trader’s statistical package of choice. You have to work a little at understanding the scripting language, but it’s nothing that you can’t wrap your mind around in a few nights after the kids go to bed. I’m just getting acquainted with R, and I’m already putting my copy of Excel on eBay.<span class=\"fullpost\"><br/><br/><span style=\"font-weight:bold;\">Cut-and-paste versus read-in:</span><br/><br/>After you’ve generated vast amounts of data from an optimization run, you find yourself with the loathsome task of cutting and pasting the data into an Excel spreadsheet that you’ve probably already pre-formatted to look at the data. It requires you to select the data and not miss any rows, and it opens up the possibility that something gets left out. With R, you don’t touch it once you’ve converted it to a .csv file. You simply reference it in your script.<br/><br/><span style=\"font-weight:bold;\">Manipulating columns of data:</span><br/><br/>In Excel, you know the drill. Select a cell to compute the mean of a row and then select the elements of a column that you’d like to apply the formula to. When you have over 1,000 rows, it takes a while to drag that stupid mouse. Just as you approach the end of your values, the cursor goes wild and runs down to infinity. Ugh. Well, with R that is no longer an issue since you define the column of data (called a vector) to a script that quickly returns the value you’re looking for.<br/><br/><span style=\"font-weight:bold;\">Add-in packages:</span><br/><br/>Remember how excited you were to install the Data Analysis pack in Excel and how it gave summary statistics for a column of data that included mean, standard deviation and other stuff you had no idea what they were? Well, that’s a standard part of R. And as you graduate from Statistics 101, you’ll find that there are add-in packages in R that range from neural networks to Bayesian statistics, from genetic algorithms to copulas (side note: the geniuses who created tranched derivatives that came home to roost last year used gaussian copulas, amongst other things).<br/><br/><span style=\"font-weight:bold;\">Cost:</span><br/><br/>I think I paid in the neighborhood of $250 for my copy of Excel. I paid nothing for R, since it is open-source and free.<br/><span style=\"font-weight:bold;\"><br/>The issue of crashing Windows:</span><br/><br/>I have crashed my computer by asking Excel to compute too much data. So far, R hasn’t produced the same results. And based on its architecture, I’m not expecting it.<br/><br/><span style=\"font-weight:bold;\">Graphs and dynamic data:</span><br/><br/>If you want to create a chart or graph of something in Excel, you need to navigate through that stupid menu of crazy pictures to get something that’s clunky and difficult to maintain. In R, you use scripts to create charts and graphs, and the data file feeding the chart is dynamic so that each time data is added, R will incorporate the new data. No offsetting shenanigans. <br/><br/>There are video tutorials available at the usual places you’d find that sort of thing, and a very robust community of R users to help get you started. So put down your toys and get to work. There is much data that needs analyzing.   <br/></span><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/3910008585223856206-2031357835879879211?l=www.milktrader.net&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/3910008585223856206-2031357835879879211?l=www.milktrader.net\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/3910008585223856206-2031357835879879211?l=www.milktrader.net\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.milktrader.net/2009/10/long-r-short-excel.html\"> Milk Trader</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/excel/\" rel=\"tag\">excel</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+      "main_text": "Long R, Short Excel\nPosted on\nOctober 29, 2009\nby\nMilk Trader\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nMilk Trader\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR is very speedy statistical package that’s like an F-18A Hornet, versus Excel which is like a paper airplane. R is professional sports, Excel is Pop Warner. R is Mona Lisa, Excel is stick figures. R is … okay, you get the idea. I’m long R, and short Excel. For traders that are analyzing vasts amount of data, it’s time you made the switch to the trader’s statistical package of choice. You have to work a little at understanding the scripting language, but it’s nothing that you can’t wrap your mind around in a few nights after the kids go to bed. I’m just getting acquainted with R, and I’m already putting my copy of Excel on eBay.\nCut-and-paste versus read-in:\nAfter you’ve generated vast amounts of data from an optimization run, you find yourself with the loathsome task of cutting and pasting the data into an Excel spreadsheet that you’ve probably already pre-formatted to look at the data. It requires you to select the data and not miss any rows, and it opens up the possibility that something gets left out. With R, you don’t touch it once you’ve converted it to a .csv file. You simply reference it in your script.\nManipulating columns of data:\nIn Excel, you know the drill. Select a cell to compute the mean of a row and then select the elements of a column that you’d like to apply the formula to. When you have over 1,000 rows, it takes a while to drag that stupid mouse. Just as you approach the end of your values, the cursor goes wild and runs down to infinity. Ugh. Well, with R that is no longer an issue since you define the column of data (called a vector) to a script that quickly returns the value you’re looking for.\nAdd-in packages:\nRemember how excited you were to install the Data Analysis pack in Excel and how it gave summary statistics for a column of data that included mean, standard deviation and other stuff you had no idea what they were? Well, that’s a standard part of R. And as you graduate from Statistics 101, you’ll find that there are add-in packages in R that range from neural networks to Bayesian statistics, from genetic algorithms to copulas (side note: the geniuses who created tranched derivatives that came home to roost last year used gaussian copulas, amongst other things).\nCost:\nI think I paid in the neighborhood of $250 for my copy of Excel. I paid nothing for R, since it is open-source and free.\nThe issue of crashing Windows:\nI have crashed my computer by asking Excel to compute too much data. So far, R hasn’t produced the same results. And based on its architecture, I’m not expecting it.\nGraphs and dynamic data:\nIf you want to create a chart or graph of something in Excel, you need to navigate through that stupid menu of crazy pictures to get something that’s clunky and difficult to maintain. In R, you use scripts to create charts and graphs, and the data file feeding the chart is dynamic so that each time data is added, R will incorporate the new data. No offsetting shenanigans.\nThere are video tutorials available at the usual places you’d find that sort of thing, and a very robust community of R users to help get you started. So put down your toys and get to work. There is much data that needs analyzing.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMilk Trader\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nexcel\nR",
+      "meta_description": "R is very speedy statistical package that's like an F-18A Hornet, versus Excel which is like a paper airplane. R is professional sports, Excel is Pop Warner. R is Mona Lisa, Excel is stick figures. R is ... okay, you get the idea. I'm long R, and short...",
+      "meta_keywords": "excel,r",
+      "og_description": "R is very speedy statistical package that's like an F-18A Hornet, versus Excel which is like a paper airplane. R is professional sports, Excel is Pop Warner. R is Mona Lisa, Excel is stick figures. R is ... okay, you get the idea. I'm long R, and short...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/3910008585223856206-2031357835879879211?l=www.milktrader.net",
+      "og_title": "Long R, Short Excel | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.7,
+      "sitemap_lastmod": "2009-10-30T00:31:30+00:00",
+      "twitter_description": "R is very speedy statistical package that's like an F-18A Hornet, versus Excel which is like a paper airplane. R is professional sports, Excel is Pop Warner. R is Mona Lisa, Excel is stick figures. R is ... okay, you get the idea. I'm long R, and short...",
+      "twitter_title": "Long R, Short Excel | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/10/long-r-short-excel/",
+      "word_count": 746
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "2d4b6a3862403bc5ec16363ca34926175731fea0",
+  "url": "https://www.r-bloggers.com/2007/06/working-with-ggplot-version-2/",
+  "created_at_utc": "2025-11-17T20:41:47Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "bb420402-9f39-459e-89a0-27a74b05ef63",
+    "created_at": "2025-11-17 20:41:47",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2007/06/working-with-ggplot-version-2/",
+      "crawled_at": "2025-11-17T10:57:22.053050",
+      "external_links": [
+        {
+          "href": "http://agrarianresearch.org/blog/?p=103",
+          "text": "V. » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://vikasrawal.wordpress.com/2007/02/25/working-with-ggplot/",
+          "text": "previous post"
+        },
+        {
+          "href": "http://agrarianresearch.org/blog/?p=103",
+          "text": "V. » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Working with ggplot, version 2 | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/vikasrawal/",
+          "text": "vikasrawal"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-62248 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Working with ggplot, version 2</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 6, 2007</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/vikasrawal/\">vikasrawal</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://agrarianresearch.org/blog/?p=103\"> V. » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>In my <a href=\"http://vikasrawal.wordpress.com/2007/02/25/working-with-ggplot/\" rel=\"nofollow\" target=\"_blank\">previous post</a> on this issue, I had presented a code that made weighted boxplots and annotated them with boxplot statistics and the mean values. The problem with that code was that it printed these annotations right on the vertical axes of the boxplots. Also, a relatively minor problem was that, when the values of two statistics were too close to each other, they were printed one on top of the other.</p>\n<p>As the horizontal axis was discrete, ggplot was not able to position the annotations in between two boxplots</p>\n<p>With Hadley’s help again, I have managed to fix both of these problems. In the output of the following code, annotations are printed at a fixed distance away from the vertical axis. This is achieved by using grid rather than ggplot to print annotations. With a minor tweak, the distance between annotations is increased if they are too close to each other.</p>\n<p>The revised code is as follows.</p>\n<pre>library(ggplot)\nvplot2 &lt;- function(dataset,xvar,yvar,v1,v2){\n  ggopt(axis.colour=\"black\")\n  p &lt;- ggplot(dataset,aesthetics=list(x=x,y=y, weight=Multiplier),\n                 colour=\"black\")\n  p$xlabel&lt;-xvar\n  p$ylabel&lt;-yvar\n  (p&lt;-ggpoint(ggboxplot(p,colour=\"black\",orientation=\"vertical\")))\n  split(dataset,dataset$x)-&gt;cl\n  dots &lt;- do.call(rbind, lapply(cl, function(df) {\n\tdata.frame(x = df[1, ]$x,dots = boxplot_stats_weighted(df$y,\n                   weights=df$Multiplier)$stats[3])\n      }))\n  means&lt;-do.call(rbind, lapply(cl,function(df){\n        data.frame(\n                   x=df[1,]$x,\n                   mean=weighted.mean(df$y,df$Multiplier)\n                   )\n      }))\n  (p&lt;-ggpoint(p, data=means, aes=list(x=x, y=mean), colour=\"magenta\"))\n  (pscontinuous(p,variable=\"y\",range=c(v1,v2))-&gt;p)\n  print(p,pretty=F)\n  grid.text(format(dots$dots,digits=2),x=unit(as.numeric(dots$x)+0.4,\n            \"native\"), y=unit(dots$dots,\"native\"),gp=gpar(col=\"blue\"),\n            vp=\"layout::panel_1_1\")\n  dots$dots-&gt;means$dots\n  (means$mean-means$dots)/(v2-v1)-&gt;means$diff\n  ifelse(means$diff&gt;=0 &amp; means$diff&lt;0.03,0.03,means$diff)-&gt;means$diff\n  ifelse(means$diff&lt;0 &amp; means$diff&gt;-0.03,-0.03,means$diff)-&gt;means$diff\n  means$dots+(means$diff*(v2-v1))-&gt;means$y\n  grid.text(format(means$mean,digits=2),x=unit(as.numeric(means$x)+0.4,\n            \"native\"), y=unit(means$y,\"native\"),gp=gpar(col=\"magenta\"),\n            vp=\"layout::panel_1_1\")\n}</pre>\n<p></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://agrarianresearch.org/blog/?p=103\"> V. » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Working with ggplot, version 2\nPosted on\nJune 6, 2007\nby\nvikasrawal\nin Uncategorized | 0 Comments\n[This article was first published on\nV. » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn my\nprevious post\non this issue, I had presented a code that made weighted boxplots and annotated them with boxplot statistics and the mean values. The problem with that code was that it printed these annotations right on the vertical axes of the boxplots. Also, a relatively minor problem was that, when the values of two statistics were too close to each other, they were printed one on top of the other.\nAs the horizontal axis was discrete, ggplot was not able to position the annotations in between two boxplots\nWith Hadley’s help again, I have managed to fix both of these problems. In the output of the following code, annotations are printed at a fixed distance away from the vertical axis. This is achieved by using grid rather than ggplot to print annotations. With a minor tweak, the distance between annotations is increased if they are too close to each other.\nThe revised code is as follows.\nlibrary(ggplot)\nvplot2 <- function(dataset,xvar,yvar,v1,v2){\n  ggopt(axis.colour=\"black\")\n  p <- ggplot(dataset,aesthetics=list(x=x,y=y, weight=Multiplier),\n                 colour=\"black\")\n  p$xlabel<-xvar\n  p$ylabel<-yvar\n  (p<-ggpoint(ggboxplot(p,colour=\"black\",orientation=\"vertical\")))\n  split(dataset,dataset$x)->cl\n  dots <- do.call(rbind, lapply(cl, function(df) {\n\tdata.frame(x = df[1, ]$x,dots = boxplot_stats_weighted(df$y,\n                   weights=df$Multiplier)$stats[3])\n      }))\n  means<-do.call(rbind, lapply(cl,function(df){\n        data.frame(\n                   x=df[1,]$x,\n                   mean=weighted.mean(df$y,df$Multiplier)\n                   )\n      }))\n  (p<-ggpoint(p, data=means, aes=list(x=x, y=mean), colour=\"magenta\"))\n  (pscontinuous(p,variable=\"y\",range=c(v1,v2))->p)\n  print(p,pretty=F)\n  grid.text(format(dots$dots,digits=2),x=unit(as.numeric(dots$x)+0.4,\n            \"native\"), y=unit(dots$dots,\"native\"),gp=gpar(col=\"blue\"),\n            vp=\"layout::panel_1_1\")\n  dots$dots->means$dots\n  (means$mean-means$dots)/(v2-v1)->means$diff\n  ifelse(means$diff>=0 & means$diff<0.03,0.03,means$diff)->means$diff\n  ifelse(means$diff<0 & means$diff>-0.03,-0.03,means$diff)->means$diff\n  means$dots+(means$diff*(v2-v1))->means$y\n  grid.text(format(means$mean,digits=2),x=unit(as.numeric(means$x)+0.4,\n            \"native\"), y=unit(means$y,\"native\"),gp=gpar(col=\"magenta\"),\n            vp=\"layout::panel_1_1\")\n}\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nV. » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "In my previous post on this issue, I had presented a code that made weighted boxplots and annotated them with boxplot statistics and the mean values. The problem with that code was that it printed these annotations right on the vertical axes of the boxplots. Also, a relatively minor problem was that, when the values [...]",
+      "meta_keywords": null,
+      "og_description": "In my previous post on this issue, I had presented a code that made weighted boxplots and annotated them with boxplot statistics and the mean values. The problem with that code was that it printed these annotations right on the vertical axes of the boxplots. Also, a relatively minor problem was that, when the values [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Working with ggplot, version 2 | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.6,
+      "sitemap_lastmod": "2007-06-06T09:47:25+00:00",
+      "twitter_description": "In my previous post on this issue, I had presented a code that made weighted boxplots and annotated them with boxplot statistics and the mean values. The problem with that code was that it printed these annotations right on the vertical axes of the boxplots. Also, a relatively minor problem was that, when the values [...]",
+      "twitter_title": "Working with ggplot, version 2 | R-bloggers",
+      "url": "https://www.r-bloggers.com/2007/06/working-with-ggplot-version-2/",
+      "word_count": 516
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "id": "faac4a5cd680310166eaff9d09113b4db00639c6",
+  "url": "https://www.r-bloggers.com/2009/03/choosing-an-sql-engine-for-analytics/",
+  "created_at_utc": "2025-11-17T20:41:08Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "0c49091f-cd59-4702-9d7e-21512c7b8e5b",
+    "created_at": "2025-11-17 20:41:08",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/03/choosing-an-sql-engine-for-analytics/",
+      "crawled_at": "2025-11-17T10:42:18.203751",
+      "external_links": [
+        {
+          "href": "http://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/",
+          "text": "Cerebral Mastication » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.twit.tv/floss26",
+          "text": "interview with its author, Richard Hipp on FLOSS Weekly"
+        },
+        {
+          "href": "https://video.google.com/videoplay?docid=-5160435487953918649",
+          "text": "video of Hipp talking at the Googleplex"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Type_system#Strong_and_weak_typing",
+          "text": "weakly typed"
+        },
+        {
+          "href": "http://stackoverflow.com/questions/417917/alternatives-to-sqlite",
+          "text": "some stuff at StackOverflow"
+        },
+        {
+          "href": "http://www.oracle.com/database/berkeley-db/index.html",
+          "text": "Berkeley DB"
+        },
+        {
+          "href": "http://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/",
+          "text": "Cerebral Mastication » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Choosing an SQL Engine for Analytics | R-bloggers",
+      "images": [
+        {
+          "alt": "downloads",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/downloads1.jpg?resize=327%2C76&ssl=1"
+        },
+        {
+          "alt": "downloads",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/downloads1.jpg?resize=327%2C76&ssl=1"
+        },
+        {
+          "alt": "fb-facts",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/fb-facts1.png?resize=312%2C70&ssl=1"
+        },
+        {
+          "alt": "fb-facts",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/fb-facts1.png?resize=312%2C70&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jd-long/",
+          "text": "JD Long"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/uncategorized/",
+          "text": "Uncategorized"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/database/",
+          "text": "database"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/firebird/",
+          "text": "firebird"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/mysql/",
+          "text": "mysql"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sql-server/",
+          "text": "sql server"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sqlite/",
+          "text": "sqlite"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-2520 post type-post status-publish format-standard hentry category-r-bloggers category-uncategorized tag-database tag-firebird tag-mysql tag-r tag-sql-server tag-sqlite\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Choosing an SQL Engine for Analytics</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 9, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jd-long/\">JD Long</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a>, <a href=\"https://www.r-bloggers.com/category/uncategorized/\" rel=\"category tag\">Uncategorized</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/\"> Cerebral Mastication » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>I’ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to:</p>\n<ul>\n<li>2 GB file size limit, at least historically</li>\n<li>Versions change with each edition of MS Office</li>\n<li>Sort of tough to write SQL scripts</li>\n<li>Very little automation, ie compression, backup, etc.</li>\n<li>Windows only</li>\n</ul>\n<p>I used Oracle for a few years as a result of my previous employer being an Oracle shop. I then switched to SQL Server when I changed jobs. A full blown client/server DB really does not make a lot of sense for much of what I do. I don’t run a transactional data store. I don’t need to have dozens of users hooked to the DB. And I do sometimes need access to my data when I am not hooked to the mother-ship. So I could run the free version of SQL Server on my laptop or run MySQL on my laptop, but both of these options rub me the wrong way. Why? I do a lot of data analysis in R which is RAM intensive. Running a DB server on my laptop means that some fraction of my RAM is going to be taken up by the db server software which is hanging out waiting for me to throw requests at it. I could manually hack around this by starting the server before I load data and then killing it after the data is loaded. That’s just too big of a pain in my rectum. Oh yeah, one more design requirement: I want to be able to push the whole DB out to a storage blob at Amazon and pound on it using EC2 machines, running Linux. Plus I am cheap and don’t want to pay a lot.</p>\n<p>I’ll probably end up with a model where I keep some master data sets on a client/server DB and then I will replicate chunks of that to my laptop into my serverless db. I’ll probably also put output from my desktop db back into the server after analytic work is  done.</p>\n<p>I knew about SQLite because of an <a data-cf-modified-df387422c027a952bef772b3-=\"\" href=\"http://www.twit.tv/floss26\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/www.twit.tv/floss26?referer=');\" rel=\"nofollow\" target=\"_blank\">interview with its author, Richard Hipp on FLOSS Weekly</a>. There’s also a <a data-cf-modified-df387422c027a952bef772b3-=\"\" href=\"https://video.google.com/videoplay?docid=-5160435487953918649\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/video.google.com/videoplay?docid=-5160435487953918649&amp;referer=');\" rel=\"nofollow\" target=\"_blank\">video of Hipp talking at the Googleplex</a>. I wish that guy was my neighbor. He seems like the type of guy who would shovel your walk for you then apologize for not doing it perfectly by sending over homemade cookies. Unrelated to the cookies, I really like that SQLite is <a data-cf-modified-df387422c027a952bef772b3-=\"\" href=\"https://en.wikipedia.org/wiki/Type_system#Strong_and_weak_typing\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/en.wikipedia.org/wiki/Type_system_Strong_and_weak_typing?referer=');\" rel=\"nofollow\" target=\"_blank\">weakly typed</a>.  I’m a free spirit like that.</p>\n<p>I did some digging for SQLite alternatives and came up with <a data-cf-modified-df387422c027a952bef772b3-=\"\" href=\"http://stackoverflow.com/questions/417917/alternatives-to-sqlite\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/stackoverflow.com/questions/417917/alternatives-to-sqlite?referer=');\" rel=\"nofollow\" target=\"_blank\">some stuff at StackOverflow</a>. You can read the post but it reminded me of Firebird. I’m immediately drawn to FireBird since their logo looks so dang much like the Ruger logo:</p>\n<p><img alt=\"downloads\" class=\"alignleft size-full wp-image-214 jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/downloads1.jpg?resize=327%2C76&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" height=\"76\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/downloads1.jpg?resize=327%2C76&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"downloads\" width=\"327\"/><noscript><img alt=\"downloads\" class=\"alignleft size-full wp-image-214\" data-recalc-dims=\"1\" height=\"76\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/downloads1.jpg?resize=327%2C76&amp;ssl=1\" title=\"downloads\" width=\"327\"/></noscript></p>\n<p><img alt=\"fb-facts\" class=\"alignleft size-full wp-image-215 jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/fb-facts1.png?resize=312%2C70&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" height=\"70\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/fb-facts1.png?resize=312%2C70&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"fb-facts\" width=\"312\"/><noscript><img alt=\"fb-facts\" class=\"alignleft size-full wp-image-215\" data-recalc-dims=\"1\" height=\"70\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/03/fb-facts1.png?resize=312%2C70&amp;ssl=1\" title=\"fb-facts\" width=\"312\"/></noscript></p>\n<p>But is Firebird able to be run severless?  If I have to install a server then I would just as well run MySQL.</p>\n<p><a data-cf-modified-df387422c027a952bef772b3-=\"\" href=\"http://www.oracle.com/database/berkeley-db/index.html\" onclick=\"if (!window.__cfRLUnblockHandlers) return false; pageTracker._trackPageview('/outgoing/www.oracle.com/database/berkeley-db/index.html?referer=');\" rel=\"nofollow\" target=\"_blank\">Berkeley DB </a>seems like another option worth investigating, although I am not sure if I can use it without really embedding it in another program the way that I can with SQLite.</p>\n<p>SQLite gets bonus points for having native R drivers meaning that I don’t have to go through a connector technology like ODBC. This is important enough that I should probably make that a requirement. I think Berekley DB has support in R as well. I know for a fact that writing back to SQL Server through the R ODBC package (RODBC) is like pushing a car with a rope, but only slower. Plus I don’t know how to make ODBC work on Linux. Not rocket science, I am sure, but still one more thing I would have to learn before I do that which I am paid to do.</p>\n<p>I’m going to do some testing, but it looks like I should test real life performance of SQLlite and Firebird with my data.  More to come on this, I am sure.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.cerebralmastication.com/2009/03/chosing-an-sql-engine-for-analytics/\"> Cerebral Mastication » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/database/\" rel=\"tag\">database</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/firebird/\" rel=\"tag\">firebird</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/mysql/\" rel=\"tag\">mysql</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sql-server/\" rel=\"tag\">sql server</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sqlite/\" rel=\"tag\">sqlite</a></li></ul></div></article>",
+      "main_text": "Choosing an SQL Engine for Analytics\nPosted on\nMarch 9, 2009\nby\nJD Long\nin\nR bloggers\n,\nUncategorized\n| 0 Comments\n[This article was first published on\nCerebral Mastication » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI’ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to:\n2 GB file size limit, at least historically\nVersions change with each edition of MS Office\nSort of tough to write SQL scripts\nVery little automation, ie compression, backup, etc.\nWindows only\nI used Oracle for a few years as a result of my previous employer being an Oracle shop. I then switched to SQL Server when I changed jobs. A full blown client/server DB really does not make a lot of sense for much of what I do. I don’t run a transactional data store. I don’t need to have dozens of users hooked to the DB. And I do sometimes need access to my data when I am not hooked to the mother-ship. So I could run the free version of SQL Server on my laptop or run MySQL on my laptop, but both of these options rub me the wrong way. Why? I do a lot of data analysis in R which is RAM intensive. Running a DB server on my laptop means that some fraction of my RAM is going to be taken up by the db server software which is hanging out waiting for me to throw requests at it. I could manually hack around this by starting the server before I load data and then killing it after the data is loaded. That’s just too big of a pain in my rectum. Oh yeah, one more design requirement: I want to be able to push the whole DB out to a storage blob at Amazon and pound on it using EC2 machines, running Linux. Plus I am cheap and don’t want to pay a lot.\nI’ll probably end up with a model where I keep some master data sets on a client/server DB and then I will replicate chunks of that to my laptop into my serverless db. I’ll probably also put output from my desktop db back into the server after analytic work is  done.\nI knew about SQLite because of an\ninterview with its author, Richard Hipp on FLOSS Weekly\n. There’s also a\nvideo of Hipp talking at the Googleplex\n. I wish that guy was my neighbor. He seems like the type of guy who would shovel your walk for you then apologize for not doing it perfectly by sending over homemade cookies. Unrelated to the cookies, I really like that SQLite is\nweakly typed\n.  I’m a free spirit like that.\nI did some digging for SQLite alternatives and came up with\nsome stuff at StackOverflow\n. You can read the post but it reminded me of Firebird. I’m immediately drawn to FireBird since their logo looks so dang much like the Ruger logo:\nBut is Firebird able to be run severless?  If I have to install a server then I would just as well run MySQL.\nBerkeley DB\nseems like another option worth investigating, although I am not sure if I can use it without really embedding it in another program the way that I can with SQLite.\nSQLite gets bonus points for having native R drivers meaning that I don’t have to go through a connector technology like ODBC. This is important enough that I should probably make that a requirement. I think Berekley DB has support in R as well. I know for a fact that writing back to SQL Server through the R ODBC package (RODBC) is like pushing a car with a rope, but only slower. Plus I don’t know how to make ODBC work on Linux. Not rocket science, I am sure, but still one more thing I would have to learn before I do that which I am paid to do.\nI’m going to do some testing, but it looks like I should test real life performance of SQLlite and Firebird with my data.  More to come on this, I am sure.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCerebral Mastication » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ndatabase\nfirebird\nmysql\nR\nsql server\nsqlite",
+      "meta_description": "I’ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to: 2 GB file size limit, at least historically Versions change with each edition of MS Office Sort of tough to write SQL scripts Very [...]",
+      "meta_keywords": "database,firebird,mysql,r,sql server,sqlite",
+      "og_description": "I’ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to: 2 GB file size limit, at least historically Versions change with each edition of MS Office Sort of tough to write SQL scripts Very [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/03/downloads1.jpg",
+      "og_title": "Choosing an SQL Engine for Analytics | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.2,
+      "sitemap_lastmod": "2011-05-11T21:13:26+00:00",
+      "twitter_description": "I’ve been struggling for a while on which database to use for my working data. I used to use MS Access quite a lot. The problems with MS Access include but are not limited to: 2 GB file size limit, at least historically Versions change with each edition of MS Office Sort of tough to write SQL scripts Very [...]",
+      "twitter_title": "Choosing an SQL Engine for Analytics | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/03/choosing-an-sql-engine-for-analytics/",
+      "word_count": 837
+    }
+  }
+}

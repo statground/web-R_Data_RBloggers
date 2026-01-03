@@ -1,0 +1,102 @@
+{
+  "id": "02cb2d75ae17c6c17bd545742781011fad089b09",
+  "url": "https://www.r-bloggers.com/2025/05/forecasting-msci-europe-index-post-trump-tariff-announcement/",
+  "created_at_utc": "2025-11-22T19:58:30Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "c14b4be8-6e7e-4d78-922c-43b776659373",
+    "created_at": "2025-11-22 19:58:30",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/05/forecasting-msci-europe-index-post-trump-tariff-announcement/",
+      "crawled_at": "2025-11-22T10:48:19.950116",
+      "external_links": [
+        {
+          "href": "https://datageeek.com/2025/05/26/forecasting-msci-europe-index-post-trump-tariff-announcement/",
+          "text": "DataGeeek"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://datageeek.com/2025/05/26/forecasting-msci-europe-index-post-trump-tariff-announcement/",
+          "text": "DataGeeek"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Forecasting MSCI Europe Index Post-Trump Tariff Announcement | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/selcuk-disci/",
+          "text": "Selcuk Disci"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392654 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Forecasting MSCI Europe Index Post-Trump Tariff Announcement</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 26, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/selcuk-disci/\">Selcuk Disci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://datageeek.com/2025/05/26/forecasting-msci-europe-index-post-trump-tariff-announcement/\"> DataGeeek</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>European stocks rise sharply after Trump postpones the 50% tariff on the EU. According to the ML model, this may boost prices to the $18,000 band for the MSCI Europe Index.</p>\n<pre>\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(tidyquant)\nlibrary(modeltime)\nlibrary(timetk)\n\n#MSCI Europe Index\n#download:https://www.msci.com/indexes/index/990500\ndf_msci_eur &lt;- \n  read_csv(\"data/msci_eur.csv\") %&gt;% \n  janitor::clean_names() %&gt;% \n  rename(close = value)\n\n# Split Data \nsplits &lt;- time_series_split(df_msci_eur,\n                            assess = \"3 months\",\n                            cumulative = TRUE)\n\ndf_train &lt;- training(splits)\ndf_test &lt;- testing(splits)\n\n#Model 1: Auto ARIMA\nmodel_fit_arima_no_boost &lt;- \n  arima_reg() %&gt;%\n  set_engine(engine = \"auto_arima\") %&gt;%\n  fit(close ~ date, data = df_train)\n\n\n#Model 2: Boosted Auto ARIMA\nmodel_fit_arima_boosted &lt;- \n  arima_boost(\n    min_n = 2,\n    learn_rate = 0.015\n  ) %&gt;%\n  set_engine(engine = \"auto_arima_xgboost\") %&gt;%\n  fit(close ~ date + as.numeric(date) + factor(lubridate::month(date, label = TRUE), \n                                               ordered = F),\n      data = df_train)\n\n\n#Model 3: Exponential Smoothing\nmodel_fit_ets &lt;- \n  exp_smoothing() %&gt;%\n  set_engine(engine = \"ets\") %&gt;%\n  fit(close ~ date, data = df_train)  \n\n\n#Model 4: Prophet\nmodel_fit_prophet &lt;- \n  prophet_reg() %&gt;%\n  set_engine(engine = \"prophet\") %&gt;%\n  fit(close ~ date, data = df_train)  \n\n\n#Model 5: Linear Regression\nmodel_fit_lm &lt;- \n  linear_reg() %&gt;%\n  set_engine(\"lm\") %&gt;%\n  fit(close ~ as.numeric(date) + factor(lubridate::month(date, label = TRUE), \n                                        ordered = FALSE),\n      data = df_train)\n\n\n#Model 6: MARS\nlibrary(earth)\n\nmodel_spec_mars &lt;- \n  mars(mode = \"regression\") %&gt;%\n  set_engine(\"earth\") \n\nrecipe_spec &lt;- \n  recipe(close ~ date, data = df_train) %&gt;%\n  step_date(date, features = \"month\", ordinal = FALSE) %&gt;%\n  step_mutate(date_num = as.numeric(date)) %&gt;%\n  step_normalize(date_num) %&gt;%\n  step_rm(date)\n\nwflw_fit_mars &lt;- \n  workflow() %&gt;%\n  add_recipe(recipe_spec) %&gt;%\n  add_model(model_spec_mars) %&gt;%\n  fit(df_train)\n\n#Radial basis function support vector machines\nmodel_spec_svm &lt;- \n  svm_rbf(cost = 1, margin = 0.1) %&gt;% \n  set_mode(\"regression\") %&gt;% \n  set_engine(\"kernlab\")\n\nwflw_fit_svm &lt;- \n  workflow() %&gt;%\n  add_recipe(recipe_spec) %&gt;%\n  add_model(model_spec_svm) %&gt;%\n  fit(df_train)\n\n\n#Model Tables\nmodels_tbl &lt;- modeltime_table(\n  model_fit_arima_no_boost,\n  model_fit_arima_boosted,\n  model_fit_ets,\n  model_fit_prophet,\n  model_fit_lm,\n  wflw_fit_mars,\n  wflw_fit_svm\n)\n\n\n#Calibration\ncalibration_tbl &lt;-\n  models_tbl %&gt;%\n  modeltime_calibrate(new_data = df_test)\n\n#Accuracy\ncalibration_tbl %&gt;%\n  modeltime_accuracy() %&gt;%\n  table_modeltime_accuracy(\n    .interactive = TRUE\n  )\n\n\n#Calibrate the Linear Regression model to a testing set\ncalibration_lm &lt;- \n  model_fit_lm %&gt;%\n  modeltime_calibrate(new_data = df_test)\n\n\n#Predictive intervals (95% Confidence Interval)\ncalibration_lm %&gt;%\n  modeltime_forecast(actual_data = df_msci_eur %&gt;% \n                                   filter(date &gt;= last(date) - months(3)),\n                     new_data = testing(splits)) %&gt;% \n  plot_modeltime_forecast(.interactive = FALSE,\n                          .legend_show = FALSE,\n                          .line_size = 1.5,\n                          .color_lab = \"\",\n                          .title = \"MSCI Europe Index\") +\n  ggrepel::geom_text_repel(\n    data = df_msci_eur %&gt;%  slice_tail(n = 1),\n    aes(label = paste0(\"$\",format(round(close , 2), big.mark = \",\")), \n        x= date,\n        y = close),\n    hjust = 1, \n    vjust = .5,\n    nudge_x = 0.5,\n    fontface = \"bold\", \n    family = \"Roboto Slab\",\n    size = 6,\n    color = \"black\",\n    segment.color = NA\n  ) +\n  ggrepel::geom_text_repel(\n    data = . %&gt;%  slice_tail(n = 1),\n    aes(label = paste0(\"$\",format(round(.conf_hi,2), big.mark = \",\")), \n        x= .index,\n        y = .conf_hi),\n    hjust = 1, \n    vjust = 1,\n    nudge_x = .5,\n    fontface = \"bold\", \n    family = \"Roboto Slab\",\n    size = 6,\n    color = \"dimgray\",\n    segment.color = NA\n  ) +\n  labs(subtitle = \"&lt;span style = 'color:dimgrey;'&gt;Predictive Intervals&lt;/span&gt;&lt;br&gt;&lt;span style = 'color:red;'&gt;ML Model&lt;/span&gt;\") + \n  scale_x_date(expand = expansion(mult = c(.1, .25)),\n               labels = scales::label_date(format = \"%b'%y\")) +\n  scale_y_continuous(labels = scales::label_currency()) +\n  theme_minimal(base_family = \"Roboto Slab\", base_size = 20) +\n   theme(legend.position = \"none\",\n        plot.background = element_rect(fill = \"azure\", \n                                       color = \"azure\"),\n        plot.title = element_text(face = \"bold\"),\n        axis.text = element_text(face = \"bold\"),\n        plot.subtitle = ggtext::element_markdown(face = \"bold\"))\n################################################################################\n\n</pre>\n<p></p>\n<p></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://datageeek.com/2025/05/26/forecasting-msci-europe-index-post-trump-tariff-announcement/\"> DataGeeek</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Forecasting MSCI Europe Index Post-Trump Tariff Announcement\nPosted on\nMay 26, 2025\nby\nSelcuk Disci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDataGeeek\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEuropean stocks rise sharply after Trump postpones the 50% tariff on the EU. According to the ML model, this may boost prices to the $18,000 band for the MSCI Europe Index.\nlibrary(tidymodels)\nlibrary(tidyverse)\nlibrary(tidyquant)\nlibrary(modeltime)\nlibrary(timetk)\n\n#MSCI Europe Index\n#download:https://www.msci.com/indexes/index/990500\ndf_msci_eur <- \n  read_csv(\"data/msci_eur.csv\") %>% \n  janitor::clean_names() %>% \n  rename(close = value)\n\n# Split Data \nsplits <- time_series_split(df_msci_eur,\n                            assess = \"3 months\",\n                            cumulative = TRUE)\n\ndf_train <- training(splits)\ndf_test <- testing(splits)\n\n#Model 1: Auto ARIMA\nmodel_fit_arima_no_boost <- \n  arima_reg() %>%\n  set_engine(engine = \"auto_arima\") %>%\n  fit(close ~ date, data = df_train)\n\n#Model 2: Boosted Auto ARIMA\nmodel_fit_arima_boosted <- \n  arima_boost(\n    min_n = 2,\n    learn_rate = 0.015\n  ) %>%\n  set_engine(engine = \"auto_arima_xgboost\") %>%\n  fit(close ~ date + as.numeric(date) + factor(lubridate::month(date, label = TRUE), \n                                               ordered = F),\n      data = df_train)\n\n#Model 3: Exponential Smoothing\nmodel_fit_ets <- \n  exp_smoothing() %>%\n  set_engine(engine = \"ets\") %>%\n  fit(close ~ date, data = df_train)  \n\n#Model 4: Prophet\nmodel_fit_prophet <- \n  prophet_reg() %>%\n  set_engine(engine = \"prophet\") %>%\n  fit(close ~ date, data = df_train)  \n\n#Model 5: Linear Regression\nmodel_fit_lm <- \n  linear_reg() %>%\n  set_engine(\"lm\") %>%\n  fit(close ~ as.numeric(date) + factor(lubridate::month(date, label = TRUE), \n                                        ordered = FALSE),\n      data = df_train)\n\n#Model 6: MARS\nlibrary(earth)\n\nmodel_spec_mars <- \n  mars(mode = \"regression\") %>%\n  set_engine(\"earth\") \n\nrecipe_spec <- \n  recipe(close ~ date, data = df_train) %>%\n  step_date(date, features = \"month\", ordinal = FALSE) %>%\n  step_mutate(date_num = as.numeric(date)) %>%\n  step_normalize(date_num) %>%\n  step_rm(date)\n\nwflw_fit_mars <- \n  workflow() %>%\n  add_recipe(recipe_spec) %>%\n  add_model(model_spec_mars) %>%\n  fit(df_train)\n\n#Radial basis function support vector machines\nmodel_spec_svm <- \n  svm_rbf(cost = 1, margin = 0.1) %>% \n  set_mode(\"regression\") %>% \n  set_engine(\"kernlab\")\n\nwflw_fit_svm <- \n  workflow() %>%\n  add_recipe(recipe_spec) %>%\n  add_model(model_spec_svm) %>%\n  fit(df_train)\n\n#Model Tables\nmodels_tbl <- modeltime_table(\n  model_fit_arima_no_boost,\n  model_fit_arima_boosted,\n  model_fit_ets,\n  model_fit_prophet,\n  model_fit_lm,\n  wflw_fit_mars,\n  wflw_fit_svm\n)\n\n#Calibration\ncalibration_tbl <-\n  models_tbl %>%\n  modeltime_calibrate(new_data = df_test)\n\n#Accuracy\ncalibration_tbl %>%\n  modeltime_accuracy() %>%\n  table_modeltime_accuracy(\n    .interactive = TRUE\n  )\n\n#Calibrate the Linear Regression model to a testing set\ncalibration_lm <- \n  model_fit_lm %>%\n  modeltime_calibrate(new_data = df_test)\n\n#Predictive intervals (95% Confidence Interval)\ncalibration_lm %>%\n  modeltime_forecast(actual_data = df_msci_eur %>% \n                                   filter(date >= last(date) - months(3)),\n                     new_data = testing(splits)) %>% \n  plot_modeltime_forecast(.interactive = FALSE,\n                          .legend_show = FALSE,\n                          .line_size = 1.5,\n                          .color_lab = \"\",\n                          .title = \"MSCI Europe Index\") +\n  ggrepel::geom_text_repel(\n    data = df_msci_eur %>%  slice_tail(n = 1),\n    aes(label = paste0(\"$\",format(round(close , 2), big.mark = \",\")), \n        x= date,\n        y = close),\n    hjust = 1, \n    vjust = .5,\n    nudge_x = 0.5,\n    fontface = \"bold\", \n    family = \"Roboto Slab\",\n    size = 6,\n    color = \"black\",\n    segment.color = NA\n  ) +\n  ggrepel::geom_text_repel(\n    data = . %>%  slice_tail(n = 1),\n    aes(label = paste0(\"$\",format(round(.conf_hi,2), big.mark = \",\")), \n        x= .index,\n        y = .conf_hi),\n    hjust = 1, \n    vjust = 1,\n    nudge_x = .5,\n    fontface = \"bold\", \n    family = \"Roboto Slab\",\n    size = 6,\n    color = \"dimgray\",\n    segment.color = NA\n  ) +\n  labs(subtitle = \"<span style = 'color:dimgrey;'>Predictive Intervals</span><br><span style = 'color:red;'>ML Model</span>\") + \n  scale_x_date(expand = expansion(mult = c(.1, .25)),\n               labels = scales::label_date(format = \"%b'%y\")) +\n  scale_y_continuous(labels = scales::label_currency()) +\n  theme_minimal(base_family = \"Roboto Slab\", base_size = 20) +\n   theme(legend.position = \"none\",\n        plot.background = element_rect(fill = \"azure\", \n                                       color = \"azure\"),\n        plot.title = element_text(face = \"bold\"),\n        axis.text = element_text(face = \"bold\"),\n        plot.subtitle = ggtext::element_markdown(face = \"bold\"))\n################################################################################\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDataGeeek\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "European stocks rise sharply after Trump postpones the 50% tariff on the EU. According to the ML model, this may boost prices to the $18,000 band for the MSCI Europe Index.",
+      "meta_keywords": null,
+      "og_description": "European stocks rise sharply after Trump postpones the 50% tariff on the EU. According to the ML model, this may boost prices to the $18,000 band for the MSCI Europe Index.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Forecasting MSCI Europe Index Post-Trump Tariff Announcement | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3,
+      "sitemap_lastmod": null,
+      "twitter_description": "European stocks rise sharply after Trump postpones the 50% tariff on the EU. According to the ML model, this may boost prices to the $18,000 band for the MSCI Europe Index.",
+      "twitter_title": "Forecasting MSCI Europe Index Post-Trump Tariff Announcement | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/05/forecasting-msci-europe-index-post-trump-tariff-announcement/",
+      "word_count": 590
+    }
+  }
+}

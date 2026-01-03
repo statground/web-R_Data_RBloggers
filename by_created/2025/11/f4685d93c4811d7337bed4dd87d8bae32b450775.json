@@ -1,0 +1,143 @@
+{
+  "id": "f4685d93c4811d7337bed4dd87d8bae32b450775",
+  "url": "https://www.r-bloggers.com/2009/03/multiple-plot-in-a-single-image-using-imagemagick/",
+  "created_at_utc": "2025-11-17T20:41:05Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "d7888988-4aa6-4471-933c-f81e51f23d64",
+    "created_at": "2025-11-17 20:41:05",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/03/multiple-plot-in-a-single-image-using-imagemagick/",
+      "crawled_at": "2025-11-17T10:41:07.965999",
+      "external_links": [
+        {
+          "href": "https://feedproxy.google.com/~r/OneRTipADay/~3/Vrf5u3rhGX8/multiple-plot-in-single-image-using.html",
+          "text": "One R Tip A Day"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.imagemagick.org/script/index.php",
+          "text": "ImageMagick"
+        },
+        {
+          "href": "https://feedproxy.google.com/~r/OneRTipADay/~3/Vrf5u3rhGX8/multiple-plot-in-single-image-using.html",
+          "text": "One R Tip A Day"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Multiple plot in a single image using ImageMagick | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/7556813435224291579-2012043339299162572?l=onertipaday.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/7556813435224291579-2012043339299162572?l=onertipaday.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/OneRTipADay/~4/Vrf5u3rhGX8"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/OneRTipADay/~4/Vrf5u3rhGX8"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/paolo/",
+          "text": "Paolo"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/mac-os-x/",
+          "text": "mac os x"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/plot/",
+          "text": "plot"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/tool/",
+          "text": "tool"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/unix/",
+          "text": "unix"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-352 post type-post status-publish format-standard hentry category-r-bloggers tag-mac-os-x tag-plot tag-tool tag-unix\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Multiple plot in a single image using ImageMagick</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 31, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/paolo/\">Paolo</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/OneRTipADay/~3/Vrf5u3rhGX8/multiple-plot-in-single-image-using.html\"> One R Tip A Day</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Sometimes you need to add several plots/images either by row or by column to a single page/sheet.<br/>If you generate all your plot with R base graphics you can easily accomplished the task using the par() function, e.g., using par(mfrow=c(2,2)) and then drawing 4 plots of your choice.<br/>However, if you need to create a single image build up from different sources, e.g. external images, plots not compatible with R base graphics, etc. , you can create/retrieve the single images and then merge them together using the tools from the Unix (Linux, Mac OS X, etc.) <a href=\"http://www.imagemagick.org/script/index.php\" rel=\"nofollow\" target=\"_blank\">ImageMagick</a> suite.<br/><br/><code>## Example\n# we generate some random plot\nrequire(seqLog)\n## the first plot is taken from the seqLogo help ( ?seqLogo )\n## I selected this example on purpose because the seqLogo function is based on the grid graphics\nand is coded in such a way that doesn't allow the use of the par() function\nmFile &lt;- system.file(\"Exfiles/pwm1\", package=\"seqLogo\")\nm &lt;- read.table(mFile)\npwm &lt;- makePWM(m)\npng(\"seqLogo1.png\", width=400, height=400)\nseqLogo(pwm)\ndev.off()\n## totally unrelated\npng(\"plot1.png\", width=400, height=400)\nplot(density(rnorm(1000)))\ndev.off()</code><br/><br/>Then you can type:<br/><br/><code>system(\"convert \\\\( seqLogo1.png plot1.png +append \\\\) \\\\( seqLogo1.png plot1.png +append \\\\) -background none -append final.png\")</code><br/><br/>Remember that in R you have to start escape character with '\\' !<br/><br/>Or, alternatively, from the command line:<br/><br/><code>convert \\( seqLogo1.png plot1.png +append \\) \\( seqLogo1.png plot1.png +append \\) -background none -append final.png</code><br/><br/>See man convert and man ImageMagick for the full story.<div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/7556813435224291579-2012043339299162572?l=onertipaday.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/7556813435224291579-2012043339299162572?l=onertipaday.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/7556813435224291579-2012043339299162572?l=onertipaday.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/OneRTipADay/~4/Vrf5u3rhGX8?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/OneRTipADay/~4/Vrf5u3rhGX8\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/OneRTipADay/~4/Vrf5u3rhGX8\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/OneRTipADay/~3/Vrf5u3rhGX8/multiple-plot-in-single-image-using.html\"> One R Tip A Day</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/mac-os-x/\" rel=\"tag\">mac os x</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/plot/\" rel=\"tag\">plot</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/tool/\" rel=\"tag\">tool</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/unix/\" rel=\"tag\">unix</a></li></ul></div></article>",
+      "main_text": "Multiple plot in a single image using ImageMagick\nPosted on\nMarch 31, 2009\nby\nPaolo\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nOne R Tip A Day\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSometimes you need to add several plots/images either by row or by column to a single page/sheet.\nIf you generate all your plot with R base graphics you can easily accomplished the task using the par() function, e.g., using par(mfrow=c(2,2)) and then drawing 4 plots of your choice.\nHowever, if you need to create a single image build up from different sources, e.g. external images, plots not compatible with R base graphics, etc. , you can create/retrieve the single images and then merge them together using the tools from the Unix (Linux, Mac OS X, etc.)\nImageMagick\nsuite.\n## Example\n# we generate some random plot\nrequire(seqLog)\n## the first plot is taken from the seqLogo help ( ?seqLogo )\n## I selected this example on purpose because the seqLogo function is based on the grid graphics\nand is coded in such a way that doesn't allow the use of the par() function\nmFile <- system.file(\"Exfiles/pwm1\", package=\"seqLogo\")\nm <- read.table(mFile)\npwm <- makePWM(m)\npng(\"seqLogo1.png\", width=400, height=400)\nseqLogo(pwm)\ndev.off()\n## totally unrelated\npng(\"plot1.png\", width=400, height=400)\nplot(density(rnorm(1000)))\ndev.off()\nThen you can type:\nsystem(\"convert \\\\( seqLogo1.png plot1.png +append \\\\) \\\\( seqLogo1.png plot1.png +append \\\\) -background none -append final.png\")\nRemember that in R you have to start escape character with '\\' !\nOr, alternatively, from the command line:\nconvert \\( seqLogo1.png plot1.png +append \\) \\( seqLogo1.png plot1.png +append \\) -background none -append final.png\nSee man convert and man ImageMagick for the full story.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nOne R Tip A Day\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nmac os x\nplot\ntool\nunix",
+      "meta_description": "Sometimes you need to add several plots/images either by row or by column to a single page/sheet.If you generate all your plot with R base graphics you can easily accomplished the task using the par() function, e.g., using par(mfrow=c(2,2)) and then dr...",
+      "meta_keywords": "mac os x,plot,tool,unix",
+      "og_description": "Sometimes you need to add several plots/images either by row or by column to a single page/sheet.If you generate all your plot with R base graphics you can easily accomplished the task using the par() function, e.g., using par(mfrow=c(2,2)) and then dr...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/7556813435224291579-2012043339299162572?l=onertipaday.blogspot.com",
+      "og_title": "Multiple plot in a single image using ImageMagick | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.1,
+      "sitemap_lastmod": "2009-03-31T08:18:59+00:00",
+      "twitter_description": "Sometimes you need to add several plots/images either by row or by column to a single page/sheet.If you generate all your plot with R base graphics you can easily accomplished the task using the par() function, e.g., using par(mfrow=c(2,2)) and then dr...",
+      "twitter_title": "Multiple plot in a single image using ImageMagick | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/03/multiple-plot-in-a-single-image-using-imagemagick/",
+      "word_count": 414
+    }
+  }
+}

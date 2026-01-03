@@ -1,0 +1,106 @@
+{
+  "id": "c868c5bba02c4e7bb93fc1266c72c8cc7d3340bd",
+  "url": "https://www.r-bloggers.com/2009/12/multilevel-and-longitudinal-modeling-in-stata/",
+  "created_at_utc": "2025-11-17T20:39:39Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "08e8ad21-1273-4d8c-bed7-3587ba5fe512",
+    "created_at": "2025-11-17 20:39:39",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/multilevel-and-longitudinal-modeling-in-stata/",
+      "crawled_at": "2025-11-17T10:09:52.709940",
+      "external_links": [
+        {
+          "href": "https://ethanfosse.blogspot.com/2010/01/multilevel-and-longitudinal-modeling-in.html",
+          "text": "Culture, Statistics, and Society"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.stata-press.com/books/mlmus2.html",
+          "text": "an excellent book on multilevel and longitudinal modeling"
+        },
+        {
+          "href": "http://www.stata-press.com/data/mlmus2.html",
+          "text": "this website"
+        },
+        {
+          "href": "https://ethanfosse.blogspot.com/2010/01/multilevel-and-longitudinal-modeling-in.html",
+          "text": "Culture, Statistics, and Society"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Multilevel and Longitudinal Modeling in Stata | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ethan-fosse/",
+          "text": "Ethan Fosse"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-61378 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Multilevel and Longitudinal Modeling in Stata</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ethan-fosse/\">Ethan Fosse</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ethanfosse.blogspot.com/2010/01/multilevel-and-longitudinal-modeling-in.html\"> Culture, Statistics, and Society</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\">For my “off-task” reading I recent perused <a href=\"http://www.stata-press.com/books/mlmus2.html\" rel=\"nofollow\" target=\"_blank\">an excellent book on multilevel and longitudinal modeling</a> in Stata by Sophia Rabe-Hesketh and Anders Skrondal. The second edition (which I read) has been updated by including several chapters providing an overview of regression modeling and ANOVA (analysis of variance) as well as additional background information on models with nonlinear outcomes (e.g., logistic regression). The authors even include a self-test near the beginning of the book to ensure that readers can confidently progress through the rest of the material. The book has many great features, including ease of data accessibility (simply go to <a href=\"http://www.stata-press.com/data/mlmus2.html\" rel=\"nofollow\" target=\"_blank\">this website</a> and you instantly have all the datasets used in the book), clarity of presentation, and numerous applied examples with accompanying Stata code. The only problem, which is not a problem with the book, is that multilevel modeling in Stata (as the authors note) can be rather slow, especially for nonlinear outcomes with many levels. (For this reason, when using nonlinear outcomes other statistical packages may be more desirable than Stata, such as R.) Yet overall the book is an excellent overview of an important class of statistical models, and can even be viewed as a way of take advantage of Stata beyond the realm of “econometric” approaches (which seems to be Stata’s strength) and toward the realm of putatively more “sociologic” methods of data analysis, in which clustered data are viewed as something important in their own right rather than as statistical nuisances.</div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ethanfosse.blogspot.com/2010/01/multilevel-and-longitudinal-modeling-in.html\"> Culture, Statistics, and Society</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Multilevel and Longitudinal Modeling in Stata\nPosted on\nDecember 22, 2009\nby\nEthan Fosse\nin Uncategorized | 0 Comments\n[This article was first published on\nCulture, Statistics, and Society\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nFor my “off-task” reading I recent perused\nan excellent book on multilevel and longitudinal modeling\nin Stata by Sophia Rabe-Hesketh and Anders Skrondal. The second edition (which I read) has been updated by including several chapters providing an overview of regression modeling and ANOVA (analysis of variance) as well as additional background information on models with nonlinear outcomes (e.g., logistic regression). The authors even include a self-test near the beginning of the book to ensure that readers can confidently progress through the rest of the material. The book has many great features, including ease of data accessibility (simply go to\nthis website\nand you instantly have all the datasets used in the book), clarity of presentation, and numerous applied examples with accompanying Stata code. The only problem, which is not a problem with the book, is that multilevel modeling in Stata (as the authors note) can be rather slow, especially for nonlinear outcomes with many levels. (For this reason, when using nonlinear outcomes other statistical packages may be more desirable than Stata, such as R.) Yet overall the book is an excellent overview of an important class of statistical models, and can even be viewed as a way of take advantage of Stata beyond the realm of “econometric” approaches (which seems to be Stata’s strength) and toward the realm of putatively more “sociologic” methods of data analysis, in which clustered data are viewed as something important in their own right rather than as statistical nuisances.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCulture, Statistics, and Society\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "For my \"off-task\" reading I recent perused an excellent book on multilevel and longitudinal modeling in Stata by Sophia Rabe-Hesketh and Anders Skrondal. The second edition (which I read) has been updated by including several chapters providing an over...",
+      "meta_keywords": null,
+      "og_description": "For my \"off-task\" reading I recent perused an excellent book on multilevel and longitudinal modeling in Stata by Sophia Rabe-Hesketh and Anders Skrondal. The second edition (which I read) has been updated by including several chapters providing an over...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Multilevel and Longitudinal Modeling in Stata | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2,
+      "sitemap_lastmod": "2012-03-13T00:09:07+00:00",
+      "twitter_description": "For my \"off-task\" reading I recent perused an excellent book on multilevel and longitudinal modeling in Stata by Sophia Rabe-Hesketh and Anders Skrondal. The second edition (which I read) has been updated by including several chapters providing an over...",
+      "twitter_title": "Multilevel and Longitudinal Modeling in Stata | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/multilevel-and-longitudinal-modeling-in-stata/",
+      "word_count": 393
+    }
+  }
+}

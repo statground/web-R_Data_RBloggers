@@ -1,0 +1,126 @@
+{
+  "id": "7d807cbb85dc1aa2dcb85f3a29ee42a018cc9024",
+  "url": "https://www.r-bloggers.com/2025/07/apply-the-dracula-theme-to-quarto-websites/",
+  "created_at_utc": "2025-11-22T19:58:04Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "80629856-8007-4bd8-bb26-9d58756a1d3a",
+    "created_at": "2025-11-22 19:58:04",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/07/apply-the-dracula-theme-to-quarto-websites/",
+      "crawled_at": "2025-11-22T10:45:32.214167",
+      "external_links": [
+        {
+          "href": "https://boyd.tarlinton.au/posts/dracula_theme.html",
+          "text": "Boyd Tarlinton"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://draculatheme.com/",
+          "text": "Dracula theme"
+        },
+        {
+          "href": "https://oblotzky.industries/products/gmk-cyl-dracula-v2",
+          "text": "Dracula keycaps for my mechanical keyboard"
+        },
+        {
+          "href": "https://bootswatch.com/darkly/",
+          "text": "Darkly theme from Bootswatch"
+        },
+        {
+          "href": "https://draculatheme.com/contribute#color-palette",
+          "text": "Dracula palette"
+        },
+        {
+          "href": "https://www.bootstrap-live-customizer.com/",
+          "text": "Bootstrap Live Customizer"
+        },
+        {
+          "href": "https://github.com/B0ydT/boyd/blob/main/styles-dark.scss",
+          "text": "here"
+        },
+        {
+          "href": "https://boyd.tarlinton.au/posts/dracula_theme.html",
+          "text": "Boyd Tarlinton"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Apply the Dracula Theme to Quarto Websites | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/boyd-tarlinton/",
+          "text": "Boyd Tarlinton"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394018 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Apply the Dracula Theme to Quarto Websites</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/boyd-tarlinton/\">Boyd Tarlinton</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://boyd.tarlinton.au/posts/dracula_theme.html\"> Boyd Tarlinton</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>I am something of a <a href=\"https://draculatheme.com/\" rel=\"nofollow\" target=\"_blank\">Dracula theme</a> fanatic. After first discovering the open-source theme in RStudio, I had to see if it was supported by other applications. To my delight, I found custom Dracula themes for over 400 applications. Applying these themes to my OS, IDEs, browsers, and other applications is now the first thing I do when I install a new tool or set up a computer. I’ve even gone so far as to get <a href=\"https://oblotzky.industries/products/gmk-cyl-dracula-v2\" rel=\"nofollow\" target=\"_blank\">Dracula keycaps for my mechanical keyboard</a>.</p>\n<p>When I decided to add dark mode to my <code>Quarto</code> website, Dracula was the obvious choice. But, given the wide-ranging support for the theme, I was surprised to discover there was no pre-packaged Bootstrap theme which I could plug into <code>Quarto</code>. Of course, I wasn’t going to let that stop me!</p>\n<p>Starting with the <a href=\"https://bootswatch.com/darkly/\" rel=\"nofollow\" target=\"_blank\">Darkly theme from Bootswatch</a> as a base, I customised the theme to incorporate the <a href=\"https://draculatheme.com/contribute#color-palette\" rel=\"nofollow\" target=\"_blank\">Dracula palette</a> using the handy <a href=\"https://www.bootstrap-live-customizer.com/\" rel=\"nofollow\" target=\"_blank\">Bootstrap Live Customizer</a> tool, before exporting the resulting LESS code and converting it to the SCSS required by <code>Quarto</code>. I had to remove a few variables which seemed to cause issues when rendering. After a few additional tweaks, I was left with a Dracula themed sight that felt like home. You can access the SCSS file <a href=\"https://github.com/B0ydT/boyd/blob/main/styles-dark.scss\" rel=\"nofollow\" target=\"_blank\">here</a>. If you’re reading this post through an aggregator, you can see it in action on my original post.</p>\n<p>There are a few things to consider when adding the Dracula theme to your own <code>Quarto</code> site. Not all viewers prefer the dark mode experience, so I prefer to let the user decide. In the snippet from my site-wide YAML configuration below, the user is offered a choice between a light and dark mode (Darkly + Dracula), but the website defaults to the user’s system preference. I also specified a custom font to be used across both themes, as I wanted to minimize changes besides colour when switching between themes. As a final touch, specify Dracula code highlighting if you are going to be including code chunks. You may optionally include a styles.css file in the root directory of the project,<br/>\nincorporating other style changes that are applied across both themes.</p>\n<pre>---\nformat:\n  html:\n    respect-user-color-scheme: true\n    theme: \n      dark: [darkly, styles-dark.scss]\n      light: sandstone\n    header-includes: |\n      &lt;link rel=\"stylesheet\" media=\"screen\" href=\"https://fonts.googleapis.com/css2?family=Fira+Sans\" type=\"text/css\"/&gt;\n      &lt;link rel=\"stylesheet\" media=\"screen\" href=\"https://fonts.googleapis.com/css2?family=Fira+Code\" type=\"text/css\"/&gt;\n    mainfont: \"Fira Sans\"\n    monofont: \"Fira Code\"\nhighlight-style: Dracula\n---</pre>\n<p>Hopefully this will be of use to some other Dracula diehards out there. I’m sure I will continue to tweak the SCSS file as I spot opportunities for improvement.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://boyd.tarlinton.au/posts/dracula_theme.html\"> Boyd Tarlinton</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Apply the Dracula Theme to Quarto Websites\nPosted on\nJuly 11, 2025\nby\nBoyd Tarlinton\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nBoyd Tarlinton\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI am something of a\nDracula theme\nfanatic. After first discovering the open-source theme in RStudio, I had to see if it was supported by other applications. To my delight, I found custom Dracula themes for over 400 applications. Applying these themes to my OS, IDEs, browsers, and other applications is now the first thing I do when I install a new tool or set up a computer. I’ve even gone so far as to get\nDracula keycaps for my mechanical keyboard\n.\nWhen I decided to add dark mode to my\nQuarto\nwebsite, Dracula was the obvious choice. But, given the wide-ranging support for the theme, I was surprised to discover there was no pre-packaged Bootstrap theme which I could plug into\nQuarto\n. Of course, I wasn’t going to let that stop me!\nStarting with the\nDarkly theme from Bootswatch\nas a base, I customised the theme to incorporate the\nDracula palette\nusing the handy\nBootstrap Live Customizer\ntool, before exporting the resulting LESS code and converting it to the SCSS required by\nQuarto\n. I had to remove a few variables which seemed to cause issues when rendering. After a few additional tweaks, I was left with a Dracula themed sight that felt like home. You can access the SCSS file\nhere\n. If you’re reading this post through an aggregator, you can see it in action on my original post.\nThere are a few things to consider when adding the Dracula theme to your own\nQuarto\nsite. Not all viewers prefer the dark mode experience, so I prefer to let the user decide. In the snippet from my site-wide YAML configuration below, the user is offered a choice between a light and dark mode (Darkly + Dracula), but the website defaults to the user’s system preference. I also specified a custom font to be used across both themes, as I wanted to minimize changes besides colour when switching between themes. As a final touch, specify Dracula code highlighting if you are going to be including code chunks. You may optionally include a styles.css file in the root directory of the project,\nincorporating other style changes that are applied across both themes.\n---\nformat:\n  html:\n    respect-user-color-scheme: true\n    theme: \n      dark: [darkly, styles-dark.scss]\n      light: sandstone\n    header-includes: |\n      <link rel=\"stylesheet\" media=\"screen\" href=\"https://fonts.googleapis.com/css2?family=Fira+Sans\" type=\"text/css\"/>\n      <link rel=\"stylesheet\" media=\"screen\" href=\"https://fonts.googleapis.com/css2?family=Fira+Code\" type=\"text/css\"/>\n    mainfont: \"Fira Sans\"\n    monofont: \"Fira Code\"\nhighlight-style: Dracula\n---\nHopefully this will be of use to some other Dracula diehards out there. I’m sure I will continue to tweak the SCSS file as I spot opportunities for improvement.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nBoyd Tarlinton\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I am something of a Dracula theme fanatic. After first discovering the open-source theme in RStudio, I had to see if it was supported by other applications. To my delight, I found custom Dracula themes for over 400 applications. Applying these th...",
+      "meta_keywords": null,
+      "og_description": "I am something of a Dracula theme fanatic. After first discovering the open-source theme in RStudio, I had to see if it was supported by other applications. To my delight, I found custom Dracula themes for over 400 applications. Applying these th...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Apply the Dracula Theme to Quarto Websites | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3,
+      "sitemap_lastmod": null,
+      "twitter_description": "I am something of a Dracula theme fanatic. After first discovering the open-source theme in RStudio, I had to see if it was supported by other applications. To my delight, I found custom Dracula themes for over 400 applications. Applying these th...",
+      "twitter_title": "Apply the Dracula Theme to Quarto Websites | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/07/apply-the-dracula-theme-to-quarto-websites/",
+      "word_count": 600
+    }
+  }
+}

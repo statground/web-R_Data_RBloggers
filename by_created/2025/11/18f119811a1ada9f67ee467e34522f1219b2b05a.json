@@ -1,0 +1,102 @@
+{
+  "id": "18f119811a1ada9f67ee467e34522f1219b2b05a",
+  "url": "https://www.r-bloggers.com/2009/08/parametric-method-for-the-study-of-the-correlation-the-pearson-r-test/",
+  "created_at_utc": "2025-11-17T20:40:35Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "4934c5d3-4467-4313-a30a-3f1f72a9c778",
+    "created_at": "2025-11-17 20:40:35",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/08/parametric-method-for-the-study-of-the-correlation-the-pearson-r-test/",
+      "crawled_at": "2025-11-17T10:30:11.650238",
+      "external_links": [
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/08/parametric-method-for-study-of.html",
+          "text": "Statistic on aiR"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/08/parametric-method-for-study-of.html",
+          "text": "Statistic on aiR"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Parametric method for the study of the correlation: the Pearson r-test | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/todos-logos/",
+          "text": "Todos Logos"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/uncategorized/",
+          "text": "Uncategorized"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-620 post type-post status-publish format-standard hentry category-uncategorized\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Parametric method for the study of the correlation: the Pearson r-test</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 3, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in <a href=\"https://www.r-bloggers.com/category/uncategorized/\" rel=\"category tag\">Uncategorized</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/08/parametric-method-for-study-of.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Suppose you want to study whether there is a correlation between 2 sets of data. To do this we compute the <b>Pearson product-moment correlation coefficient</b>, which is a measure of the correlation (linear dependence) between two variables X and Y; then we compute the value of a t-test to study the significance of the <b>Pearson coefficient R</b>. We can use this test when the data follow a Gaussian distribution.\r\n\r\n<span class=\"fullpost\"><span class=\"fullpost\">A new test to measure IQ is subjected to 10 volunteers. You want to see if there is a correlation between the new experimental test and the classical test, in order to replace the old test with the new test. These the values:\r\n</span></span>\n<div style=\"text-align: center;\">Old test: 15, 21, 25, 26, 30, 30, 22, 29, 19, 16\r\nNew test: 55, 56, 89, 67, 84, 89, 99, 62, 83, 88</div>\n<span class=\"fullpost\"><span class=\"fullpost\">\r\n\r\nThe software R has a single function, easily recalled, which gives us directly the value of the Pearson coefficient and the t-statistical test for checking the significance of the coefficient:\r\n\r\n</span></span>\n<pre>\r\na = c(15, 21, 25, 26, 30, 30, 22, 29, 19, 16)\r\nb = c(55, 56, 89, 67, 84, 89, 99, 62, 83, 88)\r\n\r\ncor.test(a, b)\r\n\r\n        Pearson's product-moment correlation\r\n\r\ndata:  a and b \r\nt = 0.4772, df = 8, p-value = 0.646\r\nalternative hypothesis: true correlation is not equal to 0 \r\n95 percent confidence interval:\r\n -0.5174766  0.7205107 \r\nsample estimates:\r\n     cor \r\n0.166349</pre>\n<span class=\"fullpost\">\r\n\r\nThe value of the coefficient of Pearson is 0.166: it is a very low value, which indicates a poor correlation between the variables.\r\nFurthermore, the p-value is greater than 0.05; so we cannot reject the null hypothesis: then the Pearson coefficient is significant. So we can say that there is no discovery of correlation between the results of both tests.</span>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/08/parametric-method-for-study-of.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Parametric method for the study of the correlation: the Pearson r-test\nPosted on\nAugust 3, 2009\nby\nTodos Logos\nin\nUncategorized\n| 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSuppose you want to study whether there is a correlation between 2 sets of data. To do this we compute the\nPearson product-moment correlation coefficient\n, which is a measure of the correlation (linear dependence) between two variables X and Y; then we compute the value of a t-test to study the significance of the\nPearson coefficient R\n. We can use this test when the data follow a Gaussian distribution.\nA new test to measure IQ is subjected to 10 volunteers. You want to see if there is a correlation between the new experimental test and the classical test, in order to replace the old test with the new test. These the values:\nOld test: 15, 21, 25, 26, 30, 30, 22, 29, 19, 16\nNew test: 55, 56, 89, 67, 84, 89, 99, 62, 83, 88\nThe software R has a single function, easily recalled, which gives us directly the value of the Pearson coefficient and the t-statistical test for checking the significance of the coefficient:\na = c(15, 21, 25, 26, 30, 30, 22, 29, 19, 16)\nb = c(55, 56, 89, 67, 84, 89, 99, 62, 83, 88)\n\ncor.test(a, b)\n\n        Pearson's product-moment correlation\n\ndata:  a and b \nt = 0.4772, df = 8, p-value = 0.646\nalternative hypothesis: true correlation is not equal to 0 \n95 percent confidence interval:\n -0.5174766  0.7205107 \nsample estimates:\n     cor \n0.166349\nThe value of the coefficient of Pearson is 0.166: it is a very low value, which indicates a poor correlation between the variables.\nFurthermore, the p-value is greater than 0.05; so we cannot reject the null hypothesis: then the Pearson coefficient is significant. So we can say that there is no discovery of correlation between the results of both tests.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Suppose you want to study whether there is a correlation between 2 sets of data. To do this we compute the Pearson product-moment correlation coefficient, which is a measure of the correlation (linear dependence) between two variables X and Y; then we ...",
+      "meta_keywords": null,
+      "og_description": "Suppose you want to study whether there is a correlation between 2 sets of data. To do this we compute the Pearson product-moment correlation coefficient, which is a measure of the correlation (linear dependence) between two variables X and Y; then we ...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Parametric method for the study of the correlation: the Pearson r-test | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.2,
+      "sitemap_lastmod": "2017-03-01T20:37:28+00:00",
+      "twitter_description": "Suppose you want to study whether there is a correlation between 2 sets of data. To do this we compute the Pearson product-moment correlation coefficient, which is a measure of the correlation (linear dependence) between two variables X and Y; then we ...",
+      "twitter_title": "Parametric method for the study of the correlation: the Pearson r-test | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/08/parametric-method-for-the-study-of-the-correlation-the-pearson-r-test/",
+      "word_count": 447
+    }
+  }
+}

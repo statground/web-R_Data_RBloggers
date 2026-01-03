@@ -1,0 +1,133 @@
+{
+  "id": "9070123fc081972880a46278eee02696f7944a2a",
+  "url": "https://www.r-bloggers.com/2009/07/score-with-scoring-rules/",
+  "created_at_utc": "2025-11-17T20:40:39Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "685884ca-4390-4380-a63c-5edc1dc08776",
+    "created_at": "2025-11-17 20:40:39",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/07/score-with-scoring-rules/",
+      "crawled_at": "2025-11-17T10:31:43.206454",
+      "external_links": [
+        {
+          "href": "http://www.decisionsciencenews.com/2009/07/21/score-with-scoring-rules/",
+          "text": "Decision Science News » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.decisionsciencenews.com/2009/07/21/score-with-scoring-rules/",
+          "text": "Decision Science News » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Score with scoring rules | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/2.9.2;%201.gif?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/2.9.2;%201.gif?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/dan/",
+          "text": "dan"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/encyclopedia/",
+          "text": "Encyclopedia"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/ideas/",
+          "text": "Ideas"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/research-news/",
+          "text": "Research News"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/tools/",
+          "text": "Tools"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-14253 post type-post status-publish format-standard hentry category-r-bloggers tag-encyclopedia tag-ideas tag-r tag-research-news tag-tools\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Score with scoring rules</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 21, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/dan/\">dan</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.decisionsciencenews.com/2009/07/21/score-with-scoring-rules/\"> Decision Science News » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>INCENTIVES TO STATE PROBABILITIES OF BELIEF TRUTHFULLY</p>\n<p style=\"text-align: center;\">\n<div id=\"media\" style=\"text-align: center;\"><object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0\" height=\"514\" id=\"csSWF\" width=\"436\"><param name=\"src\" value=\"http://www.decisionsciencenews.com/wp-content/uploads/2009/07/scoreRule/ScoringRule_controller.swf\"/><param name=\"bgcolor\" value=\"#1a1a1a\"/><param name=\"quality\" value=\"best\"/><param name=\"allowScriptAccess\" value=\"always\"/><param name=\"allowFullScreen\" value=\"true\"/><param name=\"scale\" value=\"showall\"/><param name=\"flashVars\" value=\"autostart=false\"/><param name=\"name\" value=\"csSWF\"/><param name=\"flashvars\" value=\"autostart=false&amp;thumb=http://www.decisionsciencenews.com/wp-content/uploads/2009/07/scoreRule/FirstFrame.png&amp;thumbscale=45&amp;color=0x1A1A1A,0x1A1A1A\"/><param name=\"allowfullscreen\" value=\"true\"/><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" bgcolor=\"#1a1a1a\" flashvars=\"autostart=false&amp;thumb=http://www.decisionsciencenews.com/wp-content/uploads/2009/07/scoreRule/FirstFrame.png&amp;thumbscale=45&amp;color=0x1A1A1A,0x1A1A1A\" height=\"514\" id=\"csSWF\" name=\"csSWF\" quality=\"best\" scale=\"showall\" src=\"http://www.decisionsciencenews.com/wp-content/uploads/2009/07/scoreRule/ScoringRule_controller.swf\" type=\"application/x-shockwave-flash\" width=\"436\"/></object></div>\n<p>We have all been there. You are running an experiment in which you would like participants to tell you what they believe. In particular, you’d like them to tell you what they believe to be the probability that an event will occur.</p>\n<p>Normally, you would ask them. But come on, this is 2009. Are you going to leave yourself exposed to the slings and arrows of experimental economists? You need to give your participants an incentive to tell you what they really believe, right?</p>\n<p>Enter the scoring rule. You pay off the subjects based on the accuracy of the probabilities they state. You do this by observing some outcome (let’s say “rain”) and you pay a lot of money to the people who assigned a high probability to it raining and you pay a little money (or even impose a fine upon) those who assigned a low probability to it raining. A so-called “proper” scoring rule is one in which people will do the best for themselves if they state what they truly believe to be the case.</p>\n<p>Three popular proper scoring rules are the Spherical, Quadratic, and Logarithmic. Let’s see how they work.</p>\n<p>Suppose in your experimental task you give people the title of a movie, and they have to guess what year the movie was released.  You tell them at the outset that the movie was released between 1980 and 1999: that’s 20 years. So you have these 20 categories (years) and you want people to assign a probability to each year. Afterwards, you will pay them out based on the actual year the movie was released and the probability they assigned to that year.</p>\n<p>Let r be the vector of 20 probabilities, and r_1 could be the probability they assign to 1980 being the year of release, and r_2 the probability that it was 1981, so on through r_20 for 1999′s probability. Naturally, all the r’s add up to one, as probabilities like to do. Now, let r_i be the probability they assign to the year which turns out to be correct.</p>\n<p>Under the Spherical scoring rule, their payout would be r_i / (r*r)^.5</p>\n<p>Under the Quadratic scoring rule, the payout would be 2*r_i – r*r</p>\n<p>Under the Logarithmic scoring rule, the payout would be ln(r_i)</p>\n<p>In the movie above, the top row shows various sets of probabilities someone might assign to the 20 years. (Imagine the categories along the x-axis are the years 1980 to 1999).  Each bar in the graphs in the bottom three rows shows the person’s payout if that year turns out to be correct, based on the probabilities assigned to each year in the top row.</p>\n<p>As you can see, when they assign a high probability to a category and it turns out to be correct, their payout is high. When they assign a low payout to a category and it turns out to be correct, their payout is low.</p>\n<p>You’ll notice that the Logarithmic scoring rule goes right off the bottom of the page. This is because the log of small probabilities are negative numbers far beneath zero, and the log of 0 is negative infinity!</p>\n<p>While I was at Stanford I heard that decision scientist extraordinaire Ron Howard (no relation) used to make students assign probabilities to the alternatives (A, B, C or D) on the multiple choice items on the final exam. The score for each question was the log of the probability they assigned to the correct answer. This means, of course, that if you assign a probability of 0 to alternative “B” and alternative “B” turns out to be correct, your score on that question is negative infinity. I always wondered if you got a negative infinity on one question if it meant you got negative infinity on the exam, or if there was some mercy clause.</p>\n<p>But the main reason I am writing this post is because I wonder what experimental economists and psychologists are supposed to do when implementing log scoring rules in the lab. Naturally, you can endow the participant with cash at the beginning of the experiment and have them draw down with each question, but what do you do if they score a negative infinity? Take their life savings?</p>\n<p>Winkler (1971) decided that he would treat probabilities less than .001 as .001 when it came time to imposing the penalty. Does anyone know of other methods?</p>\n<p>REFERENCE</p>\n<p>Robert L. Winkler (1971)  Probabilistic Prediction: Some Experimental Results, Journal of the American Statistical Association, Vol. 66, No. 336.  pp. 675-685.</p>\n<p>NOTE</p>\n<p>To make this simulation, I’ve drawn on the top row various beta distributions of differing modes between two fixed endpoints. This is akin to having a min and a max guess for the year of release, then entertaining various years between those two endpoints as most likely.</p>\n<img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/2.9.2;%201.gif?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/2.9.2;%201.gif?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/2.9.2;%201.gif?w=578\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.decisionsciencenews.com/2009/07/21/score-with-scoring-rules/\"> Decision Science News » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/encyclopedia/\" rel=\"tag\">Encyclopedia</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/ideas/\" rel=\"tag\">Ideas</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/research-news/\" rel=\"tag\">Research News</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/tools/\" rel=\"tag\">Tools</a></li></ul></div></article>",
+      "main_text": "Score with scoring rules\nPosted on\nJuly 21, 2009\nby\ndan\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDecision Science News » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nINCENTIVES TO STATE PROBABILITIES OF BELIEF TRUTHFULLY\nWe have all been there. You are running an experiment in which you would like participants to tell you what they believe. In particular, you’d like them to tell you what they believe to be the probability that an event will occur.\nNormally, you would ask them. But come on, this is 2009. Are you going to leave yourself exposed to the slings and arrows of experimental economists? You need to give your participants an incentive to tell you what they really believe, right?\nEnter the scoring rule. You pay off the subjects based on the accuracy of the probabilities they state. You do this by observing some outcome (let’s say “rain”) and you pay a lot of money to the people who assigned a high probability to it raining and you pay a little money (or even impose a fine upon) those who assigned a low probability to it raining. A so-called “proper” scoring rule is one in which people will do the best for themselves if they state what they truly believe to be the case.\nThree popular proper scoring rules are the Spherical, Quadratic, and Logarithmic. Let’s see how they work.\nSuppose in your experimental task you give people the title of a movie, and they have to guess what year the movie was released.  You tell them at the outset that the movie was released between 1980 and 1999: that’s 20 years. So you have these 20 categories (years) and you want people to assign a probability to each year. Afterwards, you will pay them out based on the actual year the movie was released and the probability they assigned to that year.\nLet r be the vector of 20 probabilities, and r_1 could be the probability they assign to 1980 being the year of release, and r_2 the probability that it was 1981, so on through r_20 for 1999′s probability. Naturally, all the r’s add up to one, as probabilities like to do. Now, let r_i be the probability they assign to the year which turns out to be correct.\nUnder the Spherical scoring rule, their payout would be r_i / (r*r)^.5\nUnder the Quadratic scoring rule, the payout would be 2*r_i – r*r\nUnder the Logarithmic scoring rule, the payout would be ln(r_i)\nIn the movie above, the top row shows various sets of probabilities someone might assign to the 20 years. (Imagine the categories along the x-axis are the years 1980 to 1999).  Each bar in the graphs in the bottom three rows shows the person’s payout if that year turns out to be correct, based on the probabilities assigned to each year in the top row.\nAs you can see, when they assign a high probability to a category and it turns out to be correct, their payout is high. When they assign a low payout to a category and it turns out to be correct, their payout is low.\nYou’ll notice that the Logarithmic scoring rule goes right off the bottom of the page. This is because the log of small probabilities are negative numbers far beneath zero, and the log of 0 is negative infinity!\nWhile I was at Stanford I heard that decision scientist extraordinaire Ron Howard (no relation) used to make students assign probabilities to the alternatives (A, B, C or D) on the multiple choice items on the final exam. The score for each question was the log of the probability they assigned to the correct answer. This means, of course, that if you assign a probability of 0 to alternative “B” and alternative “B” turns out to be correct, your score on that question is negative infinity. I always wondered if you got a negative infinity on one question if it meant you got negative infinity on the exam, or if there was some mercy clause.\nBut the main reason I am writing this post is because I wonder what experimental economists and psychologists are supposed to do when implementing log scoring rules in the lab. Naturally, you can endow the participant with cash at the beginning of the experiment and have them draw down with each question, but what do you do if they score a negative infinity? Take their life savings?\nWinkler (1971) decided that he would treat probabilities less than .001 as .001 when it came time to imposing the penalty. Does anyone know of other methods?\nREFERENCE\nRobert L. Winkler (1971)  Probabilistic Prediction: Some Experimental Results, Journal of the American Statistical Association, Vol. 66, No. 336.  pp. 675-685.\nNOTE\nTo make this simulation, I’ve drawn on the top row various beta distributions of differing modes between two fixed endpoints. This is akin to having a min and a max guess for the year of release, then entertaining various years between those two endpoints as most likely.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDecision Science News » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEncyclopedia\nIdeas\nR\nResearch News\nTools",
+      "meta_description": "INCENTIVES TO STATE PROBABILITIES OF BELIEF TRUTHFULLY We have all been there. You are running an experiment in which you would like participants to tell you what they believe. In particular, you’d like them to tell you what they believe to be the probability that an event will occur. Normally, you would ask them. But [...]",
+      "meta_keywords": "encyclopedia,ideas,r,research news,tools",
+      "og_description": "INCENTIVES TO STATE PROBABILITIES OF BELIEF TRUTHFULLY We have all been there. You are running an experiment in which you would like participants to tell you what they believe. In particular, you’d like them to tell you what they believe to be the probability that an event will occur. Normally, you would ask them. But [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/07/2.9.2;%201.gif",
+      "og_title": "Score with scoring rules | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.9,
+      "sitemap_lastmod": "2011-05-11T21:18:31+00:00",
+      "twitter_description": "INCENTIVES TO STATE PROBABILITIES OF BELIEF TRUTHFULLY We have all been there. You are running an experiment in which you would like participants to tell you what they believe. In particular, you’d like them to tell you what they believe to be the probability that an event will occur. Normally, you would ask them. But [...]",
+      "twitter_title": "Score with scoring rules | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/07/score-with-scoring-rules/",
+      "word_count": 973
+    }
+  }
+}

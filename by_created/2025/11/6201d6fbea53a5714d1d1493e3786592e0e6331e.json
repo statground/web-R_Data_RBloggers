@@ -1,0 +1,142 @@
+{
+  "id": "6201d6fbea53a5714d1d1493e3786592e0e6331e",
+  "url": "https://www.r-bloggers.com/2009/11/design-of-experiments-%E2%80%93-power-calculations/",
+  "created_at_utc": "2025-11-17T20:39:57Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "242b6684-e963-4b79-8037-a7ac4280faf7",
+    "created_at": "2025-11-17 20:39:57",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/11/design-of-experiments-%e2%80%93-power-calculations/",
+      "crawled_at": "2025-11-17T10:16:21.996131",
+      "external_links": [
+        {
+          "href": "http://www.wekaleamstudios.co.uk/?p=591",
+          "text": "Software for Exploratory Data Analysis and Statistical Modelling"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.wekaleamstudios.co.uk/?p=591",
+          "text": "Software for Exploratory Data Analysis and Statistical Modelling"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Design of Experiments – Power Calculations | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ralph/",
+          "text": "Ralph"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/alpha/",
+          "text": "alpha"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/beta/",
+          "text": "beta"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/delta/",
+          "text": "delta"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/design-of-experiments/",
+          "text": "Design of Experiments"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/one-sample/",
+          "text": "one sample"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/power/",
+          "text": "power"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/power-t-test/",
+          "text": "power.t.test"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sample-size/",
+          "text": "sample size"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/significance/",
+          "text": "significance"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/t-test/",
+          "text": "t-test"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-431 post type-post status-publish format-standard hentry category-r-bloggers tag-alpha tag-beta tag-delta tag-design-of-experiments tag-one-sample tag-power tag-power-t-test tag-sample-size tag-significance tag-t-test\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Design of Experiments – Power Calculations</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 18, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ralph/\">Ralph</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.wekaleamstudios.co.uk/?p=591\"> Software for Exploratory Data Analysis and Statistical Modelling</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>Prior to conducting an experiment researchers will often undertake power calculations to determine the sample size required in their work to detect a meaningful scientific effect with sufficient power. In <strong>R</strong> there are functions to calculate either a minimum sample size for a specific power for a test or the power of a test for a fixed sample size.<span id=\"more-591\"></span></p>\n<p>When undertaking sample size or power calculations for a prospective trial or experiment we need to consider various factors. There are two main probabilities of interest that are tied up with calculating a minimum sample size or the power of a specific test, and these are:</p>\n<ul>\n<li>Type I Error: The probability that the test accepts the null hypothesis, H_0, given that the null hypothesis is actually true. This quantity is often referred to as alpha.</li>\n<li>Type II Error: The probability that the test rejects the null hypothesis, H_0, given that the null hypothesis is not true. This quantity is often referred to as beta.</li>\n</ul>\n<p>A decision needs to be made about what difference between the two groups being compared should be considered as corresponding to a meaningful difference. This difference is usually denoted by delta.</p>\n<p>The base package has functions for calculating power or sample sizes, which includes the functions <strong>power.t.test</strong>, <strong>power.prop.test</strong> and <strong>power.anova.test</strong> for various common scenarios.</p>\n<p>Consider a scenario where we might be buying batteries for a GPS device and the average battery life that we want to have is 400 minutes. If we decided that the performance is not acceptable if the average is more than 10 minutes (delta) lower than this (390 minutes) then we can calculate the number of batteries to test:</p>\n<pre>power.t.test(delta = 10, sd = 6, power = 0.95, type = \"one.sample\",\n  alternative = \"one.sided\")</pre>\n<p>For this example we have assumed a standard deviation of 6 minutes for batteries (would either be assumed or estimated from previous data) and that we want a power of 95% in the test. Power is defined as 1 – beta, the Type II error probability. The default option for this function is for 5% probability of alpha, a Type I error. The test will involve only one group so we are considering a one-sample t test and only a one sided alternative is relevant as we do not mind if the batteries perform better than required.</p>\n<p>The output from this function call is as follows:</p>\n<pre>     One-sample t test power calculation \n \n              n = 5.584552\n          delta = 10\n             sd = 6\n      sig.level = 0.05\n          power = 0.95\n    alternative = one.sided</pre>\n<p>So we would need to test at least 6 batteries to obtain the required power in the test based on the other parameters that have been used.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.wekaleamstudios.co.uk/?p=591\"> Software for Exploratory Data Analysis and Statistical Modelling</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/alpha/\" rel=\"tag\">alpha</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/beta/\" rel=\"tag\">beta</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/delta/\" rel=\"tag\">delta</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/design-of-experiments/\" rel=\"tag\">Design of Experiments</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/one-sample/\" rel=\"tag\">one sample</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/power/\" rel=\"tag\">power</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/power-t-test/\" rel=\"tag\">power.t.test</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sample-size/\" rel=\"tag\">sample size</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/significance/\" rel=\"tag\">significance</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/t-test/\" rel=\"tag\">t-test</a></li></ul></div></article>",
+      "main_text": "Design of Experiments – Power Calculations\nPosted on\nNovember 18, 2009\nby\nRalph\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSoftware for Exploratory Data Analysis and Statistical Modelling\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nPrior to conducting an experiment researchers will often undertake power calculations to determine the sample size required in their work to detect a meaningful scientific effect with sufficient power. In\nR\nthere are functions to calculate either a minimum sample size for a specific power for a test or the power of a test for a fixed sample size.\nWhen undertaking sample size or power calculations for a prospective trial or experiment we need to consider various factors. There are two main probabilities of interest that are tied up with calculating a minimum sample size or the power of a specific test, and these are:\nType I Error: The probability that the test accepts the null hypothesis, H_0, given that the null hypothesis is actually true. This quantity is often referred to as alpha.\nType II Error: The probability that the test rejects the null hypothesis, H_0, given that the null hypothesis is not true. This quantity is often referred to as beta.\nA decision needs to be made about what difference between the two groups being compared should be considered as corresponding to a meaningful difference. This difference is usually denoted by delta.\nThe base package has functions for calculating power or sample sizes, which includes the functions\npower.t.test\n,\npower.prop.test\nand\npower.anova.test\nfor various common scenarios.\nConsider a scenario where we might be buying batteries for a GPS device and the average battery life that we want to have is 400 minutes. If we decided that the performance is not acceptable if the average is more than 10 minutes (delta) lower than this (390 minutes) then we can calculate the number of batteries to test:\npower.t.test(delta = 10, sd = 6, power = 0.95, type = \"one.sample\",\n  alternative = \"one.sided\")\nFor this example we have assumed a standard deviation of 6 minutes for batteries (would either be assumed or estimated from previous data) and that we want a power of 95% in the test. Power is defined as 1 – beta, the Type II error probability. The default option for this function is for 5% probability of alpha, a Type I error. The test will involve only one group so we are considering a one-sample t test and only a one sided alternative is relevant as we do not mind if the batteries perform better than required.\nThe output from this function call is as follows:\nOne-sample t test power calculation \n \n              n = 5.584552\n          delta = 10\n             sd = 6\n      sig.level = 0.05\n          power = 0.95\n    alternative = one.sided\nSo we would need to test at least 6 batteries to obtain the required power in the test based on the other parameters that have been used.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSoftware for Exploratory Data Analysis and Statistical Modelling\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nalpha\nbeta\ndelta\nDesign of Experiments\none sample\npower\npower.t.test\nsample size\nsignificance\nt-test",
+      "meta_description": "Prior to conducting an experiment researchers will often undertake power calculations to determine the sample size required in their work to detect a meaningful scientific effect with sufficient power. In R there are functions to calculate either a minimum sample size for a specific power for a test or the power of a test for [...]",
+      "meta_keywords": "alpha,beta,delta,design of experiments,one sample,power,power.t.test,sample size,significance,t-test",
+      "og_description": "Prior to conducting an experiment researchers will often undertake power calculations to determine the sample size required in their work to detect a meaningful scientific effect with sufficient power. In R there are functions to calculate either a minimum sample size for a specific power for a test or the power of a test for [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Design of Experiments – Power Calculations | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.1,
+      "sitemap_lastmod": "2009-11-18T21:36:00+00:00",
+      "twitter_description": "Prior to conducting an experiment researchers will often undertake power calculations to determine the sample size required in their work to detect a meaningful scientific effect with sufficient power. In R there are functions to calculate either a minimum sample size for a specific power for a test or the power of a test for [...]",
+      "twitter_title": "Design of Experiments – Power Calculations | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/11/design-of-experiments-%E2%80%93-power-calculations/",
+      "word_count": 621
+    }
+  }
+}

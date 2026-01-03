@@ -1,0 +1,143 @@
+{
+  "id": "d18848bc7022574189ffc9d46e40b268bf210f8b",
+  "url": "https://www.r-bloggers.com/2025/10/cycles-in-lynx-numbers/",
+  "created_at_utc": "2025-11-22T19:57:29Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "1178fa06-295c-4ecb-bee2-e1d2b106c824",
+    "created_at": "2025-11-22 19:57:29",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/10/cycles-in-lynx-numbers/",
+      "crawled_at": "2025-11-22T10:41:54.528401",
+      "external_links": [
+        {
+          "href": "https://datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/",
+          "text": "R - datawookie"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.jstor.org/stable/1358",
+          "text": "The Ten-Year Cycle in Numbers of the Lynx in Canada"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Canada_lynx",
+          "text": "Canadian Lynx (Lynx canadensis)"
+        },
+        {
+          "href": "https://github.com/datawookie/lynx/blob/master/lynx-ten-year-cycle.pdf",
+          "text": "paper"
+        },
+        {
+          "href": "https://aws.amazon.com/textract/",
+          "text": "Textract"
+        },
+        {
+          "href": "https://github.com/datawookie/lynx",
+          "text": "here"
+        },
+        {
+          "href": "https://datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/",
+          "text": "R - datawookie"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Cycles in Lynx Numbers | R-bloggers",
+      "images": [
+        {
+          "alt": "Recreating Figure 7 from the paper using the extracted data.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Recreating Figure 7 from the paper using the extracted data.",
+          "base64": null,
+          "src": "https://i0.wp.com/datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/index_files/figure-html/main-figure-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": "Figure 7 from the paper.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Figure 7 from the paper.",
+          "base64": null,
+          "src": "https://i1.wp.com/datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/figure-7.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-datawookie-2/",
+          "text": "R - datawookie"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-396153 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Cycles in Lynx Numbers</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-datawookie-2/\">R - datawookie</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/\"> R - datawookie</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>The paper <a href=\"https://www.jstor.org/stable/1358\" rel=\"nofollow\" target=\"_blank\">The Ten-Year Cycle in Numbers of the Lynx in Canada</a> by Charles Elton and Mary Nicholson is a foundational work in population ecology and wildlife dynamics. They documented the regular, roughly ten-year population cycle of the <a href=\"https://en.wikipedia.org/wiki/Canada_lynx\" rel=\"nofollow\" target=\"_blank\">Canadian Lynx (<em>Lynx canadensis</em>)</a>, observed in fur trade records from the Hudson’s Bay Company (HBC).</p>\n<p>Take a look at the <a href=\"https://github.com/datawookie/lynx/blob/master/lynx-ten-year-cycle.pdf\" rel=\"nofollow\" target=\"_blank\">paper</a>. It’s a thing of beauty, from a time when data sets were sufficiently small that you could tabulate them completely in the body of a paper.</p>\n<h2 id=\"data-repository\">Data Repository</h2>\n<p>Although the paper was published many decades ago, the PDF version is not a scanned image of the printed pages but contains the original, selectable text. As a result, tables and other data can be extracted accurately and completely. I used <a href=\"https://aws.amazon.com/textract/\" rel=\"nofollow\" target=\"_blank\">Textract</a> to gather the data from the tables. Given the clarity and simplicity of the tables I could probably have done this with simpler, local tools. The extracted data can be found <a href=\"https://github.com/datawookie/lynx\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<h2 id=\"comparison\">Comparison</h2>\n<p>For comparison purposes I loaded the data for Table 4 and created a plot.</p>\n<img alt=\"Recreating Figure 7 from the paper using the extracted data.\" data-lazy-src=\"https://i0.wp.com/datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/index_files/figure-html/main-figure-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Recreating Figure 7 from the paper using the extracted data.\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/index_files/figure-html/main-figure-1.png?w=450&amp;ssl=1\"/></noscript>\n<p>Compare with Figure 7, the corresponding plot from the paper.</p>\n<img alt=\"Figure 7 from the paper.\" data-lazy-src=\"https://i1.wp.com/datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/figure-7.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Figure 7 from the paper.\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/figure-7.png?w=450&amp;ssl=1\"/></noscript>\n<p>LGTM.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/\"> R - datawookie</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Cycles in Lynx Numbers\nPosted on\nOctober 15, 2025\nby\nR - datawookie\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR - datawookie\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe paper\nThe Ten-Year Cycle in Numbers of the Lynx in Canada\nby Charles Elton and Mary Nicholson is a foundational work in population ecology and wildlife dynamics. They documented the regular, roughly ten-year population cycle of the\nCanadian Lynx (\nLynx canadensis\n)\n, observed in fur trade records from the Hudson’s Bay Company (HBC).\nTake a look at the\npaper\n. It’s a thing of beauty, from a time when data sets were sufficiently small that you could tabulate them completely in the body of a paper.\nData Repository\nAlthough the paper was published many decades ago, the PDF version is not a scanned image of the printed pages but contains the original, selectable text. As a result, tables and other data can be extracted accurately and completely. I used\nTextract\nto gather the data from the tables. Given the clarity and simplicity of the tables I could probably have done this with simpler, local tools. The extracted data can be found\nhere\n.\nComparison\nFor comparison purposes I loaded the data for Table 4 and created a plot.\nCompare with Figure 7, the corresponding plot from the paper.\nLGTM.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR - datawookie\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The paper The Ten-Year Cycle in Numbers of the Lynx in Canada by Charles Elton and Mary Nicholson is a foundational work in population ecology and wildlife dynamics. They documented the regular, roughly ten-year population cycle of the Canadian Lynx (Lynx canadensis), observed in fur trade records from the Hudson’s Bay Company (HBC).",
+      "meta_keywords": null,
+      "og_description": "The paper The Ten-Year Cycle in Numbers of the Lynx in Canada by Charles Elton and Mary Nicholson is a foundational work in population ecology and wildlife dynamics. They documented the regular, roughly ten-year population cycle of the Canadian Lynx (Lynx canadensis), observed in fur trade records from the Hudson’s Bay Company (HBC).",
+      "og_image": "https://datawookie.dev/blog/2025/10/cycles-in-lynx-numbers/index_files/figure-html/main-figure-1.png",
+      "og_title": "Cycles in Lynx Numbers | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "The paper The Ten-Year Cycle in Numbers of the Lynx in Canada by Charles Elton and Mary Nicholson is a foundational work in population ecology and wildlife dynamics. They documented the regular, roughly ten-year population cycle of the Canadian Lynx (Lynx canadensis), observed in fur trade records from the Hudson’s Bay Company (HBC).",
+      "twitter_title": "Cycles in Lynx Numbers | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/10/cycles-in-lynx-numbers/",
+      "word_count": 329
+    }
+  }
+}

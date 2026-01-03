@@ -1,0 +1,113 @@
+{
+  "id": "7be0e60ac63e501339dfcf46d7442a6cbcb1c94b",
+  "url": "https://www.r-bloggers.com/2009/12/malapportionment-in-the-u-s-senate/",
+  "created_at_utc": "2025-11-17T20:39:39Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "bf230a25-e308-49ea-b793-203ed52fee3b",
+    "created_at": "2025-11-17 20:39:39",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/malapportionment-in-the-u-s-senate/",
+      "crawled_at": "2025-11-17T10:09:42.185809",
+      "external_links": [
+        {
+          "href": "http://jackman.stanford.edu/blog/?p=1504",
+          "text": "simon jackman's blog » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://jackman.stanford.edu/blog/wp-content/uploads/2009/12/malIdeo-1.pdf",
+          "text": null
+        },
+        {
+          "href": "http://jackman.stanford.edu/blog/?p=1504",
+          "text": "simon jackman's blog » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "malapportionment in the U.S. Senate | R-bloggers",
+      "images": [
+        {
+          "alt": "Malideo-1",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/malIdeo-1-tm1.jpg?resize=249%2C498"
+        },
+        {
+          "alt": "Malideo-1",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/malIdeo-1-tm1.jpg?resize=249%2C498"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jackman/",
+          "text": "jackman"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-520 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">malapportionment in the U.S. Senate</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 23, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jackman/\">jackman</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://jackman.stanford.edu/blog/?p=1504\"> simon jackman's blog » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>The 40 Republican senators currently in the U.S. senate represent 36% of the U.S population.  See the graph below (click on the thumbnail for PDF). </p>\n<p>This is something I’ve been meaning to compute for a while now, mapping the cumulative distribution of senators’ ideal points onto the cumulative distribution of state population (each state counts twice, once for each senator, and of course we exclude DC and PR from the calculation of the total population).</p>\n<p>With the relatively high degree of partisan polarization in roll call voting we place all 40 Republicans to the right of the Democratic senators.  And — as recent roll calls on the health care issue have made clear — in the current 111th Senate the Democrats plus Sanders and Lieberman constitute 60 votes, with the most conservative Democrat (Nelson, NE) the “veto pivot”.   Between them, the 60 Dems represent 64% of the population.  </p>\n<p>My prior expectation was for more “small state” bias pushing that 64% higher, but (a) Dems represent some small states (e.g., VT, ND, DE, MT, RI, HI have 2 Dem senators); (b) Republicans have the 2 TX and GA senators, and the OH/FL/NC Senate delegations are split.</p>\n<p>The “bias” is a little more pronounced at the chamber median threshold: i.e., the 50 “most liberal” (Democratic) senators represent 57% of the population. </p>\n<p style=\"text-align:center;\"><a href=\"http://jackman.stanford.edu/blog/wp-content/uploads/2009/12/malIdeo-1.pdf\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Malideo-1\" border=\"1\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/malIdeo-1-tm1.jpg?resize=249%2C498&amp;is-pending-load=1\" data-recalc-dims=\"1\" height=\"498\" hspace=\"4\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/malIdeo-1-tm1.jpg?resize=249%2C498\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" vspace=\"4\" width=\"249\"/><noscript><img alt=\"Malideo-1\" border=\"1\" data-recalc-dims=\"1\" height=\"498\" hspace=\"4\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/malIdeo-1-tm1.jpg?resize=249%2C498\" vspace=\"4\" width=\"249\"/></noscript></a></p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://jackman.stanford.edu/blog/?p=1504\"> simon jackman's blog » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "malapportionment in the U.S. Senate\nPosted on\nDecember 23, 2009\nby\njackman\nin Uncategorized | 0 Comments\n[This article was first published on\nsimon jackman's blog » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe 40 Republican senators currently in the U.S. senate represent 36% of the U.S population.  See the graph below (click on the thumbnail for PDF).\nThis is something I’ve been meaning to compute for a while now, mapping the cumulative distribution of senators’ ideal points onto the cumulative distribution of state population (each state counts twice, once for each senator, and of course we exclude DC and PR from the calculation of the total population).\nWith the relatively high degree of partisan polarization in roll call voting we place all 40 Republicans to the right of the Democratic senators.  And — as recent roll calls on the health care issue have made clear — in the current 111th Senate the Democrats plus Sanders and Lieberman constitute 60 votes, with the most conservative Democrat (Nelson, NE) the “veto pivot”.   Between them, the 60 Dems represent 64% of the population.\nMy prior expectation was for more “small state” bias pushing that 64% higher, but (a) Dems represent some small states (e.g., VT, ND, DE, MT, RI, HI have 2 Dem senators); (b) Republicans have the 2 TX and GA senators, and the OH/FL/NC Senate delegations are split.\nThe “bias” is a little more pronounced at the chamber median threshold: i.e., the 50 “most liberal” (Democratic) senators represent 57% of the population.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nsimon jackman's blog » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The 40 Republican senators currently in the U.S. senate represent 36% of the U.S population. See the graph below (click on the thumbnail for PDF). This is something I’ve been meaning to compute for a while now, mapping the cumulative distribution of senators’ ideal points onto the cumulative distribution of state population (each state counts [...]",
+      "meta_keywords": null,
+      "og_description": "The 40 Republican senators currently in the U.S. senate represent 36% of the U.S population. See the graph below (click on the thumbnail for PDF). This is something I’ve been meaning to compute for a while now, mapping the cumulative distribution of senators’ ideal points onto the cumulative distribution of state population (each state counts [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/12/malIdeo-1-tm1.jpg",
+      "og_title": "malapportionment in the U.S. Senate | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.8,
+      "sitemap_lastmod": "2011-05-12T07:04:42+00:00",
+      "twitter_description": "The 40 Republican senators currently in the U.S. senate represent 36% of the U.S population. See the graph below (click on the thumbnail for PDF). This is something I’ve been meaning to compute for a while now, mapping the cumulative distribution of senators’ ideal points onto the cumulative distribution of state population (each state counts [...]",
+      "twitter_title": "malapportionment in the U.S. Senate | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/malapportionment-in-the-u-s-senate/",
+      "word_count": 368
+    }
+  }
+}

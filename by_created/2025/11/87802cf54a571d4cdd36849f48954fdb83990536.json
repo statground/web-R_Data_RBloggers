@@ -1,0 +1,118 @@
+{
+  "id": "87802cf54a571d4cdd36849f48954fdb83990536",
+  "url": "https://www.r-bloggers.com/2009/11/r-functions-for-dienes-2008-understanding-psychology-as-a-science/",
+  "created_at_utc": "2025-11-17T20:39:58Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "fbf9066b-c03f-4cfe-ac77-b0fbb94677b4",
+    "created_at": "2025-11-17 20:39:58",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/11/r-functions-for-dienes-2008-understanding-psychology-as-a-science/",
+      "crawled_at": "2025-11-17T10:16:39.137733",
+      "external_links": [
+        {
+          "href": "https://psychologicalstatistics.blogspot.com/2009/11/r-functions-for-dienes-2008.html",
+          "text": "Psychological Statistics"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.lifesci.sussex.ac.uk/home/Zoltan_Dienes/inference/index.htm",
+          "text": "web page"
+        },
+        {
+          "href": "http://danny-kaye.co.uk/Docs/Dienes_functions.txt",
+          "text": "full set of functions"
+        },
+        {
+          "href": "http://danny-kaye.co.uk/Docs/Dienes_notes.pdf",
+          "text": "notes on how to use them"
+        },
+        {
+          "href": "http://www.bpsjournals.co.uk/journals/bjmsp/",
+          "text": "British Journal of Mathematical & Statistical Psychology"
+        },
+        {
+          "href": "https://www.amazon.co.uk/gp/product/023054231X?ie=UTF8&tag=psychologic05-21&linkCode=as2&camp=1634&creative=6738&creativeASIN=023054231X",
+          "text": "Understanding Psychology as a Science: An Introduction to Scientific and Statistical Inference."
+        },
+        {
+          "href": "https://psychologicalstatistics.blogspot.com/2009/11/r-functions-for-dienes-2008.html",
+          "text": "Psychological Statistics"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R functions for Dienes (2008) Understanding Psychology as a Science | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/thom-baguley/",
+          "text": "Thom Baguley"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-61783 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R functions for Dienes (2008) Understanding Psychology as a Science</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 17, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thom-baguley/\">Thom Baguley</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://psychologicalstatistics.blogspot.com/2009/11/r-functions-for-dienes-2008.html\"> Psychological Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div>I recently wrote a review of Understanding psychology as a science: an introduction to scientific and statistical inference by <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_0\">Zoltan</span> <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_1\">Dienes</span> (2008). <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_2\">Dienes</span>‘ book covers <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_3\">Neyman</span>-Pearson null hypothesis significance testing, Bayesian inference and the likelihood method of inference (inspired by Fisher and associated with A. W. F. Edwards and more recently R. Royall).</div><div> </div><br/><div>One of the most useful features of the book is that <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_4\">Dienes</span> provides <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_5\">Matlab</span> code for examples of calculations in the book (e.g., for Bayes factors, likelihood intervals and so forth). This is not so useful for me because I don’t use <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_6\">Matlab</span>. <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_7\">Matlab</span> licenses are also quite expensive and may not be possible for students to access it in many Psychology departments. For those without access to <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_8\">Matlab</span>, <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_9\">Dienes</span> also provides calculators for a number of functions on his own <a href=\"http://www.lifesci.sussex.ac.uk/home/Zoltan_Dienes/inference/index.htm\" rel=\"nofollow\" target=\"_blank\">web page</a> for the book. (The calculators are found by following the links to the appropriate chapter, so the Bayes factor calculator is found by following the Chapter 4 link).</div><br/><div>Danny Kaye and I thought it would be useful to write R code to compliment the <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_10\">Matlab</span> code for <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_11\">Dienes</span>‘ functions as a ‘bonus feature’ for the review. As these functions and the notes for them take up quite a bit of space we decided to include only one, for a Bayes factor, in the review itself (with some notes on how to use it). Danny did most of the work writing functions, which are more-or-less direct translations of the original <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_12\">Matlab</span> code (and have been checked against the web versions). The <a href=\"http://danny-kaye.co.uk/Docs/Dienes_functions.txt\" rel=\"nofollow\" target=\"_blank\">full set of functions</a> is hosted on his web site along with the <a href=\"http://danny-kaye.co.uk/Docs/Dienes_notes.pdf\" rel=\"nofollow\" target=\"_blank\">notes on how to use them</a>. Also included are page references for the examples in the book.</div><br/><div>Why did we write the R functions? First, they offer convenient access to the functions for teachers and students (because R is free and runs on Windows, Mac OS or Linux operating systems). Second, it reduces the burden on <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_13\">Dienes</span>‘ web calculator (at a marginal decrease in ease of use). Third, R is open source so it is simple to see how the code works and to edit, extend or adapt it (though it is polite to acknowledge the authors of the original code). Fourth, we want to encourage more people to start using R!</div><br/><div>As an example, I’ve already written some alternative functions for likelihood intervals (though as I happened I re-wrote these almost from scratch to get them to plot the likelihood function and interval and to take advantage of some built-in R functions). Those functions are intended for a the book I’m working on and so should appear in due course.</div><div><br/></div><div>For those who are interested Danny and I are presently working on implementing Bayesian <i>t</i> tests in R (Bayes factors with objective priors) in a user-friendly way for researchers.</div><div><br/></div><br/><div> </div><i>References:</i><div><br/></div><div><span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_14\">Baguley</span>, T., &amp; Kaye, W.S. (in press, 2009). Review of Understanding psychology as a science: An introduction to scientific and statistical inference.<span class=\"Apple-style-span\" style=\"font-style: italic; \"> <a href=\"http://www.bpsjournals.co.uk/journals/bjmsp/\" rel=\"nofollow\" target=\"_blank\">British Journal of Mathematical &amp; Statistical Psychology</a>.</span></div><div><i><br/></i></div><div><!--StartFragment--> <p class=\"ReferenceStyle\"><span lang=\"EN-US\"><span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_15\">Dienes</span>, Z. (2008). <i><span class=\"Apple-style-span\" style=\"font-style: normal; \"><a href=\"https://www.amazon.co.uk/gp/product/023054231X?ie=UTF8&amp;tag=psychologic05-21&amp;linkCode=as2&amp;camp=1634&amp;creative=6738&amp;creativeASIN=023054231X\" rel=\"nofollow\" target=\"_blank\">Understanding Psychology as a Science: An Introduction to Scientific and Statistical Inference.</a></span></i></span><span lang=\"EN-US\"> <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_16\">Basingstoke</span>: <span class=\"blsp-spelling-error\" id=\"SPELLING_ERROR_17\">Palgrave</span> Macmillan.</span></p></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://psychologicalstatistics.blogspot.com/2009/11/r-functions-for-dienes-2008.html\"> Psychological Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "R functions for Dienes (2008) Understanding Psychology as a Science\nPosted on\nNovember 17, 2009\nby\nThom Baguley\nin Uncategorized | 0 Comments\n[This article was first published on\nPsychological Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI recently wrote a review of Understanding psychology as a science: an introduction to scientific and statistical inference by\nZoltan\nDienes\n(2008).\nDienes\n‘ book covers\nNeyman\n-Pearson null hypothesis significance testing, Bayesian inference and the likelihood method of inference (inspired by Fisher and associated with A. W. F. Edwards and more recently R. Royall).\nOne of the most useful features of the book is that\nDienes\nprovides\nMatlab\ncode for examples of calculations in the book (e.g., for Bayes factors, likelihood intervals and so forth). This is not so useful for me because I don’t use\nMatlab\n.\nMatlab\nlicenses are also quite expensive and may not be possible for students to access it in many Psychology departments. For those without access to\nMatlab\n,\nDienes\nalso provides calculators for a number of functions on his own\nweb page\nfor the book. (The calculators are found by following the links to the appropriate chapter, so the Bayes factor calculator is found by following the Chapter 4 link).\nDanny Kaye and I thought it would be useful to write R code to compliment the\nMatlab\ncode for\nDienes\n‘ functions as a ‘bonus feature’ for the review. As these functions and the notes for them take up quite a bit of space we decided to include only one, for a Bayes factor, in the review itself (with some notes on how to use it). Danny did most of the work writing functions, which are more-or-less direct translations of the original\nMatlab\ncode (and have been checked against the web versions). The\nfull set of functions\nis hosted on his web site along with the\nnotes on how to use them\n. Also included are page references for the examples in the book.\nWhy did we write the R functions? First, they offer convenient access to the functions for teachers and students (because R is free and runs on Windows, Mac OS or Linux operating systems). Second, it reduces the burden on\nDienes\n‘ web calculator (at a marginal decrease in ease of use). Third, R is open source so it is simple to see how the code works and to edit, extend or adapt it (though it is polite to acknowledge the authors of the original code). Fourth, we want to encourage more people to start using R!\nAs an example, I’ve already written some alternative functions for likelihood intervals (though as I happened I re-wrote these almost from scratch to get them to plot the likelihood function and interval and to take advantage of some built-in R functions). Those functions are intended for a the book I’m working on and so should appear in due course.\nFor those who are interested Danny and I are presently working on implementing Bayesian\nt\ntests in R (Bayes factors with objective priors) in a user-friendly way for researchers.\nReferences:\nBaguley\n, T., & Kaye, W.S. (in press, 2009). Review of Understanding psychology as a science: An introduction to scientific and statistical inference.\nBritish Journal of Mathematical & Statistical Psychology\n.\nDienes\n, Z. (2008).\nUnderstanding Psychology as a Science: An Introduction to Scientific and Statistical Inference.\nBasingstoke\n:\nPalgrave\nMacmillan.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nPsychological Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "I recently wrote a review of Understanding psychology as a science: an introduction to scientific and statistical inference by Zoltan Dienes (2008). Dienes' book covers Neyman-Pearson null hypothesis significance testing, Bayesian inference and the lik...",
+      "meta_keywords": null,
+      "og_description": "I recently wrote a review of Understanding psychology as a science: an introduction to scientific and statistical inference by Zoltan Dienes (2008). Dienes' book covers Neyman-Pearson null hypothesis significance testing, Bayesian inference and the lik...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "R functions for Dienes (2008) Understanding Psychology as a Science | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.3,
+      "sitemap_lastmod": "2011-10-04T14:48:51+00:00",
+      "twitter_description": "I recently wrote a review of Understanding psychology as a science: an introduction to scientific and statistical inference by Zoltan Dienes (2008). Dienes' book covers Neyman-Pearson null hypothesis significance testing, Bayesian inference and the lik...",
+      "twitter_title": "R functions for Dienes (2008) Understanding Psychology as a Science | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/11/r-functions-for-dienes-2008-understanding-psychology-as-a-science/",
+      "word_count": 669
+    }
+  }
+}

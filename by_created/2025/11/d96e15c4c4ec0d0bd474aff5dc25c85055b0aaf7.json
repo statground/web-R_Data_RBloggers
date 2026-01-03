@@ -1,0 +1,393 @@
+{
+  "id": "d96e15c4c4ec0d0bd474aff5dc25c85055b0aaf7",
+  "url": "https://www.r-bloggers.com/2025/03/evidence-synthesis-for-decision-making-in-healthcare/",
+  "created_at_utc": "2025-11-22T19:59:08Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "d968f7d5-df4c-4e29-8799-893e45cad889",
+    "created_at": "2025-11-22 19:59:08",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/03/evidence-synthesis-for-decision-making-in-healthcare/",
+      "crawled_at": "2025-11-22T10:53:03.414300",
+      "external_links": [
+        {
+          "href": "https://rworks.dev/posts/evidence-synthesis/",
+          "text": "R Works"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119942986",
+          "text": "Evidence Synthesis for Decision Making in Healthcare"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/WinBUGS",
+          "text": "WinBugs"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/jagsUI/vignettes/jagsUI.html",
+          "text": "Introduction to jagsUI vignette"
+        },
+        {
+          "href": "https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=7268&itemId=047006109X&resourceId=28154",
+          "text": "here"
+        },
+        {
+          "href": "https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=7268&itemId=047006109X&resourceId=28154",
+          "text": "Wiley site"
+        },
+        {
+          "href": "https://sourceforge.net/projects/mcmc-jags/files/Manuals/4.x/",
+          "text": "JAGS manual"
+        },
+        {
+          "href": "https://projecteuclid.org/euclid.bj/1208874824",
+          "text": "Andrieu & Thoms (2008)"
+        },
+        {
+          "href": "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2194&context=usgsstaffpub",
+          "text": "Link & Eaton (2012)"
+        },
+        {
+          "href": "https://journals.sagepub.com/doi/abs/10.1177/096228029600500402",
+          "text": "the Gelman-Rubin Statistic"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/rjags/rjags.pdf",
+          "text": "rjagspdf"
+        },
+        {
+          "href": "https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/1467-9868.00353",
+          "text": "Spiegelhalter et al. (2002)"
+        },
+        {
+          "href": "https://academic.oup.com/biostatistics/article-abstract/9/3/523/224568?redirectedFrom=fulltext",
+          "text": "Plummer (2008)"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-9-1.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-10-1.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-12-1.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://rworks.dev/posts/evidence-synthesis/",
+          "text": "R Works"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Evidence Synthesis for Decision Making in Healthcare | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASBAMAAACgFUNZAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAIpnvu0SrZlQyEHaJ3c224af9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAc0lEQVQIHWMQ+qzAwKDvysDAkA/E5UDMEN/AwNkAYjA7MKwG0Qw8vxgOgBmc33kWgBkM9wqBtAMQnw+ACDCchdIMj4CMmglA4gcDA/uKAwwMrL8YGLiYGhi4zv4BCvMJQBUyQ2mGKTDGbihjw0Mow7uBAQDp4xfSXKICFAAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?Y_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAtBAMAAABhbPV4AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAIpnvu0SrZlQyEHaJ3c224af9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADPElEQVRIDZ1XTWgTQRh9aRPi7ibd1ZOgkNwURBuh4MVDhKpIQQN61QZEPVRs9FKwgS6CpwoN6EVo6YIeBJUGBRGLuiD4gxajB/Ek1aP00OKhWgt1ZjK7/Wa6m6QOdPb9fPt1Mts32QKdjXQ9ri5RjnOi9GtEtM4WCcMpStrg1DwpuI0SYUiXKWuNH3rEnySYwwsab0GPUi/rUAbc0bjqUralQZmlMCBTpm4rnK1Qd/YgZYD5R+XxbIJaydocpQy/1ngsXaDOI0wDSarMeJTF48QS9ZaQo5ThnromxNAM3VijgCmtTt94zQ5pNh9CwGjgDdLviIJEhxs949K7GmYRV29QBQeAbb/yQO9hRTZOOAqf8CjdOe7B200VHGFsmP2MKCpgq31eaTaj3xVpL2ODLgxXUTf0Oa7ZjBYUaYyx7iLuKyIj2nq+6D6MoiJN11g6VuArIiPrfTxuaTlgilXnejhyLnuOyxkvFCRgfcZHS8jMvhfPZVn3rR51A2cqrOLbZVnWdZ4PnzHbsXzswgcMCWtDn+RToYeTzZf3scSmYqhxYDssMjl8xQvOzN98bjVsn7l6eplkOyzhdmmomeSE6GOvRY5F3r87z6YfHKlD9jm99SfXjbbrEX14VbXGJro/OQ/TXv06b4PmegSMmfjnSq0A6XsMkGE7GR97IMNobthnUiog22dzbrUGs8ulltF7DqNVF7m1Pv4M8JeaUdh2par9PTRV85C5fT+Hq7JKuzzpC4Sc+HWMdQcKvVoVQOT6c1M9wzdxfRi1VEAGA+dWoNArD5HI9SWh7uApIsPwQzLmSTgbShRMjlQdzl82RVvtg09hbXCw1NXjJPQlGPQE0Ps8D+v6JRpwQykK2CWhan2sx35Q3PaBNgvlOa/1ORZ+jRgdnvNWIWI9Vt5YlPmWfrC62Kv8AhfrSfXzUeFZTrA+YiR9CdpdLooC9XPdhNGQ9+Wcdg2kfzKizxQylWa+sa/DNsiyz8EPJFqfxV2Z787fW1IF1uHB8EKNNEq8fSbzbRWJ3BoOxNgi352/10F5zyQ9Rb438Z6Zmic3E8jzvZn3XlwhNxPI8x15VpAaBUb/X8DznSgrhf9F1vP9D/mXvcbncXVfAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?%20Y_j%20=%20%5Clog%5Cleft(%5Cdfrac%7B%5Cdelta_j%7D%7B1%20-%20%5Cdelta_j%7D%5Cright)"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASBAMAAACgFUNZAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdt2rMmaJ7xBEIlSZu83yBCReAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAeklEQVQIHWNg1DdhYJBXZWBgSAdiZiBmiAfiCBBj/gIGrg0gxvoJDGwgmoE/gGEXmMF+gEOAgeECAwPvBUawAAOPgieEwfgBKBPmwMDA/a2BgbU7gYGB5SsDAwcP0CSOB0AlfAuABAiwQygGBl8YQxDKEHgFZVzcwAAANyATXrXdn2EAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?V_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASBAMAAACZcvICAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI3MDA4MDAuYP0AkuCfwAmmgxlYGxi2BzBEMLBv4D5bwMDBcISBh+sCA2etDAMD3wSIGcwQiiEESgtCaIGXENrxAgMAGKMQECiav54AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAAWBAMAAAAm+j/UAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB3ElEQVQ4EZWRP0gbURzHv6e5S3KJJhpaHCqmLl0jVLqeg4PocKBDu6TBzS2bkyBugtJTRKSDBuxWCje0ZHA5pEMRbANFsFCoQxcnHYqlQ0m/v/feGa4R1B93vz+f7+/37r13wN2tr9m4e7Pu3MCT+45U8f72kXwx2bMIDQafJjmr9KsAR79q6BFl7k+s59dwJLntOzHqxFIDKAMPhTgV8WI9PvpCRruuyqRrVpCneCbUKtMpe5A1aDUmnWi/+Asn0EsiJQuLOTULWJJsSFzScvgJyqlAcEF5Jnvt38A8E6tUFyFhFn5EHOkltIa/0mcv2u2KahE2mV4GPClPn9F9l8xCoZgDMkynMUrvBt+E0wpUG/alLuzzTQ9Qn9yGW1kAdoGch8eUfTR0E3oj7jRrRtwIb8z3QthXIVDl3kKMq2bPjGQizMJeRtMncPlMHbZEKgIrfD/xyIHehFM3IzzLc6TD3LEAbh6lMaWwfSRUx38Jy6uRuS0lKJbBR+SvgeYO27/4QH/ES/tcDzcZAzOyxetbekQtBprvr6ttwmrBeXfyNpoNsGMmcGASuewbLFvuhjMGzXVLisR6R75eZaDDEtnrRCUF/4Sy4rmOXd5p/Y8+GDDRpcSdyWshJfgHJ55bjB7t4MEAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j%20%5Csim%20N(d.%5Ctau%5E2)"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARBAMAAADwJOuSAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAIs3vmVQyu0SJ3WZ2qxAUcpo1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAW0lEQVQIHWNgAIHoKWCKgfEA7wQwi02BuwAixMAJEWFgePUAKnINSvMkCEBYHQwHwAzG//8nMDDq//9vAOKyCASCRRkSGBwgDAYGmKEcMENZAqBSzAJQhhSEBgBS6w9nz2MQvwAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?%5Ctau%5E2"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAMBAMAAABl3At4AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAELt2Mu9Eic1mIqtU3Zk3oSI+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAg0lEQVQIHWNgYBRgQAJMBkgcBn4HZJ4rMie9o5KB2caLwecBwzmguCYI7WA8EMKwGcj7xcCpwLCdjeUDQwgDA1sAA+sEhjAG9g1cHxiAJMP6BUAJ3gSgEgaOCTL+DMwKCfwC3AYHGHgdDFgZJAom8DOIZiUw8NgsYHtz5KUA55ucSgYAGyAb2BwlRtcAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?tau"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAMBAMAAABl3At4AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAELt2Mu9Eic1mIqtU3Zk3oSI+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAg0lEQVQIHWNgYBRgQAJMBkgcBn4HZJ4rMie9o5KB2caLwecBwzmguCYI7WA8EMKwGcj7xcCpwLCdjeUDQwgDA1sAA+sEhjAG9g1cHxiAJMP6BUAJ3gSgEgaOCTL+DMwKCfwC3AYHGHgdDFgZJAom8DOIZiUw8NgsYHtz5KUA55ucSgYAGyAb2BwlRtcAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?tau"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASBAMAAACZcvICAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI3MDA4MDAuYP0AkuCfwAmmgxlYGxi2BzBEMLBv4D5bwMDBcISBh+sCA2etDAMD3wSIGcwQiiEESgtCaIGXENrxAgMAGKMQECiav54AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAASBAMAAAA9GErRAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAMrsiRO92q2ZUEM2Jmd0gkiEXAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/ElEQVQYGWNgYGAQ+gwkGHjegkhkwBIA5u1kYOBagCzOVgDm/WJgYEpAFmdqAPFYHjAw8AuAWDDAbwBi8VxgYBCFCQFptsypDAwzpjFwNzD47D4B5ApDJDUYyhnYE1gcQLo0QKgaaA8DA4cCQxlDHwOPgStQ2WcQtwasnrWBIZDh0YwUhuNAqwMYgNwQsLi9AeMHLpDHdgCtLmAAcRk4DjIwyDOwKXh9AJlhCLR6JYjr0DWHgYGVYfWBhocMnFIfGhj4BBLA3AU3gWbenHhjgc3MLoYTDgycmQZgLsNmsBWYRACmEEiEUQFIYAFsCVgEgSHDDfQ6FsCUycAAAM42Nh+XhAbrAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?delta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAATBAMAAAB8R8JwAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid2ZuzKrEO9UZiJ2zUQ++d50AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACs0lEQVQ4EX1TPWgTYRh+7pLcJXfpJWld2ipGF0GXKEU3ySA4+EPADi7SCCLiIEEdBIV2E0HwwKXUwasgSHE4anEruY4tqJl0cDCTWAcJFK000Pq8313aS5P4wr3f+z7f8zz5vvcuQCfMQFVh7oD/WSM+GY8UK8scqGp4ozBRAQw2c+O4p7D+abIdw4U/vJFnrgKZed8sIRInqzCfAB8BK7+EjEdKb6xMuATjhuQjWWbKNoF5u4w5+nrskWOeBRrAInJqFbQ7NN/cIhI3JB+5gGkIsItoySomwJQP1CtifhHTwKhg+0Ov4BSxmKE6zFSFIE+WDMwWNDcSvyE47SZ9mJuoA9/3m0mf9nCYy66hCfKBT7J3gfKa3YJTjcQ3CNbdNIfRwCtqhdQnLhFrI7PG2R1cWc0rmkgxA3yAVVSFQp8SfOnrgH6k8JlzYYvTNxnXpeqE/ZtVGytIeFreCEA+IFIUgaOFQ1VwjEqsmLewzK6J4zxhTVg9MeQRanMqdkt3eRfyYW9LagDb0Ln9OBRbNMYWrvHeMgnoXYbOOQmyx8hCO0PCthFoVeFDpE6qAVsNH8dCsVEGtAbuAj+glQbN0PJoEBk6J5ZrwofRAF6YRTgzGGE7E4r1PHDVl3exiAe1yLBnhuuwxJBnSW1mM82Qlqa0RB+7aPK6HcN6E5mv/DxrnPMdwkt8eiJ19tdzgm0UkAi0CkvyQanh4Qvfi9HkMMtKrH07OXKbhKwL5y1hLPDpifTOzgZw5U/TWhuFvfP3svApPfCshlXgp/wPZSoxsV2NXM5H6+Dlvv9w1t/l433ETPLMcXFU7xEHOq4BCXdPK0YSNO4SvwvhRLQddn3zJCfoI+LTpRSyzvB34mLHVfjrvh5dYGpsYZwfYMjnzrratSpAt9hXeJi7DAY0u0xbESQT+gc/fbSsKOJozQAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?D(%5Ctheta)%20=%20-2%5Clog(L(%5Ctheta))"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAATBAMAAAAHT8L5AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid2Zu3Yyq+8iRGbNVBAzgK+nAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA40lEQVQYGUWMMU7DQBREX5CDWTsYEygpLA4QmQsgt3SpURC+ASk4gBtaoEtp9xFScoOcAGgRjZvUsUTnAjG7scWXdmZ25v+BbraOhw7HP7F4Dsfr1yi1lpcJhhWsTca3NCdTwQhMQmMZHnKBMm8aNQw+9bnX4wZ2tWkI1MejdQqYESZO8GQd6cvTCy00KmxlmA20HKzgGUK5weEG80upbAK+4q8oISg4k1PAUQyphEkiXVinrPBXvKvcr1SYMfi4On+puYPlrVZCle9n0bFXd4Je9Ynu03123a/Am5Nh/u8YJ4V/qPMt+XSNsxsAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?L(%5Ctheta)"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANBAMAAABiGeI2AAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMAMrsiRO92q2ZUEM2JmfLO1I4AAAAJcEhZcwAADsQAAA7EAZUrDhsAAABMSURBVAgdY2BgYBB6DCQYWAJAJFsBiGRqAJF8BkB+5lQgS4OhnIGBQ4GhjIGBtYEhkIHBzoDxAQODHAObggMDK8PqAw0MLDcn3lgAAEoSDEDJF3rwAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?d"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARBAMAAADwJOuSAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAIs3vmVQyu0SJ3WZ2qxAUcpo1AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAW0lEQVQIHWNgAIHoKWCKgfEA7wQwi02BuwAixMAJEWFgePUAKnINSvMkCEBYHQwHwAzG//8nMDDq//9vAOKyCASCRRkSGBwgDAYGmKEcMENZAqBSzAJQhhSEBgBS6w9nz2MQvwAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?%5Ctau%5E2"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASBAMAAACZcvICAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI3MDA4MDAuYP0AkuCfwAmmgxlYGxi2BzBEMLBv4D5bwMDBcISBh+sCA2etDAMD3wSIGcwQiiEESgtCaIGXENrxAgMAGKMQECiav54AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASBAMAAACZcvICAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI3MDA4MDAuYP0AkuCfwAmmgxlYGxi2BzBEMLBv4D5bwMDBcISBh+sCA2etDAMD3wSIGcwQiiEESgtCaIGXENrxAgMAGKMQECiav54AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-9-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAANBAMAAABiGeI2AAAALVBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAOrOgAAAADnRSTlMAMrsiRO92q2ZUEM2JmfLO1I4AAAAJcEhZcwAADsQAAA7EAZUrDhsAAABMSURBVAgdY2BgYBB6DCQYWAJAJFsBiGRqAJF8BkB+5lQgS4OhnIGBQ4GhjIGBtYEhkIHBzoDxAQODHAObggMDK8PqAw0MLDcn3lgAAEoSDEDJF3rwAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?d"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASBAMAAACZcvICAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI3MDA4MDAuYP0AkuCfwAmmgxlYGxi2BzBEMLBv4D5bwMDBcISBh+sCA2etDAMD3wSIGcwQiiEESgtCaIGXENrxAgMAGKMQECiav54AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-10-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPBAMAAAAmOuNHAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWElEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI38FxhYGBcwPqB9x4DA/8Ezg8M8xgYghlYG0B0BAP7BhDNwXCEAURz1sqAabAhMyBGsRXvBAATthA2eqkQdwAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASBAMAAACZcvICAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdqvvuzJEid0imWYQVM1Bf7+MAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAZUlEQVQIHWNgYBAyYQAB1gA2CF0AphgYOqG0BIRmFIZIuLI3MDA4MDAuYP0AkuCfwAmmgxlYGxi2BzBEMLBv4D5bwMDBcISBh+sCA2etDAMD3wSIGcwQiiEESgtCaIGXENrxAgMAGKMQECiav54AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%5Cdelta_j"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-12-1.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/joseph-rickert-and-robert-horton/",
+          "text": "Joseph Rickert and Robert Horton"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391161 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Evidence Synthesis for Decision Making in Healthcare</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/joseph-rickert-and-robert-horton/\">Joseph Rickert and Robert Horton</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/evidence-synthesis/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>This post is based on the textbook <a href=\"https://onlinelibrary.wiley.com/doi/book/10.1002/9781119942986\" rel=\"nofollow\" target=\"_blank\"><em>Evidence Synthesis for Decision Making in Healthcare</em></a> (ESDMH) by Nicky J. Welton, Alexander J. Sutton, Nicola J. Cooper, Keith R. Abrams, and A.E. Ades. This textbook is an exemplary presentation of healthcare decision analysis and Bayesian modeling. The only impediment to its aging well and enjoying a long shelf life that we perceive is that all of code was done in <a href=\"https://en.wikipedia.org/wiki/WinBUGS\" rel=\"nofollow\" target=\"_blank\"><code>WinBugs</code></a>, pioneering but now obsolete software for evaluating Bayesian MCMC models. Below, we present a <code>JAGS</code> version of the <code>WinBugs</code> model in Example 2.1 on page 26 of the text. We hope that this post will be useful to readers who would like to work through the examples in the text using tools that are easily accessible.</p>\n<section class=\"level2\" id=\"the-jags-workflow\">\n<h2 class=\"anchored\" data-anchor-id=\"the-jags-workflow\">The JAGS Workflow</h2>\n<p>We will follow the workflow for building JAGS models as is presented in the <a href=\"https://cran.r-project.org/web/packages/jagsUI/vignettes/jagsUI.html\" rel=\"nofollow\" target=\"_blank\">Introduction to jagsUI vignette</a>, a JAGS workflow comprises the following steps:</p>\n<ol type=\"1\">\n<li>Organize data into a named list</li>\n<li>Write model file in the BUGS language</li>\n<li>Specify initial MCMC values (optional)</li>\n<li>Specify which parameters to save posteriors for analysis</li>\n<li>Specify MCMC settings</li>\n<li>Run JAGS</li>\n<li>Examine output</li>\n</ol>\n</section>\n<section class=\"level2\" id=\"the-blockers-model\">\n<h2 class=\"anchored\" data-anchor-id=\"the-blockers-model\">The Blockers Model</h2>\n<p>We will run the random effects model presented in Example 2.1 using the <code>jagsUI</code> and <code>rjags</code> packages that accept code using the <code>WinBUGS</code> modeling language and calls the <code>JAGS</code> Bayesian engine to evaluate the model. The packages required are loaded here.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>library('rjags')\nlibrary('coda')\nlibrary('jagshelper')\nlibrary('jagsUI')\nlibrary('mcmcplots')  # caterplot\nlibrary('dplyr')\nlibrary('readxl')\nlibrary('jagsUI') # calls rjags</pre>\n</details>\n</div>\n</section>\n<section class=\"level2\" id=\"the-data\">\n<h2 class=\"anchored\" data-anchor-id=\"the-data\">The Data</h2>\n<p>The data comprises empirical log odds ratios, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?Y_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?Y_j\"/></noscript>: <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%20Y_j%20=%20%5Clog%5Cleft(%5Cdfrac%7B%5Cdelta_j%7D%7B1%20-%20%5Cdelta_j%7D%5Cright)\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%20Y_j%20=%20%5Clog%5Cleft(%5Cdfrac%7B%5Cdelta_j%7D%7B1%20-%20%5Cdelta_j%7D%5Cright)\"/></noscript></p>\n<p>along with their associated sample variances, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?V_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?V_j\"/></noscript> for twenty-two randomized clinical trials where patients who suffered a myocardial infarction were treated either with beta-blockers or a placebo. The Excel file containing the data, along with the original <code>WinBUGS</code> code, is available <a href=\"https://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=7268&amp;itemId=047006109X&amp;resourceId=28154\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>Here, we read the data from a local Excel file. Note that the Blocker Excel file is among the supporting materials that can be downloaded from the <a href=\"https://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=7268&amp;itemId=047006109X&amp;resourceId=28154\" rel=\"nofollow\" target=\"_blank\">Wiley site</a>.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>BLOCKER &lt;- read_excel(\"BLOCKER.xls\") |&gt;\n  mutate(trial = 1:length(Y))\n\nhead(BLOCKER, 3)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre># A tibble: 3 × 3\n        Y     V trial\n    &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;\n1  0.0282 0.723     1\n2 -0.741  0.233     2\n3 -0.541  0.319     3</pre>\n</div>\n</div>\n</section>\n<section class=\"level2\" id=\"the-jags-model\">\n<h2 class=\"anchored\" data-anchor-id=\"the-jags-model\">The JAGS Model</h2>\n<p>Next, we organize the data, which must be structured as a list for JAGS.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>data &lt;- BLOCKER |&gt; select(-trial) |&gt;\n  as.list()\ndata['Nstud'] &lt;- nrow(BLOCKER)</pre>\n</details>\n</div>\n<section class=\"level3\" id=\"specify-the-jags-model\">\n<h3 class=\"anchored\" data-anchor-id=\"specify-the-jags-model\">Specify the JAGS Model</h3>\n<p>The following code specifies the random effects JAGS model. The study specific log odds ratios, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\"/></noscript>, are assumed to be samples from a common random distribution: <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j%20%5Csim%20N(d.%5Ctau%5E2)\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j%20%5Csim%20N(d.%5Ctau%5E2)\"/></noscript> where d is is the population mean of log odds ratios and <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Ctau%5E2\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Ctau%5E2\"/></noscript> is the between-studies variance. We assume a flat uniform prior distribution for <img data-lazy-src=\"https://latex.codecogs.com/png.latex?tau\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?tau\"/></noscript>.</p>\n<p>See the <a href=\"https://sourceforge.net/projects/mcmc-jags/files/Manuals/4.x/\" rel=\"nofollow\" target=\"_blank\">JAGS manual</a> for details.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre># Model\nmodel_code &lt;- \"model {\n  # Likelihood\n  for (j in 1:Nstud) {\n    P[j] &lt;- 1/V[j]      # Calculate precision\n    Y[j] ~ dnorm(delta[j],P[j])\n    delta[j] ~ dnorm(d,prec)\n  }\n\n  # Priors\n  d ~ dnorm(0,1.0E-6)\n  prec &lt;- 1/tau.sq\n  tau.sq &lt;- tau*tau   # between-study variance\n  tau ~ dunif(0,10)   # Uniform on SD\n}\" %&gt;% textConnection\n\n# Note that model_code is a string and the textConnection function is used \n# to pass this string to the jags() function further down in the code.</pre>\n</details>\n</div>\n<p>This code initializes the parameter values. Note that we use a function to specify reasonable distributions from which multiple MCMC chains will be initialized.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre># Note that the WinBugs code in the book initializes the MCMC algorithm with a single chain as follows.\n#initial_values &lt;- list(list(\n# delta=c(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),d=0,tau=1))\n\n# We use this code  which initializes the MCMC algorithm with three chains \n# whose values are drawn from probability distributions.\nset.seed(9999)\ninits  &lt;- function() {\n  list(\n    delta = rnorm(22, 0, 0.5),\n    d = rnorm(1, 0, 1),\n    tau = runif(1, 0, 3)\n  )\n}</pre>\n</details>\n</div>\n<p>This next block of code specifies the MCMC model. The key parameters are:</p>\n<ul>\n<li>n.chains: The umber of MCMC chains to run</li>\n<li>n.adapt: Number of iterations to run in the <code>JAGS</code> adaptive phase. See <a href=\"https://projecteuclid.org/euclid.bj/1208874824\" rel=\"nofollow\" target=\"_blank\">Andrieu &amp; Thoms (2008)</a> for a discussion of adaptive MCMC</li>\n<li>n.iter : Number of iterations per chain, including burn-in</li>\n<li>n.burnin : Number of iterations to discard as burn-in</li>\n<li>n.thin : The thinning rate: every kth sample will be discarded to reduce autocorrelation. See <a href=\"https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2194&amp;context=usgsstaffpub\" rel=\"nofollow\" target=\"_blank\">Link &amp; Eaton (2012)</a> for a discussion of thinning.</li>\n</ul>\n</section>\n<section class=\"level3\" id=\"examine-the-output\">\n<h3 class=\"anchored\" data-anchor-id=\"examine-the-output\">Examine the Output</h3>\n<p>The posterior distributions for the model parameters are the main results of the model. <code>jags</code> samples these distributions and computes the posterior mean, standard error, credible intervals, and diagnostic statistics for the parameters d, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?tau\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?tau\"/></noscript>, four of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\"/></noscript> parameters, and the deviance. The values shown here are very close to those reported in the text. (Note, for purposes of presentation, we display only four values of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?delta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?delta_j\"/></noscript> parameters.)</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>options(width = 999)\nres &lt;- out_initial\nh_res &lt;- head(res$summary, 4)\nt_res &lt;- tail(res$summary, 4)\nsignif(rbind(h_res, t_res), 3)</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>            mean     sd     2.5%     25%    50%    75%   97.5% Rhat n.eff overlap0     f\nd         -0.247 0.0660 -0.37200 -0.2900 -0.248 -0.203 -0.1130 1.00  1000        0 1.000\ntau        0.132 0.0811  0.00849  0.0674  0.125  0.184  0.3080 1.01   405        0 1.000\ndelta[1]  -0.239 0.1660 -0.57600 -0.3270 -0.244 -0.156  0.1220 1.00  3930        1 0.930\ndelta[2]  -0.288 0.1580 -0.64600 -0.3670 -0.277 -0.196  0.0112 1.00 15000        1 0.971\ndelta[20] -0.240 0.1300 -0.50100 -0.3200 -0.243 -0.167  0.0403 1.00 10800        1 0.959\ndelta[21] -0.325 0.1410 -0.65300 -0.4020 -0.309 -0.231 -0.0831 1.00 11900        0 0.994\ndelta[22] -0.319 0.1430 -0.65000 -0.3930 -0.302 -0.225 -0.0779 1.00 15000        0 0.993\ndeviance   7.810 4.5800 -1.22000  4.5100  8.050 11.300 16.0000 1.00  1950        1 0.952</pre>\n</div>\n</div>\n</section>\n<section class=\"level3\" id=\"diagnostic-statistics\">\n<h3 class=\"anchored\" data-anchor-id=\"diagnostic-statistics\">Diagnostic Statistics</h3>\n<p>The diagnostic statistics are interpreted as follows:</p>\n<ul>\n<li><code>Rhat</code>, <a href=\"https://journals.sagepub.com/doi/abs/10.1177/096228029600500402\" rel=\"nofollow\" target=\"_blank\">the Gelman-Rubin Statistic</a>, is a diagnostic that compares the variance within chains to the variance between chains. Values close to 1 (typically less than 1.1) indicate that the chains have converged.</li>\n<li><code>n.eff</code>: provides an estimate of how many independent samples the samples in the chain are equivalent to. A higher number suggests more reliable estimates.</li>\n<li><code>overlap0</code> = 0 indicates that the 95% credible interval does not include 0, suggesting a statistically significant effect.</li>\n<li><code>f</code> is the proportion of the posterior with the same sign as the mean.</li>\n</ul>\n<p>Additionally, the <code>jags</code>function returns two alternative penalized deviance statistics, The deviance information criterion, DIC, and the penalized expected deviance, pD, which are generated via the <code>dic.samples()</code> function. Both of these statistics penalize model complexity: smaller is better. For this model DIC = 18.3016 and pD = 10.4929</p>\n<p>As calculated by <code>jags()</code>, DIC is an approximation to the penalized deviance used when only point estimators are available, i.e., <img data-lazy-src=\"https://latex.codecogs.com/png.latex?D(%5Ctheta)%20=%20-2%5Clog(L(%5Ctheta))\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?D(%5Ctheta)%20=%20-2%5Clog(L(%5Ctheta))\"/></noscript> where <img data-lazy-src=\"https://latex.codecogs.com/png.latex?L(%5Ctheta)\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?L(%5Ctheta)\"/></noscript> is the likelihood of the model given the data . The approximation holds asymptotically when the effective number of parameters is much smaller than the sample size and when the posterior distributions of the model parameters are normally distributed. See page 6 of the <a href=\"https://cran.r-project.org/web/packages/rjags/rjags.pdf\" rel=\"nofollow\" target=\"_blank\"><code>rjags</code> pdf</a> for details and <em>Bayesian measures of model complexity and fit</em>, by <a href=\"https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/1467-9868.00353\" rel=\"nofollow\" target=\"_blank\">Spiegelhalter et al. (2002)</a> for the theory.</p>\n<p>For background on pD, see <em>Penalized loss functions for Bayesian model comparison</em>, <a href=\"https://academic.oup.com/biostatistics/article-abstract/9/3/523/224568?redirectedFrom=fulltext\" rel=\"nofollow\" target=\"_blank\">Plummer (2008)</a>.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>dev &lt;- data.frame(x = out_initial$pD, y = out_initial$DIC)\nnames(dev) &lt;- c(\"pD\", \"DIC\")\ndev</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>        pD      DIC\n1 10.49292 18.30155</pre>\n</div>\n</div>\n<p>Note that all of the output we have been discussing can be generated at once just by printing the model output object: <code>out_initial</code>.</p>\n<section class=\"level4\" id=\"density-plots\">\n<h4 class=\"anchored\" data-anchor-id=\"density-plots\">Density Plots</h4>\n<p>The density plots show the posterior distribution of the estimated parameters: the posterior distribution of the population mean, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?d\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?d\"/></noscript>, the between-study variance, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Ctau%5E2\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Ctau%5E2\"/></noscript>, the study-specific log odds ratios, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\"/></noscript>, and the deviance. We only show the first density plot here, but the sharp peak is representative of all of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\"/></noscript> plots. (Note that an easy modification of the code will plot them all.)</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>jagsUI::densityplot(\n  out_initial,\n  parameters = c(\"d\", \"tau\", \"deviance\", \"delta[1]\"),\n  layout = c(2, 2)\n)</pre>\n</details>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-1\" href=\"https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-9-1.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-9-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-9-1.png?w=450&amp;ssl=1\"/></noscript></a></p>\n</figure>\n</div>\n</div>\n</div>\n</section>\n<section class=\"level4\" id=\"whisker-plot\">\n<h4 class=\"anchored\" data-anchor-id=\"whisker-plot\">Whisker Plot</h4>\n<p>The following plot shows the posterior mean for and 95% credible interval for the population mean, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?d\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?d\"/></noscript>, and the study-specific log odds ratios, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\"/></noscript>.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>colnames &lt;- c(\"d\", sprintf(\"delta[%d]\", 1:22))\ncaterplot(out_initial$samples[, colnames]) </pre>\n</details>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-2\" href=\"https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-10-1.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-10-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-10-1.png?w=450&amp;ssl=1\"/></noscript></a></p>\n</figure>\n</div>\n</div>\n</div>\n</section>\n</section>\n<section class=\"level3\" id=\"mcmc-diagnostics\">\n<h3 class=\"anchored\" data-anchor-id=\"mcmc-diagnostics\">MCMC Diagnostics</h3>\n<p>A key MCMC diagnostic reported by the <code>jags() function</code> of the jagsUI package is sufficient.adapt, a logical value indicating whether the number of iterations for adaptation was sufficient. For this model:</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>cat(\"Sufficient Adaptation =\",\n    out_initial$mcmc.info$sufficient.adapt,\n    \"\\n\")</pre>\n</details>\n<div class=\"cell-output cell-output-stdout\">\n<pre>Sufficient Adaptation = TRUE </pre>\n</div>\n</div>\n<section class=\"level4\" id=\"trace-plots\">\n<h4 class=\"anchored\" data-anchor-id=\"trace-plots\">Trace Plots</h4>\n<p>The trace plots show the evolution of the three Markov Chains (each in a different color) for all of the estimated variables. The chains appear to be mixing well. However, it is noteworthy that some of the blue chains seem to get stuck for a while, as indicated by the short, flat segments. The plot of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_1\"/></noscript> parameter is representative of the behavior of the other delta parameters. You can check this yourself by just using “delta” in the plot command below to plot all of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%5Cdelta_j\"/></noscript> parameters.</p>\n<p>In addition to the model parameters, the <code>traceplot()</code> function also displays the MCMC trace for the deviance, a statistical measure that indicates how well the model fits the data.</p>\n<div class=\"cell\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre>jagsUI::traceplot(\n  out_initial,\n  parameters = c(\"d\", \"tau\", \"deviance\", \"delta[1]\"),\n  layout = c(2, 2)\n)</pre>\n</details>\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-3\" href=\"https://i0.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-12-1.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-12-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/evidence-synthesis/index_files/figure-html/unnamed-chunk-12-1.png?w=450&amp;ssl=1\"/></noscript></a></p>\n</figure>\n</div>\n</div>\n</div>\n</section>\n</section>\n</section>\n<section class=\"level2\" id=\"some-closing-remarks\">\n<h2 class=\"anchored\" data-anchor-id=\"some-closing-remarks\">Some Closing Remarks</h2>\n<p>We think that the point of view taken in ESDMH is that Bayesian models, which integrate statistical estimations of clinical outcomes with economic considerations, are an elegant and powerful approach to decision-making in healthcare. This post is just a first step towards showing how ESDMH develops this process. In posts to come, we hope to present more examples from the text.</p>\n<p><em>Bob Horton started his career as a molecular biologist, studying genes involved in immune responses (MHC evolution and TCR repertoire), and developing genetic engineering techniques. Analyzing and simulating biological data led him to data science and his current interests, which include semantic searching of text data and decision modeling.</em></p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/evidence-synthesis/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Evidence Synthesis for Decision Making in Healthcare\nPosted on\nMarch 11, 2025\nby\nJoseph Rickert and Robert Horton\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis post is based on the textbook\nEvidence Synthesis for Decision Making in Healthcare\n(ESDMH) by Nicky J. Welton, Alexander J. Sutton, Nicola J. Cooper, Keith R. Abrams, and A.E. Ades. This textbook is an exemplary presentation of healthcare decision analysis and Bayesian modeling. The only impediment to its aging well and enjoying a long shelf life that we perceive is that all of code was done in\nWinBugs\n, pioneering but now obsolete software for evaluating Bayesian MCMC models. Below, we present a\nJAGS\nversion of the\nWinBugs\nmodel in Example 2.1 on page 26 of the text. We hope that this post will be useful to readers who would like to work through the examples in the text using tools that are easily accessible.\nThe JAGS Workflow\nWe will follow the workflow for building JAGS models as is presented in the\nIntroduction to jagsUI vignette\n, a JAGS workflow comprises the following steps:\nOrganize data into a named list\nWrite model file in the BUGS language\nSpecify initial MCMC values (optional)\nSpecify which parameters to save posteriors for analysis\nSpecify MCMC settings\nRun JAGS\nExamine output\nThe Blockers Model\nWe will run the random effects model presented in Example 2.1 using the\njagsUI\nand\nrjags\npackages that accept code using the\nWinBUGS\nmodeling language and calls the\nJAGS\nBayesian engine to evaluate the model. The packages required are loaded here.\nShow the code\nlibrary('rjags')\nlibrary('coda')\nlibrary('jagshelper')\nlibrary('jagsUI')\nlibrary('mcmcplots')  # caterplot\nlibrary('dplyr')\nlibrary('readxl')\nlibrary('jagsUI') # calls rjags\nThe Data\nThe data comprises empirical log odds ratios,\n:\nalong with their associated sample variances,\nfor twenty-two randomized clinical trials where patients who suffered a myocardial infarction were treated either with beta-blockers or a placebo. The Excel file containing the data, along with the original\nWinBUGS\ncode, is available\nhere\n.\nHere, we read the data from a local Excel file. Note that the Blocker Excel file is among the supporting materials that can be downloaded from the\nWiley site\n.\nShow the code\nBLOCKER <- read_excel(\"BLOCKER.xls\") |>\n  mutate(trial = 1:length(Y))\n\nhead(BLOCKER, 3)\n# A tibble: 3 × 3\n        Y     V trial\n    <dbl> <dbl> <int>\n1  0.0282 0.723     1\n2 -0.741  0.233     2\n3 -0.541  0.319     3\nThe JAGS Model\nNext, we organize the data, which must be structured as a list for JAGS.\nShow the code\ndata <- BLOCKER |> select(-trial) |>\n  as.list()\ndata['Nstud'] <- nrow(BLOCKER)\nSpecify the JAGS Model\nThe following code specifies the random effects JAGS model. The study specific log odds ratios,\n, are assumed to be samples from a common random distribution:\nwhere d is is the population mean of log odds ratios and\nis the between-studies variance. We assume a flat uniform prior distribution for\n.\nSee the\nJAGS manual\nfor details.\nShow the code\n# Model\nmodel_code <- \"model {\n  # Likelihood\n  for (j in 1:Nstud) {\n    P[j] <- 1/V[j]      # Calculate precision\n    Y[j] ~ dnorm(delta[j],P[j])\n    delta[j] ~ dnorm(d,prec)\n  }\n\n  # Priors\n  d ~ dnorm(0,1.0E-6)\n  prec <- 1/tau.sq\n  tau.sq <- tau*tau   # between-study variance\n  tau ~ dunif(0,10)   # Uniform on SD\n}\" %>% textConnection\n\n# Note that model_code is a string and the textConnection function is used \n# to pass this string to the jags() function further down in the code.\nThis code initializes the parameter values. Note that we use a function to specify reasonable distributions from which multiple MCMC chains will be initialized.\nShow the code\n# Note that the WinBugs code in the book initializes the MCMC algorithm with a single chain as follows.\n#initial_values <- list(list(\n# delta=c(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),d=0,tau=1))\n\n# We use this code  which initializes the MCMC algorithm with three chains \n# whose values are drawn from probability distributions.\nset.seed(9999)\ninits  <- function() {\n  list(\n    delta = rnorm(22, 0, 0.5),\n    d = rnorm(1, 0, 1),\n    tau = runif(1, 0, 3)\n  )\n}\nThis next block of code specifies the MCMC model. The key parameters are:\nn.chains: The umber of MCMC chains to run\nn.adapt: Number of iterations to run in the\nJAGS\nadaptive phase. See\nAndrieu & Thoms (2008)\nfor a discussion of adaptive MCMC\nn.iter : Number of iterations per chain, including burn-in\nn.burnin : Number of iterations to discard as burn-in\nn.thin : The thinning rate: every kth sample will be discarded to reduce autocorrelation. See\nLink & Eaton (2012)\nfor a discussion of thinning.\nExamine the Output\nThe posterior distributions for the model parameters are the main results of the model.\njags\nsamples these distributions and computes the posterior mean, standard error, credible intervals, and diagnostic statistics for the parameters d,\n, four of the\nparameters, and the deviance. The values shown here are very close to those reported in the text. (Note, for purposes of presentation, we display only four values of the\nparameters.)\nShow the code\noptions(width = 999)\nres <- out_initial\nh_res <- head(res$summary, 4)\nt_res <- tail(res$summary, 4)\nsignif(rbind(h_res, t_res), 3)\nmean     sd     2.5%     25%    50%    75%   97.5% Rhat n.eff overlap0     f\nd         -0.247 0.0660 -0.37200 -0.2900 -0.248 -0.203 -0.1130 1.00  1000        0 1.000\ntau        0.132 0.0811  0.00849  0.0674  0.125  0.184  0.3080 1.01   405        0 1.000\ndelta[1]  -0.239 0.1660 -0.57600 -0.3270 -0.244 -0.156  0.1220 1.00  3930        1 0.930\ndelta[2]  -0.288 0.1580 -0.64600 -0.3670 -0.277 -0.196  0.0112 1.00 15000        1 0.971\ndelta[20] -0.240 0.1300 -0.50100 -0.3200 -0.243 -0.167  0.0403 1.00 10800        1 0.959\ndelta[21] -0.325 0.1410 -0.65300 -0.4020 -0.309 -0.231 -0.0831 1.00 11900        0 0.994\ndelta[22] -0.319 0.1430 -0.65000 -0.3930 -0.302 -0.225 -0.0779 1.00 15000        0 0.993\ndeviance   7.810 4.5800 -1.22000  4.5100  8.050 11.300 16.0000 1.00  1950        1 0.952\nDiagnostic Statistics\nThe diagnostic statistics are interpreted as follows:\nRhat\n,\nthe Gelman-Rubin Statistic\n, is a diagnostic that compares the variance within chains to the variance between chains. Values close to 1 (typically less than 1.1) indicate that the chains have converged.\nn.eff\n: provides an estimate of how many independent samples the samples in the chain are equivalent to. A higher number suggests more reliable estimates.\noverlap0\n= 0 indicates that the 95% credible interval does not include 0, suggesting a statistically significant effect.\nf\nis the proportion of the posterior with the same sign as the mean.\nAdditionally, the\njags\nfunction returns two alternative penalized deviance statistics, The deviance information criterion, DIC, and the penalized expected deviance, pD, which are generated via the\ndic.samples()\nfunction. Both of these statistics penalize model complexity: smaller is better. For this model DIC = 18.3016 and pD = 10.4929\nAs calculated by\njags()\n, DIC is an approximation to the penalized deviance used when only point estimators are available, i.e.,\nwhere\nis the likelihood of the model given the data . The approximation holds asymptotically when the effective number of parameters is much smaller than the sample size and when the posterior distributions of the model parameters are normally distributed. See page 6 of the\nrjags\npdf\nfor details and\nBayesian measures of model complexity and fit\n, by\nSpiegelhalter et al. (2002)\nfor the theory.\nFor background on pD, see\nPenalized loss functions for Bayesian model comparison\n,\nPlummer (2008)\n.\nShow the code\ndev <- data.frame(x = out_initial$pD, y = out_initial$DIC)\nnames(dev) <- c(\"pD\", \"DIC\")\ndev\npD      DIC\n1 10.49292 18.30155\nNote that all of the output we have been discussing can be generated at once just by printing the model output object:\nout_initial\n.\nDensity Plots\nThe density plots show the posterior distribution of the estimated parameters: the posterior distribution of the population mean,\n, the between-study variance,\n, the study-specific log odds ratios,\n, and the deviance. We only show the first density plot here, but the sharp peak is representative of all of the\nplots. (Note that an easy modification of the code will plot them all.)\nShow the code\njagsUI::densityplot(\n  out_initial,\n  parameters = c(\"d\", \"tau\", \"deviance\", \"delta[1]\"),\n  layout = c(2, 2)\n)\nWhisker Plot\nThe following plot shows the posterior mean for and 95% credible interval for the population mean,\n, and the study-specific log odds ratios,\n.\nShow the code\ncolnames <- c(\"d\", sprintf(\"delta[%d]\", 1:22))\ncaterplot(out_initial$samples[, colnames])\nMCMC Diagnostics\nA key MCMC diagnostic reported by the\njags() function\nof the jagsUI package is sufficient.adapt, a logical value indicating whether the number of iterations for adaptation was sufficient. For this model:\nShow the code\ncat(\"Sufficient Adaptation =\",\n    out_initial$mcmc.info$sufficient.adapt,\n    \"\\n\")\nSufficient Adaptation = TRUE\nTrace Plots\nThe trace plots show the evolution of the three Markov Chains (each in a different color) for all of the estimated variables. The chains appear to be mixing well. However, it is noteworthy that some of the blue chains seem to get stuck for a while, as indicated by the short, flat segments. The plot of the\nparameter is representative of the behavior of the other delta parameters. You can check this yourself by just using “delta” in the plot command below to plot all of the\nparameters.\nIn addition to the model parameters, the\ntraceplot()\nfunction also displays the MCMC trace for the deviance, a statistical measure that indicates how well the model fits the data.\nShow the code\njagsUI::traceplot(\n  out_initial,\n  parameters = c(\"d\", \"tau\", \"deviance\", \"delta[1]\"),\n  layout = c(2, 2)\n)\nSome Closing Remarks\nWe think that the point of view taken in ESDMH is that Bayesian models, which integrate statistical estimations of clinical outcomes with economic considerations, are an elegant and powerful approach to decision-making in healthcare. This post is just a first step towards showing how ESDMH develops this process. In posts to come, we hope to present more examples from the text.\nBob Horton started his career as a molecular biologist, studying genes involved in immune responses (MHC evolution and TCR repertoire), and developing genetic engineering techniques. Analyzing and simulating biological data led him to data science and his current interests, which include semantic searching of text data and decision modeling.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "This post is based on the textbook Evidence Synthesis for Decision Making in Healthcare (ESDMH) by Nicky J. Welton, Alexander J. Sutton, Nicola J. Cooper, Keith R. Abrams, and A.E. Ades. This textbook is an exemplary presentation of healthcare d...",
+      "meta_keywords": null,
+      "og_description": "This post is based on the textbook Evidence Synthesis for Decision Making in Healthcare (ESDMH) by Nicky J. Welton, Alexander J. Sutton, Nicola J. Cooper, Keith R. Abrams, and A.E. Ades. This textbook is an exemplary presentation of healthcare d...",
+      "og_image": "https://latex.codecogs.com/png.latex?Y_j",
+      "og_title": "Evidence Synthesis for Decision Making in Healthcare | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 9.5,
+      "sitemap_lastmod": null,
+      "twitter_description": "This post is based on the textbook Evidence Synthesis for Decision Making in Healthcare (ESDMH) by Nicky J. Welton, Alexander J. Sutton, Nicola J. Cooper, Keith R. Abrams, and A.E. Ades. This textbook is an exemplary presentation of healthcare d...",
+      "twitter_title": "Evidence Synthesis for Decision Making in Healthcare | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/03/evidence-synthesis-for-decision-making-in-healthcare/",
+      "word_count": 1894
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "6af7f6bfc778740c2a69df03b5831814f12ceb71",
+  "url": "https://www.r-bloggers.com/2009/07/two-sample-students-t-test-2/",
+  "created_at_utc": "2025-11-17T20:40:38Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "d98f8389-d682-4e5a-92db-233f5fa8358c",
+    "created_at": "2025-11-17 20:40:38",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/07/two-sample-students-t-test-2/",
+      "crawled_at": "2025-11-17T10:31:16.586363",
+      "external_links": [
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-2.html",
+          "text": "Statistic on aiR"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-1.html",
+          "text": "previous exercise"
+        },
+        {
+          "href": "https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-2.html",
+          "text": "Statistic on aiR"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Two sample Student’s t-test #2 | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-1559568043931290152?l=statistic-on-air.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/4274823366855967619-1559568043931290152?l=statistic-on-air.blogspot.com"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/todos-logos/",
+          "text": "Todos Logos"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/dixon-massey-formula/",
+          "text": "Dixon-Massey formula"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/homoskedasticity-test/",
+          "text": "Homoskedasticity test"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/t-test/",
+          "text": "t-test"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/two-sample/",
+          "text": "Two sample"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/welch-satterthwaite-formula/",
+          "text": "Welch-Satterthwaite formula"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-627 post type-post status-publish format-standard hentry category-r-bloggers tag-dixon-massey-formula tag-homoskedasticity-test tag-t-test tag-two-sample tag-welch-satterthwaite-formula\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Two sample Student’s t-test #2</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 25, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/todos-logos/\">Todos Logos</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-2.html\"> Statistic on aiR</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><span style=\"font-weight: bold;\">Comparison of the averages of two independent groups, extracted from two populations at variance unknown; sample variances are not homogeneous.</span><br/><br/>We want to compare the heights in inches of two groups of individuals. Here the measurements:<br/><br/><div style=\"text-align: center;\">A: 175, 168, 168, 190, 156, 181, 182, 175, 174, 179<br/>B: 120, 180, 125, 188, 130, 190, 110, 185, 112, 188</div><br/><br/>As we have seen in a <a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-1.html\" rel=\"nofollow\" target=\"_blank\">previous exercise</a>, we must first check whether the variances are homogeneous (homoskedasticity) with a <b>F-test of Fisher</b>:<br/><br/><span class=\"fullpost\"><br/><pre>\na = c(175, 168, 168, 190, 156, 181, 182, 175, 174, 179)\n b = c(120, 180, 125, 188, 130, 190, 110, 185, 112, 188)\n\nvar.test(b,a)\n\n    F test to compare two variances\n\ndata: b and a\nF = 14.6431, num df = 9, denom df = 9, p-value = 0.0004636\nalternative hypothesis: true ratio of variances is not equal to 1\n95 percent confidence interval:\n   3.637133 58.952936\nsample estimates:\n ratio of variances\n   14.64308</pre><br/><br/>We obtained p-value less than 0.05, then the two variances are not homogeneous. Indeed we can compare the value of F computed with the tabulated value of F for <i>alpha = 0.05</i>, <i>degrees of freedom at numerator = 9</i>, and <i>degrees of freedom of denominator = 9</i>, using the function <code>qf(p, df.num, df.den)</code>:<br/><br/><pre>\nqf(0.95, 9, 9)\n[1] 3.178893</pre><br/><br/>F-computed is greater than F-tabulated, so we can reject the <b>null hypothesis H0 of homogeneity of variances</b>.<br/><br/>To make the comparison between the two groups, we use the function <code>t.test</code> with not homogeneous variances (<code>var.equal = FALSE</code>, which can also be omitted, because the function works on non-homogeneous variance by default) and independent samples (<code>paired = FALSE</code>, which can also be omitted, because by default the function works on independent samples) in this way:<br/><br/><pre>\nt.test(a,b, var.equal=FALSE, paired=FALSE)\n\n    Welch Two Sample t-test\n\ndata: a and b\nt = 1.8827, df = 10.224, p-value = 0.08848\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n    -3.95955 47.95955\nsample estimates:\nmean of x mean of y\n    174.8     152.8</pre><br/><br/>As we see in the headline, you made a t-test on two samples with the calculation of degrees of freedom using the <b>formula of Welch-Satterthwaite</b> (the result of the formula is <i>df = 10,224</i>), which is used in cases where the variances are not homogeneous. Welch-Satterthwaite equation is also called <b>Dixon-Massey formula</b> when you make the comparison between two groups, as in this case.<br/>We obtained p-value greater than 0.05, then we can conclude that the means of the two groups are significantly similar (albeit p-value is very close to the threshold 0.05). Indeed the value of t is less than the tabulated t-value for 10,224 degrees of freedom, which in R we can calculate:<br/><br/><pre>\nqt(0.975, 10.224)\n[1] 2.221539</pre><br/><br/>We can accept the hypothesis H0 of equality of means.<br/><br/><br/><b>Welch-Satterthwaite formula</b>:<br/><br/>$$df=\\frac{\\sum deviance(X)}{\\sum df(X)}=\\frac{\\sum_{i=1}^{k} (\\sum_{j=1}^{n} (X_i_j – \\bar{X_i})^2}{\\sum_{i=1}^{k}(n_i-1)}$$<br/><br/><br/><b>Dixon-Massey formula</b>:<br/><br/>$$df=\\frac{\\left(\\frac{\\displaystyle S_1^2}{\\displaystyle n_1}+\\frac{\\displaystyle S_2^2}{\\displaystyle n_2}\\right)^2}{\\frac{\\displaystyle\\left(\\frac{\\displaystyle S_1^2}{\\displaystyle n_1}\\right)^2}{\\displaystyle n_1-1}+\\frac{\\displaystyle\\left(\\frac{\\displaystyle S_2^2}{\\displaystyle n_2}\\right)^2}{\\displaystyle n_2-1}}$$<br/></span><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-1559568043931290152?l=statistic-on-air.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-1559568043931290152?l=statistic-on-air.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/4274823366855967619-1559568043931290152?l=statistic-on-air.blogspot.com\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://statistic-on-air.blogspot.com/2009/07/two-sample-students-t-test-2.html\"> Statistic on aiR</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/dixon-massey-formula/\" rel=\"tag\">Dixon-Massey formula</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/homoskedasticity-test/\" rel=\"tag\">Homoskedasticity test</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/t-test/\" rel=\"tag\">t-test</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/two-sample/\" rel=\"tag\">Two sample</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/welch-satterthwaite-formula/\" rel=\"tag\">Welch-Satterthwaite formula</a></li></ul></div></article>",
+      "main_text": "Two sample Student’s t-test #2\nPosted on\nJuly 25, 2009\nby\nTodos Logos\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nStatistic on aiR\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nComparison of the averages of two independent groups, extracted from two populations at variance unknown; sample variances are not homogeneous.\nWe want to compare the heights in inches of two groups of individuals. Here the measurements:\nA: 175, 168, 168, 190, 156, 181, 182, 175, 174, 179\nB: 120, 180, 125, 188, 130, 190, 110, 185, 112, 188\nAs we have seen in a\nprevious exercise\n, we must first check whether the variances are homogeneous (homoskedasticity) with a\nF-test of Fisher\n:\na = c(175, 168, 168, 190, 156, 181, 182, 175, 174, 179)\n b = c(120, 180, 125, 188, 130, 190, 110, 185, 112, 188)\n\nvar.test(b,a)\n\n    F test to compare two variances\n\ndata: b and a\nF = 14.6431, num df = 9, denom df = 9, p-value = 0.0004636\nalternative hypothesis: true ratio of variances is not equal to 1\n95 percent confidence interval:\n   3.637133 58.952936\nsample estimates:\n ratio of variances\n   14.64308\nWe obtained p-value less than 0.05, then the two variances are not homogeneous. Indeed we can compare the value of F computed with the tabulated value of F for\nalpha = 0.05\n,\ndegrees of freedom at numerator = 9\n, and\ndegrees of freedom of denominator = 9\n, using the function\nqf(p, df.num, df.den)\n:\nqf(0.95, 9, 9)\n[1] 3.178893\nF-computed is greater than F-tabulated, so we can reject the\nnull hypothesis H0 of homogeneity of variances\n.\nTo make the comparison between the two groups, we use the function\nt.test\nwith not homogeneous variances (\nvar.equal = FALSE\n, which can also be omitted, because the function works on non-homogeneous variance by default) and independent samples (\npaired = FALSE\n, which can also be omitted, because by default the function works on independent samples) in this way:\nt.test(a,b, var.equal=FALSE, paired=FALSE)\n\n    Welch Two Sample t-test\n\ndata: a and b\nt = 1.8827, df = 10.224, p-value = 0.08848\nalternative hypothesis: true difference in means is not equal to 0\n95 percent confidence interval:\n    -3.95955 47.95955\nsample estimates:\nmean of x mean of y\n    174.8     152.8\nAs we see in the headline, you made a t-test on two samples with the calculation of degrees of freedom using the\nformula of Welch-Satterthwaite\n(the result of the formula is\ndf = 10,224\n), which is used in cases where the variances are not homogeneous. Welch-Satterthwaite equation is also called\nDixon-Massey formula\nwhen you make the comparison between two groups, as in this case.\nWe obtained p-value greater than 0.05, then we can conclude that the means of the two groups are significantly similar (albeit p-value is very close to the threshold 0.05). Indeed the value of t is less than the tabulated t-value for 10,224 degrees of freedom, which in R we can calculate:\nqt(0.975, 10.224)\n[1] 2.221539\nWe can accept the hypothesis H0 of equality of means.\nWelch-Satterthwaite formula\n:\n$$df=\\frac{\\sum deviance(X)}{\\sum df(X)}=\\frac{\\sum_{i=1}^{k} (\\sum_{j=1}^{n} (X_i_j – \\bar{X_i})^2}{\\sum_{i=1}^{k}(n_i-1)}$$\nDixon-Massey formula\n:\n$$df=\\frac{\\left(\\frac{\\displaystyle S_1^2}{\\displaystyle n_1}+\\frac{\\displaystyle S_2^2}{\\displaystyle n_2}\\right)^2}{\\frac{\\displaystyle\\left(\\frac{\\displaystyle S_1^2}{\\displaystyle n_1}\\right)^2}{\\displaystyle n_1-1}+\\frac{\\displaystyle\\left(\\frac{\\displaystyle S_2^2}{\\displaystyle n_2}\\right)^2}{\\displaystyle n_2-1}}$$\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nStatistic on aiR\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDixon-Massey formula\nHomoskedasticity test\nt-test\nTwo sample\nWelch-Satterthwaite formula",
+      "meta_description": "Comparison of the averages of two independent groups, extracted from two populations at variance unknown; sample variances are not homogeneous.We want to compare the heights in inches of two groups of individuals. Here the measurements:A: 175, 168, 168...",
+      "meta_keywords": "dixon-massey formula,homoskedasticity test,t-test,two sample,welch-satterthwaite formula",
+      "og_description": "Comparison of the averages of two independent groups, extracted from two populations at variance unknown; sample variances are not homogeneous.We want to compare the heights in inches of two groups of individuals. Here the measurements:A: 175, 168, 168...",
+      "og_image": "https://blogger.googleusercontent.com/tracker/4274823366855967619-1559568043931290152?l=statistic-on-air.blogspot.com",
+      "og_title": "Two sample Student’s t-test #2 | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.7,
+      "sitemap_lastmod": "2010-09-06T21:00:27+00:00",
+      "twitter_description": "Comparison of the averages of two independent groups, extracted from two populations at variance unknown; sample variances are not homogeneous.We want to compare the heights in inches of two groups of individuals. Here the measurements:A: 175, 168, 168...",
+      "twitter_title": "Two sample Student’s t-test #2 | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/07/two-sample-students-t-test-2/",
+      "word_count": 735
+    }
+  }
+}

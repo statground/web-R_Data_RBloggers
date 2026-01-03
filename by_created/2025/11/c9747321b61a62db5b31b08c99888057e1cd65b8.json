@@ -1,0 +1,118 @@
+{
+  "id": "c9747321b61a62db5b31b08c99888057e1cd65b8",
+  "url": "https://www.r-bloggers.com/2025/07/testing-legacy-shiny-apps-start-with-behavior-not-code/",
+  "created_at_utc": "2025-11-22T19:58:03Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "24c21632-ddba-448b-80c0-49e570cf706e",
+    "created_at": "2025-11-22 19:58:03",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/07/testing-legacy-shiny-apps-start-with-behavior-not-code/",
+      "crawled_at": "2025-11-22T10:45:21.253026",
+      "external_links": [
+        {
+          "href": "https://jakubsobolewski.com/blog/testing-legacy-shiny",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/jakubsob/cucumber",
+          "text": "{cucumber}"
+        },
+        {
+          "href": "https://github.com/jakubsob/cucumber",
+          "text": "{cucumber}"
+        },
+        {
+          "href": "https://www.npmjs.com/package/@cucumber/cucumber",
+          "text": "JavaScript implementation of Cucumber"
+        },
+        {
+          "href": "https://jakubsobolewski.com/blog/robust-targetting-of-html-for-tests/",
+          "text": "robust test selectors"
+        },
+        {
+          "href": "https://jakubsobolewski.com/blog/testing-legacy-shiny",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Testing Legacy Shiny Apps: Start with Behavior, Not Code | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394165 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Testing Legacy Shiny Apps: Start with Behavior, Not Code</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsobolewski.com/blog/testing-legacy-shiny\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>Your legacy Shiny app needs a makeover, but you don’t know where to start.</p>\n<p>Jumping straight into refactoring is like repainting a room with the furniture still inside. It’s a recipe for disaster, creating bugs and breaking features you didn’t even know existed. Many developers fall into the trap of trying to write unit tests for messy, monolithic code, only to find their tests are brittle and break with every small change.</p>\n<p>There is a safer approach: <strong>write acceptance tests first.</strong></p>\n<h2 id=\"the-problem-with-brittle-tests\">The Problem with Brittle Tests</h2>\n<p>When you write tests that are too closely tied to the current implementation of your app, you create a maintenance nightmare.</p>\n<p>These tests know <em>too much</em> about the internal workings, like component IDs, or the specific structure of your UI. The moment a developer changes a component’s ID, the tests shatter. This creates friction and slows down development, defeating the purpose of having tests in the first place.</p>\n<p>The goal is to test <em>behavior</em>, not implementation.</p>\n<h2 id=\"the-three-step-process-to-safe-refactoring\">The Three-Step Process to Safe Refactoring</h2>\n<p>This behavior-focused approach can be broken down into three manageable steps.</p>\n<h3 id=\"1-document-current-behavior\">1. Document Current Behavior</h3>\n<p>First, become an archeologist. Dig into the application’s past by talking with previous maintainers and long-time users.</p>\n<p>Don’t assume you know everything. Your goal is to uncover the intended behavior. Ask questions like:</p>\n<ul>\n<li>What is the primary goal of this feature?</li>\n<li>What should happen when a user performs this action?</li>\n<li>What data should this table display under these conditions?</li>\n</ul>\n<p>Use the <strong>Given-When-Then</strong> syntax to format these behaviors as specifications. This creates a clear, unambiguous description of what the system does.</p>\n<hr/>\n<p>Let’s imagine a simple Shiny app. It has a dropdown to select a product category and a button that generates a sales trend plot for that category.</p>\n<p>Here’s how <em>not</em> to write a test specification for it:</p>\n<h3 id=\"bad-specification-reveals-implementation\">Bad Specification (Reveals Implementation)</h3>\n<pre>Feature: Sales Plot Generation\n  Scenario: User clicks the button to generate a plot\n    Given the user is on the main page\n    When they select \"Electronics\" from the \"category_dropdown\"\n    And they click the button with ID \"generate_plot_btn\"\n    Then the plot with CSS class \".sales-output-plot\" should be visible</pre>\n<p>This test is extremely brittle. It will fail if you:</p>\n<ul>\n<li>Rename the dropdown from <code>category_dropdown</code>.</li>\n<li>Change the button ID from <code>generate_plot_btn</code>.</li>\n<li>Alter the CSS class of the plot output.</li>\n</ul>\n<p>Now, let’s write a test that focuses purely on the user’s goal.</p>\n<h3 id=\"good-specification-focuses-on-behavior\">Good Specification (Focuses on Behavior)</h3>\n<pre>Feature: View Sales Trends\n  Scenario: User views the sales trend for a product category\n    Given the user can view product sales information\n    When they view the sales trend for \"Electronics\"\n    Then they should see the sales trend plot for \"Electronics\"</pre>\n<p>This specification is clean, readable, and describes the business value. It doesn’t care <em>how</em> the user selects the category or generates the plot. The implementation can change completely, from a button to an automatic update, and the test’s intent remains valid.</p>\n<p>Be abstract, but precise.</p>\n<h3 id=\"2-create-executable-acceptance-tests\">2. Create Executable Acceptance Tests</h3>\n<p>With the behavior documented, it’s time to make it executable. This is where a tool like <a href=\"https://github.com/jakubsob/cucumber\" rel=\"nofollow\" target=\"_blank\"><code>{cucumber}</code></a> package for R comes in.</p>\n<p>Cucumber allows you to take those plain-language Gherkin specifications and link them to code that drives your application. You can implement the test steps using:</p>\n<ul>\n<li><code>{shinytest2}</code>,</li>\n<li>Playwright,</li>\n<li>or Cypress</li>\n</ul>\n<p>Your choice of tool depends on your team’s expertise, <a href=\"https://github.com/jakubsob/cucumber\" rel=\"nofollow\" target=\"_blank\"><code>{cucumber}</code></a> can execute steps written in R; if you use Playwright or Cypress, you write the steps in JavaScript and execute them with <a href=\"https://www.npmjs.com/package/@cucumber/cucumber\" rel=\"nofollow\" target=\"_blank\">JavaScript implementation of Cucumber</a>.</p>\n<p>To make these tests last, you need to use robust selectors that aren’t tied to fragile attributes like CSS classes or generated IDs. For a deeper dive on this, read my post on creating <a href=\"https://jakubsobolewski.com/blog/robust-targetting-of-html-for-tests/\" rel=\"nofollow\" target=\"_blank\"><strong>robust test selectors</strong></a> that survive UI refactoring.</p>\n<h3 id=\"3-refactor-and-unit-test-with-a-safety-net\">3. Refactor and Unit Test with a Safety Net</h3>\n<p>Now you have a safety net.</p>\n<p>Your suite of acceptance tests validates the core functionality of the application from a user’s perspective. With this net in place, you can begin refactoring with confidence.</p>\n<p>Break down large, complex server-side logic into smaller, pure functions. As you carve out these pieces, you can finally write targeted unit tests for them using a framework like <code>{testthat}</code>. The acceptance tests will immediately flag any regressions in user-facing behavior, while your new unit tests ensure the correctness of the individual components.</p>\n<p>Don’t jump too eagerly to this step. Make sure you have a solid set of acceptance tests first.</p>\n<hr/>\n<p>Your legacy Shiny app doesn’t have to stay legacy forever. By starting with behavior, you build a foundation of safety that empowers you to modernize your codebase without fear.</p>\n<p>Make tests your ally, not your enemy.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsobolewski.com/blog/testing-legacy-shiny\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Testing Legacy Shiny Apps: Start with Behavior, Not Code\nPosted on\nJuly 15, 2025\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nYour legacy Shiny app needs a makeover, but you don’t know where to start.\nJumping straight into refactoring is like repainting a room with the furniture still inside. It’s a recipe for disaster, creating bugs and breaking features you didn’t even know existed. Many developers fall into the trap of trying to write unit tests for messy, monolithic code, only to find their tests are brittle and break with every small change.\nThere is a safer approach:\nwrite acceptance tests first.\nThe Problem with Brittle Tests\nWhen you write tests that are too closely tied to the current implementation of your app, you create a maintenance nightmare.\nThese tests know\ntoo much\nabout the internal workings, like component IDs, or the specific structure of your UI. The moment a developer changes a component’s ID, the tests shatter. This creates friction and slows down development, defeating the purpose of having tests in the first place.\nThe goal is to test\nbehavior\n, not implementation.\nThe Three-Step Process to Safe Refactoring\nThis behavior-focused approach can be broken down into three manageable steps.\n1. Document Current Behavior\nFirst, become an archeologist. Dig into the application’s past by talking with previous maintainers and long-time users.\nDon’t assume you know everything. Your goal is to uncover the intended behavior. Ask questions like:\nWhat is the primary goal of this feature?\nWhat should happen when a user performs this action?\nWhat data should this table display under these conditions?\nUse the\nGiven-When-Then\nsyntax to format these behaviors as specifications. This creates a clear, unambiguous description of what the system does.\nLet’s imagine a simple Shiny app. It has a dropdown to select a product category and a button that generates a sales trend plot for that category.\nHere’s how\nnot\nto write a test specification for it:\nBad Specification (Reveals Implementation)\nFeature: Sales Plot Generation\n  Scenario: User clicks the button to generate a plot\n    Given the user is on the main page\n    When they select \"Electronics\" from the \"category_dropdown\"\n    And they click the button with ID \"generate_plot_btn\"\n    Then the plot with CSS class \".sales-output-plot\" should be visible\nThis test is extremely brittle. It will fail if you:\nRename the dropdown from\ncategory_dropdown\n.\nChange the button ID from\ngenerate_plot_btn\n.\nAlter the CSS class of the plot output.\nNow, let’s write a test that focuses purely on the user’s goal.\nGood Specification (Focuses on Behavior)\nFeature: View Sales Trends\n  Scenario: User views the sales trend for a product category\n    Given the user can view product sales information\n    When they view the sales trend for \"Electronics\"\n    Then they should see the sales trend plot for \"Electronics\"\nThis specification is clean, readable, and describes the business value. It doesn’t care\nhow\nthe user selects the category or generates the plot. The implementation can change completely, from a button to an automatic update, and the test’s intent remains valid.\nBe abstract, but precise.\n2. Create Executable Acceptance Tests\nWith the behavior documented, it’s time to make it executable. This is where a tool like\n{cucumber}\npackage for R comes in.\nCucumber allows you to take those plain-language Gherkin specifications and link them to code that drives your application. You can implement the test steps using:\n{shinytest2}\n,\nPlaywright,\nor Cypress\nYour choice of tool depends on your team’s expertise,\n{cucumber}\ncan execute steps written in R; if you use Playwright or Cypress, you write the steps in JavaScript and execute them with\nJavaScript implementation of Cucumber\n.\nTo make these tests last, you need to use robust selectors that aren’t tied to fragile attributes like CSS classes or generated IDs. For a deeper dive on this, read my post on creating\nrobust test selectors\nthat survive UI refactoring.\n3. Refactor and Unit Test with a Safety Net\nNow you have a safety net.\nYour suite of acceptance tests validates the core functionality of the application from a user’s perspective. With this net in place, you can begin refactoring with confidence.\nBreak down large, complex server-side logic into smaller, pure functions. As you carve out these pieces, you can finally write targeted unit tests for them using a framework like\n{testthat}\n. The acceptance tests will immediately flag any regressions in user-facing behavior, while your new unit tests ensure the correctness of the individual components.\nDon’t jump too eagerly to this step. Make sure you have a solid set of acceptance tests first.\nYour legacy Shiny app doesn’t have to stay legacy forever. By starting with behavior, you build a foundation of safety that empowers you to modernize your codebase without fear.\nMake tests your ally, not your enemy.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Adding acceptance tests first makes refactoring safer.",
+      "meta_keywords": null,
+      "og_description": "Adding acceptance tests first makes refactoring safer.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Testing Legacy Shiny Apps: Start with Behavior, Not Code | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.7,
+      "sitemap_lastmod": null,
+      "twitter_description": "Adding acceptance tests first makes refactoring safer.",
+      "twitter_title": "Testing Legacy Shiny Apps: Start with Behavior, Not Code | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/07/testing-legacy-shiny-apps-start-with-behavior-not-code/",
+      "word_count": 934
+    }
+  }
+}

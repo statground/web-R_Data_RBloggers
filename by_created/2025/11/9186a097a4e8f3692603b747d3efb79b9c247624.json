@@ -1,0 +1,142 @@
+{
+  "id": "9186a097a4e8f3692603b747d3efb79b9c247624",
+  "url": "https://www.r-bloggers.com/2009/12/latex-and-sweave/",
+  "created_at_utc": "2025-11-17T20:39:53Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "68094f31-617c-4f1f-b9c8-213b23a89c44",
+    "created_at": "2025-11-17 20:39:53",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/latex-and-sweave/",
+      "crawled_at": "2025-11-17T10:14:48.540621",
+      "external_links": [
+        {
+          "href": "http://bryer.org/2009/latex-and-sweave",
+          "text": "Jason Bryer » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.texniccenter.org/",
+          "text": "http://www.texniccenter.org/"
+        },
+        {
+          "href": "http://www.uoregon.edu/~koch/texshop/",
+          "text": "http://www.uoregon.edu/~koch/texshop/"
+        },
+        {
+          "href": "http://tex.loria.fr/general/mil.html",
+          "text": "http://tex.loria.fr/general/mil.html"
+        },
+        {
+          "href": "https://www.amazon.com/More-Math-Into-LaTeX-4th/dp/0387322892/ref=sr_1_1?ie=UTF8&s=books&qid=1258503347&sr=8-1",
+          "text": "https://www.amazon.com/More-Math-Into-LaTeX-4th/dp/0387322892/ref=sr_1_1?ie=UTF8&s=books&qid=1258503347&sr=8-1"
+        },
+        {
+          "href": "http://tobi.oetiker.ch/lshort/lshort.pdf",
+          "text": "http://tobi.oetiker.ch/lshort/lshort.pdf"
+        },
+        {
+          "href": "http://www.ilsp.gr/homepages/protopapas/apacls.html",
+          "text": "http://www.ilsp.gr/homepages/protopapas/apacls.html"
+        },
+        {
+          "href": "http://www.stat.uni-muenchen.de/~leisch/Sweave/Sweave-manual.pdf",
+          "text": "http://www.stat.uni-muenchen.de/~leisch/Sweave/Sweave-manual.pdf"
+        },
+        {
+          "href": "http://latex-beamer.sourceforge.net/",
+          "text": "http://latex-beamer.sourceforge.net/"
+        },
+        {
+          "href": "http://bryer.org/2009/latex-and-sweave",
+          "text": "Jason Bryer » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "LaTeX and Sweave | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jason/",
+          "text": "Jason"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/software/",
+          "text": "Software"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-59599 post type-post status-publish format-standard hentry category-r-bloggers tag-r tag-software\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">LaTeX and Sweave</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 1, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jason/\">Jason</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://bryer.org/2009/latex-and-sweave\"> Jason Bryer » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>LaTeX is a typesetting language that is known for its beautiful mathematical formulas. It is similar to HTML in that you write your document in plain text and process (or compile) it to create a postscript or PDF file. You will need to download a LaTeX processor for your platform. On Windows, TeXnicCenter (<a href=\"http://www.texniccenter.org/\" rel=\"nofollow\" target=\"_blank\">http://www.texniccenter.org/</a>) is very good and on Mac TeXShop (<a href=\"http://www.uoregon.edu/~koch/texshop/\" rel=\"nofollow\" target=\"_blank\">http://www.uoregon.edu/~koch/texshop/</a>) is very good. Both these applications provide a text editor in addition to the LaTeX processors. Here are a list of excellent resources for learning LaTeX (note that many of these are in psarelated/LaTeX folder on Dropbox):</p>\n<ul>\n<li>Math into LaTeX: An Introduction to LaTeX and MAS-LaTeX (<a href=\"http://tex.loria.fr/general/mil.html\" rel=\"nofollow\" target=\"_blank\">http://tex.loria.fr/general/mil.html</a>). The author has provided a PDF of the first section of the book which is probably sufficient for most. The complete book can be orderd from Amazon here: <a href=\"https://www.amazon.com/More-Math-Into-LaTeX-4th/dp/0387322892/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1258503347&amp;sr=8-1\" rel=\"nofollow\" target=\"_blank\">https://www.amazon.com/More-Math-Into-LaTeX-4th/dp/0387322892/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1258503347&amp;sr=8-1</a></li>\n<li>The Not So Short Introduction to LaTeX (<a href=\"http://tobi.oetiker.ch/lshort/lshort.pdf\" rel=\"nofollow\" target=\"_blank\">http://<cite>tobi.oetiker.ch/l<strong>short</strong>/l<strong>short</strong>.pdf</cite></a>)</li>\n<li>If you have to use APA formatting, see <a href=\"http://www.ilsp.gr/homepages/protopapas/apacls.html\" rel=\"nofollow\" target=\"_blank\">http://www.ilsp.gr/homepages/protopapas/apacls.html</a></li>\n</ul>\n<p>Sweave allows for the embedding of R code directly in your LaTeX documents. The best resource is the Sweave User Manual (<a href=\"http://www.stat.uni-muenchen.de/~leisch/Sweave/Sweave-manual.pdf\" rel=\"nofollow\" target=\"_blank\">http://<cite>www.stat.uni-muenchen.de/~leisch/<strong>Sweave</strong>/<strong>Sweave</strong>-manual.pdf</cite></a>). In short, simply place the following in your LaTeX file:</p>\n<p><span style=\"font-family: Courier New;\">&lt;<myrcode1>&gt;=<br/>\n2 + 2<br/>\n@</myrcode1></span></p>\n<p>There is a Sweave function in R. Issuing the <span style=\"font-family: Courier New;\">Sweave(file.choose())</span> command will first prompt for the file (by convention use Rnw file extension), execute all the R code and generate a tex file. This file can then be run through your typical LaTeX processor or editor. Once you go through the Sweave manual, I recommend printing page 13 which lists all the options that can be issued to Sweave.</p>\n<p>To create presentations, the Beamer class is what is generally used. The LaTeX beamer class homepage has several exmaples (<a href=\"http://latex-beamer.sourceforge.net/\" rel=\"nofollow\" target=\"_blank\">http://latex-beamer.sourceforge.net/</a>). The Beamer manual is included on Dropbox or when you download the classes (I do believe Beamer is built into both TeXnicCenter and TeXShop).</p>\n<p>Laslty, I have included a few of my own files on Dropbox for a recent paper and presentation I’ve done. I used Sweave for the paper (see Bryer.LocatingStudents.Paper.Rnw). I also included the generated LaTeX file (Bryer.LocatingStudents.Paper.tex) as well as the final PDF version. For the presenation, I used Beamer but since I was working from the paper, I simply cut and paste sections from the generated tex file to Bryer.LocationStudents.Presentation.tex. Note the first two lines of this file:</p>\n<p><span style=\"font-family: Courier New;\">%\\documentclass[handout]{beamer}<br/>\n\\documentclass{beamer}</span></p>\n<p>The percent character is a comment line in LaTeX so in order to create the handout version I simply commented out the second line instead of the first. Both versions are included on Dropbox for your review.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://bryer.org/2009/latex-and-sweave\"> Jason Bryer » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/software/\" rel=\"tag\">Software</a></li></ul></div></article>",
+      "main_text": "LaTeX and Sweave\nPosted on\nDecember 1, 2009\nby\nJason\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJason Bryer » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nLaTeX is a typesetting language that is known for its beautiful mathematical formulas. It is similar to HTML in that you write your document in plain text and process (or compile) it to create a postscript or PDF file. You will need to download a LaTeX processor for your platform. On Windows, TeXnicCenter (\nhttp://www.texniccenter.org/\n) is very good and on Mac TeXShop (\nhttp://www.uoregon.edu/~koch/texshop/\n) is very good. Both these applications provide a text editor in addition to the LaTeX processors. Here are a list of excellent resources for learning LaTeX (note that many of these are in psarelated/LaTeX folder on Dropbox):\nMath into LaTeX: An Introduction to LaTeX and MAS-LaTeX (\nhttp://tex.loria.fr/general/mil.html\n). The author has provided a PDF of the first section of the book which is probably sufficient for most. The complete book can be orderd from Amazon here:\nhttps://www.amazon.com/More-Math-Into-LaTeX-4th/dp/0387322892/ref=sr_1_1?ie=UTF8&s=books&qid=1258503347&sr=8-1\nThe Not So Short Introduction to LaTeX (\nhttp://\ntobi.oetiker.ch/l\nshort\n/l\nshort\n.pdf\n)\nIf you have to use APA formatting, see\nhttp://www.ilsp.gr/homepages/protopapas/apacls.html\nSweave allows for the embedding of R code directly in your LaTeX documents. The best resource is the Sweave User Manual (\nhttp://\nwww.stat.uni-muenchen.de/~leisch/\nSweave\n/\nSweave\n-manual.pdf\n). In short, simply place the following in your LaTeX file:\n<\n>=\n2 + 2\n@\nThere is a Sweave function in R. Issuing the\nSweave(file.choose())\ncommand will first prompt for the file (by convention use Rnw file extension), execute all the R code and generate a tex file. This file can then be run through your typical LaTeX processor or editor. Once you go through the Sweave manual, I recommend printing page 13 which lists all the options that can be issued to Sweave.\nTo create presentations, the Beamer class is what is generally used. The LaTeX beamer class homepage has several exmaples (\nhttp://latex-beamer.sourceforge.net/\n). The Beamer manual is included on Dropbox or when you download the classes (I do believe Beamer is built into both TeXnicCenter and TeXShop).\nLaslty, I have included a few of my own files on Dropbox for a recent paper and presentation I’ve done. I used Sweave for the paper (see Bryer.LocatingStudents.Paper.Rnw). I also included the generated LaTeX file (Bryer.LocatingStudents.Paper.tex) as well as the final PDF version. For the presenation, I used Beamer but since I was working from the paper, I simply cut and paste sections from the generated tex file to Bryer.LocationStudents.Presentation.tex. Note the first two lines of this file:\n%\\documentclass[handout]{beamer}\n\\documentclass{beamer}\nThe percent character is a comment line in LaTeX so in order to create the handout version I simply commented out the second line instead of the first. Both versions are included on Dropbox for your review.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJason Bryer » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR\nSoftware",
+      "meta_description": "LaTeX is a typesetting language that is known for its beautiful mathematical formulas. It is similar to HTML in that you write your document in plain text and process (or compile) it to create a postscript or PDF file. You will need to download a LaTeX processor for your platform. On Windows, TeXnicCenter (http://www.texniccenter.org/) is [...]",
+      "meta_keywords": "r,software",
+      "og_description": "LaTeX is a typesetting language that is known for its beautiful mathematical formulas. It is similar to HTML in that you write your document in plain text and process (or compile) it to create a postscript or PDF file. You will need to download a LaTeX processor for your platform. On Windows, TeXnicCenter (http://www.texniccenter.org/) is [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "LaTeX and Sweave | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.2,
+      "sitemap_lastmod": "2009-12-01T23:56:57+00:00",
+      "twitter_description": "LaTeX is a typesetting language that is known for its beautiful mathematical formulas. It is similar to HTML in that you write your document in plain text and process (or compile) it to create a postscript or PDF file. You will need to download a LaTeX processor for your platform. On Windows, TeXnicCenter (http://www.texniccenter.org/) is [...]",
+      "twitter_title": "LaTeX and Sweave | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/latex-and-sweave/",
+      "word_count": 640
+    }
+  }
+}

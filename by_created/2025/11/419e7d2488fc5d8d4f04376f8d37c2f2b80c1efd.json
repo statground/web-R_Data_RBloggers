@@ -1,0 +1,106 @@
+{
+  "id": "419e7d2488fc5d8d4f04376f8d37c2f2b80c1efd",
+  "url": "https://www.r-bloggers.com/2025/06/oh-leave-it-out/",
+  "created_at_utc": "2025-11-22T19:58:18Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "25c75b8a-cb2f-4d6e-8665-0840cca3de5c",
+    "created_at": "2025-11-22 19:58:18",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/06/oh-leave-it-out/",
+      "crawled_at": "2025-11-22T10:47:02.681288",
+      "external_links": [
+        {
+          "href": "https://kieranhealy.org/blog/archives/2025/06/18/oh-leave-it-out/",
+          "text": "R on kieranhealy.org"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Jackknife_resampling",
+          "text": "jacknife cross-validation"
+        },
+        {
+          "href": "https://kieranhealy.org/blog/archives/2025/06/18/oh-leave-it-out/",
+          "text": "R on kieranhealy.org"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Oh Leave it Out | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-on-kieranhealy-org/",
+          "text": "R on kieranhealy.org"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-393134 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Oh Leave it Out</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 18, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-kieranhealy-org/\">R on kieranhealy.org</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://kieranhealy.org/blog/archives/2025/06/18/oh-leave-it-out/\"> R on kieranhealy.org</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>Sometimes we want to repeatedly do things with all but one row of a data frame, where we systematically drop each row in turn and do the thing. For example, <a href=\"https://en.wikipedia.org/wiki/Jackknife_resampling\" rel=\"nofollow\" target=\"_blank\">jacknife cross-validation</a> is a kind of very basic bootstrap technique. (It is computationally simpler than and predates the bootstrap.) Or in some areas “leave-one-out” summary statistics are often calculated as a quick robustness check. Sometimes we want to do this within groups, perhaps especially when the groups may be small.</p>\n<p>First a quick reminder about one of R’s conventions for referencing the elements of vectors and data frames. If we have</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre>1\n2\n</pre></td>\n<td class=\"lntd\">\n<pre>letters\n#&gt;  [1] \"a\" \"b\" \"c\" \"d\" \"e\" \"f\" \"g\" \"h\" \"i\" \"j\" \"k\" \"l\" \"m\" \"n\" \"o\" \"p\" \"q\" \"r\" \"s\" \"t\" \"u\" \"v\" \"w\" \"x\" \"y\" \"z\"</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>We can write e.g.,</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre>1\n2\n</pre></td>\n<td class=\"lntd\">\n<pre>letters[2]\n#&gt; [1] \"b\"</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>to get the second element of the <code>letters</code> vector. But we can also write</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre>1\n2\n</pre></td>\n<td class=\"lntd\">\n<pre>letters[-2]\n#&gt;  [1] \"a\" \"c\" \"d\" \"e\" \"f\" \"g\" \"h\" \"i\" \"j\" \"k\" \"l\" \"m\" \"n\" \"o\" \"p\" \"q\" \"r\" \"s\" \"t\" \"u\" \"v\" \"w\" \"x\" \"y\" \"z\"</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>to get everything in <code>letters</code> <em>except</em> the second element. Handy. The same goes for data frames. Because those are two dimensional, we write e.g. <code>df[2,5]</code> to index the 2nd row and 5th column of <code>df</code>. But we can apply negative indices to those too to drop rather than keep a row or a column.</p>\n<p>Now, here’s a small data frame:</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n</pre></td>\n<td class=\"lntd\">\n<pre>library(tidyverse)\n\ndf &lt;- tibble(var1 = rep(LETTERS[1:6], each = 2), \n             var2 = rep(c(\"Blue\", \"Green\"), 6), \n             val = rpois(12, 4))\n\ndf\n#&gt; # A tibble: 12 × 3\n#&gt;    var1  var2    val\n#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;int&gt;\n#&gt;  1 A     Blue      2\n#&gt;  2 A     Green     8\n#&gt;  3 B     Blue      5\n#&gt;  4 B     Green     5\n#&gt;  5 C     Blue      4\n#&gt;  6 C     Green     6\n#&gt;  7 D     Blue      6\n#&gt;  8 D     Green     9\n#&gt;  9 E     Blue      4\n#&gt; 10 E     Green     1\n#&gt; 11 F     Blue      1\n#&gt; 12 F     Green     2</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>Let’s say we want to get leave-one-out means for the Blue and Green groups. Can we do this using <code>map()</code> to interate over the groups while dropping each row once within the groups in turn? We can.</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n</pre></td>\n<td class=\"lntd\">\n<pre>df |&gt;\n  group_by(var2) |&gt;\n  mutate(\n    jk_mean = map_dbl(row_number(), \\(x) mean(val[-x]))\n  )\n#&gt; # A tibble: 12 × 4\n#&gt; # Groups:   var2 [2]\n#&gt;    var1  var2    val jk_mean\n#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;int&gt;   &lt;dbl&gt;\n#&gt;  1 A     Blue      2     4  \n#&gt;  2 A     Green     8     4.6\n#&gt;  3 B     Blue      5     3.4\n#&gt;  4 B     Green     5     5.2\n#&gt;  5 C     Blue      4     3.6\n#&gt;  6 C     Green     6     5  \n#&gt;  7 D     Blue      6     3.2\n#&gt;  8 D     Green     9     4.4\n#&gt;  9 E     Blue      4     3.6\n#&gt; 10 E     Green     1     6  \n#&gt; 11 F     Blue      1     4.2\n#&gt; 12 F     Green     2     5.8</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>The <code>row_number()</code> function gives us a unique row index, which <code>map_dbl()</code> applies to whatever we want to do next by making it an anonymous lambda function <code>\\(x)</code>. The values of <code>x</code> are fed one at a time to <code>mean(val[-x])</code>, and the <code>val[-x]</code> part drops the _x_th element of <code>val</code> each time when calculating the mean.</p>\n<p>With <code>mutate()</code> we get the whole data frame back, where the <code>jk_mean</code> column is the value of the group mean when that row is dropped. If we just want the leave-one-out means and the groups, we can’t use <code>summarize()</code> directly, because we are getting more than one row per group back. So we use <code>reframe()</code> instead:</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n</pre></td>\n<td class=\"lntd\">\n<pre>df |&gt;\n  group_by(var2) |&gt;\n  reframe(\n    jk_mean = map_dbl(row_number(), \\(x) mean(val[-x]))\n  )\n#&gt; # A tibble: 12 × 2\n#&gt;    var2  jk_mean\n#&gt;    &lt;chr&gt;   &lt;dbl&gt;\n#&gt;  1 Blue      4  \n#&gt;  2 Blue      3.4\n#&gt;  3 Blue      3.6\n#&gt;  4 Blue      3.2\n#&gt;  5 Blue      3.6\n#&gt;  6 Blue      4.2\n#&gt;  7 Green     4.6\n#&gt;  8 Green     5.2\n#&gt;  9 Green     5  \n#&gt; 10 Green     4.4\n#&gt; 11 Green     6  \n#&gt; 12 Green     5.8</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>Finally, what if for some reason we want a list of twelve left-one-out data frames, again by group? For this we can make use of <code>map()</code> twice over:</p>\n<div class=\"highlight-wrapper\">\n<div class=\"highlight\"><div class=\"chroma\">\n<table class=\"lntable\"><tr><td class=\"lntd\">\n<pre> 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n</pre></td>\n<td class=\"lntd\">\n<pre>jk_list &lt;- df |&gt;\n  group_split(var2) |&gt;\n  map(\\(x) map(seq_len(nrow(x)), \\(i) x[-i, ])) |&gt;\n  flatten()\n\nlength(jk_list)\n#&gt; [1] 12\n\n## First element of the list\njk_list[[1]]\n#&gt; # A tibble: 5 × 3\n#&gt;   var1  var2    val\n#&gt;   &lt;chr&gt; &lt;chr&gt; &lt;int&gt;\n#&gt; 1 B     Blue      5\n#&gt; 2 C     Blue      4\n#&gt; 3 D     Blue      6\n#&gt; 4 E     Blue      4\n#&gt; 5 F     Blue      1</pre></td></tr></table>\n</div>\n</div>\n</div>\n<p>Here we use <code>group_split()</code> to get a list with a Blue data frame and a Green data frame. Then we use a map-in-map for a kind of nested loop. The inner <code>map()</code> gives us a vector from 1 to whatever the number of rows in each group’s data frame is. (Here it’s six in each case.) This will get called <em>i</em>. The outer map iterates this over each group, giving us <code>x[-i, ]</code>, or each grouped data frame <em>x</em> with the _i_th row dropped in each case. We end up with a list of 12 new data frames. Each has five rows instead of the six originally in its group, with a different row dropped in turn.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://kieranhealy.org/blog/archives/2025/06/18/oh-leave-it-out/\"> R on kieranhealy.org</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Oh Leave it Out\nPosted on\nJune 18, 2025\nby\nR on kieranhealy.org\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on kieranhealy.org\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSometimes we want to repeatedly do things with all but one row of a data frame, where we systematically drop each row in turn and do the thing. For example,\njacknife cross-validation\nis a kind of very basic bootstrap technique. (It is computationally simpler than and predates the bootstrap.) Or in some areas “leave-one-out” summary statistics are often calculated as a quick robustness check. Sometimes we want to do this within groups, perhaps especially when the groups may be small.\nFirst a quick reminder about one of R’s conventions for referencing the elements of vectors and data frames. If we have\n1\n2\nletters\n#>  [1] \"a\" \"b\" \"c\" \"d\" \"e\" \"f\" \"g\" \"h\" \"i\" \"j\" \"k\" \"l\" \"m\" \"n\" \"o\" \"p\" \"q\" \"r\" \"s\" \"t\" \"u\" \"v\" \"w\" \"x\" \"y\" \"z\"\nWe can write e.g.,\n1\n2\nletters[2]\n#> [1] \"b\"\nto get the second element of the\nletters\nvector. But we can also write\n1\n2\nletters[-2]\n#>  [1] \"a\" \"c\" \"d\" \"e\" \"f\" \"g\" \"h\" \"i\" \"j\" \"k\" \"l\" \"m\" \"n\" \"o\" \"p\" \"q\" \"r\" \"s\" \"t\" \"u\" \"v\" \"w\" \"x\" \"y\" \"z\"\nto get everything in\nletters\nexcept\nthe second element. Handy. The same goes for data frames. Because those are two dimensional, we write e.g.\ndf[2,5]\nto index the 2nd row and 5th column of\ndf\n. But we can apply negative indices to those too to drop rather than keep a row or a column.\nNow, here’s a small data frame:\n1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\nlibrary(tidyverse)\n\ndf <- tibble(var1 = rep(LETTERS[1:6], each = 2), \n             var2 = rep(c(\"Blue\", \"Green\"), 6), \n             val = rpois(12, 4))\n\ndf\n#> # A tibble: 12 × 3\n#>    var1  var2    val\n#>    <chr> <chr> <int>\n#>  1 A     Blue      2\n#>  2 A     Green     8\n#>  3 B     Blue      5\n#>  4 B     Green     5\n#>  5 C     Blue      4\n#>  6 C     Green     6\n#>  7 D     Blue      6\n#>  8 D     Green     9\n#>  9 E     Blue      4\n#> 10 E     Green     1\n#> 11 F     Blue      1\n#> 12 F     Green     2\nLet’s say we want to get leave-one-out means for the Blue and Green groups. Can we do this using\nmap()\nto interate over the groups while dropping each row once within the groups in turn? We can.\n1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\ndf |>\n  group_by(var2) |>\n  mutate(\n    jk_mean = map_dbl(row_number(), \\(x) mean(val[-x]))\n  )\n#> # A tibble: 12 × 4\n#> # Groups:   var2 [2]\n#>    var1  var2    val jk_mean\n#>    <chr> <chr> <int>   <dbl>\n#>  1 A     Blue      2     4  \n#>  2 A     Green     8     4.6\n#>  3 B     Blue      5     3.4\n#>  4 B     Green     5     5.2\n#>  5 C     Blue      4     3.6\n#>  6 C     Green     6     5  \n#>  7 D     Blue      6     3.2\n#>  8 D     Green     9     4.4\n#>  9 E     Blue      4     3.6\n#> 10 E     Green     1     6  \n#> 11 F     Blue      1     4.2\n#> 12 F     Green     2     5.8\nThe\nrow_number()\nfunction gives us a unique row index, which\nmap_dbl()\napplies to whatever we want to do next by making it an anonymous lambda function\n\\(x)\n. The values of\nx\nare fed one at a time to\nmean(val[-x])\n, and the\nval[-x]\npart drops the _x_th element of\nval\neach time when calculating the mean.\nWith\nmutate()\nwe get the whole data frame back, where the\njk_mean\ncolumn is the value of the group mean when that row is dropped. If we just want the leave-one-out means and the groups, we can’t use\nsummarize()\ndirectly, because we are getting more than one row per group back. So we use\nreframe()\ninstead:\n1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\ndf |>\n  group_by(var2) |>\n  reframe(\n    jk_mean = map_dbl(row_number(), \\(x) mean(val[-x]))\n  )\n#> # A tibble: 12 × 2\n#>    var2  jk_mean\n#>    <chr>   <dbl>\n#>  1 Blue      4  \n#>  2 Blue      3.4\n#>  3 Blue      3.6\n#>  4 Blue      3.2\n#>  5 Blue      3.6\n#>  6 Blue      4.2\n#>  7 Green     4.6\n#>  8 Green     5.2\n#>  9 Green     5  \n#> 10 Green     4.4\n#> 11 Green     6  \n#> 12 Green     5.8\nFinally, what if for some reason we want a list of twelve left-one-out data frames, again by group? For this we can make use of\nmap()\ntwice over:\n1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\njk_list <- df |>\n  group_split(var2) |>\n  map(\\(x) map(seq_len(nrow(x)), \\(i) x[-i, ])) |>\n  flatten()\n\nlength(jk_list)\n#> [1] 12\n\n## First element of the list\njk_list[[1]]\n#> # A tibble: 5 × 3\n#>   var1  var2    val\n#>   <chr> <chr> <int>\n#> 1 B     Blue      5\n#> 2 C     Blue      4\n#> 3 D     Blue      6\n#> 4 E     Blue      4\n#> 5 F     Blue      1\nHere we use\ngroup_split()\nto get a list with a Blue data frame and a Green data frame. Then we use a map-in-map for a kind of nested loop. The inner\nmap()\ngives us a vector from 1 to whatever the number of rows in each group’s data frame is. (Here it’s six in each case.) This will get called\ni\n. The outer map iterates this over each group, giving us\nx[-i, ]\n, or each grouped data frame\nx\nwith the _i_th row dropped in each case. We end up with a list of 12 new data frames. Each has five rows instead of the six originally in its group, with a different row dropped in turn.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on kieranhealy.org\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Sometimes we want to repeatedly do things with all but one row of a data frame, where we systematically drop each row in turn and do the thing. For example, jacknife cross-validation is a kind of very basic bootstrap technique. (It is computationally s...",
+      "meta_keywords": null,
+      "og_description": "Sometimes we want to repeatedly do things with all but one row of a data frame, where we systematically drop each row in turn and do the thing. For example, jacknife cross-validation is a kind of very basic bootstrap technique. (It is computationally s...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Oh Leave it Out | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.4,
+      "sitemap_lastmod": null,
+      "twitter_description": "Sometimes we want to repeatedly do things with all but one row of a data frame, where we systematically drop each row in turn and do the thing. For example, jacknife cross-validation is a kind of very basic bootstrap technique. (It is computationally s...",
+      "twitter_title": "Oh Leave it Out | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/06/oh-leave-it-out/",
+      "word_count": 1081
+    }
+  }
+}

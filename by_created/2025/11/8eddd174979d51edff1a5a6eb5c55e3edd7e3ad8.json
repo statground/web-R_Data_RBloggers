@@ -1,0 +1,122 @@
+{
+  "id": "8eddd174979d51edff1a5a6eb5c55e3edd7e3ad8",
+  "url": "https://www.r-bloggers.com/2009/10/a-primer-to-sweave-with-lyx/",
+  "created_at_utc": "2025-11-17T20:40:07Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "4f3a849f-9ed6-4ab8-857d-21ae2417c786",
+    "created_at": "2025-11-17 20:40:07",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/10/a-primer-to-sweave-with-lyx/",
+      "crawled_at": "2025-11-17T10:19:53.951452",
+      "external_links": [
+        {
+          "href": "http://blog.nextbiomotif.com/2009/10/primer-to-sweave-with-lyx.html",
+          "text": "B.I.S. dato"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://cran.r-project.org/contrib/extra/lyx/",
+          "text": "LyX on CRAN"
+        },
+        {
+          "href": "http://cran.r-project.org/contrib/extra/lyx/Sweave-test-1.lyx",
+          "text": "Sweave-test-1.lyx"
+        },
+        {
+          "href": "http://www2.informatik.hu-berlin.de/~mischulz/beamer.html",
+          "text": "beamer"
+        },
+        {
+          "href": "http://cran.r-project.org/contrib/extra/lyx/",
+          "text": "LyX extra on CRAN"
+        },
+        {
+          "href": "http://blog.irrepupavel.com/2007/02/installing-latex-style-files-sty-on.html",
+          "text": "How to use LyX together with R, by Paul E. Johnson and Gregor Gorjanc"
+        },
+        {
+          "href": "http://blog.irrepupavel.com/2007/02/installing-latex-style-files-sty-on.html",
+          "text": "Installing latex style files on ubuntu"
+        },
+        {
+          "href": "http://blog.nextbiomotif.com/2009/10/primer-to-sweave-with-lyx.html",
+          "text": "B.I.S. dato"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "A primer to Sweave with LyX | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jitao-david-zhang/",
+          "text": "Jitao David Zhang"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-59824 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">A primer to Sweave with LyX</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 24, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jitao-david-zhang/\">Jitao David Zhang</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.nextbiomotif.com/2009/10/primer-to-sweave-with-lyx.html\"> B.I.S. dato</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->This is a step-by-step guide to ‘Sweave’ a document in R with Lyx on Ubuntu (9.04).<br/><br/><blockquote><br/>System: Ubuntu 9.04, LyX 1.6.2, R 2.11.0 (Development version, r50178)</blockquote><br/><ol><li>Install LyX with Synaptic if it is not installed yet. (Current version 1.6.2)</li><li>Start LyX, go to menu <span style=\"font-weight: bold;\">Help</span> -&gt; <span style=\"font-weight: bold;\">About LyX</span>, in the prompting version window note the user directory, by default it is <path>~/.lyx</path> (following written as <span style=\"font-style: italic;\">$LYXUSRDIR</span>). Note that by using this directory the setting is only applied to the current user. If you want to make the settings applied system-wide, use the LyX system directory, by default <path>/usr/share/lyx</path>, as your<span style=\"font-style: italic;\"> $LYXUSRDIR</span> in the following steps.</li><li>Go to <a href=\"http://cran.r-project.org/contrib/extra/lyx/\" rel=\"nofollow\" target=\"_blank\">LyX on CRAN</a>, download the ‘preferences’ and all files starting with ‘literate’, that is, ‘literate-*.*’.</li><li>Check if a ‘preferences’ file is existing under <span style=\"font-style: italic;\">$LYXUSRDIR</span> (again, by default <path>~/.lyx</path>). If yes, append the content of downloaded ‘preferences’ to the existing one. Otherwise copy the ‘preferences’ file there.</li><li>Copy ‘literate-*.*’ to <path>$LYXUSRDIR/layouts</path>.</li><li>Close and open LyX, go to menu <span style=\"font-weight: bold;\">tools</span>-&gt;<span style=\"font-weight: bold;\"> reconfigure</span>, to reconfigure LyX and make it recognize our changes.</li><li>Make sure that R is available on your search path (type ‘R’ in the terminal to see whether the familiar command line appears). If you installed R manually (for example by svn-checkout) and have a name other than by default (for example R-devel), maybe you want to set ‘R’ as an alias or by soft linking (<code>sudo ln -s $MYRHOME/bin/R /usr/bin/R</code>)</li><li>Make sure that the Sweave.sty file is on the searching hash of your latex. The Sweave.sty file can be found in <path>$RSOURCE/share/texmf/</path>, where the <variables>$RSOURCE</variables> refers to the path of R source codes (svn checkout). If you are using TexLive distribution of LaTeX, the default path to put style files is <path>/usr/share/texmf-texlive/tex/latex</path> (short as <variables>$TEXDIR</variables>). To install the style file, you have to create a directory in the <variables>$TEXDIR</variables>, maybe named ‘RSweave’,  and copy the Sweave.sty there under <path>$TEXDIR/RSweave/</path>. Next you have to run the program mktexlsr as root (<code>sudo mktexlsr</code>), to refresh the hash of TeX. In case of question or another distribution like TeTex, see the reference (3) below.</li><li>Download the <a href=\"http://cran.r-project.org/contrib/extra/lyx/Sweave-test-1.lyx\" rel=\"nofollow\" target=\"_blank\">Sweave-test-1.lyx</a> file from CRAN to test whether it works.</li></ol>Sweave supporting in LyX is interesting for R users performing reproducible research and documentation, especially for those using the <a href=\"http://www2.informatik.hu-berlin.de/~mischulz/beamer.html\" rel=\"nofollow\" target=\"_blank\">beamer</a> package to prepare LaTex-style representations. Although it is also possible to use other text editors like Emacs to prepare such presentations, the WYSIWYG principle of LyX makes it a more intuitive way to make professional presentations.<br/><br/>References:<br/><ol><li><a href=\"http://cran.r-project.org/contrib/extra/lyx/\" rel=\"nofollow\" target=\"_blank\">LyX extra on CRAN</a></li><li><a href=\"http://blog.irrepupavel.com/2007/02/installing-latex-style-files-sty-on.html\" rel=\"nofollow\" target=\"_blank\">How to use LyX together with R, by Paul E. Johnson and Gregor Gorjanc</a></li><li><a href=\"http://blog.irrepupavel.com/2007/02/installing-latex-style-files-sty-on.html\" rel=\"nofollow\" target=\"_blank\">Installing latex style files on ubuntu</a></li></ol>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.nextbiomotif.com/2009/10/primer-to-sweave-with-lyx.html\"> B.I.S. dato</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "A primer to Sweave with LyX\nPosted on\nOctober 24, 2009\nby\nJitao David Zhang\nin Uncategorized | 0 Comments\n[This article was first published on\nB.I.S. dato\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis is a step-by-step guide to ‘Sweave’ a document in R with Lyx on Ubuntu (9.04).\nSystem: Ubuntu 9.04, LyX 1.6.2, R 2.11.0 (Development version, r50178)\nInstall LyX with Synaptic if it is not installed yet. (Current version 1.6.2)\nStart LyX, go to menu\nHelp\n->\nAbout LyX\n, in the prompting version window note the user directory, by default it is\n~/.lyx\n(following written as\n$LYXUSRDIR\n). Note that by using this directory the setting is only applied to the current user. If you want to make the settings applied system-wide, use the LyX system directory, by default\n/usr/share/lyx\n, as your\n$LYXUSRDIR\nin the following steps.\nGo to\nLyX on CRAN\n, download the ‘preferences’ and all files starting with ‘literate’, that is, ‘literate-*.*’.\nCheck if a ‘preferences’ file is existing under\n$LYXUSRDIR\n(again, by default\n~/.lyx\n). If yes, append the content of downloaded ‘preferences’ to the existing one. Otherwise copy the ‘preferences’ file there.\nCopy ‘literate-*.*’ to\n$LYXUSRDIR/layouts\n.\nClose and open LyX, go to menu\ntools\n->\nreconfigure\n, to reconfigure LyX and make it recognize our changes.\nMake sure that R is available on your search path (type ‘R’ in the terminal to see whether the familiar command line appears). If you installed R manually (for example by svn-checkout) and have a name other than by default (for example R-devel), maybe you want to set ‘R’ as an alias or by soft linking (\nsudo ln -s $MYRHOME/bin/R /usr/bin/R\n)\nMake sure that the Sweave.sty file is on the searching hash of your latex. The Sweave.sty file can be found in\n$RSOURCE/share/texmf/\n, where the\n$RSOURCE\nrefers to the path of R source codes (svn checkout). If you are using TexLive distribution of LaTeX, the default path to put style files is\n/usr/share/texmf-texlive/tex/latex\n(short as\n$TEXDIR\n). To install the style file, you have to create a directory in the\n$TEXDIR\n, maybe named ‘RSweave’,  and copy the Sweave.sty there under\n$TEXDIR/RSweave/\n. Next you have to run the program mktexlsr as root (\nsudo mktexlsr\n), to refresh the hash of TeX. In case of question or another distribution like TeTex, see the reference (3) below.\nDownload the\nSweave-test-1.lyx\nfile from CRAN to test whether it works.\nSweave supporting in LyX is interesting for R users performing reproducible research and documentation, especially for those using the\nbeamer\npackage to prepare LaTex-style representations. Although it is also possible to use other text editors like Emacs to prepare such presentations, the WYSIWYG principle of LyX makes it a more intuitive way to make professional presentations.\nReferences:\nLyX extra on CRAN\nHow to use LyX together with R, by Paul E. Johnson and Gregor Gorjanc\nInstalling latex style files on ubuntu\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nB.I.S. dato\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "This is a step-by-step guide to 'Sweave' a document in R with Lyx on Ubuntu (9.04).System: Ubuntu 9.04, LyX 1.6.2, R 2.11.0 (Development version, r50178)Install LyX with Synaptic if it is not installed yet. (Current version 1.6.2)Start LyX, go to menu ...",
+      "meta_keywords": null,
+      "og_description": "This is a step-by-step guide to 'Sweave' a document in R with Lyx on Ubuntu (9.04).System: Ubuntu 9.04, LyX 1.6.2, R 2.11.0 (Development version, r50178)Install LyX with Synaptic if it is not installed yet. (Current version 1.6.2)Start LyX, go to menu ...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "A primer to Sweave with LyX | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.1,
+      "sitemap_lastmod": "2011-12-08T20:12:32+00:00",
+      "twitter_description": "This is a step-by-step guide to 'Sweave' a document in R with Lyx on Ubuntu (9.04).System: Ubuntu 9.04, LyX 1.6.2, R 2.11.0 (Development version, r50178)Install LyX with Synaptic if it is not installed yet. (Current version 1.6.2)Start LyX, go to menu ...",
+      "twitter_title": "A primer to Sweave with LyX | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/10/a-primer-to-sweave-with-lyx/",
+      "word_count": 617
+    }
+  }
+}

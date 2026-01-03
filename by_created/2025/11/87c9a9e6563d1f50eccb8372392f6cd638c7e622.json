@@ -1,0 +1,235 @@
+{
+  "id": "87c9a9e6563d1f50eccb8372392f6cd638c7e622",
+  "url": "https://www.r-bloggers.com/2025/09/repost-make-your-development-environment-portable-and-reproducible/",
+  "created_at_utc": "2025-11-22T19:57:41Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "f835db01-7812-4cf8-980d-7a50c310ff6a",
+    "created_at": "2025-11-22 19:57:41",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/09/repost-make-your-development-environment-portable-and-reproducible/",
+      "crawled_at": "2025-11-22T10:43:02.066182",
+      "external_links": [
+        {
+          "href": "https://gettinggeneticsdone.blogspot.com/2025/09/development-environment-portable-reproducible.html",
+          "text": "Getting Genetics Done"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://blog.stephenturner.us/p/development-environment-portable-reproducible",
+          "text": "https://blog.stephenturner.us/p/development-environment-portable-reproducible"
+        },
+        {
+          "href": "https://blog.stephenturner.us/p/returning-to-academia-uva-data-science",
+          "text": "I just started a new position"
+        },
+        {
+          "href": "https://blog.stephenturner.us/p/development-environment-portable-reproducible#footnote-1-147076160",
+          "text": "1"
+        },
+        {
+          "href": "https://github.com/webpro/awesome-dotfiles",
+          "text": "awesome-dotfiles"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Blue_screen_of_death",
+          "text": "BSODs"
+        },
+        {
+          "href": "https://gist.github.com/stephenturner/2b8b0814d915c8348cfa75928fbfef5a",
+          "text": "GitHub gist"
+        },
+        {
+          "href": "https://www.tidyverse.org/",
+          "text": "tidyverse"
+        },
+        {
+          "href": "https://github.com/tidyverse/tidyverse/blob/main/DESCRIPTION",
+          "text": "tidyverse package DESCRIPTION file"
+        },
+        {
+          "href": "https://github.com/stephenturner/Tverse",
+          "text": "github.com/stephenturner/Tverse"
+        },
+        {
+          "href": "https://github.com/stephenturner/Tverse/blob/main/DESCRIPTION",
+          "text": "DESCRIPTION"
+        },
+        {
+          "href": "https://github.com/MilesMcBain/breakerofchains",
+          "text": "breakerofchains"
+        },
+        {
+          "href": "https://substackcdn.com/image/fetch/$s_!Qy_9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png",
+          "text": null
+        },
+        {
+          "href": "https://code.visualstudio.com/docs/devcontainers/containers",
+          "text": "docs"
+        },
+        {
+          "href": "https://code.visualstudio.com/docs/devcontainers/tutorial",
+          "text": "tutorial"
+        },
+        {
+          "href": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers",
+          "text": "Dev Containers VS Code extension"
+        },
+        {
+          "href": "https://substackcdn.com/image/fetch/$s_!UCiO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00d069b8-6d03-4a57-b9d3-3c0c5aa1fff2_968x402.png",
+          "text": null
+        },
+        {
+          "href": "https://code.visualstudio.com/docs/devcontainers/containers",
+          "text": "dev containers documentation"
+        },
+        {
+          "href": "https://containers.dev/templates",
+          "text": "pre-built dev container templates"
+        },
+        {
+          "href": "https://substackcdn.com/image/fetch/$s_!MIQS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0ca9ad9-0e35-4766-bc44-56962ebd8765_1031x311.png",
+          "text": null
+        },
+        {
+          "href": "https://substackcdn.com/image/fetch/$s_!WBh9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5132b0ef-8f01-4fe2-960c-617bd82be680_559x199.png",
+          "text": null
+        },
+        {
+          "href": "https://blog.stephenturner.us/p/development-environment-portable-reproducible#footnote-anchor-1-147076160",
+          "text": "1"
+        },
+        {
+          "href": "https://www.vagrantup.com/",
+          "text": "Vagrant"
+        },
+        {
+          "href": "https://www.ansible.com/",
+          "text": "Ansible"
+        },
+        {
+          "href": "https://gettinggeneticsdone.blogspot.com/2025/09/development-environment-portable-reproducible.html",
+          "text": "Getting Genetics Done"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Repost: Make your development environment portable and reproducible | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/substackcdn.com/image/fetch/$s_!Qy_9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png?resize=450%2C1065&ssl=1"
+        },
+        {
+          "alt": "Container Architecture",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Container Architecture",
+          "base64": null,
+          "src": "https://i2.wp.com/substackcdn.com/image/fetch/$s_!UCiO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00d069b8-6d03-4a57-b9d3-3c0c5aa1fff2_968x402.png?resize=450%2C402&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/substackcdn.com/image/fetch/$s_!MIQS!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0ca9ad9-0e35-4766-bc44-56962ebd8765_1031x311.png?resize=450%2C311&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/substackcdn.com/image/fetch/$s_!WBh9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5132b0ef-8f01-4fe2-960c-617bd82be680_559x199.png?resize=450%2C199&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/stephen-turner/",
+          "text": "Stephen Turner"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-395297 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Repost: Make your development environment portable and reproducible</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 9, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/stephen-turner/\">Stephen Turner</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://gettinggeneticsdone.blogspot.com/2025/09/development-environment-portable-reproducible.html\"> Getting Genetics Done</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p><b><mark>Reposted from the original at <a href=\"https://blog.stephenturner.us/p/development-environment-portable-reproducible\" rel=\"nofollow\" target=\"_blank\">https://blog.stephenturner.us/p/development-environment-portable-reproducible</a>.</mark></b></p><p><span>You upgrade your old Intel Macbook Pro for a new M4 MBP. You’re\n setting up a new cloud VM on AWS after migrating away from GCP. You get\n an account on your institution’s new HPC. You have everything </span><em>just so</em><span> in your development environment, and now you have to remember how to set everything up again.</span></p><p><a href=\"https://blog.stephenturner.us/p/returning-to-academia-uva-data-science\" rel=\"nofollow\" target=\"_blank\">I just started a new position</a><span>, and I’m doing this right now.</span></p><p><span>Setting\n up a reproducible and portable development environment that works \nseamlessly across different machines and cloud platforms can save you \ntime and headaches. These are a few of the strategies I use</span><span class=\"footnote-hovercard-target\"><a class=\"footnote-anchor\" data-component-name=\"FootnoteAnchorToDOM\" href=\"https://blog.stephenturner.us/p/development-environment-portable-reproducible#footnote-1-147076160\" id=\"footnote-anchor-1-147076160\" rel=\"nofollow\" target=\"_blank\">1</a></span><span> to quickly reproduce my development environment across machines.</span></p><ol><li><p>Dotfiles in a GitHub repo</p></li><li><p>New VM setup script in a GitHub repo</p></li><li><p>R “verse” package on GitHub</p></li><li><p>Dev containers in VS Code</p></li></ol><div class=\"subscribe-widget is-signed-up is-fully-subscribed\" data-component-name=\"SubscribeWidget\"><div class=\"pencraft pc-reset button-wrapper\"><div class=\"pencraft pc-display-flex pc-justifyContent-center pc-reset\"></div></div></div><h2 class=\"header-anchor-post\">Keep your dotfiles in a private GitHub repo<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§keep-your-dotfiles-in-a-private-github-repo\"></div></div></div></h2><p><span>Dotfiles are the hidden configuration files in your home directory. Examples include </span><code>.vimrc</code><span> for Vim, </span><code>.tmux.conf</code><span> for tmux, or </span><code>.bashrc</code><span> for your shell environment. I have a long list of aliases and little bash functions in a </span><code>.aliases.sh</code><span> file that my </span><code>.bashrc</code><span> sources. I also have a </span><code>.dircolors</code><span>, global </span><code>.gitignore</code><span>, a </span><code>.gitconfig</code><span>, and a minimal </span><code>.Rprofile</code><span>. </span></p><p><span>Keeping\n these files in a GitHub repository makes it easy to quickly reproduce \nyour development environment on another machine. If you search GitHub \nfor “dotfiles” or look at the </span><a href=\"https://github.com/webpro/awesome-dotfiles\" rel=\"nofollow\" target=\"_blank\">awesome-dotfiles</a><span> repo, you’ll see many people keep their dotfiles in a public repo. </span><strong>I use a private repo</strong><span>, because I’m too scared I might accidentally commit secrets, such as API tokens in my </span><code>.Renviron</code><span> or PyPI credentials in </span><code>.pypirc</code><span>.</span></p><p>Whenever you get a new machine or VM, getting things set up is easy:</p><pre># Your private dotfiles repo\ngit clone https://github.com/&lt;yourusername&gt;/dotfiles\ncd ~/dotfiles\n\n# A script to symlink things to your home\n./install.sh  </pre><h2 class=\"header-anchor-post\">Keep a fresh cloud VM setup script<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§keep-a-fresh-cloud-vm-setup-script\"></div></div></div></h2><p><span>I started playing with computers in the 1990s. I’ve experienced enough hard drive failures, random </span><a href=\"https://en.wikipedia.org/wiki/Blue_screen_of_death\" rel=\"nofollow\" target=\"_blank\">BSODs</a><span>,\n and other critical failures, that I treat my computer as if it could \nspontaneously combust at any moment and I could immediately lose all of \nmy unsaved, un-backed-up work at any moment. I treat my cloud VMs the \nsame way, as if they’re disposable (many times they </span><em>are</em><span> disposable, by design).</span></p><p>Imagine\n you launch a new cloud VM starting from a clean Ubuntu image. Now you \nneed all the tools you use every day on this machine – vim, tmux, \nRStudio, conda, Docker, gcloud/gsutil, etc. Additionally, while I use \nconda to create virtual environments for installing tools for specific \ntasks, there are some domain-specific tools I use so often every day for\n exploratory analysis that I actually prefer having a local installation\n on the machine — things like bedtools, seqtk, samtools, bcftools, \nfastp, Nextflow, and a few others — instead of having to load a conda \nenvironment or use Docker every time I want to do something simple.</p><p><strong><span>I keep a script on GitHub that will install all the software I need on a fresh VM. Here’s an example setup script I use as a </span><a href=\"https://gist.github.com/stephenturner/2b8b0814d915c8348cfa75928fbfef5a\" rel=\"nofollow\" target=\"_blank\">GitHub gist</a><span>.</span></strong></p><p>I\n know this isn’t completely Reproducible™ in the sense that a Docker \ncontainer might be, because I’m not controlling the version of every \ntool and library I’m installing, but it’s good enough to get me up and \nrunning for development and interactive data analysis and exploration.</p><h2 class=\"header-anchor-post\">R: Custom “verse” package on GitHub<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§r-custom-verse-package-on-github\"></div></div></div></h2><p><span>The </span><a href=\"https://www.tidyverse.org/\" rel=\"nofollow\" target=\"_blank\">tidyverse</a><span> is probably the best known meta-package that installs lots of other packages for data science. Take a look at the </span><a href=\"https://github.com/tidyverse/tidyverse/blob/main/DESCRIPTION\" rel=\"nofollow\" target=\"_blank\">tidyverse package DESCRIPTION file</a><span>. When you run </span><code>install.packages(\"tidyverse\")</code><span>, it will install all the packages listed in the Imports field, including dplyr, tidyr, purrr, ggplot2, and others.</span></p><p>You\n can use this pattern to create your own “verse” package that installs \nall your favorite packages. This is helpful for setting up a new \nmachine, or re-installing all the R packages you use whenever you \nupgrade to a new major version of R. </p><p><span>Take a look at my Tverse package on GitHub at </span><a href=\"https://github.com/stephenturner/Tverse\" rel=\"nofollow\" target=\"_blank\">github.com/stephenturner/Tverse</a><span>, specifically at the </span><a href=\"https://github.com/stephenturner/Tverse/blob/main/DESCRIPTION\" rel=\"nofollow\" target=\"_blank\">DESCRIPTION</a><span>\n file. In the Imports field I include all the packages I know I’ll use \nroutinely. Note that this also includes several Bioconductor packages \n(which requires including the </span><code>biocViews:</code><span> directive in the DESCRIPTION), as well as one of my favorite packages, </span><a href=\"https://github.com/MilesMcBain/breakerofchains\" rel=\"nofollow\" target=\"_blank\">breakerofchains</a><span>, that is only available from GitHub (requiring the </span><code>Remotes:</code><span> entry).</span></p><p>Once this package is pushed to GitHub I can easily install all those packages and their dependencies:</p><pre>devtools::install(\"stephenturner/Tverse\")</pre><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" data-component-name=\"Image2ToDOM\" href=\"https://substackcdn.com/image/fetch/$s_!Qy_9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png\" rel=\"nofollow\" target=\"_blank\"><div class=\"image2-inset\"><picture><source type=\"image/webp\"/><img alt=\"\" class=\"sizing-normal\" data-lazy-src=\"https://i0.wp.com/substackcdn.com/image/fetch/$s_!Qy_9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png?resize=450%2C1065&amp;ssl=1\" data-recalc-dims=\"1\" height=\"1065\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img 5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png\",\"srcnowatermark\":null,\"fullscreen\":null,\"imagesiz=\"\" alt=\"\" class=\"sizing-normal\" data-attrs=\"{\" data-recalc-dims=\"1\" height=\"1065\" images=\"\" loading=\"lazy\" png\",\"href\":null,\"belowthefold\":true,\"topimage\":false,\"internalredirect\":null,\"isprocessing\":false,\"=\"\" public=\"\" src=\"https://i0.wp.com/substackcdn.com/image/fetch/$s_!Qy_9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png?resize=450%2C1065&amp;ssl=1\" src\":\"https:=\"\" substack-post-media.s3.amazonaws.com=\"\" width=\"450\"/></noscript></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><div class=\"pencraft pc-reset icon-container view-image\"><svg class=\"lucide lucide-maximize2 lucide-maximize-2\" fill=\"none\" height=\"20\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"></svg></div></div></div></div></a></figure></div><h2 class=\"header-anchor-post\">Dev containers in VS Code<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§dev-containers-in-vs-code\"></div></div></div></h2><p>Development\n containers (dev containers) allow you to create and use consistent \ndevelopment environments using Docker containers. It allows you to open \nany folder inside (or mounted into) a container and take advantage of \nVisual Studio Code’s full feature set. This is particularly useful when \nworking with teams or switching between projects with different \ndependencies.</p><p><span>The dev container </span><a href=\"https://code.visualstudio.com/docs/devcontainers/containers\" rel=\"nofollow\" target=\"_blank\">docs</a><span> and </span><a href=\"https://code.visualstudio.com/docs/devcontainers/tutorial\" rel=\"nofollow\" target=\"_blank\">tutorial</a><span> are both good places to start. You’ll need to have Docker running, and install the </span><a href=\"https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers\" rel=\"nofollow\" target=\"_blank\">Dev Containers VS Code extension</a><span>.</span></p><p>From Microsoft’s documentation:</p><blockquote><p>Workspace\n files are mounted from the local file system or copied or cloned into \nthe container. Extensions are installed and run inside the container, \nwhere they have full access to the tools, platform, and file system. \nThis means that you can seamlessly switch your entire development \nenvironment just by connecting to a different container.</p></blockquote><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" data-component-name=\"Image2ToDOM\" href=\"https://substackcdn.com/image/fetch/$s_!UCiO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00d069b8-6d03-4a57-b9d3-3c0c5aa1fff2_968x402.png\" rel=\"nofollow\" target=\"_blank\"><div class=\"image2-inset\"><picture><source type=\"image/webp\"/><img alt=\"Container Architecture\" class=\"sizing-normal\" data-lazy-src=\"https://i2.wp.com/substackcdn.com/image/fetch/$s_!UCiO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00d069b8-6d03-4a57-b9d3-3c0c5aa1fff2_968x402.png?resize=450%2C402&amp;ssl=1\" data-recalc-dims=\"1\" height=\"402\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" title=\"Container Architecture\" width=\"450\"/><noscript><img 00d069b8-6d03-4a57-b9d3-3c0c5aa1fff2_968x402.png\",\"srcnowatermark\":null,\"fullscreen\":null,\"imagesize=\"\" alt=\"Container Architecture\" architecture\",\"title\":null,\"type\":null,\"href\":null,\"belowthefold\":true,\"topimage\":false,\"internalred=\"\" class=\"sizing-normal\" data-attrs=\"{\" data-recalc-dims=\"1\" height=\"402\" images=\"\" loading=\"lazy\" public=\"\" src=\"https://i2.wp.com/substackcdn.com/image/fetch/$s_!UCiO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F00d069b8-6d03-4a57-b9d3-3c0c5aa1fff2_968x402.png?resize=450%2C402&amp;ssl=1\" src\":\"https:=\"\" substack-post-media.s3.amazonaws.com=\"\" title=\"Container Architecture\" width=\"450\"/></noscript></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><div class=\"pencraft pc-reset icon-container view-image\"><svg class=\"lucide lucide-maximize2 lucide-maximize-2\" fill=\"none\" height=\"20\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"></svg></div></div></div></div></a></figure></div><div class=\"captioned-image-container\"><figure><figcaption class=\"image-caption\"><span>From Microsoft’s </span><a href=\"https://code.visualstudio.com/docs/devcontainers/containers\" rel=\"nofollow\" target=\"_blank\">dev containers documentation</a><span>.</span></figcaption></figure></div><h3 class=\"header-anchor-post\">Using a dev container template<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§using-a-dev-container-template\"></div></div></div></h3><p><span>You can use any </span><a href=\"https://containers.dev/templates\" rel=\"nofollow\" target=\"_blank\">pre-built dev container templates</a><span>\n available on registries like Docker Hub or Microsoft’s container \nregistry. Here’s an example using Rocker with R version 4.4.1, and adds a\n few extensions to VS Code running in the container. You could also \ncreate your own container for development, put that on Docker Hub, then \nuse that image.</span></p><pre>{\n    \"image\": \"rocker/r-ver:4.4.1\",\n    \"customizations\": {\n        \"vscode\": {\n            \"extensions\": [\n                \"REditorSupport.r\",\n                \"ms-vscode-remote.remote-containers\"\n            ]\n        }\n    }\n}</pre><h3 class=\"header-anchor-post\">Using a custom Dockerfile<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§using-a-custom-dockerfile\"></div></div></div></h3><p><span>You can use a custom </span><code>Dockerfile</code><span> to create your dev container. First, create a </span><code>.devcontainer/</code><span> directory in your project with a </span><code>Dockerfile</code><span> and a </span><code>devcontainer.json</code><span>\n file. Define your development environment in the Dockerfile (base \nimage, installed packages and configuration). In the JSON replace the \nimage property with build and dockerfile properties:</span></p><pre>{\n    \"build\": {\n        \"dockerfile\": \"Dockerfile\"\n    }\n}</pre><h3 class=\"header-anchor-post\">Start VS Code running the container<div class=\"pencraft pc-display-flex pc-alignItems-center pc-position-absolute pc-reset header-anchor-parent\"><div class=\"pencraft pc-display-contents pc-reset pubTheme-yiXxQA\"><div class=\"pencraft pc-reset header-anchor offset-top\" id=\"§start-vs-code-running-the-container\"></div></div></div></h3><p><span>After you create your </span><code>devcontainer.json</code><span> file (either from a template or completely custom), open the folder in the container using the command palette:</span></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2 is-viewable-img\" data-component-name=\"Image2ToDOM\" href=\"https://substackcdn.com/image/fetch/$s_!MIQS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0ca9ad9-0e35-4766-bc44-56962ebd8765_1031x311.png\" rel=\"nofollow\" target=\"_blank\"><div class=\"image2-inset\"><picture><source type=\"image/webp\"/><img alt=\"\" class=\"sizing-normal\" data-lazy-src=\"https://i1.wp.com/substackcdn.com/image/fetch/$s_!MIQS!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0ca9ad9-0e35-4766-bc44-56962ebd8765_1031x311.png?resize=450%2C311&amp;ssl=1\" data-recalc-dims=\"1\" height=\"311\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img alt=\"\" class=\"sizing-normal\" data-attrs=\"{\" data-recalc-dims=\"1\" e0ca9ad9-0e35-4766-bc44-56962ebd8765_1031x311.png\",\"srcnowatermark\":null,\"fullscreen\":null,\"imagesiz=\"\" height=\"311\" images=\"\" loading=\"lazy\" png\",\"href\":null,\"belowthefold\":true,\"topimage\":false,\"internalredirect\":null,\"isprocessing\":false,\"=\"\" public=\"\" src=\"https://i1.wp.com/substackcdn.com/image/fetch/$s_!MIQS!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0ca9ad9-0e35-4766-bc44-56962ebd8765_1031x311.png?resize=450%2C311&amp;ssl=1\" src\":\"https:=\"\" substack-post-media.s3.amazonaws.com=\"\" width=\"450\"/></noscript></picture><div class=\"image-link-expand\"><div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\"><div class=\"pencraft pc-reset icon-container view-image\"><svg class=\"lucide lucide-maximize2 lucide-maximize-2\" fill=\"none\" height=\"20\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\" width=\"20\" xmlns=\"http://www.w3.org/2000/svg\"></svg></div></div></div></div></a></figure></div><p><span>And prove to yourself that your VS Code environment is indeed using the container (I’m using rocker R 4.4.1 here). Running </span><code>whoami</code><span> shows I’m root inside the container (not my own username), and I’m indeed running R version 4.4.1.</span></p><div class=\"captioned-image-container\"><figure><a class=\"image-link image2\" data-component-name=\"Image2ToDOM\" href=\"https://substackcdn.com/image/fetch/$s_!WBh9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5132b0ef-8f01-4fe2-960c-617bd82be680_559x199.png\" rel=\"nofollow\" target=\"_blank\"><div class=\"image2-inset\"><picture><source type=\"image/webp\"/><img alt=\"\" class=\"sizing-normal\" data-lazy-src=\"https://i2.wp.com/substackcdn.com/image/fetch/$s_!WBh9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5132b0ef-8f01-4fe2-960c-617bd82be680_559x199.png?resize=450%2C199&amp;ssl=1\" data-recalc-dims=\"1\" height=\"199\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img 5132b0ef-8f01-4fe2-960c-617bd82be680_559x199.png\",\"srcnowatermark\":null,\"fullscreen\":null,\"imagesize=\"\" alt=\"\" class=\"sizing-normal\" data-attrs=\"{\" data-recalc-dims=\"1\" height=\"199\" images=\"\" loading=\"lazy\" png\",\"href\":null,\"belowthefold\":true,\"topimage\":false,\"internalredirect\":null,\"isprocessing\":false,\"=\"\" public=\"\" src=\"https://i2.wp.com/substackcdn.com/image/fetch/$s_!WBh9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5132b0ef-8f01-4fe2-960c-617bd82be680_559x199.png?resize=450%2C199&amp;ssl=1\" src\":\"https:=\"\" substack-post-media.s3.amazonaws.com=\"\" width=\"450\"/></noscript></picture><div></div></div></a></figure></div><div class=\"subscribe-widget is-signed-up is-fully-subscribed\" data-component-name=\"SubscribeWidget\"><div class=\"pencraft pc-reset button-wrapper\"><div class=\"pencraft pc-display-flex pc-justifyContent-center pc-reset\"></div></div></div><a class=\"footnote-number\" contenteditable=\"false\" href=\"https://blog.stephenturner.us/p/development-environment-portable-reproducible#footnote-anchor-1-147076160\" id=\"footnote-1-147076160\" rel=\"nofollow\" target=\"_blank\">1</a><div class=\"footnote-content\"><p><a href=\"https://www.vagrantup.com/\" rel=\"nofollow\" target=\"_blank\">Vagrant</a><span> and </span><a href=\"https://www.ansible.com/\" rel=\"nofollow\" target=\"_blank\">Ansible</a><span>\n are powerful tools for managing development environments and automating\n configurations. Vagrant allows you to create and configure lightweight,\n reproducible, and portable virtual environments, while Ansible \nautomates complex system setups and deployments across multiple \nmachines. However, they can be overkill for simple or personal \ndevelopment environments, so I’m focusing on lighter, more \nstraightforward solutions.</span></p></div><p> </p><div class=\"blogger-post-footer\">Getting Genetics Done by Stephen Turner is licensed under a Creative Commons Attribution (CC BY) License.</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://gettinggeneticsdone.blogspot.com/2025/09/development-environment-portable-reproducible.html\"> Getting Genetics Done</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Repost: Make your development environment portable and reproducible\nPosted on\nSeptember 9, 2025\nby\nStephen Turner\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGetting Genetics Done\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nReposted from the original at\nhttps://blog.stephenturner.us/p/development-environment-portable-reproducible\n.\nYou upgrade your old Intel Macbook Pro for a new M4 MBP. You’re\n setting up a new cloud VM on AWS after migrating away from GCP. You get\n an account on your institution’s new HPC. You have everything\njust so\nin your development environment, and now you have to remember how to set everything up again.\nI just started a new position\n, and I’m doing this right now.\nSetting\n up a reproducible and portable development environment that works \nseamlessly across different machines and cloud platforms can save you \ntime and headaches. These are a few of the strategies I use\n1\nto quickly reproduce my development environment across machines.\nDotfiles in a GitHub repo\nNew VM setup script in a GitHub repo\nR “verse” package on GitHub\nDev containers in VS Code\nKeep your dotfiles in a private GitHub repo\nDotfiles are the hidden configuration files in your home directory. Examples include\n.vimrc\nfor Vim,\n.tmux.conf\nfor tmux, or\n.bashrc\nfor your shell environment. I have a long list of aliases and little bash functions in a\n.aliases.sh\nfile that my\n.bashrc\nsources. I also have a\n.dircolors\n, global\n.gitignore\n, a\n.gitconfig\n, and a minimal\n.Rprofile\n.\nKeeping\n these files in a GitHub repository makes it easy to quickly reproduce \nyour development environment on another machine. If you search GitHub \nfor “dotfiles” or look at the\nawesome-dotfiles\nrepo, you’ll see many people keep their dotfiles in a public repo.\nI use a private repo\n, because I’m too scared I might accidentally commit secrets, such as API tokens in my\n.Renviron\nor PyPI credentials in\n.pypirc\n.\nWhenever you get a new machine or VM, getting things set up is easy:\n# Your private dotfiles repo\ngit clone https://github.com/<yourusername>/dotfiles\ncd ~/dotfiles\n\n# A script to symlink things to your home\n./install.sh\nKeep a fresh cloud VM setup script\nI started playing with computers in the 1990s. I’ve experienced enough hard drive failures, random\nBSODs\n,\n and other critical failures, that I treat my computer as if it could \nspontaneously combust at any moment and I could immediately lose all of \nmy unsaved, un-backed-up work at any moment. I treat my cloud VMs the \nsame way, as if they’re disposable (many times they\nare\ndisposable, by design).\nImagine\n you launch a new cloud VM starting from a clean Ubuntu image. Now you \nneed all the tools you use every day on this machine – vim, tmux, \nRStudio, conda, Docker, gcloud/gsutil, etc. Additionally, while I use \nconda to create virtual environments for installing tools for specific \ntasks, there are some domain-specific tools I use so often every day for\n exploratory analysis that I actually prefer having a local installation\n on the machine — things like bedtools, seqtk, samtools, bcftools, \nfastp, Nextflow, and a few others — instead of having to load a conda \nenvironment or use Docker every time I want to do something simple.\nI keep a script on GitHub that will install all the software I need on a fresh VM. Here’s an example setup script I use as a\nGitHub gist\n.\nI\n know this isn’t completely Reproducible™ in the sense that a Docker \ncontainer might be, because I’m not controlling the version of every \ntool and library I’m installing, but it’s good enough to get me up and \nrunning for development and interactive data analysis and exploration.\nR: Custom “verse” package on GitHub\nThe\ntidyverse\nis probably the best known meta-package that installs lots of other packages for data science. Take a look at the\ntidyverse package DESCRIPTION file\n. When you run\ninstall.packages(\"tidyverse\")\n, it will install all the packages listed in the Imports field, including dplyr, tidyr, purrr, ggplot2, and others.\nYou\n can use this pattern to create your own “verse” package that installs \nall your favorite packages. This is helpful for setting up a new \nmachine, or re-installing all the R packages you use whenever you \nupgrade to a new major version of R.\nTake a look at my Tverse package on GitHub at\ngithub.com/stephenturner/Tverse\n, specifically at the\nDESCRIPTION\nfile. In the Imports field I include all the packages I know I’ll use \nroutinely. Note that this also includes several Bioconductor packages \n(which requires including the\nbiocViews:\ndirective in the DESCRIPTION), as well as one of my favorite packages,\nbreakerofchains\n, that is only available from GitHub (requiring the\nRemotes:\nentry).\nOnce this package is pushed to GitHub I can easily install all those packages and their dependencies:\ndevtools::install(\"stephenturner/Tverse\")\nDev containers in VS Code\nDevelopment\n containers (dev containers) allow you to create and use consistent \ndevelopment environments using Docker containers. It allows you to open \nany folder inside (or mounted into) a container and take advantage of \nVisual Studio Code’s full feature set. This is particularly useful when \nworking with teams or switching between projects with different \ndependencies.\nThe dev container\ndocs\nand\ntutorial\nare both good places to start. You’ll need to have Docker running, and install the\nDev Containers VS Code extension\n.\nFrom Microsoft’s documentation:\nWorkspace\n files are mounted from the local file system or copied or cloned into \nthe container. Extensions are installed and run inside the container, \nwhere they have full access to the tools, platform, and file system. \nThis means that you can seamlessly switch your entire development \nenvironment just by connecting to a different container.\nFrom Microsoft’s\ndev containers documentation\n.\nUsing a dev container template\nYou can use any\npre-built dev container templates\navailable on registries like Docker Hub or Microsoft’s container \nregistry. Here’s an example using Rocker with R version 4.4.1, and adds a\n few extensions to VS Code running in the container. You could also \ncreate your own container for development, put that on Docker Hub, then \nuse that image.\n{\n    \"image\": \"rocker/r-ver:4.4.1\",\n    \"customizations\": {\n        \"vscode\": {\n            \"extensions\": [\n                \"REditorSupport.r\",\n                \"ms-vscode-remote.remote-containers\"\n            ]\n        }\n    }\n}\nUsing a custom Dockerfile\nYou can use a custom\nDockerfile\nto create your dev container. First, create a\n.devcontainer/\ndirectory in your project with a\nDockerfile\nand a\ndevcontainer.json\nfile. Define your development environment in the Dockerfile (base \nimage, installed packages and configuration). In the JSON replace the \nimage property with build and dockerfile properties:\n{\n    \"build\": {\n        \"dockerfile\": \"Dockerfile\"\n    }\n}\nStart VS Code running the container\nAfter you create your\ndevcontainer.json\nfile (either from a template or completely custom), open the folder in the container using the command palette:\nAnd prove to yourself that your VS Code environment is indeed using the container (I’m using rocker R 4.4.1 here). Running\nwhoami\nshows I’m root inside the container (not my own username), and I’m indeed running R version 4.4.1.\n1\nVagrant\nand\nAnsible\nare powerful tools for managing development environments and automating\n configurations. Vagrant allows you to create and configure lightweight,\n reproducible, and portable virtual environments, while Ansible \nautomates complex system setups and deployments across multiple \nmachines. However, they can be overkill for simple or personal \ndevelopment environments, so I’m focusing on lighter, more \nstraightforward solutions.\nGetting Genetics Done by Stephen Turner is licensed under a Creative Commons Attribution (CC BY) License.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGetting Genetics Done\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Reposted from the original at https://blog.stephenturner.us/p/development-environment-portable-reproducible.You upgrade your old Intel Macbook Pro for a new M4 MBP. You’re setting up a new cloud VM on AWS after migrating away from GCP. You get an acc...",
+      "meta_keywords": null,
+      "og_description": "Reposted from the original at https://blog.stephenturner.us/p/development-environment-portable-reproducible.You upgrade your old Intel Macbook Pro for a new M4 MBP. You’re setting up a new cloud VM on AWS after migrating away from GCP. You get an acc...",
+      "og_image": "https://substackcdn.com/image/fetch/$s_!Qy_9!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a1800d4-567b-498c-9e08-c7c5eae3aa8c_702x1065.png",
+      "og_title": "Repost: Make your development environment portable and reproducible | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.8,
+      "sitemap_lastmod": null,
+      "twitter_description": "Reposted from the original at https://blog.stephenturner.us/p/development-environment-portable-reproducible.You upgrade your old Intel Macbook Pro for a new M4 MBP. You’re setting up a new cloud VM on AWS after migrating away from GCP. You get an acc...",
+      "twitter_title": "Repost: Make your development environment portable and reproducible | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/09/repost-make-your-development-environment-portable-and-reproducible/",
+      "word_count": 1368
+    }
+  }
+}

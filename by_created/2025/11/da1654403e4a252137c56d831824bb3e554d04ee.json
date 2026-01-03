@@ -1,0 +1,293 @@
+{
+  "id": "da1654403e4a252137c56d831824bb3e554d04ee",
+  "url": "https://www.r-bloggers.com/2023/12/finding-the-most-unique-land-cover-spatial-pattern/",
+  "created_at_utc": "2025-11-17T20:39:02Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "f2bce1dc-a12b-4f98-875b-5a7bd05d2183",
+    "created_at": "2025-11-17 20:39:02",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/finding-the-most-unique-land-cover-spatial-pattern/",
+      "crawled_at": "2025-11-17T09:42:23.210601",
+      "external_links": [
+        {
+          "href": "https://jakubnowosad.com/posts/2023-12-03-motif-bp8/index.html",
+          "text": "Jakub Nowosad's website"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2021-02-17-motif-bp3/",
+          "text": "search for areas with similar spatial patterns to a query region"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2021-02-24-motif-bp4",
+          "text": "quantify changes in spatial patterns"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts.html#category=motif",
+          "text": "“motif” category"
+        },
+        {
+          "href": "https://creativecommons.org/licenses/by/4.0/",
+          "text": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2023-12-03-motif-bp8",
+          "text": "https://jakubnowosad.com/posts/2023-12-03-motif-bp8"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2023-12-03-motif-bp8/index.html",
+          "text": "Jakub Nowosad's website"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Finding the most unique land cover spatial pattern | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-5-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-6-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-6-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-14-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-14-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-17-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-17-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-3.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-4.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-5.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-6.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-19-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-19-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-20-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-20-2.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jakub-nowosad/",
+          "text": "Jakub Nowosad"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380340 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Finding the most unique land cover spatial pattern</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 2, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakub-nowosad/\">Jakub Nowosad</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jakubnowosad.com/posts/2023-12-03-motif-bp8/index.html\"> Jakub Nowosad's website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>Spatial signatures represent spatial patterns of land cover in a given area. Thus, they can be used to <a href=\"https://jakubnowosad.com/posts/2021-02-17-motif-bp3/\" rel=\"nofollow\" target=\"_blank\">search for areas with similar spatial patterns to a query region</a> or to <a href=\"https://jakubnowosad.com/posts/2021-02-24-motif-bp4\" rel=\"nofollow\" target=\"_blank\">quantify changes in spatial patterns</a>. The approaches above are implemented as <code>lsp_search()</code> and <code>lsp_compare()</code> functions of the <strong>motif</strong> R package, respectively.</p>\n<p>At the same time, it is possible to create other, more customized workflows. Here, I will show how to compare spatial patterns of two different areas and find the most unique land cover spatial pattern in the process.</p>\n<section class=\"level1\" id=\"spatial-data\">\n<h1>Spatial data</h1>\n<p>To reproduce the calculations in the following post, you need to download all of the relevant datasets using the code below:</p>\n<div class=\"cell\">\n<pre>library(osfr)\ndir.create(\"data\")\nosf_retrieve_node(\"xykzv\") |&gt;\n        osf_ls_files(n_max = Inf) |&gt;\n        osf_download(path = \"data\",\n                     conflicts = \"skip\")</pre>\n</div>\n<p>You should also attach the following packages:</p>\n<div class=\"cell\">\n<pre>library(sf)\nlibrary(terra)\nlibrary(motif)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(cluster)</pre>\n</div>\n</section>\n<section class=\"level1\" id=\"land-cover-in-africa\">\n<h1>Land cover in Africa</h1>\n<p>The <code>data/land_cover.tif</code> contains land cover data for Africa. It is a categorical raster of the 300-meter resolution that can be read into R using the <code>rast()</code> function.</p>\n<div class=\"cell\">\n<pre>lc = rast(\"data/land_cover.tif\")</pre>\n</div>\n<p>Additionally, the <code>data/lc_palette.csv</code> file contains information about the labels and colors of each land cover category.</p>\n<div class=\"cell\">\n<pre>lc_palette_df = read.csv(\"data/lc_palette.csv\")</pre>\n</div>\n<p>We will use this file to integrate labels and colors into the raster object:</p>\n<div class=\"cell\">\n<pre>levels(lc) = lc_palette_df[c(\"value\", \"label\")]\ncoltab(lc) = lc_palette_df[c(\"value\", \"color\")]\nplot(lc)</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-5-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-5-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"comparing-spatial-patterns-of-two-areas\">\n<h1>Comparing spatial patterns of two areas</h1>\n<p>First, we need to define the areas for which we want to compare spatial patterns. For the example purpose, we use two African countries: Cameroon and Congo. We can download their areas using the <strong>rnaturalearth</strong> package, and use them to crop the <code>lc</code> raster object to their borders:</p>\n<div>\n<pre>library(rnaturalearth)\n# download\ncameroon = ne_countries(country = \"Cameroon\", returnclass = \"sf\") |&gt;\n  select(name) |&gt;\n  st_transform(crs = st_crs(lc))\ncongo = ne_countries(country = \"Republic of the Congo\", returnclass = \"sf\") |&gt;\n  select(name) |&gt;\n  st_transform(crs = st_crs(lc))\n# crop\nlc_cameroon = crop(lc, cameroon, mask = TRUE)\nlc_congo = crop(lc, congo, mask = TRUE)\n# plot\nplot(lc_cameroon)\nplot(lc_congo)</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-6-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-6-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-6-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-6-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n<p>Both countries have similar shares of land cover categories, with the domination of forests and some agricultural and grassland areas, as we can see by calculating their <code>\"composition\"</code> signatures.</p>\n<div class=\"cell\">\n<pre>lc_cameroon_composition = lsp_signature(lc_cameroon, type = \"composition\", classes = 1:9)\nlc_congo_composition = lsp_signature(lc_congo, type = \"composition\", classes = 1:9)\nround(lc_cameroon_composition$signature[[1]], 2)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>        1    2    3 4 5    6 7 8    9\n[1,] 0.15 0.77 0.03 0 0 0.04 0 0 0.01</pre>\n</div>\n<pre>round(lc_congo_composition$signature[[1]], 2)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>       1    2    3 4 5    6 7 8 9\n[1,] 0.1 0.82 0.04 0 0 0.03 0 0 0</pre>\n</div>\n</div>\n<p>We can also look at their spatial patterns (both composition and configuration) by calculating the <code>\"cove\"</code> signature.</p>\n<div class=\"cell\">\n<pre>lc_cameroon_cove = lsp_signature(lc_cameroon, type = \"cove\", classes = 1:9)\nlc_congo_cove = lsp_signature(lc_congo, type = \"cove\", classes = 1:9)</pre>\n</div>\n<p>Next, these signatures can be compared using dissimilarity measures. The <strong>philentropy</strong> package provides a wide range of such measures, including the Jensen-Shannon divergence. Here, we use this measure to calculate the dissimilarity between the spatial patterns (as represented with <code>\"cove\"</code>) of Cameroon and Congo.</p>\n<div class=\"cell\">\n<pre>library(philentropy)\ndist_cove = dist_one_one(lc_cameroon_cove$signature[[1]], \n                         lc_congo_cove$signature[[1]], \n                         method = \"jensen-shannon\")\ndist_cove</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] 0.008919291</pre>\n</div>\n</div>\n<p>This value is small (approximately 0.009), which means that, in general, Cameroon’s and Congo’s spatial patterns are fairly similar.</p>\n</section>\n<section class=\"level1\" id=\"comparing-local-spatial-patterns\">\n<h1>Comparing local spatial patterns</h1>\n<p>We can also look at the local spatial patterns of Cameroon and Congo, here on a scale of 100 by 100 cells (i.e., 30 by 30 km):</p>\n<div class=\"cell\">\n<pre>lc_cameroon_cove100 = lsp_signature(lc_cameroon, type = \"cove\",\n                                    window = 100, classes = 1:9)\nlc_congo_cove100 = lsp_signature(lc_congo, type = \"cove\", \n                                 window = 100, classes = 1:9)</pre>\n</div>\n<p>To compare these signatures, we can calculate the Jensen-Shannon divergence for each pair of signatures in both datasets. This can be done using the <code>dist_many_many()</code> function from the <strong>philentropy</strong> package, which expects two matrices as input.</p>\n<div class=\"cell\">\n<pre>lc_cameroon_cove100_mat = do.call(rbind, lc_cameroon_cove100$signature)\nlc_congo_cove100_mat = do.call(rbind, lc_congo_cove100$signature)\ndist_cove_100 = dist_many_many(lc_cameroon_cove100_mat, \n                               lc_congo_cove100_mat, \n                               method = \"jensen-shannon\")</pre>\n</div>\n<p>The result is a matrix with the Jensen-Shannon divergence between each pair of areas in both countries, in which rows represent areas in Cameroon and columns represent areas in Congo. Lower values indicate more similar spatial patterns, while higher values indicate more dissimilar spatial patterns. This matrix shows that there are some areas with similar spatial patterns in both countries, and some are even identical (given the source data scale/resolution and scope/number and variety of categories):</p>\n<div class=\"cell\">\n<pre>summary(c(dist_cove_100))</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n0.00000 0.03228 0.08722 0.16375 0.22835 0.69315 </pre>\n</div>\n</div>\n<p>Identifiers of the identical areas can be found using the <code>which()</code> function. For example, area <code>341</code> in Cameroon and area <code>4</code> in Congo have the same spatial pattern:</p>\n<div class=\"cell\">\n<pre>head(which(dist_cove_100 == 0, arr.ind = TRUE))</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>     row col\n[1,] 341   4\n[2,] 418   4\n[3,] 423   4\n[4,] 440   4\n[5,] 462   4\n[6,] 477   4</pre>\n</div>\n</div>\n<p>We can add spatial information to the <code>lc_cameroon_cove100</code> and <code>lc_congo_cove100</code> objects using the <code>lsp_add_sf()</code> function. Then, we are able to visualize these areas by cropping the land cover data using the new objects. In this case, both areas are fully covered by forest (although the second one is located at the border, and thus contains some NA values).</p>\n<div>\n<pre>lc_cameroon_cove100_sf = lsp_add_sf(lc_cameroon_cove100)\nlc_congo_cove100_sf = lsp_add_sf(lc_congo_cove100)\nplot(crop(lc_cameroon, lc_cameroon_cove100_sf[341, ]), main = \"Cameroon\")\nplot(crop(lc_congo, lc_congo_cove100_sf[4, ]), main = \"Congo\")</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-14-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-14-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-14-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-14-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"grouping-areas-with-similar-local-spatial-patterns\">\n<h1>Grouping areas with similar local spatial patterns</h1>\n<p>We can group areas with similar spatial patterns of land cover using the <code>pam()</code> function from the <strong>cluster</strong> package. For this example, we will divide the areas into six groups.</p>\n<div class=\"cell\">\n<pre>my_pam = pam(rbind(lc_cameroon_cove100_mat, lc_congo_cove100_mat), 6)</pre>\n</div>\n<p>Next, we can add the clustering results to the spatial object by naming both existing <code>sf</code> objects, combining them into one, and adding the clustering results as a new column.</p>\n<div class=\"cell\">\n<pre>lc_cameroon_cove100_sf$name = \"Cameroon\"\nlc_congo_cove100_sf$name = \"Congo\"\nlc_cove100_sf = rbind(lc_cameroon_cove100_sf, lc_congo_cove100_sf)\nlc_cove100_sf$k = as.factor(my_pam$clustering)</pre>\n</div>\n<p>Visualization of the results is shown below:</p>\n<div>\n<pre>plot(subset(lc_cove100_sf, name == \"Cameroon\")[\"k\"], pal = palette.colors, main = \"Cameroon\")\nplot(subset(lc_cove100_sf, name == \"Congo\")[\"k\"],  pal = palette.colors, main = \"Congo\")</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-17-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-17-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-17-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-17-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n<p>You may quickly notice that the sixth and fifth clusters exist prominently in both countries. On the other hand, cluster 2 only exists in Cameroon.</p>\n<p>We can look at each cluster representative by subsetting the <code>lc_cove100_sf</code> object using the <code>id.med</code> column from the <code>my_pam</code> object.</p>\n<div>\n<pre>lc_cove100_sf_subset = lc_cove100_sf[my_pam$id.med, ]\nfor (i in seq_len(nrow(lc_cove100_sf_subset))){\n  plot(crop(lc, lc_cove100_sf_subset[i, ]), main = i)\n}</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-3.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-3.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-4.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-4.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-5.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-5.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-6.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-18-6.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n<p>Cluster 6 represents forest areas, and cluster 4 consists of areas predominantly covered by forests and some agricultural and grassland areas. Cluster 5 is represented by forest, but with a substantial share of agriculture and grasslands and cluster 1 is a mix of highly aggregated agriculture and forest. Cluster 3 are areas with a large share of shrublands, agricultural and forest areas. Finally, cluster 2, which only exists in Cameroon, represents large (30 by 30 km) areas of agriculture.</p>\n</section>\n<section class=\"level1\" id=\"finding-the-most-unique-land-cover-spatial-pattern\">\n<h1>Finding the most unique land cover spatial pattern</h1>\n<p>The <code>dist_cove_100</code> object contains the Jensen-Shannon divergence between each pair of areas in both countries, where rows represent areas in Cameroon and columns represent areas in Congo. Usually, it may be used to find the most similar areas (areas with the smallest divergence), but here, we will look for the most unique areas.</p>\n<p>This can be done in two steps. First, we need to calculate the smallest value in each row and column, which can be done using the <code>apply()</code> function. This allows us to find what is the smallest divergence between each area in Cameroon and Congo; in other words, how dissimilar is an area in one country to the most similar area in the other country.</p>\n<div>\n<pre>lc_cameroon_cove100_sf$min_dist = apply(dist_cove_100, 1, min)\nplot(lc_cameroon_cove100_sf[\"min_dist\"], main = \"Cameroon\")\nlc_congo_cove100_sf$min_dist = apply(dist_cove_100, 2, min)\nplot(lc_congo_cove100_sf[\"min_dist\"], main = \"Congo\")</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-19-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-19-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-19-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-19-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n<p>Second, we can find the area with the largest value in the <code>lc_cameroon_cove100_sf$min_dist</code> column, which is the most unique area in Cameroon, and the area with the largest value in <code>lc_congo_cove100_sf$min_dist</code>, which is the most unique area in Congo. In other words, these areas are the most dissimilar to any area in the other country.</p>\n<div>\n<pre>most_unique_cameroon = lc_cameroon_cove100_sf[which.max(lc_cameroon_cove100_sf$min_dist), ]\nplot(crop(lc_cameroon, most_unique_cameroon), main = \"Cameroon\")\nmost_unique_congo = lc_congo_cove100_sf[which.max(lc_congo_cove100_sf$min_dist), ]\nplot(crop(lc_congo, most_unique_congo), main = \"Congo\")</pre>\n<div class=\"cell preview-image quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-20-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-20-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-20-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-20-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n<p>In the case of Cameroon, such an area is a mosaic of agriculture and grasslands; for Congo, it is a complex area with grasslands, agriculture, forest, and some shrublands. Interestingly, both areas are located at the border of the countries.<sup>1</sup></p>\n</section>\n<section class=\"level1\" id=\"summary\">\n<h1>Summary</h1>\n<p>In this post, we have seen how to compare spatial patterns of land cover in two different areas. It also showed how to find the most unique land cover spatial pattern (try to find the most unique area in your country as compared to the rest of the world!) This approach can be used to find areas with unique spatial land cover patterns or any other categorical rasters. To learn more about the <strong>motif</strong> package, see the other blog posts in the <a href=\"https://jakubnowosad.com/posts.html#category=motif\" rel=\"nofollow\" target=\"_blank\">“motif” category</a>.</p>\n</section>\n<div class=\"default\" id=\"quarto-appendix\"><section class=\"footnotes footnotes-end-of-document\" id=\"footnotes\"><h2 class=\"anchored quarto-appendix-heading\">Footnotes</h2>\n<ol>\n<li id=\"fn1\"><p>You could change the <code>threshold</code> parameter in <code>lsp_signature()</code> to 0 to only include areas completely inside the countries’ borders.↩︎</p></li>\n</ol>\n</section><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">Reuse</h2><div class=\"quarto-appendix-contents\" id=\"quarto-reuse\"><div><a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"nofollow\" target=\"_blank\">https://creativecommons.org/licenses/by/4.0/</a></div></div></section><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">Citation</h2><div><div class=\"quarto-appendix-secondary-label\">BibTeX citation:</div><pre>@online{nowosad2023,\n  author = {Nowosad, Jakub},\n  title = {Finding the Most Unique Land Cover Spatial Pattern},\n  date = {2023-12-03},\n  url = {https://jakubnowosad.com/posts/2023-12-03-motif-bp8},\n  langid = {en}\n}\n</pre><div class=\"quarto-appendix-secondary-label\">For attribution, please cite this work as:</div><div class=\"csl-entry quarto-appendix-citeas\" id=\"ref-nowosad2023\">\nNowosad, Jakub. 2023. <span>“Finding the Most Unique Land Cover Spatial\nPattern.”</span> December 3, 2023. <a href=\"https://jakubnowosad.com/posts/2023-12-03-motif-bp8\" rel=\"nofollow\" target=\"_blank\">https://jakubnowosad.com/posts/2023-12-03-motif-bp8</a>.\n</div></div></section></div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubnowosad.com/posts/2023-12-03-motif-bp8/index.html\"> Jakub Nowosad's website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Finding the most unique land cover spatial pattern\nPosted on\nDecember 2, 2023\nby\nJakub Nowosad\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJakub Nowosad's website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSpatial signatures represent spatial patterns of land cover in a given area. Thus, they can be used to\nsearch for areas with similar spatial patterns to a query region\nor to\nquantify changes in spatial patterns\n. The approaches above are implemented as\nlsp_search()\nand\nlsp_compare()\nfunctions of the\nmotif\nR package, respectively.\nAt the same time, it is possible to create other, more customized workflows. Here, I will show how to compare spatial patterns of two different areas and find the most unique land cover spatial pattern in the process.\nSpatial data\nTo reproduce the calculations in the following post, you need to download all of the relevant datasets using the code below:\nlibrary(osfr)\ndir.create(\"data\")\nosf_retrieve_node(\"xykzv\") |>\n        osf_ls_files(n_max = Inf) |>\n        osf_download(path = \"data\",\n                     conflicts = \"skip\")\nYou should also attach the following packages:\nlibrary(sf)\nlibrary(terra)\nlibrary(motif)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(cluster)\nLand cover in Africa\nThe\ndata/land_cover.tif\ncontains land cover data for Africa. It is a categorical raster of the 300-meter resolution that can be read into R using the\nrast()\nfunction.\nlc = rast(\"data/land_cover.tif\")\nAdditionally, the\ndata/lc_palette.csv\nfile contains information about the labels and colors of each land cover category.\nlc_palette_df = read.csv(\"data/lc_palette.csv\")\nWe will use this file to integrate labels and colors into the raster object:\nlevels(lc) = lc_palette_df[c(\"value\", \"label\")]\ncoltab(lc) = lc_palette_df[c(\"value\", \"color\")]\nplot(lc)\nComparing spatial patterns of two areas\nFirst, we need to define the areas for which we want to compare spatial patterns. For the example purpose, we use two African countries: Cameroon and Congo. We can download their areas using the\nrnaturalearth\npackage, and use them to crop the\nlc\nraster object to their borders:\nlibrary(rnaturalearth)\n# download\ncameroon = ne_countries(country = \"Cameroon\", returnclass = \"sf\") |>\n  select(name) |>\n  st_transform(crs = st_crs(lc))\ncongo = ne_countries(country = \"Republic of the Congo\", returnclass = \"sf\") |>\n  select(name) |>\n  st_transform(crs = st_crs(lc))\n# crop\nlc_cameroon = crop(lc, cameroon, mask = TRUE)\nlc_congo = crop(lc, congo, mask = TRUE)\n# plot\nplot(lc_cameroon)\nplot(lc_congo)\nBoth countries have similar shares of land cover categories, with the domination of forests and some agricultural and grassland areas, as we can see by calculating their\n\"composition\"\nsignatures.\nlc_cameroon_composition = lsp_signature(lc_cameroon, type = \"composition\", classes = 1:9)\nlc_congo_composition = lsp_signature(lc_congo, type = \"composition\", classes = 1:9)\nround(lc_cameroon_composition$signature[[1]], 2)\n1    2    3 4 5    6 7 8    9\n[1,] 0.15 0.77 0.03 0 0 0.04 0 0 0.01\nround(lc_congo_composition$signature[[1]], 2)\n1    2    3 4 5    6 7 8 9\n[1,] 0.1 0.82 0.04 0 0 0.03 0 0 0\nWe can also look at their spatial patterns (both composition and configuration) by calculating the\n\"cove\"\nsignature.\nlc_cameroon_cove = lsp_signature(lc_cameroon, type = \"cove\", classes = 1:9)\nlc_congo_cove = lsp_signature(lc_congo, type = \"cove\", classes = 1:9)\nNext, these signatures can be compared using dissimilarity measures. The\nphilentropy\npackage provides a wide range of such measures, including the Jensen-Shannon divergence. Here, we use this measure to calculate the dissimilarity between the spatial patterns (as represented with\n\"cove\"\n) of Cameroon and Congo.\nlibrary(philentropy)\ndist_cove = dist_one_one(lc_cameroon_cove$signature[[1]], \n                         lc_congo_cove$signature[[1]], \n                         method = \"jensen-shannon\")\ndist_cove\n[1] 0.008919291\nThis value is small (approximately 0.009), which means that, in general, Cameroon’s and Congo’s spatial patterns are fairly similar.\nComparing local spatial patterns\nWe can also look at the local spatial patterns of Cameroon and Congo, here on a scale of 100 by 100 cells (i.e., 30 by 30 km):\nlc_cameroon_cove100 = lsp_signature(lc_cameroon, type = \"cove\",\n                                    window = 100, classes = 1:9)\nlc_congo_cove100 = lsp_signature(lc_congo, type = \"cove\", \n                                 window = 100, classes = 1:9)\nTo compare these signatures, we can calculate the Jensen-Shannon divergence for each pair of signatures in both datasets. This can be done using the\ndist_many_many()\nfunction from the\nphilentropy\npackage, which expects two matrices as input.\nlc_cameroon_cove100_mat = do.call(rbind, lc_cameroon_cove100$signature)\nlc_congo_cove100_mat = do.call(rbind, lc_congo_cove100$signature)\ndist_cove_100 = dist_many_many(lc_cameroon_cove100_mat, \n                               lc_congo_cove100_mat, \n                               method = \"jensen-shannon\")\nThe result is a matrix with the Jensen-Shannon divergence between each pair of areas in both countries, in which rows represent areas in Cameroon and columns represent areas in Congo. Lower values indicate more similar spatial patterns, while higher values indicate more dissimilar spatial patterns. This matrix shows that there are some areas with similar spatial patterns in both countries, and some are even identical (given the source data scale/resolution and scope/number and variety of categories):\nsummary(c(dist_cove_100))\nMin. 1st Qu.  Median    Mean 3rd Qu.    Max. \n0.00000 0.03228 0.08722 0.16375 0.22835 0.69315\nIdentifiers of the identical areas can be found using the\nwhich()\nfunction. For example, area\n341\nin Cameroon and area\n4\nin Congo have the same spatial pattern:\nhead(which(dist_cove_100 == 0, arr.ind = TRUE))\nrow col\n[1,] 341   4\n[2,] 418   4\n[3,] 423   4\n[4,] 440   4\n[5,] 462   4\n[6,] 477   4\nWe can add spatial information to the\nlc_cameroon_cove100\nand\nlc_congo_cove100\nobjects using the\nlsp_add_sf()\nfunction. Then, we are able to visualize these areas by cropping the land cover data using the new objects. In this case, both areas are fully covered by forest (although the second one is located at the border, and thus contains some NA values).\nlc_cameroon_cove100_sf = lsp_add_sf(lc_cameroon_cove100)\nlc_congo_cove100_sf = lsp_add_sf(lc_congo_cove100)\nplot(crop(lc_cameroon, lc_cameroon_cove100_sf[341, ]), main = \"Cameroon\")\nplot(crop(lc_congo, lc_congo_cove100_sf[4, ]), main = \"Congo\")\nGrouping areas with similar local spatial patterns\nWe can group areas with similar spatial patterns of land cover using the\npam()\nfunction from the\ncluster\npackage. For this example, we will divide the areas into six groups.\nmy_pam = pam(rbind(lc_cameroon_cove100_mat, lc_congo_cove100_mat), 6)\nNext, we can add the clustering results to the spatial object by naming both existing\nsf\nobjects, combining them into one, and adding the clustering results as a new column.\nlc_cameroon_cove100_sf$name = \"Cameroon\"\nlc_congo_cove100_sf$name = \"Congo\"\nlc_cove100_sf = rbind(lc_cameroon_cove100_sf, lc_congo_cove100_sf)\nlc_cove100_sf$k = as.factor(my_pam$clustering)\nVisualization of the results is shown below:\nplot(subset(lc_cove100_sf, name == \"Cameroon\")[\"k\"], pal = palette.colors, main = \"Cameroon\")\nplot(subset(lc_cove100_sf, name == \"Congo\")[\"k\"],  pal = palette.colors, main = \"Congo\")\nYou may quickly notice that the sixth and fifth clusters exist prominently in both countries. On the other hand, cluster 2 only exists in Cameroon.\nWe can look at each cluster representative by subsetting the\nlc_cove100_sf\nobject using the\nid.med\ncolumn from the\nmy_pam\nobject.\nlc_cove100_sf_subset = lc_cove100_sf[my_pam$id.med, ]\nfor (i in seq_len(nrow(lc_cove100_sf_subset))){\n  plot(crop(lc, lc_cove100_sf_subset[i, ]), main = i)\n}\nCluster 6 represents forest areas, and cluster 4 consists of areas predominantly covered by forests and some agricultural and grassland areas. Cluster 5 is represented by forest, but with a substantial share of agriculture and grasslands and cluster 1 is a mix of highly aggregated agriculture and forest. Cluster 3 are areas with a large share of shrublands, agricultural and forest areas. Finally, cluster 2, which only exists in Cameroon, represents large (30 by 30 km) areas of agriculture.\nFinding the most unique land cover spatial pattern\nThe\ndist_cove_100\nobject contains the Jensen-Shannon divergence between each pair of areas in both countries, where rows represent areas in Cameroon and columns represent areas in Congo. Usually, it may be used to find the most similar areas (areas with the smallest divergence), but here, we will look for the most unique areas.\nThis can be done in two steps. First, we need to calculate the smallest value in each row and column, which can be done using the\napply()\nfunction. This allows us to find what is the smallest divergence between each area in Cameroon and Congo; in other words, how dissimilar is an area in one country to the most similar area in the other country.\nlc_cameroon_cove100_sf$min_dist = apply(dist_cove_100, 1, min)\nplot(lc_cameroon_cove100_sf[\"min_dist\"], main = \"Cameroon\")\nlc_congo_cove100_sf$min_dist = apply(dist_cove_100, 2, min)\nplot(lc_congo_cove100_sf[\"min_dist\"], main = \"Congo\")\nSecond, we can find the area with the largest value in the\nlc_cameroon_cove100_sf$min_dist\ncolumn, which is the most unique area in Cameroon, and the area with the largest value in\nlc_congo_cove100_sf$min_dist\n, which is the most unique area in Congo. In other words, these areas are the most dissimilar to any area in the other country.\nmost_unique_cameroon = lc_cameroon_cove100_sf[which.max(lc_cameroon_cove100_sf$min_dist), ]\nplot(crop(lc_cameroon, most_unique_cameroon), main = \"Cameroon\")\nmost_unique_congo = lc_congo_cove100_sf[which.max(lc_congo_cove100_sf$min_dist), ]\nplot(crop(lc_congo, most_unique_congo), main = \"Congo\")\nIn the case of Cameroon, such an area is a mosaic of agriculture and grasslands; for Congo, it is a complex area with grasslands, agriculture, forest, and some shrublands. Interestingly, both areas are located at the border of the countries.\n1\nSummary\nIn this post, we have seen how to compare spatial patterns of land cover in two different areas. It also showed how to find the most unique land cover spatial pattern (try to find the most unique area in your country as compared to the rest of the world!) This approach can be used to find areas with unique spatial land cover patterns or any other categorical rasters. To learn more about the\nmotif\npackage, see the other blog posts in the\n“motif” category\n.\nFootnotes\nYou could change the\nthreshold\nparameter in\nlsp_signature()\nto 0 to only include areas completely inside the countries’ borders.↩︎\nReuse\nhttps://creativecommons.org/licenses/by/4.0/\nCitation\nBibTeX citation:\n@online{nowosad2023,\n  author = {Nowosad, Jakub},\n  title = {Finding the Most Unique Land Cover Spatial Pattern},\n  date = {2023-12-03},\n  url = {https://jakubnowosad.com/posts/2023-12-03-motif-bp8},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNowosad, Jakub. 2023.\n“Finding the Most Unique Land Cover Spatial\nPattern.”\nDecember 3, 2023.\nhttps://jakubnowosad.com/posts/2023-12-03-motif-bp8\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJakub Nowosad's website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Spatial signatures represent spatial patterns of land cover in a given area. Thus, they can be used to search for areas with similar spatial patterns to a query region or to quantify changes in spatial patterns. The approaches above are implement...",
+      "meta_keywords": null,
+      "og_description": "Spatial signatures represent spatial patterns of land cover in a given area. Thus, they can be used to search for areas with similar spatial patterns to a query region or to quantify changes in spatial patterns. The approaches above are implement...",
+      "og_image": "https://jakubnowosad.com/posts/2023-12-03-motif-bp8/index_files/figure-html/unnamed-chunk-5-1.png",
+      "og_title": "Finding the most unique land cover spatial pattern | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 8.8,
+      "sitemap_lastmod": "2023-12-03T00:00:00+00:00",
+      "twitter_description": "Spatial signatures represent spatial patterns of land cover in a given area. Thus, they can be used to search for areas with similar spatial patterns to a query region or to quantify changes in spatial patterns. The approaches above are implement...",
+      "twitter_title": "Finding the most unique land cover spatial pattern | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/finding-the-most-unique-land-cover-spatial-pattern/",
+      "word_count": 1756
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "01b8cb093311b7b5c681608ff64f3599db8a8066",
+  "url": "https://www.r-bloggers.com/2008/11/use-anchoring-to-lose-years-off-your-age/",
+  "created_at_utc": "2025-11-17T20:41:25Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "2309b38f-871f-410f-a385-5c5f67582549",
+    "created_at": "2025-11-17 20:41:25",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2008/11/use-anchoring-to-lose-years-off-your-age/",
+      "crawled_at": "2025-11-17T10:48:45.726758",
+      "external_links": [
+        {
+          "href": "http://blog.diegovalle.net/2008/11/use-anchoring-to-lose-years-off-your.html",
+          "text": "Diego Valle's Blog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age2.png",
+          "text": null
+        },
+        {
+          "href": "http://blog.diegovalle.net/2008/11/use-anchoring-to-lose-years-off-your.html",
+          "text": "Diego Valle's Blog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Use anchoring to lose years off your age | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age3.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age3.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/3280550716273637581-3741366376595067358?l=blog.diegovalle.net"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/3280550716273637581-3741366376595067358?l=blog.diegovalle.net"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/diego/",
+          "text": "Diego"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/dating/",
+          "text": "Dating"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-10291 post type-post status-publish format-standard hentry category-r-bloggers tag-dating tag-r\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Use anchoring to lose years off your age</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 21, 2008</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/diego/\">Diego</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.diegovalle.net/2008/11/use-anchoring-to-lose-years-off-your.html\"> Diego Valle's Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->It is well known in psychology that the way a question is asked can strongly influence the answer. For example, if you spin a random number wheel and later have people guess the proportion of United Nations countries that are African, their answers closely follow the number the wheel landed on. The initial random number serves as a reference or anchor for their guesses.<br/>\n<br/>\nSuppose you wanted people to guess you had a lower age than you really had. One way to do it would be to anchor the question with the numbers 12 and 42 and compare the results. Specifically, when someone asked you what your age was you could tell them,<br/>\n<ul><li>I’m really 12 years old, don’t tell my mom and dad I’m talking to strangers<br/>\n</li>\n<li>I’m 42 years old but you can’t tell because of my macrobiotic diet based on microfibers</li>\n</ul>before having them guess your age.<br/>\n<br/>\nJust for fun I asked 16 people in each anchoring condition to guess my age. The mean age of the people making the guess in the “42” condition was 20.4 years and for the “12” condition it was 20.8. Not much of difference, so any age effect would be solely due to the anchoring effect.<br/>\n<br/>\n<span style=\"font-weight: bold;\">Results</span><br/>\nThe mean age for the guess in the “42” condition was <span style=\"font-weight: bold;\">32.4</span>, for the “12” condition it was <span style=\"font-weight: bold;\">26.4,</span> here is a boxplot of the respective guesses<br/>\n<div class=\"separator\" style=\"clear: both; text-align: left;\"><a href=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age2.png\" rel=\"nofollow\" style=\"margin-left: 1em; margin-right: 1em;\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age3.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age3.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2008/11/age3.png?w=578\"/></noscript></a></div>To make sure the results were statistically significant I performed a bootstrap calculation with R<br/>\n<pre>Intervals : Level      Normal     95%   ( 3.375,  8.622 )</pre>The bootstrap confidence interval doesn’t contain 0, which means there was indeed a statistically significant anchoring effect and if you want people to think you look younger than you really are, you might want to anchor your age to a ridiculously low number.<br/>\n<br/>\nHere’s the R code to perform the bootstrap<br/>\n<pre>library(boot)\n#The guesses of the girls\nguess.42&lt;-c(28,33,40,34,42,25,33,30,31,28,30,30,35,32,35)\nguess.12&lt;-c(23,28,26,25,25,30,27,28,28,23,27,28,30,24,24)\nD = data.frame(guess.42,guess.12)\nsamplemean &lt;- function(D, d) {\nE=D[d,]\nreturn(mean(E$guess.42)-mean(E$guess.12))\n}\nb = boot(D, samplemean, R=1000)\nprint(b)\nplot(b)\nboot.ci(b)\nboxplot(guess.42,guess.12,ylab=\"age guessed\",xlab=\"age anchored\",names=c(\"42\",\"12\"))\n#Now we do a t test\nt.test(guess.42,guess.12,type=\"greater\")\n</pre><br/>\n<br/>\n<span style=\"font-weight: bold;\">Note:</span> It was obvious that the people who guessed 23, and above 35, as my age were joking, nonetheless it was interesting that the exaggerated ages they chose in jest were close to the anchor.<div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/3280550716273637581-3741366376595067358?l=blog.diegovalle.net&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/3280550716273637581-3741366376595067358?l=blog.diegovalle.net\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/3280550716273637581-3741366376595067358?l=blog.diegovalle.net\" width=\"1\"/></noscript></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.diegovalle.net/2008/11/use-anchoring-to-lose-years-off-your.html\"> Diego Valle's Blog</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/dating/\" rel=\"tag\">Dating</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li></ul></div></article>",
+      "main_text": "Use anchoring to lose years off your age\nPosted on\nNovember 21, 2008\nby\nDiego\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDiego Valle's Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIt is well known in psychology that the way a question is asked can strongly influence the answer. For example, if you spin a random number wheel and later have people guess the proportion of United Nations countries that are African, their answers closely follow the number the wheel landed on. The initial random number serves as a reference or anchor for their guesses.\nSuppose you wanted people to guess you had a lower age than you really had. One way to do it would be to anchor the question with the numbers 12 and 42 and compare the results. Specifically, when someone asked you what your age was you could tell them,\nI’m really 12 years old, don’t tell my mom and dad I’m talking to strangers\nI’m 42 years old but you can’t tell because of my macrobiotic diet based on microfibers\nbefore having them guess your age.\nJust for fun I asked 16 people in each anchoring condition to guess my age. The mean age of the people making the guess in the “42” condition was 20.4 years and for the “12” condition it was 20.8. Not much of difference, so any age effect would be solely due to the anchoring effect.\nResults\nThe mean age for the guess in the “42” condition was\n32.4\n, for the “12” condition it was\n26.4,\nhere is a boxplot of the respective guesses\nTo make sure the results were statistically significant I performed a bootstrap calculation with R\nIntervals : Level      Normal     95%   ( 3.375,  8.622 )\nThe bootstrap confidence interval doesn’t contain 0, which means there was indeed a statistically significant anchoring effect and if you want people to think you look younger than you really are, you might want to anchor your age to a ridiculously low number.\nHere’s the R code to perform the bootstrap\nlibrary(boot)\n#The guesses of the girls\nguess.42<-c(28,33,40,34,42,25,33,30,31,28,30,30,35,32,35)\nguess.12<-c(23,28,26,25,25,30,27,28,28,23,27,28,30,24,24)\nD = data.frame(guess.42,guess.12)\nsamplemean <- function(D, d) {\nE=D[d,]\nreturn(mean(E$guess.42)-mean(E$guess.12))\n}\nb = boot(D, samplemean, R=1000)\nprint(b)\nplot(b)\nboot.ci(b)\nboxplot(guess.42,guess.12,ylab=\"age guessed\",xlab=\"age anchored\",names=c(\"42\",\"12\"))\n#Now we do a t test\nt.test(guess.42,guess.12,type=\"greater\")\nNote:\nIt was obvious that the people who guessed 23, and above 35, as my age were joking, nonetheless it was interesting that the exaggerated ages they chose in jest were close to the anchor.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDiego Valle's Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDating\nR",
+      "meta_description": "It is well known in psychology that the way a question is asked can strongly influence the answer. For example, if you spin a random number wheel and later have people guess the proportion of United Nations countries that are African, their answers clo...",
+      "meta_keywords": "dating,r",
+      "og_description": "It is well known in psychology that the way a question is asked can strongly influence the answer. For example, if you spin a random number wheel and later have people guess the proportion of United Nations countries that are African, their answers clo...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2008/11/age3.png",
+      "og_title": "Use anchoring to lose years off your age | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3,
+      "sitemap_lastmod": "2011-05-11T21:10:04+00:00",
+      "twitter_description": "It is well known in psychology that the way a question is asked can strongly influence the answer. For example, if you spin a random number wheel and later have people guess the proportion of United Nations countries that are African, their answers clo...",
+      "twitter_title": "Use anchoring to lose years off your age | R-bloggers",
+      "url": "https://www.r-bloggers.com/2008/11/use-anchoring-to-lose-years-off-your-age/",
+      "word_count": 608
+    }
+  }
+}

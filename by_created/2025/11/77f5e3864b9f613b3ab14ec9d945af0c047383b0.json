@@ -1,0 +1,311 @@
+{
+  "id": "77f5e3864b9f613b3ab14ec9d945af0c047383b0",
+  "url": "https://www.r-bloggers.com/2025/03/how-many-ways-to-color-this-grid-teaching-combinatorics-using-r/",
+  "created_at_utc": "2025-11-22T19:59:01Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "e29fe4af-1d3e-4966-8f40-5b32e6491c90",
+    "created_at": "2025-11-22 19:59:01",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/03/how-many-ways-to-color-this-grid-teaching-combinatorics-using-r/",
+      "crawled_at": "2025-11-22T10:52:11.720982",
+      "external_links": [
+        {
+          "href": "https://rworks.dev/posts/math-puzzles/",
+          "text": "R Works"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Four_color_theorem",
+          "text": "theorem"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/math-puzzles/index_files/figure-html/Chunk4-1.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://rworks.dev/posts/math-puzzles/",
+          "text": "R Works"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "How Many Ways to Color This Grid: Teaching Combinatorics Using R | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid2ZVHa7MmYQq+9EIs18fhEmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAYklEQVQIHWNgYBD67MDgr8rAwMCWwMDgCqQZ+AMYWApAjPoChk4QzRDPMANMMyxj3w5hbD2zGczg/XxBHszg+MBwvwHE4nrAwPYAxOAWYGD5DmLcP8DAAFLNmL+GgfG/AQMAOMAVCT0x4n0AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?K"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid2ZVHa7MmYQq+9EIs18fhEmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAYklEQVQIHWNgYBD67MDgr8rAwMCWwMDgCqQZ+AMYWApAjPoChk4QzRDPMANMMyxj3w5hbD2zGczg/XxBHszg+MBwvwHE4nrAwPYAxOAWYGD5DmLcP8DAAFLNmL+GgfG/AQMAOMAVCT0x4n0AAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?K"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAid0iEJm7RHbvq2YyVM2JF0xrAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAY0lEQVQIHWNgYBD6zMASn87AwMAxlYGBC0gzcEsyMHiDGGfsLzAUgxgb+BIYGkCMBt4vUAbDD4YNQAHmAoZIdgMgg5uB4Xw1SAkHAwPTCiiD4zeIARRm+QOkWSddYGAIYGAAACllEkLkTKptAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?N"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMAMondmWarzbvvIkhQ2eEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAA2SURBVAgdY2BgYFRgAAJmBxAZBiIZRUAkKwuIDACRjAIgkpUBRIYoKRcJACU4gGwoyag5aQEAoIwF0k+hjlwAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?4"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAIBAMAAADdFhi7AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVQIHWNgVHY2TWBgqMg0YFzAwCBgzcAUwMDAcJaBVQFIzWDgL2BgYP/AIMfBwMD8gOEsMwMDkwFDrggDAP0FCNipklNgAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?n"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMAMondmWarzbvvIkhQ2eEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAA2SURBVAgdY2BgYFRgAAJmBxAZBiIZRUAkKwuIDACRjAIgkpUBRIYoKRcJACU4gGwoyag5aQEAoIwF0k+hjlwAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?4"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIBAMAAAA2IaO4AAAAKlBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmU0mKAAAADXRSTlMARIkiZlTdqxDvmc12Bf+SEwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACpJREFUCB1jYFQ0cmRgNVNQZ4iQbBBmaNBiAIKtQMxxA0iwbgASPAcYGAByEwXc4G6iEwAAAABJRU5ErkJggg==",
+          "src": "https://latex.codecogs.com/png.latex?r"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAAARBAMAAAAlNj/fAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVHZmEKsyIkTvu92Zic2ZjesdAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABbUlEQVQoFWNgwA0CcEvhk2F6gE8Wt1whEfp0hRswDDAhrI+RM1EBXR+jC2F97FXounIZGFnQ9OmeEmCou6xVwMCspA5TbgRjwOg9DMpGk2EcMM1bwPKZofpnOAPDQYajMJkIGANKM8cwMLA9QBHkTmA4zVAIFOJYwJAGk1kAY0DptDMMDDWo9nEaMNwH6+M2ACliVHY2TYCqRlAGQH2YYB1DkfENBn5hWwEGhopMA8YFUCVHQ4EgFshhZoDrg4sxMLB/Y3Bi4E6oP8CwkIFBwJqBCSNBpSH0IdnKB3Igz4J8AwZrIOMsA6sCkiSYaYBV32WQHNOE+gYGeQcGhhkM/AVgxQiC+ezdfdcQXCiLGWjdRgamD/wCIH3sHxjkOKAySH5ZA9OGEGsEevs50J1cCgzawCB4wHCWGaYIQcP1wYXYTnTIMJgweBawbWB4AXSvAUOuCFwSxsideR3GhNGc////YWDWPc7AkKPTwAAAaqFQQ4bOypEAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?%0An%5Er%20=%204%5E4%20=%20256%0A"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMBAMAAABhKdtFAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdomZu1QiEGbdMu/NRKugN9EaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVQIHWNgEDIJYMjREElg4BAUY2BgSmD/wZD5+xkDgymDHQMD5wIGS4ZUBgYGXgeGVQwM3A0M+mAuZwNQDAR8GBI7dBn4I5oCQDy2XwyFQD35BgyuIC5PA5BgdljfwNAJ4mqACMYN+RcY4gsYGDgaGBimMjB+4A8Ac68ycDAcAypmEWCQZGDgsr0bzNDOUJ3ANYHhLNDe//8/M3AImTEwLBa+wAAAKe4jOnxfxYgAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?256"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMBAMAAABhKdtFAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdomZu1QiEGbdMu/NRKugN9EaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVQIHWNgEDIJYMjREElg4BAUY2BgSmD/wZD5+xkDgymDHQMD5wIGS4ZUBgYGXgeGVQwM3A0M+mAuZwNQDAR8GBI7dBn4I5oCQDy2XwyFQD35BgyuIC5PA5BgdljfwNAJ4mqACMYN+RcY4gsYGDgaGBimMjB+4A8Ac68ycDAcAypmEWCQZGDgsr0bzNDOUJ3ANYHhLNDe//8/M3AImTEwLBa+wAAAKe4jOnxfxYgAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?256"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMAMondmWarzbvvIkhQ2eEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAA2SURBVAgdY2BgYFRgAAJmBxAZBiIZRUAkKwuIDACRjAIgkpUBRIYoKRcJACU4gGwoyag5aQEAoIwF0k+hjlwAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?4"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMAMondmWarzbvvIkhQ2eEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAA2SURBVAgdY2BgYFRgAAJmBxAZBiIZRUAkKwuIDACRjAIgkpUBRIYoKRcJACU4gGwoyag5aQEAoIwF0k+hjlwAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?4"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMBAMAAABCcoqQAAAAJFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHJj5lAAAAC3RSTlMAMondmWarzbvvIkhQ2eEAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAA2SURBVAgdY2BgYFRgAAJmBxAZBiIZRUAkKwuIDACRjAIgkpUBRIYoKRcJACU4gGwoyag5aQEAoIwF0k+hjlwAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?4"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMBAMAAACdPPCPAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVIl2RKsQmWYy3SLvzbsEfa2HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAb0lEQVQIHWNgEDISYGBgmMTAwOLAYAhkLWdgYE1gSGdg4AgHsgIYJBgYZpYzMHD+clFgYGgAshj2/AVKMgBZbCX2qxlmglh8CWy3GBpArK0MDPwZRUprNRn2AYWBqp8DTZnAMBnCYjAyBto26Yw2AKUBFlC+JvPHAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?84"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMBAMAAACdPPCPAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVIl2RKsQmWYy3SLvzbsEfa2HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAb0lEQVQIHWNgEDISYGBgmMTAwOLAYAhkLWdgYE1gSGdg4AgHsgIYJBgYZpYzMHD+clFgYGgAshj2/AVKMgBZbCX2qxlmglh8CWy3GBpArK0MDPwZRUprNRn2AYWBqp8DTZnAMBnCYjAyBto26Yw2AKUBFlC+JvPHAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?84"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMBAMAAABhKdtFAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdomZu1QiEGbdMu/NRKugN9EaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVQIHWNgEDIJYMjREElg4BAUY2BgSmD/wZD5+xkDgymDHQMD5wIGS4ZUBgYGXgeGVQwM3A0M+mAuZwNQDAR8GBI7dBn4I5oCQDy2XwyFQD35BgyuIC5PA5BgdljfwNAJ4mqACMYN+RcY4gsYGDgaGBimMjB+4A8Ac68ycDAcAypmEWCQZGDgsr0bzNDOUJ3ANYHhLNDe//8/M3AImTEwLBa+wAAAKe4jOnxfxYgAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?256"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAMBAMAAACO67B7AAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMARM0yInYQiatUZpnvu91BHHd/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiklEQVQIHS3MIQ7CQBCF4b+iWWBDYHG4OhLUeAQYNJoTVFKB4xBwhNVVTbgAuqZYHAkX4AbDsFnxkvnyMg8WgjuGIOXlBfutMFLVeOYUYWYdlHzw76QCGnrcNwkmO2BaZdUGDpJ1/2ttsRWwD1zMGj/saC2p8xUUN6JpbmtP2IRlR31dCb6BQbX7ATDrHCQE9IclAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?172"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMBAMAAABhKdtFAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAdomZu1QiEGbdMu/NRKugN9EaAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAp0lEQVQIHWNgEDIJYMjREElg4BAUY2BgSmD/wZD5+xkDgymDHQMD5wIGS4ZUBgYGXgeGVQwM3A0M+mAuZwNQDAR8GBI7dBn4I5oCQDy2XwyFQD35BgyuIC5PA5BgdljfwNAJ4mqACMYN+RcY4gsYGDgaGBimMjB+4A8Ac68ycDAcAypmEWCQZGDgsr0bzNDOUJ3ANYHhLNDe//8/M3AImTEwLBa+wAAAKe4jOnxfxYgAAAAASUVORK5CYII=",
+          "src": "https://latex.codecogs.com/png.latex?256"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMBAMAAACdPPCPAAAAMFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv3aB7AAAAD3RSTlMAVIl2RKsQmWYy3SLvzbsEfa2HAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAb0lEQVQIHWNgEDISYGBgmMTAwOLAYAhkLWdgYE1gSGdg4AgHsgIYJBgYZpYzMHD+clFgYGgAshj2/AVKMgBZbCX2qxlmglh8CWy3GBpArK0MDPwZRUprNRn2AYWBqp8DTZnAMBnCYjAyBto26Yw2AKUBFlC+JvPHAAAAAElFTkSuQmCC",
+          "src": "https://latex.codecogs.com/png.latex?84"
+        },
+        {
+          "alt": "Four 2x2 grids with different colorings. The top left grid has four squares, all blue. The top right grid has four squares, the top two are yellow, and the bottom two are blue. The bottom left grid has four squares, with alternating colors going from left to right and top to bottom: red, blue, blue, red. The bottom right grid has alternating colors going from left to right and top to bottom: red, blue, yellow, green.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Four 2x2 grids with different colorings. The top left grid has four squares, all blue. The top right grid has four squares, the top two are yellow, and the bottom two are blue. The bottom left grid has four squares, with alternating colors going from left to right and top to bottom: red, blue, blue, red. The bottom right grid has alternating colors going from left to right and top to bottom: red, blue, yellow, green.",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/math-puzzles/index_files/figure-html/Chunk4-1.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/vidisha-vachharajani/",
+          "text": "Vidisha Vachharajani"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-391370 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">How Many Ways to Color This Grid: Teaching Combinatorics Using R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 20, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/vidisha-vachharajani/\">Vidisha Vachharajani</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/math-puzzles/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level2\" id=\"the-problem\">\n<h2 class=\"anchored\" data-anchor-id=\"the-problem\">The Problem</h2>\n<blockquote class=\"blockquote\">\n<p>You have a 2×2 grid of squares, and you need to paint each square one of four colors: red, blue, green, or yellow. The restriction is that no two adjacent squares (sharing a side) can have the same color. How many valid ways you can color the grid?</p>\n</blockquote>\n<p>This problem is a simplified illustration of the four color <a href=\"https://en.wikipedia.org/wiki/Four_color_theorem\" rel=\"nofollow\" target=\"_blank\">theorem</a>, which says that four colors are sufficient to color any planar map such that no two adjacent regions share the same color. Additionally, it can be viewed as a specific case of a more generalized problem: coloring a <img data-lazy-src=\"https://latex.codecogs.com/png.latex?K\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?K\"/></noscript> x <img data-lazy-src=\"https://latex.codecogs.com/png.latex?K\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?K\"/></noscript> grid with <img data-lazy-src=\"https://latex.codecogs.com/png.latex?N\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?N\"/></noscript> colors while adhering to adjacency restrictions. From a graph theory perspective, we can represent this grid as a graph where each square corresponds to a vertex, and edges connect vertices that are adjacent. The challenge of coloring the grid without violating the adjacency rule translates to finding a proper vertex coloring of this graph.</p>\n</section>\n<section class=\"level2\" id=\"the-solution\">\n<h2 class=\"anchored\" data-anchor-id=\"the-solution\">The Solution</h2>\n<p>There are many ways to solve this. In each solution, we count the number of combinations that are “correct” or valid, i.e., adhere to the rules given above in the problem. For the solution in R, we will generate all possible combinations of coloring this grid with no restrictions, and using that, directly count cases that <em>follow the adjacency rules</em> specified in the problem.</p>\n<p>I will use <code>dplyr</code> to illustrate how easy and straightforward it will be to get to the solution.</p>\n<p>The simplest way to calculate ways to color this grid with no restrictions is to consider that for each of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?4\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?4\"/></noscript> squares (<img data-lazy-src=\"https://latex.codecogs.com/png.latex?n\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?n\"/></noscript>), there are <img data-lazy-src=\"https://latex.codecogs.com/png.latex?4\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?4\"/></noscript> possible options (<img data-lazy-src=\"https://latex.codecogs.com/png.latex?r\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?r\"/></noscript>, see square above), so that the total number of options we have is essentially —</p>\n<p><img data-lazy-src=\"https://latex.codecogs.com/png.latex?%0An%5Er%20=%204%5E4%20=%20256%0A\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?%0An%5Er%20=%204%5E4%20=%20256%0A\"/></noscript></p>\n<p>We now use R to generate these <img data-lazy-src=\"https://latex.codecogs.com/png.latex?256\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?256\"/></noscript> cases or options.</p>\n<div class=\"cell\">\n<pre>library(gtools)\nx &lt;- c('r', 'b', 'g', 'y')\n\nP &lt;- permutations(\n  n = 4,\n  r = 4,\n  v = x,\n  repeats.allowed = T\n)\n\ncolnames(P) &lt;- c(\"A\", \"B\", \"C\", \"D\")\nP &lt;- data.frame(P)\nnrow(P)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] 256</pre>\n</div>\n<pre>head(P)</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>  A B C D\n1 b b b b\n2 b b b g\n3 b b b r\n4 b b b y\n5 b b g b\n6 b b g g</pre>\n</div>\n</div>\n<p>How do we now determine which cases do not follow the adjacency rules? To do this, we’ll need to use a pattern-searching logic to flag them. One way is to calculate, for all <img data-lazy-src=\"https://latex.codecogs.com/png.latex?256\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?256\"/></noscript> cases, <img data-lazy-src=\"https://latex.codecogs.com/png.latex?4\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?4\"/></noscript> different columns, corresponding to the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?4\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?4\"/></noscript> adjacency restrictions (e.g. red-red, blue-blue, green-green and yellow-yellow). We would then use these <img data-lazy-src=\"https://latex.codecogs.com/png.latex?4\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?4\"/></noscript> columns to compute a single new column flagging cases where adjacency restrictions are followed, i.e. flag <em>valid</em> cases, and sum them up.</p>\n<p>However, in R, using <code>dplyr</code>, we combine this in a single command using <code>case when</code>, which will flag each case whenever it meets the invalidity condition even once, e.g., for the coloring scheme “blue-blue-blue-red”, it will flag it “invalid” since just the existence of “blue-blue” is sufficient to deem this scheme invalid.</p>\n<div class=\"cell\">\n<pre>library(dplyr)\nlibrary(magrittr)\n\ncase_split &lt;- P %&gt;%\n  mutate(concat = paste(P$A, P$B, P$C, P$D, P$A, sep = \"\")) %&gt;%\n  mutate(\n    flag = case_when(\n      grepl(\"rr\", concat) ~ \"invalid\",\n      grepl(\"bb\", concat) ~ \"invalid\",\n      grepl(\"gg\", concat) ~ \"invalid\",\n      grepl(\"yy\", concat) ~ \"invalid\",\n      .default = \"valid\"\n    )\n  ) %&gt;%\n  group_by(flag) %&gt;% summarise(count = n())\n\nknitr::kable(case_split, align = rep('c', 2))</pre>\n<div class=\"cell-output-display\">\n<table class=\"caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: center;\">flag</th>\n<th style=\"text-align: center;\">count</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: center;\">invalid</td>\n<td style=\"text-align: center;\">172</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: center;\">valid</td>\n<td style=\"text-align: center;\">84</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<p>There are <img data-lazy-src=\"https://latex.codecogs.com/png.latex?84\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?84\"/></noscript> valid cases, which can, of course, be computed arithmetically using combinatorics formulas or simply going case by case and calculating how many valid cases emerge, which will also give us <img data-lazy-src=\"https://latex.codecogs.com/png.latex?84\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?84\"/></noscript> valid cases of the total <img data-lazy-src=\"https://latex.codecogs.com/png.latex?256\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?256\"/></noscript>.</p>\n<p>Of these remaining <img data-lazy-src=\"https://latex.codecogs.com/png.latex?172\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?172\"/></noscript> invalid cases, I then thought about how many are so due to not heeding the adjacency rules just once, how many twice or more? For example, “bbbg” does not heed it twice, “bbrg” just once. To do this, for each of the <img data-lazy-src=\"https://latex.codecogs.com/png.latex?256\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?256\"/></noscript> cases, instead of just the existence of invalidity, we flag each occurrence of adjacency or invalidity and then sum them up.</p>\n<div class=\"cell\">\n<pre>flag_invalid_adj &lt;- function(df) {\n  df %&gt;%\n    rowwise() %&gt;%\n    mutate(\n      # Check each adjacency pair for invalidity\n      ab_invalid = A == B,\n      bc_invalid = B == C,\n      cd_invalid = C == D,\n      ad_invalid = A == D,\n      # Count the number of invalid pairs\n      invalid = sum(ab_invalid, bc_invalid, cd_invalid, ad_invalid),\n    ) %&gt;%\n    ungroup()\n}\n\ncols &lt;- P[, 1:4]\ninvalid_data &lt;- flag_invalid_adj(cols) %&gt;% select(A, B, C, D, invalid)\nfinalCounts &lt;- invalid_data %&gt;% group_by(invalid) %&gt;% summarise(count =\n                                                                  n())\nknitr::kable(finalCounts, align = rep('c', 2))</pre>\n<div class=\"cell-output-display\">\n<table class=\"caption-top table table-sm table-striped small\">\n<thead>\n<tr class=\"header\">\n<th style=\"text-align: center;\">invalid</th>\n<th style=\"text-align: center;\">count</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td style=\"text-align: center;\">0</td>\n<td style=\"text-align: center;\">84</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: center;\">1</td>\n<td style=\"text-align: center;\">96</td>\n</tr>\n<tr class=\"odd\">\n<td style=\"text-align: center;\">2</td>\n<td style=\"text-align: center;\">72</td>\n</tr>\n<tr class=\"even\">\n<td style=\"text-align: center;\">4</td>\n<td style=\"text-align: center;\">4</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<p>The first row confirms the count of <img data-lazy-src=\"https://latex.codecogs.com/png.latex?84\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img src=\"https://latex.codecogs.com/png.latex?84\"/></noscript> valid cases, i.e., have no adjacency problem. Finally, because we can, and we love <code>ggplot2</code>, let’s generate 1 sample grid from each category of invalidity, so that we can visually inspect what we’ve been saying. The “4 invalid cases” has 4 pairs of blue, or 4 adjacencies, while the “No invalid cases!” plot is an example of how we can indeed color a graph, map, or a grid with 4 colors with no adjacent squares or “regions”, having the same color. Some notes on the code used – we plot the 4 examples using <code>gridExtra</code>. We’ll also use <code>textGrob</code> to attribute an overall title for the family of plots, using an elegant font from the Google library (“rouge script”). Click “Show the code” to see the details.</p>\n<div class=\"cell preview-image\" data-layout-align=\"center\">\n<details class=\"code-fold\">\n<summary>Show the code</summary>\n<pre># Select first row of all groups\ns &lt;- invalid_data %&gt;% group_by(invalid) %&gt;% filter(row_number() == 1)\n\n# Load necessary libraries for elegant visualizations\nlibrary(ggplot2)\nlibrary(grid)       # To ensure \"textGrob\" works\nlibrary(gridExtra)\nlibrary(showtext)   # For using custom fonts\n\n# Load a font using showtext\nfont_add_google(\"Rouge Script\", \"rouge script\")  # Example: Adding the \"Lobster\" font\nshowtext_auto()  # Automatically use showtext for all plots\n\n# Create my color tibble (4x4)\nsq &lt;- s %&gt;%\n  mutate_all( ~ case_when(\n    . == \"b\" ~ \"blue\",\n    . == \"g\" ~ \"green\",\n    . == \"y\" ~ \"yellow\",\n    . == \"r\" ~ \"red\",\n    TRUE ~ .  # Keep original value if it doesn't match\n  ))\n\n# Convert tibble to a matrix\ncolor_matrix &lt;- sq[, -5] %&gt;% select(A, B, D, C) %&gt;% as.matrix() # to match the coloring order of ggplot2\n\n# Check the dimensions of the matrix\n# Print(dim(color_matrix))  # Should be 4x4\n\n# Function to create a plot based on a color vector and a title\ncreate_plot &lt;- function(colors, title) {\n  df &lt;- expand.grid(x = 0:1, y = 0:1)\n  df$color &lt;- colors\n  \n  ggplot(df, aes(x = x, y = y, fill = color)) +\n    geom_tile(color = \"white\") +  # Change border color to white\n    scale_fill_identity() +        # Use the colors as they are\n    theme_minimal() +              # Use a minimal theme\n    coord_fixed() +                # Keep aspect ratio\n    labs(title = title) +          # Add the title\n    theme(\n      legend.position = \"none\",\n      # Remove legend\n      axis.title = element_blank(),\n      # Suppress axis titles\n      axis.text = element_blank(),\n      # Suppress axis text\n      axis.ticks = element_blank(),\n      # Suppress axis ticks\n      panel.grid = element_blank(),\n      # Suppress grid lines\n      plot.title = element_text(\n        family = \"rouge script\",\n        size = 16,\n        hjust = 0.5\n      )  # Use the custom font for the title\n    )\n}\n\n# Create a vector of titles for each plot\ntitles &lt;- c(\"4 invalid cases\",\n            \"2 invalid cases\",\n            \"1 invalid case\",\n            \"No invalid cases!\")\n\n# Create a list of plots using the color matrix and titles\nplots &lt;- lapply(1:nrow(color_matrix), function(i) {\n  create_plot(color_matrix[i, ], titles[i])\n})\n\n# Create the overall title using textGrob\noverall_title &lt;- textGrob(\n  \"Using R to elegantly illustrate the solution to a Combinatorics puzzle\",\n  gp = gpar(fontsize = 20, fontfamily = \"rouge script\")\n)\n\n# Create a spacer with appropriate height\nspacer &lt;- rectGrob(\n  gp = gpar(fill = NA, col = NA),\n  width = unit(1, \"npc\"),\n  height = unit(0.5, \"lines\")\n)\n\n# Arrange the overall title and plots\ngrid.arrange(\n  overall_title,\n  spacer,\n  arrangeGrob(grobs = plots, ncol = 2),\n  ncol = 1,\n  heights = c(1, 0.1, 4)\n)</pre>\n</details>\n<div class=\"cell-output-display\">\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-1\" href=\"https://i1.wp.com/rworks.dev/posts/math-puzzles/index_files/figure-html/Chunk4-1.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Four 2x2 grids with different colorings. The top left grid has four squares, all blue. The top right grid has four squares, the top two are yellow, and the bottom two are blue. The bottom left grid has four squares, with alternating colors going from left to right and top to bottom: red, blue, blue, red. The bottom right grid has alternating colors going from left to right and top to bottom: red, blue, yellow, green.\" class=\"img-fluid quarto-figure quarto-figure-center figure-img\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/math-puzzles/index_files/figure-html/Chunk4-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Four 2x2 grids with different colorings. The top left grid has four squares, all blue. The top right grid has four squares, the top two are yellow, and the bottom two are blue. The bottom left grid has four squares, with alternating colors going from left to right and top to bottom: red, blue, blue, red. The bottom right grid has alternating colors going from left to right and top to bottom: red, blue, yellow, green.\" class=\"img-fluid quarto-figure quarto-figure-center figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/math-puzzles/index_files/figure-html/Chunk4-1.png?w=450&amp;ssl=1\"/></noscript></a></p>\n</figure>\n</div>\n</div>\n</div>\n</section>\n<section class=\"level2\" id=\"about-the-author\">\n<h2 class=\"anchored\" data-anchor-id=\"about-the-author\">About the Author</h2>\n<p><em>Vidisha writes: “As a statistician and a data geek, I love solving puzzles of all kinds, with a particular fondness for combinatorial challenges. Recently, I tackled one in R using the dplyr package, which prompted me to think about the broader applications of R, not just as a powerful tool for solving puzzles for enthusiasts but also as an empowering way to teach high school mathematics. Moreover, R’s capabilities in data visualization can help learners grasp complex problems more intuitively, ultimately leading to a deeper understanding of their solutions.”</em></p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/math-puzzles/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "How Many Ways to Color This Grid: Teaching Combinatorics Using R\nPosted on\nMarch 20, 2025\nby\nVidisha Vachharajani\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe Problem\nYou have a 2×2 grid of squares, and you need to paint each square one of four colors: red, blue, green, or yellow. The restriction is that no two adjacent squares (sharing a side) can have the same color. How many valid ways you can color the grid?\nThis problem is a simplified illustration of the four color\ntheorem\n, which says that four colors are sufficient to color any planar map such that no two adjacent regions share the same color. Additionally, it can be viewed as a specific case of a more generalized problem: coloring a\nx\ngrid with\ncolors while adhering to adjacency restrictions. From a graph theory perspective, we can represent this grid as a graph where each square corresponds to a vertex, and edges connect vertices that are adjacent. The challenge of coloring the grid without violating the adjacency rule translates to finding a proper vertex coloring of this graph.\nThe Solution\nThere are many ways to solve this. In each solution, we count the number of combinations that are “correct” or valid, i.e., adhere to the rules given above in the problem. For the solution in R, we will generate all possible combinations of coloring this grid with no restrictions, and using that, directly count cases that\nfollow the adjacency rules\nspecified in the problem.\nI will use\ndplyr\nto illustrate how easy and straightforward it will be to get to the solution.\nThe simplest way to calculate ways to color this grid with no restrictions is to consider that for each of the\nsquares (\n), there are\npossible options (\n, see square above), so that the total number of options we have is essentially —\nWe now use R to generate these\ncases or options.\nlibrary(gtools)\nx <- c('r', 'b', 'g', 'y')\n\nP <- permutations(\n  n = 4,\n  r = 4,\n  v = x,\n  repeats.allowed = T\n)\n\ncolnames(P) <- c(\"A\", \"B\", \"C\", \"D\")\nP <- data.frame(P)\nnrow(P)\n[1] 256\nhead(P)\nA B C D\n1 b b b b\n2 b b b g\n3 b b b r\n4 b b b y\n5 b b g b\n6 b b g g\nHow do we now determine which cases do not follow the adjacency rules? To do this, we’ll need to use a pattern-searching logic to flag them. One way is to calculate, for all\ncases,\ndifferent columns, corresponding to the\nadjacency restrictions (e.g. red-red, blue-blue, green-green and yellow-yellow). We would then use these\ncolumns to compute a single new column flagging cases where adjacency restrictions are followed, i.e. flag\nvalid\ncases, and sum them up.\nHowever, in R, using\ndplyr\n, we combine this in a single command using\ncase when\n, which will flag each case whenever it meets the invalidity condition even once, e.g., for the coloring scheme “blue-blue-blue-red”, it will flag it “invalid” since just the existence of “blue-blue” is sufficient to deem this scheme invalid.\nlibrary(dplyr)\nlibrary(magrittr)\n\ncase_split <- P %>%\n  mutate(concat = paste(P$A, P$B, P$C, P$D, P$A, sep = \"\")) %>%\n  mutate(\n    flag = case_when(\n      grepl(\"rr\", concat) ~ \"invalid\",\n      grepl(\"bb\", concat) ~ \"invalid\",\n      grepl(\"gg\", concat) ~ \"invalid\",\n      grepl(\"yy\", concat) ~ \"invalid\",\n      .default = \"valid\"\n    )\n  ) %>%\n  group_by(flag) %>% summarise(count = n())\n\nknitr::kable(case_split, align = rep('c', 2))\nflag\ncount\ninvalid\n172\nvalid\n84\nThere are\nvalid cases, which can, of course, be computed arithmetically using combinatorics formulas or simply going case by case and calculating how many valid cases emerge, which will also give us\nvalid cases of the total\n.\nOf these remaining\ninvalid cases, I then thought about how many are so due to not heeding the adjacency rules just once, how many twice or more? For example, “bbbg” does not heed it twice, “bbrg” just once. To do this, for each of the\ncases, instead of just the existence of invalidity, we flag each occurrence of adjacency or invalidity and then sum them up.\nflag_invalid_adj <- function(df) {\n  df %>%\n    rowwise() %>%\n    mutate(\n      # Check each adjacency pair for invalidity\n      ab_invalid = A == B,\n      bc_invalid = B == C,\n      cd_invalid = C == D,\n      ad_invalid = A == D,\n      # Count the number of invalid pairs\n      invalid = sum(ab_invalid, bc_invalid, cd_invalid, ad_invalid),\n    ) %>%\n    ungroup()\n}\n\ncols <- P[, 1:4]\ninvalid_data <- flag_invalid_adj(cols) %>% select(A, B, C, D, invalid)\nfinalCounts <- invalid_data %>% group_by(invalid) %>% summarise(count =\n                                                                  n())\nknitr::kable(finalCounts, align = rep('c', 2))\ninvalid\ncount\n0\n84\n1\n96\n2\n72\n4\n4\nThe first row confirms the count of\nvalid cases, i.e., have no adjacency problem. Finally, because we can, and we love\nggplot2\n, let’s generate 1 sample grid from each category of invalidity, so that we can visually inspect what we’ve been saying. The “4 invalid cases” has 4 pairs of blue, or 4 adjacencies, while the “No invalid cases!” plot is an example of how we can indeed color a graph, map, or a grid with 4 colors with no adjacent squares or “regions”, having the same color. Some notes on the code used – we plot the 4 examples using\ngridExtra\n. We’ll also use\ntextGrob\nto attribute an overall title for the family of plots, using an elegant font from the Google library (“rouge script”). Click “Show the code” to see the details.\nShow the code\n# Select first row of all groups\ns <- invalid_data %>% group_by(invalid) %>% filter(row_number() == 1)\n\n# Load necessary libraries for elegant visualizations\nlibrary(ggplot2)\nlibrary(grid)       # To ensure \"textGrob\" works\nlibrary(gridExtra)\nlibrary(showtext)   # For using custom fonts\n\n# Load a font using showtext\nfont_add_google(\"Rouge Script\", \"rouge script\")  # Example: Adding the \"Lobster\" font\nshowtext_auto()  # Automatically use showtext for all plots\n\n# Create my color tibble (4x4)\nsq <- s %>%\n  mutate_all( ~ case_when(\n    . == \"b\" ~ \"blue\",\n    . == \"g\" ~ \"green\",\n    . == \"y\" ~ \"yellow\",\n    . == \"r\" ~ \"red\",\n    TRUE ~ .  # Keep original value if it doesn't match\n  ))\n\n# Convert tibble to a matrix\ncolor_matrix <- sq[, -5] %>% select(A, B, D, C) %>% as.matrix() # to match the coloring order of ggplot2\n\n# Check the dimensions of the matrix\n# Print(dim(color_matrix))  # Should be 4x4\n\n# Function to create a plot based on a color vector and a title\ncreate_plot <- function(colors, title) {\n  df <- expand.grid(x = 0:1, y = 0:1)\n  df$color <- colors\n  \n  ggplot(df, aes(x = x, y = y, fill = color)) +\n    geom_tile(color = \"white\") +  # Change border color to white\n    scale_fill_identity() +        # Use the colors as they are\n    theme_minimal() +              # Use a minimal theme\n    coord_fixed() +                # Keep aspect ratio\n    labs(title = title) +          # Add the title\n    theme(\n      legend.position = \"none\",\n      # Remove legend\n      axis.title = element_blank(),\n      # Suppress axis titles\n      axis.text = element_blank(),\n      # Suppress axis text\n      axis.ticks = element_blank(),\n      # Suppress axis ticks\n      panel.grid = element_blank(),\n      # Suppress grid lines\n      plot.title = element_text(\n        family = \"rouge script\",\n        size = 16,\n        hjust = 0.5\n      )  # Use the custom font for the title\n    )\n}\n\n# Create a vector of titles for each plot\ntitles <- c(\"4 invalid cases\",\n            \"2 invalid cases\",\n            \"1 invalid case\",\n            \"No invalid cases!\")\n\n# Create a list of plots using the color matrix and titles\nplots <- lapply(1:nrow(color_matrix), function(i) {\n  create_plot(color_matrix[i, ], titles[i])\n})\n\n# Create the overall title using textGrob\noverall_title <- textGrob(\n  \"Using R to elegantly illustrate the solution to a Combinatorics puzzle\",\n  gp = gpar(fontsize = 20, fontfamily = \"rouge script\")\n)\n\n# Create a spacer with appropriate height\nspacer <- rectGrob(\n  gp = gpar(fill = NA, col = NA),\n  width = unit(1, \"npc\"),\n  height = unit(0.5, \"lines\")\n)\n\n# Arrange the overall title and plots\ngrid.arrange(\n  overall_title,\n  spacer,\n  arrangeGrob(grobs = plots, ncol = 2),\n  ncol = 1,\n  heights = c(1, 0.1, 4)\n)\nAbout the Author\nVidisha writes: “As a statistician and a data geek, I love solving puzzles of all kinds, with a particular fondness for combinatorial challenges. Recently, I tackled one in R using the dplyr package, which prompted me to think about the broader applications of R, not just as a powerful tool for solving puzzles for enthusiasts but also as an empowering way to teach high school mathematics. Moreover, R’s capabilities in data visualization can help learners grasp complex problems more intuitively, ultimately leading to a deeper understanding of their solutions.”\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The Problem You have a 2x2 grid of squares, and you need to paint each square one of four colors: red, blue, green, or yellow. The restriction is that no two adjacent squares (sharing a side) can have the same color. How many valid ways you ca...",
+      "meta_keywords": null,
+      "og_description": "The Problem You have a 2x2 grid of squares, and you need to paint each square one of four colors: red, blue, green, or yellow. The restriction is that no two adjacent squares (sharing a side) can have the same color. How many valid ways you ca...",
+      "og_image": "https://latex.codecogs.com/png.latex?K",
+      "og_title": "How Many Ways to Color This Grid: Teaching Combinatorics Using R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 7.3,
+      "sitemap_lastmod": null,
+      "twitter_description": "The Problem You have a 2x2 grid of squares, and you need to paint each square one of four colors: red, blue, green, or yellow. The restriction is that no two adjacent squares (sharing a side) can have the same color. How many valid ways you ca...",
+      "twitter_title": "How Many Ways to Color This Grid: Teaching Combinatorics Using R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/03/how-many-ways-to-color-this-grid-teaching-combinatorics-using-r/",
+      "word_count": 1465
+    }
+  }
+}

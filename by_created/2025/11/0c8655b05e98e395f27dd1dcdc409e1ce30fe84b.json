@@ -1,0 +1,155 @@
+{
+  "id": "0c8655b05e98e395f27dd1dcdc409e1ce30fe84b",
+  "url": "https://www.r-bloggers.com/2025/08/reading-conditional-formatting-in-xlsx-files-in-a-tidy-way-with-readxl/",
+  "created_at_utc": "2025-11-22T19:57:49Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "82abdc81-37a9-4030-a3f2-abbe8a76f203",
+    "created_at": "2025-11-22 19:57:49",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/08/reading-conditional-formatting-in-xlsx-files-in-a-tidy-way-with-readxl/",
+      "crawled_at": "2025-11-22T10:43:56.032629",
+      "external_links": [
+        {
+          "href": "https://pacha.dev/blog/2025/08/26/readxl/",
+          "text": "pacha.dev/blog"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://buymeacoffee.com/pacha/e/80976",
+          "text": "Buy Me a Coffee"
+        },
+        {
+          "href": "https://github.com/sponsors/pachadotdev",
+          "text": "GitHub Sponsorships"
+        },
+        {
+          "href": "https://pacha.dev/blog/2025/08/11/",
+          "text": "A Personal Message from an Open Source Contributor"
+        },
+        {
+          "href": "https://www.instagram.com/maplebooster/",
+          "text": "here"
+        },
+        {
+          "href": "https://pacha.dev/blog/2025/08/25/readxl/",
+          "text": "post"
+        },
+        {
+          "href": "https://github.com/jennybc/gapminder",
+          "text": "gapminder"
+        },
+        {
+          "href": "https://github.com/tidyverse/readxl/pull/776",
+          "text": "changes"
+        },
+        {
+          "href": "https://github.com/tidyverse/readxl",
+          "text": "readxl"
+        },
+        {
+          "href": "https://pacha.dev/blog/2025/08/26/readxl/",
+          "text": "pacha.dev/blog"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Reading conditional formatting in XLSX files in a Tidy way with readxl | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/pacha.dev/blog/2025/08/26/readxl/good.png?w=578&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/pacha.dev/blog/2025/08/26/readxl/bad.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/pacha-dev-blog/",
+          "text": "pacha.dev/blog"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-395026 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Reading conditional formatting in XLSX files in a Tidy way with readxl</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 25, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/pacha-dev-blog/\">pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/08/26/readxl/\"> pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><em>Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on <a href=\"https://buymeacoffee.com/pacha/e/80976\" rel=\"nofollow\" target=\"_blank\">Buy Me a Coffee</a> or <a href=\"https://github.com/sponsors/pachadotdev\" rel=\"nofollow\" target=\"_blank\">GitHub Sponsorships</a>. It shall be used to continue my Open Source efforts. The full explanation is here: <a href=\"https://pacha.dev/blog/2025/08/11/\" rel=\"nofollow\" target=\"_blank\">A Personal Message from an Open Source Contributor</a>. If you play the electric guitar, the same scholarship chaos led me to turn my guitar pedals and DIY kits hobby into a business, and you can check those <a href=\"https://www.instagram.com/maplebooster/\" rel=\"nofollow\" target=\"_blank\">here</a>.</em></p>\n<p>Continuing with the previous <a href=\"https://pacha.dev/blog/2025/08/25/readxl/\" rel=\"nofollow\" target=\"_blank\">post</a>, I found an additional data organization issue: Using conditional format as information.</p>\n<p>Like all tools (R included), spreadsheets are good when used properly. Conditional formats provide visual guides but there are better ways to express categories such as “above the mean” (e.g. using “VLOOKUP” to clearly add categories to the tables).</p>\n<p>Think about the <a href=\"https://github.com/jennybc/gapminder\" rel=\"nofollow\" target=\"_blank\">gapminder</a> dataset. If instead of this:</p>\n<p><img data-lazy-src=\"https://i0.wp.com/pacha.dev/blog/2025/08/26/readxl/good.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto; width: 100%;\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/pacha.dev/blog/2025/08/26/readxl/good.png?w=578&amp;ssl=1\" style=\"display: block; margin: auto; width: 100%;\"/></noscript></p>\n<p>You get this:</p>\n<p><img data-lazy-src=\"https://i2.wp.com/pacha.dev/blog/2025/08/26/readxl/bad.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"display: block; margin: auto; width: 100%;\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/pacha.dev/blog/2025/08/26/readxl/bad.png?w=578&amp;ssl=1\" style=\"display: block; margin: auto; width: 100%;\"/></noscript></p>\n<p>Then without the “good” sheet you need extra information not present in the file to know what the colours in “lifeExp” mean. In this case, the colour is used to express if the country in question has a life expectancy above or below the continent’s mean. This could be guessed dedicating time to explore the data, which can be time consuming and lead to wrong conclusions.</p>\n<p>The <a href=\"https://github.com/tidyverse/readxl/pull/776\" rel=\"nofollow\" target=\"_blank\">changes</a> I made to the <a href=\"https://github.com/tidyverse/readxl\" rel=\"nofollow\" target=\"_blank\">readxl</a> package previously cannot read the colours dynamically created with conditional formatting, and I had to expand my Pull Request.</p>\n<p>The new change alters the C++ code such that the extra <code>extract_colors</code> parameter in <code>read_excel()</code>, and now allows to do this:</p>\n<pre>file &lt;- readxl_example(\"gapminder-2007.xlsx\")\n\n# using the new functionality\nbad_data &lt;- read_excel(file, sheet = \"bad\", extract_colors = TRUE)\n\n&gt; bad_data                                                                    \n# A tibble: 142 × 7\n   country                   year lifeExp    pop gdpPercap country_bg lifeExp_bg\n   &lt;chr&gt;                    &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     \n 1 Algeria                   2007    72.3 3.33e7     6223. #FF6600    #CCFFCC   \n 2 Angola                    2007    42.7 1.24e7     4797. #FF6600    #FFCCCC   \n 3 Benin                     2007    56.7 8.08e6     1441. #FF6600    #FFCCCC   \n 4 Botswana                  2007    50.7 1.64e6    12570. #FF6600    #FFCCCC   \n 5 Burkina Faso              2007    52.3 1.43e7     1217. #FF6600    #FFCCCC   \n 6 Burundi                   2007    49.6 8.39e6      430. #FF6600    #FFCCCC   \n 7 Cameroon                  2007    50.4 1.77e7     2042. #FF6600    #FFCCCC   \n 8 Central African Republic  2007    44.7 4.37e6      706. #FF6600    #FFCCCC   \n 9 Chad                      2007    50.7 1.02e7     1704. #FF6600    #FFCCCC   \n10 Comoros                   2007    65.2 7.11e5      986. #FF6600    #CCFFCC   \n# ℹ 132 more rows\n# ℹ Use `print(n = ...)` to see more rows</pre>\n<p>In this way, we can extract some information from the conditional formatting, such as:</p>\n<pre>&gt; unique(bad_data$lifeExp_bg)\n[1] \"#CCFFCC\" \"#FFCCCC\"</pre>\n<p>and compare the unique values in the “good” and “bad” sheets:</p>\n<pre>&gt; good_data &lt;- read_excel(file, sheet = \"good\")\n&gt; unique(good_data$lifeExpOverContinentAvg)\n[1] \"Above Continent Average\" \"Below Continent Average\"</pre>\n<p>This is an example of some trime consuming tasks as without the “good” sheet we would need to guess this with the “bad” sheet:</p>\n<pre>&gt; library(dplyr)\n\nbad_data %&gt;%\n  group_by(country_bg) %&gt;%\n  mutate(lifeExpAvg = mean(lifeExp, na.rm = T)) %&gt;%\n  mutate(lifeExpOverContinentAvg = case_when(\n    lifeExp &gt; lifeExpAvg ~ \"Above Continent Average\",\n    TRUE ~ \"Below Continent Average\"\n  ))\n\n# A tibble: 142 × 9\n# Groups:   country_bg [5]\n   country        year lifeExp    pop gdpPercap country_bg lifeExp_bg lifeExpAvg\n   &lt;chr&gt;         &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;           &lt;dbl&gt;\n 1 Algeria        2007    72.3 3.33e7     6223. #FF6600    #CCFFCC          54.8\n 2 Angola         2007    42.7 1.24e7     4797. #FF6600    #FFCCCC          54.8\n 3 Benin          2007    56.7 8.08e6     1441. #FF6600    #FFCCCC          54.8\n 4 Botswana       2007    50.7 1.64e6    12570. #FF6600    #FFCCCC          54.8\n 5 Burkina Faso   2007    52.3 1.43e7     1217. #FF6600    #FFCCCC          54.8\n 6 Burundi        2007    49.6 8.39e6      430. #FF6600    #FFCCCC          54.8\n 7 Cameroon       2007    50.4 1.77e7     2042. #FF6600    #FFCCCC          54.8\n 8 Central Afri…  2007    44.7 4.37e6      706. #FF6600    #FFCCCC          54.8\n 9 Chad           2007    50.7 1.02e7     1704. #FF6600    #FFCCCC          54.8\n10 Comoros        2007    65.2 7.11e5      986. #FF6600    #CCFFCC          54.8\n# ℹ 132 more rows\n# ℹ 1 more variable: lifeExpOverContinentAvg &lt;chr&gt;</pre>\n<p>I hope this is useful!</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/08/26/readxl/\"> pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Reading conditional formatting in XLSX files in a Tidy way with readxl\nPosted on\nAugust 25, 2025\nby\npacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\npacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nBecause of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on\nBuy Me a Coffee\nor\nGitHub Sponsorships\n. It shall be used to continue my Open Source efforts. The full explanation is here:\nA Personal Message from an Open Source Contributor\n. If you play the electric guitar, the same scholarship chaos led me to turn my guitar pedals and DIY kits hobby into a business, and you can check those\nhere\n.\nContinuing with the previous\npost\n, I found an additional data organization issue: Using conditional format as information.\nLike all tools (R included), spreadsheets are good when used properly. Conditional formats provide visual guides but there are better ways to express categories such as “above the mean” (e.g. using “VLOOKUP” to clearly add categories to the tables).\nThink about the\ngapminder\ndataset. If instead of this:\nYou get this:\nThen without the “good” sheet you need extra information not present in the file to know what the colours in “lifeExp” mean. In this case, the colour is used to express if the country in question has a life expectancy above or below the continent’s mean. This could be guessed dedicating time to explore the data, which can be time consuming and lead to wrong conclusions.\nThe\nchanges\nI made to the\nreadxl\npackage previously cannot read the colours dynamically created with conditional formatting, and I had to expand my Pull Request.\nThe new change alters the C++ code such that the extra\nextract_colors\nparameter in\nread_excel()\n, and now allows to do this:\nfile <- readxl_example(\"gapminder-2007.xlsx\")\n\n# using the new functionality\nbad_data <- read_excel(file, sheet = \"bad\", extract_colors = TRUE)\n\n> bad_data                                                                    \n# A tibble: 142 × 7\n   country                   year lifeExp    pop gdpPercap country_bg lifeExp_bg\n   <chr>                    <dbl>   <dbl>  <dbl>     <dbl> <chr>      <chr>     \n 1 Algeria                   2007    72.3 3.33e7     6223. #FF6600    #CCFFCC   \n 2 Angola                    2007    42.7 1.24e7     4797. #FF6600    #FFCCCC   \n 3 Benin                     2007    56.7 8.08e6     1441. #FF6600    #FFCCCC   \n 4 Botswana                  2007    50.7 1.64e6    12570. #FF6600    #FFCCCC   \n 5 Burkina Faso              2007    52.3 1.43e7     1217. #FF6600    #FFCCCC   \n 6 Burundi                   2007    49.6 8.39e6      430. #FF6600    #FFCCCC   \n 7 Cameroon                  2007    50.4 1.77e7     2042. #FF6600    #FFCCCC   \n 8 Central African Republic  2007    44.7 4.37e6      706. #FF6600    #FFCCCC   \n 9 Chad                      2007    50.7 1.02e7     1704. #FF6600    #FFCCCC   \n10 Comoros                   2007    65.2 7.11e5      986. #FF6600    #CCFFCC   \n# ℹ 132 more rows\n# ℹ Use `print(n = ...)` to see more rows\nIn this way, we can extract some information from the conditional formatting, such as:\n> unique(bad_data$lifeExp_bg)\n[1] \"#CCFFCC\" \"#FFCCCC\"\nand compare the unique values in the “good” and “bad” sheets:\n> good_data <- read_excel(file, sheet = \"good\")\n> unique(good_data$lifeExpOverContinentAvg)\n[1] \"Above Continent Average\" \"Below Continent Average\"\nThis is an example of some trime consuming tasks as without the “good” sheet we would need to guess this with the “bad” sheet:\n> library(dplyr)\n\nbad_data %>%\n  group_by(country_bg) %>%\n  mutate(lifeExpAvg = mean(lifeExp, na.rm = T)) %>%\n  mutate(lifeExpOverContinentAvg = case_when(\n    lifeExp > lifeExpAvg ~ \"Above Continent Average\",\n    TRUE ~ \"Below Continent Average\"\n  ))\n\n# A tibble: 142 × 9\n# Groups:   country_bg [5]\n   country        year lifeExp    pop gdpPercap country_bg lifeExp_bg lifeExpAvg\n   <chr>         <dbl>   <dbl>  <dbl>     <dbl> <chr>      <chr>           <dbl>\n 1 Algeria        2007    72.3 3.33e7     6223. #FF6600    #CCFFCC          54.8\n 2 Angola         2007    42.7 1.24e7     4797. #FF6600    #FFCCCC          54.8\n 3 Benin          2007    56.7 8.08e6     1441. #FF6600    #FFCCCC          54.8\n 4 Botswana       2007    50.7 1.64e6    12570. #FF6600    #FFCCCC          54.8\n 5 Burkina Faso   2007    52.3 1.43e7     1217. #FF6600    #FFCCCC          54.8\n 6 Burundi        2007    49.6 8.39e6      430. #FF6600    #FFCCCC          54.8\n 7 Cameroon       2007    50.4 1.77e7     2042. #FF6600    #FFCCCC          54.8\n 8 Central Afri…  2007    44.7 4.37e6      706. #FF6600    #FFCCCC          54.8\n 9 Chad           2007    50.7 1.02e7     1704. #FF6600    #FFCCCC          54.8\n10 Comoros        2007    65.2 7.11e5      986. #FF6600    #CCFFCC          54.8\n# ℹ 132 more rows\n# ℹ 1 more variable: lifeExpOverContinentAvg <chr>\nI hope this is useful!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\npacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee or GitHub Sponsorships. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal ...",
+      "meta_keywords": null,
+      "og_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee or GitHub Sponsorships. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal ...",
+      "og_image": "https://pacha.dev/blog/2025/08/26/readxl/good.png",
+      "og_title": "Reading conditional formatting in XLSX files in a Tidy way with readxl | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.1,
+      "sitemap_lastmod": null,
+      "twitter_description": "Because of delays with my scholarship payment, if this post is useful to you I kindly ask a minimal donation on Buy Me a Coffee or GitHub Sponsorships. It shall be used to continue my Open Source efforts. The full explanation is here: A Personal ...",
+      "twitter_title": "Reading conditional formatting in XLSX files in a Tidy way with readxl | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/08/reading-conditional-formatting-in-xlsx-files-in-a-tidy-way-with-readxl/",
+      "word_count": 817
+    }
+  }
+}

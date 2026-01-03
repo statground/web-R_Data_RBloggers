@@ -1,0 +1,117 @@
+{
+  "id": "2e9c90cb2dacd5619d1dbd4ed63983966a5c4f19",
+  "url": "https://www.r-bloggers.com/2025/06/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/",
+  "created_at_utc": "2025-11-22T19:58:18Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "92e11e9a-bd89-46a5-85dd-dac48bb3bacd",
+    "created_at": "2025-11-22 19:58:18",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/06/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/",
+      "crawled_at": "2025-11-22T10:47:07.660453",
+      "external_links": [
+        {
+          "href": "https://datageeek.com/2025/06/17/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/",
+          "text": "DataGeeek"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://corrr.tidymodels.org/index.html",
+          "text": "corrr"
+        },
+        {
+          "href": "https://datageeek.com/2025/06/17/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/",
+          "text": "DataGeeek"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Correlation Analysis of Silver, Bitcoin, SOXX, and Blockchain Index with {corrr} package | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/datageeek.com/wp-content/uploads/2025/06/corr.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/selcuk-disci/",
+          "text": "Selcuk Disci"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-393114 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Correlation Analysis of Silver, Bitcoin, SOXX, and Blockchain Index with {corrr} package</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">June 17, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/selcuk-disci/\">Selcuk Disci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://datageeek.com/2025/06/17/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/\"> DataGeeek</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Silver, Nasdaq Blockchain Economy Index, Bitcoin, and iShares Semiconductor ETF are always thought of as correlated with each other by investors.</p>\n<p>We will test this perception with the <a href=\"https://corrr.tidymodels.org/index.html\" rel=\"nofollow\" target=\"_blank\"><em>corrr</em></a> package.</p>\n<pre>\n#iShares Semiconductor ETF (SOXX)\ndf_soxx &lt;- \n  tq_get(x = \"SOXX\") %&gt;% \n  select(date, soxx = close)\n\n#Nasdaq Blockchain Economy Index\ndf_nasdaq_blockchain &lt;- \n  openxlsx::read.xlsx(\"https://github.com/mesdi/investingcom/raw/refs/heads/main/nasdaq_blockchain.xlsx\",\n                      sheet = \"History\",\n                      detectDates = TRUE) %&gt;% \n  as_tibble() %&gt;% \n  janitor::clean_names() %&gt;%\n  select(date = trade_date, blcn = index_value)\n\n#Bitcoin\ndf_btc &lt;- \n  tq_get(\"BTC-USD\") %&gt;% \n  select(date, btc = close)\n\n\n#Merging the datasets\ndf_merged &lt;- \n  df_silver %&gt;% \n  left_join(df_soxx) %&gt;% \n  left_join(df_nasdaq_blockchain) %&gt;% \n  left_join(df_btc) %&gt;% \n  drop_na() %&gt;% \n  filter(date &gt;= last(date) - months(36))\n\n#Correlation\nd &lt;- correlate(df_merged, quiet = TRUE)\n\nd %&gt;% \n  focus(silver:btc, mirror = TRUE) %&gt;%  \n  fashion()\n\n#    term silver soxx blcn  btc\n#1 silver         .78  .89  .89\n#2   soxx    .78       .85  .80\n#3   blcn    .89  .85       .97\n#4    btc    .89  .80  .97     \n\n#Network plot\ndf_merged %&gt;% \n  correlate() %&gt;% \n  network_plot(min_cor = .7,\n               legend = \"full\")\n</pre>\n<figure class=\"wp-block-image size-large\"><img alt=\"\" class=\"wp-image-10558\" data-attachment-id=\"10558\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-title=\"corr\" data-large-file=\"https://i1.wp.com/datageeek.com/wp-content/uploads/2025/06/corr.png?w=450&amp;ssl=1\" data-lazy-src=\"https://i1.wp.com/datageeek.com/wp-content/uploads/2025/06/corr.png?w=450&amp;ssl=1\" data-medium-file=\"https://datageeek.com/wp-content/uploads/2025/06/corr.png?w=300\" data-orig-file=\"https://datageeek.com/wp-content/uploads/2025/06/corr.png\" data-orig-size=\"1128,773\" data-permalink=\"https://datageeek.com/2025/06/17/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/corr/\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"\" aperture\":\"0\",\"credit\":\"\",\"camera\":\"\",\"caption\":\"\",\"created_timestamp\":\"0\",\"copyright\":\"\",\"focal_len=\"\" class=\"wp-image-10558\" data-attachment-id=\"10558\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-meta=\"{\" data-image-title=\"corr\" data-large-file=\"https://i1.wp.com/datageeek.com/wp-content/uploads/2025/06/corr.png?w=450&amp;ssl=1\" data-medium-file=\"https://datageeek.com/wp-content/uploads/2025/06/corr.png?w=300\" data-orig-file=\"https://datageeek.com/wp-content/uploads/2025/06/corr.png\" data-orig-size=\"1128,773\" data-permalink=\"https://datageeek.com/2025/06/17/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/corr/\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i1.wp.com/datageeek.com/wp-content/uploads/2025/06/corr.png?w=450&amp;ssl=1\"/></noscript></figure>\n<p><br/>The common perception appears to be correct based on the correlation analysis, specifically between the Nasdaq Blockchain Economy index and Bitcoin.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://datageeek.com/2025/06/17/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/\"> DataGeeek</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Correlation Analysis of Silver, Bitcoin, SOXX, and Blockchain Index with {corrr} package\nPosted on\nJune 17, 2025\nby\nSelcuk Disci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nDataGeeek\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSilver, Nasdaq Blockchain Economy Index, Bitcoin, and iShares Semiconductor ETF are always thought of as correlated with each other by investors.\nWe will test this perception with the\ncorrr\npackage.\n#iShares Semiconductor ETF (SOXX)\ndf_soxx <- \n  tq_get(x = \"SOXX\") %>% \n  select(date, soxx = close)\n\n#Nasdaq Blockchain Economy Index\ndf_nasdaq_blockchain <- \n  openxlsx::read.xlsx(\"https://github.com/mesdi/investingcom/raw/refs/heads/main/nasdaq_blockchain.xlsx\",\n                      sheet = \"History\",\n                      detectDates = TRUE) %>% \n  as_tibble() %>% \n  janitor::clean_names() %>%\n  select(date = trade_date, blcn = index_value)\n\n#Bitcoin\ndf_btc <- \n  tq_get(\"BTC-USD\") %>% \n  select(date, btc = close)\n\n#Merging the datasets\ndf_merged <- \n  df_silver %>% \n  left_join(df_soxx) %>% \n  left_join(df_nasdaq_blockchain) %>% \n  left_join(df_btc) %>% \n  drop_na() %>% \n  filter(date >= last(date) - months(36))\n\n#Correlation\nd <- correlate(df_merged, quiet = TRUE)\n\nd %>% \n  focus(silver:btc, mirror = TRUE) %>%  \n  fashion()\n\n#    term silver soxx blcn  btc\n#1 silver         .78  .89  .89\n#2   soxx    .78       .85  .80\n#3   blcn    .89  .85       .97\n#4    btc    .89  .80  .97     \n\n#Network plot\ndf_merged %>% \n  correlate() %>% \n  network_plot(min_cor = .7,\n               legend = \"full\")\nThe common perception appears to be correct based on the correlation analysis, specifically between the Nasdaq Blockchain Economy index and Bitcoin.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nDataGeeek\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Silver, Nasdaq Blockchain Economy Index, Bitcoin, and iShares Semiconductor ETF are always thought of as correlated with each other by investors. We will test this perception with the corrr package. The common perception appears to be correct based on the correlation analysis, specifically between the Nasdaq Blockchain Economy index and Bitcoin.",
+      "meta_keywords": null,
+      "og_description": "Silver, Nasdaq Blockchain Economy Index, Bitcoin, and iShares Semiconductor ETF are always thought of as correlated with each other by investors. We will test this perception with the corrr package. The common perception appears to be correct based on the correlation analysis, specifically between the Nasdaq Blockchain Economy index and Bitcoin.",
+      "og_image": "https://datageeek.com/wp-content/uploads/2025/06/corr.png?w=1024",
+      "og_title": "Correlation Analysis of Silver, Bitcoin, SOXX, and Blockchain Index with {corrr} package | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "Silver, Nasdaq Blockchain Economy Index, Bitcoin, and iShares Semiconductor ETF are always thought of as correlated with each other by investors. We will test this perception with the corrr package. The common perception appears to be correct based on the correlation analysis, specifically between the Nasdaq Blockchain Economy index and Bitcoin.",
+      "twitter_title": "Correlation Analysis of Silver, Bitcoin, SOXX, and Blockchain Index with {corrr} package | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/06/correlation-analysis-of-silver-bitcoin-soxx-and-blockchain-index-with-corrr-package/",
+      "word_count": 312
+    }
+  }
+}

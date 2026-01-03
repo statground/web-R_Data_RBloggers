@@ -1,0 +1,173 @@
+{
+  "id": "055bbff47ae044c89416ef55e682b2dc8e81c134",
+  "url": "https://www.r-bloggers.com/2009/11/mapping-biomes/",
+  "created_at_utc": "2025-11-17T20:39:57Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "21081774-6b35-4558-ac65-14f93b165fbc",
+    "created_at": "2025-11-17 20:39:57",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/11/mapping-biomes/",
+      "crawled_at": "2025-11-17T10:16:11.071140",
+      "external_links": [
+        {
+          "href": "http://joewheatley.net/mapping-biomes/",
+          "text": "Biospherica » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://ionia1.esrin.esa.int/",
+          "text": "GlobCover"
+        },
+        {
+          "href": "https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas.png",
+          "text": null
+        },
+        {
+          "href": "https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1.png",
+          "text": null
+        },
+        {
+          "href": "http://blog.revolution-computing.com/2009/10/geographic-maps-in-r.html",
+          "text": null
+        },
+        {
+          "href": "http://fwtools.maptools.org/",
+          "text": "FWTools"
+        },
+        {
+          "href": "ftp://us-ext-nas.eo.esa.int/regional/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.gadm.org/",
+          "text": "www.gadm.org"
+        },
+        {
+          "href": "http://blog.revolution-computing.com/2009/10/geographic-maps-in-r.html",
+          "text": "Revolution R blog post"
+        },
+        {
+          "href": "http://joewheatley.net/wp-content/uploads/2009/11/costa.R",
+          "text": "here"
+        },
+        {
+          "href": "http://www.igbp.net/",
+          "text": "IGBP"
+        },
+        {
+          "href": "https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png",
+          "text": null
+        },
+        {
+          "href": "http://joewheatley.net/mapping-biomes/",
+          "text": "Biospherica » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Mapping Biomes | R-bloggers",
+      "images": [
+        {
+          "alt": "puntarenas",
+          "base64": null,
+          "src": "https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas-1024x825.png?w=450"
+        },
+        {
+          "alt": "puntarenas",
+          "base64": null,
+          "src": "https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas-1024x825.png?w=450"
+        },
+        {
+          "alt": "legend",
+          "base64": null,
+          "src": "https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1-1023x362.png?w=450"
+        },
+        {
+          "alt": "legend",
+          "base64": null,
+          "src": "https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1-1023x362.png?w=450"
+        },
+        {
+          "alt": "LCTable",
+          "base64": null,
+          "src": "https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png?w=450"
+        },
+        {
+          "alt": "LCTable",
+          "base64": null,
+          "src": "https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png?w=450"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/joe/",
+          "text": "joe"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-9551 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Mapping Biomes</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 20, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/joe/\">joe</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://joewheatley.net/mapping-biomes/\"> Biospherica » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p style=\"text-align: left;\">Recently (2008) the <em>European Space Agency</em> produced <strong><a href=\"http://ionia1.esrin.esa.int/\" rel=\"nofollow\" target=\"_blank\">GlobCover</a></strong> (<span style=\"word-spacing: 1.5px; line-height: 1.5;\"><span><em>ESA GlobCover Project</em>, led by MEDIAS-France</span></span>), the highest resolution (300m) global land cover map to date. GlobCover uses 21 primary land cover classes and many more sub-classes. Land cover classification (LCC) schemes divide the earth into <em>biomes</em>. Biomes are the simplest way to classify vegetation which can be applied globally. LCC makes sense because the boundaries between different ecosystems (<em>ecotones</em>) are sharp. However, definitions vary and there is no agreed standard set of biomes.<sup>[1]</sup></p>\n<p style=\"text-align: left;\">\n<h3 style=\"text-align: left;\">GlobCover Example</h3>\n<p>Puntarenas is a province on the pacific coast of Costa Rica.  The province has a typical mix of tropical land cover. This includes some spectacular examples of Pacific Rainforest, notably on the Osa Peninsula. Puntarenas has an area of ≈ 11,000 sq. km or about 120,000 GlobCover pixels.</p>\n<p style=\"text-align: center;\">\n<p>13 land cover types are present in the GlobCover map below. The barplot on the right shows the total amounts present in each class.</p>\n<p style=\"text-align: center;\"><a href=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas.png\" rel=\"nofollow\" target=\"_blank\"><img alt=\"puntarenas\" class=\"aligncenter size-large wp-image-1330 jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas-1024x825.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas-1024x825.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"puntarenas\"/><noscript><img alt=\"puntarenas\" class=\"aligncenter size-large wp-image-1330\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/puntarenas-1024x825.png?w=450\" title=\"puntarenas\"/></noscript></a></p>\n<p style=\"text-align: center;\">\n<p style=\"text-align: center;\"><a href=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1.png\" rel=\"nofollow\" target=\"_blank\"><img alt=\"legend\" class=\"aligncenter size-large wp-image-1212 jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1-1023x362.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1-1023x362.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"legend\"/><noscript><img alt=\"legend\" class=\"aligncenter size-large wp-image-1212\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/joewheatley.net/wp-content/uploads/2009/11/legend1-1023x362.png?w=450\" title=\"legend\"/></noscript></a></p>\n<p>The GlobCover legend (above) has mixed land cover classes, where more than one biome occurs  inside a map pixel. This is especially true in the man-made biomes (agriculture) . For example, there are three cropland land cover types depending on the relative amounts of other vegetation present.</p>\n<h3 style=\"text-align: left;\">GlobCover map making in <em>R</em></h3>\n<p><em>R</em> is a programming language, not a specialised geographic information system (GIS) such as GRASS or commercial packages. However applications of <em>R</em> to spatial problems is a growth industry.<sup>[2]</sup> <a href=\"http://blog.revolution-computing.com/2009/10/geographic-maps-in-r.html\" rel=\"nofollow\" target=\"_blank\"><br/>\n</a></p>\n<p>A GlobCover map similar to the above can be produced for any area of interest. The <em>Geospatial Data Abstraction Library</em> (GDAL) should be installed on your system. <strong><a href=\"http://fwtools.maptools.org/\" rel=\"nofollow\" target=\"_blank\">FWTools</a></strong> is the place to go. You also need <em>R</em> packages <em>sp</em> and <em>rgdal</em> installed. The regional GLOBCOVER map for Central America can be downloaded from ESA <strong><a href=\"ftp://us-ext-nas.eo.esa.int/regional/\" rel=\"nofollow\" target=\"_blank\">here</a></strong>. GlobCover is in GeoTiff format i.e. a Tiff image file which contains georeferencing information. The following GDAL command (from command line, or run from R using <em>shell</em>) creates a 4° x 4° submap centred on Costa Rica.<br/>\n<code>\n\ngdalwarp GLOBCOVER_200412_200606_V2.2_CentralAmerica_Reg.tif -te -86 8 -82 12 costaRica.tif\n\n</code></p>\n<p style=\"text-align: left;\"><em>costaRica.tif</em> is read into <em>R</em> using the <em>rgdal</em> package:</p>\n<p><code>library(rgdal)\n\ncosta &lt;- readGDAL(\"costaRica.tif\")</code></p>\n<p style=\"text-align: left;\"><em>costa</em> has class <em>SpatialGridDataFrame</em>, which is a class defined in the package <em>sp</em> (loaded when <em>rgdal</em> is loaded).</p>\n<p style=\"text-align: left;\">Administative boundaries for Costa Rica were obtained from Global Administrative Areas <a href=\"http://www.gadm.org/\" rel=\"nofollow\" target=\"_blank\">www.gadm.org</a> (see <strong><a href=\"http://blog.revolution-computing.com/2009/10/geographic-maps-in-r.html\" rel=\"nofollow\" target=\"_blank\">Revolution R blog post</a></strong>)</p>\n<p><code>con &lt;- url(\"http://gadm.org/data/rda/CRI_adm1.RData\")\n\nload(con)\n\nclose(con)</code></p>\n<p style=\"text-align: left;\">Costa Rican provinces are now contained in the object <em>gadm</em> of class <em>SpatialPolygonsDataFrame</em>. The boundaries of Puntarenas province (excluding Cocos Island) are extracted as follows:</p>\n<p><code>Polygons(list(Polygon(gadm@polygons[[6]]@Polygons[[27]]@coords),Polygon(gadm@polygons[[6]]@Polygons[[25]]@coords)),\"puntarenas\")\n\ntemp &lt;- SpatialPolygons(list(temp),proj4string=CRS(proj4string(gadm)))\n\npunt.sp &lt;- SpatialPolygonsDataFrame(temp, data.frame(cbind(2,2), row.names=c(\"puntarenas\")))  # puntarenas\n\n</code></p>\n<p style=\"text-align: left;\">The <em>overlay()</em> method  is used to extract the land cover map <em>puntarenas</em> from <em>costa:</em><em> </em></p>\n<p style=\"text-align: left;\"><code>puntarenas &lt;- costa\n\npuntarenas.overlay &lt;- overlay(costa,punt.sp)  # 1 in interior of puntarenas polygons, 0 outside\n\npuntarenas$band1 &lt;- costa$band1*puntarenas.overlay</code></p>\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">Unfortunately <em>overlay() </em>is rather slow, because it applies <em>point.in.polygon()</em> to the entire raster. Eventually <em>puntarenas<em> </em></em>appears as a<em> SpatialGridDataFrame</em><em> </em>which can be plotted using standard <em>R</em> tools such as <em>image()</em>.</p>\n<p style=\"text-align: left;\">The code needed to generate the above plot is <strong><a href=\"http://joewheatley.net/wp-content/uploads/2009/11/costa.R\" rel=\"nofollow\" target=\"_blank\">here</a></strong>.</p>\n<h3 style=\"text-align: left;\">footnotes</h3>\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">[1] For example, the International Biosphere-Geosphere Programme (<strong><a href=\"http://www.igbp.net/\" rel=\"nofollow\" target=\"_blank\">IGBP</a></strong>) land cover legend used 17 biomes. The University of Maryland map used 14 biomes. At much lower resolution, numerical weather forecasting models such as US National Center for Climate Prediction Global Forecasting System (NCEP-GFS) also use alternative schemes.</p>\n<p style=\"text-align: left;\">\n<p style=\"text-align: center;\"><a href=\"https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png\" rel=\"nofollow\" target=\"_blank\"><img alt=\"LCTable\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"LCTable\"/><noscript><img alt=\"LCTable\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i0.wp.com/joewheatley.net/wp-content/uploads/2009/11/LCTable.png?w=450\" title=\"LCTable\"/></noscript></a></p>\n<p style=\"text-align: center;\">\n<p style=\"text-align: left;\">[2] Roger S. Bivand, Edzer J. Pebesma, and Virgilio Gómez-Rubio.  <em>Applied Spatial Data Analysis with R</em>.  Springer, New York, 2008</p>\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">\n<p style=\"text-align: left;\">\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://joewheatley.net/mapping-biomes/\"> Biospherica » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></p></p></p></p></p></p></p></p></p></p></p></div>\n</article>",
+      "main_text": "Mapping Biomes\nPosted on\nNovember 20, 2009\nby\njoe\nin Uncategorized | 0 Comments\n[This article was first published on\nBiospherica » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nRecently (2008) the\nEuropean Space Agency\nproduced\nGlobCover\n(\nESA GlobCover Project\n, led by MEDIAS-France\n), the highest resolution (300m) global land cover map to date. GlobCover uses 21 primary land cover classes and many more sub-classes. Land cover classification (LCC) schemes divide the earth into\nbiomes\n. Biomes are the simplest way to classify vegetation which can be applied globally. LCC makes sense because the boundaries between different ecosystems (\necotones\n) are sharp. However, definitions vary and there is no agreed standard set of biomes.\n[1]\nGlobCover Example\nPuntarenas is a province on the pacific coast of Costa Rica.  The province has a typical mix of tropical land cover. This includes some spectacular examples of Pacific Rainforest, notably on the Osa Peninsula. Puntarenas has an area of ≈ 11,000 sq. km or about 120,000 GlobCover pixels.\n13 land cover types are present in the GlobCover map below. The barplot on the right shows the total amounts present in each class.\nThe GlobCover legend (above) has mixed land cover classes, where more than one biome occurs  inside a map pixel. This is especially true in the man-made biomes (agriculture) . For example, there are three cropland land cover types depending on the relative amounts of other vegetation present.\nGlobCover map making in\nR\nR\nis a programming language, not a specialised geographic information system (GIS) such as GRASS or commercial packages. However applications of\nR\nto spatial problems is a growth industry.\n[2]\nA GlobCover map similar to the above can be produced for any area of interest. The\nGeospatial Data Abstraction Library\n(GDAL) should be installed on your system.\nFWTools\nis the place to go. You also need\nR\npackages\nsp\nand\nrgdal\ninstalled. The regional GLOBCOVER map for Central America can be downloaded from ESA\nhere\n. GlobCover is in GeoTiff format i.e. a Tiff image file which contains georeferencing information. The following GDAL command (from command line, or run from R using\nshell\n) creates a 4° x 4° submap centred on Costa Rica.\ngdalwarp GLOBCOVER_200412_200606_V2.2_CentralAmerica_Reg.tif -te -86 8 -82 12 costaRica.tif\ncostaRica.tif\nis read into\nR\nusing the\nrgdal\npackage:\nlibrary(rgdal)\n\ncosta <- readGDAL(\"costaRica.tif\")\ncosta\nhas class\nSpatialGridDataFrame\n, which is a class defined in the package\nsp\n(loaded when\nrgdal\nis loaded).\nAdministative boundaries for Costa Rica were obtained from Global Administrative Areas\nwww.gadm.org\n(see\nRevolution R blog post\n)\ncon <- url(\"http://gadm.org/data/rda/CRI_adm1.RData\")\n\nload(con)\n\nclose(con)\nCosta Rican provinces are now contained in the object\ngadm\nof class\nSpatialPolygonsDataFrame\n. The boundaries of Puntarenas province (excluding Cocos Island) are extracted as follows:\nPolygons(list(Polygon(gadm@polygons[[6]]@Polygons[[27]]@coords),Polygon(gadm@polygons[[6]]@Polygons[[25]]@coords)),\"puntarenas\")\n\ntemp <- SpatialPolygons(list(temp),proj4string=CRS(proj4string(gadm)))\n\npunt.sp <- SpatialPolygonsDataFrame(temp, data.frame(cbind(2,2), row.names=c(\"puntarenas\")))  # puntarenas\nThe\noverlay()\nmethod  is used to extract the land cover map\npuntarenas\nfrom\ncosta:\npuntarenas <- costa\n\npuntarenas.overlay <- overlay(costa,punt.sp)  # 1 in interior of puntarenas polygons, 0 outside\n\npuntarenas$band1 <- costa$band1*puntarenas.overlay\nUnfortunately\noverlay()\nis rather slow, because it applies\npoint.in.polygon()\nto the entire raster. Eventually\npuntarenas\nappears as a\nSpatialGridDataFrame\nwhich can be plotted using standard\nR\ntools such as\nimage()\n.\nThe code needed to generate the above plot is\nhere\n.\nfootnotes\n[1] For example, the International Biosphere-Geosphere Programme (\nIGBP\n) land cover legend used 17 biomes. The University of Maryland map used 14 biomes. At much lower resolution, numerical weather forecasting models such as US National Center for Climate Prediction Global Forecasting System (NCEP-GFS) also use alternative schemes.\n[2] Roger S. Bivand, Edzer J. Pebesma, and Virgilio Gómez-Rubio.\nApplied Spatial Data Analysis with R\n.  Springer, New York, 2008\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nBiospherica » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Recently (2008) the European Space Agency produced GlobCover (ESA GlobCover Project, led by MEDIAS-France), the highest resolution (300m) global land cover map to date. GlobCover uses 21 primary land cover classes and many more sub-classes. Land cover classification (LCC) schemes divide the earth into biomes. Biomes are the simplest way to classify vegetation which can [...]",
+      "meta_keywords": null,
+      "og_description": "Recently (2008) the European Space Agency produced GlobCover (ESA GlobCover Project, led by MEDIAS-France), the highest resolution (300m) global land cover map to date. GlobCover uses 21 primary land cover classes and many more sub-classes. Land cover classification (LCC) schemes divide the earth into biomes. Biomes are the simplest way to classify vegetation which can [...]",
+      "og_image": "https://joewheatley.net/wp-content/uploads/2009/11/puntarenas-1024x825.png",
+      "og_title": "Mapping Biomes | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.8,
+      "sitemap_lastmod": "2009-11-20T22:00:15+00:00",
+      "twitter_description": "Recently (2008) the European Space Agency produced GlobCover (ESA GlobCover Project, led by MEDIAS-France), the highest resolution (300m) global land cover map to date. GlobCover uses 21 primary land cover classes and many more sub-classes. Land cover classification (LCC) schemes divide the earth into biomes. Biomes are the simplest way to classify vegetation which can [...]",
+      "twitter_title": "Mapping Biomes | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/11/mapping-biomes/",
+      "word_count": 758
+    }
+  }
+}

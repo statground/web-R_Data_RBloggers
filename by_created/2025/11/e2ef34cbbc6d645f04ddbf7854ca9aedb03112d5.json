@@ -1,0 +1,141 @@
+{
+  "id": "e2ef34cbbc6d645f04ddbf7854ca9aedb03112d5",
+  "url": "https://www.r-bloggers.com/2009/12/galtons-quincunx-in-r/",
+  "created_at_utc": "2025-11-17T20:39:44Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "7948ea47-3954-4513-a72b-12f1071f3a7c",
+    "created_at": "2025-11-17 20:39:44",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/galtons-quincunx-in-r/",
+      "crawled_at": "2025-11-17T10:11:49.837170",
+      "external_links": [
+        {
+          "href": "https://ggorjan.blogspot.com/2009/12/galtons-quincunx-in-r.html",
+          "text": "Gregor Gorjanc (gg)"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://ablejec.nib.si/",
+          "text": "Andrej Blejec"
+        },
+        {
+          "href": "http://ablejec.nib.si/R/quincunx.pdf",
+          "text": "demo"
+        },
+        {
+          "href": "http://www.bun.kyoto-u.ac.jp/~suchii/quinc.html",
+          "text": "link1"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Bean_machine",
+          "text": "link2"
+        },
+        {
+          "href": "http://bm2.genes.nig.ac.jp/RGM2/R_current/library/animation/man/quincunx.html",
+          "text": "quincunx"
+        },
+        {
+          "href": "http://cran.r-project.org/web/packages/animation",
+          "text": "animation"
+        },
+        {
+          "href": "https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif",
+          "text": null
+        },
+        {
+          "href": "http://mathworld.wolfram.com/GaltonBoard.html",
+          "text": "Wolfram MathWorld"
+        },
+        {
+          "href": "https://ggorjan.blogspot.com/2009/12/galtons-quincunx-in-r.html",
+          "text": "Gregor Gorjanc (gg)"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Galton’s quincunx in R | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/gregor-gorjanc/",
+          "text": "Gregor Gorjanc"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-371 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Galton’s quincunx in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 13, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/gregor-gorjanc/\">Gregor Gorjanc</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ggorjan.blogspot.com/2009/12/galtons-quincunx-in-r.html\"> Gregor Gorjanc (gg)</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div style=\"text-align: justify;\"><a href=\"http://ablejec.nib.si/\" rel=\"nofollow\" target=\"_blank\">Andrej Blejec</a> has a very nice R <a href=\"http://ablejec.nib.si/R/quincunx.pdf\" rel=\"nofollow\" target=\"_blank\">demo</a> of Galton’s quincunx (<a href=\"http://www.bun.kyoto-u.ac.jp/~suchii/quinc.html\" rel=\"nofollow\" target=\"_blank\">link1</a>, <a href=\"https://en.wikipedia.org/wiki/Bean_machine\" rel=\"nofollow\" target=\"_blank\">link2</a>). It is a bit tedious to copy the code from PDF to R console, but it is worth the effort as the demo simulation clearly shows the nature of quincunx. After a bit of search I also found a similar function <a href=\"http://bm2.genes.nig.ac.jp/RGM2/R_current/library/animation/man/quincunx.html\" rel=\"nofollow\" target=\"_blank\">quincunx</a> in the <a href=\"http://cran.r-project.org/web/packages/animation\" rel=\"nofollow\" target=\"_blank\">animation</a> R package by Yihui Xi. </div><br/><br/><div style=\"text-align: center;\"><a data-cf-modified-a6df121e3eeb7e7dd8699b10-=\"\" href=\"https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 25%;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif?w=578\" style=\"margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 25%;\"/></noscript></a> Image source: <a href=\"http://mathworld.wolfram.com/GaltonBoard.html\" rel=\"nofollow\" target=\"_blank\">Wolfram MathWorld</a></div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ggorjan.blogspot.com/2009/12/galtons-quincunx-in-r.html\"> Gregor Gorjanc (gg)</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Galton’s quincunx in R\nPosted on\nDecember 13, 2009\nby\nGregor Gorjanc\nin Uncategorized | 0 Comments\n[This article was first published on\nGregor Gorjanc (gg)\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAndrej Blejec\nhas a very nice R\ndemo\nof Galton’s quincunx (\nlink1\n,\nlink2\n). It is a bit tedious to copy the code from PDF to R console, but it is worth the effort as the demo simulation clearly shows the nature of quincunx. After a bit of search I also found a similar function\nquincunx\nin the\nanimation\nR package by Yihui Xi.\nImage source:\nWolfram MathWorld\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGregor Gorjanc (gg)\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Andrej Blejec has a very nice R demo of Galton's quincunx (link1, link2). It is a bit tedious to copy the code from PDF to R console, but it is worth the effort as the demo simulation clearly shows the nature of quincunx. After a bit of search I also f...",
+      "meta_keywords": null,
+      "og_description": "Andrej Blejec has a very nice R demo of Galton's quincunx (link1, link2). It is a bit tedious to copy the code from PDF to R console, but it is worth the effort as the demo simulation clearly shows the nature of quincunx. After a bit of search I also f...",
+      "og_image": "https://mathworld.wolfram.com/images/eps-gif/GaltonBoard_1000.gif",
+      "og_title": "Galton’s quincunx in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1,
+      "sitemap_lastmod": "2009-12-13T20:27:49+00:00",
+      "twitter_description": "Andrej Blejec has a very nice R demo of Galton's quincunx (link1, link2). It is a bit tedious to copy the code from PDF to R console, but it is worth the effort as the demo simulation clearly shows the nature of quincunx. After a bit of search I also f...",
+      "twitter_title": "Galton’s quincunx in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/galtons-quincunx-in-r/",
+      "word_count": 208
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "id": "f04eaa935fa013149f326cb57f789d83f8d9b340",
+  "url": "https://www.r-bloggers.com/2009/05/sna-with-r-loading-large-networks-using-the-igraph-library/",
+  "created_at_utc": "2025-11-17T20:40:58Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "e8172029-4e29-46c6-a546-d957b821cb44",
+    "created_at": "2025-11-17 20:40:58",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/05/sna-with-r-loading-large-networks-using-the-igraph-library/",
+      "crawled_at": "2025-11-17T10:38:24.752697",
+      "external_links": [
+        {
+          "href": "http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-large-networks-using-the-igraph-library.html",
+          "text": "CYBAEA Data and Analysis"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-your-network-data.html",
+          "text": "our previous post on SNA"
+        },
+        {
+          "href": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist1.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "http://igraph.sourceforge.net/",
+          "text": "the core igraph library"
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:yIl2AUoC8zA",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:F7zBnMyn0Lo",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:V_sGLiPBpWU",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:qj6IDK7rITs",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:gIN9vFwOqvQ",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:TzevzKxY174",
+          "text": null
+        },
+        {
+          "href": "http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-large-networks-using-the-igraph-library.html",
+          "text": "CYBAEA Data and Analysis"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "SNA with R: Loading large networks using the igraph library | R-bloggers",
+      "images": [
+        {
+          "alt": "[Distribution of neighborhood size plot]",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist_small1.png?resize=400%2C400&ssl=1"
+        },
+        {
+          "alt": "[Distribution of neighborhood size plot]",
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist_small1.png?resize=400%2C400&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:F7zBnMyn0Lo"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:F7zBnMyn0Lo"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:V_sGLiPBpWU"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:V_sGLiPBpWU"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:gIN9vFwOqvQ"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:gIN9vFwOqvQ"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/UafsWYtoE_U"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/UafsWYtoE_U"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/allan-engelhardt/",
+          "text": "Allan Engelhardt"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-1538 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">SNA with R: Loading large networks using the igraph library</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 6, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/allan-engelhardt/\">Allan Engelhardt</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-large-networks-using-the-igraph-library.html\"> CYBAEA Data and Analysis</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div xmlns=\"http://www.w3.org/1999/xhtml\"><p>\r\nWe are interested in Social Network Analysis using the statistical analysis and computing platform <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a>.  The documentation for R is voluminous but typically not very good, so this entry is part of a series where we document what we learn as we explore the tool and the packages.\r\n</p>\n<p>\r\nIn <a href=\"http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-your-network-data.html\" rel=\"nofollow\" target=\"_blank\">our previous post on SNA</a> we gave up on using the <code>statnet</code> package because it was not able to handle our data volumes.  In this entry we have better success with the <code>igraph</code> package.\r\n</p>\n<p>\r\nThe task we are considering is still how to load the network data into the R package’s internal representation.  We will assume that the raw data for our analysis is in a transactional format that is typical at least in the Telecommunications and Finance industries.  In the former the terminology is Call Detail Record (CDR) and an extract may look a little like the following:\r\n</p>\n<pre>\r\n          src,         dest,     start,  duration,type,...\r\n+447000000005,+447000000006,1238510028,        52,call,...\r\n+447000000006,+447000000009,1238510627,       154,call,...\r\n+447000000009,+447000000007,1238511103,        48,call,...\r\n+447000000006,+447000000005,1238511145,        49,call,...\r\n+447000000006,+447000000005,1238511678,        12,call,...\r\n+447000000001,+447000000006,1238511735,       147,call,...\r\n+447000000007,+447000000009,1238511806,        26,call,...\r\n+447000000000,+447000000008,1238511825,        19,call,...\r\n+447000000009,+447000000008,1238511900,        28,call,...\r\n...\r\n</pre>\n<p>\r\nHere a record indicates that the customer identified as <var>src</var> called (<var>type</var>=call) the customer <var>dest</var> at the given time <var>start</var> and the call lasted <var>duration</var> seconds.  In general, there will be (many) more attributes describing the transaction which are represented by the <var>…</var>.  In a Financial Services example, the records may be money transfers between accounts.\r\n</p>\n<h2>Loading the data in the <code>igraph</code> package</h2>\n<p>\r\nWe are able to load the previous test data with 51 million records easily:\r\n</p>\n<pre>&gt; library(\"igraph\")\r\n&gt; m &lt;- matrix(scan(bzfile(\"cdr.51M.csv.bz2\", open=\"r\"), \r\n+                  what=integer(0), skip=1, sep=','), \r\n+             ncol=4, byrow=TRUE)\r\nRead 205266564 items\r\n&gt; ### Vertices are numbered from zero in the igraph library\r\n&gt; m[,1] &lt;- m[,1]-1; m[,2] &lt;- m[,2]-1\r\n&gt; g &lt;- graph.edgelist(m[,c(2,1)])\r\n&gt; E(g)$start    &lt;- as.POSIXct(m[,3], origin=\"1970-01-01\", tz=\"UTC\")\r\n&gt; E(g)$duration &lt;- m[,4]\r\n&gt; ns &lt;- neighborhood.size(g, 1)\r\n</pre>\n<p>\r\nTime to up the ante!  We have a file with simulated call data records containing over 700 million entries where we suspect the algorithm used is under-estimating nodes with small connections.  Let’s check on the first ½ billion records (which seems to more-or-less fit in our available memory on this workstation):\r\n</p>\n<pre>&gt; library(\"igraph\")\r\n### Note that R can only handle 2^31-1 elements in a vector (on any\r\n### platform, including 64-bit), so we need to read this file as a\r\n### list.\r\n&gt; s &lt;- scan(\"cdr.1e6x1e1.csv\", what=rep(list(integer(0)),4), skip=1, sep=',', multi.line=FALSE)\r\nRead 700466826 records\r\n&gt; m &lt;- as.vector(rbind(s[[2]], s[[1]]))\r\n&gt; print(length(m))\r\n[1] 1400933652\r\n&gt; length(m) &lt;- 1e9\r\n&gt; g &lt;- graph(m, directed=TRUE)\r\n&gt; ns &lt;- neighborhood.size(g, 1)\r\n&gt; summary(ns)\r\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \r\n   1.00   35.00   40.00   42.92   47.00  101.00 \r\n&gt; hist(ns, xlab=\"Neighborhood size\", main=\"Distribution of neighborhood size\", \r\n       sub=\"From cdr.1e6x1e1.1e9\")\r\n</pre>\n<div class=\"floatRight\">\n<a href=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist1.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"[Distribution of neighborhood size plot]\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist_small1.png?resize=400%2C400&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" height=\"400\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist_small1.png?resize=400%2C400&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" title=\"Distribution of neighborhood size\" width=\"400\"/><noscript><img alt=\"[Distribution of neighborhood size plot]\" data-recalc-dims=\"1\" height=\"400\" loading=\"lazy\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist_small1.png?resize=400%2C400&amp;ssl=1\" title=\"Distribution of neighborhood size\" width=\"400\"/></noscript></a>\n</div>\n<p>\r\nAs we suspected, the Monte Carlo algorithm does not provide enough customers with low calling circle sizes.  Fortunately it is very easy to add these separately: the hard part is modelling the larger calling circles.  A mix of these two algorithms provide a reasonably good fit to actual customer behaviour.  (The cut-off at 100 is a parameter to our Monte Carlo simulation program which indeed was 100 for this run.)\r\n</p>\n<h2>Problems</h2>\n<p>However, it is not all perfect.  When we attempt to add the edge parameters in the obvious way it fails:</p>\n<pre>&gt; length(s[[3]]) &lt;- 0.5e9\r\n&gt; length(s[[4]]) &lt;- 0.5e9\r\n&gt; E(g)$start     &lt;- s[[3]]\r\nError: cannot allocate vector of size 3.7 Gb\r\nExecution halted\r\n&gt; E(g)$duration  &lt;- s[[4]]\r\n</pre>\n<p>\r\nSo we are just at the limit.  Probably 100 million records is OK in this environment.  But <a href=\"http://igraph.sourceforge.net/\" rel=\"nofollow\" target=\"_blank\">the core igraph library</a> is accessible from C so better performance can probably be achieved this way and certainly pointers are 8 byte structures on this machine so we should not have the silly limits that R imposes on us.\r\n</p>\n</div><div class=\"feedflare\">\n<a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:yIl2AUoC8zA\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:F7zBnMyn0Lo\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U%3AVuX19eZpOZo%3AF7zBnMyn0Lo&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:F7zBnMyn0Lo\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:F7zBnMyn0Lo\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:V_sGLiPBpWU\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U%3AVuX19eZpOZo%3AV_sGLiPBpWU&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:V_sGLiPBpWU\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:V_sGLiPBpWU\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:qj6IDK7rITs\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:gIN9vFwOqvQ\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U%3AVuX19eZpOZo%3AgIN9vFwOqvQ&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:gIN9vFwOqvQ\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=UafsWYtoE_U:VuX19eZpOZo:gIN9vFwOqvQ\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=UafsWYtoE_U:VuX19eZpOZo:TzevzKxY174\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\"/></noscript></a>\n</div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/UafsWYtoE_U?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/UafsWYtoE_U\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/UafsWYtoE_U\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-large-networks-using-the-igraph-library.html\"> CYBAEA Data and Analysis</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "SNA with R: Loading large networks using the igraph library\nPosted on\nMay 6, 2009\nby\nAllan Engelhardt\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nCYBAEA Data and Analysis\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWe are interested in Social Network Analysis using the statistical analysis and computing platform\nR\n.  The documentation for R is voluminous but typically not very good, so this entry is part of a series where we document what we learn as we explore the tool and the packages.\nIn\nour previous post on SNA\nwe gave up on using the\nstatnet\npackage because it was not able to handle our data volumes.  In this entry we have better success with the\nigraph\npackage.\nThe task we are considering is still how to load the network data into the R package’s internal representation.  We will assume that the raw data for our analysis is in a transactional format that is typical at least in the Telecommunications and Finance industries.  In the former the terminology is Call Detail Record (CDR) and an extract may look a little like the following:\nsrc,         dest,     start,  duration,type,...\n+447000000005,+447000000006,1238510028,        52,call,...\n+447000000006,+447000000009,1238510627,       154,call,...\n+447000000009,+447000000007,1238511103,        48,call,...\n+447000000006,+447000000005,1238511145,        49,call,...\n+447000000006,+447000000005,1238511678,        12,call,...\n+447000000001,+447000000006,1238511735,       147,call,...\n+447000000007,+447000000009,1238511806,        26,call,...\n+447000000000,+447000000008,1238511825,        19,call,...\n+447000000009,+447000000008,1238511900,        28,call,...\n...\nHere a record indicates that the customer identified as\nsrc\ncalled (\ntype\n=call) the customer\ndest\nat the given time\nstart\nand the call lasted\nduration\nseconds.  In general, there will be (many) more attributes describing the transaction which are represented by the\n…\n.  In a Financial Services example, the records may be money transfers between accounts.\nLoading the data in the\nigraph\npackage\nWe are able to load the previous test data with 51 million records easily:\n> library(\"igraph\")\n> m <- matrix(scan(bzfile(\"cdr.51M.csv.bz2\", open=\"r\"), \n+                  what=integer(0), skip=1, sep=','), \n+             ncol=4, byrow=TRUE)\nRead 205266564 items\n> ### Vertices are numbered from zero in the igraph library\n> m[,1] <- m[,1]-1; m[,2] <- m[,2]-1\n> g <- graph.edgelist(m[,c(2,1)])\n> E(g)$start    <- as.POSIXct(m[,3], origin=\"1970-01-01\", tz=\"UTC\")\n> E(g)$duration <- m[,4]\n> ns <- neighborhood.size(g, 1)\nTime to up the ante!  We have a file with simulated call data records containing over 700 million entries where we suspect the algorithm used is under-estimating nodes with small connections.  Let’s check on the first ½ billion records (which seems to more-or-less fit in our available memory on this workstation):\n> library(\"igraph\")\n### Note that R can only handle 2^31-1 elements in a vector (on any\n### platform, including 64-bit), so we need to read this file as a\n### list.\n> s <- scan(\"cdr.1e6x1e1.csv\", what=rep(list(integer(0)),4), skip=1, sep=',', multi.line=FALSE)\nRead 700466826 records\n> m <- as.vector(rbind(s[[2]], s[[1]]))\n> print(length(m))\n[1] 1400933652\n> length(m) <- 1e9\n> g <- graph(m, directed=TRUE)\n> ns <- neighborhood.size(g, 1)\n> summary(ns)\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   1.00   35.00   40.00   42.92   47.00  101.00 \n> hist(ns, xlab=\"Neighborhood size\", main=\"Distribution of neighborhood size\", \n       sub=\"From cdr.1e6x1e1.1e9\")\nAs we suspected, the Monte Carlo algorithm does not provide enough customers with low calling circle sizes.  Fortunately it is very easy to add these separately: the hard part is modelling the larger calling circles.  A mix of these two algorithms provide a reasonably good fit to actual customer behaviour.  (The cut-off at 100 is a parameter to our Monte Carlo simulation program which indeed was 100 for this run.)\nProblems\nHowever, it is not all perfect.  When we attempt to add the edge parameters in the obvious way it fails:\n> length(s[[3]]) <- 0.5e9\n> length(s[[4]]) <- 0.5e9\n> E(g)$start     <- s[[3]]\nError: cannot allocate vector of size 3.7 Gb\nExecution halted\n> E(g)$duration  <- s[[4]]\nSo we are just at the limit.  Probably 100 million records is OK in this environment.  But\nthe core igraph library\nis accessible from C so better performance can probably be achieved this way and certainly pointers are 8 byte structures on this machine so we should not have the silly limits that R imposes on us.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCYBAEA Data and Analysis\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "We are interested in Social Network Analysis using the statistical analysis and computing platform R. The documentation for R is voluminous but typically not very good, so this entry is part of a series where we document what we learn as we explore the tool and the packages. In our previous post on SNA we gave up on using the statnet package because it was not able to handle our data volumes. In this entry we have better success with the igraph package.",
+      "meta_keywords": null,
+      "og_description": "We are interested in Social Network Analysis using the statistical analysis and computing platform R. The documentation for R is voluminous but typically not very good, so this entry is part of a series where we document what we learn as we explore the tool and the packages. In our previous post on SNA we gave up on using the statnet package because it was not able to handle our data volumes. In this entry we have better success with the igraph package.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/05/neighborhood_hist_small1.png",
+      "og_title": "SNA with R: Loading large networks using the igraph library | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.2,
+      "sitemap_lastmod": "2011-05-11T21:14:54+00:00",
+      "twitter_description": "We are interested in Social Network Analysis using the statistical analysis and computing platform R. The documentation for R is voluminous but typically not very good, so this entry is part of a series where we document what we learn as we explore the tool and the packages. In our previous post on SNA we gave up on using the statnet package because it was not able to handle our data volumes. In this entry we have better success with the igraph package.",
+      "twitter_title": "SNA with R: Loading large networks using the igraph library | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/05/sna-with-r-loading-large-networks-using-the-igraph-library/",
+      "word_count": 847
+    }
+  }
+}

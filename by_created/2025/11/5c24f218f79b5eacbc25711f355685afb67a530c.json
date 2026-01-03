@@ -1,0 +1,155 @@
+{
+  "id": "5c24f218f79b5eacbc25711f355685afb67a530c",
+  "url": "https://www.r-bloggers.com/2007/10/changing-the-fonts-in-r-plots/",
+  "created_at_utc": "2025-11-17T20:41:40Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "d21726ba-f945-4335-b15c-6f41c3f6298d",
+    "created_at": "2025-11-17 20:41:40",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2007/10/changing-the-fonts-in-r-plots/",
+      "crawled_at": "2025-11-17T10:54:21.500502",
+      "external_links": [
+        {
+          "href": "http://www.jameskeirstead.ca/typography/changing-the-fonts-in-r-plots/",
+          "text": "James Keirstead » R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://twitter.com/share",
+          "text": "Tweet"
+        },
+        {
+          "href": "https://www.r-project.org",
+          "text": "R"
+        },
+        {
+          "href": "http://www.myfonts.com/fonts/urw/playbill/",
+          "text": "Playbill"
+        },
+        {
+          "href": "http://www.jameskeirstead.ca/typography/changing-the-fonts-in-r-plots/",
+          "text": "James Keirstead » R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Changing the fonts in R plots | R-bloggers",
+      "images": [
+        {
+          "alt": "Basic R plot",
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot1.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Basic R plot",
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot1.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Basic R plot with different font",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot_21.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Basic R plot with different font",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot_21.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/james-keirstead/",
+          "text": "James Keirstead"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/fonts/",
+          "text": "fonts"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/plots/",
+          "text": "plots"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/rstats/",
+          "text": "rstats"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/typography/",
+          "text": "Typography"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-50151 post type-post status-publish format-standard hentry category-r-bloggers tag-fonts tag-plots tag-r tag-rstats tag-typography\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Changing the fonts in R plots</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 28, 2007</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/james-keirstead/\">James Keirstead</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.jameskeirstead.ca/typography/changing-the-fonts-in-r-plots/\"> James Keirstead » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div class=\"really_simple_share\" style=\"height:21px; padding-top:2px;\"><div class=\"really_simple_share_facebook_like\" style=\"float:left; width:100px; \">\n<iframe allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" src=\"https://www.facebook.com/plugins/like.php?href=http://www.jameskeirstead.ca/typography/changing-the-fonts-in-r-plots/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21\" style=\"border:none; overflow:hidden; width:90; height:21px;\"></iframe>\n</div><div class=\"really_simple_share_twitter\" style=\"float:left; width:110px; padding-left:10px;\">\n<a class=\"twitter-share-button\" data-count=\"horizontal\" data-text=\"Changing the fonts in R plots\" data-url=\"http://www.jameskeirstead.ca/typography/changing-the-fonts-in-r-plots/\" href=\"https://twitter.com/share\" rel=\"nofollow\" target=\"_blank\">Tweet</a>\n</div></div>\n<br style=\"clear:both;\"/><p>I use <a href=\"https://www.r-project.org\" rel=\"nofollow\" target=\"_blank\">R</a> to do almost all of my statistical analysis and plotting. It has a very steep learning curve but once you get into it, it’s very powerful and you can customise almost anything. The only problem is that these changes are not always obvious or easy to do. Case in point: how to change the fonts on an R plot.</p>\n<p>Here are some R commands to plot a few made-up data points:<br/>\n<code>\n\nx &lt; - 1:10\n\ny &lt;- x + rnorm(10)\n\nplot(x,y,main=\"Basic R plot\")\n\n</code></p>\n<p>And here's the resulting plot:</p>\n<p><img alt=\"Basic R plot\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot1.png?w=578&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot1.png?w=578&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"Basic R plot\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot1.png?w=578&amp;ssl=1\"/></noscript></p>\n<p>But say you don't want to use Arial as the font for the plot? What if you're doing a Wild West plot (I don't know why but just suppose...) and want to use something like <a href=\"http://www.myfonts.com/fonts/urw/playbill/\" rel=\"nofollow\" target=\"_blank\">Playbill</a>? This can be done in the following steps.</p>\n<ol>\n<li>Find the font settings file Rdevga. There are two versions. The first is system-wide and can be found in <code>$R_HOME$/etc/Rdevga</code> (e.g. C:/Program Files/R/R-2.6.0/etc/Rdevga). The second applies only to your user account and can be found in <code>$R_USER</code> (find this in R using <code>Sys.getenv(\"R_USER\")</code>). If Rdevga doesn't exist in your user directory, just copy the system-wide version there.</li>\n<li>Modify the user or system-wide Rdevga to add your desired font. The comments in the file explain how to do this; for example, to add Playbill, add a line that reads \"TT Playbill : plain\". A full list of available fonts on your system can be found (on a Windows machine) by going to Control Panel &gt; Fonts.</li>\n<li>Count the number of uncommented non-blank lines in the file and note the number of your newly added line. After a default R installation, a line added to the bottom would be 20.</li>\n<li>(Re)start R so that it reads in the new settings. Redo your plot using the <code>font</code> options to select your desired font, e.g. <code>plot(x,y,main=\"Basic R plot\", font.main=20, cex.main=3)</code></li>\n<li>Et voilÃ ! New plot:<br/>\n<img alt=\"Basic R plot with different font\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot_21.png?w=578&amp;is-pending-load=1#038;ssl=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot_21.png?w=578&amp;ssl=1\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"Basic R plot with different font\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2007/10/basicplot_21.png?w=578&amp;ssl=1\"/></noscript>\n</li>\n</ol>\n<p>Some final notes. First, you might have to change the scale of the font for it to look right (e.g. the <code>cex.main</code> command). Second, you can change the font for specific parts of the plot but it’s tricky to change them all at once; see the help files for more information (type <code>?par</code> in the Rconsole). Third, you can have a maximum of 32 fonts defined in your Rdevga file (i.e. the standard 19 plus 13 of your choosing, unless you replace the standard ones). Finally, this change only works for functions which call the <code>windows</code> method; so exporting to jpg, bmp, png etc should be fine but pdf and postscript will revert to the default fonts. You can change the fonts for these plots but that’s for another time.</p>\n<p>Hope this helps!</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.jameskeirstead.ca/typography/changing-the-fonts-in-r-plots/\"> James Keirstead » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/fonts/\" rel=\"tag\">fonts</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/plots/\" rel=\"tag\">plots</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/rstats/\" rel=\"tag\">rstats</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/typography/\" rel=\"tag\">Typography</a></li></ul></div></article>",
+      "main_text": "Changing the fonts in R plots\nPosted on\nOctober 28, 2007\nby\nJames Keirstead\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJames Keirstead » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nTweet\nI use\nR\nto do almost all of my statistical analysis and plotting. It has a very steep learning curve but once you get into it, it’s very powerful and you can customise almost anything. The only problem is that these changes are not always obvious or easy to do. Case in point: how to change the fonts on an R plot.\nHere are some R commands to plot a few made-up data points:\nx < - 1:10\n\ny <- x + rnorm(10)\n\nplot(x,y,main=\"Basic R plot\")\nAnd here's the resulting plot:\nBut say you don't want to use Arial as the font for the plot? What if you're doing a Wild West plot (I don't know why but just suppose...) and want to use something like\nPlaybill\n? This can be done in the following steps.\nFind the font settings file Rdevga. There are two versions. The first is system-wide and can be found in\n$R_HOME$/etc/Rdevga\n(e.g. C:/Program Files/R/R-2.6.0/etc/Rdevga). The second applies only to your user account and can be found in\n$R_USER\n(find this in R using\nSys.getenv(\"R_USER\")\n). If Rdevga doesn't exist in your user directory, just copy the system-wide version there.\nModify the user or system-wide Rdevga to add your desired font. The comments in the file explain how to do this; for example, to add Playbill, add a line that reads \"TT Playbill : plain\". A full list of available fonts on your system can be found (on a Windows machine) by going to Control Panel > Fonts.\nCount the number of uncommented non-blank lines in the file and note the number of your newly added line. After a default R installation, a line added to the bottom would be 20.\n(Re)start R so that it reads in the new settings. Redo your plot using the\nfont\noptions to select your desired font, e.g.\nplot(x,y,main=\"Basic R plot\", font.main=20, cex.main=3)\nEt voilÃ ! New plot:\nSome final notes. First, you might have to change the scale of the font for it to look right (e.g. the\ncex.main\ncommand). Second, you can change the font for specific parts of the plot but it’s tricky to change them all at once; see the help files for more information (type\n?par\nin the Rconsole). Third, you can have a maximum of 32 fonts defined in your Rdevga file (i.e. the standard 19 plus 13 of your choosing, unless you replace the standard ones). Finally, this change only works for functions which call the\nwindows\nmethod; so exporting to jpg, bmp, png etc should be fine but pdf and postscript will revert to the default fonts. You can change the fonts for these plots but that’s for another time.\nHope this helps!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJames Keirstead » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nfonts\nplots\nR\nrstats\nTypography",
+      "meta_description": "Tweet I use R to do almost all of my statistical analysis and plotting. It has a very steep learning curve but once you get into it, it’s very powerful and you can customise almost anything. The only problem is that these changes are not always obvious or easy to do. Case in point: how to change the fonts on an R plot. Read more on Changing the fonts in R plots…",
+      "meta_keywords": "fonts,plots,r,rstats,typography",
+      "og_description": "Tweet I use R to do almost all of my statistical analysis and plotting. It has a very steep learning curve but once you get into it, it’s very powerful and you can customise almost anything. The only problem is that these changes are not always obvious or easy to do. Case in point: how to change the fonts on an R plot. Read more on Changing the fonts in R plots…",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2007/10/basicplot1.png",
+      "og_title": "Changing the fonts in R plots | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.2,
+      "sitemap_lastmod": "2011-05-11T21:08:41+00:00",
+      "twitter_description": "Tweet I use R to do almost all of my statistical analysis and plotting. It has a very steep learning curve but once you get into it, it’s very powerful and you can customise almost anything. The only problem is that these changes are not always obvious or easy to do. Case in point: how to change the fonts on an R plot. Read more on Changing the fonts in R plots…",
+      "twitter_title": "Changing the fonts in R plots | R-bloggers",
+      "url": "https://www.r-bloggers.com/2007/10/changing-the-fonts-in-r-plots/",
+      "word_count": 635
+    }
+  }
+}

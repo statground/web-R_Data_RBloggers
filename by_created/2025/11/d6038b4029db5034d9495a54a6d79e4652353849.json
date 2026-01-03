@@ -1,0 +1,215 @@
+{
+  "id": "d6038b4029db5034d9495a54a6d79e4652353849",
+  "url": "https://www.r-bloggers.com/2009/09/examples-using-r-analysis-of-variance/",
+  "created_at_utc": "2025-11-17T20:40:17Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "6abfd7cd-bf39-48dc-8a4c-ed7af85d05a4",
+    "created_at": "2025-11-17 20:40:17",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/examples-using-r-analysis-of-variance/",
+      "crawled_at": "2025-11-17T10:23:42.341129",
+      "external_links": [
+        {
+          "href": "http://www.studytrails.com/blog/examples-using-r-analysis-of-variance/",
+          "text": "R – StudyTrails"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s1600-h/box_plot_cotton.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s1600-h/barplot.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s1600-h/scatterplot.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s1600-h/aov.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i2.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s1600-h/residual_plot.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i0.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s1600-h/residual_fitted_plot.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i2.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s1600-h/qqplot.JPG",
+          "text": null
+        },
+        {
+          "href": "https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s1600-h/Tukeys.JPG",
+          "text": null
+        },
+        {
+          "href": "http://www.studytrails.com/blog/examples-using-r-analysis-of-variance/",
+          "text": "R – StudyTrails"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Examples using R – Analysis of Variance | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s400/box_plot_cotton.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s400/box_plot_cotton.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s400/barplot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s400/barplot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s400/scatterplot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s400/scatterplot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s400/aov.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s400/aov.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s400/residual_plot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s400/residual_plot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s400/residual_fitted_plot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s400/residual_fitted_plot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s400/qqplot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s400/qqplot.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s400/Tukeys.JPG?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s400/Tukeys.JPG?w=578"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-studytrails/",
+          "text": "R – StudyTrails"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-116132 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Examples using R – Analysis of Variance</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 30, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-studytrails/\">R – StudyTrails</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.studytrails.com/blog/examples-using-r-analysis-of-variance/\"> R – StudyTrails</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div align=\"justify\">Problem: A product development engineer is interested in investigating the tensile strength of a new synthetic fiber that will be used t omake cloth for men’s shirts. The engineer knows from previous experience that the strength is affected by he weight percent of cotton used in the blend of materials for the fiber. Furthermore, she suspects that increasing the cotton content will increase the strength, at least initially. she also knows that cotton content should range between about 10 and 40 percent if the final product is to have other quality characteristics that are desired. The engineer decides to test specimens at five levels of cotton weight percent: 15, 20, 20, 30 and 35 percent. she also decides to test 5 specimens at each level of cotton content.<br/>Here we have a single factor with 5 levels and 5 replicates.The data is\n<p>&gt; cotton<br/>$p15<br/>[1] 7 7 15 11 9<br/>$p20<br/>[1] 12 17 12 18 18<br/>$p25<br/>[1] 14 18 18 19 23<br/>$p30<br/>[1] 19 25 22 19 23<br/>$p35<br/>[1] 7 10 11 15 11<br/>A box plot of the data is<br/><a href=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s1600-h/box_plot_cotton.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s400/box_plot_cotton.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387187297353564354\" src=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s400/box_plot_cotton.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 382px; HEIGHT: 400px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387187297353564354\" src=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s400/box_plot_cotton.JPG?w=578\" style=\"WIDTH: 382px; HEIGHT: 400px; CURSOR: hand\"/></noscript></a><br/>A histogram of data looks like<br/><a href=\"https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s1600-h/barplot.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s400/barplot.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387543326483061474\" src=\"https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s400/barplot.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 361px; HEIGHT: 400px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387543326483061474\" src=\"https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRmHGsMmuI/AAAAAAAACLw/Dqtwbp3OJ9g/s400/barplot.JPG?w=578\" style=\"WIDTH: 361px; HEIGHT: 400px; CURSOR: hand\"/></noscript></a></p>\n<p>A multiple scatter plot can sometimes be used if corresponding values of the observations need comparison. The scatter plot for this data is as shown.<br/><a href=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s1600-h/scatterplot.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s400/scatterplot.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387544559777150194\" src=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s400/scatterplot.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 381px; HEIGHT: 400px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387544559777150194\" src=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsRnO5Ea9PI/AAAAAAAACL4/BIY0mWrIdBk/s400/scatterplot.JPG?w=578\" style=\"WIDTH: 381px; HEIGHT: 400px; CURSOR: hand\"/></noscript></a></p>\n<p>Analysis of Variance:<br/>Lets use analysis of variance in the above example to find out if all means are equal or if any mean is different.<br/>The data needs to be transformed for aov</p>\n<p><span style=\"color:#993399;\">&gt; c(cotton_matrix[1,],cotton_matrix[2,],cotton_matrix[3,],cotton_matrix[4,],cotton_matrix[5,])-&gt;cotton_data<br/></span><span style=\"color:#000066;\">&gt; cotton_data<br/>p15 p20 p25 p30 p35 p15 p20 p25 p30 p35 p15 p20 p25 p30 p35 p15 p20 p25 p30 p35 p15 p20 p25 p30 p35<br/>7 12 14 19 7 7 17 18 25 10 15 12 18 22 11 11 18 19 19 15 9 18 23 23 11<br/></span><br/><span style=\"color:#000000;\">Analysis of variance yields</span></p>\n<p>&gt; <span style=\"color:#663366;\">summary(aov(cotton_data~names(cotton_data)))</span></p>\n<p><a href=\"https://i1.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s1600-h/aov.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s400/aov.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387554002004531938\" src=\"https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s400/aov.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 400px; HEIGHT: 92px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387554002004531938\" src=\"https://i0.wp.com/3.bp.blogspot.com/_GvNS-b8AbU4/SsRv0gG22uI/AAAAAAAACMA/3FcxxCd-crg/s400/aov.JPG?w=578\" style=\"WIDTH: 400px; HEIGHT: 92px; CURSOR: hand\"/></noscript></a><br/>from the F value we reject the null hypothesis and conclude that the means differ.</p>\n<p>Analysis of variance uses certain assumptions and it is important to check the validity of these assumptions. The first method is to analyse the residuals for each observations. There should be no pattern in the residuals. If residuals either spread out or narrow down as time progresses then this could be an experimental error.<br/>Here’s a plot of residuals against time (observation)<br/><a href=\"https://i2.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s1600-h/residual_plot.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s400/residual_plot.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387563155515320354\" src=\"https://i1.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s400/residual_plot.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 312px; HEIGHT: 400px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387563155515320354\" src=\"https://i1.wp.com/1.bp.blogspot.com/_GvNS-b8AbU4/SsR4JTl5KCI/AAAAAAAACMI/Zxg_j2sn7fc/s400/residual_plot.JPG?w=578\" style=\"WIDTH: 312px; HEIGHT: 400px; CURSOR: hand\"/></noscript></a></p>\n<p>Another validation is to check the nature of the residuals themselves. One way to do is to plot of curve of residuals versus the fitted values.Here again no pattern should be present<br/><a href=\"https://i0.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s1600-h/residual_fitted_plot.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s400/residual_fitted_plot.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387564274509310514\" src=\"https://i2.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s400/residual_fitted_plot.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 302px; HEIGHT: 400px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387564274509310514\" src=\"https://i2.wp.com/2.bp.blogspot.com/_GvNS-b8AbU4/SsR5KcK2ajI/AAAAAAAACMQ/5sWpauhHxeg/s400/residual_fitted_plot.JPG?w=578\" style=\"WIDTH: 302px; HEIGHT: 400px; CURSOR: hand\"/></noscript></a><br/><a href=\"https://i2.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s1600-h/qqplot.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s400/qqplot.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387564678458557650\" src=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s400/qqplot.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 344px; HEIGHT: 400px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387564678458557650\" src=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR5h8_2xNI/AAAAAAAACMY/gXr6QYWnjD8/s400/qqplot.JPG?w=578\" style=\"WIDTH: 344px; HEIGHT: 400px; CURSOR: hand\"/></noscript></a></p>\n<p>The variance for the five sets can be compared using the Bartlett’s test<br/>&gt; <span style=\"color:#330033;\">bartlett.test(cotton_data~factor(names(cotton_data)))<br/></span><span style=\"color:#000099;\">Bartlett test of homogeneity of variances<br/>data: cotton_data by factor(names(cotton_data))<br/>Bartlett’s K-squared = 0.2801, df = 4, p-value = 0.991<br/></span><br/>The results show that the null hypothesis cannot be rejected and hence the variance of the five sets is indeed same.</p>\n<p>We now need to do a pairwise comparison to find out which pair has a difference in mean. we use the Tukey’s test to do so.<br/><a href=\"https://i0.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s1600-h/Tukeys.JPG\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s400/Tukeys.JPG?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387567552594820242\" src=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s400/Tukeys.JPG?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"WIDTH: 400px; HEIGHT: 243px; CURSOR: hand\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5387567552594820242\" src=\"https://i1.wp.com/4.bp.blogspot.com/_GvNS-b8AbU4/SsR8JP_VvJI/AAAAAAAACMg/3na-hG2LYuE/s400/Tukeys.JPG?w=578\" style=\"WIDTH: 400px; HEIGHT: 243px; CURSOR: hand\"/></noscript></a></p>\n<p>If the assumption of normality is not met then a test known is Kruskal-Wallis test may be used</p>\n<p><span style=\"color:#663366;\">&gt; kruskal.test(cotton_data~factor(names(cotton_data)))</span><br/><span style=\"color:#000099;\">Kruskal-Wallis rank sum test<br/>data: cotton_data by factor(names(cotton_data))<br/>Kruskal-Wallis chi-squared = 18.5513, df = 4, p-value = 0.0009626</span></p>\n</div>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.studytrails.com/blog/examples-using-r-analysis-of-variance/\"> R – StudyTrails</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Examples using R – Analysis of Variance\nPosted on\nSeptember 30, 2009\nby\nR – StudyTrails\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR – StudyTrails\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nProblem: A product development engineer is interested in investigating the tensile strength of a new synthetic fiber that will be used t omake cloth for men’s shirts. The engineer knows from previous experience that the strength is affected by he weight percent of cotton used in the blend of materials for the fiber. Furthermore, she suspects that increasing the cotton content will increase the strength, at least initially. she also knows that cotton content should range between about 10 and 40 percent if the final product is to have other quality characteristics that are desired. The engineer decides to test specimens at five levels of cotton weight percent: 15, 20, 20, 30 and 35 percent. she also decides to test 5 specimens at each level of cotton content.\nHere we have a single factor with 5 levels and 5 replicates.The data is\n> cotton\n$p15\n[1] 7 7 15 11 9\n$p20\n[1] 12 17 12 18 18\n$p25\n[1] 14 18 18 19 23\n$p30\n[1] 19 25 22 19 23\n$p35\n[1] 7 10 11 15 11\nA box plot of the data is\nA histogram of data looks like\nA multiple scatter plot can sometimes be used if corresponding values of the observations need comparison. The scatter plot for this data is as shown.\nAnalysis of Variance:\nLets use analysis of variance in the above example to find out if all means are equal or if any mean is different.\nThe data needs to be transformed for aov\n> c(cotton_matrix[1,],cotton_matrix[2,],cotton_matrix[3,],cotton_matrix[4,],cotton_matrix[5,])->cotton_data\n> cotton_data\np15 p20 p25 p30 p35 p15 p20 p25 p30 p35 p15 p20 p25 p30 p35 p15 p20 p25 p30 p35 p15 p20 p25 p30 p35\n7 12 14 19 7 7 17 18 25 10 15 12 18 22 11 11 18 19 19 15 9 18 23 23 11\nAnalysis of variance yields\n>\nsummary(aov(cotton_data~names(cotton_data)))\nfrom the F value we reject the null hypothesis and conclude that the means differ.\nAnalysis of variance uses certain assumptions and it is important to check the validity of these assumptions. The first method is to analyse the residuals for each observations. There should be no pattern in the residuals. If residuals either spread out or narrow down as time progresses then this could be an experimental error.\nHere’s a plot of residuals against time (observation)\nAnother validation is to check the nature of the residuals themselves. One way to do is to plot of curve of residuals versus the fitted values.Here again no pattern should be present\nThe variance for the five sets can be compared using the Bartlett’s test\n>\nbartlett.test(cotton_data~factor(names(cotton_data)))\nBartlett test of homogeneity of variances\ndata: cotton_data by factor(names(cotton_data))\nBartlett’s K-squared = 0.2801, df = 4, p-value = 0.991\nThe results show that the null hypothesis cannot be rejected and hence the variance of the five sets is indeed same.\nWe now need to do a pairwise comparison to find out which pair has a difference in mean. we use the Tukey’s test to do so.\nIf the assumption of normality is not met then a test known is Kruskal-Wallis test may be used\n> kruskal.test(cotton_data~factor(names(cotton_data)))\nKruskal-Wallis rank sum test\ndata: cotton_data by factor(names(cotton_data))\nKruskal-Wallis chi-squared = 18.5513, df = 4, p-value = 0.0009626\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR – StudyTrails\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Problem: A product development engineer is interested in investigating the tensile strength of a new synthetic fiber that will be used t omake cloth for men’s shirts. The engineer knows from previous experience that the strength is affected by he weight percent of cotton used in the blend of materials for the fiber. Furthermore, she… Read More »",
+      "meta_keywords": null,
+      "og_description": "Problem: A product development engineer is interested in investigating the tensile strength of a new synthetic fiber that will be used t omake cloth for men’s shirts. The engineer knows from previous experience that the strength is affected by he weight percent of cotton used in the blend of materials for the fiber. Furthermore, she… Read More »",
+      "og_image": "https://4.bp.blogspot.com/_GvNS-b8AbU4/SsMiTe1BgMI/AAAAAAAACLg/-BlA3orSNBE/s400/box_plot_cotton.JPG",
+      "og_title": "Examples using R – Analysis of Variance | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.6,
+      "sitemap_lastmod": "2009-09-30T09:05:00+00:00",
+      "twitter_description": "Problem: A product development engineer is interested in investigating the tensile strength of a new synthetic fiber that will be used t omake cloth for men’s shirts. The engineer knows from previous experience that the strength is affected by he weight percent of cotton used in the blend of materials for the fiber. Furthermore, she… Read More »",
+      "twitter_title": "Examples using R – Analysis of Variance | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/examples-using-r-analysis-of-variance/",
+      "word_count": 715
+    }
+  }
+}

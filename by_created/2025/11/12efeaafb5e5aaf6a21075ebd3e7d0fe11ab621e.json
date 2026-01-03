@@ -1,0 +1,229 @@
+{
+  "id": "12efeaafb5e5aaf6a21075ebd3e7d0fe11ab621e",
+  "url": "https://www.r-bloggers.com/2009/12/r-tutorial-series-graphic-analysis-of-regression-assumptions/",
+  "created_at_utc": "2025-11-17T20:39:43Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "8b2ae6dd-74df-48fc-83cc-ae94b1070fb8",
+    "created_at": "2025-11-17 20:39:43",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/r-tutorial-series-graphic-analysis-of-regression-assumptions/",
+      "crawled_at": "2025-11-17T10:11:27.669195",
+      "external_links": [
+        {
+          "href": "https://feedproxy.google.com/~r/RTutorialSeries/~3/pQoGv5xI9XM/r-tutorial-series-graphic-analysis-of.html",
+          "text": "R Tutorial Series"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.dailyi.org/blogFiles/RTutorialSeries/dataset_enrollmentForecast.csv",
+          "text": "sample data (.csv)"
+        },
+        {
+          "href": "https://rtutorialseries.blogspot.com/2009/11/r-tutorial-series-simple-linear.html",
+          "text": "simple linear regression"
+        },
+        {
+          "href": "https://rtutorialseries.blogspot.com/2009/11/r-tutorial-series-scatterplots.html",
+          "text": "Scatterplots"
+        },
+        {
+          "href": "https://feedproxy.google.com/~r/RTutorialSeries/~3/pQoGv5xI9XM/r-tutorial-series-graphic-analysis-of.html",
+          "text": "R Tutorial Series"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R Tutorial Series: Graphic Analysis of Regression Assumptions | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1a1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1a1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1b1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1b1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1c1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1c1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2a1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2a1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2b1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2b1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3a1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3a1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3b1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3b1.png?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/6710487119650146215-3566817400808401318?l=rtutorialseries.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/6710487119650146215-3566817400808401318?l=rtutorialseries.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/RTutorialSeries/~4/pQoGv5xI9XM"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/RTutorialSeries/~4/pQoGv5xI9XM"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/john-m-quick/",
+          "text": "John M. Quick"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptionsExample1.txt",
+          "text": "regression assumptions example (.txt)"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r-tutorial-series/",
+          "text": "R Tutorial Series"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r-project/",
+          "text": "r-project"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/regression-assumptions/",
+          "text": "regression assumptions"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/statistics/",
+          "text": "statistics"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/tutorial/",
+          "text": "tutorial"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-8785 post type-post status-publish format-standard hentry category-r-bloggers tag-r-tutorial-series tag-r-project tag-regression-assumptions tag-statistics tag-tutorial\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Tutorial Series: Graphic Analysis of Regression Assumptions</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 15, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-m-quick/\">John M. Quick</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/RTutorialSeries/~3/pQoGv5xI9XM/r-tutorial-series-graphic-analysis-of.html\"> R Tutorial Series</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>An important aspect of regression involves assessing the tenability of the assumptions upon which its analyses are based. This tutorial will explore how R can help one scrutinize the regression assumptions of a model via its residuals plot, normality histogram, and PP plot.</p><h3>Tutorial Files</h3><p>Before we begin, you may want to download the <a href=\"http://www.dailyi.org/blogFiles/RTutorialSeries/dataset_enrollmentForecast.csv\" rel=\"nofollow\" target=\"_blank\">sample data (.csv)</a> used in this tutorial. Be sure to right-click and save the file to your R working directory. This dataset contains information used to estimate undergraduate enrollment at the University of New Mexico (Office of Institutional Research, 1990). Note that all code samples in this tutorial assume that this data has already been read into an R variable and has been attached.</p><h3>Pre-Analysis Steps</h3><p>Before testing the tenability of regression assumptions, we need to have a model. In the segment on <a href=\"https://rtutorialseries.blogspot.com/2009/11/r-tutorial-series-simple-linear.html\" rel=\"nofollow\" target=\"_blank\">simple linear regression</a>, we created a single predictor model to estimate the fall undergraduate enrollment at the University of New Mexico. The complete code used to derive this model is provided in its respective tutorial. This article assumes that you are familiar with this models and how it was created. Therefore, a shorthand method for generating the model is displayed below.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #create a linear model using lm(FORMULA, DATAVAR)</li><li>&gt; #predict the fall enrollment (ROLL) using the unemployment rate (UNEM)</li><li>&gt; linearModelVar &lt;- lm(ROLL ~ UNEM, datavar)</li></ol></blockquote><h3>Tenability of Assumptions</h3><h4>Residuals Plot</h4><p>A residuals plot can be used to assess the assumption that the variables have a linear relationship. The plot is formed by graphing the standardized residuals on the y-axis and the standardized predicted values on the x-axis. An optional horizontal line can be added to aid in interpreting the output.</p><p>The unstandardized predicted values can be generated using the predict(MODEL) function and the unstandardized residuals can be obtained via the resid(MODEL) function. In both cases, MODEL refers to the variable containing the regression model. Respectively, these values can be standardized by subtracting the mean and dividing by the standard deviation. The standardized data can be plotted using the plot() function (see <a href=\"https://rtutorialseries.blogspot.com/2009/11/r-tutorial-series-scatterplots.html\" rel=\"nofollow\" target=\"_blank\">Scatterplots</a>). Lastly, abline(0,0) can be used to add a horizontal line to the plot. The code necessary to create a standardized residuals plot is presented below.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #get unstandardized predicted and residual values</li><li>&gt; unstandardizedPredicted &lt;- predict(linearModelVar)</li><li>&gt; unstandardizedResiduals &lt;- resid(linearModelVar)</li><li>&gt; #get standardized values</li><li>&gt; standardizedPredicted &lt;- (unstandardizedPredicted - mean(unstandardizedPredicted)) / sd(unstandardizedPredicted)</li><li>&gt; standardizedResiduals &lt;- (unstandardizedResiduals - mean(unstandardizedResiduals)) / sd(unstandardizedResiduals)</li><li>&gt; #create standardized residuals plot</li><li>&gt; plot(standardizedPredicted, standardizedResiduals, main = “Standardized Residuals Plot”, xlab = “Standardized Predicted Values”, ylab = “Standardized Residuals”)</li><li>&gt; #add horizontal line</li><li>&gt; abline(0,0)</li></ol></blockquote><p>Note that abline(0,0) must be executed <em>after</em> the plot is generated and while the Quartz window is <em>open</em>. The plot resulting from the preceding code is pictured below.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1a1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1a1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1a1.png?w=578\"/></noscript></p><p>In general, values that are close to the horizontal line are predicted well. The points above the line are underpredicted and the ones below the line are overpredicted. The linearity assumption is supported to the extent that the amount of points scattered above and below the line is equal.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1b1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1b1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1b1.png?w=578\"/></noscript></p><p>The residuals plot can also be used to test the homogeneity of variance (homoscedasticity ) assumption. Look at the vertical scatter at a given point along the x-axis. Now look at the vertical scatter across all points along the x-axis. The homogeneity of variance assumption is supported to the extent that the vertical scatter is the same across all x values.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1c1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1c1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1c1.png?w=578\"/></noscript></p><h4>Residuals Histogram</h4><p>A histogram can be used to assess the assumption that the residuals are normally distributed. In R, the hist(VAR, FREQ) function will produce the necessary graph, where VAR is the variable to be charted and FREQ is a boolean value indicating how frequencies are to be represented (true for counts, false for probabilities). Then, in similar fashion to abline(), a normal curve can be added to the histogram via the curve(EXPR, ADD) function, where EXPR is the type of curve to plot (here, “dnorm”) and ADD is a boolean value indicating whether or not to add the curve to the existing window.  The following code demonstrates how to create a residuals histogram for our model.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #create residuals histogram</li><li>&gt; hist(standardizedResiduals, freq = FALSE)</li><li>&gt; #add normal curve</li><li>&gt; curve(dnorm, add = TRUE)</li></ol></blockquote><p>Note that curve() must be executed <em>after</em> the plot is generated and while the Quartz window is <em>open</em>. The plot resulting from the preceding code is pictured below.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2a1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2a1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2a1.png?w=578\"/></noscript></p><p>To the extent that the histogram matches the normal distribution, the residuals are normally distributed. This gives us an indication of how well our sample can predict a normal distribution in the population.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2b1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2b1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_2b1.png?w=578\"/></noscript></p><h4>PP Plot</h4><p>A PP Plot can also be used to assess the assumption that the residuals are normally distributed. To create a PP Plot in R, we must first get the probability distribution using the pnorm(VAR) function, where VAR is the variable containing the residuals. Then we can use the plot(VAR, SORT) function to create the graph, where VAR is the variable containing the residuals and SORT makes use of our calculated probability distribution. Note that the ppoints() and length() functions are incorporated into the VAR parameter in this case. Lastly, the abline(0,1) function is used to draw a diagonal line across the plot for comparison purposes.</p><blockquote class=\"codeBlock\"><ol><li>&gt; #get probability distribution for residuals</li><li>&gt; probDist &lt;- pnorm(standardizedResiduals)</li><li>&gt; #create PP plot</li><li>&gt; plot(ppoints(length(standardizedResiduals)), sort(probDist), main = “PP Plot”, xlab = “Observed Probability”, ylab = “Expected Probability”)</li><li>&gt; #add diagonal line</li><li>&gt; abline(0,1)</li></ol></blockquote><p>Recall that abline(0,1) must be executed <em>after</em> the plot is generated and while the Quartz window is <em>open</em>. The plot resulting from the preceding code is pictured below.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3a1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3a1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3a1.png?w=578\"/></noscript></p><p>Here, the distribution is considered to be normal to the extent that the plotted points match the diagonal line.</p><p align=\"center\"><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3b1.png?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3b1.png?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_3b1.png?w=578\"/></noscript></p>\n<span class=\"Apple-style-span\" style=\" font-weight: bold; font-size:19px;\">Complete Regression Assumptions Example</span>\n<p>To see a complete example of how the regression assumptions of linearity, homoscedasticity, and normality can be analyzed visually in R, please download the <a href=\"https://www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptionsExample1.txt\" rel=\"nofollow\" target=\"_blank\">regression assumptions example (.txt)</a> file.</p><h3>References</h3><p>Office of Institutional Research (1990). Enrollment Forecast [Data File]. Retrieved November 22, 2009 from http://lib.stat.cmu.edu/DASL/Datafiles/enrolldat.html</p><p>Svetina, D., &amp; Levy, R. (2009). <em>Regression Assumptions</em> [Text File]. Retrieved December 7, 2009 from EDP 552: Multiple Regression and Correlation Methods [Protected Website].</p><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/6710487119650146215-3566817400808401318?l=rtutorialseries.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6710487119650146215-3566817400808401318?l=rtutorialseries.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/6710487119650146215-3566817400808401318?l=rtutorialseries.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/RTutorialSeries/~4/pQoGv5xI9XM?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/RTutorialSeries/~4/pQoGv5xI9XM\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/RTutorialSeries/~4/pQoGv5xI9XM\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/RTutorialSeries/~3/pQoGv5xI9XM/r-tutorial-series-graphic-analysis-of.html\"> R Tutorial Series</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-tutorial-series/\" rel=\"tag\">R Tutorial Series</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-project/\" rel=\"tag\">r-project</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/regression-assumptions/\" rel=\"tag\">regression assumptions</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/tutorial/\" rel=\"tag\">tutorial</a></li></ul></div></article>",
+      "main_text": "R Tutorial Series: Graphic Analysis of Regression Assumptions\nPosted on\nDecember 15, 2009\nby\nJohn M. Quick\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Tutorial Series\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAn important aspect of regression involves assessing the tenability of the assumptions upon which its analyses are based. This tutorial will explore how R can help one scrutinize the regression assumptions of a model via its residuals plot, normality histogram, and PP plot.\nTutorial Files\nBefore we begin, you may want to download the\nsample data (.csv)\nused in this tutorial. Be sure to right-click and save the file to your R working directory. This dataset contains information used to estimate undergraduate enrollment at the University of New Mexico (Office of Institutional Research, 1990). Note that all code samples in this tutorial assume that this data has already been read into an R variable and has been attached.\nPre-Analysis Steps\nBefore testing the tenability of regression assumptions, we need to have a model. In the segment on\nsimple linear regression\n, we created a single predictor model to estimate the fall undergraduate enrollment at the University of New Mexico. The complete code used to derive this model is provided in its respective tutorial. This article assumes that you are familiar with this models and how it was created. Therefore, a shorthand method for generating the model is displayed below.\n> #create a linear model using lm(FORMULA, DATAVAR)\n> #predict the fall enrollment (ROLL) using the unemployment rate (UNEM)\n> linearModelVar <- lm(ROLL ~ UNEM, datavar)\nTenability of Assumptions\nResiduals Plot\nA residuals plot can be used to assess the assumption that the variables have a linear relationship. The plot is formed by graphing the standardized residuals on the y-axis and the standardized predicted values on the x-axis. An optional horizontal line can be added to aid in interpreting the output.\nThe unstandardized predicted values can be generated using the predict(MODEL) function and the unstandardized residuals can be obtained via the resid(MODEL) function. In both cases, MODEL refers to the variable containing the regression model. Respectively, these values can be standardized by subtracting the mean and dividing by the standard deviation. The standardized data can be plotted using the plot() function (see\nScatterplots\n). Lastly, abline(0,0) can be used to add a horizontal line to the plot. The code necessary to create a standardized residuals plot is presented below.\n> #get unstandardized predicted and residual values\n> unstandardizedPredicted <- predict(linearModelVar)\n> unstandardizedResiduals <- resid(linearModelVar)\n> #get standardized values\n> standardizedPredicted <- (unstandardizedPredicted - mean(unstandardizedPredicted)) / sd(unstandardizedPredicted)\n> standardizedResiduals <- (unstandardizedResiduals - mean(unstandardizedResiduals)) / sd(unstandardizedResiduals)\n> #create standardized residuals plot\n> plot(standardizedPredicted, standardizedResiduals, main = “Standardized Residuals Plot”, xlab = “Standardized Predicted Values”, ylab = “Standardized Residuals”)\n> #add horizontal line\n> abline(0,0)\nNote that abline(0,0) must be executed\nafter\nthe plot is generated and while the Quartz window is\nopen\n. The plot resulting from the preceding code is pictured below.\nIn general, values that are close to the horizontal line are predicted well. The points above the line are underpredicted and the ones below the line are overpredicted. The linearity assumption is supported to the extent that the amount of points scattered above and below the line is equal.\nThe residuals plot can also be used to test the homogeneity of variance (homoscedasticity ) assumption. Look at the vertical scatter at a given point along the x-axis. Now look at the vertical scatter across all points along the x-axis. The homogeneity of variance assumption is supported to the extent that the vertical scatter is the same across all x values.\nResiduals Histogram\nA histogram can be used to assess the assumption that the residuals are normally distributed. In R, the hist(VAR, FREQ) function will produce the necessary graph, where VAR is the variable to be charted and FREQ is a boolean value indicating how frequencies are to be represented (true for counts, false for probabilities). Then, in similar fashion to abline(), a normal curve can be added to the histogram via the curve(EXPR, ADD) function, where EXPR is the type of curve to plot (here, “dnorm”) and ADD is a boolean value indicating whether or not to add the curve to the existing window.  The following code demonstrates how to create a residuals histogram for our model.\n> #create residuals histogram\n> hist(standardizedResiduals, freq = FALSE)\n> #add normal curve\n> curve(dnorm, add = TRUE)\nNote that curve() must be executed\nafter\nthe plot is generated and while the Quartz window is\nopen\n. The plot resulting from the preceding code is pictured below.\nTo the extent that the histogram matches the normal distribution, the residuals are normally distributed. This gives us an indication of how well our sample can predict a normal distribution in the population.\nPP Plot\nA PP Plot can also be used to assess the assumption that the residuals are normally distributed. To create a PP Plot in R, we must first get the probability distribution using the pnorm(VAR) function, where VAR is the variable containing the residuals. Then we can use the plot(VAR, SORT) function to create the graph, where VAR is the variable containing the residuals and SORT makes use of our calculated probability distribution. Note that the ppoints() and length() functions are incorporated into the VAR parameter in this case. Lastly, the abline(0,1) function is used to draw a diagonal line across the plot for comparison purposes.\n> #get probability distribution for residuals\n> probDist <- pnorm(standardizedResiduals)\n> #create PP plot\n> plot(ppoints(length(standardizedResiduals)), sort(probDist), main = “PP Plot”, xlab = “Observed Probability”, ylab = “Expected Probability”)\n> #add diagonal line\n> abline(0,1)\nRecall that abline(0,1) must be executed\nafter\nthe plot is generated and while the Quartz window is\nopen\n. The plot resulting from the preceding code is pictured below.\nHere, the distribution is considered to be normal to the extent that the plotted points match the diagonal line.\nComplete Regression Assumptions Example\nTo see a complete example of how the regression assumptions of linearity, homoscedasticity, and normality can be analyzed visually in R, please download the\nregression assumptions example (.txt)\nfile.\nReferences\nOffice of Institutional Research (1990). Enrollment Forecast [Data File]. Retrieved November 22, 2009 from http://lib.stat.cmu.edu/DASL/Datafiles/enrolldat.html\nSvetina, D., & Levy, R. (2009).\nRegression Assumptions\n[Text File]. Retrieved December 7, 2009 from EDP 552: Multiple Regression and Correlation Methods [Protected Website].\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Tutorial Series\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR Tutorial Series\nr-project\nregression assumptions\nstatistics\ntutorial",
+      "meta_description": "An important aspect of regression involves assessing the tenability of the assumptions upon which its analyses are based. This tutorial will explore how R can help one scrutinize the regression assumptions of a model via its residuals plot, normality h...",
+      "meta_keywords": "r tutorial series,r-project,regression assumptions,statistics,tutorial",
+      "og_description": "An important aspect of regression involves assessing the tenability of the assumptions upon which its analyses are based. This tutorial will explore how R can help one scrutinize the regression assumptions of a model via its residuals plot, normality h...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/12/regressionAssumptions_1a1.png",
+      "og_title": "R Tutorial Series: Graphic Analysis of Regression Assumptions | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.9,
+      "sitemap_lastmod": "2011-05-11T21:28:10+00:00",
+      "twitter_description": "An important aspect of regression involves assessing the tenability of the assumptions upon which its analyses are based. This tutorial will explore how R can help one scrutinize the regression assumptions of a model via its residuals plot, normality h...",
+      "twitter_title": "R Tutorial Series: Graphic Analysis of Regression Assumptions | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/r-tutorial-series-graphic-analysis-of-regression-assumptions/",
+      "word_count": 1183
+    }
+  }
+}

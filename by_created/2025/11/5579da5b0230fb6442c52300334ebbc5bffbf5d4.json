@@ -1,0 +1,133 @@
+{
+  "id": "5579da5b0230fb6442c52300334ebbc5bffbf5d4",
+  "url": "https://www.r-bloggers.com/2009/12/r-function-usage-frequencies/",
+  "created_at_utc": "2025-11-17T20:39:50Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "b78d01da-8f42-45c8-8436-adb3bd7e98b7",
+    "created_at": "2025-11-17 20:39:50",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/12/r-function-usage-frequencies/",
+      "crawled_at": "2025-11-17T10:13:40.953015",
+      "external_links": [
+        {
+          "href": "http://www.johnmyleswhite.com/notebook/2009/12/07/r-function-usage-frequencies/",
+          "text": "John Myles White: Die Sudelbücher » Statistics"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.johnmyleswhite.com/content/data_sets/r_function_frequencies.csv",
+          "text": "the attached CSV data set"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Zipf's_law",
+          "text": "Zipf’s law"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Frederick_Mosteller",
+          "text": "Mosteller and Wallace’s famous analysis of the Federalist Papers"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/Bayesian_spam_filtering",
+          "text": "anti-spam programs."
+        },
+        {
+          "href": "http://www.johnmyleswhite.com/notebook/2009/12/07/r-function-usage-frequencies/",
+          "text": "John Myles White: Die Sudelbücher » Statistics"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R Function Usage Frequencies | R-bloggers",
+      "images": [
+        {
+          "alt": "r_log_frequencies.png",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/r_log_frequencies11.png?w=450"
+        },
+        {
+          "alt": "r_log_frequencies.png",
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/r_log_frequencies11.png?w=450"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/john-myles-white/",
+          "text": "John Myles White"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/statistics/",
+          "text": "statistics"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-244 post type-post status-publish format-standard hentry category-r-bloggers tag-statistics\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Function Usage Frequencies</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 7, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/john-myles-white/\">John Myles White</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/07/r-function-usage-frequencies/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>A few months ago I decided to apply word frequency analysis ideas to R code. My idea was simple: <i>the functions that one should invest the most effort into learning are precisely those functions that are used most frequently in real world code</i>. In fact, this simple idea can be applied to spoken languages as valuably as to programming languages: the words that will most improve your ability to understand day-to-day speech in a foreign language are precisely the words that occur most frequently in day-to-day speech. Our language classrooms tend to screw this up by emphasizing words like “spoon” over “dude”, even though people my age will use the word “dude” many more times a day than they’ll use “spoon”.<sup>1</sup> In large part, this is because the usefulness of a word tends to be confounded with its respectability when you learn a language in an academic setting. This over-emphasis on respectability is why you’re never taught curse words, even though they’re as practically useful as the majority of other words.</p>\n<p>But I digress. Returning to R, <a href=\"http://www.johnmyleswhite.com/content/data_sets/r_function_frequencies.csv\" rel=\"nofollow\" target=\"_blank\">the attached CSV data set</a> contains the results of my word frequency analysis. To produce this data set, I spidered all of the source code for every R package on CRAN, split the resulting corpus text into lexical tokens, and counted the occurrences of each token. To make things simpler, I decided to treat every token followed by a parenthesized expression as a function, even though this gives me some syntactical units like <code>if</code> in my list of functions.</p>\n<p>I think the resulting raw data set is probably as useful as any summaries I can offer of it, but I’ll offer some obvious results for those interested.</p>\n<p>Function call frequencies in R, unsurprisingly, seem to follow <a href=\"https://en.wikipedia.org/wiki/Zipf's_law\" rel=\"nofollow\" target=\"_blank\">Zipf’s law</a> or some variety thereof. You can see this fairly clearly in the following logarithmic plot:</p>\n<div style=\"text-align:center;\"><img alt=\"r_log_frequencies.png\" border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/r_log_frequencies11.png?w=450&amp;is-pending-load=1\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/r_log_frequencies11.png?w=450\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img alt=\"r_log_frequencies.png\" border=\"0\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/12/r_log_frequencies11.png?w=450\"/></noscript></div>\n<p>And here are the top 25 most frequently used functions in R, including some syntactical units:<br/>\n<center></center></p>\n<table>\n<tr>\n<th>Function Name</th>\n<th>Occurrences in Corpus</th>\n</tr>\n<tr>\n<td>if</td>\n<td>333421</td>\n</tr>\n<tr>\n<td>c</td>\n<td>143123</td>\n</tr>\n<tr>\n<td>function</td>\n<td>137490</td>\n</tr>\n<tr>\n<td>length</td>\n<td>109847</td>\n</tr>\n<tr>\n<td>paste</td>\n<td>62906</td>\n</tr>\n<tr>\n<td>cat</td>\n<td>56199</td>\n</tr>\n<tr>\n<td>return</td>\n<td>56001</td>\n</tr>\n<tr>\n<td>stop</td>\n<td>54161</td>\n</tr>\n<tr>\n<td>is.null</td>\n<td>53575</td>\n</tr>\n<tr>\n<td>list</td>\n<td>51862</td>\n</tr>\n<tr>\n<td>log</td>\n<td>49479</td>\n</tr>\n<tr>\n<td>for</td>\n<td>48950</td>\n</tr>\n<tr>\n<td>rep</td>\n<td>39090</td>\n</tr>\n<tr>\n<td>names</td>\n<td>34439</td>\n</tr>\n<tr>\n<td>sum</td>\n<td>31475</td>\n</tr>\n<tr>\n<td>as.integer</td>\n<td>29417</td>\n</tr>\n<tr>\n<td>matrix</td>\n<td>29344</td>\n</tr>\n<tr>\n<td>is.na</td>\n<td>20230</td>\n</tr>\n<tr>\n<td>dim</td>\n<td>20202</td>\n</tr>\n<tr>\n<td>max</td>\n<td>19995</td>\n</tr>\n<tr>\n<td>nrow</td>\n<td>19789</td>\n</tr>\n<tr>\n<td>as.double</td>\n<td>19705</td>\n</tr>\n<tr>\n<td>attr</td>\n<td>18802</td>\n</tr>\n<tr>\n<td>t</td>\n<td>17889</td>\n</tr>\n<tr>\n<td>print</td>\n<td>17461</td>\n</tr>\n</table>\n<p></p>\n<p>Some fun extensions to this work would be to use this frequency data set as a standard for the abnormality of code style: you could compare an individual programmer’s code to the standard frequency data to see which functions such-and-such a programmer tends to overuse and underuse. I personally tend to underuse <code>stop</code> and I never use <code>attr</code> at all.</p>\n<p>Another interesting project would be to use this data set as input to a text classifier that would attempt to predict the author of a piece of R code based on token frequency information, in line with <a href=\"https://en.wikipedia.org/wiki/Frederick_Mosteller\" rel=\"nofollow\" target=\"_blank\">Mosteller and Wallace’s famous analysis of the Federalist Papers</a> or <a href=\"https://en.wikipedia.org/wiki/Bayesian_spam_filtering\" rel=\"nofollow\" target=\"_blank\">anti-spam programs.</a></p>\n<ol class=\"footnotes\"><li class=\"footnote\" id=\"footnote_0_3638\">To this day, I still mix up the words for “spoon” (“cuchara”) and “knife” (“cuchillo”) in Spanish, thought I never make any mistakes with slang words like “dude” (“tio”).</li></ol>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.johnmyleswhite.com/notebook/2009/12/07/r-function-usage-frequencies/\"> John Myles White: Die Sudelbücher » Statistics</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/statistics/\" rel=\"tag\">statistics</a></li></ul></div></article>",
+      "main_text": "R Function Usage Frequencies\nPosted on\nDecember 7, 2009\nby\nJohn Myles White\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJohn Myles White: Die Sudelbücher » Statistics\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nA few months ago I decided to apply word frequency analysis ideas to R code. My idea was simple:\nthe functions that one should invest the most effort into learning are precisely those functions that are used most frequently in real world code\n. In fact, this simple idea can be applied to spoken languages as valuably as to programming languages: the words that will most improve your ability to understand day-to-day speech in a foreign language are precisely the words that occur most frequently in day-to-day speech. Our language classrooms tend to screw this up by emphasizing words like “spoon” over “dude”, even though people my age will use the word “dude” many more times a day than they’ll use “spoon”.\n1\nIn large part, this is because the usefulness of a word tends to be confounded with its respectability when you learn a language in an academic setting. This over-emphasis on respectability is why you’re never taught curse words, even though they’re as practically useful as the majority of other words.\nBut I digress. Returning to R,\nthe attached CSV data set\ncontains the results of my word frequency analysis. To produce this data set, I spidered all of the source code for every R package on CRAN, split the resulting corpus text into lexical tokens, and counted the occurrences of each token. To make things simpler, I decided to treat every token followed by a parenthesized expression as a function, even though this gives me some syntactical units like\nif\nin my list of functions.\nI think the resulting raw data set is probably as useful as any summaries I can offer of it, but I’ll offer some obvious results for those interested.\nFunction call frequencies in R, unsurprisingly, seem to follow\nZipf’s law\nor some variety thereof. You can see this fairly clearly in the following logarithmic plot:\nAnd here are the top 25 most frequently used functions in R, including some syntactical units:\nFunction Name\nOccurrences in Corpus\nif\n333421\nc\n143123\nfunction\n137490\nlength\n109847\npaste\n62906\ncat\n56199\nreturn\n56001\nstop\n54161\nis.null\n53575\nlist\n51862\nlog\n49479\nfor\n48950\nrep\n39090\nnames\n34439\nsum\n31475\nas.integer\n29417\nmatrix\n29344\nis.na\n20230\ndim\n20202\nmax\n19995\nnrow\n19789\nas.double\n19705\nattr\n18802\nt\n17889\nprint\n17461\nSome fun extensions to this work would be to use this frequency data set as a standard for the abnormality of code style: you could compare an individual programmer’s code to the standard frequency data to see which functions such-and-such a programmer tends to overuse and underuse. I personally tend to underuse\nstop\nand I never use\nattr\nat all.\nAnother interesting project would be to use this data set as input to a text classifier that would attempt to predict the author of a piece of R code based on token frequency information, in line with\nMosteller and Wallace’s famous analysis of the Federalist Papers\nor\nanti-spam programs.\nTo this day, I still mix up the words for “spoon” (“cuchara”) and “knife” (“cuchillo”) in Spanish, thought I never make any mistakes with slang words like “dude” (“tio”).\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJohn Myles White: Die Sudelbücher » Statistics\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nstatistics",
+      "meta_description": "A few months ago I decided to apply word frequency analysis ideas to R code. My idea was simple: the functions that one should invest the most effort into learning are precisely those functions that are used most frequently in real world code. In fact, this simple idea can be applied to spoken languages as [...]",
+      "meta_keywords": "statistics",
+      "og_description": "A few months ago I decided to apply word frequency analysis ideas to R code. My idea was simple: the functions that one should invest the most effort into learning are precisely those functions that are used most frequently in real world code. In fact, this simple idea can be applied to spoken languages as [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/12/r_log_frequencies11.png",
+      "og_title": "R Function Usage Frequencies | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.4,
+      "sitemap_lastmod": "2011-05-11T21:27:31+00:00",
+      "twitter_description": "A few months ago I decided to apply word frequency analysis ideas to R code. My idea was simple: the functions that one should invest the most effort into learning are precisely those functions that are used most frequently in real world code. In fact, this simple idea can be applied to spoken languages as [...]",
+      "twitter_title": "R Function Usage Frequencies | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/12/r-function-usage-frequencies/",
+      "word_count": 687
+    }
+  }
+}

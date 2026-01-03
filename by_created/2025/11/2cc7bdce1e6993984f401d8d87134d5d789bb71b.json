@@ -1,0 +1,114 @@
+{
+  "id": "2cc7bdce1e6993984f401d8d87134d5d789bb71b",
+  "url": "https://www.r-bloggers.com/2009/01/maximum-likelihood-estimation-in-r/",
+  "created_at_utc": "2025-11-17T20:41:19Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "3dc6847d-1b66-4e97-90c2-30b0da3d1eb1",
+    "created_at": "2025-11-17 20:41:19",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/01/maximum-likelihood-estimation-in-r/",
+      "crawled_at": "2025-11-17T10:46:04.939783",
+      "external_links": [
+        {
+          "href": "http://www.mathfinance.cn/maximum-likelihood-estimation/",
+          "text": "Quantitative Finance Collector"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://www.mathfinance.cn/qmle/",
+          "text": "Quasi-maximum likelihood"
+        },
+        {
+          "href": "http://www.mayin.org/ajayshah/KB/R/documents/mle/mle.html",
+          "text": "http://www.mayin.org/ajayshah/KB/R/documents/mle/mle.html"
+        },
+        {
+          "href": "http://www.mathfinance.cn/tags/mle/",
+          "text": "mle"
+        },
+        {
+          "href": "http://www.mathfinance.cn/maximum-likelihood-estimation/",
+          "text": "Maximum likelihood estimation in R"
+        },
+        {
+          "href": "http://www.mathfinance.cn/maximum-likelihood-estimation/",
+          "text": "Quantitative Finance Collector"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Maximum likelihood estimation in R | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/quantitative-finance-collector/",
+          "text": "Quantitative Finance Collector"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-46463 post type-post status-publish format-standard hentry\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Maximum likelihood estimation in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 18, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/quantitative-finance-collector/\">Quantitative Finance Collector</a></span>  in Uncategorized | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.mathfinance.cn/maximum-likelihood-estimation/\"> Quantitative Finance Collector</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nMaximum likelihood estimation can be implemented like <a href=\"http://www.mathfinance.cn/qmle/\" rel=\"nofollow\" target=\"_blank\">Quasi-maximum likelihood</a> in Matlab, You can also write an R function which computes out the likelihood function. As always in R, this can be done in several different ways.<br/><br/>One issue is that of restrictions upon parameters. When the search algorithm is running, it may stumble upon nonsensical values – such as a sigma below 0 – and you do need to think about this. One traditional way to deal with this is to “transform the parameter space”. As an example, for all positive values of sigma, log(sigma) ranges from -infinity to +infinity. So it’s safe to do an unconstrained search using log(sigma) as the free parameter.<br/><br/>For detail about methodology and sample codes see <a href=\"http://www.mayin.org/ajayshah/KB/R/documents/mle/mle.html\" rel=\"nofollow\" target=\"_blank\">http://www.mayin.org/ajayshah/KB/R/documents/mle/mle.html</a>.<br/>Tags – <a href=\"http://www.mathfinance.cn/tags/mle/\" rel=\"nofollow\" target=\"_blank\">mle</a><br/><strong>Read the full post at <a href=\"http://www.mathfinance.cn/maximum-likelihood-estimation/\" rel=\"nofollow\" target=\"_blank\">Maximum likelihood estimation in R</a></strong>.\n\n\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.mathfinance.cn/maximum-likelihood-estimation/\"> Quantitative Finance Collector</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "Maximum likelihood estimation in R\nPosted on\nJanuary 18, 2009\nby\nQuantitative Finance Collector\nin Uncategorized | 0 Comments\n[This article was first published on\nQuantitative Finance Collector\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMaximum likelihood estimation can be implemented like\nQuasi-maximum likelihood\nin Matlab, You can also write an R function which computes out the likelihood function. As always in R, this can be done in several different ways.\nOne issue is that of restrictions upon parameters. When the search algorithm is running, it may stumble upon nonsensical values – such as a sigma below 0 – and you do need to think about this. One traditional way to deal with this is to “transform the parameter space”. As an example, for all positive values of sigma, log(sigma) ranges from -infinity to +infinity. So it’s safe to do an unconstrained search using log(sigma) as the free parameter.\nFor detail about methodology and sample codes see\nhttp://www.mayin.org/ajayshah/KB/R/documents/mle/mle.html\n.\nTags –\nmle\nRead the full post at\nMaximum likelihood estimation in R\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nQuantitative Finance Collector\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Maximum likelihood estimation can be implemented like Quasi-maximum likelihood in Matlab, You can also write an R function which computes out the likelihood function. As always in R, this can be done in several different ways.One issue is that of rest...",
+      "meta_keywords": null,
+      "og_description": "Maximum likelihood estimation can be implemented like Quasi-maximum likelihood in Matlab, You can also write an R function which computes out the likelihood function. As always in R, this can be done in several different ways.One issue is that of rest...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Maximum likelihood estimation in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 1.4,
+      "sitemap_lastmod": "2009-01-18T17:58:12+00:00",
+      "twitter_description": "Maximum likelihood estimation can be implemented like Quasi-maximum likelihood in Matlab, You can also write an R function which computes out the likelihood function. As always in R, this can be done in several different ways.One issue is that of rest...",
+      "twitter_title": "Maximum likelihood estimation in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/01/maximum-likelihood-estimation-in-r/",
+      "word_count": 288
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "fd1eebdf5d52db942f4d3bb724555dca2e330f08",
+  "url": "https://www.r-bloggers.com/2009/07/example-7-5-replicating-a-prettier-jittered-scatterplot/",
+  "created_at_utc": "2025-11-17T20:40:42Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "ea670f16-3784-47c6-b83e-27facbddfee1",
+    "created_at": "2025-11-17 20:40:42",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/07/example-7-5-replicating-a-prettier-jittered-scatterplot/",
+      "crawled_at": "2025-11-17T10:32:35.903478",
+      "external_links": [
+        {
+          "href": "https://feedproxy.google.com/~r/SASandR/~3/usHx0uLRWDg/example-75-replicating-prettier.html",
+          "text": "SAS and R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure732.jpg",
+          "text": null
+        },
+        {
+          "href": "https://feedproxy.google.com/~r/SASandR/~3/usHx0uLRWDg/example-75-replicating-prettier.html",
+          "text": "SAS and R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Example 7.5: Replicating a prettier jittered scatterplot | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure733.jpg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure733.jpg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/1275149608391671670-3118676982809893316?l=sas-and-r.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/1275149608391671670-3118676982809893316?l=sas-and-r.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/SASandR/~4/usHx0uLRWDg"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/SASandR/~4/usHx0uLRWDg"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ken-kleinman/",
+          "text": "Ken Kleinman"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/r-function/",
+          "text": "R function"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sas-macro/",
+          "text": "SAS macro"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-456 post type-post status-publish format-standard hentry category-r-bloggers tag-r-function tag-sas-macro\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Example 7.5: Replicating a prettier jittered scatterplot</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 15, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ken-kleinman/\">Ken Kleinman</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/SASandR/~3/usHx0uLRWDg/example-75-replicating-prettier.html\"> SAS and R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->The scatterplot in section 7.4 is a plot we could use repeatedly.  We demonstrate how to create a macro (SAS, section A.8) and a function (R, section B.5) to do it more easily.<br/><br/><b>SAS</b><br/><pre>\n%macro logiplot(x=x, y=y, data=, jitterwidth=.05, smooth=50);\ndata lp1;\nset &amp;data\nif &amp;y eq 0 or &amp;y eq 1;\njitter = uniform(0) * &amp;jitterwidth\nif &amp;y eq 1 then yplot = &amp;y - jitter;\nelse if &amp;y eq 0 then yplot = &amp;y + jitter;\nrun;\n\naxis1 minor=none label = (\"&amp;x\");\naxis2 minor=none label = (angle = 270 rotate = 90 \"&amp;y\");\nsymbol1 i=sm&amp;smooth.s v=none c=blue;\nsymbol2 i=none v=dot h=.2 c=blue;\nproc gplot data=lp1;\nplot (&amp;y yplot) * &amp;x / overlay haxis=axis1 vaxis=axis2;\nrun;\nquit;\n</pre><br/><br/><b>R</b><br/><pre>\nlogiplot &lt;- function(x, y, jitamount=.01, smoothspan=2/3, \n   xlabel=\"X label\", ylabel=\"Y label\") {\n   jittery &lt;- jitter(y, amount=jitamount/2)\n   correction &lt;- ifelse(y==0, jitamount/2, -jitamount/2)\n   jittery &lt;- jittery + correction\n   plot(x, y, type=\"n\", xlab=xlabel, ylab=ylabel)\n   points(x, jittery, pch=20, col=\"blue\")\n   lines(lowess(x, y, f=smoothspan), col=\"blue\")\n}\n</pre><br/><br/>We’ll load the example data set from the book via the web (section 1.1.6), then make a plot of the real data.<br/><br/><b>SAS</b><br/><pre>\nfilename myurl \n   url 'http://www.math.smith.edu/sasr/datasets/help.csv'  lrecl=704;\n\nproc import\n   datafile=myurl\n   out=ds dbms=dlm;\n   delimiter=',';\n   getnames=yes;\nrun;\n\n%logiplot(x = mcs, y = homeless, data=ds, smooth=40);\n</pre><br/><br/><b>R</b><br/><pre>\nds &lt;- read.csv(\"http://www.math.smith.edu/sasr/datasets/help.csv\")\nlogiplot(ds$mcs, ds$homeless, jitamount=.05, smoothspan=.3, \n   xlabel=\"mcs\", ylabel=\"homeless\")\n</pre><br/><br/>The resulting plots are quite similar, but still differ with respect to the smoother and the exact jitter applied to each point.<br/><br/><a data-cf-modified-59006cf84b24f6989aa501a5-=\"\" href=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure732.jpg\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure733.jpg?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure733.jpg?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 400px; height: 212px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5358691522065085218\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/07/figure733.jpg?w=578\" style=\"float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 400px; height: 212px;\"/></noscript></a><br/><br/>(Click for a bigger picture.)<div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-3118676982809893316?l=sas-and-r.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-3118676982809893316?l=sas-and-r.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-3118676982809893316?l=sas-and-r.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/SASandR/~4/usHx0uLRWDg?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/SASandR/~4/usHx0uLRWDg\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/SASandR/~4/usHx0uLRWDg\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/SASandR/~3/usHx0uLRWDg/example-75-replicating-prettier.html\"> SAS and R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-function/\" rel=\"tag\">R function</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sas-macro/\" rel=\"tag\">SAS macro</a></li></ul></div></article>",
+      "main_text": "Example 7.5: Replicating a prettier jittered scatterplot\nPosted on\nJuly 15, 2009\nby\nKen Kleinman\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSAS and R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe scatterplot in section 7.4 is a plot we could use repeatedly.  We demonstrate how to create a macro (SAS, section A.8) and a function (R, section B.5) to do it more easily.\nSAS\n%macro logiplot(x=x, y=y, data=, jitterwidth=.05, smooth=50);\ndata lp1;\nset &data\nif &y eq 0 or &y eq 1;\njitter = uniform(0) * &jitterwidth\nif &y eq 1 then yplot = &y - jitter;\nelse if &y eq 0 then yplot = &y + jitter;\nrun;\n\naxis1 minor=none label = (\"&x\");\naxis2 minor=none label = (angle = 270 rotate = 90 \"&y\");\nsymbol1 i=sm&smooth.s v=none c=blue;\nsymbol2 i=none v=dot h=.2 c=blue;\nproc gplot data=lp1;\nplot (&y yplot) * &x / overlay haxis=axis1 vaxis=axis2;\nrun;\nquit;\nR\nlogiplot <- function(x, y, jitamount=.01, smoothspan=2/3, \n   xlabel=\"X label\", ylabel=\"Y label\") {\n   jittery <- jitter(y, amount=jitamount/2)\n   correction <- ifelse(y==0, jitamount/2, -jitamount/2)\n   jittery <- jittery + correction\n   plot(x, y, type=\"n\", xlab=xlabel, ylab=ylabel)\n   points(x, jittery, pch=20, col=\"blue\")\n   lines(lowess(x, y, f=smoothspan), col=\"blue\")\n}\nWe’ll load the example data set from the book via the web (section 1.1.6), then make a plot of the real data.\nSAS\nfilename myurl \n   url 'http://www.math.smith.edu/sasr/datasets/help.csv'  lrecl=704;\n\nproc import\n   datafile=myurl\n   out=ds dbms=dlm;\n   delimiter=',';\n   getnames=yes;\nrun;\n\n%logiplot(x = mcs, y = homeless, data=ds, smooth=40);\nR\nds <- read.csv(\"http://www.math.smith.edu/sasr/datasets/help.csv\")\nlogiplot(ds$mcs, ds$homeless, jitamount=.05, smoothspan=.3, \n   xlabel=\"mcs\", ylabel=\"homeless\")\nThe resulting plots are quite similar, but still differ with respect to the smoother and the exact jitter applied to each point.\n(Click for a bigger picture.)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSAS and R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nR function\nSAS macro",
+      "meta_description": "The scatterplot in section 7.4 is a plot we could use repeatedly. We demonstrate how to create a macro (SAS, section A.8) and a function (R, section B.5) to do it more easily.SAS%macro logiplot(x=x, y=y, data=, jitterwidth=.05, smooth=50);data lp1;set...",
+      "meta_keywords": "r function,sas macro",
+      "og_description": "The scatterplot in section 7.4 is a plot we could use repeatedly. We demonstrate how to create a macro (SAS, section A.8) and a function (R, section B.5) to do it more easily.SAS%macro logiplot(x=x, y=y, data=, jitterwidth=.05, smooth=50);data lp1;set...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/07/figure733.jpg",
+      "og_title": "Example 7.5: Replicating a prettier jittered scatterplot | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.2,
+      "sitemap_lastmod": "2011-05-11T21:18:20+00:00",
+      "twitter_description": "The scatterplot in section 7.4 is a plot we could use repeatedly. We demonstrate how to create a macro (SAS, section A.8) and a function (R, section B.5) to do it more easily.SAS%macro logiplot(x=x, y=y, data=, jitterwidth=.05, smooth=50);data lp1;set...",
+      "twitter_title": "Example 7.5: Replicating a prettier jittered scatterplot | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/07/example-7-5-replicating-a-prettier-jittered-scatterplot/",
+      "word_count": 448
+    }
+  }
+}

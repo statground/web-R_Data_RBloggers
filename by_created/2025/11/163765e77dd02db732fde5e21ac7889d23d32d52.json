@@ -1,0 +1,110 @@
+{
+  "id": "163765e77dd02db732fde5e21ac7889d23d32d52",
+  "url": "https://www.r-bloggers.com/2009/05/05-05-09-6-steps-to-call-a-c-function-in-r/",
+  "created_at_utc": "2025-11-17T20:40:58Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "b8074ace-d4bd-4cc2-8187-fb3e04bf014f",
+    "created_at": "2025-11-17 20:40:58",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/05/05-05-09-6-steps-to-call-a-c-function-in-r/",
+      "crawled_at": "2025-11-17T10:38:30.994893",
+      "external_links": [
+        {
+          "href": "http://blog.nextbiomotif.com/2009/05/050509.html",
+          "text": "B.I.S. dato"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://cran.r-project.org/doc/manuals/R-exts.html#Interface-functions-_002eC-and-_002eFortran",
+          "text": "Writing R Extensions"
+        },
+        {
+          "href": "http://www.swig.org/",
+          "text": "SWIG"
+        },
+        {
+          "href": "http://blog.nextbiomotif.com/2009/05/050509.html",
+          "text": "B.I.S. dato"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "05.05.09: 6 Steps to call a C function in R | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jitao-david-zhang/",
+          "text": "Jitao David Zhang"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-59825 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">05.05.09: 6 Steps to call a C function in R</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 5, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jitao-david-zhang/\">Jitao David Zhang</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://blog.nextbiomotif.com/2009/05/050509.html\"> B.I.S. dato</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->Tasks<br/><ul><li>Wrap for netMotifs</li><li>Submit Abstract for PhD Retreat</li><li>Read Architecture paper</li><li>Özgür’s WST data and Uli’s RTCA data</li></ul>After some searching and testing, I have began to know how to call a C function in R. The reason for doing this can be speed (for example, the convolution of two finite sequences, as raised by the <a href=\"http://cran.r-project.org/doc/manuals/R-exts.html#Interface-functions-_002eC-and-_002eFortran\" rel=\"nofollow\" target=\"_blank\"><span style=\"font-style: italic;\">Writing R Extensions</span></a> tutorial, refered as ‘WRE tutorial’), or existing codes that have been implemented in C or Fortran (e.g., <span style=\"font-style: italic;\">mfinder</span> software source codes kindly provided by Nadav Kashtan, Uri Alon and their colleagues.  One may argue that auto-wrapping tools like <a href=\"http://www.swig.org/\" rel=\"nofollow\" target=\"_blank\">SWIG</a> (Simplified Wrapper and Inteface Generator) could do this automatically. However it is worth implementing by hand at least in two scenarios:<br/><ul><li>When one wants to embed a C routine in his/her R function/package for the first time, it is defnitely exciting to know how does it work at all.</li><li>Some complex data structures are not yet fully supported by SWIG. In these cases it is also necessary to understand how to write a wrapper manually.</li></ul>To call a C function in R, one has to following following steps:<br/><ol><li>Write a function in C,  for example a toy example of function ‘myC’.<br/><pre>void myC(int* lower, int* upper) {\n int i;\n printf(\"\\t Number \\t\\t Sqaure Root of the Number\\n\");\n for(i = *lower; i&lt;= *upper; ++i)     \n   printf(\"\\t %d \\t\\t\\t %2.2f \\n\",i, sqrt((double) i));  \n}</pre></li><li>Create shared objects of the function <span style=\"font-style: italic;\">myC</span> with <code>R CMD SHLIB myC.c</code> in command line. If neccessary also provide needed parameters, for example -lm. This step produces a <span style=\"font-style: italic;\">myC.so</span> file, namely the shared object.</li><li>Use <code>dyn.load(\"myC.so\")</code> function in a R session to load the shared object.</li><li>After loading, the function can be called with <code>.C</code> function, with the function name in string as the first parameter followed by parameters to be passed. Please keep in mind that the type of parameter must be checked (coerced) correct before passing, otherwise one may face unexpected results. use the toy function, a call to the function is demonstrated by:<br/><code>\nres &lt;- .C(\"myC\", lower=as.integer(0), upper=as.integer(8))</code></li><li>Now you should see the output of the function, as follows:<br/><pre>  Number    Sqaure Root of the Number\n  0     0.00 \n  1     1.00 \n  2     1.41 \n  3     1.73 \n  4     2.00 \n  5     2.24 \n  6     2.45 \n  7     2.65 \n  8     2.83 </pre></li><li>(Optionally) One could unload the shared library by <code>dyn.unload(\"myC.so\")</code>.</li></ol>Some words off-topic: now I think it is not that difficult, however it took me quite a long time to understand the (sometimes too detailed) descriptions in the R extension tutorial: I am not sure whether others have a similar feeling, I believe the quality of documentation in R needs to be improved, especially in the readability and approachability: two common scenario always trouble me: either there is no easy and understandable answer to a question (like the one I am discussing here), or I do not know there is a function in any package implementing a desired task (so called 're-use of the code', preferred to write the code of his own).<br/><br/>Back to the topic, following the procedures described above, one can relative easily wrap a C (or other languages, like Fortran or C++) function in R. The wrapping is desired since at least it may help the check/coerce of the types.<br/><br/>Next step is to embed one or more C files in a package, which normally requires the use of <code>configure</code> and <code>Makevar</code> files. There is also some words spent on this in the WRE tutorial, but to me they are not structured and I did not 'know-how' even after several times of reading. So next step I will also write a demo to show how to do this.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://blog.nextbiomotif.com/2009/05/050509.html\"> B.I.S. dato</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "05.05.09: 6 Steps to call a C function in R\nPosted on\nMay 5, 2009\nby\nJitao David Zhang\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nB.I.S. dato\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nTasks\nWrap for netMotifs\nSubmit Abstract for PhD Retreat\nRead Architecture paper\nÖzgür’s WST data and Uli’s RTCA data\nAfter some searching and testing, I have began to know how to call a C function in R. The reason for doing this can be speed (for example, the convolution of two finite sequences, as raised by the\nWriting R Extensions\ntutorial, refered as ‘WRE tutorial’), or existing codes that have been implemented in C or Fortran (e.g.,\nmfinder\nsoftware source codes kindly provided by Nadav Kashtan, Uri Alon and their colleagues.  One may argue that auto-wrapping tools like\nSWIG\n(Simplified Wrapper and Inteface Generator) could do this automatically. However it is worth implementing by hand at least in two scenarios:\nWhen one wants to embed a C routine in his/her R function/package for the first time, it is defnitely exciting to know how does it work at all.\nSome complex data structures are not yet fully supported by SWIG. In these cases it is also necessary to understand how to write a wrapper manually.\nTo call a C function in R, one has to following following steps:\nWrite a function in C,  for example a toy example of function ‘myC’.\nvoid myC(int* lower, int* upper) {\n int i;\n printf(\"\\t Number \\t\\t Sqaure Root of the Number\\n\");\n for(i = *lower; i<= *upper; ++i)     \n   printf(\"\\t %d \\t\\t\\t %2.2f \\n\",i, sqrt((double) i));  \n}\nCreate shared objects of the function\nmyC\nwith\nR CMD SHLIB myC.c\nin command line. If neccessary also provide needed parameters, for example -lm. This step produces a\nmyC.so\nfile, namely the shared object.\nUse\ndyn.load(\"myC.so\")\nfunction in a R session to load the shared object.\nAfter loading, the function can be called with\n.C\nfunction, with the function name in string as the first parameter followed by parameters to be passed. Please keep in mind that the type of parameter must be checked (coerced) correct before passing, otherwise one may face unexpected results. use the toy function, a call to the function is demonstrated by:\nres <- .C(\"myC\", lower=as.integer(0), upper=as.integer(8))\nNow you should see the output of the function, as follows:\nNumber    Sqaure Root of the Number\n  0     0.00 \n  1     1.00 \n  2     1.41 \n  3     1.73 \n  4     2.00 \n  5     2.24 \n  6     2.45 \n  7     2.65 \n  8     2.83\n(Optionally) One could unload the shared library by\ndyn.unload(\"myC.so\")\n.\nSome words off-topic: now I think it is not that difficult, however it took me quite a long time to understand the (sometimes too detailed) descriptions in the R extension tutorial: I am not sure whether others have a similar feeling, I believe the quality of documentation in R needs to be improved, especially in the readability and approachability: two common scenario always trouble me: either there is no easy and understandable answer to a question (like the one I am discussing here), or I do not know there is a function in any package implementing a desired task (so called 're-use of the code', preferred to write the code of his own).\nBack to the topic, following the procedures described above, one can relative easily wrap a C (or other languages, like Fortran or C++) function in R. The wrapping is desired since at least it may help the check/coerce of the types.\nNext step is to embed one or more C files in a package, which normally requires the use of\nconfigure\nand\nMakevar\nfiles. There is also some words spent on this in the WRE tutorial, but to me they are not structured and I did not 'know-how' even after several times of reading. So next step I will also write a demo to show how to do this.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nB.I.S. dato\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "TasksWrap for netMotifsSubmit Abstract for PhD RetreatRead Architecture paperÖzgür's WST data and Uli's RTCA dataAfter some searching and testing, I have began to know how to call a C function in R. The reason for doing this can be speed (for example, the convolution of two finite sequences, as raised by the Writing R Extensions tutorial, refered as 'WRE tutorial'), or existing codes that have been implemented in C or Fortran (e.g., mfinder software source codes kindly provided by Nadav Kashtan, Uri Alon and their colleagues. One may argue that auto-wrapping tools like SWIG (Simplified Wrapper and Inteface Generator) could do this automatically. However it is worth implementing by hand at least in two scenarios:When one wants to embed a C routine in his/her R function/package for the first time, it is defnitely exciting to know how does it work at all.Some complex data structures are not yet fully supported by SWIG. In these cases it is also necessary to understand how to write a wrapper manually.To call a C function in R, one has to following following steps:Write a function in C, for example a toy example of function 'myC'.void myC(int* lower, int* upper) { int i; printf(\"\\t Number \\t\\t Sqaure Root of the Number\\n\"); for(i = *lower; i",
+      "meta_keywords": null,
+      "og_description": "TasksWrap for netMotifsSubmit Abstract for PhD RetreatRead Architecture paperÖzgür's WST data and Uli's RTCA dataAfter some searching and testing, I have began to know how to call a C function in R. The reason for doing this can be speed (for example, the convolution of two finite sequences, as raised by the Writing R Extensions tutorial, refered as 'WRE tutorial'), or existing codes that have been implemented in C or Fortran (e.g., mfinder software source codes kindly provided by Nadav Kashtan, Uri Alon and their colleagues. One may argue that auto-wrapping tools like SWIG (Simplified Wrapper and Inteface Generator) could do this automatically. However it is worth implementing by hand at least in two scenarios:When one wants to embed a C routine in his/her R function/package for the first time, it is defnitely exciting to know how does it work at all.Some complex data structures are not yet fully supported by SWIG. In these cases it is also necessary to understand how to write a wrapper manually.To call a C function in R, one has to following following steps:Write a function in C, for example a toy example of function 'myC'.void myC(int* lower, int* upper) { int i; printf(\"\\t Number \\t\\t Sqaure Root of the Number\\n\"); for(i = *lower; i",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "05.05.09: 6 Steps to call a C function in R | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4,
+      "sitemap_lastmod": "2011-12-08T20:31:24+00:00",
+      "twitter_description": "TasksWrap for netMotifsSubmit Abstract for PhD RetreatRead Architecture paperÖzgür's WST data and Uli's RTCA dataAfter some searching and testing, I have began to know how to call a C function in R. The reason for doing this can be speed (for example, the convolution of two finite sequences, as raised by the Writing R Extensions tutorial, refered as 'WRE tutorial'), or existing codes that have been implemented in C or Fortran (e.g., mfinder software source codes kindly provided by Nadav Kashtan, Uri Alon and their colleagues. One may argue that auto-wrapping tools like SWIG (Simplified Wrapper and Inteface Generator) could do this automatically. However it is worth implementing by hand at least in two scenarios:When one wants to embed a C routine in his/her R function/package for the first time, it is defnitely exciting to know how does it work at all.Some complex data structures are not yet fully supported by SWIG. In these cases it is also necessary to understand how to write a wrapper manually.To call a C function in R, one has to following following steps:Write a function in C, for example a toy example of function 'myC'.void myC(int* lower, int* upper) { int i; printf(\"\\t Number \\t\\t Sqaure Root of the Number\\n\"); for(i = *lower; i",
+      "twitter_title": "05.05.09: 6 Steps to call a C function in R | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/05/05-05-09-6-steps-to-call-a-c-function-in-r/",
+      "word_count": 799
+    }
+  }
+}

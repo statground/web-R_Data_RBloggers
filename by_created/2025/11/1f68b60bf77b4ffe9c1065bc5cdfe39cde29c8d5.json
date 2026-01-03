@@ -1,0 +1,130 @@
+{
+  "id": "1f68b60bf77b4ffe9c1065bc5cdfe39cde29c8d5",
+  "url": "https://www.r-bloggers.com/2009/09/rquantlib-0-3-0-released/",
+  "created_at_utc": "2025-11-17T20:40:25Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "0ab9044c-94bb-4252-bfcb-0f1256b851c2",
+    "created_at": "2025-11-17 20:40:25",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/rquantlib-0-3-0-released/",
+      "crawled_at": "2025-11-17T10:26:26.597754",
+      "external_links": [
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/09/05#rquantlib_0.3.0",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/code/rquantlib.html",
+          "text": "RQuantLib"
+        },
+        {
+          "href": "http://cran.r-project.org/",
+          "text": "CRAN"
+        },
+        {
+          "href": "http://www.debian.org/",
+          "text": "Debian"
+        },
+        {
+          "href": "https://code.google.com/soc/",
+          "text": "Google Summer of Code"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/04/28#gsoc2009_rql",
+          "text": "a while\nback"
+        },
+        {
+          "href": "http://r-forge.r-project.org/projects/rquantlib",
+          "text": "R-Forge"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/code/rquantlib.html",
+          "text": "RQuantLib"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/09/05#rquantlib_0.3.0",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "RQuantLib 0.3.0 released | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/thinking-inside-the-box/",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-162 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">RQuantLib 0.3.0 released</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 5, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thinking-inside-the-box/\">Thinking inside the box</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/09/05#rquantlib_0.3.0\"> Thinking inside the box   </a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nEarlier this evening, I rolled up a new version of \n<a href=\"http://dirk.eddelbuettel.com/code/rquantlib.html\" rel=\"nofollow\" target=\"_blank\">RQuantLib</a>. It\nhas been pushed to <a href=\"http://cran.r-project.org/\" rel=\"nofollow\" target=\"_blank\">CRAN</a> and <a href=\"http://www.debian.org/\" rel=\"nofollow\" target=\"_blank\">Debian</a>, and source and binary version should\nappear on the respective mirror networks in due course.\n\n<p>\n\nThis version, the first in a new ‘0.3.*’ release series, contains all the\nwork that Khanh Nguyen did during his <a href=\"https://code.google.com/soc/\" rel=\"nofollow\" target=\"_blank\">Google Summer of Code</a> participation\nwhich I had mentioned <a href=\"http://dirk.eddelbuettel.com/blog/2009/04/28#gsoc2009_rql\" rel=\"nofollow\" target=\"_blank\">a while\nback</a> and for which I acted as mentor.\n\n<p>\n\nAnd Khanh did great. We now have a <em>lot</em> more Fixed Income\nfunctionality; I include the full ChangeLog entry below.  I also added some\nsimple calendaring support and the odd fix here or there while mentoring.\nAll of this had been available while technically ‘in progress’ thanks to\nsupport provided by the <a href=\"http://r-forge.r-project.org/projects/rquantlib\" rel=\"nofollow\" target=\"_blank\">R-Forge</a> project\nhosting where SVN checkouts as well as nightly binaries are provided.\nA few more details are on the \n<a href=\"http://dirk.eddelbuettel.com/code/rquantlib.html\" rel=\"nofollow\" target=\"_blank\">RQuantLib</a> page\nand I hope to add a few more examples.\n\n<p>\nAs promised, the ChangeLog entry:\n\n<pre>\n2009-09-05  Dirk Eddelbuettel  \n\n\t* DESCRIPTION: Release 0.3.0 reflecting all the excellent\n\t  Google Summer of Code 2009 work by Khanh Nguyen as well\n\t  as other small enhancements\n\n\t[ Changes by Khanh Nguyen below ]\n\n\t* R/bond.R: Added pricing functionality for various new instrument\n\t* R/discount.R: Idem\n\t* src/bonds.cpp: Idem\n\t* src/discount.cpp: Idem\n\t* src/utils.cpp: Idem\n\n\t* man/Bond.Rd: Added documentaiont for new functions\n\t* man/CallableBond.Rd: Idem\n\t* man/ConvertibleFixedCouponBond.Rd: Idem\n\t* man/ConvertibleFloatingCouponBond.Rd: Idem\n\t* man/ConvertibleZeroCouponBond.Rd: Idem\n\t* man/Enum.Rd: Idem\n\t* man/FittedBondCurve.Rd: Idem\n\t* man/FixedRateBond.Rd: Idem\n\t* man/FixedRateBondCurve.Rd: Idem\n\t* man/FixedRateBondPriceByYield.Rd: Idem\n\t* man/FixedRateBondYield.Rd: Idem\n\t* man/FloatingRateBond.Rd: Idem\n\t* man/ZeroCouponBond.Rd: Idem\n\t* man/ZeroPriceByYield.Rd: Idem\n\t* man/ZeroYield.Rd: Idem\n\n\t* rests/RQuantLib.R: Added tests for new functions\n\t* rests/RQuantLib.Rout.save: Added tests ouput for new functions\n\n\t[ Changes by Dirk Eddelbuettel below ]\n\n\t* man/BondUtilities.Rd: Added documentation for new function\n\n\t* R/calendars.R: Add support to access QuantLib calendars from R\n\t* src/calendars.cpp Idem\n\t* man/Calendars.Rd: Idem\n\n\t* src/bonds.cpp: Small C++ fixes to suppres g++ warnings\n\t* INDEX: Updated via 'R CMD build --force'\n\t* inst/QuantLib-License.txt: Updated to version from QL 0.9.7\n</pre>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/09/05#rquantlib_0.3.0\"> Thinking inside the box   </a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></p></div>\n</article>",
+      "main_text": "RQuantLib 0.3.0 released\nPosted on\nSeptember 5, 2009\nby\nThinking inside the box\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThinking inside the box\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEarlier this evening, I rolled up a new version of\nRQuantLib\n. It\nhas been pushed to\nCRAN\nand\nDebian\n, and source and binary version should\nappear on the respective mirror networks in due course.\nThis version, the first in a new ‘0.3.*’ release series, contains all the\nwork that Khanh Nguyen did during his\nGoogle Summer of Code\nparticipation\nwhich I had mentioned\na while\nback\nand for which I acted as mentor.\nAnd Khanh did great. We now have a\nlot\nmore Fixed Income\nfunctionality; I include the full ChangeLog entry below.  I also added some\nsimple calendaring support and the odd fix here or there while mentoring.\nAll of this had been available while technically ‘in progress’ thanks to\nsupport provided by the\nR-Forge\nproject\nhosting where SVN checkouts as well as nightly binaries are provided.\nA few more details are on the\nRQuantLib\npage\nand I hope to add a few more examples.\nAs promised, the ChangeLog entry:\n2009-09-05  Dirk Eddelbuettel  \n\n\t* DESCRIPTION: Release 0.3.0 reflecting all the excellent\n\t  Google Summer of Code 2009 work by Khanh Nguyen as well\n\t  as other small enhancements\n\n\t[ Changes by Khanh Nguyen below ]\n\n\t* R/bond.R: Added pricing functionality for various new instrument\n\t* R/discount.R: Idem\n\t* src/bonds.cpp: Idem\n\t* src/discount.cpp: Idem\n\t* src/utils.cpp: Idem\n\n\t* man/Bond.Rd: Added documentaiont for new functions\n\t* man/CallableBond.Rd: Idem\n\t* man/ConvertibleFixedCouponBond.Rd: Idem\n\t* man/ConvertibleFloatingCouponBond.Rd: Idem\n\t* man/ConvertibleZeroCouponBond.Rd: Idem\n\t* man/Enum.Rd: Idem\n\t* man/FittedBondCurve.Rd: Idem\n\t* man/FixedRateBond.Rd: Idem\n\t* man/FixedRateBondCurve.Rd: Idem\n\t* man/FixedRateBondPriceByYield.Rd: Idem\n\t* man/FixedRateBondYield.Rd: Idem\n\t* man/FloatingRateBond.Rd: Idem\n\t* man/ZeroCouponBond.Rd: Idem\n\t* man/ZeroPriceByYield.Rd: Idem\n\t* man/ZeroYield.Rd: Idem\n\n\t* rests/RQuantLib.R: Added tests for new functions\n\t* rests/RQuantLib.Rout.save: Added tests ouput for new functions\n\n\t[ Changes by Dirk Eddelbuettel below ]\n\n\t* man/BondUtilities.Rd: Added documentation for new function\n\n\t* R/calendars.R: Add support to access QuantLib calendars from R\n\t* src/calendars.cpp Idem\n\t* man/Calendars.Rd: Idem\n\n\t* src/bonds.cpp: Small C++ fixes to suppres g++ warnings\n\t* INDEX: Updated via 'R CMD build --force'\n\t* inst/QuantLib-License.txt: Updated to version from QL 0.9.7\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThinking inside the box\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Earlier this evening, I rolled up a new version of RQuantLib. It has been pushed to CRAN and Debian, and source and binary version should appear on the respective mirror networks in due course. This version, the first in a new '0.3.*' release seri...",
+      "meta_keywords": null,
+      "og_description": "Earlier this evening, I rolled up a new version of RQuantLib. It has been pushed to CRAN and Debian, and source and binary version should appear on the respective mirror networks in due course. This version, the first in a new '0.3.*' release seri...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "RQuantLib 0.3.0 released | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.6,
+      "sitemap_lastmod": "2009-09-06T03:30:00+00:00",
+      "twitter_description": "Earlier this evening, I rolled up a new version of RQuantLib. It has been pushed to CRAN and Debian, and source and binary version should appear on the respective mirror networks in due course. This version, the first in a new '0.3.*' release seri...",
+      "twitter_title": "RQuantLib 0.3.0 released | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/rquantlib-0-3-0-released/",
+      "word_count": 511
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "83957fd51cf4814dbd90b05221ee46f802941d2d",
+  "url": "https://www.r-bloggers.com/2025/07/numbers-of-the-beast-sasquatch-distribution-modelling/",
+  "created_at_utc": "2025-11-22T19:58:02Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "d0357e69-a79a-4996-8e96-67152ba32786",
+    "created_at": "2025-11-22 19:58:02",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/07/numbers-of-the-beast-sasquatch-distribution-modelling/",
+      "crawled_at": "2025-11-22T10:45:16.748900",
+      "external_links": [
+        {
+          "href": "https://www.weirddatascience.net/2025/07/21/numbers-of-the-beast-sasquatch-distribution-modelling/",
+          "text": "Weird Data Science"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.weirddatascience.net/wp-content/uploads/2025/07/sasquatch_distribution_modelling.pdf",
+          "text": "sasquatch_distribution_modelling"
+        },
+        {
+          "href": "https://www.weirddatascience.net/2025/07/21/numbers-of-the-beast-sasquatch-distribution-modelling/",
+          "text": "Weird Data Science"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Numbers of the Beast: Sasquatch Distribution Modelling | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/moth/",
+          "text": "moth"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-394269 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Numbers of the Beast: Sasquatch Distribution Modelling</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">July 21, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/moth/\">moth</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.weirddatascience.net/2025/07/21/numbers-of-the-beast-sasquatch-distribution-modelling/\"> Weird Data Science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>Dredged from the stygian depths of last year’s waning: a cruelly belated artefact of academia’s primordial descent. For a third time, the Oxford Internet Institute at the University of Oxford—scarcely willing, but falteringly unable to reflect on its own ill-fated decisions—chose to risk the sanity and statistical intuition of its students against the numerically unstable nightmares writhing beneath the tattered fabric of our waking world.</p>\n<p>This third OII Halloween Lecture sinks bodily into the tortured mass of data concerning cryptozoological sightings in North America. Drawing on over a century of shadow-haunted sightings documenting the curiously repellant presence of the North America Sasquatch, or Bigfoot, we aim to identify the factors associated with its presence, delineate the confounding presence of other dread manifestations, and cast our minds globally for a faded glimpse of its remote and scarcely-conceived brethren.</p>\n<p>In what can only generously be considered an act of gross negligence, this lecture was stored, at great risk to both its author and its audience, digitally. Technology has, once again, brought us closer than we might care to dread to secrets that we were never intended to taste.</p>\n<p>A sharper, more visceral presentation of the baroque thinking underpinning these materials will follow, in an ever-spiralling series of posts on this site. Until then, however, incautious travellers may solemnly consider the below.</p>\n<div class=\"youtube-embed ye-container\">\n<meta content=\"https://www.youtube.com/v/M_upySOOzcI\"/>\n<meta content=\"Numbers of the Beast: Sasquatch Distribution Modelling\"/>\n<meta content=\"Numbers of the Beast: Sasquatch Distribution Modelling\"/>\n<meta content=\"2025-07-21T19:02:44+01:00\"/>\n<meta content=\"https://i.ytimg.com/vi/M_upySOOzcI/default.jpg\"/>\n<meta content=\"https://www.youtube.com/embed/M_upySOOzcI\"/>\n<meta content=\"340\"/>\n<meta content=\"560\"/>\n<iframe allowfullscreen=\"\" class=\"youtube-player\" src=\"https://www.youtube.com/embed/M_upySOOzcI\" style=\"border: 0;\" width=\"450\"></iframe>\n</div>\n<blockquote><p>\n<strong>OII Halloween Lecture</strong><br/>\nSasquatch Distribution Modelling: Investigating patterns of Bigfoot sightings in North America.<br/>\n<em>Prof. Joss Wright</em><br/>\n<em>Oxford. October 2024</em></p>\n<p>The nights grow ever closer. Streetlights flicker, shrouded in the mists, striving to pierce the gloom. The warm certainties of summer give way to the cold, dark ambiguities of autumn. Rumour, myth, and legend rise, primeval, from the shadowed recesses of our collective consciousness, undermining our faith in the fragile congruities that structure our lives.</p>\n<p>As summer surrenders to the inexorable tread of autumn, our resolve falters against the unknown horrors residing in the tenebrous peripheries of the world. As scientists, as scholars, our duty is to cling resolutely to our methods and our ideals in the face of encroaching darkness. Our tools may seem fragile in the face of the seething irrationality of the night, but we are called to peer, however tremulously, wherever our inquiries may lead us.</p>\n<p>Lights streak across the sky. Stories are woven of twisted faces in the darkness, half-glimpsed creatures in ancient forests, strange encounters in the wilderness. From the earliest stirrings of humanity, to the patterns of complex arcana that silently control our lives today, folklore and legend have long reported phenomena that rebel against mundane description or understanding. As our technologies evolve, and our ability to collate, scrutinise, and manipulate data spiral beyond all restraint, we are ever more capable, if not indeed obliged, to bring the lens of science to bear on these harrowing mysteries.</p>\n<p>To embrace this dark season, you are invited to the annual Oxford Internet Institute Halloween Lecture.</p>\n<p>This year we will pursue one of the world’s most notorious cryptozoological phenomena, investigating over a century of data regarding sightings of the Sasquatch, or Bigfoot, of North America. In which regions are these cryptic precursors of humanity most commonly observed? What factors, whether environmental or physical, create habitats most suitable for the Sasquatch to thrive, hidden from the encroaching pressures of humanity? Where, were we bold enough to look, might we seek other populations of these elusive creatures?</p>\n<p>In this lecture we will examine some of the history surrounding sightings of Bigfoot, and related cryptids. We will impetuously apply statistical methods to derive underlying patterns from reported sightings, and heedlessly strive to uncover their meaning and implications. What can we learn from the accumulated data about the habits of cryptic species living on the fringes of our world? Is the beast, as ever, closer to us than we wish to believe?</p></blockquote>\n<a class=\"pdfemb-viewer\" data-download=\"on\" data-height=\"max\" data-mobile-width=\"450\" data-newwindow=\"on\" data-pagetextbox=\"off\" data-scrollbar=\"none\" data-scrolltotop=\"off\" data-startfpzoom=\"100\" data-startzoom=\"100\" data-toolbar=\"bottom\" data-toolbar-fixed=\"off\" data-tracking=\"on\" data-width=\"max\" href=\"https://www.weirddatascience.net/wp-content/uploads/2025/07/sasquatch_distribution_modelling.pdf\" rel=\"nofollow\" style=\"\" target=\"_blank\">sasquatch_distribution_modelling<br/></a>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.weirddatascience.net/2025/07/21/numbers-of-the-beast-sasquatch-distribution-modelling/\"> Weird Data Science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Numbers of the Beast: Sasquatch Distribution Modelling\nPosted on\nJuly 21, 2025\nby\nmoth\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nWeird Data Science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDredged from the stygian depths of last year’s waning: a cruelly belated artefact of academia’s primordial descent. For a third time, the Oxford Internet Institute at the University of Oxford—scarcely willing, but falteringly unable to reflect on its own ill-fated decisions—chose to risk the sanity and statistical intuition of its students against the numerically unstable nightmares writhing beneath the tattered fabric of our waking world.\nThis third OII Halloween Lecture sinks bodily into the tortured mass of data concerning cryptozoological sightings in North America. Drawing on over a century of shadow-haunted sightings documenting the curiously repellant presence of the North America Sasquatch, or Bigfoot, we aim to identify the factors associated with its presence, delineate the confounding presence of other dread manifestations, and cast our minds globally for a faded glimpse of its remote and scarcely-conceived brethren.\nIn what can only generously be considered an act of gross negligence, this lecture was stored, at great risk to both its author and its audience, digitally. Technology has, once again, brought us closer than we might care to dread to secrets that we were never intended to taste.\nA sharper, more visceral presentation of the baroque thinking underpinning these materials will follow, in an ever-spiralling series of posts on this site. Until then, however, incautious travellers may solemnly consider the below.\nOII Halloween Lecture\nSasquatch Distribution Modelling: Investigating patterns of Bigfoot sightings in North America.\nProf. Joss Wright\nOxford. October 2024\nThe nights grow ever closer. Streetlights flicker, shrouded in the mists, striving to pierce the gloom. The warm certainties of summer give way to the cold, dark ambiguities of autumn. Rumour, myth, and legend rise, primeval, from the shadowed recesses of our collective consciousness, undermining our faith in the fragile congruities that structure our lives.\nAs summer surrenders to the inexorable tread of autumn, our resolve falters against the unknown horrors residing in the tenebrous peripheries of the world. As scientists, as scholars, our duty is to cling resolutely to our methods and our ideals in the face of encroaching darkness. Our tools may seem fragile in the face of the seething irrationality of the night, but we are called to peer, however tremulously, wherever our inquiries may lead us.\nLights streak across the sky. Stories are woven of twisted faces in the darkness, half-glimpsed creatures in ancient forests, strange encounters in the wilderness. From the earliest stirrings of humanity, to the patterns of complex arcana that silently control our lives today, folklore and legend have long reported phenomena that rebel against mundane description or understanding. As our technologies evolve, and our ability to collate, scrutinise, and manipulate data spiral beyond all restraint, we are ever more capable, if not indeed obliged, to bring the lens of science to bear on these harrowing mysteries.\nTo embrace this dark season, you are invited to the annual Oxford Internet Institute Halloween Lecture.\nThis year we will pursue one of the world’s most notorious cryptozoological phenomena, investigating over a century of data regarding sightings of the Sasquatch, or Bigfoot, of North America. In which regions are these cryptic precursors of humanity most commonly observed? What factors, whether environmental or physical, create habitats most suitable for the Sasquatch to thrive, hidden from the encroaching pressures of humanity? Where, were we bold enough to look, might we seek other populations of these elusive creatures?\nIn this lecture we will examine some of the history surrounding sightings of Bigfoot, and related cryptids. We will impetuously apply statistical methods to derive underlying patterns from reported sightings, and heedlessly strive to uncover their meaning and implications. What can we learn from the accumulated data about the habits of cryptic species living on the fringes of our world? Is the beast, as ever, closer to us than we wish to believe?\nsasquatch_distribution_modelling\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nWeird Data Science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The third OII Halloween Lecture sinks bodily into the tortured mass of data concerning cryptozoological sightings in North America. Drawing on over a century of shadow-haunted sightings documenting the curiously repellant presence of the North America Sasquatch, or Bigfoot, we aim to identify the factors associated with its presence, delineate the confounding presence of other dread manifestations, and cast our minds globally for a faded glimpse of its remote and scarcely-conceived brethren. [...]",
+      "meta_keywords": null,
+      "og_description": "The third OII Halloween Lecture sinks bodily into the tortured mass of data concerning cryptozoological sightings in North America. Drawing on over a century of shadow-haunted sightings documenting the curiously repellant presence of the North America Sasquatch, or Bigfoot, we aim to identify the factors associated with its presence, delineate the confounding presence of other dread manifestations, and cast our minds globally for a faded glimpse of its remote and scarcely-conceived brethren. [...]",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Numbers of the Beast: Sasquatch Distribution Modelling | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 3.9,
+      "sitemap_lastmod": null,
+      "twitter_description": "The third OII Halloween Lecture sinks bodily into the tortured mass of data concerning cryptozoological sightings in North America. Drawing on over a century of shadow-haunted sightings documenting the curiously repellant presence of the North America Sasquatch, or Bigfoot, we aim to identify the factors associated with its presence, delineate the confounding presence of other dread manifestations, and cast our minds globally for a faded glimpse of its remote and scarcely-conceived brethren. [...]",
+      "twitter_title": "Numbers of the Beast: Sasquatch Distribution Modelling | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/07/numbers-of-the-beast-sasquatch-distribution-modelling/",
+      "word_count": 784
+    }
+  }
+}

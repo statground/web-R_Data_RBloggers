@@ -1,0 +1,110 @@
+{
+  "id": "fc0da60d07de395a4b05f2a054a497daa26854ea",
+  "url": "https://www.r-bloggers.com/2024/12/efficient-snapshot-testing-in-r-with-ci-and-github-api/",
+  "created_at_utc": "2025-11-22T19:59:40Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "853433a7-a13b-462a-8b3d-6e93a1c394b0",
+    "created_at": "2025-11-22 19:59:40",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2024/12/efficient-snapshot-testing-in-r-with-ci-and-github-api/",
+      "crawled_at": "2025-11-22T10:57:08.296622",
+      "external_links": [
+        {
+          "href": "https://jakubsob.github.io/blog/the-easiest-way-to-update-snapshots-from-ci",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://testthat.r-lib.org/reference/expect_snapshot.html",
+          "text": "{testthat}"
+        },
+        {
+          "href": "https://gist.github.com/jakubsob/83a88e62cdb01ba49f0c292399c5a77d",
+          "text": "this gist"
+        },
+        {
+          "href": "https://jakubsob.github.io/blog/the-easiest-way-to-update-snapshots-from-ci",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Efficient Snapshot Testing in R with CI and GitHub API | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jakubsobolewski/",
+          "text": "jakub::sobolewski"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-393233 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Efficient Snapshot Testing in R with CI and GitHub API</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 12, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakubsobolewski/\">jakub::sobolewski</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://jakubsob.github.io/blog/the-easiest-way-to-update-snapshots-from-ci\"> jakub::sobolewski</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>Snapshot testing gets difficult when there is more than one variant of the same result.</p>\n<p>The reason why snapshot testing might be discouraging is due to the fact that snapshots will most likely fail due to environment settings. If one person runs the tests on a Mac and another on a Linux machine, the snapshots of rendered images will almost certainly be different. Comparing these snapshots will result in a failed test even though the code is correct.</p>\n<p>Add CI to the mix, and you have a hot mess.</p>\n<h2 id=\"the-easiest-solution-is-to-introduce-variants\">The easiest solution is to introduce variants.</h2>\n<p>Variants are versions of snapshots which were created on different environments.</p>\n<p>In <a href=\"https://testthat.r-lib.org/reference/expect_snapshot.html\" rel=\"nofollow\" target=\"_blank\">{testthat}</a> variants are stored in separate directories. You can pass a name of the variant to the <code>variant</code> argument of <code>testthat::test_snapshot</code>. If you have a Linux, set <code>variant = \"linux\"</code>, if you have a Mac, set <code>variant = \"mac\"</code>.</p>\n<p>running tests on both will result in two directories:</p>\n<ul>\n<li>tests/testthat/_snaps/linux</li>\n<li>tests/testthat/_snaps/mac</li>\n</ul>\n<p>This way we will only compare snapshots generated on the same environment.</p>\n<h2 id=\"variants-are-difficult-to-work-with\">Variants are difficult to work with.</h2>\n<p>Imagine you have generated a new set of snapshots on you Linux machine.</p>\n<p>You check them in and push to the repository. Even if you use the same version of Linux on CI, and the same version of R, the snapshots generated there might differ from the ones you have generated on your machine. It can happen due to different versions of system dependencies which aren’t so easy to control.</p>\n<p>What can we do about it?</p>\n<h2 id=\"use-snapshots-generated-on-ci-as-the-source-of-truth\">Use snapshots generated on CI as the source of truth.</h2>\n<p>Don’t check in snapshots generated on your machine. Generate them on CI and download them to your machine instead.</p>\n<h3 id=\"step-1-archive-snapshots-on-ci\">Step 1: Archive snapshots on CI</h3>\n<p>Add this step to you CI testing workflow to allow downloading generated snapshots.</p>\n<pre>- name: Archive test snapshots\n  if: always()\n  uses: actions/upload-artifact@v3\n  with:\n    name: test-snapshots\n    path: |\n      tests/testthat/_snaps/**/**/*</pre>\n<h3 id=\"step-2-detect-the-environment-to-create-variants\">Step 2: Detect the environment to create variants</h3>\n<p>We can create a <code>make_variant</code> function to detect the version of the platform, as well as if we are running on CI.</p>\n<p>This way even if we use the same OS on CI and locally, we can still differentiate between snapshots generated on CI and locally.</p>\n<pre>#' tests/testthat/setup.R\nis_ci &lt;- function() {\n  isTRUE(as.logical(Sys.getenv(\"CI\")))\n}\n\nmake_variant &lt;- function(platform = shinytest2::platform_variant()) {\n  ci &lt;- if (is_ci()) \"ci\" else NULL\n  paste(c(ci, platform), collapse = \"-\")\n}\n\n# In tests: testthat::expect_snapshot(..., variant = make_variant())</pre>\n<p>If we’re running on Linux and using R 4.4, the produced variants will be:</p>\n<ul>\n<li>tests/testthat/_snaps/ci-linux-4.4</li>\n<li>tests/testthat/_snaps/linux-4.4</li>\n</ul>\n<p>This way we can differentiate between snapshots generated on CI and locally.</p>\n<h3 id=\"step-3-ignore-your-local-snapshots\">Step 3: Ignore your local snapshots</h3>\n<p>Don’t check in snapshots generated on your machine. Add them to <code>.gitignore</code> instead.</p>\n<pre>tests/testthat/_snaps/linux-4.4</pre>\n<p>This way we can still generate snapshots locally to get fast feedback, but we’ll only keep a single source of truth checked in the repository.</p>\n<p>Since you don’t track changes in local snapshots, you need to regenerate them before you start making changes to see if they change. It adds some complexity to the process, but it allows to keep the number of shared snapshots in the version control minimal.</p>\n<p>Alternatively, you can keep local snapshots, but when doing code review, focus only on the ones generated on CI.</p>\n<h3 id=\"step-4-automate-downloading-snapshots-from-ci\">Step 4: Automate downloading snapshots from CI</h3>\n<p>To update snapshots generated on CI in Github, we need to:</p>\n<ul>\n<li>Go to Actions.</li>\n<li>Find our workflow run.</li>\n<li>Download the <code>test-snapshots</code> artifact.</li>\n<li>Unpack and overwrite the local snapshots.</li>\n<li><code>testthat::snapshot_review()</code> to review the changes.</li>\n<li>Commit and push the changes.</li>\n</ul>\n<p>This is a lot of steps. We can automate the most laborious ones with Github API.</p>\n<p>The <code>.download_ci_snaps</code> function will:</p>\n<ul>\n<li>Get the list of artifacts in the repository identified by <code>repo</code> and <code>owner</code>. It’ll search workflows generated from the branch we’re currently on. It will download the latest artifact with the provided <code>name</code> (in our case its “test-snapshots”) in the repository</li>\n<li>Unzip them and overwrite the local copy of snapshots.</li>\n</ul>\n<pre>#' Run the following command in the terminal first to authenticate the API:\n#' ```sh\n#' gh auth login\n#' ```\n.download_ci_snaps &lt;- function(\n    branch = .get_active_branch(),\n    repo,\n    owner,\n    name) {\n  artifacts &lt;- gh::gh(glue::glue(\"GET /repos/{owner}/{repo}/actions/artifacts\"))\n  id &lt;- artifacts |&gt;\n    purrr::pluck(2) |&gt;\n    purrr::map(\\(x) {\n      x$branch &lt;- x$workflow_run$head_branch\n      x\n    }) |&gt;\n    dplyr::bind_rows() |&gt;\n    dplyr::filter(branch == !!branch) |&gt;\n    dplyr::filter(name == !!name) |&gt;\n    dplyr::filter(updated_at == max(updated_at)) |&gt;\n    dplyr::filter(!expired) |&gt;\n    dplyr::slice_head(n = 1) |&gt;\n    dplyr::pull(id)\n  system(glue::glue(\n    'gh api \\\\\n    -H \"Accept: application/vnd.github+json\" \\\\\n    -H \"X-GitHub-Api-Version: 2022-11-28\" \\\\\n    /repos/{owner}/{repo}/actions/artifacts/{id}/zip &gt; _snaps.zip'\n  ))\n  unzip(\"_snaps.zip\", exdir = \"_snaps\")\n  fs::file_delete(\"_snaps.zip\")\n  dir_variant_new &lt;- fs::dir_ls(\"_snaps\")[1]\n  dir_variant_old &lt;- fs::path(\"tests\", \"testthat\", dir_variant_new)\n  fs::file_delete(dir_variant_old)\n  fs::file_move(dir_variant_new, dir_variant_old)\n  invisible(NULL)\n}\n\n.get_active_branch &lt;- **function**() {\n  res &lt;- system(\"git status\", intern = TRUE)\n  stringr::str_remove(res[1], \"On branch \")\n}</pre>\n<p>After running it we can just do <code>testthat::snapshot_review()</code> to review the changes.</p>\n<hr/>\n<p><strong>💾 Save this function for later, it is in <a href=\"https://gist.github.com/jakubsob/83a88e62cdb01ba49f0c292399c5a77d\" rel=\"nofollow\" target=\"_blank\">this gist</a>. 💾</strong></p>\n<hr/>\n<h2 id=\"dont-let-snapshot-testing-overwhelm-you\">Don’t let snapshot testing overwhelm you</h2>\n<p>Use this process to keep things under control.</p>\n<ul>\n<li>Get a single source of truth for snapshots.</li>\n<li>Don’t duplicate snapshots with variants, reduce the maintenance cost.</li>\n<li>Use automation to keep the process fast and smooth.</li>\n</ul>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubsob.github.io/blog/the-easiest-way-to-update-snapshots-from-ci\"> jakub::sobolewski</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Efficient Snapshot Testing in R with CI and GitHub API\nPosted on\nDecember 12, 2024\nby\njakub::sobolewski\nin\nR bloggers\n| 0 Comments\n[This article was first published on\njakub::sobolewski\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSnapshot testing gets difficult when there is more than one variant of the same result.\nThe reason why snapshot testing might be discouraging is due to the fact that snapshots will most likely fail due to environment settings. If one person runs the tests on a Mac and another on a Linux machine, the snapshots of rendered images will almost certainly be different. Comparing these snapshots will result in a failed test even though the code is correct.\nAdd CI to the mix, and you have a hot mess.\nThe easiest solution is to introduce variants.\nVariants are versions of snapshots which were created on different environments.\nIn\n{testthat}\nvariants are stored in separate directories. You can pass a name of the variant to the\nvariant\nargument of\ntestthat::test_snapshot\n. If you have a Linux, set\nvariant = \"linux\"\n, if you have a Mac, set\nvariant = \"mac\"\n.\nrunning tests on both will result in two directories:\ntests/testthat/_snaps/linux\ntests/testthat/_snaps/mac\nThis way we will only compare snapshots generated on the same environment.\nVariants are difficult to work with.\nImagine you have generated a new set of snapshots on you Linux machine.\nYou check them in and push to the repository. Even if you use the same version of Linux on CI, and the same version of R, the snapshots generated there might differ from the ones you have generated on your machine. It can happen due to different versions of system dependencies which aren’t so easy to control.\nWhat can we do about it?\nUse snapshots generated on CI as the source of truth.\nDon’t check in snapshots generated on your machine. Generate them on CI and download them to your machine instead.\nStep 1: Archive snapshots on CI\nAdd this step to you CI testing workflow to allow downloading generated snapshots.\n- name: Archive test snapshots\n  if: always()\n  uses: actions/upload-artifact@v3\n  with:\n    name: test-snapshots\n    path: |\n      tests/testthat/_snaps/**/**/*\nStep 2: Detect the environment to create variants\nWe can create a\nmake_variant\nfunction to detect the version of the platform, as well as if we are running on CI.\nThis way even if we use the same OS on CI and locally, we can still differentiate between snapshots generated on CI and locally.\n#' tests/testthat/setup.R\nis_ci <- function() {\n  isTRUE(as.logical(Sys.getenv(\"CI\")))\n}\n\nmake_variant <- function(platform = shinytest2::platform_variant()) {\n  ci <- if (is_ci()) \"ci\" else NULL\n  paste(c(ci, platform), collapse = \"-\")\n}\n\n# In tests: testthat::expect_snapshot(..., variant = make_variant())\nIf we’re running on Linux and using R 4.4, the produced variants will be:\ntests/testthat/_snaps/ci-linux-4.4\ntests/testthat/_snaps/linux-4.4\nThis way we can differentiate between snapshots generated on CI and locally.\nStep 3: Ignore your local snapshots\nDon’t check in snapshots generated on your machine. Add them to\n.gitignore\ninstead.\ntests/testthat/_snaps/linux-4.4\nThis way we can still generate snapshots locally to get fast feedback, but we’ll only keep a single source of truth checked in the repository.\nSince you don’t track changes in local snapshots, you need to regenerate them before you start making changes to see if they change. It adds some complexity to the process, but it allows to keep the number of shared snapshots in the version control minimal.\nAlternatively, you can keep local snapshots, but when doing code review, focus only on the ones generated on CI.\nStep 4: Automate downloading snapshots from CI\nTo update snapshots generated on CI in Github, we need to:\nGo to Actions.\nFind our workflow run.\nDownload the\ntest-snapshots\nartifact.\nUnpack and overwrite the local snapshots.\ntestthat::snapshot_review()\nto review the changes.\nCommit and push the changes.\nThis is a lot of steps. We can automate the most laborious ones with Github API.\nThe\n.download_ci_snaps\nfunction will:\nGet the list of artifacts in the repository identified by\nrepo\nand\nowner\n. It’ll search workflows generated from the branch we’re currently on. It will download the latest artifact with the provided\nname\n(in our case its “test-snapshots”) in the repository\nUnzip them and overwrite the local copy of snapshots.\n#' Run the following command in the terminal first to authenticate the API:\n#' ```sh\n#' gh auth login\n#' ```\n.download_ci_snaps <- function(\n    branch = .get_active_branch(),\n    repo,\n    owner,\n    name) {\n  artifacts <- gh::gh(glue::glue(\"GET /repos/{owner}/{repo}/actions/artifacts\"))\n  id <- artifacts |>\n    purrr::pluck(2) |>\n    purrr::map(\\(x) {\n      x$branch <- x$workflow_run$head_branch\n      x\n    }) |>\n    dplyr::bind_rows() |>\n    dplyr::filter(branch == !!branch) |>\n    dplyr::filter(name == !!name) |>\n    dplyr::filter(updated_at == max(updated_at)) |>\n    dplyr::filter(!expired) |>\n    dplyr::slice_head(n = 1) |>\n    dplyr::pull(id)\n  system(glue::glue(\n    'gh api \\\\\n    -H \"Accept: application/vnd.github+json\" \\\\\n    -H \"X-GitHub-Api-Version: 2022-11-28\" \\\\\n    /repos/{owner}/{repo}/actions/artifacts/{id}/zip > _snaps.zip'\n  ))\n  unzip(\"_snaps.zip\", exdir = \"_snaps\")\n  fs::file_delete(\"_snaps.zip\")\n  dir_variant_new <- fs::dir_ls(\"_snaps\")[1]\n  dir_variant_old <- fs::path(\"tests\", \"testthat\", dir_variant_new)\n  fs::file_delete(dir_variant_old)\n  fs::file_move(dir_variant_new, dir_variant_old)\n  invisible(NULL)\n}\n\n.get_active_branch <- **function**() {\n  res <- system(\"git status\", intern = TRUE)\n  stringr::str_remove(res[1], \"On branch \")\n}\nAfter running it we can just do\ntestthat::snapshot_review()\nto review the changes.\n💾 Save this function for later, it is in\nthis gist\n. 💾\nDon’t let snapshot testing overwhelm you\nUse this process to keep things under control.\nGet a single source of truth for snapshots.\nDon’t duplicate snapshots with variants, reduce the maintenance cost.\nUse automation to keep the process fast and smooth.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\njakub::sobolewski\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Learn how to manage snapshot tests in R using CI and GitHub API to ensure consistency across different environments.",
+      "meta_keywords": null,
+      "og_description": "Learn how to manage snapshot tests in R using CI and GitHub API to ensure consistency across different environments.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Efficient Snapshot Testing in R with CI and GitHub API | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.2,
+      "sitemap_lastmod": null,
+      "twitter_description": "Learn how to manage snapshot tests in R using CI and GitHub API to ensure consistency across different environments.",
+      "twitter_title": "Efficient Snapshot Testing in R with CI and GitHub API | R-bloggers",
+      "url": "https://www.r-bloggers.com/2024/12/efficient-snapshot-testing-in-r-with-ci-and-github-api/",
+      "word_count": 1045
+    }
+  }
+}

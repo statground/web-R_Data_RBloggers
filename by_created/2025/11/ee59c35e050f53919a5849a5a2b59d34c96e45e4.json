@@ -1,0 +1,249 @@
+{
+  "id": "ee59c35e050f53919a5849a5a2b59d34c96e45e4",
+  "url": "https://www.r-bloggers.com/2023/11/extracting-information-about-spatial-patterns-from-spatial-signatures/",
+  "created_at_utc": "2025-11-17T20:39:14Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "301592fb-b000-42b2-a771-4349995d6db1",
+    "created_at": "2025-11-17 20:39:14",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/11/extracting-information-about-spatial-patterns-from-spatial-signatures/",
+      "crawled_at": "2025-11-17T09:55:07.951266",
+      "external_links": [
+        {
+          "href": "https://jakubnowosad.com/posts/2023-11-18-motif-bp7/index.html",
+          "text": "Jakub Nowosad's website"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2021-02-10-motif-bp2/",
+          "text": "describe the spatial patterns of the provided variables"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2021-03-10-motif-bp6/",
+          "text": "searching, comparing, or clustering"
+        },
+        {
+          "href": "https://dx.doi.org/10.1007/s10980-019-00830-x",
+          "text": "Nowosad and Stepinski (2019)"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2019-06-25-ent-bp1/",
+          "text": "“Information theory provides a consistent framework for the analysis of spatial patterns”"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2019-06-25-ent-bp1/",
+          "text": "“Information theory provides a consistent framework for the analysis of spatial patterns”"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts.html#category=motif",
+          "text": "“motif” category"
+        },
+        {
+          "href": "https://doi.org/10.1007/s10980-019-00830-x",
+          "text": "https://doi.org/10.1007/s10980-019-00830-x"
+        },
+        {
+          "href": "https://creativecommons.org/licenses/by/4.0/",
+          "text": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2023-11-18-motif-bp7",
+          "text": "https://jakubnowosad.com/posts/2023-11-18-motif-bp7"
+        },
+        {
+          "href": "https://jakubnowosad.com/posts/2023-11-18-motif-bp7/index.html",
+          "text": "Jakub Nowosad's website"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Extracting information about spatial patterns from spatial signatures | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-5-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-8-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-9-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-9-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-11-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-1.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-2.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-3.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-4.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-5.png?w=450&ssl=1"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-6.png?w=450&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/jakub-nowosad/",
+          "text": "Jakub Nowosad"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380131 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Extracting information about spatial patterns from spatial signatures</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 17, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jakub-nowosad/\">Jakub Nowosad</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://jakubnowosad.com/posts/2023-11-18-motif-bp7/index.html\"> Jakub Nowosad's website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>The spatial signatures of categorical rasters are a set of numbers that <a href=\"https://jakubnowosad.com/posts/2021-02-10-motif-bp2/\" rel=\"nofollow\" target=\"_blank\">describe the spatial patterns of the provided variables</a>. Next, they allow for further operations such as <a href=\"https://jakubnowosad.com/posts/2021-03-10-motif-bp6/\" rel=\"nofollow\" target=\"_blank\">searching, comparing, or clustering</a>. Less known is that they can also be used to extract information about the composition and configuration of spatial patterns. This blog post shows how to do it using the <strong>motif</strong> R package.</p>\n<section class=\"level1\" id=\"spatial-data\">\n<h1>Spatial data</h1>\n<p>To reproduce the calculations in the following post, you need to download all of the relevant datasets using the code below:</p>\n<div class=\"cell\">\n<pre>library(osfr)\ndir.create(\"data\")\nosf_retrieve_node(\"xykzv\") |&gt;\n        osf_ls_files(n_max = Inf) |&gt;\n        osf_download(path = \"data\",\n                     conflicts = \"skip\")</pre>\n</div>\n<p>You should also attach the following packages:</p>\n<div class=\"cell\">\n<pre>library(sf)\nlibrary(terra)\nlibrary(motif)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(cluster)\nlibrary(ggplot2)</pre>\n</div>\n</section>\n<section class=\"level1\" id=\"land-cover-in-africa\">\n<h1>Land cover in Africa</h1>\n<p>The <code>data/land_cover.tif</code> contains land cover data for Africa. It is a categorical raster of the 300-meter resolution that can be read into R using the <code>rast()</code> function.</p>\n<div class=\"cell\">\n<pre>lc = rast(\"data/land_cover.tif\")</pre>\n</div>\n<p>Additionally, the <code>data/lc_palette.csv</code> file contains information about the labels and colors of each land cover category.</p>\n<div class=\"cell\">\n<pre>lc_palette_df = read.csv(\"data/lc_palette.csv\")</pre>\n</div>\n<p>We will use this file to integrate labels and colors into the raster object:</p>\n<div class=\"cell\">\n<pre>levels(lc) = lc_palette_df[c(\"value\", \"label\")]\ncoltab(lc) = lc_palette_df[c(\"value\", \"color\")]\nplot(lc)</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-5-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-5-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"extracting-information-from-spatial-signatures\">\n<h1>Extracting information from spatial signatures</h1>\n<p>As already shown in the previous blog posts about <strong>motif</strong>, the <code>lsp_signature()</code> function can be used to extract spatial signatures from a categorical raster object that can be used to describe spatial patterns of land cover. The most fundamental signature is <em>co</em>-occurrence <em>ma</em>trix (<em>coma</em>), which is a matrix of co-occurrence frequencies of each pair of land cover categories. The <code>lsp_signature()</code> function can be used to extract the coma signature in 300 by 300 cells non-overlapping windows (i.e., 90 by 90 km) as follows:</p>\n<div class=\"cell\">\n<pre>lc_coma = lsp_signature(lc, type = \"coma\", window = 300)</pre>\n</div>\n<p>The output is a data frame with 3,843 rows and 3 columns. The most important one is the <code>signature</code> column, which contains <em>coma</em> signatures in each window.</p>\n<p>The co-occurrence matrix can be thought of as a compression of information about the composition and configuration of land cover categories in a given window. However, as it consists of many numbers (here, 81), it is not easy to directly analyze, visualize, or interpret. Gladly, we can further extract information from this signature using metrics from the information theory, such as marginal entropy and relative mutual information (for more details, see <a href=\"https://dx.doi.org/10.1007/s10980-019-00830-x\" rel=\"nofollow\" target=\"_blank\"><span class=\"citation\" data-cites=\"Nowosad2019\">Nowosad and Stepinski (<span>2019</span>)</span></a> and the <a href=\"https://jakubnowosad.com/posts/2019-06-25-ent-bp1/\" rel=\"nofollow\" target=\"_blank\">“Information theory provides a consistent framework for the analysis of spatial patterns”</a> blog post).</p>\n<p>The <code>it_metric()</code> function from the <strong>comat</strong> package can be used to calculate these metrics for each <em>coma</em> signature. Here, we calculate marginal entropy (<code>\"ent\"</code>) and relative mutual information (<code>\"relmutinf\"</code>), and add them to the <code>lc_coma</code> data frame.</p>\n<div class=\"cell\">\n<pre>lc_coma$ent = vapply(lc_coma$signature, comat::it_metric,\n       FUN.VALUE = numeric(1), metric = \"ent\")\nlc_coma$relmutinf = vapply(lc_coma$signature, comat::it_metric,\n       FUN.VALUE = numeric(1), metric = \"relmutinf\")</pre>\n</div>\n<p>In short, the marginal entropy is a measure of diversity (thematic complexity, composition) of spatial categories — the larger the entropy, the more diverse the categories in the window. The relative mutual information is a measure of spatial autocorrelation (configuration) of spatial categories – the larger the relative mutual information, the more autocorrelated the categories in the window are.</p>\n<p>Importantly, both metrics are uncorrelated, which means that they describe different aspects of spatial patterns of land cover:</p>\n<div class=\"cell\">\n<pre>plot(lc_coma$ent, lc_coma$relmutinf)</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-8-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-8-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"visualizing-spatial-patterns-metrics\">\n<h1>Visualizing spatial patterns’ metrics</h1>\n<p>We can visualize the spatial distribution of these metrics’ values by removing the <code>signature</code> column and converting the <code>lc_coma</code> object to an <code>sf</code> class:</p>\n<div>\n<pre>lc_coma$signature = NULL\nlc_coma_sf = lsp_add_sf(lc_coma)\nplot(lc_coma_sf[\"ent\"], border = NA)\nplot(lc_coma_sf[\"relmutinf\"], border = NA)</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-9-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-9-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-9-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-9-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n</section>\n<section class=\"level1\" id=\"representative-examples\">\n<h1>Representative examples</h1>\n<p>We are also able to look at some examples of areas with representative values of these metrics. For that purpose, we use the <code>pam()</code> method (<em>Partitioning Around Medoids</em>) to cluster the <code>lc_coma</code> data frame into six groups based on the scaled values of <code>ent</code> and <code>relmutinf</code>.</p>\n<div class=\"cell\">\n<pre>pam = pam(scale(lc_coma[, c(\"ent\", \"relmutinf\")]), 6)</pre>\n</div>\n<p>We can see all of the groups on the map by adding a new column with cluster labels to the <code>lc_coma_sf</code> object and plotting it:</p>\n<div class=\"cell preview-image\">\n<pre>lc_coma_sf$cluster = pam$clustering\nplot(lc_coma_sf[\"cluster\"], border = NA, pal = palette.colors(6))</pre>\n<div class=\"cell-output-display\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-11-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-11-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<p>Then, we can select one representative from each cluster in a loop using the <code>crop()</code> function and visualize it using <code>plot()</code>.</p>\n<div>\n<pre>lc_coma_sf_subset = lc_coma_sf[pam$id.med, ]\nfor (i in seq_len(nrow(lc_coma_sf_subset))){\n  ent_sel = round(lc_coma_sf_subset[i, \"ent\", drop = TRUE], 2)\n  relmutinf_sel = round(lc_coma_sf_subset[i, \"relmutinf\", drop = TRUE], 2)\n  plot(crop(lc, lc_coma_sf_subset[i, ]), \n       main = paste0(i, \" ent: \",  ent_sel, \" relmutinf: \", relmutinf_sel))\n}</pre>\n<div class=\"cell quarto-layout-panel\">\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-2.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-2.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-3.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-3.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-4.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-4.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n<div class=\"quarto-layout-row quarto-layout-valign-top\">\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-5.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-5.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n<div class=\"cell-output-display quarto-layout-cell\" style=\"flex-basis: 50.0%;justify-content: center;\">\n<p><img class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-6.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-12-6.png?w=450&amp;ssl=1\"/></noscript></p>\n</div>\n</div>\n</div>\n</div>\n<p>As you can see above, the <code>ent</code> and <code>relating</code> metrics can be used to describe various spatial patterns of land cover. The last group, <code>6</code>, is the simplest one with just one land cover category. Next, groups <code>4</code> and <code>5</code> represent areas with a low diversity of land cover categories but with different spatial autocorrelation: Group <code>4</code> has lower spatial autocorrelation (is more fragmented), while group <code>5</code> has higher spatial autocorrelation (is less fragmented). Groups <code>2</code> and <code>3</code> are areas with medium diversity of land cover categories, but with different spatial autocorrelation: group <code>2</code> has higher spatial autocorrelation, while group <code>3</code> has lower spatial autocorrelation. Finally, group <code>1</code> is an area with a high diversity of land cover categories and a medium spatial autocorrelation.</p>\n</section>\n<section class=\"level1\" id=\"additional-possibilities\">\n<h1>Additional possibilities</h1>\n<p>Importantly, these metrics do not provide any information about the actual land cover categories. Thus, to look at the results in more depth, we can add information about land cover shares in each window to the <code>lc_coma_sf</code> data frame and use it in further analysis.</p>\n<p>Here, we can use the <code>\"composition\"</code> type of signature to extract information about land cover shares in each window, restructure it from a list column to a set of columns, and add it to the <code>lc_coma_sf</code> data frame.</p>\n<div class=\"cell\">\n<pre>lc_composition = lsp_signature(lc, type = \"composition\", window = 300)\nlc_composition = lsp_restructure(lc_composition)\nlc_coma_sf = left_join(lc_coma_sf, lc_composition)</pre>\n</div>\n<p>Now, you are able to subset your data frame based on the land cover shares and analyze the spatial patterns for various types of areas. You can also repeat the above calculations for two time periods or two areas and compare the results.</p>\n<!-- show some examples -->\n<!-- lc2 = c(lc, lc)\nlc2 = stars::st_as_stars(lc2)\nlc_coma2 = lsp_signature(lc2, type = \"incoma\", window = 300)\nlc_coma2$signature[[1]] -->\n</section>\n<section class=\"level1\" id=\"summary\">\n<h1>Summary</h1>\n<p>This blog post shows how to extract information about the composition and configuration of spatial patterns, visualize it on a map, and look at representative examples. For more details about the information theory-based metrics, see the <a href=\"https://jakubnowosad.com/posts/2019-06-25-ent-bp1/\" rel=\"nofollow\" target=\"_blank\">“Information theory provides a consistent framework for the analysis of spatial patterns”</a> blog post. To learn more about the <strong>motif</strong> package, see the other blog posts in the <a href=\"https://jakubnowosad.com/posts.html#category=motif\" rel=\"nofollow\" target=\"_blank\">“motif” category</a>.</p>\n</section>\n<div class=\"default\" id=\"quarto-appendix\"><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">References</h2><div class=\"references csl-bib-body hanging-indent\" id=\"refs\">\n<div class=\"csl-entry\" id=\"ref-Nowosad2019\">\nNowosad, Jakub, and Tomasz F. Stepinski. 2019. <span>“Information Theory as a Consistent Framework for Quantification and Classification of Landscape Patterns.”</span> <em>Landscape Ecology</em> 34 (9): 2091–101. <a href=\"https://doi.org/10.1007/s10980-019-00830-x\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1007/s10980-019-00830-x</a>.\n</div>\n</div></section><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">Reuse</h2><div class=\"quarto-appendix-contents\" id=\"quarto-reuse\"><div><a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"nofollow\" target=\"_blank\">https://creativecommons.org/licenses/by/4.0/</a></div></div></section><section class=\"quarto-appendix-contents\"><h2 class=\"anchored quarto-appendix-heading\">Citation</h2><div><div class=\"quarto-appendix-secondary-label\">BibTeX citation:</div><pre>@online{nowosad2023,\n  author = {Nowosad, Jakub},\n  title = {Extracting Information about Spatial Patterns from Spatial\n    Signatures},\n  date = {2023-11-18},\n  url = {https://jakubnowosad.com/posts/2023-11-18-motif-bp7},\n  langid = {en}\n}\n</pre><div class=\"quarto-appendix-secondary-label\">For attribution, please cite this work as:</div><div class=\"csl-entry quarto-appendix-citeas\" id=\"ref-nowosad2023\">\nNowosad, Jakub. 2023. <span>“Extracting Information about Spatial\nPatterns from Spatial Signatures.”</span> November 18, 2023. <a href=\"https://jakubnowosad.com/posts/2023-11-18-motif-bp7\" rel=\"nofollow\" target=\"_blank\">https://jakubnowosad.com/posts/2023-11-18-motif-bp7</a>.\n</div></div></section></div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://jakubnowosad.com/posts/2023-11-18-motif-bp7/index.html\"> Jakub Nowosad's website</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Extracting information about spatial patterns from spatial signatures\nPosted on\nNovember 17, 2023\nby\nJakub Nowosad\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJakub Nowosad's website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe spatial signatures of categorical rasters are a set of numbers that\ndescribe the spatial patterns of the provided variables\n. Next, they allow for further operations such as\nsearching, comparing, or clustering\n. Less known is that they can also be used to extract information about the composition and configuration of spatial patterns. This blog post shows how to do it using the\nmotif\nR package.\nSpatial data\nTo reproduce the calculations in the following post, you need to download all of the relevant datasets using the code below:\nlibrary(osfr)\ndir.create(\"data\")\nosf_retrieve_node(\"xykzv\") |>\n        osf_ls_files(n_max = Inf) |>\n        osf_download(path = \"data\",\n                     conflicts = \"skip\")\nYou should also attach the following packages:\nlibrary(sf)\nlibrary(terra)\nlibrary(motif)\nlibrary(dplyr)\nlibrary(readr)\nlibrary(cluster)\nlibrary(ggplot2)\nLand cover in Africa\nThe\ndata/land_cover.tif\ncontains land cover data for Africa. It is a categorical raster of the 300-meter resolution that can be read into R using the\nrast()\nfunction.\nlc = rast(\"data/land_cover.tif\")\nAdditionally, the\ndata/lc_palette.csv\nfile contains information about the labels and colors of each land cover category.\nlc_palette_df = read.csv(\"data/lc_palette.csv\")\nWe will use this file to integrate labels and colors into the raster object:\nlevels(lc) = lc_palette_df[c(\"value\", \"label\")]\ncoltab(lc) = lc_palette_df[c(\"value\", \"color\")]\nplot(lc)\nExtracting information from spatial signatures\nAs already shown in the previous blog posts about\nmotif\n, the\nlsp_signature()\nfunction can be used to extract spatial signatures from a categorical raster object that can be used to describe spatial patterns of land cover. The most fundamental signature is\nco\n-occurrence\nma\ntrix (\ncoma\n), which is a matrix of co-occurrence frequencies of each pair of land cover categories. The\nlsp_signature()\nfunction can be used to extract the coma signature in 300 by 300 cells non-overlapping windows (i.e., 90 by 90 km) as follows:\nlc_coma = lsp_signature(lc, type = \"coma\", window = 300)\nThe output is a data frame with 3,843 rows and 3 columns. The most important one is the\nsignature\ncolumn, which contains\ncoma\nsignatures in each window.\nThe co-occurrence matrix can be thought of as a compression of information about the composition and configuration of land cover categories in a given window. However, as it consists of many numbers (here, 81), it is not easy to directly analyze, visualize, or interpret. Gladly, we can further extract information from this signature using metrics from the information theory, such as marginal entropy and relative mutual information (for more details, see\nNowosad and Stepinski (\n2019\n)\nand the\n“Information theory provides a consistent framework for the analysis of spatial patterns”\nblog post).\nThe\nit_metric()\nfunction from the\ncomat\npackage can be used to calculate these metrics for each\ncoma\nsignature. Here, we calculate marginal entropy (\n\"ent\"\n) and relative mutual information (\n\"relmutinf\"\n), and add them to the\nlc_coma\ndata frame.\nlc_coma$ent = vapply(lc_coma$signature, comat::it_metric,\n       FUN.VALUE = numeric(1), metric = \"ent\")\nlc_coma$relmutinf = vapply(lc_coma$signature, comat::it_metric,\n       FUN.VALUE = numeric(1), metric = \"relmutinf\")\nIn short, the marginal entropy is a measure of diversity (thematic complexity, composition) of spatial categories — the larger the entropy, the more diverse the categories in the window. The relative mutual information is a measure of spatial autocorrelation (configuration) of spatial categories – the larger the relative mutual information, the more autocorrelated the categories in the window are.\nImportantly, both metrics are uncorrelated, which means that they describe different aspects of spatial patterns of land cover:\nplot(lc_coma$ent, lc_coma$relmutinf)\nVisualizing spatial patterns’ metrics\nWe can visualize the spatial distribution of these metrics’ values by removing the\nsignature\ncolumn and converting the\nlc_coma\nobject to an\nsf\nclass:\nlc_coma$signature = NULL\nlc_coma_sf = lsp_add_sf(lc_coma)\nplot(lc_coma_sf[\"ent\"], border = NA)\nplot(lc_coma_sf[\"relmutinf\"], border = NA)\nRepresentative examples\nWe are also able to look at some examples of areas with representative values of these metrics. For that purpose, we use the\npam()\nmethod (\nPartitioning Around Medoids\n) to cluster the\nlc_coma\ndata frame into six groups based on the scaled values of\nent\nand\nrelmutinf\n.\npam = pam(scale(lc_coma[, c(\"ent\", \"relmutinf\")]), 6)\nWe can see all of the groups on the map by adding a new column with cluster labels to the\nlc_coma_sf\nobject and plotting it:\nlc_coma_sf$cluster = pam$clustering\nplot(lc_coma_sf[\"cluster\"], border = NA, pal = palette.colors(6))\nThen, we can select one representative from each cluster in a loop using the\ncrop()\nfunction and visualize it using\nplot()\n.\nlc_coma_sf_subset = lc_coma_sf[pam$id.med, ]\nfor (i in seq_len(nrow(lc_coma_sf_subset))){\n  ent_sel = round(lc_coma_sf_subset[i, \"ent\", drop = TRUE], 2)\n  relmutinf_sel = round(lc_coma_sf_subset[i, \"relmutinf\", drop = TRUE], 2)\n  plot(crop(lc, lc_coma_sf_subset[i, ]), \n       main = paste0(i, \" ent: \",  ent_sel, \" relmutinf: \", relmutinf_sel))\n}\nAs you can see above, the\nent\nand\nrelating\nmetrics can be used to describe various spatial patterns of land cover. The last group,\n6\n, is the simplest one with just one land cover category. Next, groups\n4\nand\n5\nrepresent areas with a low diversity of land cover categories but with different spatial autocorrelation: Group\n4\nhas lower spatial autocorrelation (is more fragmented), while group\n5\nhas higher spatial autocorrelation (is less fragmented). Groups\n2\nand\n3\nare areas with medium diversity of land cover categories, but with different spatial autocorrelation: group\n2\nhas higher spatial autocorrelation, while group\n3\nhas lower spatial autocorrelation. Finally, group\n1\nis an area with a high diversity of land cover categories and a medium spatial autocorrelation.\nAdditional possibilities\nImportantly, these metrics do not provide any information about the actual land cover categories. Thus, to look at the results in more depth, we can add information about land cover shares in each window to the\nlc_coma_sf\ndata frame and use it in further analysis.\nHere, we can use the\n\"composition\"\ntype of signature to extract information about land cover shares in each window, restructure it from a list column to a set of columns, and add it to the\nlc_coma_sf\ndata frame.\nlc_composition = lsp_signature(lc, type = \"composition\", window = 300)\nlc_composition = lsp_restructure(lc_composition)\nlc_coma_sf = left_join(lc_coma_sf, lc_composition)\nNow, you are able to subset your data frame based on the land cover shares and analyze the spatial patterns for various types of areas. You can also repeat the above calculations for two time periods or two areas and compare the results.\nSummary\nThis blog post shows how to extract information about the composition and configuration of spatial patterns, visualize it on a map, and look at representative examples. For more details about the information theory-based metrics, see the\n“Information theory provides a consistent framework for the analysis of spatial patterns”\nblog post. To learn more about the\nmotif\npackage, see the other blog posts in the\n“motif” category\n.\nReferences\nNowosad, Jakub, and Tomasz F. Stepinski. 2019.\n“Information Theory as a Consistent Framework for Quantification and Classification of Landscape Patterns.”\nLandscape Ecology\n34 (9): 2091–101.\nhttps://doi.org/10.1007/s10980-019-00830-x\n.\nReuse\nhttps://creativecommons.org/licenses/by/4.0/\nCitation\nBibTeX citation:\n@online{nowosad2023,\n  author = {Nowosad, Jakub},\n  title = {Extracting Information about Spatial Patterns from Spatial\n    Signatures},\n  date = {2023-11-18},\n  url = {https://jakubnowosad.com/posts/2023-11-18-motif-bp7},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nNowosad, Jakub. 2023.\n“Extracting Information about Spatial\nPatterns from Spatial Signatures.”\nNovember 18, 2023.\nhttps://jakubnowosad.com/posts/2023-11-18-motif-bp7\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJakub Nowosad's website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The spatial signatures of categorical rasters are a set of numbers that describe the spatial patterns of the provided variables. Next, they allow for further operations such as searching, comparing, or clustering. Less known is that they can also...",
+      "meta_keywords": null,
+      "og_description": "The spatial signatures of categorical rasters are a set of numbers that describe the spatial patterns of the provided variables. Next, they allow for further operations such as searching, comparing, or clustering. Less known is that they can also...",
+      "og_image": "https://jakubnowosad.com/posts/2023-11-18-motif-bp7/index_files/figure-html/unnamed-chunk-5-1.png",
+      "og_title": "Extracting information about spatial patterns from spatial signatures | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 6.8,
+      "sitemap_lastmod": "2023-11-18T00:00:00+00:00",
+      "twitter_description": "The spatial signatures of categorical rasters are a set of numbers that describe the spatial patterns of the provided variables. Next, they allow for further operations such as searching, comparing, or clustering. Less known is that they can also...",
+      "twitter_title": "Extracting information about spatial patterns from spatial signatures | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/11/extracting-information-about-spatial-patterns-from-spatial-signatures/",
+      "word_count": 1363
+    }
+  }
+}

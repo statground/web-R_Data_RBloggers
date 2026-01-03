@@ -1,0 +1,114 @@
+{
+  "id": "2bc64215db1a84023fac2cdb540fdd2421985e75",
+  "url": "https://www.r-bloggers.com/2009/01/multiseat-setup-via-userful/",
+  "created_at_utc": "2025-11-17T20:41:22Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "a380c26a-1781-4263-ac7c-6d4ab5e5cab4",
+    "created_at": "2025-11-17 20:41:22",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/01/multiseat-setup-via-userful/",
+      "crawled_at": "2025-11-17T10:47:34.397693",
+      "external_links": [
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/01/03#multiseat_via_userful",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2008/11/03#small_multiseat_update",
+          "text": "had blogged"
+        },
+        {
+          "href": "http://www2.userful.com/products/userful-manager",
+          "text": "Userful Multiplier"
+        },
+        {
+          "href": "http://www2.userful.com/products/downloads/free-2-user",
+          "text": "free two-seat licenses"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/01/03#multiseat_via_userful",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Multiseat setup via Userful | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/thinking-inside-the-box/",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-198 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Multiseat setup via Userful</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 3, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thinking-inside-the-box/\">Thinking inside the box</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/01/03#multiseat_via_userful\"> Thinking inside the box   </a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nAs I <a href=\"http://dirk.eddelbuettel.com/blog/2008/11/03#small_multiseat_update\" rel=\"nofollow\" target=\"_blank\">had blogged</a> \na while back, multiseat use broke following the normal upgrade to Ubuntu 8.10. \nI had also suggested a fix but it turns out that the fix didn’t work.\nSo we had a clear regression — multiseat use of a single\nUbuntu workstation with two screens, two keyboards and two mice no longer worked. Consequently, the\nkids ended up ‘serializing’ access to their computer letting the second screen go idle.\n\n<p>\nShortly after Christmas, that computer suffered a catastrophic disk failure (and as an aside, I hate LVM when that\nhappens…).  So I reinstalled, this time using the Ubuntu rather Kubuntu variant.  This should allow use of\n<a href=\"http://www2.userful.com/products/userful-manager\" rel=\"nofollow\" target=\"_blank\">Userful Multiplier</a>\n— a commercial multiseat solution with \n<a href=\"http://www2.userful.com/products/downloads/free-2-user\" rel=\"nofollow\" target=\"_blank\">free two-seat licenses</a>.\nThe base package even comes via the Ubuntu repos.\n\n<p>\nI still had a couple of minor issues. One was possibly related to the Radeon card (as in: don’t drive one\nmonitor in dvi mode and one in analog mode but rather use both in analog mode via a dvi/analog dongle) so the\nlive cdrom offered by Userful just went into a perpetual ‘reconfigure, reboot, reconfigure, reboot, …’ loop.\nAnother hitch was that their license manager no longer wanted to use the license key I had requested in\nNovember when I tried in vain to use Userful with KDE. And of course I wouldn’t a new key as the home ip\naddress hadn’t changed…  Now, with a newly requested key from another IP address, things appear to work at\nlast using the default Gnome setup — and the kids are back in proper ‘parallel’ use of their workstation.\n\n<p>\nAll in all, Userful Multiplier is a nice and useful product especially as long as stock XFree does them the\nfavour of no longer competing in the basic two-seat case.\n\n\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/01/03#multiseat_via_userful\"> Thinking inside the box   </a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></p></div>\n</article>",
+      "main_text": "Multiseat setup via Userful\nPosted on\nJanuary 3, 2009\nby\nThinking inside the box\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThinking inside the box\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nAs I\nhad blogged\na while back, multiseat use broke following the normal upgrade to Ubuntu 8.10. \nI had also suggested a fix but it turns out that the fix didn’t work.\nSo we had a clear regression — multiseat use of a single\nUbuntu workstation with two screens, two keyboards and two mice no longer worked. Consequently, the\nkids ended up ‘serializing’ access to their computer letting the second screen go idle.\nShortly after Christmas, that computer suffered a catastrophic disk failure (and as an aside, I hate LVM when that\nhappens…).  So I reinstalled, this time using the Ubuntu rather Kubuntu variant.  This should allow use of\nUserful Multiplier\n— a commercial multiseat solution with\nfree two-seat licenses\n.\nThe base package even comes via the Ubuntu repos.\nI still had a couple of minor issues. One was possibly related to the Radeon card (as in: don’t drive one\nmonitor in dvi mode and one in analog mode but rather use both in analog mode via a dvi/analog dongle) so the\nlive cdrom offered by Userful just went into a perpetual ‘reconfigure, reboot, reconfigure, reboot, …’ loop.\nAnother hitch was that their license manager no longer wanted to use the license key I had requested in\nNovember when I tried in vain to use Userful with KDE. And of course I wouldn’t a new key as the home ip\naddress hadn’t changed…  Now, with a newly requested key from another IP address, things appear to work at\nlast using the default Gnome setup — and the kids are back in proper ‘parallel’ use of their workstation.\nAll in all, Userful Multiplier is a nice and useful product especially as long as stock XFree does them the\nfavour of no longer competing in the basic two-seat case.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThinking inside the box\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "As I had blogged a while back, multiseat use broke following the normal upgrade to Ubuntu 8.10. I had also suggested a fix but it turns out that the fix didn't work. So we had a clear regression -- multiseat use of a single Ubuntu workstation with two screens, two keyboards and two mice no longer worked. Consequently, the kids ended up 'serializing' access to their computer letting the second screen go idle. Shortly after Christmas, that computer suffered a catastrophic disk failure (and as an aside, I hate LVM when that happens...). So I reinstalled, this time using the Ubuntu rather Kubuntu variant. This should allow use of Userful Multiplier --- a commercial multiseat solution with free two-seat licenses. The base package even comes via the Ubuntu repos. I still had a couple of minor issues. One was possibly related to the Radeon card (as in: don't drive one monitor in dvi mode and one in analog mode but rather use both in analog mode via a dvi/analog dongle) so the live cdrom offered by Userful just went into a perpetual 'reconfigure, reboot, reconfigure, reboot, ...' loop. Another hitch was that their license manager no longer wanted to use the license key I had requested in November when I tried in vain to use Userful with KDE. And of course I wouldn't a new key as the home ip address hadn't changed... Now, with a newly requested key from another IP address, things appear to work at last using the default Gnome setup --- and the kids are back in proper 'parallel' use of their workstation. All in all, Userful Multiplier is a nice and useful product especially as long as stock XFree does them the favour of no longer competing in the basic two-seat case.",
+      "meta_keywords": null,
+      "og_description": "As I had blogged a while back, multiseat use broke following the normal upgrade to Ubuntu 8.10. I had also suggested a fix but it turns out that the fix didn't work. So we had a clear regression -- multiseat use of a single Ubuntu workstation with two screens, two keyboards and two mice no longer worked. Consequently, the kids ended up 'serializing' access to their computer letting the second screen go idle. Shortly after Christmas, that computer suffered a catastrophic disk failure (and as an aside, I hate LVM when that happens...). So I reinstalled, this time using the Ubuntu rather Kubuntu variant. This should allow use of Userful Multiplier --- a commercial multiseat solution with free two-seat licenses. The base package even comes via the Ubuntu repos. I still had a couple of minor issues. One was possibly related to the Radeon card (as in: don't drive one monitor in dvi mode and one in analog mode but rather use both in analog mode via a dvi/analog dongle) so the live cdrom offered by Userful just went into a perpetual 'reconfigure, reboot, reconfigure, reboot, ...' loop. Another hitch was that their license manager no longer wanted to use the license key I had requested in November when I tried in vain to use Userful with KDE. And of course I wouldn't a new key as the home ip address hadn't changed... Now, with a newly requested key from another IP address, things appear to work at last using the default Gnome setup --- and the kids are back in proper 'parallel' use of their workstation. All in all, Userful Multiplier is a nice and useful product especially as long as stock XFree does them the favour of no longer competing in the basic two-seat case.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Multiseat setup via Userful | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.2,
+      "sitemap_lastmod": "2009-01-03T15:48:00+00:00",
+      "twitter_description": "As I had blogged a while back, multiseat use broke following the normal upgrade to Ubuntu 8.10. I had also suggested a fix but it turns out that the fix didn't work. So we had a clear regression -- multiseat use of a single Ubuntu workstation with two screens, two keyboards and two mice no longer worked. Consequently, the kids ended up 'serializing' access to their computer letting the second screen go idle. Shortly after Christmas, that computer suffered a catastrophic disk failure (and as an aside, I hate LVM when that happens...). So I reinstalled, this time using the Ubuntu rather Kubuntu variant. This should allow use of Userful Multiplier --- a commercial multiseat solution with free two-seat licenses. The base package even comes via the Ubuntu repos. I still had a couple of minor issues. One was possibly related to the Radeon card (as in: don't drive one monitor in dvi mode and one in analog mode but rather use both in analog mode via a dvi/analog dongle) so the live cdrom offered by Userful just went into a perpetual 'reconfigure, reboot, reconfigure, reboot, ...' loop. Another hitch was that their license manager no longer wanted to use the license key I had requested in November when I tried in vain to use Userful with KDE. And of course I wouldn't a new key as the home ip address hadn't changed... Now, with a newly requested key from another IP address, things appear to work at last using the default Gnome setup --- and the kids are back in proper 'parallel' use of their workstation. All in all, Userful Multiplier is a nice and useful product especially as long as stock XFree does them the favour of no longer competing in the basic two-seat case.",
+      "twitter_title": "Multiseat setup via Userful | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/01/multiseat-setup-via-userful/",
+      "word_count": 445
+    }
+  }
+}

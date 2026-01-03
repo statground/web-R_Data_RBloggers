@@ -1,0 +1,122 @@
+{
+  "id": "2fc5540fb9317a0637bbb62934b8887e25f6dca1",
+  "url": "https://www.r-bloggers.com/2023/12/time-constraints-in-the-mlr3-ecosystem/",
+  "created_at_utc": "2025-11-17T20:38:48Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "bb08e218-d071-4c5e-82d1-188d16383a94",
+    "created_at": "2025-11-17 20:38:48",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/time-constraints-in-the-mlr3-ecosystem/",
+      "crawled_at": "2025-11-17T09:28:30.081375",
+      "external_links": [
+        {
+          "href": "https://mlr-org.com/gallery/technical/2023-12-21-time-constraints/",
+          "text": "mlr-org"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=callr",
+          "text": "callr"
+        },
+        {
+          "href": "https://cran.r-project.org/package=evaluate",
+          "text": "evaluate"
+        },
+        {
+          "href": "https://mlr3book.mlr-org.com/chapters/chapter10/advanced_technical_aspects_of_mlr3.html#sec-error-handling",
+          "text": "mlr3book"
+        },
+        {
+          "href": "https://mlr3book.mlr-org.com/chapters/chapter4/hyperparameter_optimization.html#sec-nested-resampling",
+          "text": "nested resampling"
+        },
+        {
+          "href": "https://mlr3book.mlr-org.com/chapters/chapter5/advanced_tuning_methods_and_black_box_optimization.html#sec-encapsulation-fallback",
+          "text": "mlr3book"
+        },
+        {
+          "href": "https://mlr-org.com/gallery/technical/2023-12-21-time-constraints/",
+          "text": "mlr-org"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Time constraints in the mlr3 ecosystem | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/marc-becker/",
+          "text": "Marc Becker"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-381080 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Time constraints in the mlr3 ecosystem</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 20, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/marc-becker/\">Marc Becker</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://mlr-org.com/gallery/technical/2023-12-21-time-constraints/\"> mlr-org</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<section class=\"level1\" id=\"scope\">\n<h1>Scope</h1>\n<p>Setting time limits is an important consideration when tuning unreliable or unstable learning algorithms and when working on shared computing resources. The mlr3 ecosystem provides several mechanisms for setting time constraints for individual learners, tuning processes, and nested resampling.</p>\n</section>\n<section class=\"level1\" id=\"learner\">\n<h1>Learner</h1>\n<p>This section demonstrates how to impose time constraints using a support vector machine (SVM) as an illustrative example.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>library(mlr3verse)\n\nlearner = lrn(\"classif.svm\")</pre>\n</div>\n<p>Applying timeouts to the <code>$train()</code> and <code>$predict()</code> functions is essential for managing learners that may operate indefinitely. These time constraints are set independently for both the training and prediction stages. Generally, training a learner consumes more time than prediction. Certain learners, like k-nearest neighbors, lack a distinct training phase and require a timeout only during prediction. For the SVM’s training, we set a 10-second limit.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>learner$timeout = c(train = 10, predict = Inf)</pre>\n</div>\n<p>To effectively terminate the process if necessary, it’s important to run the training and prediction within a separate R process. The <a href=\"https://cran.r-project.org/package=callr\" rel=\"nofollow\" target=\"_blank\">callr</a> package is recommended for this encapsulation, as it tends to be more reliable than the <a href=\"https://cran.r-project.org/package=evaluate\" rel=\"nofollow\" target=\"_blank\">evaluate</a> package, especially for terminating externally compiled code.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>learner$encapsulate = c(train = \"callr\", predict = \"callr\")</pre>\n</div>\n<p>Note that using <code>callr</code> increases the runtime due to the overhead of starting an R process. Additionally, it’s advisable to specify a fallback learner, such as <code>\"classif.featureless\"</code>, to provide baseline predictions in case the primary learner is terminated.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>learner$fallback = lrn(\"classif.featureless\")</pre>\n</div>\n<p>These time constraints are now integrated into the training, resampling, and benchmarking processes. For more information on encapsulation and fallback learners, see the <a href=\"https://mlr3book.mlr-org.com/chapters/chapter10/advanced_technical_aspects_of_mlr3.html#sec-error-handling\" rel=\"nofollow\" target=\"_blank\">mlr3book</a>. The next section will focus on setting time limits for the entire tuning process.</p>\n</section>\n<section class=\"level1\" id=\"tuning\">\n<h1>Tuning</h1>\n<p>When working with high-performance computing clusters, jobs are often bound by strict time constraints. Exceeding these limits results in the job being terminated and the loss of any results generated. Therefore, it’s important to ensure that the tuning process is designed to adhere to these time constraints.</p>\n<p>The <code>trm(\"runtime\")</code> controls the duration of the tuning process. We must take into account that the terminator can only check if the time limit is reached between batches. We must therefore set the time lower than the runtime of the job. How much lower depends on the runtime or time limit of the individual learners. The last batch should be able to finish before the time limit of the cluster is reached.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>terminator = trm(\"run_time\", secs = 60)\n\ninstance = ti(\n  task = tsk(\"sonar\"),\n  learner = learner,\n  resampling = rsmp(\"cv\", folds = 3),\n  measures = msr(\"classif.ce\"),\n  terminator = terminator\n)</pre>\n</div>\n<p>With these settings, our tuning operation is configured to run for 60 seconds, while individual learners are set to terminate after 10 seconds. This approach ensures the tuning process is efficient and adheres to the constraints imposed by the high-performance computing cluster.</p>\n</section>\n<section class=\"level1\" id=\"nested-resampling\">\n<h1>Nested Resampling</h1>\n<p>When using <a href=\"https://mlr3book.mlr-org.com/chapters/chapter4/hyperparameter_optimization.html#sec-nested-resampling\" rel=\"nofollow\" target=\"_blank\">nested resampling</a>, time constraints become more complex as they are applied across various levels. As before, the time limit for an individual learner during the tuning is set with <code>$timeout</code>. The time limit for the tuning processes in the auto tuners is controlled with the <code>trm(\"runtime\")</code>. It’s important to note that once the auto tuner enters the final phase of fitting the model and making predictions on the outer test set, the time limit governed by the terminator no longer applies. Additionally, the time limit previously set on the learner is temporarily deactivated, allowing the auto tuner to complete its task uninterrupted. However, a separate time limit can be assigned to each auto tuner using <code>$timeout</code>. This limit encompasses not only the tuning phase but also the time required for fitting the final model and predictions on the outer test set.</p>\n<p>The best way to show this is with an example. We set the time limit for an individual learner to 10 seconds.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>learner$timeout = c(train = 10, predict = Inf)\nlearner$encapsulate = c(train = \"callr\", predict = \"callr\")\nlearner$fallback = lrn(\"classif.featureless\")</pre>\n</div>\n<p>Next, we give each auto tuner 60 seconds to finish the tuning process.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>terminator = trm(\"run_time\", secs = 60)</pre>\n</div>\n<p>Furthermore, we impose a 120-second limit for resampling each auto tuner. This effectively divides the time allocation, with around 60 seconds for tuning and another 60 seconds for final model fitting and predictions on the outer test set.</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>at = auto_tuner(\n  tuner = tnr(\"random_search\"),\n  learner = learner,\n  resampling = rsmp(\"cv\", folds = 3),\n  measure = msr(\"classif.ce\"),\n  terminator = trm(\"run_time\", secs = 60)\n)\n\nat$timeout = c(train = 100, predict = 20)\nat$encapsulate = c(train = \"callr\", predict = \"callr\")\nat$fallback = lrn(\"classif.featureless\")</pre>\n</div>\n<p>In total, the entire nested resampling process is designed to be completed within 10 minutes (120 seconds multiplied by 5 folds).</p>\n<div class=\"cell\" data-layout-align=\"center\">\n<pre>rr = resample(task, at, rsmp(\"cv\", folds = 5))</pre>\n</div>\n</section>\n<section class=\"level1\" id=\"conclusion\">\n<h1>Conclusion</h1>\n<p>We delved into the setting of time constraints across different levels in the mlr3 ecosystem. From individual learners to the complexities of nested resampling, we’ve seen how effectively managing time limits can significantly enhance the efficiency and reliability of machine learning workflows. By utilizing the <code>trm(\"runtime\")</code> for tuning processes and setting <code>$timeout</code> for individual learners and auto tuners, we can ensure that our machine learning tasks are not only effective but also adhere to the practical time constraints of shared computational resources. For more information, see also the error handling section in the <a href=\"https://mlr3book.mlr-org.com/chapters/chapter5/advanced_tuning_methods_and_black_box_optimization.html#sec-encapsulation-fallback\" rel=\"nofollow\" target=\"_blank\">mlr3book</a>.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://mlr-org.com/gallery/technical/2023-12-21-time-constraints/\"> mlr-org</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Time constraints in the mlr3 ecosystem\nPosted on\nDecember 20, 2023\nby\nMarc Becker\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nmlr-org\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nScope\nSetting time limits is an important consideration when tuning unreliable or unstable learning algorithms and when working on shared computing resources. The mlr3 ecosystem provides several mechanisms for setting time constraints for individual learners, tuning processes, and nested resampling.\nLearner\nThis section demonstrates how to impose time constraints using a support vector machine (SVM) as an illustrative example.\nlibrary(mlr3verse)\n\nlearner = lrn(\"classif.svm\")\nApplying timeouts to the\n$train()\nand\n$predict()\nfunctions is essential for managing learners that may operate indefinitely. These time constraints are set independently for both the training and prediction stages. Generally, training a learner consumes more time than prediction. Certain learners, like k-nearest neighbors, lack a distinct training phase and require a timeout only during prediction. For the SVM’s training, we set a 10-second limit.\nlearner$timeout = c(train = 10, predict = Inf)\nTo effectively terminate the process if necessary, it’s important to run the training and prediction within a separate R process. The\ncallr\npackage is recommended for this encapsulation, as it tends to be more reliable than the\nevaluate\npackage, especially for terminating externally compiled code.\nlearner$encapsulate = c(train = \"callr\", predict = \"callr\")\nNote that using\ncallr\nincreases the runtime due to the overhead of starting an R process. Additionally, it’s advisable to specify a fallback learner, such as\n\"classif.featureless\"\n, to provide baseline predictions in case the primary learner is terminated.\nlearner$fallback = lrn(\"classif.featureless\")\nThese time constraints are now integrated into the training, resampling, and benchmarking processes. For more information on encapsulation and fallback learners, see the\nmlr3book\n. The next section will focus on setting time limits for the entire tuning process.\nTuning\nWhen working with high-performance computing clusters, jobs are often bound by strict time constraints. Exceeding these limits results in the job being terminated and the loss of any results generated. Therefore, it’s important to ensure that the tuning process is designed to adhere to these time constraints.\nThe\ntrm(\"runtime\")\ncontrols the duration of the tuning process. We must take into account that the terminator can only check if the time limit is reached between batches. We must therefore set the time lower than the runtime of the job. How much lower depends on the runtime or time limit of the individual learners. The last batch should be able to finish before the time limit of the cluster is reached.\nterminator = trm(\"run_time\", secs = 60)\n\ninstance = ti(\n  task = tsk(\"sonar\"),\n  learner = learner,\n  resampling = rsmp(\"cv\", folds = 3),\n  measures = msr(\"classif.ce\"),\n  terminator = terminator\n)\nWith these settings, our tuning operation is configured to run for 60 seconds, while individual learners are set to terminate after 10 seconds. This approach ensures the tuning process is efficient and adheres to the constraints imposed by the high-performance computing cluster.\nNested Resampling\nWhen using\nnested resampling\n, time constraints become more complex as they are applied across various levels. As before, the time limit for an individual learner during the tuning is set with\n$timeout\n. The time limit for the tuning processes in the auto tuners is controlled with the\ntrm(\"runtime\")\n. It’s important to note that once the auto tuner enters the final phase of fitting the model and making predictions on the outer test set, the time limit governed by the terminator no longer applies. Additionally, the time limit previously set on the learner is temporarily deactivated, allowing the auto tuner to complete its task uninterrupted. However, a separate time limit can be assigned to each auto tuner using\n$timeout\n. This limit encompasses not only the tuning phase but also the time required for fitting the final model and predictions on the outer test set.\nThe best way to show this is with an example. We set the time limit for an individual learner to 10 seconds.\nlearner$timeout = c(train = 10, predict = Inf)\nlearner$encapsulate = c(train = \"callr\", predict = \"callr\")\nlearner$fallback = lrn(\"classif.featureless\")\nNext, we give each auto tuner 60 seconds to finish the tuning process.\nterminator = trm(\"run_time\", secs = 60)\nFurthermore, we impose a 120-second limit for resampling each auto tuner. This effectively divides the time allocation, with around 60 seconds for tuning and another 60 seconds for final model fitting and predictions on the outer test set.\nat = auto_tuner(\n  tuner = tnr(\"random_search\"),\n  learner = learner,\n  resampling = rsmp(\"cv\", folds = 3),\n  measure = msr(\"classif.ce\"),\n  terminator = trm(\"run_time\", secs = 60)\n)\n\nat$timeout = c(train = 100, predict = 20)\nat$encapsulate = c(train = \"callr\", predict = \"callr\")\nat$fallback = lrn(\"classif.featureless\")\nIn total, the entire nested resampling process is designed to be completed within 10 minutes (120 seconds multiplied by 5 folds).\nrr = resample(task, at, rsmp(\"cv\", folds = 5))\nConclusion\nWe delved into the setting of time constraints across different levels in the mlr3 ecosystem. From individual learners to the complexities of nested resampling, we’ve seen how effectively managing time limits can significantly enhance the efficiency and reliability of machine learning workflows. By utilizing the\ntrm(\"runtime\")\nfor tuning processes and setting\n$timeout\nfor individual learners and auto tuners, we can ensure that our machine learning tasks are not only effective but also adhere to the practical time constraints of shared computational resources. For more information, see also the error handling section in the\nmlr3book\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nmlr-org\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Scope Setting time limits is an important consideration when tuning unreliable or unstable learning algorithms and when working on shared computing resources. The mlr3 ecosystem provides several mechanisms for setting time constraints for indivi...",
+      "meta_keywords": null,
+      "og_description": "Scope Setting time limits is an important consideration when tuning unreliable or unstable learning algorithms and when working on shared computing resources. The mlr3 ecosystem provides several mechanisms for setting time constraints for indivi...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "Time constraints in the mlr3 ecosystem | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.1,
+      "sitemap_lastmod": "2023-12-21T00:00:00+00:00",
+      "twitter_description": "Scope Setting time limits is an important consideration when tuning unreliable or unstable learning algorithms and when working on shared computing resources. The mlr3 ecosystem provides several mechanisms for setting time constraints for indivi...",
+      "twitter_title": "Time constraints in the mlr3 ecosystem | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/time-constraints-in-the-mlr3-ecosystem/",
+      "word_count": 1016
+    }
+  }
+}

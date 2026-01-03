@@ -1,0 +1,151 @@
+{
+  "id": "d17979d82642409861df6c085f3c7af4e0f3fda3",
+  "url": "https://www.r-bloggers.com/2025/05/multi-language-pipelines-with-rixpress/",
+  "created_at_utc": "2025-11-22T19:58:38Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "bc8812b7-2d60-496a-8e18-cf7d3a722901",
+    "created_at": "2025-11-22 19:58:38",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/05/multi-language-pipelines-with-rixpress/",
+      "crawled_at": "2025-11-22T10:49:07.477432",
+      "external_links": [
+        {
+          "href": "https://b-rodrigues.github.io/posts/2025-05-13-test_rixpress.html",
+          "text": "Econometrics and Free Software"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.youtube.com/watch?v=a1eNG9TFZ_o",
+          "text": null
+        },
+        {
+          "href": "https://brodrigues.co/posts/2024-08-28-nix_for_r_part_12.html",
+          "text": "August last year"
+        },
+        {
+          "href": "https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html",
+          "text": "previous post"
+        },
+        {
+          "href": "https://github.com/b-rodrigues/rixpress_demos",
+          "text": "rixpress_demos GitHub repository"
+        },
+        {
+          "href": "https://youtu.be/IXKd5ySzzSU?si=D-AbU0JYdMP-iKvB",
+          "text": "tutorial video"
+        },
+        {
+          "href": "https://github.com/b-rodrigues/rixpress",
+          "text": "{rixpress} GitHub repository"
+        },
+        {
+          "href": "https://docs.ropensci.org/rix/articles/z-advanced-topic-reproducible-analytical-pipelines-with-nix.html",
+          "text": "here"
+        },
+        {
+          "href": "https://b-rodrigues.github.io/posts/2025-05-13-test_rixpress.html",
+          "text": "Econometrics and Free Software"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Multi-language pipelines with rixpress | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/b-rodrigues.github.io/assets/img/polyglot_dag.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Video Thumbnail",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Video Thumbnail",
+          "base64": null,
+          "src": "https://i1.wp.com/raw.githubusercontent.com/b-rodrigues/rixpress/refs/heads/main/video_thumbnail.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/econometrics-and-free-software/",
+          "text": "Econometrics and Free Software"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-392404 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Multi-language pipelines with rixpress</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 12, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/econometrics-and-free-software/\">Econometrics and Free Software</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://b-rodrigues.github.io/posts/2025-05-13-test_rixpress.html\"> Econometrics and Free Software</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"text-align: center;\">\n<p>\n<a> <img data-lazy-src=\"https://i2.wp.com/b-rodrigues.github.io/assets/img/polyglot_dag.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width: 50%; height: auto;\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/b-rodrigues.github.io/assets/img/polyglot_dag.png?w=578&amp;ssl=1\" style=\"width: 50%; height: auto;\"/></noscript> </a>\n</p>\n</div>\n<p>\nIf you want to watch a 2-Minute video introduction to <code>{rixpress}</code>, click the image below:\n</p>\n<p><a href=\"https://www.youtube.com/watch?v=a1eNG9TFZ_o\" rel=\"nofollow\" target=\"_blank\"> <img alt=\"Video Thumbnail\" data-lazy-src=\"https://i1.wp.com/raw.githubusercontent.com/b-rodrigues/rixpress/refs/heads/main/video_thumbnail.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"width:100%; max-width:560px; height:auto; display:block; margin:0 auto;\"/><noscript><img alt=\"Video Thumbnail\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/raw.githubusercontent.com/b-rodrigues/rixpress/refs/heads/main/video_thumbnail.png?w=578&amp;ssl=1\" style=\"width:100%; max-width:560px; height:auto; display:block; margin:0 auto;\"/></noscript> </a></p>\n<p>In <a href=\"https://brodrigues.co/posts/2024-08-28-nix_for_r_part_12.html\" rel=\"nofollow\" target=\"_blank\">August last year</a> I tried to see how one could use Nix as a built automation tool for data science pipelines, and in March this year, I’ve started working on an R package that would make setting up such pipelines easy, which I already discussed in my <a href=\"https://brodrigues.co/posts/2025-03-20-announcing_rixpress.html\" rel=\"nofollow\" target=\"_blank\">previous post</a>.</p>\n<p>After some weeks of work, I think that <code>{rixpress}</code> is at stage where it can already be quite useful to a lot of people. <code>{rixpress}</code> helps you set up your projects as a pipeline of completely reproducible steps. <code>{rixpress}</code> is a sister package to <code>{rix}</code> and together they make true computational reproducibility easier to achieve. <code>{rix}</code> makes it easy to capture and rebuild the exact computational environment in which the code was executed, and <code>{rixpress}</code> helps you move away from script-based workflows that can be difficult to execute and may require manual intervention.</p>\n<p>When I first introduced <code>{rixpress}</code>, it was essentially a proof of concept. It could manage some basic R and Python interplay, but it was clearly in its early stages. I’ve since then added some features that I think really show why using Nix as the underlying build engine is a good idea.</p>\n<p>Just like for its sister package <code>{rix}</code>, I’ve taken the step to submit <code>{rixpress}</code> for peer review by rOpenSci. <code>{rix}</code> really benefitted from rOpenSci’s peer review and I believe that it’ll be the same for <code>{rixpress}</code>.</p>\n<section class=\"level2\" id=\"current-capabilities-of-rixpress\">\n<h2 class=\"anchored\" data-anchor-id=\"current-capabilities-of-rixpress\">Current Capabilities of {rixpress}</h2>\n<p>Here are the features currently available in <code>{rixpress}</code>:</p>\n<ul>\n<li><p>A key motivation was to simplify building pipelines where different steps might require different language environments. With <code>{rixpress}</code>, this is a central feature:</p></li>\n<li><p>Define steps in R (<code>rxp_r()</code>, <code>rxp_r_file()</code>) or Python (<code>rxp_py()</code>, <code>rxp_py_file()</code>).</p></li>\n<li><p>Importantly, each step can be configured to run in its own Nix-defined environment (for example, use <code>nix_env = \"my-python-env.nix\"</code> for a Python step, or <code>nix_env = \"my-r-env.nix\"</code> for an R step). These environments can be generated using my other package, <code>{rix}</code>.</p></li>\n<li><p>Pass data between R and Python steps. <code>{rixpress}</code> manages the serialization, using <code>reticulate</code> by default for R/Python object conversion, and also allows custom functions for other formats like JSON or model-specific files.</p></li>\n<li><p>Build Quarto (or R Markdown) documents using <code>rxp_quarto()</code> (and <code>rxp_rmd()</code>). These documents can access any artifact (<code>rxp_read(\"my_artifact\")</code>) from preceding steps, regardless of the language used to generate it. Quarto rendering can also occur within its own dedicated Nix environment.</p></li>\n<li><p>Every step in a <code>{rixpress}</code> pipeline is treated as a Nix derivation. This means hermetic builds, sandboxed execution, and content-addressable caching, leading to a high degree of reproducibility (as expected with Nix).</p></li>\n<li><p>As pipelines grow, visualization is helpful. <code>rxp_ggdag()</code> (using <code>{ggdag}</code>) and <code>rxp_visnetwork()</code> (using <code>{visNetwork}</code>) provide a visual overview of dependencies. <code>dag_for_ci()</code> exports the DAG as an <code>{igraph}</code> dot file format, which can then be used for text-based visualisation on CI.</p></li>\n<li><p>For CI, <code>rxp_ga()</code> can generate a GitHub Actions workflow to run the pipeline on each push. This workflow includes caching of Nix store paths between runs (using <code>export_nix_archive()</code> and <code>import_nix_archive()</code>) to avoid unnecessary rebuilds.</p></li>\n<li><p>There is ample documentation, and even a vignette detailling how to use <code>{cmdstanr}</code> within a <code>{rixpress}</code> pipeline. <code>{cmdstanr}</code> works in a specific way, by compiling Stan models to C++, and so this requires careful management of Stan model compilation and sampling within the Nix sandbox, demonstrating that complex tools can be integrated.</p></li>\n<li><p>It is possible to retrieve outputs from previous pipeline executions. <code>{rixpress}</code> maintains timestamped build logs. Functions like <code>rxp_list_logs()</code>, <code>rxp_inspect(which_log = \"...\")</code>, and <code>rxp_read(\"derivation_name\", which_log = \"...\")</code> allow you to access the history of your pipeline’s execution and retrieve specific artifacts.</p></li>\n</ul>\n</section>\n<section class=\"level2\" id=\"an-invitation-for-feedback\">\n<h2 class=\"anchored\" data-anchor-id=\"an-invitation-for-feedback\">An Invitation for Feedback</h2>\n<p>Considerable effort has gone into making <code>{rixpress}</code> robust and useful. A collection of examples is available at the <a href=\"https://github.com/b-rodrigues/rixpress_demos\" rel=\"nofollow\" target=\"_blank\">rixpress_demos GitHub repository</a> to illustrate various use cases (R-only, Python-only, R/Python, Quarto, <code>{cmdstanr}</code>, and an XGBoost example).</p>\n<p>I’m now looking for feedback from users: * I encourage you to try it out. I recommend watching this <a href=\"https://youtu.be/IXKd5ySzzSU?si=D-AbU0JYdMP-iKvB\" rel=\"nofollow\" target=\"_blank\">tutorial video</a> to get started quickly. * Install it, explore the examples, and perhaps apply it to one of your projects. * Any observations on what works well, what might be confusing, or any issues encountered would be helpful. * Your feedback would be very valuable. Please feel free to open an issue on the <a href=\"https://github.com/b-rodrigues/rixpress\" rel=\"nofollow\" target=\"_blank\">{rixpress} GitHub repository</a> with bug reports, feature suggestions, or questions.</p>\n</section>\n<section class=\"level2\" id=\"why-use-rixpress-instead-of-targets\">\n<h2 class=\"anchored\" data-anchor-id=\"why-use-rixpress-instead-of-targets\">Why use {rixpress} instead of {targets}?</h2>\n<p><code>{targets}</code> is a fantastic package, and the main source of inspiration of <code>{rixpress}</code>. If you have no need for multilanguage pipelines, then running <code>{targets}</code> inside of a Nix environment, as described <a href=\"https://docs.ropensci.org/rix/articles/z-advanced-topic-reproducible-analytical-pipelines-with-nix.html\" rel=\"nofollow\" target=\"_blank\">here</a> is perfectly valid. But I think that <code>{rixpress}</code> has its place if:</p>\n<ul>\n<li>you need to use multiple languages, as you don’t need adapt Python code to work with <code>{reticulate}</code>,</li>\n<li>you’re already convinced by Nix and use <code>{rix}</code>,</li>\n<li>want to use a simple pipeline-tool, with a smaller scope.</li>\n</ul>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://b-rodrigues.github.io/posts/2025-05-13-test_rixpress.html\"> Econometrics and Free Software</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Multi-language pipelines with rixpress\nPosted on\nMay 12, 2025\nby\nEconometrics and Free Software\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nEconometrics and Free Software\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIf you want to watch a 2-Minute video introduction to\n{rixpress}\n, click the image below:\nIn\nAugust last year\nI tried to see how one could use Nix as a built automation tool for data science pipelines, and in March this year, I’ve started working on an R package that would make setting up such pipelines easy, which I already discussed in my\nprevious post\n.\nAfter some weeks of work, I think that\n{rixpress}\nis at stage where it can already be quite useful to a lot of people.\n{rixpress}\nhelps you set up your projects as a pipeline of completely reproducible steps.\n{rixpress}\nis a sister package to\n{rix}\nand together they make true computational reproducibility easier to achieve.\n{rix}\nmakes it easy to capture and rebuild the exact computational environment in which the code was executed, and\n{rixpress}\nhelps you move away from script-based workflows that can be difficult to execute and may require manual intervention.\nWhen I first introduced\n{rixpress}\n, it was essentially a proof of concept. It could manage some basic R and Python interplay, but it was clearly in its early stages. I’ve since then added some features that I think really show why using Nix as the underlying build engine is a good idea.\nJust like for its sister package\n{rix}\n, I’ve taken the step to submit\n{rixpress}\nfor peer review by rOpenSci.\n{rix}\nreally benefitted from rOpenSci’s peer review and I believe that it’ll be the same for\n{rixpress}\n.\nCurrent Capabilities of {rixpress}\nHere are the features currently available in\n{rixpress}\n:\nA key motivation was to simplify building pipelines where different steps might require different language environments. With\n{rixpress}\n, this is a central feature:\nDefine steps in R (\nrxp_r()\n,\nrxp_r_file()\n) or Python (\nrxp_py()\n,\nrxp_py_file()\n).\nImportantly, each step can be configured to run in its own Nix-defined environment (for example, use\nnix_env = \"my-python-env.nix\"\nfor a Python step, or\nnix_env = \"my-r-env.nix\"\nfor an R step). These environments can be generated using my other package,\n{rix}\n.\nPass data between R and Python steps.\n{rixpress}\nmanages the serialization, using\nreticulate\nby default for R/Python object conversion, and also allows custom functions for other formats like JSON or model-specific files.\nBuild Quarto (or R Markdown) documents using\nrxp_quarto()\n(and\nrxp_rmd()\n). These documents can access any artifact (\nrxp_read(\"my_artifact\")\n) from preceding steps, regardless of the language used to generate it. Quarto rendering can also occur within its own dedicated Nix environment.\nEvery step in a\n{rixpress}\npipeline is treated as a Nix derivation. This means hermetic builds, sandboxed execution, and content-addressable caching, leading to a high degree of reproducibility (as expected with Nix).\nAs pipelines grow, visualization is helpful.\nrxp_ggdag()\n(using\n{ggdag}\n) and\nrxp_visnetwork()\n(using\n{visNetwork}\n) provide a visual overview of dependencies.\ndag_for_ci()\nexports the DAG as an\n{igraph}\ndot file format, which can then be used for text-based visualisation on CI.\nFor CI,\nrxp_ga()\ncan generate a GitHub Actions workflow to run the pipeline on each push. This workflow includes caching of Nix store paths between runs (using\nexport_nix_archive()\nand\nimport_nix_archive()\n) to avoid unnecessary rebuilds.\nThere is ample documentation, and even a vignette detailling how to use\n{cmdstanr}\nwithin a\n{rixpress}\npipeline.\n{cmdstanr}\nworks in a specific way, by compiling Stan models to C++, and so this requires careful management of Stan model compilation and sampling within the Nix sandbox, demonstrating that complex tools can be integrated.\nIt is possible to retrieve outputs from previous pipeline executions.\n{rixpress}\nmaintains timestamped build logs. Functions like\nrxp_list_logs()\n,\nrxp_inspect(which_log = \"...\")\n, and\nrxp_read(\"derivation_name\", which_log = \"...\")\nallow you to access the history of your pipeline’s execution and retrieve specific artifacts.\nAn Invitation for Feedback\nConsiderable effort has gone into making\n{rixpress}\nrobust and useful. A collection of examples is available at the\nrixpress_demos GitHub repository\nto illustrate various use cases (R-only, Python-only, R/Python, Quarto,\n{cmdstanr}\n, and an XGBoost example).\nI’m now looking for feedback from users: * I encourage you to try it out. I recommend watching this\ntutorial video\nto get started quickly. * Install it, explore the examples, and perhaps apply it to one of your projects. * Any observations on what works well, what might be confusing, or any issues encountered would be helpful. * Your feedback would be very valuable. Please feel free to open an issue on the\n{rixpress} GitHub repository\nwith bug reports, feature suggestions, or questions.\nWhy use {rixpress} instead of {targets}?\n{targets}\nis a fantastic package, and the main source of inspiration of\n{rixpress}\n. If you have no need for multilanguage pipelines, then running\n{targets}\ninside of a Nix environment, as described\nhere\nis perfectly valid. But I think that\n{rixpress}\nhas its place if:\nyou need to use multiple languages, as you don’t need adapt Python code to work with\n{reticulate}\n,\nyou’re already convinced by Nix and use\n{rix}\n,\nwant to use a simple pipeline-tool, with a smaller scope.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nEconometrics and Free Software\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "If you want to watch a 2-Minute video introduction to {rixpress}, click the image below: In August last year I tried to see how one could use Nix as a built automation tool for data science pipelines, and in March this year, I’ve star...",
+      "meta_keywords": null,
+      "og_description": "If you want to watch a 2-Minute video introduction to {rixpress}, click the image below: In August last year I tried to see how one could use Nix as a built automation tool for data science pipelines, and in March this year, I’ve star...",
+      "og_image": "https://b-rodrigues.github.io/assets/img/polyglot_dag.png",
+      "og_title": "Multi-language pipelines with rixpress | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4.9,
+      "sitemap_lastmod": null,
+      "twitter_description": "If you want to watch a 2-Minute video introduction to {rixpress}, click the image below: In August last year I tried to see how one could use Nix as a built automation tool for data science pipelines, and in March this year, I’ve star...",
+      "twitter_title": "Multi-language pipelines with rixpress | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/05/multi-language-pipelines-with-rixpress/",
+      "word_count": 972
+    }
+  }
+}

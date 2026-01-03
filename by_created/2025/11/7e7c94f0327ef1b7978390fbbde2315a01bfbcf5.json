@@ -1,0 +1,142 @@
+{
+  "id": "7e7c94f0327ef1b7978390fbbde2315a01bfbcf5",
+  "url": "https://www.r-bloggers.com/2009/10/from-ord-sessions-to-r-forge-in-12-hours-with-rprotobuf/",
+  "created_at_utc": "2025-11-17T20:40:07Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "121319e0-4ac0-4949-a75f-23b958c850ef",
+    "created_at": "2025-11-17 20:40:07",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/10/from-ord-sessions-to-r-forge-in-12-hours-with-rprotobuf/",
+      "crawled_at": "2025-11-17T10:20:06.647944",
+      "external_links": [
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/10/22#ordsessions_to_r-forge",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://code.google.com/soc/",
+          "text": "Google Summer of Code"
+        },
+        {
+          "href": "http://people.cs.uchicago.edu/~borja/",
+          "text": "Borja Sotomayor"
+        },
+        {
+          "href": "https://sites.google.com/a/ordsessions.com/ord-sessions/Home/session-2-1?pli=1",
+          "text": "Second ORD Sessions"
+        },
+        {
+          "href": "https://www.inventables.com/",
+          "text": "Inventable"
+        },
+        {
+          "href": "https://code.google.com/apis/protocolbuffers/docs/overview.html",
+          "text": "Protocol Buffers"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://r-forge.r-project.org/",
+          "text": "R-Forge"
+        },
+        {
+          "href": "http://statmath.wu.ac.at/~theussl/",
+          "text": "Stefan Theussl"
+        },
+        {
+          "href": "https://r-forge.r-project.org/projects/rprotobuf/",
+          "text": "RProtoBuf project at\nR-Forge"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/code/rcpp.html",
+          "text": "Rcpp"
+        },
+        {
+          "href": "http://dirk.eddelbuettel.com/blog/2009/10/22#ordsessions_to_r-forge",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "From ORD Sessions to R-Forge in 12 hours with RProtoBuf | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/thinking-inside-the-box/",
+          "text": "Thinking inside the box"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-216 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">From ORD Sessions to R-Forge in 12 hours with RProtoBuf</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 22, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/thinking-inside-the-box/\">Thinking inside the box</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/10/22#ordsessions_to_r-forge\"> Thinking inside the box   </a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\nYesterday, via in invitation from fellow Chicago-area\n<a href=\"https://code.google.com/soc/\" rel=\"nofollow\" target=\"_blank\">Google Summer of Code</a> \nmentor <a href=\"http://people.cs.uchicago.edu/~borja/\" rel=\"nofollow\" target=\"_blank\">Borja Sotomayor</a>,\nI attended\nthe <a href=\"https://sites.google.com/a/ordsessions.com/ord-sessions/Home/session-2-1?pli=1\" rel=\"nofollow\" target=\"_blank\">Second ORD Sessions</a>.\nThese are happening at the HQ of <a href=\"https://www.inventables.com/\" rel=\"nofollow\" target=\"_blank\">Inventable</a> where a\ncouple of technologists and Open Source geeks from the Chicagoland area get together and <em>riff</em>\non code for a few hours after work over some pizza and beer.\n\n<p>\nSounded good, and I needed an excuse to try to mix the awesome\n<a href=\"https://code.google.com/apis/protocolbuffers/docs/overview.html\" rel=\"nofollow\" target=\"_blank\">Protocol Buffers</a> \nwith my favourite data tool, <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a>.  What\nare Protocol Buffers?  To quote from the Google overview page referenced above:\n<blockquote>\nProtocol buffers are a flexible, efficient, automated mechanism for\nserializing structured data – think XML, but smaller, faster, and\nsimpler. You define how you want your data to be structured once, then you\ncan use special generated source code to easily write and read your\nstructured data to and from a variety of data streams and using a variety of\nlanguages. You can even update your data structure without breaking deployed\nprograms that are compiled against the “old” format. \n</blockquote>\nand later on that page:\n<blockquote>\nProtocol buffers are now Google’s lingua franca for data – at time of\nwriting, there are 48,162 different message types defined in the Google code\ntree across 12,183 .proto files. They’re used both in RPC systems and for\npersistent storage of data in a variety of storage systems. \n</blockquote>\n<p>\nSo three hours later, I had an implementation of the ‘addressbook\nreader’ C++ example wrapped in a tiny yet complete R package that\npassed <code>R CMD check</code>.  And one lingua franca for data has met\nanother.\n\n<p>\nSo before going to bed, I quickly registered a new project at\n<a href=\"http://r-forge.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R-Forge</a>,\neverybody’s favourite R hosting site, and thanks to the tireless <a href=\"http://statmath.wu.ac.at/~theussl/\" rel=\"nofollow\" target=\"_blank\">Stefan Theussl</a> (and some\nfavourable timezone differences) the project was approved and the stanza\navailable by the time I got up.  So I quickly filled the SVN repo and,\npresto, we had the\n<a href=\"https://r-forge.r-project.org/projects/rprotobuf/\" rel=\"nofollow\" target=\"_blank\">RProtoBuf project at\nR-Forge</a> within 12 hours of the ORD Sessions hackfest.  I will try to\nfollow up on RProtoBuf in a couple of days, this may lead to some changes in\nmy <a href=\"http://dirk.eddelbuettel.com/code/rcpp.html\" rel=\"nofollow\" target=\"_blank\">Rcpp</a> R / C++\ninterface package as well.\r\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://dirk.eddelbuettel.com/blog/2009/10/22#ordsessions_to_r-forge\"> Thinking inside the box   </a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </p></p></p></div>\n</article>",
+      "main_text": "From ORD Sessions to R-Forge in 12 hours with RProtoBuf\nPosted on\nOctober 22, 2009\nby\nThinking inside the box\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nThinking inside the box\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nYesterday, via in invitation from fellow Chicago-area\nGoogle Summer of Code\nmentor\nBorja Sotomayor\n,\nI attended\nthe\nSecond ORD Sessions\n.\nThese are happening at the HQ of\nInventable\nwhere a\ncouple of technologists and Open Source geeks from the Chicagoland area get together and\nriff\non code for a few hours after work over some pizza and beer.\nSounded good, and I needed an excuse to try to mix the awesome\nProtocol Buffers\nwith my favourite data tool,\nR\n.  What\nare Protocol Buffers?  To quote from the Google overview page referenced above:\nProtocol buffers are a flexible, efficient, automated mechanism for\nserializing structured data – think XML, but smaller, faster, and\nsimpler. You define how you want your data to be structured once, then you\ncan use special generated source code to easily write and read your\nstructured data to and from a variety of data streams and using a variety of\nlanguages. You can even update your data structure without breaking deployed\nprograms that are compiled against the “old” format.\nand later on that page:\nProtocol buffers are now Google’s lingua franca for data – at time of\nwriting, there are 48,162 different message types defined in the Google code\ntree across 12,183 .proto files. They’re used both in RPC systems and for\npersistent storage of data in a variety of storage systems.\nSo three hours later, I had an implementation of the ‘addressbook\nreader’ C++ example wrapped in a tiny yet complete R package that\npassed\nR CMD check\n.  And one lingua franca for data has met\nanother.\nSo before going to bed, I quickly registered a new project at\nR-Forge\n,\neverybody’s favourite R hosting site, and thanks to the tireless\nStefan Theussl\n(and some\nfavourable timezone differences) the project was approved and the stanza\navailable by the time I got up.  So I quickly filled the SVN repo and,\npresto, we had the\nRProtoBuf project at\nR-Forge\nwithin 12 hours of the ORD Sessions hackfest.  I will try to\nfollow up on RProtoBuf in a couple of days, this may lead to some changes in\nmy\nRcpp\nR / C++\ninterface package as well.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nThinking inside the box\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Yesterday, via in invitation from fellow Chicago-area Google Summer of Code mentor Borja Sotomayor, I attended the Second ORD Sessions. These are happening at the HQ of Inventable where a couple of technologists and Open Source geeks from the Chicagoland area get together and riff on code for a few hours after work over some pizza and beer. Sounded good, and I needed an excuse to try to mix the awesome Protocol Buffers with my favourite data tool, R. What are Protocol Buffers? To quote from the Google overview page referenced above: Protocol buffers are a flexible, efficient, automated mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages. You can even update your data structure without breaking deployed programs that are compiled against the \"old\" format. and later on that page: Protocol buffers are now Google's lingua franca for data – at time of writing, there are 48,162 different message types defined in the Google code tree across 12,183 .proto files. They're used both in RPC systems and for persistent storage of data in a variety of storage systems. So three hours later, I had an implementation of the 'addressbook reader' C++ example wrapped in a tiny yet complete R package that passed R CMD check. And one lingua franca for data has met another. So before going to bed, I quickly registered a new project at R-Forge, everybody's favourite R hosting site, and thanks to the tireless Stefan Theussl (and some favourable timezone differences) the project was approved and the stanza available by the time I got up. So I quickly filled the SVN repo and, presto, we had the RProtoBuf project at R-Forge within 12 hours of the ORD Sessions hackfest. I will try to follow up on RProtoBuf in a couple of days, this may lead to some changes in my Rcpp R / C++ interface package as well.",
+      "meta_keywords": null,
+      "og_description": "Yesterday, via in invitation from fellow Chicago-area Google Summer of Code mentor Borja Sotomayor, I attended the Second ORD Sessions. These are happening at the HQ of Inventable where a couple of technologists and Open Source geeks from the Chicagoland area get together and riff on code for a few hours after work over some pizza and beer. Sounded good, and I needed an excuse to try to mix the awesome Protocol Buffers with my favourite data tool, R. What are Protocol Buffers? To quote from the Google overview page referenced above: Protocol buffers are a flexible, efficient, automated mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages. You can even update your data structure without breaking deployed programs that are compiled against the \"old\" format. and later on that page: Protocol buffers are now Google's lingua franca for data – at time of writing, there are 48,162 different message types defined in the Google code tree across 12,183 .proto files. They're used both in RPC systems and for persistent storage of data in a variety of storage systems. So three hours later, I had an implementation of the 'addressbook reader' C++ example wrapped in a tiny yet complete R package that passed R CMD check. And one lingua franca for data has met another. So before going to bed, I quickly registered a new project at R-Forge, everybody's favourite R hosting site, and thanks to the tireless Stefan Theussl (and some favourable timezone differences) the project was approved and the stanza available by the time I got up. So I quickly filled the SVN repo and, presto, we had the RProtoBuf project at R-Forge within 12 hours of the ORD Sessions hackfest. I will try to follow up on RProtoBuf in a couple of days, this may lead to some changes in my Rcpp R / C++ interface package as well.",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "From ORD Sessions to R-Forge in 12 hours with RProtoBuf | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.6,
+      "sitemap_lastmod": "2009-10-23T03:32:00+00:00",
+      "twitter_description": "Yesterday, via in invitation from fellow Chicago-area Google Summer of Code mentor Borja Sotomayor, I attended the Second ORD Sessions. These are happening at the HQ of Inventable where a couple of technologists and Open Source geeks from the Chicagoland area get together and riff on code for a few hours after work over some pizza and beer. Sounded good, and I needed an excuse to try to mix the awesome Protocol Buffers with my favourite data tool, R. What are Protocol Buffers? To quote from the Google overview page referenced above: Protocol buffers are a flexible, efficient, automated mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages. You can even update your data structure without breaking deployed programs that are compiled against the \"old\" format. and later on that page: Protocol buffers are now Google's lingua franca for data – at time of writing, there are 48,162 different message types defined in the Google code tree across 12,183 .proto files. They're used both in RPC systems and for persistent storage of data in a variety of storage systems. So three hours later, I had an implementation of the 'addressbook reader' C++ example wrapped in a tiny yet complete R package that passed R CMD check. And one lingua franca for data has met another. So before going to bed, I quickly registered a new project at R-Forge, everybody's favourite R hosting site, and thanks to the tireless Stefan Theussl (and some favourable timezone differences) the project was approved and the stanza available by the time I got up. So I quickly filled the SVN repo and, presto, we had the RProtoBuf project at R-Forge within 12 hours of the ORD Sessions hackfest. I will try to follow up on RProtoBuf in a couple of days, this may lead to some changes in my Rcpp R / C++ interface package as well.",
+      "twitter_title": "From ORD Sessions to R-Forge in 12 hours with RProtoBuf | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/10/from-ord-sessions-to-r-forge-in-12-hours-with-rprotobuf/",
+      "word_count": 513
+    }
+  }
+}

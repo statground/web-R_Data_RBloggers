@@ -1,0 +1,121 @@
+{
+  "id": "47af08a98b93d97995e1d53b30127d63f7b1e44b",
+  "url": "https://www.r-bloggers.com/2023/12/get-a-git-repo-where-your-team-can-stow-their-throwaway-data-science-code/",
+  "created_at_utc": "2025-11-17T20:39:03Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "83f7011f-830e-4686-8258-48c3c41406f4",
+    "created_at": "2025-11-17 20:39:03",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/get-a-git-repo-where-your-team-can-stow-their-throwaway-data-science-code/",
+      "crawled_at": "2025-11-17T09:42:42.272470",
+      "external_links": [
+        {
+          "href": "https://sumsar.net/blog/git-repo-to-stash-throwaway-code/",
+          "text": "R on Publishable Stuff"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/rasmusab/ds-exploration-template",
+          "text": null
+        },
+        {
+          "href": "https://github.com/rasmusab/ds-exploration-template",
+          "text": "theds-exploration-templaterepo over here"
+        },
+        {
+          "href": "https://sumsar.net/blog/git-repo-to-stash-throwaway-code/",
+          "text": "R on Publishable Stuff"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Get a Git repo where your team can stow their throwaway data science code! | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i0.wp.com/sumsar.net/blog/git-repo-to-stash-throwaway-code/data-science-exploration-repo.jpeg?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-on-publishable-stuff/",
+          "text": "R on Publishable Stuff"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380466 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Get a Git repo where your team can stow their throwaway data science code!</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 1, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-publishable-stuff/\">R on Publishable Stuff</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://sumsar.net/blog/git-repo-to-stash-throwaway-code/\"> R on Publishable Stuff</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9--><p>When I started working as a Data Scientist nearly ten years ago, the data science team I joined did something I found really strange at first: They had a <strong>single</strong> GitHub repo where they put <strong>all</strong> their “throwaway” code. An R script to produce some plots for a presentation, a Python notebook with a machine learning proof-of-concept, a bash script for cleaning some logs. It all went into the same repo. Initially, this felt sloppy to me, and sure, there are better ways to organize code, but I’ve come to learn that not having a single place for throwaway code in a team is far worse. Without a place for throwaway code, what’s going to happen is:</p>\n<ul>\n<li>Some ambitious person on the team will create a new GitHub repo for every single analysis/POC/thing they do, “swamping” the GitHub namespace.</li>\n<li>Some others will stow their code on the company wiki or drop it in the team Slack channel.</li>\n<li>But most people aren’t going to put it anywhere, and we all know that code “available on request” often isn’t available at all.</li>\n</ul>\n<p>So, in all teams I’ve worked in, I’ve set up a GitHub repo that looks something like this:</p>\n<p>\n<a href=\"https://github.com/rasmusab/ds-exploration-template\" rel=\"nofollow\" target=\"_blank\">\n<img data-lazy-src=\"https://i0.wp.com/sumsar.net/blog/git-repo-to-stash-throwaway-code/data-science-exploration-repo.jpeg?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"1722\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i0.wp.com/sumsar.net/blog/git-repo-to-stash-throwaway-code/data-science-exploration-repo.jpeg?w=578&amp;ssl=1\" width=\"1722\"/></noscript></a></p>\n<p>With the following blurb: <em>A place for non-production scripts, notebooks, and other throwaway code. Don’t bother with branches and pull requests, unless you want a review, as this is more of a Dropbox folder masquerading as a GitHub repo</em>. If you want to set up a similar repo, feel free to take a look at \n  <a href=\"https://github.com/rasmusab/ds-exploration-template\" rel=\"nofollow\" target=\"_blank\">the <code>ds-exploration-template</code> repo over here</a>.</p>\n<p>And having such a repo has been very useful! It’s not the best place to put code, it does tend to become a bit disorganized after a while, but it is <em>a place</em> to put code, and where it’s easy to do so. And then, when you get a request that makes you think “Ah! I remember that Kristin (who’s on parental leave and shouldn’t be bothered) did something similar last year!” it’s really great to be able to go to that repo and find that code.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://sumsar.net/blog/git-repo-to-stash-throwaway-code/\"> R on Publishable Stuff</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Get a Git repo where your team can stow their throwaway data science code!\nPosted on\nDecember 1, 2023\nby\nR on Publishable Stuff\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on Publishable Stuff\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhen I started working as a Data Scientist nearly ten years ago, the data science team I joined did something I found really strange at first: They had a\nsingle\nGitHub repo where they put\nall\ntheir “throwaway” code. An R script to produce some plots for a presentation, a Python notebook with a machine learning proof-of-concept, a bash script for cleaning some logs. It all went into the same repo. Initially, this felt sloppy to me, and sure, there are better ways to organize code, but I’ve come to learn that not having a single place for throwaway code in a team is far worse. Without a place for throwaway code, what’s going to happen is:\nSome ambitious person on the team will create a new GitHub repo for every single analysis/POC/thing they do, “swamping” the GitHub namespace.\nSome others will stow their code on the company wiki or drop it in the team Slack channel.\nBut most people aren’t going to put it anywhere, and we all know that code “available on request” often isn’t available at all.\nSo, in all teams I’ve worked in, I’ve set up a GitHub repo that looks something like this:\nWith the following blurb:\nA place for non-production scripts, notebooks, and other throwaway code. Don’t bother with branches and pull requests, unless you want a review, as this is more of a Dropbox folder masquerading as a GitHub repo\n. If you want to set up a similar repo, feel free to take a look at\nthe\nds-exploration-template\nrepo over here\n.\nAnd having such a repo has been very useful! It’s not the best place to put code, it does tend to become a bit disorganized after a while, but it is\na place\nto put code, and where it’s easy to do so. And then, when you get a request that makes you think “Ah! I remember that Kristin (who’s on parental leave and shouldn’t be bothered) did something similar last year!” it’s really great to be able to go to that repo and find that code.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on Publishable Stuff\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "When I started working as a Data Scientist nearly ten years ago, the data science team I joined did something I found really strange at first: They had a single GitHub repo where they put all their “throwaway” code. An R script to produce s...",
+      "meta_keywords": null,
+      "og_description": "When I started working as a Data Scientist nearly ten years ago, the data science team I joined did something I found really strange at first: They had a single GitHub repo where they put all their “throwaway” code. An R script to produce s...",
+      "og_image": "https://sumsar.net/blog/git-repo-to-stash-throwaway-code/data-science-exploration-repo.jpeg",
+      "og_title": "Get a Git repo where your team can stow their throwaway data science code! | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.6,
+      "sitemap_lastmod": "2023-12-01T23:00:00+00:00",
+      "twitter_description": "When I started working as a Data Scientist nearly ten years ago, the data science team I joined did something I found really strange at first: They had a single GitHub repo where they put all their “throwaway” code. An R script to produce s...",
+      "twitter_title": "Get a Git repo where your team can stow their throwaway data science code! | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/get-a-git-repo-where-your-team-can-stow-their-throwaway-data-science-code/",
+      "word_count": 518
+    }
+  }
+}

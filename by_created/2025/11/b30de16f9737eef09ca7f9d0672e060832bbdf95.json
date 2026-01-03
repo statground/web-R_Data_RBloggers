@@ -1,0 +1,977 @@
+{
+  "id": "b30de16f9737eef09ca7f9d0672e060832bbdf95",
+  "url": "https://www.r-bloggers.com/2025/01/december-2024-top-40-new-cran-packages/",
+  "created_at_utc": "2025-11-22T19:59:23Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "44ab6d08-1817-44fc-8977-e7c3e62dae6c",
+    "created_at": "2025-11-22 19:59:23",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2025/01/december-2024-top-40-new-cran-packages/",
+      "crawled_at": "2025-11-22T10:55:03.453470",
+      "external_links": [
+        {
+          "href": "https://rworks.dev/posts/december-2024-top-40-new-cran-packages/",
+          "text": "R Works"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=pacu",
+          "text": "pacu"
+        },
+        {
+          "href": "https://documentation.dataspace.copernicus.eu/APIs/OData.html",
+          "text": "Sentinel-2"
+        },
+        {
+          "href": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Statistical.html",
+          "text": "download vegetation index statistics"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pacu/vignettes/pacu.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pacu/vignettes/pacu_sat.html",
+          "text": "Satellite data"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pacu/vignettes/pacu_weather.html",
+          "text": "Weather data"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/pacu.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=qPRAentry",
+          "text": "qPRAentry"
+        },
+        {
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5350",
+          "text": "Jeger et al. (2018)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/qPRAentry/vignettes/qPRAentry_workflow.htm",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/qPRAentry.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=moRphomenes",
+          "text": "moRphomenes"
+        },
+        {
+          "href": "https://link.springer.com/article/10.1007/s11692-009-9055-x",
+          "text": "Mitteroecker & Gunz (2009)"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/10.1002/ajpa.24514",
+          "text": "Ehrlich et al (2021)"
+        },
+        {
+          "href": "https://cran.r-project.org/package=SunCalcMeeus",
+          "text": "SunCalMeeus"
+        },
+        {
+          "href": "https://bulletin.uv4plants.org/index.php/uv4pbulletin/article/view/16",
+          "text": "Aphalo, P. J. (2015)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SunCalcMeeus/vignettes/userguide-1-astronomy.html",
+          "text": "User Guide"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/SunCalcMeeus/vignettes/userguide-0-r4p-introduction.html",
+          "text": "R for Photobiology"
+        },
+        {
+          "href": "https://cran.r-project.org/package=moonboot",
+          "text": "moonboot"
+        },
+        {
+          "href": "https://projecteuclid.org/journals/annals-of-statistics/volume-22/issue-4/Large-Sample-Confidence-Regions-Based-on-Subsamples-under-Minimal-Assumptions/10.1214/aos/1176325770.full",
+          "text": "Politis and Romano (1994)"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/moonboot.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=RapidFuzz",
+          "text": "RapidFuzz"
+        },
+        {
+          "href": "https://github.com/rapidfuzz/rapidfuzz-cpp%3E",
+          "text": "RapidFuzz"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/RapidFuzz/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=rectpacker",
+          "text": "rectpacker"
+        },
+        {
+          "href": "https://link.springer.com/chapter/10.1007/978-3-642-21827-9_29",
+          "text": "Lijun et al. (2011)"
+        },
+        {
+          "href": "https://github.com/coolbutuseless/rectpacker",
+          "text": "here"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/rectpacker.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=GHCNr",
+          "text": "GHCNr"
+        },
+        {
+          "href": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+          "text": "Global Historical Climatology Network daily (GHCNd) database"
+        },
+        {
+          "href": "https://www.ncei.noaa.gov/access/services/data/v1",
+          "text": "web API"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/GHCNr/vignettes/daily.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=OncoDataSets",
+          "text": "OncoDataSets"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/OncoDataSets/vignettes/Introduction_to_OncoDataSets.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/Oncodata.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=spanishoddata",
+          "text": "spanishoddata"
+        },
+        {
+          "href": "https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/opendata-movilidad",
+          "text": "Spanish Ministry of Transport"
+        },
+        {
+          "href": "https://ropenspain.github.io/spanishoddata/index.html",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/spanishoddata/vignettes/quick-get.html",
+          "text": "Quickly get daily data"
+        },
+        {
+          "href": "https://rworks.dev/posts/december-2024-top-40-new-cran-packages/spanishoddata.svg",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=subincomeR",
+          "text": "subincomeR"
+        },
+        {
+          "href": "https://zenodo.org/records/13773040",
+          "text": "Zenodo"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/subincomeR/vignettes/regional-convergence.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/subincomeR.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=ForestElementsR",
+          "text": "ForestElementsR"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781118902028",
+          "text": "Kershaw et al. (2017)"
+        },
+        {
+          "href": "https://link.springer.com/book/10.1007/978-1-4020-5991-9",
+          "text": "van Laar and Akca (2007)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/ForestElementsR/vignettes/forestelementsr_package.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/ForestElementsR/vignettes/tree_species_codings.html",
+          "text": "Tree Species Codings"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/ForestElementsR/vignettes/yield_tables.html",
+          "text": "Yield Tables"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/forest.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=BayesianFitForecast",
+          "text": "BayesianFitForecast"
+        },
+        {
+          "href": "https://arxiv.org/abs/2411.05371",
+          "text": "Karami et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/BayesianFitForecast/vignettes/BayesianFitForecast.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/sffdr/vignettes/sffdr.html",
+          "text": "sffdr"
+        },
+        {
+          "href": "https://www.medrxiv.org/content/10.1101/2024.09.24.24314276v1",
+          "text": "Bass and Wallace (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/sffdr/vignettes/sffdr.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/sffdr.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=TransProR",
+          "text": "TransProR"
+        },
+        {
+          "href": "https://academic.oup.com/nar/article/43/7/e47/2414268#google_vignette",
+          "text": "Ritchie et al. (2015)"
+        },
+        {
+          "href": "https://link.springer.com/chapter/10.1007/0-387-29362-0_23",
+          "text": "Smyth (2005)"
+        },
+        {
+          "href": "https://academic.oup.com/bioinformatics/article/26/1/139/182458?login=false",
+          "text": "Robinson et al. (2010)"
+        },
+        {
+          "href": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8",
+          "text": "Love et al. (2014)"
+        },
+        {
+          "href": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02648-4",
+          "text": "Li et al. (2022)"
+        },
+        {
+          "href": "https://sssydysss.github.io/TransProRBook/",
+          "text": "here"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TransProR.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=pprof",
+          "text": "pprof"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/10.1002/sim.9387",
+          "text": "Wu et al. (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pprof/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=tatooheene",
+          "text": "tatooheene"
+        },
+        {
+          "href": "https://www.zorginstituutnederland.nl/publicaties/publicatie/2024/01/16/richtlijn-voor-het-uitvoeren-van-economische-evaluaties-in-de-gezondheidszorg",
+          "text": "Dutch guideline"
+        },
+        {
+          "href": "https://www.cbs.nl/",
+          "text": "CBS data"
+        },
+        {
+          "href": "https://www.oecd.org/en.html",
+          "text": "OECD data"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/tatooheene/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=WARDEN",
+          "text": "WARDEN"
+        },
+        {
+          "href": "https://www.sheffield.ac.uk/nice-dsu/tsds/patient-level-simulation",
+          "text": "NICE TSD 15"
+        },
+        {
+          "href": "https://jsanchezalv.github.io/WARDEN/",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/WARDEN/vignettes/example_ssd.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/WARDEN.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=FlexRL",
+          "text": "FlexRL"
+        },
+        {
+          "href": "https://arxiv.org/abs/2407.06835",
+          "text": "Robach et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/FlexRL/vignettes/FlexRL-vignette.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=scR",
+          "text": "scR"
+        },
+        {
+          "href": "https://osf.io/preprints/osf/evrcj",
+          "text": "Carter, P & Choi, D (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/package=wordvector",
+          "text": "wordvector"
+        },
+        {
+          "href": "https://arxiv.org/abs/1310.4546",
+          "text": "Mikolov et al. (2013)"
+        },
+        {
+          "href": "https://asistdl.onlinelibrary.wiley.com/doi/10.1002/(SICI)1097-4571(199009)41:6%3C391::AID-ASI1%3E3.0.CO;2-9",
+          "text": "Deerwester et al. (1990)"
+        },
+        {
+          "href": "https://github.com/koheiw/wordvector",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=metalite.sl",
+          "text": "metalite.sl"
+        },
+        {
+          "href": "https://r4csr.org/",
+          "text": "Zhang et al. (2022)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/metalite.sl/vignettes/metalite.sl.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/metalite.sl/vignettes/disposition.html",
+          "text": "Disposition Table"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/metalite.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=OhdsiShinyAppBuilder",
+          "text": "OhdsiShinyAppBuilder"
+        },
+        {
+          "href": "https://ohdsi.github.io/Hades/",
+          "text": "HADES"
+        },
+        {
+          "href": "https://ohdsi.github.io/OhdsiShinyAppBuilder/",
+          "text": "OhdsiShinyAppBuilder"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/OhdsiShinyAppBuilder/vignettes/shinyAppModules.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=PhenotypeR",
+          "text": "PhenotypeR"
+        },
+        {
+          "href": "https://www.ohdsi.org/data-standardization/",
+          "text": "Observational Medical Outcomes Partnership Common Data Model"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/PhenotypeR/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/PhenotypeR/vignettes/a03_CohortDiagnostics.html",
+          "text": "CohortDiagnostics"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/PhenotypeR.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=tna",
+          "text": "tna"
+        },
+        {
+          "href": "https://arxiv.org/abs/2411.15486",
+          "text": "Saqr et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/tna/vignettes/getting_started.html",
+          "text": "Getting Started Guide"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tna.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=catalytic",
+          "text": "catalytic"
+        },
+        {
+          "href": "https://www.pnas.org/doi/full/10.1073/pnas.1920913117",
+          "text": "Huang et al. (2020)"
+        },
+        {
+          "href": "https://arxiv.org/abs/2312.01411",
+          "text": "Li and Huang (202)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/catalytic/vignettes/catalytic_cox.html",
+          "text": "catalytic_cox"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/catalytic/vignettes/catalytic_glm_binomial.html",
+          "text": "catalytic_glm_binomial"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/catalytic/vignettes/catalytic_glm_gaussian.html",
+          "text": "catalytic_glm_gaussian"
+        },
+        {
+          "href": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/catalytic.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=gfoRmulaICE",
+          "text": "gfoRmulaICE"
+        },
+        {
+          "href": "https://academic.oup.com/biometrics/article/77/2/740/7445112?login=false#google_vignette",
+          "text": "Wen et al. (2020)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/gfoRmulaICE/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://cran.r-project.org/package=greta.gam",
+          "text": "greta.gam"
+        },
+        {
+          "href": "https://joss.theoj.org/papers/10.21105/joss.01601",
+          "text": "Golding (2019)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/greta.gam/vignettes/getting-started.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/greta.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=multvardiv",
+          "text": "multvardiv"
+        },
+        {
+          "href": "https://ieeexplore.ieee.org/document/8707051",
+          "text": "Bouhlel and Dziri (2019)"
+        },
+        {
+          "href": "https://www.mdpi.com/1099-4300/24/6/838",
+          "text": "Bouhlel and Rousseau (2022)"
+        },
+        {
+          "href": "https://ieeexplore.ieee.org/document/10284989",
+          "text": "Bouhlel and Rousseau (2023)"
+        },
+        {
+          "href": "https://cran.r-project.org/package=recforest",
+          "text": "recforest"
+        },
+        {
+          "href": "https://hal.science/hal-04612431v1/document",
+          "text": "Murris et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/recforest/vignettes/method.html",
+          "text": "method"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/recforest/vignettes/predict.html",
+          "text": "predict"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/recforest.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=TwoTimeScales",
+          "text": "TwoTimeScales"
+        },
+        {
+          "href": "https://onlinelibrary.wiley.com/doi/10.1002/sim.10297",
+          "text": "Carollo et al. (2024)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/TwoTimeScales/vignettes/TwoTimeScales.html",
+          "text": "Introduction"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/TwoTimeScales/vignettes/visualization.html",
+          "text": "Visualize hazards"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TwoTime.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/bridgr/vignettes/bridgr.html",
+          "text": "bridgr"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0169207003000670?via%3Dihub",
+          "text": "Baffigi et al. (2004)"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0169207003000670?via%3Dihub",
+          "text": "Burri (2023)"
+        },
+        {
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0169207015001144?via%3Dihub",
+          "text": "Schumacher (2016)"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/bridgr/readme/README.html",
+          "text": "README"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/bridgr.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=cpp11qpdf",
+          "text": "cpp11qpdf"
+        },
+        {
+          "href": "https://qpdf.sourceforge.io/",
+          "text": "qpdf"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/cpp11qpdf/vignettes/cpp11qpdf.html",
+          "text": "vignette"
+        },
+        {
+          "href": "https://cran.r-project.org/package=doParabar",
+          "text": "doParabar"
+        },
+        {
+          "href": "https://parabar.mihaiconstantin.com/",
+          "text": "parabar"
+        },
+        {
+          "href": "https://parabar.mihaiconstantin.com/articles/foreach",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=fasterRaster",
+          "text": "fasterRaste"
+        },
+        {
+          "href": "https://grass.osgeo.org/",
+          "text": "GRASS GIS"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/fasterRaster/vignettes/fasterRaster.html",
+          "text": "Getting Started"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/fasterRaster/vignettes/faster_fasterRaster.html",
+          "text": "Making fasterRaster faster"
+        },
+        {
+          "href": "https://cran.r-project.org/package=iso8601",
+          "text": "iso8601"
+        },
+        {
+          "href": "https://en.wikipedia.org/wiki/ISO_8601",
+          "text": "ISO8601"
+        },
+        {
+          "href": "https://github.com/djvanderlaan/iso8601/tree/main/R-package",
+          "text": "here"
+        },
+        {
+          "href": "https://cran.r-project.org/package=pipeflow",
+          "text": "pipeflow"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pipeflow/vignettes/v01-get-started.html",
+          "text": "Getting started"
+        },
+        {
+          "href": "https://cran.r-project.org/web/packages/pipeflow/vignettes/v06-self-modify-pipeline.html",
+          "text": "How pipelines can modify themselves at runtime"
+        },
+        {
+          "href": "https://cran.r-project.org/package=tablespan",
+          "text": "tablespan"
+        },
+        {
+          "href": "https://jhorzek.github.io/tablespan/",
+          "text": "here"
+        },
+        {
+          "href": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tablespan.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://cran.r-project.org/package=tinylens",
+          "text": "tinylens"
+        },
+        {
+          "href": "https://github.com/cfhammill/lenses",
+          "text": "lenses"
+        },
+        {
+          "href": "https://github.com/ekmett/lens",
+          "text": "lens"
+        },
+        {
+          "href": "https://github.com/ekmett/lens/wiki/History-of-Lenses",
+          "text": "lenses"
+        },
+        {
+          "href": "https://cran.r-project.org/package=gg1d",
+          "text": "ggid"
+        },
+        {
+          "href": "https://github.com/selkamand/gg1",
+          "text": "here"
+        },
+        {
+          "href": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/gg1d.png?ssl=1",
+          "text": null
+        },
+        {
+          "href": "https://rworks.dev/posts/december-2024-top-40-new-cran-packages/",
+          "text": "R Works"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "December 2024 Top 40 New CRAN Packages | R-bloggers",
+      "images": [
+        {
+          "alt": "Plots of temperature distributions",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plots of temperature distributions",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/pacu.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Map of North America showing median N trade by country",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Map of North America showing median N trade by country",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/qPRAentry.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Three methods for choosing m of n",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Three methods for choosing m of n",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/moonboot.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Example of packed rectangles",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Example of packed rectangles",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/rectpacker.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Distripution of miRNA types over the years",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Distripution of miRNA types over the years",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/Oncodata.png?w=578&ssl=1"
+        },
+        {
+          "alt": "overview of package functions to get the data.",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "overview of package functions to get the data.",
+          "base64": "data:image/jpeg;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPD94bWwtc3R5bGVzaGVldCBocmVmPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9mb250LWF3ZXNvbWUvNi41LjEvY3NzL2FsbC5taW4uY3NzIiB0eXBlPSJ0ZXh0L2NzcyI/Pgo8c3ZnIGFyaWEtcm9sZWRlc2NyaXB0aW9uPSJmbG93Y2hhcnQtdjIiIHJvbGU9ImdyYXBoaWNzLWRvY3VtZW50IGRvY3VtZW50IiB2aWV3Qm94PSIwIDAgODg3LjQ3MDcwMzEyNSAxNDYyIiBzdHlsZT0ibWF4LXdpZHRoOiAxMDAlOyBtYXgtaGVpZ2h0OiAxMDAlOyBiYWNrZ3JvdW5kOiB3aGl0ZTsiIGNsYXNzPSJmbG93Y2hhcnQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGlkPSJtZXJtYWlkLWltYWdlLWVkaXRvciI+PHN0eWxlPiNtZXJtYWlkLWltYWdlLWVkaXRvcntmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7ZmlsbDojMzMzO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmVycm9yLWljb257ZmlsbDojNTUyMjIyO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmVycm9yLXRleHR7ZmlsbDojNTUyMjIyO3N0cm9rZTojNTUyMjIyO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmVkZ2UtdGhpY2tuZXNzLW5vcm1hbHtzdHJva2Utd2lkdGg6MXB4O30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmVkZ2UtdGhpY2tuZXNzLXRoaWNre3N0cm9rZS13aWR0aDozLjVweDt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmVkZ2UtdGhpY2tuZXNzLWludmlzaWJsZXtzdHJva2Utd2lkdGg6MDtmaWxsOm5vbmU7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuZWRnZS1wYXR0ZXJuLWRhc2hlZHtzdHJva2UtZGFzaGFycmF5OjM7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAubWFya2Vye2ZpbGw6IzMzMzMzMztzdHJva2U6IzMzMzMzMzt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5tYXJrZXIuY3Jvc3N7c3Ryb2tlOiMzMzMzMzM7fSNtZXJtYWlkLWltYWdlLWVkaXRvciBzdmd7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O30jbWVybWFpZC1pbWFnZS1lZGl0b3IgcHttYXJnaW46MDt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5sYWJlbHtmb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7Y29sb3I6IzMzMzt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5jbHVzdGVyLWxhYmVsIHRleHR7ZmlsbDojMzMzO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmNsdXN0ZXItbGFiZWwgc3Bhbntjb2xvcjojMzMzO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmNsdXN0ZXItbGFiZWwgc3BhbiBwe2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAubGFiZWwgdGV4dCwjbWVybWFpZC1pbWFnZS1lZGl0b3Igc3BhbntmaWxsOiMzMzM7Y29sb3I6IzMzMzt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5ub2RlIHJlY3QsI21lcm1haWQtaW1hZ2UtZWRpdG9yIC5ub2RlIGNpcmNsZSwjbWVybWFpZC1pbWFnZS1lZGl0b3IgLm5vZGUgZWxsaXBzZSwjbWVybWFpZC1pbWFnZS1lZGl0b3IgLm5vZGUgcG9seWdvbiwjbWVybWFpZC1pbWFnZS1lZGl0b3IgLm5vZGUgcGF0aHtmaWxsOiNFQ0VDRkY7c3Ryb2tlOiM5MzcwREI7c3Ryb2tlLXdpZHRoOjFweDt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5yb3VnaC1ub2RlIC5sYWJlbCB0ZXh0LCNtZXJtYWlkLWltYWdlLWVkaXRvciAubm9kZSAubGFiZWwgdGV4dCwjbWVybWFpZC1pbWFnZS1lZGl0b3IgLmltYWdlLXNoYXBlIC5sYWJlbCwjbWVybWFpZC1pbWFnZS1lZGl0b3IgLmljb24tc2hhcGUgLmxhYmVse3RleHQtYW5jaG9yOm1pZGRsZTt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5ub2RlIC5rYXRleCBwYXRoe2ZpbGw6IzAwMDtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MXB4O30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLnJvdWdoLW5vZGUgLmxhYmVsLCNtZXJtYWlkLWltYWdlLWVkaXRvciAubm9kZSAubGFiZWwsI21lcm1haWQtaW1hZ2UtZWRpdG9yIC5pbWFnZS1zaGFwZSAubGFiZWwsI21lcm1haWQtaW1hZ2UtZWRpdG9yIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFsaWduOmNlbnRlcjt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5ub2RlLmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5yb290IC5hbmNob3IgcGF0aHtmaWxsOiMzMzMzMzMhaW1wb3J0YW50O3N0cm9rZS13aWR0aDowO3N0cm9rZTojMzMzMzMzO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmFycm93aGVhZFBhdGh7ZmlsbDojMzMzMzMzO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmVkZ2VQYXRoIC5wYXRoe3N0cm9rZTojMzMzMzMzO3N0cm9rZS13aWR0aDoyLjBweDt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzMzMzMzMztmaWxsOm5vbmU7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuZWRnZUxhYmVse2JhY2tncm91bmQtY29sb3I6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTt0ZXh0LWFsaWduOmNlbnRlcjt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5lZGdlTGFiZWwgcHtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO2ZpbGw6cmdiYSgyMzIsMjMyLDIzMiwgMC44KTt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5sYWJlbEJrZ3tiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLCAyMzIsIDIzMiwgMC41KTt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5jbHVzdGVyIHJlY3R7ZmlsbDojZmZmZmRlO3N0cm9rZTojYWFhYTMzO3N0cm9rZS13aWR0aDoxcHg7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuY2x1c3RlciB0ZXh0e2ZpbGw6IzMzMzt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIC5jbHVzdGVyIHNwYW57Y29sb3I6IzMzMzt9I21lcm1haWQtaW1hZ2UtZWRpdG9yIGRpdi5tZXJtYWlkVG9vbHRpcHtwb3NpdGlvbjphYnNvbHV0ZTt0ZXh0LWFsaWduOmNlbnRlcjttYXgtd2lkdGg6MjAwcHg7cGFkZGluZzoycHg7Zm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxMnB4O2JhY2tncm91bmQ6aHNsKDgwLCAxMDAlLCA5Ni4yNzQ1MDk4MDM5JSk7Ym9yZGVyOjFweCBzb2xpZCAjYWFhYTMzO2JvcmRlci1yYWRpdXM6MnB4O3BvaW50ZXItZXZlbnRzOm5vbmU7ei1pbmRleDoxMDA7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuZmxvd2NoYXJ0VGl0bGVUZXh0e3RleHQtYW5jaG9yOm1pZGRsZTtmb250LXNpemU6MThweDtmaWxsOiMzMzM7fSNtZXJtYWlkLWltYWdlLWVkaXRvciByZWN0LnRleHR7ZmlsbDpub25lO3N0cm9rZS13aWR0aDowO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgLmljb24tc2hhcGUsI21lcm1haWQtaW1hZ2UtZWRpdG9yIC5pbWFnZS1zaGFwZXtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7dGV4dC1hbGlnbjpjZW50ZXI7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuaWNvbi1zaGFwZSBwLCNtZXJtYWlkLWltYWdlLWVkaXRvciAuaW1hZ2Utc2hhcGUgcHtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7cGFkZGluZzoycHg7fSNtZXJtYWlkLWltYWdlLWVkaXRvciAuaWNvbi1zaGFwZSByZWN0LCNtZXJtYWlkLWltYWdlLWVkaXRvciAuaW1hZ2Utc2hhcGUgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjMyLDIzMiwyMzIsIDAuOCk7ZmlsbDpyZ2JhKDIzMiwyMzIsMjMyLCAwLjgpO30jbWVybWFpZC1pbWFnZS1lZGl0b3IgOnJvb3R7LS1tZXJtYWlkLWZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9PC9zdHlsZT48Zz48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSI4IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSI1IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kIj48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDAgTCAxMCA1IEwgMCAxMCB6Ij48L3BhdGg+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iOCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iNC41IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50U3RhcnQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDAgNSBMIDEwIDEwIEwgMTAgMCB6Ij48L3BhdGg+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSIxMSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im1lcm1haWQtaW1hZ2UtZWRpdG9yX2Zsb3djaGFydC12Mi1jaXJjbGVFbmQiPjxjaXJjbGUgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHI9IjUiIGN5PSI1IiBjeD0iNSI+PC9jaXJjbGU+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSItMSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im1lcm1haWQtaW1hZ2UtZWRpdG9yX2Zsb3djaGFydC12Mi1jaXJjbGVTdGFydCI+PGNpcmNsZSBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgcj0iNSIgY3k9IjUiIGN4PSI1Ij48L2NpcmNsZT48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUuMiIgcmVmWD0iMTIiIHZpZXdCb3g9IjAgMCAxMSAxMSIgY2xhc3M9Im1hcmtlciBjcm9zcyBmbG93Y2hhcnQtdjIiIGlkPSJtZXJtYWlkLWltYWdlLWVkaXRvcl9mbG93Y2hhcnQtdjItY3Jvc3NFbmQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5Ij48L3BhdGg+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1LjIiIHJlZlg9Ii0xIiB2aWV3Qm94PSIwIDAgMTEgMTEiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiBpZD0ibWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLWNyb3NzU3RhcnQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5Ij48L3BhdGg+PC9tYXJrZXI+PGcgY2xhc3M9InJvb3QiPjxnIGNsYXNzPSJjbHVzdGVycyI+PC9nPjxnIGNsYXNzPSJlZGdlUGF0aHMiPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfTV9GXzAiIGQ9Ik0xMzgsNDU0TDEzOCw0NjguMTY3QzEzOCw0ODIuMzMzLDEzOCw1MTAuNjY3LDE2OC43OTYsNTM4LjcyNkMxOTkuNTkxLDU2Ni43ODUsMjYxLjE4Miw1OTQuNTcsMjkxLjk3OCw2MDguNDYzTDMyMi43NzMsNjIyLjM1NSI+PC9wYXRoPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfQV9GXzEiIGQ9Ik00NDgsNDU0TDQ0OCw0NjguMTY3QzQ0OCw0ODIuMzMzLDQ0OCw1MTAuNjY3LDQ0Ny4xNTMsNTM4LjMzNUM0NDYuMzA3LDU2Ni4wMDMsNDQ0LjYxMyw1OTMuMDA1LDQ0My43NjYsNjA2LjUwN0w0NDIuOTIsNjIwLjAwOCI+PC9wYXRoPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfQ19EXzIiIGQ9Ik03NDAuOTQxLDEzNEw3NDAuOTQxLDE0OC4xNjdDNzQwLjk0MSwxNjIuMzMzLDc0MC45NDEsMTkwLjY2Nyw3NDAuOTQxLDIyNi4zMzNDNzQwLjk0MSwyNjIsNzQwLjk0MSwzMDUsNzQwLjk0MSwzMjYuNUw3NDAuOTQxLDM0OCI+PC9wYXRoPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfRF9GXzMiIGQ9Ik03NDAuOTQxLDQwNkw3NDAuOTQxLDQyOC4xNjdDNzQwLjk0MSw0NTAuMzMzLDc0MC45NDEsNDk0LjY2Nyw3MTAuMTQ2LDUzMC43MjZDNjc5LjM1LDU2Ni43ODUsNjE3Ljc1OSw1OTQuNTcsNTg2Ljk2NCw2MDguNDYzTDU1Ni4xNjgsNjIyLjM1NSI+PC9wYXRoPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfRl9HXzQiIGQ9Ik00MzkuNDcxLDcyNkw0MzkuNDcxLDczOC4xNjdDNDM5LjQ3MSw3NTAuMzMzLDQzOS40NzEsNzc0LjY2Nyw0MzkuNDcxLDc5OC4zMzNDNDM5LjQ3MSw4MjIsNDM5LjQ3MSw4NDUsNDM5LjQ3MSw4NTYuNUw0MzkuNDcxLDg2OCI+PC9wYXRoPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfR19IXzUiIGQ9Ik00MzkuNDcxLDkyNkw0MzkuNDcxLDkzNi4xNjdDNDM5LjQ3MSw5NDYuMzMzLDQzOS40NzEsOTY2LjY2Nyw0MzkuNDcxLDk5MC4zMzNDNDM5LjQ3MSwxMDE0LDQzOS40NzEsMTA0MSw0MzkuNDcxLDEwNTQuNUw0MzkuNDcxLDEwNjgiPjwvcGF0aD48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI21lcm1haWQtaW1hZ2UtZWRpdG9yX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX0hfUl82IiBkPSJNNDM5LjQ3MSwxMTUwTDQzOS40NzEsMTE1OC4xNjdDNDM5LjQ3MSwxMTY2LjMzMyw0MzkuNDcxLDExODIuNjY3LDQ0OS40OTYsMTE5NC43NTdDNDU5LjUyMiwxMjA2Ljg0Nyw0NzkuNTczLDEyMTQuNjk1LDQ4OS41OTksMTIxOC42MThMNDk5LjYyNCwxMjIyLjU0MiI+PC9wYXRoPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbWVybWFpZC1pbWFnZS1lZGl0b3JfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfUl9YWF83IiBkPSJNNjAzLDEzMDJMNjAzLDEzMDYuMTY3QzYwMywxMzEwLjMzMyw2MDMsMTMxOC42NjcsNjAzLDEzMjYuMzMzQzYwMywxMzM0LDYwMywxMzQxLDYwMywxMzQ0LjVMNjAzLDEzNDgiPjwvcGF0aD48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI21lcm1haWQtaW1hZ2UtZWRpdG9yX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX1hfWV84IiBkPSJNNzQ5LjQ3MSw5MjZMNzQ5LjQ3MSw5MzYuMTY3Qzc0OS40NzEsOTQ2LjMzMyw3NDkuNDcxLDk2Ni42NjcsNzQ5LjQ3MSw5ODYuMzMzQzc0OS40NzEsMTAwNiw3NDkuNDcxLDEwMjUsNzQ5LjQ3MSwxMDM0LjVMNzQ5LjQ3MSwxMDQ0Ij48L3BhdGg+PHBhdGggbWFya2VyLWVuZD0idXJsKCNtZXJtYWlkLWltYWdlLWVkaXRvcl9mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9ZX1JfOSIgZD0iTTc0OS40NzEsMTE3NEw3NDkuNDcxLDExNzguMTY3Qzc0OS40NzEsMTE4Mi4zMzMsNzQ5LjQ3MSwxMTkwLjY2Nyw3NDAuNTQ2LDExOTguNzMzQzczMS42MjEsMTIwNi43OTksNzEzLjc3MSwxMjE0LjU5OSw3MDQuODQ2LDEyMTguNDk5TDY5NS45MjEsMTIyMi4zOTgiPjwvcGF0aD48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzOCwgNTM5KSIgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcxLjM3NSwgLTI0KSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQ4IiB3aWR0aD0iMTQyLjc1Ij48ZGl2IGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48cD5zcG9kX3F1aWNrX2dldF9vZCg8YnIvPmRhdGUgPSAnMjAyMi0wMy0xNScpPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDgsIDUzOSkiIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIxMjAiIHdpZHRoPSIyMDAiPjxkaXYgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjxwPnNwb2RfZ2V0KDxici8+dHlwZSA9ICdvcmlnaW4tZGVzdGluYXRpb24nLDxici8+em9uZXMgPSAnZGlzdHJpY3RzJyw8YnIvPmRhdGVzID0gYyhzdGFydCA9ICcyMDIwLTAyLTE0JywgZW5kID0gJzIwMjAtMDItMjEnKSApPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NDAuOTQxNDA2MjUsIDIxOSkiIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIxMjAiIHdpZHRoPSIyMDAiPjxkaXYgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjxwPnNwb2RfY29udmVydCg8YnIvPnR5cGUgPSAnb3JpZ2luLWRlc3RpbmF0aW9uJyw8YnIvPnpvbmVzID0gJ2Rpc3RyaWN0cycsPGJyLz5kYXRlcyA9IGMoc3RhcnQgPSAnMjAyMC0wMi0xNCcsIGVuZCA9ICcyMDIxLTA1LTA5JykgKTwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzQwLjk0MTQwNjI1LCA1MzkpIiBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTUuMDA3ODEyNSwgLTEyKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjI0IiB3aWR0aD0iMTEwLjAxNTYyNSI+PGRpdiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PHA+c3BvZF9jb25uZWN0KCk8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQzOS40NzA3MDMxMjUsIDc5OSkiIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC00OCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI5NiIgd2lkdGg9IjIwMCI+PGRpdiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PHA+ZHBseXIgZnVuY3Rpb25zOiBzZWxlY3QoKSwgZmlsdGVyKCksIG11dGF0ZSgpLCBncm91cF9ieSgpLCBzdW1tYXJpc2UoKSwgZXRjLi4uPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NDkuNDcwNzAzMTI1LCA5ODcpIiBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjMuNDgwNDY4NzUsIC0zNikiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjEyNi45NjA5Mzc1Ij48ZGl2IGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48cD5zcG9kX2dldF96b25lcyg8YnIvPnpvbmVzID0gJ2Rpc3RyaWN0cycsPGJyLz52ZXIgPSAxICk8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im5vZGVzIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzgsIDM3OSkiIGlkPSJmbG93Y2hhcnQtTS0zNCIgY2xhc3M9Im5vZGUgZGVmYXVsdCI+PHJlY3QgaGVpZ2h0PSIxNTAiIHdpZHRoPSIyNjAiIHk9Ii03NSIgeD0iLTEzMCIgc3R5bGU9IiIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciI+PC9yZWN0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MCkiIHN0eWxlPSIiIGNsYXNzPSJsYWJlbCI+PHJlY3Q+PC9yZWN0Pjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTIwIiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+Rm9yIGRhaWx5IGFnZ3JlZ2F0ZWQgZmxvd3MgYXQgbXVudWNpcGFsIGxldmVsICgyMDIyIG9ud2FyZHMpPGJyLz5nZXQgZGF0YSBmcm9tIEdyYXBoUUwgQVBJIGRpcmVjdGx5PC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuNDcwNzAzMTI1LCA2NzUpIiBpZD0iZmxvd2NoYXJ0LUYtMzUiIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iMTAyIiB3aWR0aD0iMjYwIiB5PSItNTEiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMzYpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjcyIiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+J3RibCcgb2JqZWN0IHdpdGggJ2lkJyBmb3Igb3JpZ2lucyBhbmQgZGVzdGluYXRpb25zIGFuZCB0cmlwIGNvdW50czwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQ4LCAzNzkpIiBpZD0iZmxvd2NoYXJ0LUEtMzYiIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iMTUwIiB3aWR0aD0iMjYwIiB5PSItNzUiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNjApIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjEyMCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiPjxwPkhvdWxyeSBmbG93cyBhbmQgb3RoZXIgZGF0YSBmb3IgYSBmZXcgZGF5cyBzdGFydGluZyBpbiAyMDIwPGJyLz5nZXQgZGF0YSBmcm9tIHJhdyBDU1YuZ3ogZmlsZXM8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc0MC45NDE0MDYyNSwgNzEpIiBpZD0iZmxvd2NoYXJ0LUMtMzgiIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iMTI2IiB3aWR0aD0iMjYwIiB5PSItNjMiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNDgpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9Ijk2IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+QW5hbHlzZSBsb25nZXIgcGVyaW9kcyAoc2V2ZXJhbCBtb250aHMpPGJyLz5vciBldmVuIHRoZSB3aG9sZSBkYXRhc2V0IG92ZXIgc2V2ZXJhbCB5ZWFyczwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzQwLjk0MTQwNjI1LCAzNzkpIiBpZD0iZmxvd2NoYXJ0LUQtMzkiIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iNTQiIHdpZHRoPSIyMjUuODgyODEyNSIgeT0iLTI3IiB4PSItMTEyLjk0MTQwNjI1IiBzdHlsZT0iIiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIj48L3JlY3Q+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgyLjk0MTQwNjI1LCAtMTIpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjI0IiB3aWR0aD0iMTY1Ljg4MjgxMjUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIj48cD5wYXRoIHRvIGNvbnZlcnRlZCBkYXRhPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuNDcwNzAzMTI1LCA4OTkpIiBpZD0iZmxvd2NoYXJ0LUctNDMiIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iNTQiIHdpZHRoPSIxNjkuMDkzNzUiIHk9Ii0yNyIgeD0iLTg0LjU0Njg3NSIgc3R5bGU9IiIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciI+PC9yZWN0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01NC41NDY4NzUsIC0xMikiIHN0eWxlPSIiIGNsYXNzPSJsYWJlbCI+PHJlY3Q+PC9yZWN0Pjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMjQiIHdpZHRoPSIxMDkuMDkzNzUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIj48cD5kcGx5cjo6Y29sbGVjdCgpPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuNDcwNzAzMTI1LCAxMTExKSIgaWQ9ImZsb3djaGFydC1ILTQ1IiBjbGFzcz0ibm9kZSBkZWZhdWx0Ij48cmVjdCBoZWlnaHQ9Ijc4IiB3aWR0aD0iMjYwIiB5PSItMzkiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMjQpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQ4IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+PHN0cm9uZz5mbG93c19kYXRhPC9zdHJvbmc+IC0gZGF0YS5mcmFtZSAvIHRpYmJsZTwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjAzLCAxMjYzKSIgaWQ9ImZsb3djaGFydC1SLTQ2IiBjbGFzcz0ibm9kZSBkZWZhdWx0Ij48cmVjdCBoZWlnaHQ9Ijc4IiB3aWR0aD0iMjYwIiB5PSItMzkiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMjQpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQ4IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+bGVmdF9qb2luKDxzdHJvbmc+em9uZXM8L3N0cm9uZz4sIDxzdHJvbmc+Zmxvd3NfZGF0YTwvc3Ryb25nPik8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYwMywgMTQwMykiIGlkPSJmbG93Y2hhcnQtWFgtNDciIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iMTAyIiB3aWR0aD0iMjYwIiB5PSItNTEiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMzYpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjcyIiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+c3BhdGlhbCBkYXRhIG1hdGNoZWQgYnkgJ2lkJyB3aXRoIGFnZ2VnYXRlZCBtb2JpbGl0eSBmbG93czwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzQ5LjQ3MDcwMzEyNSwgODk5KSIgaWQ9ImZsb3djaGFydC1YLTQ4IiBjbGFzcz0ibm9kZSBkZWZhdWx0Ij48cmVjdCBoZWlnaHQ9IjU0IiB3aWR0aD0iMjI2LjAzOTA2MjUiIHk9Ii0yNyIgeD0iLTExMy4wMTk1MzEyNSIgc3R5bGU9IiIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciI+PC9yZWN0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04My4wMTk1MzEyNSwgLTEyKSIgc3R5bGU9IiIgY2xhc3M9ImxhYmVsIj48cmVjdD48L3JlY3Q+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIyNCIgd2lkdGg9IjE2Ni4wMzkwNjI1Ij48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+c3BhdGlhbCBkYXRhIHdpdGggem9uZXM8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc0OS40NzA3MDMxMjUsIDExMTEpIiBpZD0iZmxvd2NoYXJ0LVktNDkiIGNsYXNzPSJub2RlIGRlZmF1bHQiPjxyZWN0IGhlaWdodD0iMTI2IiB3aWR0aD0iMjYwIiB5PSItNjMiIHg9Ii0xMzAiIHN0eWxlPSIiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiPjwvcmVjdD48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNDgpIiBzdHlsZT0iIiBjbGFzcz0ibGFiZWwiPjxyZWN0PjwvcmVjdD48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9Ijk2IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCI+PHA+PHN0cm9uZz56b25lczwvc3Ryb25nPiAtIHBvbHlnb25zIHdpdGggem9uZXMgaW4gc2Ygb2JqZWN0PGJyLz53aXRoICdpZCcgdGhhdCBtYXRjaCB3aXRoIG9yaWdpbnMgYW5kIGRlc3RpbmF0aW9uczwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+",
+          "src": "https://rworks.dev/posts/december-2024-top-40-new-cran-packages/spanishoddata.svg"
+        },
+        {
+          "alt": "Plot of regional income",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot of regional income",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/subincomeR.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Cirle spatial plot showing species",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Cirle spatial plot showing species",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/forest.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Functional FDR and p-value quantities",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Functional FDR and p-value quantities",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/sffdr.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Enrichment diagram",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Enrichment diagram",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TransProR.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Qualy plots",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Qualy plots",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/WARDEN.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Disposition Table",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Disposition Table",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/metalite.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Cohort diagnostic plots",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Cohort diagnostic plots",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/PhenotypeR.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Diagram showing initial state probabilities",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Diagram showing initial state probabilities",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tna.png?w=578&ssl=1"
+        },
+        {
+          "alt": "scatter plot for predicted vs true values",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "scatter plot for predicted vs true values",
+          "base64": null,
+          "src": "https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/catalytic.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Plot comparing mgcv and greta fits",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Plot comparing mgcv and greta fits",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/greta.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Diagram of the Modeling Framework",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Diagram of the Modeling Framework",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/recforest.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Time since recurrance vs Time at recurrance",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Time since recurrance vs Time at recurrance",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TwoTime.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Quarterly GDP",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Quarterly GDP",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/bridgr.png?w=578&ssl=1"
+        },
+        {
+          "alt": "An excel table",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "An excel table",
+          "base64": null,
+          "src": "https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tablespan.png?w=578&ssl=1"
+        },
+        {
+          "alt": "Parallel plot of variables",
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": "Parallel plot of variables",
+          "base64": null,
+          "src": "https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/gg1d.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/joseph-rickert/",
+          "text": "Joseph Rickert"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-390180 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">December 2024 Top 40 New CRAN Packages</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 26, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/joseph-rickert/\">Joseph Rickert</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/december-2024-top-40-new-cran-packages/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>In December, one hundred twenty-three new packages made it to CRAN. Here are my Top 40 picks in eighteen categories: Agriculture, Biology, Computational Methods, Data, Ecology, Epidemiology, Genomics, Healthcare, Health Technology Assessment, Machine Learning, Medicine, Networks, Statistics, Time Series, Utilities, and Visualization.</p>\n<div class=\"columns\">\n<div class=\"column\" style=\"width:45%;\">\n<section class=\"level3\" id=\"agriculture\">\n<h3 class=\"anchored\" data-anchor-id=\"agriculture\">Agriculture</h3>\n<p><a href=\"https://cran.r-project.org/package=pacu\" rel=\"nofollow\" target=\"_blank\">pacu</a> v0.1.44: Provides support for a variety of commonly used precision data science agriculture operations, including functions to download and process raw satellite images from <a href=\"https://documentation.dataspace.copernicus.eu/APIs/OData.html\" rel=\"nofollow\" target=\"_blank\">Sentinel-2</a>, functions to <a href=\"https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Statistical.html\" rel=\"nofollow\" target=\"_blank\">download vegetation index statistics</a> for a given period of time without the need to download the raw images, and functions to visualize weather data in a historical context. There are five vignettes, including an <a href=\"https://cran.r-project.org/web/packages/pacu/vignettes/pacu.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a>, <a href=\"https://cran.r-project.org/web/packages/pacu/vignettes/pacu_sat.html\" rel=\"nofollow\" target=\"_blank\">Satellite data</a>, and <a href=\"https://cran.r-project.org/web/packages/pacu/vignettes/pacu_weather.html\" rel=\"nofollow\" target=\"_blank\">Weather data</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-1\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/pacu.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plots of temperature distributions\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/pacu.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plots of temperature distributions\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/pacu.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=qPRAentry\" rel=\"nofollow\" target=\"_blank\">qPRAentry</a> v0.1.0: Provides functions to estimate the amount of a plant pest entering a risk assessment area (in terms of founder populations) by calculating imported commodities that could be potential pathways of pest entry and the development of a pathway model. Two <code>shiny</code> apps are included to simplify the process of assessing the risk. The approach is based on the European Food Safety Authority (EFSA) guidance document <a href=\"https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2018.5350\" rel=\"nofollow\" target=\"_blank\">Jeger et al. (2018)</a>. See the <a href=\"https://cran.r-project.org/web/packages/qPRAentry/vignettes/qPRAentry_workflow.htm\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-2\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/qPRAentry.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Map of North America showing median N trade by country\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/qPRAentry.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Map of North America showing median N trade by country\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/qPRAentry.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"biology\">\n<h3 class=\"anchored\" data-anchor-id=\"biology\">Biology</h3>\n<p><a href=\"https://cran.r-project.org/package=moRphomenes\" rel=\"nofollow\" target=\"_blank\">moRphomenes</a> v1.0.3: Provides tools to extend geometric morphometric principles, <a href=\"https://link.springer.com/article/10.1007/s11692-009-9055-x\" rel=\"nofollow\" target=\"_blank\">Mitteroecker &amp; Gunz (2009)</a> to the study of non-physical structures, hormone profiles, as outlined in <a href=\"https://onlinelibrary.wiley.com/doi/10.1002/ajpa.24514\" rel=\"nofollow\" target=\"_blank\">Ehrlich et al (2021)</a> and includes a <code>shiny</code> app for data exploration.</p>\n<p><a href=\"https://cran.r-project.org/package=SunCalcMeeus\" rel=\"nofollow\" target=\"_blank\">SunCalMeeus</a> v0.1.2: Provides functions to compute the position of the sun and local solar time using Meeus’ formulae and compute day and/or night length using different twilight definitions or arbitrary sun elevation angles. This package is part of the `r4photobiology suite described in <a href=\"https://bulletin.uv4plants.org/index.php/uv4pbulletin/article/view/16\" rel=\"nofollow\" target=\"_blank\">Aphalo, P. J. (2015)</a>. There is a <a href=\"https://cran.r-project.org/web/packages/SunCalcMeeus/vignettes/userguide-1-astronomy.html\" rel=\"nofollow\" target=\"_blank\">User Guide</a> for the package and a guide for the <a href=\"https://cran.r-project.org/web/packages/SunCalcMeeus/vignettes/userguide-0-r4p-introduction.html\" rel=\"nofollow\" target=\"_blank\">R for Photobiology</a> suite.</p>\n</section>\n<section class=\"level3\" id=\"computational-methods\">\n<h3 class=\"anchored\" data-anchor-id=\"computational-methods\">Computational Methods</h3>\n<p><a href=\"https://cran.r-project.org/package=moonboot\" rel=\"nofollow\" target=\"_blank\">moonboot</a> v0.9.1: Implements the m-out-of-n bootstrap suggested by <a href=\"https://projecteuclid.org/journals/annals-of-statistics/volume-22/issue-4/Large-Sample-Confidence-Regions-Based-on-Subsamples-under-Minimal-Assumptions/10.1214/aos/1176325770.full\" rel=\"nofollow\" target=\"_blank\">Politis and Romano (1994)</a> for subsampling size m. See [Dalitz and Lögler (2024)]https://arxiv.org/abs/2412.05032) for package details.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-3\" href=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/moonboot.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Three methods for choosing m of n\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/moonboot.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Three methods for choosing m of n\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/moonboot.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=RapidFuzz\" rel=\"nofollow\" target=\"_blank\">RapidFuzz</a> v1.0: Provides a high-performance interface for calculating string similarities and distances, leveraging the efficient <code>C++</code> library <a href=\"https://github.com/rapidfuzz/rapidfuzz-cpp%3E\" rel=\"nofollow\" target=\"_blank\">RapidFuzz</a>. See <a href=\"https://cran.r-project.org/web/packages/RapidFuzz/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> to get started.</p>\n<p><a href=\"https://cran.r-project.org/package=rectpacker\" rel=\"nofollow\" target=\"_blank\">rectpacker</a> v1.0.0: Implements the skyline heuristic as discussed in <a href=\"https://link.springer.com/chapter/10.1007/978-3-642-21827-9_29\" rel=\"nofollow\" target=\"_blank\">Lijun et al. (2011)</a> for placing into a larger rectangular region without overlapping in order to maximize the use space. Look <a href=\"https://github.com/coolbutuseless/rectpacker\" rel=\"nofollow\" target=\"_blank\">here</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-4\" href=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/rectpacker.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Example of packed rectangles\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/rectpacker.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Example of packed rectangles\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/rectpacker.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"data\">\n<h3 class=\"anchored\" data-anchor-id=\"data\">Data</h3>\n<p><a href=\"https://cran.r-project.org/package=GHCNr\" rel=\"nofollow\" target=\"_blank\">GHCNr</a> v1.4.5: Provides an interface to the <a href=\"https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily\" rel=\"nofollow\" target=\"_blank\">Global Historical Climatology Network daily (GHCNd) database</a>, which contains daily summaries of weather station data worldwide. GHCNd is accessed through the <a href=\"https://www.ncei.noaa.gov/access/services/data/v1\" rel=\"nofollow\" target=\"_blank\">web API</a> which premits downloading, filtering, and to aggregation at montly and annual scales. See the <a href=\"https://cran.r-project.org/web/packages/GHCNr/vignettes/daily.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=OncoDataSets\" rel=\"nofollow\" target=\"_blank\">OncoDataSets</a> v0.1.0: Offers a rich collection of data focused on cancer research, covering survival rates, genetic studies, biomarkers, and epidemiological insights and and includes datasets on various cancer types such as melanoma, leukemia, breast, ovarian, and lung cancer, among others. See the <a href=\"https://cran.r-project.org/web/packages/OncoDataSets/vignettes/Introduction_to_OncoDataSets.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-5\" href=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/Oncodata.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Distripution of miRNA types over the years\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/Oncodata.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Distripution of miRNA types over the years\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/Oncodata.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=spanishoddata\" rel=\"nofollow\" target=\"_blank\">spanishoddata</a> v0.1.0: Provides access to origin-destination (OD) data from the <a href=\"https://www.transportes.gob.es/ministerio/proyectos-singulares/estudios-de-movilidad-con-big-data/opendata-movilidad\" rel=\"nofollow\" target=\"_blank\">Spanish Ministry of Transport</a> and provides features to simplify the management of large datasets and process them with a <code>duckdb</code> interface. Extensive documentation is available <a href=\"https://ropenspain.github.io/spanishoddata/index.html\" rel=\"nofollow\" target=\"_blank\">here</a>. There are four vignettes, including <a href=\"https://cran.r-project.org/web/packages/spanishoddata/vignettes/quick-get.html\" rel=\"nofollow\" target=\"_blank\">Quickly get daily data</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-6\" href=\"https://rworks.dev/posts/december-2024-top-40-new-cran-packages/spanishoddata.svg\" rel=\"nofollow\" target=\"_blank\"><img alt=\"overview of package functions to get the data.\" class=\"img-fluid\" data-lazy-src=\"https://rworks.dev/posts/december-2024-top-40-new-cran-packages/spanishoddata.svg\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"overview of package functions to get the data.\" class=\"img-fluid\" src=\"https://rworks.dev/posts/december-2024-top-40-new-cran-packages/spanishoddata.svg\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=subincomeR\" rel=\"nofollow\" target=\"_blank\">subincomeR</a> v0.2.2: Provides access to <a href=\"https://zenodo.org/records/13773040\" rel=\"nofollow\" target=\"_blank\">Zenodo</a> the repository of the Sub-national Economic Output (DOSE) data base. Functions are provided to fetch data at multiple geographic levels, match coordinates to administrative regions, and access associated geometries. See the <a href=\"https://cran.r-project.org/web/packages/subincomeR/vignettes/regional-convergence.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-7\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/subincomeR.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot of regional income\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/subincomeR.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot of regional income\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/subincomeR.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"ecology\">\n<h3 class=\"anchored\" data-anchor-id=\"ecology\">Ecology</h3>\n<p><a href=\"https://cran.r-project.org/package=ForestElementsR\" rel=\"nofollow\" target=\"_blank\">ForestElementsR</a> v2.0.1: Provides broadly applicable data structures and algorithms for use with forest mensuration data in a consistent framework. For an introduction to the field of forest mensuration, refer to the textbooks by <a href=\"https://onlinelibrary.wiley.com/doi/book/10.1002/9781118902028\" rel=\"nofollow\" target=\"_blank\">Kershaw et al. (2017)</a> and <a href=\"https://link.springer.com/book/10.1007/978-1-4020-5991-9\" rel=\"nofollow\" target=\"_blank\">van Laar and Akca (2007)</a>. Along with an <a href=\"https://cran.r-project.org/web/packages/ForestElementsR/vignettes/forestelementsr_package.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a>, there are two vignettes on <a href=\"https://cran.r-project.org/web/packages/ForestElementsR/vignettes/tree_species_codings.html\" rel=\"nofollow\" target=\"_blank\">Tree Species Codings</a> and <a href=\"https://cran.r-project.org/web/packages/ForestElementsR/vignettes/yield_tables.html\" rel=\"nofollow\" target=\"_blank\">Yield Tables</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-8\" href=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/forest.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Cirle spatial plot showing species\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/forest.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Cirle spatial plot showing species\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/forest.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"epidemiology\">\n<h3 class=\"anchored\" data-anchor-id=\"epidemiology\">Epidemiology</h3>\n<p><a href=\"https://cran.r-project.org/package=BayesianFitForecast\" rel=\"nofollow\" target=\"_blank\">BayesianFitForecast</a> v1.0.0: Implements methods for Bayesian parameter estimation and forecasting in epidemiological models. Functions enable model fitting using Bayesian methods and generate forecasts with uncertainty quantification. See <a href=\"https://arxiv.org/abs/2411.05371\" rel=\"nofollow\" target=\"_blank\">Karami et al. (2024)</a> and [Grinsztajn et al. (2021])](https://onlinelibrary.wiley.com/doi/10.1002/sim.9164) for details and the <a href=\"https://cran.r-project.org/web/packages/BayesianFitForecast/vignettes/BayesianFitForecast.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> to get started.</p>\n</section>\n<section class=\"level3\" id=\"genomics\">\n<h3 class=\"anchored\" data-anchor-id=\"genomics\">Genomics</h3>\n<p><a href=\"https://cran.r-project.org/web/packages/sffdr/vignettes/sffdr.html\" rel=\"nofollow\" target=\"_blank\">sffdr</a> v1.0.0: Provides suffogate functional false discovery rates for genome-wide association studies and provides estimates of key FDR quantities in a significance analysis, such as the functional local FDR and q-value, and uses these estimates to derive a functional p-value for type I error rate control and a functional local Bayes’ factor for post-GWAS analyses. See <a href=\"https://www.medrxiv.org/content/10.1101/2024.09.24.24314276v1\" rel=\"nofollow\" target=\"_blank\">Bass and Wallace (2024)</a> for details and the <a href=\"https://cran.r-project.org/web/packages/sffdr/vignettes/sffdr.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for an example.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-9\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/sffdr.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Functional FDR and p-value quantities\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/sffdr.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Functional FDR and p-value quantities\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/sffdr.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=TransProR\" rel=\"nofollow\" target=\"_blank\">TransProR</a> v0.0.6: Implements tools for transcriptomic data analysis, with a focus on transcript-level data preprocessing, expression profiling, differential expression analysis, and functional enrichment that enables researchers to identify key biological processes, disease biomarkers, and gene regulatory mechanisms. Differential expression analysis methods incorporated in the package include <code>limma</code> <a href=\"https://academic.oup.com/nar/article/43/7/e47/2414268#google_vignette\" rel=\"nofollow\" target=\"_blank\">Ritchie et al. (2015)</a>, <a href=\"https://link.springer.com/chapter/10.1007/0-387-29362-0_23\" rel=\"nofollow\" target=\"_blank\">Smyth (2005)</a>, <code>edgeR</code> <a href=\"https://academic.oup.com/bioinformatics/article/26/1/139/182458?login=false\" rel=\"nofollow\" target=\"_blank\">Robinson et al. (2010)</a>, <code>DESeq2</code> <a href=\"https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8\" rel=\"nofollow\" target=\"_blank\">Love et al. (2014)</a>, and Wilcoxon tests <a href=\"https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02648-4\" rel=\"nofollow\" target=\"_blank\">Li et al. (2022)</a> An e-book providing extensive documentation is available <a href=\"https://sssydysss.github.io/TransProRBook/\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-10\" href=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TransProR.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Enrichment diagram\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TransProR.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Enrichment diagram\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TransProR.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"healthcare\">\n<h3 class=\"anchored\" data-anchor-id=\"healthcare\">Healthcare</h3>\n<p><a href=\"https://cran.r-project.org/package=pprof\" rel=\"nofollow\" target=\"_blank\">pprof</a> v1.0.1: Implements linear and generalized linear models for provider profiling, incorporating both fixed and random effects as well as post-modeling features, such as standardization measures, hypothesis testing, confidence intervals, and visualization. See <a href=\"https://onlinelibrary.wiley.com/doi/10.1002/sim.9387\" rel=\"nofollow\" target=\"_blank\">Wu et al. (2022)</a> and the <a href=\"https://cran.r-project.org/web/packages/pprof/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for more information.</p>\n</section>\n<section class=\"level3\" id=\"health-technology-assessment\">\n<h3 class=\"anchored\" data-anchor-id=\"health-technology-assessment\">Health Technology Assessment</h3>\n<p><a href=\"https://cran.r-project.org/package=tatooheene\" rel=\"nofollow\" target=\"_blank\">tatooheene</a> v0.19.0: Provides functions to support economic modeling in R based on the methods of the <a href=\"https://www.zorginstituutnederland.nl/publicaties/publicatie/2024/01/16/richtlijn-voor-het-uitvoeren-van-economische-evaluaties-in-de-gezondheidszorg\" rel=\"nofollow\" target=\"_blank\">Dutch guideline</a> for economic evaluations in healthcare, <a href=\"https://www.cbs.nl/\" rel=\"nofollow\" target=\"_blank\">CBS data</a>, and <a href=\"https://www.oecd.org/en.html\" rel=\"nofollow\" target=\"_blank\">OECD data</a>. See <a href=\"https://cran.r-project.org/web/packages/tatooheene/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=WARDEN\" rel=\"nofollow\" target=\"_blank\">WARDEN</a> v0.99.1: Provides a toolkit for discrete event simulations without resource constraints in the context of health technology assessments (HTA). The package focuses on cost-effectiveness modeling and aims to be submission-ready to relevant HTA bodies in alignment with <a href=\"https://www.sheffield.ac.uk/nice-dsu/tsds/patient-level-simulation\" rel=\"nofollow\" target=\"_blank\">NICE TSD 15</a>. Look <a href=\"https://jsanchezalv.github.io/WARDEN/\" rel=\"nofollow\" target=\"_blank\">here</a> for details and the <a href=\"https://cran.r-project.org/web/packages/WARDEN/vignettes/example_ssd.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for an example.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-11\" href=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/WARDEN.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Qualy plots\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/WARDEN.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Qualy plots\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/WARDEN.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n</div><div class=\"column\" style=\"width:10%;\">\n</div><div class=\"column\" style=\"width:45%;\">\n<section class=\"level3\" id=\"machine-learning\">\n<h3 class=\"anchored\" data-anchor-id=\"machine-learning\">Machine Learning</h3>\n<p><a href=\"https://cran.r-project.org/package=FlexRL\" rel=\"nofollow\" target=\"_blank\">FlexRL</a> v0.1.0: Implements the Stochastic Expectation Maximisation (StEM) approach to Record Linkage described in <a href=\"https://arxiv.org/abs/2407.06835\" rel=\"nofollow\" target=\"_blank\">Robach et al. (2024)</a> for finding the common set of records among 2 data sources based on partially identifying variables including those such as postal code) that may evolve over time. See the <a href=\"https://cran.r-project.org/web/packages/FlexRL/vignettes/FlexRL-vignette.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=scR\" rel=\"nofollow\" target=\"_blank\">scR</a> v0.4.0: Provides tools for estimating the sample complexity of a chosen model through theoretical bounds and simulation, including methods for estimating the Vapnik-Chervonenkis dimension (VCD) of a chosen algorithm as well as methods to estimate sample complexity directly. For more details, see <a href=\"https://osf.io/preprints/osf/evrcj\" rel=\"nofollow\" target=\"_blank\">Carter, P &amp; Choi, D (2024)</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=wordvector\" rel=\"nofollow\" target=\"_blank\">wordvector</a> v0.2.0: Create dense vector representation of words and documents using <code>quanteda</code>, currently implements Word2vec (<a href=\"https://arxiv.org/abs/1310.4546\" rel=\"nofollow\" target=\"_blank\">Mikolov et al. (2013)</a>) and Latent Semantic Analysis (<a href=\"https://asistdl.onlinelibrary.wiley.com/doi/10.1002/(SICI)1097-4571(199009)41:6%3C391::AID-ASI1%3E3.0.CO;2-9\" rel=\"nofollow\" target=\"_blank\">Deerwester et al. (1990)</a>). Look <a href=\"https://github.com/koheiw/wordvector\" rel=\"nofollow\" target=\"_blank\">here</a> to get started.</p>\n</section>\n<section class=\"level3\" id=\"medicine\">\n<h3 class=\"anchored\" data-anchor-id=\"medicine\">Medicine</h3>\n<p><a href=\"https://cran.r-project.org/package=metalite.sl\" rel=\"nofollow\" target=\"_blank\">metalite.sl</a> v0.1.0: Provdes tools to analyze subject-level data in clinical trials and simplify workflows to create production-ready tables, listings, and figures. See <a href=\"https://r4csr.org/\" rel=\"nofollow\" target=\"_blank\">Zhang et al. (2022)</a> for background. There are six vignettes, including <a href=\"https://cran.r-project.org/web/packages/metalite.sl/vignettes/metalite.sl.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and <a href=\"https://cran.r-project.org/web/packages/metalite.sl/vignettes/disposition.html\" rel=\"nofollow\" target=\"_blank\">Disposition Table</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-12\" href=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/metalite.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Disposition Table\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/metalite.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Disposition Table\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/metalite.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=OhdsiShinyAppBuilder\" rel=\"nofollow\" target=\"_blank\">OhdsiShinyAppBuilder</a> v1.0.0: Provides tools to build a single <code>shiny</code> app for exploring population characterization, population-level causal effect estimation, and patient-level prediction results generated via the R analyses packages in <a href=\"https://ohdsi.github.io/Hades/\" rel=\"nofollow\" target=\"_blank\">HADES</a>. Learn more about <a href=\"https://ohdsi.github.io/OhdsiShinyAppBuilder/\" rel=\"nofollow\" target=\"_blank\">OhdsiShinyAppBuilder</a> and see the <a href=\"https://cran.r-project.org/web/packages/OhdsiShinyAppBuilder/vignettes/shinyAppModules.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> for an example.</p>\n<p><a href=\"https://cran.r-project.org/package=PhenotypeR\" rel=\"nofollow\" target=\"_blank\">PhenotypeR</a> v0.1.1: Provides tools to phenotype study cohorts in data mapped to the <a href=\"https://www.ohdsi.org/data-standardization/\" rel=\"nofollow\" target=\"_blank\">Observational Medical Outcomes Partnership Common Data Model</a>. Diagnostics are run at the database, code list, cohort, and population levels to assess whether study cohorts are ready for research. See <a href=\"https://cran.r-project.org/web/packages/PhenotypeR/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> and the vignette <a href=\"https://cran.r-project.org/web/packages/PhenotypeR/vignettes/a03_CohortDiagnostics.html\" rel=\"nofollow\" target=\"_blank\">CohortDiagnostics</a> for details.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-13\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/PhenotypeR.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Cohort diagnostic plots\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/PhenotypeR.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Cohort diagnostic plots\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/PhenotypeR.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"networks\">\n<h3 class=\"anchored\" data-anchor-id=\"networks\">Networks</h3>\n<p><a href=\"https://cran.r-project.org/package=tna\" rel=\"nofollow\" target=\"_blank\">tna</a> v0.3.0: Provides tools for performing Transition Network Analysis (TNA) to study relational dynamics, including functions for building and plotting TNA models, calculating centrality measures, and identifying dominant events and patterns. See <a href=\"https://arxiv.org/abs/2411.15486\" rel=\"nofollow\" target=\"_blank\">Saqr et al. (2024)</a> for details on TNA. There is a <a href=\"https://cran.r-project.org/web/packages/tna/vignettes/getting_started.html\" rel=\"nofollow\" target=\"_blank\">Getting Started Guide</a> and two additional vignettes with examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-14\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tna.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Diagram showing initial state probabilities\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tna.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Diagram showing initial state probabilities\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tna.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"statistics\">\n<h3 class=\"anchored\" data-anchor-id=\"statistics\">Statistics</h3>\n<p><a href=\"https://cran.r-project.org/package=catalytic\" rel=\"nofollow\" target=\"_blank\">catalytic</a> v0.1.0: Catalytic prior distributions that integrate observed data with synthetic data generated from a simpler model’s predictive distributions may improve estimation accuracy and stability in statistical modeling. See <a href=\"https://www.pnas.org/doi/full/10.1073/pnas.1920913117\" rel=\"nofollow\" target=\"_blank\">Huang et al. (2020)</a> and <a href=\"https://arxiv.org/abs/2312.01411\" rel=\"nofollow\" target=\"_blank\">Li and Huang (202)</a> for background and the vignettes <a href=\"https://cran.r-project.org/web/packages/catalytic/vignettes/catalytic_cox.html\" rel=\"nofollow\" target=\"_blank\">catalytic_cox</a>, <a href=\"https://cran.r-project.org/web/packages/catalytic/vignettes/catalytic_glm_binomial.html\" rel=\"nofollow\" target=\"_blank\">catalytic_glm_binomial</a>, and <a href=\"https://cran.r-project.org/web/packages/catalytic/vignettes/catalytic_glm_gaussian.html\" rel=\"nofollow\" target=\"_blank\">catalytic_glm_gaussian</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-15\" href=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/catalytic.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"scatter plot for predicted vs true values\" class=\"img-fluid\" data-lazy-src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/catalytic.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"scatter plot for predicted vs true values\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/catalytic.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=gfoRmulaICE\" rel=\"nofollow\" target=\"_blank\">gfoRmulaICE</a> v0.1.0: Implements iterative conditional expectation (ICE) estimators of the plug-in g-formula as described in <a href=\"https://academic.oup.com/biometrics/article/77/2/740/7445112?login=false#google_vignette\" rel=\"nofollow\" target=\"_blank\">Wen et al. (2020)</a>, enabling estimates of survival curves under sustained treatment strategies (interventions) using longitudinal data with time-varying treatments, time-varying confounders, censoring, and competing events. See <a href=\"https://cran.r-project.org/web/packages/gfoRmulaICE/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> for examples.</p>\n<p><a href=\"https://cran.r-project.org/package=greta.gam\" rel=\"nofollow\" target=\"_blank\">greta.gam</a> v0.3.0: Implements a <code>greta</code>, <a href=\"https://joss.theoj.org/papers/10.21105/joss.01601\" rel=\"nofollow\" target=\"_blank\">Golding (2019)</a> module that provides <code>mgcv</code> smoother functions and formula syntax to define smooth terms for use in a <code>greta</code> model. Users can define their own likelihood to complete the model and fit it by Markov Chain Monte Carlo (MCMC). See the <a href=\"https://cran.r-project.org/web/packages/greta.gam/vignettes/getting-started.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-16\" href=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/greta.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Plot comparing mgcv and greta fits\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/greta.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Plot comparing mgcv and greta fits\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/greta.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=multvardiv\" rel=\"nofollow\" target=\"_blank\">multvardiv</a>: Provides functions for the multivariate generalized Gaussian distribution, multivariate Cauchy distribution, multivariate t distribution, and for computing the distance between two distributions. See <a href=\"https://ieeexplore.ieee.org/document/8707051\" rel=\"nofollow\" target=\"_blank\">Bouhlel and Dziri (2019)</a>, <a href=\"https://www.mdpi.com/1099-4300/24/6/838\" rel=\"nofollow\" target=\"_blank\">Bouhlel and Rousseau (2022)</a>, <a href=\"https://ieeexplore.ieee.org/document/10284989\" rel=\"nofollow\" target=\"_blank\">Bouhlel and Rousseau (2023)</a> for background.</p>\n<p><a href=\"https://cran.r-project.org/package=recforest\" rel=\"nofollow\" target=\"_blank\">recforest</a> v1.0.0: Extends the random survival forest algorithm by adapting splitting rules and node estimators to handle complexities of recurrent events and enables the analysis of recurrent events with right-censored data and the potential presence of a terminal event. See <a href=\"https://hal.science/hal-04612431v1/document\" rel=\"nofollow\" target=\"_blank\">Murris et al. (2024)</a> for the theory and the two vignettes <a href=\"https://cran.r-project.org/web/packages/recforest/vignettes/method.html\" rel=\"nofollow\" target=\"_blank\">method</a> and <a href=\"https://cran.r-project.org/web/packages/recforest/vignettes/predict.html\" rel=\"nofollow\" target=\"_blank\">predict</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-17\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/recforest.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Diagram of the Modeling Framework\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/recforest.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Diagram of the Modeling Framework\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/recforest.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=TwoTimeScales\" rel=\"nofollow\" target=\"_blank\">TwoTimeScales</a> v1.0.0: Provides functions to analyze time-to-event data with two time scales by estimating a smooth hazard that varies over two time scales and also including functions to prepare the raw data, estimate and plot the two-dimensional smooth hazard. See <a href=\"https://onlinelibrary.wiley.com/doi/10.1002/sim.10297\" rel=\"nofollow\" target=\"_blank\">Carollo et al. (2024)</a> for the theory. There are four vignettes, including <a href=\"https://cran.r-project.org/web/packages/TwoTimeScales/vignettes/TwoTimeScales.html\" rel=\"nofollow\" target=\"_blank\">Introduction</a> and <a href=\"https://cran.r-project.org/web/packages/TwoTimeScales/vignettes/visualization.html\" rel=\"nofollow\" target=\"_blank\">Visualize hazards</a>.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-18\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TwoTime.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Time since recurrance vs Time at recurrance\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TwoTime.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Time since recurrance vs Time at recurrance\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/TwoTime.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"time-series\">\n<h3 class=\"anchored\" data-anchor-id=\"time-series\">Time Series</h3>\n<p><a href=\"https://cran.r-project.org/web/packages/bridgr/vignettes/bridgr.html\" rel=\"nofollow\" target=\"_blank\">bridgr</a> v0.1.1: Implements bridge models for nowcasting and forecasting macroeconomic variables by linking high-frequency indicator variables (e.g., monthly data) to low-frequency target variables (e.g., quarterly GDP). See <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0169207003000670?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Baffigi et al. (2004)</a>, <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0169207003000670?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Burri (2023)</a>, or <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0169207015001144?via%3Dihub\" rel=\"nofollow\" target=\"_blank\">Schumacher (2016)</a> for background and <a href=\"https://cran.r-project.org/web/packages/bridgr/readme/README.html\" rel=\"nofollow\" target=\"_blank\">README</a> to get started.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-19\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/bridgr.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Quarterly GDP\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/bridgr.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Quarterly GDP\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/bridgr.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n<section class=\"level3\" id=\"utilities\">\n<h3 class=\"anchored\" data-anchor-id=\"utilities\">Utilities</h3>\n<p><a href=\"https://cran.r-project.org/package=cpp11qpdf\" rel=\"nofollow\" target=\"_blank\">cpp11qpdf</a> v1.3.5: Provides tools to split, combine, and compress PDF files using <a href=\"https://qpdf.sourceforge.io/\" rel=\"nofollow\" target=\"_blank\"><code>qpdf</code></a>, an open-source PDF rendering library that enables content-preserving transformations of PDF files. See the <a href=\"https://cran.r-project.org/web/packages/cpp11qpdf/vignettes/cpp11qpdf.html\" rel=\"nofollow\" target=\"_blank\">vignette</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=doParabar\" rel=\"nofollow\" target=\"_blank\">doParabar</a> v1.0.2: Provides a <code>foreach</code> parallel adapter for <a href=\"https://parabar.mihaiconstantin.com/\" rel=\"nofollow\" target=\"_blank\"><code>parabar</code></a> backends, enabling users to run <code>foreach</code> loops in parallel while leveraging the parallel and progress-tracking capabilities of the <code>parabar</code> package. Look <a href=\"https://parabar.mihaiconstantin.com/articles/foreach\" rel=\"nofollow\" target=\"_blank\">here</a> for documentation.</p>\n<p><a href=\"https://cran.r-project.org/package=fasterRaster\" rel=\"nofollow\" target=\"_blank\">fasterRaste</a> v8.4.0.3: Processing of large-in-memory/large-on disk rasters and spatial vectors using the stand-alone version of <a href=\"https://grass.osgeo.org/\" rel=\"nofollow\" target=\"_blank\">GRASS GIS</a>. There are seven vignettes, including <a href=\"https://cran.r-project.org/web/packages/fasterRaster/vignettes/fasterRaster.html\" rel=\"nofollow\" target=\"_blank\">Getting Started</a> and <a href=\"https://cran.r-project.org/web/packages/fasterRaster/vignettes/faster_fasterRaster.html\" rel=\"nofollow\" target=\"_blank\">Making fasterRaster faster</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=iso8601\" rel=\"nofollow\" target=\"_blank\">iso8601</a> v0.1.2: Provides functions to parse strings with <a href=\"https://en.wikipedia.org/wiki/ISO_8601\" rel=\"nofollow\" target=\"_blank\">ISO8601</a> dates, times, and date-times into R objects, determine the type of string, and standardize ISO8601 strings. Look <a href=\"https://github.com/djvanderlaan/iso8601/tree/main/R-package\" rel=\"nofollow\" target=\"_blank\">here</a> for examples.</p>\n<p><a href=\"https://cran.r-project.org/package=pipeflow\" rel=\"nofollow\" target=\"_blank\">pipeflow</a> v0.2.2: Implements a lightweight framework for building robust data analysis pipelines. Users initialize a pipeline with a dataset and construct workflows step by step by adding R functions. Steps can be modified, removed, or inserted at any stage. There are six vignettes including <a href=\"https://cran.r-project.org/web/packages/pipeflow/vignettes/v01-get-started.html\" rel=\"nofollow\" target=\"_blank\">Getting started</a> and <a href=\"https://cran.r-project.org/web/packages/pipeflow/vignettes/v06-self-modify-pipeline.html\" rel=\"nofollow\" target=\"_blank\">How pipelines can modify themselves at runtime</a>.</p>\n<p><a href=\"https://cran.r-project.org/package=tablespan\" rel=\"nofollow\" target=\"_blank\">tablespan</a> v0.1.7 Provides functions to create “good enough” tables that can be exported to <code>Excel</code>, <code>HTML</code>, <code>LaTeX</code>, and <code>RTF</code>. Look <a href=\"https://jhorzek.github.io/tablespan/\" rel=\"nofollow\" target=\"_blank\">here</a> for an introduction.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-20\" href=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tablespan.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"An excel table\" class=\"img-fluid\" data-lazy-src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tablespan.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"An excel table\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/tablespan.png?w=578&amp;ssl=1\"/></noscript></a></p>\n<p><a href=\"https://cran.r-project.org/package=tinylens\" rel=\"nofollow\" target=\"_blank\">tinylens</a> v0.1.0: Provides functions which are based on the <a href=\"https://github.com/cfhammill/lenses\" rel=\"nofollow\" target=\"_blank\"><code>lenses</code></a> package and the Haskell <a href=\"https://github.com/ekmett/lens\" rel=\"nofollow\" target=\"_blank\"><code>lens</code></a> package to create and use <a href=\"https://github.com/ekmett/lens/wiki/History-of-Lenses\" rel=\"nofollow\" target=\"_blank\">lenses</a> for manipulating deeply nested data structures.</p>\n</section>\n<section class=\"level3\" id=\"visualization\">\n<h3 class=\"anchored\" data-anchor-id=\"visualization\">Visualization</h3>\n<p><a href=\"https://cran.r-project.org/package=gg1d\" rel=\"nofollow\" target=\"_blank\">ggid</a> v0.1.0: Streamlines exploratory data analysis by providing a turnkey approach to visualizing n-dimensional data, which graphically reveals correlative or associative relationships between 2 or more features. Represents all dataset features as distinct, vertically aligned bar or tile plots, with plot types auto-selected based on whether variables are categorical or numeric. Look <a href=\"https://github.com/selkamand/gg1\" rel=\"nofollow\" target=\"_blank\">here</a> for examples.</p>\n<p><a class=\"lightbox\" data-gallery=\"quarto-lightbox-gallery-21\" href=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/gg1d.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"Parallel plot of variables\" class=\"img-fluid\" data-lazy-src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/gg1d.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Parallel plot of variables\" class=\"img-fluid\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/rworks.dev/posts/december-2024-top-40-new-cran-packages/gg1d.png?w=578&amp;ssl=1\"/></noscript></a></p>\n</section>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/december-2024-top-40-new-cran-packages/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "December 2024 Top 40 New CRAN Packages\nPosted on\nJanuary 26, 2025\nby\nJoseph Rickert\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn December, one hundred twenty-three new packages made it to CRAN. Here are my Top 40 picks in eighteen categories: Agriculture, Biology, Computational Methods, Data, Ecology, Epidemiology, Genomics, Healthcare, Health Technology Assessment, Machine Learning, Medicine, Networks, Statistics, Time Series, Utilities, and Visualization.\nAgriculture\npacu\nv0.1.44: Provides support for a variety of commonly used precision data science agriculture operations, including functions to download and process raw satellite images from\nSentinel-2\n, functions to\ndownload vegetation index statistics\nfor a given period of time without the need to download the raw images, and functions to visualize weather data in a historical context. There are five vignettes, including an\nIntroduction\n,\nSatellite data\n, and\nWeather data\n.\nqPRAentry\nv0.1.0: Provides functions to estimate the amount of a plant pest entering a risk assessment area (in terms of founder populations) by calculating imported commodities that could be potential pathways of pest entry and the development of a pathway model. Two\nshiny\napps are included to simplify the process of assessing the risk. The approach is based on the European Food Safety Authority (EFSA) guidance document\nJeger et al. (2018)\n. See the\nvignette\n.\nBiology\nmoRphomenes\nv1.0.3: Provides tools to extend geometric morphometric principles,\nMitteroecker & Gunz (2009)\nto the study of non-physical structures, hormone profiles, as outlined in\nEhrlich et al (2021)\nand includes a\nshiny\napp for data exploration.\nSunCalMeeus\nv0.1.2: Provides functions to compute the position of the sun and local solar time using Meeus’ formulae and compute day and/or night length using different twilight definitions or arbitrary sun elevation angles. This package is part of the `r4photobiology suite described in\nAphalo, P. J. (2015)\n. There is a\nUser Guide\nfor the package and a guide for the\nR for Photobiology\nsuite.\nComputational Methods\nmoonboot\nv0.9.1: Implements the m-out-of-n bootstrap suggested by\nPolitis and Romano (1994)\nfor subsampling size m. See [Dalitz and Lögler (2024)]https://arxiv.org/abs/2412.05032) for package details.\nRapidFuzz\nv1.0: Provides a high-performance interface for calculating string similarities and distances, leveraging the efficient\nC++\nlibrary\nRapidFuzz\n. See\nREADME\nto get started.\nrectpacker\nv1.0.0: Implements the skyline heuristic as discussed in\nLijun et al. (2011)\nfor placing into a larger rectangular region without overlapping in order to maximize the use space. Look\nhere\nfor examples.\nData\nGHCNr\nv1.4.5: Provides an interface to the\nGlobal Historical Climatology Network daily (GHCNd) database\n, which contains daily summaries of weather station data worldwide. GHCNd is accessed through the\nweb API\nwhich premits downloading, filtering, and to aggregation at montly and annual scales. See the\nvignette\n.\nOncoDataSets\nv0.1.0: Offers a rich collection of data focused on cancer research, covering survival rates, genetic studies, biomarkers, and epidemiological insights and and includes datasets on various cancer types such as melanoma, leukemia, breast, ovarian, and lung cancer, among others. See the\nvignette\n.\nspanishoddata\nv0.1.0: Provides access to origin-destination (OD) data from the\nSpanish Ministry of Transport\nand provides features to simplify the management of large datasets and process them with a\nduckdb\ninterface. Extensive documentation is available\nhere\n. There are four vignettes, including\nQuickly get daily data\n.\nsubincomeR\nv0.2.2: Provides access to\nZenodo\nthe repository of the Sub-national Economic Output (DOSE) data base. Functions are provided to fetch data at multiple geographic levels, match coordinates to administrative regions, and access associated geometries. See the\nvignette\n.\nEcology\nForestElementsR\nv2.0.1: Provides broadly applicable data structures and algorithms for use with forest mensuration data in a consistent framework. For an introduction to the field of forest mensuration, refer to the textbooks by\nKershaw et al. (2017)\nand\nvan Laar and Akca (2007)\n. Along with an\nIntroduction\n, there are two vignettes on\nTree Species Codings\nand\nYield Tables\n.\nEpidemiology\nBayesianFitForecast\nv1.0.0: Implements methods for Bayesian parameter estimation and forecasting in epidemiological models. Functions enable model fitting using Bayesian methods and generate forecasts with uncertainty quantification. See\nKarami et al. (2024)\nand [Grinsztajn et al. (2021])](https://onlinelibrary.wiley.com/doi/10.1002/sim.9164) for details and the\nvignette\nto get started.\nGenomics\nsffdr\nv1.0.0: Provides suffogate functional false discovery rates for genome-wide association studies and provides estimates of key FDR quantities in a significance analysis, such as the functional local FDR and q-value, and uses these estimates to derive a functional p-value for type I error rate control and a functional local Bayes’ factor for post-GWAS analyses. See\nBass and Wallace (2024)\nfor details and the\nvignette\nfor an example.\nTransProR\nv0.0.6: Implements tools for transcriptomic data analysis, with a focus on transcript-level data preprocessing, expression profiling, differential expression analysis, and functional enrichment that enables researchers to identify key biological processes, disease biomarkers, and gene regulatory mechanisms. Differential expression analysis methods incorporated in the package include\nlimma\nRitchie et al. (2015)\n,\nSmyth (2005)\n,\nedgeR\nRobinson et al. (2010)\n,\nDESeq2\nLove et al. (2014)\n, and Wilcoxon tests\nLi et al. (2022)\nAn e-book providing extensive documentation is available\nhere\n.\nHealthcare\npprof\nv1.0.1: Implements linear and generalized linear models for provider profiling, incorporating both fixed and random effects as well as post-modeling features, such as standardization measures, hypothesis testing, confidence intervals, and visualization. See\nWu et al. (2022)\nand the\nREADME\nfor more information.\nHealth Technology Assessment\ntatooheene\nv0.19.0: Provides functions to support economic modeling in R based on the methods of the\nDutch guideline\nfor economic evaluations in healthcare,\nCBS data\n, and\nOECD data\n. See\nREADME\n.\nWARDEN\nv0.99.1: Provides a toolkit for discrete event simulations without resource constraints in the context of health technology assessments (HTA). The package focuses on cost-effectiveness modeling and aims to be submission-ready to relevant HTA bodies in alignment with\nNICE TSD 15\n. Look\nhere\nfor details and the\nvignette\nfor an example.\nMachine Learning\nFlexRL\nv0.1.0: Implements the Stochastic Expectation Maximisation (StEM) approach to Record Linkage described in\nRobach et al. (2024)\nfor finding the common set of records among 2 data sources based on partially identifying variables including those such as postal code) that may evolve over time. See the\nvignette\n.\nscR\nv0.4.0: Provides tools for estimating the sample complexity of a chosen model through theoretical bounds and simulation, including methods for estimating the Vapnik-Chervonenkis dimension (VCD) of a chosen algorithm as well as methods to estimate sample complexity directly. For more details, see\nCarter, P & Choi, D (2024)\n.\nwordvector\nv0.2.0: Create dense vector representation of words and documents using\nquanteda\n, currently implements Word2vec (\nMikolov et al. (2013)\n) and Latent Semantic Analysis (\nDeerwester et al. (1990)\n). Look\nhere\nto get started.\nMedicine\nmetalite.sl\nv0.1.0: Provdes tools to analyze subject-level data in clinical trials and simplify workflows to create production-ready tables, listings, and figures. See\nZhang et al. (2022)\nfor background. There are six vignettes, including\nIntroduction\nand\nDisposition Table\n.\nOhdsiShinyAppBuilder\nv1.0.0: Provides tools to build a single\nshiny\napp for exploring population characterization, population-level causal effect estimation, and patient-level prediction results generated via the R analyses packages in\nHADES\n. Learn more about\nOhdsiShinyAppBuilder\nand see the\nvignette\nfor an example.\nPhenotypeR\nv0.1.1: Provides tools to phenotype study cohorts in data mapped to the\nObservational Medical Outcomes Partnership Common Data Model\n. Diagnostics are run at the database, code list, cohort, and population levels to assess whether study cohorts are ready for research. See\nREADME\nand the vignette\nCohortDiagnostics\nfor details.\nNetworks\ntna\nv0.3.0: Provides tools for performing Transition Network Analysis (TNA) to study relational dynamics, including functions for building and plotting TNA models, calculating centrality measures, and identifying dominant events and patterns. See\nSaqr et al. (2024)\nfor details on TNA. There is a\nGetting Started Guide\nand two additional vignettes with examples.\nStatistics\ncatalytic\nv0.1.0: Catalytic prior distributions that integrate observed data with synthetic data generated from a simpler model’s predictive distributions may improve estimation accuracy and stability in statistical modeling. See\nHuang et al. (2020)\nand\nLi and Huang (202)\nfor background and the vignettes\ncatalytic_cox\n,\ncatalytic_glm_binomial\n, and\ncatalytic_glm_gaussian\n.\ngfoRmulaICE\nv0.1.0: Implements iterative conditional expectation (ICE) estimators of the plug-in g-formula as described in\nWen et al. (2020)\n, enabling estimates of survival curves under sustained treatment strategies (interventions) using longitudinal data with time-varying treatments, time-varying confounders, censoring, and competing events. See\nREADME\nfor examples.\ngreta.gam\nv0.3.0: Implements a\ngreta\n,\nGolding (2019)\nmodule that provides\nmgcv\nsmoother functions and formula syntax to define smooth terms for use in a\ngreta\nmodel. Users can define their own likelihood to complete the model and fit it by Markov Chain Monte Carlo (MCMC). See the\nvignette\n.\nmultvardiv\n: Provides functions for the multivariate generalized Gaussian distribution, multivariate Cauchy distribution, multivariate t distribution, and for computing the distance between two distributions. See\nBouhlel and Dziri (2019)\n,\nBouhlel and Rousseau (2022)\n,\nBouhlel and Rousseau (2023)\nfor background.\nrecforest\nv1.0.0: Extends the random survival forest algorithm by adapting splitting rules and node estimators to handle complexities of recurrent events and enables the analysis of recurrent events with right-censored data and the potential presence of a terminal event. See\nMurris et al. (2024)\nfor the theory and the two vignettes\nmethod\nand\npredict\nfor examples.\nTwoTimeScales\nv1.0.0: Provides functions to analyze time-to-event data with two time scales by estimating a smooth hazard that varies over two time scales and also including functions to prepare the raw data, estimate and plot the two-dimensional smooth hazard. See\nCarollo et al. (2024)\nfor the theory. There are four vignettes, including\nIntroduction\nand\nVisualize hazards\n.\nTime Series\nbridgr\nv0.1.1: Implements bridge models for nowcasting and forecasting macroeconomic variables by linking high-frequency indicator variables (e.g., monthly data) to low-frequency target variables (e.g., quarterly GDP). See\nBaffigi et al. (2004)\n,\nBurri (2023)\n, or\nSchumacher (2016)\nfor background and\nREADME\nto get started.\nUtilities\ncpp11qpdf\nv1.3.5: Provides tools to split, combine, and compress PDF files using\nqpdf\n, an open-source PDF rendering library that enables content-preserving transformations of PDF files. See the\nvignette\n.\ndoParabar\nv1.0.2: Provides a\nforeach\nparallel adapter for\nparabar\nbackends, enabling users to run\nforeach\nloops in parallel while leveraging the parallel and progress-tracking capabilities of the\nparabar\npackage. Look\nhere\nfor documentation.\nfasterRaste\nv8.4.0.3: Processing of large-in-memory/large-on disk rasters and spatial vectors using the stand-alone version of\nGRASS GIS\n. There are seven vignettes, including\nGetting Started\nand\nMaking fasterRaster faster\n.\niso8601\nv0.1.2: Provides functions to parse strings with\nISO8601\ndates, times, and date-times into R objects, determine the type of string, and standardize ISO8601 strings. Look\nhere\nfor examples.\npipeflow\nv0.2.2: Implements a lightweight framework for building robust data analysis pipelines. Users initialize a pipeline with a dataset and construct workflows step by step by adding R functions. Steps can be modified, removed, or inserted at any stage. There are six vignettes including\nGetting started\nand\nHow pipelines can modify themselves at runtime\n.\ntablespan\nv0.1.7 Provides functions to create “good enough” tables that can be exported to\nExcel\n,\nHTML\n,\nLaTeX\n, and\nRTF\n. Look\nhere\nfor an introduction.\ntinylens\nv0.1.0: Provides functions which are based on the\nlenses\npackage and the Haskell\nlens\npackage to create and use\nlenses\nfor manipulating deeply nested data structures.\nVisualization\nggid\nv0.1.0: Streamlines exploratory data analysis by providing a turnkey approach to visualizing n-dimensional data, which graphically reveals correlative or associative relationships between 2 or more features. Represents all dataset features as distinct, vertically aligned bar or tile plots, with plot types auto-selected based on whether variables are categorical or numeric. Look\nhere\nfor examples.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "In December, one hundred twenty-three new packages made it to CRAN. Here are my Top 40 picks in eighteen categories: Agriculture, Biology, Computational Methods, Data, Ecology, Epidemiology, Genomics, Healthcare, Health Technology Assessment, Ma...",
+      "meta_keywords": null,
+      "og_description": "In December, one hundred twenty-three new packages made it to CRAN. Here are my Top 40 picks in eighteen categories: Agriculture, Biology, Computational Methods, Data, Ecology, Epidemiology, Genomics, Healthcare, Health Technology Assessment, Ma...",
+      "og_image": "https://rworks.dev/posts/december-2024-top-40-new-cran-packages/pacu.png",
+      "og_title": "December 2024 Top 40 New CRAN Packages | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 10.6,
+      "sitemap_lastmod": null,
+      "twitter_description": "In December, one hundred twenty-three new packages made it to CRAN. Here are my Top 40 picks in eighteen categories: Agriculture, Biology, Computational Methods, Data, Ecology, Epidemiology, Genomics, Healthcare, Health Technology Assessment, Ma...",
+      "twitter_title": "December 2024 Top 40 New CRAN Packages | R-bloggers",
+      "url": "https://www.r-bloggers.com/2025/01/december-2024-top-40-new-cran-packages/",
+      "word_count": 2129
+    }
+  }
+}

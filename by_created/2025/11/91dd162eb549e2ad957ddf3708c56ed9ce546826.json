@@ -1,0 +1,169 @@
+{
+  "id": "91dd162eb549e2ad957ddf3708c56ed9ce546826",
+  "url": "https://www.r-bloggers.com/2009/08/example-7-11-plot-an-empirical-cumulative-distribution-function-from-scratch/",
+  "created_at_utc": "2025-11-17T20:40:27Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "602e2485-d82f-4b11-b563-7ff4ba16f0c1",
+    "created_at": "2025-11-17 20:40:27",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/08/example-7-11-plot-an-empirical-cumulative-distribution-function-from-scratch/",
+      "crawled_at": "2025-11-17T10:27:11.286959",
+      "external_links": [
+        {
+          "href": "https://feedproxy.google.com/~r/SASandR/~3/dOB13iRaR6Y/example-711-plot-two-empirical.html",
+          "text": "SAS and R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://sas-and-r.blogspot.com/2009/08/example-78-plot-two-empirical.html",
+          "text": "example 7.8"
+        },
+        {
+          "href": "http://www.stata.com",
+          "text": "Stata"
+        },
+        {
+          "href": "https://feedproxy.google.com/~r/SASandR/~3/dOB13iRaR6Y/example-711-plot-two-empirical.html",
+          "text": "SAS and R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Example 7.11: Plot an empirical cumulative distribution function from scratch | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example+7113.jpg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example+7113.jpg?w=578"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/1275149608391671670-7926851242499480185?l=sas-and-r.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://blogger.googleusercontent.com/tracker/1275149608391671670-7926851242499480185?l=sas-and-r.blogspot.com"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/SASandR/~4/dOB13iRaR6Y"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/SASandR/~4/dOB13iRaR6Y"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/ken-kleinman/",
+          "text": "Ken Kleinman"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/wp-content/uploads/2009/08/example+7112.jpg",
+          "text": null
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/connect-points/",
+          "text": "connect points"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/empirical-cdf/",
+          "text": "empirical CDF"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/plot/",
+          "text": "plot"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/read-data-in-stata-format/",
+          "text": "read data in Stata format"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/read-from-local-disk/",
+          "text": "read from local disk"
+        },
+        {
+          "href": "https://www.r-bloggers.com/tag/sort/",
+          "text": "sort"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-447 post type-post status-publish format-standard hentry category-r-bloggers tag-connect-points tag-empirical-cdf tag-plot tag-read-data-in-stata-format tag-read-from-local-disk tag-sort\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Example 7.11: Plot an empirical cumulative distribution function from scratch</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">August 31, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ken-kleinman/\">Ken Kleinman</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://feedproxy.google.com/~r/SASandR/~3/dOB13iRaR6Y/example-711-plot-two-empirical.html\"> SAS and R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->In <a href=\"https://sas-and-r.blogspot.com/2009/08/example-78-plot-two-empirical.html\" rel=\"nofollow\" target=\"_blank\">example 7.8</a>, we used built-in functions to produce an empirical CDF plot.  But the empirical cumulative distribution function (CDF) is simple to calculate directly, and it might be useful to have more control over its appearance than is aﬀorded by the direct method employed in example 7.8.  In a later post, we’ll use that control to improve upon example 7.8.<br/><br/><b>SAS</b><br/><br/>In SAS, we first read the data from a locally stored <a href=\"http://www.stata.com\" rel=\"nofollow\" target=\"_blank\">Stata</a> data set.  Then, we calculate the empirical CDF for <tt>pcs</tt>.  We do this by ﬁrst sorting (1.5.6) on <tt>pcs</tt>. Then the order statistic of the observation divided by the total number of obervations is the empirical probability that X ≤ x. We ﬁnd the number of observations using the <tt>nobs</tt> data set option (A.6.1) and the observation number using the <tt>_n_</tt> implied variable (1.4.15).  Then we can plot the empirical CDF using <tt>proc gplot</tt> (section 5.1.1) to make a scatterplot and a <tt>symbol</tt> statement with the <tt>j</tt> interpolation (as in section 1.13.5) to connect the points.<br/><br/><pre>\nproc import datafile=\"C:bookhelp.dta\"\n   out=help dbms=dta;\nrun;\n\nproc sort data=help;\n   by pcs;\nrun;\n\ndata help_a;\nset help nobs=totalobs;\n   ecdf_pcs = _n_ / totalobs;\nrun;\n\nsymbol1 i=j v=none c=blue;\nproc gplot data=help_a;\n   plot ecdf_pcs * pcs;\nrun;\nquit;\n</pre><br/><br/><b>R</b><br/>Now, R. First, make the ECDF values in a similar fashion to SAS, then make an empty frame (5.1.1), then ﬁll the frame with lines connecting the calculated values (5.2.1).<br/><br/><pre>\nlibrary(foreign)\nds &lt;- read.dta\n  (\"http://www.math.smith.edu/sasr/datasets/help.dta\")\nattach(ds)\nsortpcs &lt;- sort(pcs)\necdfpcs &lt;- (1:length(sortpcs))/length(sortpcs)\nplot(sortpcs, ecdfpcs, type=\"n\")\nlines(sortpcs, ecdfpcs)\n</pre><br/><br/><a data-cf-modified-17e9e4960bdbc7d033ba5425-=\"\" href=\"https://www.r-bloggers.com/wp-content/uploads/2009/08/example+7112.jpg\" onblur=\"if (!window.__cfRLUnblockHandlers) return false; try {parent.deselectBloggerImageGracefully();} catch(e) {}\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example+7113.jpg?w=578&amp;is-pending-load=1\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example+7113.jpg?w=578\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 219px;\"/><noscript><img alt=\"\" border=\"0\" data-recalc-dims=\"1\" id=\"BLOGGER_PHOTO_ID_5376175494361684722\" src=\"https://i2.wp.com/www.r-bloggers.com/wp-content/uploads/2009/08/example+7113.jpg?w=578\" style=\"display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 219px;\"/></noscript></a><div class=\"blogger-post-footer\"><img alt=\"\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-7926851242499480185?l=sas-and-r.blogspot.com&amp;is-pending-load=1\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-7926851242499480185?l=sas-and-r.blogspot.com\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img alt=\"\" height=\"1\" src=\"https://blogger.googleusercontent.com/tracker/1275149608391671670-7926851242499480185?l=sas-and-r.blogspot.com\" width=\"1\"/></noscript></div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/SASandR/~4/dOB13iRaR6Y?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/SASandR/~4/dOB13iRaR6Y\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/SASandR/~4/dOB13iRaR6Y\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://feedproxy.google.com/~r/SASandR/~3/dOB13iRaR6Y/example-711-plot-two-empirical.html\"> SAS and R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/connect-points/\" rel=\"tag\">connect points</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/empirical-cdf/\" rel=\"tag\">empirical CDF</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/plot/\" rel=\"tag\">plot</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/read-data-in-stata-format/\" rel=\"tag\">read data in Stata format</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/read-from-local-disk/\" rel=\"tag\">read from local disk</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/sort/\" rel=\"tag\">sort</a></li></ul></div></article>",
+      "main_text": "Example 7.11: Plot an empirical cumulative distribution function from scratch\nPosted on\nAugust 31, 2009\nby\nKen Kleinman\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSAS and R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn\nexample 7.8\n, we used built-in functions to produce an empirical CDF plot.  But the empirical cumulative distribution function (CDF) is simple to calculate directly, and it might be useful to have more control over its appearance than is aﬀorded by the direct method employed in example 7.8.  In a later post, we’ll use that control to improve upon example 7.8.\nSAS\nIn SAS, we first read the data from a locally stored\nStata\ndata set.  Then, we calculate the empirical CDF for\npcs\n.  We do this by ﬁrst sorting (1.5.6) on\npcs\n. Then the order statistic of the observation divided by the total number of obervations is the empirical probability that X ≤ x. We ﬁnd the number of observations using the\nnobs\ndata set option (A.6.1) and the observation number using the\n_n_\nimplied variable (1.4.15).  Then we can plot the empirical CDF using\nproc gplot\n(section 5.1.1) to make a scatterplot and a\nsymbol\nstatement with the\nj\ninterpolation (as in section 1.13.5) to connect the points.\nproc import datafile=\"C:bookhelp.dta\"\n   out=help dbms=dta;\nrun;\n\nproc sort data=help;\n   by pcs;\nrun;\n\ndata help_a;\nset help nobs=totalobs;\n   ecdf_pcs = _n_ / totalobs;\nrun;\n\nsymbol1 i=j v=none c=blue;\nproc gplot data=help_a;\n   plot ecdf_pcs * pcs;\nrun;\nquit;\nR\nNow, R. First, make the ECDF values in a similar fashion to SAS, then make an empty frame (5.1.1), then ﬁll the frame with lines connecting the calculated values (5.2.1).\nlibrary(foreign)\nds <- read.dta\n  (\"http://www.math.smith.edu/sasr/datasets/help.dta\")\nattach(ds)\nsortpcs <- sort(pcs)\necdfpcs <- (1:length(sortpcs))/length(sortpcs)\nplot(sortpcs, ecdfpcs, type=\"n\")\nlines(sortpcs, ecdfpcs)\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSAS and R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nconnect points\nempirical CDF\nplot\nread data in Stata format\nread from local disk\nsort",
+      "meta_description": "In example 7.8, we used built-in functions to produce an empirical CDF plot. But the empirical cumulative distribution function (CDF) is simple to calculate directly, and it might be useful to have more control over its appearance than is aﬀorded by...",
+      "meta_keywords": "connect points,empirical cdf,plot,read data in stata format,read from local disk,sort",
+      "og_description": "In example 7.8, we used built-in functions to produce an empirical CDF plot. But the empirical cumulative distribution function (CDF) is simple to calculate directly, and it might be useful to have more control over its appearance than is aﬀorded by...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2009/08/example+7113.jpg",
+      "og_title": "Example 7.11: Plot an empirical cumulative distribution function from scratch | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 2.3,
+      "sitemap_lastmod": "2011-05-11T21:21:28+00:00",
+      "twitter_description": "In example 7.8, we used built-in functions to produce an empirical CDF plot. But the empirical cumulative distribution function (CDF) is simple to calculate directly, and it might be useful to have more control over its appearance than is aﬀorded by...",
+      "twitter_title": "Example 7.11: Plot an empirical cumulative distribution function from scratch | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/08/example-7-11-plot-an-empirical-cumulative-distribution-function-from-scratch/",
+      "word_count": 458
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "da1153ef0b4c32c711a08ab353bb2a45bd8680fa",
+  "url": "https://www.r-bloggers.com/2024/12/understanding-storage-media-in-linux-a-beginners-guide/",
+  "created_at_utc": "2025-11-22T19:59:40Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "27431989-2d8b-442b-9233-0a4514fae926",
+    "created_at": "2025-11-22 19:59:40",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2024/12/understanding-storage-media-in-linux-a-beginners-guide/",
+      "crawled_at": "2025-11-22T10:57:07.152821",
+      "external_links": [
+        {
+          "href": "https://www.spsanderson.com/steveondata/posts/2024-12-13/",
+          "text": "Steve's Data Tips and Tricks"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://t.me/steveondata",
+          "text": "https://t.me/steveondata"
+        },
+        {
+          "href": "https://www.linkedin.com/in/spsanderson/",
+          "text": "https://www.linkedin.com/in/spsanderson/"
+        },
+        {
+          "href": "https://mstdn.social/@stevensanderson",
+          "text": "https://mstdn.social/@stevensanderson"
+        },
+        {
+          "href": "https://rstats.me/@spsanderson",
+          "text": "https://rstats.me/@spsanderson"
+        },
+        {
+          "href": "https://github.com/spsanderson",
+          "text": "https://github.com/spsanderson"
+        },
+        {
+          "href": "https://bsky.app/profile/spsanderson.com",
+          "text": "https://bsky.app/profile/spsanderson.com"
+        },
+        {
+          "href": "https://www.spsanderson.com/steveondata/posts/2024-12-13/",
+          "text": "Steve's Data Tips and Tricks"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Understanding Storage Media in Linux: A Beginner’s Guide | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://i2.wp.com/www.spsanderson.com/steveondata/posts/2024-12-13/todays_post.png?w=578&ssl=1"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/",
+          "text": "Steven P. Sanderson II, MPH"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-389239 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Understanding Storage Media in Linux: A Beginner’s Guide</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 12, 2024</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/steven-p-sanderson-ii-mph/\">Steven P. Sanderson II, MPH</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \n<div style=\"min-height: 30px;\">\n[social4i size=\"small\" align=\"align-left\"]\n</div>\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\n[This article was first published on  <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2024-12-13/\"> Steve's Data Tips and Tricks</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<section class=\"level1\" id=\"introduction\">\n<h1>Introduction</h1>\n<p>Storage media management is a fundamental aspect of working with Linux systems. Whether you’re a new Linux user or looking to expand your knowledge, understanding how to work with different storage devices is essential. This guide will walk you through the basics of storage media management in Linux, from mounting devices to creating file systems.</p>\n</section>\n<section class=\"level1\" id=\"types-of-storage-media-in-linux\">\n<h1>Types of Storage Media in Linux</h1>\n<section class=\"level2\" id=\"physical-storage-devices\">\n<h2 class=\"anchored\" data-anchor-id=\"physical-storage-devices\">Physical Storage Devices</h2>\n<ul>\n<li>Hard Disk Drives (HDDs)</li>\n<li>Solid State Drives (SSDs)</li>\n<li>USB Flash Drives</li>\n<li>CD/DVD Media</li>\n<li>Floppy Disks (legacy systems)</li>\n</ul>\n</section>\n<section class=\"level2\" id=\"network-storage\">\n<h2 class=\"anchored\" data-anchor-id=\"network-storage\">Network Storage</h2>\n<ul>\n<li>Network File System (NFS)</li>\n<li>Samba Shares</li>\n<li>Network-Attached Storage (NAS)</li>\n</ul>\n</section>\n<section class=\"level2\" id=\"virtual-storage\">\n<h2 class=\"anchored\" data-anchor-id=\"virtual-storage\">Virtual Storage</h2>\n<ul>\n<li>RAID (Redundant Array of Independent Disks)</li>\n<li>LVM (Logical Volume Manager)</li>\n<li>Virtual Disk Images</li>\n</ul>\n</section>\n</section>\n<section class=\"level1\" id=\"essential-storage-commands\">\n<h1>Essential Storage Commands</h1>\n<section class=\"level2\" id=\"mount-and-umount\">\n<h2 class=\"anchored\" data-anchor-id=\"mount-and-umount\">1. mount and umount</h2>\n<p>The <code>mount</code> command attaches storage devices to your file system, while <code>umount</code> safely detaches them.</p>\n<pre># Mount a USB drive\nsudo mount /dev/sdb1 /mnt/usb\n\n# Unmount a device\nsudo umount /dev/sdb1</pre>\n</section>\n<section class=\"level2\" id=\"fsck-file-system-check\">\n<h2 class=\"anchored\" data-anchor-id=\"fsck-file-system-check\">2. fsck (File System Check)</h2>\n<p>Use <code>fsck</code> to check and repair file system errors:</p>\n<pre># Check file system integrity\nsudo fsck /dev/sdb1\n\n# Force check on next reboot\nsudo touch /forcefsck</pre>\n</section>\n<section class=\"level2\" id=\"fdisk-partition-management\">\n<h2 class=\"anchored\" data-anchor-id=\"fdisk-partition-management\">3. fdisk (Partition Management)</h2>\n<p><code>fdisk</code> is used for creating, deleting, and managing partitions:</p>\n<pre># Start fdisk for a device\nsudo fdisk /dev/sdb\n\n# Common commands:\n# p - print partition table\n# n - create new partition\n# d - delete partition\n# w - write changes</pre>\n</section>\n<section class=\"level2\" id=\"mkfs-create-file-systems\">\n<h2 class=\"anchored\" data-anchor-id=\"mkfs-create-file-systems\">4. mkfs (Create File Systems)</h2>\n<p>Create new file systems using <code>mkfs</code>:</p>\n<pre># Create ext4 filesystem\nsudo mkfs -t ext4 /dev/sdb1\n\n# Create FAT32 filesystem\nsudo mkfs -t vfat /dev/sdb1</pre>\n</section>\n</section>\n<section class=\"level1\" id=\"working-with-different-storage-types\">\n<h1>Working with Different Storage Types</h1>\n<section class=\"level2\" id=\"usb-flash-drives\">\n<h2 class=\"anchored\" data-anchor-id=\"usb-flash-drives\">USB Flash Drives</h2>\n<ol type=\"1\">\n<li>Insert the drive</li>\n<li>Identify the device name: <code>lsblk</code></li>\n<li>Create mount point: <code>sudo mkdir /mnt/usb</code></li>\n<li>Mount: <code>sudo mount /dev/sdb1 /mnt/usb</code></li>\n</ol>\n</section>\n<section class=\"level2\" id=\"optical-media-cddvd\">\n<h2 class=\"anchored\" data-anchor-id=\"optical-media-cddvd\">Optical Media (CD/DVD)</h2>\n<pre># Mount CD/DVD\nsudo mount /dev/cdrom /mnt/cdrom\n\n# Create ISO image\ndd if=/dev/cdrom of=backup.iso</pre>\n</section>\n<section class=\"level2\" id=\"network-storage-1\">\n<h2 class=\"anchored\" data-anchor-id=\"network-storage-1\">Network Storage</h2>\n<pre># Mount NFS share\nsudo mount -t nfs server:/share /mnt/nfs\n\n# Mount Samba share\nsudo mount -t cifs //server/share /mnt/samba</pre>\n</section>\n</section>\n<section class=\"level1\" id=\"your-turn-practical-exercise\">\n<h1>Your Turn! Practical Exercise</h1>\n<p><strong>Problem</strong>: Create a new partition and format it with ext4.</p>\n<p><strong>Steps</strong>:</p>\n<ol type=\"1\">\n<li>Identify your device using <code>lsblk</code></li>\n<li>Create partition with <code>fdisk</code></li>\n<li>Format with ext4</li>\n<li>Mount and verify</li>\n</ol>\n<details>\n<summary>\nNeed help?\n</summary>\n<p><strong>Solution</strong>:</p>\n<pre>sudo fdisk /dev/sdb\n# Use n for new partition\nsudo mkfs.ext4 /dev/sdb1\nsudo mount /dev/sdb1 /mnt/data\ndf -h /mnt/data</pre>\n</details>\n</section>\n<section class=\"level1\" id=\"quick-takeaways\">\n<h1>Quick Takeaways</h1>\n<ul>\n<li>Always unmount devices before physical removal</li>\n<li>Regularly check file system integrity</li>\n<li>Back up important data</li>\n<li>Use appropriate file systems for your needs</li>\n<li>Document your storage configuration</li>\n</ul>\n</section>\n<section class=\"level1\" id=\"faqs\">\n<h1>FAQs</h1>\n<ol type=\"1\">\n<li><p><strong>Q</strong>: How do I safely remove a USB drive? <strong>A</strong>: Always use <code>umount</code> before physical removal to prevent data corruption.</p></li>\n<li><p><strong>Q</strong>: Why can’t I mount my drive? <strong>A</strong>: Check permissions, ensure the mount point exists, and verify the file system type.</p></li>\n<li><p><strong>Q</strong>: How do I check disk space? <strong>A</strong>: Use <code>df -h</code> for mounted file systems and <code>du -h</code> for directory usage.</p></li>\n<li><p><strong>Q</strong>: Can Linux read NTFS drives? <strong>A</strong>: Yes, with the ntfs-3g driver installed.</p></li>\n<li><p><strong>Q</strong>: How do I repair a corrupted file system? <strong>A</strong>: Use <code>fsck</code> in recovery mode or from a live USB.</p></li>\n</ol>\n</section>\n<section class=\"level1\" id=\"best-practices\">\n<h1>Best Practices</h1>\n<ol type=\"1\">\n<li><strong>Regular Maintenance</strong>\n<ul>\n<li>Check file systems periodically</li>\n<li>Monitor disk health</li>\n<li>Keep backups current</li>\n</ul></li>\n<li><strong>Safety Measures</strong>\n<ul>\n<li>Always unmount before removing devices</li>\n<li>Use write protection when needed</li>\n<li>Verify checksums for important data</li>\n</ul></li>\n<li><strong>Performance Tips</strong>\n<ul>\n<li>Choose appropriate file systems</li>\n<li>Regular defragmentation (when needed)</li>\n<li>Monitor disk space usage</li>\n</ul></li>\n</ol>\n</section>\n<section class=\"level1\" id=\"share-and-engage\">\n<h1>Share and Engage</h1>\n<p>Found this guide helpful? Share it with other Linux users and let us know your experiences with storage media management. Join the discussion in the comments below!</p>\n<p><em>Remember: Always backup important data before performing storage operations.</em></p>\n<hr/>\n<p>Happy Coding! 🚀</p>\n<div class=\"quarto-figure quarto-figure-center\">\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i2.wp.com/www.spsanderson.com/steveondata/posts/2024-12-13/todays_post.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/www.spsanderson.com/steveondata/posts/2024-12-13/todays_post.png?w=578&amp;ssl=1\"/></noscript></p>\n<figcaption>Mount Drives in Linux</figcaption>\n</figure>\n</div>\n<hr/>\n<p><em>You can connect with me at any one of the below</em>:</p>\n<p><em>Telegram Channel here</em>: <a class=\"uri\" href=\"https://t.me/steveondata\" rel=\"nofollow\" target=\"_blank\">https://t.me/steveondata</a></p>\n<p><em>LinkedIn Network here</em>: <a class=\"uri\" href=\"https://www.linkedin.com/in/spsanderson/\" rel=\"nofollow\" target=\"_blank\">https://www.linkedin.com/in/spsanderson/</a></p>\n<p><em>Mastadon Social here</em>: <a href=\"https://mstdn.social/@stevensanderson\" rel=\"nofollow\" target=\"_blank\">https://mstdn.social/@stevensanderson</a></p>\n<p><em>RStats Network here</em>: <a href=\"https://rstats.me/@spsanderson\" rel=\"nofollow\" target=\"_blank\">https://rstats.me/@spsanderson</a></p>\n<p><em>GitHub Network here</em>: <a class=\"uri\" href=\"https://github.com/spsanderson\" rel=\"nofollow\" target=\"_blank\">https://github.com/spsanderson</a></p>\n<p><em>Bluesky Network here</em>: <a class=\"uri\" href=\"https://bsky.app/profile/spsanderson.com\" rel=\"nofollow\" target=\"_blank\">https://bsky.app/profile/spsanderson.com</a></p>\n<hr/>\n\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.spsanderson.com/steveondata/posts/2024-12-13/\"> Steve's Data Tips and Tricks</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\n\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\n</div> </div>\n</article>",
+      "main_text": "Understanding Storage Media in Linux: A Beginner’s Guide\nPosted on\nDecember 12, 2024\nby\nSteven P. Sanderson II, MPH\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSteve's Data Tips and Tricks\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIntroduction\nStorage media management is a fundamental aspect of working with Linux systems. Whether you’re a new Linux user or looking to expand your knowledge, understanding how to work with different storage devices is essential. This guide will walk you through the basics of storage media management in Linux, from mounting devices to creating file systems.\nTypes of Storage Media in Linux\nPhysical Storage Devices\nHard Disk Drives (HDDs)\nSolid State Drives (SSDs)\nUSB Flash Drives\nCD/DVD Media\nFloppy Disks (legacy systems)\nNetwork Storage\nNetwork File System (NFS)\nSamba Shares\nNetwork-Attached Storage (NAS)\nVirtual Storage\nRAID (Redundant Array of Independent Disks)\nLVM (Logical Volume Manager)\nVirtual Disk Images\nEssential Storage Commands\n1. mount and umount\nThe\nmount\ncommand attaches storage devices to your file system, while\numount\nsafely detaches them.\n# Mount a USB drive\nsudo mount /dev/sdb1 /mnt/usb\n\n# Unmount a device\nsudo umount /dev/sdb1\n2. fsck (File System Check)\nUse\nfsck\nto check and repair file system errors:\n# Check file system integrity\nsudo fsck /dev/sdb1\n\n# Force check on next reboot\nsudo touch /forcefsck\n3. fdisk (Partition Management)\nfdisk\nis used for creating, deleting, and managing partitions:\n# Start fdisk for a device\nsudo fdisk /dev/sdb\n\n# Common commands:\n# p - print partition table\n# n - create new partition\n# d - delete partition\n# w - write changes\n4. mkfs (Create File Systems)\nCreate new file systems using\nmkfs\n:\n# Create ext4 filesystem\nsudo mkfs -t ext4 /dev/sdb1\n\n# Create FAT32 filesystem\nsudo mkfs -t vfat /dev/sdb1\nWorking with Different Storage Types\nUSB Flash Drives\nInsert the drive\nIdentify the device name:\nlsblk\nCreate mount point:\nsudo mkdir /mnt/usb\nMount:\nsudo mount /dev/sdb1 /mnt/usb\nOptical Media (CD/DVD)\n# Mount CD/DVD\nsudo mount /dev/cdrom /mnt/cdrom\n\n# Create ISO image\ndd if=/dev/cdrom of=backup.iso\nNetwork Storage\n# Mount NFS share\nsudo mount -t nfs server:/share /mnt/nfs\n\n# Mount Samba share\nsudo mount -t cifs //server/share /mnt/samba\nYour Turn! Practical Exercise\nProblem\n: Create a new partition and format it with ext4.\nSteps\n:\nIdentify your device using\nlsblk\nCreate partition with\nfdisk\nFormat with ext4\nMount and verify\nNeed help?\nSolution\n:\nsudo fdisk /dev/sdb\n# Use n for new partition\nsudo mkfs.ext4 /dev/sdb1\nsudo mount /dev/sdb1 /mnt/data\ndf -h /mnt/data\nQuick Takeaways\nAlways unmount devices before physical removal\nRegularly check file system integrity\nBack up important data\nUse appropriate file systems for your needs\nDocument your storage configuration\nFAQs\nQ\n: How do I safely remove a USB drive?\nA\n: Always use\numount\nbefore physical removal to prevent data corruption.\nQ\n: Why can’t I mount my drive?\nA\n: Check permissions, ensure the mount point exists, and verify the file system type.\nQ\n: How do I check disk space?\nA\n: Use\ndf -h\nfor mounted file systems and\ndu -h\nfor directory usage.\nQ\n: Can Linux read NTFS drives?\nA\n: Yes, with the ntfs-3g driver installed.\nQ\n: How do I repair a corrupted file system?\nA\n: Use\nfsck\nin recovery mode or from a live USB.\nBest Practices\nRegular Maintenance\nCheck file systems periodically\nMonitor disk health\nKeep backups current\nSafety Measures\nAlways unmount before removing devices\nUse write protection when needed\nVerify checksums for important data\nPerformance Tips\nChoose appropriate file systems\nRegular defragmentation (when needed)\nMonitor disk space usage\nShare and Engage\nFound this guide helpful? Share it with other Linux users and let us know your experiences with storage media management. Join the discussion in the comments below!\nRemember: Always backup important data before performing storage operations.\nHappy Coding! 🚀\nMount Drives in Linux\nYou can connect with me at any one of the below\n:\nTelegram Channel here\n:\nhttps://t.me/steveondata\nLinkedIn Network here\n:\nhttps://www.linkedin.com/in/spsanderson/\nMastadon Social here\n:\nhttps://mstdn.social/@stevensanderson\nRStats Network here\n:\nhttps://rstats.me/@spsanderson\nGitHub Network here\n:\nhttps://github.com/spsanderson\nBluesky Network here\n:\nhttps://bsky.app/profile/spsanderson.com\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSteve's Data Tips and Tricks\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Introduction Storage media management is a fundamental aspect of working with Linux systems. Whether you’re a new Linux user or looking to expand your knowledge, understanding how to work with different storage devices is essential. This guide ...",
+      "meta_keywords": null,
+      "og_description": "Introduction Storage media management is a fundamental aspect of working with Linux systems. Whether you’re a new Linux user or looking to expand your knowledge, understanding how to work with different storage devices is essential. This guide ...",
+      "og_image": "https://www.spsanderson.com/steveondata/posts/2024-12-13/todays_post.png",
+      "og_title": "Understanding Storage Media in Linux: A Beginner’s Guide | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4,
+      "sitemap_lastmod": null,
+      "twitter_description": "Introduction Storage media management is a fundamental aspect of working with Linux systems. Whether you’re a new Linux user or looking to expand your knowledge, understanding how to work with different storage devices is essential. This guide ...",
+      "twitter_title": "Understanding Storage Media in Linux: A Beginner’s Guide | R-bloggers",
+      "url": "https://www.r-bloggers.com/2024/12/understanding-storage-media-in-linux-a-beginners-guide/",
+      "word_count": 808
+    }
+  }
+}

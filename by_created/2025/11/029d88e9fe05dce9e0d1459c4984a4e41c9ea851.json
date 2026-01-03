@@ -1,0 +1,149 @@
+{
+  "id": "029d88e9fe05dce9e0d1459c4984a4e41c9ea851",
+  "url": "https://www.r-bloggers.com/2023/12/trying-out-timeplyr/",
+  "created_at_utc": "2025-11-17T20:39:02Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "48a8f448-a0cd-417a-8c62-97765a07b687",
+    "created_at": "2025-11-17 20:39:02",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2023/12/trying-out-timeplyr/",
+      "crawled_at": "2025-11-17T09:42:26.635387",
+      "external_links": [
+        {
+          "href": "https://alan-y.netlify.com/post/trying-out-timeplyr/",
+          "text": "R on Alan Yeung"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://github.com/NicChr/timeplyr",
+          "text": "timeplyr"
+        },
+        {
+          "href": "https://github.com/NicChr",
+          "text": "Nick"
+        },
+        {
+          "href": "https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales",
+          "text": "supermarket sales dataset"
+        },
+        {
+          "href": "https://github.com/NicChr/timeplyr",
+          "text": "Github page"
+        },
+        {
+          "href": "https://alan-y.netlify.com/post/trying-out-timeplyr/",
+          "text": "R on Alan Yeung"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "Trying out timeplyr | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-ggplot-1.svg"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-complete-1.svg"
+        },
+        {
+          "alt": null,
+          "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/weekly-1.svg"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/r-on-alan-yeung/",
+          "text": "R on Alan Yeung"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-380477 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Trying out timeplyr</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 2, 2023</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-alan-yeung/\">R on Alan Yeung</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://alan-y.netlify.com/post/trying-out-timeplyr/\"> R on Alan Yeung</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<p>The <a href=\"https://github.com/NicChr/timeplyr\" rel=\"nofollow\" target=\"_blank\">timeplyr</a> R package, created by my colleague <a href=\"https://github.com/NicChr\" rel=\"nofollow\" target=\"_blank\">Nick</a>, was accepted on CRAN in October 2023. A direct quote from the CRAN page is that it provides <em>a set of fast tidy functions for wrangling, completing and summarising date and date-time data</em>. It looks like a really neat package for working with time series data in a way consistent with what people have become used to with the tidyverse. From my chats with Nick, I believe some of the ideas for this package were inspired by problems that came up repeatedly while working with COVID-19 data. So the lesson here is that if you want to get clever solutions to problems that come up time and time again during analyses, you just have to sufficiently annoy a good programmer!</p>\n<p>I’m going to give <code>timeplyr</code> a quick try out here, with the help of a <a href=\"https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales\" rel=\"nofollow\" target=\"_blank\">supermarket sales dataset</a> that I can handily pilfer from Kaggle. To keep the dataset simple, I’ve dropped some variables that I’ve considered surplus to requirements for this try out.</p>\n<pre>library(tidyverse)\nlibrary(janitor)\nlibrary(timeplyr)\n\nsales_df &lt;- read_csv(\"https://raw.githubusercontent.com/sushantag9/Supermarket-Sales-Data-Analysis/master/supermarket_sales%20-%20Sheet1.csv\",\n                     show_col_types = FALSE, name_repair = make_clean_names) %&gt;% \n    mutate(date_time = mdy_hms(paste(date, time)), .after = invoice_id) %&gt;% \n    select(-(date:rating), -city, -gender)\n\nglimpse(sales_df)\r\n## Rows: 1,000\n## Columns: 9\n## $ invoice_id    &lt;chr&gt; \"750-67-8428\", \"226-31-3081\", \"631-41-3108\", \"123-19-117…\n## $ date_time     &lt;dttm&gt; 2019-01-05 13:08:00, 2019-03-08 10:29:00, 2019-03-03 13…\n## $ branch        &lt;chr&gt; \"A\", \"C\", \"A\", \"A\", \"A\", \"C\", \"A\", \"C\", \"A\", \"B\", \"B\", \"…\n## $ customer_type &lt;chr&gt; \"Member\", \"Normal\", \"Normal\", \"Member\", \"Normal\", \"Norma…\n## $ product_line  &lt;chr&gt; \"Health and beauty\", \"Electronic accessories\", \"Home and…\n## $ unit_price    &lt;dbl&gt; 74.69, 15.28, 46.33, 58.22, 86.31, 85.39, 68.84, 73.56, …\n## $ quantity      &lt;dbl&gt; 7, 5, 7, 8, 7, 7, 6, 10, 2, 3, 4, 4, 5, 10, 10, 6, 7, 6,…\n## $ tax_5_percent &lt;dbl&gt; 26.1415, 3.8200, 16.2155, 23.2880, 30.2085, 29.8865, 20.…\n## $ total         &lt;dbl&gt; 548.9715, 80.2200, 340.5255, 489.0480, 634.3785, 627.616…</pre>\n<p>As there are many sales per day, I’ll start with aggregating up to get daily sales for each branch, which we can do with <code>time_by()</code>.</p>\n<pre>daily_df &lt;- sales_df %&gt;% \n    group_by(branch) %&gt;% \n    time_by(date_time, \"day\", .add = TRUE, time_floor = TRUE) %&gt;% \n    summarise(daily_total = sum(total), .groups = \"drop\")\n\ndaily_df\r\n## # A tibble: 263 × 3\n##    branch date_time           daily_total\n##    &lt;chr&gt;  &lt;dttm&gt;                    &lt;dbl&gt;\n##  1 A      2019-01-01 00:00:00       2371.\n##  2 A      2019-01-02 00:00:00        307.\n##  3 A      2019-01-03 00:00:00        937.\n##  4 A      2019-01-04 00:00:00        483.\n##  5 A      2019-01-05 00:00:00       2025.\n##  6 A      2019-01-06 00:00:00       1310.\n##  7 A      2019-01-07 00:00:00       1106.\n##  8 A      2019-01-08 00:00:00        683.\n##  9 A      2019-01-09 00:00:00        202.\n## 10 A      2019-01-10 00:00:00        731.\n## # ℹ 253 more rows</pre>\n<p>We can plot this data quickly using <code>time_ggplot()</code> which is flexible enough to allow facets as well – we’ll use this here as the lines for each branch overlap a lot. It also has nice defaults to ensure the x-axis does not get overly cluttered with text.</p>\n<pre>time_ggplot(daily_df, date_time, daily_total, group = branch, facet = TRUE)</pre>\n<p><img data-lazy-src=\"https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-ggplot-1.svg\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img src=\"https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-ggplot-1.svg\" width=\"450\"/></noscript></p>\n<p>Another thing <code>timeplyr</code> offers is to fill in missing dates in a dataset using <code>time_complete()</code>. Across the 3 branches, there are 4 days missing and these should have sales of zero which didn’t appear in the first plot. We’ll do some data manipulation to clearly shows the points that have been added in and to also demonstrate that standard ggplot2 operations can be added in with <code>time_ggplot()</code>.</p>\n<pre>daily_df2 &lt;- daily_df %&gt;% \n    time_complete(date_time, .by = branch, time_by = \"day\", \n                  fill = list(daily_total = 0))\n\nanti_join(daily_df2, daily_df, join_by(branch, date_time))\r\n## # A tibble: 4 × 3\n##   branch date_time           daily_total\n##   &lt;chr&gt;  &lt;dttm&gt;                    &lt;dbl&gt;\n## 1 B      2019-01-11 00:00:00           0\n## 2 B      2019-01-23 00:00:00           0\n## 3 B      2019-02-01 00:00:00           0\n## 4 C      2019-03-22 00:00:00           0\r\ndaily_df2 %&gt;% \n    mutate(zero = if_else(daily_total == 0, \"Zero\", NA_character_)) %&gt;% \n    time_ggplot(date_time, daily_total, group = branch, facet = TRUE) +\n    geom_point(aes(colour = zero), show.legend = FALSE) +\n    labs(x = NULL, y = \"Daily Sales\") +\n    theme(legend.position = \"top\")</pre>\n<p><img data-lazy-src=\"https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-complete-1.svg\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img src=\"https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-complete-1.svg\" width=\"450\"/></noscript></p>\n<p>To finish off, let’s take a quick look at weekly sales by customer type, just to show another variation with <code>time_by()</code>.</p>\n<pre>weekly_df &lt;- sales_df %&gt;% \n    group_by(branch, customer_type) %&gt;% \n    time_by(date_time, \"week\", .add = TRUE, time_floor = TRUE) %&gt;% \n    summarise(weekly_total = sum(total), .groups = \"drop\")\n\nweekly_df\r\n## # A tibble: 78 × 4\n##    branch customer_type date_time           weekly_total\n##    &lt;chr&gt;  &lt;chr&gt;         &lt;dttm&gt;                     &lt;dbl&gt;\n##  1 A      Member        2018-12-31 00:00:00        3642.\n##  2 A      Member        2019-01-07 00:00:00        4142.\n##  3 A      Member        2019-01-14 00:00:00        6202.\n##  4 A      Member        2019-01-21 00:00:00        4427.\n##  5 A      Member        2019-01-28 00:00:00        5771.\n##  6 A      Member        2019-02-04 00:00:00        2677.\n##  7 A      Member        2019-02-11 00:00:00        2361.\n##  8 A      Member        2019-02-18 00:00:00        4232.\n##  9 A      Member        2019-02-25 00:00:00        3359.\n## 10 A      Member        2019-03-04 00:00:00        5791.\n## # ℹ 68 more rows\r\nggplot(weekly_df, aes(x = date_time, y = weekly_total, fill = customer_type)) +\n    geom_bar(stat = \"identity\") +\n    facet_grid(rows = vars(branch)) +\n    scale_x_datetime(date_breaks = \"2 week\", date_labels = \"%d %b\\n%Y\") +\n    labs(x = NULL, y = \"Weekly Sales\") +\n    scale_fill_hue(\"Customer Type\") +\n    theme(legend.position = \"top\")</pre>\n<p><img data-lazy-src=\"https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/weekly-1.svg\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"450\"/><noscript><img src=\"https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/weekly-1.svg\" width=\"450\"/></noscript></p>\n<p>This package definitely looks useful to me and does allow you to e.g. easily summarise and plot time-series data according to different time units. There’s a lot more that can be done with <code>timeplyr</code> and it’s been designed with efficiency in mind so the functions are generally speedy. If you’re interested to find out more about it, then take a look at the <a href=\"https://github.com/NicChr/timeplyr\" rel=\"nofollow\" target=\"_blank\">Github page</a> which has ample examples already on it.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.9-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://alan-y.netlify.com/post/trying-out-timeplyr/\"> R on Alan Yeung</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div> </div>\n</article>",
+      "main_text": "Trying out timeplyr\nPosted on\nDecember 2, 2023\nby\nR on Alan Yeung\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on Alan Yeung\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe\ntimeplyr\nR package, created by my colleague\nNick\n, was accepted on CRAN in October 2023. A direct quote from the CRAN page is that it provides\na set of fast tidy functions for wrangling, completing and summarising date and date-time data\n. It looks like a really neat package for working with time series data in a way consistent with what people have become used to with the tidyverse. From my chats with Nick, I believe some of the ideas for this package were inspired by problems that came up repeatedly while working with COVID-19 data. So the lesson here is that if you want to get clever solutions to problems that come up time and time again during analyses, you just have to sufficiently annoy a good programmer!\nI’m going to give\ntimeplyr\na quick try out here, with the help of a\nsupermarket sales dataset\nthat I can handily pilfer from Kaggle. To keep the dataset simple, I’ve dropped some variables that I’ve considered surplus to requirements for this try out.\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(timeplyr)\n\nsales_df <- read_csv(\"https://raw.githubusercontent.com/sushantag9/Supermarket-Sales-Data-Analysis/master/supermarket_sales%20-%20Sheet1.csv\",\n                     show_col_types = FALSE, name_repair = make_clean_names) %>% \n    mutate(date_time = mdy_hms(paste(date, time)), .after = invoice_id) %>% \n    select(-(date:rating), -city, -gender)\n\nglimpse(sales_df)\n## Rows: 1,000\n## Columns: 9\n## $ invoice_id    <chr> \"750-67-8428\", \"226-31-3081\", \"631-41-3108\", \"123-19-117…\n## $ date_time     <dttm> 2019-01-05 13:08:00, 2019-03-08 10:29:00, 2019-03-03 13…\n## $ branch        <chr> \"A\", \"C\", \"A\", \"A\", \"A\", \"C\", \"A\", \"C\", \"A\", \"B\", \"B\", \"…\n## $ customer_type <chr> \"Member\", \"Normal\", \"Normal\", \"Member\", \"Normal\", \"Norma…\n## $ product_line  <chr> \"Health and beauty\", \"Electronic accessories\", \"Home and…\n## $ unit_price    <dbl> 74.69, 15.28, 46.33, 58.22, 86.31, 85.39, 68.84, 73.56, …\n## $ quantity      <dbl> 7, 5, 7, 8, 7, 7, 6, 10, 2, 3, 4, 4, 5, 10, 10, 6, 7, 6,…\n## $ tax_5_percent <dbl> 26.1415, 3.8200, 16.2155, 23.2880, 30.2085, 29.8865, 20.…\n## $ total         <dbl> 548.9715, 80.2200, 340.5255, 489.0480, 634.3785, 627.616…\nAs there are many sales per day, I’ll start with aggregating up to get daily sales for each branch, which we can do with\ntime_by()\n.\ndaily_df <- sales_df %>% \n    group_by(branch) %>% \n    time_by(date_time, \"day\", .add = TRUE, time_floor = TRUE) %>% \n    summarise(daily_total = sum(total), .groups = \"drop\")\n\ndaily_df\n## # A tibble: 263 × 3\n##    branch date_time           daily_total\n##    <chr>  <dttm>                    <dbl>\n##  1 A      2019-01-01 00:00:00       2371.\n##  2 A      2019-01-02 00:00:00        307.\n##  3 A      2019-01-03 00:00:00        937.\n##  4 A      2019-01-04 00:00:00        483.\n##  5 A      2019-01-05 00:00:00       2025.\n##  6 A      2019-01-06 00:00:00       1310.\n##  7 A      2019-01-07 00:00:00       1106.\n##  8 A      2019-01-08 00:00:00        683.\n##  9 A      2019-01-09 00:00:00        202.\n## 10 A      2019-01-10 00:00:00        731.\n## # ℹ 253 more rows\nWe can plot this data quickly using\ntime_ggplot()\nwhich is flexible enough to allow facets as well – we’ll use this here as the lines for each branch overlap a lot. It also has nice defaults to ensure the x-axis does not get overly cluttered with text.\ntime_ggplot(daily_df, date_time, daily_total, group = branch, facet = TRUE)\nAnother thing\ntimeplyr\noffers is to fill in missing dates in a dataset using\ntime_complete()\n. Across the 3 branches, there are 4 days missing and these should have sales of zero which didn’t appear in the first plot. We’ll do some data manipulation to clearly shows the points that have been added in and to also demonstrate that standard ggplot2 operations can be added in with\ntime_ggplot()\n.\ndaily_df2 <- daily_df %>% \n    time_complete(date_time, .by = branch, time_by = \"day\", \n                  fill = list(daily_total = 0))\n\nanti_join(daily_df2, daily_df, join_by(branch, date_time))\n## # A tibble: 4 × 3\n##   branch date_time           daily_total\n##   <chr>  <dttm>                    <dbl>\n## 1 B      2019-01-11 00:00:00           0\n## 2 B      2019-01-23 00:00:00           0\n## 3 B      2019-02-01 00:00:00           0\n## 4 C      2019-03-22 00:00:00           0\ndaily_df2 %>% \n    mutate(zero = if_else(daily_total == 0, \"Zero\", NA_character_)) %>% \n    time_ggplot(date_time, daily_total, group = branch, facet = TRUE) +\n    geom_point(aes(colour = zero), show.legend = FALSE) +\n    labs(x = NULL, y = \"Daily Sales\") +\n    theme(legend.position = \"top\")\nTo finish off, let’s take a quick look at weekly sales by customer type, just to show another variation with\ntime_by()\n.\nweekly_df <- sales_df %>% \n    group_by(branch, customer_type) %>% \n    time_by(date_time, \"week\", .add = TRUE, time_floor = TRUE) %>% \n    summarise(weekly_total = sum(total), .groups = \"drop\")\n\nweekly_df\n## # A tibble: 78 × 4\n##    branch customer_type date_time           weekly_total\n##    <chr>  <chr>         <dttm>                     <dbl>\n##  1 A      Member        2018-12-31 00:00:00        3642.\n##  2 A      Member        2019-01-07 00:00:00        4142.\n##  3 A      Member        2019-01-14 00:00:00        6202.\n##  4 A      Member        2019-01-21 00:00:00        4427.\n##  5 A      Member        2019-01-28 00:00:00        5771.\n##  6 A      Member        2019-02-04 00:00:00        2677.\n##  7 A      Member        2019-02-11 00:00:00        2361.\n##  8 A      Member        2019-02-18 00:00:00        4232.\n##  9 A      Member        2019-02-25 00:00:00        3359.\n## 10 A      Member        2019-03-04 00:00:00        5791.\n## # ℹ 68 more rows\nggplot(weekly_df, aes(x = date_time, y = weekly_total, fill = customer_type)) +\n    geom_bar(stat = \"identity\") +\n    facet_grid(rows = vars(branch)) +\n    scale_x_datetime(date_breaks = \"2 week\", date_labels = \"%d %b\\n%Y\") +\n    labs(x = NULL, y = \"Weekly Sales\") +\n    scale_fill_hue(\"Customer Type\") +\n    theme(legend.position = \"top\")\nThis package definitely looks useful to me and does allow you to e.g. easily summarise and plot time-series data according to different time units. There’s a lot more that can be done with\ntimeplyr\nand it’s been designed with efficiency in mind so the functions are generally speedy. If you’re interested to find out more about it, then take a look at the\nGithub page\nwhich has ample examples already on it.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on Alan Yeung\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "The timeplyr R package, created by my colleague Nick, was accepted on CRAN in October 2023. A direct quote from the CRAN page is that it provides a set of fast tidy functions for wrangling, completing and summarising date and date-time data. It look...",
+      "meta_keywords": null,
+      "og_description": "The timeplyr R package, created by my colleague Nick, was accepted on CRAN in October 2023. A direct quote from the CRAN page is that it provides a set of fast tidy functions for wrangling, completing and summarising date and date-time data. It look...",
+      "og_image": "https://alan-y.netlify.com/post/trying-out-timeplyr/index.en_files/figure-html/time-ggplot-1.svg",
+      "og_title": "Trying out timeplyr | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 5.7,
+      "sitemap_lastmod": "2023-12-03T00:00:00+00:00",
+      "twitter_description": "The timeplyr R package, created by my colleague Nick, was accepted on CRAN in October 2023. A direct quote from the CRAN page is that it provides a set of fast tidy functions for wrangling, completing and summarising date and date-time data. It look...",
+      "twitter_title": "Trying out timeplyr | R-bloggers",
+      "url": "https://www.r-bloggers.com/2023/12/trying-out-timeplyr/",
+      "word_count": 1137
+    }
+  }
+}

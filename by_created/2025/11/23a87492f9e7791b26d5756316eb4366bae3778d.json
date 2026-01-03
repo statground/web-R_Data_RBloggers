@@ -1,0 +1,213 @@
+{
+  "id": "23a87492f9e7791b26d5756316eb4366bae3778d",
+  "url": "https://www.r-bloggers.com/2009/04/sna-with-r-loading-your-network-data/",
+  "created_at_utc": "2025-11-17T20:41:04Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "e584c2ad-0c5e-42c4-8914-e77c36fb1522",
+    "created_at": "2025-11-17 20:41:04",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/04/sna-with-r-loading-your-network-data/",
+      "crawled_at": "2025-11-17T10:40:57.517388",
+      "external_links": [
+        {
+          "href": "http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-your-network-data.html",
+          "text": "CYBAEA Data and Analysis"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "http://csde.washington.edu/statnet/index.shtml",
+          "text": "statnet"
+        },
+        {
+          "href": "http://www.jstatsoft.org/v24/i02/",
+          "text": "network"
+        },
+        {
+          "href": "http://www.kxen.com/",
+          "text": "KXEN"
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:yIl2AUoC8zA",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:F7zBnMyn0Lo",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:V_sGLiPBpWU",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:qj6IDK7rITs",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:gIN9vFwOqvQ",
+          "text": null
+        },
+        {
+          "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:TzevzKxY174",
+          "text": null
+        },
+        {
+          "href": "http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-your-network-data.html",
+          "text": "CYBAEA Data and Analysis"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "SNA with R: Loading your network data | R-bloggers",
+      "images": [
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:F7zBnMyn0Lo"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:F7zBnMyn0Lo"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:V_sGLiPBpWU"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:V_sGLiPBpWU"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:gIN9vFwOqvQ"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:gIN9vFwOqvQ"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/tZM7HWtF50M"
+        },
+        {
+          "alt": null,
+          "base64": null,
+          "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/tZM7HWtF50M"
+        }
+      ],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/allan-engelhardt/",
+          "text": "Allan Engelhardt"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-1539 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">SNA with R: Loading your network data</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 1, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/allan-engelhardt/\">Allan Engelhardt</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-your-network-data.html\"> CYBAEA Data and Analysis</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div xmlns=\"http://www.w3.org/1999/xhtml\"><p>\r\nWe are interested in Social Network Analysis using the statistical analysis and computing platform <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a>.  As usual with R, the documentation is pretty bad, so this series collects our notes as we learn more about the available packages and how they work.  We use here the <a href=\"http://csde.washington.edu/statnet/index.shtml\" rel=\"nofollow\" target=\"_blank\">statnet</a> group of packages, which seems to be the most comprehensive and most actively maintained network analysis packages.\r\n</p>\n<p>\r\nThe first task which we consider in this post is to load our data into a <code>network</code> object, which is how all the <code>statnet</code> packages represent a network.  Typically for R, the documentation is voluminous but not always as helpful as one could want.\r\n</p>\n<p>\r\nWe will assume that the raw data for our analysis is in a transactional format that is typical at least in the Telecommunications and Finance industries.  In the former the terminology is Call Detail Record (<dfn title=\"Call Detail Record\">CDR</dfn>) and an extract may look a little like the following:\r\n</p>\n<pre>\r\n          src,         dest,     start,  duration,type,...\r\n+447000000005,+447000000006,1238510028,        52,call,...\r\n+447000000006,+447000000009,1238510627,       154,call,...\r\n+447000000009,+447000000007,1238511103,        48,call,...\r\n+447000000006,+447000000005,1238511145,        49,call,...\r\n+447000000006,+447000000005,1238511678,        12,call,...\r\n+447000000001,+447000000006,1238511735,       147,call,...\r\n+447000000007,+447000000009,1238511806,        26,call,...\r\n+447000000000,+447000000008,1238511825,        19,call,...\r\n+447000000009,+447000000008,1238511900,        28,call,...\r\n...\r\n</pre>\n<p>\r\nHere a record indicates that the customer identified as <var>src</var> called (<var>type</var>=call) the customer <var>dest</var> at the given time <var>start</var> and the call lasted <var>duration</var> seconds.  In general, there will be (many) more attributes describing the transaction which are represented by the <var>…</var>.  In a Financial Services example, the records may be money transfers between accounts.\r\n</p>\n<h2>Implementation in the <code>network</code> class</h2>\n<p>\r\nIn the naive implementation of this data as a network, we would have the sources and destinations (broadly speaking: people) as vertices and the calls as edges.  That broadly seems to make sense: people are connected by the calls they make, and that is the social relationship we wish to model.\r\n</p>\n<p>\r\nIn the terminology of the <code>network</code> class, that means that our network will be <b>directed</b> (calls and money transfers have a direction <em>from</em> one person <em>to</em> another) and will need to allow <b>multiple</b> edges between the same endpoints (because any one person can, and indeed usually will, make several calls to the same other person).\r\n</p>\n<p>\r\nWe could consider dropping the <b>multiple</b> attribute of the network and instead represent the fact that A has called B with a single edge and perhaps have the number of calls and their total duration as an edge attribute.  We will investigate this another time, but it is surely a less faithful representation of the data that we have (and we would need to drop information like the time of call).\r\n</p>\n<h2>Mapping customer identifiers to network vertex numbers</h2>\n<p>\r\nOne thing they seem to forget to tell you in the documentation is that when you import your data your vertex identifiers (which in our case is customer or account numbers) must be changed to number the vertices <em>and</em> that this numbering must be sequential and start from 1.  Being used to an environment where the vertex identifiers are arbitrary (and arrays usually start from 0), this one had me puzzled for a while.  The error message that tells you your vertex numbering is not what the package expected is spectacularly unhelpful:\r\n</p>\n<pre>&gt; n &lt;- network(m, matrix.type=\"edgelist\", directed=TRUE, multiple=TRUE)\r\nError in add.edges(g, as.list(x[, 1]), as.list(x[, 2]), edge.check = edge.check) : \r\n  (edge check) Illegal vertex reference in addEdges_R.  Exiting.\r\n</pre>\n<p>\r\nFor the discussion that follows, we will assume that you have changed your identifies externally to R.\r\n</p>\n<h2>Loading the data</h2>\n<p>\r\nThe good news is that our data is essentially in a format that the <code>network</code> package calls <b>edge list</b> and which it can import directly.\r\n</p>\n<p>\r\nI say “essentially” because for some strange reason the package expects the destination to come before the source which seems ass-backwards to me.  But assume we have our data in a file <code>cdr.csv</code> like this (we only have calls here):\r\n</p>\n<pre>       src,      dest,     start,  duration\r\n         5,         6,1238510028,        52\r\n         6,         9,1238510627,       154\r\n         9,         7,1238511103,        48\r\n         6,         5,1238511145,        49\r\n...\r\n</pre>\n<p>\r\nThen we can load the data into R easily:\r\n</p>\n<pre>&gt; library(\"network\")\r\n&gt; m &lt;- matrix(scan(file=\"cdr.csv\", what=integer(0), skip=1, sep=','), ncol=4, byrow=TRUE)\r\nRead 1896 items\r\n&gt; # Swap columns for ass-backward network package\r\n&gt; m[,c(1,2)] &lt;- m[,c(2,1)]\r\n\r\n&gt; # Create network\r\n&gt; net &lt;- network(m, matrix.type=\"edgelist\", directed=TRUE, multiple=TRUE)\r\n\r\n&gt; summary(net)\r\nNetwork attributes:\r\n vertices = 10\r\n directed = TRUE\r\n hyper = FALSE\r\n loops = FALSE\r\n multiple = TRUE\r\n bipartite = FALSE\r\n total edges = 474 \r\n   missing edges = 0 \r\n   non-missing edges = 474 \r\n density = 5.266667 \r\n\r\nVertex attributes:\r\n vertex.names:\r\n   character valued attribute\r\n   10 valid vertex names\r\n\r\nNo edge attributes\r\n\r\nNetwork adjacency matrix:\r\nError in as.matrix.network.adjacency(x = x, attrname = attrname, ...) : \r\n  Multigraphs not currently supported in as.matrix.network.adjacency.  Exiting.\r\nIn addition: Warning message:\r\nIn network.density(x) :\r\n  Network is multiplex - no general way to define density.  Returning value for a non-multiplex network (hope that's what you wanted).\r\n</pre>\n<p>\r\nOK, that's a lot of warnings, but it basically worked.  We have figured out how to load our network data into the <a href=\"http://www.jstatsoft.org/v24/i02/\" rel=\"nofollow\" target=\"_blank\">network</a> package in R.\r\n</p>\n<h2>Performance</h2>\n<p>\r\nWe can’t do an exhaustive performance review now, but let us at least make sure we can load medium-sized networks.  We change our CDR simulator to emit the desitnation before the source just like <code>network</code> likes it and let it run.\r\n</p>\n<p>\r\nThe first file has 2,645,288 (simulated) CDR lines from 100k customers and it loads OK on our small development workstation even with the default settings:\r\n</p>\n<pre>&gt; library(\"network\")\r\n&gt; n &lt;- network(matrix(scan(file=\"cdr.1e5x1e0.csv\", \r\n                           what=integer(0), skip=1, sep=','), \r\n                      ncol=4, byrow=TRUE), \r\n               matrix.type=\"edgelist\", directed=TRUE, multiple=TRUE)\r\nRead 10581152 items\r\n&gt; proc.time()\r\n   user  system elapsed \r\n138.304   1.597 140.878 \r\n&gt; save(n, file=\"n.RData\", ascii=FALSE, compress=FALSE)\r\n</pre>\n<p>\r\nThe size of the saved network object is 373MB (only 27MB compressed).\r\n</p>\n<p>\r\nWe can potentially save some time and memory by not explicitly not performing the edge check (again: the documentation frustrates us and is silent on what the defaults are for the <code>network</code> call we used above) so we try this for our next file with 51,316,641 lines of CDR data (again for 100k customers) which also saves us some column swapping:\r\n</p>\n<pre>&gt; library(\"network\")\r\n&gt; m &lt;- matrix(scan(file=\"cdr.51M.csv\", \r\n                   what=integer(0), skip=1, sep=','),\r\n              ncol=4, byrow=TRUE)\r\nRead 205266564 items\r\n&gt; num_vert &lt;- max(m[,1], m[,2])\r\n&gt; num_vert\r\n[1] 100000\r\n&gt; n &lt;- network.initialize(n=num_vert, directed=TRUE, multiple=TRUE)\r\n&gt; add.edges(n, tail=m[,2], head=m[,1], edge.check=FALSE)\r\n&gt; proc.time()\r\n(several hours: I’ll let you know when it is done)\r\n&gt; rm(m)\r\n&gt; save(n, file=\"n.RData\", ascii=FALSE, compress=TRUE)\r\n</pre>\n<p>\r\nOur attempted optimization did not seem to matter and this network is too big for the machine and the <code>network</code> package.  Building the network was painful as I was working on the workstation at the same time.  The machine has 16GB installed RAM, but it was clearly running out and swapping extensively.\r\n</p>\n<p>\r\n51 million might be a reasonable size data set for some Financial Services applications but it is clearly a trivial number of records for Telecommunications.  I’ll need to do some more digging around.\r\n</p>\n<p>\r\nDoes anybody have any SNA benchmarks?  I like the <a href=\"http://www.kxen.com/\" rel=\"nofollow\" target=\"_blank\">KXEN</a> implementation for its simplicity and speed so I might get a copy and try it out.  Any R performance experts who could make suggestions in the comments?  How big are <em>your</em> networks?\r\n</p></div><div class=\"feedflare\">\n<a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:yIl2AUoC8zA\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:F7zBnMyn0Lo\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M%3AxgW7YjifVz4%3AF7zBnMyn0Lo&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:F7zBnMyn0Lo\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:F7zBnMyn0Lo\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:V_sGLiPBpWU\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M%3AxgW7YjifVz4%3AV_sGLiPBpWU&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:V_sGLiPBpWU\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:V_sGLiPBpWU\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:qj6IDK7rITs\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:gIN9vFwOqvQ\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M%3AxgW7YjifVz4%3AgIN9vFwOqvQ&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:gIN9vFwOqvQ\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=tZM7HWtF50M:xgW7YjifVz4:gIN9vFwOqvQ\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=tZM7HWtF50M:xgW7YjifVz4:TzevzKxY174\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\"/></noscript></a>\n</div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/tZM7HWtF50M?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/tZM7HWtF50M\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/tZM7HWtF50M\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.cybaea.net/Blogs/Data/SNA-with-R-Loading-your-network-data.html\"> CYBAEA Data and Analysis</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "SNA with R: Loading your network data\nPosted on\nApril 1, 2009\nby\nAllan Engelhardt\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nCYBAEA Data and Analysis\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWe are interested in Social Network Analysis using the statistical analysis and computing platform\nR\n.  As usual with R, the documentation is pretty bad, so this series collects our notes as we learn more about the available packages and how they work.  We use here the\nstatnet\ngroup of packages, which seems to be the most comprehensive and most actively maintained network analysis packages.\nThe first task which we consider in this post is to load our data into a\nnetwork\nobject, which is how all the\nstatnet\npackages represent a network.  Typically for R, the documentation is voluminous but not always as helpful as one could want.\nWe will assume that the raw data for our analysis is in a transactional format that is typical at least in the Telecommunications and Finance industries.  In the former the terminology is Call Detail Record (\nCDR\n) and an extract may look a little like the following:\nsrc,         dest,     start,  duration,type,...\n+447000000005,+447000000006,1238510028,        52,call,...\n+447000000006,+447000000009,1238510627,       154,call,...\n+447000000009,+447000000007,1238511103,        48,call,...\n+447000000006,+447000000005,1238511145,        49,call,...\n+447000000006,+447000000005,1238511678,        12,call,...\n+447000000001,+447000000006,1238511735,       147,call,...\n+447000000007,+447000000009,1238511806,        26,call,...\n+447000000000,+447000000008,1238511825,        19,call,...\n+447000000009,+447000000008,1238511900,        28,call,...\n...\nHere a record indicates that the customer identified as\nsrc\ncalled (\ntype\n=call) the customer\ndest\nat the given time\nstart\nand the call lasted\nduration\nseconds.  In general, there will be (many) more attributes describing the transaction which are represented by the\n…\n.  In a Financial Services example, the records may be money transfers between accounts.\nImplementation in the\nnetwork\nclass\nIn the naive implementation of this data as a network, we would have the sources and destinations (broadly speaking: people) as vertices and the calls as edges.  That broadly seems to make sense: people are connected by the calls they make, and that is the social relationship we wish to model.\nIn the terminology of the\nnetwork\nclass, that means that our network will be\ndirected\n(calls and money transfers have a direction\nfrom\none person\nto\nanother) and will need to allow\nmultiple\nedges between the same endpoints (because any one person can, and indeed usually will, make several calls to the same other person).\nWe could consider dropping the\nmultiple\nattribute of the network and instead represent the fact that A has called B with a single edge and perhaps have the number of calls and their total duration as an edge attribute.  We will investigate this another time, but it is surely a less faithful representation of the data that we have (and we would need to drop information like the time of call).\nMapping customer identifiers to network vertex numbers\nOne thing they seem to forget to tell you in the documentation is that when you import your data your vertex identifiers (which in our case is customer or account numbers) must be changed to number the vertices\nand\nthat this numbering must be sequential and start from 1.  Being used to an environment where the vertex identifiers are arbitrary (and arrays usually start from 0), this one had me puzzled for a while.  The error message that tells you your vertex numbering is not what the package expected is spectacularly unhelpful:\n> n <- network(m, matrix.type=\"edgelist\", directed=TRUE, multiple=TRUE)\nError in add.edges(g, as.list(x[, 1]), as.list(x[, 2]), edge.check = edge.check) : \n  (edge check) Illegal vertex reference in addEdges_R.  Exiting.\nFor the discussion that follows, we will assume that you have changed your identifies externally to R.\nLoading the data\nThe good news is that our data is essentially in a format that the\nnetwork\npackage calls\nedge list\nand which it can import directly.\nI say “essentially” because for some strange reason the package expects the destination to come before the source which seems ass-backwards to me.  But assume we have our data in a file\ncdr.csv\nlike this (we only have calls here):\nsrc,      dest,     start,  duration\n         5,         6,1238510028,        52\n         6,         9,1238510627,       154\n         9,         7,1238511103,        48\n         6,         5,1238511145,        49\n...\nThen we can load the data into R easily:\n> library(\"network\")\n> m <- matrix(scan(file=\"cdr.csv\", what=integer(0), skip=1, sep=','), ncol=4, byrow=TRUE)\nRead 1896 items\n> # Swap columns for ass-backward network package\n> m[,c(1,2)] <- m[,c(2,1)]\n\n> # Create network\n> net <- network(m, matrix.type=\"edgelist\", directed=TRUE, multiple=TRUE)\n\n> summary(net)\nNetwork attributes:\n vertices = 10\n directed = TRUE\n hyper = FALSE\n loops = FALSE\n multiple = TRUE\n bipartite = FALSE\n total edges = 474 \n   missing edges = 0 \n   non-missing edges = 474 \n density = 5.266667 \n\nVertex attributes:\n vertex.names:\n   character valued attribute\n   10 valid vertex names\n\nNo edge attributes\n\nNetwork adjacency matrix:\nError in as.matrix.network.adjacency(x = x, attrname = attrname, ...) : \n  Multigraphs not currently supported in as.matrix.network.adjacency.  Exiting.\nIn addition: Warning message:\nIn network.density(x) :\n  Network is multiplex - no general way to define density.  Returning value for a non-multiplex network (hope that's what you wanted).\nOK, that's a lot of warnings, but it basically worked.  We have figured out how to load our network data into the\nnetwork\npackage in R.\nPerformance\nWe can’t do an exhaustive performance review now, but let us at least make sure we can load medium-sized networks.  We change our CDR simulator to emit the desitnation before the source just like\nnetwork\nlikes it and let it run.\nThe first file has 2,645,288 (simulated) CDR lines from 100k customers and it loads OK on our small development workstation even with the default settings:\n> library(\"network\")\n> n <- network(matrix(scan(file=\"cdr.1e5x1e0.csv\", \n                           what=integer(0), skip=1, sep=','), \n                      ncol=4, byrow=TRUE), \n               matrix.type=\"edgelist\", directed=TRUE, multiple=TRUE)\nRead 10581152 items\n> proc.time()\n   user  system elapsed \n138.304   1.597 140.878 \n> save(n, file=\"n.RData\", ascii=FALSE, compress=FALSE)\nThe size of the saved network object is 373MB (only 27MB compressed).\nWe can potentially save some time and memory by not explicitly not performing the edge check (again: the documentation frustrates us and is silent on what the defaults are for the\nnetwork\ncall we used above) so we try this for our next file with 51,316,641 lines of CDR data (again for 100k customers) which also saves us some column swapping:\n> library(\"network\")\n> m <- matrix(scan(file=\"cdr.51M.csv\", \n                   what=integer(0), skip=1, sep=','),\n              ncol=4, byrow=TRUE)\nRead 205266564 items\n> num_vert <- max(m[,1], m[,2])\n> num_vert\n[1] 100000\n> n <- network.initialize(n=num_vert, directed=TRUE, multiple=TRUE)\n> add.edges(n, tail=m[,2], head=m[,1], edge.check=FALSE)\n> proc.time()\n(several hours: I’ll let you know when it is done)\n> rm(m)\n> save(n, file=\"n.RData\", ascii=FALSE, compress=TRUE)\nOur attempted optimization did not seem to matter and this network is too big for the machine and the\nnetwork\npackage.  Building the network was painful as I was working on the workstation at the same time.  The machine has 16GB installed RAM, but it was clearly running out and swapping extensively.\n51 million might be a reasonable size data set for some Financial Services applications but it is clearly a trivial number of records for Telecommunications.  I’ll need to do some more digging around.\nDoes anybody have any SNA benchmarks?  I like the\nKXEN\nimplementation for its simplicity and speed so I might get a copy and try it out.  Any R performance experts who could make suggestions in the comments?  How big are\nyour\nnetworks?\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCYBAEA Data and Analysis\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "We are interested in Social Network Analysis using the statistical analysis and computing platform R. As usual with R, the documentation is pretty bad, so this series collects our notes as we learn more about the available packages and how they work. We use here the statnet group of packages, which seems to be the most comprehensive and most actively maintained network analysis packages. The first task which we consider in this post is to load our data into a network object, which is how all the statnet packages represent a network. Typically for R, the documentation is voluminous but not always as helpful as one could want.",
+      "meta_keywords": null,
+      "og_description": "We are interested in Social Network Analysis using the statistical analysis and computing platform R. As usual with R, the documentation is pretty bad, so this series collects our notes as we learn more about the available packages and how they work. We use here the statnet group of packages, which seems to be the most comprehensive and most actively maintained network analysis packages. The first task which we consider in this post is to load our data into a network object, which is how all the statnet packages represent a network. Typically for R, the documentation is voluminous but not always as helpful as one could want.",
+      "og_image": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA",
+      "og_title": "SNA with R: Loading your network data | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 7,
+      "sitemap_lastmod": "2010-09-06T20:55:43+00:00",
+      "twitter_description": "We are interested in Social Network Analysis using the statistical analysis and computing platform R. As usual with R, the documentation is pretty bad, so this series collects our notes as we learn more about the available packages and how they work. We use here the statnet group of packages, which seems to be the most comprehensive and most actively maintained network analysis packages. The first task which we consider in this post is to load our data into a network object, which is how all the statnet packages represent a network. Typically for R, the documentation is voluminous but not always as helpful as one could want.",
+      "twitter_title": "SNA with R: Loading your network data | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/04/sna-with-r-loading-your-network-data/",
+      "word_count": 1408
+    }
+  }
+}

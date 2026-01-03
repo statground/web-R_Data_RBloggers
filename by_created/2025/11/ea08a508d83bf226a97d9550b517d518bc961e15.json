@@ -1,0 +1,114 @@
+{
+  "id": "ea08a508d83bf226a97d9550b517d518bc961e15",
+  "url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-tapply-2/",
+  "created_at_utc": "2025-11-17T20:40:21Z",
+  "data": null,
+  "raw_original": {
+    "uuid": "af0f3ee5-32d0-4459-9f9f-710b8a7febe7",
+    "created_at": "2025-11-17 20:40:21",
+    "raw_json": {
+      "article_author": null,
+      "article_headline": null,
+      "article_modified": null,
+      "article_published": null,
+      "article_section": null,
+      "article_tags": null,
+      "canonical_url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-tapply-2/",
+      "crawled_at": "2025-11-17T10:25:04.310414",
+      "external_links": [
+        {
+          "href": "http://www.sigmafield.org/2009/09/20/r-function-of-the-day-tapply",
+          "text": "sigmafield - R"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-project.org",
+          "text": "R"
+        },
+        {
+          "href": "http://finzi.psych.upenn.edu/R/library/base/html/tapply.html",
+          "text": "tapply"
+        },
+        {
+          "href": "http://www.sigmafield.org/tags/r",
+          "text": "R"
+        },
+        {
+          "href": "http://www.sigmafield.org/2009/09/20/r-function-of-the-day-tapply",
+          "text": "sigmafield - R"
+        },
+        {
+          "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+          "text": "daily e-mail updates"
+        },
+        {
+          "href": "https://www.r-project.org/",
+          "text": "R"
+        },
+        {
+          "href": "https://www.r-users.com/",
+          "text": "Click here if you're looking to post or find an R/data-science job"
+        },
+        {
+          "href": "http://r-posts.com/",
+          "text": "here"
+        }
+      ],
+      "h1_title": "R-bloggers",
+      "html_title": "R Function of the Day: tapply | R-bloggers",
+      "images": [],
+      "internal_links": [
+        {
+          "href": "https://www.r-bloggers.com/author/erik/",
+          "text": "erik"
+        },
+        {
+          "href": "https://www.r-bloggers.com/category/r-bloggers/",
+          "text": "R bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers"
+        },
+        {
+          "href": "https://www.r-bloggers.com/contact-us/",
+          "text": "here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        },
+        {
+          "href": "https://www.r-bloggers.com/",
+          "text": "R-bloggers.com"
+        },
+        {
+          "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+          "text": "learning R"
+        },
+        {
+          "href": "https://www.r-bloggers.com/add-your-blog/",
+          "text": "click here"
+        }
+      ],
+      "lang": "en-US",
+      "main_html": "<article class=\"post-49382 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R Function of the Day: tapply</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">September 20, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/erik/\">erik</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.sigmafield.org/2009/09/20/r-function-of-the-day-tapply\"> sigmafield - R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div class=\"field field-name-body field-type-text-with-summary field-label-hidden\">\n<div class=\"field-item even\" property=\"content:encoded\"><p>\n<i>Edit: This post originally appeared on my WordPress blog on September 20, 2009. I present it here in its original form.</i></p>\n<p>\nThe <b>R Function of the Day</b> series will focus on describing in <i>plain language</i> how certain <a href=\"https://www.r-project.org\" rel=\"nofollow\" target=\"_blank\">R</a> functions work, focusing on simple examples that you can apply to gain insight into your own data.\n</p>\n<p>\nToday, I will discuss the <a href=\"http://finzi.psych.upenn.edu/R/library/base/html/tapply.html\" rel=\"nofollow\" target=\"_blank\"><b>tapply</b></a> function.\n</p>\n<div class=\"outline-3\" id=\"outline-container-1.1\">\n<h3 id=\"sec-1.1\">What situation is tapply useful in? </h3>\n<div id=\"text-1.1\">\n<p>\nIn statistics, one of the most basic activities we do is computing summaries of variables.  These summaries might be as simple as an average, or more complex. Let’s look at some simple examples.\n</p>\n<p>\nWhen you read the results of a medical trial, you will see things such as “The average age of subjects in this trial was 55 years in the treatment group, and 54 years in the control group.”\n</p>\n<p>\nAs another example, let’s look at one from the world of baseball.\n</p>\n<p>\nBatting Leaders per Team\n</p>\n<table border=\"2\" cellpadding=\"6\" cellspacing=\"0\" rules=\"groups\"><col align=\"left\"/><col align=\"left\"/><col align=\"left\"/><thead><tr><th>Team</th>\n<th>Player</th>\n<th>Batting Average</th>\n</tr></thead><tbody><tr><td>Minnesota Twins</td>\n<td>Joe Mauer</td>\n<td>.374</td>\n</tr><tr><td>Seattle Mariners</td>\n<td>Ichiro Suzuki</td>\n<td>.355</td>\n</tr><tr><td>Boston Red Sox</td>\n<td>Kevin Youkilis</td>\n<td>.309</td>\n</tr><tr><td>…</td>\n<td>…</td>\n<td>…</td>\n</tr></tbody></table><p>\nThese two examples have a lot in common, even if they don’t appear to when first reading.  In the first example, we have a dataset from a medical trial.  We want to break up the dataset into two groups, treatment and control, and then compute the sample average for age within each group.\n</p>\n<p>\nIn the second example, we want to break up the dataset into 30 groups, one for each MLB team, and then compute the maximum batting average within each group.\n</p>\n<p>\nSo what is in common?\n</p>\n<p>\nIn each case we have\n</p>\n<ol><li>\nA dataset that can be broken up into groups\n</li>\n<li>\nWe want to break it up into groups\n</li>\n<li>\nWithin each group, we want to apply a function\n</li>\n</ol><p>The following table summarizes the situation.\n</p>\n<table border=\"2\" cellpadding=\"6\" cellspacing=\"0\" rules=\"groups\"><col align=\"left\"/><col align=\"left\"/><col align=\"left\"/><col align=\"left\"/><thead><tr><th>Example</th>\n<th>Group Variable</th>\n<th>Summary Variable</th>\n<th>Function</th>\n</tr></thead><tbody><tr><td>Medical Example</td>\n<td>Treatment</td>\n<td>age</td>\n<td>mean</td>\n</tr><tr><td>Baseball Example</td>\n<td>Team</td>\n<td>batting average</td>\n<td>max</td>\n</tr></tbody></table><p>\nThe <b>tapply</b> function can solve both of these problems for us!\n</p>\n</div>\n</div>\n<div class=\"outline-3\" id=\"outline-container-1.2\">\n<h3 id=\"sec-1.2\">How do I use tapply? </h3>\n<div id=\"text-1.2\">\n<p>\nThe <b>tapply</b> function is simple to use.  First, we will generate some data.\n</p>\n<pre>\n\n&gt; ## generate data for medical example\n&gt; medical.example &lt;-\n    data.frame(patient = 1:100,\n               age = rnorm(100, mean = 60, sd = 12),\n               treatment = gl(2, 50,\n                 labels = c(\"Treatment\", \"Control\")))\n&gt; summary(medical.example)\n    patient            age             treatment \n Min.   :  1.00   Min.   : 29.40   Treatment:50  \n 1st Qu.: 25.75   1st Qu.: 54.31   Control  :50  \n Median : 50.50   Median : 61.24                 \n Mean   : 50.50   Mean   : 61.29                 \n 3rd Qu.: 75.25   3rd Qu.: 66.22                 \n Max.   :100.00   Max.   :102.47                  \n&gt; ## generate data for baseball example\n&gt; ## 5 teams with 5 players per team\n&gt; \n&gt; baseball.example &lt;-\n    data.frame(team = gl(5, 5,\n                 labels = paste(\"Team\", LETTERS[1:5])),\n               player = sample(letters, 25),\n               batting.average = runif(25, .200, .400))\n&gt; summary(baseball.example)\n     team       player   batting.average \n Team A:5   a      : 1   Min.   :0.2172  \n Team B:5   c      : 1   1st Qu.:0.2553  \n Team C:5   d      : 1   Median :0.2854  \n Team D:5   e      : 1   Mean   :0.2887  \n Team E:5   f      : 1   3rd Qu.:0.3013  \n            g      : 1   Max.   :0.3859  \n            (Other):19                    \n\n</pre>\n<p>\nNow we have some sample data.  Using <b>tapply</b> is now straightforward.  In general, the call to the function will look like the example in the first comment.  Then, actual calls to the function using the data we defined above are shown. \n</p>\n<pre>\n\n&gt; ## Generic Example\n&gt; ## tapply(Summary Variable, Group Variable, Function)\n&gt; \n&gt; ## Medical Example\n&gt; tapply(medical.example$age, medical.example$treatment, mean)\nTreatment   Control \n 62.26883  60.30371  \n&gt; ## Baseball Example\n&gt; tapply(baseball.example$batting.average, baseball.example$team,\n         max)\n   Team A    Team B    Team C    Team D    Team E \n0.3784396 0.3012680 0.3488655 0.2962828 0.3858841  \n\n\n</pre>\n</div>\n</div>\n<div class=\"outline-3\" id=\"outline-container-1.3\">\n<h3 id=\"sec-1.3\">Summary of tapply </h3>\n<div id=\"text-1.3\">\n<p>\nThe <b>tapply</b> function is useful when we need to break up a vector into groups defined by some classifying factor, compute a function on the subsets, and return the results in a convenient form.  You can even specify multiple factors as the grouping variable, for example treatment and sex, or team and handedness.  \n</p></div>\n</div>\n</div>\n</div>\n<section class=\"field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix\">\n<h2 class=\"field-label\">Tags: </h2>\n<ul class=\"field-items\">\n<li class=\"field-item even\" rel=\"dc:subject\"><a href=\"http://www.sigmafield.org/tags/r\" property=\"rdfs:label skos:prefLabel\" rel=\"nofollow\" target=\"_blank\" typeof=\"skos:Concept\">R</a></li>\n</ul>\n</section>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.sigmafield.org/2009/09/20/r-function-of-the-day-tapply\"> sigmafield - R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+      "main_text": "R Function of the Day: tapply\nPosted on\nSeptember 20, 2009\nby\nerik\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nsigmafield - R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nEdit: This post originally appeared on my WordPress blog on September 20, 2009. I present it here in its original form.\nThe\nR Function of the Day\nseries will focus on describing in\nplain language\nhow certain\nR\nfunctions work, focusing on simple examples that you can apply to gain insight into your own data.\nToday, I will discuss the\ntapply\nfunction.\nWhat situation is tapply useful in?\nIn statistics, one of the most basic activities we do is computing summaries of variables.  These summaries might be as simple as an average, or more complex. Let’s look at some simple examples.\nWhen you read the results of a medical trial, you will see things such as “The average age of subjects in this trial was 55 years in the treatment group, and 54 years in the control group.”\nAs another example, let’s look at one from the world of baseball.\nBatting Leaders per Team\nTeam\nPlayer\nBatting Average\nMinnesota Twins\nJoe Mauer\n.374\nSeattle Mariners\nIchiro Suzuki\n.355\nBoston Red Sox\nKevin Youkilis\n.309\n…\n…\n…\nThese two examples have a lot in common, even if they don’t appear to when first reading.  In the first example, we have a dataset from a medical trial.  We want to break up the dataset into two groups, treatment and control, and then compute the sample average for age within each group.\nIn the second example, we want to break up the dataset into 30 groups, one for each MLB team, and then compute the maximum batting average within each group.\nSo what is in common?\nIn each case we have\nA dataset that can be broken up into groups\nWe want to break it up into groups\nWithin each group, we want to apply a function\nThe following table summarizes the situation.\nExample\nGroup Variable\nSummary Variable\nFunction\nMedical Example\nTreatment\nage\nmean\nBaseball Example\nTeam\nbatting average\nmax\nThe\ntapply\nfunction can solve both of these problems for us!\nHow do I use tapply?\nThe\ntapply\nfunction is simple to use.  First, we will generate some data.\n> ## generate data for medical example\n> medical.example <-\n    data.frame(patient = 1:100,\n               age = rnorm(100, mean = 60, sd = 12),\n               treatment = gl(2, 50,\n                 labels = c(\"Treatment\", \"Control\")))\n> summary(medical.example)\n    patient            age             treatment \n Min.   :  1.00   Min.   : 29.40   Treatment:50  \n 1st Qu.: 25.75   1st Qu.: 54.31   Control  :50  \n Median : 50.50   Median : 61.24                 \n Mean   : 50.50   Mean   : 61.29                 \n 3rd Qu.: 75.25   3rd Qu.: 66.22                 \n Max.   :100.00   Max.   :102.47                  \n> ## generate data for baseball example\n> ## 5 teams with 5 players per team\n> \n> baseball.example <-\n    data.frame(team = gl(5, 5,\n                 labels = paste(\"Team\", LETTERS[1:5])),\n               player = sample(letters, 25),\n               batting.average = runif(25, .200, .400))\n> summary(baseball.example)\n     team       player   batting.average \n Team A:5   a      : 1   Min.   :0.2172  \n Team B:5   c      : 1   1st Qu.:0.2553  \n Team C:5   d      : 1   Median :0.2854  \n Team D:5   e      : 1   Mean   :0.2887  \n Team E:5   f      : 1   3rd Qu.:0.3013  \n            g      : 1   Max.   :0.3859  \n            (Other):19\nNow we have some sample data.  Using\ntapply\nis now straightforward.  In general, the call to the function will look like the example in the first comment.  Then, actual calls to the function using the data we defined above are shown.\n> ## Generic Example\n> ## tapply(Summary Variable, Group Variable, Function)\n> \n> ## Medical Example\n> tapply(medical.example$age, medical.example$treatment, mean)\nTreatment   Control \n 62.26883  60.30371  \n> ## Baseball Example\n> tapply(baseball.example$batting.average, baseball.example$team,\n         max)\n   Team A    Team B    Team C    Team D    Team E \n0.3784396 0.3012680 0.3488655 0.2962828 0.3858841\nSummary of tapply\nThe\ntapply\nfunction is useful when we need to break up a vector into groups defined by some classifying factor, compute a function on the subsets, and return the results in a convenient form.  You can even specify multiple factors as the grouping variable, for example treatment and sex, or team and handedness.\nTags:\nR\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nsigmafield - R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+      "meta_description": "Edit: This post originally appeared on my Wordpress blog on September 20, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on sim...",
+      "meta_keywords": null,
+      "og_description": "Edit: This post originally appeared on my Wordpress blog on September 20, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on sim...",
+      "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+      "og_title": "R Function of the Day: tapply | R-bloggers",
+      "raw_jsonld_article": null,
+      "reading_time_min": 4,
+      "sitemap_lastmod": "2009-09-21T03:53:39+00:00",
+      "twitter_description": "Edit: This post originally appeared on my Wordpress blog on September 20, 2009. I present it here in its original form. The R Function of the Day series will focus on describing in plain language how certain R functions work, focusing on sim...",
+      "twitter_title": "R Function of the Day: tapply | R-bloggers",
+      "url": "https://www.r-bloggers.com/2009/09/r-function-of-the-day-tapply-2/",
+      "word_count": 809
+    }
+  }
+}
