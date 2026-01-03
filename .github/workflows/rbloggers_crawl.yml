@@ -55,12 +55,15 @@ jobs:
 
       # Web-R backend will do DB INSERT. GitHub Actions only sends a signal.
       - name: Notify Web-R backend to sync (webhook)
-        if: ${{ secrets.WEBR_SYNC_URL != '' && secrets.WEBR_SYNC_TOKEN != '' }}
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
+          if [ -z "$WEBR_SYNC_URL" ] || [ -z "$WEBR_SYNC_TOKEN" ]; then
+            echo 'WEBR_SYNC_URL/TOKEN not set. Skip notify.'
+            exit 0
+          fi
           if [ ! -f .action_result.json ]; then
             echo ".action_result.json not found. Skip notify."
             exit 0
