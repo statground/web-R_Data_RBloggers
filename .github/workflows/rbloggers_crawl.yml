@@ -72,7 +72,7 @@ jobs:
             exit 0
           fi
 
-          # 이번 커밋에서 바뀐 json만
+          # 이번 커밋에서 바뀐 json만 추출
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
             git diff --name-only HEAD~1 HEAD | grep -E '\.json$' > changed_files.txt || true
           else
@@ -88,7 +88,7 @@ jobs:
             exit 0
           fi
 
-          # ✅ jq로 파일 리스트를 JSON 배열로 변환 (heredoc 제거)
+          # ✅ heredoc 제거 → jq 사용 (YAML-safe)
           FILES_JSON=$(jq -R -s -c 'split("\n") | map(select(length>0))' changed_files_filtered.txt)
 
           curl -sS -X POST "$WEBR_SYNC_URL" \
