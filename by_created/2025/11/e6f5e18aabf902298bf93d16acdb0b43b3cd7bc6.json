@@ -1,0 +1,137 @@
+{
+  "id": "e6f5e18aabf902298bf93d16acdb0b43b3cd7bc6",
+  "url": "https://www.r-bloggers.com/2009/12/a-web-application-for-r%e2%80%99s-ggplot2",
+  "created_at_utc": "2025-11-17T20:39:50Z",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/12/a-web-application-for-r%e2%80%99s-ggplot2/",
+    "crawled_at": "2025-11-17T10:13:44.223363",
+    "external_links": [
+      {
+        "href": "http://www.r-statistics.com/2009/12/a-web-application-of-rs-ggplot2/",
+        "text": "R-statistics blog » R"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://www.stat.ucla.edu/~jeroen/",
+        "text": "Jeroen Ooms"
+      },
+      {
+        "href": "http://www.stat.ucla.edu/~jeroen/user2009.html",
+        "text": "useR 2009"
+      },
+      {
+        "href": "http://www.yeroon.net/ggplot2/",
+        "text": "http://www.yeroon.net/ggplot2/"
+      },
+      {
+        "href": "http://www.yeroon.net/ggplot2/myMovies.csv",
+        "text": "http://www.yeroon.net/ggplot2/myMovies.csv"
+      },
+      {
+        "href": "http://www.r-statistics.com/2009/12/a-web-application-of-rs-ggplot2/",
+        "text": "R-statistics blog » R"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "A web application for R’s ggplot2 | R-bloggers",
+    "images": [],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/tal-galili/",
+        "text": "Tal Galili"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/ggplot2/",
+        "text": "ggplot2"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/interfaces/",
+        "text": "interfaces"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/jeroen-ooms/",
+        "text": "jeroen ooms"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/r-and-the-web/",
+        "text": "R and the web"
+      },
+      {
+        "href": "https://www.r-bloggers.com/tag/websites/",
+        "text": "WebSites"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-251 post type-post status-publish format-standard hentry category-r-bloggers tag-ggplot2 tag-interfaces tag-jeroen-ooms tag-r tag-r-and-the-web tag-websites\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">A web application for R’s ggplot2</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 7, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/tal-galili/\">Tal Galili</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.r-statistics.com/2009/12/a-web-application-of-rs-ggplot2/\"> R-statistics blog » R</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><p>One of the exciting new frontiers for R programming is of creating website interfaces to R code. At the forefront of this domain is a young and (very) bright man called <a href=\"http://www.stat.ucla.edu/~jeroen/\" rel=\"nofollow\" target=\"_blank\">Jeroen Ooms</a>, whom I had the pleasure of meeting at <a href=\"http://www.stat.ucla.edu/~jeroen/user2009.html\" rel=\"nofollow\" target=\"_blank\">useR 2009</a> (press the link to see his presentation).</p>\n<p>Today Jeroen announced a new version (0.11) of his web interface to ggplot2. See it here:<br/>\n<a href=\"http://www.yeroon.net/ggplot2/\" rel=\"nofollow\" target=\"_blank\">http://www.yeroon.net/ggplot2/</a></p>\n<p> As Jeroen wrote:</p>\n<blockquote><p>\nNew features include 1D geom’s (histogram, density, freqpoly), syntax mode (by clicking the tiny arrow at the bottom), and some additional facet options. And some minor improvements and fixes, most notably for Internet Explorer.<br/>\nThe data upload has not been improved yet, I am working on that. For now, it supports .csv, .sav (spss), and tab delimited data. Please make sure your filename has the appropriate extension and every column has a header in your data. If you export a dataframe from R, use:<br/>\nwrite.csv(mydf, ”mydf.csv” , row.names=F). If you upload an spss<br/>\ndatafile, none of this should be a concern.<br/>\nSupported browsers are IE6-8, FF, Safari, and Chrome, but a recent browser is highly recommended. As always, feedback is more than welcome.\n</p></blockquote>\n<p>Here is a little demo video that shows how to use the new features:</p>\n<p><object height=\"344\" width=\"425\"><param name=\"movie\" value=\"https://www.youtube.com/v/7XGN6OSCq6E&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en_US&amp;feature=player_embedded&amp;fs=1\"/><param name=\"allowFullScreen\" value=\"true\"/><param name=\"allowScriptAccess\" value=\"always\"/><embed allowfullscreen=\"true\" allowscriptaccess=\"always\" height=\"344\" src=\"https://www.youtube.com/v/7XGN6OSCq6E&amp;color1=0xb1b1b1&amp;color2=0xcfcfcf&amp;hl=en_US&amp;feature=player_embedded&amp;fs=1\" type=\"application/x-shockwave-flash\" width=\"425\"/></object></p>\n<p>The datafile from the demo is available at <a href=\"http://www.yeroon.net/ggplot2/myMovies.csv\" rel=\"nofollow\" style=\"color: #0000cc;\" target=\"_blank\">http://www.yeroon.net/ggplot2/myMovies.csv</a>.</p>\n<p>I wish the best to Jeroen, and hope to see many more such uses in the future.</p>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.r-statistics.com/2009/12/a-web-application-of-rs-ggplot2/\"> R-statistics blog » R</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n<div class=\"post-tags clearfix\"><ul><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/ggplot2/\" rel=\"tag\">ggplot2</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/interfaces/\" rel=\"tag\">interfaces</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/jeroen-ooms/\" rel=\"tag\">jeroen ooms</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r/\" rel=\"tag\">R</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/r-and-the-web/\" rel=\"tag\">R and the web</a></li><li class=\"round-corners\"><a href=\"https://www.r-bloggers.com/tag/websites/\" rel=\"tag\">WebSites</a></li></ul></div></article>",
+    "main_text": "A web application for R’s ggplot2\nPosted on\nDecember 7, 2009\nby\nTal Galili\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR-statistics blog » R\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nOne of the exciting new frontiers for R programming is of creating website interfaces to R code. At the forefront of this domain is a young and (very) bright man called\nJeroen Ooms\n, whom I had the pleasure of meeting at\nuseR 2009\n(press the link to see his presentation).\nToday Jeroen announced a new version (0.11) of his web interface to ggplot2. See it here:\nhttp://www.yeroon.net/ggplot2/\nAs Jeroen wrote:\nNew features include 1D geom’s (histogram, density, freqpoly), syntax mode (by clicking the tiny arrow at the bottom), and some additional facet options. And some minor improvements and fixes, most notably for Internet Explorer.\nThe data upload has not been improved yet, I am working on that. For now, it supports .csv, .sav (spss), and tab delimited data. Please make sure your filename has the appropriate extension and every column has a header in your data. If you export a dataframe from R, use:\nwrite.csv(mydf, ”mydf.csv” , row.names=F). If you upload an spss\ndatafile, none of this should be a concern.\nSupported browsers are IE6-8, FF, Safari, and Chrome, but a recent browser is highly recommended. As always, feedback is more than welcome.\nHere is a little demo video that shows how to use the new features:\nThe datafile from the demo is available at\nhttp://www.yeroon.net/ggplot2/myMovies.csv\n.\nI wish the best to Jeroen, and hope to see many more such uses in the future.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR-statistics blog » R\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nggplot2\ninterfaces\njeroen ooms\nR\nR and the web\nWebSites",
+    "meta_description": "One of the exciting new frontiers for R programming is of creating website interfaces to R code. At the forefront of this domain is a young and (very) bright man called Jeroen Ooms, whom I had the pleasure of meeting at useR 2009 (press the link to see his presentation). Today Jeroen announced a new version (0.11) [...]",
+    "meta_keywords": "ggplot2,interfaces,jeroen ooms,r,r and the web,websites",
+    "og_description": "One of the exciting new frontiers for R programming is of creating website interfaces to R code. At the forefront of this domain is a young and (very) bright man called Jeroen Ooms, whom I had the pleasure of meeting at useR 2009 (press the link to see his presentation). Today Jeroen announced a new version (0.11) [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "og_title": "A web application for R’s ggplot2 | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 2,
+    "sitemap_lastmod": "2009-12-07T09:28:57+00:00",
+    "twitter_description": "One of the exciting new frontiers for R programming is of creating website interfaces to R code. At the forefront of this domain is a young and (very) bright man called Jeroen Ooms, whom I had the pleasure of meeting at useR 2009 (press the link to see his presentation). Today Jeroen announced a new version (0.11) [...]",
+    "twitter_title": "A web application for R’s ggplot2 | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/12/a-web-application-for-r%E2%80%99s-ggplot2/",
+    "word_count": 405
+  }
+}

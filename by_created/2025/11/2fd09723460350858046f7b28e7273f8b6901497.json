@@ -1,0 +1,196 @@
+{
+  "id": "2fd09723460350858046f7b28e7273f8b6901497",
+  "url": "https://www.r-bloggers.com/2009/03/r-tips-eliminating-the-%e2%80%9csave-workspace-image%e2%80%9d-prompt-on-exit",
+  "created_at_utc": "2025-11-17T20:41:05Z",
+  "raw_json": {
+    "article_author": null,
+    "article_headline": null,
+    "article_modified": null,
+    "article_published": null,
+    "article_section": null,
+    "article_tags": null,
+    "canonical_url": "https://www.r-bloggers.com/2009/03/r-tips-eliminating-the-%e2%80%9csave-workspace-image%e2%80%9d-prompt-on-exit/",
+    "crawled_at": "2025-11-17T10:41:20.944588",
+    "external_links": [
+      {
+        "href": "http://www.cybaea.net/Blogs/Data/R-tips-Eliminating-the-save-workspace-image-prompt-on-exit.html",
+        "text": "CYBAEA Data and Analysis"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:yIl2AUoC8zA",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:F7zBnMyn0Lo",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:V_sGLiPBpWU",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:qj6IDK7rITs",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:gIN9vFwOqvQ",
+        "text": null
+      },
+      {
+        "href": "http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:TzevzKxY174",
+        "text": null
+      },
+      {
+        "href": "http://www.cybaea.net/Blogs/Data/R-tips-Eliminating-the-save-workspace-image-prompt-on-exit.html",
+        "text": "CYBAEA Data and Analysis"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "h1_title": "R-bloggers",
+    "html_title": "R tips: Eliminating the “save workspace image” prompt on exit | R-bloggers",
+    "images": [
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:F7zBnMyn0Lo"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:F7zBnMyn0Lo"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:V_sGLiPBpWU"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:V_sGLiPBpWU"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:gIN9vFwOqvQ"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:gIN9vFwOqvQ"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/mZpStaDMWdA"
+      },
+      {
+        "alt": null,
+        "base64": null,
+        "src": "https://feeds.feedburner.com/~r/CybaeaData/~4/mZpStaDMWdA"
+      }
+    ],
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/allan-engelhardt/",
+        "text": "Allan Engelhardt"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "lang": "en-US",
+    "main_html": "<article class=\"post-1541 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">R tips: Eliminating the “save workspace image” prompt on exit</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 26, 2009</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/allan-engelhardt/\">Allan Engelhardt</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<p class=\"syndicated-attribution\"><!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://www.cybaea.net/Blogs/Data/R-tips-Eliminating-the-save-workspace-image-prompt-on-exit.html\"> CYBAEA Data and Analysis</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div></p>\n\n<!-- Share buttons by mashshare.net - Version: 3.8.0--><div xmlns=\"http://www.w3.org/1999/xhtml\"><p>\r\nWhen using <a href=\"https://www.r-project.org/\" rel=\"nofollow\" target=\"_blank\">R</a>, the statistical analysis and computing platform, I find it really annoying that it always prompts to save the workspace when I exit.  This is how I turn it off.\r\n</p>\n<p>\r\nI wish there was an option to change the default of the <code>q</code>/<code>quit</code> functions.  I start and stop R frequently and so the exit question which I <em>have</em> to answer <em>every time</em> is really annoying:\r\n</p>\n<pre>Save workspace image? [y/n/c]:</pre>\n<p>\r\nWhy is there no R option to disable this prompt?  If I want to save the image, I have already saved it.  And I don’t like the default name anyhow, preferring to give my own with <code>save.image(file=...)</code>.  For a while, I had a function defined in my <code>~/.Rprofile</code> that terminated the session without prompting.\r\n</p>\n<pre>exit &lt;- function() { q(\"no\") }</pre>\n<p>\r\nWhile this means I can type <code>exit()</code> and avoid the annoying prompt, in practice I normally type Control-D to end the session which still calls the normal <code>q</code> function with its annoying prompt.\r\n</p>\n<p>\r\nSo instead I use the <code>alias</code> functionality of my (bash) shell to change the default.  In my <code>~/.bashrc</code> I now have\r\n</p>\n<pre>alias R=\"$(/usr/bin/which R) --no-save\"</pre>\n<p>\r\nAnd finally I am happy.  But I still think R should have an option (accessible through <code>options</code>) to change the default behavior.\r\n</p></div><div class=\"feedflare\">\n<a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:yIl2AUoC8zA\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:F7zBnMyn0Lo\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA%3AkSaP-_aoHhI%3AF7zBnMyn0Lo&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:F7zBnMyn0Lo\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:F7zBnMyn0Lo\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:V_sGLiPBpWU\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA%3AkSaP-_aoHhI%3AV_sGLiPBpWU&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:V_sGLiPBpWU\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:V_sGLiPBpWU\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:qj6IDK7rITs\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=qj6IDK7rITs\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:gIN9vFwOqvQ\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA%3AkSaP-_aoHhI%3AgIN9vFwOqvQ&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:gIN9vFwOqvQ\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?i=mZpStaDMWdA:kSaP-_aoHhI:gIN9vFwOqvQ\"/></noscript></a> <a href=\"http://feeds.cybaea.net/~ff/CybaeaData?a=mZpStaDMWdA:kSaP-_aoHhI:TzevzKxY174\" rel=\"nofollow\" target=\"_blank\"><img border=\"0\" class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174&amp;is-pending-load=1\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\"/><noscript><img border=\"0\" src=\"https://feeds.feedburner.com/~ff/CybaeaData?d=TzevzKxY174\"/></noscript></a>\n</div><img class=\"jetpack-lazy-image\" data-lazy-src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/mZpStaDMWdA?is-pending-load=1\" height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/mZpStaDMWdA\" srcset=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" width=\"1\"/><noscript><img height=\"1\" loading=\"lazy\" src=\"https://feeds.feedburner.com/~r/CybaeaData/~4/mZpStaDMWdA\" width=\"1\"/></noscript>\n\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 3.8.0-->\n<p class=\"syndicated-attribution\"><div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://www.cybaea.net/Blogs/Data/R-tips-Eliminating-the-save-workspace-image-prompt-on-exit.html\"> CYBAEA Data and Analysis</a></strong>.</div>\n<hr>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</hr></div></p> </div>\n</article>",
+    "main_text": "R tips: Eliminating the “save workspace image” prompt on exit\nPosted on\nMarch 26, 2009\nby\nAllan Engelhardt\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nCYBAEA Data and Analysis\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWhen using\nR\n, the statistical analysis and computing platform, I find it really annoying that it always prompts to save the workspace when I exit.  This is how I turn it off.\nI wish there was an option to change the default of the\nq\n/\nquit\nfunctions.  I start and stop R frequently and so the exit question which I\nhave\nto answer\nevery time\nis really annoying:\nSave workspace image? [y/n/c]:\nWhy is there no R option to disable this prompt?  If I want to save the image, I have already saved it.  And I don’t like the default name anyhow, preferring to give my own with\nsave.image(file=...)\n.  For a while, I had a function defined in my\n~/.Rprofile\nthat terminated the session without prompting.\nexit <- function() { q(\"no\") }\nWhile this means I can type\nexit()\nand avoid the annoying prompt, in practice I normally type Control-D to end the session which still calls the normal\nq\nfunction with its annoying prompt.\nSo instead I use the\nalias\nfunctionality of my (bash) shell to change the default.  In my\n~/.bashrc\nI now have\nalias R=\"$(/usr/bin/which R) --no-save\"\nAnd finally I am happy.  But I still think R should have an option (accessible through\noptions\n) to change the default behavior.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nCYBAEA Data and Analysis\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "meta_description": "When using R, the statistical analysis and computing platform, I find it really annoying that it always prompts to save the workspace when I exit. This is how I turn it off.",
+    "meta_keywords": null,
+    "og_description": "When using R, the statistical analysis and computing platform, I find it really annoying that it always prompts to save the workspace when I exit. This is how I turn it off.",
+    "og_image": "https://feeds.feedburner.com/~ff/CybaeaData?d=yIl2AUoC8zA",
+    "og_title": "R tips: Eliminating the “save workspace image” prompt on exit | R-bloggers",
+    "raw_jsonld_article": null,
+    "reading_time_min": 1.8,
+    "sitemap_lastmod": "2010-09-06T20:55:43+00:00",
+    "twitter_description": "When using R, the statistical analysis and computing platform, I find it really annoying that it always prompts to save the workspace when I exit. This is how I turn it off.",
+    "twitter_title": "R tips: Eliminating the “save workspace image” prompt on exit | R-bloggers",
+    "url": "https://www.r-bloggers.com/2009/03/r-tips-eliminating-the-%E2%80%9Csave-workspace-image%E2%80%9D-prompt-on-exit/",
+    "word_count": 368
+  }
+}
