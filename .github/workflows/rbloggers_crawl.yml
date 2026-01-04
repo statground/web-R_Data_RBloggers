@@ -34,7 +34,7 @@ jobs:
 
       - name: Crawl R-Bloggers
         env:
-          MAX_PAGES_FROM_HOME: "1"
+          MAX_PAGES_FROM_HOME: "10"
           SLEEP_SEC: "0.5"
         run: |
           python scripts/crawl_rbloggers.py
@@ -74,12 +74,15 @@ jobs:
 
           GH_SHA=$(git rev-parse HEAD)
 
-          # action_result.json 있으면 그 파일들만, 없으면 빈 배열 보내서 서버 fallback(compare/full) 타게 함
+          # action_result.json 있으면 그 파일들만 보내고,
+          # 없으면 [] 보내서 서버가 fallback(compare/full-scan)하도록 한다.
           if [ -f ".action_result.json" ]; then
             FILES_JSON=$(python -c "import json; obj=json.load(open('.action_result.json','r',encoding='utf-8')); files=[f for f in (obj.get('files') or []) if isinstance(f,str) and f.strip().endswith('.json')]; print(json.dumps(files, ensure_ascii=False))")
           else
             FILES_JSON="[]"
           fi
+
+          echo "sync sha=$GH_SHA, files_json_len=${#FILES_JSON}"
 
           curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
