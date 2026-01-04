@@ -59,8 +59,7 @@ jobs:
 
           echo "changed=1" >> "$GITHUB_OUTPUT"
 
-      - name: Sync to Web-R (only when repo changed)
-        if: steps.commit_push.outputs.changed == '1'
+      - name: Sync to Web-R (always)
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
@@ -73,23 +72,17 @@ jobs:
             exit 1
           fi
 
-          if [ ! -f ".action_result.json" ]; then
-            echo ".action_result.json not found. skip."
-            exit 0
-          fi
-
-          FILES_JSON=$(python -c "import json; obj=json.load(open('.action_result.json','r',encoding='utf-8')); files=[f for f in (obj.get('files') or []) if isinstance(f,str) and f.strip().endswith('.json')]; print(json.dumps(files, ensure_ascii=False))")
-          COUNT=$(python -c "import json,sys; files=json.loads(sys.argv[1]); print(len(files))" "$FILES_JSON")
-
-          echo "files count=$COUNT"
-          if [ "$COUNT" = "0" ]; then
-            echo "No JSON files to sync."
-            exit 0
-          fi
-
           GH_SHA=$(git rev-parse HEAD)
 
-          curl -sS -X POST "$WEBR_SYNC_URL" \
+          # action_result.json 있으면 그 파일들만, 없으면 빈 배열 보내서 서버 fallback(compare/full) 타게 함
+          if [ -f ".action_result.json" ]; then
+            FILES_JSON=$(python -c "import json; obj=json.load(open('.action_result.json','r',encoding='utf-8')); files=[f for f in (obj.get('files') or []) if isinstance(f,str) and f.strip().endswith('.json')]; print(json.dumps(files, ensure_ascii=False))")
+          else
+            FILES_JSON="[]"
+          fi
+
+          curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
-            -d "{\"sha\":\"$GH_SHA\",\"ref\":\"$GH_REF_NAME\",\"files\":$FILES_JSON}"
+            -d "{\"sha\":\"$GH_SHA\",\"ref\":\"$GH_REF_NAME\",\"files\":$FILES_JSON}" \
+            -w "\nHTTP_STATUS:%{http_code}\n"
