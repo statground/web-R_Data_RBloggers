@@ -1,0 +1,127 @@
+{
+  "id": "f71f982051b3783fa675d3a613403a5f2779b784",
+  "url": "https://www.r-bloggers.com/2025/12/mapas-para-explorar-los-resultados-del-censo-2024-de-poblacion-y-viviendas-en-chile-usando-aposd3poapos/",
+  "created_at_utc": "2026-01-04T05:35:43Z",
+  "crawled_at_utc": "2026-01-04T05:35:47Z",
+  "html_title": "Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘apos;d3po’apos; | R-bloggers",
+  "meta_description": "Luego de corregir los códigos territoriales en los datos del Censo 2024, muestro algunos mapas interactivos utilizando 'd3po'.",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/12/mapas-para-explorar-los-resultados-del-censo-2024-de-poblacion-y-viviendas-en-chile-usando-aposd3poapos/",
+    "canonical_url": "https://www.r-bloggers.com/2025/12/mapas-para-explorar-los-resultados-del-censo-2024-de-poblacion-y-viviendas-en-chile-usando-aposd3poapos/",
+    "html_title": "Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘apos;d3po’apos; | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Luego de corregir los códigos territoriales en los datos del Censo 2024, muestro algunos mapas interactivos utilizando 'd3po'.",
+    "meta_keywords": null,
+    "og_title": "Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘apos;d3po’apos; | R-bloggers",
+    "og_description": "Luego de corregir los códigos territoriales en los datos del Censo 2024, muestro algunos mapas interactivos utilizando 'd3po'.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘apos;d3po’apos; | R-bloggers",
+    "twitter_description": "Luego de corregir los códigos territoriales en los datos del Censo 2024, muestro algunos mapas interactivos utilizando 'd3po'.",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘apos;d3po’apos;\nPosted on\nDecember 7, 2025\nby\nhttps://pacha.dev/blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nhttps://pacha.dev/blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\npacha.dev/blog\n☰ Menu\nMauricio “Pachá” Vargas Sepúlveda\nBlog with notes about R, Shiny, SQL, Python, Linux and C++. This blog is listed on\nR-Bloggers\n.\nDark mode on\nA-\nA+\nHOME 🏠\nMapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘d3po’\nR\nD3po\nLuego de corregir los códigos territoriales en los datos del Censo 2024, muestro algunos mapas interactivos utilizando ‘d3po’.\nAuthor\nMauricio “Pachá” Vargas S.\nPublished\nDecember 8, 2025\nSi esta publicación te resulta útil, te agradecería que hicieras una pequeña donación en\nBuy Me a Coffee\n. La utilizaré para continuar con mis iniciativas de código abierto.\nPuedes enviarme preguntas para el blog utilizando\neste formulario\ny suscribirse para recibir un correo electrónico cuando haya una nueva publicación.\nLuego de corregir los códigos territoriales en los datos del Censo 2024 (\nhttps://github.com/pachadotdev/censo2024-duckdb\n), ahora procedo a mostrar algunos mapas interactivos utilizando “d3po”. El código para procesar las tablas censales y generar los estadísticos se encuentra en:\nhttps://github.com/pachadotdev/blog-materials/tree/main/2025/12/08/censo2024-mapas\n.\nPersonas por comuna\nResultados de la Región Metropolitana:\nif (!require(\"sf\")) install.packages(\"sf\")\nif (!require(\"dplyr\")) install.packages(\"dplyr\")\nif (!require(\"chilemapas\")) install.packages(\"chilemapas\")\nif (!require(\"d3po\")) install.packages(\"d3po\")\n\nlibrary(sf)\nlibrary(dplyr)\nlibrary(chilemapas)\nlibrary(d3po)\n\n# datos pre-procesados\npersonas_por_comuna <- readRDS(\"~/Documents/blog-materials/2025/12/08/censo2024-mapas/personas_por_comuna.rds\")\n\npersonas_por_comuna\n# A tibble: 346 × 3\n   comuna n_personas territorio   \n   <chr>       <dbl> <chr>        \n 1 01101      199587 Iquique      \n 2 01107      142086 Alto Hospicio\n 3 01401       16878 Pozo Almonte \n 4 01402        1335 Camiña       \n 5 01403         790 Colchane     \n 6 01404        2858 Huara        \n 7 01405        6272 Pica         \n 8 02101      401096 Antofagasta  \n 9 02102       14084 Mejillones   \n10 02103        1472 Sierra Gorda \n# ℹ 336 more rows\n# mapa includo en el paquete chilemapas\nmapa_comunas\n# A tibble: 345 × 4\n   codigo_comuna codigo_provincia codigo_region                         geometry\n   <chr>         <chr>            <chr>                       <MULTIPOLYGON [°]>\n 1 01401         014              01            (((-68.86081 -21.28512, -68.921…\n 2 01403         014              01            (((-68.65113 -19.77188, -68.811…\n 3 01405         014              01            (((-68.65113 -19.77188, -68.635…\n 4 01402         014              01            (((-69.31789 -19.13651, -69.271…\n 5 01404         014              01            (((-69.39615 -19.06125, -69.400…\n 6 01107         011              01            (((-70.1095 -20.35131, -70.1243…\n 7 01101         011              01            (((-70.09894 -20.08504, -70.102…\n 8 02104         021              02            (((-68.98863 -25.38016, -68.987…\n 9 02101         021              02            (((-70.60654 -23.43054, -70.601…\n10 02201         022              02            (((-67.94302 -22.38175, -67.955…\n# ℹ 335 more rows\n# como el mapa ya esta en sf, funciona directamente con d3po\n# falta unir con la tabla de personas_por_comuna\nmapa1 <- personas_por_comuna |>\n    filter(substr(comuna, 1, 2) == \"13\") |>\n    inner_join(mapa_comunas, by = c(\"comuna\" = \"codigo_comuna\")) |>\n    st_as_sf() # asegurarse que es un sf\n\ngradiente <- tintin::tintin_clrs()[2:1]\n\nd3po(mapa1, width = 800, height = 600) %>%\n  po_geomap(daes(group = territorio, size = n_personas, color = gradiente, gradient = T, tooltip = territorio)) %>%\n  po_labels(\n    title = \"Población total por comuna - Región Metropolitana\",\n    subtitle = \"Fuente: Basado en Microdatos Censo 2024 de Población y Viviendas de Chile\"\n  )\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nhttps://pacha.dev/blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-397833 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘apos;d3po’apos;</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">December 7, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/https-pacha-dev-blog/\">https://pacha.dev/blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://pacha.dev/blog/2025/12/08/censo2024-mapas/index.html\"> https://pacha.dev/blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><!DOCTYPE html>\n\n<meta charset=\"utf-8\"/>\n<meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\"/>\n<meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\"/>\n<title>pacha.dev/blog</title>\n\n<!-- MathJax Configuration -->\n\n\n<!-- Smart header: libraries detected based on content -->\n<!-- File: /tmp/tmp.LhOE8RLMWZ/index.html -->\n\n<link href=\"https://pacha.dev/blog/libs/bootstrap/bootstrap-icons.css\" rel=\"stylesheet\"/>\n<link append-hash=\"true\" data-mode=\"light\" href=\"https://pacha.dev/blog/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css\" id=\"quarto-bootstrap\" rel=\"stylesheet\"/>\n\n\n<!-- DEBUG: Found sourceCode -->\n\n<!-- DEBUG: Found htmlwidgets -->\n\n<!-- DEBUG: Found D3 -->\n\n\n<!-- DEBUG: Found d3po -->\n<!-- DEBUG: Found class with d3po -->\n<!-- Load custom CSS after any library CSS to ensure proper precedence -->\n<link href=\"https://pacha.dev/blog/css/menu.css\" rel=\"stylesheet\"/>\n<link href=\"https://pacha.dev/blog/css/content.css\" rel=\"stylesheet\"/>\n<div class=\"main-container\">\n<button aria-controls=\"menu\" aria-expanded=\"false\" aria-label=\"Toggle menu\" id=\"menu-toggle\">☰ Menu</button>\n<div id=\"menu\">\n<header class=\"site-top\">\n<div class=\"site-controls-wrapper\">\n<div class=\"site-controls-row bottom-row\">\n<h1 style=\"margin-bottom: 0 !important;\">Mauricio “Pachá” Vargas Sepúlveda</h1>\n<p>Blog with notes about R, Shiny, SQL, Python, Linux and C++. This blog is listed on <b>R-Bloggers</b>.</p>\n</div>\n<div class=\"site-controls-row top-row\">\n<input id=\"search-box\" placeholder=\"Search...\" type=\"text\"/>\n<button aria-label=\"Toggle dark mode\" id=\"theme-toggle\" title=\"Toggle dark mode\">Dark mode on</button>\n<button aria-label=\"Decrease font size\" id=\"font-decrease\" title=\"Decrease font size\">A-</button>\n<button aria-label=\"Increase font size\" id=\"font-increase\" title=\"Increase font size\">A+</button>\n</div>\n</div>\n</header>\n<center><a class=\"home-link\" href=\"https://pacha.dev/blog/\" rel=\"nofollow\" target=\"_blank\">HOME 🏠</a></center>\n<!-- categories are printed below this-->\n\n</div>\n<div id=\"page\">\n<div id=\"content\">\n<header class=\"quarto-title-block default\" id=\"title-block-header\">\n<div class=\"quarto-title\">\n<h1 class=\"title\">Mapas para Explorar los Resultados del Censo 2024 de Población y Viviendas en Chile usando ‘d3po’</h1>\n<div class=\"quarto-categories\">\n<div class=\"quarto-category\"><a href=\"https://pacha.dev/blog//R/\" rel=\"nofollow\" target=\"_blank\">R</a></div>\n<div class=\"quarto-category\"><a href=\"https://pacha.dev/blog//D3po/\" rel=\"nofollow\" target=\"_blank\">D3po</a></div>\n</div>\n</div>\n<div>\n<div class=\"description\">\n    Luego de corregir los códigos territoriales en los datos del Censo 2024, muestro algunos mapas interactivos utilizando ‘d3po’.\n  </div>\n</div>\n<div class=\"quarto-title-meta\">\n<div>\n<div class=\"quarto-title-meta-heading\">Author</div>\n<div class=\"quarto-title-meta-contents\">\n<p>Mauricio “Pachá” Vargas S. </p>\n</div>\n</div>\n<div>\n<div class=\"quarto-title-meta-heading\">Published</div>\n<div class=\"quarto-title-meta-contents\">\n<p class=\"date\">December 8, 2025</p>\n</div>\n</div>\n</div>\n</header>\n<p><em>Si esta publicación te resulta útil, te agradecería que hicieras una pequeña donación en <a href=\"https://buymeacoffee.com/pacha/e/80976\" rel=\"nofollow\" target=\"_blank\">Buy Me a Coffee</a>. La utilizaré para continuar con mis iniciativas de código abierto.</em></p>\n<p><em>Puedes enviarme preguntas para el blog utilizando <a href=\"https://docs.google.com/forms/d/e/1FAIpQLScMpMtKjDe2h53iHUvlYHDdBNMD1_x9WO5wg5wi_EO7ak_DRA/viewform?%20usp=sharing&amp;ouid=115091451666829859711\" rel=\"nofollow\" target=\"_blank\">este formulario</a> y suscribirse para recibir un correo electrónico cuando haya una nueva publicación.</em></p>\n<p>Luego de corregir los códigos territoriales en los datos del Censo 2024 (<a href=\"https://github.com/pachadotdev/censo2024-duckdb\" rel=\"nofollow\" target=\"_blank\">https://github.com/pachadotdev/censo2024-duckdb</a>), ahora procedo a mostrar algunos mapas interactivos utilizando “d3po”. El código para procesar las tablas censales y generar los estadísticos se encuentra en: <a href=\"https://github.com/pachadotdev/blog-materials/tree/main/2025/12/08/censo2024-mapas\" rel=\"nofollow\" target=\"_blank\">https://github.com/pachadotdev/blog-materials/tree/main/2025/12/08/censo2024-mapas</a>.</p>\n<section class=\"level1\" id=\"personas-por-comuna\">\n<h1>Personas por comuna</h1>\n<p>Resultados de la Región Metropolitana:</p>\n<div class=\"cell\">\n<pre>if (!require(\"sf\")) install.packages(\"sf\")\nif (!require(\"dplyr\")) install.packages(\"dplyr\")\nif (!require(\"chilemapas\")) install.packages(\"chilemapas\")\nif (!require(\"d3po\")) install.packages(\"d3po\")\n\nlibrary(sf)\nlibrary(dplyr)\nlibrary(chilemapas)\nlibrary(d3po)\n\n# datos pre-procesados\npersonas_por_comuna &lt;- readRDS(\"~/Documents/blog-materials/2025/12/08/censo2024-mapas/personas_por_comuna.rds\")\n\npersonas_por_comuna</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre># A tibble: 346 × 3\n   comuna n_personas territorio   \n   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;        \n 1 01101      199587 Iquique      \n 2 01107      142086 Alto Hospicio\n 3 01401       16878 Pozo Almonte \n 4 01402        1335 Camiña       \n 5 01403         790 Colchane     \n 6 01404        2858 Huara        \n 7 01405        6272 Pica         \n 8 02101      401096 Antofagasta  \n 9 02102       14084 Mejillones   \n10 02103        1472 Sierra Gorda \n# ℹ 336 more rows</pre>\n</div>\n<pre># mapa includo en el paquete chilemapas\nmapa_comunas</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre># A tibble: 345 × 4\n   codigo_comuna codigo_provincia codigo_region                         geometry\n   &lt;chr&gt;         &lt;chr&gt;            &lt;chr&gt;                       &lt;MULTIPOLYGON [°]&gt;\n 1 01401         014              01            (((-68.86081 -21.28512, -68.921…\n 2 01403         014              01            (((-68.65113 -19.77188, -68.811…\n 3 01405         014              01            (((-68.65113 -19.77188, -68.635…\n 4 01402         014              01            (((-69.31789 -19.13651, -69.271…\n 5 01404         014              01            (((-69.39615 -19.06125, -69.400…\n 6 01107         011              01            (((-70.1095 -20.35131, -70.1243…\n 7 01101         011              01            (((-70.09894 -20.08504, -70.102…\n 8 02104         021              02            (((-68.98863 -25.38016, -68.987…\n 9 02101         021              02            (((-70.60654 -23.43054, -70.601…\n10 02201         022              02            (((-67.94302 -22.38175, -67.955…\n# ℹ 335 more rows</pre>\n</div>\n<pre># como el mapa ya esta en sf, funciona directamente con d3po\n# falta unir con la tabla de personas_por_comuna\nmapa1 &lt;- personas_por_comuna |&gt;\n    filter(substr(comuna, 1, 2) == \"13\") |&gt;\n    inner_join(mapa_comunas, by = c(\"comuna\" = \"codigo_comuna\")) |&gt;\n    st_as_sf() # asegurarse que es un sf\n\ngradiente &lt;- tintin::tintin_clrs()[2:1]\n\nd3po(mapa1, width = 800, height = 600) %&gt;%\n  po_geomap(daes(group = territorio, size = n_personas, color = gradiente, gradient = T, tooltip = territorio)) %&gt;%\n  po_labels(\n    title = \"Población total por comuna - Región Metropolitana\",\n    subtitle = \"Fuente: Basado en Microdatos Censo 2024 de Población y Viviendas de Chile\"\n  )</pre>\n<div class=\"cell-output-display\">\n<div class=\"d3po html-widget\" id=\"htmlwidget-d0e117d2b0b49f56635d\" style=\"width:100%;height:487px;\"></div>\n</div></div></section></div></div></div>\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pacha.dev/blog/2025/12/08/censo2024-mapas/index.html\"> https://pacha.dev/blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 655,
+    "reading_time_min": 3.3,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/https-pacha-dev-blog/",
+        "text": "https://pacha.dev/blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://pacha.dev/blog/2025/12/08/censo2024-mapas/index.html",
+        "text": "https://pacha.dev/blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://pacha.dev/blog/",
+        "text": "HOME 🏠"
+      },
+      {
+        "href": "https://pacha.dev/blog//R/",
+        "text": "R"
+      },
+      {
+        "href": "https://pacha.dev/blog//D3po/",
+        "text": "D3po"
+      },
+      {
+        "href": "https://buymeacoffee.com/pacha/e/80976",
+        "text": "Buy Me a Coffee"
+      },
+      {
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLScMpMtKjDe2h53iHUvlYHDdBNMD1_x9WO5wg5wi_EO7ak_DRA/viewform?%20usp=sharing&ouid=115091451666829859711",
+        "text": "este formulario"
+      },
+      {
+        "href": "https://github.com/pachadotdev/censo2024-duckdb",
+        "text": "https://github.com/pachadotdev/censo2024-duckdb"
+      },
+      {
+        "href": "https://github.com/pachadotdev/blog-materials/tree/main/2025/12/08/censo2024-mapas",
+        "text": "https://github.com/pachadotdev/blog-materials/tree/main/2025/12/08/censo2024-mapas"
+      },
+      {
+        "href": "https://pacha.dev/blog/2025/12/08/censo2024-mapas/index.html",
+        "text": "https://pacha.dev/blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-04T05:35:47Z"
+  }
+}

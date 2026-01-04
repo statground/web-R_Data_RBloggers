@@ -1,0 +1,132 @@
+{
+  "id": "15b92652bc38ce21f1d8fc72878a26b69ddbd202",
+  "url": "https://www.r-bloggers.com/2025/11/little-useless-useful-r-functions-finding-substrings-in-number-pi/",
+  "created_at_utc": "2026-01-04T05:35:43Z",
+  "crawled_at_utc": "2026-01-04T05:36:03Z",
+  "html_title": "Little useless-useful R functions – Finding substrings in number Pi | R-bloggers",
+  "meta_description": "They say that number Pi holds all infinite possibilities, all the words, all the combinations. Well, easier said to be done. So let’s put this to a test. This is my translational table. We will do this in the following…Read more ›",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/11/little-useless-useful-r-functions-finding-substrings-in-number-pi/",
+    "canonical_url": "https://www.r-bloggers.com/2025/11/little-useless-useful-r-functions-finding-substrings-in-number-pi/",
+    "html_title": "Little useless-useful R functions – Finding substrings in number Pi | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "They say that number Pi holds all infinite possibilities, all the words, all the combinations. Well, easier said to be done. So let’s put this to a test. This is my translational table. We will do this in the following…Read more ›",
+    "meta_keywords": null,
+    "og_title": "Little useless-useful R functions – Finding substrings in number Pi | R-bloggers",
+    "og_description": "They say that number Pi holds all infinite possibilities, all the words, all the combinations. Well, easier said to be done. So let’s put this to a test. This is my translational table. We will do this in the following…Read more ›",
+    "og_image": "https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=392",
+    "twitter_title": "Little useless-useful R functions – Finding substrings in number Pi | R-bloggers",
+    "twitter_description": "They say that number Pi holds all infinite possibilities, all the words, all the combinations. Well, easier said to be done. So let’s put this to a test. This is my translational table. We will do this in the following…Read more ›",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Little useless-useful R functions – Finding substrings in number Pi\nPosted on\nNovember 10, 2025\nby\ntomaztsql\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR – TomazTsql\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThey say that number Pi holds all infinite possibilities, all the words, all the combinations. Well, easier said to be done. So let’s put this to a test.\nThis is my translational table.\nWe will do this in the following steps (for the word “eggs”):\nEncode the word EGGS to numbers. E = 5, G = 7, G = 7 and S = 19. Together concatenated we get the string of 57719.\nWe store a veeery long string of PI number.\nStart looking in PI number for substring of “57719”.\nWell, let’s create a function to do just that\nlibrary(Rmpfr)\n\nencode_a1z26 <- function(s) {\n  s_clean <- gsub(\"[^A-Za-z]\", \"\", toupper(s))\n  if (nchar(s_clean) == 0) stop(\"No letters found in input.\")\n  letters_vec <- strsplit(s_clean, \"\", fixed = TRUE)[[1]]\n  nums <- match(letters_vec, LETTERS)          \n  paste0(nums, collapse = \"\")\n}\n\npi_fraction_digits <- function(n_digits) {\n  # bits of precison ~ n_digits * log2(10)\n  precBits <- ceiling(n_digits * log2(10)) + 32L\n  pi_mpfr <- Const(\"pi\", precBits)                        \n  s <- formatMpfr(pi_mpfr, digits = n_digits + 2L, scientific = FALSE, base = 10L)\n  s <- gsub(\"\\\\.\", \"\", s, fixed = FALSE)\n  frac <- substr(s, 2L, n_digits + 1L)\n  if (nchar(frac) < n_digits) {\n    stop(\"To low precision; did not get requested number of digits\")\n  }\n  frac\n}\n\nfind_in_pi <- function(pattern, n_digits) {\n  if (!grepl(\"^[0-9]+$\", pattern)) stop(\"Pattern must be digits!\")\n  t0 <- proc.time()[[\"elapsed\"]]\n  frac <- pi_fraction_digits(n_digits)\n  loc <- regexpr(pattern, frac, fixed = TRUE)\n  elapsed <- proc.time()[[\"elapsed\"]] - t0\n  \n  #getting the positions\n  if (loc[1] != -1) {\n    start_pos <- as.integer(loc[1])                \n    end_pos   <- start_pos + nchar(pattern) - 1L\n    list(found = TRUE,\n         start = start_pos,\n         end   = end_pos,\n         digits_scanned = n_digits,\n         seconds = elapsed)\n  } else {\n    list(found = FALSE,\n         start = NA_integer_,\n         end   = NA_integer_,\n         digits_scanned = n_digits,\n         seconds = elapsed)\n  }\n}\n\nfind_phrase_in_pi <- function(phrase, n_digits) {\n  pat <- encode_a1z26(phrase)\n  res <- find_in_pi(pat, n_digits)\n  res$pattern <- pat\n  res$phrase  <- phrase\n  res\n}\nand finally, to run the function(s):\n## Run functions\nword <- \"eggs\"\nencoded_word <- encode_a1z26(word)\ncat(\"Encoded \",word,\" ->\", encoded_word, \"\\n\")  \nresult_today <- find_in_pi(encoded_word, 1e5)\nprint(result_today)\nAnd see that the word “EGGS”  as the number 57719, appears on Pi Number on 6026th till 6030th position. Pretty useless\nAs always, the complete code is available on GitHub in\nUseless_R_function repository\n. The first version is\nhere\n(filename: Find_substring_in_Pi\n.r)\n.\nCheck the repository for future updates!\nStay healthy and happy R-coding!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR – TomazTsql\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-396683 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Little useless-useful R functions – Finding substrings in number Pi</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 10, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/tomaztsql/\">tomaztsql</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://tomaztsql.wordpress.com/2025/11/10/little-useless-useful-r-functions-finding-substrings-in-number-pi/\"> R – TomazTsql</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>They say that number Pi holds all infinite possibilities, all the words, all the combinations. Well, easier said to be done. So let’s put this to a test.</p>\n<p>This is my translational table. </p>\n<div class=\"wp-block-image\">\n<figure class=\"aligncenter size-large is-resized\"><a href=\"https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" class=\"wp-image-10642\" data-attachment-id=\"10642\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-title=\"image\" data-large-file=\"https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?resize=392%2C102&amp;ssl=1\" data-lazy-sizes=\"(max-width: 392px) 100vw, 392px\" data-lazy-src=\"https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?resize=392%2C102&amp;ssl=1\" data-medium-file=\"https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=300\" data-orig-file=\"https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png\" data-orig-size=\"392,102\" data-permalink=\"https://tomaztsql.wordpress.com/2025/11/10/little-useless-useful-r-functions-finding-substrings-in-number-pi/image-230/\" data-recalc-dims=\"1\" height=\"102\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" srcset_temp=\"https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png 392w, https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=150 150w, https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=300 300w\" style=\"width:807px;height:auto\" width=\"392\"/><noscript><img alt=\"\" aperture=\"\" class=\"wp-image-10642\" data-attachment-id=\"10642\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-meta=\"{\" data-image-title=\"image\" data-large-file=\"https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?resize=392%2C102&amp;ssl=1\" data-medium-file=\"https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=300\" data-orig-file=\"https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png\" data-orig-size=\"392,102\" data-permalink=\"https://tomaztsql.wordpress.com/2025/11/10/little-useless-useful-r-functions-finding-substrings-in-number-pi/image-230/\" data-recalc-dims=\"1\" height=\"102\" loading=\"lazy\" sizes=\"(max-width: 392px) 100vw, 392px\" src=\"https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?resize=392%2C102&amp;ssl=1\" srcset_temp=\"https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png 392w, https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=150 150w, https://tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?w=300 300w\" style=\"width:807px;height:auto\" width=\"392\"/></noscript></a></figure></div>\n<p>We will do this in the following steps (for the word “eggs”):</p>\n<ol class=\"wp-block-list\">\n<li>Encode the word EGGS to numbers. E = 5, G = 7, G = 7 and S = 19. Together concatenated we get the string of 57719.</li>\n<li>We store a veeery long string of PI number.</li>\n<li>Start looking in PI number for substring of “57719”.</li>\n</ol>\n<p>Well, let’s create a function to do just that</p>\n<pre>\n\nlibrary(Rmpfr)\n\nencode_a1z26 &lt;- function(s) {\n  s_clean &lt;- gsub(\"[^A-Za-z]\", \"\", toupper(s))\n  if (nchar(s_clean) == 0) stop(\"No letters found in input.\")\n  letters_vec &lt;- strsplit(s_clean, \"\", fixed = TRUE)[[1]]\n  nums &lt;- match(letters_vec, LETTERS)          \n  paste0(nums, collapse = \"\")\n}\n\n\npi_fraction_digits &lt;- function(n_digits) {\n  # bits of precison ~ n_digits * log2(10)\n  precBits &lt;- ceiling(n_digits * log2(10)) + 32L\n  pi_mpfr &lt;- Const(\"pi\", precBits)                        \n  s &lt;- formatMpfr(pi_mpfr, digits = n_digits + 2L, scientific = FALSE, base = 10L)\n  s &lt;- gsub(\"\\\\.\", \"\", s, fixed = FALSE)\n  frac &lt;- substr(s, 2L, n_digits + 1L)\n  if (nchar(frac) &lt; n_digits) {\n    stop(\"To low precision; did not get requested number of digits\")\n  }\n  frac\n}\n\nfind_in_pi &lt;- function(pattern, n_digits) {\n  if (!grepl(\"^[0-9]+$\", pattern)) stop(\"Pattern must be digits!\")\n  t0 &lt;- proc.time()[[\"elapsed\"]]\n  frac &lt;- pi_fraction_digits(n_digits)\n  loc &lt;- regexpr(pattern, frac, fixed = TRUE)\n  elapsed &lt;- proc.time()[[\"elapsed\"]] - t0\n  \n  #getting the positions\n  if (loc[1] != -1) {\n    start_pos &lt;- as.integer(loc[1])                \n    end_pos   &lt;- start_pos + nchar(pattern) - 1L\n    list(found = TRUE,\n         start = start_pos,\n         end   = end_pos,\n         digits_scanned = n_digits,\n         seconds = elapsed)\n  } else {\n    list(found = FALSE,\n         start = NA_integer_,\n         end   = NA_integer_,\n         digits_scanned = n_digits,\n         seconds = elapsed)\n  }\n}\n\nfind_phrase_in_pi &lt;- function(phrase, n_digits) {\n  pat &lt;- encode_a1z26(phrase)\n  res &lt;- find_in_pi(pat, n_digits)\n  res$pattern &lt;- pat\n  res$phrase  &lt;- phrase\n  res\n}\n</pre>\n<p>and finally, to run the function(s):</p>\n<pre>\n## Run functions\nword &lt;- \"eggs\"\nencoded_word &lt;- encode_a1z26(word)\ncat(\"Encoded \",word,\" -&gt;\", encoded_word, \"\\n\")  \nresult_today &lt;- find_in_pi(encoded_word, 1e5)\nprint(result_today)\n\n</pre>\n<p>And see that the word “EGGS”  as the number 57719, appears on Pi Number on 6026th till 6030th position. Pretty useless <img alt=\"🙂\" class=\"wp-smiley\" data-lazy-src=\"https://i1.wp.com/s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f642.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"height: 1em; max-height: 1em;\"/><noscript><img alt=\"🙂\" class=\"wp-smiley\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f642.png?w=578&amp;ssl=1\" style=\"height: 1em; max-height: 1em;\"/></noscript></p>\n<p>As always, the complete code is available on GitHub in  <a href=\"https://github.com/tomaztk/Useless_R_functions\" rel=\"nofollow\" target=\"_blank\">Useless_R_function repository</a>. The first version is <a href=\"https://github.com/tomaztk/Useless_R_functions/blob/main/functions/Find_substring_in_Pi.r\" rel=\"nofollow\" target=\"_blank\">here</a> (filename: Find_substring_in_Pi<em>.r)</em>.</p>\n<p>Check the repository for future updates!</p>\n<p>Stay healthy and happy R-coding!</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://tomaztsql.wordpress.com/2025/11/10/little-useless-useful-r-functions-finding-substrings-in-number-pi/\"> R – TomazTsql</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 499,
+    "reading_time_min": 2.5,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/tomaztsql/",
+        "text": "tomaztsql"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://tomaztsql.wordpress.com/2025/11/10/little-useless-useful-r-functions-finding-substrings-in-number-pi/",
+        "text": "R – TomazTsql"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://github.com/tomaztk/Useless_R_functions",
+        "text": "Useless_R_function repository"
+      },
+      {
+        "href": "https://github.com/tomaztk/Useless_R_functions/blob/main/functions/Find_substring_in_Pi.r",
+        "text": "here"
+      },
+      {
+        "href": "https://tomaztsql.wordpress.com/2025/11/10/little-useless-useful-r-functions-finding-substrings-in-number-pi/",
+        "text": "R – TomazTsql"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i1.wp.com/tomaztsql.wordpress.com/wp-content/uploads/2025/11/image-4.png?resize=392%2C102&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,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"
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "🙂",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i1.wp.com/s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f642.png?w=578&ssl=1",
+        "alt": "🙂",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAVFBMVEVHcEz/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE1mRQDPojWziSdwTQX1xEh5VgqDXg7ZqjqfeB3su0OMZxOWbxjGmTDisz/upwujAAAADXRSTlMA30DPgFCPIJ/vr2C/51DM+gAAAdFJREFUWMPtmNuSgjAMhkFOrRBoQRHd93/PLQo40hRCzOzVfjN7k5F/26RNk0RRmKLMqxgm4iovi4hBphaNN7HKjqkUuYYAOqev63SGTc4n2moU7KIIq0o1ENDp3nISIJJsLirTQEZvBDCFQwS3p+AgSkgnoMTQQZVSYOH5KQMmq9gVmiukP89TAmwSAQd5buJvbLU5BV+xnIETfMmcn/w81nR13TVAtZ8nD/m/r580VDu8vJSvza19fWBbmh0gfwp5ITP1hKHZXeDwy3GZP7jQ7NNF8WNfL9Ds0wmIN4RuJPv4cmIx46zIxa2UESr94LOc7Q5A5RuPhx+gQnzNOJCjt7FLePiKOFCho5c2LMTgX+gvhWIZnRi7Ihwq7NJyyLE0wqHEEhuHIpLxdhx4+K1tQp801gaef6xWc7nifsNkbnc00b7qNqSm6ce0MzzWie0xjPYeqWzwJ9v94zk59+bq+HF/pr+E3qL5ycbiZuogBo8ZXtZMm8PosQZuq9Dq6TpLoYWXfo31ZfBToXaK0dZ0nzKdafcq7VB5fDXD/JYN5krpIqQKdrkWQqypkWuz5Bo/uVZUrjmWa9flBghyIw25IYvg2EduECU4GhMc1jHGh79nUdP9NyiU8gAAAABJRU5ErkJggg=="
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-04T05:36:03Z"
+  }
+}

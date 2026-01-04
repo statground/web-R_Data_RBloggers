@@ -1,0 +1,111 @@
+{
+  "id": "f68740d411e135c6d7e4dee4dd8e1d10d6375fb4",
+  "url": "https://www.r-bloggers.com/2025/11/trustworthy-data-visualization/",
+  "created_at_utc": "2026-01-04T05:35:43Z",
+  "crawled_at_utc": "2026-01-04T05:36:03Z",
+  "html_title": "Trustworthy Data Visualization | R-bloggers",
+  "meta_description": "This past September I gave the closing keynote at posit::conf; it’s now on YouTube to watch. Keen-eyed observers will note from the title that it’s about trustworthy data visualization. But it’s also about trust a bit mo...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/11/trustworthy-data-visualization/",
+    "canonical_url": "https://www.r-bloggers.com/2025/11/trustworthy-data-visualization/",
+    "html_title": "Trustworthy Data Visualization | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "This past September I gave the closing keynote at posit::conf; it’s now on YouTube to watch. Keen-eyed observers will note from the title that it’s about trustworthy data visualization. But it’s also about trust a bit mo...",
+    "meta_keywords": null,
+    "og_title": "Trustworthy Data Visualization | R-bloggers",
+    "og_description": "This past September I gave the closing keynote at posit::conf; it’s now on YouTube to watch. Keen-eyed observers will note from the title that it’s about trustworthy data visualization. But it’s also about trust a bit mo...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Trustworthy Data Visualization | R-bloggers",
+    "twitter_description": "This past September I gave the closing keynote at posit::conf; it’s now on YouTube to watch. Keen-eyed observers will note from the title that it’s about trustworthy data visualization. But it’s also about trust a bit mo...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Trustworthy Data Visualization\nPosted on\nNovember 10, 2025\nby\nR on kieranhealy.org\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on kieranhealy.org\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis past September I gave the closing keynote at\nposit::conf\n; it’s now on YouTube to watch. Keen-eyed observers will note from the title that it’s about trustworthy data visualization. But it’s also about trust a bit more generally, and how we should think about it in a world where  researchers are faking results, AIs are enthusiastically confabulating, and government is destroying data infrastructure. When you find yourself giving a talk with a little tiny microphone stuck to the side of your head you have to ask yourself some hard questions, but the talk was partly about that.\nOne of the nice things about the opportunity to give a talk like this to a large audience is that you have an opportunity to tell people about not just your own stuff but also something of the work of other people, the work that you build from and rely on. This is, as you’ll see if you watch, one of the themes of the talk in the first place. In my case, in addition to all the good work by people in the general area of data visualization and data science, I was able to talk about some ideas from social theory and, in addition, some of the work of\nKatherine Hawley\non trust and commitment. The fulcrum of the talk is essentially an idea about commitment that she developed in her book\nHow to be Trustworthy\n. I got to know Katherine and her family a little bit over a few summers in the 2010s when my own family used to visit St Andrews, where she was Professor of Philosophy. She died of cancer at the age of fifty in 2021. She was a wonderful person; a clear-minded philosopher of enviable intellectual gifts but also immense personal kindness. It was good to be able to think of her while writing this talk and, in however small a way, introduce some of her ideas to a new audience when I gave it.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on kieranhealy.org\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-396668 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Trustworthy Data Visualization</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 10, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-kieranhealy-org/\">R on kieranhealy.org</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://kieranhealy.org/blog/archives/2025/11/10/trustworthy-data-visualization/\"> R on kieranhealy.org</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\">\n<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\" loading=\"eager\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube-nocookie.com/embed/ZamPCbvBAgE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" title=\"YouTube video\"></iframe>\n</div>\n<p>This past September I gave the closing keynote at <a href=\"https://posit.co/conference/\" rel=\"nofollow\" target=\"_blank\">posit::conf</a>; it’s now on YouTube to watch. Keen-eyed observers will note from the title that it’s about trustworthy data visualization. But it’s also about trust a bit more generally, and how we should think about it in a world where  researchers are faking results, AIs are enthusiastically confabulating, and government is destroying data infrastructure. When you find yourself giving a talk with a little tiny microphone stuck to the side of your head you have to ask yourself some hard questions, but the talk was partly about that.</p>\n<p>One of the nice things about the opportunity to give a talk like this to a large audience is that you have an opportunity to tell people about not just your own stuff but also something of the work of other people, the work that you build from and rely on. This is, as you’ll see if you watch, one of the themes of the talk in the first place. In my case, in addition to all the good work by people in the general area of data visualization and data science, I was able to talk about some ideas from social theory and, in addition, some of the work of <a href=\"https://en.wikipedia.org/wiki/Katherine_Hawley\" rel=\"nofollow\" target=\"_blank\">Katherine Hawley</a> on trust and commitment. The fulcrum of the talk is essentially an idea about commitment that she developed in her book <a href=\"https://academic.oup.com/book/32233\" rel=\"nofollow\" target=\"_blank\"><em>How to be Trustworthy</em></a>. I got to know Katherine and her family a little bit over a few summers in the 2010s when my own family used to visit St Andrews, where she was Professor of Philosophy. She died of cancer at the age of fifty in 2021. She was a wonderful person; a clear-minded philosopher of enviable intellectual gifts but also immense personal kindness. It was good to be able to think of her while writing this talk and, in however small a way, introduce some of her ideas to a new audience when I gave it.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://kieranhealy.org/blog/archives/2025/11/10/trustworthy-data-visualization/\"> R on kieranhealy.org</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 479,
+    "reading_time_min": 2.4,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-on-kieranhealy-org/",
+        "text": "R on kieranhealy.org"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://kieranhealy.org/blog/archives/2025/11/10/trustworthy-data-visualization/",
+        "text": "R on kieranhealy.org"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://posit.co/conference/",
+        "text": "posit::conf"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Katherine_Hawley",
+        "text": "Katherine Hawley"
+      },
+      {
+        "href": "https://academic.oup.com/book/32233",
+        "text": "How to be Trustworthy"
+      },
+      {
+        "href": "https://kieranhealy.org/blog/archives/2025/11/10/trustworthy-data-visualization/",
+        "text": "R on kieranhealy.org"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-04T05:36:03Z"
+  }
+}
