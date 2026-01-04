@@ -2,11 +2,11 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"  # hourly
+    - cron: "0 * * * *"   # 매 시간
   workflow_dispatch:
 
 concurrency:
-  group: rbloggers-crawl-${{ github.ref }}
+  group: rbloggers-crawl-main
   cancel-in-progress: true
 
 permissions:
@@ -41,6 +41,8 @@ jobs:
 
       - name: Commit & push (if changed)
         id: commit_push
+        env:
+          GITHUB_REF_NAME: ${{ github.ref_name }}
         run: |
           set -e
 
@@ -53,11 +55,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # 원격 최신 반영
+          git fetch origin "$GITHUB_REF_NAME"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+
           git add -A
           git commit -m "rbloggers: add new posts" || true
-          git push
 
-          echo "changed=1" >> "$GITHUB_OUTPUT"
+          # push 재시도 (race condition 방지)
+          for i in 1 2 3; do
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then
+              echo "changed=1" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push failed (attempt $i). Retrying..."
+            git fetch origin "$GITHUB_REF_NAME"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+          done
+
+          echo "Push failed after retries."
+          exit 1
 
       - name: Sync to Web-R (always)
         env:
@@ -74,8 +91,7 @@ jobs:
 
           GH_SHA=$(git rev-parse HEAD)
 
-          # action_result.json 있으면 그 파일들만 보내고,
-          # 없으면 [] 보내서 서버가 fallback(compare/full-scan)하도록 한다.
+          # action_result.json 있으면 파일 목록 전달, 없으면 [] (서버 fallback 유도)
           if [ -f ".action_result.json" ]; then
             FILES_JSON=$(python -c "import json; obj=json.load(open('.action_result.json','r',encoding='utf-8')); files=[f for f in (obj.get('files') or []) if isinstance(f,str) and f.strip().endswith('.json')]; print(json.dumps(files, ensure_ascii=False))")
           else
