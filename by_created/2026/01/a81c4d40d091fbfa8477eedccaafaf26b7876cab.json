@@ -1,0 +1,158 @@
+{
+  "id": "a81c4d40d091fbfa8477eedccaafaf26b7876cab",
+  "url": "https://www.r-bloggers.com/2025/10/predicting-nba-games-with-r-and-hoopr-win-probabilities-heatmaps/",
+  "created_at_utc": "2026-01-04T05:35:43Z",
+  "crawled_at_utc": "2026-01-04T05:36:52Z",
+  "html_title": "Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) | R-bloggers",
+  "meta_description": "If you love sports analytics, this post will show you how to predict NBA matchups using real ESPN data and the R ecosystem — specifically hoopR, tidyverse, and ggplot2. We’ll use a simple Poisson model to simulate thousands of possible scores, compute win probabilities, and visualize expected outcomes for any matchup — all inside R. […] The post Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) appeared first on R Programming Books.",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/10/predicting-nba-games-with-r-and-hoopr-win-probabilities-heatmaps/",
+    "canonical_url": "https://www.r-bloggers.com/2025/10/predicting-nba-games-with-r-and-hoopr-win-probabilities-heatmaps/",
+    "html_title": "Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "If you love sports analytics, this post will show you how to predict NBA matchups using real ESPN data and the R ecosystem — specifically hoopR, tidyverse, and ggplot2. We’ll use a simple Poisson model to simulate thousands of possible scores, compute win probabilities, and visualize expected outcomes for any matchup — all inside R. […] The post Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) appeared first on R Programming Books.",
+    "meta_keywords": null,
+    "og_title": "Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) | R-bloggers",
+    "og_description": "If you love sports analytics, this post will show you how to predict NBA matchups using real ESPN data and the R ecosystem — specifically hoopR, tidyverse, and ggplot2. We’ll use a simple Poisson model to simulate thousands of possible scores, compute win probabilities, and visualize expected outcomes for any matchup — all inside R. […] The post Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) appeared first on R Programming Books.",
+    "og_image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f3c0.png",
+    "twitter_title": "Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) | R-bloggers",
+    "twitter_description": "If you love sports analytics, this post will show you how to predict NBA matchups using real ESPN data and the R ecosystem — specifically hoopR, tidyverse, and ggplot2. We’ll use a simple Poisson model to simulate thousands of possible scores, compute win probabilities, and visualize expected outcomes for any matchup — all inside R. […] The post Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps) appeared first on R Programming Books.",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps)\nPosted on\nOctober 8, 2025\nby\nrprogrammingbooks\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nBlog - R Programming Books\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIf you love\nsports analytics\n, this post will show you how to predict NBA matchups using real ESPN data and the R ecosystem — specifically\nhoopR\n,\ntidyverse\n, and\nggplot2\n.\nWe’ll use a simple\nPoisson model\nto simulate thousands of possible scores, compute\nwin probabilities\n, and visualize expected outcomes for any matchup — all inside R.\nWhat you’ll build\nA fully reproducible NBA prediction pipeline that:\nAggregates player box scores into\nteam-level points for/against\nEstimates\nexpected points\nusing recent games and a Poisson model\nSimulates 100,000 possible scorelines\nProduces three key visuals:\nWin probabilities\nScoreline heatmap\nExpected team points\nWhy this approach?\nTransparent\n– You can inspect every assumption and adjust parameters.\nFast\n– Pulls ESPN game data directly with\nhoopR\n.\nFlexible\n– Works for any season or teams with minimal edits.\nFull R code\nYou can copy and run this entire block in RStudio.\nChange the\nHOME_TEAM\nand\nAWAY_TEAM\ncodes to simulate any matchup.\nlibrary(tidyverse)\nlibrary(hoopR)\nlibrary(ggplot2)\nSEASON <- 2024\nHOME_TEAM <- “BOS”\nAWAY_TEAM <- “DEN”\nN_GAMES <- 15\nHOME_ADV <- 0.06\nMAX_POINTS <- 150\npb <- hoopR::load_nba_player_box(seasons = SEASON)\ndnp_cols <- intersect(c(“did_not_play”,”did_not_dress”,”not_with_team”), names(pb)) if (length(dnp_cols)) pb <- pb %>% filter(if_all(all_of(dnp_cols), is.na))\nteam_pts <- pb %>%\ngroup_by(game_id, game_date, season_type, team_abbreviation) %>%\nsummarise(pts_for = sum(points, na.rm = TRUE), .groups = “drop”)\nteam_games <- team_pts %>%\ninner_join(team_pts, by = “game_id”, suffix = c(“”, “_opp”)) %>%\nfilter(team_abbreviation != team_abbreviation_opp) %>%\ngroup_by(game_id, team_abbreviation) %>% slice_head(n = 1) %>% ungroup() %>%\ntransmute(\ngame_id, game_date, season_type, team_abbreviation,\nopponent_abbreviation = team_abbreviation_opp,\npts_for, pts_against = pts_for_opp\n) %>%\nfilter(season_type == 2)\nteam_recent_means <- function(df, team, n = 15) { df %>% filter(team_abbreviation == team) %>%\narrange(game_date) %>% slice_tail(n = n) %>%\nsummarise(off_avg = mean(pts_for, na.rm = TRUE),\ndef_avg = mean(pts_against, na.rm = TRUE))\n}\nhome_stats <- team_recent_means(team_games, HOME_TEAM, N_GAMES)\naway_stats <- team_recent_means(team_games, AWAY_TEAM, N_GAMES)\nhome_stats[is.na(home_stats)] <- 113\naway_stats[is.na(away_stats)] <- 113\nlambda_home <- home_stats$off_avg * (away_stats$def_avg / mean(c(home_stats$def_avg, away_stats$def_avg)))\nlambda_away <- away_stats$off_avg * (home_stats$def_avg / mean(c(home_stats$def_avg, away_stats$def_avg)))\nlambda_home <- lambda_home * (1 + HOME_ADV)\nlambda_home <- max(lambda_home, 95); lambda_away <- max(lambda_away, 95)\nset.seed(42); S <- 100000 h <- rpois(S, lambda_home); a <- rpois(S, lambda_away) p_home <- mean(h > a); p_away <- mean(h < a); p_tie <- mean(h == a)\nprobs <- tibble(\noutcome = factor(c(“Home”,”Away”), levels = c(“Home”,”Away”)),\nprob = c(p_home, p_away),\nlabel = scales::percent(c(p_home, p_away), accuracy = 0.1)\n)\np1 <- ggplot(probs, aes(outcome, prob, fill = outcome)) +\ngeom_col(width = 0.6, color = “black”) +\ngeom_text(aes(label = label), vjust = -0.35, size = 5) +\nscale_y_continuous(labels = scales::percent_format(accuracy = 1),\nexpand = expansion(mult = c(0, .08))) +\nscale_fill_manual(values = c(“Home”=”#1B9E77″,”Away”=”#D95F02”)) +\nlabs(title = sprintf(“%s vs %s — Win Probabilities”, HOME_TEAM, AWAY_TEAM),\nsubtitle = sprintf(“Recent %d games • Independent Poisson model”, N_GAMES),\nx = NULL, y = “Probability”,\ncaption = “Data: ESPN via hoopR”) +\ntheme_minimal(base_size = 14) +\ntheme(legend.position=”none”, plot.title=element_text(face=”bold”))\ngrid <- expand.grid(H = 70:MAX_POINTS, A = 70:MAX_POINTS)\ngrid$prob <- dpois(grid$H, lambda_home) * dpois(grid$A, lambda_away)\np2 <- ggplot(grid, aes(H, A, fill = prob)) +\ngeom_tile() +\nscale_fill_viridis_c(option = “C”, trans = “sqrt”) +\nlabs(title = sprintf(“%s vs %s — Scoreline Heatmap (Prob.)”, HOME_TEAM, AWAY_TEAM),\nx = sprintf(“Home points — %s”, HOME_TEAM),\ny = sprintf(“Away points — %s”, AWAY_TEAM),\nfill = “Prob.”) +\ntheme_minimal(base_size = 14)\nexpected_pts <- tibble(team = c(HOME_TEAM, AWAY_TEAM),\nexp_pts = c(lambda_home, lambda_away))\np3 <- ggplot(expected_pts, aes(reorder(team, exp_pts), exp_pts, fill = team)) +\ngeom_col(width = 0.6, color = “black”) +\ngeom_text(aes(label = round(exp_pts, 1)), vjust = -0.35, size = 5) +\ncoord_flip() +\nscale_fill_manual(values = c(“#1B9E77”, “#D95F02”)) +\nlabs(title=”Expected Team Points (Poisson λ)”, x=”Team”, y=”Points”) +\ntheme_minimal(base_size = 14) + theme(legend.position=”none”)\nprint(p1); print(p2); print(p3)\nHow to read the charts\nWin Probabilities\nEach bar shows the simulated probability of a win for each team based on their offensive and defensive averages.\nScoreline Heatmap\nDarker cells represent more likely combinations of final scores.\nExpected Points (λ)\nPoisson means for each team — useful as predicted points for betting or fantasy analytics.\nLimitations\nAssumes independent Poisson scoring (ignores game pace, possessions, and correlations).\nNo adjustments for player injuries or rest days.\nA simple model — great for demonstration, not gambling advice.\nThe post\nPredicting NBA Games with R and hoopR (Win Probabilities + Heatmaps)\nappeared first on\nR Programming Books\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nBlog - R Programming Books\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-397405 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">October 8, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/rprogrammingbooks/\">rprogrammingbooks</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://rprogrammingbooks.com/nba-predictions-in-r-hoopr/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nba-predictions-in-r-hoopr\"> Blog - R Programming Books</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>If you love <strong>sports analytics</strong>, this post will show you how to predict NBA matchups using real ESPN data and the R ecosystem — specifically <code>hoopR</code>, <code>tidyverse</code>, and <code>ggplot2</code>.</p>\n<p>We’ll use a simple <strong>Poisson model</strong> to simulate thousands of possible scores, compute <strong>win probabilities</strong>, and visualize expected outcomes for any matchup — all inside R.</p>\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n<h3 class=\"wp-block-heading\"><img alt=\"🏀\" class=\"wp-smiley\" data-lazy-src=\"https://i2.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f3c0.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"height: 1em; max-height: 1em;\"/><noscript><img alt=\"🏀\" class=\"wp-smiley\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f3c0.png?w=578&amp;ssl=1\" style=\"height: 1em; max-height: 1em;\"/></noscript> What you’ll build</h3>\n<p>A fully reproducible NBA prediction pipeline that:</p>\n<ul class=\"wp-block-list\">\n<li>Aggregates player box scores into <strong>team-level points for/against</strong></li>\n<li>Estimates <strong>expected points</strong> using recent games and a Poisson model</li>\n<li>Simulates 100,000 possible scorelines</li>\n<li>Produces three key visuals:\n<ol class=\"wp-block-list\">\n<li>Win probabilities</li>\n<li>Scoreline heatmap</li>\n<li>Expected team points</li>\n</ol>\n</li>\n</ul>\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n<h3 class=\"wp-block-heading\"><img alt=\"⚙\" class=\"wp-smiley\" data-lazy-src=\"https://i1.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/2699.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"height: 1em; max-height: 1em;\"/><noscript><img alt=\"⚙\" class=\"wp-smiley\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/2699.png?w=578&amp;ssl=1\" style=\"height: 1em; max-height: 1em;\"/></noscript> Why this approach?</h3>\n<ul class=\"wp-block-list\">\n<li><strong>Transparent</strong> – You can inspect every assumption and adjust parameters.</li>\n<li><strong>Fast</strong> – Pulls ESPN game data directly with <code>hoopR</code>.</li>\n<li><strong>Flexible</strong> – Works for any season or teams with minimal edits.</li>\n</ul>\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n<h3 class=\"wp-block-heading\"><img alt=\"💻\" class=\"wp-smiley\" data-lazy-src=\"https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f4bb.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"height: 1em; max-height: 1em;\"/><noscript><img alt=\"💻\" class=\"wp-smiley\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f4bb.png?w=578&amp;ssl=1\" style=\"height: 1em; max-height: 1em;\"/></noscript> Full R code</h3>\n<p>You can copy and run this entire block in RStudio.<br/>Change the <code>HOME_TEAM</code> and <code>AWAY_TEAM</code> codes to simulate any matchup.</p>\n<p>library(tidyverse)<br/>library(hoopR)<br/>library(ggplot2)</p>\n<p>SEASON &lt;- 2024<br/>HOME_TEAM &lt;- “BOS”<br/>AWAY_TEAM &lt;- “DEN”<br/>N_GAMES &lt;- 15<br/>HOME_ADV &lt;- 0.06<br/>MAX_POINTS &lt;- 150</p>\n<p>pb &lt;- hoopR::load_nba_player_box(seasons = SEASON)</p>\n<p>dnp_cols &lt;- intersect(c(“did_not_play”,”did_not_dress”,”not_with_team”), names(pb)) if (length(dnp_cols)) pb &lt;- pb %&gt;% filter(if_all(all_of(dnp_cols), is.na))</p>\n<p>team_pts &lt;- pb %&gt;%<br/>group_by(game_id, game_date, season_type, team_abbreviation) %&gt;%<br/>summarise(pts_for = sum(points, na.rm = TRUE), .groups = “drop”)</p>\n<p>team_games &lt;- team_pts %&gt;%<br/>inner_join(team_pts, by = “game_id”, suffix = c(“”, “_opp”)) %&gt;%<br/>filter(team_abbreviation != team_abbreviation_opp) %&gt;%<br/>group_by(game_id, team_abbreviation) %&gt;% slice_head(n = 1) %&gt;% ungroup() %&gt;%<br/>transmute(<br/>game_id, game_date, season_type, team_abbreviation,<br/>opponent_abbreviation = team_abbreviation_opp,<br/>pts_for, pts_against = pts_for_opp<br/>) %&gt;%<br/>filter(season_type == 2)</p>\n<p>team_recent_means &lt;- function(df, team, n = 15) { df %&gt;% filter(team_abbreviation == team) %&gt;%<br/>arrange(game_date) %&gt;% slice_tail(n = n) %&gt;%<br/>summarise(off_avg = mean(pts_for, na.rm = TRUE),<br/>def_avg = mean(pts_against, na.rm = TRUE))<br/>}</p>\n<p>home_stats &lt;- team_recent_means(team_games, HOME_TEAM, N_GAMES)<br/>away_stats &lt;- team_recent_means(team_games, AWAY_TEAM, N_GAMES)<br/>home_stats[is.na(home_stats)] &lt;- 113<br/>away_stats[is.na(away_stats)] &lt;- 113</p>\n<p>lambda_home &lt;- home_stats$off_avg * (away_stats$def_avg / mean(c(home_stats$def_avg, away_stats$def_avg)))<br/>lambda_away &lt;- away_stats$off_avg * (home_stats$def_avg / mean(c(home_stats$def_avg, away_stats$def_avg)))<br/>lambda_home &lt;- lambda_home * (1 + HOME_ADV)<br/>lambda_home &lt;- max(lambda_home, 95); lambda_away &lt;- max(lambda_away, 95)</p>\n<p>set.seed(42); S &lt;- 100000 h &lt;- rpois(S, lambda_home); a &lt;- rpois(S, lambda_away) p_home &lt;- mean(h &gt; a); p_away &lt;- mean(h &lt; a); p_tie &lt;- mean(h == a)</p>\n<p>probs &lt;- tibble(<br/>outcome = factor(c(“Home”,”Away”), levels = c(“Home”,”Away”)),<br/>prob = c(p_home, p_away),<br/>label = scales::percent(c(p_home, p_away), accuracy = 0.1)<br/>)</p>\n<p>p1 &lt;- ggplot(probs, aes(outcome, prob, fill = outcome)) +<br/>geom_col(width = 0.6, color = “black”) +<br/>geom_text(aes(label = label), vjust = -0.35, size = 5) +<br/>scale_y_continuous(labels = scales::percent_format(accuracy = 1),<br/>expand = expansion(mult = c(0, .08))) +<br/>scale_fill_manual(values = c(“Home”=”#1B9E77″,”Away”=”#D95F02”)) +<br/>labs(title = sprintf(“%s vs %s — Win Probabilities”, HOME_TEAM, AWAY_TEAM),<br/>subtitle = sprintf(“Recent %d games • Independent Poisson model”, N_GAMES),<br/>x = NULL, y = “Probability”,<br/>caption = “Data: ESPN via hoopR”) +<br/>theme_minimal(base_size = 14) +<br/>theme(legend.position=”none”, plot.title=element_text(face=”bold”))</p>\n<p>grid &lt;- expand.grid(H = 70:MAX_POINTS, A = 70:MAX_POINTS)<br/>grid$prob &lt;- dpois(grid$H, lambda_home) * dpois(grid$A, lambda_away)<br/>p2 &lt;- ggplot(grid, aes(H, A, fill = prob)) +<br/>geom_tile() +<br/>scale_fill_viridis_c(option = “C”, trans = “sqrt”) +<br/>labs(title = sprintf(“%s vs %s — Scoreline Heatmap (Prob.)”, HOME_TEAM, AWAY_TEAM),<br/>x = sprintf(“Home points — %s”, HOME_TEAM),<br/>y = sprintf(“Away points — %s”, AWAY_TEAM),<br/>fill = “Prob.”) +<br/>theme_minimal(base_size = 14)</p>\n<p>expected_pts &lt;- tibble(team = c(HOME_TEAM, AWAY_TEAM),<br/>exp_pts = c(lambda_home, lambda_away))<br/>p3 &lt;- ggplot(expected_pts, aes(reorder(team, exp_pts), exp_pts, fill = team)) +<br/>geom_col(width = 0.6, color = “black”) +<br/>geom_text(aes(label = round(exp_pts, 1)), vjust = -0.35, size = 5) +<br/>coord_flip() +<br/>scale_fill_manual(values = c(“#1B9E77”, “#D95F02”)) +<br/>labs(title=”Expected Team Points (Poisson λ)”, x=”Team”, y=”Points”) +<br/>theme_minimal(base_size = 14) + theme(legend.position=”none”)</p>\n<p>print(p1); print(p2); print(p3)</p>\n<h3 class=\"wp-block-heading\"><img alt=\"📊\" class=\"wp-smiley\" data-lazy-src=\"https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f4ca.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"height: 1em; max-height: 1em;\"/><noscript><img alt=\"📊\" class=\"wp-smiley\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f4ca.png?w=578&amp;ssl=1\" style=\"height: 1em; max-height: 1em;\"/></noscript> How to read the charts</h3>\n<p><strong>Win Probabilities</strong><br/>Each bar shows the simulated probability of a win for each team based on their offensive and defensive averages.</p>\n<p><strong>Scoreline Heatmap</strong><br/>Darker cells represent more likely combinations of final scores.</p>\n<p><strong>Expected Points (λ)</strong><br/>Poisson means for each team — useful as predicted points for betting or fantasy analytics.</p>\n<hr class=\"wp-block-separator has-alpha-channel-opacity\"/>\n<h3 class=\"wp-block-heading\"><img alt=\"⚠\" class=\"wp-smiley\" data-lazy-src=\"https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/26a0.png?w=578&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"height: 1em; max-height: 1em;\"/><noscript><img alt=\"⚠\" class=\"wp-smiley\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/26a0.png?w=578&amp;ssl=1\" style=\"height: 1em; max-height: 1em;\"/></noscript> Limitations</h3>\n<ul class=\"wp-block-list\">\n<li>Assumes independent Poisson scoring (ignores game pace, possessions, and correlations).</li>\n<li>No adjustments for player injuries or rest days.</li>\n<li>A simple model — great for demonstration, not gambling advice.</li>\n</ul>\n<figure class=\"wp-block-video\"><video controls=\"\" height=\"988\" src=\"https://rprogrammingbooks.com/wp-content/uploads/2025/10/RStudio-2025-10-08-21-59-41-1.mp4\" style=\"aspect-ratio: 1920 / 988;\" width=\"450\"></video></figure>\n<p></p>\n<p>The post <a href=\"https://rprogrammingbooks.com/nba-predictions-in-r-hoopr/\" rel=\"nofollow\" target=\"_blank\">Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps)</a> appeared first on <a href=\"https://rprogrammingbooks.com/\" rel=\"nofollow\" target=\"_blank\">R Programming Books</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rprogrammingbooks.com/nba-predictions-in-r-hoopr/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=nba-predictions-in-r-hoopr\"> Blog - R Programming Books</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 833,
+    "reading_time_min": 4.2,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/rprogrammingbooks/",
+        "text": "rprogrammingbooks"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://rprogrammingbooks.com/nba-predictions-in-r-hoopr/?utm_source=rss&utm_medium=rss&utm_campaign=nba-predictions-in-r-hoopr",
+        "text": "Blog - R Programming Books"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://rprogrammingbooks.com/nba-predictions-in-r-hoopr/",
+        "text": "Predicting NBA Games with R and hoopR (Win Probabilities + Heatmaps)"
+      },
+      {
+        "href": "https://rprogrammingbooks.com/",
+        "text": "R Programming Books"
+      },
+      {
+        "href": "https://rprogrammingbooks.com/nba-predictions-in-r-hoopr/?utm_source=rss&utm_medium=rss&utm_campaign=nba-predictions-in-r-hoopr",
+        "text": "Blog - R Programming Books"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "🏀",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i2.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f3c0.png?w=578&ssl=1",
+        "alt": "🏀",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAY1BMVEVHcEz0kAz0kAz0kAz0kAz0kAz0kAz0kAz0kAz0kAz0kAwjHyD0kAz0kAzKeRAjHyAjHyD0kAzAdBFKNByMWBbniQ2mZhQ9LR4wJh9kQhragg+ZXxXNexCzbRJXOxtxSRl+UBfD6J5AAAAAEHRSTlMAgEDPn4/fIO9Qr5+/YJ+AKaee0gAAAfdJREFUWMPdmOmWgyAMhbu4YKstad3t9v5POYC1VUCknXvOnDP5ifgZyCWGrFbzFmdhGhFxYURRGmbx6gtLAsFQ1oOURUHyGSUOGb1sBBLGQn+/Njsa2xQkbLfx8yYgcoOIAg+v1oyWQcTWS+5siXxARFunUwkjXxAxRwDXRP4gotnlHegzEB3snD3PPwPlfG/ncH4u/EHFWYxbSEc530qygxSH86MRr7aZI1lBT07TarGLRdzLWj66+4HucrQuhQqmelI6vCjS1Qd0VZyLUqZFQKV8XBXLoKKSg6Uhp3gQ9EM+z5dBuRx7DBJ/Ly6YfKkulkBFPfE8eOWf95Ry5PI8SJ815KdxHpMunZdAMvTVONM9d8hYfesGtcZO9rsUGpM6N6gzPhYqEDPcbtygxlg+U4fDjGztBtWmRpJx7Hs7yfcuLtBFDpy0v4EARRb9lS5QaVFopMVs2KTcBcpNhci4ZfpQo++2DjImSMumwR8+eHOBbpbzKASQ6kOdJlsDVBlKE5Yae92HzQWyBE3uNmFAhANxkP1n0Em37q+jBhMk7IjADi0sjcASGyzV4pI/7HcE+0HiftmwIgJW1uAKLVjphytGh/L4+tvyGFew464QsEsN7pqFu/jhrqK4yzHuuo5rIOBaGrgmC7Dtg2tEAVtjwGbdF+3DHzQqEE3zyU92AAAAAElFTkSuQmCC"
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "⚙",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i1.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/2699.png?w=578&ssl=1",
+        "alt": "⚙",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABIBAMAAACnw650AAAAMFBMVEVHcExmdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX9mdX94+S8fAAAAD3RSTlMA7zBQEEDfIK+Aj2Cfz3AK8K0QAAABn0lEQVRIx8WWO07DQBCGVzjIiACFRRMKwA11CioajDgANBE9FwgNNfQUKCcIiAOQkg5uADcAjhAFhbcGe9dZz9ib5ZewxDS2Zz//9u7OY5WSFnSJxm3lt21KbfQL1M2gsZ9pkLYaIPV36MAFHUumR4dVaINanFkgGq6XoZk1ojsG3acDUXaza6DN7D5Ob76EkJG6odzOjBCX6uuBqNEja60k1td3C+l3aPhMzFZz54SZJY/t51Dog47E1rutCIh4OhRZyMzWZfkS+6UituKF1PdVp7P16BIqpFb0ZMJLh5BSS8b5luQBem6enwS0Y9QHk+em+f6ygPpl9fLO2d3jv2mmMuRMU7/3yV232jVgnjntOVVe157WTkQG6u+9lCvAh8yNa1YVAhsCrxI6sYHQNiLaHiS0aAdGLJYuJDTPYqrY8VLpCooRVY3mauT/H+T5cWgJoMWEtgXa4GmhElZCBQo6KHyhRMBSCkpOKM2RggGVHqSIQeUQKqxIiYaKPdQ2oAaEtTKoKULtFWvUUMvHDg81nlXqh5DjGnbwcx4hfwD20lcgTYJFfQAAAABJRU5ErkJggg=="
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "💻",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f4bb.png?w=578&ssl=1",
+        "alt": "💻",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAh1BMVEVHcEzM1t3M1t2aqrTM1t3M1t2aqrTM1t3M1t3M1t3M1t3M1t3M1t3M1t3M1t3M1t2erbddreyaqrTM1t2uu8GwzOHFz9bAy9PK1NvDztSgsLmwvcPG0di5xcy3w8rI09q/ytGVwuWHvOa7x820wMazwMm2wsjBzNOquMGntb65xs7J09qjsrzcZ1v8AAAAEXRSTlMAYL/fgCBQ799QEK+fcI/P30EWPd8AAAEsSURBVFjD7ZfZroIwEIbrwuJ+ZFABQXA757i8//NZNRraGU0YiBdmvisCf790GZpWKUEQPknPBxZ+z/IAG9Pk80W+IYIaINF6Wpk1KZoyEJGIRCQiEYlIRCL6ZtGmumdDimBWGXz08/hHSM8QjfiikXnQ7nI9XUPTH7LH5g37JdGkzjm7bY4rXoYctrppq3yBiHieMIxLl4jrjeaPyKziuU2GQ6V7zUA/r7BnSU3IDsUigMHd4+jvOdUhOJ0DgySFLYoVurnznOqCEBWwCCyOEKPY7llM1xL6JUQp7G3RHiKce/wmLaAXPwP4t0UHgIzI3SugfZvEyF6fXL9MbFGCk/mjKJ03NUuKaBw1fiNKFxbpy+i4zk5k7kpBQ6ifZjwd5TYjcpVyOw30x1UXdEsJTCo9yTYAAAAASUVORK5CYII="
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "📊",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/1f4ca.png?w=578&ssl=1",
+        "alt": "📊",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAARVBMVEVHcEzh6O3M1t1ckTvh6O3h6O3h6O3h6O3h6O3h6O07lNndLkTg5+zR2+HX3+XRoq3Q2eCfwdzbQ1dNnNqpwKpqmk/N1940XyZiAAAACnRSTlMA////YO8QIM+/UwpzQgAAAQBJREFUWMPt2NsSgiAQgGFBzSOoIL7/ozZrist0GGVpcsj/yq3pu6C4aJPkpGUV86zKEFOUjFBZWCdnpPJVKhmxcjkfeG6l4EswctSnWcgWxsc5wTm3/b4PPs89SNUMwRuS+0JcwgzODR6EPyQciPtD0wolRIjHAg26ntMDDRpq20CC9AZpElSjXkJ7wxB+/R+gYId9Qb+ARpPOmZEGjaltJEFmgwwJSlGRQGsYIt3+CKGIv/7vQ51q5lRHg7rG1pEgtUGKBDWoCwoEvbu0GCLd/gig63d0QSEg4Q8JB5L+kP277iwQjkNogYBXGgehyVlpBFuyhFv7BFtEhVuNnao7HhA/9UsczYIAAAAASUVORK5CYII="
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "⚠",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i0.wp.com/s.w.org/images/core/emoji/17.0.2/72x72/26a0.png?w=578&ssl=1",
+        "alt": "⚠",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAWlBMVEVHcEz/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE3/zE0jHyCRdjetizzIoUJoVS4xKiPxwUp2YDE/NSZaSiufgDnWrEVMPyhX2B1uAAAAEHRSTlMAgGC/7xDfIJ9Aj69wUDDPmChJ4QAAAbZJREFUWMPNmOuOgyAQRqsoUm13R9Ha6/u/5rZetroyMANk0+8fEU9PIpmPdLf7v+zLch+Dk8IzaTgnz16gLA8GlTCkDOUUMKUIBKkZpCIJhSqpN0hFEgpTqpagKuBMwyr+51usQSKSkL+S+AsSkYR8lcQW5KV0nF5uLnX90NPi6AGS46vnesh5XEnPeQbQ1lPacZ36CjUzqPFUSsEMYitJDMRUOgAGggN/4ptBrB5IAAdB4iNkAjGU3kImEF1pIWQEkZUWQkYQVanIXKCM1gMKXCBaNa0qCAGRqklRQIorhIEISooGcip9AQ0EX8yJj4IEs4JQkKOaBB0keJ2Ig6xKggMSrJK2gCxKkgf6dlUQFYRWk+SCJF0IbjPoBmQlkxD0p5Fz6oGqZBQCuA+k09381KCUS/NW6HXT6B55KHPrxGcksVUQJ5tq8hTaKFmE9PMOedFUJVxofYd0KeFCej6QmqSk0N+7zqAHukWhFbRM/Rt8T0EQIoEUQQi6mdOBW8kitLmw25QK64HTjo+2UKrsR7ftrteute+pkInPz94tRMtLCaLkI0FlDM7w91IiQzEy2X1gfgD7hqn8o5phPQAAAABJRU5ErkJggg=="
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-04T05:36:52Z"
+  }
+}

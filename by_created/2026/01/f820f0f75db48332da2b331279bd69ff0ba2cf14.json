@@ -1,0 +1,107 @@
+{
+  "id": "f820f0f75db48332da2b331279bd69ff0ba2cf14",
+  "url": "https://www.r-bloggers.com/2025/11/bayes-vs-the-invaders-redivivus/",
+  "created_at_utc": "2026-01-04T05:35:43Z",
+  "crawled_at_utc": "2026-01-04T05:35:54Z",
+  "html_title": "Bayes vs. the Invaders (Redivivus) | R-bloggers",
+  "meta_description": "Unidentifiable aerial and marine phenomena. Impossible lights in the sky. Patterns of visitation and terror. Insidious influences from the hadal voids between the stars. Who--what--swoop and glide through the ink-black nights of our world, probing and testing our structures, our societies, our minds? From barely remembered history, to early reports of impossible objects, to blurrily evidenced documentation, data concerning flying arcane observations has grown and twisted, along with our capacity to lay them bare, to subject them to analysis, and to interrogate their secrets. In this year's OII Halloween Lecture, we will tremblingly revisit a Bayesian analysis of seventy years of UFO sightings, drawn from a dataset collected by the National UFO Reporting Center (NUFORC). Scepticism, fear, doubt, and most accepted standards of statistical rigor, will be cast aside in our unyielding and disquieting pursuit of an uncompromised truth. [...]",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/11/bayes-vs-the-invaders-redivivus/",
+    "canonical_url": "https://www.r-bloggers.com/2025/11/bayes-vs-the-invaders-redivivus/",
+    "html_title": "Bayes vs. the Invaders (Redivivus) | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Unidentifiable aerial and marine phenomena. Impossible lights in the sky. Patterns of visitation and terror. Insidious influences from the hadal voids between the stars. Who--what--swoop and glide through the ink-black nights of our world, probing and testing our structures, our societies, our minds? From barely remembered history, to early reports of impossible objects, to blurrily evidenced documentation, data concerning flying arcane observations has grown and twisted, along with our capacity to lay them bare, to subject them to analysis, and to interrogate their secrets. In this year's OII Halloween Lecture, we will tremblingly revisit a Bayesian analysis of seventy years of UFO sightings, drawn from a dataset collected by the National UFO Reporting Center (NUFORC). Scepticism, fear, doubt, and most accepted standards of statistical rigor, will be cast aside in our unyielding and disquieting pursuit of an uncompromised truth. [...]",
+    "meta_keywords": null,
+    "og_title": "Bayes vs. the Invaders (Redivivus) | R-bloggers",
+    "og_description": "Unidentifiable aerial and marine phenomena. Impossible lights in the sky. Patterns of visitation and terror. Insidious influences from the hadal voids between the stars. Who--what--swoop and glide through the ink-black nights of our world, probing and testing our structures, our societies, our minds? From barely remembered history, to early reports of impossible objects, to blurrily evidenced documentation, data concerning flying arcane observations has grown and twisted, along with our capacity to lay them bare, to subject them to analysis, and to interrogate their secrets. In this year's OII Halloween Lecture, we will tremblingly revisit a Bayesian analysis of seventy years of UFO sightings, drawn from a dataset collected by the National UFO Reporting Center (NUFORC). Scepticism, fear, doubt, and most accepted standards of statistical rigor, will be cast aside in our unyielding and disquieting pursuit of an uncompromised truth. [...]",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Bayes vs. the Invaders (Redivivus) | R-bloggers",
+    "twitter_description": "Unidentifiable aerial and marine phenomena. Impossible lights in the sky. Patterns of visitation and terror. Insidious influences from the hadal voids between the stars. Who--what--swoop and glide through the ink-black nights of our world, probing and testing our structures, our societies, our minds? From barely remembered history, to early reports of impossible objects, to blurrily evidenced documentation, data concerning flying arcane observations has grown and twisted, along with our capacity to lay them bare, to subject them to analysis, and to interrogate their secrets. In this year's OII Halloween Lecture, we will tremblingly revisit a Bayesian analysis of seventy years of UFO sightings, drawn from a dataset collected by the National UFO Reporting Center (NUFORC). Scepticism, fear, doubt, and most accepted standards of statistical rigor, will be cast aside in our unyielding and disquieting pursuit of an uncompromised truth. [...]",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Bayes vs. the Invaders (Redivivus)\nPosted on\nNovember 15, 2025\nby\nmoth\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nWeird Data Science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nStraying still further from whatever dubious graces it once presumed, academia’s luciferous descent into murky realms of huddled speculation continues unabated. Relocated, reconstituted, in ever-fading cycles, the Oxford Internet Institute at the University of Oxford once again saw fit to deprive its students of the peace and comfort of banal rationality through this fourth annual Halloween Lecture.\nIn the absence of fresh insight, this year’s lecture revisits the chilling implications of humanity’s contact with inexplicable aerial and marine phenomena, drawing from the faintest whispers of the ante-historical record through to the shimmering echoes of statistical reasoning. Through what means do visitors from beyond the void encroach on our night-time skies? What subtle deceptions underpin their visible geometries? What values lie behind their peculiar interests in certain uncomfortably-favoured regions?\nDespite all safeguards, and in the face of numerous barely-perceptible currents opposing such efforts, this event was captured, stored, and released into a world still cruelly unprepared to face its findings.\nMore details, and the underlying code, for these findings can be found–for those unwary enough to look–in the series of entries beginning\nhere\n.\nOxford Internet Institute Halloween Lecture\nBayes vs. the Invaders (Redivivus): A Bayesian Analysis of 70 Years of UFO Sightings\nProf. Joss Wright\nOxford. October 2025\nThe searing heat of summer retreats, cools, fades, surrendering its vitality to the flickering uncertainties of autumn. Nights draw close, like dimly-remembered friends clustering in our dreams. The spring leaves abandon their verdant dance, as they age, wither, and drift into a russet swirl of skeletal, wind-stirred fragments.\nThe dying seasons return, dragging with them time-hallowed fears and uneasy rumours, pooling around these darkly dreaming spires in a mire of primal superstition. The agonizingly brittle certainties of the modern enlightenment, our desperate faith in the gossamer fabrics of scientific progress, falter in the face of primal terrors that lurk implacably in the gloom.\nIn these darkening days, as faith in our treasured understanding dims, it is yet again time to turn our faces fully to the darkness. Halloween, slouching inexorably towards our minds, impels us as scholars to gather our methods, our theories, our data, our knowledge; and glean what light we can from the primordial glimmers of the unknown.\nUnidentifiable aerial and marine phenomena. Impossible lights in the sky. Patterns of visitation and terror. Insidious influences from the hadal voids between the stars. Who–what–swoop and glide through the ink-black nights of our world, probing and testing our structures, our societies, our minds? From barely remembered history, to early reports of impossible objects, to blurrily evidenced documentation, data concerning flying arcane observations has grown and twisted, along with our capacity to lay them bare, to subject them to analysis, and to interrogate their secrets.\nIn this year’s OII Halloween Lecture, we will tremblingly revisit a Bayesian analysis of seventy years of UFO sightings, drawn from a dataset collected by the National UFO Reporting Center (NUFORC). Scepticism, fear, doubt, and most accepted standards of statistical rigour, will be cast aside in our unyielding and disquieting pursuit of an uncompromised truth.\n2025-bayes_vs_invaders-redivivus\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nWeird Data Science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-396874 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Bayes vs. the Invaders (Redivivus)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 15, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/moth/\">moth</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.weirddatascience.net/2025/11/15/bayes-vs-the-invaders-redivivus/\"> Weird Data Science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>Straying still further from whatever dubious graces it once presumed, academia’s luciferous descent into murky realms of huddled speculation continues unabated. Relocated, reconstituted, in ever-fading cycles, the Oxford Internet Institute at the University of Oxford once again saw fit to deprive its students of the peace and comfort of banal rationality through this fourth annual Halloween Lecture.</p>\n<p>In the absence of fresh insight, this year’s lecture revisits the chilling implications of humanity’s contact with inexplicable aerial and marine phenomena, drawing from the faintest whispers of the ante-historical record through to the shimmering echoes of statistical reasoning. Through what means do visitors from beyond the void encroach on our night-time skies? What subtle deceptions underpin their visible geometries? What values lie behind their peculiar interests in certain uncomfortably-favoured regions?</p>\n<p>Despite all safeguards, and in the face of numerous barely-perceptible currents opposing such efforts, this event was captured, stored, and released into a world still cruelly unprepared to face its findings.</p>\n<p>More details, and the underlying code, for these findings can be found–for those unwary enough to look–in the series of entries beginning <a href=\"https://www.weirddatascience.net/2019/04/03/bayes-vs-the-invaders-part-one-the-37th-parallel/\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<div class=\"youtube-embed ye-container\">\n<meta content=\"https://www.youtube.com/v/WobPKY4UZc0\"/>\n<meta content=\"Bayes vs. the Invaders (Redivivus)\"/>\n<meta content=\"Bayes vs. the Invaders (Redivivus)\"/>\n<meta content=\"2025-11-15T10:48:29+00:00\"/>\n<meta content=\"https://i.ytimg.com/vi/WobPKY4UZc0/default.jpg\"/>\n<meta content=\"https://www.youtube.com/embed/WobPKY4UZc0\"/>\n<meta content=\"340\"/>\n<meta content=\"560\"/>\n<iframe allowfullscreen=\"\" class=\"youtube-player\" src=\"https://www.youtube.com/embed/WobPKY4UZc0\" style=\"border: 0;\" width=\"450\"></iframe>\n</div>\n<blockquote><p>\n<strong>Oxford Internet Institute Halloween Lecture</strong><br/>\nBayes vs. the Invaders (Redivivus): A Bayesian Analysis of 70 Years of UFO Sightings<br/>\n<em>Prof. Joss Wright</em><br/>\n<em>Oxford. October 2025</em></p>\n<p>The searing heat of summer retreats, cools, fades, surrendering its vitality to the flickering uncertainties of autumn. Nights draw close, like dimly-remembered friends clustering in our dreams. The spring leaves abandon their verdant dance, as they age, wither, and drift into a russet swirl of skeletal, wind-stirred fragments. </p>\n<p>The dying seasons return, dragging with them time-hallowed fears and uneasy rumours, pooling around these darkly dreaming spires in a mire of primal superstition. The agonizingly brittle certainties of the modern enlightenment, our desperate faith in the gossamer fabrics of scientific progress, falter in the face of primal terrors that lurk implacably in the gloom.</p>\n<p>In these darkening days, as faith in our treasured understanding dims, it is yet again time to turn our faces fully to the darkness. Halloween, slouching inexorably towards our minds, impels us as scholars to gather our methods, our theories, our data, our knowledge; and glean what light we can from the primordial glimmers of the unknown.</p>\n<p>Unidentifiable aerial and marine phenomena. Impossible lights in the sky. Patterns of visitation and terror. Insidious influences from the hadal voids between the stars. Who–what–swoop and glide through the ink-black nights of our world, probing and testing our structures, our societies, our minds? From barely remembered history, to early reports of impossible objects, to blurrily evidenced documentation, data concerning flying arcane observations has grown and twisted, along with our capacity to lay them bare, to subject them to analysis, and to interrogate their secrets.</p>\n<p>In this year’s OII Halloween Lecture, we will tremblingly revisit a Bayesian analysis of seventy years of UFO sightings, drawn from a dataset collected by the National UFO Reporting Center (NUFORC). Scepticism, fear, doubt, and most accepted standards of statistical rigour, will be cast aside in our unyielding and disquieting pursuit of an uncompromised truth.\n</p></blockquote>\n<a class=\"pdfemb-viewer\" data-download=\"on\" data-height=\"max\" data-mobile-width=\"450\" data-newwindow=\"on\" data-pagetextbox=\"off\" data-scrollbar=\"none\" data-scrolltotop=\"off\" data-startfpzoom=\"100\" data-startzoom=\"100\" data-toolbar=\"bottom\" data-toolbar-fixed=\"off\" data-tracking=\"on\" data-width=\"max\" href=\"https://www.weirddatascience.net/wp-content/uploads/2025/11/2025-bayes_vs_invaders-redivivus.pdf\" rel=\"nofollow\" style=\"\" target=\"_blank\">2025-bayes_vs_invaders-redivivus<br/></a>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.weirddatascience.net/2025/11/15/bayes-vs-the-invaders-redivivus/\"> Weird Data Science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 666,
+    "reading_time_min": 3.3,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/moth/",
+        "text": "moth"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://www.weirddatascience.net/2025/11/15/bayes-vs-the-invaders-redivivus/",
+        "text": "Weird Data Science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.weirddatascience.net/2019/04/03/bayes-vs-the-invaders-part-one-the-37th-parallel/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.weirddatascience.net/wp-content/uploads/2025/11/2025-bayes_vs_invaders-redivivus.pdf",
+        "text": "2025-bayes_vs_invaders-redivivus"
+      },
+      {
+        "href": "https://www.weirddatascience.net/2025/11/15/bayes-vs-the-invaders-redivivus/",
+        "text": "Weird Data Science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-04T05:35:54Z"
+  }
+}

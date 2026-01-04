@@ -1,0 +1,151 @@
+{
+  "id": "187872d9a9c46271aeec55cb07fba41ff28ac8bf",
+  "url": "https://www.r-bloggers.com/2025/11/python-package-development-for-r-developers-episode-2/",
+  "created_at_utc": "2026-01-04T05:35:43Z",
+  "crawled_at_utc": "2026-01-04T05:36:02Z",
+  "html_title": "Python package development for R developers (episode 2 !) | R-bloggers",
+  "meta_description": "In a previous article, I shared my experience as an R developer diving into Python package development! I had noted several aspects that felt less smooth than in R, or even completely missing! Thanks to feedback from the community, I’ve been abl...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2025/11/python-package-development-for-r-developers-episode-2/",
+    "canonical_url": "https://www.r-bloggers.com/2025/11/python-package-development-for-r-developers-episode-2/",
+    "html_title": "Python package development for R developers (episode 2 !) | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "In a previous article, I shared my experience as an R developer diving into Python package development! I had noted several aspects that felt less smooth than in R, or even completely missing! Thanks to feedback from the community, I’ve been abl...",
+    "meta_keywords": null,
+    "og_title": "Python package development for R developers (episode 2 !) | R-bloggers",
+    "og_description": "In a previous article, I shared my experience as an R developer diving into Python package development! I had noted several aspects that felt less smooth than in R, or even completely missing! Thanks to feedback from the community, I’ve been abl...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Python package development for R developers (episode 2 !) | R-bloggers",
+    "twitter_description": "In a previous article, I shared my experience as an R developer diving into Python package development! I had noted several aspects that felt less smooth than in R, or even completely missing! Thanks to feedback from the community, I’ve been abl...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Python package development for R developers (episode 2 !)\nPosted on\nNovember 11, 2025\nby\nYohann Mansiaux\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nYohann's blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn a previous article\n, I shared my experience as an R developer diving into Python package development!\nI had noted several aspects that felt less smooth than in R, or even completely missing!\nThanks to feedback from the community, I’ve been able to identify some tools that can help address the frustrations I encountered initially!\nThe disappearance of my beloved pkgload::load_all()\nI showed that automatic module loading was a bit more complicated in Python than in R. While this worked fine in development mode with\nuv pip install -e .\n, I found it more cumbersome when working in notebooks (especially Quarto).\nTo reproduce\npkgload::load_all()\nbehavior, I explored two options: autoreload in Quarto and Marimo.\nQuarto\nAdding a specific code chunk at the beginning of my notebook helped me work around the problem!\n%load_ext autoreload\n%autoreload 2\nThis option automatically reloads imported Python modules when you modify their source code. This is a slight difference compared with\npkgload::load_all()\nin R, which reloads all modules in the current environment.\nThe parameter 2 means that all imported modules will be automatically reloaded, except those in system packages.\nFor more information, you can check the\nofficial IPython documentation\n.\nMarimo\nThis was the big discovery following my article! 😍\nMarimo is a Python framework for building interactive and reproducible notebooks, and it feels surprisingly smooth to use. It feels a bit like a mix between Quarto and Shiny in the R world. Like Shiny, it’s reactive: when you change\nan input or a variable\n, everything that depends on it automatically updates. And like Quarto, it’s designed to combine code, text, and visuals in a single, shareable document. The result is a clean, self-contained environment where you can explore data, build small apps, or publish interactive reports all without leaving Python.\nThe result is beautiful, and the development experience is genuinely enjoyable!\nMost importantly, coming back to my initial problem, it automatically reloads imported modules when you modify their source code!\nTo learn more, the documentation is available\nhere\n.\nFor managing auto-reload, there’s a parameter to enable in Marimo’s options—see the dedicated documentation\nhere\n.\nTo install it with\nuv\n, simply run:\nuv add \"marimo[recommended]\"\nQuick reminder:\nuv add\nadds the package to your dependencies (in pyproject.toml) and installs it automatically.\nAnd then to create/edit a notebook, just run:\nuv run marimo edit path_to_your_notebook.py\nAnd that’s it!\nDocumentation on a website like with {pkgdown}\nquartodoc\nallows you to generate documentation as a website, just like\n{pkgdown}\nin R.\nquartodoc\nextracts docstrings to generate .qmd or .md files, which Quarto can then render as static documentation sites.\nI haven’t explored the tool in detail—it seems like more work than what\n{pkgdown}\nrequires in R (which, let’s admit it, makes our lives much easier), but the output is honestly impressive and\ncan look exactly like\n{pkgdown}\n.\nThe documentation offers a\nfairly comprehensive video tutorial\n.\nThe absence of the “dreaded” devtools::check()\nI had a hard time finding a tool that would let me check the quality of my code and documentation.\ndevtools::check()\nsometimes makes us pull our hair out, but it’s really handy!\nEventually, two tools were suggested to me:\npre-commit\nand\nruff\n.\npre-commit\npre-commit\nmanages hooks that automatically run checks before each commit, helping you enforce consistent formatting and code quality. It’s very handy for avoiding formatting errors, documentation issues, etc.\nTo install it with\nuv\n, simply run:\nuv add pre-commit\nFollowing the minimal example from the documentation page, I was able to create a\n.pre-commit-config.yaml\nfile that checks the quality of my code and documentation on every commit.\nYou can also manually trigger these checks (a bit like\ndevtools::check()\nin R) with:\nuv run pre-commit run --all-files\nruff\nruff\nacts as both a linter and a formatter, similar to how lintr and styler (or\nAir\n) complement each other in R.\nFor more information, see the\nruff documentation\n.\nAs usual, installation with uv:\nuv add ruff\nThen, two commands are available:\nuv run ruff format .\nand\nuv run ruff check .\nThe first command formats the code, the second checks code quality, which complements\npre-commit\n(you can also configure\npre-commit\nto run\nruff\nautomatically on each commit by adding a hook in your\n.pre-commit-config.yaml\nfile).\nConclusion\nThanks to the community’s help, I’ve been able to identify tools that address the frustrations I encountered initially!\nI’ve essentially been able to find all the features I appreciate in R within Python! My favorite discovery is Marimo, which lets me develop interactive notebooks in a very simple and efficient way!\nThe only remaining drawback is the\n{pkgdown}\nequivalent: while it can produce beautiful sites, it feels a bit less automated than its R counterpart.\nKey takeaways of this article\nIPython extension\n%autoreload\nand Marimo solve module reloading issues\nquartodoc\ncan serve as a\n{pkgdown}\n-like documentation tool\npre-commit\nand\nruff\nreplace\ndevtools::check()\nfor quality assessment\nComparison: R vs Python package development tools\nTask\nR\nPython\nEnvironment & dependency management\n{renv}\nuv\n,\npoetry\n,\npip\n,\nvenv\nPackage creation\nusethis::create_package()\nuv init --lib\nLoad / reload during development\npkgload::load_all()\n%autoreload\n, Marimo\nDocumentation\nroxygen2\n,\n{pkgdown}\ndocstrings,\nquartodoc\nUnit testing\ntestthat\npytest\nCode quality & checks\ndevtools::check()\npre-commit\n,\nruff\nWebsite / documentation site\n{pkgdown}\nquartodoc\n+ Quarto\nThe package sources are available\nhere\n(with examples of notebooks).\nAgain, don’t hesitate to point out errors I may have made, or to guide me on the things I had more difficulty with!\nThank you all, especially Joseph Barbier, James Azam, Uriah Finkel, Antoine Languillaume for giving me feedback on the first article on this topic!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nYohann's blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-396666 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Python package development for R developers (episode 2 !)</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">November 11, 2025</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/yohann-mansiaux/\">Yohann Mansiaux</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ymansiaux.github.io/yohann-data/posts/pkg_dev_python_episode2/\"> Yohann's blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><a href=\"https://yohann-data.fr/posts/pkg_dev_python/\" rel=\"nofollow\" target=\"_blank\">In a previous article</a>, I shared my experience as an R developer diving into Python package development!</p>\n<p>I had noted several aspects that felt less smooth than in R, or even completely missing!</p>\n<p>Thanks to feedback from the community, I’ve been able to identify some tools that can help address the frustrations I encountered initially!</p>\n<section class=\"level1\" id=\"the-disappearance-of-my-beloved-pkgloadload_all\">\n<h1>The disappearance of my beloved pkgload::load_all()</h1>\n<p>I showed that automatic module loading was a bit more complicated in Python than in R. While this worked fine in development mode with <code>uv pip install -e .</code>, I found it more cumbersome when working in notebooks (especially Quarto).</p>\n<p>To reproduce <code>pkgload::load_all()</code> behavior, I explored two options: autoreload in Quarto and Marimo.</p>\n<section class=\"level2\" id=\"quarto\">\n<h2 class=\"anchored\" data-anchor-id=\"quarto\">Quarto</h2>\n<p>Adding a specific code chunk at the beginning of my notebook helped me work around the problem!</p>\n<pre>%load_ext autoreload\n%autoreload 2</pre>\n<p>This option automatically reloads imported Python modules when you modify their source code. This is a slight difference compared with <code>pkgload::load_all()</code> in R, which reloads all modules in the current environment.</p>\n<p>The parameter 2 means that all imported modules will be automatically reloaded, except those in system packages.</p>\n<p>For more information, you can check the <a href=\"https://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html\" rel=\"nofollow\" target=\"_blank\">official IPython documentation</a>.</p>\n</section>\n<section class=\"level2\" id=\"marimo\">\n<h2 class=\"anchored\" data-anchor-id=\"marimo\">Marimo</h2>\n<p>This was the big discovery following my article! 😍</p>\n<p>Marimo is a Python framework for building interactive and reproducible notebooks, and it feels surprisingly smooth to use. It feels a bit like a mix between Quarto and Shiny in the R world. Like Shiny, it’s reactive: when you change <a href=\"https://docs.marimo.io/api/inputs/\" rel=\"nofollow\" target=\"_blank\">an input or a variable</a>, everything that depends on it automatically updates. And like Quarto, it’s designed to combine code, text, and visuals in a single, shareable document. The result is a clean, self-contained environment where you can explore data, build small apps, or publish interactive reports all without leaving Python.</p>\n<p>The result is beautiful, and the development experience is genuinely enjoyable!</p>\n<p>Most importantly, coming back to my initial problem, it automatically reloads imported modules when you modify their source code!</p>\n<p>To learn more, the documentation is available <a href=\"https://docs.marimo.io/getting_started/quickstart/\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>For managing auto-reload, there’s a parameter to enable in Marimo’s options—see the dedicated documentation <a href=\"https://docs.marimo.io/guides/configuration/runtime_configuration/\" rel=\"nofollow\" target=\"_blank\">here</a>.</p>\n<p>To install it with <code>uv</code>, simply run:</p>\n<pre>uv add \"marimo[recommended]\"</pre>\n<p>Quick reminder: <code>uv add</code> adds the package to your dependencies (in pyproject.toml) and installs it automatically.</p>\n<p>And then to create/edit a notebook, just run:</p>\n<pre>uv run marimo edit path_to_your_notebook.py</pre>\n<p>And that’s it!</p>\n<hr/>\n</section>\n</section>\n<section class=\"level1\" id=\"documentation-on-a-website-like-with-pkgdown\">\n<h1>Documentation on a website like with {pkgdown}</h1>\n<p><a href=\"https://github.com/machow/quartodoc?tab=readme-ov-file\" rel=\"nofollow\" target=\"_blank\">quartodoc</a> allows you to generate documentation as a website, just like <code>{pkgdown}</code> in R.</p>\n<p><code>quartodoc</code> extracts docstrings to generate .qmd or .md files, which Quarto can then render as static documentation sites.</p>\n<p>I haven’t explored the tool in detail—it seems like more work than what <code>{pkgdown}</code> requires in R (which, let’s admit it, makes our lives much easier), but the output is honestly impressive and <a href=\"https://rstudio.github.io/pins-python/\" rel=\"nofollow\" target=\"_blank\">can look exactly like <code>{pkgdown}</code></a>.</p>\n<p>The documentation offers a <a href=\"https://machow.github.io/quartodoc/tutorials/\" rel=\"nofollow\" target=\"_blank\">fairly comprehensive video tutorial</a>.</p>\n<hr/>\n</section>\n<section class=\"level1\" id=\"the-absence-of-the-dreaded-devtoolscheck\">\n<h1>The absence of the “dreaded” devtools::check()</h1>\n<p>I had a hard time finding a tool that would let me check the quality of my code and documentation. <code>devtools::check()</code> sometimes makes us pull our hair out, but it’s really handy!</p>\n<p>Eventually, two tools were suggested to me: <a href=\"https://pre-commit.com/#intro\" rel=\"nofollow\" target=\"_blank\">pre-commit</a> and <a href=\"https://docs.astral.sh/ruff/\" rel=\"nofollow\" target=\"_blank\">ruff</a>.</p>\n<section class=\"level2\" id=\"pre-commit\">\n<h2 class=\"anchored\" data-anchor-id=\"pre-commit\">pre-commit</h2>\n<p><code>pre-commit</code> manages hooks that automatically run checks before each commit, helping you enforce consistent formatting and code quality. It’s very handy for avoiding formatting errors, documentation issues, etc.</p>\n<p>To install it with <code>uv</code>, simply run:</p>\n<pre>uv add pre-commit</pre>\n<p>Following the minimal example from the documentation page, I was able to create a <code>.pre-commit-config.yaml</code> file that checks the quality of my code and documentation on every commit.</p>\n<p>You can also manually trigger these checks (a bit like <code>devtools::check()</code> in R) with:</p>\n<pre>uv run pre-commit run --all-files</pre>\n<hr/>\n</section>\n<section class=\"level2\" id=\"ruff\">\n<h2 class=\"anchored\" data-anchor-id=\"ruff\">ruff</h2>\n<p><code>ruff</code> acts as both a linter and a formatter, similar to how lintr and styler (or <a href=\"https://github.com/posit-dev/air\" rel=\"nofollow\" target=\"_blank\">Air</a>) complement each other in R.</p>\n<p>For more information, see the <a href=\"https://docs.astral.sh/ruff/\" rel=\"nofollow\" target=\"_blank\">ruff documentation</a>.</p>\n<p>As usual, installation with uv:</p>\n<pre>uv add ruff</pre>\n<p>Then, two commands are available:</p>\n<pre>uv run ruff format .</pre>\n<p>and</p>\n<pre>uv run ruff check .</pre>\n<p>The first command formats the code, the second checks code quality, which complements <code>pre-commit</code> (you can also configure <code>pre-commit</code> to run <code>ruff</code> automatically on each commit by adding a hook in your <code>.pre-commit-config.yaml</code> file).</p>\n<hr/>\n</section>\n<section class=\"level2\" id=\"conclusion\">\n<h2 class=\"anchored\" data-anchor-id=\"conclusion\">Conclusion</h2>\n<p>Thanks to the community’s help, I’ve been able to identify tools that address the frustrations I encountered initially!</p>\n<p>I’ve essentially been able to find all the features I appreciate in R within Python! My favorite discovery is Marimo, which lets me develop interactive notebooks in a very simple and efficient way!</p>\n<p>The only remaining drawback is the <code>{pkgdown}</code> equivalent: while it can produce beautiful sites, it feels a bit less automated than its R counterpart.</p>\n<p><strong>Key takeaways of this article</strong></p>\n<ul>\n<li><p>IPython extension <code>%autoreload</code> and Marimo solve module reloading issues</p></li>\n<li><p><code>quartodoc</code> can serve as a <code>{pkgdown}</code>-like documentation tool</p></li>\n<li><p><code>pre-commit</code> and <code>ruff</code> replace <code>devtools::check()</code> for quality assessment</p></li>\n</ul>\n<section class=\"level3\" id=\"comparison-r-vs-python-package-development-tools\">\n<h3 class=\"anchored\" data-anchor-id=\"comparison-r-vs-python-package-development-tools\">Comparison: R vs Python package development tools</h3>\n<table class=\"caption-top table\">\n<colgroup>\n<col style=\"width: 33%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr class=\"header\">\n<th>Task</th>\n<th>R</th>\n<th>Python</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td>Environment &amp; dependency management</td>\n<td><code>{renv}</code></td>\n<td><code>uv</code>, <code>poetry</code>, <code>pip</code>, <code>venv</code></td>\n</tr>\n<tr class=\"even\">\n<td>Package creation</td>\n<td><code>usethis::create_package()</code></td>\n<td><code>uv init --lib</code></td>\n</tr>\n<tr class=\"odd\">\n<td>Load / reload during development</td>\n<td><code>pkgload::load_all()</code></td>\n<td><code>%autoreload</code>, Marimo</td>\n</tr>\n<tr class=\"even\">\n<td>Documentation</td>\n<td><code>roxygen2</code>, <code>{pkgdown}</code></td>\n<td>docstrings, <code>quartodoc</code></td>\n</tr>\n<tr class=\"odd\">\n<td>Unit testing</td>\n<td><code>testthat</code></td>\n<td><code>pytest</code></td>\n</tr>\n<tr class=\"even\">\n<td>Code quality &amp; checks</td>\n<td><code>devtools::check()</code></td>\n<td><code>pre-commit</code>, <code>ruff</code></td>\n</tr>\n<tr class=\"odd\">\n<td>Website / documentation site</td>\n<td><code>{pkgdown}</code></td>\n<td><code>quartodoc</code> + Quarto</td>\n</tr>\n</tbody>\n</table>\n<hr/>\n<p><strong>The package sources are available <a href=\"https://github.com/ymansiaux/blueskyPy_article\" rel=\"nofollow\" target=\"_blank\">here</a> (with examples of notebooks).</strong></p>\n<p>Again, don’t hesitate to point out errors I may have made, or to guide me on the things I had more difficulty with!</p>\n<p>Thank you all, especially Joseph Barbier, James Azam, Uriah Finkel, Antoine Languillaume for giving me feedback on the first article on this topic!</p>\n</section>\n</section>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ymansiaux.github.io/yohann-data/posts/pkg_dev_python_episode2/\"> Yohann's blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 1100,
+    "reading_time_min": 5.5,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/yohann-mansiaux/",
+        "text": "Yohann Mansiaux"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://ymansiaux.github.io/yohann-data/posts/pkg_dev_python_episode2/",
+        "text": "Yohann's blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://yohann-data.fr/posts/pkg_dev_python/",
+        "text": "In a previous article"
+      },
+      {
+        "href": "https://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html",
+        "text": "official IPython documentation"
+      },
+      {
+        "href": "https://docs.marimo.io/api/inputs/",
+        "text": "an input or a variable"
+      },
+      {
+        "href": "https://docs.marimo.io/getting_started/quickstart/",
+        "text": "here"
+      },
+      {
+        "href": "https://docs.marimo.io/guides/configuration/runtime_configuration/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/machow/quartodoc?tab=readme-ov-file",
+        "text": "quartodoc"
+      },
+      {
+        "href": "https://rstudio.github.io/pins-python/",
+        "text": "can look exactly like{pkgdown}"
+      },
+      {
+        "href": "https://machow.github.io/quartodoc/tutorials/",
+        "text": "fairly comprehensive video tutorial"
+      },
+      {
+        "href": "https://pre-commit.com/#intro",
+        "text": "pre-commit"
+      },
+      {
+        "href": "https://docs.astral.sh/ruff/",
+        "text": "ruff"
+      },
+      {
+        "href": "https://github.com/posit-dev/air",
+        "text": "Air"
+      },
+      {
+        "href": "https://docs.astral.sh/ruff/",
+        "text": "ruff documentation"
+      },
+      {
+        "href": "https://github.com/ymansiaux/blueskyPy_article",
+        "text": "here"
+      },
+      {
+        "href": "https://ymansiaux.github.io/yohann-data/posts/pkg_dev_python_episode2/",
+        "text": "Yohann's blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-04T05:36:02Z"
+  }
+}
