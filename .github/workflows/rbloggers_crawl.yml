@@ -5,7 +5,6 @@ on:
     - cron: "0 * * * *"  # hourly
   workflow_dispatch:
 
-# ✅ 동시 실행 방지(같은 브랜치에서 겹치면 이전 run 취소)
 concurrency:
   group: rbloggers-crawl-${{ github.ref }}
   cancel-in-progress: true
@@ -14,34 +13,39 @@ permissions:
   contents: write
 
 jobs:
-  crawl:
+  crawl-and-sync:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # ✅ rebase/pull을 위해 필요
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install dependencies (if requirements.txt exists)
+      - name: Install dependencies
         run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Crawl
+      - name: Crawl R-Bloggers
+        env:
+          MAX_PAGES_FROM_HOME: "1"
+          SLEEP_SEC: "0.5"
         run: |
           python scripts/crawl_rbloggers.py
 
-      - name: Commit & Push (if changed)
+      - name: Commit & push (if changed)
+        id: commit_push
         run: |
-          # ✅ 변경 없으면 아무 것도 하지 않음
-          if ! git status --porcelain | grep .; then
+          set -e
+
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=0" >> $GITHUB_OUTPUT
             echo "No changes."
             exit 0
           fi
@@ -50,46 +54,52 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add -A
-          git commit -m "rbloggers: add new posts" || exit 0
+          git commit -m "rbloggers: add new posts" || true
+          git push
 
-          # ✅ 원격 변경을 먼저 흡수해서 non-fast-forward 방지
-          git fetch origin main
-          git pull --rebase origin main
+          echo "changed=1" >> $GITHUB_OUTPUT
 
-          # ✅ push 1회 실패 시 재시도
-          git push origin HEAD:main || (sleep 2 && git push origin HEAD:main)
-
-      - name: Notify Web-R backend (sync new JSON files)
+      - name: Sync to Web-R (only when repo changed)
+        if: steps.commit_push.outputs.changed == '1'
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
-          GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
-          # Secrets 없으면 스킵
-          if [ -z "$WEBR_SYNC_URL" ] || [ -z "$WEBR_SYNC_TOKEN" ]; then
-            echo "WEBR_SYNC_URL/TOKEN not set. Skip notify."
+          set -e
+
+          if [ ! -f ".action_result.json" ]; then
+            echo ".action_result.json not found. skip."
             exit 0
           fi
 
-          # 이번 커밋에서 바뀐 json만 추출
-          if git rev-parse HEAD~1 >/dev/null 2>&1; then
-            git diff --name-only HEAD~1 HEAD | grep -E '\.json$' > changed_files.txt || true
-          else
-            : > changed_files.txt
-          fi
+          # files: ["by_created/20260104/xxx.json", ...]
+          FILES_JSON=$(python - <<'PY'
+import json, sys
+p = ".action_result.json"
+with open(p, "r", encoding="utf-8") as f:
+    obj = json.load(f)
+files = obj.get("files") or []
+# 안전장치: json 파일만
+files = [x for x in files if isinstance(x, str) and x.strip().endswith(".json")]
+print(json.dumps(files, ensure_ascii=False))
+PY
+)
 
-          # by_created 제외
-          grep -v '^by_created/' changed_files.txt > changed_files_filtered.txt || true
+          COUNT=$(python - <<'PY'
+import json
+files = json.loads(r'''$FILES_JSON''')
+print(len(files))
+PY
+)
+          echo "files count=$COUNT"
 
-          COUNT=$(wc -l < changed_files_filtered.txt | tr -d ' ')
           if [ "$COUNT" = "0" ]; then
             echo "No JSON files to sync."
             exit 0
           fi
 
-          # ✅ heredoc 제거 → jq 사용 (YAML-safe)
-          FILES_JSON=$(jq -R -s -c 'split("\n") | map(select(length>0))' changed_files_filtered.txt)
+          GH_SHA=$(git rev-parse HEAD)
 
           curl -sS -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
