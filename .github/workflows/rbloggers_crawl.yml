@@ -45,7 +45,7 @@ jobs:
           set -e
 
           if [ -z "$(git status --porcelain)" ]; then
-            echo "changed=0" >> $GITHUB_OUTPUT
+            echo "changed=0" >> "$GITHUB_OUTPUT"
             echo "No changes."
             exit 0
           fi
@@ -57,7 +57,7 @@ jobs:
           git commit -m "rbloggers: add new posts" || true
           git push
 
-          echo "changed=1" >> $GITHUB_OUTPUT
+          echo "changed=1" >> "$GITHUB_OUTPUT"
 
       - name: Sync to Web-R (only when repo changed)
         if: steps.commit_push.outputs.changed == '1'
@@ -68,32 +68,20 @@ jobs:
         run: |
           set -e
 
+          if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
+            echo "Missing secrets: WEBR_SYNC_URL or WEBR_SYNC_TOKEN"
+            exit 1
+          fi
+
           if [ ! -f ".action_result.json" ]; then
             echo ".action_result.json not found. skip."
             exit 0
           fi
 
-          # files: ["by_created/20260104/xxx.json", ...]
-          FILES_JSON=$(python - <<'PY'
-import json, sys
-p = ".action_result.json"
-with open(p, "r", encoding="utf-8") as f:
-    obj = json.load(f)
-files = obj.get("files") or []
-# 안전장치: json 파일만
-files = [x for x in files if isinstance(x, str) and x.strip().endswith(".json")]
-print(json.dumps(files, ensure_ascii=False))
-PY
-)
+          FILES_JSON=$(python -c "import json; obj=json.load(open('.action_result.json','r',encoding='utf-8')); files=[f for f in (obj.get('files') or []) if isinstance(f,str) and f.strip().endswith('.json')]; print(json.dumps(files, ensure_ascii=False))")
+          COUNT=$(python -c "import json,sys; files=json.loads(sys.argv[1]); print(len(files))" "$FILES_JSON")
 
-          COUNT=$(python - <<'PY'
-import json
-files = json.loads(r'''$FILES_JSON''')
-print(len(files))
-PY
-)
           echo "files count=$COUNT"
-
           if [ "$COUNT" = "0" ]; then
             echo "No JSON files to sync."
             exit 0
@@ -104,4 +92,4 @@ PY
           curl -sS -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
-            -d "{\"sha\":\"$GH_SHA\",\"ref\":\"$GH_REF_NAME\",\"files\":$FILES_JSON}" | cat
+            -d "{\"sha\":\"$GH_SHA\",\"ref\":\"$GH_REF_NAME\",\"files\":$FILES_JSON}"
