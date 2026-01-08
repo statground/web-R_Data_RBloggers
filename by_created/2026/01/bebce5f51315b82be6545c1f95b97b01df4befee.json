@@ -1,0 +1,126 @@
+{
+  "id": "bebce5f51315b82be6545c1f95b97b01df4befee",
+  "url": "https://www.r-bloggers.com/2026/01/directional-markers-in-r-leaflet/",
+  "created_at_utc": "2026-01-08T14:23:56Z",
+  "crawled_at_utc": "2026-01-08T14:23:56Z",
+  "html_title": "Directional markers in R/leaflet | R-bloggers",
+  "meta_description": "So you have used the excellent exiftool to extract all of the GPS-related information from a directory of photos in JPG format and write to a CSV file: You’ve used R/leaflet to plot coordinates (latitude and longitude) before, but what about that tag named GPSImgDirection? It would be nice to have some kind of marker … Continue reading Directional markers in R/leaflet",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/01/directional-markers-in-r-leaflet/",
+    "canonical_url": "https://www.r-bloggers.com/2026/01/directional-markers-in-r-leaflet/",
+    "html_title": "Directional markers in R/leaflet | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "So you have used the excellent exiftool to extract all of the GPS-related information from a directory of photos in JPG format and write to a CSV file: You’ve used R/leaflet to plot coordinates (latitude and longitude) before, but what about that tag named GPSImgDirection? It would be nice to have some kind of marker … Continue reading Directional markers in R/leaflet",
+    "meta_keywords": null,
+    "og_title": "Directional markers in R/leaflet | R-bloggers",
+    "og_description": "So you have used the excellent exiftool to extract all of the GPS-related information from a directory of photos in JPG format and write to a CSV file: You’ve used R/leaflet to plot coordinates (latitude and longitude) before, but what about that tag named GPSImgDirection? It would be nice to have some kind of marker … Continue reading Directional markers in R/leaflet",
+    "og_image": "https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=1024",
+    "twitter_title": "Directional markers in R/leaflet | R-bloggers",
+    "twitter_description": "So you have used the excellent exiftool to extract all of the GPS-related information from a directory of photos in JPG format and write to a CSV file: You’ve used R/leaflet to plot coordinates (latitude and longitude) before, but what about that tag named GPSImgDirection? It would be nice to have some kind of marker … Continue reading Directional markers in R/leaflet",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Directional markers in R/leaflet\nPosted on\nJanuary 7, 2026\nby\nnsaunders\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR – What You're Doing Is Rather Desperate\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nSo you have used the excellent\nexiftool\nto extract all of the GPS-related information from a directory of photos in JPG format and write to a CSV file:\nexiftool '-*GPS*' -ext jpg -csv . > outfile.csv\nYou’ve used R/leaflet to plot coordinates (latitude and longitude) before, but what about that tag named\nGPSImgDirection\n? It would be nice to have some kind of marker which indicates the direction in which you were facing when the photo was taken.\nFor me, a Google search provided hints but not one single, obvious straightforward solution to this problem (the generative AI effect? time will tell…), so here’s what I’ve put together from several sources, in particular\nthis StackOverflow post\n.\nThe key points are:\nuse\nawesomeIcons()\nto create a directional icon which can be rotated\nadd the icons to your map using\naddAwesomeMarkers()\nHere’s some example code which uses the\nFont Awesome\nicon\nlong-arrow-up\n. Since “up” (north) corresponds to zero degrees, applying a rotation corresponding to\nGPSImgDirection\nshould result in the correct orientation for the marker. The GPS-related tags in this case come from an iPhone 13.\nlibrary(readr)\nlibrary(leaflet)\nlibrary(sp)\n\noutfile <- read_csv(\"outfile.csv\")\n\n# create dataset\n# ugly but it works\ndataset <- outfile %>% \n  mutate(GPSLatitude = str_replace(GPSLatitude, \" deg\", \"d\"), \n         GPSLatitude = GPSLatitude %>% \n         char2dms() %>% \n           as.numeric(), \n         GPSLongitude = str_replace(GPSLongitude, \" deg\", \"d\"), \n         GPSLongitude = GPSLongitude %>% \n           char2dms() %>% \n           as.numeric(),\n         GPSHPositioningError = str_replace(GPSHPositioningError, \" m\", \"\"),\n         GPSHPositioningError = GPSHPositioningError %>% \n           as.numeric()) %>% \n  select(latitude = GPSLatitude, \n         longitude = GPSLongitude, \n         GPSTimeStamp, \n         GPSImgDirection, \n         GPSHPositioningError)\n\n# create the marker icons\nicons <- awesomeIcons(iconRotate = dataset$GPSImgDirection,\n                      icon = \"long-arrow-up\",\n                      library = \"fa\",\n                      markerColor = \"white\", \n                      squareMarker = TRUE)\n\n# create map\n# can filter on positioning error if desired\nleaflet(data = dataset %>%\n  addProviderTiles(provider = providers$CartoDB.Positron) %>%\n  addAwesomeMarkers(icon = icons, label = ~GPSTimeStamp)\nHere’s a screenshot of the resulting interactive map.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR – What You're Doing Is Rather Desperate\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-398155 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Directional markers in R/leaflet</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 7, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/nsaunders/\">nsaunders</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://nsaunders.wordpress.com/2026/01/08/directional-markers-in-r-leaflet/\"> R – What You're Doing Is Rather Desperate</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>So you have used the excellent <a href=\"https://exiftool.org/\" rel=\"nofollow\" target=\"_blank\">exiftool</a> to extract all of the GPS-related information from a directory of photos in JPG format and write to a CSV file:</p>\n<pre>exiftool '-*GPS*' -ext jpg -csv . &gt; outfile.csv</pre>\n<p>You’ve used R/leaflet to plot coordinates (latitude and longitude) before, but what about that tag named <em>GPSImgDirection</em>? It would be nice to have some kind of marker which indicates the direction in which you were facing when the photo was taken.</p>\n<span id=\"more-5702\"></span>\n<p>For me, a Google search provided hints but not one single, obvious straightforward solution to this problem (the generative AI effect? time will tell…), so here’s what I’ve put together from several sources, in particular <a href=\"https://stackoverflow.com/questions/70121767/leaflet-awesome-markers-icon-isnt-display-in-r\" rel=\"nofollow\" target=\"_blank\">this StackOverflow post</a>.</p>\n<p>The key points are:</p>\n<ul class=\"wp-block-list\">\n<li>use <em>awesomeIcons()</em> to create a directional icon which can be rotated</li>\n<li>add the icons to your map using <em>addAwesomeMarkers()</em></li>\n</ul>\n<p>Here’s some example code which uses the <a href=\"https://fontawesome.com/v4/icons/\" rel=\"nofollow\" target=\"_blank\">Font Awesome</a> icon <em>long-arrow-up</em>. Since “up” (north) corresponds to zero degrees, applying a rotation corresponding to <em>GPSImgDirection </em>should result in the correct orientation for the marker. The GPS-related tags in this case come from an iPhone 13.</p>\n<pre>\nlibrary(readr)\nlibrary(leaflet)\nlibrary(sp)\n\noutfile &lt;- read_csv(\"outfile.csv\")\n\n# create dataset\n# ugly but it works\ndataset &lt;- outfile %&gt;% \n  mutate(GPSLatitude = str_replace(GPSLatitude, \" deg\", \"d\"), \n         GPSLatitude = GPSLatitude %&gt;% \n         char2dms() %&gt;% \n           as.numeric(), \n         GPSLongitude = str_replace(GPSLongitude, \" deg\", \"d\"), \n         GPSLongitude = GPSLongitude %&gt;% \n           char2dms() %&gt;% \n           as.numeric(),\n         GPSHPositioningError = str_replace(GPSHPositioningError, \" m\", \"\"),\n         GPSHPositioningError = GPSHPositioningError %&gt;% \n           as.numeric()) %&gt;% \n  select(latitude = GPSLatitude, \n         longitude = GPSLongitude, \n         GPSTimeStamp, \n         GPSImgDirection, \n         GPSHPositioningError)\n\n# create the marker icons\nicons &lt;- awesomeIcons(iconRotate = dataset$GPSImgDirection,\n                      icon = \"long-arrow-up\",\n                      library = \"fa\",\n                      markerColor = \"white\", \n                      squareMarker = TRUE)\n\n# create map\n# can filter on positioning error if desired\nleaflet(data = dataset %&gt;%\n  addProviderTiles(provider = providers$CartoDB.Positron) %&gt;%\n  addAwesomeMarkers(icon = icons, label = ~GPSTimeStamp)\n</pre>\n<p>Here’s a screenshot of the resulting interactive map.</p>\n<figure class=\"wp-block-image size-large\"><a href=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?ssl=1\" rel=\"nofollow\" target=\"_blank\"><img alt=\"\" class=\"wp-image-5709\" data-attachment-id=\"5709\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-title=\"Screenshot 2026-01-08 at 09.21.46\" data-large-file=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&amp;ssl=1\" data-lazy-sizes=\"(max-width: 1024px) 100vw, 1024px\" data-lazy-src=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&amp;ssl=1\" data-medium-file=\"https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=300\" data-orig-file=\"https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png\" data-orig-size=\"2981,1737\" data-permalink=\"https://nsaunders.wordpress.com/2026/01/08/directional-markers-in-r-leaflet/screenshot-2026-01-08-at-09-21-46/\" data-recalc-dims=\"1\" loading=\"lazy\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" srcset_temp=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&amp;ssl=1 1024w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=2048 2048w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=150 150w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=300 300w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=768 768w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=1440 1440w\"/><noscript><img alt=\"\" aperture=\"\" class=\"wp-image-5709\" data-attachment-id=\"5709\" data-comments-opened=\"1\" data-image-caption=\"\" data-image-description=\"\" data-image-meta=\"{\" data-image-title=\"Screenshot 2026-01-08 at 09.21.46\" data-large-file=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&amp;ssl=1\" data-medium-file=\"https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=300\" data-orig-file=\"https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png\" data-orig-size=\"2981,1737\" data-permalink=\"https://nsaunders.wordpress.com/2026/01/08/directional-markers-in-r-leaflet/screenshot-2026-01-08-at-09-21-46/\" data-recalc-dims=\"1\" loading=\"lazy\" sizes=\"(max-width: 1024px) 100vw, 1024px\" src=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&amp;ssl=1\" srcset_temp=\"https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&amp;ssl=1 1024w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=2048 2048w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=150 150w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=300 300w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=768 768w, https://nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=1440 1440w\"/></noscript></a></figure>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://nsaunders.wordpress.com/2026/01/08/directional-markers-in-r-leaflet/\"> R – What You're Doing Is Rather Desperate</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 445,
+    "reading_time_min": 2.2,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/nsaunders/",
+        "text": "nsaunders"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://nsaunders.wordpress.com/2026/01/08/directional-markers-in-r-leaflet/",
+        "text": "R – What You're Doing Is Rather Desperate"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://exiftool.org/",
+        "text": "exiftool"
+      },
+      {
+        "href": "https://stackoverflow.com/questions/70121767/leaflet-awesome-markers-icon-isnt-display-in-r",
+        "text": "this StackOverflow post"
+      },
+      {
+        "href": "https://fontawesome.com/v4/icons/",
+        "text": "Font Awesome"
+      },
+      {
+        "href": "https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://nsaunders.wordpress.com/2026/01/08/directional-markers-in-r-leaflet/",
+        "text": "R – What You're Doing Is Rather Desperate"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i2.wp.com/nsaunders.wordpress.com/wp-content/uploads/2026/01/screenshot-2026-01-08-at-09.21.46.png?w=450&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,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"
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-08T14:23:56Z"
+  }
+}
