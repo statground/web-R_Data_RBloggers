@@ -35,17 +35,16 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      # ✅ 여기서 크롤링/JSON 생성 작업을 수행 (레포의 실제 스크립트에 맞게 유지/수정)
+      # ✅ 실제 크롤러 실행 (by_created에 JSON 생성 + .action_result.json 생성)
       - name: Crawl / Update JSON
+        env:
+          MAX_PAGES_FROM_HOME: "2"
+          SLEEP_SEC: "1.0"
         run: |
           set -e
-          # 예시: 네 레포에 있는 실제 실행 명령으로 바꿔서 사용
-          # python rbloggers_crawl.py
-          # 또는 notebook/스크립트 등
-          echo "TODO: run your crawler here"
-
-          # (선택) 액션 결과 파일이 필요한 경우 생성/갱신 로직이 여기 있어야 함
-          # echo '{"files":["..."]}' > .action_result.json
+          python scripts/crawl_rbloggers.py
+          echo "---- .action_result.json ----"
+          cat .action_result.json || true
 
       - name: Commit & Push if changed
         id: commit_push
