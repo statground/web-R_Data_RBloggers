@@ -1,13 +1,29 @@
 {
-  "updated_at_utc": "2026-01-11T04:08:22Z",
+  "version": 1,
+  "base_dir": "by_created",
   "totals": {
-    "total_files": 0,
-    "total_bytes": 0
+    "files": 2268,
+    "bytes": 113623070
   },
-  "by_month": {},
+  "by_month": {
+    "2026-01": {
+      "files": 109,
+      "bytes": 16075794
+    },
+    "2025-12": {
+      "files": 56,
+      "bytes": 5426268
+    },
+    "2025-11": {
+      "files": 2103,
+      "bytes": 92121008
+    }
+  },
   "last_run": {
+    "finished_at": "2026-01-11T04:26:40Z",
     "new_files": 0,
-    "new_bytes": 0,
-    "finished_at_utc": "2026-01-11T04:08:22Z"
+    "newly_counted_files": 0,
+    "newly_counted_bytes": 0,
+    "action_result_path": ".action_result.json"
   }
 }
