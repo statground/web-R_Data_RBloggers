@@ -2,7 +2,7 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"   # 매 시간
+    - cron: "0 * * * *" # 매 시간
   workflow_dispatch:
 
 concurrency:
@@ -62,7 +62,6 @@ jobs:
 
           git add -A
 
-          # 변경 없으면 커밋 스킵
           if git diff --cached --quiet; then
             echo "Nothing to commit."
             exit 0
@@ -99,22 +98,22 @@ PY
             FILES_JSON="[]"
           fi
 
-          python - <<PY
+          # payload.json 생성 (따옴표 이슈 제거)
+          python - <<'PY'
 import json, os
+files_json = os.environ.get("FILES_JSON","[]")
 payload = {
   "sha": os.environ.get("GH_SHA",""),
   "ref": os.environ.get("GH_REF_NAME",""),
-  "files": json.loads(os.environ.get("FILES_JSON","[]"))
+  "files": json.loads(files_json),
 }
 with open("payload.json","w",encoding="utf-8") as f:
   json.dump(payload,f,ensure_ascii=False)
 print("payload.json written. files =", len(payload["files"]))
 PY
-
-          curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
+          # python에 FILES_JSON만 전달
+          FILES_JSON="$FILES_JSON" curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
             --data-binary @payload.json \
             -w "\nHTTP_STATUS:%{http_code}\n"
-        env:
-          FILES_JSON: ${{ env.FILES_JSON }}
