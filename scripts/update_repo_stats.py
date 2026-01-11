@@ -1,23 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 """
-RBlogger repository stats generator.
+Generate / update repository stats for R-Bloggers crawler output.
 
-Why this exists
-- Keep a human-readable markdown report of what has been crawled under by_created/
-- Run safely in GitHub Actions
-- Prefer *incremental* updates using .action_result.json,
-  but automatically "self-heal" by doing a one-time full scan when counts are empty/missing.
+Key ideas
+- Primary source of truth: by_created/YYYY/MM/*.json
+- Incremental updates: use .action_result.json (list of newly written files) when available
+- One-time init: if RBLOGGERS_COUNTS.json missing/empty, do a full scan of by_created/
 
-Outputs (repo root)
-- RBLOGGERS_REPO_STATS.md
-- RBLOGGERS_COUNTS.json
+Outputs
+- RBLOGGERS_COUNTS.json : incremental counters (month -> files/bytes)
+- RBLOGGERS_REPO_STATS.md : human readable markdown report (ALL months)
 """
 
 from __future__ import annotations
 
-import argparse
 import json
 import os
 from dataclasses import dataclass
@@ -26,229 +23,195 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 
-DEFAULT_BASE_DIR = os.getenv("BASE_DIR", "by_created")
-DEFAULT_COUNTS_FILE = os.getenv("COUNTS_FILE", "RBLOGGERS_COUNTS.json")
-DEFAULT_MD_FILE = os.getenv("MD_FILE", "RBLOGGERS_REPO_STATS.md")
-DEFAULT_ACTION_RESULT = os.getenv("ACTION_RESULT", ".action_result.json")
+ROOT = Path(".")
+BY_CREATED = ROOT / "by_created"
+COUNTS_JSON = ROOT / "RBLOGGERS_COUNTS.json"
+REPORT_MD = ROOT / "RBLOGGERS_REPO_STATS.md"
+ACTION_RESULT = ROOT / ".action_result.json"
+
+
+@dataclass
+class MonthStat:
+    files: int = 0
+    bytes: int = 0
 
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
-def load_json(path: Path, default):
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return default
-
-
-def save_json(path: Path, obj) -> None:
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-
 def human_bytes(n: int) -> str:
-    n = int(n)
-    units = ["B", "KB", "MB", "GB", "TB"]
-    v = float(n)
+    if n < 1024:
+        return f"{n} B"
+    units = ["KB", "MB", "GB", "TB"]
+    x = float(n)
     for u in units:
-        if v < 1024.0 or u == units[-1]:
-            if u == "B":
-                return f"{int(v)} {u}"
-            return f"{v:.1f} {u}"
-        v /= 1024.0
-    return f"{n} B"
+        x /= 1024.0
+        if x < 1024.0:
+            return f"{x:.1f} {u}"
+    return f"{x:.1f} PB"
 
 
-def ym_from_relpath(relpath: str, base_dir: str) -> str:
-    # expected: by_created/YYYY/MM/<id>.json
-    parts = Path(relpath).parts
+def month_key_from_path(p: Path) -> str | None:
+    """
+    Expected: by_created/YYYY/MM/<anything>.json
+    Returns: 'YYYY-MM'
+    """
     try:
-        idx = parts.index(base_dir)
-        y = parts[idx + 1]
-        m = parts[idx + 2]
-        if len(y) == 4 and len(m) == 2 and y.isdigit() and m.isdigit():
-            return f"{y}-{m}"
+        rel = p.relative_to(BY_CREATED)
     except Exception:
-        pass
-    return "unknown-unknown"
+        return None
+    parts = rel.parts
+    if len(parts) < 3:
+        return None
+    yyyy, mm = parts[0], parts[1]
+    if not (yyyy.isdigit() and len(yyyy) == 4 and mm.isdigit() and len(mm) == 2):
+        return None
+    return f"{yyyy}-{mm}"
 
 
-def walk_all_json(repo_root: Path, base_dir: str) -> List[Path]:
-    base = repo_root / base_dir
-    if not base.exists():
-        return []
-    return [p for p in base.rglob("*.json") if p.is_file()]
+def load_counts() -> Dict[str, MonthStat]:
+    if not COUNTS_JSON.exists():
+        return {}
+    try:
+        obj = json.loads(COUNTS_JSON.read_text(encoding="utf-8"))
+        months = obj.get("months", {}) if isinstance(obj, dict) else {}
+        out: Dict[str, MonthStat] = {}
+        for k, v in months.items():
+            if not isinstance(v, dict):
+                continue
+            out[k] = MonthStat(files=int(v.get("files", 0)), bytes=int(v.get("bytes", 0)))
+        return out
+    except Exception:
+        return {}
 
 
-def recompute_counts(repo_root: Path, base_dir: str) -> Dict:
-    by_month: Dict[str, Dict[str, int]] = {}
-    total_files = 0
-    total_bytes = 0
-
-    for p in walk_all_json(repo_root, base_dir):
-        rel = os.path.relpath(p, repo_root)
-        ym = ym_from_relpath(rel, base_dir)
-        b = p.stat().st_size
-
-        by_month.setdefault(ym, {"files": 0, "bytes": 0})
-        by_month[ym]["files"] += 1
-        by_month[ym]["bytes"] += b
-
-        total_files += 1
-        total_bytes += b
-
-    return {
-        "version": 1,
-        "base_dir": base_dir,
-        "totals": {"files": total_files, "bytes": total_bytes},
-        "by_month": by_month,
-        "last_run": {},
+def save_counts(months: Dict[str, MonthStat], meta: dict) -> None:
+    payload = {
+        "meta": meta,
+        "months": {k: {"files": v.files, "bytes": v.bytes} for k, v in months.items()},
     }
+    COUNTS_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def read_action_result(repo_root: Path, action_result_path: str) -> Dict:
-    return load_json(repo_root / action_result_path, default={})
-
-
-def add_one(by_month: Dict[str, Dict[str, int]], ym: str, bytes_n: int) -> None:
-    by_month.setdefault(ym, {"files": 0, "bytes": 0})
-    by_month[ym]["files"] = int(by_month[ym].get("files", 0)) + 1
-    by_month[ym]["bytes"] = int(by_month[ym].get("bytes", 0)) + int(bytes_n)
-
-
-def render_md(updated_at: str, totals: Dict[str, int], by_month: Dict[str, Dict[str, int]], last_run: Dict) -> str:
-    # sort months descending, unknown goes last
-    def month_key(ym: str):
-        if ym == "unknown-unknown":
-            return (0, 0, -1)
+def scan_all_by_created() -> Dict[str, MonthStat]:
+    months: Dict[str, MonthStat] = {}
+    if not BY_CREATED.exists():
+        return months
+    for p in BY_CREATED.rglob("*.json"):
+        mk = month_key_from_path(p)
+        if mk is None:
+            continue
+        st = months.setdefault(mk, MonthStat())
+        st.files += 1
         try:
-            y, m = ym.split("-")
-            return (int(y), int(m), 0)
-        except Exception:
-            return (0, 0, -1)
+            st.bytes += p.stat().st_size
+        except FileNotFoundError:
+            pass
+    return months
 
-    months_sorted = sorted(by_month.keys(), key=month_key, reverse=True)
-    recent = [m for m in months_sorted if m != "unknown-unknown"][:24]
-    if "unknown-unknown" in by_month:
-        recent.append("unknown-unknown")
 
-    lines = []
-    lines.append(f"Updated: {updated_at}")
+def load_action_new_files() -> List[str]:
+    if not ACTION_RESULT.exists():
+        return []
+    try:
+        obj = json.loads(ACTION_RESULT.read_text(encoding="utf-8"))
+        files = obj.get("files", [])
+        if not isinstance(files, list):
+            return []
+        files = [f for f in files if isinstance(f, str) and f.endswith(".json")]
+        return files
+    except Exception:
+        return []
+
+
+def apply_incremental(months: Dict[str, MonthStat], new_files: List[str]) -> Tuple[int, int]:
+    """
+    new_files: relative paths (strings) returned by crawler in .action_result.json
+    Returns: (added_files_count, added_bytes)
+    """
+    added_files = 0
+    added_bytes = 0
+    for f in new_files:
+        p = ROOT / f
+        if not p.exists():
+            continue
+        mk = month_key_from_path(p)
+        if mk is None:
+            continue
+        st = months.setdefault(mk, MonthStat())
+        st.files += 1
+        try:
+            b = p.stat().st_size
+        except FileNotFoundError:
+            b = 0
+        st.bytes += b
+        added_files += 1
+        added_bytes += b
+    return added_files, added_bytes
+
+
+def render_markdown(months: Dict[str, MonthStat], last_run_new: int, last_run_finished: str) -> str:
+    # totals
+    total_files = sum(v.files for v in months.values())
+    total_bytes = sum(v.bytes for v in months.values())
+
+    # sort months descending
+    month_items = sorted(months.items(), key=lambda kv: kv[0], reverse=True)
+
+    lines: List[str] = []
+    lines.append(f"Updated: {utc_now_iso()}")
     lines.append("")
-    lines.append("Summary")
-    lines.append(f"Total JSON files: {totals.get('files', 0)}")
-    lines.append(f"Total size: {human_bytes(totals.get('bytes', 0))}")
-    lines.append(f"Last run new files: {last_run.get('new_files', 0)}")
-    if last_run.get("finished_at"):
-        lines.append(f"Last run finished: {last_run.get('finished_at')}")
+    lines.append("## Summary")
+    lines.append(f"- Total JSON files: **{total_files:,}**")
+    lines.append(f"- Total size: **{human_bytes(total_bytes)}**")
+    lines.append(f"- Last run new files: **{last_run_new:,}**")
+    lines.append(f"- Last run finished: **{last_run_finished}**")
     lines.append("")
-    lines.append("Recent months (by_created/YYYY/MM)")
-    lines.append("Year-Month\tFiles\tSize")
-    for ym in recent:
-        d = by_month.get(ym, {"files": 0, "bytes": 0})
-        lines.append(f"{ym}\t{d.get('files', 0)}\t{human_bytes(d.get('bytes', 0))}")
+    lines.append("## Monthly breakdown (by_created/YYYY/MM)")
     lines.append("")
-    lines.append("Notes")
-    lines.append("This report is generated by scripts/update_repo_stats.py.")
-    lines.append("Counts are maintained incrementally in RBLOGGERS_COUNTS.json using .action_result.json from the crawler.")
-    lines.append("If counts are empty/missing, a one-time full scan of by_created/ is performed to initialize totals.")
-    lines.append("Only metadata files are written (RBLOGGERS_REPO_STATS.md, RBLOGGERS_COUNTS.json); DB sync remains driven by JSON files under by_created/.")
+    lines.append("| Year-Month | Files | Size |")
+    lines.append("|---:|---:|---:|")
+    for mk, st in month_items:
+        lines.append(f"| {mk} | {st.files:,} | {human_bytes(st.bytes)} |")
+    lines.append("")
+    lines.append("## Notes")
+    lines.append("- This report is generated by `scripts/update_repo_stats.py`.")
+    lines.append("- Counts are maintained incrementally in `RBLOGGERS_COUNTS.json` using `.action_result.json` from the crawler.")
+    lines.append("- If counts are empty/missing, a one-time full scan of `by_created/` is performed to initialize totals.")
+    lines.append("- Only metadata files are written (`RBLOGGERS_REPO_STATS.md`, `RBLOGGERS_COUNTS.json`); DB sync remains driven by JSON files under `by_created/`.")
     lines.append("")
     return "\n".join(lines)
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--repo-root", default=".", help="Repo root (default: .)")
-    ap.add_argument("--base-dir", default=DEFAULT_BASE_DIR, help="Base folder holding JSON files (default: by_created)")
-    ap.add_argument("--counts-file", default=DEFAULT_COUNTS_FILE)
-    ap.add_argument("--md-file", default=DEFAULT_MD_FILE)
-    ap.add_argument("--action-result", default=DEFAULT_ACTION_RESULT)
-    args = ap.parse_args()
+def main() -> None:
+    months = load_counts()
+    new_files = load_action_new_files()
 
-    repo_root = Path(args.repo_root).resolve()
-    base_dir = args.base_dir
+    # One-time init: if empty counts but data exists in by_created, full scan.
+    if not months:
+        # if by_created has any json, scan
+        has_any = BY_CREATED.exists() and any(BY_CREATED.rglob("*.json"))
+        if has_any:
+            months = scan_all_by_created()
 
-    counts_path = repo_root / args.counts_file
-    md_path = repo_root / args.md_file
+    # Apply incremental for this run (so report shows last run new files)
+    added_files, _added_bytes = apply_incremental(months, new_files)
 
-    counts = load_json(counts_path, default={})
-    need_full_scan = False
-
-    # Self-heal conditions:
-    # - no counts file
-    # - totals missing/zero while by_created actually has json files
-    # - base_dir changed
-    if not counts or counts.get("base_dir") != base_dir:
-        need_full_scan = True
-    else:
-        totals = counts.get("totals") or {}
-        if int(totals.get("files", 0)) == 0:
-            # check if repo already has data
-            if (repo_root / base_dir).exists() and any((repo_root / base_dir).rglob("*.json")):
-                need_full_scan = True
-
-    if need_full_scan:
-        counts = recompute_counts(repo_root, base_dir)
-
-    # Incremental update using this run's action result
-    action = read_action_result(repo_root, args.action_result)
-    files = action.get("files") or action.get("new_files_paths") or []
-    if not isinstance(files, list):
-        files = []
-
-    newly_added = 0
-    newly_bytes = 0
-
-    by_month = counts.setdefault("by_month", {})
-    for rel in files:
-        if not isinstance(rel, str):
-            continue
-        if not rel.endswith(".json"):
-            continue
-        # keep within repo
-        p = (repo_root / rel).resolve()
-        try:
-            p.relative_to(repo_root)
-        except Exception:
-            continue
-        if not p.exists() or not p.is_file():
-            continue
-        # ensure it's under base_dir
-        rel_norm = os.path.relpath(p, repo_root)
-        if Path(rel_norm).parts[:1] != (base_dir,):
-            continue
-
-        b = p.stat().st_size
-        ym = ym_from_relpath(rel_norm, base_dir)
-        add_one(by_month, ym, b)
-
-        newly_added += 1
-        newly_bytes += b
-
-    # Recompute totals from by_month (prevents drift)
-    totals_files = 0
-    totals_bytes = 0
-    for d in by_month.values():
-        totals_files += int(d.get("files", 0))
-        totals_bytes += int(d.get("bytes", 0))
-    counts["totals"] = {"files": totals_files, "bytes": totals_bytes}
-
-    updated_at = utc_now_iso()
-    counts["last_run"] = {
-        "finished_at": updated_at,
-        "new_files": int(action.get("new_files", newly_added) or newly_added),
-        "newly_counted_files": newly_added,
-        "newly_counted_bytes": newly_bytes,
-        "action_result_path": args.action_result,
+    meta = {
+        "updated_at": utc_now_iso(),
+        "last_run_finished": utc_now_iso(),
+        "last_run_new_files": added_files,
+        "source": "by_created + .action_result.json",
     }
+    save_counts(months, meta)
 
-    save_json(counts_path, counts)
-    md_path.write_text(render_md(updated_at, counts["totals"], counts["by_month"], counts["last_run"]), encoding="utf-8")
-
-    print(f"[stats] wrote {md_path.name} and {counts_path.name}")
-    print(f"[stats] full_scan={'yes' if need_full_scan else 'no'}; +counted_files={newly_added}; +bytes={newly_bytes}")
+    report = render_markdown(
+        months=months,
+        last_run_new=added_files,
+        last_run_finished=meta["last_run_finished"],
+    )
+    REPORT_MD.write_text(report, encoding="utf-8")
 
 
 if __name__ == "__main__":
