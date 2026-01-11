@@ -94,29 +94,12 @@ jobs:
           fi
 
           if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python - <<'PY'
-import json
-obj=json.load(open(".action_result.json","r",encoding="utf-8"))
-files=obj.get("files",[])
-files=[f for f in files if isinstance(f,str) and f.endswith(".json")]
-print(json.dumps(files, ensure_ascii=False))
-PY
-)"
+            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]); files=[f for f in files if isinstance(f,str) and f.endswith(".json")]; print(json.dumps(files, ensure_ascii=False))')"
           else
             FILES_JSON="[]"
           fi
 
-          # Write payload.json safely (avoid shell quoting issues)
-          FILES_JSON="$FILES_JSON" python - <<'PY'
-import json, os
-payload = {
-  "sha": os.environ.get("GH_SHA",""),
-  "ref": os.environ.get("GH_REF_NAME",""),
-  "files": json.loads(os.environ.get("FILES_JSON","[]")),
-}
-with open("payload.json","w",encoding="utf-8") as f:
-  json.dump(payload,f,ensure_ascii=False)
-print("payload.json written. files =", len(payload["files"]))
-PY
+          # Write payload.json safely (avoid YAML/heredoc quoting issues)
+          FILES_JSON="$FILES_JSON" python -c 'import json, os; payload={"sha":os.environ.get("GH_SHA",""),"ref":os.environ.get("GH_REF_NAME",""),"files":json.loads(os.environ.get("FILES_JSON","[]"))}; open("payload.json","w",encoding="utf-8").write(json.dumps(payload, ensure_ascii=False)); print("payload.json written. files =", len(payload["files"]))'
 
           curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             --data-binary @payload.json             -w "\nHTTP_STATUS:%{http_code}\n"
