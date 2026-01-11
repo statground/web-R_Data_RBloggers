@@ -29,84 +29,60 @@ jobs:
 
       - name: Install dependencies
         run: |
-          set -e
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # ✅ 실제 크롤러 실행 (by_created에 JSON 생성 + .action_result.json 생성)
-      - name: Crawl / Update JSON
-        env:
-          MAX_PAGES_FROM_HOME: "2"
-          SLEEP_SEC: "1.0"
+      - name: Crawl R-Bloggers
         run: |
-          set -e
           python scripts/crawl_rbloggers.py
-          echo "---- .action_result.json ----"
-          cat .action_result.json || true
 
-      - name: Update Repo Stats (MD)
+      - name: Update repo stats (MD)
         run: |
-          set -e
           python scripts/update_repo_stats.py
-          echo "---- RBLOGGERS_REPO_STATS.md ----"
-          sed -n '1,120p' RBLOGGERS_REPO_STATS.md || true
+          echo "---- RBLOGGERS_REPO_STATS.md (head) ----"
+          head -n 80 RBLOGGERS_REPO_STATS.md || true
 
-      - name: Commit & Push if changed
-        id: commit_push
-        env:
-          GITHUB_REF_NAME: ${{ github.ref_name }}
+      - name: Commit and push (if changed)
         run: |
           set -e
-
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "changed=0" >> "$GITHUB_OUTPUT"
-            echo "No changes."
+          if git diff --quiet; then
+            echo "No changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 원격 최신 반영 (✅ 핵심: autostash)
-          git fetch origin "$GITHUB_REF_NAME"
-          git pull --rebase --autostash origin "$GITHUB_REF_NAME"
-
           git add -A
-          git commit -m "rbloggers: add new posts"
+          git commit -m "chore: crawl r-bloggers + update stats"
+          git push
 
-          for i in 1 2 3; do
-            if git push origin "HEAD:$GITHUB_REF_NAME"; then
-              echo "changed=1" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
-            echo "Push failed (attempt $i). Retrying..."
-            git fetch origin "$GITHUB_REF_NAME"
-            git pull --rebase --autostash origin "$GITHUB_REF_NAME"
-          done
-
-          echo "Push failed after retries."
-          exit 1
-
-      - name: Sync to Web-R (always)
+      - name: Sync new files to DB (optional)
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
+          GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
           set -e
+          if [ -z "$WEBR_SYNC_URL" ] || [ -z "$WEBR_SYNC_TOKEN" ]; then
+            echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skip DB sync."
+            exit 0
+          fi
 
-          GH_SHA=$(git rev-parse HEAD)
-
-          # action_result.json 있으면 파일 목록 전달, 없으면 [] (서버 fallback 유도)
           if [ -f ".action_result.json" ]; then
-            FILES_JSON=$(python -c "import json; obj=json.load(open('.action_result.json','r',encoding='utf-8')); files=obj.get('files',[]); files=[f for f in files if isinstance(f,str) and f.endswith('.json')]; print(json.dumps(files, ensure_ascii=False))")
+            FILES_JSON=$(python - <<'PY'
+import json
+obj=json.load(open(".action_result.json","r",encoding="utf-8"))
+files=[p for p in (obj.get("files") or []) if isinstance(p,str) and p.endswith(".json")]
+print(json.dumps(files, ensure_ascii=False))
+PY
+)
           else
             FILES_JSON="[]"
           fi
 
-          echo "sync sha=$GH_SHA, files_json_len=${#FILES_JSON}"
+          echo "sync sha=$GH_SHA, files=${#FILES_JSON} chars"
 
           curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
             -H "Content-Type: application/json" \
