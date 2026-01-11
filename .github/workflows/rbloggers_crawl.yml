@@ -21,8 +21,17 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          clean: true
 
-      - name: Set up Python
+      - name: Sync to origin/main (before generating files)
+        run: |
+          set -e
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+          git clean -fd
+
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -30,34 +39,40 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -r requirements.txt
 
-      - name: Crawl R-Bloggers
-        run: |
-          python scripts/crawl_rbloggers.py
-
-      - name: Update repo stats (MD)
-        run: |
-          python scripts/update_repo_stats.py
-          echo "---- RBLOGGERS_REPO_STATS.md (head) ----"
-          head -n 80 RBLOGGERS_REPO_STATS.md || true
-
-      - name: Commit and push (if changed)
+      - name: Crawl R-Bloggers -> by_created
+        env:
+          # 필요 시 크롤러가 참고할 수 있도록 남겨둠 (없어도 무방)
+          GH_SHA: ${{ github.sha }}
+          GH_REF_NAME: ${{ github.ref_name }}
         run: |
           set -e
-          if git diff --quiet; then
-            echo "No changes to commit."
+          python scripts/crawl_rbloggers.py
+
+      - name: Update repo stats (RBLOGGERS_REPO_STATS.md)
+        run: |
+          set -e
+          python scripts/update_repo_stats.py
+
+      - name: Commit & push (json + stats)
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          # 변경 없으면 커밋 스킵
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update rbloggers crawl + stats"
+          git push origin main
 
-          git add -A
-          git commit -m "chore: crawl r-bloggers + update stats"
-          git push
-
-      - name: Sync new files to DB (optional)
+      - name: Sync new JSON files to DB (optional)
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
@@ -70,11 +85,13 @@ jobs:
             exit 0
           fi
 
+          # action_result.json 있으면 파일 목록 전달, 없으면 []
           if [ -f ".action_result.json" ]; then
             FILES_JSON=$(python - <<'PY'
 import json
 obj=json.load(open(".action_result.json","r",encoding="utf-8"))
-files=[p for p in (obj.get("files") or []) if isinstance(p,str) and p.endswith(".json")]
+files=obj.get("files",[])
+files=[f for f in files if isinstance(f,str) and f.endswith(".json")]
 print(json.dumps(files, ensure_ascii=False))
 PY
 )
@@ -82,10 +99,6 @@ PY
             FILES_JSON="[]"
           fi
 
-          echo "sync sha=$GH_SHA, files=${#FILES_JSON} chars"
+          echo "sync sha=$GH_SHA, files_json_len=${#FILES_JSON}"
 
-          curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
-            -H "Content-Type: application/json" \
-            -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
-            -d "{\"sha\":\"$GH_SHA\",\"ref\":\"$GH_REF_NAME\",\"files\":$FILES_JSON}" \
-            -w "\nHTTP_STATUS:%{http_code}\n"
+          curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             -d "{"sha":"$GH_SHA","ref":"$GH_REF_NAME","files":$FILES_JSON}"             -w "\nHTTP_STATUS:%{http_code}\n"
