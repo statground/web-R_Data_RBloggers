@@ -43,7 +43,6 @@ jobs:
 
       - name: Crawl R-Bloggers -> by_created
         env:
-          # 필요 시 크롤러가 참고할 수 있도록 남겨둠 (없어도 무방)
           GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
@@ -80,6 +79,7 @@ jobs:
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
           set -e
+
           if [ -z "$WEBR_SYNC_URL" ] || [ -z "$WEBR_SYNC_TOKEN" ]; then
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skip DB sync."
             exit 0
@@ -99,6 +99,22 @@ PY
             FILES_JSON="[]"
           fi
 
-          echo "sync sha=$GH_SHA, files_json_len=${#FILES_JSON}"
+          python - <<PY
+import json, os
+payload = {
+  "sha": os.environ.get("GH_SHA",""),
+  "ref": os.environ.get("GH_REF_NAME",""),
+  "files": json.loads(os.environ.get("FILES_JSON","[]"))
+}
+with open("payload.json","w",encoding="utf-8") as f:
+  json.dump(payload,f,ensure_ascii=False)
+print("payload.json written. files =", len(payload["files"]))
+PY
 
-          curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             -d "{"sha":"$GH_SHA","ref":"$GH_REF_NAME","files":$FILES_JSON}"             -w "\nHTTP_STATUS:%{http_code}\n"
+          curl -f -sS -L -X POST "$WEBR_SYNC_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
+            --data-binary @payload.json \
+            -w "\nHTTP_STATUS:%{http_code}\n"
+        env:
+          FILES_JSON: ${{ env.FILES_JSON }}
