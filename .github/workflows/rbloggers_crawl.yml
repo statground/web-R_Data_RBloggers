@@ -46,6 +46,13 @@ jobs:
           echo "---- .action_result.json ----"
           cat .action_result.json || true
 
+      - name: Update Repo Stats (MD)
+        run: |
+          set -e
+          python scripts/update_repo_stats.py
+          echo "---- RBLOGGERS_REPO_STATS.md ----"
+          sed -n '1,120p' RBLOGGERS_REPO_STATS.md || true
+
       - name: Commit & Push if changed
         id: commit_push
         env:
