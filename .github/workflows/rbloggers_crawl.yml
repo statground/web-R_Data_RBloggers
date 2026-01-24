@@ -2,8 +2,8 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"  # every hour
-  workflow_dispatch:
+    - cron: "0 * * * *"  # 매 시간 실행
+  workflow_dispatch:      # 수동 실행 버튼
 
 concurrency:
   group: rbloggers-crawl-main
@@ -17,89 +17,99 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          clean: true
 
-      - name: Sync to origin/main (before generating files)
-        shell: bash
-        run: |
-          set -euo pipefail
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
-          git clean -fd
-
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        shell: bash
         run: |
-          set -euo pipefail
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
+          if [ -f scripts/requirements.txt ]; then
+            pip install -r scripts/requirements.txt
+          else
+            pip install requests beautifulsoup4
           fi
 
-      - name: Crawl R-Bloggers -> by_created
-        shell: bash
+      # 1. 크롤링 수행 (by_created 폴더에 데이터 적재 및 .action_result.json 생성)
+      - name: Crawl R-Bloggers
         env:
           GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
-          set -euo pipefail
+          # scripts 폴더에 있는 크롤러 실행
           python scripts/crawl_rbloggers.py
 
-      - name: Update repo stats (RBLOGGERS_REPO_STATS.md)
-        shell: bash
+      # 2. 통계 파일 강제 갱신 (전수 조사 스크립트 실행)
+      - name: Update Repository Stats
         run: |
-          set -euo pipefail
+          # 방금 수집된 데이터까지 포함해서 전체 다시 카운트
           python scripts/update_repo_stats.py
 
-      - name: Commit & push (json + stats)
-        shell: bash
+      # 3. 변경 사항 커밋 및 푸시
+      - name: Commit and Push changes
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
-
-          if git diff --cached --quiet; then
-            echo "Nothing to commit."
-            exit 0
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 새로 생긴 데이터 파일 추가
+          git add by_created/
+          
+          # 갱신된 통계 파일들 명시적 추가 (이 부분이 중요)
+          git add RBLOGGERS_COUNTS.json RBLOGGERS_REPO_STATS.md
+          
+          # Web-R 싱크를 위해 생성된 결과 파일은 커밋하지 않음 (선택)
+          # git add .action_result.json 
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto Update: R-Bloggers Data & Stats ($(date +'%Y-%m-%d %H:%M'))"
+            git push
           fi
 
-          git commit -m "chore: update rbloggers crawl + stats"
-          git push origin main
-
-      - name: Sync new JSON files to DB (optional)
-        shell: bash
+      # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook) - 기존 기능 유지
+      - name: Trigger Web-R Sync
+        if: always() # 크롤링이나 커밋 결과와 상관없이 시도 (필요에 따라 success()로 변경 가능)
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
           GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
-          set -euo pipefail
-
+          # URL이나 토큰이 없으면 스킵
           if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
-            echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skip DB sync."
+            echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
             exit 0
           fi
-
+          
+          # .action_result.json 파일이 존재하면 내용을 읽어서 페이로드 구성
           if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]); files=[f for f in files if isinstance(f,str) and f.endswith(".json")]; print(json.dumps(files, ensure_ascii=False))')"
+            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("new_files_relpaths",[]); print(json.dumps(files, ensure_ascii=False))')"
           else
             FILES_JSON="[]"
           fi
 
-          # Write payload.json safely (avoid YAML/heredoc quoting issues)
-          FILES_JSON="$FILES_JSON" python -c 'import json, os; payload={"sha":os.environ.get("GH_SHA",""),"ref":os.environ.get("GH_REF_NAME",""),"files":json.loads(os.environ.get("FILES_JSON","[]"))}; open("payload.json","w",encoding="utf-8").write(json.dumps(payload, ensure_ascii=False)); print("payload.json written. files =", len(payload["files"]))'
+          # 실제 데이터 전송 (curl 사용)
+          # payload.json을 임시로 만들어서 전송
+          python -c "
+          import json, os
+          payload = {
+            'sha': os.environ.get('GH_SHA',''),
+            'ref': os.environ.get('GH_REF_NAME',''),
+            'files': json.loads(os.environ.get('FILES_JSON','[]'))
+          }
+          with open('payload.json','w',encoding='utf-8') as f:
+            json.dump(payload, f)
+          "
 
-          curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             --data-binary @payload.json             -w "\nHTTP_STATUS:%{http_code}\n"
+          echo "Sending webhook to $WEBR_SYNC_URL..."
+          curl -X POST -H "Content-Type: application/json" \
+               -H "Authorization: Bearer $WEBR_SYNC_TOKEN" \
+               -d @payload.json \
+               "$WEBR_SYNC_URL"
