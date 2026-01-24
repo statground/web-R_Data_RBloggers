@@ -33,22 +33,21 @@ jobs:
           if [ -f scripts/requirements.txt ]; then
             pip install -r scripts/requirements.txt
           else
-            pip install requests beautifulsoup4
+            # 여기에 lxml을 추가했습니다.
+            pip install requests beautifulsoup4 lxml
           fi
 
-      # 1. 크롤링 수행 (by_created 폴더에 데이터 적재 및 .action_result.json 생성)
+      # 1. 크롤링 수행
       - name: Crawl R-Bloggers
         env:
           GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
-          # scripts 폴더에 있는 크롤러 실행
           python scripts/crawl_rbloggers.py
 
-      # 2. 통계 파일 강제 갱신 (전수 조사 스크립트 실행)
+      # 2. 통계 파일 강제 갱신 (전수 조사)
       - name: Update Repository Stats
         run: |
-          # 방금 수집된 데이터까지 포함해서 전체 다시 카운트
           python scripts/update_repo_stats.py
 
       # 3. 변경 사항 커밋 및 푸시
@@ -57,14 +56,9 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 새로 생긴 데이터 파일 추가
+          # 데이터 폴더와 통계 파일 명시적 추가
           git add by_created/
-          
-          # 갱신된 통계 파일들 명시적 추가 (이 부분이 중요)
           git add RBLOGGERS_COUNTS.json RBLOGGERS_REPO_STATS.md
-          
-          # Web-R 싱크를 위해 생성된 결과 파일은 커밋하지 않음 (선택)
-          # git add .action_result.json 
           
           if git diff --staged --quiet; then
             echo "No changes to commit."
@@ -73,30 +67,26 @@ jobs:
             git push
           fi
 
-      # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook) - 기존 기능 유지
+      # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook)
       - name: Trigger Web-R Sync
-        if: always() # 크롤링이나 커밋 결과와 상관없이 시도 (필요에 따라 success()로 변경 가능)
+        if: always()
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
           GH_SHA: ${{ github.sha }}
           GH_REF_NAME: ${{ github.ref_name }}
         run: |
-          # URL이나 토큰이 없으면 스킵
           if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
             exit 0
           fi
           
-          # .action_result.json 파일이 존재하면 내용을 읽어서 페이로드 구성
           if [ -f ".action_result.json" ]; then
             FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("new_files_relpaths",[]); print(json.dumps(files, ensure_ascii=False))')"
           else
             FILES_JSON="[]"
           fi
 
-          # 실제 데이터 전송 (curl 사용)
-          # payload.json을 임시로 만들어서 전송
           python -c "
           import json, os
           payload = {
