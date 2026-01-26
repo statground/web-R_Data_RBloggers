@@ -3,7 +3,7 @@
 ## 📊 Repository Status
 - **Total Archived Posts:** 2,291
 - **Total Data Size:** 111.24 MB
-- **Last Updated:** 2026-01-26 17:26:24 KST
+- **Last Updated:** 2026-01-26 18:28:47 KST
 
 ## 🔄 Last Crawl Info
 - **Status:** Unknown
