@@ -1,9 +1,9 @@
 # R-bloggers Data Repository Statistics
 
 ## 📊 Repository Status
-- **Total Archived Posts:** 2,291
-- **Total Data Size:** 111.24 MB
-- **Last Updated:** 2026-01-26 19:20:27 KST
+- **Total Archived Posts:** 2,292
+- **Total Data Size:** 111.51 MB
+- **Last Updated:** 2026-01-26 20:21:58 KST
 
 ## 🔄 Last Crawl Info
 - **Status:** Unknown
@@ -12,7 +12,7 @@
 ## 📅 Monthly Archive History
 | Month | Posts | Size (KB) |
 | :--- | :---: | :---: |
-| **2026-01** | 132 | 18,649.4 KB |
+| **2026-01** | 133 | 18,922.0 KB |
 | **2025-12** | 56 | 5,299.1 KB |
 | **2025-11** | 2,103 | 89,961.9 KB |
 
