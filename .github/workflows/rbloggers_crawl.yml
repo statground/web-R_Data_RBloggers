@@ -44,7 +44,7 @@ jobs:
         run: |
           python scripts/update_repo_stats.py
 
-      # ✅ 여기서 "push 이후 HEAD sha"를 outputs로 뽑아둠
+      # ✅ push 이후 HEAD sha를 outputs로 꺼내서 webhook에 사용
       - name: Commit and Push changes
         id: commit_push
         run: |
@@ -53,7 +53,8 @@ jobs:
 
           git add by_created/
           git add RBLOGGERS_COUNTS.json RBLOGGERS_REPO_STATS.md
-          git add .action_result.json
+          # (선택) 디버깅/관측을 위해 남기고 싶으면 아래도 추가 가능
+          # git add .action_result.json
 
           if git diff --staged --quiet; then
             echo "No changes to commit."
@@ -72,7 +73,6 @@ jobs:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
 
-          # ✅ github.sha 대신 "push 이후 HEAD"
           GH_SHA: ${{ steps.commit_push.outputs.sha }}
           GH_REF_NAME: ${{ steps.commit_push.outputs.ref }}
           GH_REPO: ${{ steps.commit_push.outputs.repo }}
@@ -106,6 +106,6 @@ jobs:
           echo "Sending webhook to $WEBR_SYNC_URL..."
           curl --fail-with-body -sS -X POST \
                -H "Content-Type: application/json" \
-               -H "Authorization: Bearer $WEBR_SYNC_TOKEN" \
+               -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
                -d @payload.json \
                "$WEBR_SYNC_URL"
