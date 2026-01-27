@@ -1,16 +1,16 @@
-Updated: 2026-01-27T13:40:33Z
+Updated: 2026-01-24T05:18:15Z
 
 ## Summary
-- Total JSON files: **2,307**
-- Total size: **114.6 MB**
+- Total JSON files: **2,286**
+- Total size: **110.4 MB**
 - Last run new files: **0**
-- Last run finished: **2026-01-27T13:40:33Z**
+- Last run finished: **2026-01-24T05:18:15Z**
 
 ## Monthly breakdown (by_created/YYYY/MM)
 
 | Year-Month | Files | Size |
 |---:|---:|---:|
-| 2026-01 | 148 | 21.5 MB |
+| 2026-01 | 127 | 17.4 MB |
 | 2025-12 | 56 | 5.2 MB |
 | 2025-11 | 2,103 | 87.9 MB |
 

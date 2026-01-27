@@ -2,7 +2,7 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour
+    - cron: "0 * * * *"  # every hour
   workflow_dispatch:
 
 concurrency:
@@ -93,92 +93,13 @@ jobs:
             exit 0
           fi
 
-          if [ ! -f ".action_result.json" ]; then
-            echo ".action_result.json not found. Skip DB sync."
-            exit 0
+          if [ -f ".action_result.json" ]; then
+            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]); files=[f for f in files if isinstance(f,str) and f.endswith(".json")]; print(json.dumps(files, ensure_ascii=False))')"
+          else
+            FILES_JSON="[]"
           fi
 
-          # files 리스트를 안전하게 읽어서 bash 배열로 만든다
-          mapfile -t FILES < <(python - <<'PY'
-          import json
-          obj=json.load(open(".action_result.json","r",encoding="utf-8"))
-          files=obj.get("files",[]) or []
-          for f in files:
-            if isinstance(f,str) and f.endswith(".json"):
-              print(f)
-          PY
-          )
+          # Write payload.json safely (avoid YAML/heredoc quoting issues)
+          FILES_JSON="$FILES_JSON" python -c 'import json, os; payload={"sha":os.environ.get("GH_SHA",""),"ref":os.environ.get("GH_REF_NAME",""),"files":json.loads(os.environ.get("FILES_JSON","[]"))}; open("payload.json","w",encoding="utf-8").write(json.dumps(payload, ensure_ascii=False)); print("payload.json written. files =", len(payload["files"]))'
 
-          echo "DB sync target files: ${#FILES[@]}"
-          if [ "${#FILES[@]}" -eq 0 ]; then
-            echo "No new json files. Skip DB sync."
-            exit 0
-          fi
-
-          FAILS=0
-
-          for ONE_FILE in "${FILES[@]}"; do
-            echo "----"
-            echo "Syncing: ${ONE_FILE}"
-
-            python - <<PY
-          import json, os
-          payload = {
-            "sha": os.environ.get("GH_SHA",""),
-            "ref": os.environ.get("GH_REF_NAME",""),
-            "files": ["${ONE_FILE}"],
-          }
-          with open("payload.json","w",encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False)
-          print("payload.json written. files = 1")
-          PY
-
-            OK=0
-            for i in 1 2 3 4 5; do
-              set +e
-              HTTP_CODE="$(curl -sS -L -o /tmp/webr_sync_resp.txt -w "%{http_code}" \
-                -X POST "$WEBR_SYNC_URL" \
-                -H "Content-Type: application/json" \
-                -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
-                --data-binary @payload.json)"
-              CURL_EXIT=$?
-              set -e
-
-              echo "HTTP_STATUS:${HTTP_CODE} (curl_exit=${CURL_EXIT})"
-
-              # 성공(2xx)
-              if [ "${CURL_EXIT}" -eq 0 ] && [ "${HTTP_CODE}" -ge 200 ] && [ "${HTTP_CODE}" -lt 300 ]; then
-                OK=1
-                break
-              fi
-
-              # 재시도 대상
-              if [ "${HTTP_CODE}" = "504" ] || [ "${HTTP_CODE}" = "502" ] || [ "${HTTP_CODE}" = "503" ] || \
-                 [ "${HTTP_CODE}" = "500" ] || [ "${HTTP_CODE}" = "429" ] || [ "${HTTP_CODE}" = "408" ] || \
-                 [ "${CURL_EXIT}" -ne 0 ]; then
-                SLEEP_SEC=$(( i * 10 ))
-                echo "Retrying in ${SLEEP_SEC}s... (attempt ${i}/5)"
-                sleep "${SLEEP_SEC}"
-                continue
-              fi
-
-              # 그 외는 즉시 실패
-              echo "Non-retriable error. Response (first 2000 bytes):"
-              head -c 2000 /tmp/webr_sync_resp.txt || true
-              break
-            done
-
-            if [ "${OK}" -ne 1 ]; then
-              echo "FAILED: ${ONE_FILE}"
-              FAILS=$((FAILS+1))
-            else
-              echo "OK: ${ONE_FILE}"
-            fi
-          done
-
-          echo "DB sync failures: ${FAILS}"
-          if [ "${FAILS}" -ne 0 ]; then
-            exit 1
-          fi
-
-          echo "DB sync completed."
+          curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             --data-binary @payload.json             -w "\nHTTP_STATUS:%{http_code}\n"
