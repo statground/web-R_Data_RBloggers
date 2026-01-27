@@ -2,7 +2,7 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # every hour
   workflow_dispatch:
 
 concurrency:
@@ -58,7 +58,7 @@ jobs:
           set -euo pipefail
           python scripts/update_repo_stats.py
 
-      - name: Commit & push (json + stats) + compute changed files
+      - name: Commit & push (json + stats)
         id: commit_push
         shell: bash
         run: |
@@ -88,39 +88,34 @@ jobs:
           echo "ref_name=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
           echo "repo=${GITHUB_REPOSITORY}" >> "$GITHUB_OUTPUT"
 
-          # 1) prefer .action_result.json (if your crawler writes file list here)
+          # crawler가 만들어 둔 .action_result.json에서 new_files_relpaths / files 읽기
           FILES_JSON="[]"
           if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]) or obj.get("new_files_relpaths",[]) or []; files=[f for f in files if isinstance(f,str) and f.startswith("by_created/") and f.endswith(".json")]; import json as _j; print(_j.dumps(files, ensure_ascii=False))' || echo '[]')"
+            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("new_files_relpaths") or obj.get("files") or []; files=[f for f in files if isinstance(f,str) and f.startswith("by_created/") and f.endswith(".json")]; import json as _j; print(_j.dumps(files, ensure_ascii=False))' || echo '[]')"
           fi
 
-          # 2) fallback to git diff (only if committed AND action_result empty)
-          if [ "$COMMITTED" = "1" ]; then
-            if [ "$FILES_JSON" = "[]" ]; then
-              FILES_JSON="$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" -- 'by_created/**/*.json' | python -c 'import sys,json; files=[l.strip() for l in sys.stdin if l.strip()]; print(json.dumps(files, ensure_ascii=False))')"
-            fi
+          # action_result가 비어있는데(commit이 있었던 경우)에만 diff fallback
+          if [ "$COMMITTED" = "1" ] && [ "$FILES_JSON" = "[]" ]; then
+            FILES_JSON="$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" -- 'by_created/**/*.json' \
+              | python -c 'import sys,json; files=[l.strip() for l in sys.stdin if l.strip()]; print(json.dumps(files, ensure_ascii=False))')"
           fi
 
-          # output files_json (multiline-safe)
           echo "files_json<<EOF" >> "$GITHUB_OUTPUT"
           echo "$FILES_JSON" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
 
-          echo "changed_files_count=$(python -c 'import json; import sys; print(len(json.loads(sys.argv[1])))' "$FILES_JSON")"
-
-      - name: Sync JSON files to Web-R DB (skip if none)
+      - name: Sync new JSON files to DB (skip if none)
         shell: bash
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
 
-          GH_SHA: ${{ steps.commit_push.outputs.after_sha }}
-          GH_REF_NAME: ${{ steps.commit_push.outputs.ref_name }}
-          GH_REPO: ${{ steps.commit_push.outputs.repo }}
-
+          REPO: ${{ steps.commit_push.outputs.repo }}
+          SHA:  ${{ steps.commit_push.outputs.after_sha }}
+          REF:  ${{ steps.commit_push.outputs.ref_name }}
           FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
 
-          # 504 회피용: 배치 크기 (필요시 5로 낮추기)
+          # 504 회피용 배치(필요하면 5로 낮추기)
           WEBR_SYNC_BATCH: "10"
         run: |
           set -euo pipefail
@@ -133,6 +128,7 @@ jobs:
           FILES_COUNT="$(python -c 'import os,json; print(len(json.loads(os.environ.get("FILES_JSON","[]"))))')"
           echo "files_count=${FILES_COUNT}"
 
+          # ✅ 핵심: 파일이 없으면 webhook 호출 자체를 하지 않는다 (504 원천 차단)
           if [ "${FILES_COUNT}" = "0" ]; then
             echo "No files to sync. Skip webhook."
             exit 0
@@ -142,48 +138,48 @@ jobs:
           import os, json, math, subprocess, tempfile, time
 
           def post_with_retry(cmd, retries=3):
-            for attempt in range(1, retries+1):
-              try:
-                subprocess.check_call(cmd)
-                return
-              except subprocess.CalledProcessError:
-                if attempt == retries:
-                  raise
-                wait = 10 * attempt
-                print(f"curl failed (attempt {attempt}/{retries}). retry in {wait}s")
-                time.sleep(wait)
+              for attempt in range(1, retries+1):
+                  try:
+                      subprocess.check_call(cmd)
+                      return
+                  except subprocess.CalledProcessError:
+                      if attempt == retries:
+                          raise
+                      wait = 10 * attempt
+                      print(f"curl failed (attempt {attempt}/{retries}). retry in {wait}s")
+                      time.sleep(wait)
 
-          files = json.loads(os.environ["FILES_JSON"])
+          url   = os.environ["WEBR_SYNC_URL"]
+          token = os.environ["WEBR_SYNC_TOKEN"]
+          repo  = os.environ.get("REPO","")
+          sha   = os.environ.get("SHA","")
+          ref   = os.environ.get("REF","")
+
+          files = json.loads(os.environ.get("FILES_JSON","[]"))
           batch = int(os.environ.get("WEBR_SYNC_BATCH","10") or "10")
           if batch <= 0:
-            batch = 10
-
-          payload_base = {
-            "repo": os.environ.get("GH_REPO",""),
-            "sha": os.environ.get("GH_SHA",""),
-            "ref": os.environ.get("GH_REF_NAME",""),
-          }
-
-          url = os.environ["WEBR_SYNC_URL"]
-          token = os.environ["WEBR_SYNC_TOKEN"]
+              batch = 10
 
           total = math.ceil(len(files)/batch)
+
           for idx, i in enumerate(range(0, len(files), batch), start=1):
-            part = files[i:i+batch]
-            payload = dict(payload_base)
-            payload["files"] = part
+              part = files[i:i+batch]
+              payload = {"repo": repo, "sha": sha, "ref": ref, "files": part}
 
-            with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
-              json.dump(payload, f, ensure_ascii=False)
-              path = f.name
+              with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
+                  json.dump(payload, f, ensure_ascii=False)
+                  path = f.name
 
-            print(f"batch {idx}/{total} size={len(part)}")
-            cmd = [
-              "curl","--fail-with-body","-sS","-L","-X","POST", url,
-              "-H","Content-Type: application/json",
-              "-H",f"X-WEBR-SYNC-TOKEN: {token}",
-              "--data-binary",f"@{path}",
-            ]
-            post_with_retry(cmd, retries=3)
-            time.sleep(1)
+              print(f"batch {idx}/{total} size={len(part)}")
+
+              cmd = [
+                  "curl", "--fail-with-body", "-sS", "-L", "-X", "POST", url,
+                  "-H", "Content-Type: application/json",
+                  "-H", f"X-WEBR-SYNC-TOKEN: {token}",
+                  "--data-binary", f"@{path}"
+              ]
+              post_with_retry(cmd, retries=3)
+
+              # 서버 부담 완화
+              time.sleep(1)
           PY
