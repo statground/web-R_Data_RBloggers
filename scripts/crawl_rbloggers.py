@@ -330,16 +330,8 @@ def main():
     with open(os.path.join(repo_root, ".action_result.json"), "w", encoding="utf-8") as f:
         json.dump(
             {
-                # crawler original keys (backward compatible)
                 "new_files": new_count,
                 "files": new_files_relpaths,
-
-                # scripts/update_repo_stats.py expects these keys
-                "status": "Success",
-                "new_count": new_count,
-
-                # workflow(webhook step) expects this key
-                "new_files_relpaths": new_files_relpaths,
             },
             f,
             ensure_ascii=False,

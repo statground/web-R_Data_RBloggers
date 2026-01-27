@@ -1,139 +1,218 @@
-import os
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Generate / update repository stats for R-Bloggers crawler output.
+
+Key ideas
+- Primary source of truth: by_created/YYYY/MM/*.json
+- Incremental updates: use .action_result.json (list of newly written files) when available
+- One-time init: if RBLOGGERS_COUNTS.json missing/empty, do a full scan of by_created/
+
+Outputs
+- RBLOGGERS_COUNTS.json : incremental counters (month -> files/bytes)
+- RBLOGGERS_REPO_STATS.md : human readable markdown report (ALL months)
+"""
+
+from __future__ import annotations
+
 import json
-from datetime import datetime
+import os
+from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import Dict, List, Tuple
 
-# 현재 스크립트 위치(scripts/)의 상위 폴더(루트)를 기준으로 경로 설정
-CURRENT_DIR = Path(__file__).resolve().parent
-ROOT_DIR = CURRENT_DIR.parent
 
-DATA_DIR = ROOT_DIR / 'by_created'
-COUNTS_FILE = ROOT_DIR / 'RBLOGGERS_COUNTS.json'
-STATS_FILE = ROOT_DIR / 'RBLOGGERS_REPO_STATS.md'
-ACTION_RESULT_FILE = ROOT_DIR / '.action_result.json'
+ROOT = Path(".")
+BY_CREATED = ROOT / "by_created"
+COUNTS_JSON = ROOT / "RBLOGGERS_COUNTS.json"
+REPORT_MD = ROOT / "RBLOGGERS_REPO_STATS.md"
+ACTION_RESULT = ROOT / ".action_result.json"
 
-def scan_repository():
+
+@dataclass
+class MonthStat:
+    files: int = 0
+    bytes: int = 0
+
+
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def human_bytes(n: int) -> str:
+    if n < 1024:
+        return f"{n} B"
+    units = ["KB", "MB", "GB", "TB"]
+    x = float(n)
+    for u in units:
+        x /= 1024.0
+        if x < 1024.0:
+            return f"{x:.1f} {u}"
+    return f"{x:.1f} PB"
+
+
+def month_key_from_path(p: Path) -> str | None:
     """
-    by_created 디렉토리 전체를 스캔하여 연/월별 통계를 생성합니다.
-    (기존 값을 믿지 않고 매번 새로 셉니다 -> 오류 가능성 0%)
+    Expected: by_created/YYYY/MM/<anything>.json
+    Returns: 'YYYY-MM'
     """
-    stats = {}
-    total_files = 0
-    total_bytes = 0
-    
-    if not DATA_DIR.exists():
-        print(f"Warning: {DATA_DIR} does not exist.")
-        return stats, 0, 0
+    try:
+        rel = p.relative_to(BY_CREATED)
+    except Exception:
+        return None
+    parts = rel.parts
+    if len(parts) < 3:
+        return None
+    yyyy, mm = parts[0], parts[1]
+    if not (yyyy.isdigit() and len(yyyy) == 4 and mm.isdigit() and len(mm) == 2):
+        return None
+    return f"{yyyy}-{mm}"
 
-    # 연도(YYYY) 디렉토리 순회
-    for year_path in sorted(DATA_DIR.iterdir()):
-        if not year_path.is_dir() or not year_path.name.isdigit():
-            continue
-        
-        year = year_path.name
-        
-        # 월(MM) 디렉토리 순회
-        for month_path in sorted(year_path.iterdir()):
-            if not month_path.is_dir() or not month_path.name.isdigit():
+
+def load_counts() -> Dict[str, MonthStat]:
+    if not COUNTS_JSON.exists():
+        return {}
+    try:
+        obj = json.loads(COUNTS_JSON.read_text(encoding="utf-8"))
+        months = obj.get("months", {}) if isinstance(obj, dict) else {}
+        out: Dict[str, MonthStat] = {}
+        for k, v in months.items():
+            if not isinstance(v, dict):
                 continue
-                
-            month = month_path.name
-            key = f"{year}-{month}"
-            
-            # 해당 월의 .json 파일 전수 조사
-            files = list(month_path.glob("*.json"))
-            count = len(files)
-            size = sum(f.stat().st_size for f in files)
-            
-            if count > 0:
-                stats[key] = {"files": count, "bytes": size}
-                total_files += count
-                total_bytes += size
+            out[k] = MonthStat(files=int(v.get("files", 0)), bytes=int(v.get("bytes", 0)))
+        return out
+    except Exception:
+        return {}
 
-    return stats, total_files, total_bytes
 
-def load_last_run_info():
-    """크롤러(crawl_rbloggers.py)가 생성한 임시 결과 파일에서 최근 실행 정보를 읽어옵니다."""
-    info = {"status": "Unknown", "new_count": 0}
-    if ACTION_RESULT_FILE.exists():
-        try:
-            with open(ACTION_RESULT_FILE, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-
-                # status 호환
-                info["status"] = data.get(
-                    "status",
-                    "Success" if data.get("new_files", None) is not None else "Unknown"
-                )
-
-                # new_count 호환: new_count 우선, 없으면 new_files 사용
-                if "new_count" in data:
-                    info["new_count"] = data.get("new_count", 0)
-                else:
-                    info["new_count"] = data.get("new_files", 0)
-
-        except Exception as e:
-            print(f"Error reading action result: {e}")
-    return info
-
-def update_stats_files(monthly_stats, total_files, total_bytes, last_run_info):
-    """JSON 및 MD 파일을 갱신합니다."""
-    
-    # 1. RBLOGGERS_COUNTS.json 업데이트
-    sorted_keys = sorted(monthly_stats.keys(), reverse=True) # 최신 월이 위로
-    sorted_stats = {k: monthly_stats[k] for k in sorted_keys}
-    
-    output_json = {
-        "meta": {
-            "total_posts": total_files,
-            "total_bytes": total_bytes,
-            "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S KST"),
-            "last_crawl_status": last_run_info["status"],
-            "last_crawl_new_files": last_run_info["new_count"]
-        },
-        "monthly_counts": sorted_stats
+def save_counts(months: Dict[str, MonthStat], meta: dict) -> None:
+    payload = {
+        "meta": meta,
+        "months": {k: {"files": v.files, "bytes": v.bytes} for k, v in months.items()},
     }
-    
-    with open(COUNTS_FILE, 'w', encoding='utf-8') as f:
-        json.dump(output_json, f, indent=2)
-    print(f"✅ Updated {COUNTS_FILE}")
+    COUNTS_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 2. RBLOGGERS_REPO_STATS.md 업데이트
-    mb_size = total_bytes / (1024 * 1024)
-    
-    md_content = [
-        "# R-bloggers Data Repository Statistics",
-        "",
-        "## 📊 Repository Status",
-        f"- **Total Archived Posts:** {total_files:,}",
-        f"- **Total Data Size:** {mb_size:.2f} MB",
-        f"- **Last Updated:** {output_json['meta']['last_updated']}",
-        "",
-        "## 🔄 Last Crawl Info",
-        f"- **Status:** {last_run_info['status']}",
-        f"- **New Posts Added:** {last_run_info['new_count']}",
-        "",
-        "## 📅 Monthly Archive History",
-        "| Month | Posts | Size (KB) |",
-        "| :--- | :---: | :---: |"
-    ]
-    
-    for key in sorted_keys:
-        data = monthly_stats[key]
-        kb_size = data['bytes'] / 1024
-        md_content.append(f"| **{key}** | {data['files']:,} | {kb_size:,.1f} KB |")
-    
-    md_content.append("")
-    md_content.append("---")
-    md_content.append(f"\n*This report is automatically generated by Statground Platform.*")
 
-    with open(STATS_FILE, 'w', encoding='utf-8') as f:
-        f.write("\n".join(md_content))
-    print(f"✅ Updated {STATS_FILE}")
+def scan_all_by_created() -> Dict[str, MonthStat]:
+    months: Dict[str, MonthStat] = {}
+    if not BY_CREATED.exists():
+        return months
+    for p in BY_CREATED.rglob("*.json"):
+        mk = month_key_from_path(p)
+        if mk is None:
+            continue
+        st = months.setdefault(mk, MonthStat())
+        st.files += 1
+        try:
+            st.bytes += p.stat().st_size
+        except FileNotFoundError:
+            pass
+    return months
+
+
+def load_action_new_files() -> List[str]:
+    if not ACTION_RESULT.exists():
+        return []
+    try:
+        obj = json.loads(ACTION_RESULT.read_text(encoding="utf-8"))
+        files = obj.get("files", [])
+        if not isinstance(files, list):
+            return []
+        files = [f for f in files if isinstance(f, str) and f.endswith(".json")]
+        return files
+    except Exception:
+        return []
+
+
+def apply_incremental(months: Dict[str, MonthStat], new_files: List[str]) -> Tuple[int, int]:
+    """
+    new_files: relative paths (strings) returned by crawler in .action_result.json
+    Returns: (added_files_count, added_bytes)
+    """
+    added_files = 0
+    added_bytes = 0
+    for f in new_files:
+        p = ROOT / f
+        if not p.exists():
+            continue
+        mk = month_key_from_path(p)
+        if mk is None:
+            continue
+        st = months.setdefault(mk, MonthStat())
+        st.files += 1
+        try:
+            b = p.stat().st_size
+        except FileNotFoundError:
+            b = 0
+        st.bytes += b
+        added_files += 1
+        added_bytes += b
+    return added_files, added_bytes
+
+
+def render_markdown(months: Dict[str, MonthStat], last_run_new: int, last_run_finished: str) -> str:
+    # totals
+    total_files = sum(v.files for v in months.values())
+    total_bytes = sum(v.bytes for v in months.values())
+
+    # sort months descending
+    month_items = sorted(months.items(), key=lambda kv: kv[0], reverse=True)
+
+    lines: List[str] = []
+    lines.append(f"Updated: {utc_now_iso()}")
+    lines.append("")
+    lines.append("## Summary")
+    lines.append(f"- Total JSON files: **{total_files:,}**")
+    lines.append(f"- Total size: **{human_bytes(total_bytes)}**")
+    lines.append(f"- Last run new files: **{last_run_new:,}**")
+    lines.append(f"- Last run finished: **{last_run_finished}**")
+    lines.append("")
+    lines.append("## Monthly breakdown (by_created/YYYY/MM)")
+    lines.append("")
+    lines.append("| Year-Month | Files | Size |")
+    lines.append("|---:|---:|---:|")
+    for mk, st in month_items:
+        lines.append(f"| {mk} | {st.files:,} | {human_bytes(st.bytes)} |")
+    lines.append("")
+    lines.append("## Notes")
+    lines.append("- This report is generated by `scripts/update_repo_stats.py`.")
+    lines.append("- Counts are maintained incrementally in `RBLOGGERS_COUNTS.json` using `.action_result.json` from the crawler.")
+    lines.append("- If counts are empty/missing, a one-time full scan of `by_created/` is performed to initialize totals.")
+    lines.append("- Only metadata files are written (`RBLOGGERS_REPO_STATS.md`, `RBLOGGERS_COUNTS.json`); DB sync remains driven by JSON files under `by_created/`.")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def main() -> None:
+    months = load_counts()
+    new_files = load_action_new_files()
+
+    # One-time init: if empty counts but data exists in by_created, full scan.
+    if not months:
+        # if by_created has any json, scan
+        has_any = BY_CREATED.exists() and any(BY_CREATED.rglob("*.json"))
+        if has_any:
+            months = scan_all_by_created()
+
+    # Apply incremental for this run (so report shows last run new files)
+    added_files, _added_bytes = apply_incremental(months, new_files)
+
+    meta = {
+        "updated_at": utc_now_iso(),
+        "last_run_finished": utc_now_iso(),
+        "last_run_new_files": added_files,
+        "source": "by_created + .action_result.json",
+    }
+    save_counts(months, meta)
+
+    report = render_markdown(
+        months=months,
+        last_run_new=added_files,
+        last_run_finished=meta["last_run_finished"],
+    )
+    REPORT_MD.write_text(report, encoding="utf-8")
+
 
 if __name__ == "__main__":
-    print("--- Starting Repository Stats Update (Full Scan) ---")
-    monthly_stats, total_files, total_bytes = scan_repository()
-    last_run = load_last_run_info()
-    update_stats_files(monthly_stats, total_files, total_bytes, last_run)
-    print("--- Update Finished ---")
+    main()
