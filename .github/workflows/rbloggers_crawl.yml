@@ -58,7 +58,7 @@ jobs:
           set -euo pipefail
           python scripts/update_repo_stats.py
 
-      - name: Commit & push (json + stats)
+      - name: Commit & push (json + stats) + compute changed files
         id: commit_push
         shell: bash
         run: |
@@ -86,57 +86,41 @@ jobs:
           echo "before_sha=${BEFORE_SHA}" >> "$GITHUB_OUTPUT"
           echo "after_sha=${AFTER_SHA}" >> "$GITHUB_OUTPUT"
           echo "ref_name=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          echo "repo=${GITHUB_REPOSITORY}" >> "$GITHUB_OUTPUT"
 
-          # files list: prefer .action_result.json; fallback to git diff by_created json
+          # 1) prefer .action_result.json (if your crawler writes file list here)
+          FILES_JSON="[]"
           if [ -f ".action_result.json" ]; then
-            python - <<'PY'
-import json
-obj=json.load(open(".action_result.json","r",encoding="utf-8"))
-files=obj.get("files",[])
-files=[f for f in files if isinstance(f,str) and f.startswith("by_created/") and f.endswith(".json")]
-open("/tmp/files.json","w",encoding="utf-8").write(json.dumps(files, ensure_ascii=False))
-print("files_from_action_result:", len(files))
-PY
-          else
-            : > /tmp/files.json
+            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]) or obj.get("new_files_relpaths",[]) or []; files=[f for f in files if isinstance(f,str) and f.startswith("by_created/") and f.endswith(".json")]; import json as _j; print(_j.dumps(files, ensure_ascii=False))' || echo '[]')"
           fi
 
-          # if action_result empty, use diff between BEFORE and AFTER (only if committed)
-          python - <<'PY'
-import json, os, subprocess
+          # 2) fallback to git diff (only if committed AND action_result empty)
+          if [ "$COMMITTED" = "1" ]; then
+            if [ "$FILES_JSON" = "[]" ]; then
+              FILES_JSON="$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" -- 'by_created/**/*.json' | python -c 'import sys,json; files=[l.strip() for l in sys.stdin if l.strip()]; print(json.dumps(files, ensure_ascii=False))')"
+            fi
+          fi
 
-committed = os.environ.get("COMMITTED","0") == "1"
-before_sha = os.environ.get("BEFORE_SHA","")
-after_sha = os.environ.get("AFTER_SHA","")
+          # output files_json (multiline-safe)
+          echo "files_json<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$FILES_JSON" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
-files=[]
-try:
-  files=json.load(open("/tmp/files.json","r",encoding="utf-8"))
-except Exception:
-  files=[]
+          echo "changed_files_count=$(python -c 'import json; import sys; print(len(json.loads(sys.argv[1])))' "$FILES_JSON")"
 
-if (not files) and committed:
-  out = subprocess.check_output(
-    ["git","diff","--name-only",before_sha,after_sha,"--","by_created/**/*.json"],
-    text=True
-  )
-  files=[p.strip() for p in out.splitlines() if p.strip()]
-
-open("/tmp/files.json","w",encoding="utf-8").write(json.dumps(files, ensure_ascii=False))
-print("final_files:", len(files))
-PY
-        env:
-          BEFORE_SHA: ${{ github.sha }}
-          COMMITTED: ${{ steps.commit_push.outputs.committed }}
-          AFTER_SHA: ${{ steps.commit_push.outputs.after_sha }}
-
-      - name: Sync new JSON files to DB (skip if none)
+      - name: Sync JSON files to Web-R DB (skip if none)
         shell: bash
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
+
           GH_SHA: ${{ steps.commit_push.outputs.after_sha }}
           GH_REF_NAME: ${{ steps.commit_push.outputs.ref_name }}
+          GH_REPO: ${{ steps.commit_push.outputs.repo }}
+
+          FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
+
+          # 504 회피용: 배치 크기 (필요시 5로 낮추기)
           WEBR_SYNC_BATCH: "10"
         run: |
           set -euo pipefail
@@ -146,55 +130,60 @@ PY
             exit 0
           fi
 
-          FILES_JSON="$(cat /tmp/files.json || echo '[]')"
-          FILES_COUNT="$(python -c "import json; print(len(json.loads('''$FILES_JSON''')))")"
-          echo "files_count=$FILES_COUNT"
+          FILES_COUNT="$(python -c 'import os,json; print(len(json.loads(os.environ.get("FILES_JSON","[]"))))')"
+          echo "files_count=${FILES_COUNT}"
 
-          if [ "$FILES_COUNT" -eq 0 ]; then
+          if [ "${FILES_COUNT}" = "0" ]; then
             echo "No files to sync. Skip webhook."
             exit 0
           fi
 
-          # batched POST to avoid 504
           python - <<'PY'
-import os, json, math, subprocess, tempfile, time
+          import os, json, math, subprocess, tempfile, time
 
-def post_with_retry(cmd, retries=3):
-  for attempt in range(1, retries+1):
-    try:
-      subprocess.check_call(cmd)
-      return
-    except subprocess.CalledProcessError:
-      if attempt == retries:
-        raise
-      wait = 10 * attempt
-      print(f"curl failed (attempt {attempt}/{retries}). retry in {wait}s")
-      time.sleep(wait)
+          def post_with_retry(cmd, retries=3):
+            for attempt in range(1, retries+1):
+              try:
+                subprocess.check_call(cmd)
+                return
+              except subprocess.CalledProcessError:
+                if attempt == retries:
+                  raise
+                wait = 10 * attempt
+                print(f"curl failed (attempt {attempt}/{retries}). retry in {wait}s")
+                time.sleep(wait)
 
-files = json.loads(os.environ["FILES_JSON"])
-batch = int(os.environ.get("WEBR_SYNC_BATCH","10"))
-repo = os.environ.get("GITHUB_REPOSITORY","")
-sha  = os.environ.get("GH_SHA","")
-ref  = os.environ.get("GH_REF_NAME","")
-url  = os.environ["WEBR_SYNC_URL"]
-token= os.environ["WEBR_SYNC_TOKEN"]
+          files = json.loads(os.environ["FILES_JSON"])
+          batch = int(os.environ.get("WEBR_SYNC_BATCH","10") or "10")
+          if batch <= 0:
+            batch = 10
 
-total = math.ceil(len(files)/batch)
-for idx, i in enumerate(range(0, len(files), batch), start=1):
-  part = files[i:i+batch]
-  payload = {"repo": repo, "sha": sha, "ref": ref, "files": part}
-  with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
-    json.dump(payload, f, ensure_ascii=False)
-    path=f.name
-  print(f"batch {idx}/{total} size={len(part)}")
-  cmd = [
-    "curl","--fail-with-body","-sS","-L","-X","POST",url,
-    "-H","Content-Type: application/json",
-    "-H",f"X-WEBR-SYNC-TOKEN: {token}",
-    "--data-binary",f"@{path}"
-  ]
-  post_with_retry(cmd, retries=3)
-  time.sleep(1)
-PY
-        env:
-          FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
+          payload_base = {
+            "repo": os.environ.get("GH_REPO",""),
+            "sha": os.environ.get("GH_SHA",""),
+            "ref": os.environ.get("GH_REF_NAME",""),
+          }
+
+          url = os.environ["WEBR_SYNC_URL"]
+          token = os.environ["WEBR_SYNC_TOKEN"]
+
+          total = math.ceil(len(files)/batch)
+          for idx, i in enumerate(range(0, len(files), batch), start=1):
+            part = files[i:i+batch]
+            payload = dict(payload_base)
+            payload["files"] = part
+
+            with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
+              json.dump(payload, f, ensure_ascii=False)
+              path = f.name
+
+            print(f"batch {idx}/{total} size={len(part)}")
+            cmd = [
+              "curl","--fail-with-body","-sS","-L","-X","POST", url,
+              "-H","Content-Type: application/json",
+              "-H",f"X-WEBR-SYNC-TOKEN: {token}",
+              "--data-binary",f"@{path}",
+            ]
+            post_with_retry(cmd, retries=3)
+            time.sleep(1)
+          PY
