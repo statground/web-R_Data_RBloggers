@@ -93,13 +93,88 @@ jobs:
             exit 0
           fi
 
-          if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]); files=[f for f in files if isinstance(f,str) and f.endswith(".json")]; print(json.dumps(files, ensure_ascii=False))')"
-          else
-            FILES_JSON="[]"
+          if [ ! -f ".action_result.json" ]; then
+            echo ".action_result.json not found. Skip DB sync."
+            exit 0
           fi
 
-          # Write payload.json safely (avoid YAML/heredoc quoting issues)
-          FILES_JSON="$FILES_JSON" python -c 'import json, os; payload={"sha":os.environ.get("GH_SHA",""),"ref":os.environ.get("GH_REF_NAME",""),"files":json.loads(os.environ.get("FILES_JSON","[]"))}; open("payload.json","w",encoding="utf-8").write(json.dumps(payload, ensure_ascii=False)); print("payload.json written. files =", len(payload["files"]))'
+          # JSON 파일 리스트 읽기
+          FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]); files=[f for f in files if isinstance(f,str) and f.endswith(".json")]; print(json.dumps(files, ensure_ascii=False))')"
+          FILES_COUNT="$(python -c 'import os, json; files=json.loads(os.environ["FILES_JSON"]); print(len(files))' )"
 
-          curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             --data-binary @payload.json             -w "\nHTTP_STATUS:%{http_code}\n"
+          echo "DB sync target files: ${FILES_COUNT}"
+
+          if [ "${FILES_COUNT}" -eq 0 ]; then
+            echo "No new json files. Skip DB sync."
+            exit 0
+          fi
+
+          # 파일 1개씩 전송 + 504/502/503/429 재시도(백오프)
+          FAILS=0
+          python - <<'PY'
+          import os, json
+          files=json.loads(os.environ["FILES_JSON"])
+          for f in files:
+            print(f)
+          PY
+          | while IFS= read -r ONE_FILE; do
+              echo "----"
+              echo "Syncing: ${ONE_FILE}"
+
+              # payload.json 생성 (파일 1개만)
+              ONE_FILE_JSON="$(python -c 'import json, os; print(json.dumps([os.environ["ONE_FILE"]], ensure_ascii=False))' )"
+              ONE_FILE="${ONE_FILE}" ONE_FILE_JSON="${ONE_FILE_JSON}" python -c 'import json, os; payload={"sha":os.environ.get("GH_SHA",""),"ref":os.environ.get("GH_REF_NAME",""),"files":json.loads(os.environ.get("ONE_FILE_JSON","[]"))}; open("payload.json","w",encoding="utf-8").write(json.dumps(payload, ensure_ascii=False)); print("payload.json written. files =", len(payload["files"]))'
+
+              OK=0
+              for i in 1 2 3 4 5; do
+                set +e
+                HTTP_CODE="$(curl -sS -L -o /tmp/webr_sync_resp.txt -w "%{http_code}" \
+                  -X POST "$WEBR_SYNC_URL" \
+                  -H "Content-Type: application/json" \
+                  -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
+                  --data-binary @payload.json)"
+                CURL_EXIT=$?
+                set -e
+
+                echo "HTTP_STATUS:${HTTP_CODE} (curl_exit=${CURL_EXIT})"
+
+                # 성공(2xx)
+                if [ "${CURL_EXIT}" -eq 0 ] && [ "${HTTP_CODE}" -ge 200 ] && [ "${HTTP_CODE}" -lt 300 ]; then
+                  OK=1
+                  break
+                fi
+
+                # 재시도 대상 코드(게이트웨이/레이트리밋/일시적 오류)
+                if [ "${HTTP_CODE}" = "504" ] || [ "${HTTP_CODE}" = "502" ] || [ "${HTTP_CODE}" = "503" ] || [ "${HTTP_CODE}" = "500" ] || [ "${HTTP_CODE}" = "429" ] || [ "${HTTP_CODE}" = "408" ] || [ "${CURL_EXIT}" -ne 0 ]; then
+                  SLEEP_SEC=$(( i * 10 ))
+                  echo "Retrying in ${SLEEP_SEC}s... (attempt ${i}/5)"
+                  sleep "${SLEEP_SEC}"
+                  continue
+                fi
+
+                # 그 외(예: 401/403/404 등)는 즉시 실패
+                echo "Non-retriable error. Response:"
+                head -c 2000 /tmp/webr_sync_resp.txt || true
+                break
+              done
+
+              if [ "${OK}" -ne 1 ]; then
+                echo "FAILED: ${ONE_FILE}"
+                FAILS=$((FAILS+1))
+              else
+                echo "OK: ${ONE_FILE}"
+              fi
+
+              # 루프에서 FAILS를 유지하기 위해 파일로 누적
+              echo "${FAILS}" > /tmp/webr_sync_fails.txt
+            done
+
+          FINAL_FAILS="$(cat /tmp/webr_sync_fails.txt 2>/dev/null || echo 0)"
+          echo "DB sync failures: ${FINAL_FAILS}"
+
+          if [ "${FINAL_FAILS}" -ne 0 ]; then
+            echo "DB sync failed for ${FINAL_FAILS} file(s)."
+            exit 1
+          fi
+
+          echo "DB sync completed."
