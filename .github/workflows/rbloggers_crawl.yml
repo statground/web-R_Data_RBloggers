@@ -68,6 +68,7 @@ jobs:
           fi
 
       # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook)
+      # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook)
       - name: Trigger Web-R Sync
         if: always()
         env:
@@ -80,12 +81,16 @@ jobs:
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
             exit 0
           fi
-          
+
           if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("new_files_relpaths",[]); print(json.dumps(files, ensure_ascii=False))')"
+            # crawl_rbloggers.py가 쓰는 keys(files) 또는 workflow용 keys(new_files_relpaths) 모두 지원
+            FILES_JSON="$(python -c 'import json; d=json.load(open(".action_result.json","r",encoding="utf-8")); k = "new_files_relpaths" if "new_files_relpaths" in d else "files"; print(json.dumps(d.get(k, []), ensure_ascii=False))')"
           else
             FILES_JSON="[]"
           fi
+
+          # 중요: python에서 env로 읽을 수 있게 export
+          export FILES_JSON
 
           python -c "
           import json, os
@@ -95,11 +100,13 @@ jobs:
             'files': json.loads(os.environ.get('FILES_JSON','[]'))
           }
           with open('payload.json','w',encoding='utf-8') as f:
-            json.dump(payload, f)
+            json.dump(payload, f, ensure_ascii=False)
+          print('payload:', payload)
           "
 
           echo "Sending webhook to $WEBR_SYNC_URL..."
-          curl -X POST -H "Content-Type: application/json" \
+          curl --fail-with-body -sS -X POST \
+               -H "Content-Type: application/json" \
                -H "Authorization: Bearer $WEBR_SYNC_TOKEN" \
                -d @payload.json \
                "$WEBR_SYNC_URL"

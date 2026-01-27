@@ -59,9 +59,19 @@ def load_last_run_info():
         try:
             with open(ACTION_RESULT_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                info["status"] = data.get("status", "Unknown")
-                # 크롤러가 기록한 new_count를 가져오거나, 없으면 0
-                info["new_count"] = data.get("new_count", 0) 
+
+                # status 호환
+                info["status"] = data.get(
+                    "status",
+                    "Success" if data.get("new_files", None) is not None else "Unknown"
+                )
+
+                # new_count 호환: new_count 우선, 없으면 new_files 사용
+                if "new_count" in data:
+                    info["new_count"] = data.get("new_count", 0)
+                else:
+                    info["new_count"] = data.get("new_files", 0)
+
         except Exception as e:
             print(f"Error reading action result: {e}")
     return info
