@@ -2,8 +2,8 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"  # 매 시간 실행
-  workflow_dispatch:      # 수동 실행 버튼
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
 concurrency:
   group: rbloggers-crawl-main
@@ -33,33 +33,28 @@ jobs:
           if [ -f scripts/requirements.txt ]; then
             pip install -r scripts/requirements.txt
           else
-            # 여기에 lxml을 추가했습니다.
             pip install requests beautifulsoup4 lxml
           fi
 
-      # 1. 크롤링 수행
       - name: Crawl R-Bloggers
-        env:
-          GH_SHA: ${{ github.sha }}
-          GH_REF_NAME: ${{ github.ref_name }}
         run: |
           python scripts/crawl_rbloggers.py
 
-      # 2. 통계 파일 강제 갱신 (전수 조사)
       - name: Update Repository Stats
         run: |
           python scripts/update_repo_stats.py
 
-      # 3. 변경 사항 커밋 및 푸시
+      # ✅ 여기서 "push 이후 HEAD sha"를 outputs로 뽑아둠
       - name: Commit and Push changes
+        id: commit_push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # 데이터 폴더와 통계 파일 명시적 추가
+
           git add by_created/
           git add RBLOGGERS_COUNTS.json RBLOGGERS_REPO_STATS.md
-          
+          git add .action_result.json
+
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
@@ -67,15 +62,20 @@ jobs:
             git push
           fi
 
-      # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook)
-      # 4. Web-R 플랫폼 등으로 데이터 싱크 (Webhook)
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "ref=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          echo "repo=${GITHUB_REPOSITORY}" >> "$GITHUB_OUTPUT"
+
       - name: Trigger Web-R Sync
         if: always()
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
-          GH_SHA: ${{ github.sha }}
-          GH_REF_NAME: ${{ github.ref_name }}
+
+          # ✅ github.sha 대신 "push 이후 HEAD"
+          GH_SHA: ${{ steps.commit_push.outputs.sha }}
+          GH_REF_NAME: ${{ steps.commit_push.outputs.ref }}
+          GH_REPO: ${{ steps.commit_push.outputs.repo }}
         run: |
           if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
@@ -83,18 +83,17 @@ jobs:
           fi
 
           if [ -f ".action_result.json" ]; then
-            # crawl_rbloggers.py가 쓰는 keys(files) 또는 workflow용 keys(new_files_relpaths) 모두 지원
             FILES_JSON="$(python -c 'import json; d=json.load(open(".action_result.json","r",encoding="utf-8")); k = "new_files_relpaths" if "new_files_relpaths" in d else "files"; print(json.dumps(d.get(k, []), ensure_ascii=False))')"
           else
             FILES_JSON="[]"
           fi
 
-          # 중요: python에서 env로 읽을 수 있게 export
           export FILES_JSON
 
           python -c "
           import json, os
           payload = {
+            'repo': os.environ.get('GH_REPO',''),
             'sha': os.environ.get('GH_SHA',''),
             'ref': os.environ.get('GH_REF_NAME',''),
             'files': json.loads(os.environ.get('FILES_JSON','[]'))
