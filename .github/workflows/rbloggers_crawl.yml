@@ -2,7 +2,7 @@ name: Crawl R-Bloggers (hourly)
 
 on:
   schedule:
-    - cron: "0 * * * *"  # every hour
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -48,9 +48,6 @@ jobs:
 
       - name: Crawl R-Bloggers -> by_created
         shell: bash
-        env:
-          GH_SHA: ${{ github.sha }}
-          GH_REF_NAME: ${{ github.ref_name }}
         run: |
           set -euo pipefail
           python scripts/crawl_rbloggers.py
@@ -62,29 +59,85 @@ jobs:
           python scripts/update_repo_stats.py
 
       - name: Commit & push (json + stats)
+        id: commit_push
         shell: bash
         run: |
           set -euo pipefail
+
+          BEFORE_SHA="${GITHUB_SHA}"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
 
+          COMMITTED="0"
           if git diff --cached --quiet; then
             echo "Nothing to commit."
-            exit 0
+          else
+            git commit -m "chore: update rbloggers crawl + stats"
+            git push origin main
+            COMMITTED="1"
           fi
 
-          git commit -m "chore: update rbloggers crawl + stats"
-          git push origin main
+          AFTER_SHA="$(git rev-parse HEAD)"
 
-      - name: Sync new JSON files to DB (optional)
+          echo "committed=${COMMITTED}" >> "$GITHUB_OUTPUT"
+          echo "before_sha=${BEFORE_SHA}" >> "$GITHUB_OUTPUT"
+          echo "after_sha=${AFTER_SHA}" >> "$GITHUB_OUTPUT"
+          echo "ref_name=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+
+          # files list: prefer .action_result.json; fallback to git diff by_created json
+          if [ -f ".action_result.json" ]; then
+            python - <<'PY'
+import json
+obj=json.load(open(".action_result.json","r",encoding="utf-8"))
+files=obj.get("files",[])
+files=[f for f in files if isinstance(f,str) and f.startswith("by_created/") and f.endswith(".json")]
+open("/tmp/files.json","w",encoding="utf-8").write(json.dumps(files, ensure_ascii=False))
+print("files_from_action_result:", len(files))
+PY
+          else
+            : > /tmp/files.json
+          fi
+
+          # if action_result empty, use diff between BEFORE and AFTER (only if committed)
+          python - <<'PY'
+import json, os, subprocess
+
+committed = os.environ.get("COMMITTED","0") == "1"
+before_sha = os.environ.get("BEFORE_SHA","")
+after_sha = os.environ.get("AFTER_SHA","")
+
+files=[]
+try:
+  files=json.load(open("/tmp/files.json","r",encoding="utf-8"))
+except Exception:
+  files=[]
+
+if (not files) and committed:
+  out = subprocess.check_output(
+    ["git","diff","--name-only",before_sha,after_sha,"--","by_created/**/*.json"],
+    text=True
+  )
+  files=[p.strip() for p in out.splitlines() if p.strip()]
+
+open("/tmp/files.json","w",encoding="utf-8").write(json.dumps(files, ensure_ascii=False))
+print("final_files:", len(files))
+PY
+        env:
+          BEFORE_SHA: ${{ github.sha }}
+          COMMITTED: ${{ steps.commit_push.outputs.committed }}
+          AFTER_SHA: ${{ steps.commit_push.outputs.after_sha }}
+
+      - name: Sync new JSON files to DB (skip if none)
         shell: bash
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
-          GH_SHA: ${{ github.sha }}
-          GH_REF_NAME: ${{ github.ref_name }}
+          GH_SHA: ${{ steps.commit_push.outputs.after_sha }}
+          GH_REF_NAME: ${{ steps.commit_push.outputs.ref_name }}
+          WEBR_SYNC_BATCH: "10"
         run: |
           set -euo pipefail
 
@@ -93,13 +146,55 @@ jobs:
             exit 0
           fi
 
-          if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python -c 'import json; obj=json.load(open(".action_result.json","r",encoding="utf-8")); files=obj.get("files",[]); files=[f for f in files if isinstance(f,str) and f.endswith(".json")]; print(json.dumps(files, ensure_ascii=False))')"
-          else
-            FILES_JSON="[]"
+          FILES_JSON="$(cat /tmp/files.json || echo '[]')"
+          FILES_COUNT="$(python -c "import json; print(len(json.loads('''$FILES_JSON''')))")"
+          echo "files_count=$FILES_COUNT"
+
+          if [ "$FILES_COUNT" -eq 0 ]; then
+            echo "No files to sync. Skip webhook."
+            exit 0
           fi
 
-          # Write payload.json safely (avoid YAML/heredoc quoting issues)
-          FILES_JSON="$FILES_JSON" python -c 'import json, os; payload={"sha":os.environ.get("GH_SHA",""),"ref":os.environ.get("GH_REF_NAME",""),"files":json.loads(os.environ.get("FILES_JSON","[]"))}; open("payload.json","w",encoding="utf-8").write(json.dumps(payload, ensure_ascii=False)); print("payload.json written. files =", len(payload["files"]))'
+          # batched POST to avoid 504
+          python - <<'PY'
+import os, json, math, subprocess, tempfile, time
 
-          curl -f -sS -L -X POST "$WEBR_SYNC_URL"             -H "Content-Type: application/json"             -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN"             --data-binary @payload.json             -w "\nHTTP_STATUS:%{http_code}\n"
+def post_with_retry(cmd, retries=3):
+  for attempt in range(1, retries+1):
+    try:
+      subprocess.check_call(cmd)
+      return
+    except subprocess.CalledProcessError:
+      if attempt == retries:
+        raise
+      wait = 10 * attempt
+      print(f"curl failed (attempt {attempt}/{retries}). retry in {wait}s")
+      time.sleep(wait)
+
+files = json.loads(os.environ["FILES_JSON"])
+batch = int(os.environ.get("WEBR_SYNC_BATCH","10"))
+repo = os.environ.get("GITHUB_REPOSITORY","")
+sha  = os.environ.get("GH_SHA","")
+ref  = os.environ.get("GH_REF_NAME","")
+url  = os.environ["WEBR_SYNC_URL"]
+token= os.environ["WEBR_SYNC_TOKEN"]
+
+total = math.ceil(len(files)/batch)
+for idx, i in enumerate(range(0, len(files), batch), start=1):
+  part = files[i:i+batch]
+  payload = {"repo": repo, "sha": sha, "ref": ref, "files": part}
+  with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
+    json.dump(payload, f, ensure_ascii=False)
+    path=f.name
+  print(f"batch {idx}/{total} size={len(part)}")
+  cmd = [
+    "curl","--fail-with-body","-sS","-L","-X","POST",url,
+    "-H","Content-Type: application/json",
+    "-H",f"X-WEBR-SYNC-TOKEN: {token}",
+    "--data-binary",f"@{path}"
+  ]
+  post_with_retry(cmd, retries=3)
+  time.sleep(1)
+PY
+        env:
+          FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
