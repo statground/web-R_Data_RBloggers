@@ -44,29 +44,59 @@ jobs:
         run: |
           python scripts/update_repo_stats.py
 
-      # ✅ push 이후 HEAD sha를 outputs로 꺼내서 webhook에 사용
+      # ✅ BEFORE/AFTER sha + by_created diff 파일 목록을 outputs로 생성
       - name: Commit and Push changes
         id: commit_push
+        env:
+          BEFORE_SHA: ${{ github.sha }}
         run: |
+          set -e
+
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
           git add by_created/
           git add RBLOGGERS_COUNTS.json RBLOGGERS_REPO_STATS.md
-          # (선택) 디버깅/관측을 위해 남기고 싶으면 아래도 추가 가능
-          # git add .action_result.json
+          git add .action_result.json || true
 
+          COMMITTED="0"
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "Auto Update: R-Bloggers Data & Stats ($(date +'%Y-%m-%d %H:%M'))"
             git push
+            COMMITTED="1"
           fi
 
-          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          AFTER_SHA="$(git rev-parse HEAD)"
+          echo "committed=${COMMITTED}" >> "$GITHUB_OUTPUT"
+          echo "sha=${AFTER_SHA}" >> "$GITHUB_OUTPUT"
           echo "ref=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
           echo "repo=${GITHUB_REPOSITORY}" >> "$GITHUB_OUTPUT"
 
+          # by_created 하위 json 변경 목록 추출(이번 실행에서 커밋이 없으면 빈 목록)
+          if [ "${COMMITTED}" = "1" ]; then
+            git diff --name-only "${BEFORE_SHA}" "${AFTER_SHA}" -- 'by_created/**/*.json' > /tmp/changed_files.txt || true
+          else
+            : > /tmp/changed_files.txt
+          fi
+
+          python - <<'PY'
+          import json
+          files=[]
+          with open('/tmp/changed_files.txt','r',encoding='utf-8') as f:
+            for line in f:
+              p=line.strip()
+              if p:
+                files.append(p)
+          print("changed by_created json files:", len(files))
+          with open('/tmp/changed_files.json','w',encoding='utf-8') as f:
+            json.dump(files, f, ensure_ascii=False)
+          PY
+
+          echo "files_json=$(cat /tmp/changed_files.json)" >> "$GITHUB_OUTPUT"
+
+      # ✅ by_created 변경이 있을 때만 webhook 호출 (없으면 서버 부하/504 방지)
       - name: Trigger Web-R Sync
         if: always()
         env:
@@ -76,36 +106,37 @@ jobs:
           GH_SHA: ${{ steps.commit_push.outputs.sha }}
           GH_REF_NAME: ${{ steps.commit_push.outputs.ref }}
           GH_REPO: ${{ steps.commit_push.outputs.repo }}
+          FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
         run: |
           if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
             exit 0
           fi
 
-          if [ -f ".action_result.json" ]; then
-            FILES_JSON="$(python -c 'import json; d=json.load(open(".action_result.json","r",encoding="utf-8")); k = "new_files_relpaths" if "new_files_relpaths" in d else "files"; print(json.dumps(d.get(k, []), ensure_ascii=False))')"
-          else
-            FILES_JSON="[]"
+          python - <<'PY'
+          import json, os
+          files = []
+          try:
+            files = json.loads(os.environ.get("FILES_JSON","[]"))
+          except Exception:
+            files = []
+          payload = {
+            "repo": os.environ.get("GH_REPO",""),
+            "sha": os.environ.get("GH_SHA",""),
+            "ref": os.environ.get("GH_REF_NAME",""),
+            "files": files
+          }
+          with open("payload.json","w",encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False)
+          print("payload:", payload)
+          print("files_count:", len(files))
+          PY
+
+          # by_created 변경이 없으면 webhook 자체를 호출하지 않음
+          FILES_COUNT="$(python -c "import json;print(len(json.load(open('payload.json','r',encoding='utf-8'))['files']))")"
+          if [ "${FILES_COUNT}" = "0" ]; then
+            echo "No by_created json changes. Skip webhook."
+            exit 0
           fi
 
-          export FILES_JSON
-
-          python -c "
-          import json, os
-          payload = {
-            'repo': os.environ.get('GH_REPO',''),
-            'sha': os.environ.get('GH_SHA',''),
-            'ref': os.environ.get('GH_REF_NAME',''),
-            'files': json.loads(os.environ.get('FILES_JSON','[]'))
-          }
-          with open('payload.json','w',encoding='utf-8') as f:
-            json.dump(payload, f, ensure_ascii=False)
-          print('payload:', payload)
-          "
-
-          echo "Sending webhook to $WEBR_SYNC_URL..."
-          curl --fail-with-body -sS -X POST \
-               -H "Content-Type: application/json" \
-               -H "X-WEBR-SYNC-TOKEN: $WEBR_SYNC_TOKEN" \
-               -d @payload.json \
-               "$WEBR_SYNC_URL"
+          echo
