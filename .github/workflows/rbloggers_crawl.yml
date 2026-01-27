@@ -13,6 +13,18 @@ on:
         description: "Optional: YYYY/MM (e.g. 2026/01). If empty, resync all by_created"
         required: false
         default: ""
+      resync_latest_n:
+        description: "Optional: when resync=true, sync only latest N files by recent commits. 0 means all."
+        required: false
+        default: "0"
+      resync_commits_scan:
+        description: "How many recent commits to scan for file changes when resync_latest_n>0"
+        required: false
+        default: "500"
+      sync_batch:
+        description: "Batch size for webhook (smaller reduces 504 risk)"
+        required: false
+        default: "10"
 
 concurrency:
   group: rbloggers-crawl-main
@@ -53,7 +65,6 @@ jobs:
         run: |
           python scripts/update_repo_stats.py
 
-      # Commit & Push, then compute changed by_created json files between BEFORE and AFTER
       - name: Commit and Push changes
         id: commit_push
         env:
@@ -83,7 +94,6 @@ jobs:
           echo "ref=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
           echo "repo=${GITHUB_REPOSITORY}" >> "$GITHUB_OUTPUT"
 
-          # by_created 하위 json 변경 목록 추출(이번 실행에서 커밋이 없으면 빈 목록)
           if [ "${COMMITTED}" = "1" ]; then
             git diff --name-only "${BEFORE_SHA}" "${AFTER_SHA}" -- 'by_created/**/*.json' > /tmp/changed_files.txt || true
           else
@@ -103,43 +113,88 @@ jobs:
             json.dump(files, f, ensure_ascii=False)
           PY
 
-          # Multiline-safe output
           echo "files_json<<EOF" >> "$GITHUB_OUTPUT"
           cat /tmp/changed_files.json >> "$GITHUB_OUTPUT"
           echo "" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
 
-      # Build file list for webhook: default=diff files; resync=true => glob by_created
+      # ✅ resync_latest_n: "최근 커밋된 순서" 기준으로 N개 뽑기
       - name: Build file list for webhook
         id: build_files
         env:
           RESYNC: ${{ github.event.inputs.resync }}
           RESYNC_MONTH: ${{ github.event.inputs.resync_month }}
+          RESYNC_LATEST_N: ${{ github.event.inputs.resync_latest_n }}
+          RESYNC_COMMITS_SCAN: ${{ github.event.inputs.resync_commits_scan }}
           DIFF_FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
         run: |
           python - <<'PY'
-          import os, json, glob
+          import os, json, subprocess
 
           resync = (os.environ.get("RESYNC","false") or "").lower() == "true"
           month  = (os.environ.get("RESYNC_MONTH","") or "").strip()
+
+          def month_ok(p: str) -> bool:
+            if not month:
+              return True
+            return p.startswith(f"by_created/{month}/")
+
+          def is_target(p: str) -> bool:
+            return p.startswith("by_created/") and p.endswith(".json") and month_ok(p)
+
+          # 기본(diff 기반)
           diff_files = []
           try:
             diff_files = json.loads(os.environ.get("DIFF_FILES_JSON","[]"))
           except Exception:
             diff_files = []
+          diff_files = [p for p in diff_files if is_target(p)]
 
           if not resync:
             files = diff_files
           else:
-            if month:
-              pattern = f"by_created/{month}/**/*.json"
-            else:
-              pattern = "by_created/**/*.json"
-            files = [p.replace("\\","/") for p in glob.glob(pattern, recursive=True)]
+            # resync 모드
+            try:
+              latest_n = int((os.environ.get("RESYNC_LATEST_N","0") or "0").strip() or "0")
+            except Exception:
+              latest_n = 0
+
+            try:
+              commits_scan = int((os.environ.get("RESYNC_COMMITS_SCAN","500") or "500").strip() or "500")
+            except Exception:
+              commits_scan = 500
+
+            if latest_n <= 0:
+              # 전체(월/전체) 파일을 다 보내는 건 위험할 수 있어서,
+              # 여기서는 '최근 커밋 스캔'으로 "변경된 파일들"만 넓게 모으는 방식으로 구성
+              # (필요하면 commits_scan을 크게)
+              latest_n = 10**9
+
+            # 최근 커밋부터 파일 수집
+            cmd = ["git", "log", f"-n{commits_scan}", "--name-only", "--pretty=format:"]
+            out = subprocess.check_output(cmd, text=True)
+            seen = set()
+            files = []
+            for line in out.splitlines():
+              p = line.strip()
+              if not p:
+                continue
+              if not is_target(p):
+                continue
+              if p in seen:
+                continue
+              seen.add(p)
+              files.append(p)
+              if len(files) >= latest_n:
+                break
 
           with open("files.json","w",encoding="utf-8") as f:
             json.dump(files, f, ensure_ascii=False)
+
           print("files_count:", len(files))
+          if resync:
+            print("resync_month:", month or "(all)")
+            print("first_file:", files[0] if files else None)
           PY
 
           echo "files_json<<EOF" >> "$GITHUB_OUTPUT"
@@ -147,9 +202,6 @@ jobs:
           echo "" >> "$GITHUB_OUTPUT"
           echo "EOF" >> "$GITHUB_OUTPUT"
 
-      # Trigger Web-R Sync:
-      # - Token header must be X-WEBR-SYNC-TOKEN
-      # - Batched to avoid 504 Gateway Time-out
       - name: Trigger Web-R Sync (batched)
         if: always()
         env:
@@ -159,6 +211,7 @@ jobs:
           GH_REF_NAME: ${{ steps.commit_push.outputs.ref }}
           GH_REPO: ${{ steps.commit_push.outputs.repo }}
           FILES_JSON: ${{ steps.build_files.outputs.files_json }}
+          WEBR_SYNC_BATCH: ${{ github.event.inputs.sync_batch }}
         run: |
           if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
@@ -166,7 +219,19 @@ jobs:
           fi
 
           python - <<'PY'
-          import os, json, math, subprocess, tempfile
+          import os, json, math, subprocess, tempfile, time
+
+          def post_with_retry(cmd, retries=3):
+            for attempt in range(1, retries+1):
+              try:
+                subprocess.check_call(cmd)
+                return
+              except subprocess.CalledProcessError:
+                if attempt == retries:
+                  raise
+                wait = 10 * attempt
+                print(f"curl failed (attempt {attempt}/{retries}). retry in {wait}s")
+                time.sleep(wait)
 
           files = json.loads(os.environ.get("FILES_JSON","[]") or "[]")
           print("total_files:", len(files))
@@ -174,8 +239,12 @@ jobs:
             print("No files. Skip webhook.")
             raise SystemExit(0)
 
-          # Adjust batch size if needed (smaller => safer against timeouts)
-          BATCH = int(os.environ.get("WEBR_SYNC_BATCH","200"))
+          try:
+            BATCH = int(os.environ.get("WEBR_SYNC_BATCH","10") or "10")
+          except Exception:
+            BATCH = 10
+          if BATCH <= 0:
+            BATCH = 10
 
           repo = os.environ.get("GH_REPO","")
           sha  = os.environ.get("GH_SHA","")
@@ -183,19 +252,23 @@ jobs:
           url  = os.environ.get("WEBR_SYNC_URL","")
           token= os.environ.get("WEBR_SYNC_TOKEN","")
 
-          total_batches = math.ceil(len(files)/BATCH) if BATCH > 0 else 1
+          total_batches = math.ceil(len(files)/BATCH)
           for idx, i in enumerate(range(0, len(files), BATCH), start=1):
             part = files[i:i+BATCH]
             payload = {"repo": repo, "sha": sha, "ref": ref, "files": part}
             with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
               json.dump(payload, f, ensure_ascii=False)
               path = f.name
+
             print(f"batch {idx}/{total_batches} size={len(part)}")
-            subprocess.check_call([
+
+            cmd = [
               "curl", "--fail-with-body", "-sS", "-X", "POST",
               "-H", "Content-Type: application/json",
               "-H", f"X-WEBR-SYNC-TOKEN: {token}",
               "-d", f"@{path}",
               url
-            ])
+            ]
+            post_with_retry(cmd, retries=3)
+            time.sleep(1)
           PY
