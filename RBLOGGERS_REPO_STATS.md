@@ -1,10 +1,17 @@
 Updated: 2026-01-24T05:18:15Z
 
+<<<<<<< HEAD
 ## Summary
 - Total JSON files: **2,286**
 - Total size: **110.4 MB**
 - Last run new files: **0**
 - Last run finished: **2026-01-24T05:18:15Z**
+=======
+## 📊 Repository Status
+- **Total Archived Posts:** 2,293
+- **Total Data Size:** 111.82 MB
+- **Last Updated:** 2026-01-27 12:15:55 KST
+>>>>>>> origin/main
 
 ## Monthly breakdown (by_created/YYYY/MM)
 
