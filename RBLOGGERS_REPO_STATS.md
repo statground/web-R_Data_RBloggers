@@ -1,24 +1,16 @@
-<<<<<<< HEAD
-Updated: 2026-01-24T05:18:15Z
-=======
-Updated: 2026-01-27T14:01:07Z
->>>>>>> origin/main
+Updated: 2026-01-27T14:10:26Z
 
 ## Summary
-- Total JSON files: **2,286**
-- Total size: **110.4 MB**
-- Last run new files: **0**
-<<<<<<< HEAD
-- Last run finished: **2026-01-24T05:18:15Z**
-=======
-- Last run finished: **2026-01-27T14:01:07Z**
->>>>>>> origin/main
+- Total JSON files: **2,300**
+- Total size: **113.2 MB**
+- Last run new files: **7**
+- Last run finished: **2026-01-27T14:10:26Z**
 
 ## Monthly breakdown (by_created/YYYY/MM)
 
 | Year-Month | Files | Size |
 |---:|---:|---:|
-| 2026-01 | 127 | 17.4 MB |
+| 2026-01 | 141 | 20.2 MB |
 | 2025-12 | 56 | 5.2 MB |
 | 2025-11 | 2,103 | 87.9 MB |
 
