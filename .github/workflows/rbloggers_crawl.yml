@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: "0 * * * *"
   workflow_dispatch:
+    inputs:
+      resync:
+        description: "Force resync by_created files even if no new files"
+        required: false
+        default: "false"
+      resync_month:
+        description: "Optional: YYYY/MM (e.g. 2026/01). If empty, resync all by_created"
+        required: false
+        default: ""
 
 concurrency:
   group: rbloggers-crawl-main
@@ -44,7 +53,7 @@ jobs:
         run: |
           python scripts/update_repo_stats.py
 
-      # ✅ BEFORE/AFTER sha + by_created diff 파일 목록을 outputs로 생성
+      # Commit & Push, then compute changed by_created json files between BEFORE and AFTER
       - name: Commit and Push changes
         id: commit_push
         env:
@@ -94,19 +103,62 @@ jobs:
             json.dump(files, f, ensure_ascii=False)
           PY
 
-          echo "files_json=$(cat /tmp/changed_files.json)" >> "$GITHUB_OUTPUT"
+          # Multiline-safe output
+          echo "files_json<<EOF" >> "$GITHUB_OUTPUT"
+          cat /tmp/changed_files.json >> "$GITHUB_OUTPUT"
+          echo "" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
-      # ✅ by_created 변경이 있을 때만 webhook 호출 (없으면 서버 부하/504 방지)
-      - name: Trigger Web-R Sync
+      # Build file list for webhook: default=diff files; resync=true => glob by_created
+      - name: Build file list for webhook
+        id: build_files
+        env:
+          RESYNC: ${{ github.event.inputs.resync }}
+          RESYNC_MONTH: ${{ github.event.inputs.resync_month }}
+          DIFF_FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
+        run: |
+          python - <<'PY'
+          import os, json, glob
+
+          resync = (os.environ.get("RESYNC","false") or "").lower() == "true"
+          month  = (os.environ.get("RESYNC_MONTH","") or "").strip()
+          diff_files = []
+          try:
+            diff_files = json.loads(os.environ.get("DIFF_FILES_JSON","[]"))
+          except Exception:
+            diff_files = []
+
+          if not resync:
+            files = diff_files
+          else:
+            if month:
+              pattern = f"by_created/{month}/**/*.json"
+            else:
+              pattern = "by_created/**/*.json"
+            files = [p.replace("\\","/") for p in glob.glob(pattern, recursive=True)]
+
+          with open("files.json","w",encoding="utf-8") as f:
+            json.dump(files, f, ensure_ascii=False)
+          print("files_count:", len(files))
+          PY
+
+          echo "files_json<<EOF" >> "$GITHUB_OUTPUT"
+          cat files.json >> "$GITHUB_OUTPUT"
+          echo "" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      # Trigger Web-R Sync:
+      # - Token header must be X-WEBR-SYNC-TOKEN
+      # - Batched to avoid 504 Gateway Time-out
+      - name: Trigger Web-R Sync (batched)
         if: always()
         env:
           WEBR_SYNC_URL: ${{ secrets.WEBR_SYNC_URL }}
           WEBR_SYNC_TOKEN: ${{ secrets.WEBR_SYNC_TOKEN }}
-
           GH_SHA: ${{ steps.commit_push.outputs.sha }}
           GH_REF_NAME: ${{ steps.commit_push.outputs.ref }}
           GH_REPO: ${{ steps.commit_push.outputs.repo }}
-          FILES_JSON: ${{ steps.commit_push.outputs.files_json }}
+          FILES_JSON: ${{ steps.build_files.outputs.files_json }}
         run: |
           if [ -z "${WEBR_SYNC_URL:-}" ] || [ -z "${WEBR_SYNC_TOKEN:-}" ]; then
             echo "WEBR_SYNC_URL or WEBR_SYNC_TOKEN not set. Skipping sync."
@@ -114,29 +166,36 @@ jobs:
           fi
 
           python - <<'PY'
-          import json, os
-          files = []
-          try:
-            files = json.loads(os.environ.get("FILES_JSON","[]"))
-          except Exception:
-            files = []
-          payload = {
-            "repo": os.environ.get("GH_REPO",""),
-            "sha": os.environ.get("GH_SHA",""),
-            "ref": os.environ.get("GH_REF_NAME",""),
-            "files": files
-          }
-          with open("payload.json","w",encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False)
-          print("payload:", payload)
-          print("files_count:", len(files))
+          import os, json, math, subprocess, tempfile
+
+          files = json.loads(os.environ.get("FILES_JSON","[]") or "[]")
+          print("total_files:", len(files))
+          if not files:
+            print("No files. Skip webhook.")
+            raise SystemExit(0)
+
+          # Adjust batch size if needed (smaller => safer against timeouts)
+          BATCH = int(os.environ.get("WEBR_SYNC_BATCH","200"))
+
+          repo = os.environ.get("GH_REPO","")
+          sha  = os.environ.get("GH_SHA","")
+          ref  = os.environ.get("GH_REF_NAME","")
+          url  = os.environ.get("WEBR_SYNC_URL","")
+          token= os.environ.get("WEBR_SYNC_TOKEN","")
+
+          total_batches = math.ceil(len(files)/BATCH) if BATCH > 0 else 1
+          for idx, i in enumerate(range(0, len(files), BATCH), start=1):
+            part = files[i:i+BATCH]
+            payload = {"repo": repo, "sha": sha, "ref": ref, "files": part}
+            with tempfile.NamedTemporaryFile("w", delete=False, encoding="utf-8", suffix=".json") as f:
+              json.dump(payload, f, ensure_ascii=False)
+              path = f.name
+            print(f"batch {idx}/{total_batches} size={len(part)}")
+            subprocess.check_call([
+              "curl", "--fail-with-body", "-sS", "-X", "POST",
+              "-H", "Content-Type: application/json",
+              "-H", f"X-WEBR-SYNC-TOKEN: {token}",
+              "-d", f"@{path}",
+              url
+            ])
           PY
-
-          # by_created 변경이 없으면 webhook 자체를 호출하지 않음
-          FILES_COUNT="$(python -c "import json;print(len(json.load(open('payload.json','r',encoding='utf-8'))['files']))")"
-          if [ "${FILES_COUNT}" = "0" ]; then
-            echo "No by_created json changes. Skip webhook."
-            exit 0
-          fi
-
-          echo
