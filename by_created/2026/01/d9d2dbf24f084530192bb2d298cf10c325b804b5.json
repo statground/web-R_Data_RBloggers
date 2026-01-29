@@ -1,0 +1,707 @@
+{
+  "id": "d9d2dbf24f084530192bb2d298cf10c325b804b5",
+  "url": "https://www.r-bloggers.com/2026/01/ropensci-news-digest-january-2026/",
+  "created_at_utc": "2026-01-29T16:33:29Z",
+  "crawled_at_utc": "2026-01-29T16:33:29Z",
+  "html_title": "rOpenSci News Digest, January 2026 | R-bloggers",
+  "meta_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open call for the rOpenSci Champions Program 2026! We are pleased t...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/01/ropensci-news-digest-january-2026/",
+    "canonical_url": "https://www.r-bloggers.com/2026/01/ropensci-news-digest-january-2026/",
+    "html_title": "rOpenSci News Digest, January 2026 | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open call for the rOpenSci Champions Program 2026! We are pleased t...",
+    "meta_keywords": null,
+    "og_title": "rOpenSci News Digest, January 2026 | R-bloggers",
+    "og_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open call for the rOpenSci Champions Program 2026! We are pleased t...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "rOpenSci News Digest, January 2026 | R-bloggers",
+    "twitter_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ Open call for the rOpenSci Champions Program 2026! We are pleased t...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "rOpenSci News Digest, January 2026\nPosted on\nJanuary 28, 2026\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDear rOpenSci friends, it’s time for our monthly news roundup!\nYou can read this post\non our blog\n. Now let’s dive into the activity at and around rOpenSci!\nrOpenSci HQ\nOpen call for the rOpenSci Champions Program 2026!\nWe are pleased to announce the opening of a new call for applications for the\nrOpenSci Champions Program in Spanish\n, which will begin in 2026. We are accepting applications for both the roles of\nChampion\nas well as\nMentor\n. The application deadline is\nFebruary 20, 2026\n.\nAs in the previous cohort, the 2026 program will be developed\nentirely in Spanish\nand will have a\nregional focus on Latin America\nwith the objective of further strengthening the research and open science software in this region.\nDid you miss last Wednesday’s\nCommunity Call: Research Software in Latin America\n(Spanish)?\nWatch the video\n.\nUpcoming:\nApplication Clinic:\nThursday, February 5, 2026\nClosing date:\nFriday, February 20, 2026\nRead more, including application instructions, in our\nblog post\n.\nrOpenSci 2025 wrap-up\nRead our reflections on our work last year, and our plans for this year:\nClosing The Loop with Our 2025 Wrap-up\n.\nCode of Conduct\nAt the beginning of each year, the Code of Conduct Committee reviews the past year and prepares two reports for the community: the\nCoC updates\nand the\ntransparency report\n, both available on our blog. This is also the time to review the Committee’s composition and confirm its members. We are especially grateful to\nNatalia Morandeira\nfor renewing her commitment as a Committee member.\nTesting the R-universe build workflow from your own GitHub repository\nWe refactored the R-universe CI workflows to make it possible to run the exact same workflow from your own GitHub repository. This allows you to test or debug the build and check process on your R package, exactly as it will happen on R-universe, but without actually deploying to\nhttps://r-universe.dev\n.\nRead more in our\ntech note\nand in the\nR-universe docs\n.\nCoworking\nRead\nall about coworking\n!\nTuesday February 3rd 2026, 9:00 Australia Western (01:00 UTC),\n“Share your Positron setup!”\nwith\nSteffi LaZerte\nand cohost\nNoam Ross\n.\nSetup Positron and explore extensions and custom settings;\nMeet cohost Noam Ross, share how you have set up Positron for your workflow and learn from others.\nThursday February 5th 2026, 16:00 – 18:00 (UTC),\nClinica de Aplicación para el Programa de Campeon(e|a)s de rOpenSci\nTuesday March 3rd 2026, 14:00 Europe Central (13:00 UTC),\n“rOpenSci Editors”\nwith\nSteffi LaZerte\nand cohost\nMark Padgham\n.\nLearn more about\nrOpenSci Software Peer Review\nMeet cohost Mark Padgham, and discuss what it’s like being an Editor for rOpenSci Software Peer Review.\nTuesday April 7th 2026, 9:00 Americas Pacific (16:00 UTC)\n“Getting to know the CSID Network”\nwith\nSteffi LaZerte\nand cohost\nIrene Ramos\n.\nLearn more about the\nCSID Network\nMeet community host, Irene Ramos, and learn more about the CSID Network and how you might get involved.\nAnd remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!\nSoftware 📦\nNew packages\nThe following two packages recently became a part of our software suite:\nread.abares\n, developed by Adam H. Sparks: Downloads and imports agricultural data from the Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES)\nhttps://www.agriculture.gov.au/abares\nand the Australian Bureau of Statistics (ABS)\nhttps://www.abs.gov.au\n. Supports multiple data formats including spreadsheets, comma‑separated value (CSV) files, and geospatial data such as shapefiles and GeoTIFFs. Covers topics such as broadacre crops, livestock, soils, commodities and related agricultural information. The package standardises field names and data formats to improve interoperability and simplify analysis. It also streamlines the import of geospatial data and corrects common issues found in these data sources upon loading. It is available on\nCRAN\n. It has been\nreviewed\nby Nicholas Potter and María Paula Caldas.\ndfms\n, developed by Sebastian Krantz together with Rytis Bagdziunas: Efficient estimation of Dynamic Factor Models using the Expectation Maximization (EM) algorithm or Two-Step (2S) estimation, supporting datasets with missing data and mixed-frequency nowcasting applications. Factors follow a stationary VAR process of order p. Estimation options include: running the Kalman Filter and Smoother once with PCA initial values (2S) as in Doz, Giannone and Reichlin (2011)\nhttps://doi.org/10.1016/j.jeconom.2011.02.012\n; iterated Kalman Filtering and Smoothing until EM convergence as in Doz, Giannone and Reichlin (2012)\nhttps://doi.org/10.1162/REST_a_00225\n; or the adapted EM algorithm of Banbura and Modugno (2014)\nhttps://doi.org/10.1002/jae.2306\n, allowing arbitrary missing-data patterns and monthly-quarterly mixed-frequency datasets. The implementation uses the Armadillo C++ library and the collapse package for fast estimation. A comprehensive set of methods supports interpretation and visualization, forecasting, and decomposition of the news content of macroeconomic data releases following Banbura and Modugno (2014). Information criteria to choose the number of factors are also provided, following Bai and Ng (2002)\nhttps://doi.org/10.1111/1468-0262.00273\n. It is available on\nCRAN\n. It has been\nreviewed\nby Santtu Tikka and Eli Holmes.\nDiscover\nmore packages\n, read more about\nSoftware Peer Review\n.\nNew versions\nThe following seventeen packages have had an update since the last newsletter:\nsits\n(\nv1.5.4\n),\ncffr\n(\nv1.2.1\n),\ncharlatan\n(\nv0.6.2\n),\ndataset\n(\n0.4.2\n),\ndbparser\n(\nv2.2.1\n),\ndfms\n(\nv1.0.0\n),\ndittodb\n(\nv0.1.10\n),\nEDIutils\n(\nv2.0.0\n),\ngutenbergr\n(\nv0.4.1\n),\nmantis\n(\nv1.0.1\n),\nopenalexR\n(\nv3.0.1\n),\npatentsview\n(\nv1.0.0\n),\nread.abares\n(\nv2.0.0\n),\nrerddap\n(\nv1.2.2\n),\nrnaturalearth\n(\nv1.2.0\n),\nrotl\n(\nv3.1.1\n), and\nweathercan\n(\nv0.7.8\n).\nSoftware Peer Review\nThere are eighteen recently closed and active submissions and 2 submissions on hold. Issues are at different stages:\nOne at\n‘6/approved’\n:\nread.abares\n, Provides simple downloading, parsing and importing of Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES) data sources. Submitted by\nAdam H. Sparks\n.\nOne at\n‘5/awaiting-reviewer(s)-response’\n:\npkgmatch\n, Find R Packages Matching Either Descriptions or Other R Packages. Submitted by\nmark padgham\n.\nFive at\n‘4/review(s)-in-awaiting-changes’\n:\nsuwo\n, Access Nature Media Repositories Through R. Submitted by\nMarcelo Araya-Salas\n.\nAthlytics\n, Academic R Package for Sports Physiology Analysis from Local Strava Data. Submitted by\nAng\n.\ncowfootR\n, Tools to Estimate the Carbon Footprint of Dairy Farms. Submitted by\nJuan Moreno\n.\nopenFDA\n, openFDA API. Submitted by\nSimon Parker\n.\ngalamm\n, Generalized Additive Latent and Mixed Models. Submitted by\nØystein Sørensen\n. (Stats).\nFour at\n‘3/reviewer(s)-assigned’\n:\nernest\n, A Toolkit for Nested Sampling. Submitted by\nKyle Dewsnap\n. (Stats).\nrcrisp\n, Automate the Delineation of Urban River Spaces. Submitted by\nClaudiu Forgaci\n. (Stats).\nreviser\n, Tools for Studying Revision Properties in Real-Time Time Series Vintages. Submitted by\nMarc Burri\n.\ndfms\n, Dynamic Factor Models. Submitted by\nSebastian Krantz\n. (Stats).\nSeven at\n‘1/editor-checks’\n:\nRAQSAPI\n, A Simple Interface to the US EPA Air Quality System Data Mart API. Submitted by\nmccroweyclinton-EPA\n.\nlogolink\n, An Interface for Running NetLogo Simulations. Submitted by\nDaniel Vartanian\n.\nfcmconfr\n, Fuzzy Cognitive Map Analysis in R. Submitted by\nbenroston\n. (Stats).\nActiGlobe\n, Wearable Recording Processor for Time Shift Adjustment and Data Analysis. Submitted by\nC. William Yao\n.\ncoevolve\n, Fit Bayesian Generalized Dynamic Phylogenetic Models using Stan. Submitted by\nScott Claessens\n. (Stats).\npriorsense\n, Prior Diagnostics and Sensitivity Analysis. Submitted by\nNoa Kallioinen\n. (Stats).\ncapybara\n, Fast and Memory Efficient Fitting of Linear Models With High-Dimensional. Submitted by\nMauricio “Pachá” Vargas Sepúlveda\n.\nFind out more about\nSoftware Peer Review\nand how to get involved.\nOn the blog\nTesting the R-universe build workflow from your own GitHub repository\nby Jeroen Ooms. We refactored the R-universe CI workflows to make it possible to run the exact same workflow from your own GitHub repository.\nrOpenSci 2025 Code of Conduct Transparency Report\nby Yanina Bellini Saibene, Natalia Morandeira, and Mark Padgham. rOpenSci 2025 Code of Conduct Transparency Report. Other languages:\nReporte de Transparencia del Código de Conducta de rOpenSci 2025 (es)\n.\nrOpenSci Code of Conduct Annual Review\nby Yanina Bellini Saibene, Natalia Morandeira, and Mark Padgham. Updates for version 2.5 of rOpenSci’s Code of Conduct. Other languages:\nRevisión anual del código de conducta de rOpenSci (es)\n.\nOpen call for the rOpenSci Champions Program 2026!\nby Yanina Bellini Saibene. You can now apply to participate in the 2026 Champions Program. We are looking for people to participate in mentoring roles and to become Champions. Other languages:\nConvocatoria abierta al Programa de Campeonas y Campeones de rOpenSci 2026 (es)\n.\nClosing The Loop with Our 2025 Wrap-up\nby The rOpenSci Team. a post where we reflect on a year of shared learning and collaboration. Take a look at our wrap-up and our plans for 2026.\nSoftware Libre de Investigación en América Latina, conversaciones con la comunidad de Campeon(a|e)s de rOpenSci\nby Yanina Bellini Saibene. De cara al llamado 2026 del Programa de Campeon(a|e)s de rOpenSci, conversamos con integrantes de la cohorte en español sobre sus experiencias, aprendizajes y el valor de participar en una comunidad de software libre y ciencia abierta.\nHow to Recruit a New Maintainer for Your Package\nby Yanina Bellini Saibene, Noam Ross, and Maëlle Salmon. Finding a new maintainer for your R package can be a overwhelming task. In this post, we share practical tips and strategies to help you find people that can contribute and take over your package. . Other languages:\nCómo sumar nuevas personas al mantenimiento de tu paquete (es)\n.\nTech Notes\nCode Hosting Options Beyond GitHub\nby Mark Padgham and Steffi LaZerte. How to manage and mirror code repositories across different platforms.\nIntroducing distionary for Building and Probing Distributions\nby Vincenzo Coia. The distionary package is on CRAN and brings a new way to build and probe probability distributions in R, forming the building blocks of the probaverse ecosystem.\nCalls for contributions\nCalls for maintainers\nIf you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post\nWhat Does It Mean to Maintain a Package?\n.\nhddtools\n, Tools to discover hydrological data, accessing catalogues and databases from various data providers.\nIssue for volunteering\n.\nqualtRics\n, download Qualtrics survey data.\nIssue for volunteering\n.\nphotosearcher\n, searches Flickr for photographs and metadata.\nIssue for volunteering\n.\nCalls for contributions\nRefer to our\nhelp wanted page\n– before opening a PR, we recommend asking in the issue whether help is still needed.\nPackage development corner\nSome useful tips for R package developers. 👀\nRecap from an advent calendar about package development\nAthanasia Monika Mowinckel has been curating an Advent Calendar about R Package Development. Read the full recap of all the tips on her\nblog\n.\nGood news for R: “Enabling the Next Generation of Contributors to R”\nRead Heather Turner’s\nblog post\non the funding granted to the project “Enabling the Next Generation of Contributors to R”. The team (Heather Turner, Ella Kaye, Simon Urbanek, Peter Dalgaard, Gabe Becker, Kylie Bemis, Mikael Jagan, and Jeroen Ooms) will focus on addressing “the challenge of sustaining the R Project” through direct contributions among other aspects.\nCoverage badge without a third-party\nAdam Sparks wrote up his\nstrategy\nfor generating a README badge displaying test coverage, without using a third-party such as codecov.io.\nDynamic content in Rd files\nAs\nnoted by Elio Campitelli\n,\nDocumentation can have code that is run dynamically either at install, build or render time\nAn example can be found in\ndplyr\nwhere code lists relevant methods present in loaded package. That code is run when the user loads the help page (render time).\nOther examples for\nrender\n,\ninstall\nand\nbuild\n.\nOn issues and PRs\nThe ghostty project was recently featured on\nHacker News\nfor its\nissue tracker policy\n. The process is to have users open a discussion using GitHub Discussions, then to convert the discussion to an issue if relevant.\n“This approach is based on years of experience maintaining open source projects and observing that 80-90% of what users think are bugs are either misunderstandings, environmental problems, or configuration errors by the users themselves. For what’s left, the majority are often feature requests (unimplemented features) and not bugs (malfunctioning features). Of the features requests, almost all are underspecified and require more guidance by a maintainer to be worked on.”\nThe tldraw project announced that they no longer\naccept PRs from external contributors\n. In this case, the motivation is to not waste precious developers’ time on AI slop.\n“Like many other open-source projects on GitHub, we’ve recently seen a significant increase in contributions generated entirely by AI tools. While some of these pull requests are formally correct, most suffer from incomplete or misleading context, misunderstanding of the codebase, and little to no follow-up engagement from their authors.”\nNew JOSS policy on AI\nRead about the Journal of Open Source Software updated its\nsubmission requirements\nto adapt JOSS for a world with heavy AI use for software development.\nLast words\nThanks for reading! If you want to get involved with rOpenSci, check out our\nContributing Guide\nthat can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases. You can also support our work through\ndonations\n.\nIf you haven’t subscribed to our newsletter yet, you can\ndo so via a form\n. Until it’s time for our next newsletter, you can keep in touch with us via our\nwebsite\nand\nMastodon account\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-398669 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">rOpenSci News Digest, January 2026</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">January 28, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2026/01/29/news-january-2026/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<!-- Before sending DELETE THE INDEX_CACHE and re-knit! -->\n<p>Dear rOpenSci friends, it’s time for our monthly news roundup! <!-- blabla --> You can read this post <a href=\"https://ropensci.org/blog/2026/01/29/news-january-2026\" rel=\"nofollow\" target=\"_blank\">on our blog</a>. Now let’s dive into the activity at and around rOpenSci!</p>\n<h2>\nrOpenSci HQ\n</h2><h3>\nOpen call for the rOpenSci Champions Program 2026!\n</h3><p>We are pleased to announce the opening of a new call for applications for the <strong>rOpenSci Champions Program in Spanish</strong>, which will begin in 2026. We are accepting applications for both the roles of <strong>Champion</strong> as well as <strong>Mentor</strong>. The application deadline is <strong>February 20, 2026</strong>.</p>\n<p>As in the previous cohort, the 2026 program will be developed <strong>entirely in Spanish</strong> and will have a <strong>regional focus on Latin America</strong> with the objective of further strengthening the research and open science software in this region.</p>\n<p>Did you miss last Wednesday’s <strong>Community Call: Research Software in Latin America</strong> (Spanish)? <a href=\"https://ropensci.org/es/commcalls/champions-latino-2026/\" rel=\"nofollow\" target=\"_blank\">Watch the video</a>.</p>\n<p>Upcoming:</p>\n<ul>\n<li><a href=\"https://ropensci.org/events/clinica-champions-2026/\" rel=\"nofollow\" target=\"_blank\"><strong>Application Clinic:</strong> Thursday, February 5, 2026</a></li>\n<li><strong>Closing date:</strong> Friday, February 20, 2026</li>\n</ul>\n<p>Read more, including application instructions, in our <a href=\"https://ropensci.org/blog/2026/01/12/programchamps2026/\" rel=\"nofollow\" target=\"_blank\">blog post</a>.</p>\n<h3>\nrOpenSci 2025 wrap-up\n</h3><p>Read our reflections on our work last year, and our plans for this year: <a href=\"https://ropensci.org/blog/2026/01/22/yearinreview2025/\" rel=\"nofollow\" target=\"_blank\">Closing The Loop with Our 2025 Wrap-up</a>.</p>\n<h3>\nCode of Conduct\n</h3><p>At the beginning of each year, the Code of Conduct Committee reviews the past year and prepares two reports for the community: the <a href=\"https://ropensci.org/blog/2026/01/07/conduct2025/\" rel=\"nofollow\" target=\"_blank\">CoC updates</a> and the <a href=\"https://ropensci.org/blog/2026/01/06/transparencycoc2025/\" rel=\"nofollow\" target=\"_blank\">transparency report</a>, both available on our blog. This is also the time to review the Committee’s composition and confirm its members. We are especially grateful to <a href=\"https://ropensci.org/author/natalia-morandeira/\" rel=\"nofollow\" target=\"_blank\">Natalia Morandeira</a> for renewing her commitment as a Committee member.</p>\n<h3>\nTesting the R-universe build workflow from your own GitHub repository\n</h3><p>We refactored the R-universe CI workflows to make it possible to run the exact same workflow from your own GitHub repository. This allows you to test or debug the build and check process on your R package, exactly as it will happen on R-universe, but without actually deploying to <a href=\"https://r-universe.dev/\" rel=\"nofollow\" target=\"_blank\">https://r-universe.dev</a>.</p>\n<p>Read more in our <a href=\"https://ropensci.org/blog/2026/01/03/r-universe-workflows/\" rel=\"nofollow\" target=\"_blank\">tech note</a> and in the <a href=\"https://docs.r-universe.dev/publish/troubleshoot-build.html#how-to-test-the-r-universe-build-workflow-from-your-own-github-repository\" rel=\"nofollow\" target=\"_blank\">R-universe docs</a>.</p>\n<h3>\nCoworking\n</h3><p>Read <a href=\"https://ropensci.org/blog/2023/06/21/coworking/\" rel=\"nofollow\" target=\"_blank\">all about coworking</a>!</p>\n<ul>\n<li>Tuesday February 3rd 2026, 9:00 Australia Western (01:00 UTC), <a href=\"https://ropensci.org/events/coworking-2026-02/\" rel=\"nofollow\" target=\"_blank\">“Share your Positron setup!”</a> with <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a> and cohost <a href=\"https://ropensci.org/author/noam-ross/\" rel=\"nofollow\" target=\"_blank\">Noam Ross</a>.\n<ul>\n<li>Setup Positron and explore extensions and custom settings;</li>\n<li>Meet cohost Noam Ross, share how you have set up Positron for your workflow and learn from others.</li>\n</ul>\n</li>\n<li>Thursday February 5th 2026, 16:00 – 18:00 (UTC), <a href=\"https://ropensci.org/events/clinica-champions-2026/\" rel=\"nofollow\" target=\"_blank\">Clinica de Aplicación para el Programa de Campeon(e|a)s de rOpenSci</a></li>\n<li>Tuesday March 3rd 2026, 14:00 Europe Central (13:00 UTC), <a href=\"https://ropensci.org/events/coworking-2026-03/\" rel=\"nofollow\" target=\"_blank\">“rOpenSci Editors”</a> with <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a> and cohost <a href=\"https://ropensci.org/author/mark-padgham/\" rel=\"nofollow\" target=\"_blank\">Mark Padgham</a>.\n<ul>\n<li>Learn more about <a href=\"https://ropensci.org/software-review/\" rel=\"nofollow\" target=\"_blank\">rOpenSci Software Peer Review</a></li>\n<li>Meet cohost Mark Padgham, and discuss what it’s like being an Editor for rOpenSci Software Peer Review.</li>\n</ul>\n</li>\n<li>Tuesday April 7th 2026, 9:00 Americas Pacific (16:00 UTC) <a href=\"https://ropensci.org/events/coworking-2026-04/\" rel=\"nofollow\" target=\"_blank\">“Getting to know the CSID Network”</a> with <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a> and cohost <a href=\"https://ropensci.org/author/irene-ramos/\" rel=\"nofollow\" target=\"_blank\">Irene Ramos</a>.\n<ul>\n<li>Learn more about the <a href=\"https://csidnet.org/\" rel=\"nofollow\" target=\"_blank\">CSID Network</a></li>\n<li>Meet community host, Irene Ramos, and learn more about the CSID Network and how you might get involved.</li>\n</ul>\n</li>\n</ul>\n<p>And remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!</p>\n<h2>\nSoftware 📦\n</h2><h3>\nNew packages\n</h3><p>The following two packages recently became a part of our software suite:</p>\n<ul>\n<li>\n<p><a href=\"https://docs.ropensci.org/read.abares\" rel=\"nofollow\" target=\"_blank\">read.abares</a>, developed by Adam H. Sparks: Downloads and imports agricultural data from the Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES) <a href=\"https://www.agriculture.gov.au/abares\" rel=\"nofollow\" target=\"_blank\">https://www.agriculture.gov.au/abares</a> and the Australian Bureau of Statistics (ABS) <a href=\"https://www.abs.gov.au/\" rel=\"nofollow\" target=\"_blank\">https://www.abs.gov.au</a>. Supports multiple data formats including spreadsheets, comma‑separated value (CSV) files, and geospatial data such as shapefiles and GeoTIFFs. Covers topics such as broadacre crops, livestock, soils, commodities and related agricultural information. The package standardises field names and data formats to improve interoperability and simplify analysis. It also streamlines the import of geospatial data and corrects common issues found in these data sources upon loading. It is available on <a href=\"https://cran.r-project.org/package=read.abares\" rel=\"nofollow\" target=\"_blank\">CRAN</a>. It has been <a href=\"https://github.com/ropensci/software-review/issues/667\" rel=\"nofollow\" target=\"_blank\">reviewed</a> by Nicholas Potter and María Paula Caldas.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/dfms\" rel=\"nofollow\" target=\"_blank\">dfms</a>, developed by Sebastian Krantz together with Rytis Bagdziunas: Efficient estimation of Dynamic Factor Models using the Expectation Maximization (EM) algorithm or Two-Step (2S) estimation, supporting datasets with missing data and mixed-frequency nowcasting applications. Factors follow a stationary VAR process of order p. Estimation options include: running the Kalman Filter and Smoother once with PCA initial values (2S) as in Doz, Giannone and Reichlin (2011) <a href=\"https://doi.org/10.1016/j.jeconom.2011.02.012\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1016/j.jeconom.2011.02.012</a>; iterated Kalman Filtering and Smoothing until EM convergence as in Doz, Giannone and Reichlin (2012) <a href=\"https://doi.org/10.1162/REST_a_00225\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1162/REST_a_00225</a>; or the adapted EM algorithm of Banbura and Modugno (2014) <a href=\"https://doi.org/10.1002/jae.2306\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1002/jae.2306</a>, allowing arbitrary missing-data patterns and monthly-quarterly mixed-frequency datasets. The implementation uses the Armadillo C++ library and the collapse package for fast estimation. A comprehensive set of methods supports interpretation and visualization, forecasting, and decomposition of the news content of macroeconomic data releases following Banbura and Modugno (2014). Information criteria to choose the number of factors are also provided, following Bai and Ng (2002) <a href=\"https://doi.org/10.1111/1468-0262.00273\" rel=\"nofollow\" target=\"_blank\">https://doi.org/10.1111/1468-0262.00273</a>. It is available on <a href=\"https://cran.r-project.org/package=dfms\" rel=\"nofollow\" target=\"_blank\">CRAN</a>. It has been <a href=\"https://github.com/ropensci/software-review/issues/556\" rel=\"nofollow\" target=\"_blank\">reviewed</a> by Santtu Tikka and Eli Holmes.</p>\n</li>\n</ul>\n<p>Discover <a href=\"https://ropensci.org/packages\" rel=\"nofollow\" target=\"_blank\">more packages</a>, read more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a>.</p>\n<h3>\nNew versions\n</h3><p>The following seventeen packages have had an update since the last newsletter: <a href=\"https://docs.ropensci.org/sits\" rel=\"nofollow\" target=\"_blank\" title=\"Satellite Image Time Series Analysis for Earth Observation Data Cubes\">sits</a> (<a href=\"https://github.com/e-sensing/sits/releases/tag/v1.5.4\" rel=\"nofollow\" target=\"_blank\"><code>v1.5.4</code></a>), <a href=\"https://docs.ropensci.org/cffr\" rel=\"nofollow\" target=\"_blank\" title=\"Generate Citation File Format (cff) Metadata for R Packages\">cffr</a> (<a href=\"https://github.com/ropensci/cffr/releases/tag/v1.2.1\" rel=\"nofollow\" target=\"_blank\"><code>v1.2.1</code></a>), <a href=\"https://docs.ropensci.org/charlatan\" rel=\"nofollow\" target=\"_blank\" title=\"Make Fake Data\">charlatan</a> (<a href=\"https://github.com/ropensci/charlatan/releases/tag/v0.6.2\" rel=\"nofollow\" target=\"_blank\"><code>v0.6.2</code></a>), <a href=\"https://docs.ropensci.org/dataset\" rel=\"nofollow\" target=\"_blank\" title=\"Create Data Frames for Exchange and Reuse\">dataset</a> (<a href=\"https://github.com/ropensci/dataset/releases/tag/0.4.2\" rel=\"nofollow\" target=\"_blank\"><code>0.4.2</code></a>), <a href=\"https://docs.ropensci.org/dbparser\" rel=\"nofollow\" target=\"_blank\" title=\"Drugs Databases Parser\">dbparser</a> (<a href=\"https://github.com/ropensci/dbparser/releases/tag/v2.2.1\" rel=\"nofollow\" target=\"_blank\"><code>v2.2.1</code></a>), <a href=\"https://docs.ropensci.org/dfms\" rel=\"nofollow\" target=\"_blank\" title=\"Dynamic Factor Models\">dfms</a> (<a href=\"https://github.com/ropensci/dfms/releases/tag/v1.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.0</code></a>), <a href=\"https://docs.ropensci.org/dittodb\" rel=\"nofollow\" target=\"_blank\" title=\"A Test Environment for Database Requests\">dittodb</a> (<a href=\"https://github.com/ropensci/dittodb/releases/tag/v0.1.10\" rel=\"nofollow\" target=\"_blank\"><code>v0.1.10</code></a>), <a href=\"https://docs.ropensci.org/EDIutils\" rel=\"nofollow\" target=\"_blank\" title=\"An API Client for the Environmental Data Initiative Repository\">EDIutils</a> (<a href=\"https://github.com/ropensci/EDIutils/releases/tag/v2.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v2.0.0</code></a>), <a href=\"https://docs.ropensci.org/gutenbergr\" rel=\"nofollow\" target=\"_blank\" title=\"Download and Process Public Domain Works from Project Gutenberg\">gutenbergr</a> (<a href=\"https://github.com/ropensci/gutenbergr/releases/tag/v0.4.1\" rel=\"nofollow\" target=\"_blank\"><code>v0.4.1</code></a>), <a href=\"https://docs.ropensci.org/mantis\" rel=\"nofollow\" target=\"_blank\" title=\"Multiple Time Series Scanner\">mantis</a> (<a href=\"https://github.com/ropensci/mantis/releases/tag/v1.0.1\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.1</code></a>), <a href=\"https://docs.ropensci.org/openalexR\" rel=\"nofollow\" target=\"_blank\" title=\"Getting Bibliographic Records from OpenAlex Database Using DSL API\">openalexR</a> (<a href=\"https://github.com/ropensci/openalexR/releases/tag/v3.0.1\" rel=\"nofollow\" target=\"_blank\"><code>v3.0.1</code></a>), <a href=\"https://docs.ropensci.org/patentsview\" rel=\"nofollow\" target=\"_blank\" title=\"An R Client to the PatentsView API\">patentsview</a> (<a href=\"https://github.com/ropensci/patentsview/releases/tag/v1.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.0.0</code></a>), <a href=\"https://docs.ropensci.org/read.abares\" rel=\"nofollow\" target=\"_blank\" title=\"Read Australian Agricultural Data from Government Agencies\">read.abares</a> (<a href=\"https://github.com/ropensci/read.abares/releases/tag/v2.0.0\" rel=\"nofollow\" target=\"_blank\"><code>v2.0.0</code></a>), <a href=\"https://docs.ropensci.org/rerddap\" rel=\"nofollow\" target=\"_blank\" title=\"General Purpose Client for ERDDAP™ Servers\">rerddap</a> (<a href=\"https://github.com/ropensci/rerddap/releases/tag/v1.2.2\" rel=\"nofollow\" target=\"_blank\"><code>v1.2.2</code></a>), <a href=\"https://docs.ropensci.org/rnaturalearth\" rel=\"nofollow\" target=\"_blank\" title=\"World Map Data from Natural Earth\">rnaturalearth</a> (<a href=\"https://github.com/ropensci/rnaturalearth/releases/tag/v1.2.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.2.0</code></a>), <a href=\"https://docs.ropensci.org/rotl\" rel=\"nofollow\" target=\"_blank\" title=\"Interface to the Open Tree of Life API\">rotl</a> (<a href=\"https://github.com/ropensci/rotl/releases/tag/v3.1.1\" rel=\"nofollow\" target=\"_blank\"><code>v3.1.1</code></a>), and <a href=\"https://docs.ropensci.org/weathercan\" rel=\"nofollow\" target=\"_blank\" title=\"Download Weather Data from Environment and Climate Change Canada\">weathercan</a> (<a href=\"https://github.com/ropensci/weathercan/releases/tag/v0.7.8\" rel=\"nofollow\" target=\"_blank\"><code>v0.7.8</code></a>).</p>\n<h2>\nSoftware Peer Review\n</h2><p>There are eighteen recently closed and active submissions and 2 submissions on hold. Issues are at different stages:</p>\n<ul>\n<li>\n<p>One at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%226/approved%22\" rel=\"nofollow\" target=\"_blank\">‘6/approved’</a>:</p>\n<ul>\n<li><a href=\"https://github.com/ropensci/software-review/issues/667\" rel=\"nofollow\" target=\"_blank\">read.abares</a>, Provides simple downloading, parsing and importing of Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES) data sources. Submitted by <a href=\"https://adamhsparks.netlify.app/\" rel=\"nofollow\" target=\"_blank\">Adam H. Sparks</a>.</li>\n</ul>\n</li>\n<li>\n<p>One at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%225/awaiting-reviewer(s)-response%22\" rel=\"nofollow\" target=\"_blank\">‘5/awaiting-reviewer(s)-response’</a>:</p>\n<ul>\n<li><a href=\"https://github.com/ropensci/software-review/issues/671\" rel=\"nofollow\" target=\"_blank\">pkgmatch</a>, Find R Packages Matching Either Descriptions or Other R Packages. Submitted by <a href=\"https://mpadge.github.io/\" rel=\"nofollow\" target=\"_blank\">mark padgham</a>.</li>\n</ul>\n</li>\n<li>\n<p>Five at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%224/review(s)-in-awaiting-changes%22\" rel=\"nofollow\" target=\"_blank\">‘4/review(s)-in-awaiting-changes’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/729\" rel=\"nofollow\" target=\"_blank\">suwo</a>, Access Nature Media Repositories Through R. Submitted by <a href=\"https://marce10.github.io/\" rel=\"nofollow\" target=\"_blank\">Marcelo Araya-Salas</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/728\" rel=\"nofollow\" target=\"_blank\">Athlytics</a>, Academic R Package for Sports Physiology Analysis from Local Strava Data. Submitted by <a href=\"https://github.com/HzaCode\" rel=\"nofollow\" target=\"_blank\">Ang</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/724\" rel=\"nofollow\" target=\"_blank\">cowfootR</a>, Tools to Estimate the Carbon Footprint of Dairy Farms. Submitted by <a href=\"https://github.com/juanmarcosmoreno-arch\" rel=\"nofollow\" target=\"_blank\">Juan Moreno</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/714\" rel=\"nofollow\" target=\"_blank\">openFDA</a>, openFDA API. Submitted by <a href=\"https://github.com/simpar1471\" rel=\"nofollow\" target=\"_blank\">Simon Parker</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/615\" rel=\"nofollow\" target=\"_blank\">galamm</a>, Generalized Additive Latent and Mixed Models. Submitted by <a href=\"https://osorensen.github.io/\" rel=\"nofollow\" target=\"_blank\">Øystein Sørensen</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Four at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%223/reviewer(s)-assigned%22\" rel=\"nofollow\" target=\"_blank\">‘3/reviewer(s)-assigned’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/730\" rel=\"nofollow\" target=\"_blank\">ernest</a>, A Toolkit for Nested Sampling. Submitted by <a href=\"https://github.com/kylesnap\" rel=\"nofollow\" target=\"_blank\">Kyle Dewsnap</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/718\" rel=\"nofollow\" target=\"_blank\">rcrisp</a>, Automate the Delineation of Urban River Spaces. Submitted by <a href=\"https://github.com/cforgaci\" rel=\"nofollow\" target=\"_blank\">Claudiu Forgaci</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/709\" rel=\"nofollow\" target=\"_blank\">reviser</a>, Tools for Studying Revision Properties in Real-Time Time Series Vintages. Submitted by <a href=\"https://marcburri.github.io/\" rel=\"nofollow\" target=\"_blank\">Marc Burri</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/556\" rel=\"nofollow\" target=\"_blank\">dfms</a>, Dynamic Factor Models. Submitted by <a href=\"https://sebastiankrantz.com/\" rel=\"nofollow\" target=\"_blank\">Sebastian Krantz</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Seven at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%221/editor-checks%22\" rel=\"nofollow\" target=\"_blank\">‘1/editor-checks’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/744\" rel=\"nofollow\" target=\"_blank\">RAQSAPI</a>, A Simple Interface to the US EPA Air Quality System Data Mart API. Submitted by <a href=\"https://github.com/mccroweyclinton-EPA\" rel=\"nofollow\" target=\"_blank\">mccroweyclinton-EPA</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/741\" rel=\"nofollow\" target=\"_blank\">logolink</a>, An Interface for Running NetLogo Simulations. Submitted by <a href=\"http://danielvartan.com/\" rel=\"nofollow\" target=\"_blank\">Daniel Vartanian</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/740\" rel=\"nofollow\" target=\"_blank\">fcmconfr</a>, Fuzzy Cognitive Map Analysis in R. Submitted by <a href=\"https://github.com/bhroston\" rel=\"nofollow\" target=\"_blank\">benroston</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/732\" rel=\"nofollow\" target=\"_blank\">ActiGlobe</a>, Wearable Recording Processor for Time Shift Adjustment and Data Analysis. Submitted by <a href=\"https://scholar.google.ca/citations?user=T7y9ckwAAAAJ&amp;hl=en\" rel=\"nofollow\" target=\"_blank\">C. William Yao</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/717\" rel=\"nofollow\" target=\"_blank\">coevolve</a>, Fit Bayesian Generalized Dynamic Phylogenetic Models using Stan. Submitted by <a href=\"https://scottclaessens.github.io/\" rel=\"nofollow\" target=\"_blank\">Scott Claessens</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/704\" rel=\"nofollow\" target=\"_blank\">priorsense</a>, Prior Diagnostics and Sensitivity Analysis. Submitted by <a href=\"https://github.com/n-kall\" rel=\"nofollow\" target=\"_blank\">Noa Kallioinen</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/645\" rel=\"nofollow\" target=\"_blank\">capybara</a>, Fast and Memory Efficient Fitting of Linear Models With High-Dimensional. Submitted by <a href=\"https://pacha.dev/\" rel=\"nofollow\" target=\"_blank\">Mauricio “Pachá” Vargas Sepúlveda</a>.</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>Find out more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a> and how to get involved.</p>\n<h2>\nOn the blog\n</h2><!-- Do not forget to rebase your branch! -->\n<ul>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/03/r-universe-workflows\" rel=\"nofollow\" target=\"_blank\">Testing the R-universe build workflow from your own GitHub repository</a> by Jeroen Ooms. We refactored the R-universe CI workflows to make it possible to run the exact same workflow from your own GitHub repository.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/06/transparencyCoC2025\" rel=\"nofollow\" target=\"_blank\">rOpenSci 2025 Code of Conduct Transparency Report</a> by Yanina Bellini Saibene, Natalia Morandeira, and Mark Padgham. rOpenSci 2025 Code of Conduct Transparency Report. Other languages: <a href=\"https://ropensci.org/es/blog/2026/01/06/transparenciaCoC2025\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">Reporte de Transparencia del Código de Conducta de rOpenSci 2025 (es)</a>.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/07/conduct2025\" rel=\"nofollow\" target=\"_blank\">rOpenSci Code of Conduct Annual Review</a> by Yanina Bellini Saibene, Natalia Morandeira, and Mark Padgham. Updates for version 2.5 of rOpenSci’s Code of Conduct. Other languages: <a href=\"https://ropensci.org/es/blog/2026/01/07/conducta2025\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">Revisión anual del código de conducta de rOpenSci (es)</a>.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/12/programchamps2026\" rel=\"nofollow\" target=\"_blank\">Open call for the rOpenSci Champions Program 2026!</a> by Yanina Bellini Saibene. You can now apply to participate in the 2026 Champions Program. We are looking for people to participate in mentoring roles and to become Champions. Other languages: <a href=\"https://ropensci.org/es/blog/2026/01/12/programachamps2026\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">Convocatoria abierta al Programa de Campeonas y Campeones de rOpenSci 2026 (es)</a>.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/22/yearinreview2025\" rel=\"nofollow\" target=\"_blank\">Closing The Loop with Our 2025 Wrap-up</a> by The rOpenSci Team. a post where we reflect on a year of shared learning and collaboration. Take a look at our wrap-up and our plans for 2026.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/es/blog/2026/01/26/commcallchamps\" rel=\"nofollow\" target=\"_blank\">Software Libre de Investigación en América Latina, conversaciones con la comunidad de Campeon(a|e)s de rOpenSci</a> by Yanina Bellini Saibene. De cara al llamado 2026 del Programa de Campeon(a|e)s de rOpenSci, conversamos con integrantes de la cohorte en español sobre sus experiencias, aprendizajes y el valor de participar en una comunidad de software libre y ciencia abierta.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/27/new-maintainer\" rel=\"nofollow\" target=\"_blank\">How to Recruit a New Maintainer for Your Package</a> by Yanina Bellini Saibene, Noam Ross, and Maëlle Salmon. Finding a new maintainer for your R package can be a overwhelming task. In this post, we share practical tips and strategies to help you find people that can contribute and take over your package. . Other languages: <a href=\"https://ropensci.org/es/blog/2026/01/27/new-maintainer\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">Cómo sumar nuevas personas al mantenimiento de tu paquete (es)</a>.</p>\n</li>\n</ul>\n<h3>\nTech Notes\n</h3><ul>\n<li>\n<p><a href=\"https://ropensci.org/blog/2025/12/17/beyond-github\" rel=\"nofollow\" target=\"_blank\">Code Hosting Options Beyond GitHub</a> by Mark Padgham and Steffi LaZerte. How to manage and mirror code repositories across different platforms.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/01/20/introducing-distionary\" rel=\"nofollow\" target=\"_blank\">Introducing distionary for Building and Probing Distributions</a> by Vincenzo Coia. The distionary package is on CRAN and brings a new way to build and probe probability distributions in R, forming the building blocks of the probaverse ecosystem.</p>\n</li>\n</ul>\n<h2>\nCalls for contributions\n</h2><h3>\nCalls for maintainers\n</h3><p>If you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post <a href=\"https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/\" rel=\"nofollow\" target=\"_blank\">What Does It Mean to Maintain a Package?</a>.</p>\n<ul>\n<li>\n<p><a href=\"https://docs.ropensci.org/hddtools\" rel=\"nofollow\" target=\"_blank\">hddtools</a>, Tools to discover hydrological data, accessing catalogues and databases from various data providers. <a href=\"https://github.com/ropensci/hddtools/issues/36\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/qualtRics/\" rel=\"nofollow\" target=\"_blank\">qualtRics</a>, download Qualtrics survey data. <a href=\"https://github.com/ropensci/qualtRics/issues/383\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/photosearcher\" rel=\"nofollow\" target=\"_blank\">photosearcher</a>, searches Flickr for photographs and metadata. <a href=\"https://github.com/ropensci/photosearcher/issues/22\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n</ul>\n<h3>\nCalls for contributions\n</h3><p>Refer to our <a href=\"https://ropensci.org/help-wanted/\" rel=\"nofollow\" target=\"_blank\">help wanted page</a> – before opening a PR, we recommend asking in the issue whether help is still needed.</p>\n<h2>\nPackage development corner\n</h2><p>Some useful tips for R package developers. 👀</p>\n<h3>\nRecap from an advent calendar about package development\n</h3><p>Athanasia Monika Mowinckel has been curating an Advent Calendar about R Package Development. Read the full recap of all the tips on her <a href=\"https://drmowinckels.io/blog/2025/rpackage-dev-calendar/\" rel=\"nofollow\" target=\"_blank\">blog</a>.</p>\n<h3>\nGood news for R: “Enabling the Next Generation of Contributors to R”\n</h3><p>Read Heather Turner’s <a href=\"https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/\" rel=\"nofollow\" target=\"_blank\">blog post</a> on the funding granted to the project “Enabling the Next Generation of Contributors to R”. The team (Heather Turner, Ella Kaye, Simon Urbanek, Peter Dalgaard, Gabe Becker, Kylie Bemis, Mikael Jagan, and Jeroen Ooms) will focus on addressing “the challenge of sustaining the R Project” through direct contributions among other aspects.</p>\n<h3>\nCoverage badge without a third-party\n</h3><p>Adam Sparks wrote up his <a href=\"https://adamhsparks.netlify.app/2026/01/24/look-ma-no-codecov-io/\" rel=\"nofollow\" target=\"_blank\">strategy</a> for generating a README badge displaying test coverage, without using a third-party such as codecov.io.</p>\n<h3>\nDynamic content in Rd files\n</h3><p>As <a href=\"https://github.com/eliocamp/rhelpi18n/issues/25\" rel=\"nofollow\" target=\"_blank\">noted by Elio Campitelli</a>,</p>\n<blockquote>\n<p>Documentation can have code that is run dynamically either at install, build or render time</p>\n</blockquote>\n<p>An example can be found in <a href=\"https://github.com/cran/dplyr/blob/99a15aec2a93face9b9006db166bd5b0f9ce37d0/R/pull.R#L19\" rel=\"nofollow\" target=\"_blank\">dplyr</a> where code lists relevant methods present in loaded package. That code is run when the user loads the help page (render time).</p>\n<p>Other examples for <a href=\"https://github.com/search?q=owner%3Acran+Sexpr%5Bstage%3Drender&amp;type=code\" rel=\"nofollow\" target=\"_blank\">render</a>, <a href=\"https://github.com/search?q=owner%3Acran+Sexpr%5Bstage%3Dinstall&amp;type=code\" rel=\"nofollow\" target=\"_blank\">install</a> and <a href=\"https://github.com/search?q=owner%3Acran+Sexpr%5Bstage%3Dbuild&amp;type=code\" rel=\"nofollow\" target=\"_blank\">build</a>.</p>\n<h3>\nOn issues and PRs\n</h3><p>The ghostty project was recently featured on <a href=\"https://news.ycombinator.com/item?id=46460319\" rel=\"nofollow\" target=\"_blank\">Hacker News</a> for its <a href=\"https://github.com/ghostty-org/ghostty/issues/3558\" rel=\"nofollow\" target=\"_blank\">issue tracker policy</a>. The process is to have users open a discussion using GitHub Discussions, then to convert the discussion to an issue if relevant.</p>\n<blockquote>\n<p>“This approach is based on years of experience maintaining open source projects and observing that 80-90% of what users think are bugs are either misunderstandings, environmental problems, or configuration errors by the users themselves. For what’s left, the majority are often feature requests (unimplemented features) and not bugs (malfunctioning features). Of the features requests, almost all are underspecified and require more guidance by a maintainer to be worked on.”</p>\n</blockquote>\n<p>The tldraw project announced that they no longer <a href=\"https://github.com/tldraw/tldraw/issues/7695\" rel=\"nofollow\" target=\"_blank\">accept PRs from external contributors</a>. In this case, the motivation is to not waste precious developers’ time on AI slop.</p>\n<blockquote>\n<p>“Like many other open-source projects on GitHub, we’ve recently seen a significant increase in contributions generated entirely by AI tools. While some of these pull requests are formally correct, most suffer from incomplete or misleading context, misunderstanding of the codebase, and little to no follow-up engagement from their authors.”</p>\n</blockquote>\n<h3>\nNew JOSS policy on AI\n</h3><p>Read about the Journal of Open Source Software updated its <a href=\"https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future\" rel=\"nofollow\" target=\"_blank\">submission requirements</a> to adapt JOSS for a world with heavy AI use for software development.</p>\n<h2>\nLast words\n</h2><p>Thanks for reading! If you want to get involved with rOpenSci, check out our <a href=\"https://contributing.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">Contributing Guide</a> that can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases. You can also support our work through <a href=\"https://ropensci.org/donate\" rel=\"nofollow\" target=\"_blank\">donations</a>.</p>\n<p>If you haven’t subscribed to our newsletter yet, you can <a href=\"https://ropensci.org/news/\" rel=\"nofollow\" target=\"_blank\">do so via a form</a>. Until it’s time for our next newsletter, you can keep in touch with us via our <a href=\"https://ropensci.org/\" rel=\"nofollow\" target=\"_blank\">website</a> and <a href=\"https://hachyderm.io/@rOpenSci\" rel=\"nofollow\" target=\"_blank\">Mastodon account</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2026/01/29/news-january-2026/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 2422,
+    "reading_time_min": 12.1,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://ropensci.org/blog/2026/01/29/news-january-2026/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/29/news-january-2026",
+        "text": "on our blog"
+      },
+      {
+        "href": "https://ropensci.org/es/commcalls/champions-latino-2026/",
+        "text": "Watch the video"
+      },
+      {
+        "href": "https://ropensci.org/events/clinica-champions-2026/",
+        "text": "Application Clinic:Thursday, February 5, 2026"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/12/programchamps2026/",
+        "text": "blog post"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/22/yearinreview2025/",
+        "text": "Closing The Loop with Our 2025 Wrap-up"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/07/conduct2025/",
+        "text": "CoC updates"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/06/transparencycoc2025/",
+        "text": "transparency report"
+      },
+      {
+        "href": "https://ropensci.org/author/natalia-morandeira/",
+        "text": "Natalia Morandeira"
+      },
+      {
+        "href": "https://r-universe.dev/",
+        "text": "https://r-universe.dev"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/03/r-universe-workflows/",
+        "text": "tech note"
+      },
+      {
+        "href": "https://docs.r-universe.dev/publish/troubleshoot-build.html#how-to-test-the-r-universe-build-workflow-from-your-own-github-repository",
+        "text": "R-universe docs"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/06/21/coworking/",
+        "text": "all about coworking"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2026-02/",
+        "text": "“Share your Positron setup!”"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/author/noam-ross/",
+        "text": "Noam Ross"
+      },
+      {
+        "href": "https://ropensci.org/events/clinica-champions-2026/",
+        "text": "Clinica de Aplicación para el Programa de Campeon(e|a)s de rOpenSci"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2026-03/",
+        "text": "“rOpenSci Editors”"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/author/mark-padgham/",
+        "text": "Mark Padgham"
+      },
+      {
+        "href": "https://ropensci.org/software-review/",
+        "text": "rOpenSci Software Peer Review"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2026-04/",
+        "text": "“Getting to know the CSID Network”"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/author/irene-ramos/",
+        "text": "Irene Ramos"
+      },
+      {
+        "href": "https://csidnet.org/",
+        "text": "CSID Network"
+      },
+      {
+        "href": "https://docs.ropensci.org/read.abares",
+        "text": "read.abares"
+      },
+      {
+        "href": "https://www.agriculture.gov.au/abares",
+        "text": "https://www.agriculture.gov.au/abares"
+      },
+      {
+        "href": "https://www.abs.gov.au/",
+        "text": "https://www.abs.gov.au"
+      },
+      {
+        "href": "https://cran.r-project.org/package=read.abares",
+        "text": "CRAN"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/667",
+        "text": "reviewed"
+      },
+      {
+        "href": "https://docs.ropensci.org/dfms",
+        "text": "dfms"
+      },
+      {
+        "href": "https://doi.org/10.1016/j.jeconom.2011.02.012",
+        "text": "https://doi.org/10.1016/j.jeconom.2011.02.012"
+      },
+      {
+        "href": "https://doi.org/10.1162/REST_a_00225",
+        "text": "https://doi.org/10.1162/REST_a_00225"
+      },
+      {
+        "href": "https://doi.org/10.1002/jae.2306",
+        "text": "https://doi.org/10.1002/jae.2306"
+      },
+      {
+        "href": "https://doi.org/10.1111/1468-0262.00273",
+        "text": "https://doi.org/10.1111/1468-0262.00273"
+      },
+      {
+        "href": "https://cran.r-project.org/package=dfms",
+        "text": "CRAN"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/556",
+        "text": "reviewed"
+      },
+      {
+        "href": "https://ropensci.org/packages",
+        "text": "more packages"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://docs.ropensci.org/sits",
+        "text": "sits"
+      },
+      {
+        "href": "https://github.com/e-sensing/sits/releases/tag/v1.5.4",
+        "text": "v1.5.4"
+      },
+      {
+        "href": "https://docs.ropensci.org/cffr",
+        "text": "cffr"
+      },
+      {
+        "href": "https://github.com/ropensci/cffr/releases/tag/v1.2.1",
+        "text": "v1.2.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/charlatan",
+        "text": "charlatan"
+      },
+      {
+        "href": "https://github.com/ropensci/charlatan/releases/tag/v0.6.2",
+        "text": "v0.6.2"
+      },
+      {
+        "href": "https://docs.ropensci.org/dataset",
+        "text": "dataset"
+      },
+      {
+        "href": "https://github.com/ropensci/dataset/releases/tag/0.4.2",
+        "text": "0.4.2"
+      },
+      {
+        "href": "https://docs.ropensci.org/dbparser",
+        "text": "dbparser"
+      },
+      {
+        "href": "https://github.com/ropensci/dbparser/releases/tag/v2.2.1",
+        "text": "v2.2.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/dfms",
+        "text": "dfms"
+      },
+      {
+        "href": "https://github.com/ropensci/dfms/releases/tag/v1.0.0",
+        "text": "v1.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/dittodb",
+        "text": "dittodb"
+      },
+      {
+        "href": "https://github.com/ropensci/dittodb/releases/tag/v0.1.10",
+        "text": "v0.1.10"
+      },
+      {
+        "href": "https://docs.ropensci.org/EDIutils",
+        "text": "EDIutils"
+      },
+      {
+        "href": "https://github.com/ropensci/EDIutils/releases/tag/v2.0.0",
+        "text": "v2.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/gutenbergr",
+        "text": "gutenbergr"
+      },
+      {
+        "href": "https://github.com/ropensci/gutenbergr/releases/tag/v0.4.1",
+        "text": "v0.4.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/mantis",
+        "text": "mantis"
+      },
+      {
+        "href": "https://github.com/ropensci/mantis/releases/tag/v1.0.1",
+        "text": "v1.0.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/openalexR",
+        "text": "openalexR"
+      },
+      {
+        "href": "https://github.com/ropensci/openalexR/releases/tag/v3.0.1",
+        "text": "v3.0.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview",
+        "text": "patentsview"
+      },
+      {
+        "href": "https://github.com/ropensci/patentsview/releases/tag/v1.0.0",
+        "text": "v1.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/read.abares",
+        "text": "read.abares"
+      },
+      {
+        "href": "https://github.com/ropensci/read.abares/releases/tag/v2.0.0",
+        "text": "v2.0.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/rerddap",
+        "text": "rerddap"
+      },
+      {
+        "href": "https://github.com/ropensci/rerddap/releases/tag/v1.2.2",
+        "text": "v1.2.2"
+      },
+      {
+        "href": "https://docs.ropensci.org/rnaturalearth",
+        "text": "rnaturalearth"
+      },
+      {
+        "href": "https://github.com/ropensci/rnaturalearth/releases/tag/v1.2.0",
+        "text": "v1.2.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/rotl",
+        "text": "rotl"
+      },
+      {
+        "href": "https://github.com/ropensci/rotl/releases/tag/v3.1.1",
+        "text": "v3.1.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/weathercan",
+        "text": "weathercan"
+      },
+      {
+        "href": "https://github.com/ropensci/weathercan/releases/tag/v0.7.8",
+        "text": "v0.7.8"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%226/approved%22",
+        "text": "‘6/approved’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/667",
+        "text": "read.abares"
+      },
+      {
+        "href": "https://adamhsparks.netlify.app/",
+        "text": "Adam H. Sparks"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%225/awaiting-reviewer(s)-response%22",
+        "text": "‘5/awaiting-reviewer(s)-response’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/671",
+        "text": "pkgmatch"
+      },
+      {
+        "href": "https://mpadge.github.io/",
+        "text": "mark padgham"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%224/review(s)-in-awaiting-changes%22",
+        "text": "‘4/review(s)-in-awaiting-changes’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/729",
+        "text": "suwo"
+      },
+      {
+        "href": "https://marce10.github.io/",
+        "text": "Marcelo Araya-Salas"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/728",
+        "text": "Athlytics"
+      },
+      {
+        "href": "https://github.com/HzaCode",
+        "text": "Ang"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/724",
+        "text": "cowfootR"
+      },
+      {
+        "href": "https://github.com/juanmarcosmoreno-arch",
+        "text": "Juan Moreno"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/714",
+        "text": "openFDA"
+      },
+      {
+        "href": "https://github.com/simpar1471",
+        "text": "Simon Parker"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/615",
+        "text": "galamm"
+      },
+      {
+        "href": "https://osorensen.github.io/",
+        "text": "Øystein Sørensen"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%223/reviewer(s)-assigned%22",
+        "text": "‘3/reviewer(s)-assigned’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/730",
+        "text": "ernest"
+      },
+      {
+        "href": "https://github.com/kylesnap",
+        "text": "Kyle Dewsnap"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/718",
+        "text": "rcrisp"
+      },
+      {
+        "href": "https://github.com/cforgaci",
+        "text": "Claudiu Forgaci"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/709",
+        "text": "reviser"
+      },
+      {
+        "href": "https://marcburri.github.io/",
+        "text": "Marc Burri"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/556",
+        "text": "dfms"
+      },
+      {
+        "href": "https://sebastiankrantz.com/",
+        "text": "Sebastian Krantz"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%221/editor-checks%22",
+        "text": "‘1/editor-checks’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/744",
+        "text": "RAQSAPI"
+      },
+      {
+        "href": "https://github.com/mccroweyclinton-EPA",
+        "text": "mccroweyclinton-EPA"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/741",
+        "text": "logolink"
+      },
+      {
+        "href": "http://danielvartan.com/",
+        "text": "Daniel Vartanian"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/740",
+        "text": "fcmconfr"
+      },
+      {
+        "href": "https://github.com/bhroston",
+        "text": "benroston"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/732",
+        "text": "ActiGlobe"
+      },
+      {
+        "href": "https://scholar.google.ca/citations?user=T7y9ckwAAAAJ&hl=en",
+        "text": "C. William Yao"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/717",
+        "text": "coevolve"
+      },
+      {
+        "href": "https://scottclaessens.github.io/",
+        "text": "Scott Claessens"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/704",
+        "text": "priorsense"
+      },
+      {
+        "href": "https://github.com/n-kall",
+        "text": "Noa Kallioinen"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/645",
+        "text": "capybara"
+      },
+      {
+        "href": "https://pacha.dev/",
+        "text": "Mauricio “Pachá” Vargas Sepúlveda"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/03/r-universe-workflows",
+        "text": "Testing the R-universe build workflow from your own GitHub repository"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/06/transparencyCoC2025",
+        "text": "rOpenSci 2025 Code of Conduct Transparency Report"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/01/06/transparenciaCoC2025",
+        "text": "Reporte de Transparencia del Código de Conducta de rOpenSci 2025 (es)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/07/conduct2025",
+        "text": "rOpenSci Code of Conduct Annual Review"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/01/07/conducta2025",
+        "text": "Revisión anual del código de conducta de rOpenSci (es)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/12/programchamps2026",
+        "text": "Open call for the rOpenSci Champions Program 2026!"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/01/12/programachamps2026",
+        "text": "Convocatoria abierta al Programa de Campeonas y Campeones de rOpenSci 2026 (es)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/22/yearinreview2025",
+        "text": "Closing The Loop with Our 2025 Wrap-up"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/01/26/commcallchamps",
+        "text": "Software Libre de Investigación en América Latina, conversaciones con la comunidad de Campeon(a|e)s de rOpenSci"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/27/new-maintainer",
+        "text": "How to Recruit a New Maintainer for Your Package"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/01/27/new-maintainer",
+        "text": "Cómo sumar nuevas personas al mantenimiento de tu paquete (es)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/12/17/beyond-github",
+        "text": "Code Hosting Options Beyond GitHub"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/20/introducing-distionary",
+        "text": "Introducing distionary for Building and Probing Distributions"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/",
+        "text": "What Does It Mean to Maintain a Package?"
+      },
+      {
+        "href": "https://docs.ropensci.org/hddtools",
+        "text": "hddtools"
+      },
+      {
+        "href": "https://github.com/ropensci/hddtools/issues/36",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/qualtRics/",
+        "text": "qualtRics"
+      },
+      {
+        "href": "https://github.com/ropensci/qualtRics/issues/383",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/photosearcher",
+        "text": "photosearcher"
+      },
+      {
+        "href": "https://github.com/ropensci/photosearcher/issues/22",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://ropensci.org/help-wanted/",
+        "text": "help wanted page"
+      },
+      {
+        "href": "https://drmowinckels.io/blog/2025/rpackage-dev-calendar/",
+        "text": "blog"
+      },
+      {
+        "href": "https://blog.r-project.org/2025/12/17/rsmf-enabling-the-next-generation-of-contributors-to-r/",
+        "text": "blog post"
+      },
+      {
+        "href": "https://adamhsparks.netlify.app/2026/01/24/look-ma-no-codecov-io/",
+        "text": "strategy"
+      },
+      {
+        "href": "https://github.com/eliocamp/rhelpi18n/issues/25",
+        "text": "noted by Elio Campitelli"
+      },
+      {
+        "href": "https://github.com/cran/dplyr/blob/99a15aec2a93face9b9006db166bd5b0f9ce37d0/R/pull.R#L19",
+        "text": "dplyr"
+      },
+      {
+        "href": "https://github.com/search?q=owner%3Acran+Sexpr%5Bstage%3Drender&type=code",
+        "text": "render"
+      },
+      {
+        "href": "https://github.com/search?q=owner%3Acran+Sexpr%5Bstage%3Dinstall&type=code",
+        "text": "install"
+      },
+      {
+        "href": "https://github.com/search?q=owner%3Acran+Sexpr%5Bstage%3Dbuild&type=code",
+        "text": "build"
+      },
+      {
+        "href": "https://news.ycombinator.com/item?id=46460319",
+        "text": "Hacker News"
+      },
+      {
+        "href": "https://github.com/ghostty-org/ghostty/issues/3558",
+        "text": "issue tracker policy"
+      },
+      {
+        "href": "https://github.com/tldraw/tldraw/issues/7695",
+        "text": "accept PRs from external contributors"
+      },
+      {
+        "href": "https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future",
+        "text": "submission requirements"
+      },
+      {
+        "href": "https://contributing.ropensci.org/",
+        "text": "Contributing Guide"
+      },
+      {
+        "href": "https://ropensci.org/donate",
+        "text": "donations"
+      },
+      {
+        "href": "https://ropensci.org/news/",
+        "text": "do so via a form"
+      },
+      {
+        "href": "https://ropensci.org/",
+        "text": "website"
+      },
+      {
+        "href": "https://hachyderm.io/@rOpenSci",
+        "text": "Mastodon account"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/01/29/news-january-2026/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-01-29T16:33:29Z"
+  }
+}
