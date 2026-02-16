@@ -1,0 +1,127 @@
+{
+  "id": "73c1b8fa047b13000b7915c61fb5ba96a08ada96",
+  "url": "https://www.r-bloggers.com/2026/02/cdcplaces-1-2-0/",
+  "created_at_utc": "2026-02-16T08:36:39Z",
+  "crawled_at_utc": "2026-02-16T08:36:39Z",
+  "html_title": "CDCPLACES 1.2.0 | R-bloggers",
+  "meta_description": "Place geography, 2025 data, and a major reliability overhaul.",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/02/cdcplaces-1-2-0/",
+    "canonical_url": "https://www.r-bloggers.com/2026/02/cdcplaces-1-2-0/",
+    "html_title": "CDCPLACES 1.2.0 | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Place geography, 2025 data, and a major reliability overhaul.",
+    "meta_keywords": null,
+    "og_title": "CDCPLACES 1.2.0 | R-bloggers",
+    "og_description": "Place geography, 2025 data, and a major reliability overhaul.",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "CDCPLACES 1.2.0 | R-bloggers",
+    "twitter_description": "Place geography, 2025 data, and a major reliability overhaul.",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "CDCPLACES 1.2.0\nPosted on\nFebruary 15, 2026\nby\nbs\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nbs\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI’m happy to announce the release of\nCDCPLACES\n1.2.0. This package lets you query the CDC’s Population Level Analysis and Community Estimates (PLACES) API directly from R, returning health measure estimates for counties, census tracts, ZCTAs, and—new in this release—places (cities, towns, and census-designated places).\nYou can install it from CRAN with:\ninstall.packages(\"CDCPLACES\")\nOr get the development version from GitHub:\ndevtools::install_github(\"brendensm/CDCPLACES\")\nThis post walks through the highlights. The full changelog is in the\nNEWS file\n.\nPlace geography\nThe biggest addition in 1.2.0 is support for\nplace-level\ndata. PLACES has always published estimates for incorporated places and census-designated places, but the package only supported county, tract, and ZCTA queries. Now you can pull place-level data across all release years (2020–2025):\nget_places(geography = \"place\", state = \"MI\", measure = \"SLEEP\")\nPlace geography also supports the\ngeometry\nand\nage_adjust\narguments, so you can map city-level estimates just as easily as counties:\nget_places(geography = \"place\", state = \"MI\", measure = \"SLEEP\", geometry = TRUE)\n2025 release data\nThe package now defaults to the\n2025 release year\n, which is the latest available from CDC. All four geographies—county, tract, ZCTA, and place—are supported for 2025.\n# 2025 is now the default\nget_places(geography = \"county\", state = \"OH\", measure = \"ACCESS2\")\nYou can still query any prior year back to 2020 by setting the\nrelease\nargument.\nSmarter API queries\nUnder the hood, the way queries are built has been rewritten. The package now constructs SQL\nIN\noperators instead of chaining\nLIKE\n/\nOR\nclauses, which produces shorter and more efficient API requests.\nMore importantly,\nZCTA queries are now automatically batched\n. Some states have thousands of ZCTAs (Texas alone has roughly 2,000), and the previous approach could exceed Socrata’s URL length limit and fail silently. The package now detects when a query would be too long and splits it into multiple smaller requests behind the scenes.\nBreaking changes\nA few things to watch for when upgrading:\ngeography = \"census\"\nhas been removed.\nUse\n\"tract\"\ninstead. The old value now produces a clear error message pointing you to the fix.\nThe default release year is now\n\"2025\"\n.\nIf your code relied on the previous default, pass\nrelease\nexplicitly to get the same results.\nMinimum R version is 4.1.0\n, required for the base pipe (\n|>\n).\nReliability improvements\nThis release fixes a number of edge-case bugs that could cause confusing errors or silently wrong results:\ngeometry = TRUE\nnow uses the correct Census vintage. PLACES switched from 2010 to 2020 Census geographies starting with the 2024 release, so tract and ZCTA GEOIDs could silently fail to join. The package now picks the right shapefiles based on the\nrelease\nyear.\nCounty filtering is no longer case-sensitive. Previously,\ncounty = \"ST. LOUIS\"\nwouldn’t match the API’s title-case\n\"St. Louis\"\n.\nFunctions that prompt about overlapping counties no longer hang in non-interactive sessions (Shiny, knitr, CI). They now default to including all matches with a message.\nConnection-level errors (DNS failures, timeouts) no longer crash with an opaque\n$ operator is invalid for atomic vectors\nerror.\nDataset discovery is now automated\nThe internal table of API endpoints used to be maintained by hand. In 1.2.0,\ndata-raw/DATASET.R\nqueries the\nSocrata Discovery API\nto programmatically find every PLACES dataset, making it straightforward to add new release years as CDC publishes them.\nIn addition, the GitHub repo for this package now has a GitHub action to check monthly for URL changes. If for some reason the underlying API URLs change for a specific year or data set, a GitHub issue will automatically be opened.\nOther notes\nThe underlying\ndata dictionary\nfor the full range of available PLACES data measures and variables has not yet been updated by the PLACES team. This means that there is no additional information included for the 2025 release in this data frame (this is the data frame queried when running\nget_dictionary\n).\nZCTA-level data for the 2024 release of PLACES is currently unavailable. This is not posted as a public data set (even though it is present for other release years). I believe this may be due to a mistake during the 2025 release.\nFor both of these issues, I have contacted PLACES to see if updates will be made. I will update the package and this blog post accordingly.\nAcknowledgments\nI wanted to recognize that many of these updates were made possible by Claude Code. I would like to thank Garrick Aden-Buie from Posit specifically for sharing these\nClaude skills\nwhich helped immensely in the testing and review of this package update.\nIf you run into problems or have other ideas, please\nopen an issue\non GitHub. If you want to stay up to date with me and get notified when I post, consider\nsubscribing to my newsletter.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nbs\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-398983 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">CDCPLACES 1.2.0</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 15, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/bs/\">bs</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://brendenmsmith.com/posts/cdcplaces-1-2-0/\"> bs</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>I’m happy to announce the release of <a href=\"https://brendensm.github.io/CDCPLACES/\" rel=\"nofollow\" target=\"_blank\">CDCPLACES</a> 1.2.0. This package lets you query the CDC’s Population Level Analysis and Community Estimates (PLACES) API directly from R, returning health measure estimates for counties, census tracts, ZCTAs, and—new in this release—places (cities, towns, and census-designated places).</p>\n<p>You can install it from CRAN with:</p>\n<pre>install.packages(\"CDCPLACES\")</pre>\n<p>Or get the development version from GitHub:</p>\n<pre>devtools::install_github(\"brendensm/CDCPLACES\")</pre>\n<p>This post walks through the highlights. The full changelog is in the <a href=\"https://brendensm.github.io/CDCPLACES/news/index.html\" rel=\"nofollow\" target=\"_blank\">NEWS file</a>.</p>\n<h2 id=\"place-geography\">Place geography</h2>\n<p>The biggest addition in 1.2.0 is support for <strong>place-level</strong> data. PLACES has always published estimates for incorporated places and census-designated places, but the package only supported county, tract, and ZCTA queries. Now you can pull place-level data across all release years (2020–2025):</p>\n<div class=\"cell\">\n<pre>get_places(geography = \"place\", state = \"MI\", measure = \"SLEEP\")</pre>\n</div>\n<p>Place geography also supports the <code>geometry</code> and <code>age_adjust</code> arguments, so you can map city-level estimates just as easily as counties:</p>\n<div class=\"cell\">\n<pre>get_places(geography = \"place\", state = \"MI\", measure = \"SLEEP\", geometry = TRUE)</pre>\n</div>\n<h2 id=\"release-data\">2025 release data</h2>\n<p>The package now defaults to the <strong>2025 release year</strong>, which is the latest available from CDC. All four geographies—county, tract, ZCTA, and place—are supported for 2025.</p>\n<div class=\"cell\">\n<pre># 2025 is now the default\nget_places(geography = \"county\", state = \"OH\", measure = \"ACCESS2\")</pre>\n</div>\n<p>You can still query any prior year back to 2020 by setting the <code>release</code> argument.</p>\n<h2 id=\"smarter-api-queries\">Smarter API queries</h2>\n<p>Under the hood, the way queries are built has been rewritten. The package now constructs SQL <code>IN</code> operators instead of chaining <code>LIKE</code>/<code>OR</code> clauses, which produces shorter and more efficient API requests.</p>\n<p>More importantly, <strong>ZCTA queries are now automatically batched</strong>. Some states have thousands of ZCTAs (Texas alone has roughly 2,000), and the previous approach could exceed Socrata’s URL length limit and fail silently. The package now detects when a query would be too long and splits it into multiple smaller requests behind the scenes.</p>\n<h2 id=\"breaking-changes\">Breaking changes</h2>\n<p>A few things to watch for when upgrading:</p>\n<ul>\n<li><strong><code>geography = \"census\"</code> has been removed.</strong> Use <code>\"tract\"</code> instead. The old value now produces a clear error message pointing you to the fix.</li>\n<li><strong>The default release year is now <code>\"2025\"</code>.</strong> If your code relied on the previous default, pass <code>release</code> explicitly to get the same results.</li>\n<li><strong>Minimum R version is 4.1.0</strong>, required for the base pipe (<code>|&gt;</code>).</li>\n</ul>\n<h2 id=\"reliability-improvements\">Reliability improvements</h2>\n<p>This release fixes a number of edge-case bugs that could cause confusing errors or silently wrong results:</p>\n<ul>\n<li><code>geometry = TRUE</code> now uses the correct Census vintage. PLACES switched from 2010 to 2020 Census geographies starting with the 2024 release, so tract and ZCTA GEOIDs could silently fail to join. The package now picks the right shapefiles based on the <code>release</code> year.</li>\n<li>County filtering is no longer case-sensitive. Previously, <code>county = \"ST. LOUIS\"</code> wouldn’t match the API’s title-case <code>\"St. Louis\"</code>.</li>\n<li>Functions that prompt about overlapping counties no longer hang in non-interactive sessions (Shiny, knitr, CI). They now default to including all matches with a message.</li>\n<li>Connection-level errors (DNS failures, timeouts) no longer crash with an opaque <code>$ operator is invalid for atomic vectors</code> error.</li>\n</ul>\n<h2 id=\"dataset-discovery-is-now-automated\">Dataset discovery is now automated</h2>\n<p>The internal table of API endpoints used to be maintained by hand. In 1.2.0, <code>data-raw/DATASET.R</code> queries the <a href=\"https://socratadiscovery.docs.apiary.io/\" rel=\"nofollow\" target=\"_blank\">Socrata Discovery API</a> to programmatically find every PLACES dataset, making it straightforward to add new release years as CDC publishes them.</p>\n<p>In addition, the GitHub repo for this package now has a GitHub action to check monthly for URL changes. If for some reason the underlying API URLs change for a specific year or data set, a GitHub issue will automatically be opened.</p>\n<h2 id=\"other-notes\">Other notes</h2>\n<p>The underlying <a href=\"https://data.cdc.gov/500-Cities-Places/PLACES-and-500-Cities-Data-Dictionary/m35w-spkz/about_data\" rel=\"nofollow\" target=\"_blank\">data dictionary</a> for the full range of available PLACES data measures and variables has not yet been updated by the PLACES team. This means that there is no additional information included for the 2025 release in this data frame (this is the data frame queried when running <code>get_dictionary</code>).</p>\n<p>ZCTA-level data for the 2024 release of PLACES is currently unavailable. This is not posted as a public data set (even though it is present for other release years). I believe this may be due to a mistake during the 2025 release.</p>\n<p>For both of these issues, I have contacted PLACES to see if updates will be made. I will update the package and this blog post accordingly.</p>\n<h2 id=\"acknowledgments\">Acknowledgments</h2>\n<p>I wanted to recognize that many of these updates were made possible by Claude Code. I would like to thank Garrick Aden-Buie from Posit specifically for sharing these <a href=\"https://github.com/posit-dev/skills\" rel=\"nofollow\" target=\"_blank\">Claude skills</a> which helped immensely in the testing and review of this package update.</p>\n<p>If you run into problems or have other ideas, please <a href=\"https://github.com/brendensm/CDCPLACES/issues\" rel=\"nofollow\" target=\"_blank\">open an issue</a> on GitHub. If you want to stay up to date with me and get notified when I post, consider <a href=\"https://n1mbmu-brenden-smith.shinyapps.io/listserv/\" rel=\"nofollow\" target=\"_blank\">subscribing to my newsletter.</a></p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://brendenmsmith.com/posts/cdcplaces-1-2-0/\"> bs</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 944,
+    "reading_time_min": 4.7,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/bs/",
+        "text": "bs"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://brendenmsmith.com/posts/cdcplaces-1-2-0/",
+        "text": "bs"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://brendensm.github.io/CDCPLACES/",
+        "text": "CDCPLACES"
+      },
+      {
+        "href": "https://brendensm.github.io/CDCPLACES/news/index.html",
+        "text": "NEWS file"
+      },
+      {
+        "href": "https://socratadiscovery.docs.apiary.io/",
+        "text": "Socrata Discovery API"
+      },
+      {
+        "href": "https://data.cdc.gov/500-Cities-Places/PLACES-and-500-Cities-Data-Dictionary/m35w-spkz/about_data",
+        "text": "data dictionary"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills",
+        "text": "Claude skills"
+      },
+      {
+        "href": "https://github.com/brendensm/CDCPLACES/issues",
+        "text": "open an issue"
+      },
+      {
+        "href": "https://n1mbmu-brenden-smith.shinyapps.io/listserv/",
+        "text": "subscribing to my newsletter."
+      },
+      {
+        "href": "https://brendenmsmith.com/posts/cdcplaces-1-2-0/",
+        "text": "bs"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-02-16T08:36:39Z"
+  }
+}
