@@ -1,0 +1,99 @@
+{
+  "id": "44be6b625eb2c87de8f6470384709a9dad76e75a",
+  "url": "https://www.r-bloggers.com/2026/02/keeping-files-organised-for-publication/",
+  "created_at_utc": "2026-02-19T05:53:23Z",
+  "crawled_at_utc": "2026-02-19T05:53:23Z",
+  "html_title": "Keeping files organised for publication | R-bloggers",
+  "meta_description": "Getting files ready for publication can be frustrating when you can’t find the right file, or you realize your figures look like 2000s jpeg. Here’s a list of things I wished I’d done (or my students had done) properly earlier in the paper prep p...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/02/keeping-files-organised-for-publication/",
+    "canonical_url": "https://www.r-bloggers.com/2026/02/keeping-files-organised-for-publication/",
+    "html_title": "Keeping files organised for publication | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Getting files ready for publication can be frustrating when you can’t find the right file, or you realize your figures look like 2000s jpeg. Here’s a list of things I wished I’d done (or my students had done) properly earlier in the paper prep p...",
+    "meta_keywords": null,
+    "og_title": "Keeping files organised for publication | R-bloggers",
+    "og_description": "Getting files ready for publication can be frustrating when you can’t find the right file, or you realize your figures look like 2000s jpeg. Here’s a list of things I wished I’d done (or my students had done) properly earlier in the paper prep p...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Keeping files organised for publication | R-bloggers",
+    "twitter_description": "Getting files ready for publication can be frustrating when you can’t find the right file, or you realize your figures look like 2000s jpeg. Here’s a list of things I wished I’d done (or my students had done) properly earlier in the paper prep p...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Keeping files organised for publication\nPosted on\nFebruary 18, 2026\nby\nSeascapemodels\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nSeascapemodels\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nGetting files ready for publication can be frustrating when you can’t find the right file, or you realize your figures look like 2000s jpeg.\nHere’s a list of things I wished I’d done (or my students had done) properly earlier in the paper prep process. Save this list somewhere to refer back to it, it will save you time and frustration.\nKeep folders organized. Save figures for the pub to a single folder. Likewise have a folder for tables. Towards submission label these files as per the paper e.g. fig1_concepts.png ….\nYou R scripts should save plots directly to that folder like ggsave(“plots/fig1-lineplot.png…)\nMake a final results script that reads in the final outputs and calculates any stats/metrics you quote in the results in the order they are written in the results. This helps with updating this section if you have to re-run or change something during review and for cross checking with the MS.\nIf assembling figures in powerpoint, save original powerpoint in this folder also\nAlways save figures in high res .png format, ready for publication. e.g. ggsave(“plots/bias_sensitivity_analysis.png”, final_plot, width = 12, height = 6, dpi = 300)\nHave separate R scripts that make pub ready figures (e.g. load final model fits and make figures). This way you can quickly go back into and edit them. Obviously make the scripts easy to find with clear names and project folder structure.\nEven better save both .png and .pdf versions. Never use .jpg (.jpg is for photos)\nWhen revising your ms to respond to reviews turn on track changes the entire time. You should resubmit the track changed version as one of the files.\nDouble check how coauthors spell their names/institutions against their previous papers, before you submit\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nSeascapemodels\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399101 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Keeping files organised for publication</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 18, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/seascapemodels/\">Seascapemodels</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.seascapemodels.org/posts/2026-02-19-keeping-organised-for-publication/\"> Seascapemodels</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>Getting files ready for publication can be frustrating when you can’t find the right file, or you realize your figures look like 2000s jpeg.</p>\n<p>Here’s a list of things I wished I’d done (or my students had done) properly earlier in the paper prep process. Save this list somewhere to refer back to it, it will save you time and frustration.</p>\n<ul>\n<li><p>Keep folders organized. Save figures for the pub to a single folder. Likewise have a folder for tables. Towards submission label these files as per the paper e.g. fig1_concepts.png ….</p></li>\n<li><p>You R scripts should save plots directly to that folder like ggsave(“plots/fig1-lineplot.png…)</p></li>\n<li><p>Make a final results script that reads in the final outputs and calculates any stats/metrics you quote in the results in the order they are written in the results. This helps with updating this section if you have to re-run or change something during review and for cross checking with the MS.</p></li>\n<li><p>If assembling figures in powerpoint, save original powerpoint in this folder also</p></li>\n<li><p>Always save figures in high res .png format, ready for publication. e.g. ggsave(“plots/bias_sensitivity_analysis.png”, final_plot, width = 12, height = 6, dpi = 300)</p></li>\n<li><p>Have separate R scripts that make pub ready figures (e.g. load final model fits and make figures). This way you can quickly go back into and edit them. Obviously make the scripts easy to find with clear names and project folder structure.</p></li>\n<li><p>Even better save both .png and .pdf versions. Never use .jpg (.jpg is for photos)</p></li>\n<li><p>When revising your ms to respond to reviews turn on track changes the entire time. You should resubmit the track changed version as one of the files.</p></li>\n<li><p>Double check how coauthors spell their names/institutions against their previous papers, before you submit</p></li>\n</ul>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.seascapemodels.org/posts/2026-02-19-keeping-organised-for-publication/\"> Seascapemodels</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 437,
+    "reading_time_min": 2.2,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/seascapemodels/",
+        "text": "Seascapemodels"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://www.seascapemodels.org/posts/2026-02-19-keeping-organised-for-publication/",
+        "text": "Seascapemodels"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.seascapemodels.org/posts/2026-02-19-keeping-organised-for-publication/",
+        "text": "Seascapemodels"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-02-19T05:53:23Z"
+  }
+}
