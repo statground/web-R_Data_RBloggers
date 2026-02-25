@@ -1,0 +1,158 @@
+{
+  "id": "4c019f5063bd2ff160705a48144618fe2ade9e1a",
+  "url": "https://www.r-bloggers.com/2026/02/pmrm-joins-openpharma-and-reaches-cran/",
+  "created_at_utc": "2026-02-25T15:53:57Z",
+  "crawled_at_utc": "2026-02-25T15:53:58Z",
+  "html_title": "{pmrm} joins openpharma and reaches CRAN | R-bloggers",
+  "meta_description": "We are delighted to announce that {pmrm} has joined the openpharma GitHub org and is now available on CRAN. This package implements frequentist progression models for repeated measures (PMRMs), a class of continuous-time nonlinear mixed-effects ...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/02/pmrm-joins-openpharma-and-reaches-cran/",
+    "canonical_url": "https://www.r-bloggers.com/2026/02/pmrm-joins-openpharma-and-reaches-cran/",
+    "html_title": "{pmrm} joins openpharma and reaches CRAN | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "We are delighted to announce that {pmrm} has joined the openpharma GitHub org and is now available on CRAN. This package implements frequentist progression models for repeated measures (PMRMs), a class of continuous-time nonlinear mixed-effects ...",
+    "meta_keywords": null,
+    "og_title": "{pmrm} joins openpharma and reaches CRAN | R-bloggers",
+    "og_description": "We are delighted to announce that {pmrm} has joined the openpharma GitHub org and is now available on CRAN. This package implements frequentist progression models for repeated measures (PMRMs), a class of continuous-time nonlinear mixed-effects ...",
+    "og_image": "https://www.openstatsware.org/blog/pmrm-cran-release/pmrm-logo.png",
+    "twitter_title": "{pmrm} joins openpharma and reaches CRAN | R-bloggers",
+    "twitter_description": "We are delighted to announce that {pmrm} has joined the openpharma GitHub org and is now available on CRAN. This package implements frequentist progression models for repeated measures (PMRMs), a class of continuous-time nonlinear mixed-effects ...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "{pmrm} joins openpharma and reaches CRAN\nPosted on\nFebruary 23, 2026\nby\nWill Landau\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nopenstatsware\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nWe are delighted to announce that\n{pmrm}\nhas joined the\nopenpharma\nGitHub org and is now available on\nCRAN\n. This package implements frequentist progression models for repeated measures (PMRMs), a class of continuous-time nonlinear mixed-effects models for longitudinal clinical trials in progressive diseases.\nWhat are PMRMs?\nProgression models for repeated measures (PMRMs) are closely related to classical mixed models for repeated measures (MMRMs). However, unlike MMRMs, which estimate treatment effects as linear combinations of additive effects on the outcome scale, PMRMs characterize treatment effects in terms of the underlying disease trajectory. This framing yields clinically interpretable quantities such as:\nAverage time saved\ndue to treatment.\nPercent reduction in decline\ndue to treatment.\nThe underlying methodology was developed by\nRaket (2022)\n.\nFast and reliable\nPrevious implementations of PMRMs were slow and often diverged. The\n{pmrm}\npackage is faster and more reliable thanks to\n{RTMB}\n, achieving orders-of-magnitude speedups over equivalent implementations with\nnlme::gnls()\n. PMRM analyses that once ran for over 9 minutes now take less than 3 seconds.\n{RTMB}\nby Kasper Kristensen brings the power of\nCppAD\nfor exact automatic differentiation,\nEigen\nfor high-performance matrix-vector operations, and\nCHOLMOD\nfor efficient sparse matrix computations directly into R. Users can write model code that looks and feels like base R while automatically gaining access to these powerful C++ libraries under the hood. To learn more, please see the\nofficial introduction to\n{RTMB}\n.\nAnalyst-friendly features\nThe\n{pmrm}\npackage provides first-class functionality for:\nModel-fitting and simulation.\nPost-processing and visualization.\nMarginal mean estimation.\nS3 methods for standard statistical generics.\nThese features make PMRMs accessible to clinical statisticians and analysts working on trials in progressive diseases.\nInstallation\nYou can install\n{pmrm}\nfrom CRAN using:\ninstall.packages(\"pmrm\")\nOr install the development version from GitHub:\npak::pak(\"openpharma/pmrm\")\nLearn more\nPlease visit the\npackage documentation\nfor model definitions, a usage tutorial, and a complete function reference. The source code and issue tracker are available on\nGitHub\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nopenstatsware\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399311 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">{pmrm} joins openpharma and reaches CRAN</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">February 23, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/will-landau/\">Will Landau</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://www.openstatsware.org/blog/pmrm-cran-release/\"> openstatsware</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>We are delighted to announce that <a href=\"https://openpharma.github.io/pmrm/\" rel=\"nofollow\" target=\"_blank\"><code>{pmrm}</code></a> has joined the <a href=\"https://github.com/openpharma\" rel=\"nofollow\" target=\"_blank\">openpharma</a> GitHub org and is now available on <a href=\"https://cran.r-project.org/package=pmrm\" rel=\"nofollow\" target=\"_blank\">CRAN</a>. This package implements frequentist progression models for repeated measures (PMRMs), a class of continuous-time nonlinear mixed-effects models for longitudinal clinical trials in progressive diseases.</p>\n<p><img alt=\"Hex Sticker for pmrm R package\" data-lazy-src=\"https://i0.wp.com/www.openstatsware.org/blog/pmrm-cran-release/pmrm-logo.png?w=200&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"Hex Sticker for pmrm R package\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/www.openstatsware.org/blog/pmrm-cran-release/pmrm-logo.png?w=200&amp;ssl=1\"/></noscript></p>\n<section class=\"level2\" id=\"what-are-pmrms\">\n<h2 class=\"anchored\" data-anchor-id=\"what-are-pmrms\">What are PMRMs?</h2>\n<p>Progression models for repeated measures (PMRMs) are closely related to classical mixed models for repeated measures (MMRMs). However, unlike MMRMs, which estimate treatment effects as linear combinations of additive effects on the outcome scale, PMRMs characterize treatment effects in terms of the underlying disease trajectory. This framing yields clinically interpretable quantities such as:</p>\n<ul>\n<li><strong>Average time saved</strong> due to treatment.</li>\n<li><strong>Percent reduction in decline</strong> due to treatment.</li>\n</ul>\n<p>The underlying methodology was developed by <a href=\"https://doi.org/10.1002/sim.9581\" rel=\"nofollow\" target=\"_blank\">Raket (2022)</a>.</p>\n</section>\n<section class=\"level2\" id=\"fast-and-reliable\">\n<h2 class=\"anchored\" data-anchor-id=\"fast-and-reliable\">Fast and reliable</h2>\n<p>Previous implementations of PMRMs were slow and often diverged. The <code>{pmrm}</code> package is faster and more reliable thanks to <a href=\"https://github.com/kaskr/RTMB\" rel=\"nofollow\" target=\"_blank\"><code>{RTMB}</code></a>, achieving orders-of-magnitude speedups over equivalent implementations with <code>nlme::gnls()</code>. PMRM analyses that once ran for over 9 minutes now take less than 3 seconds.</p>\n<p><a href=\"https://github.com/kaskr/RTMB\" rel=\"nofollow\" target=\"_blank\"><code>{RTMB}</code></a> by Kasper Kristensen brings the power of <a href=\"https://github.com/coin-or/CppAD\" rel=\"nofollow\" target=\"_blank\">CppAD</a> for exact automatic differentiation, <a href=\"https://eigen.tuxfamily.org/\" rel=\"nofollow\" target=\"_blank\">Eigen</a> for high-performance matrix-vector operations, and <a href=\"https://github.com/DrTimothyAldenDavis/SuiteSparse\" rel=\"nofollow\" target=\"_blank\">CHOLMOD</a> for efficient sparse matrix computations directly into R. Users can write model code that looks and feels like base R while automatically gaining access to these powerful C++ libraries under the hood. To learn more, please see the <a href=\"https://kaskr.r-universe.dev/articles/RTMBp/RTMB-introduction.html\" rel=\"nofollow\" target=\"_blank\">official introduction to <code>{RTMB}</code></a>.</p>\n</section>\n<section class=\"level2\" id=\"analyst-friendly-features\">\n<h2 class=\"anchored\" data-anchor-id=\"analyst-friendly-features\">Analyst-friendly features</h2>\n<p>The <code>{pmrm}</code> package provides first-class functionality for:</p>\n<ul>\n<li>Model-fitting and simulation.</li>\n<li>Post-processing and visualization.</li>\n<li>Marginal mean estimation.</li>\n<li>S3 methods for standard statistical generics.</li>\n</ul>\n<p>These features make PMRMs accessible to clinical statisticians and analysts working on trials in progressive diseases.</p>\n</section>\n<section class=\"level2\" id=\"installation\">\n<h2 class=\"anchored\" data-anchor-id=\"installation\">Installation</h2>\n<p>You can install <code>{pmrm}</code> from CRAN using:</p>\n<pre>install.packages(\"pmrm\")</pre>\n<p>Or install the development version from GitHub:</p>\n<pre>pak::pak(\"openpharma/pmrm\")</pre>\n</section>\n<section class=\"level2\" id=\"learn-more\">\n<h2 class=\"anchored\" data-anchor-id=\"learn-more\">Learn more</h2>\n<p>Please visit the <a href=\"https://openpharma.github.io/pmrm/\" rel=\"nofollow\" target=\"_blank\">package documentation</a> for model definitions, a usage tutorial, and a complete function reference. The source code and issue tracker are available on <a href=\"https://github.com/openpharma/pmrm\" rel=\"nofollow\" target=\"_blank\">GitHub</a>.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://www.openstatsware.org/blog/pmrm-cran-release/\"> openstatsware</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 467,
+    "reading_time_min": 2.3,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/will-landau/",
+        "text": "Will Landau"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://www.openstatsware.org/blog/pmrm-cran-release/",
+        "text": "openstatsware"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://openpharma.github.io/pmrm/",
+        "text": "{pmrm}"
+      },
+      {
+        "href": "https://github.com/openpharma",
+        "text": "openpharma"
+      },
+      {
+        "href": "https://cran.r-project.org/package=pmrm",
+        "text": "CRAN"
+      },
+      {
+        "href": "https://doi.org/10.1002/sim.9581",
+        "text": "Raket (2022)"
+      },
+      {
+        "href": "https://github.com/kaskr/RTMB",
+        "text": "{RTMB}"
+      },
+      {
+        "href": "https://github.com/kaskr/RTMB",
+        "text": "{RTMB}"
+      },
+      {
+        "href": "https://github.com/coin-or/CppAD",
+        "text": "CppAD"
+      },
+      {
+        "href": "https://eigen.tuxfamily.org/",
+        "text": "Eigen"
+      },
+      {
+        "href": "https://github.com/DrTimothyAldenDavis/SuiteSparse",
+        "text": "CHOLMOD"
+      },
+      {
+        "href": "https://kaskr.r-universe.dev/articles/RTMBp/RTMB-introduction.html",
+        "text": "official introduction to{RTMB}"
+      },
+      {
+        "href": "https://openpharma.github.io/pmrm/",
+        "text": "package documentation"
+      },
+      {
+        "href": "https://github.com/openpharma/pmrm",
+        "text": "GitHub"
+      },
+      {
+        "href": "https://www.openstatsware.org/blog/pmrm-cran-release/",
+        "text": "openstatsware"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "Hex Sticker for pmrm R package",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i0.wp.com/www.openstatsware.org/blog/pmrm-cran-release/pmrm-logo.png?w=200&ssl=1",
+        "alt": "Hex Sticker for pmrm R package",
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADnCAMAAABsfOlPAAADAFBMVEVHcEzc2s7a2Mza1s3a183Z19Td18+8trbb2M7k4s3a183b187a183b1sza183a183b2M3a2M7a2M3a183b2M3a183a183b2M7b2M3a2M3a2M3a183a187b183a183b187b183a183a187Z1szb183a183a183a183a183a183a183b2M3a183b183a183a187b183a183a183a18zb2M7b187a2M7a183Z1s3Y1ssgHR3a1820sanW08koJSTLcUHZ1swhHh4iHh5ztbrx2pgmIyMnIyEyLSUkISHlz5DItYAkHx64p3aCf3nSz8Wppp6Gg35fXFhHREJUUU6mo5syLy43NDNnZGA9OjnMyb9wr7TAvbRLSEbV0snU0cc1MjHPzMNpoqdiX1tBPjw6NzU6KSIqLy+NUjSem5QtIyC7uLCNioRxbmksKSgeGxvFbkAoKywvOTq6t682RkcpIR9lPizY1csqJyZFQkCbWTdcio5XNyhrp6xytLkhHR0/LCMyJiG7aT7Kx74vKyt5dnFej5OzsKi3tKwsMzRurLF1cm3Oy8GsqaLIxbxNbnFaV1SjoJmhXDiSVTV8SjBCXF6/az80QEFnQCw4SUqcmZJjYF2rYTqRjoguKypPS0lDLiVhlJlNMya4Zz0mKCivYztxsrdGYWNJMSVfPCrCbD9qZ2NJRkRXVFHGw7qKh4HIb0BdWlazZTxTe359enVjmJy9ubFwRC6HTzKmXjmwraaWk4yZlo9Rd3pRNSeCTTFHZWjEbT8yPT5Pc3bu2Je+u7NRTkw/VllZhYkwLSxWgIM0Q0Tp05NKQzVtambBvrZ/fHdMSUdJaWw8T1FtQi06TU8/OS/DwLiAfXihnpfPy8J2Ry89U1UtNTbEe02DdlUqJiKTkIrQzcRTNSfArXvPzMJYhIc9Pj1mnaGFp6G8fFKQlX54bVFyZ02RnpFkXVJ1tLhLOixeVUJkWkXh1Z3PyplURzala0SriWypi3B4sbRsYkmOgFu4pnarhlzXm2XQvIQ/Sca+AAAAOnRSTlMADygV/AcKAf4D5iD0GovTUjVtePe9w/1L8evh+i+y2avJgDtAZ0bclVntuKeFnl3OkZpyomJhoqNjjuqdqAAAD45JREFUeNrtnQdUFNca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"
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-02-25T15:53:58Z"
+  }
+}
