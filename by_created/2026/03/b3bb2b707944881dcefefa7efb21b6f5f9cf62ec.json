@@ -1,0 +1,287 @@
+{
+  "id": "b3bb2b707944881dcefefa7efb21b6f5f9cf62ec",
+  "url": "https://www.r-bloggers.com/2026/03/ropensci-dev-guide-1-0-0-trilingual-and-improved/",
+  "created_at_utc": "2026-03-02T11:26:58Z",
+  "crawled_at_utc": "2026-03-02T11:26:59Z",
+  "html_title": "rOpenSci Dev Guide 1.0.0: Trilingual and Improved | R-bloggers",
+  "meta_description": "Read it in: Español.Read it in: Português. rOpenSci Software Peer Review’s guidance is gathered in an online book that keeps improving! This blog post summarises what’s new in our Dev Guide 1.0.0, with all changes listed in the changelog. ...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/ropensci-dev-guide-1-0-0-trilingual-and-improved/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/ropensci-dev-guide-1-0-0-trilingual-and-improved/",
+    "html_title": "rOpenSci Dev Guide 1.0.0: Trilingual and Improved | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Read it in: Español.Read it in: Português. rOpenSci Software Peer Review’s guidance is gathered in an online book that keeps improving! This blog post summarises what’s new in our Dev Guide 1.0.0, with all changes listed in the changelog. ...",
+    "meta_keywords": null,
+    "og_title": "rOpenSci Dev Guide 1.0.0: Trilingual and Improved | R-bloggers",
+    "og_description": "Read it in: Español.Read it in: Português. rOpenSci Software Peer Review’s guidance is gathered in an online book that keeps improving! This blog post summarises what’s new in our Dev Guide 1.0.0, with all changes listed in the changelog. ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "rOpenSci Dev Guide 1.0.0: Trilingual and Improved | R-bloggers",
+    "twitter_description": "Read it in: Español.Read it in: Português. rOpenSci Software Peer Review’s guidance is gathered in an online book that keeps improving! This blog post summarises what’s new in our Dev Guide 1.0.0, with all changes listed in the changelog. ...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "rOpenSci Dev Guide 1.0.0: Trilingual and Improved\nPosted on\nMarch 1, 2026\nby\nrOpenSci - open tools for open science\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nRead it in: Español\n.\nRead it in: Português\n.\nrOpenSci Software Peer Review’s guidance is gathered in an\nonline book\nthat keeps improving!\nThis blog post summarises what’s new in our Dev Guide 1.0.0, with all changes listed in the\nchangelog\n.\nNow available in Portuguese!\nOur guide is now trilingual (\nEnglish\n,\nSpanish\n,\nPortuguese\n)!\nFind more about the awesome Portuguese translation project, initiated and powered by our Lusophone members in our\nblog post\n.\nThe translation project and ongoing multilingual maintenance uses our\nbabelquarto package\nto render multilingual Quarto books and websites.\nIt was recently\npeer-reviewed\nby Ella Kaye and João Granja-Correia.\nWe’re actively working on our\nbabeldown package\nto create and update translations using the DeepL API.\nIn the\ndev guide\nitself, tools useful for internationalizing\npackages\nare mentioned:\npotools\n, the experimental\nrhelpi18n\npackage, selecting a\nlanguage\nfor a pkgdown website.\nPolicy Updates\nWe made some changes to rOpenSci policies and scope:\nNew category for\nrOpenSci internal and peer-review tools\n.\nUpdates to the\ndata retrieval category\n.\nNew explicit rule to only\nsubmit one package at a time\n.\nNew requirement to not call the\ndefault branch “master”\n.\nRemoved requirement to use a\ncodemeta.json\nfile, now deprecated. Codemeta continues to be\nactively used and developed\n, but we have found it redundant with other metadata and Codemeta can generate these data as-needed from DESCRIPTION files.\nEditor Guide, Author Guide & Reviewer Guide\nThe guides that live in our guide. 😸\nThe whole\neditor guide\nwas has been restructured to follow the typical flow of submissions,\nand to better explain how to use the\nsoftware-review dashboard\n.\nWe added a section on challenges, and documented how to put the system on vacation (which we generally do over the new year period).\nLikewise, we improved the organization and content of the\nauthor guide\n(thanks to\nAlec Robitaille\nand\nJoan Maspons\n).\nIn the\nreviewer guide\n, we removed the external link to the no-longer maintained Mozilla Review guide (one of our early design sources for peer-review) in favor of explicit enumerated items.\nPackaging Best Practices\nIn the packaging guide (another guide within the guide!), we added guidance for choosing\nexample datasets\n.\nFurthermore, we created a section for\nPackages wrapping external software\n.\nThe\nlicencing section\nnow explicitly requires acknowledging authors of bundled code.\nLast but not least, the\nsection about dependencies\nrecommends checking the development status of dependencies.\nThe whole book now mentions the\nAir CLI\nevery time it mentions the styler package, as Air can be viewed as styler’s successor.\nIn the chapter about Package evolution, we added guidance on\ndeprecating\ndata\n, and explained the\ndrawbacks of renaming a widely-used package\n.\nTesting guidance\nWe updated our\ntesting guidance\nwith\na\nmention of tinytest\nas an alternative to testthat;\na note on keeping tests written with testthat\nself-contained\n.\nPackage Documentation\nWith particular thanks to\nAlasdair Warwick\n, we improved the documentation 😉 of our documentation building system, including:\nMore details on the\ntechnical aspects\nof docs building for rOpenSci packages;\nUpdated\nmath guidance\nfollowing pkgdown’s update.\nWe also clarified different strategies to\ndocument internal functions\n, thanks to\nClaudiu Forgaci\n.\nMetadata & Package Information\nWe documented more ways to acknowledge contributors:\nin the\nauthorship\nsection of the packaging guide, with\nResearch Organization Registry (ROR) IDs\n;\nin the chapter about\ncollaboration\n, the\nallcontributors R package\n.\nConclusion\nIn this post we summarized the changes in the latest version of our book\n“rOpenSci Packages: Development, Maintenance, and Peer Review”\n.\nWe are thankful for all contributions that created this release.\nWe are already working on the next version.\nDon’t hesitate to help us shape it by opening an\nissue\n!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399470 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">rOpenSci Dev Guide 1.0.0: Trilingual and Improved</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 1, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/\">rOpenSci - open tools for open science</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2026/03/02/devguide-1.0.0/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><a href=\"https://ropensci.org/es/blog/2026/03/02/r_open_sci_dev_guide_1_0_0_triling%C3%BCe_y_mejorada/\" rel=\"nofollow\" target=\"_blank\">Read it in: Español</a>.</p><p><a href=\"https://ropensci.org/pt/blog/2026/03/02/guia_de_desenvolvimento_da_r_open_sci_1_0_0_tril%C3%ADngue_e_aprimorado/\" rel=\"nofollow\" target=\"_blank\">Read it in: Português</a>.</p> <p>rOpenSci Software Peer Review’s guidance is gathered in an <a href=\"https://devguide.ropensci.org/booknews\" rel=\"nofollow\" target=\"_blank\">online book</a> that keeps improving!\nThis blog post summarises what’s new in our Dev Guide 1.0.0, with all changes listed in the <a href=\"https://devguide.ropensci.org/booknews.html\" rel=\"nofollow\" target=\"_blank\">changelog</a>.</p>\n<h2>\nNow available in Portuguese!\n</h2><p>Our guide is now trilingual (<a href=\"https://devguide.ropensci.org/index.html\" rel=\"nofollow\" target=\"_blank\">English</a>, <a href=\"https://devguide.ropensci.org/es/index.es.html\" rel=\"nofollow\" target=\"_blank\">Spanish</a>, <a href=\"https://devguide.ropensci.org/pt/index.pt\" rel=\"nofollow\" target=\"_blank\">Portuguese</a>)!</p>\n<p>Find more about the awesome Portuguese translation project, initiated and powered by our Lusophone members in our <a href=\"https://ropensci.org/blog/2025/11/25/translation-devguide-pt/\" rel=\"nofollow\" target=\"_blank\">blog post</a>.</p>\n<p>The translation project and ongoing multilingual maintenance uses our <a href=\"https://docs.ropensci.org/babelquarto/\" rel=\"nofollow\" target=\"_blank\">babelquarto package</a> to render multilingual Quarto books and websites.\nIt was recently <a href=\"https://github.com/ropensci/software-review/issues/720\" rel=\"nofollow\" target=\"_blank\">peer-reviewed</a> by Ella Kaye and João Granja-Correia.</p>\n<p>We’re actively working on our <a href=\"https://docs.ropensci.org/babeldown/\" rel=\"nofollow\" target=\"_blank\">babeldown package</a> to create and update translations using the DeepL API.</p>\n<p>In the <a href=\"https://github.com/ropensci/dev_guide/pull/940/files\" rel=\"nofollow\" target=\"_blank\">dev guide</a> itself, tools useful for internationalizing <em>packages</em> are mentioned: <a href=\"https://michaelchirico.github.io/potools/\" rel=\"nofollow\" target=\"_blank\">potools</a>, the experimental <a href=\"https://eliocamp.github.io/rhelpi18n/\" rel=\"nofollow\" target=\"_blank\">rhelpi18n</a> package, selecting a <a href=\"https://pkgdown.r-lib.org/articles/translations.html\" rel=\"nofollow\" target=\"_blank\">language</a> for a pkgdown website.</p>\n<h2>\nPolicy Updates\n</h2><p>We made some changes to rOpenSci policies and scope:</p>\n<ul>\n<li>\n<p>New category for <a href=\"https://devguide.ropensci.org/softwarereview_policies#package-categories%23:~:text=rOpenSci%20internal%20tools\" rel=\"nofollow\" target=\"_blank\">rOpenSci internal and peer-review tools</a>.</p>\n</li>\n<li>\n<p>Updates to the <a href=\"https://devguide.ropensci.org/softwarereview_policies#package-categories%23:~:text=data%20retrieval\" rel=\"nofollow\" target=\"_blank\">data retrieval category</a>.</p>\n</li>\n<li>\n<p>New explicit rule to only <a href=\"https://devguide.ropensci.org/softwarereview_author#lifecycle%23:~:text=do%20not%20submit%20several\" rel=\"nofollow\" target=\"_blank\">submit one package at a time</a>.</p>\n</li>\n<li>\n<p>New requirement to not call the <a href=\"https://devguide.ropensci.org/pkg_building#version-control%23:~:text=not%20be%20master\" rel=\"nofollow\" target=\"_blank\">default branch “master”</a>.</p>\n</li>\n<li>\n<p>Removed requirement to use a <code>codemeta.json</code> file, now deprecated. Codemeta continues to be <a href=\"https://codemeta.github.io/\" rel=\"nofollow\" target=\"_blank\">actively used and developed</a>, but we have found it redundant with other metadata and Codemeta can generate these data as-needed from DESCRIPTION files.</p>\n</li>\n</ul>\n<h2>\nEditor Guide, Author Guide &amp; Reviewer Guide\n</h2><p>The guides that live in our guide. 😸</p>\n<p>The whole <a href=\"https://devguide.ropensci.org/softwarereview_editor\" rel=\"nofollow\" target=\"_blank\">editor guide</a> was has been restructured to follow the typical flow of submissions,\nand to better explain how to use the <a href=\"https://dashboard.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">software-review dashboard</a>.\nWe added a section on challenges, and documented how to put the system on vacation (which we generally do over the new year period).</p>\n<p>Likewise, we improved the organization and content of the <a href=\"https://devguide.ropensci.org/softwarereview_author\" rel=\"nofollow\" target=\"_blank\">author guide</a> (thanks to <a href=\"https://github.com/robitalec\" rel=\"nofollow\" target=\"_blank\">Alec Robitaille</a> and <a href=\"https://github.com/jmaspons\" rel=\"nofollow\" target=\"_blank\">Joan Maspons</a>).</p>\n<p>In the <a href=\"https://devguide.ropensci.org/softwarereview_reviewer\" rel=\"nofollow\" target=\"_blank\">reviewer guide</a>, we removed the external link to the no-longer maintained Mozilla Review guide (one of our early design sources for peer-review) in favor of explicit enumerated items.</p>\n<h2>\nPackaging Best Practices\n</h2><p>In the packaging guide (another guide within the guide!), we added guidance for choosing <a href=\"https://devguide.ropensci.org/pkg_building#example-datasets\" rel=\"nofollow\" target=\"_blank\">example datasets</a>.\nFurthermore, we created a section for <a href=\"https://devguide.ropensci.org/pkg_building#external-software\" rel=\"nofollow\" target=\"_blank\">Packages wrapping external software</a>.\nThe <a href=\"https://devguide.ropensci.org/pkg_building#licence\" rel=\"nofollow\" target=\"_blank\">licencing section</a> now explicitly requires acknowledging authors of bundled code.\nLast but not least, the <a href=\"https://devguide.ropensci.org/pkg_building#pkgdependencies\" rel=\"nofollow\" target=\"_blank\">section about dependencies</a> recommends checking the development status of dependencies.</p>\n<p>The whole book now mentions the <a href=\"https://posit-dev.github.io/air/\" rel=\"nofollow\" target=\"_blank\">Air CLI</a> every time it mentions the styler package, as Air can be viewed as styler’s successor.</p>\n<p>In the chapter about Package evolution, we added guidance on <a href=\"https://devguide.ropensci.org/maintenance_evolution#data-deprecate\" rel=\"nofollow\" target=\"_blank\">deprecating <em>data</em></a>, and explained the <a href=\"https://devguide.ropensci.org/maintenance_evolution#renaming-packages\" rel=\"nofollow\" target=\"_blank\">drawbacks of renaming a widely-used package</a>.</p>\n<h2>\nTesting guidance\n</h2><p>We updated our <a href=\"https://devguide.ropensci.org/pkg_building.html#testing\" rel=\"nofollow\" target=\"_blank\">testing guidance</a> with</p>\n<ul>\n<li>a <a href=\"https://devguide.ropensci.org/pkg_building.html#testing%23:~:text=tinytest\" rel=\"nofollow\" target=\"_blank\">mention of tinytest</a> as an alternative to testthat;</li>\n<li>a note on keeping tests written with testthat <a href=\"https://devguide.ropensci.org/pkg_building.html#testing%23:~:text=self-contained\" rel=\"nofollow\" target=\"_blank\">self-contained</a>.</li>\n</ul>\n<h2>\nPackage Documentation\n</h2><p>With particular thanks to <a href=\"https://github.com/rmgpanw\" rel=\"nofollow\" target=\"_blank\">Alasdair Warwick </a>, we improved the documentation 😉 of our documentation building system, including:</p>\n<ul>\n<li>More details on the <a href=\"https://devguide.ropensci.org/pkg_ci#rodocsci\" rel=\"nofollow\" target=\"_blank\">technical aspects</a> of docs building for rOpenSci packages;</li>\n<li>Updated <a href=\"https://devguide.ropensci.org/pkg_building.html#mathjax\" rel=\"nofollow\" target=\"_blank\">math guidance</a> following pkgdown’s update.</li>\n</ul>\n<p>We also clarified different strategies to <a href=\"https://devguide.ropensci.org/pkg_building#:~:text=nord\" rel=\"nofollow\" target=\"_blank\">document internal functions</a>, thanks to <a href=\"https://github.com/cforgaci\" rel=\"nofollow\" target=\"_blank\">Claudiu Forgaci</a>.</p>\n<h2>\nMetadata &amp; Package Information\n</h2><p>We documented more ways to acknowledge contributors:</p>\n<ul>\n<li>\n<p>in the <a href=\"https://devguide.ropensci.org/pkg_building.html#authorship\" rel=\"nofollow\" target=\"_blank\">authorship</a> section of the packaging guide, with <a href=\"https://ropensci.org/blog/2025/05/09/ror/\" rel=\"nofollow\" target=\"_blank\">Research Organization Registry (ROR) IDs</a>;</p>\n</li>\n<li>\n<p>in the chapter about <a href=\"https://devguide.ropensci.org/maintenance_collaboration.html#attributions\" rel=\"nofollow\" target=\"_blank\">collaboration</a>, the <a href=\"https://docs.ropensci.org/allcontributors/\" rel=\"nofollow\" target=\"_blank\">allcontributors R package</a>.</p>\n</li>\n</ul>\n<h2>\nConclusion\n</h2><p>In this post we summarized the changes in the latest version of our book <a href=\"https://devguide.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">“rOpenSci Packages: Development, Maintenance, and Peer Review”</a>.\nWe are thankful for all contributions that created this release.\nWe are already working on the next version.\nDon’t hesitate to help us shape it by opening an <a href=\"https://github.com/ropensci/dev_guide/issues\" rel=\"nofollow\" target=\"_blank\">issue</a>!</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2026/03/02/devguide-1.0.0/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 761,
+    "reading_time_min": 3.8,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ropensci-open-tools-for-open-science/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://ropensci.org/blog/2026/03/02/devguide-1.0.0/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/03/02/r_open_sci_dev_guide_1_0_0_triling%C3%BCe_y_mejorada/",
+        "text": "Read it in: Español"
+      },
+      {
+        "href": "https://ropensci.org/pt/blog/2026/03/02/guia_de_desenvolvimento_da_r_open_sci_1_0_0_tril%C3%ADngue_e_aprimorado/",
+        "text": "Read it in: Português"
+      },
+      {
+        "href": "https://devguide.ropensci.org/booknews",
+        "text": "online book"
+      },
+      {
+        "href": "https://devguide.ropensci.org/booknews.html",
+        "text": "changelog"
+      },
+      {
+        "href": "https://devguide.ropensci.org/index.html",
+        "text": "English"
+      },
+      {
+        "href": "https://devguide.ropensci.org/es/index.es.html",
+        "text": "Spanish"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pt/index.pt",
+        "text": "Portuguese"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/11/25/translation-devguide-pt/",
+        "text": "blog post"
+      },
+      {
+        "href": "https://docs.ropensci.org/babelquarto/",
+        "text": "babelquarto package"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/720",
+        "text": "peer-reviewed"
+      },
+      {
+        "href": "https://docs.ropensci.org/babeldown/",
+        "text": "babeldown package"
+      },
+      {
+        "href": "https://github.com/ropensci/dev_guide/pull/940/files",
+        "text": "dev guide"
+      },
+      {
+        "href": "https://michaelchirico.github.io/potools/",
+        "text": "potools"
+      },
+      {
+        "href": "https://eliocamp.github.io/rhelpi18n/",
+        "text": "rhelpi18n"
+      },
+      {
+        "href": "https://pkgdown.r-lib.org/articles/translations.html",
+        "text": "language"
+      },
+      {
+        "href": "https://devguide.ropensci.org/softwarereview_policies#package-categories%23:~:text=rOpenSci%20internal%20tools",
+        "text": "rOpenSci internal and peer-review tools"
+      },
+      {
+        "href": "https://devguide.ropensci.org/softwarereview_policies#package-categories%23:~:text=data%20retrieval",
+        "text": "data retrieval category"
+      },
+      {
+        "href": "https://devguide.ropensci.org/softwarereview_author#lifecycle%23:~:text=do%20not%20submit%20several",
+        "text": "submit one package at a time"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building#version-control%23:~:text=not%20be%20master",
+        "text": "default branch “master”"
+      },
+      {
+        "href": "https://codemeta.github.io/",
+        "text": "actively used and developed"
+      },
+      {
+        "href": "https://devguide.ropensci.org/softwarereview_editor",
+        "text": "editor guide"
+      },
+      {
+        "href": "https://dashboard.ropensci.org/",
+        "text": "software-review dashboard"
+      },
+      {
+        "href": "https://devguide.ropensci.org/softwarereview_author",
+        "text": "author guide"
+      },
+      {
+        "href": "https://github.com/robitalec",
+        "text": "Alec Robitaille"
+      },
+      {
+        "href": "https://github.com/jmaspons",
+        "text": "Joan Maspons"
+      },
+      {
+        "href": "https://devguide.ropensci.org/softwarereview_reviewer",
+        "text": "reviewer guide"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building#example-datasets",
+        "text": "example datasets"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building#external-software",
+        "text": "Packages wrapping external software"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building#licence",
+        "text": "licencing section"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building#pkgdependencies",
+        "text": "section about dependencies"
+      },
+      {
+        "href": "https://posit-dev.github.io/air/",
+        "text": "Air CLI"
+      },
+      {
+        "href": "https://devguide.ropensci.org/maintenance_evolution#data-deprecate",
+        "text": "deprecatingdata"
+      },
+      {
+        "href": "https://devguide.ropensci.org/maintenance_evolution#renaming-packages",
+        "text": "drawbacks of renaming a widely-used package"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building.html#testing",
+        "text": "testing guidance"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building.html#testing%23:~:text=tinytest",
+        "text": "mention of tinytest"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building.html#testing%23:~:text=self-contained",
+        "text": "self-contained"
+      },
+      {
+        "href": "https://github.com/rmgpanw",
+        "text": "Alasdair Warwick"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_ci#rodocsci",
+        "text": "technical aspects"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building.html#mathjax",
+        "text": "math guidance"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building#:~:text=nord",
+        "text": "document internal functions"
+      },
+      {
+        "href": "https://github.com/cforgaci",
+        "text": "Claudiu Forgaci"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pkg_building.html#authorship",
+        "text": "authorship"
+      },
+      {
+        "href": "https://ropensci.org/blog/2025/05/09/ror/",
+        "text": "Research Organization Registry (ROR) IDs"
+      },
+      {
+        "href": "https://devguide.ropensci.org/maintenance_collaboration.html#attributions",
+        "text": "collaboration"
+      },
+      {
+        "href": "https://docs.ropensci.org/allcontributors/",
+        "text": "allcontributors R package"
+      },
+      {
+        "href": "https://devguide.ropensci.org/",
+        "text": "“rOpenSci Packages: Development, Maintenance, and Peer Review”"
+      },
+      {
+        "href": "https://github.com/ropensci/dev_guide/issues",
+        "text": "issue"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/02/devguide-1.0.0/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-02T11:26:59Z"
+  }
+}
