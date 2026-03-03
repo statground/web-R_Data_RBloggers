@@ -1,0 +1,283 @@
+{
+  "id": "0cb36675ba21043ac704f9dc5427718c32468049",
+  "url": "https://www.r-bloggers.com/2026/03/a-few-claude-skills-for-r-users/",
+  "created_at_utc": "2026-03-03T08:30:41Z",
+  "crawled_at_utc": "2026-03-03T08:30:41Z",
+  "html_title": "A Few Claude Skills for R Users | R-bloggers",
+  "meta_description": "If you’re like me, you might be feeling a bit overwhelmed by all the new AI tools for coding. So, this post may be adding one more thing to your plate, but I promise to keep it as whelming as possible. 😄 This is a (very) short roundup of Skills ...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/a-few-claude-skills-for-r-users/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/a-few-claude-skills-for-r-users/",
+    "html_title": "A Few Claude Skills for R Users | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "If you’re like me, you might be feeling a bit overwhelmed by all the new AI tools for coding. So, this post may be adding one more thing to your plate, but I promise to keep it as whelming as possible. 😄 This is a (very) short roundup of Skills ...",
+    "meta_keywords": null,
+    "og_title": "A Few Claude Skills for R Users | R-bloggers",
+    "og_description": "If you’re like me, you might be feeling a bit overwhelmed by all the new AI tools for coding. So, this post may be adding one more thing to your plate, but I promise to keep it as whelming as possible. 😄 This is a (very) short roundup of Skills ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "A Few Claude Skills for R Users | R-bloggers",
+    "twitter_description": "If you’re like me, you might be feeling a bit overwhelmed by all the new AI tools for coding. So, this post may be adding one more thing to your plate, but I promise to keep it as whelming as possible. 😄 This is a (very) short roundup of Skills ...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "A Few Claude Skills for R Users\nPosted on\nMarch 1, 2026\nby\nIsabella Velásquez\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR Works\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIf you’re like me, you might be feeling a bit overwhelmed by all the new AI tools for coding. So, this post may be adding one more thing to your plate, but I promise to keep it as whelming as possible. 😄\nThis is a (very) short roundup of Skills created by members of the community that are especially helpful for R users. Note that I won’t show Claude output, but rather, point you to resources on where to find Skills. I’m still very much a newbie in this space. If I misrepresent anything, or if you know of another Skill that should be included, please reach out on\nBluesky\n.\nNote\nDoes it have to be Claude?\nAlthough I mention “Claude Skills” throughout this post, other providers have adopted similar features for modular, task-specific capabilities in their LLM tools. They often use the same\nSKILL.md\nformat, with the AI tools designed to look for a folder (often called\n.skills/\n) containing these Markdown-based instructions.\nQuick definitions\nIf you haven’t installed Claude Code yet, Anthropic has\ngreat documentation\nto get you started. Here are a few broad definitions to set the stage:\nAnthropic\n: An AI company that builds AI systems.\nClaude\n: An AI assistant created by Anthropic that can help with a wide range of tasks, including coding.\nClaude Models: Different versions of Claude, such as\nClaude Opus 4.5\n,\nClaude Sonnet 4.5\n, and\nClaude Haiku 4.5\n. Each model offers different trade-offs between performance, speed, and cost.\nClaude Code\n: A command-line interface (CLI) that brings Claude into your terminal.\nCLAUDE.md\n: A configuration file where you can give Claude Code project-specific context, preferences, and instructions.\nClaude Skills\n: Reusable, specialized commands that help Claude handle common development tasks more consistently.\nNote\nA question many people (\ncough\nI\ncough\n) have wondered about is the difference between CLAUDE.md and Claude Skills. The key distinction is how broadly the information should apply and how much of Claude’s context window you want to use. If you want Claude to always be aware of certain information for every task in a project, use CLAUDE.md. This might include project conventions, coding style, or high-level rules. If the information is only relevant for specific tasks, Claude Skills are a better fit. Skills let you scope guidance to when it’s actually needed, instead of filling up the context window with instructions that don’t apply most of the time. (Thanks to my colleague Nick Pelikan for helping clarify this.)\nClaude Skills for R users: a roundup\n1. Claude R Tidyverse Expert by Sarah Johnson\nEver asked an LLM for R code and it kindly gives you a response that uses\nspread()\n(deprecated 2010)?\nSarah Johnson\ncreated the\nModern R Development Guide\nto help Claude Code behave like a modern R user. Among other things, it guides Claude to prefer tidyverse-style solutions, use recent versions of packages like dplyr 1.1.0+, and avoid outdated patterns. Never see\ncast()\nagain!\nI was loving Claude Code… until I tried it with #rstats. Constant errors, wouldn’t use the tidyverse even when asked, “optimized” functions were slower.\nFrustrated, I started a session just to teach R to Claude and summarize what it learned into a CLAUDE.md file gist.github.com/sj-io/3828d6…\n[image or embed]\n— sarah (\n@sarahjohnson.io\n)\nAugust 21, 2025 at 5:18 AM\nOne nice follow-up suggestion comes from\nJeremy Allen\n, who recommends breaking this Skill into smaller ones if you don’t need all the guidance at once. He has also created a Skill that can pull in\nrecent updates\nfrom Posit!\n2. Claude Code R Skills by Alistair Bailey\nAlistair Bailey\nused and built upon Sarah’s (and others’) Skills above to create\nClaude Code R Skills\n. I particularly enjoy the section on\nrecommended workflow\n, which provides a specific order for Claude to follow when writing code.\nBased on others work, I’ve created Claude Code configurations for R: modular skills (tidyverse, rlang, performance, OOP, testing), enforcement rules (security, testing, git workflow), workflow commands (planning, code review, TDD), and context management hooks. #claudecode #rstats\n[image or embed]\n— Alistair Bailey (\n@ab604.uk\n)\nFebruary 2, 2026 at 12:12 PM\n3. Posit Claude Skills\nSeveral folks at Posit have been experimenting with Claude Skills and sharing them in this\nGitHub repository\n. A couple that may be especially interesting for R users include:\nQuarto Authoring Skill\n: Helpful for converting existing R Markdown projects to Quarto.\nCreate an R Package Release Checklist Skill\n: Create a release checklist and GitHub issue for an R package, with automatic version calculation and customizable checklist generation.\nModern Shiny Apps with bslib Skill\n: Build modern Shiny dashboards using bslib with Bootstrap 5 layouts, cards, value boxes, navigation, theming, and modern inputs. Includes migration guide from legacy Shiny patterns\n4.\n_brand.yml\nSkills\nbrand.yml\nallows you to create reports, apps, dashboards, plots, and more that match your company’s brand guidelines with a single YAML file. It is currently supported in Quarto and Shiny (for R and Python).\nHere are a few Skills for you to create your\n_brand.yml\nfile:\nbrand.yml Skill by posit-dev\nbrand.yml Skill by Stephen Turner\n:\nStephen Turner\nwalks through the process of developing this skill in his post,\nA Claude Skill for _brand.yml, and sharing with Quarto 1.9\n.\nI created a Claude Skill to make _brand.yml files for your organization, and with the upcoming Quarto 1.9 release you can share brand.yml files via GitHub and\nquarto use brand\n. More details and how to use it: blog.stephenturner.us/p/brand-yml-… #Rstats 1/ 🧵\n[image or embed]\n— Stephen Turner (\n@stephenturner.us\n)\nFebruary 26, 2026 at 2:14 PM\n5. Learning Opportunities: A Claude Code Skill for Deliberate Skill Development by Cat Hicks\nIf you are worried about all these Skills deteriorating your R coding skills, check out\nLearning Opportunities: A Claude Code Skill for Deliberate Skill Development\nfrom\nCat Hicks\n. It uses a “dynamic textbook” approach to help you deliberately work your coding muscles\nwhile\nyou’re using LLM tools.\nCan you learn AND offload? Yes. We do it all the time across our days. You just cannot do every single thing at once, and have to think about the structural support for different (sometimes competing) goals.\nSelf-regulation isn’t new, but it is a vital skill for developers now.\n— Cat Hicks (\n@grimalkina.bsky.social\n)\nFebruary 15, 2026 at 3:51 PM\nHow to add a Claude Skill\nNote\nWhile you can use Claude Code in RStudio, I have been using\nPositron\n. Posit has started rolling out\nPosit AI\nin RStudio, which also supports Skills.\n1. Install from a GitHub repository\nAs shown in the\nPosit Claude Skills README\n, you can install Skills directly from a GitHub repository using a Claude Code command. For example, this installs all of the Quarto-related Skills from the Posit Claude Skills repo:\n/plugin install quarto@posit-dev-skills\nThis is a good option if you want to pull in a maintained set of Skills all at once.\n2. Install from a local directory\nIf you’ve downloaded a Skill locally, you can install it directly from its folder:\n/plugin add /path/to/skill-directory\n3. Manual installation\nYou can also install a Skill by placing it directly in the appropriate directory:\nFor personal Skills:\n~/.claude/skills/skill-name/\n(in your home directory)\nFor project Skills:\n.claude/skills/skill-name/\n(in your project root)\nOnce the files are in place, Claude Code will automatically discover and use the Skill when it’s relevant.\nCreate your own Skill\nAnthropic has\ndocumentation\non creating your own Claude Skill. I enjoy looking through other people’s Skills to see how they organize and develop them. Trying them out and further tweaking them is a great way of creating a customized Skill of your own.\nAs both Stephen and\nSarah note\n, you can give Claude Code examples, documentation, and guidance, then ask it to help generate the Skill for you. Perhaps there’s a good Skill out there for creating Skills. It’s Skills all the way down!\nMore on using Claude Code for R development\nIf you want examples of Claude Code in action with R, Simon Couch has a couple of great blog posts on the subject:\nPost 1\n,\nPost 2\n. They’re a great complement to this roundup and show what this can look like in real workflows.\nNew features and techniques are popping up all the time. If you’re experimenting with Claude Code for R and find something useful, please reach out anytime!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR Works\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399506 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">A Few Claude Skills for R Users</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 1, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/isabella-velasquez/\">Isabella Velásquez</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://rworks.dev/posts/claude-skills-for-r-users/\"> R Works</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>If you’re like me, you might be feeling a bit overwhelmed by all the new AI tools for coding. So, this post may be adding one more thing to your plate, but I promise to keep it as whelming as possible. 😄</p>\n<p>This is a (very) short roundup of Skills created by members of the community that are especially helpful for R users. Note that I won’t show Claude output, but rather, point you to resources on where to find Skills. I’m still very much a newbie in this space. If I misrepresent anything, or if you know of another Skill that should be included, please reach out on <a href=\"https://bsky.app/profile/ivelasq3.bsky.social\" rel=\"nofollow\" target=\"_blank\">Bluesky</a>.</p>\n<div class=\"callout callout-style-default callout-note callout-titled\">\n<div class=\"callout-header d-flex align-content-center\">\n<div class=\"callout-icon-container\">\n<i class=\"callout-icon\"></i>\n</div>\n<div class=\"callout-title-container flex-fill\">\n<span class=\"screen-reader-only\">Note</span>Does it have to be Claude?\n</div>\n</div>\n<div class=\"callout-body-container callout-body\">\n<p>Although I mention “Claude Skills” throughout this post, other providers have adopted similar features for modular, task-specific capabilities in their LLM tools. They often use the same <code>SKILL.md</code> format, with the AI tools designed to look for a folder (often called <code>.skills/</code>) containing these Markdown-based instructions.</p>\n</div>\n</div>\n<section class=\"level2\" id=\"quick-definitions\">\n<h2 class=\"anchored\" data-anchor-id=\"quick-definitions\">Quick definitions</h2>\n<p>If you haven’t installed Claude Code yet, Anthropic has <a href=\"https://code.claude.com/docs/en/quickstart\" rel=\"nofollow\" target=\"_blank\">great documentation</a> to get you started. Here are a few broad definitions to set the stage:</p>\n<ul>\n<li><a href=\"https://www.anthropic.com/\" rel=\"nofollow\" target=\"_blank\">Anthropic</a>: An AI company that builds AI systems.</li>\n<li><a href=\"https://claude.ai/\" rel=\"nofollow\" target=\"_blank\">Claude</a>: An AI assistant created by Anthropic that can help with a wide range of tasks, including coding.</li>\n<li>Claude Models: Different versions of Claude, such as <a href=\"https://www.anthropic.com/claude/opus\" rel=\"nofollow\" target=\"_blank\">Claude Opus 4.5</a>, <a href=\"https://www.anthropic.com/claude/sonnet\" rel=\"nofollow\" target=\"_blank\">Claude Sonnet 4.5</a>, and <a href=\"https://www.anthropic.com/claude/haiku\" rel=\"nofollow\" target=\"_blank\">Claude Haiku 4.5</a>. Each model offers different trade-offs between performance, speed, and cost.</li>\n<li><a href=\"https://claude.com/product/claude-code\" rel=\"nofollow\" target=\"_blank\">Claude Code</a>: A command-line interface (CLI) that brings Claude into your terminal.</li>\n<li><a href=\"https://claude.com/blog/using-claude-md-files\" rel=\"nofollow\" target=\"_blank\">CLAUDE.md</a>: A configuration file where you can give Claude Code project-specific context, preferences, and instructions.</li>\n<li><a href=\"https://claude.com/skills\" rel=\"nofollow\" target=\"_blank\">Claude Skills</a>: Reusable, specialized commands that help Claude handle common development tasks more consistently.</li>\n</ul>\n<div class=\"callout callout-style-default callout-note callout-titled\">\n<div class=\"callout-header d-flex align-content-center\">\n<div class=\"callout-icon-container\">\n<i class=\"callout-icon\"></i>\n</div>\n<div class=\"callout-title-container flex-fill\">\nNote\n</div>\n</div>\n<div class=\"callout-body-container callout-body\">\n<p>A question many people (<em>cough</em> I <em>cough</em>) have wondered about is the difference between CLAUDE.md and Claude Skills. The key distinction is how broadly the information should apply and how much of Claude’s context window you want to use. If you want Claude to always be aware of certain information for every task in a project, use CLAUDE.md. This might include project conventions, coding style, or high-level rules. If the information is only relevant for specific tasks, Claude Skills are a better fit. Skills let you scope guidance to when it’s actually needed, instead of filling up the context window with instructions that don’t apply most of the time. (Thanks to my colleague Nick Pelikan for helping clarify this.)</p>\n</div>\n</div>\n</section>\n<section class=\"level2\" id=\"claude-skills-for-r-users-a-roundup\">\n<h2 class=\"anchored\" data-anchor-id=\"claude-skills-for-r-users-a-roundup\">Claude Skills for R users: a roundup</h2>\n<section class=\"level3\" id=\"claude-r-tidyverse-expert-by-sarah-johnson\">\n<h3 class=\"anchored\" data-anchor-id=\"claude-r-tidyverse-expert-by-sarah-johnson\">1. Claude R Tidyverse Expert by Sarah Johnson</h3>\n<p>Ever asked an LLM for R code and it kindly gives you a response that uses <code>spread()</code> (deprecated 2010)?</p>\n<p><a href=\"https://sarahjohnson.io/\" rel=\"nofollow\" target=\"_blank\">Sarah Johnson</a> created the <a href=\"https://gist.github.com/sj-io/3828d64d0969f2a0f05297e59e6c15ad\" rel=\"nofollow\" target=\"_blank\">Modern R Development Guide</a> to help Claude Code behave like a modern R user. Among other things, it guides Claude to prefer tidyverse-style solutions, use recent versions of packages like dplyr 1.1.0+, and avoid outdated patterns. Never see <code>cast()</code> again!</p>\n<center>\n<blockquote class=\"bluesky-embed blockquote\" data-bluesky-cid=\"bafyreifbf5heboqaalqpo25ovz532myn6gsucfj7bxlwjzqoik6yakqkca\" data-bluesky-embed-color-mode=\"system\" data-bluesky-uri=\"at://did:plc:z37oae56a45bzgiybi23p4my/app.bsky.feed.post/3lwvpothzjk2o\">\n<p lang=\"en\">\n</p><p>I was loving Claude Code… until I tried it with #rstats. Constant errors, wouldn’t use the tidyverse even when asked, “optimized” functions were slower.</p>\nFrustrated, I started a session just to teach R to Claude and summarize what it learned into a CLAUDE.md file gist.github.com/sj-io/3828d6…<br/><br/><a href=\"https://bsky.app/profile/did:plc:z37oae56a45bzgiybi23p4my/post/3lwvpothzjk2o?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">[image or embed]</a>\n<p></p>\n— sarah (<a href=\"https://bsky.app/profile/did:plc:z37oae56a45bzgiybi23p4my?ref_src=embed\" rel=\"nofollow\" target=\"_blank\"><span class=\"citation\" data-cites=\"sarahjohnson.io\">@sarahjohnson.io</span></a>) <a href=\"https://bsky.app/profile/did:plc:z37oae56a45bzgiybi23p4my/post/3lwvpothzjk2o?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">August 21, 2025 at 5:18 AM</a>\n</blockquote>\n\n</center>\n<p>One nice follow-up suggestion comes from <a href=\"https://bsky.app/profile/jeremy-data.bsky.social/post/3mc3lucxbks2v\" rel=\"nofollow\" target=\"_blank\">Jeremy Allen</a>, who recommends breaking this Skill into smaller ones if you don’t need all the guidance at once. He has also created a Skill that can pull in <a href=\"https://github.com/jeremy-allen/claude-skills/tree/main/deliver-posit-news\" rel=\"nofollow\" target=\"_blank\">recent updates</a> from Posit!</p>\n</section>\n<section class=\"level3\" id=\"claude-code-r-skills-by-alistair-bailey\">\n<h3 class=\"anchored\" data-anchor-id=\"claude-code-r-skills-by-alistair-bailey\">2. Claude Code R Skills by Alistair Bailey</h3>\n<p><a href=\"https://bsky.app/profile/ab604.uk\" rel=\"nofollow\" target=\"_blank\">Alistair Bailey</a> used and built upon Sarah’s (and others’) Skills above to create <a href=\"https://github.com/ab604/claude-code-r-skills?tab=readme-ov-file#token-optimization\" rel=\"nofollow\" target=\"_blank\">Claude Code R Skills</a>. I particularly enjoy the section on <a href=\"https://github.com/ab604/claude-code-r-skills?tab=readme-ov-file#recommended-workflow\" rel=\"nofollow\" target=\"_blank\">recommended workflow</a>, which provides a specific order for Claude to follow when writing code.</p>\n<center>\n<blockquote class=\"bluesky-embed blockquote\" data-bluesky-cid=\"bafyreicphe726tkqdttywpftnq7xpmy37ffevvuopvb4spb3zpkkgrboge\" data-bluesky-embed-color-mode=\"system\" data-bluesky-uri=\"at://did:plc:xlq5qg6yjvwxfa26oizvy43u/app.bsky.feed.post/3mdusyrw3ek26\">\n<p lang=\"en\">\nBased on others work, I’ve created Claude Code configurations for R: modular skills (tidyverse, rlang, performance, OOP, testing), enforcement rules (security, testing, git workflow), workflow commands (planning, code review, TDD), and context management hooks. #claudecode #rstats<br/><br/><a href=\"https://bsky.app/profile/did:plc:xlq5qg6yjvwxfa26oizvy43u/post/3mdusyrw3ek26?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">[image or embed]</a>\n</p>\n— Alistair Bailey (<a href=\"https://bsky.app/profile/did:plc:xlq5qg6yjvwxfa26oizvy43u?ref_src=embed\" rel=\"nofollow\" target=\"_blank\"><span class=\"citation\" data-cites=\"ab604.uk\">@ab604.uk</span></a>) <a href=\"https://bsky.app/profile/did:plc:xlq5qg6yjvwxfa26oizvy43u/post/3mdusyrw3ek26?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">February 2, 2026 at 12:12 PM</a>\n</blockquote>\n\n</center>\n</section>\n<section class=\"level3\" id=\"posit-claude-skills\">\n<h3 class=\"anchored\" data-anchor-id=\"posit-claude-skills\">3. Posit Claude Skills</h3>\n<p>Several folks at Posit have been experimenting with Claude Skills and sharing them in this <a href=\"https://github.com/posit-dev/skills\" rel=\"nofollow\" target=\"_blank\">GitHub repository</a>. A couple that may be especially interesting for R users include:</p>\n<ul>\n<li><a href=\"https://github.com/posit-dev/skills/blob/main/quarto/README.md#quarto-authoring-skill\" rel=\"nofollow\" target=\"_blank\">Quarto Authoring Skill</a>: Helpful for converting existing R Markdown projects to Quarto.</li>\n<li><a href=\"https://github.com/posit-dev/skills/blob/main/open-source/create-release-checklist/SKILL.md\" rel=\"nofollow\" target=\"_blank\">Create an R Package Release Checklist Skill</a>: Create a release checklist and GitHub issue for an R package, with automatic version calculation and customizable checklist generation.</li>\n<li><a href=\"https://github.com/posit-dev/skills/blob/main/shiny/shiny-bslib/SKILL.md\" rel=\"nofollow\" target=\"_blank\">Modern Shiny Apps with bslib Skill</a>: Build modern Shiny dashboards using bslib with Bootstrap 5 layouts, cards, value boxes, navigation, theming, and modern inputs. Includes migration guide from legacy Shiny patterns</li>\n</ul>\n</section>\n<section class=\"level3\" id=\"brand.yml-skills\">\n<h3 class=\"anchored\" data-anchor-id=\"brand.yml-skills\">4. <code>_brand.yml</code> Skills</h3>\n<p><a href=\"https://posit-dev.github.io/brand-yml/\" rel=\"nofollow\" target=\"_blank\">brand.yml</a> allows you to create reports, apps, dashboards, plots, and more that match your company’s brand guidelines with a single YAML file. It is currently supported in Quarto and Shiny (for R and Python).</p>\n<p>Here are a few Skills for you to create your <code>_brand.yml</code> file:</p>\n<ul>\n<li><a href=\"https://github.com/posit-dev/skills/blob/main/brand-yml/SKILL.md\" rel=\"nofollow\" target=\"_blank\">brand.yml Skill by posit-dev</a></li>\n<li><a href=\"https://github.com/stephenturner/skill-brand-yml\" rel=\"nofollow\" target=\"_blank\">brand.yml Skill by Stephen Turner</a>: <a href=\"https://bsky.app/profile/stephenturner.us\" rel=\"nofollow\" target=\"_blank\">Stephen Turner</a> walks through the process of developing this skill in his post, <a href=\"https://blog.stephenturner.us/p/brand-yml-claude-skill-uva-sds-quarto\" rel=\"nofollow\" target=\"_blank\">A Claude Skill for _brand.yml, and sharing with Quarto 1.9</a>.</li>\n</ul>\n<center>\n<blockquote class=\"bluesky-embed blockquote\" data-bluesky-cid=\"bafyreiclocg2ivthqgnieq6nbchqcvymua3qqmjp4iae2mjs7oss7eyh6y\" data-bluesky-embed-color-mode=\"system\" data-bluesky-uri=\"at://did:plc:ppvxhapnptcy5v6cih3ynmzg/app.bsky.feed.post/3mfreyzjbok2q\">\n<p lang=\"en\">\nI created a Claude Skill to make _brand.yml files for your organization, and with the upcoming Quarto 1.9 release you can share brand.yml files via GitHub and <code>quarto use brand</code>. More details and how to use it: blog.stephenturner.us/p/brand-yml-… #Rstats 1/ 🧵<br/><br/><a href=\"https://bsky.app/profile/did:plc:ppvxhapnptcy5v6cih3ynmzg/post/3mfreyzjbok2q?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">[image or embed]</a>\n</p>\n— Stephen Turner (<a href=\"https://bsky.app/profile/did:plc:ppvxhapnptcy5v6cih3ynmzg?ref_src=embed\" rel=\"nofollow\" target=\"_blank\"><span class=\"citation\" data-cites=\"stephenturner.us\">@stephenturner.us</span></a>) <a href=\"https://bsky.app/profile/did:plc:ppvxhapnptcy5v6cih3ynmzg/post/3mfreyzjbok2q?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">February 26, 2026 at 2:14 PM</a>\n</blockquote>\n\n</center>\n</section>\n<section class=\"level3\" id=\"learning-opportunities-a-claude-code-skill-for-deliberate-skill-development-by-cat-hicks\">\n<h3 class=\"anchored\" data-anchor-id=\"learning-opportunities-a-claude-code-skill-for-deliberate-skill-development-by-cat-hicks\">5. Learning Opportunities: A Claude Code Skill for Deliberate Skill Development by Cat Hicks</h3>\n<p>If you are worried about all these Skills deteriorating your R coding skills, check out <a href=\"https://github.com/DrCatHicks/learning-opportunities\" rel=\"nofollow\" target=\"_blank\">Learning Opportunities: A Claude Code Skill for Deliberate Skill Development</a> from <a href=\"https://bsky.app/profile/grimalkina.bsky.social\" rel=\"nofollow\" target=\"_blank\">Cat Hicks</a>. It uses a “dynamic textbook” approach to help you deliberately work your coding muscles <strong>while</strong> you’re using LLM tools.</p>\n<center>\n<blockquote class=\"bluesky-embed blockquote\" data-bluesky-cid=\"bafyreigsjkiynnec4bfmouz7gfo34v7qyv67yn2px3rouxswkz7xezb7fa\" data-bluesky-embed-color-mode=\"system\" data-bluesky-uri=\"at://did:plc:yjvayj5thzisljwor7yykhlx/app.bsky.feed.post/3mevvbm3a6s26\">\n<p lang=\"en\">\n</p><p>Can you learn AND offload? Yes. We do it all the time across our days. You just cannot do every single thing at once, and have to think about the structural support for different (sometimes competing) goals.</p>\nSelf-regulation isn’t new, but it is a vital skill for developers now.\n<p></p>\n— Cat Hicks (<a href=\"https://bsky.app/profile/did:plc:yjvayj5thzisljwor7yykhlx?ref_src=embed\" rel=\"nofollow\" target=\"_blank\"><span class=\"citation\" data-cites=\"grimalkina.bsky.social\">@grimalkina.bsky.social</span></a>) <a href=\"https://bsky.app/profile/did:plc:yjvayj5thzisljwor7yykhlx/post/3mevvbm3a6s26?ref_src=embed\" rel=\"nofollow\" target=\"_blank\">February 15, 2026 at 3:51 PM</a>\n</blockquote>\n\n</center>\n</section>\n</section>\n<section class=\"level2\" id=\"how-to-add-a-claude-skill\">\n<h2 class=\"anchored\" data-anchor-id=\"how-to-add-a-claude-skill\">How to add a Claude Skill</h2>\n<div class=\"callout callout-style-default callout-note callout-titled\">\n<div class=\"callout-header d-flex align-content-center\">\n<div class=\"callout-icon-container\">\n<i class=\"callout-icon\"></i>\n</div>\n<div class=\"callout-title-container flex-fill\">\nNote\n</div>\n</div>\n<div class=\"callout-body-container callout-body\">\n<p>While you can use Claude Code in RStudio, I have been using <a href=\"https://positron.posit.co/\" rel=\"nofollow\" target=\"_blank\">Positron</a>. Posit has started rolling out <a href=\"https://posit.co/products/ai/\" rel=\"nofollow\" target=\"_blank\">Posit AI</a> in RStudio, which also supports Skills.</p>\n</div>\n</div>\n<section class=\"level3\" id=\"install-from-a-github-repository\">\n<h3 class=\"anchored\" data-anchor-id=\"install-from-a-github-repository\">1. Install from a GitHub repository</h3>\n<p>As shown in the <a href=\"https://github.com/posit-dev/skills?tab=readme-ov-file#installation\" rel=\"nofollow\" target=\"_blank\">Posit Claude Skills README</a>, you can install Skills directly from a GitHub repository using a Claude Code command. For example, this installs all of the Quarto-related Skills from the Posit Claude Skills repo:</p>\n<pre>/plugin install quarto@posit-dev-skills</pre>\n<p>This is a good option if you want to pull in a maintained set of Skills all at once.</p>\n</section>\n<section class=\"level3\" id=\"install-from-a-local-directory\">\n<h3 class=\"anchored\" data-anchor-id=\"install-from-a-local-directory\">2. Install from a local directory</h3>\n<p>If you’ve downloaded a Skill locally, you can install it directly from its folder:</p>\n<pre>/plugin add /path/to/skill-directory</pre>\n</section>\n<section class=\"level3\" id=\"manual-installation\">\n<h3 class=\"anchored\" data-anchor-id=\"manual-installation\">3. Manual installation</h3>\n<p>You can also install a Skill by placing it directly in the appropriate directory:</p>\n<ul>\n<li>For personal Skills: <code>~/.claude/skills/skill-name/</code> (in your home directory)</li>\n<li>For project Skills: <code>.claude/skills/skill-name/</code> (in your project root)</li>\n</ul>\n<p>Once the files are in place, Claude Code will automatically discover and use the Skill when it’s relevant.</p>\n</section>\n</section>\n<section class=\"level2\" id=\"create-your-own-skill\">\n<h2 class=\"anchored\" data-anchor-id=\"create-your-own-skill\">Create your own Skill</h2>\n<p>Anthropic has <a href=\"https://code.claude.com/docs/en/skills#create-your-first-skill\" rel=\"nofollow\" target=\"_blank\">documentation</a> on creating your own Claude Skill. I enjoy looking through other people’s Skills to see how they organize and develop them. Trying them out and further tweaking them is a great way of creating a customized Skill of your own.</p>\n<p>As both Stephen and <a href=\"https://bsky.app/profile/sarahjohnson.io/post/3lwxvrldnjc2o\" rel=\"nofollow\" target=\"_blank\">Sarah note</a>, you can give Claude Code examples, documentation, and guidance, then ask it to help generate the Skill for you. Perhaps there’s a good Skill out there for creating Skills. It’s Skills all the way down!</p>\n</section>\n<section class=\"level2\" id=\"more-on-using-claude-code-for-r-development\">\n<h2 class=\"anchored\" data-anchor-id=\"more-on-using-claude-code-for-r-development\">More on using Claude Code for R development</h2>\n<p>If you want examples of Claude Code in action with R, Simon Couch has a couple of great blog posts on the subject: <a href=\"https://www.simonpcouch.com/blog/2025-03-26-claude-code/\" rel=\"nofollow\" target=\"_blank\">Post 1</a>, <a href=\"https://www.simonpcouch.com/blog/2025-07-17-claude-code-2/\" rel=\"nofollow\" target=\"_blank\">Post 2</a>. They’re a great complement to this roundup and show what this can look like in real workflows.</p>\n<p>New features and techniques are popping up all the time. If you’re experimenting with Claude Code for R and find something useful, please reach out anytime!</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://rworks.dev/posts/claude-skills-for-r-users/\"> R Works</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 1585,
+    "reading_time_min": 7.9,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/isabella-velasquez/",
+        "text": "Isabella Velásquez"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://rworks.dev/posts/claude-skills-for-r-users/",
+        "text": "R Works"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://bsky.app/profile/ivelasq3.bsky.social",
+        "text": "Bluesky"
+      },
+      {
+        "href": "https://code.claude.com/docs/en/quickstart",
+        "text": "great documentation"
+      },
+      {
+        "href": "https://www.anthropic.com/",
+        "text": "Anthropic"
+      },
+      {
+        "href": "https://claude.ai/",
+        "text": "Claude"
+      },
+      {
+        "href": "https://www.anthropic.com/claude/opus",
+        "text": "Claude Opus 4.5"
+      },
+      {
+        "href": "https://www.anthropic.com/claude/sonnet",
+        "text": "Claude Sonnet 4.5"
+      },
+      {
+        "href": "https://www.anthropic.com/claude/haiku",
+        "text": "Claude Haiku 4.5"
+      },
+      {
+        "href": "https://claude.com/product/claude-code",
+        "text": "Claude Code"
+      },
+      {
+        "href": "https://claude.com/blog/using-claude-md-files",
+        "text": "CLAUDE.md"
+      },
+      {
+        "href": "https://claude.com/skills",
+        "text": "Claude Skills"
+      },
+      {
+        "href": "https://sarahjohnson.io/",
+        "text": "Sarah Johnson"
+      },
+      {
+        "href": "https://gist.github.com/sj-io/3828d64d0969f2a0f05297e59e6c15ad",
+        "text": "Modern R Development Guide"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:z37oae56a45bzgiybi23p4my/post/3lwvpothzjk2o?ref_src=embed",
+        "text": "[image or embed]"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:z37oae56a45bzgiybi23p4my?ref_src=embed",
+        "text": "@sarahjohnson.io"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:z37oae56a45bzgiybi23p4my/post/3lwvpothzjk2o?ref_src=embed",
+        "text": "August 21, 2025 at 5:18 AM"
+      },
+      {
+        "href": "https://bsky.app/profile/jeremy-data.bsky.social/post/3mc3lucxbks2v",
+        "text": "Jeremy Allen"
+      },
+      {
+        "href": "https://github.com/jeremy-allen/claude-skills/tree/main/deliver-posit-news",
+        "text": "recent updates"
+      },
+      {
+        "href": "https://bsky.app/profile/ab604.uk",
+        "text": "Alistair Bailey"
+      },
+      {
+        "href": "https://github.com/ab604/claude-code-r-skills?tab=readme-ov-file#token-optimization",
+        "text": "Claude Code R Skills"
+      },
+      {
+        "href": "https://github.com/ab604/claude-code-r-skills?tab=readme-ov-file#recommended-workflow",
+        "text": "recommended workflow"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:xlq5qg6yjvwxfa26oizvy43u/post/3mdusyrw3ek26?ref_src=embed",
+        "text": "[image or embed]"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:xlq5qg6yjvwxfa26oizvy43u?ref_src=embed",
+        "text": "@ab604.uk"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:xlq5qg6yjvwxfa26oizvy43u/post/3mdusyrw3ek26?ref_src=embed",
+        "text": "February 2, 2026 at 12:12 PM"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills",
+        "text": "GitHub repository"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills/blob/main/quarto/README.md#quarto-authoring-skill",
+        "text": "Quarto Authoring Skill"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills/blob/main/open-source/create-release-checklist/SKILL.md",
+        "text": "Create an R Package Release Checklist Skill"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills/blob/main/shiny/shiny-bslib/SKILL.md",
+        "text": "Modern Shiny Apps with bslib Skill"
+      },
+      {
+        "href": "https://posit-dev.github.io/brand-yml/",
+        "text": "brand.yml"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills/blob/main/brand-yml/SKILL.md",
+        "text": "brand.yml Skill by posit-dev"
+      },
+      {
+        "href": "https://github.com/stephenturner/skill-brand-yml",
+        "text": "brand.yml Skill by Stephen Turner"
+      },
+      {
+        "href": "https://bsky.app/profile/stephenturner.us",
+        "text": "Stephen Turner"
+      },
+      {
+        "href": "https://blog.stephenturner.us/p/brand-yml-claude-skill-uva-sds-quarto",
+        "text": "A Claude Skill for _brand.yml, and sharing with Quarto 1.9"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:ppvxhapnptcy5v6cih3ynmzg/post/3mfreyzjbok2q?ref_src=embed",
+        "text": "[image or embed]"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:ppvxhapnptcy5v6cih3ynmzg?ref_src=embed",
+        "text": "@stephenturner.us"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:ppvxhapnptcy5v6cih3ynmzg/post/3mfreyzjbok2q?ref_src=embed",
+        "text": "February 26, 2026 at 2:14 PM"
+      },
+      {
+        "href": "https://github.com/DrCatHicks/learning-opportunities",
+        "text": "Learning Opportunities: A Claude Code Skill for Deliberate Skill Development"
+      },
+      {
+        "href": "https://bsky.app/profile/grimalkina.bsky.social",
+        "text": "Cat Hicks"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:yjvayj5thzisljwor7yykhlx?ref_src=embed",
+        "text": "@grimalkina.bsky.social"
+      },
+      {
+        "href": "https://bsky.app/profile/did:plc:yjvayj5thzisljwor7yykhlx/post/3mevvbm3a6s26?ref_src=embed",
+        "text": "February 15, 2026 at 3:51 PM"
+      },
+      {
+        "href": "https://positron.posit.co/",
+        "text": "Positron"
+      },
+      {
+        "href": "https://posit.co/products/ai/",
+        "text": "Posit AI"
+      },
+      {
+        "href": "https://github.com/posit-dev/skills?tab=readme-ov-file#installation",
+        "text": "Posit Claude Skills README"
+      },
+      {
+        "href": "https://code.claude.com/docs/en/skills#create-your-first-skill",
+        "text": "documentation"
+      },
+      {
+        "href": "https://bsky.app/profile/sarahjohnson.io/post/3lwxvrldnjc2o",
+        "text": "Sarah note"
+      },
+      {
+        "href": "https://www.simonpcouch.com/blog/2025-03-26-claude-code/",
+        "text": "Post 1"
+      },
+      {
+        "href": "https://www.simonpcouch.com/blog/2025-07-17-claude-code-2/",
+        "text": "Post 2"
+      },
+      {
+        "href": "https://rworks.dev/posts/claude-skills-for-r-users/",
+        "text": "R Works"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-03T08:30:41Z"
+  }
+}
