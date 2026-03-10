@@ -1,0 +1,179 @@
+{
+  "id": "58b16a10f3406f078c862459b60e5e202271180f",
+  "url": "https://www.r-bloggers.com/2026/03/breaking-release-of-the-patentsview-r-package/",
+  "created_at_utc": "2026-03-10T19:32:50Z",
+  "crawled_at_utc": "2026-03-10T19:32:51Z",
+  "html_title": "Breaking Release of the patentsview R Package | R-bloggers",
+  "meta_description": "The patentsview R package was created by Chris Baker to simplify interactions with the PatentsView API as announced in Chris’ blog post in 2017. The API can be queried for data from US patents granted since 1976 as well as patent applications si...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/breaking-release-of-the-patentsview-r-package/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/breaking-release-of-the-patentsview-r-package/",
+    "html_title": "Breaking Release of the patentsview R Package | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "The patentsview R package was created by Chris Baker to simplify interactions with the PatentsView API as announced in Chris’ blog post in 2017. The API can be queried for data from US patents granted since 1976 as well as patent applications si...",
+    "meta_keywords": null,
+    "og_title": "Breaking Release of the patentsview R Package | R-bloggers",
+    "og_description": "The patentsview R package was created by Chris Baker to simplify interactions with the PatentsView API as announced in Chris’ blog post in 2017. The API can be queried for data from US patents granted since 1976 as well as patent applications si...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Breaking Release of the patentsview R Package | R-bloggers",
+    "twitter_description": "The patentsview R package was created by Chris Baker to simplify interactions with the PatentsView API as announced in Chris’ blog post in 2017. The API can be queried for data from US patents granted since 1976 as well as patent applications si...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Breaking Release of the patentsview R Package\nPosted on\nMarch 9, 2026\nby\nrOpenSci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe\npatentsview\nR package was created by Chris Baker to simplify interactions with the\nPatentsView API as announced in Chris’\nblog post\nin 2017. The API can be queried for data from US patents granted since 1976 as well as\npatent applications since 2001 (not all going on to become granted patents).\nAs shown in the package’s vignettes, location data can be mapped, charts of\nassignees can be created etc. using other R packages, only limited by the\ndeveloper’s imagination.\nFast-forwarding to today finds us in a precarious\nposition as the PatentsView API team had made breaking changes and obsoleted\nthe original API (all calls to the original endpoints return 410 Gone).\nAs such we have spent some time now updating patentsview to work with these API changes.\nThe updated patentsview package is now on CRAN but, unfortunately, as this Tech Note was being prepared\nthe PatentsView API team made troubling changes.\nIn late February they replaced their\nforum\nwith a message saying the page was temporarily\nunavailable. Further, they have also removed the link to request an API key, so it’s unclear\nwhether they’d honor requests for API keys using the link below. Nothing has been officially\nannounced but the long term viability of the API seems uncertain.\n🍴 Here you’ve come to a fork (and knife) in the road, continue reading\nif you are/were using the original version of the patentsview package, and we’ll guide\nyou through the necessary changes. If you have an interest in US patent data but haven’t\nused the patentsview package yet (and are willing to take the risk!), check out the\nvignette\nreworked from Chris’ original blog post to use the new version of the R package and API.\nNew changes to the API:\nUsers will need to\nrequest an API key\nand set an environmental variable PATENTSVIEW_API_KEY to this value.\nEndpoint changes:\nThe\nnber_subcategories\n, one of the original seven endpoints, was removed\ncpc_subsections\nis now\ncpc_group\nThe remaining five original endpoints went from plural to singular,\npatents\nis now\npatent\n, for example.\nInterestingly, the returned data structures are still plural for the most part.\nThere are now 27 endpoints, and more than one may need to be called to retrieve fields that were\navailable from a single call to one of the original endpoints\nSome of the endpoints now return HATEOAS (Hypermedia as the Engine of Application State) links that can be called to retrieve additional data\nSome fields are now nested and need to be fully qualified when used in a query,\nfor instance,\nsearch_pv('{\"cpc_current.cpc_group_id\":\"A01B1/00\"}')\nwhen using the patent endpoint.\nIn the fields parameter, nested fields can be fully qualified or a new API shorthand can be used,\nwhich allows you to specify group names. When group names are used, all of the group’s nested fields will be returned.\nFor example, defining\nfields = c(\"assignees\")\nwhen\nusing the patent endpoint means that all nested assignees’ fields will be returned by the API.\nSome field names have changed, most significantly,\npatent_number\nis now\npatent_id\n,\nand some fields were removed entirely, for instance,\nrawinventor_first_name\nand\nrawinventor_last_name\n.\nThe original version of the API had queryable fields and additional fields which could be\nretrieved but couldn’t be part of a conditional query. That notion does not apply to the\nnew version of the API as all fields are now queryable. You may be able\nto simplify your code if you found yourself doing post processing on returned data\nbecause a field you were interested in was not queryable.\nNow there isn’t supposed to be a difference between\noperators used on strings vs full text fields, as there was in the original\nversion of the API. See the tip below the\nSyntax section\n.\nResult set paging has changed significantly. This only matter to users implementing their own\npaging, as the package continues to handle result set paging with\nsearch_pv()\n’s\nall_pages = TRUE\n.\nThere is a new\nResult set paging\nvignette to explain the API’s paging,\nusing the\nsize\nand\nafter\nparameters rather than\npage\nand\nper_page\n.\nResult set sizes are seemingly unbounded now. The original version of the API capped result sets at\n100,000 rows.\nThe API team also\nrenamed the API\n,\nPatentsView’s Search API is now the PatentSearch API.\nNote that the R package will retain its name, continue to use\nlibrary(patentsview)\nto load the package.\nNew changes to the R package:\nThrottling is now enforced by the API and handled by the R package (sleep as specified by the throttle response before a retry)\nThere are five new vignettes\nAPI Changes\nConverting an existing script\nResult set paging\n, should custom paging be needed\nUnderstanding the API\n, the API team’s jupyter notebook converted to R and enhanced\nAccessing patent data with the patentsview package\n, the blog post that announced the original version of the R package has been updated to work with the new version of the API\nThe R package changed internally from using httr to httr2. This only affects users if\nthey passed additional arguments (\n...\n) to\nsearch_pv()\n. Previously if they passed\nconfig = httr::timeout(40)\nthey’d now pass\ntimeout = 40\n(name-value pairs of valid curl options, as found in\ncurl::curl_options()\nsee\nreq_options\n)\nNow that the R package is using httr2, users can make use of its\nlast_request()\nmethod to see what was sent to the API. This could be useful when trying to fix an invalid request. Also fun would be seeing the raw API response.\nhttr2::last_request()\nhttr2::last_response()\nhttr2::last_response() |> httr2::resp_body_json()\nA new function was added\nretrieve_linked_data()\nto retrieve data from a HATEOAS link the API sent back, retrying if throttled\nAn existing function was removed. With the API changes, there is less of a need for\ncast_pv_data()\nwhich was previously part of the R package. The API now returns most fields as appropriate\ntypes, boolean, numeric etc., instead of always returning strings.\nOnline API documentation\nThe PatentsView API team has thoughtfully provided a Swagger UI page for the new version of the API at\nhttps://search.patentsview.org/swagger-ui/\n.\nThink of it as an online version of Postman already loaded with the API’s new endpoints and returns.\nThe Swagger UI page documents what fields are returned by each endpoint on a successful call\n(http response code 200).\nYou can even send in requests and see actual API responses if you enter your API key and press\nan endpoint’s “Try it out” and “Execute” buttons. Even error responses can be informative, the API’s X-Status-Reason response header\nusually points out what went wrong.\nIn a similar format, the\nupdated API documentation\nlists what each endpoint does. Additionally, the R package’s\nfieldsdf\ndata frame has been updated,\nnow listing the new set of endpoints and fields that can be queried and/or returned. The R package’s\nreference pages have also been updated.\nFinal thoughts\nAs shown in the updated\nTop Assignees\nvignette, there will be occasions now where multiple API calls are needed to retrieve the same data as in a single API call in the original version of the API and R package.\nAdditionally, the\nreworked rOpenSci post\nexplains what changes had to be made since assignee latitude\nand longitude are no longer available from the patent endpoint.\nIssues for the R package can be raised in the\npatentsview repo\n.\nAs we mentioned at the start, the future of the PatentsView API is a bit uncertain. PatentsView is funded by the\nUSPTO\n, who may be looking to cut costs. However, until we know for certain, we hope patentsview serves you well. If nothing else,\nit’s been a great run, starting in 2015 for the API and 2017 for the R package!\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399746 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Breaking Release of the patentsview R Package</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 9, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci/\">rOpenSci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2026/03/10/patentsview-breaking-release/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>The <a href=\"http://docs.ropensci.org/patentsview/\" rel=\"nofollow\" target=\"_blank\">patentsview</a> R package was created by Chris Baker to simplify interactions with the\nPatentsView API as announced in Chris’\n<a href=\"https://ropensci.org/blog/2017/09/19/patentsview/\" rel=\"nofollow\" target=\"_blank\">blog post</a>\nin 2017. The API can be queried for data from US patents granted since 1976 as well as\npatent applications since 2001 (not all going on to become granted patents).<br/>\nAs shown in the package’s vignettes, location data can be mapped, charts of\nassignees can be created etc. using other R packages, only limited by the\ndeveloper’s imagination.</p>\n<p>Fast-forwarding to today finds us in a precarious\nposition as the PatentsView API team had made breaking changes and obsoleted\nthe original API (all calls to the original endpoints return 410 Gone).\nAs such we have spent some time now updating patentsview to work with these API changes.\nThe updated patentsview package is now on CRAN but, unfortunately, as this Tech Note was being prepared\nthe PatentsView API team made troubling changes.</p>\n<p>In late February they replaced their\n<a href=\"https://patentsview.org/forum\" rel=\"nofollow\" target=\"_blank\">forum</a> with a message saying the page was temporarily\nunavailable. Further, they have also removed the link to request an API key, so it’s unclear\nwhether they’d honor requests for API keys using the link below. Nothing has been officially\nannounced but the long term viability of the API seems uncertain.</p>\n<p>🍴 Here you’ve come to a fork (and knife) in the road, continue reading\nif you are/were using the original version of the patentsview package, and we’ll guide\nyou through the necessary changes. If you have an interest in US patent data but haven’t\nused the patentsview package yet (and are willing to take the risk!), check out the <a href=\"https://docs.ropensci.org/patentsview/articles/ropensci-blog-post.html\" rel=\"nofollow\" target=\"_blank\">vignette</a> reworked from Chris’ original blog post to use the new version of the R package and API.</p>\n<h2>\nNew changes to the API:\n</h2><ol>\n<li>Users will need to <a href=\"https://patentsview-support.atlassian.net/servicedesk/customer/portals\" rel=\"nofollow\" target=\"_blank\">request an API key</a> and set an environmental variable PATENTSVIEW_API_KEY to this value.</li>\n<li>Endpoint changes:\n<ul>\n<li>The <code>nber_subcategories</code>, one of the original seven endpoints, was removed</li>\n<li><code>cpc_subsections</code> is now <code>cpc_group</code></li>\n<li>The remaining five original endpoints went from plural to singular, <code>patents</code> is now <code>patent</code>, for example.\nInterestingly, the returned data structures are still plural for the most part.</li>\n<li>There are now 27 endpoints, and more than one may need to be called to retrieve fields that were\navailable from a single call to one of the original endpoints</li>\n<li>Some of the endpoints now return HATEOAS (Hypermedia as the Engine of Application State) links that can be called to retrieve additional data</li>\n</ul>\n</li>\n<li>Some fields are now nested and need to be fully qualified when used in a query,\nfor instance, <code>search_pv('{\"cpc_current.cpc_group_id\":\"A01B1/00\"}')</code> when using the patent endpoint.\nIn the fields parameter, nested fields can be fully qualified or a new API shorthand can be used,\nwhich allows you to specify group names. When group names are used, all of the group’s nested fields will be returned.\nFor example, defining <code>fields = c(\"assignees\")</code> when\nusing the patent endpoint means that all nested assignees’ fields will be returned by the API.</li>\n<li>Some field names have changed, most significantly, <code>patent_number</code> is now <code>patent_id</code>,\nand some fields were removed entirely, for instance, <code>rawinventor_first_name</code> and <code>rawinventor_last_name</code>.</li>\n<li>The original version of the API had queryable fields and additional fields which could be\nretrieved but couldn’t be part of a conditional query. That notion does not apply to the\nnew version of the API as all fields are now queryable. You may be able\nto simplify your code if you found yourself doing post processing on returned data\nbecause a field you were interested in was not queryable.</li>\n<li>Now there isn’t supposed to be a difference between\noperators used on strings vs full text fields, as there was in the original\nversion of the API. See the tip below the <a href=\"https://search.patentsview.org/docs/docs/Search%20API/SearchAPIReference/#syntax\" rel=\"nofollow\" target=\"_blank\">Syntax section</a>.</li>\n<li>Result set paging has changed significantly. This only matter to users implementing their own\npaging, as the package continues to handle result set paging with <code>search_pv()</code>’s <code>all_pages = TRUE</code>.\nThere is a new <a href=\"https://docs.ropensci.org/patentsview/articles/result-set-paging.html\" rel=\"nofollow\" target=\"_blank\">Result set paging</a> vignette to explain the API’s paging,\nusing the <code>size</code> and <code>after</code> parameters rather than <code>page</code> and <code>per_page</code>.</li>\n<li>Result set sizes are seemingly unbounded now. The original version of the API capped result sets at\n100,000 rows.</li>\n</ol>\n<p>The API team also <a href=\"https://search.patentsview.org/docs/#naming-update\" rel=\"nofollow\" target=\"_blank\">renamed the API</a>,\nPatentsView’s Search API is now the PatentSearch API.\nNote that the R package will retain its name, continue to use <code>library(patentsview)</code> to load the package.</p>\n<h2>\nNew changes to the R package:\n</h2><ol>\n<li>Throttling is now enforced by the API and handled by the R package (sleep as specified by the throttle response before a retry)</li>\n<li>There are five new vignettes\n<ul>\n<li><a href=\"https://docs.ropensci.org/patentsview/articles/api-changes.html\" rel=\"nofollow\" target=\"_blank\">API Changes</a></li>\n<li><a href=\"https://docs.ropensci.org/patentsview/articles/converting-an-existing-script.html\" rel=\"nofollow\" target=\"_blank\">Converting an existing script</a></li>\n<li><a href=\"https://docs.ropensci.org/patentsview/articles/result-set-paging.html\" rel=\"nofollow\" target=\"_blank\">Result set paging</a>, should custom paging be needed</li>\n<li><a href=\"https://docs.ropensci.org/patentsview/articles/understanding-the-api.html\" rel=\"nofollow\" target=\"_blank\">Understanding the API</a>, the API team’s jupyter notebook converted to R and enhanced</li>\n<li><a href=\"https://ropensci.org/blog/2017/09/19/patentsview/\" rel=\"nofollow\" target=\"_blank\">Accessing patent data with the patentsview package</a>, the blog post that announced the original version of the R package has been updated to work with the new version of the API</li>\n</ul>\n</li>\n<li>The R package changed internally from using httr to httr2. This only affects users if\nthey passed additional arguments (<code>...</code>) to <code>search_pv()</code>. Previously if they passed <code>config = httr::timeout(40)</code>\nthey’d now pass <code>timeout = 40</code> (name-value pairs of valid curl options, as found in <code>curl::curl_options()</code> see <a href=\"https://httr2.r-lib.org/reference/req_options.html\" rel=\"nofollow\" target=\"_blank\">req_options</a>)</li>\n<li>Now that the R package is using httr2, users can make use of its <code>last_request()</code> method to see what was sent to the API. This could be useful when trying to fix an invalid request. Also fun would be seeing the raw API response.</li>\n</ol>\n<pre>httr2::last_request()\nhttr2::last_response()\nhttr2::last_response() |&gt; httr2::resp_body_json()\n</pre><ol start=\"5\">\n<li>A new function was added\n<code>retrieve_linked_data()</code> to retrieve data from a HATEOAS link the API sent back, retrying if throttled</li>\n<li>An existing function was removed. With the API changes, there is less of a need for\n<code>cast_pv_data()</code> which was previously part of the R package. The API now returns most fields as appropriate\ntypes, boolean, numeric etc., instead of always returning strings.</li>\n</ol>\n<h2>\nOnline API documentation\n</h2><p>The PatentsView API team has thoughtfully provided a Swagger UI page for the new version of the API at <a href=\"https://search.patentsview.org/swagger-ui/\" rel=\"nofollow\" target=\"_blank\">https://search.patentsview.org/swagger-ui/</a>.\nThink of it as an online version of Postman already loaded with the API’s new endpoints and returns.\nThe Swagger UI page documents what fields are returned by each endpoint on a successful call\n(http response code 200).\nYou can even send in requests and see actual API responses if you enter your API key and press\nan endpoint’s “Try it out” and “Execute” buttons. Even error responses can be informative, the API’s X-Status-Reason response header\nusually points out what went wrong.</p>\n<p>In a similar format, the <a href=\"https://search.patentsview.org/docs/docs/Search%20API/EndpointDictionary/\" rel=\"nofollow\" target=\"_blank\">updated API documentation</a>\nlists what each endpoint does. Additionally, the R package’s <code>fieldsdf</code> data frame has been updated,\nnow listing the new set of endpoints and fields that can be queried and/or returned. The R package’s\nreference pages have also been updated.</p>\n<h2>\nFinal thoughts\n</h2><p>As shown in the updated <a href=\"https://docs.ropensci.org/patentsview/articles/top-assignees.html\" rel=\"nofollow\" target=\"_blank\">Top Assignees</a> vignette, there will be occasions now where multiple API calls are needed to retrieve the same data as in a single API call in the original version of the API and R package.\nAdditionally, the <a href=\"https://docs.ropensci.org/patentsview/articles/ropensci-blog-post.html\" rel=\"nofollow\" target=\"_blank\">reworked rOpenSci post</a> explains what changes had to be made since assignee latitude\nand longitude are no longer available from the patent endpoint.</p>\n<p>Issues for the R package can be raised in the <a href=\"https://github.com/ropensci/patentsview/issues\" rel=\"nofollow\" target=\"_blank\">patentsview repo</a>.</p>\n<p>As we mentioned at the start, the future of the PatentsView API is a bit uncertain. PatentsView is funded by the <a href=\"https://www.uspto.gov/\" rel=\"nofollow\" target=\"_blank\">USPTO</a>, who may be looking to cut costs. However, until we know for certain, we hope patentsview serves you well. If nothing else,\nit’s been a great run, starting in 2015 for the API and 2017 for the R package!</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2026/03/10/patentsview-breaking-release/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 1450,
+    "reading_time_min": 7.2,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ropensci/",
+        "text": "rOpenSci"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://ropensci.org/blog/2026/03/10/patentsview-breaking-release/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "http://docs.ropensci.org/patentsview/",
+        "text": "patentsview"
+      },
+      {
+        "href": "https://ropensci.org/blog/2017/09/19/patentsview/",
+        "text": "blog post"
+      },
+      {
+        "href": "https://patentsview.org/forum",
+        "text": "forum"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/ropensci-blog-post.html",
+        "text": "vignette"
+      },
+      {
+        "href": "https://patentsview-support.atlassian.net/servicedesk/customer/portals",
+        "text": "request an API key"
+      },
+      {
+        "href": "https://search.patentsview.org/docs/docs/Search%20API/SearchAPIReference/#syntax",
+        "text": "Syntax section"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/result-set-paging.html",
+        "text": "Result set paging"
+      },
+      {
+        "href": "https://search.patentsview.org/docs/#naming-update",
+        "text": "renamed the API"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/api-changes.html",
+        "text": "API Changes"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/converting-an-existing-script.html",
+        "text": "Converting an existing script"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/result-set-paging.html",
+        "text": "Result set paging"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/understanding-the-api.html",
+        "text": "Understanding the API"
+      },
+      {
+        "href": "https://ropensci.org/blog/2017/09/19/patentsview/",
+        "text": "Accessing patent data with the patentsview package"
+      },
+      {
+        "href": "https://httr2.r-lib.org/reference/req_options.html",
+        "text": "req_options"
+      },
+      {
+        "href": "https://search.patentsview.org/swagger-ui/",
+        "text": "https://search.patentsview.org/swagger-ui/"
+      },
+      {
+        "href": "https://search.patentsview.org/docs/docs/Search%20API/EndpointDictionary/",
+        "text": "updated API documentation"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/top-assignees.html",
+        "text": "Top Assignees"
+      },
+      {
+        "href": "https://docs.ropensci.org/patentsview/articles/ropensci-blog-post.html",
+        "text": "reworked rOpenSci post"
+      },
+      {
+        "href": "https://github.com/ropensci/patentsview/issues",
+        "text": "patentsview repo"
+      },
+      {
+        "href": "https://www.uspto.gov/",
+        "text": "USPTO"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/10/patentsview-breaking-release/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-10T19:32:51Z"
+  }
+}
