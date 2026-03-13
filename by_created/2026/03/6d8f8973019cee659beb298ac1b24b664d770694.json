@@ -1,0 +1,115 @@
+{
+  "id": "6d8f8973019cee659beb298ac1b24b664d770694",
+  "url": "https://www.r-bloggers.com/2026/03/does-every-finite-string-of-numbers-appear-within-%CF%80/",
+  "created_at_utc": "2026-03-13T22:20:34Z",
+  "crawled_at_utc": "2026-03-13T22:20:34Z",
+  "html_title": "Does every finite string of numbers appear within π ? | R-bloggers",
+  "meta_description": "In honor of Pi Day (March 14), I offer the following: Does every finite string of numbers like your social security number eventually appear somewhere within the decimal expansion of π ? &n...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/does-every-finite-string-of-numbers-appear-within-%CF%80/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/does-every-finite-string-of-numbers-appear-within-%cf%80/",
+    "html_title": "Does every finite string of numbers appear within π ? | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "In honor of Pi Day (March 14), I offer the following: Does every finite string of numbers like your social security number eventually appear somewhere within the decimal expansion of π ? &n...",
+    "meta_keywords": null,
+    "og_title": "Does every finite string of numbers appear within π ? | R-bloggers",
+    "og_description": "In honor of Pi Day (March 14), I offer the following: Does every finite string of numbers like your social security number eventually appear somewhere within the decimal expansion of π ? &n...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Does every finite string of numbers appear within π ? | R-bloggers",
+    "twitter_description": "In honor of Pi Day (March 14), I offer the following: Does every finite string of numbers like your social security number eventually appear somewhere within the decimal expansion of π ? &n...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Does every finite string of numbers appear within π ?\nPosted on\nMarch 13, 2026\nby\nJerry Tuttle\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nOnline College Math Teacher\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nIn honor of Pi Day (March 14), I offer the following:\nDoes every finite string of numbers like your social security number eventually appear somewhere within the decimal expansion of π ?\nSo said Harold Finch, the computer genius on TV show\n“Person of Interest”\n(“You are being watched … “) in a 2013 episode where he poses as a substitute high school math teacher.\n“Pi… keeps on going, forever, without ever repeating. Which means that contained within this string of decimals, is every single other number. Your birthdate, combination to your locker, your social security number, it’s all in there, somewhere. And if you convert these decimals into letters, you would have every word that ever existed… all of the world’s infinite possibilities rest within this one simple circle.”\nWe know π is\nirrational\n;  it cannot be expressed as the quotient of two integers.\nVideo\nAn irrational number has an infinite, non-repeating decimal expansion.\nA number is defined as\nnormal\nif any finite string of numbers like your social security number will eventually appear somewhere in its decimal expansion.  (The is a simpler version of a more complicated mathematical\ndefinition\n, but it is sufficient for this discussion.)  \nMr. Finch is\nclaiming  π is a normal number.  However, mathematicians have not yet proved this. (I once attempted to add this last statement and the fact that Finch was wrong, to Wikipedia’s Person of Interest page, but the Wikipedia editors declined it.)\nAlthough π is defined geometrically as the ratio of a circle’s circumference to its diameter, mathematicians calculate long sequences of π using infinite series, rather than physical measurements.  Various websites such as\nangio\nprovide files containing up to 1 million digits of π.\nI wrote some R code that would take a number (or a word, converted to a number)\n  and search for where that number could be found within π.   I decided the first 100,000 digits of π were enough for me. Of course, the fact that a number can not be found within the first 100,000 digits, does not preclude that it can be found in the next 100,000 digits, or the next 1 million digits.  And so on.  Infinitely many digits goes on for a long time.\nI tested these examples:\n“Eggs”.  e = 5, g = 7, g = 7, s = 19.   57719 appears starting at the 6026 th digit of π.\n“0123” appears starting at the 27846 th digit of π.\n“01234567” was not found in the first 100k digits. But according to\nThe Pi Search Page\nit can be found starting at the 112,099,767 digit.\nI did not try “0123456789”, but another source says it was not found in the first 2 billion digits.\nHere is my R code.  Happy Pi Day!\n# Symbol for pi is \\u03c0\nlibrary(stringr)\nlibrary(readr)\n\nfind_in_pi <- function(input_value) {\n  # 1. Load the Pi data\n  data.raw <- readr::read_file(\"https://assets.angio.net/100000.txt\")\n  data.vec <- unlist(str_split(data.raw, pattern = \"\"))\n  data.vec <- data.vec[-c(1, 2)] # remove '3.'\n  pi_string <- paste(as.character(data.vec), collapse = \"\")\n  \n  # 2. Process Input: Determine if it's a word or a numeric string\n  # Convert to character and lowercase for uniformity\n  clean_input <- tolower(as.character(input_value))\n  \n  if (grepl(\"[a-z]\", clean_input)) {\n    # It's a word: Convert letters to numbers (1-26)\n    word_only <- gsub(\"[^a-z]\", \"\", clean_input)\n    z <- unlist(str_split(word_only, \"\"))\n    q <- match(z, letters)\n    search_target <- paste(q, collapse = \"\")\n  } else {\n    # It's already a number: Just strip non-digits (like decimals or spaces)\n    search_target <- gsub(\"[^0-9]\", \"\", clean_input)\n  }\n  \n  # 3. Search Pi\n  pos <- regexpr(search_target, pi_string)\n  \n  # 4. Handle Results\n  if (pos[1] == -1) {\n    return(paste0(\"The sequence '\", search_target, \"' was not found in the first 100k digits.\"))\n  } else {\n    start <- pos[1]\n    end <- start + nchar(search_target) - 1\n    return(list(\n      found = search_target,\n      start_index = start,\n      end_index = end,\n      index_sequence = seq(from = start, to = end)\n    ))\n  }\n}\n\n# Search for a word\nfind_in_pi(\"Eggs\")\n\n# Search for a number;  enclose in quotes if a leading zero\nfind_in_pi(\"01234\")\nfind_in_pi(\"01234567\")\nEnd\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nOnline College Math Teacher\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399836 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Does every finite string of numbers appear within π ?</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 13, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jerry-tuttle/\">Jerry Tuttle</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://onlinecollegemathteacher.blogspot.com/2026/03/does-every-finite-string-of-numbers.html\"> Online College Math Teacher</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><font size=\"3\">\n  \n     \n  In honor of Pi Day (March 14), I offer the following:\nDoes every finite string of numbers like your social security number eventually appear somewhere within the decimal expansion of π ? <p>\n\n     \n  So said Harold Finch, the computer genius on TV show <i>“Person of Interest”</i> (“You are being watched … “) in a 2013 episode where he poses as a substitute high school math teacher. </p><p>\n</p></font><center>\n<iframe allowfullscreen=\"\" frameborder=\"0\" src=\"https://www.youtube.com/embed/yGmYCfWyVAM\" width=\"450\"></iframe>\n</center>\n<br/><br/>\n\n     \n“Pi… keeps on going, forever, without ever repeating. Which means that contained within this string of decimals, is every single other number. Your birthdate, combination to your locker, your social security number, it’s all in there, somewhere. And if you convert these decimals into letters, you would have every word that ever existed… all of the world’s infinite possibilities rest within this one simple circle.” <p>\n  \n  \n     \n  We know π is <i>irrational</i>;  it cannot be expressed as the quotient of two integers.  \n<a href=\"https://www.youtube.com/watch?v=PgKmstECld0\">Video</a> </p><p>\n\n  \n     \nAn irrational number has an infinite, non-repeating decimal expansion. </p><p>\n  \n     \nA number is defined as <i>normal</i> if any finite string of numbers like your social security number will eventually appear somewhere in its decimal expansion.  (The is a simpler version of a more complicated mathematical\n<a href=\"https://onlinecollegemathteacher.blogspot.com/2026/03/en.wikipedia,org/wiki/Normal_number\" rel=\"nofollow\" target=\"_blank\">\ndefinition </a>, but it is sufficient for this discussion.)  \nMr. Finch is\nclaiming  π is a normal number.  However, mathematicians have not yet proved this. (I once attempted to add this last statement and the fact that Finch was wrong, to Wikipedia’s Person of Interest page, but the Wikipedia editors declined it.) </p><p>\n  \n  \n     \nAlthough π is defined geometrically as the ratio of a circle’s circumference to its diameter, mathematicians calculate long sequences of π using infinite series, rather than physical measurements.  Various websites such as <a href=\"https://www.angio.net/pi/digits.html\">angio</a> provide files containing up to 1 million digits of π. </p><p>\n  \n     \nI wrote some R code that would take a number (or a word, converted to a number)\n  and search for where that number could be found within π.   I decided the first 100,000 digits of π were enough for me. Of course, the fact that a number can not be found within the first 100,000 digits, does not preclude that it can be found in the next 100,000 digits, or the next 1 million digits.  And so on.  Infinitely many digits goes on for a long time. </p><p>\n\n  \n     \nI tested these examples:</p><p>\n</p><ul>\n<li>“Eggs”.  e = 5, g = 7, g = 7, s = 19.   57719 appears starting at the 6026 th digit of π.  </li>\n<li>“0123” appears starting at the 27846 th digit of π.  </li>\n<li>“01234567” was not found in the first 100k digits. But according to <a href=\"https://onlinecollegemathteacher.blogspot.com/2026/03/angio.net/pi/piqery\" rel=\"nofollow\" target=\"_blank\">The Pi Search Page</a> it can be found starting at the 112,099,767 digit.  </li>\n</ul>\nI did not try “0123456789”, but another source says it was not found in the first 2 billion digits.<p>\n  \n  \n     \nHere is my R code.  Happy Pi Day! </p><p>\n</p><pre>\n# Symbol for pi is \\u03c0\nlibrary(stringr)\nlibrary(readr)\n\nfind_in_pi &lt;- function(input_value) {\n  # 1. Load the Pi data\n  data.raw &lt;- readr::read_file(\"https://assets.angio.net/100000.txt\")\n  data.vec &lt;- unlist(str_split(data.raw, pattern = \"\"))\n  data.vec &lt;- data.vec[-c(1, 2)] # remove '3.'\n  pi_string &lt;- paste(as.character(data.vec), collapse = \"\")\n  \n  # 2. Process Input: Determine if it's a word or a numeric string\n  # Convert to character and lowercase for uniformity\n  clean_input &lt;- tolower(as.character(input_value))\n  \n  if (grepl(\"[a-z]\", clean_input)) {\n    # It's a word: Convert letters to numbers (1-26)\n    word_only &lt;- gsub(\"[^a-z]\", \"\", clean_input)\n    z &lt;- unlist(str_split(word_only, \"\"))\n    q &lt;- match(z, letters)\n    search_target &lt;- paste(q, collapse = \"\")\n  } else {\n    # It's already a number: Just strip non-digits (like decimals or spaces)\n    search_target &lt;- gsub(\"[^0-9]\", \"\", clean_input)\n  }\n  \n  # 3. Search Pi\n  pos &lt;- regexpr(search_target, pi_string)\n  \n  # 4. Handle Results\n  if (pos[1] == -1) {\n    return(paste0(\"The sequence '\", search_target, \"' was not found in the first 100k digits.\"))\n  } else {\n    start &lt;- pos[1]\n    end &lt;- start + nchar(search_target) - 1\n    return(list(\n      found = search_target,\n      start_index = start,\n      end_index = end,\n      index_sequence = seq(from = start, to = end)\n    ))\n  }\n}\n\n# Search for a word\nfind_in_pi(\"Eggs\")\n\n# Search for a number;  enclose in quotes if a leading zero\nfind_in_pi(\"01234\")\nfind_in_pi(\"01234567\")\n\n</pre><p>\nEnd\n\n</p><div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://onlinecollegemathteacher.blogspot.com/2026/03/does-every-finite-string-of-numbers.html\"> Online College Math Teacher</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 808,
+    "reading_time_min": 4.0,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jerry-tuttle/",
+        "text": "Jerry Tuttle"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2026/03/does-every-finite-string-of-numbers.html",
+        "text": "Online College Math Teacher"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.youtube.com/watch?v=PgKmstECld0",
+        "text": "Video"
+      },
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2026/03/en.wikipedia,org/wiki/Normal_number",
+        "text": "definition"
+      },
+      {
+        "href": "https://www.angio.net/pi/digits.html",
+        "text": "angio"
+      },
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2026/03/angio.net/pi/piqery",
+        "text": "The Pi Search Page"
+      },
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2026/03/does-every-finite-string-of-numbers.html",
+        "text": "Online College Math Teacher"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-13T22:20:34Z"
+  }
+}
