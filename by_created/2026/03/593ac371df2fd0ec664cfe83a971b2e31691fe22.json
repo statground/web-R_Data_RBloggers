@@ -1,0 +1,219 @@
+{
+  "id": "593ac371df2fd0ec664cfe83a971b2e31691fe22",
+  "url": "https://www.r-bloggers.com/2026/03/current-views-on-generative-ai/",
+  "created_at_utc": "2026-03-14T20:18:04Z",
+  "crawled_at_utc": "2026-03-14T20:18:04Z",
+  "html_title": "Current views on generative AI | R-bloggers",
+  "meta_description": "This post contains my current views on generative artificial intelligence, and Large Language Models in particular. The context is mostly academia, which is about research and teaching. Personal context Generative AI is slowly creeping into my profes...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/current-views-on-generative-ai/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/current-views-on-generative-ai/",
+    "html_title": "Current views on generative AI | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "This post contains my current views on generative artificial intelligence, and Large Language Models in particular. The context is mostly academia, which is about research and teaching. Personal context Generative AI is slowly creeping into my profes...",
+    "meta_keywords": null,
+    "og_title": "Current views on generative AI | R-bloggers",
+    "og_description": "This post contains my current views on generative artificial intelligence, and Large Language Models in particular. The context is mostly academia, which is about research and teaching. Personal context Generative AI is slowly creeping into my profes...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Current views on generative AI | R-bloggers",
+    "twitter_description": "This post contains my current views on generative artificial intelligence, and Large Language Models in particular. The context is mostly academia, which is about research and teaching. Personal context Generative AI is slowly creeping into my profes...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Current views on generative AI\nPosted on\nMarch 13, 2026\nby\nFrançoisn -\n[email protected]\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR / Notes\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThis post contains my current views on\ngenerative artificial intelligence\n, and\nLarge Language Models\nin particular. The context is mostly academia, which is about research and teaching.\nPersonal context\nGenerative AI is slowly creeping into my professional workflow, not because I am using it myself (I don’t, although I guess that I will, at some point), but because everyone around me is.\nMy students use\nChatGPT\nand other tools like, I believe,\nNotebookLM\nand\nPerplexity Comet\n. My RSS news feed (that’s how old I am) recently had an\narticle on Claude\n, and I use use Google applications, so I keep getting passively-aggressively asked to use\nGemini\n, which I might do one day via\nScholar Labs\n.\nMy workplace, which is a university, has taken a very basic stance on generative AI: unless stated otherwise, students are to follow\nLSE Position 1\n(no use of generative AI in graded work), which I suppose goes both ways (no use of generative AI in grading, either).\nI do not know of any equivalent position on generative AI in research. It seems like everyone wants to discuss the topic and play around with whatever is available for free online, but no one wants to make hard decisions about it yet, possibly due to\nupcoming EU-level regulations\n.\nRisks for teaching and learning\nFrom a teaching perspective, generative AI is only useful to me if it helps students going through the following process:\nLearn\nDraft\nRevise\nSubmit\nDefend\nPart of what I teach is code, and code is the topic of this blog. As it happens, generative AI is already very good with code, and I am confident that it can be put to good use to go through Steps 1–3 of the process above.\nThere are, however, at least four reasons why I am currently taking ‘LSE Position 1’ on using generative AI in graded work that relies on code:\nMany students are using AI to\nbypass the learning process\n, rather than enhance it. This creates\nsecurity risks\n, and violates\nacademic ethics\nin the same way that hiring an external party would. This comes on top of other breaches of students ethics, such as plagiarism.\nThe two issues mentioned in the previous point\ncannot be defended against\nat my level, at least not with my current resources. I can spot security risks, but I cannot reliably detect AI-generated code, which is neither watermarked or scannable through anti-plagiarism tools.\nThe software that I use in class is mostly open-source, and\nreproducibility\nis part of the core principles that I teach in class. As far as I understand, and unless proven otherwise, the kind of generative AI technology used by my students does not enforce these principles.\nTo make things worse, most generative AI also violates\nintellectual property\n, rather than reconfigure it around the ‘\ncopyleft\n’ and ‘\ncreative commons\n’ principles that many of us have spent years defending and advocating within fields such as academic publishing.\nI have not been exposed to any argument that makes any attempt at solving the ethical, logistical, moral and eventually legal issues that I have outlined above. Until I do, I will treat generative AI as a form of\ndoping\n, and will keep banning it.\nThe analogy above with doping is not an innocent one. There is, in my view, a very real rhetorical arc that goes from generative AI to the\nEnhanced Games\n. Higher education does not approve of students taking\nAdderall\n, and neither do I.\nRisks for scientific research\nFrom a research perspective, generative AI is only useful to me if it helps me going through the following process:\nCompile existing\nevidence\nCollect meaningful\ndata\nProduce meaningful\nmeasures\nFormulate correct\ninterpretations\nEnhance existing\nknowledge\nThere is no doubt that generative AI can help with every step above, especially perhaps at the level of data collection and, in the case of ‘big data’ or whatever people call it today, classification. I am also very interested in what it can contribute with regards to compiling scientific studies, in the same way that it is already helping with\nmathematical problems\n.\nThe risks that I have heard about so far when it comes to generative AI and social science research (which is what I do) are the following:\nGenerative AI can\npoison the evidence base\n(\nBail 2024\n) through the mass production of low-quality academic output, or by compromising data such as online surveys (\nWestwood 2025\n,\nWestwood and Frederick 2026\n). This is already happening.\nGenerative AI does not yet produce\nreliable data annotations\nfor the kind of data that I am interested in (\nYang\net al.\n2025\n), and even if its coding reliability improves, it will require additional effort to mitigate related issues (\nBaumann\net al.\n2025\n).\nRelatedly, generative AI cannot improve organically if it maintains its\nhuman bias\ntowards evidence produced in the Global North (\nRamirez-Ruiz and Senninger 2025\n), mostly by ‘WEIRD’ individuals (\nAtari\net al.\n2023\n). This will be hard and slow to solve.\nLast but not least, generative AI will be used to\nerode scientific authority\nat the profit of\nthose\nwho are interested in attacking the contribution that scientific (and higher education) institutions make to society. This is of course far from a trivial issue.\nThe issues listed are all real, hard to solve, and are controversial insofar as some people have a vested interest in seeing them\nnot\naddressed, at least not in the short term.\nNone of these issues will stop me from installing and trying out\nellmer\none day. However, I do expect this to happen within a scientific environment that will have acknowledged each issue in one way or another, and formulated guidelines to address them.\nAre we there yet?\nThis post was inspired by the\n/ai ‘manifesto’\n, which I discovered\nthanks to Andrew Heiss\n. I obtained some of the cited references through Jessica Hullman’s\n‘New course on generative AI for behavioral science’\nblog post.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR / Notes\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-399844 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Current views on generative AI</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 13, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/franois-fbriatte-org/\">Françoisn - <span class=\"__cf_email__\" data-cfemail=\"5b3d1b3929323a2f2f3e7534293c\">[email protected]</span></a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://f.briatte.org/r/current-views-on-generative-ai\"> R / Notes</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>This post contains my current views on <a href=\"https://en.wikipedia.org/wiki/Generative_artificial_intelligence\" rel=\"nofollow\" target=\"_blank\">generative artificial intelligence</a>, and <a href=\"https://en.wikipedia.org/wiki/Large_language_model\" rel=\"nofollow\" target=\"_blank\">Large Language Models</a> in particular. The context is mostly academia, which is about research and teaching.</p>\n<h1>Personal context</h1>\n<p>Generative AI is slowly creeping into my professional workflow, not because I am using it myself (I don’t, although I guess that I will, at some point), but because everyone around me is.</p>\n<p>My students use <a href=\"https://en.wikipedia.org/wiki/ChatGPT\" rel=\"nofollow\" target=\"_blank\">ChatGPT</a> and other tools like, I believe, <a href=\"https://en.wikipedia.org/wiki/NotebookLM\" rel=\"nofollow\" target=\"_blank\">NotebookLM</a> and <a href=\"https://en.wikipedia.org/wiki/Comet_(browser)\" rel=\"nofollow\" target=\"_blank\">Perplexity Comet</a>. My RSS news feed (that’s how old I am) recently had an <a href=\"https://www.newyorker.com/magazine/2026/02/16/what-is-claude-anthropic-doesnt-know-either\" rel=\"nofollow\" target=\"_blank\">article on Claude</a>, and I use use Google applications, so I keep getting passively-aggressively asked to use <a href=\"https://en.wikipedia.org/wiki/Gemini_(language_model)\" rel=\"nofollow\" target=\"_blank\">Gemini</a>, which I might do one day via <a href=\"https://scholar.googleblog.com/2025/11/scholar-labs-ai-powered-scholar-search.html\" rel=\"nofollow\" target=\"_blank\">Scholar Labs</a>.</p>\n<p>My workplace, which is a university, has taken a very basic stance on generative AI: unless stated otherwise, students are to follow <a href=\"https://info.lse.ac.uk/staff/divisions/Eden-Centre/Artificial-Intelligence-Education-and-Assessment/School-position-on-generative-AI\" rel=\"nofollow\" target=\"_blank\">LSE Position 1</a> (no use of generative AI in graded work), which I suppose goes both ways (no use of generative AI in grading, either).</p>\n<p>I do not know of any equivalent position on generative AI in research. It seems like everyone wants to discuss the topic and play around with whatever is available for free online, but no one wants to make hard decisions about it yet, possibly due to <a href=\"https://artificialintelligenceact.eu/\" rel=\"nofollow\" target=\"_blank\">upcoming EU-level regulations</a>.</p>\n<h1>Risks for teaching and learning</h1>\n<p>From a teaching perspective, generative AI is only useful to me if it helps students going through the following process:</p>\n<ol>\n<li>Learn</li>\n<li>Draft</li>\n<li>Revise</li>\n<li>Submit</li>\n<li>Defend</li>\n</ol>\n<p>Part of what I teach is code, and code is the topic of this blog. As it happens, generative AI is already very good with code, and I am confident that it can be put to good use to go through Steps 1–3 of the process above.</p>\n<p>There are, however, at least four reasons why I am currently taking ‘LSE Position 1’ on using generative AI in graded work that relies on code:</p>\n<ol>\n<li>Many students are using AI to <a href=\"https://www.chronicle.com/article/is-ai-enhancing-education-or-replacing-it\" rel=\"nofollow\" target=\"_blank\">bypass the learning process</a>, rather than enhance it. This creates <a href=\"https://f.briatte.org/r/ai-generated-code-security-risks\" rel=\"nofollow\" target=\"_blank\">security risks</a>, and violates <strong>academic ethics</strong> in the same way that hiring an external party would. This comes on top of other breaches of students ethics, such as plagiarism.</li>\n<li>The two issues mentioned in the previous point <strong>cannot be defended against</strong> at my level, at least not with my current resources. I can spot security risks, but I cannot reliably detect AI-generated code, which is neither watermarked or scannable through anti-plagiarism tools.</li>\n<li>The software that I use in class is mostly open-source, and <strong>reproducibility</strong> is part of the core principles that I teach in class. As far as I understand, and unless proven otherwise, the kind of generative AI technology used by my students does not enforce these principles.</li>\n<li>To make things worse, most generative AI also violates <strong>intellectual property</strong>, rather than reconfigure it around the ‘<a href=\"https://en.wikipedia.org/wiki/Copyleft\" rel=\"nofollow\" target=\"_blank\">copyleft</a>’ and ‘<a href=\"https://creativecommons.org/\" rel=\"nofollow\" target=\"_blank\">creative commons</a>’ principles that many of us have spent years defending and advocating within fields such as academic publishing.</li>\n</ol>\n<p>I have not been exposed to any argument that makes any attempt at solving the ethical, logistical, moral and eventually legal issues that I have outlined above. Until I do, I will treat generative AI as a form of <a href=\"https://en.wikipedia.org/wiki/Doping_in_sport\" rel=\"nofollow\" target=\"_blank\">doping</a>, and will keep banning it.</p>\n<p>The analogy above with doping is not an innocent one. There is, in my view, a very real rhetorical arc that goes from generative AI to the <a href=\"https://en.wikipedia.org/wiki/Enhanced_Games\" rel=\"nofollow\" target=\"_blank\">Enhanced Games</a>. Higher education does not approve of students taking <a href=\"https://en.wikipedia.org/wiki/Adderall\" rel=\"nofollow\" target=\"_blank\">Adderall</a>, and neither do I.</p>\n<h1>Risks for scientific research</h1>\n<p>From a research perspective, generative AI is only useful to me if it helps me going through the following process:</p>\n<ol>\n<li>Compile existing <strong>evidence</strong></li>\n<li>Collect meaningful <strong>data</strong></li>\n<li>Produce meaningful <strong>measures</strong></li>\n<li>Formulate correct <strong>interpretations</strong></li>\n<li>Enhance existing <strong>knowledge</strong></li>\n</ol>\n<p>There is no doubt that generative AI can help with every step above, especially perhaps at the level of data collection and, in the case of ‘big data’ or whatever people call it today, classification. I am also very interested in what it can contribute with regards to compiling scientific studies, in the same way that it is already helping with <a href=\"https://spectrum.ieee.org/ai-proof-verification\" rel=\"nofollow\" target=\"_blank\">mathematical problems</a>.</p>\n<p>The risks that I have heard about so far when it comes to generative AI and social science research (which is what I do) are the following:</p>\n<ol>\n<li>Generative AI can <strong>poison the evidence base</strong> (<a href=\"https://doi.org/10.1073/pnas.2314021121\" rel=\"nofollow\" target=\"_blank\">Bail 2024</a>) through the mass production of low-quality academic output, or by compromising data such as online surveys (<a href=\"https://doi.org/10.1073/pnas.2518075122\" rel=\"nofollow\" target=\"_blank\">Westwood 2025</a>, <a href=\"https://doi.org/10.1073/pnas.2537420123\" rel=\"nofollow\" target=\"_blank\">Westwood and Frederick 2026</a>). This is already happening.</li>\n<li>Generative AI does not yet produce <strong>reliable data annotations</strong> for the kind of data that I am interested in (<a href=\"https://www.eddieyang.net/research/llm_annotation.pdf\" rel=\"nofollow\" target=\"_blank\">Yang <em>et al.</em> 2025</a>), and even if its coding reliability improves, it will require additional effort to mitigate related issues (<a href=\"https://doi.org/10.48550/arXiv.2509.08825\" rel=\"nofollow\" target=\"_blank\">Baumann <em>et al.</em> 2025</a>).</li>\n<li>Relatedly, generative AI cannot improve organically if it maintains its <strong>human bias</strong> towards evidence produced in the Global North (<a href=\"https://doi.org/10.31219/osf.io/w8q3y_v1\" rel=\"nofollow\" target=\"_blank\">Ramirez-Ruiz and Senninger 2025</a>), mostly by ‘WEIRD’ individuals (<a href=\"https://doi.org/10.31234/osf.io/5b26t\" rel=\"nofollow\" target=\"_blank\">Atari <em>et al.</em> 2023</a>). This will be hard and slow to solve.</li>\n<li>Last but not least, generative AI will be used to <strong>erode scientific authority</strong> at the profit of <a href=\"https://en.wikipedia.org/wiki/Merchants_of_Doubt\" rel=\"nofollow\" target=\"_blank\">those</a> who are interested in attacking the contribution that scientific (and higher education) institutions make to society. This is of course far from a trivial issue.</li>\n</ol>\n<p>The issues listed are all real, hard to solve, and are controversial insofar as some people have a vested interest in seeing them <em>not</em> addressed, at least not in the short term.</p>\n<p>None of these issues will stop me from installing and trying out <a href=\"https://tidyverse.org/blog/2025/11/ellmer-0-4-0/\" rel=\"nofollow\" target=\"_blank\"><code>ellmer</code></a> one day. However, I do expect this to happen within a scientific environment that will have acknowledged each issue in one way or another, and formulated guidelines to address them.</p>\n<p>Are we there yet?</p>\n<hr/>\n<p>This post was inspired by the <a href=\"https://www.bydamo.la/p/ai-manifesto\" rel=\"nofollow\" target=\"_blank\">/ai ‘manifesto’</a>, which I discovered <a href=\"https://www.andrewheiss.com/ai/\" rel=\"nofollow\" target=\"_blank\">thanks to Andrew Heiss</a>. I obtained some of the cited references through Jessica Hullman’s <a href=\"https://statmodeling.stat.columbia.edu/2026/03/10/new-course-on-generative-ai-for-behavioral-science/\" rel=\"nofollow\" target=\"_blank\">‘New course on generative AI for behavioral science’</a> blog post.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://f.briatte.org/r/current-views-on-generative-ai\"> R / Notes</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 1128,
+    "reading_time_min": 5.6,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/franois-fbriatte-org/",
+        "text": "Françoisn -[email protected]"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://f.briatte.org/r/current-views-on-generative-ai",
+        "text": "R / Notes"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Generative_artificial_intelligence",
+        "text": "generative artificial intelligence"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Large_language_model",
+        "text": "Large Language Models"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/ChatGPT",
+        "text": "ChatGPT"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/NotebookLM",
+        "text": "NotebookLM"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Comet_(browser)",
+        "text": "Perplexity Comet"
+      },
+      {
+        "href": "https://www.newyorker.com/magazine/2026/02/16/what-is-claude-anthropic-doesnt-know-either",
+        "text": "article on Claude"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+        "text": "Gemini"
+      },
+      {
+        "href": "https://scholar.googleblog.com/2025/11/scholar-labs-ai-powered-scholar-search.html",
+        "text": "Scholar Labs"
+      },
+      {
+        "href": "https://info.lse.ac.uk/staff/divisions/Eden-Centre/Artificial-Intelligence-Education-and-Assessment/School-position-on-generative-AI",
+        "text": "LSE Position 1"
+      },
+      {
+        "href": "https://artificialintelligenceact.eu/",
+        "text": "upcoming EU-level regulations"
+      },
+      {
+        "href": "https://www.chronicle.com/article/is-ai-enhancing-education-or-replacing-it",
+        "text": "bypass the learning process"
+      },
+      {
+        "href": "https://f.briatte.org/r/ai-generated-code-security-risks",
+        "text": "security risks"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Copyleft",
+        "text": "copyleft"
+      },
+      {
+        "href": "https://creativecommons.org/",
+        "text": "creative commons"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Doping_in_sport",
+        "text": "doping"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Enhanced_Games",
+        "text": "Enhanced Games"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Adderall",
+        "text": "Adderall"
+      },
+      {
+        "href": "https://spectrum.ieee.org/ai-proof-verification",
+        "text": "mathematical problems"
+      },
+      {
+        "href": "https://doi.org/10.1073/pnas.2314021121",
+        "text": "Bail 2024"
+      },
+      {
+        "href": "https://doi.org/10.1073/pnas.2518075122",
+        "text": "Westwood 2025"
+      },
+      {
+        "href": "https://doi.org/10.1073/pnas.2537420123",
+        "text": "Westwood and Frederick 2026"
+      },
+      {
+        "href": "https://www.eddieyang.net/research/llm_annotation.pdf",
+        "text": "Yanget al.2025"
+      },
+      {
+        "href": "https://doi.org/10.48550/arXiv.2509.08825",
+        "text": "Baumannet al.2025"
+      },
+      {
+        "href": "https://doi.org/10.31219/osf.io/w8q3y_v1",
+        "text": "Ramirez-Ruiz and Senninger 2025"
+      },
+      {
+        "href": "https://doi.org/10.31234/osf.io/5b26t",
+        "text": "Atariet al.2023"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Merchants_of_Doubt",
+        "text": "those"
+      },
+      {
+        "href": "https://tidyverse.org/blog/2025/11/ellmer-0-4-0/",
+        "text": "ellmer"
+      },
+      {
+        "href": "https://www.bydamo.la/p/ai-manifesto",
+        "text": "/ai ‘manifesto’"
+      },
+      {
+        "href": "https://www.andrewheiss.com/ai/",
+        "text": "thanks to Andrew Heiss"
+      },
+      {
+        "href": "https://statmodeling.stat.columbia.edu/2026/03/10/new-course-on-generative-ai-for-behavioral-science/",
+        "text": "‘New course on generative AI for behavioral science’"
+      },
+      {
+        "href": "https://f.briatte.org/r/current-views-on-generative-ai",
+        "text": "R / Notes"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-14T20:18:04Z"
+  }
+}
