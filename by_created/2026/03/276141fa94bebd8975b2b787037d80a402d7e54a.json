@@ -1,0 +1,582 @@
+{
+  "id": "276141fa94bebd8975b2b787037d80a402d7e54a",
+  "url": "https://www.r-bloggers.com/2026/03/ropensci-news-digest-march-2026/",
+  "created_at_utc": "2026-03-30T10:08:21Z",
+  "crawled_at_utc": "2026-03-30T10:08:21Z",
+  "html_title": "rOpenSci News Digest, March 2026 | R-bloggers",
+  "meta_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ rOpenSci Dev Guide 1.0.0: Trilingual and Improved rOpenSci Software...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/ropensci-news-digest-march-2026/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/ropensci-news-digest-march-2026/",
+    "html_title": "rOpenSci News Digest, March 2026 | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ rOpenSci Dev Guide 1.0.0: Trilingual and Improved rOpenSci Software...",
+    "meta_keywords": null,
+    "og_title": "rOpenSci News Digest, March 2026 | R-bloggers",
+    "og_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ rOpenSci Dev Guide 1.0.0: Trilingual and Improved rOpenSci Software...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "rOpenSci News Digest, March 2026 | R-bloggers",
+    "twitter_description": "Dear rOpenSci friends, it’s time for our monthly news roundup! You can read this post on our blog. Now let’s dive into the activity at and around rOpenSci! rOpenSci HQ rOpenSci Dev Guide 1.0.0: Trilingual and Improved rOpenSci Software...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "rOpenSci News Digest, March 2026\nPosted on\nMarch 29, 2026\nby\nrOpenSci\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nrOpenSci - open tools for open science\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nDear rOpenSci friends, it’s time for our monthly news roundup!\nYou can read this post\non our blog\n. Now let’s dive into the activity at and around rOpenSci!\nrOpenSci HQ\nrOpenSci Dev Guide 1.0.0: Trilingual and Improved\nrOpenSci Software Peer Review’s guidance is gathered in an online book that keeps improving! It is now available in\nEnglish\n,\nSpanish\nand\nPortuguese\n. Read more in the\nrelease announcement\nChampions Program Update\nWe are still going through the Champions selection process, and we’re excited to share that the new group of mentors has already been selected and is now actively reviewing Champions applications.\nThis cohort brings together a wonderful mix of returning Champions stepping into mentorship roles, mentors continuing their contributions, and new members joining the program. The 2026 mentors are Andrea Gómez Vargas, Pablo Paccioretti, Alber Hamersson Sánchez Ipia, Erick Isaac Navarro Delgado, Francisco Cardozo, Luis Verde Arregoitia, Monika Ávila Márquez, Guadalupe Pascal, Pao Corrales, and Elio Campitelli. Together, they represent a diverse and vibrant community across Colombia, Mexico, Argentina, Brazil, and Bolivia, with some currently based in Switzerland, Canada, the United States, and Australia. We’re very happy to see this growing, interconnected network supporting the next cohort of Champions.\nR-Universe update\nYou can now download artifacts and log files from R-Universe without being logged in with a GitHub account, for example\nhttps://ropensci.r-universe.dev/opencv#checktable\n.\nSoftware review and usage of AI tools\nAuthors submitting new software for\npeer review\nare now required to explain potential usage of generative AI tools in their package development. All submission templates now include a mandatory check-box:\n- [ ] Generative AI tools were used to produce some of the material in this submission.\nIf so, please describe usage, and include links to any relevant aspects of your repository.\nThis is the start of our updates to accommodate generative AI tools in package development, as described in our\nrecent blog post\n. The next phase will involve updates to our\nDev Guide\n, explaining requirements and recommendations for authors, reviewers, and editors. All updates are intended to permit generative AI tools to be used in any useful way, while minimising the burden on those who volunteer their own time to keep our software peer review service running.\nSoftware review bot updates\nThe\nropensci-review-bot\nnow delivers an initial report to all new software pre-submissions and submissions, identifying the five most similar packages from both all rOpenSci packages, and all CRAN packages. The matches are generated by our\nropensci-review-tools/pkgmatch package\n(itself reviewed in\nthis review issue\n). Matching is based on an\n“term frequency-inverse document frequency” algorithm\n, using inverse document frequencies from all rOpenSci and CRAN packages. Similar package reports can also be manually triggered (by editors only) with\n@ropensci-review-bot similar packages\n, like in\nthis example for the pkgmatch package itself\n.\nCoworking\nRead\nall about coworking\n!\nTuesday April 7th 2026, 9:00 Americas Pacific (16:00 UTC)\n“Getting to know the CSID Network”\nwith\nSteffi LaZerte\nand cohosts\nIrene Ramos\nand\nAdamu Saleh Saidu\n.\nLearn more about the\nCSID Network\nMeet cohosts, Irene Ramos and Adamu Saleh Saidu, and learn more about the CSID Network and how you might get involved.\nTuesday May 5th 2026, 9:00 Australia Western (01:00 UTC)\n“Code Review with rOpenSci”\nwith\nSteffi LaZerte\nand cohost\nLiz Hare\n.\nExplore resources for Code Review\nSign up to volunteer to do\nsoftware peer-review\nat rOpenSci\nMeet cohost, Liz Hare, and discuss resources for Code Review with rOpenSci.\nAnd remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!\nSoftware 📦\nNew packages\nThe following package recently became a part of our software suite:\nsuwo\n, developed by Marcelo Araya-Salas together with Jorge Elizondo-Calvo and Alejandro Rico-Guevara: Streamline searching/downloading of nature media files (e.g. audios, photos) from online repositories. The package offers functions for obtaining media metadata from online repositories, downloading associated media files and updating data sets with new records. It has been\nreviewed\nby Eric R. Scott and Hugo Gruson.\nDiscover\nmore packages\n, read more about\nSoftware Peer Review\n.\nNew versions\nThe following eleven packages have had an update since the last newsletter:\ncffr\n(\nv1.3.0\n),\npkgmatch\n(\nv0.5.2\n),\ntarchetypes\n(\n0.14.1\n),\nrgbif\n(\nv3.8.5\n),\nsaperlipopette\n(\nv0.1.1\n),\ngutenbergr\n(\nv0.5.0\n),\ntrud\n(\nv0.2.1\n),\nnaijR\n(\nv0.7.0\n),\nsasquatch\n(\nv0.1.3\n),\nlingtypology\n(\nv1.1.25\n), and\nrerddap\n(\nv1.2.3\n).\nPost on dfms release:\nReleasing dfms 1.0: Fast and Feature-Rich Estimation of Dynamic Factor Models in R\n.\nSoftware Peer Review\nThere are fifteen recently closed and active submissions and 5 submissions on hold. Issues are at different stages:\nOne at\n‘6/approved’\n:\nsuwo\n, Access Nature Media Repositories Through R. Submitted by\nMarcelo Araya-Salas\n.\nOne at\n‘5/awaiting-reviewer(s)-response’\n:\npkgmatch\n, Find R Packages Matching Either Descriptions or Other R Packages. Submitted by\nmark padgham\n.\nTwo at\n‘4/review(s)-in-awaiting-changes’\n:\nlogolink\n, An Interface for Running NetLogo Simulations. Submitted by\nDaniel Vartanian\n.\ngalamm\n, Generalized Additive Latent and Mixed Models. Submitted by\nØystein Sørensen\n. (Stats).\nSix at\n‘3/reviewer(s)-assigned’\n:\npvEBayes\n, Empirical Bayes Methods for Pharmacovigilance. Submitted by\nYihao Tan\n. (Stats).\nsaperlipopette\n, Create Example Git Messes. Submitted by\nMaëlle Salmon\n.\nernest\n, A Toolkit for Nested Sampling. Submitted by\nKyle Dewsnap\n. (Stats).\nrcrisp\n, Automate the Delineation of Urban River Spaces. Submitted by\nClaudiu Forgaci\n. (Stats).\nreviser\n, Tools for Studying Revision Properties in Real-Time Time Series Vintages. Submitted by\nMarc Burri\n.\npriorsense\n, Prior Diagnostics and Sensitivity Analysis. Submitted by\nNoa Kallioinen\n. (Stats).\nTwo at\n‘2/seeking-reviewer(s)’\n:\nnycOpenData\n, Convenient Access to NYC Open Data API Endpoints. Submitted by\nChristian Martinez\n.\nRAMEN\n, RAMEN: Regional Association of Methylome variability with the Exposome and geNome. Submitted by\nErick Navarro-Delgado\n.\nThree at\n‘1/editor-checks’\n:\nRAQSAPI\n, A Simple Interface to the US EPA Air Quality System Data Mart API. Submitted by\nmccroweyclinton-EPA\n.\nfcmconfr\n, Fuzzy Cognitive Map Analysis in R. Submitted by\nbenroston\n. (Stats).\ncoevolve\n, Fit Bayesian Generalized Dynamic Phylogenetic Models using Stan. Submitted by\nScott Claessens\n. (Stats).\nFind out more about\nSoftware Peer Review\nand how to get involved.\nOn the blog\nSoftware Review\nSoftware Review in the Era of AI: What We Are Testing at rOpenSci\nby Mark Padgham, Noam Ross, Maëlle Salmon, Yanina Bellini Saibene, Mauro Lepore, Emily Riederer, Jouni Helske, and Francisco Rodriguez-Sanchez. rOpenSci is testing preliminary policies on the use of generative AI tools, with proposed updates to documentation and procedures for authors submitting software for review, for editors, and for reviewers.\nrOpenSci Dev Guide 1.0.0: Trilingual and Improved\nby Maëlle Salmon, Mark Padgham, and Noam Ross. Updates in version 1.0.0 of the online book ‘rOpenSci Packages: Development, Maintenance, and Peer Review’. Other languages:\nrOpenSci Dev Guide 1.0.0: Trilingüe y mejorada (es)\n,\nGuia de desenvolvimento da rOpenSci 1.0.0: trilíngue e aprimorado (pt)\n.\nBreaking Release of the patentsview R Package\nby Russ Allen and Chris Baker. Breaking Release of the patentsview R Package.\nCalls for contributions\nCalls for maintainers\nIf you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post\nWhat Does It Mean to Maintain a Package?\n.\nNLMR\n, R package to simulate neutral landscape models.\nIssue for volunteering\n.\nlandscapetools\n, R package for some of the less-glamorous tasks involved in landscape analysis.\nIssue for volunteering\n.\nhddtools\n, Tools to discover hydrological data, accessing catalogues and databases from various data providers.\nIssue for volunteering\n.\nqualtRics\n, download Qualtrics survey data.\nIssue for volunteering\n.\nCalls for contributions\nRefer to our\nhelp wanted page\n– before opening a PR, we recommend asking in the issue whether help is still needed.\nPackage development corner\nSome useful tips for R package developers. 👀\nA new R core member!\nThe R Foundation announced that\nHeather Turner\nhas joined the\nR Core Team\n! 🎉\nHow to browse the R mailing lists\nThe\nofficial mailing lists of the R project\nlike\nR-package-devel\nare full of important and useful information. How to browse them, given that the default website is not easy to search? You can use the\nmail-archive\nwebsite (thanks to Hugo Gruson for the reminder!) or a new project by James Balamuta: the\nR Mailing Lists Archive\n!\n“Claude Code: Setting up ast-grep with R support”\nThanks to Mauro Lepore for sharing this blog post by Emil Hvitfeldt:\n“Claude Code: Setting up ast-grep with R support”\n. ast-grep is a tool for querying code by syntax rather than brittle regular expressions. The blog post describes how to add R support to this tool, and how to take advantage of it when using Claude.\nOn muffling messages from packages\nA follow-up on our post\n“Please Shut Up! Verbosity Control in Packages”\n.\nWith the {cli} R package you can change the default handler for messages. See the\ndocs\n. It seems mostly used to muffle messages, e.g. in\nflir\n.\nHere’s how the usethis R package\nmuffles gert message selectively\n.\nLast words\nThanks for reading! If you want to get involved with rOpenSci, check out our\nContributing Guide\nthat can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases. You can also support our work through\ndonations\n.\nIf you haven’t subscribed to our newsletter yet, you can\ndo so via a form\n. Until it’s time for our next newsletter, you can keep in touch with us via our\nwebsite\nand\nMastodon account\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nrOpenSci - open tools for open science\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400176 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">rOpenSci News Digest, March 2026</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 29, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/ropensci/\">rOpenSci</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://ropensci.org/blog/2026/03/30/news-mars-2026/\"> rOpenSci - open tools for open science</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<!-- Before sending DELETE THE INDEX_CACHE and re-knit! -->\n<p>Dear rOpenSci friends, it’s time for our monthly news roundup! <!-- blabla --> You can read this post <a href=\"https://ropensci.org/blog/2026/03/30/news-mars-2026\" rel=\"nofollow\" target=\"_blank\">on our blog</a>. Now let’s dive into the activity at and around rOpenSci!</p>\n<h2>\nrOpenSci HQ\n</h2><h3>\nrOpenSci Dev Guide 1.0.0: Trilingual and Improved\n</h3><p>rOpenSci Software Peer Review’s guidance is gathered in an online book that keeps improving! It is now available in <a href=\"https://devguide.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">English</a>, <a href=\"https://devguide.ropensci.org/es/index.es.html\" rel=\"nofollow\" target=\"_blank\">Spanish</a> and <a href=\"https://devguide.ropensci.org/pt/index.pt.html\" rel=\"nofollow\" target=\"_blank\">Portuguese</a>. Read more in the <a href=\"https://ropensci.org/blog/2026/03/02/devguide-1.0.0/\" rel=\"nofollow\" target=\"_blank\">release announcement</a></p>\n<h3>\nChampions Program Update\n</h3><p>We are still going through the Champions selection process, and we’re excited to share that the new group of mentors has already been selected and is now actively reviewing Champions applications.</p>\n<p>This cohort brings together a wonderful mix of returning Champions stepping into mentorship roles, mentors continuing their contributions, and new members joining the program. The 2026 mentors are Andrea Gómez Vargas, Pablo Paccioretti, Alber Hamersson Sánchez Ipia, Erick Isaac Navarro Delgado, Francisco Cardozo, Luis Verde Arregoitia, Monika Ávila Márquez, Guadalupe Pascal, Pao Corrales, and Elio Campitelli. Together, they represent a diverse and vibrant community across Colombia, Mexico, Argentina, Brazil, and Bolivia, with some currently based in Switzerland, Canada, the United States, and Australia. We’re very happy to see this growing, interconnected network supporting the next cohort of Champions.</p>\n<h3>\nR-Universe update\n</h3><p>You can now download artifacts and log files from R-Universe without being logged in with a GitHub account, for example <a href=\"https://ropensci.r-universe.dev/opencv#checktable\" rel=\"nofollow\" target=\"_blank\">https://ropensci.r-universe.dev/opencv#checktable</a>.</p>\n<h3>\nSoftware review and usage of AI tools\n</h3><p>Authors submitting new software for <a href=\"https://ropensci.org/software-review/\" rel=\"nofollow\" target=\"_blank\">peer review</a> are now required to explain potential usage of generative AI tools in their package development. All submission templates now include a mandatory check-box:</p>\n<pre>- [ ] Generative AI tools were used to produce some of the material in this submission.\nIf so, please describe usage, and include links to any relevant aspects of your repository.\n</pre>\n<p>This is the start of our updates to accommodate generative AI tools in package development, as described in our <a href=\"https://ropensci.org/blog/2026/02/26/ropensci-ai-policy/\" rel=\"nofollow\" target=\"_blank\">recent blog post</a>. The next phase will involve updates to our <a href=\"https://devguide.ropensci.org/\" rel=\"nofollow\" target=\"_blank\"><em>Dev Guide</em></a>, explaining requirements and recommendations for authors, reviewers, and editors. All updates are intended to permit generative AI tools to be used in any useful way, while minimising the burden on those who volunteer their own time to keep our software peer review service running.</p>\n<h3>\nSoftware review bot updates\n</h3><p>The <code>ropensci-review-bot</code> now delivers an initial report to all new software pre-submissions and submissions, identifying the five most similar packages from both all rOpenSci packages, and all CRAN packages. The matches are generated by our <a href=\"https://docs.ropensci.org/pkgmatch\" rel=\"nofollow\" target=\"_blank\">ropensci-review-tools/pkgmatch package</a> (itself reviewed in <a href=\"https://github.com/ropensci/software-review/issues/671\" rel=\"nofollow\" target=\"_blank\">this review issue</a>). Matching is based on an <a href=\"https://en.wikipedia.org/wiki/Tf%E2%80%93idf\" rel=\"nofollow\" target=\"_blank\">“term frequency-inverse document frequency” algorithm</a>, using inverse document frequencies from all rOpenSci and CRAN packages. Similar package reports can also be manually triggered (by editors only) with <code>@ropensci-review-bot similar packages</code>, like in <a href=\"https://github.com/ropensci/software-review/issues/671#issuecomment-4117805740\" rel=\"nofollow\" target=\"_blank\">this example for the pkgmatch package itself</a>.</p>\n<h3>\nCoworking\n</h3><p>Read <a href=\"https://ropensci.org/blog/2023/06/21/coworking/\" rel=\"nofollow\" target=\"_blank\">all about coworking</a>!</p>\n<ul>\n<li>Tuesday April 7th 2026, 9:00 Americas Pacific (16:00 UTC) <a href=\"https://ropensci.org/events/coworking-2026-04/\" rel=\"nofollow\" target=\"_blank\">“Getting to know the CSID Network”</a> with <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a> and cohosts <a href=\"https://ropensci.org/author/irene-ramos/\" rel=\"nofollow\" target=\"_blank\">Irene Ramos</a> and <a href=\"https://ropensci.org/author/adamu-saleh-saidu\" rel=\"nofollow\" target=\"_blank\">Adamu Saleh Saidu</a>.\n<ul>\n<li>Learn more about the <a href=\"https://csidnet.org/\" rel=\"nofollow\" target=\"_blank\">CSID Network</a></li>\n<li>Meet cohosts, Irene Ramos and Adamu Saleh Saidu, and learn more about the CSID Network and how you might get involved.</li>\n</ul>\n</li>\n<li>Tuesday May 5th 2026, 9:00 Australia Western (01:00 UTC) <a href=\"https://ropensci.org/events/coworking-2026-05/\" rel=\"nofollow\" target=\"_blank\">“Code Review with rOpenSci”</a> with <a href=\"https://ropensci.org/author/steffi-lazerte/\" rel=\"nofollow\" target=\"_blank\">Steffi LaZerte</a> and cohost <a href=\"https://ropensci.org/author/liz-hare/\" rel=\"nofollow\" target=\"_blank\">Liz Hare</a>.\n<ul>\n<li>Explore resources for Code Review</li>\n<li>Sign up to volunteer to do <a href=\"https://airtable.com/app8dssb6a7PG6Vwj/shrnfDI2S9uuyxtDw\" rel=\"nofollow\" target=\"_blank\">software peer-review</a> at rOpenSci</li>\n<li>Meet cohost, Liz Hare, and discuss resources for Code Review with rOpenSci.</li>\n</ul>\n</li>\n</ul>\n<p>And remember, you can always cowork independently on work related to R, work on packages that tend to be neglected, or work on what ever you need to get done!</p>\n<h2>\nSoftware 📦\n</h2><h3>\nNew packages\n</h3><p>The following package recently became a part of our software suite:</p>\n<ul>\n<li><a href=\"https://docs.ropensci.org/suwo\" rel=\"nofollow\" target=\"_blank\">suwo</a>, developed by Marcelo Araya-Salas together with Jorge Elizondo-Calvo and Alejandro Rico-Guevara: Streamline searching/downloading of nature media files (e.g. audios, photos) from online repositories. The package offers functions for obtaining media metadata from online repositories, downloading associated media files and updating data sets with new records. It has been <a href=\"https://github.com/ropensci/software-review/issues/729\" rel=\"nofollow\" target=\"_blank\">reviewed</a> by Eric R. Scott and Hugo Gruson.</li>\n</ul>\n<p>Discover <a href=\"https://ropensci.org/packages\" rel=\"nofollow\" target=\"_blank\">more packages</a>, read more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a>.</p>\n<h3>\nNew versions\n</h3><p>The following eleven packages have had an update since the last newsletter: <a href=\"https://docs.ropensci.org/cffr\" rel=\"nofollow\" target=\"_blank\" title=\"Generate Citation File Format (cff) Metadata for R Packages\">cffr</a> (<a href=\"https://github.com/ropensci/cffr/releases/tag/v1.3.0\" rel=\"nofollow\" target=\"_blank\"><code>v1.3.0</code></a>), <a href=\"https://docs.ropensci.org/pkgmatch\" rel=\"nofollow\" target=\"_blank\" title=\"Find R Packages Matching Either Descriptions or Other R Packages\">pkgmatch</a> (<a href=\"https://github.com/ropensci-review-tools/pkgmatch/releases/tag/v0.5.2\" rel=\"nofollow\" target=\"_blank\"><code>v0.5.2</code></a>), <a href=\"https://docs.ropensci.org/tarchetypes\" rel=\"nofollow\" target=\"_blank\" title=\"Archetypes for Targets\">tarchetypes</a> (<a href=\"https://github.com/ropensci/tarchetypes/releases/tag/0.14.1\" rel=\"nofollow\" target=\"_blank\"><code>0.14.1</code></a>), <a href=\"https://docs.ropensci.org/rgbif\" rel=\"nofollow\" target=\"_blank\" title=\"Interface to the Global Biodiversity Information Facility API\">rgbif</a> (<a href=\"https://github.com/ropensci/rgbif/releases/tag/v3.8.5\" rel=\"nofollow\" target=\"_blank\"><code>v3.8.5</code></a>), <a href=\"https://docs.ropensci.org/saperlipopette\" rel=\"nofollow\" target=\"_blank\" title=\"Create Example Git Messes\">saperlipopette</a> (<a href=\"https://github.com/ropensci-training/saperlipopette/releases/tag/v0.1.1\" rel=\"nofollow\" target=\"_blank\"><code>v0.1.1</code></a>), <a href=\"https://docs.ropensci.org/gutenbergr\" rel=\"nofollow\" target=\"_blank\" title=\"Download and Process Public Domain Works from Project Gutenberg\">gutenbergr</a> (<a href=\"https://github.com/ropensci/gutenbergr/releases/tag/v0.5.0\" rel=\"nofollow\" target=\"_blank\"><code>v0.5.0</code></a>), <a href=\"https://docs.ropensci.org/trud\" rel=\"nofollow\" target=\"_blank\" title=\"Query the NHS TRUD API\">trud</a> (<a href=\"https://github.com/ropensci/trud/releases/tag/v0.2.1\" rel=\"nofollow\" target=\"_blank\"><code>v0.2.1</code></a>), <a href=\"https://docs.ropensci.org/naijR\" rel=\"nofollow\" target=\"_blank\" title=\"Operations to Ease Data Analyses Specific to Nigeria\">naijR</a> (<a href=\"https://github.com/ropensci/naijR/releases/tag/v0.7.0\" rel=\"nofollow\" target=\"_blank\"><code>v0.7.0</code></a>), <a href=\"https://docs.ropensci.org/sasquatch\" rel=\"nofollow\" target=\"_blank\" title=\"Use SAS, R, and quarto Together\">sasquatch</a> (<a href=\"https://github.com/ropensci/sasquatch/releases/tag/v0.1.3\" rel=\"nofollow\" target=\"_blank\"><code>v0.1.3</code></a>), <a href=\"https://docs.ropensci.org/lingtypology\" rel=\"nofollow\" target=\"_blank\" title=\"Linguistic Typology and Mapping\">lingtypology</a> (<a href=\"https://github.com/ropensci/lingtypology/releases/tag/v1.1.25\" rel=\"nofollow\" target=\"_blank\"><code>v1.1.25</code></a>), and <a href=\"https://docs.ropensci.org/rerddap\" rel=\"nofollow\" target=\"_blank\" title=\"General Purpose Client for ERDDAP™ Servers\">rerddap</a> (<a href=\"https://github.com/ropensci/rerddap/releases/tag/v1.2.3\" rel=\"nofollow\" target=\"_blank\"><code>v1.2.3</code></a>).</p>\n<p>Post on dfms release: <a href=\"https://sebkrantz.github.io/Rblog/2026/01/29/releasing-dfms-1-0-fast-and-feature-rich-estimation-of-dynamic-factor-models-in-r/\" rel=\"nofollow\" target=\"_blank\">Releasing dfms 1.0: Fast and Feature-Rich Estimation of Dynamic Factor Models in R</a>.</p>\n<h2>\nSoftware Peer Review\n</h2><p>There are fifteen recently closed and active submissions and 5 submissions on hold. Issues are at different stages:</p>\n<ul>\n<li>\n<p>One at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%226/approved%22\" rel=\"nofollow\" target=\"_blank\">‘6/approved’</a>:</p>\n<ul>\n<li><a href=\"https://github.com/ropensci/software-review/issues/729\" rel=\"nofollow\" target=\"_blank\">suwo</a>, Access Nature Media Repositories Through R. Submitted by <a href=\"https://marce10.github.io/\" rel=\"nofollow\" target=\"_blank\">Marcelo Araya-Salas</a>.</li>\n</ul>\n</li>\n<li>\n<p>One at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%225/awaiting-reviewer(s)-response%22\" rel=\"nofollow\" target=\"_blank\">‘5/awaiting-reviewer(s)-response’</a>:</p>\n<ul>\n<li><a href=\"https://github.com/ropensci/software-review/issues/671\" rel=\"nofollow\" target=\"_blank\">pkgmatch</a>, Find R Packages Matching Either Descriptions or Other R Packages. Submitted by <a href=\"https://mpadge.github.io/\" rel=\"nofollow\" target=\"_blank\">mark padgham</a>.</li>\n</ul>\n</li>\n<li>\n<p>Two at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%224/review(s)-in-awaiting-changes%22\" rel=\"nofollow\" target=\"_blank\">‘4/review(s)-in-awaiting-changes’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/741\" rel=\"nofollow\" target=\"_blank\">logolink</a>, An Interface for Running NetLogo Simulations. Submitted by <a href=\"http://danielvartan.com/\" rel=\"nofollow\" target=\"_blank\">Daniel Vartanian</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/615\" rel=\"nofollow\" target=\"_blank\">galamm</a>, Generalized Additive Latent and Mixed Models. Submitted by <a href=\"https://osorensen.github.io/\" rel=\"nofollow\" target=\"_blank\">Øystein Sørensen</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Six at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%223/reviewer(s)-assigned%22\" rel=\"nofollow\" target=\"_blank\">‘3/reviewer(s)-assigned’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/760\" rel=\"nofollow\" target=\"_blank\">pvEBayes</a>, Empirical Bayes Methods for Pharmacovigilance. Submitted by <a href=\"https://github.com/YihaoTancn\" rel=\"nofollow\" target=\"_blank\">Yihao Tan</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/754\" rel=\"nofollow\" target=\"_blank\">saperlipopette</a>, Create Example Git Messes. Submitted by <a href=\"https://masalmon.eu/\" rel=\"nofollow\" target=\"_blank\">Maëlle Salmon</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/730\" rel=\"nofollow\" target=\"_blank\">ernest</a>, A Toolkit for Nested Sampling. Submitted by <a href=\"https://github.com/kylesnap\" rel=\"nofollow\" target=\"_blank\">Kyle Dewsnap</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/718\" rel=\"nofollow\" target=\"_blank\">rcrisp</a>, Automate the Delineation of Urban River Spaces. Submitted by <a href=\"https://github.com/cforgaci\" rel=\"nofollow\" target=\"_blank\">Claudiu Forgaci</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/709\" rel=\"nofollow\" target=\"_blank\">reviser</a>, Tools for Studying Revision Properties in Real-Time Time Series Vintages. Submitted by <a href=\"https://marcburri.github.io/\" rel=\"nofollow\" target=\"_blank\">Marc Burri</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/704\" rel=\"nofollow\" target=\"_blank\">priorsense</a>, Prior Diagnostics and Sensitivity Analysis. Submitted by <a href=\"https://github.com/n-kall\" rel=\"nofollow\" target=\"_blank\">Noa Kallioinen</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Two at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%222/seeking-reviewer(s)%22\" rel=\"nofollow\" target=\"_blank\">‘2/seeking-reviewer(s)’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/750\" rel=\"nofollow\" target=\"_blank\">nycOpenData</a>, Convenient Access to NYC Open Data API Endpoints. Submitted by <a href=\"https://github.com/martinezc1\" rel=\"nofollow\" target=\"_blank\">Christian Martinez</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/743\" rel=\"nofollow\" target=\"_blank\">RAMEN</a>, RAMEN: Regional Association of Methylome variability with the Exposome and geNome. Submitted by <a href=\"https://erick-navarrodelgado.netlify.app/\" rel=\"nofollow\" target=\"_blank\">Erick Navarro-Delgado</a>.</p>\n</li>\n</ul>\n</li>\n<li>\n<p>Three at <a href=\"https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%221/editor-checks%22\" rel=\"nofollow\" target=\"_blank\">‘1/editor-checks’</a>:</p>\n<ul>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/744\" rel=\"nofollow\" target=\"_blank\">RAQSAPI</a>, A Simple Interface to the US EPA Air Quality System Data Mart API. Submitted by <a href=\"https://github.com/mccroweyclinton-EPA\" rel=\"nofollow\" target=\"_blank\">mccroweyclinton-EPA</a>.</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/740\" rel=\"nofollow\" target=\"_blank\">fcmconfr</a>, Fuzzy Cognitive Map Analysis in R. Submitted by <a href=\"https://github.com/bhroston\" rel=\"nofollow\" target=\"_blank\">benroston</a>. (Stats).</p>\n</li>\n<li>\n<p><a href=\"https://github.com/ropensci/software-review/issues/717\" rel=\"nofollow\" target=\"_blank\">coevolve</a>, Fit Bayesian Generalized Dynamic Phylogenetic Models using Stan. Submitted by <a href=\"https://scottclaessens.github.io/\" rel=\"nofollow\" target=\"_blank\">Scott Claessens</a>. (Stats).</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>Find out more about <a href=\"https://ropensci.org/software-review\" rel=\"nofollow\" target=\"_blank\">Software Peer Review</a> and how to get involved.</p>\n<h2>\nOn the blog\n</h2><!-- Do not forget to rebase your branch! -->\n<h3>\nSoftware Review\n</h3><ul>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/02/26/ropensci-ai-policy\" rel=\"nofollow\" target=\"_blank\">Software Review in the Era of AI: What We Are Testing at rOpenSci</a> by Mark Padgham, Noam Ross, Maëlle Salmon, Yanina Bellini Saibene, Mauro Lepore, Emily Riederer, Jouni Helske, and Francisco Rodriguez-Sanchez. rOpenSci is testing preliminary policies on the use of generative AI tools, with proposed updates to documentation and procedures for authors submitting software for review, for editors, and for reviewers.</p>\n</li>\n<li>\n<p><a href=\"https://ropensci.org/blog/2026/03/02/devguide-1.0.0\" rel=\"nofollow\" target=\"_blank\">rOpenSci Dev Guide 1.0.0: Trilingual and Improved</a> by Maëlle Salmon, Mark Padgham, and Noam Ross. Updates in version 1.0.0 of the online book ‘rOpenSci Packages: Development, Maintenance, and Peer Review’. Other languages: <a href=\"https://ropensci.org/es/blog/2026/03/02/r_open_sci_dev_guide_1_0_0_triling%C3%BCe_y_mejorada\" lang=\"es\" rel=\"nofollow\" target=\"_blank\">rOpenSci Dev Guide 1.0.0: Trilingüe y mejorada (es)</a>, <a href=\"https://ropensci.org/pt/blog/2026/03/02/guia_de_desenvolvimento_da_r_open_sci_1_0_0_tril%C3%ADngue_e_aprimorado\" lang=\"pt\" rel=\"nofollow\" target=\"_blank\">Guia de desenvolvimento da rOpenSci 1.0.0: trilíngue e aprimorado (pt)</a>.</p>\n</li>\n</ul>\n<figure class=\"center\"><img alt=\"cover of rOpenSci dev guide, showing a package production line with small humans discussing, examining and promoting packages\" data-lazy-src=\"https://i2.wp.com/ropensci.org/blog/2026/03/30/news-mars-2026/cover.png?w=400&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img alt=\"cover of rOpenSci dev guide, showing a package production line with small humans discussing, examining and promoting packages\" data-recalc-dims=\"1\" src=\"https://i2.wp.com/ropensci.org/blog/2026/03/30/news-mars-2026/cover.png?w=400&amp;ssl=1\"/></noscript>\n</figure>\n<ul>\n<li><a href=\"https://ropensci.org/blog/2026/03/10/patentsview-breaking-release\" rel=\"nofollow\" target=\"_blank\">Breaking Release of the patentsview R Package</a> by Russ Allen and Chris Baker. Breaking Release of the patentsview R Package.</li>\n</ul>\n<h2>\nCalls for contributions\n</h2><h3>\nCalls for maintainers\n</h3><p>If you’re interested in maintaining any of the R packages below, you might enjoy reading our blog post <a href=\"https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/\" rel=\"nofollow\" target=\"_blank\">What Does It Mean to Maintain a Package?</a>.</p>\n<ul>\n<li>\n<p><a href=\"https://docs.ropensci.org/NLMR\" rel=\"nofollow\" target=\"_blank\">NLMR</a>, R package to simulate neutral landscape models. <a href=\"https://github.com/ropensci/NLMR/issues/116\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/landscapetools\" rel=\"nofollow\" target=\"_blank\">landscapetools</a>, R package for some of the less-glamorous tasks involved in landscape analysis. <a href=\"https://github.com/ropensci/landscapetools/issues/48\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/hddtools\" rel=\"nofollow\" target=\"_blank\">hddtools</a>, Tools to discover hydrological data, accessing catalogues and databases from various data providers. <a href=\"https://github.com/ropensci/hddtools/issues/36\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n<li>\n<p><a href=\"https://docs.ropensci.org/qualtRics/\" rel=\"nofollow\" target=\"_blank\">qualtRics</a>, download Qualtrics survey data. <a href=\"https://github.com/ropensci/qualtRics/issues/383\" rel=\"nofollow\" target=\"_blank\">Issue for volunteering</a>.</p>\n</li>\n</ul>\n<h3>\nCalls for contributions\n</h3><p>Refer to our <a href=\"https://ropensci.org/help-wanted/\" rel=\"nofollow\" target=\"_blank\">help wanted page</a> – before opening a PR, we recommend asking in the issue whether help is still needed.</p>\n<h2>\nPackage development corner\n</h2><p>Some useful tips for R package developers. 👀</p>\n<h3>\nA new R core member!\n</h3><p>The R Foundation announced that <a href=\"https://uk.linkedin.com/in/heathrturnr\" rel=\"nofollow\" target=\"_blank\">Heather Turner</a> has joined the <a href=\"https://www.r-project.org/contributors.html\" rel=\"nofollow\" target=\"_blank\">R Core Team</a>! 🎉</p>\n<h3>\nHow to browse the R mailing lists\n</h3><p>The <a href=\"https://www.r-project.org/mail.html\" rel=\"nofollow\" target=\"_blank\">official mailing lists of the R project</a> like <a href=\"https://blog.r-hub.io/2019/04/11/r-package-devel/\" rel=\"nofollow\" target=\"_blank\">R-package-devel</a> are full of important and useful information. How to browse them, given that the default website is not easy to search? You can use the <a href=\"https://mail-archive.com/r-devel@r-project.org/\" rel=\"nofollow\" target=\"_blank\">mail-archive</a> website (thanks to Hugo Gruson for the reminder!) or a new project by James Balamuta: the <a href=\"https://r-mailing-lists.thecoatlessprofessor.com/\" rel=\"nofollow\" target=\"_blank\">R Mailing Lists Archive</a>!</p>\n<h3>\n“Claude Code: Setting up ast-grep with R support”\n</h3><p>Thanks to Mauro Lepore for sharing this blog post by Emil Hvitfeldt: <a href=\"https://emilhvitfeldt.com/post/ast-grep-r-claude-code/\" rel=\"nofollow\" target=\"_blank\">“Claude Code: Setting up ast-grep with R support”</a>. ast-grep is a tool for querying code by syntax rather than brittle regular expressions. The blog post describes how to add R support to this tool, and how to take advantage of it when using Claude.</p>\n<h3>\nOn muffling messages from packages\n</h3><p>A follow-up on our post <a href=\"https://ropensci.org/blog/2024/02/06/verbosity-control-packages/\" rel=\"nofollow\" target=\"_blank\">“Please Shut Up! Verbosity Control in Packages”</a>.</p>\n<ul>\n<li>With the {cli} R package you can change the default handler for messages. See the <a href=\"https://cli.r-lib.org/articles/semantic-cli.html#cli-messages\" rel=\"nofollow\" target=\"_blank\">docs</a>. It seems mostly used to muffle messages, e.g. in <a href=\"https://github.com/etiennebacher/flir/blob/9254cd01d258d0bafcee41a44e5caa7104fed832/R/lint.R#L104\" rel=\"nofollow\" target=\"_blank\">flir</a>.</li>\n<li>Here’s how the usethis R package <a href=\"https://github.com/r-lib/usethis/commit/f0f3f91494a1b15c1b08ee78dc73ab7d1cf8b6a8\" rel=\"nofollow\" target=\"_blank\">muffles gert message selectively</a>.</li>\n</ul>\n<h2>\nLast words\n</h2><p>Thanks for reading! If you want to get involved with rOpenSci, check out our <a href=\"https://contributing.ropensci.org/\" rel=\"nofollow\" target=\"_blank\">Contributing Guide</a> that can help direct you to the right place, whether you want to make code contributions, non-code contributions, or contribute in other ways like sharing use cases. You can also support our work through <a href=\"https://ropensci.org/donate\" rel=\"nofollow\" target=\"_blank\">donations</a>.</p>\n<p>If you haven’t subscribed to our newsletter yet, you can <a href=\"https://ropensci.org/news/\" rel=\"nofollow\" target=\"_blank\">do so via a form</a>. Until it’s time for our next newsletter, you can keep in touch with us via our <a href=\"https://ropensci.org/\" rel=\"nofollow\" target=\"_blank\">website</a> and <a href=\"https://hachyderm.io/@rOpenSci\" rel=\"nofollow\" target=\"_blank\">Mastodon account</a>.</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://ropensci.org/blog/2026/03/30/news-mars-2026/\"> rOpenSci - open tools for open science</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 1755,
+    "reading_time_min": 8.8,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/ropensci/",
+        "text": "rOpenSci"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://ropensci.org/blog/2026/03/30/news-mars-2026/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/30/news-mars-2026",
+        "text": "on our blog"
+      },
+      {
+        "href": "https://devguide.ropensci.org/",
+        "text": "English"
+      },
+      {
+        "href": "https://devguide.ropensci.org/es/index.es.html",
+        "text": "Spanish"
+      },
+      {
+        "href": "https://devguide.ropensci.org/pt/index.pt.html",
+        "text": "Portuguese"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/02/devguide-1.0.0/",
+        "text": "release announcement"
+      },
+      {
+        "href": "https://ropensci.r-universe.dev/opencv#checktable",
+        "text": "https://ropensci.r-universe.dev/opencv#checktable"
+      },
+      {
+        "href": "https://ropensci.org/software-review/",
+        "text": "peer review"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/02/26/ropensci-ai-policy/",
+        "text": "recent blog post"
+      },
+      {
+        "href": "https://devguide.ropensci.org/",
+        "text": "Dev Guide"
+      },
+      {
+        "href": "https://docs.ropensci.org/pkgmatch",
+        "text": "ropensci-review-tools/pkgmatch package"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/671",
+        "text": "this review issue"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Tf%E2%80%93idf",
+        "text": "“term frequency-inverse document frequency” algorithm"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/671#issuecomment-4117805740",
+        "text": "this example for the pkgmatch package itself"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/06/21/coworking/",
+        "text": "all about coworking"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2026-04/",
+        "text": "“Getting to know the CSID Network”"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/author/irene-ramos/",
+        "text": "Irene Ramos"
+      },
+      {
+        "href": "https://ropensci.org/author/adamu-saleh-saidu",
+        "text": "Adamu Saleh Saidu"
+      },
+      {
+        "href": "https://csidnet.org/",
+        "text": "CSID Network"
+      },
+      {
+        "href": "https://ropensci.org/events/coworking-2026-05/",
+        "text": "“Code Review with rOpenSci”"
+      },
+      {
+        "href": "https://ropensci.org/author/steffi-lazerte/",
+        "text": "Steffi LaZerte"
+      },
+      {
+        "href": "https://ropensci.org/author/liz-hare/",
+        "text": "Liz Hare"
+      },
+      {
+        "href": "https://airtable.com/app8dssb6a7PG6Vwj/shrnfDI2S9uuyxtDw",
+        "text": "software peer-review"
+      },
+      {
+        "href": "https://docs.ropensci.org/suwo",
+        "text": "suwo"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/729",
+        "text": "reviewed"
+      },
+      {
+        "href": "https://ropensci.org/packages",
+        "text": "more packages"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://docs.ropensci.org/cffr",
+        "text": "cffr"
+      },
+      {
+        "href": "https://github.com/ropensci/cffr/releases/tag/v1.3.0",
+        "text": "v1.3.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/pkgmatch",
+        "text": "pkgmatch"
+      },
+      {
+        "href": "https://github.com/ropensci-review-tools/pkgmatch/releases/tag/v0.5.2",
+        "text": "v0.5.2"
+      },
+      {
+        "href": "https://docs.ropensci.org/tarchetypes",
+        "text": "tarchetypes"
+      },
+      {
+        "href": "https://github.com/ropensci/tarchetypes/releases/tag/0.14.1",
+        "text": "0.14.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/rgbif",
+        "text": "rgbif"
+      },
+      {
+        "href": "https://github.com/ropensci/rgbif/releases/tag/v3.8.5",
+        "text": "v3.8.5"
+      },
+      {
+        "href": "https://docs.ropensci.org/saperlipopette",
+        "text": "saperlipopette"
+      },
+      {
+        "href": "https://github.com/ropensci-training/saperlipopette/releases/tag/v0.1.1",
+        "text": "v0.1.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/gutenbergr",
+        "text": "gutenbergr"
+      },
+      {
+        "href": "https://github.com/ropensci/gutenbergr/releases/tag/v0.5.0",
+        "text": "v0.5.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/trud",
+        "text": "trud"
+      },
+      {
+        "href": "https://github.com/ropensci/trud/releases/tag/v0.2.1",
+        "text": "v0.2.1"
+      },
+      {
+        "href": "https://docs.ropensci.org/naijR",
+        "text": "naijR"
+      },
+      {
+        "href": "https://github.com/ropensci/naijR/releases/tag/v0.7.0",
+        "text": "v0.7.0"
+      },
+      {
+        "href": "https://docs.ropensci.org/sasquatch",
+        "text": "sasquatch"
+      },
+      {
+        "href": "https://github.com/ropensci/sasquatch/releases/tag/v0.1.3",
+        "text": "v0.1.3"
+      },
+      {
+        "href": "https://docs.ropensci.org/lingtypology",
+        "text": "lingtypology"
+      },
+      {
+        "href": "https://github.com/ropensci/lingtypology/releases/tag/v1.1.25",
+        "text": "v1.1.25"
+      },
+      {
+        "href": "https://docs.ropensci.org/rerddap",
+        "text": "rerddap"
+      },
+      {
+        "href": "https://github.com/ropensci/rerddap/releases/tag/v1.2.3",
+        "text": "v1.2.3"
+      },
+      {
+        "href": "https://sebkrantz.github.io/Rblog/2026/01/29/releasing-dfms-1-0-fast-and-feature-rich-estimation-of-dynamic-factor-models-in-r/",
+        "text": "Releasing dfms 1.0: Fast and Feature-Rich Estimation of Dynamic Factor Models in R"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%226/approved%22",
+        "text": "‘6/approved’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/729",
+        "text": "suwo"
+      },
+      {
+        "href": "https://marce10.github.io/",
+        "text": "Marcelo Araya-Salas"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%225/awaiting-reviewer(s)-response%22",
+        "text": "‘5/awaiting-reviewer(s)-response’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/671",
+        "text": "pkgmatch"
+      },
+      {
+        "href": "https://mpadge.github.io/",
+        "text": "mark padgham"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%224/review(s)-in-awaiting-changes%22",
+        "text": "‘4/review(s)-in-awaiting-changes’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/741",
+        "text": "logolink"
+      },
+      {
+        "href": "http://danielvartan.com/",
+        "text": "Daniel Vartanian"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/615",
+        "text": "galamm"
+      },
+      {
+        "href": "https://osorensen.github.io/",
+        "text": "Øystein Sørensen"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%223/reviewer(s)-assigned%22",
+        "text": "‘3/reviewer(s)-assigned’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/760",
+        "text": "pvEBayes"
+      },
+      {
+        "href": "https://github.com/YihaoTancn",
+        "text": "Yihao Tan"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/754",
+        "text": "saperlipopette"
+      },
+      {
+        "href": "https://masalmon.eu/",
+        "text": "Maëlle Salmon"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/730",
+        "text": "ernest"
+      },
+      {
+        "href": "https://github.com/kylesnap",
+        "text": "Kyle Dewsnap"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/718",
+        "text": "rcrisp"
+      },
+      {
+        "href": "https://github.com/cforgaci",
+        "text": "Claudiu Forgaci"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/709",
+        "text": "reviser"
+      },
+      {
+        "href": "https://marcburri.github.io/",
+        "text": "Marc Burri"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/704",
+        "text": "priorsense"
+      },
+      {
+        "href": "https://github.com/n-kall",
+        "text": "Noa Kallioinen"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%222/seeking-reviewer(s)%22",
+        "text": "‘2/seeking-reviewer(s)’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/750",
+        "text": "nycOpenData"
+      },
+      {
+        "href": "https://github.com/martinezc1",
+        "text": "Christian Martinez"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/743",
+        "text": "RAMEN"
+      },
+      {
+        "href": "https://erick-navarrodelgado.netlify.app/",
+        "text": "Erick Navarro-Delgado"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%221/editor-checks%22",
+        "text": "‘1/editor-checks’"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/744",
+        "text": "RAQSAPI"
+      },
+      {
+        "href": "https://github.com/mccroweyclinton-EPA",
+        "text": "mccroweyclinton-EPA"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/740",
+        "text": "fcmconfr"
+      },
+      {
+        "href": "https://github.com/bhroston",
+        "text": "benroston"
+      },
+      {
+        "href": "https://github.com/ropensci/software-review/issues/717",
+        "text": "coevolve"
+      },
+      {
+        "href": "https://scottclaessens.github.io/",
+        "text": "Scott Claessens"
+      },
+      {
+        "href": "https://ropensci.org/software-review",
+        "text": "Software Peer Review"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/02/26/ropensci-ai-policy",
+        "text": "Software Review in the Era of AI: What We Are Testing at rOpenSci"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/02/devguide-1.0.0",
+        "text": "rOpenSci Dev Guide 1.0.0: Trilingual and Improved"
+      },
+      {
+        "href": "https://ropensci.org/es/blog/2026/03/02/r_open_sci_dev_guide_1_0_0_triling%C3%BCe_y_mejorada",
+        "text": "rOpenSci Dev Guide 1.0.0: Trilingüe y mejorada (es)"
+      },
+      {
+        "href": "https://ropensci.org/pt/blog/2026/03/02/guia_de_desenvolvimento_da_r_open_sci_1_0_0_tril%C3%ADngue_e_aprimorado",
+        "text": "Guia de desenvolvimento da rOpenSci 1.0.0: trilíngue e aprimorado (pt)"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/10/patentsview-breaking-release",
+        "text": "Breaking Release of the patentsview R Package"
+      },
+      {
+        "href": "https://ropensci.org/blog/2023/02/07/what-does-it-mean-to-maintain-a-package/",
+        "text": "What Does It Mean to Maintain a Package?"
+      },
+      {
+        "href": "https://docs.ropensci.org/NLMR",
+        "text": "NLMR"
+      },
+      {
+        "href": "https://github.com/ropensci/NLMR/issues/116",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/landscapetools",
+        "text": "landscapetools"
+      },
+      {
+        "href": "https://github.com/ropensci/landscapetools/issues/48",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/hddtools",
+        "text": "hddtools"
+      },
+      {
+        "href": "https://github.com/ropensci/hddtools/issues/36",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://docs.ropensci.org/qualtRics/",
+        "text": "qualtRics"
+      },
+      {
+        "href": "https://github.com/ropensci/qualtRics/issues/383",
+        "text": "Issue for volunteering"
+      },
+      {
+        "href": "https://ropensci.org/help-wanted/",
+        "text": "help wanted page"
+      },
+      {
+        "href": "https://uk.linkedin.com/in/heathrturnr",
+        "text": "Heather Turner"
+      },
+      {
+        "href": "https://www.r-project.org/contributors.html",
+        "text": "R Core Team"
+      },
+      {
+        "href": "https://www.r-project.org/mail.html",
+        "text": "official mailing lists of the R project"
+      },
+      {
+        "href": "https://blog.r-hub.io/2019/04/11/r-package-devel/",
+        "text": "R-package-devel"
+      },
+      {
+        "href": "https://mail-archive.com/r-devel@r-project.org/",
+        "text": "mail-archive"
+      },
+      {
+        "href": "https://r-mailing-lists.thecoatlessprofessor.com/",
+        "text": "R Mailing Lists Archive"
+      },
+      {
+        "href": "https://emilhvitfeldt.com/post/ast-grep-r-claude-code/",
+        "text": "“Claude Code: Setting up ast-grep with R support”"
+      },
+      {
+        "href": "https://ropensci.org/blog/2024/02/06/verbosity-control-packages/",
+        "text": "“Please Shut Up! Verbosity Control in Packages”"
+      },
+      {
+        "href": "https://cli.r-lib.org/articles/semantic-cli.html#cli-messages",
+        "text": "docs"
+      },
+      {
+        "href": "https://github.com/etiennebacher/flir/blob/9254cd01d258d0bafcee41a44e5caa7104fed832/R/lint.R#L104",
+        "text": "flir"
+      },
+      {
+        "href": "https://github.com/r-lib/usethis/commit/f0f3f91494a1b15c1b08ee78dc73ab7d1cf8b6a8",
+        "text": "muffles gert message selectively"
+      },
+      {
+        "href": "https://contributing.ropensci.org/",
+        "text": "Contributing Guide"
+      },
+      {
+        "href": "https://ropensci.org/donate",
+        "text": "donations"
+      },
+      {
+        "href": "https://ropensci.org/news/",
+        "text": "do so via a form"
+      },
+      {
+        "href": "https://ropensci.org/",
+        "text": "website"
+      },
+      {
+        "href": "https://hachyderm.io/@rOpenSci",
+        "text": "Mastodon account"
+      },
+      {
+        "href": "https://ropensci.org/blog/2026/03/30/news-mars-2026/",
+        "text": "rOpenSci - open tools for open science"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": "cover of rOpenSci dev guide, showing a package production line with small humans discussing, examining and promoting packages",
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i2.wp.com/ropensci.org/blog/2026/03/30/news-mars-2026/cover.png?w=400&ssl=1",
+        "alt": "cover of rOpenSci dev guide, showing a package production line with small humans discussing, examining and promoting packages",
+        "base64": "data:image/jpeg;base64,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"
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-30T10:08:21Z"
+  }
+}
