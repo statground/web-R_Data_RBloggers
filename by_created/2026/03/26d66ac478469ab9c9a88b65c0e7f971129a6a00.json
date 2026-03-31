@@ -1,0 +1,118 @@
+{
+  "id": "26d66ac478469ab9c9a88b65c0e7f971129a6a00",
+  "url": "https://www.r-bloggers.com/2026/03/transgender-day-of-visibility/",
+  "created_at_utc": "2026-03-31T08:02:49Z",
+  "crawled_at_utc": "2026-03-31T08:02:49Z",
+  "html_title": "Transgender Day of Visibility | R-bloggers",
+  "meta_description": "March 31 is Transgender Day of Visibility. I’m not transgender myself, but I have friends, acquaintances, and family members who are. Chances are you do too, whether you realize it or not. &nbs...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/03/transgender-day-of-visibility/",
+    "canonical_url": "https://www.r-bloggers.com/2026/03/transgender-day-of-visibility/",
+    "html_title": "Transgender Day of Visibility | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "March 31 is Transgender Day of Visibility. I’m not transgender myself, but I have friends, acquaintances, and family members who are. Chances are you do too, whether you realize it or not. &nbs...",
+    "meta_keywords": null,
+    "og_title": "Transgender Day of Visibility | R-bloggers",
+    "og_description": "March 31 is Transgender Day of Visibility. I’m not transgender myself, but I have friends, acquaintances, and family members who are. Chances are you do too, whether you realize it or not. &nbs...",
+    "og_image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZfk2-sxWBT_tk6b5Aq5W_ZFTvUKWWBlbiDmUau8As6CakkBCcLnsYGrDEQpTekShVIbQFBUBWux9Kf7YcQ1LW6In9s8uh-vjliUKtDdpH5OzVs50JAeA9HTGG5gFrWy1eJqFub5puN3zIv5Pj0jji6KLwkmLFq1rKUx3KwIWOpmXhVcFRZCW-EY7iEqE/s400/Transgender_Pride_Flag.jpeg",
+    "twitter_title": "Transgender Day of Visibility | R-bloggers",
+    "twitter_description": "March 31 is Transgender Day of Visibility. I’m not transgender myself, but I have friends, acquaintances, and family members who are. Chances are you do too, whether you realize it or not. &nbs...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Transgender Day of Visibility\nPosted on\nMarch 30, 2026\nby\nJerry Tuttle\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nOnline College Math Teacher\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nMarch 31 is Transgender Day of Visibility. I’m not transgender myself, but I have friends, acquaintances, and family members who are. Chances are you do too, whether you realize it or not.\nMy understanding is that transgender is an umbrella term for people whose gender identity or expression differs from the sex they were assigned at birth. It reflects a deeply held internal sense of self—something not defined by appearance, clothing, or medical procedures. Being transgender is about identity, not sexual orientation.\nWhat I’ve learned over time is that many transgender people face challenges most of us never have to think about. These include discrimination, gaps in legal protection, denial of medical care, and even physical violence. There are also everyday barriers that rarely make headlines, like difficulty obtaining accurate driver’s licenses or passports—documents most of us take for granted.\nI found this resource helpful:\nUnderstanding the Transgender Community\n.\nI wish every transgender person could live their life openly, safely, and without being hassled for who they are.\nThe five color Transgender Pride Flag was designed by Monica Helms in 1999. I made this flag in computer language R.  Here is the R code.\n########################\nlibrary(ggplot2)\n\n# Define the colors in order: Blue, Pink, White, Pink, Blue\ntrans_colors <- c(\"#5BCEFA\", \"#F5A9B8\", \"#FFFFFF\", \"#F5A9B8\", \"#5BCEFA\")\n\n# Create a data frame for the 5 stripes\nflag_data <- data.frame(\n  stripe = factor(1:5),\n  height = rep(1, 5)\n)\n\n# Plot the flag\nggplot(flag_data, aes(x = 1, y = height, fill = stripe)) +\n  geom_bar(stat = \"identity\", width = 1, color = NA) +\n  scale_fill_manual(values = rev(trans_colors)) + # Reverse to stack correctly\n  theme_void() + # Remove axes and labels\n  theme(legend.position = \"none\") +\n  coord_cartesian(expand = FALSE)\nEnd\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nOnline College Math Teacher\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400212 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Transgender Day of Visibility</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">March 30, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jerry-tuttle/\">Jerry Tuttle</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://onlinecollegemathteacher.blogspot.com/2026/03/transgender-day-of-visibility.html\"> Online College Math Teacher</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><font size=\"3\">\n<div class=\"separator\" style=\"clear: both;\"><a href=\"https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZfk2-sxWBT_tk6b5Aq5W_ZFTvUKWWBlbiDmUau8As6CakkBCcLnsYGrDEQpTekShVIbQFBUBWux9Kf7YcQ1LW6In9s8uh-vjliUKtDdpH5OzVs50JAeA9HTGG5gFrWy1eJqFub5puN3zIv5Pj0jji6KLwkmLFq1rKUx3KwIWOpmXhVcFRZCW-EY7iEqE/s1152/Transgender_Pride_Flag.jpeg?ssl=1\" rel=\"nofollow\" style=\"display: block; padding: 1em 0; text-align: center; \" target=\"_blank\"><img alt=\"\" border=\"0\" data-lazy-src=\"https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZfk2-sxWBT_tk6b5Aq5W_ZFTvUKWWBlbiDmUau8As6CakkBCcLnsYGrDEQpTekShVIbQFBUBWux9Kf7YcQ1LW6In9s8uh-vjliUKtDdpH5OzVs50JAeA9HTGG5gFrWy1eJqFub5puN3zIv5Pj0jji6KLwkmLFq1rKUx3KwIWOpmXhVcFRZCW-EY7iEqE/s400/Transgender_Pride_Flag.jpeg?resize=400%2C487&amp;ssl=1\" data-original-height=\"487\" data-original-width=\"450\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" width=\"400\"/><noscript><img alt=\"\" border=\"0\" data-original-height=\"487\" data-original-width=\"450\" data-recalc-dims=\"1\" src=\"https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZfk2-sxWBT_tk6b5Aq5W_ZFTvUKWWBlbiDmUau8As6CakkBCcLnsYGrDEQpTekShVIbQFBUBWux9Kf7YcQ1LW6In9s8uh-vjliUKtDdpH5OzVs50JAeA9HTGG5gFrWy1eJqFub5puN3zIv5Pj0jji6KLwkmLFq1rKUx3KwIWOpmXhVcFRZCW-EY7iEqE/s400/Transgender_Pride_Flag.jpeg?resize=400%2C487&amp;ssl=1\" width=\"400\"/></noscript></a></div>\n  \n     \nMarch 31 is Transgender Day of Visibility. I’m not transgender myself, but I have friends, acquaintances, and family members who are. Chances are you do too, whether you realize it or not.   <p>\n  \n     \nMy understanding is that transgender is an umbrella term for people whose gender identity or expression differs from the sex they were assigned at birth. It reflects a deeply held internal sense of self—something not defined by appearance, clothing, or medical procedures. Being transgender is about identity, not sexual orientation.      </p><p>\n  \n     \nWhat I’ve learned over time is that many transgender people face challenges most of us never have to think about. These include discrimination, gaps in legal protection, denial of medical care, and even physical violence. There are also everyday barriers that rarely make headlines, like difficulty obtaining accurate driver’s licenses or passports—documents most of us take for granted.      </p><p>\n  \n     \nI found this resource helpful:\n<a href=\"https://www.hrc.org/resources/understanding-the-transgender-community\">\n  Understanding the Transgender Community</a> .  </p><p>\n  \n       \nI wish every transgender person could live their life openly, safely, and without being hassled for who they are.      </p><p>\n  \n     \nThe five color Transgender Pride Flag was designed by Monica Helms in 1999. I made this flag in computer language R.  Here is the R code.</p><p>\n\n########################\n\n</p><pre>\n\nlibrary(ggplot2)\n\n# Define the colors in order: Blue, Pink, White, Pink, Blue\ntrans_colors &lt;- c(\"#5BCEFA\", \"#F5A9B8\", \"#FFFFFF\", \"#F5A9B8\", \"#5BCEFA\")\n\n# Create a data frame for the 5 stripes\nflag_data &lt;- data.frame(\n  stripe = factor(1:5),\n  height = rep(1, 5)\n)\n\n# Plot the flag\nggplot(flag_data, aes(x = 1, y = height, fill = stripe)) +\n  geom_bar(stat = \"identity\", width = 1, color = NA) +\n  scale_fill_manual(values = rev(trans_colors)) + # Reverse to stack correctly\n  theme_void() + # Remove axes and labels\n  theme(legend.position = \"none\") +\n  coord_cartesian(expand = FALSE)\n\n\n</pre>\nEnd\n</font>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://onlinecollegemathteacher.blogspot.com/2026/03/transgender-day-of-visibility.html\"> Online College Math Teacher</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 419,
+    "reading_time_min": 2.1,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jerry-tuttle/",
+        "text": "Jerry Tuttle"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2026/03/transgender-day-of-visibility.html",
+        "text": "Online College Math Teacher"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://i1.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZfk2-sxWBT_tk6b5Aq5W_ZFTvUKWWBlbiDmUau8As6CakkBCcLnsYGrDEQpTekShVIbQFBUBWux9Kf7YcQ1LW6In9s8uh-vjliUKtDdpH5OzVs50JAeA9HTGG5gFrWy1eJqFub5puN3zIv5Pj0jji6KLwkmLFq1rKUx3KwIWOpmXhVcFRZCW-EY7iEqE/s1152/Transgender_Pride_Flag.jpeg?ssl=1",
+        "text": null
+      },
+      {
+        "href": "https://www.hrc.org/resources/understanding-the-transgender-community",
+        "text": "Understanding the Transgender Community"
+      },
+      {
+        "href": "https://onlinecollegemathteacher.blogspot.com/2026/03/transgender-day-of-visibility.html",
+        "text": "Online College Math Teacher"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZfk2-sxWBT_tk6b5Aq5W_ZFTvUKWWBlbiDmUau8As6CakkBCcLnsYGrDEQpTekShVIbQFBUBWux9Kf7YcQ1LW6In9s8uh-vjliUKtDdpH5OzVs50JAeA9HTGG5gFrWy1eJqFub5puN3zIv5Pj0jji6KLwkmLFq1rKUx3KwIWOpmXhVcFRZCW-EY7iEqE/s400/Transgender_Pride_Flag.jpeg?resize=400%2C487&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAqRXhpZgAASUkqAAgAAAABADEBAgAHAAAAGgAAAAAAAABHb29nbGUAAP/bAIQAAwICAgICAgICAhACAgICCAICAgIFBQcHBggCCgwMAgoCCwIOBxACAgYCAgIGCgUFCRQVCRUCAwsOFggYBggJCAEDBAQGBQUJBQYIEAgIDBQUFAgICAsKCAgICBQKFBQICAgICAgICAgICAgIFAgICAgICAgIFAgICAgICAgIFAgI/8AAEQgAqQGQAwERAAIRAQMRAf/EABwAAQEBAAIDAQAAAAAAAAAAAAAEAwYHAgUIAf/EAD4QAQAAAQYOAQEGAwkBAAAAAAABAgQFERdTBhMUFVRVYoGRk6Gj0uEDshI0NXR1sSFBogcxMkNFYXHB0SX/xAAcAQEBAQACAwEAAAAAAAAAAAAAAwQBBwIGCAX/xAA5EQEAAQAFCwQBAwUAAQUBAAAAAQIEERZRAwUTFVNUkZKi0dISFFKTMzFxsiEiQXKxMkJhgaHwBv/aAAwDAQACEQMRAD8A+g3dr5cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUUZ+KUb+pfH9UEcv+Gn+0/wAWqrfnyX+1H+cJ1mUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABRRn4pRv6l8f1QRy/4af7T/Fqq358l/tR/nCdZlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUUZ+KUb+pfH9UEcv+Gn+0/xaqt+fJf7Uf5wnXZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFFGfilG/qXx/VBDL/AIcp+0/xaat+fJf7Uf5w9zm2Y6NB1LrmubaeEPsa5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXczbMdGga5rm2nhBcnMe5UOruZtmOjQNc1zbTwguTmPcqHV3M2zHRoGua5tp4QXJzHuVDq7mbZjo0DXNc208ILk5j3Kh1dzNsx0aBrmubaeEFycx7lQ6u5m2Y6NA1zXNtPCC5OY9yodXdRR9HTKTSFHxhNoVwpCRGG6VCrf/AH8HE53rlL+2ctNn+f6R+n+f/p4U/wD+NzLQozTo1OhE0Ytoz/dbExFsTH9cYfr8Z7yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3mH36YfnpH7wI/VHLfip/tP8AxgLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN5h9+mH56R+8CP1Ry34qf7T/xhXAWK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAK4AVwArgBXACuAFcAbzD79MPz0j6iP1Ry34qf7T/x2zYnQmu5fY8V9HGL0q8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8ixOhNdy+x4mjjEvBlvhR6vIsToTXcvseJo4xLwZb4UeryLE6E13L7HiaOMS8GW+FHq8nl8P8AYvQvw/N8XzQpmXKlfD80PmkwlYj/ACY1yftVSf8AD9qEHOjjF40s/ZalRmj6KP8AX9f/AC8v/d2Iq9ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHthwP2+T7T0kPYNR1rCOYthwP2+T7caSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEcxbDgft8n2aSDUdawjmLYcD9vk+zSQajrWEczy+L+13BL5vl+L4ZH2vt/N8sPhkV/D/P5Y1Sa/4/wh9qVBzpIeNLMlZo0ZpTEWR+v93+P/ANDo/ezOxDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LDeFhvCw3hYbwsN4WG8LG8w+/TD89Ih/VD/ALhBzH6pZb8VP9p/4wcLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN5h9+mH56R+8CP1Ry34qf7T/AMYCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADeYffph+ekfvAj9Uct+Kn+0/8R5VN7+HGDf7Cs7Glyz2fi3gzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5GVTe/hxgewrOxpcs9i8GbN8yf2UPIyqb38OMD2FZ2NLlnsXgzZvmT+yh5KJhOZvGfzCEPnhXGfyIVVw/nKh/7E9hWI/unJUrP8/2z+n+f8YJ5TP+bKWTpUYreTmZibIjKULZmz+kR/dj/wBcRqd1vh2wqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCwqCxRRkP/qUb/tSXxx/qgjl/w0/2n+LTVojT5L/aj/OGCzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAooz8Uo39S+P6oI5f8NP8Aaf4tVW/Pkv8Aaj/OE6zKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAooz8Uo39S+P6oI5f8NP9p/i1Vb8+S/2o/wA4SYyRedYL2Sx+qMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4mMkXnWBZJ6oxjiYyRedYFknqjGOJjJF51gWSeqMY4qaM+T4850ZHGf6n8cP4Rh/KVCv8Av/56I5eJ0NP9p/j+zRVqcafJ/wBf/VR/nHZ2o9KdoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANJr98mv5mR9UEqf/jS/af8Ai2S/JR/+P5P/2Q=="
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-03-31T08:02:49Z"
+  }
+}
