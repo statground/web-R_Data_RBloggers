@@ -1,0 +1,103 @@
+{
+  "id": "258aa92c7870d71ff8a749f069391fef890e6198",
+  "url": "https://www.r-bloggers.com/2026/04/test-roll-why-smaller-a-b-tests-can-make-more-money/",
+  "created_at_utc": "2026-04-12T13:54:39Z",
+  "crawled_at_utc": "2026-04-12T13:54:39Z",
+  "html_title": "Test & Roll: Why Smaller A/B Tests Can Make More Money | R-bloggers",
+  "meta_description": "Short practical advice on A/B testing: Stop sizing tests only for statistical significance - In finite campaigns, your goal is profit, not perfect inference. Treat testing as a trade-off - Every extra test exposure buys learning but ...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/04/test-roll-why-smaller-a-b-tests-can-make-more-money/",
+    "canonical_url": "https://www.r-bloggers.com/2026/04/test-roll-why-smaller-a-b-tests-can-make-more-money/",
+    "html_title": "Test & Roll: Why Smaller A/B Tests Can Make More Money | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Short practical advice on A/B testing: Stop sizing tests only for statistical significance - In finite campaigns, your goal is profit, not perfect inference. Treat testing as a trade-off - Every extra test exposure buys learning but ...",
+    "meta_keywords": null,
+    "og_title": "Test & Roll: Why Smaller A/B Tests Can Make More Money | R-bloggers",
+    "og_description": "Short practical advice on A/B testing: Stop sizing tests only for statistical significance - In finite campaigns, your goal is profit, not perfect inference. Treat testing as a trade-off - Every extra test exposure buys learning but ...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Test & Roll: Why Smaller A/B Tests Can Make More Money | R-bloggers",
+    "twitter_description": "Short practical advice on A/B testing: Stop sizing tests only for statistical significance - In finite campaigns, your goal is profit, not perfect inference. Treat testing as a trade-off - Every extra test exposure buys learning but ...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Test & Roll: Why Smaller A/B Tests Can Make More Money\nPosted on\nApril 11, 2026\nby\nFlorian Teschner\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nFlorian Teschner\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nShort practical advice on A/B testing:\nStop sizing tests only for statistical significance\n– In finite campaigns, your goal is profit, not perfect inference.\nTreat testing as a trade-off\n– Every extra test exposure buys learning but also burns revenue if that exposure gets the weaker treatment.\nUse smaller tests when outcomes are noisy\n– This paper shows profit-maximizing test sizes rise much more slowly than classical power-based sizes.\nScale test size with reachable audience\n– If your population is limited, test size should reflect that constraint directly.\nAllow unequal splits when priors differ\n– If one treatment is likely better a priori (e.g., treatment vs holdout), asymmetric test cells can be optimal.\nShiny App to test the implications:\nTest and Roll Shiny App\nLong Version\nI just read\nTest & Roll: Profit-Maximizing A/B Tests\nby Elea McDonnell Feit and Ron Berman (2019), and it challenges one of the default habits in marketing experimentation: planning tests as if the main objective were statistical significance.\nTheir point is simple: in most real marketing experiments, you have a finite population (email list, campaign budget, limited traffic window). In that setting, the right objective is\ntotal expected profit across test + rollout\n, not p-values.\nThe core idea\nA classic A/B setup has two stages:\nTest stage\n: expose\nn1\nusers to treatment A and\nn2\nusers to treatment B.\nRoll stage\n: deploy the winner to the remaining\nN - n1 - n2\nusers.\nBigger tests improve certainty, but they also create opportunity cost: more users in test means more users potentially seeing the weaker treatment before rollout.\nThe paper formalizes this as a decision problem and derives\nprofit-maximizing sample sizes\n. Under Normal priors and Normal outcomes, they get closed-form solutions.\nWhy this matters in practice\nIf you use classical hypothesis-test sizing, recommended\nn\ncan be huge, especially when effect sizes are small and response is noisy (which is exactly what we see in advertising).\nTheir framework produces much smaller test sizes because it optimizes business outcomes, not Type I/II error control.\nTwo important takeaways:\nOptimal test sizes grow sub-linearly with response noise\n, while classical sample size rules grow much faster.\nOptimal test sizes scale with the square root of population size\nN\n, which makes them workable for smaller markets and finite campaigns.\nComparison with bandits\nThe authors benchmark against Thompson sampling (multi-armed bandit). Bandits usually win on pure optimization, but the gap is often modest in their examples.\nThat is useful operationally: a two-stage “test then roll” process is far easier to implement, explain, and govern than a continuously-adapting bandit, especially in organizations with approval and reporting constraints.\nThe applications are the best part\nThey test the approach in three contexts:\nWebsite design experiments\nDisplay advertising decisions\nCatalog holdout tests\nAcross cases, profit-maximizing designs use\nsubstantially smaller test cells\nthan classical power calculations and produce higher expected profit.\nA particularly practical result: small holdout groups (common in catalog and CRM practice) can be fully rational when priors are asymmetric. In other words, “unequal splits” are not always bad design; they can be the optimal design.\nWhat I changed in my own thinking\nBefore this, I treated “underpowered” mostly as a red flag. After this paper, I think a better question is:\nUnderpowered for what objective?\nIf the objective is publication-grade inference, classical power logic is right.\nIf the objective is campaign profit in a finite horizon, a smaller test can be the better business decision.\nPractical implementation checklist\nIf you run tactical tests (email, paid media, landing pages), this paper suggests a better workflow:\nDefine total reachable population\nN\nfor the decision horizon.\nSet priors for treatment means from past similar experiments.\nEstimate response variance from historical data.\nCompute profit-maximizing\nn1\n,\nn2\n.\nPre-commit the rollout decision rule (posterior expected profit winner).\nReport expected regret alongside expected upside.\nThat last point is underrated: decision-makers usually understand “expected dollars at risk” better than p-values.\nBottom line\nFor many real marketing tests, “smaller than textbook” is not bad science. It is better decision design.\nIf your experiment exists to drive a business action on a finite audience,\nTest & Roll\ngives a rigorous way to choose sample sizes that maximize profit instead of statistical purity.\nPaper: Feit, E. M., & Berman, R. (2019).\nTest & Roll: Profit-Maximizing A/B Tests\n. SSRN: https://ssrn.com/abstract=3274875\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nFlorian Teschner\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400493 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Test &amp; Roll: Why Smaller A/B Tests Can Make More Money</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 11, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/florian-teschner/\">Florian Teschner</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"http://flovv.github.io/test-and-roll-profit-maximizing-ab-tests/\"> Florian Teschner</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><h2 id=\"short-practical-advice-on-ab-testing\">Short practical advice on A/B testing:</h2>\n<ol>\n<li>\n<p><strong>Stop sizing tests only for statistical significance</strong> – In finite campaigns, your goal is profit, not perfect inference.</p>\n</li>\n<li>\n<p><strong>Treat testing as a trade-off</strong> – Every extra test exposure buys learning but also burns revenue if that exposure gets the weaker treatment.</p>\n</li>\n<li>\n<p><strong>Use smaller tests when outcomes are noisy</strong> – This paper shows profit-maximizing test sizes rise much more slowly than classical power-based sizes.</p>\n</li>\n<li>\n<p><strong>Scale test size with reachable audience</strong> – If your population is limited, test size should reflect that constraint directly.</p>\n</li>\n<li>\n<p><strong>Allow unequal splits when priors differ</strong> – If one treatment is likely better a priori (e.g., treatment vs holdout), asymmetric test cells can be optimal.</p>\n</li>\n</ol>\n<h2 id=\"shiny-app-to-test-the-implications\">Shiny App to test the implications:</h2>\n<p><a href=\"https://testandroll.shinyapps.io/testandroll/\" rel=\"nofollow\" target=\"_blank\">Test and Roll Shiny App</a></p>\n<h2 id=\"long-version\">Long Version</h2>\n<p>I just read <em>Test &amp; Roll: Profit-Maximizing A/B Tests</em> by Elea McDonnell Feit and Ron Berman (2019), and it challenges one of the default habits in marketing experimentation: planning tests as if the main objective were statistical significance.</p>\n<p>Their point is simple: in most real marketing experiments, you have a finite population (email list, campaign budget, limited traffic window). In that setting, the right objective is <strong>total expected profit across test + rollout</strong>, not p-values.</p>\n<h3 id=\"the-core-idea\">The core idea</h3>\n<p>A classic A/B setup has two stages:</p>\n<ol>\n<li><strong>Test stage</strong>: expose <code>n1</code> users to treatment A and <code>n2</code> users to treatment B.</li>\n<li><strong>Roll stage</strong>: deploy the winner to the remaining <code>N - n1 - n2</code> users.</li>\n</ol>\n<p>Bigger tests improve certainty, but they also create opportunity cost: more users in test means more users potentially seeing the weaker treatment before rollout.</p>\n<p>The paper formalizes this as a decision problem and derives <strong>profit-maximizing sample sizes</strong>. Under Normal priors and Normal outcomes, they get closed-form solutions.</p>\n<h3 id=\"why-this-matters-in-practice\">Why this matters in practice</h3>\n<p>If you use classical hypothesis-test sizing, recommended <code>n</code> can be huge, especially when effect sizes are small and response is noisy (which is exactly what we see in advertising).</p>\n<p>Their framework produces much smaller test sizes because it optimizes business outcomes, not Type I/II error control.</p>\n<p>Two important takeaways:</p>\n<ol>\n<li><strong>Optimal test sizes grow sub-linearly with response noise</strong>, while classical sample size rules grow much faster.</li>\n<li><strong>Optimal test sizes scale with the square root of population size <code>N</code></strong>, which makes them workable for smaller markets and finite campaigns.</li>\n</ol>\n<h3 id=\"comparison-with-bandits\">Comparison with bandits</h3>\n<p>The authors benchmark against Thompson sampling (multi-armed bandit). Bandits usually win on pure optimization, but the gap is often modest in their examples.</p>\n<p>That is useful operationally: a two-stage “test then roll” process is far easier to implement, explain, and govern than a continuously-adapting bandit, especially in organizations with approval and reporting constraints.</p>\n<h3 id=\"the-applications-are-the-best-part\">The applications are the best part</h3>\n<p>They test the approach in three contexts:</p>\n<ol>\n<li>Website design experiments</li>\n<li>Display advertising decisions</li>\n<li>Catalog holdout tests</li>\n</ol>\n<p>Across cases, profit-maximizing designs use <strong>substantially smaller test cells</strong> than classical power calculations and produce higher expected profit.</p>\n<p>A particularly practical result: small holdout groups (common in catalog and CRM practice) can be fully rational when priors are asymmetric. In other words, “unequal splits” are not always bad design; they can be the optimal design.</p>\n<h3 id=\"what-i-changed-in-my-own-thinking\">What I changed in my own thinking</h3>\n<p>Before this, I treated “underpowered” mostly as a red flag. After this paper, I think a better question is:</p>\n<p><strong>Underpowered for what objective?</strong></p>\n<p>If the objective is publication-grade inference, classical power logic is right.\nIf the objective is campaign profit in a finite horizon, a smaller test can be the better business decision.</p>\n<h3 id=\"practical-implementation-checklist\">Practical implementation checklist</h3>\n<p>If you run tactical tests (email, paid media, landing pages), this paper suggests a better workflow:</p>\n<ol>\n<li>Define total reachable population <code>N</code> for the decision horizon.</li>\n<li>Set priors for treatment means from past similar experiments.</li>\n<li>Estimate response variance from historical data.</li>\n<li>Compute profit-maximizing <code>n1</code>, <code>n2</code>.</li>\n<li>Pre-commit the rollout decision rule (posterior expected profit winner).</li>\n<li>Report expected regret alongside expected upside.</li>\n</ol>\n<p>That last point is underrated: decision-makers usually understand “expected dollars at risk” better than p-values.</p>\n<h3 id=\"bottom-line\">Bottom line</h3>\n<p>For many real marketing tests, “smaller than textbook” is not bad science. It is better decision design.</p>\n<p>If your experiment exists to drive a business action on a finite audience, <em>Test &amp; Roll</em> gives a rigorous way to choose sample sizes that maximize profit instead of statistical purity.</p>\n<hr/>\n<p>Paper: Feit, E. M., &amp; Berman, R. (2019). <em>Test &amp; Roll: Profit-Maximizing A/B Tests</em>. SSRN: https://ssrn.com/abstract=3274875</p>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"http://flovv.github.io/test-and-roll-profit-maximizing-ab-tests/\"> Florian Teschner</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 876,
+    "reading_time_min": 4.4,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/florian-teschner/",
+        "text": "Florian Teschner"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "http://flovv.github.io/test-and-roll-profit-maximizing-ab-tests/",
+        "text": "Florian Teschner"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://testandroll.shinyapps.io/testandroll/",
+        "text": "Test and Roll Shiny App"
+      },
+      {
+        "href": "http://flovv.github.io/test-and-roll-profit-maximizing-ab-tests/",
+        "text": "Florian Teschner"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-04-12T13:54:39Z"
+  }
+}
