@@ -1,0 +1,118 @@
+{
+  "id": "9cb613f9504b9d71fe25b792106dcde7d643ed8d",
+  "url": "https://www.r-bloggers.com/2026/04/theseusplot-0-2-0-visualizing-decomposition-of-differences-in-rate-metrics/",
+  "created_at_utc": "2026-04-15T14:59:58Z",
+  "crawled_at_utc": "2026-04-15T14:59:58Z",
+  "html_title": "TheseusPlot 0.2.0: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+  "meta_description": "TheseusPlot is an R package that decomposes differences in rate metrics between two groups into contributions from individual subgroups and visualizes the results as a “Theseus Plot”. The package is inspired by the Ship of Theseus thought experi...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/04/theseusplot-0-2-0-visualizing-decomposition-of-differences-in-rate-metrics/",
+    "canonical_url": "https://www.r-bloggers.com/2026/04/theseusplot-0-2-0-visualizing-decomposition-of-differences-in-rate-metrics/",
+    "html_title": "TheseusPlot 0.2.0: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "TheseusPlot is an R package that decomposes differences in rate metrics between two groups into contributions from individual subgroups and visualizes the results as a “Theseus Plot”. The package is inspired by the Ship of Theseus thought experi...",
+    "meta_keywords": null,
+    "og_title": "TheseusPlot 0.2.0: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+    "og_description": "TheseusPlot is an R package that decomposes differences in rate metrics between two groups into contributions from individual subgroups and visualizes the results as a “Theseus Plot”. The package is inspired by the Ship of Theseus thought experi...",
+    "og_image": "https://hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/man/figures/README-overview-1.png",
+    "twitter_title": "TheseusPlot 0.2.0: Visualizing Decomposition of Differences in Rate Metrics | R-bloggers",
+    "twitter_description": "TheseusPlot is an R package that decomposes differences in rate metrics between two groups into contributions from individual subgroups and visualizes the results as a “Theseus Plot”. The package is inspired by the Ship of Theseus thought experi...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "TheseusPlot 0.2.0: Visualizing Decomposition of Differences in Rate Metrics\nPosted on\nApril 9, 2026\nby\nKoji Makiyama\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nHOXO-M Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nTheseusPlot\nis an R package that decomposes differences in rate metrics between two groups into contributions from individual subgroups and visualizes the results as a “Theseus Plot”.\nThe package is inspired by the\nShip of Theseus\nthought experiment. It replaces subgroup data step by step, recalculates the overall metric at each step, and interprets each change as that subgroup’s contribution to the overall difference.\nSuppose you notice that the click-through rate is lower in 2025 than in 2024 and want to examine how a particular attribute, such as gender, contributed to the change. If you obtain a Theseus Plot like the one below, it suggests that men contributed more to the decline in click-through rate than women.\nWhat’s new in 0.2.0\nVersion 0.2.0 includes the following changes:\na fix for continuous-variable discretization with\nsplit = \"rate\"\n, where bin boundaries for the second group could previously be computed from the first group’s data\na fix for the size bar of\n\"Sum of ... other attributes\"\n, which could incorrectly use the first group’s counts for both groups\na fix for warnings in\nplot()\nand\nplot_flip()\nwhen multiple subgroups were tied for the largest absolute contribution\nsuppression of warnings generated internally by\nwaterfalls::waterfall()\nduring plot creation.\nI would like to thank Kazuyuki Sano for reporting the first two issues and contributing to their fixes.\nInstallation\nYou can install\nTheseusPlot\nfrom CRAN with:\ninstall.packages(\"TheseusPlot\")\nTry it out\nTheseusPlot\nmay be useful when you want to understand why metrics such as conversion rate, retention rate, or click-through rate changed.\nFor details on how to use it, please see the package website:\nhttps://hoxo-m.github.io/TheseusPlot/\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nHOXO-M Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400577 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">TheseusPlot 0.2.0: Visualizing Decomposition of Differences in Rate Metrics</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 9, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/koji-makiyama/\">Koji Makiyama</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/\"> HOXO-M Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p><strong>TheseusPlot</strong> is an R package that decomposes differences in rate metrics between two groups into contributions from individual subgroups and visualizes the results as a “Theseus Plot”.</p>\n<p>The package is inspired by the <a href=\"https://en.wikipedia.org/wiki/Ship_of_Theseus\" rel=\"nofollow\" target=\"_blank\">Ship of Theseus</a> thought experiment. It replaces subgroup data step by step, recalculates the overall metric at each step, and interprets each change as that subgroup’s contribution to the overall difference.</p>\n<p>Suppose you notice that the click-through rate is lower in 2025 than in 2024 and want to examine how a particular attribute, such as gender, contributed to the change. If you obtain a Theseus Plot like the one below, it suggests that men contributed more to the decline in click-through rate than women.</p>\n<div class=\"cell\">\n<div class=\"cell-output-display\">\n<div>\n<figure class=\"figure\">\n<p><img class=\"img-fluid figure-img\" data-lazy-src=\"https://i1.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/man/figures/README-overview-1.png?w=450&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img class=\"img-fluid figure-img\" data-recalc-dims=\"1\" src=\"https://i1.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/man/figures/README-overview-1.png?w=450&amp;ssl=1\"/></noscript></p>\n</figure>\n</div>\n</div>\n</div>\n<section class=\"level2\" id=\"whats-new-in-0.2.0\">\n<h2 class=\"anchored\" data-anchor-id=\"whats-new-in-0.2.0\">What’s new in 0.2.0</h2>\n<p>Version 0.2.0 includes the following changes:</p>\n<ul>\n<li>a fix for continuous-variable discretization with <code>split = \"rate\"</code>, where bin boundaries for the second group could previously be computed from the first group’s data</li>\n<li>a fix for the size bar of <code>\"Sum of ... other attributes\"</code>, which could incorrectly use the first group’s counts for both groups</li>\n<li>a fix for warnings in <code>plot()</code> and <code>plot_flip()</code> when multiple subgroups were tied for the largest absolute contribution</li>\n<li>suppression of warnings generated internally by <code>waterfalls::waterfall()</code> during plot creation.</li>\n</ul>\n<p>I would like to thank Kazuyuki Sano for reporting the first two issues and contributing to their fixes.</p>\n</section>\n<section class=\"level2\" id=\"installation\">\n<h2 class=\"anchored\" data-anchor-id=\"installation\">Installation</h2>\n<p>You can install <strong>TheseusPlot</strong> from CRAN with:</p>\n<pre>install.packages(\"TheseusPlot\")</pre>\n</section>\n<section class=\"level2\" id=\"try-it-out\">\n<h2 class=\"anchored\" data-anchor-id=\"try-it-out\">Try it out</h2>\n<p><strong>TheseusPlot</strong> may be useful when you want to understand why metrics such as conversion rate, retention rate, or click-through rate changed.</p>\n<p>For details on how to use it, please see the package website: <a href=\"https://hoxo-m.github.io/TheseusPlot/\" rel=\"nofollow\" target=\"_blank\">https://hoxo-m.github.io/TheseusPlot/</a>.</p>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/\"> HOXO-M Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 432,
+    "reading_time_min": 2.2,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/koji-makiyama/",
+        "text": "Koji Makiyama"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/",
+        "text": "HOXO-M Blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://en.wikipedia.org/wiki/Ship_of_Theseus",
+        "text": "Ship of Theseus"
+      },
+      {
+        "href": "https://hoxo-m.github.io/TheseusPlot/",
+        "text": "https://hoxo-m.github.io/TheseusPlot/"
+      },
+      {
+        "href": "https://hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/",
+        "text": "HOXO-M Blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i1.wp.com/hoxo-m.github.io/blog/posts/TheseusPlot-0-2-0/man/figures/README-overview-1.png?w=450&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,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"
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-04-15T14:59:58Z"
+  }
+}
