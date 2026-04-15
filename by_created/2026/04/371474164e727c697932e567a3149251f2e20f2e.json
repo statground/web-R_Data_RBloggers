@@ -1,0 +1,170 @@
+{
+  "id": "371474164e727c697932e567a3149251f2e20f2e",
+  "url": "https://www.r-bloggers.com/2026/04/logrittr-a-verbose-pipe-operator-for-logging-dplyr-pipelines/",
+  "created_at_utc": "2026-04-15T13:03:34Z",
+  "crawled_at_utc": "2026-04-15T13:03:35Z",
+  "html_title": "logrittr: A Verbose Pipe Operator for Logging dplyr Pipelines | R-bloggers",
+  "meta_description": "dplyr verbs are descriptive: let’s make them more verbose! Yet another pipe for R. Motivation In SAS, every DATA step prints a log: NOTE: There were 120000 observations read from WORK.SALES. NOTE: 7153 observations wer...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/04/logrittr-a-verbose-pipe-operator-for-logging-dplyr-pipelines/",
+    "canonical_url": "https://www.r-bloggers.com/2026/04/logrittr-a-verbose-pipe-operator-for-logging-dplyr-pipelines/",
+    "html_title": "logrittr: A Verbose Pipe Operator for Logging dplyr Pipelines | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "dplyr verbs are descriptive: let’s make them more verbose! Yet another pipe for R. Motivation In SAS, every DATA step prints a log: NOTE: There were 120000 observations read from WORK.SALES. NOTE: 7153 observations wer...",
+    "meta_keywords": null,
+    "og_title": "logrittr: A Verbose Pipe Operator for Logging dplyr Pipelines | R-bloggers",
+    "og_description": "dplyr verbs are descriptive: let’s make them more verbose! Yet another pipe for R. Motivation In SAS, every DATA step prints a log: NOTE: There were 120000 observations read from WORK.SALES. NOTE: 7153 observations wer...",
+    "og_image": "https://github.com/GuillaumePressiat/logrittr/raw/main/man/figures/logo.png",
+    "twitter_title": "logrittr: A Verbose Pipe Operator for Logging dplyr Pipelines | R-bloggers",
+    "twitter_description": "dplyr verbs are descriptive: let’s make them more verbose! Yet another pipe for R. Motivation In SAS, every DATA step prints a log: NOTE: There were 120000 observations read from WORK.SALES. NOTE: 7153 observations wer...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "logrittr: A Verbose Pipe Operator for Logging dplyr Pipelines\nPosted on\nApril 15, 2026\nby\nGuillaume Pressiat\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nGuillaume Pressiat\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\ndplyr verbs are descriptive: let’s make them more verbose!\nYet another pipe for R.\nMotivation\nIn SAS, every DATA step prints a log:\nNOTE: There were 120000 observations read from WORK.SALES.\nNOTE: 7153 observations were deleted.\nNOTE: The data set WORK.RESULT has 112847 observations and 11 variables.\nR’s\ndplyr\npipelines are silent.\nlogrittr\nfills that gap with\n%>=%\n, a\ndrop-in pipe that logs row counts, column counts, added/dropped columns, and\ntiming at every step, with no function masking.\nWith\nFira Code\nligatures,\n%>=%\nrenders\nas a single wide arrow visually similar to\n%>%\nwith an underline added, like a subtitle or, say, to read between the lines of a pipeline (what happened).\nMultiples contexts\nThings happens:\nNOTE: There were 120000 observations read from WORK.SALES.\nNOTE: 120000 observations were deleted.\nNOTE: The data set WORK.RESULT has 0 observations and 11 variables.\n“It’s here we’ve lost all rows in script execution”.\nPro\nReading this a long time after execution of a script helps you see:\nwhat happened at each stage of data processing without having to rerun the code, for example in a production environment where the input data is constantly changing\nmonitor key processes\nMake sure you can explain what happened (an audit, for example)\nIn professional contexts it’s often needed.\nEducational\nThis will also be clearer thanks to a console log for those with little experience with \nthe tidyverse: people who are taking their first steps in programming by following a tutorial or teaching themselves.\nInstallation\ninstall.packages('logrittr', repos = 'https://guillaumepressiat.r-universe.dev')\n\n# or from github\n# devtools::install_github(\"GuillaumePressiat/logrittr\")\nSee\ngithub\nor\nr-universe\n.\nUsage\nlibrary(logrittr)\nlibrary(dplyr)\n\niris %>=%\n  as_tibble() %>=%\n  filter(Sepal.Length < 5)  %>=%\n  mutate(rn = row_number()) %>=%\n  semi_join(\n    iris %>% as_tibble() %>=%\n      filter(Species == \"setosa\"),\n    by = \"Species\"\n  )  %>=%\n  group_by(Species) %>=%\n  summarise(n = n_distinct(rn))\n── iris  [rows:       150  cols:    5] ─────────────────────────────────────────────────────\nℹ as_tibble()                            rows:       150 +0        cols:    5 +0    [   0.0 ms]\nℹ filter(Sepal.Length < 5)               rows:        22 -128      cols:    5 +0    [   3.0 ms]\nℹ mutate(rn = row_number())              rows:        22 +0        cols:    6 +1    [   1.0 ms]\n  added: rn\nℹ > filter(Species == \"setosa\")          rows:        50 -100      cols:    5 +0    [   1.0 ms]\nℹ semi_join(iris %>% as_tibble() %>=%    rows:        20 -2        cols:    6 +0    [   5.0 ms]\n  filter(Species == \"setosa\"), by =\n  \"Species\")\nℹ group_by(Species)                      rows:        20 +0        cols:    6 +0    [   3.0 ms]\nℹ summarise(n = n_distinct(rn))          rows:         1 -19       cols:    2 -4    [   2.0 ms]\n  dropped: Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, rn\n  added: n\nScreenshot\nlibrary(dplyr)\nlibrary(logrittr)\n\nlogrittr_options(lang = \"en\", big_mark = \",\", wrap_width = NULL, max_cols = 3)\n\nnycflights13::flights %>=% \n  as_tibble() %>=%\n  group_by(year, month, day) %>=% \n  count() %>=% \n  tidyr::pivot_wider(values_from = \"n\", names_from = \"day\") %>=% \n  glimpse()\nRelated package:\ntidylog\ntidylog\nis a really neat package that gives me motivation for this one.\ntidylog\nworks by masking dplyr functions, not ideal te me.\nAnyway this also was a moment for me to test a new programmer tool that \nis used a lot for programming at this time.\nlogrittr\nuses a custom pipe operator and never touches\nthe dplyr namespace. Its console output is colorful and informative thanks to the cli package.\nWorking with\nlumberjack\nIf you already know the\nlumberjack\npackage, \ncompatibility is available with logrittr (timings are approximates).\nCalling\nlogrittr_logger$new()\n:\nlibrary(lumberjack)\nlibrary(dplyr)\n\nl <- logrittr_logger$new(verbose = TRUE)\nlogfile <- tempfile(fileext=\".-r.log.csv\")\n\niris %L>%\n   start_log(log = l, label = \"iris step\") %L>%\n   as_tibble() %L>%\n   filter(Sepal.Length < 5) %L>%\n   mutate(rn = row_number()) %L>%\n   group_by(Species) %L>%\n   summarise(n = n_distinct(rn)) %L>%\n   dump_log(file=logfile, stop = FALSE)\n   \n\nmtcars %>% \n  start_log(log = l, label = \"mtcars step\") %L>%\n   count() %L>%\n   dump_log(file=logfile, stop = TRUE)\n\nlogdata <- read.csv(logfile)\nWill write logrittr log content of multiple data steps in the same csv file.\nLimitations\nLike\ntidylog\n, logrittr only works with dplyr pipelines on R data.frames (in memory)\nand is not able to do so with dbplyr pipelines from databases (remote/lazy table).\nJoin cardinalities nicely done in tidylog are difficult to have from the pipe \nas join is already done, at this time we only show N row and N col evolution (before / after).\nYes it’s another pipe, not ideal. We can dream of a\nwith_logging(TRUE)\ncontext that will activate behaviour of logrittr pipe in\n|>\nor in\n%>%\n.\nTake another pipe for a spin\nlogrittr\nprioritizes the user experience with a structured and colorful display in the console.\nFor now, this package is just a proof of concept that gave me a chance to experiment a bit with the\ncli\npackage and few other things. But I think there’s a need for that in R, in a specific area where SAS outputs are so informative.\nhttps://guillaumepressiat.r-universe.dev/logrittr\nhttps://github.com/guillaumepressiat/logrittr\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nGuillaume Pressiat\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400575 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">logrittr: A Verbose Pipe Operator for Logging dplyr Pipelines</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 15, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/guillaume-pressiat/\">Guillaume Pressiat</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://guillaumepressiat.github.io/blog/2026/04/logrittr\"> Guillaume Pressiat</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p><a href=\"https://github.com/guillaumepressiat/logrittr\" rel=\"nofollow\" target=\"_blank\">\n<img data-lazy-src=\"https://i2.wp.com/github.com/GuillaumePressiat/logrittr/raw/main/man/figures/logo.png?w=15%25&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\" style=\"float:right;padding-bottom: 20px;padding-right:30%\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/github.com/GuillaumePressiat/logrittr/raw/main/man/figures/logo.png?w=15%25&amp;ssl=1\" style=\"float:right;padding-bottom: 20px;padding-right:30%\"/></noscript>\n</a></p>\n<p><br/></p>\n<blockquote>\n<p>dplyr verbs are descriptive: let’s make them more verbose!</p>\n</blockquote>\n<blockquote>\n<p>Yet another pipe for R.</p>\n</blockquote>\n<p><br/>\n<br/></p>\n<span id=\"more-400575\"></span>\n<center>\n<a href=\"https://github.com/guillaumepressiat/logrittr\" rel=\"nofollow\" target=\"_blank\">\n<img data-lazy-src=\"https://i2.wp.com/guillaumepressiat.github.io/images/pastels_example.png?w=85%25&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i2.wp.com/guillaumepressiat.github.io/images/pastels_example.png?w=85%25&amp;ssl=1\"/></noscript>\n</a>\n</center>\n<p><br/></p>\n<hr width=\"50%\"/>\n<p><br/></p>\n<h2 id=\"motivation\">Motivation</h2>\n<p>In SAS, every DATA step prints a log:</p>\n<figure class=\"highlight\"><pre>NOTE: There were 120000 observations read from WORK.SALES.\nNOTE: 7153 observations were deleted.\nNOTE: The data set WORK.RESULT has 112847 observations and 11 variables.</pre></figure>\n<p>R’s <code>dplyr</code> pipelines are silent. <code>logrittr</code> fills that gap with <code>%&gt;=%</code>, a\ndrop-in pipe that logs row counts, column counts, added/dropped columns, and\ntiming at every step, with no function masking.</p>\n<p>With <a href=\"https://github.com/tonsky/FiraCode\" rel=\"nofollow\" target=\"_blank\">Fira Code</a> ligatures, <code>%&gt;=%</code> renders\nas a single wide arrow visually similar to <code>%&gt;%</code> with an underline added, like a subtitle or, say, to read between the lines of a pipeline (what happened).</p>\n<h2 id=\"multiples-contexts\">Multiples contexts</h2>\n<p>Things happens:</p>\n<figure class=\"highlight\"><pre>NOTE: There were 120000 observations read from WORK.SALES.\nNOTE: 120000 observations were deleted.\nNOTE: The data set WORK.RESULT has 0 observations and 11 variables.</pre></figure>\n<p>“It’s here we’ve lost all rows in script execution”.</p>\n<h4 id=\"pro\">Pro</h4>\n<p>Reading this a long time after execution of a script helps you see:</p>\n<ul>\n<li>what happened at each stage of data processing without having to rerun the code, for example in a production environment where the input data is constantly changing</li>\n<li>monitor key processes</li>\n<li>Make sure you can explain what happened (an audit, for example)</li>\n</ul>\n<p>In professional contexts it’s often needed.</p>\n<h4 id=\"educational\">Educational</h4>\n<p>This will also be clearer thanks to a console log for those with little experience with \nthe tidyverse: people who are taking their first steps in programming by following a tutorial or teaching themselves.</p>\n<h2 id=\"installation\">Installation</h2>\n<figure class=\"highlight\"><pre>install.packages('logrittr', repos = 'https://guillaumepressiat.r-universe.dev')\n\n# or from github\n# devtools::install_github(\"GuillaumePressiat/logrittr\")</pre></figure>\n<p>See <a href=\"https://github.com/guillaumepressiat/logrittr\" rel=\"nofollow\" target=\"_blank\">github</a> or <a href=\"https://guillaumepressiat.r-universe.dev/logrittr\" rel=\"nofollow\" target=\"_blank\">r-universe</a>.</p>\n<h2 id=\"usage\">Usage</h2>\n<figure class=\"highlight\"><pre>library(logrittr)\nlibrary(dplyr)\n\niris %&gt;=%\n  as_tibble() %&gt;=%\n  filter(Sepal.Length &lt; 5)  %&gt;=%\n  mutate(rn = row_number()) %&gt;=%\n  semi_join(\n    iris %&gt;% as_tibble() %&gt;=%\n      filter(Species == \"setosa\"),\n    by = \"Species\"\n  )  %&gt;=%\n  group_by(Species) %&gt;=%\n  summarise(n = n_distinct(rn))</pre></figure>\n<figure class=\"highlight\"><pre>── iris  [rows:       150  cols:    5] ─────────────────────────────────────────────────────\nℹ as_tibble()                            rows:       150 +0        cols:    5 +0    [   0.0 ms]\nℹ filter(Sepal.Length &lt; 5)               rows:        22 -128      cols:    5 +0    [   3.0 ms]\nℹ mutate(rn = row_number())              rows:        22 +0        cols:    6 +1    [   1.0 ms]\n  added: rn\nℹ &gt; filter(Species == \"setosa\")          rows:        50 -100      cols:    5 +0    [   1.0 ms]\nℹ semi_join(iris %&gt;% as_tibble() %&gt;=%    rows:        20 -2        cols:    6 +0    [   5.0 ms]\n  filter(Species == \"setosa\"), by =\n  \"Species\")\nℹ group_by(Species)                      rows:        20 +0        cols:    6 +0    [   3.0 ms]\nℹ summarise(n = n_distinct(rn))          rows:         1 -19       cols:    2 -4    [   2.0 ms]\n  dropped: Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, rn\n  added: n</pre></figure>\n<h3 id=\"screenshot\">Screenshot</h3>\n<center>\n<a href=\"https://guillaumepressiat.r-universe.dev/logrittr\" rel=\"nofollow\" target=\"_blank\">\n<img data-lazy-src=\"https://i1.wp.com/guillaumepressiat.github.io/images/nycflights13_example.png?w=85%25&amp;ssl=1\" data-recalc-dims=\"1\" src=\"https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif\"/><noscript><img data-recalc-dims=\"1\" src=\"https://i1.wp.com/guillaumepressiat.github.io/images/nycflights13_example.png?w=85%25&amp;ssl=1\"/></noscript>\n</a>\n</center>\n<p><br/></p>\n<figure class=\"highlight\"><pre>library(dplyr)\nlibrary(logrittr)\n\nlogrittr_options(lang = \"en\", big_mark = \",\", wrap_width = NULL, max_cols = 3)\n\nnycflights13::flights %&gt;=% \n  as_tibble() %&gt;=%\n  group_by(year, month, day) %&gt;=% \n  count() %&gt;=% \n  tidyr::pivot_wider(values_from = \"n\", names_from = \"day\") %&gt;=% \n  glimpse()</pre></figure>\n<h2 id=\"related-package-tidylog\">Related package: <code>tidylog</code></h2>\n<p><a href=\"https://github.com/elbersb/tidylog\" rel=\"nofollow\" target=\"_blank\">tidylog</a> is a really neat package that gives me motivation for this one.\n<code>tidylog</code> works by masking dplyr functions, not ideal te me.</p>\n<p>Anyway this also was a moment for me to test a new programmer tool that \nis used a lot for programming at this time.</p>\n<p><code>logrittr</code> uses a custom pipe operator and never touches\nthe dplyr namespace. Its console output is colorful and informative thanks to the cli package.</p>\n<h2 id=\"working-with-lumberjack\">Working with <code>lumberjack</code></h2>\n<p>If you already know the <a href=\"https://github.com/markvanderloo/lumberjack\" rel=\"nofollow\" target=\"_blank\">lumberjack</a> package, \ncompatibility is available with logrittr (timings are approximates).</p>\n<p>Calling <code>logrittr_logger$new()</code>:</p>\n<figure class=\"highlight\"><pre>library(lumberjack)\nlibrary(dplyr)\n\nl &lt;- logrittr_logger$new(verbose = TRUE)\nlogfile &lt;- tempfile(fileext=\".-r.log.csv\")\n\niris %L&gt;%\n   start_log(log = l, label = \"iris step\") %L&gt;%\n   as_tibble() %L&gt;%\n   filter(Sepal.Length &lt; 5) %L&gt;%\n   mutate(rn = row_number()) %L&gt;%\n   group_by(Species) %L&gt;%\n   summarise(n = n_distinct(rn)) %L&gt;%\n   dump_log(file=logfile, stop = FALSE)\n   \n\nmtcars %&gt;% \n  start_log(log = l, label = \"mtcars step\") %L&gt;%\n   count() %L&gt;%\n   dump_log(file=logfile, stop = TRUE)\n\n\nlogdata &lt;- read.csv(logfile)</pre></figure>\n<p>Will write logrittr log content of multiple data steps in the same csv file.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<ul>\n<li>\n<p>Like <code>tidylog</code>, logrittr only works with dplyr pipelines on R data.frames (in memory)\nand is not able to do so with dbplyr pipelines from databases (remote/lazy table).</p>\n</li>\n<li>\n<p>Join cardinalities nicely done in tidylog are difficult to have from the pipe \nas join is already done, at this time we only show N row and N col evolution (before / after).</p>\n</li>\n<li>\n<p>Yes it’s another pipe, not ideal. We can dream of a <code>with_logging(TRUE)</code> context that will activate behaviour of logrittr pipe in <code>|&gt;</code> or in <code>%&gt;%</code>.</p>\n</li>\n</ul>\n<h2 id=\"take-another-pipe-for-a-spin\">Take another pipe for a spin</h2>\n<p><code>logrittr</code> prioritizes the user experience with a structured and colorful display in the console.</p>\n<p>For now, this package is just a proof of concept that gave me a chance to experiment a bit with the <code>cli</code> package and few other things. But I think there’s a need for that in R, in a specific area where SAS outputs are so informative.</p>\n<ul>\n<li><a href=\"https://guillaumepressiat.r-universe.dev/logrittr\" rel=\"nofollow\" target=\"_blank\">https://guillaumepressiat.r-universe.dev/logrittr</a></li>\n<li><a href=\"https://github.com/guillaumepressiat/logrittr\" rel=\"nofollow\" target=\"_blank\">https://github.com/guillaumepressiat/logrittr</a></li>\n</ul>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://guillaumepressiat.github.io/blog/2026/04/logrittr\"> Guillaume Pressiat</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 930,
+    "reading_time_min": 4.7,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/guillaume-pressiat/",
+        "text": "Guillaume Pressiat"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://guillaumepressiat.github.io/blog/2026/04/logrittr",
+        "text": "Guillaume Pressiat"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/guillaumepressiat/logrittr",
+        "text": null
+      },
+      {
+        "href": "https://github.com/guillaumepressiat/logrittr",
+        "text": null
+      },
+      {
+        "href": "https://github.com/tonsky/FiraCode",
+        "text": "Fira Code"
+      },
+      {
+        "href": "https://github.com/guillaumepressiat/logrittr",
+        "text": "github"
+      },
+      {
+        "href": "https://guillaumepressiat.r-universe.dev/logrittr",
+        "text": "r-universe"
+      },
+      {
+        "href": "https://guillaumepressiat.r-universe.dev/logrittr",
+        "text": null
+      },
+      {
+        "href": "https://github.com/elbersb/tidylog",
+        "text": "tidylog"
+      },
+      {
+        "href": "https://github.com/markvanderloo/lumberjack",
+        "text": "lumberjack"
+      },
+      {
+        "href": "https://guillaumepressiat.r-universe.dev/logrittr",
+        "text": "https://guillaumepressiat.r-universe.dev/logrittr"
+      },
+      {
+        "href": "https://github.com/guillaumepressiat/logrittr",
+        "text": "https://github.com/guillaumepressiat/logrittr"
+      },
+      {
+        "href": "https://guillaumepressiat.github.io/blog/2026/04/logrittr",
+        "text": "Guillaume Pressiat"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i2.wp.com/github.com/GuillaumePressiat/logrittr/raw/main/man/figures/logo.png?w=15%25&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAABYlBMVEVHcExilO1XfMFfi91jk+xDVXprlPJQbqdllexdiNaAgP9llO1OaqBkle5Yf8RhkucA//9llu9HXIdfjN1jlO9jk+tchdJVgNROaJ1jlfFUdrVLYpJikuljluxJX4xtktthj+JZgspgj+Bgn+9jl+9Zf8ZinetGWYFTdbNll/BeitpPbaRklO5kle4sKCgrKCgtKy4uKy4tKiw4QFQzMDQ+TGhCQEstKisuLC8+S2g8SGIwLzUwLS8tKSpIR1VCU3UyMzxLSVkxMjo3PlAyMDNLSlorKClBUnNCU3ZUU2dSUWQwMTgvLjI0OEVeXndAT29YV202PEwvLC89SWMxMjlDVHhATm1APkg3PU5APklxcZRBP0pjY38/TmxCVHdCUnQzN0I9SWRBUnQuKy06RFozNUBGRFJvb5A6OEA5QVZPTl8zN0Q8OUFZWG49O0N2dpsvLjQxLjIuKyxubo82Mzg3NTrK6D5dAAAALnRSTlMAOc2WUP4T4YmnAivuWccVAT/7ph9xrgbwJNr2dVD5B4a/jRAx0Q393VOS60p4xyGhvAAAAL1JREFUGNNjYAADNhYuBgQQF+WxZBKEc2WlnPX0bO3FJME8FUVTPTDwkVNSZmDQUk9OAPGcjIz0UrV1GNj19JLiwvzdPULjjfUMOUD8zMTYYN9A45QCKF9PL8QbYgSIb1KkDwMlBkB+YU56jJtrgElucakZiK+vnxXl4ugXmZFvpg/hR3vZ2HkGhaflgfiq2foIYKrLoKYgbQ0xXC9CQxPkYBFOVnMgz0FCRh7qIUY+KwshZn6EhwV4hbkhLABtkSizMN476gAAAABJRU5ErkJggg=="
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i2.wp.com/guillaumepressiat.github.io/images/pastels_example.png?w=85%25&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,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"
+      },
+      {
+        "src": "https://www.r-bloggers.com/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif",
+        "alt": null,
+        "base64": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      },
+      {
+        "src": "https://i1.wp.com/guillaumepressiat.github.io/images/nycflights13_example.png?w=85%25&ssl=1",
+        "alt": null,
+        "base64": "data:image/jpeg;base64,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"
+      }
+    ],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-04-15T13:03:35Z"
+  }
+}
