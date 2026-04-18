@@ -1,0 +1,103 @@
+{
+  "id": "f01b9d9f9a29dfc04c3ef1952b7703c2cc2ce6c9",
+  "url": "https://www.r-bloggers.com/2026/04/r-how-to-modify-the-theme-used-by-blogdown/",
+  "created_at_utc": "2026-04-18T21:25:33Z",
+  "crawled_at_utc": "2026-04-18T21:25:33Z",
+  "html_title": "[R] How to modify the theme used by blogdown? | R-bloggers",
+  "meta_description": "Zhenguo Zhang's Blog /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ -My website is built using blogdown and published on Netlify via CI/CD. Recently, I updated my Hugo version from 0.92 to 0.154.2. Unfortunately, this update broke the deployme...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/04/r-how-to-modify-the-theme-used-by-blogdown/",
+    "canonical_url": "https://www.r-bloggers.com/2026/04/r-how-to-modify-the-theme-used-by-blogdown/",
+    "html_title": "[R] How to modify the theme used by blogdown? | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "Zhenguo Zhang's Blog /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ -My website is built using blogdown and published on Netlify via CI/CD. Recently, I updated my Hugo version from 0.92 to 0.154.2. Unfortunately, this update broke the deployme...",
+    "meta_keywords": null,
+    "og_title": "[R] How to modify the theme used by blogdown? | R-bloggers",
+    "og_description": "Zhenguo Zhang's Blog /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ -My website is built using blogdown and published on Netlify via CI/CD. Recently, I updated my Hugo version from 0.92 to 0.154.2. Unfortunately, this update broke the deployme...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "[R] How to modify the theme used by blogdown? | R-bloggers",
+    "twitter_description": "Zhenguo Zhang's Blog /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ -My website is built using blogdown and published on Netlify via CI/CD. Recently, I updated my Hugo version from 0.92 to 0.154.2. Unfortunately, this update broke the deployme...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "[R] How to modify the theme used by blogdown?\nPosted on\nApril 17, 2026\nby\nR on Zhenguo Zhang's Blog\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nR on Zhenguo Zhang's Blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nZhenguo Zhang’s Blog /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ –\nMy website is built using\nblogdown\nand published on Netlify via CI/CD. Recently, I updated my Hugo version from 0.92 to 0.154.2. Unfortunately, this update broke the deployment pipeline due to an incompatibility in one of the files within the\ndiary\ntheme.\nWhen your Hugo theme is no longer compatible with a newer Hugo version or if you simply want to customize its behavior, there are two primary ways to handle it.\nSolution 1: Overriding Theme Files Locally\nThe simplest way to modify a theme without changing the theme’s source code is to take advantage of Hugo’s lookup order. Hugo prioritizes files in your root project folder over those in the\nthemes/\ndirectory.\nStep-by-step instructions:\nIdentify the file in the theme that needs modification (e.g.,\nthemes/diary/layouts/_default/single.html\n).\nCreate a corresponding directory structure under your root\nlayouts/\nfolder if it doesn’t exist.\nCopy the file from the theme folder to your root folder:\n1\n2\nmkdir -p layouts/_default\ncp themes/diary/layouts/_default/single.html layouts/_default/single.html\nModify\nlayouts/_default/single.html\nas needed. Hugo will now use your local version instead of the one in the theme.\nSolution 2: Forking the Theme Repository\nIf you have many changes or want to manage the theme’s source code directly, forking the theme is a better long-term solution. Since\nblogdown\n(and Hugo) typically manages themes as Git submodules, you’ll need to update the submodule to point to your fork.\nStep-by-step instructions:\nFork the repository\n: Go to the original theme repo\nhugo-theme-diary\nand fork it to your own GitHub account.\nClone your blog repo\n(if not already local):\nhttps://github.com/fortune9/blogdown-everyday.git\n.\nUpdate the submodule URL\n:\nUpdate your submodule to point to your forked URL:\n1\ngit submodule set-url themes/diary https://github.com/YOUR_USERNAME/hugo-theme-diary.git\nSync and Update\n:\n1\n2\ngit submodule sync\ngit submodule update --init --recursive\nApply your changes\n: Go into the\nthemes/diary\ndirectory, make your fixes, commit, and push them to your fork.\nCommit the submodule change in your blog repo\n:\nBack in the root of your blog repo, commit the change to the submodule pointer:\n1\n2\n3\ngit add themes/diary\ngit commit -m \"Switch diary theme to personal fork and apply Hugo compatibility fixes\"\ngit push\nBy following either of these methods, you can ensure your blog remains compatible with the latest Hugo versions while maintaining your custom styles and fixes.\n– /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ –\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nR on Zhenguo Zhang's Blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400660 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">[R] How to modify the theme used by blogdown?</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 17, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/r-on-zhenguo-zhangs-blog/\">R on Zhenguo Zhang's Blog</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://fortune9.netlify.app/2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/\"> R on Zhenguo Zhang's Blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->Zhenguo Zhang’s Blog /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ –<p>My website is built using <code>blogdown</code> and published on Netlify via CI/CD. Recently, I updated my Hugo version from 0.92 to 0.154.2. Unfortunately, this update broke the deployment pipeline due to an incompatibility in one of the files within the <code>diary</code> theme.</p>\n<p>When your Hugo theme is no longer compatible with a newer Hugo version or if you simply want to customize its behavior, there are two primary ways to handle it.</p>\n<h2 id=\"solution-1-overriding-theme-files-locally\">Solution 1: Overriding Theme Files Locally</h2>\n<p>The simplest way to modify a theme without changing the theme’s source code is to take advantage of Hugo’s lookup order. Hugo prioritizes files in your root project folder over those in the <code>themes/</code> directory.</p>\n<h3 id=\"step-by-step-instructions\">Step-by-step instructions:</h3>\n<ol>\n<li>Identify the file in the theme that needs modification (e.g., <code>themes/diary/layouts/_default/single.html</code>).</li>\n<li>Create a corresponding directory structure under your root <code>layouts/</code> folder if it doesn’t exist.</li>\n<li>Copy the file from the theme folder to your root folder:\n<div class=\"highlight\"><div style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\">\n<table style=\"border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;\"><tr><td style=\"vertical-align:top;padding:0;margin:0;border:0;\">\n<pre>1\n2\n</pre></td>\n<td style=\"vertical-align:top;padding:0;margin:0;border:0;;width:100%\">\n<pre>mkdir -p layouts/_default\ncp themes/diary/layouts/_default/single.html layouts/_default/single.html\n</pre></td></tr></table>\n</div>\n</div></li>\n<li>Modify <code>layouts/_default/single.html</code> as needed. Hugo will now use your local version instead of the one in the theme.</li>\n</ol>\n<h2 id=\"solution-2-forking-the-theme-repository\">Solution 2: Forking the Theme Repository</h2>\n<p>If you have many changes or want to manage the theme’s source code directly, forking the theme is a better long-term solution. Since <code>blogdown</code> (and Hugo) typically manages themes as Git submodules, you’ll need to update the submodule to point to your fork.</p>\n<h3 id=\"step-by-step-instructions-1\">Step-by-step instructions:</h3>\n<ol>\n<li><strong>Fork the repository</strong>: Go to the original theme repo <a href=\"https://github.com/AmazingRise/hugo-theme-diary.git\" rel=\"nofollow\" target=\"_blank\">hugo-theme-diary</a> and fork it to your own GitHub account.</li>\n<li><strong>Clone your blog repo</strong> (if not already local): <code>https://github.com/fortune9/blogdown-everyday.git</code>.</li>\n<li><strong>Update the submodule URL</strong>:\nUpdate your submodule to point to your forked URL:\n<div class=\"highlight\"><div style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\">\n<table style=\"border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;\"><tr><td style=\"vertical-align:top;padding:0;margin:0;border:0;\">\n<pre>1\n</pre></td>\n<td style=\"vertical-align:top;padding:0;margin:0;border:0;;width:100%\">\n<pre>git submodule set-url themes/diary https://github.com/YOUR_USERNAME/hugo-theme-diary.git\n</pre></td></tr></table>\n</div>\n</div></li>\n<li><strong>Sync and Update</strong>:\n<div class=\"highlight\"><div style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\">\n<table style=\"border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;\"><tr><td style=\"vertical-align:top;padding:0;margin:0;border:0;\">\n<pre>1\n2\n</pre></td>\n<td style=\"vertical-align:top;padding:0;margin:0;border:0;;width:100%\">\n<pre>git submodule sync\ngit submodule update --init --recursive\n</pre></td></tr></table>\n</div>\n</div></li>\n<li><strong>Apply your changes</strong>: Go into the <code>themes/diary</code> directory, make your fixes, commit, and push them to your fork.</li>\n<li><strong>Commit the submodule change in your blog repo</strong>:\nBack in the root of your blog repo, commit the change to the submodule pointer:\n<div class=\"highlight\"><div style=\"color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4\">\n<table style=\"border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;\"><tr><td style=\"vertical-align:top;padding:0;margin:0;border:0;\">\n<pre>1\n2\n3\n</pre></td>\n<td style=\"vertical-align:top;padding:0;margin:0;border:0;;width:100%\">\n<pre>git add themes/diary\ngit commit -m \"Switch diary theme to personal fork and apply Hugo compatibility fixes\"\ngit push\n</pre></td></tr></table>\n</div>\n</div></li>\n</ol>\n<p>By following either of these methods, you can ensure your blog remains compatible with the latest Hugo versions while maintaining your custom styles and fixes.</p>\n– /2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/ – \n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://fortune9.netlify.app/2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/\"> R on Zhenguo Zhang's Blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 609,
+    "reading_time_min": 3.0,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/r-on-zhenguo-zhangs-blog/",
+        "text": "R on Zhenguo Zhang's Blog"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://fortune9.netlify.app/2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/",
+        "text": "R on Zhenguo Zhang's Blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://github.com/AmazingRise/hugo-theme-diary.git",
+        "text": "hugo-theme-diary"
+      },
+      {
+        "href": "https://fortune9.netlify.app/2026/04/18/r-how-to-modify-the-theme-used-by-blogdown/",
+        "text": "R on Zhenguo Zhang's Blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-04-18T21:25:33Z"
+  }
+}
