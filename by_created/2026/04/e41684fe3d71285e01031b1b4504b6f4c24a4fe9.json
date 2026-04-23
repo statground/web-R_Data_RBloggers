@@ -1,0 +1,135 @@
+{
+  "id": "e41684fe3d71285e01031b1b4504b6f4c24a4fe9",
+  "url": "https://www.r-bloggers.com/2026/04/git-worktrees-are-now-cool/",
+  "created_at_utc": "2026-04-23T15:45:03Z",
+  "crawled_at_utc": "2026-04-23T15:45:03Z",
+  "html_title": "Git worktrees are now cool | R-bloggers",
+  "meta_description": "I’m not mad when current AI tools or tips1 make Git look cool and important. Something old and stable to cling to! 🤗 In particular, it’s now trendy to have agents work on different tickets in the same project in parallel by using Git worktr...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/04/git-worktrees-are-now-cool/",
+    "canonical_url": "https://www.r-bloggers.com/2026/04/git-worktrees-are-now-cool/",
+    "html_title": "Git worktrees are now cool | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "I’m not mad when current AI tools or tips1 make Git look cool and important. Something old and stable to cling to! 🤗 In particular, it’s now trendy to have agents work on different tickets in the same project in parallel by using Git worktr...",
+    "meta_keywords": null,
+    "og_title": "Git worktrees are now cool | R-bloggers",
+    "og_description": "I’m not mad when current AI tools or tips1 make Git look cool and important. Something old and stable to cling to! 🤗 In particular, it’s now trendy to have agents work on different tickets in the same project in parallel by using Git worktr...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Git worktrees are now cool | R-bloggers",
+    "twitter_description": "I’m not mad when current AI tools or tips1 make Git look cool and important. Something old and stable to cling to! 🤗 In particular, it’s now trendy to have agents work on different tickets in the same project in parallel by using Git worktr...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Git worktrees are now cool\nPosted on\nApril 22, 2026\nby\nMaëlle's R blog on Maëlle Salmon's personal website\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nMaëlle's R blog on Maëlle Salmon's personal website\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI’m not mad when current AI tools or tips\n1\nmake Git look cool and important.\nSomething old and stable to cling to! 🤗\nIn particular, it’s now trendy to have agents work on different tickets in the same project in parallel by using\nGit worktrees\n.\nGit worktrees are even useful for us humans, even if we should probably not work on a dozen things at the same time.\nI had learnt about Git worktrees a while ago, but only viewed them as a way to open a read-only view of a past version of a repository:\nI have written about\nloading different R package versions at once with git worktree\n.\nThe exercise about worktrees I added to the saperlipopette R package is very much about\nreading too\n.\nLet me sum up what I learnt about Git worktrees in the last weeks…\nGit worktrees are for any work, not only reading\nLet me first admit I have trouble getting used to the idea of a “working tree”.\nWhat Git calls a “working tree” I call “my files” (my\nprecious\nfiles).\nBut knowing what a “working tree” is makes it easier to get used to a “worktree”, which is a working tree with some metadata.\nYou can init/clone your Git repository once and then from there sprout as many working trees as you need.\nOnly the main one has a fully-fledged\n.git\nfolder, the others have a\n.git\nfile\nwith a line like “gitdir: /path-to-the-main-worktree/.git/worktrees/current-worktree” in it.\n2\nBut from any worktrees you can run any Git commands.\nYou can for instance:\nhave a worktree where you fix a bug and another worktree where you write docs.\ncreate commits and push from either one.\nFrom reading\nJulia Evans’ bonus comic about Git worktrees\n, I learnt that an advantage of using worktrees rather than cloning the same repo several times is that it’s faster, because of the worktrees’ sharing a\n.git\nfolder.\nCreating a worktree for a brand-new branch is easy\nIf you want to create a new worktree for a new branch\nfeat-bla\n, do not run\ngit branch -c feat-bla\ngit worktree add ../feat-bla feat-bla\nYou can simply run:\ngit worktree add ../feat-bla\nI learnt that from reading the\nmanual page for git worktrees\n, who’d have thought reading docs was useful? 🫠\nConclusion\nGit worktrees are cool, and they’re not even fancy,\neven if your AI service or orchestrator might manage them for you.\nThey’re sort of a… low-hanging fruit I guess. 🙊\nFor instance, the post\n“Becoming an AI-proof software engineer”\nby Iris Meredith states “Being an effective user of git makes software development much less painful and importantly allows you to collaborate with other developers”. It also recommends writing. 😸\n↩︎\nI am very proud of having gone inside\n.git\nto prep this post. 🫡\n↩︎\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nMaëlle's R blog on Maëlle Salmon's personal website\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-400738 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Git worktrees are now cool</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 22, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/\">Maëlle's R blog on Maëlle Salmon's personal website</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://masalmon.eu/2026/04/23/git-worktree-again/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47--><p>I’m not mad when current AI tools or tips<sup id=\"fnref:1\"><a class=\"footnote-ref\" href=\"https://masalmon.eu/2026/04/23/git-worktree-again/#fn:1\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">1</a></sup> make Git look cool and important.\nSomething old and stable to cling to! 🤗\nIn particular, it’s now trendy to have agents work on different tickets in the same project in parallel by using <em>Git worktrees</em>.\nGit worktrees are even useful for us humans, even if we should probably not work on a dozen things at the same time.</p>\n<p>I had learnt about Git worktrees a while ago, but only viewed them as a way to open a read-only view of a past version of a repository:\nI have written about <a href=\"https://masalmon.eu/2024/01/23/git-worktree/\" rel=\"nofollow\" target=\"_blank\">loading different R package versions at once with git worktree</a>.\nThe exercise about worktrees I added to the saperlipopette R package is very much about <a href=\"https://docs.ropensci.org/saperlipopette/reference/exo_worktree.html\" rel=\"nofollow\" target=\"_blank\">reading too</a>.</p>\n<p>Let me sum up what I learnt about Git worktrees in the last weeks…</p>\n<h2 id=\"git-worktrees-are-for-any-work-not-only-reading\">Git worktrees are for any work, not only reading</h2>\n<p>Let me first admit I have trouble getting used to the idea of a “working tree”.\nWhat Git calls a “working tree” I call “my files” (my <em>precious</em> files).\nBut knowing what a “working tree” is makes it easier to get used to a “worktree”, which is a working tree with some metadata.</p>\n<p>You can init/clone your Git repository once and then from there sprout as many working trees as you need.\nOnly the main one has a fully-fledged <code>.git</code> folder, the others have a <code>.git</code> <em>file</em> with a line like “gitdir: /path-to-the-main-worktree/.git/worktrees/current-worktree” in it.<sup id=\"fnref:2\"><a class=\"footnote-ref\" href=\"https://masalmon.eu/2026/04/23/git-worktree-again/#fn:2\" rel=\"nofollow\" role=\"doc-noteref\" target=\"_blank\">2</a></sup>\nBut from any worktrees you can run any Git commands.\nYou can for instance:</p>\n<ul>\n<li>have a worktree where you fix a bug and another worktree where you write docs.</li>\n<li>create commits and push from either one.</li>\n</ul>\n<p>From reading <a href=\"https://wizardzines.com/comics/git-worktree/\" rel=\"nofollow\" target=\"_blank\">Julia Evans’ bonus comic about Git worktrees</a>, I learnt that an advantage of using worktrees rather than cloning the same repo several times is that it’s faster, because of the worktrees’ sharing a <code>.git</code> folder.</p>\n<h2 id=\"creating-a-worktree-for-a-brand-new-branch-is-easy\">Creating a worktree for a brand-new branch is easy</h2>\n<p>If you want to create a new worktree for a new branch <code>feat-bla</code>, do not run</p>\n<pre>git branch -c feat-bla\ngit worktree add ../feat-bla feat-bla\n</pre><p>You can simply run:</p>\n<pre>git worktree add ../feat-bla\n</pre><p>I learnt that from reading the <a href=\"https://git-scm.com/docs/git-worktree\" rel=\"nofollow\" target=\"_blank\">manual page for git worktrees</a>, who’d have thought reading docs was useful? 🫠</p>\n<h2 id=\"conclusion\">Conclusion</h2>\n<p>Git worktrees are cool, and they’re not even fancy,\neven if your AI service or orchestrator might manage them for you.\nThey’re sort of a… low-hanging fruit I guess. 🙊</p>\n<section class=\"footnotes\" role=\"doc-endnotes\">\n<hr/>\n<ol>\n<li id=\"fn:1\" role=\"doc-endnote\">\n<p>For instance, the post <a href=\"https://deadsimpletech.com/blog/ai_proof_engineer\" rel=\"nofollow\" target=\"_blank\">“Becoming an AI-proof software engineer”</a> by Iris Meredith states “Being an effective user of git makes software development much less painful and importantly allows you to collaborate with other developers”. It also recommends writing. 😸 <a class=\"footnote-backref\" href=\"https://masalmon.eu/2026/04/23/git-worktree-again/#fnref:1\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n<li id=\"fn:2\" role=\"doc-endnote\">\n<p>I am very proud of having gone inside <code>.git</code> to prep this post. 🫡 <a class=\"footnote-backref\" href=\"https://masalmon.eu/2026/04/23/git-worktree-again/#fnref:2\" rel=\"nofollow\" role=\"doc-backlink\" target=\"_blank\">↩︎</a></p>\n</li>\n</ol>\n</section>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://masalmon.eu/2026/04/23/git-worktree-again/\"> Maëlle's R blog on Maëlle Salmon's personal website</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 648,
+    "reading_time_min": 3.2,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/maelles-r-blog-on-maelle-salmons-personal-website/",
+        "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://masalmon.eu/2026/04/23/git-worktree-again/",
+        "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://masalmon.eu/2026/04/23/git-worktree-again/#fn:1",
+        "text": "1"
+      },
+      {
+        "href": "https://masalmon.eu/2024/01/23/git-worktree/",
+        "text": "loading different R package versions at once with git worktree"
+      },
+      {
+        "href": "https://docs.ropensci.org/saperlipopette/reference/exo_worktree.html",
+        "text": "reading too"
+      },
+      {
+        "href": "https://masalmon.eu/2026/04/23/git-worktree-again/#fn:2",
+        "text": "2"
+      },
+      {
+        "href": "https://wizardzines.com/comics/git-worktree/",
+        "text": "Julia Evans’ bonus comic about Git worktrees"
+      },
+      {
+        "href": "https://git-scm.com/docs/git-worktree",
+        "text": "manual page for git worktrees"
+      },
+      {
+        "href": "https://deadsimpletech.com/blog/ai_proof_engineer",
+        "text": "“Becoming an AI-proof software engineer”"
+      },
+      {
+        "href": "https://masalmon.eu/2026/04/23/git-worktree-again/#fnref:1",
+        "text": "↩︎"
+      },
+      {
+        "href": "https://masalmon.eu/2026/04/23/git-worktree-again/#fnref:2",
+        "text": "↩︎"
+      },
+      {
+        "href": "https://masalmon.eu/2026/04/23/git-worktree-again/",
+        "text": "Maëlle's R blog on Maëlle Salmon's personal website"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-04-23T15:45:03Z"
+  }
+}
