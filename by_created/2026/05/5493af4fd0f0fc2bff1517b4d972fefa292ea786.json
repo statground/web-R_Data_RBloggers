@@ -1,0 +1,131 @@
+{
+  "id": "5493af4fd0f0fc2bff1517b4d972fefa292ea786",
+  "url": "https://www.r-bloggers.com/2026/04/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework/",
+  "created_at_utc": "2026-05-04T15:04:43Z",
+  "crawled_at_utc": "2026-05-04T15:04:43Z",
+  "html_title": "Closing the Gap in Exposure-Response Data: A Pharmaverse Framework | R-bloggers",
+  "meta_description": "The Missing Standard CDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — wh...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/04/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework/",
+    "canonical_url": "https://www.r-bloggers.com/2026/04/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework/",
+    "html_title": "Closing the Gap in Exposure-Response Data: A Pharmaverse Framework | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "The Missing Standard CDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — wh...",
+    "meta_keywords": null,
+    "og_title": "Closing the Gap in Exposure-Response Data: A Pharmaverse Framework | R-bloggers",
+    "og_description": "The Missing Standard CDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — wh...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Closing the Gap in Exposure-Response Data: A Pharmaverse Framework | R-bloggers",
+    "twitter_description": "The Missing Standard CDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — wh...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Closing the Gap in Exposure-Response Data: A Pharmaverse Framework\nPosted on\nApril 29, 2026\nby\nJeff Dickinson\nin\nR bloggers\n| 0 Comments\n[This article was first published on\npharmaverse blog\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nThe Missing Standard\nCDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — which builds directly on PopPK outputs to characterize relationships between drug exposure, safety, and efficacy — has no equivalent standard.\nThe result is predictable: different studies, different variable names, different exposure metrics, different dataset structures. Every ER analysis team starts more or less from scratch. That makes cross-study pooling, automation, and programming more difficult than necessary, particularly with ever-quickening turnaround times in drug development.\nA Framework Built on What We Already Have\nER datasets share a lot of structural DNA with PopPK datasets — numeric covariates, relative time variables, pharmacokinetic exposure metrics. That overlap is the starting point for this framework: extending CDISC ADaM principles already established for PopPK into the ER space.\nEarly discussions are underway with the CDISC ADaM working group about moving this framework forward as a Knowledge Article or Examples Document. The working group has expressed interest in positioning ER datasets as a subclass of ADPPK — grounding the framework within existing CDISC standards architecture and providing a clear lineage from the 2023 PopPK Implementation Guide. Nothing is formalized yet, but the direction is encouraging.\nThe result of the new framework is four specialized datasets, each targeting a different aspect of ER analysis:\nDataset\nPurpose\nADER\nExposure foundation — comprehensive PK metrics, transformations, and baseline covariates\nADEE\nExposure-Efficacy — time-to-event efficacy outcomes linked to drug exposure\nADES\nExposure-Safety — adverse event occurrence, severity, and time-to-onset by exposure\nADTRR\nExposure-Tumor Response Rate — categorical tumor response (CR, PR, SD, PD) by exposure\nEach dataset builds on standard ADaM datasets (\nADSL\n,\nADRS\n,\nADTTE\n,\nADAE\n,\nADLB\n,\nADVS\n) and incorporates PK parameters from\nADPC\n/\nADPP\n, producing analysis-ready datasets without additional data wrangling.\nThe framework was presented as paper DS12 at PHUSE US Connect 2026 in Austin, TX. The\npaper\nand\nslides\nare now available in the PHUSE archive.\nWhy the Pharmaverse Ecosystem?\nThe framework is implemented using\n{admiral}\n,\n{metacore}\n,\n{metatools}\n, and\n{xportr}\n— the same toolchain used across the pharmaverse for ADaM dataset development. That choice was intentional.\n{admiral}\n’s modular derivation functions map naturally onto how ER datasets are built incrementally. Its\nassert_*\nfunctions catch errors at the point of derivation rather than burying them downstream.\n{metacore}\nkeeps specs and code in sync.\n{metatools}\nprovides utility functions for metadata management and validation.\n{xportr}\nhandles CDISC compliance at the point of export.\nThe pharmaverse ecosystem did not just make implementation easier — it made the framework more trustworthy and maintainable. And because it is open-source, every improvement feeds back to the community.\nThe Examples Page\nThe working R code is now live on the\npharmaverse examples site\n.\nThe\nADER+\npage covers all four datasets in a single tabbed page, with:\nA shared introduction explaining the ER framework and its relationship to the PopPK Implementation Guide\nCommon derivations used across all four datasets\nDataset-specific derivation code for\nADER\n,\nADEE\n,\nADES\n, and\nADTRR\nFull variable listings and metadata\nThe code uses\n{pharmaverseadam}\nas source data, making it immediately reproducible. Think of it as a template — a starting point you can adapt for your own studies.\nWe Need Your Feedback\nThis framework is a proposal, not a finished standard. Any formal ER ADaM standard would ultimately be owned and ratified by CDISC — the community can propose, pilot, and advocate, but the path to an official standard requires active collaboration with CDISC. The groundwork for that is community validation: pilot testing across therapeutic areas, working group discussion, and real-world use.\nThat means we need two kinds of input:\nClinical programmers\n— try the code. Does the derivation logic hold up? What edge cases are we missing? Open an issue or PR on the\npharmaverse examples repository\n.\nER modelers and pharmacometricians\n— this one is especially for you. Does this dataset structure actually serve your modeling needs? Are the exposure metrics the right ones? Is the dataset grain appropriate for the analyses you run? You are the end users of these datasets, and your perspective is exactly what’s needed to make this framework scientifically sound, not just technically compliant.\nThe discussion is open. Let’s keep it going.\nLast updated\n2026-05-04 12:40:51.777961\nDetails\nSource\n,\nSession info\nReuse\nCC BY 4.0\nCitation\nBibTeX citation:\n@online{dickinson2026,\n  author = {Dickinson, Jeff},\n  title = {Closing the {Gap} in {Exposure-Response} {Data:} {A}\n    {Pharmaverse} {Framework}},\n  date = {2026-04-30},\n  url = {https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nDickinson, Jeff. 2026.\n“Closing the Gap in Exposure-Response Data:\nA Pharmaverse Framework.”\nApril 30, 2026.\nhttps://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html\n.\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\npharmaverse blog\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-401018 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Closing the Gap in Exposure-Response Data: A Pharmaverse Framework</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">April 29, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jeff-dickinson/\">Jeff Dickinson</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html\"> pharmaverse blog</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<!--------------- typical setup ----------------->\n<!--------------- post begins here ----------------->\n<section class=\"level2\" id=\"the-missing-standard\">\n<h2 class=\"anchored\" data-anchor-id=\"the-missing-standard\">The Missing Standard</h2>\n<p>CDISC released the Population Pharmacokinetic (PopPK) Implementation Guide in 2023, giving the clinical programming community a clear structural blueprint for PK analysis datasets. But Exposure-Response (ER) modeling — which builds directly on PopPK outputs to characterize relationships between drug exposure, safety, and efficacy — has no equivalent standard.</p>\n<p>The result is predictable: different studies, different variable names, different exposure metrics, different dataset structures. Every ER analysis team starts more or less from scratch. That makes cross-study pooling, automation, and programming more difficult than necessary, particularly with ever-quickening turnaround times in drug development.</p>\n</section>\n<section class=\"level2\" id=\"a-framework-built-on-what-we-already-have\">\n<h2 class=\"anchored\" data-anchor-id=\"a-framework-built-on-what-we-already-have\">A Framework Built on What We Already Have</h2>\n<p>ER datasets share a lot of structural DNA with PopPK datasets — numeric covariates, relative time variables, pharmacokinetic exposure metrics. That overlap is the starting point for this framework: extending CDISC ADaM principles already established for PopPK into the ER space.</p>\n<p>Early discussions are underway with the CDISC ADaM working group about moving this framework forward as a Knowledge Article or Examples Document. The working group has expressed interest in positioning ER datasets as a subclass of ADPPK — grounding the framework within existing CDISC standards architecture and providing a clear lineage from the 2023 PopPK Implementation Guide. Nothing is formalized yet, but the direction is encouraging.</p>\n<p>The result of the new framework is four specialized datasets, each targeting a different aspect of ER analysis:</p>\n<table class=\"caption-top table\">\n<colgroup>\n<col style=\"width: 50%\"/>\n<col style=\"width: 50%\"/>\n</colgroup>\n<thead>\n<tr class=\"header\">\n<th>Dataset</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"odd\">\n<td><strong><code>ADER</code></strong></td>\n<td>Exposure foundation — comprehensive PK metrics, transformations, and baseline covariates</td>\n</tr>\n<tr class=\"even\">\n<td><strong><code>ADEE</code></strong></td>\n<td>Exposure-Efficacy — time-to-event efficacy outcomes linked to drug exposure</td>\n</tr>\n<tr class=\"odd\">\n<td><strong><code>ADES</code></strong></td>\n<td>Exposure-Safety — adverse event occurrence, severity, and time-to-onset by exposure</td>\n</tr>\n<tr class=\"even\">\n<td><strong><code>ADTRR</code></strong></td>\n<td>Exposure-Tumor Response Rate — categorical tumor response (CR, PR, SD, PD) by exposure</td>\n</tr>\n</tbody>\n</table>\n<p>Each dataset builds on standard ADaM datasets (<code>ADSL</code>, <code>ADRS</code>, <code>ADTTE</code>, <code>ADAE</code>, <code>ADLB</code>, <code>ADVS</code>) and incorporates PK parameters from <code>ADPC</code>/<code>ADPP</code>, producing analysis-ready datasets without additional data wrangling.</p>\n<p>The framework was presented as paper DS12 at PHUSE US Connect 2026 in Austin, TX. The <a href=\"https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_DS12.pdf\" rel=\"nofollow\" target=\"_blank\">paper</a> and <a href=\"https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PRE_DS12.pdf\" rel=\"nofollow\" target=\"_blank\">slides</a> are now available in the PHUSE archive.</p>\n</section>\n<section class=\"level2\" id=\"why-the-pharmaverse-ecosystem\">\n<h2 class=\"anchored\" data-anchor-id=\"why-the-pharmaverse-ecosystem\">Why the Pharmaverse Ecosystem?</h2>\n<p>The framework is implemented using <code>{admiral}</code>, <code>{metacore}</code>, <code>{metatools}</code>, and <code>{xportr}</code> — the same toolchain used across the pharmaverse for ADaM dataset development. That choice was intentional.</p>\n<p><code>{admiral}</code>’s modular derivation functions map naturally onto how ER datasets are built incrementally. Its <code>assert_*</code> functions catch errors at the point of derivation rather than burying them downstream. <code>{metacore}</code> keeps specs and code in sync. <code>{metatools}</code> provides utility functions for metadata management and validation. <code>{xportr}</code> handles CDISC compliance at the point of export.</p>\n<p>The pharmaverse ecosystem did not just make implementation easier — it made the framework more trustworthy and maintainable. And because it is open-source, every improvement feeds back to the community.</p>\n</section>\n<section class=\"level2\" id=\"the-examples-page\">\n<h2 class=\"anchored\" data-anchor-id=\"the-examples-page\">The Examples Page</h2>\n<p>The working R code is now live on the <a href=\"https://pharmaverse.github.io/examples/adam/ader.html\" rel=\"nofollow\" target=\"_blank\">pharmaverse examples site</a>.</p>\n<p>The <code>ADER+</code> page covers all four datasets in a single tabbed page, with:</p>\n<ul>\n<li>A shared introduction explaining the ER framework and its relationship to the PopPK Implementation Guide</li>\n<li>Common derivations used across all four datasets</li>\n<li>Dataset-specific derivation code for <code>ADER</code>, <code>ADEE</code>, <code>ADES</code>, and <code>ADTRR</code></li>\n<li>Full variable listings and metadata</li>\n</ul>\n<p>The code uses <code>{pharmaverseadam}</code> as source data, making it immediately reproducible. Think of it as a template — a starting point you can adapt for your own studies.</p>\n</section>\n<section class=\"level2\" id=\"we-need-your-feedback\">\n<h2 class=\"anchored\" data-anchor-id=\"we-need-your-feedback\">We Need Your Feedback</h2>\n<p>This framework is a proposal, not a finished standard. Any formal ER ADaM standard would ultimately be owned and ratified by CDISC — the community can propose, pilot, and advocate, but the path to an official standard requires active collaboration with CDISC. The groundwork for that is community validation: pilot testing across therapeutic areas, working group discussion, and real-world use.</p>\n<p>That means we need two kinds of input:</p>\n<p><strong>Clinical programmers</strong> — try the code. Does the derivation logic hold up? What edge cases are we missing? Open an issue or PR on the <a href=\"https://github.com/pharmaverse/examples\" rel=\"nofollow\" target=\"_blank\">pharmaverse examples repository</a>.</p>\n<p><strong>ER modelers and pharmacometricians</strong> — this one is especially for you. Does this dataset structure actually serve your modeling needs? Are the exposure metrics the right ones? Is the dataset grain appropriate for the analyses you run? You are the end users of these datasets, and your perspective is exactly what’s needed to make this framework scientifically sound, not just technically compliant.</p>\n<p>The discussion is open. Let’s keep it going.</p>\n<!--------------- appendices go here ----------------->\n</section>\n<div class=\"cell\">\n<div class=\"cell-output-display\">\n</div>\n</div>\n<div class=\"default\" id=\"quarto-appendix\"><section class=\"level2 appendix\" id=\"last-updated\"><h2 class=\"anchored quarto-appendix-heading\">Last updated</h2><div class=\"quarto-appendix-contents\">\n<p>2026-05-04 12:40:51.777961</p>\n</div></section><section class=\"level2 appendix\" id=\"details\"><h2 class=\"anchored quarto-appendix-heading\">Details</h2><div class=\"quarto-appendix-contents\">\n<p><a href=\"https://github.com/pharmaverse/blog/tree/main/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.qmd\" rel=\"nofollow\" target=\"_blank\">Source</a>, <a href=\"https://pharmaverse.github.io/blog/session_info.html\" rel=\"nofollow\" target=\"_blank\">Session info</a></p>\n</div></section><section class=\"quarto-appendix-contents\" id=\"quarto-reuse\"><h2 class=\"anchored quarto-appendix-heading\">Reuse</h2><div class=\"quarto-appendix-contents\"><div><a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"nofollow\" target=\"_blank\">CC BY 4.0</a></div></div></section><section class=\"quarto-appendix-contents\" id=\"quarto-citation\"><h2 class=\"anchored quarto-appendix-heading\">Citation</h2><div><div class=\"quarto-appendix-secondary-label\">BibTeX citation:</div><pre>@online{dickinson2026,\n  author = {Dickinson, Jeff},\n  title = {Closing the {Gap} in {Exposure-Response} {Data:} {A}\n    {Pharmaverse} {Framework}},\n  date = {2026-04-30},\n  url = {https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html},\n  langid = {en}\n}\n</pre><div class=\"quarto-appendix-secondary-label\">For attribution, please cite this work as:</div><div class=\"csl-entry quarto-appendix-citeas\" id=\"ref-dickinson2026\">\nDickinson, Jeff. 2026. <span>“Closing the Gap in Exposure-Response Data:\nA Pharmaverse Framework.”</span> April 30, 2026. <a href=\"https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html\" rel=\"nofollow\" target=\"_blank\">https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html</a>.\n</div></div></section></div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html\"> pharmaverse blog</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 966,
+    "reading_time_min": 4.8,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jeff-dickinson/",
+        "text": "Jeff Dickinson"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html",
+        "text": "pharmaverse blog"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PAP_DS12.pdf",
+        "text": "paper"
+      },
+      {
+        "href": "https://phuse.s3.eu-central-1.amazonaws.com/Archive/2026/Connect/US/Austin/PRE_DS12.pdf",
+        "text": "slides"
+      },
+      {
+        "href": "https://pharmaverse.github.io/examples/adam/ader.html",
+        "text": "pharmaverse examples site"
+      },
+      {
+        "href": "https://github.com/pharmaverse/examples",
+        "text": "pharmaverse examples repository"
+      },
+      {
+        "href": "https://github.com/pharmaverse/blog/tree/main/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.qmd",
+        "text": "Source"
+      },
+      {
+        "href": "https://pharmaverse.github.io/blog/session_info.html",
+        "text": "Session info"
+      },
+      {
+        "href": "https://creativecommons.org/licenses/by/4.0/",
+        "text": "CC BY 4.0"
+      },
+      {
+        "href": "https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html",
+        "text": "https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html"
+      },
+      {
+        "href": "https://pharmaverse.github.io/blog/posts/2026-04-17-closing-the-gap-in/closing-the-gap-in-exposure-response-data-a-pharmaverse-framework.html",
+        "text": "pharmaverse blog"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-05-04T15:04:43Z"
+  }
+}
