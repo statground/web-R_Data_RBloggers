@@ -1,0 +1,111 @@
+{
+  "id": "40f0139e259aefde6b94dd159b8de09a7fad2c4f",
+  "url": "https://www.r-bloggers.com/2026/05/setting-function-parameters-for-debugging/",
+  "created_at_utc": "2026-05-05T15:30:08Z",
+  "crawled_at_utc": "2026-05-05T15:30:08Z",
+  "html_title": "Setting function parameters for debugging | R-bloggers",
+  "meta_description": "I tend to write a lot of functions that create specific graphics implemented with ggplot2. Although I try to pick graphic parameters (e.g. colors, text size, etc.) that are reasonable, I will typically define all relevant aesthetics as param...",
+  "data": {
+    "url": "https://www.r-bloggers.com/2026/05/setting-function-parameters-for-debugging/",
+    "canonical_url": "https://www.r-bloggers.com/2026/05/setting-function-parameters-for-debugging/",
+    "html_title": "Setting function parameters for debugging | R-bloggers",
+    "h1_title": "R-bloggers",
+    "meta_description": "I tend to write a lot of functions that create specific graphics implemented with ggplot2. Although I try to pick graphic parameters (e.g. colors, text size, etc.) that are reasonable, I will typically define all relevant aesthetics as param...",
+    "meta_keywords": null,
+    "og_title": "Setting function parameters for debugging | R-bloggers",
+    "og_description": "I tend to write a lot of functions that create specific graphics implemented with ggplot2. Although I try to pick graphic parameters (e.g. colors, text size, etc.) that are reasonable, I will typically define all relevant aesthetics as param...",
+    "og_image": "https://www.r-bloggers.com/wp-content/uploads/2016/04/R_02_2016-05-01.png",
+    "twitter_title": "Setting function parameters for debugging | R-bloggers",
+    "twitter_description": "I tend to write a lot of functions that create specific graphics implemented with ggplot2. Although I try to pick graphic parameters (e.g. colors, text size, etc.) that are reasonable, I will typically define all relevant aesthetics as param...",
+    "raw_jsonld_article": null,
+    "article_headline": null,
+    "article_section": null,
+    "article_tags": null,
+    "article_author": null,
+    "article_published": null,
+    "article_modified": null,
+    "main_text": "Setting function parameters for debugging\nPosted on\nMay 4, 2026\nby\nJason Bryer\nin\nR bloggers\n| 0 Comments\n[This article was first published on\nJason Bryer\n, and kindly contributed to\nR-bloggers\n].  (You can report issue about the content on this page\nhere\n)\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.\nI tend to write a lot of functions that create specific graphics implemented with\nggplot2\n. Although I try to pick graphic parameters (e.g. colors, text size, etc.) that are reasonable, I will typically define all relevant aesthetics as parameters to my function. As a result, my functions tend to have a lot of parameters. When I need to debug the function I need to have all those parameters set in the global environment which usually requires me highlighting each assignment and running it. This function automates this process. You can pass any function and it will attempt to set parameters to the given environment (the global environment by default). It will return a data frame with a column indicating if the variable was set and the value. This is useful to know what parameters don’t have a default value that need to be set yourself.\n#' Set function parameters to an environment.\n#'\n#' This function is designed to help debug functions. It will attempt to set all\n#' the default parameter values to the specified environment (global environment\n#' by default). This is useful for when you want to execute code within the \n#' function definition interactively but need the parameters set in the current \n#' environment.\n#'\n#' **Warning:** This function will modify the global environment and therefore \n#' violates CRAN policy\n#' [\"Packages should not modify the global environment (user’s workspace)\"]\n#' (https://cran.r-project.org/web/packages/policies.html#Source-packages).\n#'\n#' @param FUN the function to assign parameters to an environment.\n#' @param envir the environment to assign the variables to. Defaults to the \n#'        global environment.\n#' @param verbose whether to return the data frame invisibly or to print the results.\n#' @return a data frame where row names correspond to the parameter name with \n#'        two columns: `set` which is logical indicating if the variable was set \n#'        and `value` with a character representation of the variable value.\nset_function_params <- function(FUN, envir = globalenv(), verbose = interactive()) {\n    params <- formals(FUN)\n    params_set <- data.frame(row.names = names(params),\n                             set = rep(FALSE, length(params)),\n                             value = rep(NA_character_, length(params)))\n    for(param in names(params)) {\n        value <- params[[param]]\n        if(!missing(value)) {\n            if(is.character(value)) {\n                assign(param, value, envir = envir)\n                params_set[param,]$value <- value\n            } else {\n                assign(param, eval(value), envir = envir)\n                params_set[param,]$value <- eval(value)\n            }\n            params_set[param,]$set <- TRUE\n        }\n    }\n    if(verbose) {\n        return(params_set)\n    } else {\n        invisible(params_set)\n    }\n}\nVery recently I was trying to debug a function that creates profile plots for cluster analysis (\nclav::profile_plot()\n,\ndocumentation\n). This function has 23 parameters! Setting these all manually is pretty tedious.\n# List objects in the current environment\nls()\n[1] \"set_function_params\"\n# Call the function\nparam_set_result <- set_function_params(clav::profile_plot)\n\n# Check to see if the parameters are actually set\nls()\n[1] \"bonferroni\"          \"center_alpha\"        \"center_band\"        \n [4] \"center_fill\"         \"cluster_label_hjust\" \"color_palette\"      \n [7] \"hjust\"               \"label_clusters\"      \"label_means\"        \n[10] \"label_outcome_means\" \"label_profile_means\" \"param_set_result\"   \n[13] \"point_size\"          \"se_factor\"           \"set_function_params\"\n[16] \"standardize\"         \"text_size\"           \"title\"              \n[19] \"ylab\"\nWe can examine the data frame which gives a summary of the parameters set (or not).\nparam_set_result\nset               value\ndf                  FALSE                <NA>\nclusters            FALSE                <NA>\ndf_dep              FALSE                <NA>\nstandardize          TRUE                TRUE\nbonferroni           TRUE                TRUE\nlabel_means          TRUE                TRUE\nlabel_profile_means  TRUE                TRUE\nlabel_outcome_means  TRUE                TRUE\ncenter_band          TRUE                0.25\ncenter_fill          TRUE             #f0f9e8\ncenter_alpha         TRUE                 0.1\ntext_size            TRUE                   4\nhjust                TRUE                 0.5\npoint_size           TRUE                   2\nse_factor            TRUE                1.96\ncolor_palette        TRUE                   2\ncluster_labels      FALSE                <NA>\ncluster_order       FALSE                <NA>\nlabel_clusters       TRUE                TRUE\ncluster_label_x     FALSE                <NA>\ncluster_label_hjust  TRUE                   5\nylab                 TRUE Mean Standard Score\ntitle                TRUE    Cluster Profiles\nRelated\nTo\nleave a comment\nfor the author, please follow the link and comment on their blog:\nJason Bryer\n.\nR-bloggers.com\noffers\ndaily e-mail updates\nabout\nR\nnews and tutorials about\nlearning R\nand many other topics.\nClick here if you're looking to post or find an R/data-science job\n.\nWant to share your content on R-bloggers?\nclick here\nif you have a blog, or\nhere\nif you don't.",
+    "main_html": "<article class=\"post-401048 post type-post status-publish format-standard hentry category-r-bloggers\">\n<header class=\"post-header\">\n<h1 class=\"entry-title\">Setting function parameters for debugging</h1>\n<p class=\"meta post-meta\">Posted on <span class=\"updated\">May 4, 2026</span>  by <span class=\"vcard author\"><a class=\"fn\" href=\"https://www.r-bloggers.com/author/jason-bryer/\">Jason Bryer</a></span>  in <a href=\"https://www.r-bloggers.com/category/r-bloggers/\" rel=\"category tag\">R bloggers</a> | 0 Comments</p>\n</header>\n<div class=\"entry clearfix\">\n<!-- \r\n<div style=\"min-height: 30px;\">\r\n[social4i size=\"small\" align=\"align-left\"]\r\n</div>\r\n-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 12px;\">\r\n[This article was first published on  <strong><a href=\"https://bryer.org/posts/2026-05-05-Setting_Function_Parameters_for_Debugging.html\"> Jason Bryer</a></strong>, and kindly contributed to <a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers</a>].  (You can report issue about the content on this page <a href=\"https://www.r-bloggers.com/contact-us/\">here</a>)\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div>\n\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<p>I tend to write a lot of functions that create specific graphics implemented with <a href=\"https://ggplot2.tidyverse.org/\" rel=\"nofollow\" target=\"_blank\"><code>ggplot2</code></a>. Although I try to pick graphic parameters (e.g. colors, text size, etc.) that are reasonable, I will typically define all relevant aesthetics as parameters to my function. As a result, my functions tend to have a lot of parameters. When I need to debug the function I need to have all those parameters set in the global environment which usually requires me highlighting each assignment and running it. This function automates this process. You can pass any function and it will attempt to set parameters to the given environment (the global environment by default). It will return a data frame with a column indicating if the variable was set and the value. This is useful to know what parameters don’t have a default value that need to be set yourself.</p>\n<div class=\"cell\">\n<pre>#' Set function parameters to an environment.\n#'\n#' This function is designed to help debug functions. It will attempt to set all\n#' the default parameter values to the specified environment (global environment\n#' by default). This is useful for when you want to execute code within the \n#' function definition interactively but need the parameters set in the current \n#' environment.\n#'\n#' **Warning:** This function will modify the global environment and therefore \n#' violates CRAN policy\n#' [\"Packages should not modify the global environment (user’s workspace)\"]\n#' (https://cran.r-project.org/web/packages/policies.html#Source-packages).\n#'\n#' @param FUN the function to assign parameters to an environment.\n#' @param envir the environment to assign the variables to. Defaults to the \n#'        global environment.\n#' @param verbose whether to return the data frame invisibly or to print the results.\n#' @return a data frame where row names correspond to the parameter name with \n#'        two columns: `set` which is logical indicating if the variable was set \n#'        and `value` with a character representation of the variable value.\nset_function_params &lt;- function(FUN, envir = globalenv(), verbose = interactive()) {\n    params &lt;- formals(FUN)\n    params_set &lt;- data.frame(row.names = names(params),\n                             set = rep(FALSE, length(params)),\n                             value = rep(NA_character_, length(params)))\n    for(param in names(params)) {\n        value &lt;- params[[param]]\n        if(!missing(value)) {\n            if(is.character(value)) {\n                assign(param, value, envir = envir)\n                params_set[param,]$value &lt;- value\n            } else {\n                assign(param, eval(value), envir = envir)\n                params_set[param,]$value &lt;- eval(value)\n            }\n            params_set[param,]$set &lt;- TRUE\n        }\n    }\n    if(verbose) {\n        return(params_set)\n    } else {\n        invisible(params_set)\n    }\n}</pre>\n</div>\n<p>Very recently I was trying to debug a function that creates profile plots for cluster analysis (<a href=\"https://github.com/jbryer/clav/blob/master/R/profile_plot.R\" rel=\"nofollow\" target=\"_blank\"><code>clav::profile_plot()</code></a>, <a href=\"https://clav.bryer.org/reference/profile_plot.html\" rel=\"nofollow\" target=\"_blank\">documentation</a>). This function has 23 parameters! Setting these all manually is pretty tedious.</p>\n<div class=\"cell\">\n<pre># List objects in the current environment\nls()</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>[1] \"set_function_params\"</pre>\n</div>\n<pre># Call the function\nparam_set_result &lt;- set_function_params(clav::profile_plot)\n\n# Check to see if the parameters are actually set\nls()</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre> [1] \"bonferroni\"          \"center_alpha\"        \"center_band\"        \n [4] \"center_fill\"         \"cluster_label_hjust\" \"color_palette\"      \n [7] \"hjust\"               \"label_clusters\"      \"label_means\"        \n[10] \"label_outcome_means\" \"label_profile_means\" \"param_set_result\"   \n[13] \"point_size\"          \"se_factor\"           \"set_function_params\"\n[16] \"standardize\"         \"text_size\"           \"title\"              \n[19] \"ylab\"               </pre>\n</div>\n</div>\n<p>We can examine the data frame which gives a summary of the parameters set (or not).</p>\n<div class=\"cell\">\n<pre>param_set_result</pre>\n<div class=\"cell-output cell-output-stdout\">\n<pre>                      set               value\ndf                  FALSE                &lt;NA&gt;\nclusters            FALSE                &lt;NA&gt;\ndf_dep              FALSE                &lt;NA&gt;\nstandardize          TRUE                TRUE\nbonferroni           TRUE                TRUE\nlabel_means          TRUE                TRUE\nlabel_profile_means  TRUE                TRUE\nlabel_outcome_means  TRUE                TRUE\ncenter_band          TRUE                0.25\ncenter_fill          TRUE             #f0f9e8\ncenter_alpha         TRUE                 0.1\ntext_size            TRUE                   4\nhjust                TRUE                 0.5\npoint_size           TRUE                   2\nse_factor            TRUE                1.96\ncolor_palette        TRUE                   2\ncluster_labels      FALSE                &lt;NA&gt;\ncluster_order       FALSE                &lt;NA&gt;\nlabel_clusters       TRUE                TRUE\ncluster_label_x     FALSE                &lt;NA&gt;\ncluster_label_hjust  TRUE                   5\nylab                 TRUE Mean Standard Score\ntitle                TRUE    Cluster Profiles</pre>\n</div>\n</div>\n<div class=\"jp-relatedposts\" id=\"jp-relatedposts\">\n<h3 class=\"jp-relatedposts-headline\"><em>Related</em></h3>\n</div>\n<!-- Share buttons by mashshare.net - Version: 4.0.47-->\n<div style=\"border: 1px solid; background: none repeat scroll 0 0 #EDEDED; margin: 1px; font-size: 13px;\">\n<div style=\"text-align: center;\">To <strong>leave a comment</strong> for the author, please follow the link and comment on their blog: <strong><a href=\"https://bryer.org/posts/2026-05-05-Setting_Function_Parameters_for_Debugging.html\"> Jason Bryer</a></strong>.</div>\n<hr/>\n<a href=\"https://www.r-bloggers.com/\" rel=\"nofollow\">R-bloggers.com</a> offers <strong><a href=\"https://feedburner.google.com/fb/a/mailverify?uri=RBloggers\" rel=\"nofollow\">daily e-mail updates</a></strong> about <a href=\"https://www.r-project.org/\" rel=\"nofollow\" title=\"The R Project for Statistical Computing\">R</a> news and tutorials about <a href=\"https://www.r-bloggers.com/how-to-learn-r-2/\" rel=\"nofollow\" title=\"R tutorials\">learning R</a> and many other topics. <a href=\"https://www.r-users.com/\" rel=\"nofollow\" title=\"Data science jobs\">Click here if you're looking to post or find an R/data-science job</a>.\r\n\r\n<hr/>Want to share your content on R-bloggers?<a href=\"https://www.r-bloggers.com/add-your-blog/\" rel=\"nofollow\"> click here</a> if you have a blog, or <a href=\"http://r-posts.com/\" rel=\"nofollow\"> here</a> if you don't.\r\n</div> </div>\n</article>",
+    "word_count": 701,
+    "reading_time_min": 3.5,
+    "internal_links": [
+      {
+        "href": "https://www.r-bloggers.com/author/jason-bryer/",
+        "text": "Jason Bryer"
+      },
+      {
+        "href": "https://www.r-bloggers.com/category/r-bloggers/",
+        "text": "R bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers"
+      },
+      {
+        "href": "https://www.r-bloggers.com/contact-us/",
+        "text": "here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      },
+      {
+        "href": "https://www.r-bloggers.com/",
+        "text": "R-bloggers.com"
+      },
+      {
+        "href": "https://www.r-bloggers.com/how-to-learn-r-2/",
+        "text": "learning R"
+      },
+      {
+        "href": "https://www.r-bloggers.com/add-your-blog/",
+        "text": "click here"
+      }
+    ],
+    "external_links": [
+      {
+        "href": "https://bryer.org/posts/2026-05-05-Setting_Function_Parameters_for_Debugging.html",
+        "text": "Jason Bryer"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      },
+      {
+        "href": "https://ggplot2.tidyverse.org/",
+        "text": "ggplot2"
+      },
+      {
+        "href": "https://github.com/jbryer/clav/blob/master/R/profile_plot.R",
+        "text": "clav::profile_plot()"
+      },
+      {
+        "href": "https://clav.bryer.org/reference/profile_plot.html",
+        "text": "documentation"
+      },
+      {
+        "href": "https://bryer.org/posts/2026-05-05-Setting_Function_Parameters_for_Debugging.html",
+        "text": "Jason Bryer"
+      },
+      {
+        "href": "https://feedburner.google.com/fb/a/mailverify?uri=RBloggers",
+        "text": "daily e-mail updates"
+      },
+      {
+        "href": "https://www.r-project.org/",
+        "text": "R"
+      },
+      {
+        "href": "https://www.r-users.com/",
+        "text": "Click here if you're looking to post or find an R/data-science job"
+      },
+      {
+        "href": "http://r-posts.com/",
+        "text": "here"
+      }
+    ],
+    "images": [],
+    "lang": "en-US",
+    "crawled_at_utc": "2026-05-05T15:30:08Z"
+  }
+}
