@@ -1,8 +1,8 @@
-name: Crawl R-Bloggers (hourly)
+name: Crawl R-Bloggers
 
 on:
   schedule:
-    - cron: "0 * * * *"  # every hour
+    - cron: "17 */4 * * *"
   workflow_dispatch:
 
 concurrency:
