@@ -55,13 +55,13 @@ jobs:
           set -euo pipefail
           python scripts/crawl_rbloggers.py
 
-      - name: Update repo stats (RBLOGGERS_REPO_STATS.md)
+      - name: Update repo stats JSON
         shell: bash
         run: |
           set -euo pipefail
           python scripts/update_repo_stats.py
 
-      - name: Commit & push (json + stats)
+      - name: Commit & push JSON output
         shell: bash
         run: |
           set -euo pipefail
